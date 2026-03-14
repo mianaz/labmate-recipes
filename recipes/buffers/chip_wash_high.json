@@ -1,0 +1,52 @@
+{
+  "id": "chip_wash_high",
+  "name": "ChIP High Salt Wash Buffer",
+  "category": "buffer",
+  "tags": [
+    "ChIP",
+    "epigenetics"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 8.1",
+      "amount": 2,
+      "unit": "mL",
+      "note": "终浓度 20 mM"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 0.4,
+      "unit": "mL",
+      "note": "终浓度 2 mM"
+    },
+    {
+      "name": "10% Triton X-100",
+      "amount": 10,
+      "unit": "mL",
+      "note": "终浓度 1%"
+    },
+    {
+      "name": "10% SDS",
+      "amount": 1,
+      "unit": "mL",
+      "note": "终浓度 0.1%"
+    },
+    {
+      "name": "5M NaCl",
+      "amount": 10,
+      "unit": "mL",
+      "note": "终浓度 500 mM"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 76.6,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "ChIP 高盐洗液",
+  "notes": {
+    "en": "High-salt wash reduces nonspecific binding.",
+    "zh": "高盐洗涤减少非特异性结合。"
+  },
+  "ref": "Nelson et al. (2006) Nat Protoc 1:179–185"
+}

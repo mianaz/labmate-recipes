@@ -1,0 +1,42 @@
+{
+  "id": "emsa_binding_buffer",
+  "name": "EMSA Binding Buffer (5×)",
+  "nameCn": "EMSA 结合缓冲液（5×）",
+  "category": "buffer",
+  "tags": [
+    "EMSA",
+    "gel shift",
+    "DNA binding"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 7.5",
+      "amount": 5,
+      "unit": "mL",
+      "note": "50 mM final"
+    },
+    {
+      "name": "5M NaCl",
+      "amount": 5,
+      "unit": "mL",
+      "note": "250 mM final"
+    },
+    {
+      "name": "100% Glycerol",
+      "amount": 20,
+      "unit": "mL",
+      "note": "20% final"
+    },
+    {
+      "name": "ddH₂O to 100 mL",
+      "amount": null,
+      "unit": "mL"
+    }
+  ],
+  "notes": {
+    "en": "Dilute to 1× for binding. Add poly(dI-dC) as competitor. Run non-denaturing PAGE 5-6% in 0.5× TBE at 4°C.",
+    "zh": "结合反应稀释至 1×。加 poly(dI-dC) 作为非特异竞争物。4°C 0.5× TBE 中 5-6% 非变性 PAGE。"
+  },
+  "ref": "Garner & Revzin (1981) Nucleic Acids Res 9:3047",
+  "source": "CSHL"
+}

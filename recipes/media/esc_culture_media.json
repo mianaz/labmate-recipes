@@ -1,0 +1,53 @@
+{
+  "id": "esc_culture_media",
+  "name": "Mouse ESC Medium",
+  "nameCn": "小鼠 ES 细胞培养基",
+  "category": "media",
+  "tags": [
+    "ESC",
+    "stem cell",
+    "LIF",
+    "pluripotent"
+  ],
+  "components": [
+    {
+      "name": "DMEM high glucose",
+      "amount": 425,
+      "unit": "mL"
+    },
+    {
+      "name": "ESC-qualified FBS",
+      "amount": 75,
+      "unit": "mL",
+      "note": "15% final"
+    },
+    {
+      "name": "100× NEAA",
+      "amount": 5,
+      "unit": "mL"
+    },
+    {
+      "name": "100× L-Glutamine",
+      "amount": 5,
+      "unit": "mL"
+    },
+    {
+      "name": "1000× β-ME (55 mM)",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "0.1 mM final"
+    },
+    {
+      "name": "LIF (10⁶ U/mL)",
+      "amount": 0.05,
+      "unit": "mL",
+      "note": "1000 U/mL final"
+    }
+  ],
+  "notes": {
+    "en": "LIF maintains pluripotency — add fresh. For feeder-free: gelatin + 2i (PD0325901 + CHIR99021) + LIF. Compact domed colonies = pluripotent.",
+    "zh": "LIF 维持多能性——需新鲜加入。无饲养层培养：明胶 + 2i (PD0325901 + CHIR99021) + LIF。致密圆顶样克隆 = 多能。"
+  },
+  "ref": "Smith et al. (1988) Nature 336:688",
+  "source": "Nature"
+}

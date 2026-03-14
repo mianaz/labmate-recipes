@@ -1,0 +1,36 @@
+{
+  "id": "gst_elution",
+  "name": "GST Elution Buffer",
+  "category": "buffer",
+  "tags": [
+    "protein purification",
+    "GST",
+    "Glutathione"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 8.0",
+      "amount": 5,
+      "unit": "mL",
+      "note": "终浓度 50 mM"
+    },
+    {
+      "name": "Reduced glutathione",
+      "amount": 0.307,
+      "unit": "g",
+      "mw": 307.32,
+      "note": "10 mM"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 95,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "GST 标签洗脱液",
+  "notes": {
+    "en": "Prepare fresh — glutathione oxidizes rapidly. Add just before use. Adjust pH to 8.0. Elute at RT for 10–15 min.",
+    "zh": "新鲜配制。谷胱甘肽易氧化，临用加入。调 pH 至 8.0。室温洗脱 10–15 min。"
+  },
+  "ref": "Harper & Bhatt (2004) Methods Mol Biol 261:55–72; GE Healthcare GST Gene Fusion System Handbook"
+}

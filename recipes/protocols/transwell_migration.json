@@ -1,0 +1,49 @@
+{
+  "id": "transwell_migration",
+  "name": "Transwell Migration Assay",
+  "category": "protocol",
+  "tags": [
+    "cell migration",
+    "invasion",
+    "Boyden chamber",
+    "chemotaxis"
+  ],
+  "components": [
+    {
+      "name": "1. 血清饥饿 12-24h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 下室加含血清培养基，上室加细胞",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 37°C 孵育 16-24h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 棉签擦除上表面未迁移细胞",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 固定、结晶紫染色",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 镜下计数 5 个随机视野",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "Transwell 迁移实验",
+  "notes": {
+    "en": "Quantitative assay for cell migration/invasion using Boyden chamber principle. Cells migrate through 8 µm pores toward chemoattractant (serum). For invasion assay, coat inserts with Matrigel. Count migrated cells on lower surface after crystal violet staining.",
+    "zh": "基于 Boyden 小室原理的定量细胞迁移/侵袭实验。细胞通过 8 µm 孔向趋化因子（血清）迁移。侵袭实验需在膜上涂 Matrigel。结晶紫染色后计数下表面迁移细胞。"
+  },
+  "ref": "Justus et al. (2014) J Vis Exp 88:e51046; protocols.io doi:10.17504/protocols.io.261ge3d5ov47"
+}

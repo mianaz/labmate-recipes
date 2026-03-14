@@ -1,0 +1,55 @@
+{
+  "id": "annexin_v_apoptosis",
+  "name": "Annexin V / PI Apoptosis Assay",
+  "nameCn": "Annexin V / PI 凋亡检测",
+  "category": "protocol",
+  "tags": [
+    "apoptosis",
+    "flow cytometry",
+    "Annexin V",
+    "PI"
+  ],
+  "components": [
+    {
+      "name": "1. Harvest cells (floating + adherent)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Wash cold PBS, 300×g 5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Resuspend 1×10⁵ in 100 µL Binding Buffer",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Add 5 µL FITC-Annexin V + 5 µL PI",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Incubate 15 min RT dark",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Add 400 µL Binding Buffer",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Analyze by flow cytometry within 1 h",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "AV⁻/PI⁻=live; AV⁺/PI⁻=early apoptosis; AV⁺/PI⁺=late apoptosis; AV⁻/PI⁺=necrosis. CaCl₂ essential. Positive control: staurosporine 1 µM 6 h.",
+    "zh": "AV⁻/PI⁻=活；AV⁺/PI⁻=早期凋亡；AV⁺/PI⁺=晚期凋亡；AV⁻/PI⁺=坏死。需含 CaCl₂。阳性对照：星形孢菌素 1 µM 6 h。"
+  },
+  "ref": "Vermes et al. (1995) J Immunol Methods 184:39",
+  "source": "Nature Protocols"
+}

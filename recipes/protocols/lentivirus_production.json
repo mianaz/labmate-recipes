@@ -1,0 +1,49 @@
+{
+  "id": "lentivirus_production",
+  "name": "Lentivirus Production & Transduction",
+  "category": "protocol",
+  "tags": [
+    "lentivirus",
+    "viral transduction",
+    "stable cell line",
+    "gene delivery"
+  ],
+  "components": [
+    {
+      "name": "1. Day -1: 接种 4×10⁶ HEK293T 至 10 cm 皿",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Day 0: 配制转染复合物并加入细胞",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Day 1: 换液 (DMEM + HEPES)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Day 3: 收集上清，0.45 µm 过滤",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 转导: 病毒上清 + Polybrene 感染靶细胞",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Day 4+: Puromycin 筛选 (1 µg/mL)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "慢病毒包装与转导",
+  "notes": {
+    "en": "2nd-generation lentiviral packaging in HEK293T cells for stable gene delivery. BSL-2 required. Typical titer: 10⁶–10⁷ TU/mL unconcentrated.",
+    "zh": "在 HEK293T 中进行第二代慢病毒包装，用于稳定基因递送。需要 BSL-2。典型滴度：未浓缩 10⁶–10⁷ TU/mL。"
+  },
+  "ref": "protocols.io doi:10.17504/protocols.io.yxmvm132ov3p; Dull et al. (1998) J Virol 72:8463–8471"
+}

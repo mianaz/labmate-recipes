@@ -1,0 +1,53 @@
+{
+  "id": "laemmli_4x",
+  "name": "4× Laemmli Sample Buffer",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "SDS-PAGE"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 6.8",
+      "amount": 2.5,
+      "unit": "mL",
+      "note": "终浓度 250 mM"
+    },
+    {
+      "name": "SDS",
+      "amount": 0.8,
+      "unit": "g",
+      "mw": 288.38,
+      "note": "终浓度 8%"
+    },
+    {
+      "name": "Glycerol",
+      "amount": 4,
+      "unit": "mL",
+      "note": "终浓度 40%"
+    },
+    {
+      "name": "β-mercaptoethanol",
+      "amount": 2,
+      "unit": "mL",
+      "note": "终浓度 20%"
+    },
+    {
+      "name": "0.5% Bromophenol blue",
+      "amount": 0.8,
+      "unit": "mL",
+      "note": "终浓度 0.04%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 0.0,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "4× 上样缓冲液",
+  "notes": {
+    "en": "Aliquot and store at −20°C. Dilute 1:4 before use (3 parts sample : 1 part buffer).",
+    "zh": "分装保存 -20°C。上样时 1:4 稀释（样品:buffer = 3:1）。"
+  },
+  "ref": "Laemmli (1970) Nature 227:680–685"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "facs_buffer",
+  "name": "FACS Staining Buffer",
+  "category": "buffer",
+  "tags": [
+    "FACS",
+    "flow cytometry",
+    "cell sorting"
+  ],
+  "components": [
+    {
+      "name": "FBS (heat-inactivated)",
+      "amount": 10,
+      "unit": "mL",
+      "note": "2% (v/v)"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 1,
+      "unit": "mL",
+      "note": "1 mM"
+    },
+    {
+      "name": "NaN₃",
+      "amount": 0.05,
+      "unit": "g",
+      "mw": 65.01,
+      "note": "0.01% (w/v)"
+    },
+    {
+      "name": "1× PBS",
+      "amount": 489,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "流式细胞染色缓冲液",
+  "notes": {
+    "en": "Include NaN₃ to prevent capping; omit for live cell sorting. Store at 4°C. Filter through 0.22 µm.",
+    "zh": "NaN₃ 防止 cap-and-strip；若做活细胞分选则不加 NaN₃。4°C 保存。过滤 (0.22 µm)。"
+  },
+  "ref": "Cossarizza et al. (2019) Eur J Immunol 49:1457–1973 (Guidelines for flow cytometry)"
+}

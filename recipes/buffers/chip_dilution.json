@@ -1,0 +1,52 @@
+{
+  "id": "chip_dilution",
+  "name": "ChIP Dilution Buffer",
+  "category": "buffer",
+  "tags": [
+    "ChIP",
+    "epigenetics"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 8.1",
+      "amount": 1.67,
+      "unit": "mL",
+      "note": "终浓度 16.7 mM"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 0.24,
+      "unit": "mL",
+      "note": "终浓度 1.2 mM"
+    },
+    {
+      "name": "10% Triton X-100",
+      "amount": 11,
+      "unit": "mL",
+      "note": "终浓度 1.1%"
+    },
+    {
+      "name": "10% SDS",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "终浓度 0.01%"
+    },
+    {
+      "name": "5M NaCl",
+      "amount": 3.34,
+      "unit": "mL",
+      "note": "终浓度 167 mM"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 83.65,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "ChIP 稀释液",
+  "notes": {
+    "en": "Dilute SDS lysate 10× with this buffer before immunoprecipitation. Add protease inhibitors.",
+    "zh": "将 SDS 裂解产物稀释 10× 后用于免疫沉淀。加蛋白酶抑制剂。"
+  },
+  "ref": "Upstate/Millipore ChIP Protocol; Nelson et al. (2006) Nat Protoc 1:179–185"
+}

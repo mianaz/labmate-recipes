@@ -1,0 +1,37 @@
+{
+  "id": "citrate_buffer_ar",
+  "name": "Citrate Buffer (Antigen Retrieval)",
+  "category": "buffer",
+  "tags": [
+    "IHC",
+    "antigen retrieval",
+    "immunohistochemistry"
+  ],
+  "components": [
+    {
+      "name": "Sodium citrate dihydrate",
+      "amount": 2.94,
+      "unit": "g",
+      "mw": 294.1,
+      "note": "10 mM"
+    },
+    {
+      "name": "Tween-20",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "0.05%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "mL",
+      "note": "定容至 1000 mL"
+    }
+  ],
+  "nameCn": "柠檬酸盐抗原修复液",
+  "notes": {
+    "en": "Adjust pH to 6.0 with HCl. Microwave method: submerge slides in buffer, bring to boil then maintain at medium power for 10–20 min. Allow to cool to RT. Can also use pressure cooker or water bath (95–100°C). For FFPE tissue sections.",
+    "zh": "用 HCl 调 pH 至 6.0。微波法: 将切片浸入缓冲液，微波加热至沸腾后中低火维持 10–20 min，自然冷却至室温。也可用压力锅或水浴 (95–100°C)。适用于甲醛固定石蜡包埋 (FFPE) 组织。"
+  },
+  "ref": "Shi et al. (1991) J Histochem Cytochem 39:741–748"
+}

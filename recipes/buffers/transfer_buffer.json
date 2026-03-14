@@ -1,0 +1,37 @@
+{
+  "id": "transfer_buffer",
+  "name": "1× Transfer Buffer (Towbin)",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "transfer"
+  ],
+  "components": [
+    {
+      "name": "Tris base",
+      "amount": 3.03,
+      "unit": "g",
+      "mw": 121.14,
+      "note": "25 mM"
+    },
+    {
+      "name": "Glycine",
+      "amount": 14.4,
+      "unit": "g",
+      "mw": 75.03,
+      "note": "192 mM"
+    },
+    {
+      "name": "Methanol",
+      "amount": 200,
+      "unit": "mL",
+      "note": "20% (v/v)"
+    }
+  ],
+  "nameCn": "1× 转膜缓冲液",
+  "notes": {
+    "en": "Add methanol last, bring to 1 L. For proteins >100 kDa, add 0.01–0.05% SDS. Use cold (4°C). Do not adjust pH.",
+    "zh": "加入甲醇后定容至 1 L。转膜大蛋白 (>100 kDa) 可加 0.01–0.05% SDS。4°C 使用。不要调 pH。"
+  },
+  "ref": "Towbin et al. (1979) PNAS 76:4350–4354"
+}

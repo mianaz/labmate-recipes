@@ -1,0 +1,52 @@
+{
+  "id": "mops_running_buffer",
+  "name": "MOPS SDS Running Buffer (NuPAGE)",
+  "category": "buffer",
+  "tags": [
+    "SDS-PAGE",
+    "NuPAGE",
+    "electrophoresis"
+  ],
+  "components": [
+    {
+      "name": "MOPS",
+      "amount": 10.46,
+      "unit": "g",
+      "mw": 209.26,
+      "note": "50 mM"
+    },
+    {
+      "name": "Tris base",
+      "amount": 6.06,
+      "unit": "g",
+      "mw": 121.14,
+      "note": "50 mM"
+    },
+    {
+      "name": "SDS",
+      "amount": 1,
+      "unit": "g",
+      "mw": 288.38,
+      "note": "0.1%"
+    },
+    {
+      "name": "EDTA (free acid)",
+      "amount": 0.3,
+      "unit": "g",
+      "mw": 292.24,
+      "note": "1 mM"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "mL",
+      "note": "定容至 1000 mL"
+    }
+  ],
+  "nameCn": "MOPS SDS 电泳缓冲液 (NuPAGE)",
+  "notes": {
+    "en": "Can be stored as 20× concentrate. Dilute to 1× before use. Optimized for NuPAGE Bis-Tris gels; better resolution for mid-to-high MW proteins (>30 kDa) than MES buffer. Do not adjust pH.",
+    "zh": "20× 浓缩液可储存，使用前稀释至 1×。适用于 NuPAGE Bis-Tris 凝胶，分离中-大分子量蛋白 (>30 kDa) 效果优于 MES。不需调 pH。"
+  },
+  "ref": "Invitrogen NuPAGE Technical Guide (Thermo Fisher MAN0003690); Schägger (2006) Nat Protoc 1:16–22"
+}

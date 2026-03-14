@@ -1,0 +1,85 @@
+{
+  "id": "if_protocol",
+  "name": "Immunofluorescence (IF) Protocol",
+  "category": "protocol",
+  "tags": [
+    "IF",
+    "fluorescence",
+    "confocal",
+    "imaging"
+  ],
+  "components": [
+    {
+      "name": "1. 细胞爬片或chamber slide培养",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. PBS 洗 2×",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 4% PFA 固定 15 min RT",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. PBS 洗 3×5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 0.1% Triton X-100 透化 10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. PBS 洗 3×5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 封闭 (3% BSA + 5% serum) 1 h RT",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 一抗 (稀释于封闭液) 4°C 过夜",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. PBS 洗 3×5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. 荧光二抗 1 h RT 避光",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "11. PBS 洗 3×5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "12. DAPI 染核 5 min",
+      "amount": 1,
+      "unit": "step",
+      "note": "1 µg/mL in PBS"
+    },
+    {
+      "name": "13. 封片 (抗淬灭剂)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "免疫荧光染色流程",
+  "notes": {
+    "en": "Secondary antibody: Alexa Fluor 488/555/647. Protect from light. Tissue sections require antigen retrieval (heat-induced or enzymatic). Confocal: recommend 63× oil immersion.",
+    "zh": "二抗选择: Alexa Fluor 488/555/647 等。避光操作。组织切片需抗原修复 (热修复或酶消化)。共聚焦推荐 63× oil 物镜。"
+  },
+  "ref": "Donaldson (2015) Curr Protoc Cell Biol 69:4.3.1; Im et al. (2019) STAR Protoc 1:100023; CSH Protocols"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "chip_lysis",
+  "name": "ChIP SDS Lysis Buffer",
+  "category": "buffer",
+  "tags": [
+    "ChIP",
+    "epigenetics",
+    "histone"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 8.1",
+      "amount": 5,
+      "unit": "mL",
+      "note": "终浓度 50 mM"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 2,
+      "unit": "mL",
+      "note": "终浓度 10 mM"
+    },
+    {
+      "name": "10% SDS",
+      "amount": 10,
+      "unit": "mL",
+      "note": "终浓度 1%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 83,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "ChIP SDS 裂解液",
+  "notes": {
+    "en": "Use after crosslinking (1% formaldehyde, RT 10 min). Add protease inhibitors. Sonicate to generate 200–500 bp DNA fragments.",
+    "zh": "交联后 (1% 甲醛，室温 10 min) 使用。加蛋白酶抑制剂。超声使 DNA 片段 200–500 bp。"
+  },
+  "ref": "Lee et al. (2006) Cell 125:301–313; Collas (2010) Mol Biotechnol 45:87–100"
+}

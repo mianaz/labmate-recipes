@@ -1,0 +1,44 @@
+{
+  "id": "dual_luciferase",
+  "name": "Dual-Luciferase Reporter Assay",
+  "nameCn": "双荧光素酶报告基因",
+  "category": "protocol",
+  "tags": [
+    "luciferase",
+    "reporter",
+    "promoter"
+  ],
+  "components": [
+    {
+      "name": "1. Transfect firefly + Renilla reporters",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 24-48 h, lyse with Passive Lysis Buffer",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Add LAR II → read firefly",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Add Stop & Glo → read Renilla",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Ratio = firefly/Renilla = normalized activity",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Firefly=experimental, Renilla=normalization. Ratio eliminates well-to-well variation. 10:1 firefly:Renilla transfection ratio.",
+    "zh": "萤火虫=实验组，海肾=内参。比值消除孔间差异。转染比 10:1 萤火虫:海肾。"
+  },
+  "ref": "Sherf et al. (1996) Promega Notes 57:2",
+  "source": "Promega"
+}

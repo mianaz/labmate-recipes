@@ -1,0 +1,54 @@
+{
+  "id": "proximity_ligation_assay",
+  "name": "Proximity Ligation Assay (PLA)",
+  "nameCn": "邻位连接实验",
+  "category": "protocol",
+  "tags": [
+    "PLA",
+    "protein interaction",
+    "in situ"
+  ],
+  "components": [
+    {
+      "name": "1. Fix + permeabilize",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Block with Duolink solution 37°C 1 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Primary Abs (2 species) O/N 4°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. PLA probes (PLUS + MINUS) 37°C 1 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Ligation 37°C 30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Amplification 37°C 100 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Mount DAPI, image",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Each fluorescent dot = one interaction (<40 nm). Include single-Ab controls. Quantify dots per cell with ImageJ.",
+    "zh": "每个荧光点 = 一次互作（<40 nm）。包含单抗体对照。用 ImageJ 定量每细胞点数。"
+  },
+  "ref": "Söderberg et al. (2006) Nat Methods 3:995",
+  "source": "Nature Methods"
+}

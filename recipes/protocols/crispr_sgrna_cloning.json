@@ -1,0 +1,54 @@
+{
+  "id": "crispr_sgrna_cloning",
+  "name": "CRISPR sgRNA Cloning (pX459)",
+  "nameCn": "CRISPR sgRNA 克隆",
+  "category": "protocol",
+  "tags": [
+    "CRISPR",
+    "sgRNA",
+    "cloning",
+    "Cas9"
+  ],
+  "components": [
+    {
+      "name": "1. Design sgRNA (CRISPOR/Benchling)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Order oligos: CACCG(N20) + AAAC(rc)C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Anneal + phosphorylate oligos",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. BbsI-digest pX459",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Ligate, transform",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Colony PCR + sequence (U6 primer)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "pX459 (Addgene #62988) = Cas9 + puromycin. pLentiCRISPRv2 (#52961) for lentiviral. Include non-targeting control.",
+    "zh": "pX459 (Addgene #62988) = Cas9 + 嘌呤霉素。pLentiCRISPRv2 (#52961) 用于慢病毒。包含非靶向对照。"
+  },
+  "ref": "Ran et al. (2013) Nat Protoc 8:2281",
+  "crosslinks": [
+    "heat_shock_transformation",
+    "colony_pcr"
+  ],
+  "source": "Nature Protocols"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "dna_loading_dye_6x",
+  "name": "6× DNA Loading Dye",
+  "category": "buffer",
+  "tags": [
+    "electrophoresis",
+    "agarose",
+    "DNA"
+  ],
+  "components": [
+    {
+      "name": "Bromophenol Blue",
+      "amount": 0.025,
+      "unit": "g",
+      "note": "0.25%"
+    },
+    {
+      "name": "Xylene Cyanol FF",
+      "amount": 0.025,
+      "unit": "g",
+      "note": "0.25%"
+    },
+    {
+      "name": "Glycerol (100%)",
+      "amount": 3,
+      "unit": "mL",
+      "note": "30%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 7,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "6× DNA 上样缓冲液",
+  "notes": {
+    "en": "Aliquot and store at −20°C; stable at 4°C for months. Mix 1:5 with sample (1 µL dye + 5 µL sample). Bromophenol blue co-migrates with ~300 bp in 1% agarose; xylene cyanol co-migrates with ~4 kb. Optionally add EDTA (10 mM final) to chelate DNases.",
+    "zh": "分装后 -20°C 保存，4°C 可存数月。使用时 1:5 混合 (1 µL dye + 5 µL 样品)。Bromophenol Blue 在 1% 琼脂糖中迁移率 ~300 bp，Xylene Cyanol ~4 kb。可选加 EDTA (终浓度 10 mM) 螯合 DNase。"
+  },
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press, Appendix 1"
+}

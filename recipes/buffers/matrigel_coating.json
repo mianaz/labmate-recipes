@@ -1,0 +1,29 @@
+{
+  "id": "matrigel_coating",
+  "name": "Matrigel Coating Solution",
+  "category": "buffer",
+  "tags": [
+    "invasion assay",
+    "Matrigel",
+    "3D culture",
+    "coating"
+  ],
+  "components": [
+    {
+      "name": "Matrigel (stock, ~10 mg/mL)",
+      "amount": 125,
+      "unit": "µL"
+    },
+    {
+      "name": "Serum-free ice-cold medium",
+      "amount": 875,
+      "unit": "µL"
+    }
+  ],
+  "nameCn": "Matrigel 包被液",
+  "notes": {
+    "en": "Keep everything on ice! Matrigel solidifies above 10°C. Use pre-chilled pipette tips and tubes. Working concentration ~1-2 mg/mL (1:8 to 1:6 dilution). Apply 50 µL per Transwell insert, incubate 1-2h at 37°C to solidify.",
+    "zh": "全程冰上操作！Matrigel 在 10°C 以上即凝固。使用预冷的枪头和管。工作浓度约 1-2 mg/mL（1:8 到 1:6 稀释）。Transwell 膜需 50 µL/insert，37°C 孵育 1-2h 凝固。"
+  },
+  "ref": "Corning Matrigel Matrix Technical Guide; Justus et al. (2014) J Vis Exp 88:e51046"
+}

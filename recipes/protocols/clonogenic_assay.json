@@ -1,0 +1,47 @@
+{
+  "id": "clonogenic_assay",
+  "name": "Clonogenic (Colony Formation) Assay",
+  "nameCn": "克隆形成实验",
+  "category": "protocol",
+  "tags": [
+    "colony",
+    "survival",
+    "drug response"
+  ],
+  "components": [
+    {
+      "name": "1. Seed 200-1000 cells/well (6-well)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Allow attachment, apply treatment",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Culture 10-14 days, change medium q3d",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Fix methanol, stain 0.5% crystal violet",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Count colonies (>50 cells = 1 colony)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Plating efficiency = colonies/cells × 100%. Surviving fraction = PE(treated)/PE(control). Triplicate.",
+    "zh": "接种效率 = 克隆数/细胞数 × 100%。存活分数 = PE(处理)/PE(对照)。三重复。"
+  },
+  "ref": "Franken et al. (2006) Nat Protoc 1:2315",
+  "crosslinks": [
+    "crystal_violet_stain"
+  ],
+  "source": "Nature Protocols"
+}

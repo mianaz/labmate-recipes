@@ -1,0 +1,48 @@
+{
+  "id": "luciferase_lysis_buffer",
+  "name": "Luciferase Reporter Lysis Buffer",
+  "nameCn": "荧光素酶裂解缓冲液",
+  "category": "buffer",
+  "tags": [
+    "luciferase",
+    "reporter",
+    "lysis"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-phosphate pH 7.8",
+      "amount": 2.5,
+      "unit": "mL",
+      "note": "25 mM final"
+    },
+    {
+      "name": "1M DTT",
+      "amount": 0.2,
+      "unit": "mL",
+      "note": "2 mM (add fresh)"
+    },
+    {
+      "name": "10% Triton X-100",
+      "amount": 10,
+      "unit": "mL",
+      "note": "1% final"
+    },
+    {
+      "name": "100% Glycerol",
+      "amount": 10,
+      "unit": "mL",
+      "note": "10% final"
+    },
+    {
+      "name": "ddH₂O to 100 mL",
+      "amount": null,
+      "unit": "mL"
+    }
+  ],
+  "notes": {
+    "en": "Gentle lysis preserves luciferase activity. Lyse 15 min RT. Use 20 µL lysate + 100 µL substrate.",
+    "zh": "温和裂解保留荧光素酶活性。室温 15 min。20 µL 裂解液 + 100 µL 底物。"
+  },
+  "ref": "Promega E1500",
+  "source": "Promega"
+}

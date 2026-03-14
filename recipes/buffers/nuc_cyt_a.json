@@ -1,0 +1,52 @@
+{
+  "id": "nuc_cyt_a",
+  "name": "Nuclear/Cytoplasmic Fractionation Buffer A",
+  "category": "buffer",
+  "tags": [
+    "nuclear extraction",
+    "subcellular fractionation"
+  ],
+  "components": [
+    {
+      "name": "1M HEPES pH 7.9",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "终浓度 10 mM"
+    },
+    {
+      "name": "1M KCl",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "终浓度 10 mM"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 0.01,
+      "unit": "mL",
+      "note": "终浓度 0.1 mM"
+    },
+    {
+      "name": "0.5M EGTA pH 8.0",
+      "amount": 0.01,
+      "unit": "mL",
+      "note": "终浓度 0.1 mM"
+    },
+    {
+      "name": "1M DTT",
+      "amount": 0.05,
+      "unit": "mL",
+      "note": "终浓度 1 mM (临用加)"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 48.93,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "核质分离裂解液 A (胞浆)",
+  "notes": {
+    "en": "Incubate on ice 15 min, add 10% NP-40 to final 0.6%, vortex 10 s, centrifuge at 4°C 14,000×g for 30 s. Supernatant = cytoplasmic fraction.",
+    "zh": "冰上孵育 15 min，加 10% NP-40 至终浓度 0.6%，涡旋 10 s，4°C 14,000×g 30 s。上清 = 胞浆。"
+  },
+  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29; Suzuki et al. (2010) Nat Protoc 5:532–539"
+}

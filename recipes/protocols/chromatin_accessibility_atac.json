@@ -1,0 +1,55 @@
+{
+  "id": "chromatin_accessibility_atac",
+  "name": "ATAC-seq Library Preparation",
+  "nameCn": "ATAC-seq 文库制备",
+  "category": "protocol",
+  "tags": [
+    "ATAC-seq",
+    "chromatin",
+    "accessibility",
+    "epigenetics"
+  ],
+  "components": [
+    {
+      "name": "1. Harvest 50,000 cells (viability >90%)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Lyse nuclei: cold lysis buffer + 0.1% NP-40",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Transposition: Tn5 transposase 37°C 30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Purify (MinElute)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. PCR amplify (qPCR to determine cycles)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Size select 150-700 bp",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. QC: Bioanalyzer (nucleosomal ladder)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Critical: fresh cells, do NOT over-lyse. Nucleosomal laddering = good library. 9-12 PCR cycles typical. ≥50M reads/sample.",
+    "zh": "关键：新鲜细胞，不可过度裂解。核小体梯度条带 = 文库合格。通常 9-12 轮 PCR。≥50M reads/样品。"
+  },
+  "ref": "Buenrostro et al. (2013) Nat Methods 10:1213",
+  "source": "Nature Methods"
+}

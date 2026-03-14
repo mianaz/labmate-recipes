@@ -1,0 +1,69 @@
+{
+  "id": "mtt_assay",
+  "name": "MTT Cell Viability Assay",
+  "category": "protocol",
+  "tags": [
+    "cell viability",
+    "cytotoxicity",
+    "proliferation",
+    "MTT"
+  ],
+  "components": [
+    {
+      "name": "1. 96 孔板接种细胞 (5,000–10,000/孔)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 37°C 孵育 24h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 加药物/处理",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 孵育 24–72h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 每孔加 10 µL MTT (5 mg/mL)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 37°C 孵育 2–4h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 去除培养基",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 每孔加 100 µL DMSO 溶解",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. 振荡 10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. 570 nm 读数",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "MTT 细胞活力检测",
+  "notes": {
+    "en": "Colorimetric assay measuring cell metabolic activity as proxy for viability. MTT (yellow) is reduced to formazan (purple) by mitochondrial reductases. OD570 proportional to viable cell number. Include blank wells.",
+    "zh": "比色法检测细胞代谢活力。MTT 被线粒体还原酶还原为甲臜结晶。OD570 与活细胞数成正比。需设空白对照孔。% 活力 = (OD处理/OD对照) × 100。"
+  },
+  "ref": "Mosmann (1983) J Immunol Methods 65:55–63"
+}

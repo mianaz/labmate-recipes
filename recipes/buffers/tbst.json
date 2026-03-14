@@ -1,0 +1,33 @@
+{
+  "id": "tbst",
+  "name": "1× TBST",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "common"
+  ],
+  "components": [
+    {
+      "name": "10× TBS",
+      "amount": 100,
+      "unit": "mL"
+    },
+    {
+      "name": "Tween-20",
+      "amount": 1,
+      "unit": "mL",
+      "note": "0.1% (v/v)"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 899,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "TBS-Tween 洗膜液",
+  "notes": {
+    "en": "Prepare fresh. Tween-20 at 0.05–0.1% is acceptable; adjust based on background signal.",
+    "zh": "现配现用。Tween-20 终浓度 0.05–0.1% 均可，根据背景调整。"
+  },
+  "ref": "Burnette (1981) Anal Biochem 112:195–203"
+}

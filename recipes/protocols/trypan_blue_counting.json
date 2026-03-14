@@ -1,0 +1,49 @@
+{
+  "id": "trypan_blue_counting",
+  "name": "Trypan Blue Cell Counting",
+  "category": "protocol",
+  "tags": [
+    "cell counting",
+    "viability",
+    "trypan blue"
+  ],
+  "components": [
+    {
+      "name": "1. 收集细胞悬液，混匀",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 取细胞悬液",
+      "amount": 10,
+      "unit": "µL"
+    },
+    {
+      "name": "3. 加 0.4% Trypan Blue",
+      "amount": 10,
+      "unit": "µL",
+      "note": "1:1 稀释"
+    },
+    {
+      "name": "4. 轻柔混匀，室温 1–2 min (勿超 3 min)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 加入血球计数板 / 自动计数仪",
+      "amount": 10,
+      "unit": "µL"
+    },
+    {
+      "name": "6. 计数: 活细胞 (透明) vs 死细胞 (蓝色)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "台盼蓝细胞计数",
+  "notes": {
+    "en": "Cell density = average cells per large square × dilution factor × 10⁴ cells/mL. Viability = live / (live + dead) × 100%. Staining beyond 3 min causes false positives (live cells begin to take up dye). Dilute further if concentration is too high.",
+    "zh": "细胞密度 = 平均每大格细胞数 × 稀释倍数 × 10⁴ cells/mL。活率 = 活细胞/(活+死) × 100%。染色时间 >3 min 会导致假阳性 (活细胞也着色)。如浓度过高，进一步稀释后重新计数。"
+  },
+  "ref": "Strober (2015) Curr Protoc Immunol 111:A.3B.1–A.3B.3"
+}

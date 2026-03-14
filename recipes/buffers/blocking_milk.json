@@ -1,0 +1,28 @@
+{
+  "id": "blocking_milk",
+  "name": "5% Skim Milk Blocking Buffer",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "blocking"
+  ],
+  "components": [
+    {
+      "name": "Skim milk powder",
+      "amount": 2.5,
+      "unit": "g",
+      "note": "5% (w/v)"
+    },
+    {
+      "name": "1× TBST",
+      "amount": 50,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "5% 脱脂奶封闭液",
+  "notes": {
+    "en": "Prepare fresh. Do not use for phospho-protein detection (milk casein is phosphorylated). Use BSA blocking instead.",
+    "zh": "现配现用。勿用于检测磷酸化蛋白（milk 中含酪蛋白磷酸化位点），改用 BSA。"
+  },
+  "ref": "Burnette (1981) Anal Biochem 112:195–203"
+}

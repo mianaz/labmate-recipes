@@ -1,0 +1,35 @@
+{
+  "id": "phosphatase_inhibitor_na3vo4",
+  "name": "Sodium Orthovanadate (100 mM)",
+  "nameCn": "原钒酸钠（100 mM）",
+  "category": "buffer",
+  "tags": [
+    "phosphatase",
+    "inhibitor",
+    "phosphorylation"
+  ],
+  "components": [
+    {
+      "name": "Na₃VO₄",
+      "amount": 1.84,
+      "unit": "g",
+      "mw": 183.91
+    },
+    {
+      "name": "ddH₂O to 100 mL",
+      "amount": null,
+      "unit": "mL"
+    },
+    {
+      "name": "Activate: pH 10, boil, repeat 3×",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Tyrosine phosphatase inhibitor. Must activate: pH 10, boil, cool, readjust. Repeat until stable and colorless. Use 1 mM final.",
+    "zh": "酪氨酸磷酸酶抑制剂。需活化：调 pH 10，煮沸，冷却，再调 pH。重复至溶液稳定无色。终浓度 1 mM。"
+  },
+  "ref": "Gordon (1991) Methods Enzymol 201:477",
+  "source": "Methods Enzymol"
+}

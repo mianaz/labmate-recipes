@@ -1,0 +1,29 @@
+{
+  "id": "blocking_bsa",
+  "name": "5% BSA Blocking Buffer",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "blocking",
+    "phosphoprotein"
+  ],
+  "components": [
+    {
+      "name": "BSA (Fraction V)",
+      "amount": 2.5,
+      "unit": "g",
+      "note": "5% (w/v)"
+    },
+    {
+      "name": "1× TBST",
+      "amount": 50,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "5% BSA 封闭液",
+  "notes": {
+    "en": "Suitable for phospho-protein detection. Add 0.02% NaN₃ to store at 4°C for ~1 week.",
+    "zh": "适用于磷酸化蛋白检测。加 0.02% NaN₃ 可 4°C 保存约 1 周。"
+  },
+  "ref": "Gallagher (2012) Curr Protoc Mol Biol Ch.10, Unit 10.2A"
+}

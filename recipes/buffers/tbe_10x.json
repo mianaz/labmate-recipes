@@ -1,0 +1,36 @@
+{
+  "id": "tbe_10x",
+  "name": "10× TBE",
+  "category": "buffer",
+  "tags": [
+    "electrophoresis",
+    "DNA",
+    "PAGE",
+    "TBE"
+  ],
+  "components": [
+    {
+      "name": "Tris base",
+      "amount": 108,
+      "unit": "g",
+      "mw": 121.14
+    },
+    {
+      "name": "Boric acid",
+      "amount": 55,
+      "unit": "g",
+      "mw": 61.83
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 40,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "10× TBE 缓冲液",
+  "notes": {
+    "en": "Provides higher resolution than TAE for certain applications. Use at 0.5× or 1×.",
+    "zh": "分辨率要求高时用 TBE (优于 TAE)。稀释至 0.5× 或 1× 使用。0.5× = 45 mM Tris-borate, 1 mM EDTA, pH ~8.3。室温保存，过 0.22 µm 滤膜防沉淀。"
+  },
+  "ref": "CSH Protocols doi:10.1101/pdb.rec8458; Sambrook & Russell (2001) Molecular Cloning"
+}

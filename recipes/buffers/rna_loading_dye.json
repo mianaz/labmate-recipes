@@ -1,0 +1,48 @@
+{
+  "id": "rna_loading_dye",
+  "name": "RNA Loading Dye (2×)",
+  "category": "buffer",
+  "tags": [
+    "RNA",
+    "electrophoresis",
+    "agarose gel"
+  ],
+  "components": [
+    {
+      "name": "Formamide (deionized)",
+      "amount": 9.5,
+      "unit": "mL",
+      "note": "95%"
+    },
+    {
+      "name": "EDTA (0.5 M, pH 8.0)",
+      "amount": 200,
+      "unit": "µL",
+      "note": "10 mM"
+    },
+    {
+      "name": "Bromophenol blue",
+      "amount": 2,
+      "unit": "mg",
+      "note": "0.02%"
+    },
+    {
+      "name": "Xylene cyanol",
+      "amount": 2,
+      "unit": "mg",
+      "note": "0.02%"
+    },
+    {
+      "name": "Ethidium bromide (optional)",
+      "amount": 10,
+      "unit": "µL",
+      "note": "10 mg/mL stock"
+    }
+  ],
+  "nameCn": "RNA 上样缓冲液 (2×)",
+  "notes": {
+    "en": "For denaturing agarose gel electrophoresis. Mix sample 1:1 with dye, heat at 65°C for 5 min, snap-cool on ice, then load. Formamide denatures RNA secondary structure.",
+    "zh": "用于变性琼脂糖凝胶电泳。样品与 dye 1:1 混合后 65°C 加热 5 min，立即冰上冷却后上样。甲酰胺变性 RNA 二级结构。"
+  },
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; Rio et al. (2010) CSH Protocols"
+}

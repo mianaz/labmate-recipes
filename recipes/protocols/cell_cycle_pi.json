@@ -1,0 +1,50 @@
+{
+  "id": "cell_cycle_pi",
+  "name": "Cell Cycle Analysis (PI)",
+  "nameCn": "细胞周期分析（PI）",
+  "category": "protocol",
+  "tags": [
+    "cell cycle",
+    "flow cytometry",
+    "PI",
+    "DNA"
+  ],
+  "components": [
+    {
+      "name": "1. Harvest 1-2×10⁶ cells",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Fix: 70% ice-cold EtOH, -20°C ≥2 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Wash 2× PBS",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. PI staining: 50 µg/mL PI + 100 µg/mL RNase A",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Incubate 37°C 30 min dark",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Analyze: gate singlets, fit Dean-Jett-Fox",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "RNase A essential (PI binds RNA). Gate singlets via FSC-H vs FSC-A. G1=2N, S=between, G2/M=4N. Fixed cells stable weeks at -20°C.",
+    "zh": "RNase A 必需（PI 也结合 RNA）。FSC-H vs FSC-A 门控去除双联体。G1=2N, S=中间, G2/M=4N。固定后 -20°C 可保存数周。"
+  },
+  "ref": "Krishan (1975) J Cell Biol 66:188",
+  "source": "CSHL"
+}

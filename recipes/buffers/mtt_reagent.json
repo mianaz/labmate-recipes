@@ -1,0 +1,30 @@
+{
+  "id": "mtt_reagent",
+  "name": "MTT Stock Solution",
+  "category": "buffer",
+  "tags": [
+    "MTT",
+    "cell viability",
+    "proliferation"
+  ],
+  "components": [
+    {
+      "name": "MTT (Thiazolyl Blue Tetrazolium)",
+      "amount": 0.05,
+      "unit": "g",
+      "mw": 414.32,
+      "note": "5 mg/mL"
+    },
+    {
+      "name": "1× PBS (sterile)",
+      "amount": 10,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "MTT 母液",
+  "notes": {
+    "en": "Filter-sterilize (0.22 µm). Aliquot and store at −20°C protected from light. Add 10 µL per 100 µL medium. After 37°C 4 h incubation, discard supernatant and solubilize formazan.",
+    "zh": "过滤除菌 (0.22 µm)。分装 -20°C 避光保存。使用时每孔加 10 µL/100 µL 培养基。37°C 4 h 后弃上清，加 DMSO 150 µL 溶解紫色结晶。490–570 nm 读数。"
+  },
+  "ref": "Mosmann (1983) J Immunol Methods 65:55–63; van Meerloo et al. (2011) Methods Mol Biol 731:237–245"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "if_permeabilization",
+  "name": "IF Permeabilization Buffer",
+  "category": "buffer",
+  "tags": [
+    "IF",
+    "fluorescence",
+    "permeabilization"
+  ],
+  "components": [
+    {
+      "name": "Triton X-100",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "终浓度 0.1%"
+    },
+    {
+      "name": "1× PBS",
+      "amount": 100,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "免疫荧光透化液",
+  "notes": {
+    "en": "Incubate at RT 10–15 min. For membrane proteins use 0.05% Triton or 0.1% saponin. For nuclear proteins use 0.5% Triton.",
+    "zh": "室温孵育 10–15 min。胞膜蛋白用 0.05% Triton 或 0.1% saponin。核蛋白可用 0.5% Triton。"
+  },
+  "ref": "Donaldson (2015) Curr Protoc Cell Biol 69:4.3.1–4.3.7; Nature Protocols"
+}

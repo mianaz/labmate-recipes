@@ -1,0 +1,29 @@
+{
+  "id": "oil_red_o",
+  "name": "Oil Red O Staining",
+  "nameCn": "Oil Red O 脂肪染色",
+  "category": "staining",
+  "tags": [
+    "staining",
+    "lipid",
+    "adipocyte"
+  ],
+  "components": [
+    {
+      "name": "Stock: 0.5 g Oil Red O in 100 mL isopropanol",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "Working: 3 parts stock + 2 parts ddH₂O, filter",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Stains neutral lipids red-orange. Working solution must be freshly prepared. Quantify by extracting with isopropanol, OD510.",
+    "zh": "将中性脂肪染成红橙色。工作液须现配。定量：异丙醇提取，OD510。"
+  },
+  "ref": "Ramírez-Zacarías et al. (1992) Histochemistry 97:493",
+  "source": "Histochemistry"
+}

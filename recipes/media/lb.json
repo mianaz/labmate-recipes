@@ -1,0 +1,30 @@
+{
+  "id": "lb",
+  "name": "LB Medium (Luria-Bertani)",
+  "category": "media",
+  "tags": [
+    "microbiology",
+    "E. coli",
+    "cloning"
+  ],
+  "components": [
+    {
+      "name": "Tryptone",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "name": "Yeast extract",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "name": "NaCl",
+      "amount": 10,
+      "unit": "g",
+      "mw": 58.44
+    }
+  ],
+  "nameCn": "LB 培养基",
+  "ref": "Bertani (1951) J Bacteriol 62:293–300; Sambrook & Russell (2001)"
+}

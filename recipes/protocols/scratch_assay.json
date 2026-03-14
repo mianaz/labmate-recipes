@@ -1,0 +1,54 @@
+{
+  "id": "scratch_assay",
+  "name": "Wound Healing (Scratch) Assay",
+  "category": "protocol",
+  "tags": [
+    "migration",
+    "wound healing",
+    "scratch assay",
+    "cell migration"
+  ],
+  "components": [
+    {
+      "name": "1. 接种细胞至 >95% 融合",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 200 µL 枪头划直线",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. PBS 洗 2×",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 加无血清培养基 ± 处理",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 0h 拍照",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 定时拍照 (6h, 12h, 24h, 48h)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. ImageJ 分析划痕面积",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "划痕愈合实验",
+  "notes": {
+    "en": "Simple assay to study cell migration. Create a scratch in confluent monolayer, image gap closure over time. Use serum-free medium to isolate migration from proliferation. Analyze with ImageJ MRI Wound Healing Tool.",
+    "zh": "简单经济的细胞迁移实验。用无血清培养基区分迁移和增殖。可选丝裂霉素 C 预处理抑制增殖。% 愈合 = (面积₀ₕ − 面积ₜₕ) / 面积₀ₕ × 100。"
+  },
+  "ref": "Liang et al. (2007) Nat Protoc 2:329–333"
+}

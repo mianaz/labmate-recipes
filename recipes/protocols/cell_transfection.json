@@ -1,0 +1,76 @@
+{
+  "id": "cell_transfection",
+  "name": "Lipofection Transfection Protocol",
+  "category": "protocol",
+  "tags": [
+    "transfection",
+    "Lipofectamine",
+    "plasmid",
+    "siRNA"
+  ],
+  "components": [
+    {
+      "name": "1. 转染前一天铺板 (60–80% 汇合度)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 管 A: 质粒 DNA in Opti-MEM",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "  - Plasmid DNA",
+      "amount": 2.5,
+      "unit": "µg",
+      "note": "每孔 6-well"
+    },
+    {
+      "name": "  - Opti-MEM",
+      "amount": 125,
+      "unit": "µL"
+    },
+    {
+      "name": "3. 管 B: Lipo in Opti-MEM",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "  - Lipofectamine 2000/3000",
+      "amount": 7.5,
+      "unit": "µL",
+      "note": "DNA:Lipo = 1:3"
+    },
+    {
+      "name": "  - Opti-MEM",
+      "amount": 125,
+      "unit": "µL"
+    },
+    {
+      "name": "4. A+B 混合，室温 15–20 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 逐滴加入培养基中",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 6–8 h 后换新鲜完全培养基",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 24–72 h 后检测表达",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "脂质体转染流程",
+  "notes": {
+    "en": "siRNA: 25–50 pmol per well + 5 µL Lipo RNAiMAX. Switching to serum-free medium before transfection improves efficiency.",
+    "zh": "siRNA 转染: 每孔 25–50 pmol siRNA + 5 µL Lipo RNAiMAX。转染前换无血清培养基效果更好。DNA:Lipo 比例需优化 (1:2–1:4)。"
+  },
+  "ref": "Dalby et al. (2004) Methods 33:95–103; Bhatt et al. (2012) Methods Mol Biol 869:29–40; Thermo Fisher Lipofectamine Protocol"
+}

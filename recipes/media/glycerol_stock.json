@@ -1,0 +1,30 @@
+{
+  "id": "glycerol_stock",
+  "name": "Bacterial Glycerol Stock",
+  "category": "media",
+  "tags": [
+    "storage",
+    "strain",
+    "glycerol"
+  ],
+  "components": [
+    {
+      "name": "过夜培养菌液 (OD₆₀₀ ~2–4)",
+      "amount": 0.75,
+      "unit": "mL",
+      "note": "75%"
+    },
+    {
+      "name": "60% 无菌甘油溶液",
+      "amount": 0.25,
+      "unit": "mL",
+      "note": "终浓度 15–25%"
+    }
+  ],
+  "nameCn": "细菌甘油保存",
+  "notes": {
+    "en": "Mix gently by inversion (do not vortex). Label tube with strain name, plasmid, resistance marker, and date. Snap-freeze in liquid nitrogen or dry ice, store at −80°C. To recover, streak directly onto selective plate from frozen stock. Never freeze-thaw. Final glycerol concentration of 15–25% is acceptable.",
+    "zh": "轻柔混匀 (不要涡旋)。标记菌株名、质粒、抗性、日期。速冻于液氮或干冰，-80°C 长期保存。复苏时直接划线至含抗生素 LB 平板，切勿反复冻融。终甘油浓度 15–25% 均可。"
+  },
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press"
+}

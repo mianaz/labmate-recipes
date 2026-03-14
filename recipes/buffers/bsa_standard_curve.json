@@ -1,0 +1,30 @@
+{
+  "id": "bsa_standard_curve",
+  "name": "BSA Standard Curve (BCA/Bradford)",
+  "nameCn": "BSA 标准曲线",
+  "category": "buffer",
+  "tags": [
+    "protein",
+    "quantification",
+    "BCA",
+    "Bradford"
+  ],
+  "components": [
+    {
+      "name": "BSA stock 2 mg/mL",
+      "amount": 1,
+      "unit": "mL"
+    },
+    {
+      "name": "Standards: 0, 25, 125, 250, 500, 1000, 1500, 2000 µg/mL",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Prepare in same buffer as samples. BCA: 37°C 30 min, A562. Bradford: RT 5 min, A595. Triplicate.",
+    "zh": "用与样品相同的缓冲液配制。BCA：37°C 30 min，A562。Bradford：室温 5 min，A595。三重复。"
+  },
+  "ref": "Smith et al. (1985) Anal Biochem 150:76 / Bradford (1976) Anal Biochem 72:248",
+  "source": "Analytical Biochemistry"
+}

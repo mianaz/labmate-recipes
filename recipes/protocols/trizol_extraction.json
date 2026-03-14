@@ -1,0 +1,45 @@
+{
+  "id": "trizol_extraction",
+  "name": "TRIzol RNA Extraction (Protocol)",
+  "category": "protocol",
+  "tags": [
+    "RNA",
+    "extraction",
+    "TRIzol",
+    "qPCR"
+  ],
+  "components": [
+    {
+      "name": "TRIzol Reagent",
+      "amount": 1,
+      "unit": "mL",
+      "note": "per 5–10×10⁶ cells / 每 5–10×10⁶ 细胞"
+    },
+    {
+      "name": "Chloroform",
+      "amount": 0.2,
+      "unit": "mL",
+      "note": "per 1 mL TRIzol / 每 1 mL TRIzol"
+    },
+    {
+      "name": "Isopropanol",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "RNA precipitation / 沉淀 RNA"
+    },
+    {
+      "name": "75% Ethanol",
+      "amount": 1,
+      "unit": "mL",
+      "note": "RNA wash / 洗涤 RNA"
+    },
+    {
+      "name": "RNase-free H₂O",
+      "amount": 0.02,
+      "unit": "mL",
+      "note": "dissolve RNA (20–50 µL) / 溶解 RNA (20–50 µL)"
+    }
+  ],
+  "nameCn": "TRIzol RNA 提取流程",
+  "ref": "Chomczynski & Sacchi (1987) Anal Biochem 162:156–159; Rio et al. (2010) CSH Protoc doi:10.1101/pdb.prot5439"
+}

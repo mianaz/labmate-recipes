@@ -1,0 +1,30 @@
+{
+  "id": "freezing_medium",
+  "name": "Cell Freezing Medium (10% DMSO)",
+  "category": "media",
+  "tags": [
+    "cell culture",
+    "cryopreservation",
+    "DMSO"
+  ],
+  "components": [
+    {
+      "name": "FBS (heat-inactivated)",
+      "amount": 45,
+      "unit": "mL",
+      "note": "90%"
+    },
+    {
+      "name": "DMSO (cell culture grade)",
+      "amount": 5,
+      "unit": "mL",
+      "note": "10%"
+    }
+  ],
+  "nameCn": "细胞冻存液 (10% DMSO)",
+  "notes": {
+    "en": "Prepare fresh or pre-chill at 4°C. DMSO is a penetrating cryoprotectant that prevents ice crystal formation. After resuspending cells, transfer quickly to cryovials, use a controlled-rate freezing container (-1°C/min) to -80°C, then move to liquid nitrogen after 24h. DMSO is cytotoxic at 37°C — dilute promptly after thawing.",
+    "zh": "使用前现配或 4°C 预冷。DMSO 是渗透性冷冻保护剂，防止冰晶形成。细胞重悬后迅速转移至冻存管，使用梯度降温盒 (-1°C/min) 放入 -80°C，24h 后转液氮。DMSO 在 37°C 对细胞有毒，解冻后尽快稀释。"
+  },
+  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "flow_cytometry_protocol",
+  "name": "Flow Cytometry Surface Staining",
+  "category": "protocol",
+  "tags": [
+    "FACS",
+    "flow cytometry",
+    "surface markers",
+    "immunophenotyping"
+  ],
+  "components": [
+    {
+      "name": "1. 收集细胞 (≥1×10⁵/样)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. PBS 洗 1×, 300×g 5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Fc Block (人: Human TruStain; 鼠: anti-CD16/32)",
+      "amount": 1,
+      "unit": "step",
+      "note": "4°C 10 min"
+    },
+    {
+      "name": "4. 加荧光抗体 cocktail",
+      "amount": 1,
+      "unit": "step",
+      "note": "按滴度滴定结果加"
+    },
+    {
+      "name": "5. 4°C 避光孵育 20–30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. FACS Buffer 洗 2×",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 重悬于 200–500 µL FACS Buffer",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 活死染料 (可选: DAPI/PI/Live-Dead)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. 上机检测 (≥10,000 events)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "流式细胞术表面染色流程",
+  "notes": {
+    "en": "For intracellular staining: fix with 4% PFA 20 min, then permeabilize with 0.1% saponin. Titrate each antibody individually. Compensation controls required.",
+    "zh": "胞内染色需先固定 (4% PFA 20 min) 再透化 (0.1% saponin)。每个抗体需单独滴度实验。compensation controls 必需。FMO controls 用于 gating。"
+  },
+  "ref": "Cossarizza et al. (2019) Eur J Immunol 49:1457–1973; Perfetto et al. (2004) Nat Rev Immunol 4:648–655"
+}

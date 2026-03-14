@@ -1,0 +1,1339 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-03-14",
+  "total": 118,
+  "categories": {
+    "buffer": 62,
+    "staining": 9,
+    "media": 10,
+    "protocol": 37
+  },
+  "recipes": [
+    {
+      "id": "pbs_10x",
+      "name": "10× PBS",
+      "category": "buffer",
+      "tags": [
+        "common",
+        "cell biology",
+        "WB",
+        "IHC"
+      ],
+      "file": "recipes/buffers/pbs_10x.json"
+    },
+    {
+      "id": "pbs_1x",
+      "name": "1× PBS",
+      "category": "buffer",
+      "tags": [
+        "common",
+        "cell biology"
+      ],
+      "file": "recipes/buffers/pbs_1x.json"
+    },
+    {
+      "id": "tbs_10x",
+      "name": "10× TBS",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "common"
+      ],
+      "file": "recipes/buffers/tbs_10x.json"
+    },
+    {
+      "id": "tbst",
+      "name": "1× TBST",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "common"
+      ],
+      "file": "recipes/buffers/tbst.json"
+    },
+    {
+      "id": "ripa",
+      "name": "RIPA Lysis Buffer",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "protein extraction"
+      ],
+      "file": "recipes/buffers/ripa.json"
+    },
+    {
+      "id": "sds_page_gel",
+      "name": "SDS-PAGE Gel (10% Resolving + 4% Stacking)",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "SDS-PAGE",
+        "gel"
+      ],
+      "file": "recipes/buffers/sds_page_gel.json"
+    },
+    {
+      "id": "laemmli_2x",
+      "name": "2× Laemmli Sample Buffer",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "SDS-PAGE"
+      ],
+      "file": "recipes/buffers/laemmli_2x.json"
+    },
+    {
+      "id": "laemmli_4x",
+      "name": "4× Laemmli Sample Buffer",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "SDS-PAGE"
+      ],
+      "file": "recipes/buffers/laemmli_4x.json"
+    },
+    {
+      "id": "running_buffer",
+      "name": "1× Running Buffer (Tris-Glycine-SDS)",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "SDS-PAGE",
+        "electrophoresis"
+      ],
+      "file": "recipes/buffers/running_buffer.json"
+    },
+    {
+      "id": "running_buffer_10x",
+      "name": "10× Running Buffer",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "SDS-PAGE"
+      ],
+      "file": "recipes/buffers/running_buffer_10x.json"
+    },
+    {
+      "id": "transfer_buffer",
+      "name": "1× Transfer Buffer (Towbin)",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "transfer"
+      ],
+      "file": "recipes/buffers/transfer_buffer.json"
+    },
+    {
+      "id": "blocking_milk",
+      "name": "5% Skim Milk Blocking Buffer",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "blocking"
+      ],
+      "file": "recipes/buffers/blocking_milk.json"
+    },
+    {
+      "id": "blocking_bsa",
+      "name": "5% BSA Blocking Buffer",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "blocking",
+        "phosphoprotein"
+      ],
+      "file": "recipes/buffers/blocking_bsa.json"
+    },
+    {
+      "id": "tae_50x",
+      "name": "50× TAE",
+      "category": "buffer",
+      "tags": [
+        "electrophoresis",
+        "DNA",
+        "agarose gel",
+        "TAE"
+      ],
+      "file": "recipes/buffers/tae_50x.json"
+    },
+    {
+      "id": "tbe_10x",
+      "name": "10× TBE",
+      "category": "buffer",
+      "tags": [
+        "electrophoresis",
+        "DNA",
+        "PAGE",
+        "TBE"
+      ],
+      "file": "recipes/buffers/tbe_10x.json"
+    },
+    {
+      "id": "te",
+      "name": "TE Buffer",
+      "category": "buffer",
+      "tags": [
+        "DNA",
+        "RNA",
+        "storage",
+        "Tris-EDTA"
+      ],
+      "file": "recipes/buffers/te.json"
+    },
+    {
+      "id": "coomassie_stain",
+      "name": "Coomassie Blue Staining Solution",
+      "category": "staining",
+      "tags": [
+        "SDS-PAGE",
+        "staining"
+      ],
+      "file": "recipes/staining/coomassie_stain.json"
+    },
+    {
+      "id": "coomassie_destain",
+      "name": "Coomassie Destaining Solution",
+      "category": "staining",
+      "tags": [
+        "SDS-PAGE",
+        "staining"
+      ],
+      "file": "recipes/staining/coomassie_destain.json"
+    },
+    {
+      "id": "ponceau_s",
+      "name": "Ponceau S Staining Solution",
+      "category": "staining",
+      "tags": [
+        "WB",
+        "transfer verification"
+      ],
+      "file": "recipes/staining/ponceau_s.json"
+    },
+    {
+      "id": "lb",
+      "name": "LB Medium (Luria-Bertani)",
+      "category": "media",
+      "tags": [
+        "microbiology",
+        "E. coli",
+        "cloning"
+      ],
+      "file": "recipes/media/lb.json"
+    },
+    {
+      "id": "lb_agar",
+      "name": "LB Agar",
+      "category": "media",
+      "tags": [
+        "microbiology",
+        "E. coli",
+        "plating"
+      ],
+      "file": "recipes/media/lb_agar.json"
+    },
+    {
+      "id": "soc",
+      "name": "SOC Medium",
+      "category": "media",
+      "tags": [
+        "microbiology",
+        "transformation"
+      ],
+      "file": "recipes/media/soc.json"
+    },
+    {
+      "id": "strip_buffer",
+      "name": "WB Stripping Buffer (Mild)",
+      "category": "buffer",
+      "tags": [
+        "WB",
+        "stripping"
+      ],
+      "file": "recipes/buffers/strip_buffer.json"
+    },
+    {
+      "id": "ip_lysis",
+      "name": "IP / Co-IP Lysis Buffer",
+      "category": "buffer",
+      "tags": [
+        "IP",
+        "Co-IP",
+        "protein interaction"
+      ],
+      "file": "recipes/buffers/ip_lysis.json"
+    },
+    {
+      "id": "chip_lysis",
+      "name": "ChIP SDS Lysis Buffer",
+      "category": "buffer",
+      "tags": [
+        "ChIP",
+        "epigenetics",
+        "histone"
+      ],
+      "file": "recipes/buffers/chip_lysis.json"
+    },
+    {
+      "id": "chip_dilution",
+      "name": "ChIP Dilution Buffer",
+      "category": "buffer",
+      "tags": [
+        "ChIP",
+        "epigenetics"
+      ],
+      "file": "recipes/buffers/chip_dilution.json"
+    },
+    {
+      "id": "chip_wash_low",
+      "name": "ChIP Low Salt Wash Buffer",
+      "category": "buffer",
+      "tags": [
+        "ChIP",
+        "epigenetics"
+      ],
+      "file": "recipes/buffers/chip_wash_low.json"
+    },
+    {
+      "id": "chip_wash_high",
+      "name": "ChIP High Salt Wash Buffer",
+      "category": "buffer",
+      "tags": [
+        "ChIP",
+        "epigenetics"
+      ],
+      "file": "recipes/buffers/chip_wash_high.json"
+    },
+    {
+      "id": "pfa_4",
+      "name": "4% Paraformaldehyde (PFA)",
+      "category": "buffer",
+      "tags": [
+        "IF",
+        "IHC",
+        "fixation",
+        "PFA"
+      ],
+      "file": "recipes/buffers/pfa_4.json"
+    },
+    {
+      "id": "if_permeabilization",
+      "name": "IF Permeabilization Buffer",
+      "category": "buffer",
+      "tags": [
+        "IF",
+        "fluorescence",
+        "permeabilization"
+      ],
+      "file": "recipes/buffers/if_permeabilization.json"
+    },
+    {
+      "id": "if_blocking",
+      "name": "IF Blocking Buffer",
+      "category": "buffer",
+      "tags": [
+        "IF",
+        "fluorescence",
+        "blocking"
+      ],
+      "file": "recipes/buffers/if_blocking.json"
+    },
+    {
+      "id": "facs_buffer",
+      "name": "FACS Staining Buffer",
+      "category": "buffer",
+      "tags": [
+        "FACS",
+        "flow cytometry",
+        "cell sorting"
+      ],
+      "file": "recipes/buffers/facs_buffer.json"
+    },
+    {
+      "id": "macs_buffer",
+      "name": "MACS Separation Buffer",
+      "category": "buffer",
+      "tags": [
+        "MACS",
+        "magnetic beads",
+        "cell sorting"
+      ],
+      "file": "recipes/buffers/macs_buffer.json"
+    },
+    {
+      "id": "nuc_cyt_a",
+      "name": "Nuclear/Cytoplasmic Fractionation Buffer A",
+      "category": "buffer",
+      "tags": [
+        "nuclear extraction",
+        "subcellular fractionation"
+      ],
+      "file": "recipes/buffers/nuc_cyt_a.json"
+    },
+    {
+      "id": "nuc_cyt_b",
+      "name": "Nuclear/Cytoplasmic Fractionation Buffer B",
+      "category": "buffer",
+      "tags": [
+        "nuclear extraction",
+        "subcellular fractionation"
+      ],
+      "file": "recipes/buffers/nuc_cyt_b.json"
+    },
+    {
+      "id": "his_binding",
+      "name": "His-tag Binding/Wash Buffer",
+      "category": "buffer",
+      "tags": [
+        "protein purification",
+        "His-tag",
+        "Ni-NTA"
+      ],
+      "file": "recipes/buffers/his_binding.json"
+    },
+    {
+      "id": "his_elution",
+      "name": "His-tag Elution Buffer",
+      "category": "buffer",
+      "tags": [
+        "protein purification",
+        "His-tag",
+        "Ni-NTA"
+      ],
+      "file": "recipes/buffers/his_elution.json"
+    },
+    {
+      "id": "gst_elution",
+      "name": "GST Elution Buffer",
+      "category": "buffer",
+      "tags": [
+        "protein purification",
+        "GST",
+        "Glutathione"
+      ],
+      "file": "recipes/buffers/gst_elution.json"
+    },
+    {
+      "id": "native_page_buffer",
+      "name": "Native PAGE Running Buffer",
+      "category": "buffer",
+      "tags": [
+        "Native-PAGE",
+        "native gel",
+        "protein interaction"
+      ],
+      "file": "recipes/buffers/native_page_buffer.json"
+    },
+    {
+      "id": "bn_page_cathode",
+      "name": "Blue Native PAGE Cathode Buffer",
+      "category": "buffer",
+      "tags": [
+        "BN-PAGE",
+        "protein complex",
+        "mitochondria"
+      ],
+      "file": "recipes/buffers/bn_page_cathode.json"
+    },
+    {
+      "id": "mtt_reagent",
+      "name": "MTT Stock Solution",
+      "category": "buffer",
+      "tags": [
+        "MTT",
+        "cell viability",
+        "proliferation"
+      ],
+      "file": "recipes/buffers/mtt_reagent.json"
+    },
+    {
+      "id": "crispr_rnp",
+      "name": "CRISPR RNP Assembly Buffer",
+      "category": "buffer",
+      "tags": [
+        "CRISPR",
+        "Cas9",
+        "gene editing",
+        "RNP"
+      ],
+      "file": "recipes/buffers/crispr_rnp.json"
+    },
+    {
+      "id": "trizol_extraction",
+      "name": "TRIzol RNA Extraction (Protocol)",
+      "category": "protocol",
+      "tags": [
+        "RNA",
+        "extraction",
+        "TRIzol",
+        "qPCR"
+      ],
+      "file": "recipes/protocols/trizol_extraction.json"
+    },
+    {
+      "id": "wb_protocol",
+      "name": "Western Blot Full Protocol",
+      "category": "protocol",
+      "tags": [
+        "WB",
+        "full protocol",
+        "protein detection"
+      ],
+      "file": "recipes/protocols/wb_protocol.json"
+    },
+    {
+      "id": "if_protocol",
+      "name": "Immunofluorescence (IF) Protocol",
+      "category": "protocol",
+      "tags": [
+        "IF",
+        "fluorescence",
+        "confocal",
+        "imaging"
+      ],
+      "file": "recipes/protocols/if_protocol.json"
+    },
+    {
+      "id": "chip_protocol",
+      "name": "ChIP Protocol (Chromatin IP)",
+      "category": "protocol",
+      "tags": [
+        "ChIP",
+        "epigenetics",
+        "histone modification",
+        "DNA-binding protein"
+      ],
+      "file": "recipes/protocols/chip_protocol.json"
+    },
+    {
+      "id": "coip_protocol",
+      "name": "Co-IP Protocol",
+      "category": "protocol",
+      "tags": [
+        "Co-IP",
+        "IP",
+        "protein interaction",
+        "PPI"
+      ],
+      "file": "recipes/protocols/coip_protocol.json"
+    },
+    {
+      "id": "qpcr_protocol",
+      "name": "RT-qPCR Protocol",
+      "category": "protocol",
+      "tags": [
+        "qPCR",
+        "RT-PCR",
+        "gene expression",
+        "mRNA"
+      ],
+      "file": "recipes/protocols/qpcr_protocol.json"
+    },
+    {
+      "id": "cell_transfection",
+      "name": "Lipofection Transfection Protocol",
+      "category": "protocol",
+      "tags": [
+        "transfection",
+        "Lipofectamine",
+        "plasmid",
+        "siRNA"
+      ],
+      "file": "recipes/protocols/cell_transfection.json"
+    },
+    {
+      "id": "flow_cytometry_protocol",
+      "name": "Flow Cytometry Surface Staining",
+      "category": "protocol",
+      "tags": [
+        "FACS",
+        "flow cytometry",
+        "surface markers",
+        "immunophenotyping"
+      ],
+      "file": "recipes/protocols/flow_cytometry_protocol.json"
+    },
+    {
+      "id": "mops_running_buffer",
+      "name": "MOPS SDS Running Buffer (NuPAGE)",
+      "category": "buffer",
+      "tags": [
+        "SDS-PAGE",
+        "NuPAGE",
+        "electrophoresis"
+      ],
+      "file": "recipes/buffers/mops_running_buffer.json"
+    },
+    {
+      "id": "colony_pcr",
+      "name": "Colony PCR Protocol",
+      "category": "protocol",
+      "tags": [
+        "PCR",
+        "cloning",
+        "screening",
+        "molecular cloning"
+      ],
+      "file": "recipes/protocols/colony_pcr.json"
+    },
+    {
+      "id": "glycerol_stock",
+      "name": "Bacterial Glycerol Stock",
+      "category": "media",
+      "tags": [
+        "storage",
+        "strain",
+        "glycerol"
+      ],
+      "file": "recipes/media/glycerol_stock.json"
+    },
+    {
+      "id": "dna_loading_dye_6x",
+      "name": "6× DNA Loading Dye",
+      "category": "buffer",
+      "tags": [
+        "electrophoresis",
+        "agarose",
+        "DNA"
+      ],
+      "file": "recipes/buffers/dna_loading_dye_6x.json"
+    },
+    {
+      "id": "competent_cells_cacl2",
+      "name": "CaCl₂ Competent Cell Preparation",
+      "category": "protocol",
+      "tags": [
+        "transformation",
+        "competent cells",
+        "E. coli",
+        "molecular cloning"
+      ],
+      "file": "recipes/protocols/competent_cells_cacl2.json"
+    },
+    {
+      "id": "2yt_media",
+      "name": "2×YT Medium",
+      "category": "media",
+      "tags": [
+        "culture medium",
+        "E. coli",
+        "phage display"
+      ],
+      "file": "recipes/media/2yt_media.json"
+    },
+    {
+      "id": "hepes_buffer",
+      "name": "HEPES Buffer (1 M stock)",
+      "category": "buffer",
+      "tags": [
+        "cell culture",
+        "buffering",
+        "pH"
+      ],
+      "file": "recipes/buffers/hepes_buffer.json"
+    },
+    {
+      "id": "ssc_20x",
+      "name": "20× SSC Buffer",
+      "category": "buffer",
+      "tags": [
+        "hybridization",
+        "Northern",
+        "Southern",
+        "ISH"
+      ],
+      "file": "recipes/buffers/ssc_20x.json"
+    },
+    {
+      "id": "citrate_buffer_ar",
+      "name": "Citrate Buffer (Antigen Retrieval)",
+      "category": "buffer",
+      "tags": [
+        "IHC",
+        "antigen retrieval",
+        "immunohistochemistry"
+      ],
+      "file": "recipes/buffers/citrate_buffer_ar.json"
+    },
+    {
+      "id": "crystal_violet_stain",
+      "name": "Crystal Violet Staining Solution",
+      "category": "staining",
+      "tags": [
+        "colony assay",
+        "colony formation",
+        "biofilm"
+      ],
+      "file": "recipes/staining/crystal_violet_stain.json"
+    },
+    {
+      "id": "trypan_blue_counting",
+      "name": "Trypan Blue Cell Counting",
+      "category": "protocol",
+      "tags": [
+        "cell counting",
+        "viability",
+        "trypan blue"
+      ],
+      "file": "recipes/protocols/trypan_blue_counting.json"
+    },
+    {
+      "id": "edta_trypsin",
+      "name": "0.25% Trypsin-EDTA Solution",
+      "category": "buffer",
+      "tags": [
+        "cell culture",
+        "passaging",
+        "dissociation"
+      ],
+      "file": "recipes/buffers/edta_trypsin.json"
+    },
+    {
+      "id": "depc_water",
+      "name": "DEPC-Treated Water",
+      "category": "buffer",
+      "tags": [
+        "RNA",
+        "RNase-free",
+        "DEPC"
+      ],
+      "file": "recipes/buffers/depc_water.json"
+    },
+    {
+      "id": "loading_buffer_nr",
+      "name": "Protein Loading Buffer (Non-Reducing)",
+      "category": "buffer",
+      "tags": [
+        "SDS-PAGE",
+        "WB",
+        "non-reducing"
+      ],
+      "file": "recipes/buffers/loading_buffer_nr.json"
+    },
+    {
+      "id": "perm_buffer_triton",
+      "name": "0.1% Triton X-100 Permeabilization Buffer",
+      "category": "buffer",
+      "tags": [
+        "IF",
+        "permeabilization",
+        "immunofluorescence",
+        "intracellular"
+      ],
+      "file": "recipes/buffers/perm_buffer_triton.json"
+    },
+    {
+      "id": "dapi_staining",
+      "name": "DAPI Staining Solution",
+      "category": "staining",
+      "tags": [
+        "fluorescence",
+        "nuclear stain",
+        "DNA",
+        "IF",
+        "flow cytometry"
+      ],
+      "file": "recipes/staining/dapi_staining.json"
+    },
+    {
+      "id": "calcium_phosphate_transfection",
+      "name": "Calcium Phosphate Transfection",
+      "category": "protocol",
+      "tags": [
+        "transfection",
+        "plasmid",
+        "HEK293",
+        "lentivirus packaging"
+      ],
+      "file": "recipes/protocols/calcium_phosphate_transfection.json"
+    },
+    {
+      "id": "heat_shock_transformation",
+      "name": "Bacterial Transformation (Heat Shock)",
+      "category": "protocol",
+      "tags": [
+        "transformation",
+        "cloning",
+        "E. coli",
+        "heat shock"
+      ],
+      "file": "recipes/protocols/heat_shock_transformation.json"
+    },
+    {
+      "id": "agarose_gel_electrophoresis",
+      "name": "Agarose Gel Electrophoresis",
+      "category": "protocol",
+      "tags": [
+        "electrophoresis",
+        "DNA",
+        "RNA",
+        "agarose"
+      ],
+      "file": "recipes/protocols/agarose_gel_electrophoresis.json"
+    },
+    {
+      "id": "mes_running_buffer",
+      "name": "MES Running Buffer (20×)",
+      "category": "buffer",
+      "tags": [
+        "SDS-PAGE",
+        "electrophoresis",
+        "NuPAGE"
+      ],
+      "file": "recipes/buffers/mes_running_buffer.json"
+    },
+    {
+      "id": "np40_lysis",
+      "name": "NP-40 Lysis Buffer",
+      "category": "buffer",
+      "tags": [
+        "protein extraction",
+        "cell lysis",
+        "Co-IP",
+        "mild"
+      ],
+      "file": "recipes/buffers/np40_lysis.json"
+    },
+    {
+      "id": "rna_loading_dye",
+      "name": "RNA Loading Dye (2×)",
+      "category": "buffer",
+      "tags": [
+        "RNA",
+        "electrophoresis",
+        "agarose gel"
+      ],
+      "file": "recipes/buffers/rna_loading_dye.json"
+    },
+    {
+      "id": "acetate_buffer",
+      "name": "Sodium Acetate Buffer (0.1 M)",
+      "category": "buffer",
+      "tags": [
+        "buffer",
+        "pH adjustment",
+        "enzyme assay"
+      ],
+      "file": "recipes/buffers/acetate_buffer.json"
+    },
+    {
+      "id": "miniprep_p1",
+      "name": "Miniprep Buffer P1 (Resuspension)",
+      "category": "buffer",
+      "tags": [
+        "miniprep",
+        "plasmid",
+        "DNA extraction"
+      ],
+      "file": "recipes/buffers/miniprep_p1.json"
+    },
+    {
+      "id": "miniprep_p2",
+      "name": "Miniprep Buffer P2 (Lysis)",
+      "category": "buffer",
+      "tags": [
+        "miniprep",
+        "plasmid",
+        "DNA extraction"
+      ],
+      "file": "recipes/buffers/miniprep_p2.json"
+    },
+    {
+      "id": "miniprep_p3",
+      "name": "Miniprep Buffer P3 (Neutralization)",
+      "category": "buffer",
+      "tags": [
+        "miniprep",
+        "plasmid",
+        "DNA extraction"
+      ],
+      "file": "recipes/buffers/miniprep_p3.json"
+    },
+    {
+      "id": "freezing_medium",
+      "name": "Cell Freezing Medium (10% DMSO)",
+      "category": "media",
+      "tags": [
+        "cell culture",
+        "cryopreservation",
+        "DMSO"
+      ],
+      "file": "recipes/media/freezing_medium.json"
+    },
+    {
+      "id": "complete_dmem",
+      "name": "Complete DMEM (10% FBS)",
+      "category": "media",
+      "tags": [
+        "cell culture",
+        "DMEM",
+        "growth medium"
+      ],
+      "file": "recipes/media/complete_dmem.json"
+    },
+    {
+      "id": "complete_rpmi",
+      "name": "Complete RPMI-1640 (10% FBS)",
+      "category": "media",
+      "tags": [
+        "cell culture",
+        "RPMI",
+        "suspension cells",
+        "lymphocytes"
+      ],
+      "file": "recipes/media/complete_rpmi.json"
+    },
+    {
+      "id": "miniprep_protocol",
+      "name": "Plasmid Miniprep (Alkaline Lysis)",
+      "category": "protocol",
+      "tags": [
+        "DNA extraction",
+        "plasmid",
+        "miniprep",
+        "cloning"
+      ],
+      "file": "recipes/protocols/miniprep_protocol.json"
+    },
+    {
+      "id": "mtt_assay",
+      "name": "MTT Cell Viability Assay",
+      "category": "protocol",
+      "tags": [
+        "cell viability",
+        "cytotoxicity",
+        "proliferation",
+        "MTT"
+      ],
+      "file": "recipes/protocols/mtt_assay.json"
+    },
+    {
+      "id": "scratch_assay",
+      "name": "Wound Healing (Scratch) Assay",
+      "category": "protocol",
+      "tags": [
+        "migration",
+        "wound healing",
+        "scratch assay",
+        "cell migration"
+      ],
+      "file": "recipes/protocols/scratch_assay.json"
+    },
+    {
+      "id": "cell_freezing",
+      "name": "Cell Freezing (Cryopreservation)",
+      "category": "protocol",
+      "tags": [
+        "cell culture",
+        "cryopreservation",
+        "freezing",
+        "banking"
+      ],
+      "file": "recipes/protocols/cell_freezing.json"
+    },
+    {
+      "id": "cell_thawing",
+      "name": "Cell Thawing (Recovery)",
+      "category": "protocol",
+      "tags": [
+        "cell culture",
+        "thawing",
+        "recovery",
+        "banking"
+      ],
+      "file": "recipes/protocols/cell_thawing.json"
+    },
+    {
+      "id": "electroporation",
+      "name": "Bacterial Electroporation",
+      "category": "protocol",
+      "tags": [
+        "transformation",
+        "electroporation",
+        "E. coli",
+        "cloning"
+      ],
+      "file": "recipes/protocols/electroporation.json"
+    },
+    {
+      "id": "lentivirus_production",
+      "name": "Lentivirus Production & Transduction",
+      "category": "protocol",
+      "tags": [
+        "lentivirus",
+        "viral transduction",
+        "stable cell line",
+        "gene delivery"
+      ],
+      "file": "recipes/protocols/lentivirus_production.json"
+    },
+    {
+      "id": "gibson_assembly",
+      "name": "Gibson Assembly",
+      "category": "protocol",
+      "tags": [
+        "cloning",
+        "Gibson assembly",
+        "seamless cloning",
+        "DNA assembly"
+      ],
+      "file": "recipes/protocols/gibson_assembly.json"
+    },
+    {
+      "id": "site_directed_mutagenesis",
+      "name": "Site-Directed Mutagenesis (Q5/KLD)",
+      "category": "protocol",
+      "tags": [
+        "mutagenesis",
+        "SDM",
+        "point mutation",
+        "cloning"
+      ],
+      "file": "recipes/protocols/site_directed_mutagenesis.json"
+    },
+    {
+      "id": "transwell_migration",
+      "name": "Transwell Migration Assay",
+      "category": "protocol",
+      "tags": [
+        "cell migration",
+        "invasion",
+        "Boyden chamber",
+        "chemotaxis"
+      ],
+      "file": "recipes/protocols/transwell_migration.json"
+    },
+    {
+      "id": "mycoplasma_pcr",
+      "name": "Mycoplasma Detection by PCR",
+      "category": "protocol",
+      "tags": [
+        "mycoplasma",
+        "cell culture QC",
+        "PCR",
+        "contamination"
+      ],
+      "file": "recipes/protocols/mycoplasma_pcr.json"
+    },
+    {
+      "id": "polybrene_stock",
+      "name": "Polybrene Stock (10 mg/mL)",
+      "category": "buffer",
+      "tags": [
+        "viral transduction",
+        "lentivirus",
+        "retrovirus",
+        "polybrene"
+      ],
+      "file": "recipes/buffers/polybrene_stock.json"
+    },
+    {
+      "id": "gibson_mastermix",
+      "name": "Gibson Assembly Master Mix (1.33×)",
+      "category": "buffer",
+      "tags": [
+        "cloning",
+        "Gibson assembly",
+        "isothermal assembly"
+      ],
+      "file": "recipes/buffers/gibson_mastermix.json"
+    },
+    {
+      "id": "matrigel_coating",
+      "name": "Matrigel Coating Solution",
+      "category": "buffer",
+      "tags": [
+        "invasion assay",
+        "Matrigel",
+        "3D culture",
+        "coating"
+      ],
+      "file": "recipes/buffers/matrigel_coating.json"
+    },
+    {
+      "id": "chloroquine_stock",
+      "name": "Chloroquine Diphosphate Stock (25 mM)",
+      "category": "buffer",
+      "tags": [
+        "transfection",
+        "lentivirus",
+        "endosome inhibitor"
+      ],
+      "file": "recipes/buffers/chloroquine_stock.json"
+    },
+    {
+      "id": "ecl_enhanced",
+      "name": "Enhanced ECL (Homemade)",
+      "category": "staining",
+      "tags": [
+        "WB",
+        "Western blot",
+        "detection",
+        "HRP",
+        "chemiluminescence"
+      ],
+      "file": "recipes/staining/ecl_enhanced.json"
+    },
+    {
+      "id": "silver_stain",
+      "name": "Silver Stain (SDS-PAGE)",
+      "category": "staining",
+      "tags": [
+        "staining",
+        "SDS-PAGE",
+        "protein",
+        "sensitive"
+      ],
+      "file": "recipes/staining/silver_stain.json"
+    },
+    {
+      "id": "oil_red_o",
+      "name": "Oil Red O Staining",
+      "category": "staining",
+      "tags": [
+        "staining",
+        "lipid",
+        "adipocyte"
+      ],
+      "file": "recipes/staining/oil_red_o.json"
+    },
+    {
+      "id": "alizarin_red",
+      "name": "Alizarin Red S (Osteogenic)",
+      "category": "staining",
+      "tags": [
+        "staining",
+        "calcium",
+        "osteogenic"
+      ],
+      "file": "recipes/staining/alizarin_red.json"
+    },
+    {
+      "id": "kinase_buffer",
+      "name": "Kinase Assay Buffer",
+      "category": "buffer",
+      "tags": [
+        "kinase",
+        "assay",
+        "phosphorylation"
+      ],
+      "file": "recipes/buffers/kinase_buffer.json"
+    },
+    {
+      "id": "emsa_binding_buffer",
+      "name": "EMSA Binding Buffer (5×)",
+      "category": "buffer",
+      "tags": [
+        "EMSA",
+        "gel shift",
+        "DNA binding"
+      ],
+      "file": "recipes/buffers/emsa_binding_buffer.json"
+    },
+    {
+      "id": "luciferase_lysis_buffer",
+      "name": "Luciferase Reporter Lysis Buffer",
+      "category": "buffer",
+      "tags": [
+        "luciferase",
+        "reporter",
+        "lysis"
+      ],
+      "file": "recipes/buffers/luciferase_lysis_buffer.json"
+    },
+    {
+      "id": "tail_lysis_buffer",
+      "name": "Tail Lysis Buffer (Mouse Genotyping)",
+      "category": "buffer",
+      "tags": [
+        "genotyping",
+        "mouse",
+        "PCR"
+      ],
+      "file": "recipes/buffers/tail_lysis_buffer.json"
+    },
+    {
+      "id": "phosphatase_inhibitor_na3vo4",
+      "name": "Sodium Orthovanadate (100 mM)",
+      "category": "buffer",
+      "tags": [
+        "phosphatase",
+        "inhibitor",
+        "phosphorylation"
+      ],
+      "file": "recipes/buffers/phosphatase_inhibitor_na3vo4.json"
+    },
+    {
+      "id": "bsa_standard_curve",
+      "name": "BSA Standard Curve (BCA/Bradford)",
+      "category": "buffer",
+      "tags": [
+        "protein",
+        "quantification",
+        "BCA",
+        "Bradford"
+      ],
+      "file": "recipes/buffers/bsa_standard_curve.json"
+    },
+    {
+      "id": "annexin_v_apoptosis",
+      "name": "Annexin V / PI Apoptosis Assay",
+      "category": "protocol",
+      "tags": [
+        "apoptosis",
+        "flow cytometry",
+        "Annexin V",
+        "PI"
+      ],
+      "file": "recipes/protocols/annexin_v_apoptosis.json"
+    },
+    {
+      "id": "cell_cycle_pi",
+      "name": "Cell Cycle Analysis (PI)",
+      "category": "protocol",
+      "tags": [
+        "cell cycle",
+        "flow cytometry",
+        "PI",
+        "DNA"
+      ],
+      "file": "recipes/protocols/cell_cycle_pi.json"
+    },
+    {
+      "id": "dual_luciferase",
+      "name": "Dual-Luciferase Reporter Assay",
+      "category": "protocol",
+      "tags": [
+        "luciferase",
+        "reporter",
+        "promoter"
+      ],
+      "file": "recipes/protocols/dual_luciferase.json"
+    },
+    {
+      "id": "clonogenic_assay",
+      "name": "Clonogenic (Colony Formation) Assay",
+      "category": "protocol",
+      "tags": [
+        "colony",
+        "survival",
+        "drug response"
+      ],
+      "file": "recipes/protocols/clonogenic_assay.json"
+    },
+    {
+      "id": "soft_agar_assay",
+      "name": "Soft Agar Colony Formation",
+      "category": "protocol",
+      "tags": [
+        "anchorage-independent",
+        "transformation",
+        "cancer"
+      ],
+      "file": "recipes/protocols/soft_agar_assay.json"
+    },
+    {
+      "id": "tube_formation_assay",
+      "name": "Tube Formation (Angiogenesis)",
+      "category": "protocol",
+      "tags": [
+        "angiogenesis",
+        "endothelial",
+        "Matrigel"
+      ],
+      "file": "recipes/protocols/tube_formation_assay.json"
+    },
+    {
+      "id": "crispr_sgrna_cloning",
+      "name": "CRISPR sgRNA Cloning (pX459)",
+      "category": "protocol",
+      "tags": [
+        "CRISPR",
+        "sgRNA",
+        "cloning",
+        "Cas9"
+      ],
+      "file": "recipes/protocols/crispr_sgrna_cloning.json"
+    },
+    {
+      "id": "elisa_sandwich",
+      "name": "Sandwich ELISA",
+      "category": "protocol",
+      "tags": [
+        "ELISA",
+        "immunoassay",
+        "cytokine"
+      ],
+      "file": "recipes/protocols/elisa_sandwich.json"
+    },
+    {
+      "id": "southern_blot",
+      "name": "Southern Blot",
+      "category": "protocol",
+      "tags": [
+        "Southern",
+        "DNA",
+        "hybridization",
+        "genomic"
+      ],
+      "file": "recipes/protocols/southern_blot.json"
+    },
+    {
+      "id": "comet_assay",
+      "name": "Comet Assay (Alkaline)",
+      "category": "protocol",
+      "tags": [
+        "DNA damage",
+        "genotoxicity",
+        "comet"
+      ],
+      "file": "recipes/protocols/comet_assay.json"
+    },
+    {
+      "id": "proximity_ligation_assay",
+      "name": "Proximity Ligation Assay (PLA)",
+      "category": "protocol",
+      "tags": [
+        "PLA",
+        "protein interaction",
+        "in situ"
+      ],
+      "file": "recipes/protocols/proximity_ligation_assay.json"
+    },
+    {
+      "id": "chromatin_accessibility_atac",
+      "name": "ATAC-seq Library Preparation",
+      "category": "protocol",
+      "tags": [
+        "ATAC-seq",
+        "chromatin",
+        "accessibility",
+        "epigenetics"
+      ],
+      "file": "recipes/protocols/chromatin_accessibility_atac.json"
+    },
+    {
+      "id": "tb_media",
+      "name": "Terrific Broth (TB)",
+      "category": "media",
+      "tags": [
+        "media",
+        "bacteria",
+        "protein expression"
+      ],
+      "file": "recipes/media/tb_media.json"
+    },
+    {
+      "id": "esc_culture_media",
+      "name": "Mouse ESC Medium",
+      "category": "media",
+      "tags": [
+        "ESC",
+        "stem cell",
+        "LIF",
+        "pluripotent"
+      ],
+      "file": "recipes/media/esc_culture_media.json"
+    }
+  ]
+}

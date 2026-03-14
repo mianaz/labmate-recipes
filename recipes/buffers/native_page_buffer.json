@@ -1,0 +1,32 @@
+{
+  "id": "native_page_buffer",
+  "name": "Native PAGE Running Buffer",
+  "category": "buffer",
+  "tags": [
+    "Native-PAGE",
+    "native gel",
+    "protein interaction"
+  ],
+  "components": [
+    {
+      "name": "Tris base",
+      "amount": 3.03,
+      "unit": "g",
+      "mw": 121.14,
+      "note": "25 mM"
+    },
+    {
+      "name": "Glycine",
+      "amount": 14.4,
+      "unit": "g",
+      "mw": 75.03,
+      "note": "192 mM"
+    }
+  ],
+  "nameCn": "非变性 PAGE 电泳缓冲液",
+  "notes": {
+    "en": "Same as SDS-PAGE but without SDS. pH ~8.3 forms naturally. Do not boil samples or add reducing agents. Run at 4°C.",
+    "zh": "与 SDS-PAGE 相同但不加 SDS。pH ~8.3 自然形成。样品不煮沸不加还原剂。4°C 电泳。"
+  },
+  "ref": "Wittig et al. (2006) Nat Protoc 1:418–428"
+}

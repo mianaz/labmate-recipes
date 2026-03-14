@@ -1,0 +1,53 @@
+{
+  "id": "laemmli_2x",
+  "name": "2× Laemmli Sample Buffer",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "SDS-PAGE"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 6.8",
+      "amount": 1.25,
+      "unit": "mL",
+      "note": "终浓度 125 mM"
+    },
+    {
+      "name": "SDS",
+      "amount": 0.4,
+      "unit": "g",
+      "mw": 288.38,
+      "note": "终浓度 4%"
+    },
+    {
+      "name": "Glycerol",
+      "amount": 2,
+      "unit": "mL",
+      "note": "终浓度 20%"
+    },
+    {
+      "name": "β-mercaptoethanol",
+      "amount": 1,
+      "unit": "mL",
+      "note": "终浓度 10%"
+    },
+    {
+      "name": "0.5% Bromophenol blue",
+      "amount": 0.4,
+      "unit": "mL",
+      "note": "终浓度 0.02%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 5.35,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "2× 上样缓冲液",
+  "notes": {
+    "en": "Aliquot and store at −20°C. β-mercaptoethanol can be replaced with DTT (200 mM). Heat at 95–100°C for 5 min before loading.",
+    "zh": "分装后 -20°C 保存。β-mercaptoethanol 可用 DTT (200 mM) 替代。使用前 95–100°C 加热 5 min。"
+  },
+  "ref": "Laemmli (1970) Nature 227:680–685"
+}

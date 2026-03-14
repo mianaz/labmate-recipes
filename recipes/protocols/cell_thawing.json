@@ -1,0 +1,54 @@
+{
+  "id": "cell_thawing",
+  "name": "Cell Thawing (Recovery)",
+  "category": "protocol",
+  "tags": [
+    "cell culture",
+    "thawing",
+    "recovery",
+    "banking"
+  ],
+  "components": [
+    {
+      "name": "1. 预热培养基至 37°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 从液氮取出冻存管",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 37°C 水浴快速解冻 (~1–2 min)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 转移至 9 mL 预热培养基",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 37°C, 5% CO₂ 培养",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 6–8h 后换液去除 DMSO",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 恢复 1–2 代后开始实验",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "细胞复苏",
+  "notes": {
+    "en": "Quick-thaw protocol to recover frozen cells. Thaw rapidly in 37°C water bath, dilute DMSO immediately. Key is speed — DMSO is cytotoxic at 37°C. Allow 1–2 passages recovery before experiments.",
+    "zh": "关键是速度——DMSO 在 37°C 对细胞有毒。解冻至剩小冰晶即可。不要离心（脆弱细胞）。确认活力 >90%。"
+  },
+  "ref": "Freshney (2015) Culture of Animal Cells; ATCC Cell Thawing Protocol"
+}

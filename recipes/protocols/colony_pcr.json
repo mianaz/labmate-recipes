@@ -1,0 +1,57 @@
+{
+  "id": "colony_pcr",
+  "name": "Colony PCR Protocol",
+  "category": "protocol",
+  "tags": [
+    "PCR",
+    "cloning",
+    "screening",
+    "molecular cloning"
+  ],
+  "components": [
+    {
+      "name": "1. 挑取单克隆至 PCR 管 (牙签/枪头)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2× Taq Master Mix",
+      "amount": 12.5,
+      "unit": "µL",
+      "note": "含 Taq, dNTPs, buffer"
+    },
+    {
+      "name": "Forward primer (10 µM)",
+      "amount": 1,
+      "unit": "µL",
+      "note": "400 nM final"
+    },
+    {
+      "name": "Reverse primer (10 µM)",
+      "amount": 1,
+      "unit": "µL",
+      "note": "400 nM final"
+    },
+    {
+      "name": "Nuclease-free H₂O",
+      "amount": 10.5,
+      "unit": "µL"
+    },
+    {
+      "name": "3. 程序: 95°C 5min → (95°C 30s → 55°C 30s → 72°C 1min/kb) ×30 → 72°C 5min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 琼脂糖凝胶电泳检测 (1–1.5%)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "菌落 PCR 流程",
+  "notes": {
+    "en": "Initial 5 min denaturation at 95°C lyses bacteria to release template DNA. Use M13 universal primers (for pUC vectors) or gene-specific primers. Positive clones should be sequence-verified. Streak colonies onto a master plate in parallel.",
+    "zh": "初始变性 5 min 用于裂解菌体释放模板。引物可用 M13 通用引物 (pUC 系列) 或基因特异引物。阳性克隆应送测序验证。同时划线保存菌落至新 LB 平板。"
+  },
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.; Bergkessel & Guthrie (2013) Methods Enzymol 529:141–149"
+}

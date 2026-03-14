@@ -1,0 +1,37 @@
+{
+  "id": "acetate_buffer",
+  "name": "Sodium Acetate Buffer (0.1 M)",
+  "category": "buffer",
+  "tags": [
+    "buffer",
+    "pH adjustment",
+    "enzyme assay"
+  ],
+  "components": [
+    {
+      "name": "Sodium acetate trihydrate",
+      "amount": 13.61,
+      "unit": "g",
+      "mw": 136.08,
+      "note": "0.1 M"
+    },
+    {
+      "name": "Glacial acetic acid",
+      "amount": 1,
+      "unit": "variable",
+      "note": "调至目标 pH"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 1000,
+      "unit": "mL",
+      "note": "定容"
+    }
+  ],
+  "nameCn": "醋酸钠缓冲液 (0.1 M)",
+  "notes": {
+    "en": "Dissolve sodium acetate, adjust to target pH with glacial acetic acid. Effective buffering range pH 3.6–5.6. Commonly used for enzyme assays and protein purification. Autoclave and store at RT.",
+    "zh": "先溶醋酸钠，用冰醋酸调至目标 pH。有效缓冲范围 pH 3.6–5.6。常用于酶学实验和蛋白纯化。高压灭菌后保存。"
+  },
+  "ref": "Sambrook & Russell (2001) Molecular Cloning"
+}

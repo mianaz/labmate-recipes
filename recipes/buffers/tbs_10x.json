@@ -1,0 +1,25 @@
+{
+  "id": "tbs_10x",
+  "name": "10× TBS",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "common"
+  ],
+  "components": [
+    {
+      "name": "Tris base",
+      "amount": 24.2,
+      "unit": "g",
+      "mw": 121.14
+    },
+    {
+      "name": "NaCl",
+      "amount": 80,
+      "unit": "g",
+      "mw": 58.44
+    }
+  ],
+  "nameCn": "10× Tris 缓冲盐水",
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press"
+}

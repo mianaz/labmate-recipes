@@ -1,0 +1,48 @@
+{
+  "id": "tail_lysis_buffer",
+  "name": "Tail Lysis Buffer (Mouse Genotyping)",
+  "nameCn": "鼠尾裂解液",
+  "category": "buffer",
+  "tags": [
+    "genotyping",
+    "mouse",
+    "PCR"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 8.0",
+      "amount": 10,
+      "unit": "mL",
+      "note": "100 mM final"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 1,
+      "unit": "mL",
+      "note": "5 mM final"
+    },
+    {
+      "name": "10% SDS",
+      "amount": 2,
+      "unit": "mL",
+      "note": "0.2% final"
+    },
+    {
+      "name": "5M NaCl",
+      "amount": 4,
+      "unit": "mL",
+      "note": "200 mM final"
+    },
+    {
+      "name": "ddH₂O to 100 mL",
+      "amount": null,
+      "unit": "mL"
+    }
+  ],
+  "notes": {
+    "en": "Add Proteinase K fresh to 100 µg/mL. Digest 55°C overnight. Inactivate 95°C 10 min. Use 1 µL in PCR.",
+    "zh": "临用加 Proteinase K 至 100 µg/mL。55°C 过夜消化。95°C 灭活 10 min。1 µL 直接用于 PCR。"
+  },
+  "ref": "Truett et al. (2000) BioTechniques 29:52",
+  "source": "BioTechniques"
+}

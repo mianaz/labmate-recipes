@@ -1,0 +1,36 @@
+{
+  "id": "te",
+  "name": "TE Buffer",
+  "category": "buffer",
+  "tags": [
+    "DNA",
+    "RNA",
+    "storage",
+    "Tris-EDTA"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 8.0",
+      "amount": 1,
+      "unit": "mL",
+      "note": "10 mM"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 0.2,
+      "unit": "mL",
+      "note": "1 mM"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 98.8,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "TE 缓冲液",
+  "notes": {
+    "en": "Used for dissolving and storing DNA. Autoclave before storage. Low TE (0.1 mM EDTA) is suitable for PCR templates.",
+    "zh": "10 mM Tris-HCl, 1 mM EDTA, pH 8.0。DNA 保存标准缓冲液。EDTA 螯合二价阳离子抑制核酸酶。高压灭菌，室温保存。低 TE (0.1 mM EDTA) 适合 PCR 模板。"
+  },
+  "ref": "CSH Protocols; Sambrook & Russell (2001) Molecular Cloning, 3rd ed."
+}

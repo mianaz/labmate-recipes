@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LabMate Recipe",
+  "type": "object",
+  "required": ["id", "name", "category", "components"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "name": { "type": "string" },
+    "nameCn": { "type": "string" },
+    "category": { "type": "string", "enum": ["buffer", "protocol", "staining", "media"] },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "volume": { "type": "number" },
+    "volumeUnit": { "type": "string" },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "amount": { "type": ["number", "null"] },
+          "unit": { "type": "string" },
+          "mw": { "type": "number" },
+          "note": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "object", "properties": { "en": { "type": "string" }, "zh": { "type": "string" } } }
+            ]
+          },
+          "linkedRecipe": { "type": "string" }
+        }
+      }
+    },
+    "notes": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "properties": { "en": { "type": "string" }, "zh": { "type": "string" } } }
+      ]
+    },
+    "ref": { "type": "string" },
+    "doi": { "type": "string" },
+    "crosslinks": { "type": "array", "items": { "type": "string" } },
+    "source": { "type": "string" }
+  }
+}

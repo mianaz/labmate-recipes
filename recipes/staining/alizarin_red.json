@@ -1,0 +1,30 @@
+{
+  "id": "alizarin_red",
+  "name": "Alizarin Red S (Osteogenic)",
+  "nameCn": "茜素红 S 钙化染色",
+  "category": "staining",
+  "tags": [
+    "staining",
+    "calcium",
+    "osteogenic"
+  ],
+  "components": [
+    {
+      "name": "Alizarin Red S",
+      "amount": 2,
+      "unit": "g",
+      "mw": 342.26
+    },
+    {
+      "name": "ddH₂O to 100 mL, pH 4.1-4.3",
+      "amount": null,
+      "unit": "mL"
+    }
+  ],
+  "notes": {
+    "en": "Detects calcium deposits. Fix cells 4% PFA, stain 20 min RT. Quantify with cetylpyridinium chloride, OD562.",
+    "zh": "检测钙沉积。4% PFA 固定，室温染色 20 min。十六烷基氯化吡啶提取，OD562 定量。"
+  },
+  "ref": "Gregory et al. (2004) Anal Biochem 329:77",
+  "source": "Analytical Biochemistry"
+}

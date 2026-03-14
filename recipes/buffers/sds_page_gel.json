@@ -1,0 +1,54 @@
+{
+  "id": "sds_page_gel",
+  "name": "SDS-PAGE Gel (10% Resolving + 4% Stacking)",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "SDS-PAGE",
+    "gel"
+  ],
+  "components": [
+    {
+      "name": "30% Acrylamide/Bis (29:1)",
+      "amount": 3.33,
+      "unit": "mL",
+      "note": "10%"
+    },
+    {
+      "name": "1.5 M Tris-HCl pH 8.8",
+      "amount": 2.5,
+      "unit": "mL",
+      "note": "Resolving buffer"
+    },
+    {
+      "name": "10% SDS",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "0.1%"
+    },
+    {
+      "name": "10% APS",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "Add last"
+    },
+    {
+      "name": "TEMED",
+      "amount": 4.0,
+      "unit": "µL",
+      "note": "Add last"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 3.97,
+      "unit": "mL",
+      "note": "To volume"
+    }
+  ],
+  "nameCn": "SDS-PAGE 凝胶（10% 分离胶 + 4% 浓缩胶）",
+  "notes": {
+    "en": "Use 30% Acrylamide/Bis (29:1) stock. Add APS and TEMED last — gel polymerizes quickly once added. Overlay with isopropanol or water-saturated butanol while resolving gel sets. Pour stacking gel after resolving is solid. Acrylamide is a neurotoxin — wear gloves.",
+    "zh": "此为 10% 分离胶配方（10 mL / 2 块胶）。可在 Calculator → SDS-PAGE 中调整浓度和体积。浓缩胶另配。"
+  },
+  "ref": "Laemmli (1970) Nature 227:680–685; Bio-Rad Mini-PROTEAN Manual"
+}

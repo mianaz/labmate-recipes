@@ -1,0 +1,81 @@
+{
+  "id": "wb_protocol",
+  "name": "Western Blot Full Protocol",
+  "category": "protocol",
+  "tags": [
+    "WB",
+    "full protocol",
+    "protein detection"
+  ],
+  "components": [
+    {
+      "name": "1. 样品制备: RIPA 裂解",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. BCA/Bradford 定量",
+      "amount": 1,
+      "unit": "step",
+      "note": "每泳道 20–50 µg"
+    },
+    {
+      "name": "3. 加 Loading Buffer, 煮沸 5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. SDS-PAGE 电泳",
+      "amount": 1,
+      "unit": "step",
+      "note": "80V 浓缩 → 120V 分离"
+    },
+    {
+      "name": "5. 转膜 (湿转)",
+      "amount": 1,
+      "unit": "step",
+      "note": "100V 60–90 min 或 30V 过夜"
+    },
+    {
+      "name": "6. Ponceau S 验证转膜",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 封闭 (5% milk/BSA, 1 h RT)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 一抗孵育 (4°C 过夜)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. TBST 洗 3×10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. 二抗 (HRP, 1 h RT)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "11. TBST 洗 3×10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "12. ECL 显色/曝光",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "Western Blot 完整流程",
+  "notes": {
+    "en": "Primary antibody: 1:500–1:2000; HRP secondary: 1:5000–1:10000. Use BSA blocking for phospho-proteins. Semi-dry transfer suitable for proteins <100 kDa.",
+    "zh": "一抗稀释比通常 1:500–1:2000；HRP 二抗 1:5000–1:10000。磷酸化蛋白用 BSA 封闭。半干转适合 <100 kDa 蛋白。PVDF 需甲醇活化。"
+  },
+  "ref": "Mahmood & Yang (2012) N Am J Med Sci 4:429–434; Bass et al. (2017) STAR Protoc Preview; Towbin et al. (1979) PNAS 76:4350"
+}

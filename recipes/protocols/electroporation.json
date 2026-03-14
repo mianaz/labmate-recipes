@@ -1,0 +1,59 @@
+{
+  "id": "electroporation",
+  "name": "Bacterial Electroporation",
+  "category": "protocol",
+  "tags": [
+    "transformation",
+    "electroporation",
+    "E. coli",
+    "cloning"
+  ],
+  "components": [
+    {
+      "name": "1. 冰上解冻电转感受态细胞 (10 min)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 加 1–5 µL 脱盐 DNA",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 转移至预冷电转杯",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 电击: 1.8 kV, 25 µF, 200 Ω",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 立即加 1 mL SOC",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 37°C 振荡 1h 恢复",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 涂板 (含抗生素 LB 平板)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 37°C 过夜培养",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "细菌电转化",
+  "notes": {
+    "en": "High-efficiency transformation (10⁹–10¹⁰ CFU/µg). 10–100× more efficient than chemical transformation. DNA must be desalted (salt causes arcing). Essential for large plasmids (>10 kb) and library construction. Pulse: 1.8 kV, 25 µF, 200 Ω.",
+    "zh": "高效转化 (10⁹–10¹⁰ CFU/µg)。DNA 必须脱盐，否则放电弧光。时间常数应为 4–5 ms。适用于大质粒 (>10 kb) 和文库构建。"
+  },
+  "ref": "Dower et al. (1988) Nucleic Acids Res 16:6127–6145; Sambrook & Russell (2001)"
+}

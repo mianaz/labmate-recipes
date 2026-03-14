@@ -1,0 +1,65 @@
+{
+  "id": "coip_protocol",
+  "name": "Co-IP Protocol",
+  "category": "protocol",
+  "tags": [
+    "Co-IP",
+    "IP",
+    "protein interaction",
+    "PPI"
+  ],
+  "components": [
+    {
+      "name": "1. 裂解 (IP Lysis Buffer, 冰上 30 min)",
+      "amount": 1,
+      "unit": "step",
+      "note": "0.5–1% NP-40"
+    },
+    {
+      "name": "2. 4°C 14,000×g 15 min, 取上清",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. BCA 定量, 留 Input (5–10%)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Pre-clear: Protein A/G beads 1 h 4°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 加目标抗体 (1–5 µg) 4°C 过夜",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 加 Protein A/G beads 2–4 h 4°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 洗 4–6× (IP Lysis Buffer)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 加 2× Loading Buffer 煮沸洗脱",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. WB 检测 bait + prey 蛋白",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "共免疫沉淀流程",
+  "notes": {
+    "en": "Negative control: matched isotype IgG. Do not use RIPA (SDS disrupts protein interactions). Adjust NP-40 concentration to interaction strength (0.1–1%). Recommend ≥500 µg total protein.",
+    "zh": "阴性对照: 同种属 IgG。勿用 RIPA (SDS 会破坏互作)。裂解液中 NP-40 浓度根据互作强度调整 (0.1–1%)。建议每样 500 µg–2 mg 蛋白。"
+  },
+  "ref": "Miernyk & Thelen (2008) Plant J 55:415–425; Kaboord & Bhatt (2008) Methods Mol Biol 424:349–364"
+}

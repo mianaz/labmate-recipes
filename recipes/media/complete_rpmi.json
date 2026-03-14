@@ -1,0 +1,48 @@
+{
+  "id": "complete_rpmi",
+  "name": "Complete RPMI-1640 (10% FBS)",
+  "category": "media",
+  "tags": [
+    "cell culture",
+    "RPMI",
+    "suspension cells",
+    "lymphocytes"
+  ],
+  "components": [
+    {
+      "name": "RPMI-1640 (with L-glutamine)",
+      "amount": 440,
+      "unit": "mL"
+    },
+    {
+      "name": "FBS (heat-inactivated)",
+      "amount": 50,
+      "unit": "mL",
+      "note": "10%"
+    },
+    {
+      "name": "Penicillin-Streptomycin (100×)",
+      "amount": 5,
+      "unit": "mL",
+      "note": "1×"
+    },
+    {
+      "name": "β-Mercaptoethanol (55 mM)",
+      "amount": 500,
+      "unit": "µL",
+      "note": "55 µM (for lymphocytes)"
+    },
+    {
+      "name": "HEPES (1M)",
+      "amount": 5,
+      "unit": "mL",
+      "note": "10 mM (optional)"
+    }
+  ],
+  "nameCn": "完全培养基 RPMI-1640 (10% FBS)",
+  "notes": {
+    "en": "Suitable for suspension cells, lymphocytes, hybridomas. β-ME is important for lymphocyte culture (antioxidant). HEPES maintains pH stability during bench work outside CO₂ incubator.",
+    "zh": "适用于悬浮细胞、淋巴细胞、杂交瘤。β-ME 对淋巴细胞培养很重要（抗氧化）。HEPES 维持 pH 稳定（CO₂ 培养箱外操作时）。"
+  },
+  "ref": "Moore et al. (1967) JAMA 199:519; Freshney (2015) Culture of Animal Cells"
+}

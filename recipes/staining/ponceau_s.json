@@ -1,0 +1,34 @@
+{
+  "id": "ponceau_s",
+  "name": "Ponceau S Staining Solution",
+  "category": "staining",
+  "tags": [
+    "WB",
+    "transfer verification"
+  ],
+  "components": [
+    {
+      "name": "Ponceau S",
+      "amount": 0.1,
+      "unit": "g",
+      "note": "0.1% (w/v)"
+    },
+    {
+      "name": "Acetic acid",
+      "amount": 5,
+      "unit": "mL",
+      "note": "5% (v/v)"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 95,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "Ponceau S 染色液",
+  "notes": {
+    "en": "Soak PVDF/NC membrane for 1–5 min after transfer. Rinse with TBS or water to destain. Solution is reusable.",
+    "zh": "转膜后浸泡 PVDF/NC 膜 1–5 min，TBS 或水洗即可脱色。可重复使用。"
+  },
+  "ref": "Romero-Calvo et al. (2010) Anal Biochem 401:318–320"
+}

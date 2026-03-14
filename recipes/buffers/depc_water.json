@@ -1,0 +1,29 @@
+{
+  "id": "depc_water",
+  "name": "DEPC-Treated Water",
+  "category": "buffer",
+  "tags": [
+    "RNA",
+    "RNase-free",
+    "DEPC"
+  ],
+  "components": [
+    {
+      "name": "DEPC (diethyl pyrocarbonate)",
+      "amount": 1,
+      "unit": "mL",
+      "note": "0.1% (v/v)"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 1000,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "DEPC 处理水",
+  "notes": {
+    "en": "Use for RNA work only. Do NOT add DEPC to Tris buffers (reacts with amine groups). Modern alternative: commercial nuclease-free water.",
+    "zh": "用于 RNA 实验。不要加 DEPC 到 Tris 缓冲液（与氨基反应）。替代品：商品化无核酸酶水。"
+  },
+  "ref": "CSH Protocols doi:10.1101/pdb.rec8135; Sambrook & Russell (2001) Molecular Cloning"
+}

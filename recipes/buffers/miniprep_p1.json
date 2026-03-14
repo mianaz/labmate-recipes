@@ -1,0 +1,44 @@
+{
+  "id": "miniprep_p1",
+  "name": "Miniprep Buffer P1 (Resuspension)",
+  "category": "buffer",
+  "tags": [
+    "miniprep",
+    "plasmid",
+    "DNA extraction"
+  ],
+  "components": [
+    {
+      "name": "Tris-HCl (pH 8.0)",
+      "amount": 3.03,
+      "unit": "g",
+      "mw": 121.14,
+      "note": "50 mM"
+    },
+    {
+      "name": "EDTA",
+      "amount": 1.86,
+      "unit": "g",
+      "mw": 292.24,
+      "note": "10 mM"
+    },
+    {
+      "name": "RNase A",
+      "amount": 50,
+      "unit": "mg",
+      "note": "100 µg/mL (灭菌后加)"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 500,
+      "unit": "mL",
+      "note": "定容"
+    }
+  ],
+  "nameCn": "质粒提取缓冲液 P1 (重悬液)",
+  "notes": {
+    "en": "Prepare Tris-EDTA, autoclave, cool to RT, then add RNase A. RNase A is heat-sensitive — do not autoclave. Store at 4°C.",
+    "zh": "先配 Tris-EDTA，高压灭菌后冷却，再加 RNase A。RNase A 热敏，不可高压灭菌。4°C 保存。"
+  },
+  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513; Sambrook & Russell (2001)"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "cell_freezing",
+  "name": "Cell Freezing (Cryopreservation)",
+  "category": "protocol",
+  "tags": [
+    "cell culture",
+    "cryopreservation",
+    "freezing",
+    "banking"
+  ],
+  "components": [
+    {
+      "name": "1. 选择 70–90% 汇合度、活力 >90% 的细胞",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. PBS 洗涤",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 胰酶消化",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 完全培养基中和，离心",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 计数",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 冻存液重悬 (1–5×10⁶/mL)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 分装至冻存管 (1 mL/管)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Mr. Frosty -80°C 过夜",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. 24–48h 内转液氮",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "细胞冻存",
+  "notes": {
+    "en": "Standard cryopreservation protocol. Controlled-rate freezing (-1°C/min) in 10% DMSO/90% FBS. Use Mr. Frosty or CoolCell. Transfer to liquid nitrogen within 24–48h. Essential for cell banking.",
+    "zh": "细胞应处于对数生长期。10% DMSO/90% FBS 冻存液。-1°C/min 程序降温防止冰晶损伤。标记细胞系、代次、日期。"
+  },
+  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed.; ATCC Cell Culture Guide"
+}

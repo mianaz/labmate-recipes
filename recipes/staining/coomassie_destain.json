@@ -1,0 +1,34 @@
+{
+  "id": "coomassie_destain",
+  "name": "Coomassie Destaining Solution",
+  "category": "staining",
+  "tags": [
+    "SDS-PAGE",
+    "staining"
+  ],
+  "components": [
+    {
+      "name": "Methanol",
+      "amount": 300,
+      "unit": "mL",
+      "note": "30%"
+    },
+    {
+      "name": "Glacial acetic acid",
+      "amount": 100,
+      "unit": "mL",
+      "note": "10%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 600,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "考马斯亮蓝脱色液",
+  "notes": {
+    "en": "Change destain solution multiple times; adding Kimwipes absorbs released dye and speeds destaining.",
+    "zh": "多次换液，加 Kimwipe 吸附可加速脱色。"
+  },
+  "ref": "Gallagher (2012) Curr Protoc Mol Biol, Ch.10"
+}

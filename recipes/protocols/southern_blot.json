@@ -1,0 +1,59 @@
+{
+  "id": "southern_blot",
+  "name": "Southern Blot",
+  "nameCn": "Southern blot",
+  "category": "protocol",
+  "tags": [
+    "Southern",
+    "DNA",
+    "hybridization",
+    "genomic"
+  ],
+  "components": [
+    {
+      "name": "1. Digest 10 µg gDNA with restriction enzyme O/N",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Separate on 0.8% agarose",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Denature/neutralize gel",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Capillary transfer to nylon membrane O/N",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. UV crosslink",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Hybridize with labeled probe O/N 65°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Wash, expose to film/phosphorimager",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Classic DNA detection. Named after Edwin Southern. Church buffer for hybridization. Use DIG-labeled probes for non-radioactive.",
+    "zh": "经典 DNA 检测方法。以 Edwin Southern 命名。Church 缓冲液杂交。非放射性可用 DIG 标记探针。"
+  },
+  "ref": "Southern (1975) J Mol Biol 98:503",
+  "crosslinks": [
+    "ssc_20x",
+    "agarose_gel_electrophoresis"
+  ],
+  "source": "CSHL"
+}

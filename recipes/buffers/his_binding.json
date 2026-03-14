@@ -1,0 +1,39 @@
+{
+  "id": "his_binding",
+  "name": "His-tag Binding/Wash Buffer",
+  "category": "buffer",
+  "tags": [
+    "protein purification",
+    "His-tag",
+    "Ni-NTA"
+  ],
+  "components": [
+    {
+      "name": "NaH₂PO₄",
+      "amount": 6.9,
+      "unit": "g",
+      "mw": 119.98,
+      "note": "50 mM"
+    },
+    {
+      "name": "NaCl",
+      "amount": 17.54,
+      "unit": "g",
+      "mw": 58.44,
+      "note": "300 mM"
+    },
+    {
+      "name": "Imidazole",
+      "amount": 1.36,
+      "unit": "g",
+      "mw": 68.08,
+      "note": "20 mM (结合); 洗涤用 50 mM"
+    }
+  ],
+  "nameCn": "His 标签结合/洗涤液",
+  "notes": {
+    "en": "Adjust pH to 8.0 with NaOH. Binding buffer: 10–20 mM imidazole; wash buffer: 20–50 mM; elution buffer: 250–500 mM.",
+    "zh": "NaOH 调 pH 至 8.0。结合液含 10–20 mM imidazole；洗涤液 20–50 mM；洗脱液 250–500 mM。"
+  },
+  "ref": "QIAGEN Ni-NTA Handbook; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1–9.9.23"
+}

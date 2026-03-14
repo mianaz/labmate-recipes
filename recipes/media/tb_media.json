@@ -1,0 +1,44 @@
+{
+  "id": "tb_media",
+  "name": "Terrific Broth (TB)",
+  "nameCn": "TB 培养基",
+  "category": "media",
+  "tags": [
+    "media",
+    "bacteria",
+    "protein expression"
+  ],
+  "components": [
+    {
+      "name": "Tryptone",
+      "amount": 12,
+      "unit": "g"
+    },
+    {
+      "name": "Yeast extract",
+      "amount": 24,
+      "unit": "g"
+    },
+    {
+      "name": "Glycerol",
+      "amount": 4,
+      "unit": "mL"
+    },
+    {
+      "name": "ddH₂O to 900 mL, autoclave",
+      "amount": null,
+      "unit": "mL"
+    },
+    {
+      "name": "Add 100 mL phosphate buffer (0.17M KH₂PO₄ + 0.72M K₂HPO₄)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "2-3× higher density than LB. Glycerol = carbon source; phosphate prevents pH drop. Ideal for recombinant protein. Autoclave phosphate separately!",
+    "zh": "密度比 LB 高 2-3 倍。甘油提供碳源；磷酸盐防止 pH 下降。适合重组蛋白表达。磷酸盐须单独灭菌！"
+  },
+  "ref": "Tartof & Hobbs (1987) Bethesda Res Lab Focus 9:12",
+  "source": "CSHL"
+}

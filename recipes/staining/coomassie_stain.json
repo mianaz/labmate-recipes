@@ -1,0 +1,39 @@
+{
+  "id": "coomassie_stain",
+  "name": "Coomassie Blue Staining Solution",
+  "category": "staining",
+  "tags": [
+    "SDS-PAGE",
+    "staining"
+  ],
+  "components": [
+    {
+      "name": "Coomassie Brilliant Blue R-250",
+      "amount": 1,
+      "unit": "g"
+    },
+    {
+      "name": "Methanol",
+      "amount": 450,
+      "unit": "mL",
+      "note": "45%"
+    },
+    {
+      "name": "Glacial acetic acid",
+      "amount": 100,
+      "unit": "mL",
+      "note": "10%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 450,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "考马斯亮蓝染色液",
+  "notes": {
+    "en": "Dissolve CBB in methanol first, then add acetic acid and water. Filter (0.45 µm) before use. Stain 1–4 h.",
+    "zh": "先将 CBB 溶于甲醇，再加醋酸和水。使用前过滤 (0.45 µm)。染色 1–4 h。"
+  },
+  "ref": "Gallagher (2012) Curr Protoc Mol Biol, Ch.10, Unit 10.6"
+}

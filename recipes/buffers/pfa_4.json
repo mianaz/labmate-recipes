@@ -1,0 +1,36 @@
+{
+  "id": "pfa_4",
+  "name": "4% Paraformaldehyde (PFA)",
+  "category": "buffer",
+  "tags": [
+    "IF",
+    "IHC",
+    "fixation",
+    "PFA"
+  ],
+  "components": [
+    {
+      "name": "Paraformaldehyde",
+      "amount": 20,
+      "unit": "g",
+      "note": "4% (w/v)"
+    },
+    {
+      "name": "1× PBS",
+      "amount": 500,
+      "unit": "mL"
+    },
+    {
+      "name": "1N NaOH",
+      "amount": 0,
+      "unit": "mL",
+      "note": "逐滴加至澄清 (~1 mL)"
+    }
+  ],
+  "nameCn": "4% 多聚甲醛固定液",
+  "notes": {
+    "en": "60°C water bath to dissolve (do not exceed 70°C); add NaOH to clarify; cool and adjust pH to 7.4. Filter (0.45 µm). Aliquot at −20°C.",
+    "zh": "60°C 水浴搅拌溶解 (勿超 70°C)，加 NaOH 至澄清，冷却后调 pH 至 7.4。过滤 (0.45 µm)。分装 -20°C 保存。⚠️ 通风橱操作！"
+  },
+  "ref": "CSH Protocols doi:10.1101/pdb.rec11863; Bhatt et al. (2012) Methods Mol Biol 869:29–40"
+}

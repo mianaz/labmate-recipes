@@ -1,0 +1,88 @@
+{
+  "id": "qpcr_protocol",
+  "name": "RT-qPCR Protocol",
+  "category": "protocol",
+  "tags": [
+    "qPCR",
+    "RT-PCR",
+    "gene expression",
+    "mRNA"
+  ],
+  "components": [
+    {
+      "name": "1. RNA 提取 (TRIzol / column)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. DNase I 处理 (可选)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. RNA 定量 (A260/280 ≈ 2.0)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 反转录 (500 ng–2 µg RNA)",
+      "amount": 1,
+      "unit": "step",
+      "note": "Oligo-dT + Random hexamer"
+    },
+    {
+      "name": "5. cDNA 稀释 (1:5–1:20)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. qPCR 体系 (20 µL)",
+      "amount": 1,
+      "unit": "step",
+      "note": "SYBR Green / TaqMan"
+    },
+    {
+      "name": "  - 2× SYBR Master Mix",
+      "amount": 10,
+      "unit": "µL"
+    },
+    {
+      "name": "  - Forward primer (10 µM)",
+      "amount": 0.4,
+      "unit": "µL",
+      "note": "200 nM final"
+    },
+    {
+      "name": "  - Reverse primer (10 µM)",
+      "amount": 0.4,
+      "unit": "µL",
+      "note": "200 nM final"
+    },
+    {
+      "name": "  - cDNA template",
+      "amount": 2,
+      "unit": "µL"
+    },
+    {
+      "name": "  - Nuclease-free H₂O",
+      "amount": 7.2,
+      "unit": "µL"
+    },
+    {
+      "name": "7. 程序: 95°C 10min → (95°C 15s → 60°C 60s) ×40",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 溶解曲线分析",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "实时荧光定量 PCR 流程",
+  "notes": {
+    "en": "Reference genes: GAPDH / ACTB / 18S rRNA. Analysis: 2^(−ΔΔCt) method. ≥3 technical replicates, ≥3 biological replicates. Primer efficiency should be 90–110%.",
+    "zh": "内参基因: GAPDH / ACTB / 18S rRNA。分析: 2^(-ΔΔCt) 法。技术重复 ≥3，生物学重复 ≥3。引物效率应在 90–110%。NTC (no template control) 必需。"
+  },
+  "ref": "Bustin et al. (2009) Clin Chem 55:611–622 (MIQE Guidelines); Livak & Schmittgen (2001) Methods 25:402–408"
+}

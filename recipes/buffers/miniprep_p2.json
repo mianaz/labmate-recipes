@@ -1,0 +1,38 @@
+{
+  "id": "miniprep_p2",
+  "name": "Miniprep Buffer P2 (Lysis)",
+  "category": "buffer",
+  "tags": [
+    "miniprep",
+    "plasmid",
+    "DNA extraction"
+  ],
+  "components": [
+    {
+      "name": "NaOH",
+      "amount": 4.0,
+      "unit": "g",
+      "mw": 40.0,
+      "note": "200 mM"
+    },
+    {
+      "name": "SDS",
+      "amount": 5.0,
+      "unit": "g",
+      "mw": 288.38,
+      "note": "1%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 500,
+      "unit": "mL",
+      "note": "定容"
+    }
+  ],
+  "nameCn": "质粒提取缓冲液 P2 (裂解液)",
+  "notes": {
+    "en": "Prepare fresh or store at RT. NaOH denatures genomic DNA and proteins; SDS solubilizes cell membranes. Mix gently by inversion (DO NOT vortex!) to avoid shearing genomic DNA.",
+    "zh": "现用现配或室温保存。NaOH 变性基因组 DNA 和蛋白，SDS 溶解细胞膜。使用时轻柔混匀（不可涡旋！），避免剪切基因组 DNA。"
+  },
+  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513"
+}

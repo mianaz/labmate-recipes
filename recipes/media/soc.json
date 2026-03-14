@@ -1,0 +1,50 @@
+{
+  "id": "soc",
+  "name": "SOC Medium",
+  "category": "media",
+  "tags": [
+    "microbiology",
+    "transformation"
+  ],
+  "components": [
+    {
+      "name": "Tryptone",
+      "amount": 20,
+      "unit": "g"
+    },
+    {
+      "name": "Yeast extract",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "name": "NaCl",
+      "amount": 0.5,
+      "unit": "g",
+      "mw": 58.44
+    },
+    {
+      "name": "1M KCl",
+      "amount": 2.5,
+      "unit": "mL"
+    },
+    {
+      "name": "1M MgCl₂",
+      "amount": 10,
+      "unit": "mL",
+      "note": "灭菌后加"
+    },
+    {
+      "name": "1M Glucose",
+      "amount": 20,
+      "unit": "mL",
+      "note": "灭菌后加 (过滤除菌)"
+    }
+  ],
+  "nameCn": "SOC 培养基",
+  "notes": {
+    "en": "Autoclave Tryptone/Yeast/NaCl/KCl together. After cooling to <60°C, add sterile MgCl₂ and filter-sterilized glucose. Aliquot at −20°C.",
+    "zh": "灭菌前加 Tryptone/Yeast/NaCl/KCl。灭菌后冷却至 <60°C 加 MgCl₂ 和 Glucose。分装 -20°C。"
+  },
+  "ref": "Hanahan (1983) J Mol Biol 166:557–580"
+}

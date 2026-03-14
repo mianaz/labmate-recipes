@@ -1,0 +1,39 @@
+{
+  "id": "soft_agar_assay",
+  "name": "Soft Agar Colony Formation",
+  "nameCn": "软琼脂克隆形成",
+  "category": "protocol",
+  "tags": [
+    "anchorage-independent",
+    "transformation",
+    "cancer"
+  ],
+  "components": [
+    {
+      "name": "1. Base layer: 0.5% agar in medium",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Top layer: 0.35% agar + cells (5-10k/well)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Culture 2-4 weeks",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Stain with crystal violet or MTT",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Gold standard for anchorage-independent growth. Noble agar at exactly 42°C. Colony >50 µm scored.",
+    "zh": "锚定非依赖性生长金标准。Noble 琼脂精确 42°C。克隆 >50 µm 计数。"
+  },
+  "ref": "Borowicz et al. (2014) J Vis Exp 92:e51998",
+  "source": "JoVE"
+}

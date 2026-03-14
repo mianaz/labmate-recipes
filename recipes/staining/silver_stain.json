@@ -1,0 +1,56 @@
+{
+  "id": "silver_stain",
+  "name": "Silver Stain (SDS-PAGE)",
+  "nameCn": "银染",
+  "category": "staining",
+  "tags": [
+    "staining",
+    "SDS-PAGE",
+    "protein",
+    "sensitive"
+  ],
+  "components": [
+    {
+      "name": "1. Fix: 50% MeOH/12% AcOH/0.05% formaldehyde",
+      "amount": 1,
+      "unit": "step",
+      "note": "≥1 h"
+    },
+    {
+      "name": "2. Wash: 50% EtOH 3×20 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Sensitize: 0.02% Na₂S₂O₃ exactly 1 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Rinse: ddH₂O 3×20 s",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Stain: 0.2% AgNO₃ + formaldehyde 20 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Develop: 6% Na₂CO₃ until bands visible",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Stop: 50% MeOH/12% AcOH 10 min",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "10-100× more sensitive than Coomassie. Detects 0.1 ng protein. Not compatible with mass spec (use MS-compatible version without formaldehyde).",
+    "zh": "灵敏度比考马斯蓝高 10-100 倍。可检测 0.1 ng 蛋白。与质谱不兼容（需用无甲醛的 MS 兼容版本）。"
+  },
+  "ref": "Shevchenko et al. (1996) Anal Chem 68:850-858",
+  "source": "Analytical Chemistry"
+}

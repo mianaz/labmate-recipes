@@ -1,0 +1,65 @@
+{
+  "id": "heat_shock_transformation",
+  "name": "Bacterial Transformation (Heat Shock)",
+  "category": "protocol",
+  "tags": [
+    "transformation",
+    "cloning",
+    "E. coli",
+    "heat shock"
+  ],
+  "components": [
+    {
+      "name": "1. Thaw competent cells on ice (5 min)",
+      "amount": 50,
+      "unit": "µL"
+    },
+    {
+      "name": "2. Add plasmid DNA",
+      "amount": 1,
+      "unit": "µL",
+      "note": "1–50 ng; ≤10% of cell volume"
+    },
+    {
+      "name": "3. Mix gently by flicking. Ice 30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Heat shock 42°C, exactly 45 s",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Ice 2 min (critical!)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Add SOC or LB medium",
+      "amount": 950,
+      "unit": "µL"
+    },
+    {
+      "name": "7. 37°C, 225 rpm, 1 h recovery",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Plate on selective LB agar + antibiotic",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. 37°C overnight (12–16 h)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "热激转化法",
+  "notes": {
+    "en": "Use 5 µL of ligation product (1/4 to 1/2 of the reaction). DNA volume should not exceed 10% of competent cell volume. Heat shock at 42°C for exactly 30–60 s. SOC medium gives 2–5× better recovery than LB. For Amp resistance: 1 h recovery is sufficient; for Kan resistance: 1.5 h recommended. If transformation efficiency is low, check: (1) competent cell quality, (2) DNA purity, (3) heat shock timing.",
+    "zh": "连接产物用 5 µL (= 整个连接体系的 1/4–1/2)。DNA 体积不超过感受态体积的 10%。42°C 热激时间严格控制在 30–60 s。SOC 比 LB 恢复效率高 2–5 倍。Amp 抗性: 1 h 恢复即可；Kan 抗性: 建议恢复 1.5 h。如转化效率低，检查: (1) 感受态效率 (2) DNA 纯度 (3) 热激时间。"
+  },
+  "ref": "Hanahan (1983) J Mol Biol 166:557–580; Sambrook & Russell (2001) Molecular Cloning, 3rd ed."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "macs_buffer",
+  "name": "MACS Separation Buffer",
+  "category": "buffer",
+  "tags": [
+    "MACS",
+    "magnetic beads",
+    "cell sorting"
+  ],
+  "components": [
+    {
+      "name": "BSA",
+      "amount": 2.5,
+      "unit": "g",
+      "note": "0.5% (w/v)"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 2,
+      "unit": "mL",
+      "note": "2 mM"
+    },
+    {
+      "name": "1× PBS",
+      "amount": 500,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "磁珠分选缓冲液",
+  "notes": {
+    "en": "Degas before use. Store at 4°C. 2% FBS can substitute BSA.",
+    "zh": "脱气后使用。4°C 保存。也可用 FBS 替代 BSA (2% FBS)。"
+  },
+  "ref": "Miltenyi Biotec MACS Handbook; Cossarizza et al. (2019) Eur J Immunol 49:1457"
+}

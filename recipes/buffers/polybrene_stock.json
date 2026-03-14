@@ -1,0 +1,29 @@
+{
+  "id": "polybrene_stock",
+  "name": "Polybrene Stock (10 mg/mL)",
+  "category": "buffer",
+  "tags": [
+    "viral transduction",
+    "lentivirus",
+    "retrovirus",
+    "polybrene"
+  ],
+  "components": [
+    {
+      "name": "Polybrene (hexadimethrine bromide)",
+      "amount": 100,
+      "unit": "mg"
+    },
+    {
+      "name": "ddH₂O (sterile)",
+      "amount": 10,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "Polybrene 母液 (10 mg/mL)",
+  "notes": {
+    "en": "Filter-sterilize through 0.22 µm after dissolving. Aliquot 100-500 µL and freeze. Working concentration typically 4-8 µg/mL. Polybrene enhances viral adsorption by neutralizing charge. Some cells (e.g. primary T cells) are sensitive — reduce concentration or use protamine sulfate instead.",
+    "zh": "溶解后 0.22 µm 过滤除菌。分装为 100-500 µL 小份冻存。使用浓度通常为 4-8 µg/mL。Polybrene 通过中和电荷增强病毒吸附。某些细胞（如原代 T 细胞）对 Polybrene 敏感，需降低浓度或改用 protamine sulfate。"
+  },
+  "ref": "Davis et al. (2004) Curr Protoc Mol Biol 9.9"
+}

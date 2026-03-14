@@ -1,0 +1,69 @@
+{
+  "id": "ecl_enhanced",
+  "name": "Enhanced ECL (Homemade)",
+  "nameCn": "增强型 ECL（自制）",
+  "category": "staining",
+  "tags": [
+    "WB",
+    "Western blot",
+    "detection",
+    "HRP",
+    "chemiluminescence"
+  ],
+  "components": [
+    {
+      "name": "Solution A: Luminol",
+      "amount": 50,
+      "unit": "mg",
+      "mw": 177.16
+    },
+    {
+      "name": "  DMSO (dissolve luminol)",
+      "amount": 1,
+      "unit": "mL"
+    },
+    {
+      "name": "  1M Tris-HCl pH 8.5",
+      "amount": 50,
+      "unit": "mL"
+    },
+    {
+      "name": "  ddH₂O to 500 mL",
+      "amount": null,
+      "unit": "mL"
+    },
+    {
+      "name": "Solution B: p-Coumaric acid",
+      "amount": 11,
+      "unit": "mg",
+      "mw": 164.16
+    },
+    {
+      "name": "  DMSO (dissolve)",
+      "amount": 1,
+      "unit": "mL"
+    },
+    {
+      "name": "  1M Tris-HCl pH 8.5",
+      "amount": 50,
+      "unit": "mL"
+    },
+    {
+      "name": "  ddH₂O to 500 mL",
+      "amount": null,
+      "unit": "mL"
+    },
+    {
+      "name": "Working: mix A+B 1:1, add 3 µL 30% H₂O₂ per 10 mL",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Mix A+B 1:1 just before use. Add H₂O₂ last. Solutions stable months at 4°C. Cost ~1/50 of commercial. p-Coumaric acid enhances signal 10-fold.",
+    "zh": "使用前 1:1 混合 A、B 液。最后加 H₂O₂。母液 4°C 可保存数月。成本约商品化试剂的 1/50。"
+  },
+  "ref": "Haan & Bhakri (2014) Anal Biochem 450:7-12",
+  "doi": "10.1016/j.ab.2013.12.033",
+  "source": "Analytical Biochemistry"
+}

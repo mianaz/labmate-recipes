@@ -1,0 +1,37 @@
+{
+  "id": "strip_buffer",
+  "name": "WB Stripping Buffer (Mild)",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "stripping"
+  ],
+  "components": [
+    {
+      "name": "Glycine",
+      "amount": 7.5,
+      "unit": "g",
+      "mw": 75.03,
+      "note": "200 mM"
+    },
+    {
+      "name": "SDS",
+      "amount": 0.5,
+      "unit": "g",
+      "mw": 288.38,
+      "note": "0.1%"
+    },
+    {
+      "name": "Tween-20",
+      "amount": 5,
+      "unit": "mL",
+      "note": "1%"
+    }
+  ],
+  "nameCn": "WB 温和剥膜液",
+  "notes": {
+    "en": "Adjust pH to 2.2 with HCl. Incubate at 37°C for 10–15 min × 2, then wash with TBST 3 × 10 min, then re-block.",
+    "zh": "用 HCl 调 pH 至 2.2。37°C 孵育 10–15 min × 2 次，然后 TBST 洗 3 次 × 10 min，重新封闭。"
+  },
+  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29–40"
+}

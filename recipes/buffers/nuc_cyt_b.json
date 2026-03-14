@@ -1,0 +1,52 @@
+{
+  "id": "nuc_cyt_b",
+  "name": "Nuclear/Cytoplasmic Fractionation Buffer B",
+  "category": "buffer",
+  "tags": [
+    "nuclear extraction",
+    "subcellular fractionation"
+  ],
+  "components": [
+    {
+      "name": "1M HEPES pH 7.9",
+      "amount": 1,
+      "unit": "mL",
+      "note": "终浓度 20 mM"
+    },
+    {
+      "name": "5M NaCl",
+      "amount": 4,
+      "unit": "mL",
+      "note": "终浓度 400 mM"
+    },
+    {
+      "name": "0.5M EDTA pH 8.0",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "终浓度 1 mM"
+    },
+    {
+      "name": "0.5M EGTA pH 8.0",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "终浓度 1 mM"
+    },
+    {
+      "name": "1M DTT",
+      "amount": 0.05,
+      "unit": "mL",
+      "note": "终浓度 1 mM (临用加)"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 44.75,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "核质分离裂解液 B (核)",
+  "notes": {
+    "en": "Resuspend nuclear pellet, rock on ice 15 min, centrifuge at 4°C 14,000×g for 5 min. Supernatant = nuclear extract. Add protease inhibitors.",
+    "zh": "重悬核沉淀，冰上振荡 15 min，4°C 14,000×g 5 min。上清 = 核蛋白。加蛋白酶抑制剂。"
+  },
+  "ref": "Suzuki et al. (2010) Nat Protoc 5:532–539"
+}

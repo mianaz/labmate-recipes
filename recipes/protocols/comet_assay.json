@@ -1,0 +1,49 @@
+{
+  "id": "comet_assay",
+  "name": "Comet Assay (Alkaline)",
+  "nameCn": "彗星实验（碱性）",
+  "category": "protocol",
+  "tags": [
+    "DNA damage",
+    "genotoxicity",
+    "comet"
+  ],
+  "components": [
+    {
+      "name": "1. Embed cells in 0.5% LMP agarose on slides",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Lyse: 2.5M NaCl, 100mM EDTA, 1% Triton, pH 10",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Unwind: 300mM NaOH, 1mM EDTA, 20-60 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Electrophoresis: 25V, 20-30 min, 4°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Neutralize, stain SYBR Gold",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Score 50-100 comets per slide",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Detects SSBs, DSBs, alkali-labile sites. All steps 4°C and dim light. Metrics: % tail DNA, tail moment. Positive control: H₂O₂ 100 µM 10 min.",
+    "zh": "检测 SSB、DSB、碱不稳定位点。全程 4°C 避光。指标：尾部 DNA 百分比、尾矩。阳性对照：H₂O₂ 100 µM 10 min。"
+  },
+  "ref": "Singh et al. (1988) Exp Cell Res 175:184",
+  "source": "Nature Protocols"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "2yt_media",
+  "name": "2×YT Medium",
+  "category": "media",
+  "tags": [
+    "culture medium",
+    "E. coli",
+    "phage display"
+  ],
+  "components": [
+    {
+      "name": "Tryptone",
+      "amount": 16,
+      "unit": "g"
+    },
+    {
+      "name": "Yeast Extract",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "name": "NaCl",
+      "amount": 5,
+      "unit": "g",
+      "mw": 58.44
+    }
+  ],
+  "nameCn": "2×YT 培养基",
+  "notes": {
+    "en": "Dissolve in ddH₂O, adjust pH to 7.0 with NaOH, bring to volume. Autoclave at 121°C for 20 min. Richer than LB (2× yeast extract and tryptone), ideal for phage display and high-density protein expression. Add antibiotics after cooling.",
+    "zh": "ddH₂O 定容至 1000 mL，调 pH 至 7.0 (NaOH)。121°C 高压灭菌 20 min。比 LB 营养更丰富，适用于噬菌体展示、高密度蛋白表达等。冷却后加抗生素。"
+  },
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press"
+}

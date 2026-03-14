@@ -1,0 +1,39 @@
+{
+  "id": "running_buffer",
+  "name": "1× Running Buffer (Tris-Glycine-SDS)",
+  "category": "buffer",
+  "tags": [
+    "WB",
+    "SDS-PAGE",
+    "electrophoresis"
+  ],
+  "components": [
+    {
+      "name": "Tris base",
+      "amount": 3.03,
+      "unit": "g",
+      "mw": 121.14,
+      "note": "25 mM"
+    },
+    {
+      "name": "Glycine",
+      "amount": 14.4,
+      "unit": "g",
+      "mw": 75.03,
+      "note": "192 mM"
+    },
+    {
+      "name": "SDS",
+      "amount": 1,
+      "unit": "g",
+      "mw": 288.38,
+      "note": "0.1%"
+    }
+  ],
+  "nameCn": "1× 电泳缓冲液",
+  "notes": {
+    "en": "pH should naturally reach ~8.3; no adjustment needed. Can also dilute from 10× stock.",
+    "zh": "pH 应自然达到 ~8.3，无需调 pH。也可由 10× 母液稀释。"
+  },
+  "ref": "Laemmli (1970) Nature 227:680–685; Gallagher (2012) Curr Protoc Mol Biol Ch.10"
+}

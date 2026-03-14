@@ -1,0 +1,35 @@
+{
+  "id": "crystal_violet_stain",
+  "name": "Crystal Violet Staining Solution",
+  "category": "staining",
+  "tags": [
+    "colony assay",
+    "colony formation",
+    "biofilm"
+  ],
+  "components": [
+    {
+      "name": "Crystal Violet",
+      "amount": 0.5,
+      "unit": "g",
+      "note": "0.5% (w/v)"
+    },
+    {
+      "name": "Methanol",
+      "amount": 20,
+      "unit": "mL",
+      "note": "20%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 80,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "结晶紫染色液",
+  "notes": {
+    "en": "Fix and stain adherent cells: wash with PBS, apply staining solution for 20 min at RT, rinse thoroughly with ddH₂O, air-dry. To quantify: dissolve stain in 10% acetic acid, read absorbance at OD₅₉₅. Used for colony formation assays and biofilm detection.",
+    "zh": "固定并染色贴壁细胞: PBS 洗 → 加染色液覆盖 → 室温 20 min → ddH₂O 反复冲洗 → 晾干。定量: 加 10% 冰醋酸溶解结晶紫，OD₅₉₅ 测吸光度。适用于克隆形成实验 (colony formation assay) 和生物膜检测。"
+  },
+  "ref": "Feoktistova et al. (2016) Cold Spring Harb Protoc 2016(4):pdb.prot087379"
+}

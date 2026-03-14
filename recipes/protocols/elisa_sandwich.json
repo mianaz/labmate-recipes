@@ -1,0 +1,54 @@
+{
+  "id": "elisa_sandwich",
+  "name": "Sandwich ELISA",
+  "nameCn": "夹心法 ELISA",
+  "category": "protocol",
+  "tags": [
+    "ELISA",
+    "immunoassay",
+    "cytokine"
+  ],
+  "components": [
+    {
+      "name": "1. Coat capture Ab, 4°C overnight",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Block 1% BSA 1 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Standards + samples 2 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Detection Ab (biotin) 1 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Streptavidin-HRP 30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. TMB substrate 15-30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Stop (2N H₂SO₄), read OD450",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "7-point standard curve + blank. High-binding plates. Wash 3-5× PBST between steps. R² > 0.99.",
+    "zh": "7 点标准曲线 + 空白。高结合力板。每步间用 PBST 洗 3-5 次。R² > 0.99。"
+  },
+  "ref": "Engvall & Perlmann (1971) Immunochemistry 8:871",
+  "source": "Nature Protocols"
+}

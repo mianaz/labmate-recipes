@@ -1,0 +1,48 @@
+{
+  "id": "kinase_buffer",
+  "name": "Kinase Assay Buffer",
+  "nameCn": "激酶反应缓冲液",
+  "category": "buffer",
+  "tags": [
+    "kinase",
+    "assay",
+    "phosphorylation"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 7.5",
+      "amount": 2.5,
+      "unit": "mL",
+      "note": "25 mM final"
+    },
+    {
+      "name": "1M MgCl₂",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "5 mM final"
+    },
+    {
+      "name": "100 mM MnCl₂",
+      "amount": 1,
+      "unit": "mL",
+      "note": "1 mM final"
+    },
+    {
+      "name": "1M DTT",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "1 mM final (add fresh)"
+    },
+    {
+      "name": "ddH₂O to 100 mL",
+      "amount": null,
+      "unit": "mL"
+    }
+  ],
+  "notes": {
+    "en": "Universal in vitro kinase assay buffer. Add DTT and phosphatase inhibitors fresh.",
+    "zh": "通用体外激酶检测缓冲液。DTT 和磷酸酶抑制剂需临用加入。"
+  },
+  "ref": "Cell Signaling Technology #9802",
+  "source": "CST"
+}

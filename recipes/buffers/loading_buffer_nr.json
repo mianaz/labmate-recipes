@@ -1,0 +1,48 @@
+{
+  "id": "loading_buffer_nr",
+  "name": "Protein Loading Buffer (Non-Reducing)",
+  "category": "buffer",
+  "tags": [
+    "SDS-PAGE",
+    "WB",
+    "non-reducing"
+  ],
+  "components": [
+    {
+      "name": "1M Tris-HCl pH 6.8",
+      "amount": 1.25,
+      "unit": "mL",
+      "note": "终浓度 125 mM"
+    },
+    {
+      "name": "SDS",
+      "amount": 0.4,
+      "unit": "g",
+      "mw": 288.38,
+      "note": "终浓度 4%"
+    },
+    {
+      "name": "Glycerol",
+      "amount": 2,
+      "unit": "mL",
+      "note": "20%"
+    },
+    {
+      "name": "Bromophenol Blue (0.5%)",
+      "amount": 0.4,
+      "unit": "mL",
+      "note": "0.02%"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 6,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "蛋白上样缓冲液 (非还原型)",
+  "notes": {
+    "en": "No β-mercaptoethanol or DTT. Use for non-reducing SDS-PAGE: preserves disulfide bonds, suitable for detecting multimers, intact IgG heavy/light chains, or ligand-receptor complexes. Mix 1:1 with sample and heat at 70°C for 10 min (do not boil to avoid aggregation).",
+    "zh": "不含 β-巯基乙醇或 DTT。用于非还原 SDS-PAGE：保留二硫键，适合检测多聚体、IgG 重/轻链不分离、或配体-受体复合物。与样品 1:1 混合后 70°C 加热 10 min (不要煮沸，避免聚集)。"
+  },
+  "ref": "Laemmli (1970) Nature 227:680–685"
+}

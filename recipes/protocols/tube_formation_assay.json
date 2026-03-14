@@ -1,0 +1,47 @@
+{
+  "id": "tube_formation_assay",
+  "name": "Tube Formation (Angiogenesis)",
+  "nameCn": "管形成实验",
+  "category": "protocol",
+  "tags": [
+    "angiogenesis",
+    "endothelial",
+    "Matrigel"
+  ],
+  "components": [
+    {
+      "name": "1. Coat 96-well: 50 µL Matrigel/well",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Seed HUVECs 1-2×10⁴/well",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Add treatments",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Image at 4-8 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Quantify: ImageJ Angiogenesis Analyzer",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Growth factor-reduced Matrigel. HUVECs passage 2-6. Positive: VEGF 50 ng/mL. Score tube length, branch points, meshes.",
+    "zh": "用低生长因子 Matrigel。HUVECs 第 2-6 代。阳性对照：VEGF 50 ng/mL。评估管长、分支点、网格。"
+  },
+  "ref": "Arnaoutova & Kleinman (2010) Nat Protoc 5:628",
+  "crosslinks": [
+    "matrigel_coating"
+  ],
+  "source": "Nature Protocols"
+}

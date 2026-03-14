@@ -1,0 +1,49 @@
+{
+  "id": "gibson_assembly",
+  "name": "Gibson Assembly",
+  "category": "protocol",
+  "tags": [
+    "cloning",
+    "Gibson assembly",
+    "seamless cloning",
+    "DNA assembly"
+  ],
+  "components": [
+    {
+      "name": "1. 设计引物 (15-25 bp 重叠区)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. PCR 扩增并纯化片段",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 冰上配制反应: Master Mix + DNA 片段",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 50°C 孵育 15-60 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 转化感受态细胞",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 涂板筛选",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "Gibson 组装",
+  "notes": {
+    "en": "Seamless, scarless DNA assembly. Joins 2-6 fragments with 15-25 bp overlaps in a single isothermal reaction. No restriction enzymes or ligase needed separately — T5 exonuclease, Phusion polymerase, and Taq ligase work together in one tube.",
+    "zh": "无缝无疤 DNA 组装。通过 15-25 bp 重叠区在单一等温反应中连接 2-6 个片段。无需单独使用限制酶或连接酶——T5 外切酶、Phusion 聚合酶和 Taq 连接酶在同一管中协同工作。"
+  },
+  "ref": "Gibson et al. (2009) Nat Methods 6:343–345; NEB Protocol E5510 (protocols.io doi:10.17504/protocols.io.bdddi226)"
+}

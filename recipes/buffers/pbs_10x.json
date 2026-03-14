@@ -1,0 +1,39 @@
+{
+  "id": "pbs_10x",
+  "name": "10× PBS",
+  "category": "buffer",
+  "tags": [
+    "common",
+    "cell biology",
+    "WB",
+    "IHC"
+  ],
+  "components": [
+    {
+      "name": "NaCl",
+      "amount": 80,
+      "unit": "g",
+      "mw": 58.44
+    },
+    {
+      "name": "KCl",
+      "amount": 2,
+      "unit": "g",
+      "mw": 74.55
+    },
+    {
+      "name": "Na₂HPO₄",
+      "amount": 14.4,
+      "unit": "g",
+      "mw": 141.96
+    },
+    {
+      "name": "KH₂PO₄",
+      "amount": 2.4,
+      "unit": "g",
+      "mw": 136.09
+    }
+  ],
+  "nameCn": "10× 磷酸盐缓冲液",
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press, Appendix 1"
+}

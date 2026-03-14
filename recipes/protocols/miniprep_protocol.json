@@ -1,0 +1,69 @@
+{
+  "id": "miniprep_protocol",
+  "name": "Plasmid Miniprep (Alkaline Lysis)",
+  "category": "protocol",
+  "tags": [
+    "DNA extraction",
+    "plasmid",
+    "miniprep",
+    "cloning"
+  ],
+  "components": [
+    {
+      "name": "1. 离心收菌 (6,000×g, 2 min)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 250 µL Buffer P1 重悬",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 250 µL Buffer P2 裂解 (颠倒混匀)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 350 µL Buffer P3 中和 (颠倒混匀)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 13,000×g 离心 10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 转移上清至新管",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 加 0.7 倍体积异丙醇沉淀",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 13,000×g 离心 15 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. 70% 乙醇洗涤",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. 风干 → 30–50 µL TE/H₂O 溶解",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "质粒小提 (碱裂解法)",
+  "notes": {
+    "en": "Dilute to 1× before use. Classic alkaline lysis method. Yields 5–20 µg from 3 mL overnight culture. A260/280 should be 1.8–2.0 for pure DNA.",
+    "zh": "经典碱裂解法。3 mL 过夜培养物可获 5–20 µg 质粒 DNA。A260/280 应为 1.8–2.0。如需更高纯度，使用商业柱提试剂盒。"
+  },
+  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513–1523; Sambrook & Russell (2001)"
+}

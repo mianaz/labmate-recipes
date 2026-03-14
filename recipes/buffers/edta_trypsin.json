@@ -1,0 +1,37 @@
+{
+  "id": "edta_trypsin",
+  "name": "0.25% Trypsin-EDTA Solution",
+  "category": "buffer",
+  "tags": [
+    "cell culture",
+    "passaging",
+    "dissociation"
+  ],
+  "components": [
+    {
+      "name": "Trypsin (1:250)",
+      "amount": 1.25,
+      "unit": "g",
+      "note": "0.25%"
+    },
+    {
+      "name": "EDTA·4Na",
+      "amount": 0.1,
+      "unit": "g",
+      "mw": 380.17,
+      "note": "0.53 mM"
+    },
+    {
+      "name": "1× PBS (Ca²⁺/Mg²⁺ free)",
+      "amount": null,
+      "unit": "mL",
+      "note": "定容至 500 mL"
+    }
+  ],
+  "nameCn": "0.25% 胰蛋白酶-EDTA 消化液",
+  "notes": {
+    "en": "Filter-sterilize (0.22 µm). Aliquot and store at −20°C; working aliquots at 4°C for up to 2 weeks. Pre-warm to 37°C before use. Optimize digestion time for each cell type (1–5 min). Neutralize with serum-containing medium. EDTA chelates Ca²⁺ to disrupt cell-cell junctions.",
+    "zh": "0.22 µm 过滤除菌。分装后 -20°C 保存，工作液 4°C (2 周内用完)。使用前预热至 37°C。消化时间需根据细胞类型优化 (1–5 min)。加含血清培养基终止消化。EDTA 螯合 Ca²⁺ 破坏细胞间连接辅助消化。"
+  },
+  "ref": "Freshney (2010) Culture of Animal Cells, 6th ed., Wiley"
+}

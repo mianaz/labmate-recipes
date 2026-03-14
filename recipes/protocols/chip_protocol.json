@@ -1,0 +1,80 @@
+{
+  "id": "chip_protocol",
+  "name": "ChIP Protocol (Chromatin IP)",
+  "category": "protocol",
+  "tags": [
+    "ChIP",
+    "epigenetics",
+    "histone modification",
+    "DNA-binding protein"
+  ],
+  "components": [
+    {
+      "name": "1. 交联: 1% 甲醛 10 min RT",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 终止: 125 mM Glycine 5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 冷 PBS 洗 2×, 收细胞",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. SDS Lysis Buffer 裂解",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 超声 (200–500 bp 片段)",
+      "amount": 1,
+      "unit": "step",
+      "note": "需优化条件"
+    },
+    {
+      "name": "6. 离心取上清，稀释 10×",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 留 Input (1–10%)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 加抗体 + Protein A/G beads 4°C 过夜",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. 依次洗: 低盐→高盐→LiCl→TE",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. 洗脱 (1% SDS + 0.1 M NaHCO₃)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "11. 解交联: 65°C 过夜 + Proteinase K",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "12. DNA 纯化 → qPCR / seq",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "染色质免疫沉淀流程",
+  "notes": {
+    "en": "Optimize sonication conditions for each cell line. Positive control: H3 antibody; negative: IgG. Recommend ≥1×10⁶ cells. Express results as % Input or Fold Enrichment.",
+    "zh": "超声条件需针对不同细胞系优化。阳性对照: H3 抗体；阴性对照: IgG。建议每次至少 1×10⁶ 细胞。结果用 % Input 或 Fold Enrichment 表示。"
+  },
+  "ref": "Nelson et al. (2006) Nat Protoc 1:179–185; Collas (2010) Mol Biotechnol 45:87–100; Haring et al. (2007) Plant Methods 3:11"
+}

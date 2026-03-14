@@ -1,0 +1,30 @@
+{
+  "id": "hepes_buffer",
+  "name": "HEPES Buffer (1 M stock)",
+  "category": "buffer",
+  "tags": [
+    "cell culture",
+    "buffering",
+    "pH"
+  ],
+  "components": [
+    {
+      "name": "HEPES",
+      "amount": 23.83,
+      "unit": "g",
+      "mw": 238.3
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "mL",
+      "note": "定容至 100 mL"
+    }
+  ],
+  "nameCn": "1M HEPES 缓冲液",
+  "notes": {
+    "en": "HEPES maintains pH stability outside the CO₂ incubator, ideal for extended bench work and live imaging.",
+    "zh": "HEPES 在 CO₂ 培养箱外能维持 pH 稳定，适合长时间台面操作和活细胞成像。"
+  },
+  "ref": "Good et al. (1966) Biochemistry 5:467–477; Sigma-Aldrich HEPES Buffer Protocol"
+}

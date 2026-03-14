@@ -1,0 +1,64 @@
+{
+  "id": "competent_cells_cacl2",
+  "name": "CaCl₂ Competent Cell Preparation",
+  "category": "protocol",
+  "tags": [
+    "transformation",
+    "competent cells",
+    "E. coli",
+    "molecular cloning"
+  ],
+  "components": [
+    {
+      "name": "1. 过夜培养 DH5α/BL21 → 1:100 接种至 50 mL LB",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 37°C 振荡至 OD₆₀₀ = 0.3–0.5",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 冰浴 15 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 4°C 离心 3000×g 10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 弃上清，冰冷 100 mM CaCl₂ 重悬",
+      "amount": 25,
+      "unit": "mL"
+    },
+    {
+      "name": "6. 冰浴 30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 4°C 离心 3000×g 10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 冰冷 100 mM CaCl₂ + 15% 甘油 重悬",
+      "amount": 2.5,
+      "unit": "mL"
+    },
+    {
+      "name": "9. 分装 100 µL/管，液氮速冻，-80°C 保存",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "nameCn": "CaCl₂ 化学感受态细胞制备",
+  "notes": {
+    "en": "Keep everything on ice throughout! Typical efficiency: 10⁶–10⁷ CFU/µg. Overnight incubation at 4°C can improve efficiency. For higher efficiency (>10⁸), use the Inoue method (MnCl₂/CaCl₂).",
+    "zh": "全程冰上操作！效率通常 10⁶–10⁷ CFU/µg。过夜 4°C 孵育可提高效率。如需更高效率 (>10⁸)，使用 Inoue 法 (MnCl₂/CaCl₂)。"
+  },
+  "ref": "Hanahan (1983) J Mol Biol 166:557–580; Sambrook & Russell (2001) Molecular Cloning"
+}

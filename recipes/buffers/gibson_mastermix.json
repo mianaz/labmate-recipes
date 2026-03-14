@@ -1,0 +1,43 @@
+{
+  "id": "gibson_mastermix",
+  "name": "Gibson Assembly Master Mix (1.33×)",
+  "category": "buffer",
+  "tags": [
+    "cloning",
+    "Gibson assembly",
+    "isothermal assembly"
+  ],
+  "components": [
+    {
+      "name": "ISO Buffer (5×)",
+      "amount": 320,
+      "unit": "µL"
+    },
+    {
+      "name": "T5 Exonuclease (10 U/µL)",
+      "amount": 0.64,
+      "unit": "µL"
+    },
+    {
+      "name": "Phusion polymerase (2 U/µL)",
+      "amount": 20,
+      "unit": "µL"
+    },
+    {
+      "name": "Taq DNA Ligase (40 U/µL)",
+      "amount": 160,
+      "unit": "µL"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": 699.36,
+      "unit": "µL"
+    }
+  ],
+  "nameCn": "Gibson 组装反应液 (1.33×)",
+  "notes": {
+    "en": "5× ISO Buffer: 25% PEG-8000, 500 mM Tris-HCl pH 7.5, 50 mM MgCl₂, 50 mM DTT, 1 mM each dNTP, 5 mM NAD. Aliquot 15 µL/tube after preparation. Each reaction: 15 µL mastermix + 5 µL DNA fragments. Cost approximately 1/10 of commercial kit.",
+    "zh": "5× ISO Buffer: 25% PEG-8000, 500 mM Tris-HCl pH 7.5, 50 mM MgCl₂, 50 mM DTT, 1 mM each dNTP, 5 mM NAD. 制备后分装 15 µL/管冻存。每反应加 15 µL mastermix + 5 µL DNA。成本约为商业试剂盒的 1/10。"
+  },
+  "ref": "Gibson et al. (2009) Nat Methods 6:343–345"
+}

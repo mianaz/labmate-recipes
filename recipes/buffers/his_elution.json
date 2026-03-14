@@ -1,0 +1,39 @@
+{
+  "id": "his_elution",
+  "name": "His-tag Elution Buffer",
+  "category": "buffer",
+  "tags": [
+    "protein purification",
+    "His-tag",
+    "Ni-NTA"
+  ],
+  "components": [
+    {
+      "name": "NaH₂PO₄",
+      "amount": 3.45,
+      "unit": "g",
+      "mw": 119.98,
+      "note": "50 mM"
+    },
+    {
+      "name": "NaCl",
+      "amount": 8.77,
+      "unit": "g",
+      "mw": 58.44,
+      "note": "300 mM"
+    },
+    {
+      "name": "Imidazole",
+      "amount": 8.51,
+      "unit": "g",
+      "mw": 68.08,
+      "note": "250 mM"
+    }
+  ],
+  "nameCn": "His 标签洗脱液",
+  "notes": {
+    "en": "Adjust pH to 8.0. Dialyze or desalt immediately after elution to remove imidazole. Gradient elution improves purity.",
+    "zh": "调 pH 至 8.0。洗脱后立即透析或脱盐去除 imidazole。可用梯度洗脱提高纯度。"
+  },
+  "ref": "QIAGEN Ni-NTA Handbook; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1"
+}

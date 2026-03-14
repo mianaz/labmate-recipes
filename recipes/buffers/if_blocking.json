@@ -1,0 +1,35 @@
+{
+  "id": "if_blocking",
+  "name": "IF Blocking Buffer",
+  "category": "buffer",
+  "tags": [
+    "IF",
+    "fluorescence",
+    "blocking"
+  ],
+  "components": [
+    {
+      "name": "BSA",
+      "amount": 1.5,
+      "unit": "g",
+      "note": "3% (w/v)"
+    },
+    {
+      "name": "Normal goat serum",
+      "amount": 2.5,
+      "unit": "mL",
+      "note": "5% (v/v)"
+    },
+    {
+      "name": "0.1% Triton X-100 in PBS",
+      "amount": 50,
+      "unit": "mL"
+    }
+  ],
+  "nameCn": "免疫荧光封闭液",
+  "notes": {
+    "en": "Block 1 h at RT. Serum species should match the secondary antibody host. 10% donkey serum also works.",
+    "zh": "封闭 1 h 室温。serum 种属应与二抗宿主一致。也可用 10% donkey serum。"
+  },
+  "ref": "Donaldson (2015) Curr Protoc Cell Biol 69:4.3.1; Im et al. (2019) STAR Protoc Preview"
+}
