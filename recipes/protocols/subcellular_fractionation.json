@@ -1,0 +1,34 @@
+{
+  "id": "subcellular_fractionation",
+  "name": "Subcellular Fractionation (Cytoplasmic / Nuclear / Membrane)",
+  "nameCn": "亚细胞分级分离（细胞质 / 细胞核 / 膜组分）",
+  "category": "protocol",
+  "tags": ["subcellular fractionation", "nucleus", "cytoplasm", "membrane", "organelle", "cell biology", "protein localization"],
+  "components": [
+    {"name": "1. Wash cells 2× ice-cold PBS; collect by scraping + 500×g 5 min 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "≥2×10⁷ cells per fractionation. Work on ice throughout.", "zh": "每次分级 ≥2×10⁷ 细胞。全程冰上操作。"}},
+    {"name": "2. Resuspend in nuclei_isolation_buffer (0.1% NP-40); pipette 10× gently; ice 10–15 min", "amount": 1, "unit": "step",
+     "note": {"en": "200 µL per 10⁷ cells. Do NOT vortex. Adjust NP-40 (0.05–0.2%) by cell type.", "zh": "每 10⁷ 细胞加 200 µL。不要涡旋。按细胞类型调 NP-40（0.05–0.2%）。"}},
+    {"name": "3. Pellet nuclei: 600×g, 5 min, 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Supernatant = cytoplasmic fraction (keep on ice). Verify nuclei integrity by microscopy (dark/intact in pellet).", "zh": "上清 = 细胞质组分（冰上保存）。显微镜验证核完整性。"}},
+    {"name": "4. Wash nuclear pellet: 500 µL PBS, pipette gently, 600×g 5 min 4°C (×2)", "amount": 1, "unit": "step",
+     "note": {"en": "Removes cytoplasmic contamination.", "zh": "去除细胞质污染。"}},
+    {"name": "5. Extract nuclei: RIPA or high-salt buffer (400 mM NaCl), rotate 30 min 4°C; brief sonication (3× 5 s, 20%)", "amount": 1, "unit": "step",
+     "note": {"en": "Nuclear extract buffer: 20 mM HEPES pH 7.9, 400 mM NaCl, 1 mM EDTA, 1 mM DTT, 10% glycerol + protease inhibitors.", "zh": "核提取缓冲液：20 mM HEPES pH 7.9、400 mM NaCl、1 mM EDTA、1 mM DTT、10% 甘油 + 蛋白酶抑制剂。"}},
+    {"name": "6. Clarify nuclear extract: 16,000×g, 15 min, 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Supernatant = nuclear extract. Pellet = insoluble chromatin.", "zh": "上清 = 核提取物。沉淀 = 不溶性染色质。"}},
+    {"name": "7. Optional membrane fraction: ultracentrifuge cytoplasmic sup at 100,000×g 1 h 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Supernatant = soluble cytoplasm. Pellet = total membranes (resuspend in RIPA+1% SDS). Requires ultracentrifuge (SW-41 Ti or equivalent).", "zh": "上清 = 可溶性细胞质。沉淀 = 总膜组分（RIPA+1% SDS 重悬）。需超速离心机（SW-41 Ti 或同等）。"}},
+    {"name": "8. Quantify all fractions (Bradford/BCA); verify by WB with fraction markers", "amount": 1, "unit": "step",
+     "note": {"en": "Markers: Cytoplasm → GAPDH/tubulin; Nucleus → Lamin B1/H3; Membrane → Na/K-ATPase/cadherin; Mito → VDAC/HSP60.", "zh": "标记蛋白：细胞质 → GAPDH/tubulin；细胞核 → Lamin B1/H3；膜 → Na/K-ATPase/cadherin；线粒体 → VDAC/HSP60。"}},
+    {"name": "9. Store fractions −80°C; use within 3 months", "amount": 1, "unit": "step",
+     "note": {"en": "Add loading buffer + boil for WB. Load equal protein (10–20 µg/lane).", "zh": "加上样缓冲液煮沸后做 WB。每泳道等量上样（10–20 µg）。"}}
+  ],
+  "notes": {
+    "en": "QC: WB with compartment markers is mandatory. Cross-contamination = incomplete lysis or wrong centrifugation speed. Hard-to-lyse cells (primary neurons, muscle) may need 0.2–0.5% NP-40. For RNA fractionation: add RNase inhibitor (RNaseOUT) to all buffers.",
+    "zh": "质控：必须用标记蛋白 WB 验证。交叉污染 = 裂解不充分或离心不当。难裂解细胞可增加 NP-40 至 0.2–0.5%。RNA 分级需全程加 RNase 抑制剂。"
+  },
+  "crosslinks": ["nuclei_isolation_buffer", "nuc_cyt_a", "nuc_cyt_b", "ripa", "wb_protocol"],
+  "ref": "Bhatt et al. (2021) STAR Protoc 2:100450; Dignam et al. (1983) Nucleic Acids Res 11:1475; Herrmann et al. (2018) Nat Protoc 13:2548",
+  "doi": "10.1016/j.xpro.2021.100450"
+}

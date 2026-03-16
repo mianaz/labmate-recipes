@@ -1,0 +1,36 @@
+{
+  "id": "emsa_gel_shift",
+  "name": "EMSA / Electrophoretic Mobility Shift Assay (Gel Shift)",
+  "nameCn": "凝胶阻滞实验（EMSA / 电泳迁移率变动分析）",
+  "category": "protocol",
+  "tags": ["EMSA", "gel shift", "DNA-protein interaction", "RNA-protein interaction", "transcription factor", "binding assay", "biochemistry", "molecular biology"],
+  "components": [
+    {"name": "1. Prepare labeled probe (dsDNA or ssRNA, 20–40 bp)", "amount": 1, "unit": "step",
+     "note": {"en": "Fluorescent (IRDye 700/800, FAM): anneal complementary oligos 95°C 5 min → slow cool to RT in TE. ³²P: T4 PNK 5'-end labeling 37°C 30 min; purify G-25 spin column. Final probe: 1–10 nM.", "zh": "荧光标记（IRDye 700/800、FAM）：互补寡核苷酸 95°C 5 min → 缓慢降温至 RT。³²P 标记：T4 PNK 5' 末端标记 37°C 30 min；G-25 柱纯化。探针终浓度 1–10 nM。"}},
+    {"name": "2. Prepare binding reactions (10–20 µL)", "amount": 1, "unit": "step",
+     "note": {"en": "emsa_binding_buffer + 1 µg poly(dI:dC) as nonspecific competitor. Titrate protein: 0, 10, 50, 100, 500 nM. Add all except probe/protein first.", "zh": "emsa_binding_buffer + 1 µg poly(dI:dC) 非特异性竞争。蛋白梯度：0、10、50、100、500 nM。先加除探针和蛋白外的所有组分。"}},
+    {"name": "3. Add protein (last before probe); mix gently", "amount": 1, "unit": "step",
+     "note": {"en": "Protein titration: 0.1 nM–1 µM. Add probe after protein. Do not vortex.", "zh": "蛋白梯度 0.1 nM–1 µM。加完蛋白后再加探针。勿涡旋。"}},
+    {"name": "4. Incubate 20–30 min, RT (or ice for unstable complexes)", "amount": 1, "unit": "step",
+     "note": {"en": "RT for most TF-DNA. 4°C if RT gives smear (unstable complex).", "zh": "大多数转录因子-DNA 互作在 RT。不稳定复合物在 4°C。"}},
+    {"name": "5. Cast & pre-run native PAGE (5–10% acrylamide, 0.5× TBE)", "amount": 1, "unit": "step",
+     "note": {"en": "Pre-run 100 V, 1 h, 4°C. 5% for large complexes; 8–10% for small probes (<100 bp).", "zh": "预电泳 100 V，1 h，4°C。5% 适合大复合物；8–10% 适合小探针（<100 bp）。"}},
+    {"name": "6. Load samples (no SDS); use 50% glycerol as loading aid", "amount": 1, "unit": "step",
+     "note": {"en": "Add 2 µL 50% glycerol. Load free-probe-only control in last lane.", "zh": "加 2 µL 50% 甘油助沉。最后泳道加游离探针对照。"}},
+    {"name": "7. Electrophorese: 100–150 V, 1–2 h, 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Run slowly — complexes are fragile. BPB should migrate to ~¾ gel length.", "zh": "慢速电泳（复合物脆弱）。溴酚蓝迁移至凝胶 ~¾ 处停止。"}},
+    {"name": "8. Visualize: fluorescent imager (IRDye) or phosphorimager (³²P)", "amount": 1, "unit": "step",
+     "note": {"en": "Fluorescent: scan wet or dry gel (LI-COR). ³²P: fix in 10% MeOH + 10% AcOH 30 min, vacuum dry, expose overnight. Shifted band = complex; free probe at bottom.", "zh": "荧光：LI-COR 直接扫描。³²P：10% MeOH + 10% AcOH 固定 30 min，真空干燥，曝光过夜。上移条带 = 复合物；底部 = 游离探针。"}},
+    {"name": "9. Supershift (optional): add antibody 1–5 µg, incubate 30 min before loading", "amount": 1, "unit": "step",
+     "note": {"en": "Supershift = further retardation (confirms protein identity). Disruption = loss of shift.", "zh": "超阻滞 = 进一步迁移率降低（确认蛋白身份）。抗体干扰 = 阻滞消失。"}},
+    {"name": "10. Competition: 10×–100× unlabeled specific/nonspecific competitor", "amount": 1, "unit": "step",
+     "note": {"en": "Specific competitor → signal disappears. Scrambled sequence → signal maintained. Proves binding specificity.", "zh": "特异性竞争 → 信号消失。乱序序列 → 信号保留。证明结合特异性。"}}
+  ],
+  "notes": {
+    "en": "Controls: (1) no protein, (2) excess unlabeled specific probe, (3) scrambled competitor. Kd ≈ [protein] at 50% probe shifted. Troubleshooting: no shift → more protein; smear → run at 4°C or reduce ionic strength.",
+    "zh": "对照：(1) 无蛋白、(2) 过量未标记特异探针、(3) 乱序竞争。Kd ≈ 50% 探针阻滞时的蛋白浓度。排查：无阻滞 → 增加蛋白；拖尾 → 4°C 电泳或降低离子强度。"
+  },
+  "crosslinks": ["emsa_binding_buffer", "native_page_buffer", "tbe_10x"],
+  "ref": "Hellman & Fried (2007) Nat Protoc 2:1849–1861; Fried & Liu (1994) Mol Microbiol 14:1083",
+  "doi": "10.1038/nprot.2007.249"
+}

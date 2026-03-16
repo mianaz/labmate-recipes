@@ -1,0 +1,20 @@
+{
+  "id": "imac_elution_500",
+  "name": "IMAC High-Imidazole Elution Buffer (500 mM)",
+  "nameCn": "IMAC 高咪唑洗脱缓冲液（500 mM）",
+  "category": "buffer",
+  "tags": ["protein purification", "His-tag", "Ni-NTA", "IMAC", "elution"],
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "components": [
+    {"name": "NaH₂PO₄", "amount": 6.9, "unit": "g", "mw": 119.98, "note": "50 mM"},
+    {"name": "NaCl", "amount": 17.54, "unit": "g", "mw": 58.44, "note": "300 mM"},
+    {"name": "Imidazole", "amount": 34.04, "unit": "g", "mw": 68.08, "note": "500 mM"}
+  ],
+  "notes": {
+    "en": "Adjust pH to 8.0 with NaOH. Used as step gradient (50→100→250→500 mM imidazole) or linear gradient on FPLC. Filter (0.22 µm) and degas before use. For step elution, 250 mM is often sufficient for most His-tagged proteins.",
+    "zh": "NaOH 调 pH 至 8.0。可用阶梯梯度 (50→100→250→500 mM imidazole) 或 FPLC 线性梯度。使用前 0.22 µm 过滤并脱气。阶梯洗脱通常 250 mM 即可洗脱大部分 His 标蛋白。"
+  },
+  "crosslinks": ["his_binding", "his_tag_purification"],
+  "ref": "QIAGEN Ni-NTA Handbook 5th ed.; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1"
+}

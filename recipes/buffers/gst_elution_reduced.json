@@ -1,0 +1,21 @@
+{
+  "id": "gst_elution_reduced",
+  "name": "GST Reduced Glutathione Elution Buffer",
+  "nameCn": "GST 还原型谷胱甘肽洗脱液",
+  "category": "buffer",
+  "tags": ["protein purification", "GST-tag", "glutathione", "affinity chromatography", "elution"],
+  "volume": 50,
+  "volumeUnit": "mL",
+  "components": [
+    {"name": "Reduced glutathione (GSH)", "amount": 0.154, "unit": "g", "mw": 307.32, "note": "10 mM"},
+    {"name": "Tris-HCl (1 M, pH 8.0)", "amount": 2.5, "unit": "mL", "note": "50 mM final"},
+    {"name": "NaCl", "amount": 0.44, "unit": "g", "mw": 58.44, "note": "150 mM"},
+    {"name": "ddH₂O", "amount": null, "unit": "to 50 mL"}
+  ],
+  "notes": {
+    "en": "Prepare fresh; reduced glutathione oxidizes rapidly. Adjust pH to 8.0. Eluted fractions contain free glutathione — remove by dialysis if downstream assays are sensitive. Some protocols use 15–50 mM GSH for higher yield.",
+    "zh": "需新鲜配制，还原型谷胱甘肽容易氧化。pH 调至 8.0。洗脱液含游离谷胱甘肽，下游分析敏感时需透析去除。部分方案用 15–50 mM GSH 以提高产量。"
+  },
+  "crosslinks": ["gst_tag_purification", "gst_elution", "protein_dialysis"],
+  "ref": "GE Healthcare Glutathione Sepharose 4B Instruction 71-5027-67 EK; Harper & Speicher (2011) Curr Protoc Protein Sci 6.6.1"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "protein_dialysis",
+  "name": "Protein Dialysis and Buffer Exchange",
+  "nameCn": "蛋白透析与换液",
+  "category": "protocol",
+  "tags": ["protein purification", "dialysis", "buffer exchange", "desalting", "imidazole removal", "biochemistry"],
+  "components": [
+    {"name": "1. Prepare dialysis tubing or membrane device", "amount": 1, "unit": "step",
+     "note": {"en": "Tubing: boil in 2% NaHCO₃ + 1 mM EDTA 10 min, rinse thoroughly. Slide-A-Lyzer: soak in buffer 2 min. MWCO: 3.5 kDa (<20 kDa protein), 12–14 kDa (most proteins), 50 kDa (large complexes).", "zh": "透析袋：2% NaHCO₃ + 1 mM EDTA 煮 10 min，彻底冲洗。Slide-A-Lyzer：缓冲液浸泡 2 min。MWCO：3.5 kDa（<20 kDa 蛋白）、12–14 kDa（大多数蛋白）、50 kDa（大型复合体）。"}},
+    {"name": "2. Load protein sample, leave 15–20% headspace", "amount": 1, "unit": "step",
+     "note": {"en": "Sample expands ~10–20% by osmosis. Seal securely.", "zh": "渗透作用导致样品膨胀 ~10–20%。密封牢固。"}},
+    {"name": "3. Dialyze change 1: 500 mL buffer, 2 h, 4°C, gentle stirring", "amount": 1, "unit": "step",
+     "note": {"en": "≥200× volume ratio. Slow stir bar (no foam = no protein denaturation).", "zh": "≥200 倍体积比。慢速搅拌（无泡沫 = 无蛋白变性）。"}},
+    {"name": "4. Dialyze change 2: fresh 500 mL buffer, 2 h, 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Each change removes >90% of target small molecule.", "zh": "每次换液去除 >90% 的目标小分子。"}},
+    {"name": "5. Dialyze change 3 (overnight, 4°C) — recommended", "amount": 1, "unit": "step",
+     "note": {"en": "Add 10% glycerol to final buffer if storing at −80°C.", "zh": "若需 −80°C 保存，末次透析液加 10% 甘油。"}},
+    {"name": "6. Recover sample; quantify protein", "amount": 1, "unit": "step",
+     "note": {"en": "Volume may increase. Quantify: Bradford or BCA. Concentrate if needed: Amicon Ultra (4,000×g, 4°C).", "zh": "体积可能增加。Bradford 或 BCA 定量。如需浓缩：Amicon Ultra（4,000×g，4°C）。"}}
+  ],
+  "notes": {
+    "en": "Faster alternatives: (a) HiTrap Desalting column (5 mL, 5 min on AKTA); (b) Amicon Ultra centrifugal filter + dilution (3 cycles removes >99.9%); (c) ZebaSpin Desalting Column (2 min spin). Amicon: do not let protein dry on membrane.",
+    "zh": "更快替代方案：(a) HiTrap Desalting 脱盐柱（5 mL，AKTA 5 min）；(b) Amicon Ultra 离心浓缩管 + 稀释换液（3 次去除 >99.9%）；(c) ZebaSpin 脱盐柱（2 min）。Amicon 注意勿让蛋白干在膜上。"
+  },
+  "crosslinks": ["his_tag_purification", "gst_tag_purification", "dialysis_buffer_generic", "bca_protein_assay", "bradford_assay_protocol"],
+  "ref": "Scopes (1994) Protein Purification 3rd ed.; Wingfield (2001) Curr Protoc Protein Sci A.3B.1; ThermoFisher Slide-A-Lyzer Manual"
+}

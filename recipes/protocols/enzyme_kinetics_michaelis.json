@@ -1,0 +1,36 @@
+{
+  "id": "enzyme_kinetics_michaelis",
+  "name": "Enzyme Kinetics Assay (Michaelis-Menten)",
+  "nameCn": "酶动力学分析（米氏方程法）",
+  "category": "protocol",
+  "tags": ["enzyme kinetics", "Michaelis-Menten", "Km", "Vmax", "kcat", "biochemistry", "enzyme assay", "spectrophotometry"],
+  "components": [
+    {"name": "1. Purify enzyme to >90% homogeneity; determine concentration", "amount": 1, "unit": "step",
+     "note": {"en": "SDS-PAGE + Coomassie; BCA/Bradford. Use freshly purified or aliquoted protein.", "zh": "SDS-PAGE + 考马斯蓝确认纯度；BCA/Bradford 定量。使用新鲜纯化或分装冻存蛋白。"}},
+    {"name": "2. Establish activity buffer conditions", "amount": 1, "unit": "step",
+     "note": {"en": "Typical: 50 mM HEPES pH 7.5, 1–10 mM MgCl₂ (kinases/ATPases), 1 mM DTT, 0.01% BSA. Use kinase_buffer as start; optimize pH, ions, cofactors.", "zh": "典型：50 mM HEPES pH 7.5、1–10 mM MgCl₂（激酶/ATPase）、1 mM DTT、0.01% BSA。以 kinase_buffer 为起点优化 pH、离子、辅因子。"}},
+    {"name": "3. Determine linear range (progress curve)", "amount": 1, "unit": "step",
+     "note": {"en": "Measure product vs time at saturating [S]. Ensure: (a) <10% substrate consumed, (b) linear product formation. Typical: 0–30 min, sample at 0, 5, 10, 15, 20, 30 min.", "zh": "饱和底物浓度下测产物随时间变化。确保：(a) 底物消耗 <10%，(b) 产物线性生成。典型：0–30 min，在 0、5、10、15、20、30 min 取样。"}},
+    {"name": "4. Prepare substrate series (6–8 points, 0.1×Km to 10×Km)", "amount": 1, "unit": "step",
+     "note": {"en": "E.g., 1, 5, 10, 25, 50, 100, 250, 500 µM. Include [S]=0 (background). Prepare in assay buffer.", "zh": "例如 1、5、10、25、50、100、250、500 µM。包含 [S]=0（本底对照）。用反应缓冲液配制。"}},
+    {"name": "5. Start reactions: add enzyme last; fixed temperature (25–37°C)", "amount": 1, "unit": "step",
+     "note": {"en": "Fixed [E] (10–100 nM). ≥3 replicates per [S]. Water bath or thermocycler for temperature control.", "zh": "固定 [E]（10–100 nM）。每个 [S] ≥3 重复。水浴或 PCR 仪控温。"}},
+    {"name": "6. Stop reactions at fixed timepoint (within linear range)", "amount": 1, "unit": "step",
+     "note": {"en": "Methods: (a) NADH-linked: continuous A₃₄₀ reading; (b) colorimetric: add TCA/HCl; (c) fluorescence: quench buffer; (d) radioactive: spot on P81 paper.", "zh": "停止方法：(a) NADH 偶联：连续读 A₃₄₀；(b) 比色法：加 TCA/HCl；(c) 荧光：加淬灭液；(d) 放射性：点样于 P81 纸。"}},
+    {"name": "7. Measure signal; calculate initial velocity V₀", "amount": 1, "unit": "step",
+     "note": {"en": "V₀ = Δ[product]/Δtime in linear range. NADH: ε₃₄₀ = 6,220 M⁻¹cm⁻¹ (Beer-Lambert).", "zh": "V₀ = Δ[产物]/Δ时间（线性范围）。NADH 偶联：ε₃₄₀ = 6,220 M⁻¹cm⁻¹（Beer-Lambert 定律）。"}},
+    {"name": "8. Fit V₀ vs [S] to Michaelis-Menten equation", "amount": 1, "unit": "step",
+     "note": {"en": "V₀ = Vmax × [S] / (Km + [S]). Nonlinear regression: GraphPad Prism, scipy.optimize.curve_fit, or R nls(). Derive Km and Vmax.", "zh": "V₀ = Vmax × [S] / (Km + [S])。非线性回归：GraphPad Prism、scipy.optimize.curve_fit 或 R nls()。获得 Km 和 Vmax。"}},
+    {"name": "9. Calculate kcat = Vmax / [E]total", "amount": 1, "unit": "step",
+     "note": {"en": "kcat (s⁻¹) = catalytic constant. kcat/Km (M⁻¹s⁻¹) = catalytic efficiency. Typical: kcat 0.001–10,000 s⁻¹; kcat/Km up to 10⁹ M⁻¹s⁻¹ (diffusion limit).", "zh": "kcat（s⁻¹）= 催化常数。kcat/Km（M⁻¹s⁻¹）= 催化效率。典型范围：kcat 0.001–10,000 s⁻¹；kcat/Km 最高 10⁹ M⁻¹s⁻¹（扩散极限）。"}},
+    {"name": "10. Optional: inhibition kinetics (IC₅₀, Ki, mechanism)", "amount": 1, "unit": "step",
+     "note": {"en": "Competitive: Km↑, Vmax same. Noncompetitive: Vmax↓, Km same. Uncompetitive: both↓. Use Lineweaver-Burk or global fitting.", "zh": "竞争性：Km↑、Vmax 不变。非竞争性：Vmax↓、Km 不变。反竞争性：两者↓。用 Lineweaver-Burk 双倒数图或全局拟合分析。"}}
+  ],
+  "notes": {
+    "en": "Common coupled assays: LDH for pyruvate-generating; PK-LDH for ATPases; NADH at 340 nm. Controls: (a) no enzyme, (b) heat-inactivated, (c) no substrate. Report: Km, Vmax, kcat, kcat/Km, temp, pH, buffer.",
+    "zh": "常用偶联法：LDH 偶联丙酮酸生成酶；PK-LDH 偶联 ATPase；NADH 340 nm。对照：(a) 无酶、(b) 热灭活、(c) 无底物。报告：Km、Vmax、kcat、kcat/Km、温度、pH、缓冲条件。"
+  },
+  "crosslinks": ["kinase_buffer", "bradford_assay_protocol", "bca_protein_assay", "his_tag_purification"],
+  "ref": "Johnson & Goody (2011) Biochemistry 50:10785; Copeland (2000) Enzymes 2nd ed. Wiley-VCH; Bisswanger (2014) Perspect Sci 1:41–55",
+  "doi": "10.1021/bi2012383"
+}

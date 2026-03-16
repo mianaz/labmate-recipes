@@ -1,0 +1,23 @@
+{
+  "id": "mitochondria_buffer",
+  "name": "Mitochondria Isolation Buffer",
+  "nameCn": "线粒体分离缓冲液",
+  "category": "buffer",
+  "tags": ["mitochondria", "subcellular fractionation", "organelle isolation", "differential centrifugation"],
+  "volume": 100,
+  "volumeUnit": "mL",
+  "components": [
+    {"name": "Mannitol", "amount": 5.46, "unit": "g", "mw": 182.17, "note": "300 mM; osmotic support"},
+    {"name": "Sucrose", "amount": 1.71, "unit": "g", "mw": 342.3, "note": "50 mM"},
+    {"name": "HEPES (1 M, pH 7.4)", "amount": 0.5, "unit": "mL", "note": "5 mM"},
+    {"name": "EGTA (0.5 M)", "amount": 0.02, "unit": "mL", "note": "0.1 mM; Ca²⁺ chelator"},
+    {"name": "BSA (fatty acid-free)", "amount": 0.02, "unit": "g", "note": "0.02% w/v; add fresh; protects membranes"},
+    {"name": "ddH₂O", "amount": null, "unit": "to 100 mL"}
+  ],
+  "notes": {
+    "en": "Keep all solutions ice-cold. Add BSA fresh; remove BSA for functional assays. Adjust pH to 7.4 with KOH. This buffer is for tissue (mouse liver/heart). For cultured cells: 210 mM mannitol + 70 mM sucrose instead.",
+    "zh": "全程保持冰冷。BSA 现加；功能性实验需去 BSA。KOH 调 pH 至 7.4。本缓冲液适用于组织（小鼠肝/心）匀浆。培养细胞将甘露醇降至 210 mM + 70 mM 蔗糖。"
+  },
+  "crosslinks": ["mitochondria_isolation"],
+  "ref": "Frezza et al. (2007) Nat Protoc 2:287–295"
+}

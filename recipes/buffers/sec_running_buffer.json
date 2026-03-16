@@ -1,0 +1,20 @@
+{
+  "id": "sec_running_buffer",
+  "name": "Size Exclusion Chromatography Running Buffer",
+  "nameCn": "分子排阻色谱运行缓冲液",
+  "category": "buffer",
+  "tags": ["protein purification", "SEC", "gel filtration", "FPLC", "AKTA"],
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "components": [
+    {"name": "HEPES (1 M, pH 7.5)", "amount": 20, "unit": "mL", "note": "20 mM final; or 50 mM sodium phosphate pH 7.4"},
+    {"name": "NaCl", "amount": 8.77, "unit": "g", "mw": 58.44, "note": "150 mM"},
+    {"name": "DTT (1 M stock)", "amount": 0.1, "unit": "mL", "note": "0.1 mM; omit if protein lacks Cys or downstream MS"}
+  ],
+  "notes": {
+    "en": "Filter through 0.22 µm and degas extensively (30 min vacuum or online degasser). Equilibrate column with ≥2 CV before injection. For phospho-proteins or specific assays, adjust NaCl to 100–300 mM. Avoid EDTA if downstream metal-sensitive assays.",
+    "zh": "0.22 µm 过滤后充分脱气（真空 30 min 或在线脱气）。进样前用 ≥2 CV 平衡柱子。磷酸化蛋白可调整 NaCl 至 100–300 mM。下游金属敏感实验避免加 EDTA。"
+  },
+  "crosslinks": ["sec_purification", "protein_dialysis"],
+  "ref": "GE Healthcare SEC Application Note 18-1114-02; Wyatt et al. (2017) Nat Protoc 12:1683"
+}

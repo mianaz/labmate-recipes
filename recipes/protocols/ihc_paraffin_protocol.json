@@ -1,0 +1,39 @@
+{
+  "id": "ihc_paraffin_protocol",
+  "name": "Immunohistochemistry on Paraffin Sections (IHC-P)",
+  "nameCn": "石蜡切片免疫组化（IHC-P）",
+  "category": "protocol",
+  "tags": ["IHC", "immunohistochemistry", "paraffin", "antigen retrieval", "DAB", "histology", "tissue staining", "pathology"],
+  "components": [
+    {"name": "1. Bake sections: 60°C, 1 h (oven)", "amount": 1, "unit": "step",
+     "note": {"en": "4–5 µm FFPE on positively charged slides (Superfrost Plus). Ensures adhesion & melts paraffin.", "zh": "4–5 µm FFPE 切片贴附于正电荷载玻片（Superfrost Plus）。确保贴附并熔化石蜡。"}},
+    {"name": "2. Deparaffinize: 3 × 5 min xylene → rehydrate: 100% EtOH × 2 → 95% → 70% → ddH₂O × 2", "amount": 1, "unit": "step",
+     "note": {"en": "Each step 5 min. Fume hood for xylene.", "zh": "每步 5 min。二甲苯需在通风橱操作。"}},
+    {"name": "3. Antigen retrieval (HIER): 95–100°C, 20 min", "amount": 1, "unit": "step",
+     "note": {"en": "Citrate pH 6.0 (citrate_buffer_ar): most cytoplasmic/ER antigens. EDTA pH 9.0 (ar_edta_ph9): nuclear/membrane antigens. Pressure cooker (15 psi, 3–4 min) or water bath (98°C, 20 min). Cool 20 min RT.", "zh": "柠檬酸 pH 6.0（citrate_buffer_ar）：多数胞质/内质网抗原。EDTA pH 9.0（ar_edta_ph9）：核/膜抗原。高压锅（15 psi，3–4 min）或水浴（98°C，20 min）。RT 冷却 20 min。"}},
+    {"name": "4. Block endogenous peroxidase: 3% H₂O₂ in PBS, 10–15 min RT", "amount": 1, "unit": "step",
+     "note": {"en": "Prevents background from blood/liver peroxidases. Rinse 3× PBS.", "zh": "防止血液/肝脏内源性过氧化物酶背景。PBS 冲洗 3 次。"}},
+    {"name": "5. Block: 5–10% normal serum (same species as secondary Ab) in TBS, 1 h RT", "amount": 1, "unit": "step",
+     "note": {"en": "Do NOT wash after — aspirate excess, apply primary Ab directly. Optional: avidin/biotin block if using ABC system.", "zh": "封闭后不洗——吸去多余血清直接加一抗。ABC 系统需先做 avidin/biotin 封闭。"}},
+    {"name": "6. Primary Ab: diluted in TBS + 1% BSA; 1 h RT or 4°C overnight (humidity chamber)", "amount": 1, "unit": "step",
+     "note": {"en": "Typical 1:100–1:1000. PAP pen barrier. 4°C overnight often gives better S/N.", "zh": "通常 1:100–1:1000 稀释。PAP 笔画疏水圈。4°C 过夜通常信噪比更好。"}},
+    {"name": "7. Wash: 3 × 5 min TBS or TBST", "amount": 1, "unit": "step",
+     "note": {"en": "Do not let sections dry.", "zh": "切勿让切片干燥。"}},
+    {"name": "8. Secondary Ab (HRP-polymer): 30–60 min RT", "amount": 1, "unit": "step",
+     "note": {"en": "Polymer-based (EnVision+, Dako) preferred over biotin-streptavidin (less background). Species-matched.", "zh": "聚合物法（EnVision+，Dako）优于生物素-链霉亲和素（更低背景）。种属匹配。"}},
+    {"name": "9. Wash: 3 × 5 min TBS", "amount": 1, "unit": "step"},
+    {"name": "10. DAB development: apply DAB + H₂O₂, 2–10 min RT; monitor under microscope; stop in ddH₂O", "amount": 1, "unit": "step",
+     "note": {"en": "Brown = positive signal. Do not over-develop. Fresh DAB only.", "zh": "棕色 = 阳性信号。勿过度显色。DAB 需新鲜配制。"}},
+    {"name": "11. Counterstain: Hematoxylin 1–5 min → differentiate in acid-alcohol → blue in running water 5 min", "amount": 1, "unit": "step",
+     "note": {"en": "Harris or Mayer's Hematoxylin. Blue in tap water or Scott's Water (2 g MgSO₄ + 0.2 g NaHCO₃/L).", "zh": "Harris 或 Mayer 苏木精。自来水返蓝或 Scott's 水（2 g MgSO₄ + 0.2 g NaHCO₃/L）。"}},
+    {"name": "12. Dehydrate + mount: 70% → 95% × 2 → 100% × 2 EtOH → xylene × 2 → DPX/Permount", "amount": 1, "unit": "step",
+     "note": {"en": "Each 2–5 min. Avoid air bubbles. Cure 24 h before imaging.", "zh": "每步 2–5 min。避免气泡。封片后 24 h 再镜检。"}}
+  ],
+  "notes": {
+    "en": "Controls: (1) positive tissue; (2) isotype control replacing primary Ab; (3) H&E on sequential section. Scoring: H-score = intensity(0–3) × %positive. Quantitative: QuPath/HALO software. For multiplex: Opal tyramide system (TSA amplification).",
+    "zh": "对照：(1) 阳性组织；(2) 同型对照替代一抗；(3) 相邻切片 H&E。评分：H-score = 强度(0–3) × 阳性率。定量：QuPath/HALO 图像分析。多重免疫组化：Opal tyramide 系统（TSA 信号放大）。"
+  },
+  "crosslinks": ["citrate_buffer_ar", "ar_edta_ph9", "if_blocking", "if_protocol", "tbst", "tbs_10x"],
+  "ref": "Ramos-Vara & Miller (2014) Vet Pathol 51:42–87; Taylor & Rudbeck (2013) Dako Education Guide; Shi et al. (1991) J Histochem Cytochem 39:741",
+  "doi": "10.1177/0300985813503571"
+}

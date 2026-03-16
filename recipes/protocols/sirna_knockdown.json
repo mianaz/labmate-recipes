@@ -1,0 +1,30 @@
+{
+  "id": "sirna_knockdown",
+  "name": "siRNA-Mediated Gene Knockdown",
+  "nameCn": "siRNA 基因沉默（RNAi 干扰）",
+  "category": "protocol",
+  "tags": ["siRNA", "RNAi", "knockdown", "gene silencing", "Lipofectamine", "transfection", "molecular biology", "functional genomics"],
+  "components": [
+    {"name": "1. Design siRNA: order 2–3 independent siRNAs per target gene", "amount": 1, "unit": "step",
+     "note": {"en": "19–21 nt duplex with 2 nt 3' overhangs. Sources: Qiagen, Dharmacon, IDT. Resuspend 20 µM in RNase-free water; store −80°C.", "zh": "19–21 nt 双链，3' 端 2 nt 突出。来源：Qiagen、Dharmacon、IDT。RNase-free 水溶解至 20 µM；−80°C 保存。"}},
+    {"name": "2. Day 0: seed cells in antibiotic-free media", "amount": 1, "unit": "step",
+     "note": {"en": "24-well: 5–8×10⁴ cells; 6-well: 2–4×10⁵; 10 cm: 1.5–2×10⁶. Target 40–70% confluency at transfection.", "zh": "24 孔板：5–8×10⁴ 细胞；6 孔：2–4×10⁵；10 cm：1.5–2×10⁶。转染时汇合度 40–70%。"}},
+    {"name": "3. Day 1: Prepare siRNA-lipid complex", "amount": 1, "unit": "step",
+     "note": {"en": "Tube A: 3 µL RNAiMAX + 47 µL Opti-MEM, 5 min RT. Tube B: 1 µL siRNA (20 µM) + 49 µL Opti-MEM. Combine A+B, mix gently, 20 min RT. [24-well scale; final siRNA ~20 nM].", "zh": "管 A：3 µL RNAiMAX + 47 µL Opti-MEM，RT 5 min。管 B：1 µL siRNA（20 µM）+ 49 µL Opti-MEM。A+B 混合，轻混，RT 20 min。[24 孔规模；siRNA 终浓度 ~20 nM]。"}},
+    {"name": "4. Add complex dropwise to cells; gentle plate rocking", "amount": 1, "unit": "step",
+     "note": {"en": "Remove old media; add 400 µL fresh (no antibiotics) + 100 µL complex = 500 µL total. Do NOT change media for 6 h.", "zh": "去旧培养基；加 400 µL 新鲜培养基（无抗生素）+ 100 µL 复合物 = 500 µL。6 h 内不换液。"}},
+    {"name": "5. Incubate 48–72 h, 37°C, 5% CO₂", "amount": 1, "unit": "step",
+     "note": {"en": "48 h: fast-turnover proteins. 72 h: most targets. 96 h + re-transfection at 48 h: stable proteins.", "zh": "48 h：快速周转蛋白。72 h：大多数靶标。96 h + 48 h 时再转染：稳定蛋白。"}},
+    {"name": "6. Verify knockdown: qPCR (mRNA) and/or WB (protein)", "amount": 1, "unit": "step",
+     "note": {"en": "qpcr_protocol for mRNA (≥70% reduction expected). wb_protocol for protein (≥60% reduction). Include siNC + siGAPDH controls.", "zh": "qpcr_protocol 检测 mRNA（预期 ≥70% 下调）。wb_protocol 检测蛋白（预期 ≥60% 下调）。对照：siNC + siGAPDH。"}},
+    {"name": "7. Downstream functional assays at 48–72 h", "amount": 1, "unit": "step",
+     "note": {"en": "Proliferation: cck8_proliferation; Migration: scratch_assay/transwell_migration; Apoptosis: annexin_v_apoptosis.", "zh": "增殖：cck8_proliferation；迁移：scratch_assay / transwell_migration；凋亡：annexin_v_apoptosis。"}}
+  ],
+  "notes": {
+    "en": "Controls: (1) siNC (non-targeting); (2) siGAPDH (positive KD); (3) untreated; (4) lipid-only (toxicity). Toxicity high? Reduce RNAiMAX to 1.5 µL/well. Hard-to-transfect cells: Nucleofection, electroporation, or lentiviral shRNA.",
+    "zh": "对照：(1) siNC（非靶向）；(2) siGAPDH（阳性 KD）；(3) 未处理；(4) 仅脂质体（毒性）。毒性大？减少 RNAiMAX 至 1.5 µL/孔。难转染细胞：核转染、电穿孔或慢病毒 shRNA。"
+  },
+  "crosslinks": ["cell_transfection", "qpcr_protocol", "rna_column_extraction", "wb_protocol", "lentivirus_production", "electroporation"],
+  "ref": "Elbashir et al. (2001) Nature 411:494–498; Reynolds et al. (2004) Nat Biotechnol 22:326; Qiagen siRNA Transfection Handbook",
+  "doi": "10.1038/35078107"
+}

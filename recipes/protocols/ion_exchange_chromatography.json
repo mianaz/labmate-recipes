@@ -1,0 +1,32 @@
+{
+  "id": "ion_exchange_chromatography",
+  "name": "Ion Exchange Chromatography (IEX)",
+  "nameCn": "离子交换色谱（IEX）",
+  "category": "protocol",
+  "tags": ["protein purification", "IEX", "ion exchange", "anion exchange", "cation exchange", "FPLC", "AKTA", "polishing step", "biochemistry"],
+  "components": [
+    {"name": "1. Choose ion exchange type based on protein pI", "amount": 1, "unit": "step",
+     "note": {"en": "Anion exchange (Q/DEAE): protein pI < buffer pH → protein (−) binds to resin (+). Cation exchange (SP/CM): protein pI > buffer pH → protein (+) binds to resin (−). For unknown pI: run at two pH values.", "zh": "阴离子交换（Q/DEAE）：蛋白 pI < 缓冲液 pH → 蛋白带负电结合正电树脂。阳离子交换（SP/CM）：蛋白 pI > 缓冲液 pH → 蛋白带正电结合负电树脂。pI 未知时：在两个 pH 条件下试运行。"}},
+    {"name": "2. Prepare sample: dialyze into low-salt IEX buffer; centrifuge 20,000×g 20 min; filter 0.22 µm", "amount": 1, "unit": "step",
+     "note": {"en": "Anion: 20 mM Tris pH 8.0. Cation: 20 mM sodium acetate pH 5.5 or 20 mM MES pH 6.0. Conductivity <5 mS/cm for binding.", "zh": "阴离子：20 mM Tris pH 8.0。阳离子：20 mM 醋酸钠 pH 5.5 或 20 mM MES pH 6.0。电导率 <5 mS/cm 以确保结合。"}},
+    {"name": "3. Equilibrate column: 5 CV binding buffer", "amount": 1, "unit": "step",
+     "note": {"en": "Flow rate: 1–2 mL/min (1 mL column) or 2–5 mL/min (5 mL column). Monitor A280 baseline stable.", "zh": "流速：1–2 mL/min（1 mL 柱）或 2–5 mL/min（5 mL 柱）。监测 A280 基线稳定。"}},
+    {"name": "4. Load sample: apply at 0.5–1 mL/min; collect flow-through for SDS-PAGE", "amount": 1, "unit": "step",
+     "note": {"en": "Loading at ≤1 mL/min maximizes binding. Capacity: ~20 mg protein/mL resin (depends on charge/size).", "zh": "上样流速 ≤1 mL/min 以最大化结合。容量：约 20 mg 蛋白/mL 树脂（取决于电荷/大小）。"}},
+    {"name": "5. Wash: 5–10 CV binding buffer until A280 returns to baseline", "amount": 1, "unit": "step",
+     "note": {"en": "Removes loosely bound contaminants.", "zh": "去除弱结合的杂蛋白。"}},
+    {"name": "6. Elute with linear gradient: 0–100% elution buffer over 20 CV", "amount": 1, "unit": "step",
+     "note": {"en": "Elution buffer: binding buffer + 1 M NaCl. Gradient: 0→100% over 20 CV (e.g., 0→500 mM NaCl). Collect 1 mL fractions. Alternative: step gradient (0, 100, 250, 500 mM).", "zh": "洗脱缓冲液：结合缓冲液 + 1 M NaCl。梯度：0→100% 20 CV（如 0→500 mM NaCl）。收集 1 mL 组分。也可阶梯梯度（0、100、250、500 mM）。"}},
+    {"name": "7. Pool peak fractions; verify by SDS-PAGE", "amount": 1, "unit": "step",
+     "note": {"en": "Pool symmetric peak. Asymmetric = multiple species.", "zh": "合并对称峰。不对称 = 多种组分。"}},
+    {"name": "8. Dialyze or desalting to remove salt for storage", "amount": 1, "unit": "step",
+     "note": {"en": "dialysis_buffer_generic or HiTrap Desalting. Add 10% glycerol for storage.", "zh": "dialysis_buffer_generic 或 HiTrap Desalting 脱盐。加 10% 甘油保存。"}}
+  ],
+  "notes": {
+    "en": "IEX is excellent for separating proteins by surface charge. Typically used after IMAC/GST (polishing step). Binding capacity: 10–40 mg/mL resin. Resolution depends on gradient length (longer = better). Run at 4°C for labile proteins. Buffer pH should be ≥1 pH unit away from protein pI for strong binding.",
+    "zh": "IEX 非常适合按表面电荷分离蛋白。通常在 IMAC/GST 后使用（精修步骤）。结合容量：10–40 mg/mL 树脂。分辨率取决于梯度长度（越长越好）。不稳定蛋白在 4°C 运行。缓冲液 pH 应距离蛋白 pI ≥1 个 pH 单位以确保强结合。"
+  },
+  "crosslinks": ["his_tag_purification", "gst_tag_purification", "sec_purification", "protein_dialysis", "coomassie_staining"],
+  "ref": "GE Healthcare Ion Exchange Chromatography Manual; Shukla & Cramer (2011) Curr Protoc Protein Sci 67:8.2.1",
+  "doi": "10.1002/0471140864.ps0802s67"
+}

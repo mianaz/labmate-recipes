@@ -1,0 +1,28 @@
+{
+  "id": "bradford_assay_protocol",
+  "name": "Bradford Protein Quantification Assay",
+  "nameCn": "Bradford 蛋白定量（Coomassie G-250 比色法）",
+  "category": "protocol",
+  "tags": ["protein quantification", "Bradford", "Coomassie G-250", "BSA standard", "colorimetric", "spectrophotometry", "biochemistry"],
+  "components": [
+    {"name": "1. Prepare BSA standard series (0–1.5 mg/mL)", "amount": 1, "unit": "step",
+     "note": {"en": "From 2 mg/mL BSA stock: 0, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0, 1.5 mg/mL (8 points). Use same diluent as sample buffer. 10 µL per well (96-well) or 100 µL (cuvette).", "zh": "2 mg/mL BSA 母液稀释：0、0.1、0.2、0.4、0.6、0.8、1.0、1.5 mg/mL（8 点）。稀释液与样品缓冲液一致。96 孔板每孔 10 µL；比色杯 100 µL。"}},
+    {"name": "2. Dilute unknown samples (1:10, 1:50, 1:100)", "amount": 1, "unit": "step",
+     "note": {"en": "Prepare 2–3 dilutions to ensure one falls within standard range. Use 2–10 µL per well (96-well) or 10–100 µL (cuvette).", "zh": "准备 2–3 个稀释度，确保至少一个在标准曲线范围内。96 孔板 2–10 µL/孔；比色杯 10–100 µL。"}},
+    {"name": "3. Add Bradford reagent", "amount": 1, "unit": "step",
+     "note": {"en": "96-well: 200 µL/well. Cuvette: 1 mL reagent + 100 µL sample. Mix gently (no vortex — creates bubbles).", "zh": "96 孔板：200 µL/孔。比色杯：1 mL 试剂 + 100 µL 样品。轻柔混匀（勿涡旋产生气泡）。"}},
+    {"name": "4. Incubate 5 min at RT (dark)", "amount": 1, "unit": "step",
+     "note": {"en": "Read within 5–45 min window; signal stable. Read all at same time to ensure consistency.", "zh": "5–45 min 内读数，信号稳定。所有样品同时读数以保证一致性。"}},
+    {"name": "5. Read A₅₉₅ nm", "amount": 1, "unit": "step",
+     "note": {"en": "Microplate reader or spectrophotometer. Blank = 0 mg/mL BSA + reagent. A₅₉₅ should be 0.1–0.8 for accurate results.", "zh": "酶标仪或分光光度计。空白 = 0 mg/mL BSA + 试剂。A₅₉₅ 在 0.1–0.8 范围内最准确。"}},
+    {"name": "6. Generate standard curve; calculate concentration", "amount": 1, "unit": "step",
+     "note": {"en": "Linear regression A₅₉₅ vs [BSA]. R² >0.99. Multiply by dilution factor. Report µg/mL or mg/mL.", "zh": "线性回归 A₅₉₅ vs [BSA]。R² >0.99。乘以稀释倍数得实际浓度。单位 µg/mL 或 mg/mL。"}}
+  ],
+  "notes": {
+    "en": "Fast (5 min), sensitive (1–1,500 µg/mL). Interference: SDS >0.1%, Triton >0.1%, high salt → use BCA instead. Different proteins give different responses (CBB binds Arg/Lys preferentially). For membrane proteins use BCA. Coomassie G-250 ≠ R-250.",
+    "zh": "快速（5 min），灵敏（1–1,500 µg/mL）。干扰：SDS >0.1%、Triton >0.1%、高盐 → 改用 BCA。不同蛋白因 Arg/Lys 含量差异响应不同。膜蛋白首选 BCA。G-250 ≠ R-250。"
+  },
+  "crosslinks": ["bca_protein_assay", "bradford_reagent", "bsa_standard_curve", "his_tag_purification", "gst_tag_purification"],
+  "ref": "Bradford (1976) Anal Biochem 72:248–254; Kruger (2002) Methods Mol Biol 32:9–15; Zor & Selinger (1996) Anal Biochem 236:302",
+  "doi": "10.1016/0003-2697(76)90527-3"
+}
