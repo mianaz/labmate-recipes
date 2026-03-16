@@ -3,14 +3,46 @@
   "name": "Coomassie Brilliant Blue Staining (SDS-PAGE)",
   "nameCn": "考马斯亮蓝染色",
   "category": "protocol",
-  "tags": ["protein", "SDS-PAGE", "Coomassie", "staining", "gel"],
-  "components": [
-    { "name": "1. 固定：50% 甲醇 / 10% 乙酸, 30 min", "amount": 1, "unit": "step", "note": "轻柔摇晃, 防止凝胶变形" },
-    { "name": "2. 染色：0.1% CBB R-250 / 50% 甲醇 / 10% 乙酸", "amount": 1, "unit": "step", "note": "1 h 至过夜, 摇床" },
-    { "name": "3. 脱色 I：50% 甲醇 / 10% 乙酸, 30 min", "amount": 1, "unit": "step" },
-    { "name": "4. 脱色 II：5% 甲醇 / 7% 乙酸", "amount": 1, "unit": "step", "note": "换液 2–3 次直到背景清晰; 加纸巾吸附色素加速" },
-    { "name": "5. 水中保存或扫描成像", "amount": 1, "unit": "step" }
+  "tags": [
+    "protein",
+    "SDS-PAGE",
+    "Coomassie",
+    "staining",
+    "gel"
   ],
-  "notes": "灵敏度：~100 ng 蛋白/条带。更灵敏可用 Colloidal Coomassie (Neuhoff 法, ~10 ng) 或银染 (~1 ng)。CBB G-250 (Colloidal) 不需固定步骤且背景更低。微波加速法：染色液微波 30 s → 摇 5 min → 脱色液微波 30 s → 摇 5 min，可在 15 min 内完成。凝胶可保存在 7% 乙酸中或干燥保存。",
+  "components": [
+    {
+      "name": "1. 固定：50% 甲醇 / 10% 乙酸, 30 min",
+      "amount": 1,
+      "unit": "step",
+      "note": "轻柔摇晃, 防止凝胶变形"
+    },
+    {
+      "name": "2. 染色：0.1% CBB R-250 / 50% 甲醇 / 10% 乙酸",
+      "amount": 1,
+      "unit": "step",
+      "note": "1 h 至过夜, 摇床"
+    },
+    {
+      "name": "3. 脱色 I：50% 甲醇 / 10% 乙酸, 30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 脱色 II：5% 甲醇 / 7% 乙酸",
+      "amount": 1,
+      "unit": "step",
+      "note": "换液 2–3 次直到背景清晰; 加纸巾吸附色素加速"
+    },
+    {
+      "name": "5. 水中保存或扫描成像",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Sensitivity: ~100 ng protein/band. For higher sensitivity use Colloidal Coomassie (Neuhoff method, ~10 ng) or silver stain (~1 ng). CBB G-250 (Colloidal) requires no fixation and has lower background. Microwave shortcut: stain 30s MW → rock 5 min → destain 30s MW → rock 5 min, complete in ~15 min. Store gel in 7% acetic acid or dry.",
+    "zh": "灵敏度：~100 ng 蛋白/条带。更灵敏可用 Colloidal Coomassie (Neuhoff 法, ~10 ng) 或银染 (~1 ng)。CBB G-250 (Colloidal) 不需固定步骤且背景更低。微波加速法：染色液微波 30 s → 摇 5 min → 脱色液微波 30 s → 摇 5 min，可在 15 min 内完成。凝胶可保存在 7% 乙酸中或干燥保存。"
+  },
   "ref": "Neuhoff et al. (1988) Electrophoresis 9:255; Sambrook & Russell (2001) Molecular Cloning"
 }

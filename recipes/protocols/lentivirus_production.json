@@ -15,9 +15,10 @@
       "unit": "step"
     },
     {
-      "name": "2. Day 0: 配制转染复合物并加入细胞",
+      "name": "2. Day 0: 三质粒共转染",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": "Transfer vector : psPAX2 : pMD2.G = 4:3:1 (如 10:7.5:2.5 µg/10cm 皿); PEI 或 Lipo2000 转染"
     },
     {
       "name": "3. Day 1: 换液 (DMEM + HEPES)",
@@ -32,7 +33,8 @@
     {
       "name": "5. 转导: 病毒上清 + Polybrene 感染靶细胞",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": "Polybrene 8 µg/mL; MOI 0.3–1 (稳转); 可 Day 2+3 收集两批上清合并"
     },
     {
       "name": "6. Day 4+: Puromycin 筛选 (1 µg/mL)",
@@ -42,8 +44,8 @@
   ],
   "nameCn": "慢病毒包装与转导",
   "notes": {
-    "en": "2nd-generation lentiviral packaging in HEK293T cells for stable gene delivery. BSL-2 required. Typical titer: 10⁶–10⁷ TU/mL unconcentrated.",
-    "zh": "在 HEK293T 中进行第二代慢病毒包装，用于稳定基因递送。需要 BSL-2。典型滴度：未浓缩 10⁶–10⁷ TU/mL。"
+    "en": "2nd-gen packaging: transfer + psPAX2 (Addgene #12260) + pMD2.G (#12259). BSL-2 required. Concentrate by ultracentrifugation (25,000×g 2h) or PEG-8000 for higher titer. Typical: 10⁶–10⁷ TU/mL unconcentrated, 10⁸–10⁹ after concentration. Kill curve for puromycin on parental cells first.",
+    "zh": "二代包装体系：转移载体 + psPAX2 (Addgene #12260) + pMD2.G (#12259)。需 BSL-2。浓缩病毒：超速离心 (25,000×g 2h) 或 PEG-8000。未浓缩滴度 10⁶–10⁷ TU/mL，浓缩后 10⁸–10⁹。先做嘌呤霉素杀伤曲线确定筛选浓度。"
   },
   "ref": "protocols.io doi:10.17504/protocols.io.yxmvm132ov3p; Dull et al. (1998) J Virol 72:8463–8471"
 }

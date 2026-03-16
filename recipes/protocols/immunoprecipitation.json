@@ -3,19 +3,72 @@
   "name": "Immunoprecipitation (IP)",
   "nameCn": "免疫沉淀 (IP)",
   "category": "protocol",
-  "tags": ["IP", "immunoprecipitation", "protein", "antibody", "pull-down"],
-  "components": [
-    { "name": "1. 裂解细胞 (IP Lysis Buffer + protease inhibitors)", "amount": 1, "unit": "step", "note": "冰上 30 min, 间歇涡旋" },
-    { "name": "2. 离心 (14,000×g, 15 min, 4°C) → 取上清", "amount": 1, "unit": "step" },
-    { "name": "3. 定量 → 取 500 µg–1 mg 总蛋白", "amount": 1, "unit": "step" },
-    { "name": "4. 预清除 (Protein A/G beads, 4°C, 1 h)", "amount": 1, "unit": "step", "note": "去除非特异结合; 可选" },
-    { "name": "5. 保留 Input (5–10% 裂解液)", "amount": 1, "unit": "step" },
-    { "name": "6. 加抗体 (1–5 µg) → 4°C 旋转孵育 2–4 h 或过夜", "amount": 1, "unit": "step" },
-    { "name": "7. 加 Protein A/G beads (20–40 µL) → 4°C 旋转 1–2 h", "amount": 1, "unit": "step" },
-    { "name": "8. 洗涤 3–5 次 (Lysis Buffer, 4°C)", "amount": 1, "unit": "step", "note": "每次 1 mL, 旋转 5 min, 磁力架吸附" },
-    { "name": "9. 洗脱: 2× SDS Loading Buffer, 95°C 5 min", "amount": 1, "unit": "step" },
-    { "name": "10. Western Blot 检测", "amount": 1, "unit": "step", "note": "IP 样品 + Input + IgG 对照" }
+  "tags": [
+    "IP",
+    "immunoprecipitation",
+    "protein",
+    "antibody",
+    "pull-down"
   ],
-  "notes": "对照：(1) Normal IgG (同种属) 阴性对照; (2) Input 阳性对照。共免疫沉淀 (Co-IP)：使用温和裂解液（避免 SDS）。抗体轻链/重链干扰 WB 检测：用 Clean-Blot IP Detection Reagent 或交联抗体到 beads。磁珠比琼脂糖珠背景更低。内源性 IP 比 overexpression IP 更有生理意义。",
+  "components": [
+    {
+      "name": "1. 裂解细胞 (IP Lysis Buffer + protease inhibitors)",
+      "amount": 1,
+      "unit": "step",
+      "note": "冰上 30 min, 间歇涡旋"
+    },
+    {
+      "name": "2. 离心 (14,000×g, 15 min, 4°C) → 取上清",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 定量 → 取 500 µg–1 mg 总蛋白",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 预清除 (Protein A/G beads, 4°C, 1 h)",
+      "amount": 1,
+      "unit": "step",
+      "note": "去除非特异结合; 可选"
+    },
+    {
+      "name": "5. 保留 Input (5–10% 裂解液)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 加抗体 (1–5 µg) → 4°C 旋转孵育 2–4 h 或过夜",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 加 Protein A/G beads (20–40 µL) → 4°C 旋转 1–2 h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 洗涤 3–5 次 (Lysis Buffer, 4°C)",
+      "amount": 1,
+      "unit": "step",
+      "note": "每次 1 mL, 旋转 5 min, 磁力架吸附"
+    },
+    {
+      "name": "9. 洗脱: 2× SDS Loading Buffer, 95°C 5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. Western Blot 检测",
+      "amount": 1,
+      "unit": "step",
+      "note": "IP 样品 + Input + IgG 对照"
+    }
+  ],
+  "notes": {
+    "en": "Controls: (1) Normal IgG (same species) negative control; (2) Input positive control. For Co-IP: use mild lysis buffer (avoid SDS). Ab light/heavy chain interference in WB: use Clean-Blot IP Detection Reagent or crosslink Ab to beads. Magnetic beads have lower background than agarose. Endogenous IP is more physiologically relevant than overexpression IP.",
+    "zh": "对照：(1) Normal IgG (同种属) 阴性对照; (2) Input 阳性对照。共免疫沉淀 (Co-IP)：使用温和裂解液（避免 SDS）。抗体轻链/重链干扰 WB 检测：用 Clean-Blot IP Detection Reagent 或交联抗体到 beads。磁珠比琼脂糖珠背景更低。内源性 IP 比 overexpression IP 更有生理意义。"
+  },
   "ref": "Harlow & Lane (1988) Antibodies: A Laboratory Manual; Cell Signaling Technology IP Protocol"
 }

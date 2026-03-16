@@ -33,7 +33,7 @@
       "name": "5. 超声 (200–500 bp 片段)",
       "amount": 1,
       "unit": "step",
-      "note": "需优化条件"
+      "note": "Bioruptor: 30s on/30s off, 15–25 cycles, high; 探针超声: 10s pulse × 10, 30% amplitude; 需对每种细胞系优化"
     },
     {
       "name": "6. 离心取上清，稀释 10×",

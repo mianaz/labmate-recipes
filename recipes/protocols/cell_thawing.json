@@ -27,28 +27,40 @@
     {
       "name": "4. 转移至 9 mL 预热培养基",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": "逐滴加入, 缓冲 DMSO 浓度变化"
     },
     {
-      "name": "5. 37°C, 5% CO₂ 培养",
+      "name": "5. 离心 200×g, 5 min (推荐) 或直接铺板",
+      "amount": 1,
+      "unit": "step",
+      "note": "大多数细胞系建议离心去 DMSO; 极脆弱细胞可跳过直接铺板"
+    },
+    {
+      "name": "6. 弃上清, 新鲜完全培养基重悬, 接种培养瓶",
       "amount": 1,
       "unit": "step"
     },
     {
-      "name": "6. 6–8h 后换液去除 DMSO",
+      "name": "7. 37°C, 5% CO₂ 培养",
       "amount": 1,
       "unit": "step"
     },
     {
-      "name": "7. 恢复 1–2 代后开始实验",
+      "name": "8. 次日换液去除残余 DMSO 和死细胞碎片",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. 恢复 1–2 代后开始实验",
       "amount": 1,
       "unit": "step"
     }
   ],
   "nameCn": "细胞复苏",
   "notes": {
-    "en": "Quick-thaw protocol to recover frozen cells. Thaw rapidly in 37°C water bath, dilute DMSO immediately. Key is speed — DMSO is cytotoxic at 37°C. Allow 1–2 passages recovery before experiments.",
-    "zh": "关键是速度——DMSO 在 37°C 对细胞有毒。解冻至剩小冰晶即可。不要离心（脆弱细胞）。确认活力 >90%。"
+    "en": "Quick-thaw to recover frozen cells. Key is speed — DMSO is cytotoxic at 37°C. Most cell lines: centrifuge to remove DMSO. Very fragile cells (e.g., primary neurons): dilute directly without centrifugation. Check viability >90% after recovery. Allow 1–2 passages before experiments.",
+    "zh": "关键是速度——DMSO 在 37°C 对细胞有毒。解冻至剩小冰晶即可。大多数细胞系建议离心去 DMSO；极脆弱细胞（如原代神经元）可直接稀释铺板。恢复后确认活力 >90%。"
   },
   "ref": "Freshney (2015) Culture of Animal Cells; ATCC Cell Thawing Protocol"
 }

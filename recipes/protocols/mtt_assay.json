@@ -32,7 +32,8 @@
     {
       "name": "5. 每孔加 10 µL MTT (5 mg/mL)",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": "MTT 母液: 5 mg/mL in PBS, 0.22 µm 过滤, 4°C 避光保存 ≤4 周"
     },
     {
       "name": "6. 37°C 孵育 2–4h",

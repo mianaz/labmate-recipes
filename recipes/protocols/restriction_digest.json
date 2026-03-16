@@ -3,17 +3,62 @@
   "name": "Restriction Enzyme Digestion",
   "nameCn": "限制酶切",
   "category": "protocol",
-  "tags": ["restriction enzyme", "digestion", "cloning", "DNA", "endonuclease"],
-  "components": [
-    { "name": "DNA template", "amount": 1, "unit": "µg", "note": "质粒 0.5–1 µg; 基因组 DNA 5–10 µg" },
-    { "name": "10× Restriction Buffer", "amount": 5, "unit": "µL" },
-    { "name": "Restriction Enzyme(s)", "amount": 1, "unit": "µL", "note": "5–10 U per µg DNA; 体积 ≤10% 总反应 (避免甘油抑制)" },
-    { "name": "Nuclease-free H₂O", "amount": 1, "unit": "to 50 µL" },
-    { "name": "1. 冰上配制反应体系", "amount": 1, "unit": "step", "note": "最后加酶" },
-    { "name": "2. 37°C 孵育 1–2 h（或按酶推荐温度）", "amount": 1, "unit": "step" },
-    { "name": "3. 热灭活 65°C 20 min（如适用）", "amount": 1, "unit": "step", "note": "部分酶不可热灭活，需柱纯化" },
-    { "name": "4. 琼脂糖凝胶电泳验证", "amount": 1, "unit": "step" }
+  "tags": [
+    "restriction enzyme",
+    "digestion",
+    "cloning",
+    "DNA",
+    "endonuclease"
   ],
-  "notes": "双酶切时确认 buffer 兼容性（NEB 推荐使用 rCutSmart 通用 buffer）。Star activity：避免过量酶、长时间孵育、高甘油浓度。甲基化敏感酶（DpnI 仅切甲基化 DNA，用于去除模板）。部分粘性末端可能需要补平（Klenow）后连接。",
+  "components": [
+    {
+      "name": "DNA template",
+      "amount": 1,
+      "unit": "µg",
+      "note": "质粒 0.5–1 µg; 基因组 DNA 5–10 µg"
+    },
+    {
+      "name": "10× Restriction Buffer",
+      "amount": 5,
+      "unit": "µL"
+    },
+    {
+      "name": "Restriction Enzyme(s)",
+      "amount": 1,
+      "unit": "µL",
+      "note": "5–10 U per µg DNA; 体积 ≤10% 总反应 (避免甘油抑制)"
+    },
+    {
+      "name": "Nuclease-free H₂O",
+      "amount": 1,
+      "unit": "to 50 µL"
+    },
+    {
+      "name": "1. 冰上配制反应体系",
+      "amount": 1,
+      "unit": "step",
+      "note": "最后加酶"
+    },
+    {
+      "name": "2. 37°C 孵育 1–2 h（或按酶推荐温度）",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 热灭活 65°C 20 min（如适用）",
+      "amount": 1,
+      "unit": "step",
+      "note": "部分酶不可热灭活，需柱纯化"
+    },
+    {
+      "name": "4. 琼脂糖凝胶电泳验证",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "For double digestion, confirm buffer compatibility (NEB recommends rCutSmart universal buffer). Star activity: avoid excess enzyme, prolonged incubation, high glycerol. Methylation-sensitive enzymes (DpnI cuts only methylated DNA, used for template removal). Some sticky ends may need blunting (Klenow) before ligation.",
+    "zh": "双酶切时确认 buffer 兼容性（NEB 推荐使用 rCutSmart 通用 buffer）。Star activity：避免过量酶、长时间孵育、高甘油浓度。甲基化敏感酶（DpnI 仅切甲基化 DNA，用于去除模板）。部分粘性末端可能需要补平（Klenow）后连接。"
+  },
   "ref": "Sambrook & Russell (2001) Molecular Cloning; NEB Technical Reference: Restriction Enzymes"
 }

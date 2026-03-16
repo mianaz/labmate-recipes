@@ -12,7 +12,8 @@
     {
       "name": "1. Seed 200-1000 cells/well (6-well)",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": "高 PE 细胞 (HeLa): 200 cells; 低 PE 细胞: 500–1000; 先做预实验确定最佳密度"
     },
     {
       "name": "2. Allow attachment, apply treatment",

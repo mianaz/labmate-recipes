@@ -3,17 +3,61 @@
   "name": "BCA Protein Assay",
   "nameCn": "BCA 蛋白定量",
   "category": "protocol",
-  "tags": ["protein", "quantification", "BCA", "Bradford", "concentration"],
-  "components": [
-    { "name": "1. 准备 BSA 标准品稀释系列", "amount": 1, "unit": "step", "note": "0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL" },
-    { "name": "2. 配制 BCA 工作液 (Reagent A:B = 50:1)", "amount": 1, "unit": "step" },
-    { "name": "3. 96 孔板加样：25 µL 标准品/样品 per well", "amount": 1, "unit": "step", "note": "每个做 2–3 复孔" },
-    { "name": "4. 加 200 µL BCA 工作液到每个孔", "amount": 1, "unit": "step" },
-    { "name": "5. 37°C 孵育 30 min", "amount": 1, "unit": "step", "note": "板封膜防蒸发" },
-    { "name": "6. 冷却至室温", "amount": 1, "unit": "step" },
-    { "name": "7. 562 nm 读板", "amount": 1, "unit": "step" },
-    { "name": "8. 标准曲线计算样品浓度", "amount": 1, "unit": "step", "note": "四参数拟合或线性回归" }
+  "tags": [
+    "protein",
+    "quantification",
+    "BCA",
+    "concentration"
   ],
-  "notes": "比 Bradford 更耐去垢剂（兼容 1% SDS, 1% Triton X-100）。还原剂（DTT, β-ME）和 EDTA 会干扰——需用 BCA Compatible 试剂盒或预稀释。工作液可保持稳定 24 h。样品建议做 1:5 和 1:10 两个稀释度确保在标准曲线范围内。",
+  "components": [
+    {
+      "name": "1. 准备 BSA 标准品稀释系列",
+      "amount": 1,
+      "unit": "step",
+      "note": "0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL"
+    },
+    {
+      "name": "2. 配制 BCA 工作液 (Reagent A:B = 50:1)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 96 孔板加样：25 µL 标准品/样品 per well",
+      "amount": 1,
+      "unit": "step",
+      "note": "每个做 2–3 复孔"
+    },
+    {
+      "name": "4. 加 200 µL BCA 工作液到每个孔",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. 37°C 孵育 30 min",
+      "amount": 1,
+      "unit": "step",
+      "note": "板封膜防蒸发"
+    },
+    {
+      "name": "6. 冷却至室温",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. 562 nm 读板",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. 标准曲线计算样品浓度",
+      "amount": 1,
+      "unit": "step",
+      "note": "四参数拟合或线性回归"
+    }
+  ],
+  "notes": {
+    "en": "BCA assay is compatible with up to 5% SDS but not with reducing agents (DTT, β-ME). Standard range: 25-2000 µg/mL. For low-concentration samples, use Micro BCA kit (0.5-20 µg/mL). R² > 0.99 for standard curve. Bradford assay is an alternative (Coomassie binding, 595 nm) but incompatible with detergents.",
+    "zh": "比 Bradford 更耐去垢剂（兼容 1% SDS, 1% Triton X-100）。还原剂（DTT, β-ME）和 EDTA 会干扰——需用 BCA Compatible 试剂盒或预稀释。工作液可保持稳定 24 h。样品建议做 1:5 和 1:10 两个稀释度确保在标准曲线范围内。"
+  },
   "ref": "Smith et al. (1985) Anal Biochem 150:76–85; Thermo Scientific Pierce BCA Protein Assay Kit manual"
 }

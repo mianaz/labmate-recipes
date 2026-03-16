@@ -1,45 +1,26 @@
 {
   "id": "trizol_extraction",
-  "name": "TRIzol RNA Extraction (Protocol)",
+  "name": "TRIzol RNA Extraction",
+  "nameCn": "TRIzol RNA 提取",
   "category": "protocol",
-  "tags": [
-    "RNA",
-    "extraction",
-    "TRIzol",
-    "qPCR"
-  ],
+  "tags": ["RNA", "extraction", "TRIzol", "qPCR", "total RNA"],
   "components": [
-    {
-      "name": "TRIzol Reagent",
-      "amount": 1,
-      "unit": "mL",
-      "note": "per 5–10×10⁶ cells / 每 5–10×10⁶ 细胞"
-    },
-    {
-      "name": "Chloroform",
-      "amount": 0.2,
-      "unit": "mL",
-      "note": "per 1 mL TRIzol / 每 1 mL TRIzol"
-    },
-    {
-      "name": "Isopropanol",
-      "amount": 0.5,
-      "unit": "mL",
-      "note": "RNA precipitation / 沉淀 RNA"
-    },
-    {
-      "name": "75% Ethanol",
-      "amount": 1,
-      "unit": "mL",
-      "note": "RNA wash / 洗涤 RNA"
-    },
-    {
-      "name": "RNase-free H₂O",
-      "amount": 0.02,
-      "unit": "mL",
-      "note": "dissolve RNA (20–50 µL) / 溶解 RNA (20–50 µL)"
-    }
+    { "name": "1. 加 TRIzol 裂解", "amount": 1, "unit": "step", "note": "1 mL per 5–10×10⁶ cells; 组织: 1 mL per 50–100 mg, 匀浆器研磨" },
+    { "name": "2. 室温静置 5 min", "amount": 1, "unit": "step", "note": "充分裂解核蛋白复合物" },
+    { "name": "3. 加 0.2 mL 氯仿 (per 1 mL TRIzol)", "amount": 1, "unit": "step", "note": "盖紧, 剧烈摇晃 15 s, 室温 2–3 min" },
+    { "name": "4. 离心 12,000×g, 15 min, 4°C", "amount": 1, "unit": "step", "note": "分三层: 上层水相 (RNA) / 中间层 (DNA) / 下层有机相 (蛋白)" },
+    { "name": "5. 小心吸取上层水相至新管", "amount": 1, "unit": "step", "note": "勿碰中间白色界面层" },
+    { "name": "6. 加 0.5 mL 异丙醇 (per 1 mL TRIzol)", "amount": 1, "unit": "step", "note": "混匀, 室温 10 min" },
+    { "name": "7. 离心 12,000×g, 10 min, 4°C", "amount": 1, "unit": "step", "note": "RNA 沉淀为白色/透明胶状颗粒" },
+    { "name": "8. 弃上清, 加 1 mL 75% 乙醇洗涤", "amount": 1, "unit": "step", "note": "涡旋短暂混匀" },
+    { "name": "9. 离心 7,500×g, 5 min, 4°C", "amount": 1, "unit": "step" },
+    { "name": "10. 弃乙醇, 风干 5–10 min", "amount": 1, "unit": "step", "note": "勿过度干燥 (沉淀变透明即可), 否则难溶解" },
+    { "name": "11. 加 20–50 µL RNase-free H₂O 溶解", "amount": 1, "unit": "step", "note": "55°C 孵育 10 min 助溶解; 轻弹混匀" },
+    { "name": "12. 定量 + 质量评估", "amount": 1, "unit": "step", "note": "NanoDrop: A260/280 ≈ 2.0, A260/230 > 1.8; 琼脂糖凝胶: 28S/18S ≈ 2:1" }
   ],
-  "nameCn": "TRIzol RNA 提取流程",
-  "ref": "Chomczynski & Sacchi (1987) Anal Biochem 162:156–159; Rio et al. (2010) CSH Protoc doi:10.1101/pdb.prot5439"
+  "notes": {
+    "en": "All steps use RNase-free consumables. TRIzol is toxic (phenol + guanidinium) — work in fume hood with gloves. Typical yield: 5–15 µg RNA per 10⁶ cells. For small amounts, add 1 µL glycogen (20 mg/mL) as carrier before isopropanol step. Store RNA at -80°C. DNase I treatment recommended before RT-qPCR.",
+    "zh": "全程使用无 RNase 耗材。TRIzol 含苯酚和异硫氰酸胍，通风橱操作，戴手套。典型产量：每 10⁶ 细胞 5–15 µg RNA。微量样品在异丙醇沉淀前加 1 µL glycogen (20 mg/mL) 做载体。RNA 保存 -80°C。RT-qPCR 前建议 DNase I 处理。"
+  },
+  "ref": "Chomczynski & Sacchi (1987) Anal Biochem 162:156–159; Rio et al. (2010) CSH Protoc doi:10.1101/pdb.prot5439; Thermo Fisher TRIzol Reagent User Guide (Pub. No. MAN0001271)"
 }

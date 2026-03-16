@@ -37,7 +37,8 @@
     {
       "name": "6. 冻存液重悬 (1–5×10⁶/mL)",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": "90% FBS + 10% DMSO; 或商用 CryoStor CS10"
     },
     {
       "name": "7. 分装至冻存管 (1 mL/管)",

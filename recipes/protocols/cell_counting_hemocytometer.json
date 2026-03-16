@@ -3,16 +3,58 @@
   "name": "Cell Counting (Hemocytometer)",
   "nameCn": "细胞计数（血球计数板）",
   "category": "protocol",
-  "tags": ["cell culture", "counting", "hemocytometer", "viability"],
-  "components": [
-    { "name": "1. 胰酶消化 → 制备单细胞悬液", "amount": 1, "unit": "step" },
-    { "name": "2. 取 10 µL 细胞悬液 + 10 µL 台盼蓝 (1:1)", "amount": 1, "unit": "step", "note": "稀释因子 = 2; 密度过高再稀释" },
-    { "name": "3. 加盖玻片到血球计数板", "amount": 1, "unit": "step", "note": "盖玻片两侧出现牛顿环" },
-    { "name": "4. 加 10 µL 混合液到计数室", "amount": 1, "unit": "step", "note": "毛细作用自动填充, 勿溢出" },
-    { "name": "5. 10× 镜下计数四个大方格", "amount": 1, "unit": "step", "note": "活细胞透明; 死细胞蓝色" },
-    { "name": "6. 计算浓度", "amount": 1, "unit": "step", "note": "cells/mL = (四格总数 / 4) × 稀释因子 × 10⁴" },
-    { "name": "7. 计算活率", "amount": 1, "unit": "step", "note": "Viability = 活细胞数 / 总细胞数 × 100%" }
+  "tags": [
+    "cell culture",
+    "counting",
+    "hemocytometer",
+    "viability"
   ],
-  "notes": "台盼蓝接触时间 ≤5 min（否则活细胞也会着色）。每格理想计数 100–200 个细胞。计数线上细胞：计上不计下，计左不计右。清洗计数板：70% 乙醇擦拭，勿用超声。自动计数仪（Countess, TC20）更准确但需校准。",
+  "components": [
+    {
+      "name": "1. 胰酶消化 → 制备单细胞悬液",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. 取 10 µL 细胞悬液 + 10 µL 台盼蓝 (1:1)",
+      "amount": 1,
+      "unit": "step",
+      "note": "稀释因子 = 2; 密度过高再稀释"
+    },
+    {
+      "name": "3. 加盖玻片到血球计数板",
+      "amount": 1,
+      "unit": "step",
+      "note": "盖玻片两侧出现牛顿环"
+    },
+    {
+      "name": "4. 加 10 µL 混合液到计数室",
+      "amount": 1,
+      "unit": "step",
+      "note": "毛细作用自动填充, 勿溢出"
+    },
+    {
+      "name": "5. 10× 镜下计数四个大方格",
+      "amount": 1,
+      "unit": "step",
+      "note": "活细胞透明; 死细胞蓝色"
+    },
+    {
+      "name": "6. 计算浓度",
+      "amount": 1,
+      "unit": "step",
+      "note": "cells/mL = (四格总数 / 4) × 稀释因子 × 10⁴"
+    },
+    {
+      "name": "7. 计算活率",
+      "amount": 1,
+      "unit": "step",
+      "note": "Viability = 活细胞数 / 总细胞数 × 100%"
+    }
+  ],
+  "notes": {
+    "en": "Trypan blue contact ≤5 min (otherwise live cells also stain). Ideal count: 100-200 cells per large square. Cells on grid lines: count top and left, not bottom and right. Clean hemocytometer with 70% ethanol; do not sonicate. Automated counters (Countess, TC20) are more accurate but need calibration.",
+    "zh": "台盼蓝接触时间 ≤5 min（否则活细胞也会着色）。每格理想计数 100–200 个细胞。计数线上细胞：计上不计下，计左不计右。清洗计数板：70% 乙醇擦拭，勿用超声。自动计数仪（Countess, TC20）更准确但需校准。"
+  },
   "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 21; Louis & Bhatt (2015) Methods Mol Biol 1235:31"
 }

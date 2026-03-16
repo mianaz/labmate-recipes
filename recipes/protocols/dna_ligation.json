@@ -3,19 +3,72 @@
   "name": "DNA Ligation (T4 Ligase)",
   "nameCn": "DNA 连接（T4 连接酶）",
   "category": "protocol",
-  "tags": ["ligation", "cloning", "T4 ligase", "vector", "insert"],
-  "components": [
-    { "name": "Linearized vector", "amount": 50, "unit": "ng", "note": "去磷酸化可降低自连背景" },
-    { "name": "Insert DNA", "amount": 1, "unit": "step", "note": "摩尔比 vector:insert = 1:3–1:5 (粘性末端) 或 1:5–1:10 (平末端)" },
-    { "name": "10× T4 Ligase Buffer", "amount": 2, "unit": "µL", "note": "含 ATP, 勿反复冻融" },
-    { "name": "T4 DNA Ligase", "amount": 1, "unit": "µL", "note": "400 U (NEB) 或 1 Weiss U" },
-    { "name": "Nuclease-free H₂O", "amount": 1, "unit": "to 20 µL" },
-    { "name": "1. 冰上配制反应体系", "amount": 1, "unit": "step" },
-    { "name": "2a. 粘性末端：室温 10 min 或 16°C 过夜", "amount": 1, "unit": "step" },
-    { "name": "2b. 平末端：16°C 过夜（或室温 2 h 用高浓度酶）", "amount": 1, "unit": "step" },
-    { "name": "3. 热灭活 65°C 10 min", "amount": 1, "unit": "step" },
-    { "name": "4. 转化 2–5 µL 连接产物", "amount": 1, "unit": "step" }
+  "tags": [
+    "ligation",
+    "cloning",
+    "T4 ligase",
+    "vector",
+    "insert"
   ],
-  "notes": "对照组：(1) 无连接酶对照 → 评估自连背景; (2) 无 insert 对照 → 评估载体自连; (3) 未切 vector 对照 → 评估转化效率。Insert 计算公式：ng insert = (ng vector × insert bp / vector bp) × molar ratio。Quick Ligation Kit (NEB) 可 5 min 完成。",
+  "components": [
+    {
+      "name": "Linearized vector",
+      "amount": 50,
+      "unit": "ng",
+      "note": "去磷酸化可降低自连背景"
+    },
+    {
+      "name": "Insert DNA",
+      "amount": 1,
+      "unit": "step",
+      "note": "摩尔比 vector:insert = 1:3–1:5 (粘性末端) 或 1:5–1:10 (平末端)"
+    },
+    {
+      "name": "10× T4 Ligase Buffer",
+      "amount": 2,
+      "unit": "µL",
+      "note": "含 ATP, 勿反复冻融"
+    },
+    {
+      "name": "T4 DNA Ligase",
+      "amount": 1,
+      "unit": "µL",
+      "note": "400 U (NEB) 或 1 Weiss U"
+    },
+    {
+      "name": "Nuclease-free H₂O",
+      "amount": 1,
+      "unit": "to 20 µL"
+    },
+    {
+      "name": "1. 冰上配制反应体系",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2a. 粘性末端：室温 10 min 或 16°C 过夜",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2b. 平末端：16°C 过夜（或室温 2 h 用高浓度酶）",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 热灭活 65°C 10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. 转化 2–5 µL 连接产物",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "notes": {
+    "en": "Controls: (1) no ligase → assess background; (2) no insert → assess vector self-ligation; (3) uncut vector → assess transformation efficiency. Insert calculation: ng insert = (ng vector × insert bp / vector bp) × molar ratio. Quick Ligation Kit (NEB) completes in 5 min.",
+    "zh": "对照组：(1) 无连接酶对照 → 评估自连背景; (2) 无 insert 对照 → 评估载体自连; (3) 未切 vector 对照 → 评估转化效率。Insert 计算公式：ng insert = (ng vector × insert bp / vector bp) × molar ratio。Quick Ligation Kit (NEB) 可 5 min 完成。"
+  },
   "ref": "Sambrook & Russell (2001) Molecular Cloning; NEB T4 DNA Ligase protocol"
 }
