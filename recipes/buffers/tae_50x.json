@@ -28,7 +28,8 @@
   ],
   "nameCn": "50× TAE 缓冲液",
   "notes": {
-    "zh": "工作浓度：1× = 40 mM Tris-acetate, 1 mM EDTA。从凝胶回收 DNA 时优于 TBE。"
+    "en": "Dilute to 1× (40 mM Tris-acetate, 1 mM EDTA) for gel electrophoresis. TAE gives better DNA recovery than TBE but lower buffering capacity — change buffer for long runs. Store 50× at RT.",
+    "zh": "稀释至 1×（40 mM Tris-acetate, 1 mM EDTA）用于凝胶电泳。TAE 比 TBE DNA 回收率更高但缓冲能力较弱——长时间电泳需换液。50× 室温保存。"
   },
   "ref": "CSH Protocols doi:10.1101/pdb.rec8644; Sambrook & Russell (2001) Molecular Cloning"
 }

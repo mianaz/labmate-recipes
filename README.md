@@ -39,13 +39,26 @@ Each recipe is a single `.json` file. The `index.json` is rebuilt automatically 
 }
 ```
 
-## Importing into LabMate
+## Sync with Web App
 
-In LabMate → Guide tab → "Import from Library":
-1. Click **Sync Library** to fetch the latest index
-2. Browse by category or search
-3. Click **Import** on individual recipes or **Import All** for a category
-4. Imported recipes appear alongside built-in ones
+`sync.js` keeps the repo and the live web app (`index.html`) in sync.
+
+```bash
+node sync.js diff       # Show differences between repo and web app
+node sync.js import     # Repo → web app (adds new, updates changed)
+node sync.js export     # Web app → repo JSON files
+node sync.js validate   # Check all JSON files for schema issues
+```
+
+**Workflow:**
+1. Edit recipes in `recipes/` JSON files (the source of truth)
+2. Run `node sync.js import` to push changes into the live `index.html`
+3. Web-app-specific fields (`defaultVolume`, `briefSteps`, `detailedSteps`, `safeStops`, `relatedProtocols`) are preserved during import
+4. If recipes are added directly in the web app, run `node sync.js export` to pull them back into the repo
+
+**Environment variables:**
+- `LABMATE_HTML` — path to live `index.html` (default: `/var/www/apps.bioinfospace.com/lab_toolkit/index.html`)
+- `LABMATE_REPO` — path to this repo root (default: script directory)
 
 ## Contributing
 

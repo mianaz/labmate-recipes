@@ -26,5 +26,9 @@
     }
   ],
   "nameCn": "LB 培养基",
-  "ref": "Bertani (1951) J Bacteriol 62:293–300; Sambrook & Russell (2001)"
+  "ref": "Bertani (1951) J Bacteriol 62:293–300; Sambrook & Russell (2001)",
+  "notes": {
+    "en": "Adjust pH to 7.0 with NaOH. Autoclave 121°C 15 min. Add antibiotics after cooling to <55°C. For agar plates, add 15 g/L agar before autoclaving.",
+    "zh": "用 NaOH 调 pH 至 7.0。121°C 高压灭菌 15 min。冷却至 <55°C 后加抗生素。制备平板加 15 g/L 琼脂后再灭菌。"
+  }
 }

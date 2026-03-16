@@ -20,7 +20,7 @@
     {
       "name": "Insert DNA",
       "amount": 1,
-      "unit": "step",
+      "unit": "variable",
       "note": "摩尔比 vector:insert = 1:3–1:5 (粘性末端) 或 1:5–1:10 (平末端)"
     },
     {

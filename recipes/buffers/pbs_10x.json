@@ -35,5 +35,9 @@
     }
   ],
   "nameCn": "10× 磷酸盐缓冲液",
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press, Appendix 1"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press, Appendix 1",
+  "notes": {
+    "en": "Autoclave to sterilize. Dilute 1:10 with dH₂O for 1× PBS. Check pH after dilution — should be 7.4. Store at RT.",
+    "zh": "高压灭菌。用 dH₂O 1:10 稀释得 1× PBS。稀释后需校 pH（应为 7.4）。室温保存。"
+  }
 }

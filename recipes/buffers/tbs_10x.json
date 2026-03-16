@@ -21,5 +21,9 @@
     }
   ],
   "nameCn": "10× Tris 缓冲盐水",
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press",
+  "notes": {
+    "en": "Adjust pH to 7.6 with HCl. Autoclave. Dilute 1:10 for 1× TBS. Add 0.1% Tween-20 to make TBST.",
+    "zh": "用 HCl 调 pH 至 7.6。高压灭菌。1:10 稀释得 1× TBS。加 0.1% Tween-20 即为 TBST。"
+  }
 }
