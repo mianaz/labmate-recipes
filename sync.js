@@ -248,6 +248,9 @@ function cmdImport() {
       if (wr.detailedSteps && !rr.detailedSteps) mergedRecipe.detailedSteps = wr.detailedSteps;
       if (wr.safeStops && !rr.safeStops) mergedRecipe.safeStops = wr.safeStops;
       if (wr.relatedProtocols && !rr.relatedProtocols) mergedRecipe.relatedProtocols = wr.relatedProtocols;
+      // Ensure defaultVolume and unit always exist
+      if (!mergedRecipe.defaultVolume) mergedRecipe.defaultVolume = mergedRecipe.category === 'protocol' ? 1 : 1000;
+      if (!mergedRecipe.unit) mergedRecipe.unit = mergedRecipe.category === 'protocol' ? 'reaction' : 'mL';
       // Remove repo-only fields not used by web app
       delete mergedRecipe.source;
       merged.push(mergedRecipe);
@@ -261,11 +264,13 @@ function cmdImport() {
   let added = 0;
   for (const rr of repoRecipes) {
     if (!seen.has(rr.id)) {
-      // For protocols, set up defaultVolume and unit if missing
       const recipe = { ...rr };
-      if (recipe.category === 'protocol') {
-        if (!recipe.defaultVolume) recipe.defaultVolume = 1;
-        if (!recipe.unit) recipe.unit = 'reaction';
+      // Set defaults for missing fields based on category
+      if (!recipe.defaultVolume) {
+        recipe.defaultVolume = recipe.category === 'protocol' ? 1 : 1000;
+      }
+      if (!recipe.unit) {
+        recipe.unit = recipe.category === 'protocol' ? 'reaction' : 'mL';
       }
       delete recipe.source;
       merged.push(recipe);
