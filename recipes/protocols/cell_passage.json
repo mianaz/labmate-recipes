@@ -1,0 +1,20 @@
+{
+  "id": "cell_passage",
+  "name": "Cell Passaging (Subculture)",
+  "nameCn": "细胞传代",
+  "category": "protocol",
+  "tags": ["cell culture", "passage", "subculture", "trypsin", "adherent"],
+  "components": [
+    { "name": "1. 镜下观察细胞汇合度 (80–90%)", "amount": 1, "unit": "step" },
+    { "name": "2. 吸去旧培养基", "amount": 1, "unit": "step" },
+    { "name": "3. PBS 洗涤 1–2 次 (去除血清)", "amount": 1, "unit": "step", "note": "T75: 10 mL; 6-well: 2 mL" },
+    { "name": "4. 加胰酶-EDTA (0.05–0.25%)", "amount": 1, "unit": "step", "note": "T75: 2–3 mL; 均匀覆盖底面" },
+    { "name": "5. 37°C 孵育 2–5 min", "amount": 1, "unit": "step", "note": "轻拍瓶壁, 镜下确认脱落" },
+    { "name": "6. 加含血清培养基终止消化", "amount": 1, "unit": "step", "note": "加量 ≥2× 胰酶体积" },
+    { "name": "7. 吹打混匀成单细胞悬液", "amount": 1, "unit": "step", "note": "避免过度吹打和气泡" },
+    { "name": "8. 按比例接种到新瓶", "amount": 1, "unit": "step", "note": "常用传代比: 1:3–1:10; 记录代数" },
+    { "name": "9. 补足培养基, 标记, 放入培养箱", "amount": 1, "unit": "step", "note": "37°C, 5% CO₂" }
+  ],
+  "notes": "过度汇合会导致接触抑制和表型变化。部分细胞系对胰酶敏感（如 HEK293），用 Accutase 或 TrypLE 代替。悬浮细胞直接稀释传代。记录传代数——超过 20–30 代后细胞特性可能改变。每次传代预留样品冻存。用不含 Ca²⁺/Mg²⁺ 的 PBS。",
+  "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 13; ATCC Cell Culture Guide"
+}

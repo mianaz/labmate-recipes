@@ -1,0 +1,20 @@
+{
+  "id": "gel_extraction",
+  "name": "Gel Extraction (DNA Recovery)",
+  "nameCn": "凝胶回收（DNA 纯化）",
+  "category": "protocol",
+  "tags": ["DNA", "gel extraction", "purification", "agarose", "cloning"],
+  "components": [
+    { "name": "1. 琼脂糖凝胶电泳分离 DNA 片段", "amount": 1, "unit": "step" },
+    { "name": "2. UV/蓝光灯下切取目的条带", "amount": 1, "unit": "step", "note": "低功率短时间暴露, 减少 UV 损伤; 蓝光更安全" },
+    { "name": "3. 称重胶块 → 加 3 vol Buffer QG", "amount": 1, "unit": "step", "note": "100 mg ≈ 100 µL; 加 300 µL buffer" },
+    { "name": "4. 50°C 孵育 10 min, 每 2–3 min 涡旋", "amount": 1, "unit": "step", "note": "完全溶解, 颜色应为黄色 (pH ≤7.5)" },
+    { "name": "5. 加 1 gel vol 异丙醇 (>4 kb 片段可选)", "amount": 1, "unit": "step" },
+    { "name": "6. 转移至柱, 离心 1 min", "amount": 1, "unit": "step" },
+    { "name": "7. 洗涤 Buffer PE 750 µL, 离心 1 min", "amount": 1, "unit": "step" },
+    { "name": "8. 空转离心 1 min 去残留乙醇", "amount": 1, "unit": "step" },
+    { "name": "9. 洗脱: 30 µL EB 或 H₂O, 静置 1 min → 离心", "amount": 1, "unit": "step", "note": "预热至 50°C 可提高大片段回收率" }
+  ],
+  "notes": "回收率通常 70–80%。小片段 (<100 bp) 回收率低，建议用 Agencourt AMPure XP 磁珠代替。低熔点琼脂糖 (LMP agarose) 可直接在 37°C 溶解，减少 DNA 损伤。TAE 胶回收率优于 TBE。勿使用 >2% 琼脂糖凝胶做大片段回收。",
+  "ref": "QIAGEN QIAquick Gel Extraction Kit Handbook; Sambrook & Russell (2001) Molecular Cloning"
+}

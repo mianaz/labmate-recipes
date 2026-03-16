@@ -1,0 +1,24 @@
+{
+  "id": "plasmid_maxiprep",
+  "name": "Plasmid Maxiprep (Alkaline Lysis)",
+  "nameCn": "质粒大提（碱裂解法）",
+  "category": "protocol",
+  "tags": ["plasmid", "maxiprep", "DNA extraction", "alkaline lysis", "endotoxin-free"],
+  "components": [
+    { "name": "1. 过夜培养 100–500 mL LB + 抗性", "amount": 1, "unit": "step", "note": "37°C, 225 rpm, 12–16 h" },
+    { "name": "2. 离心收集菌体 (6,000×g, 15 min, 4°C)", "amount": 1, "unit": "step" },
+    { "name": "3. 重悬 (Buffer P1/Resuspension)", "amount": 1, "unit": "step", "note": "含 RNase A, 彻底重悬无颗粒" },
+    { "name": "4. 碱裂解 (Buffer P2/Lysis)", "amount": 1, "unit": "step", "note": "轻柔翻转 4–6 次, 室温 ≤5 min" },
+    { "name": "5. 中和 (Buffer P3/Neutralization)", "amount": 1, "unit": "step", "note": "立即翻转混匀, 冰上 15–20 min" },
+    { "name": "6. 离心去除碎片 (20,000×g, 30 min, 4°C)", "amount": 1, "unit": "step" },
+    { "name": "7. 过柱结合 (equilibrated column)", "amount": 1, "unit": "step" },
+    { "name": "8. 洗涤 2× (Wash Buffer)", "amount": 1, "unit": "step" },
+    { "name": "9. 洗脱 (Elution Buffer, pre-warmed 65°C)", "amount": 1, "unit": "step" },
+    { "name": "10. 异丙醇沉淀 (0.7 vol, -20°C 30 min)", "amount": 1, "unit": "step" },
+    { "name": "11. 离心 (15,000×g, 30 min, 4°C)", "amount": 1, "unit": "step" },
+    { "name": "12. 70% 乙醇洗涤 → 风干 → TE 溶解", "amount": 1, "unit": "step" },
+    { "name": "13. 定量 (A260/280 ≈ 1.8, A260/230 > 2.0)", "amount": 1, "unit": "step" }
+  ],
+  "notes": "典型产量：100 mL 高拷贝质粒 → 500–1000 µg DNA。Endotoxin-free 质粒用于转染/体内实验需使用 endotoxin removal column。避免过度涡旋导致基因组 DNA 污染。",
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd Ed; QIAGEN Plasmid Purification Handbook"
+}

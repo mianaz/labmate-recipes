@@ -1,0 +1,20 @@
+{
+  "id": "ethanol_precipitation",
+  "name": "Ethanol Precipitation of Nucleic Acids",
+  "nameCn": "核酸乙醇沉淀",
+  "category": "protocol",
+  "tags": ["DNA", "RNA", "precipitation", "purification", "concentration"],
+  "components": [
+    { "name": "1. 加 1/10 vol 3 M NaOAc (pH 5.2)", "amount": 1, "unit": "step", "note": "DNA 也可用 NaCl 或 NH₄OAc" },
+    { "name": "2. 加 2.5 vol 冰冷 100% 乙醇", "amount": 1, "unit": "step", "note": "RNA 或低浓度 DNA: 加 1 µL glycogen (20 mg/mL) 做载体" },
+    { "name": "3. 混匀, -20°C 放置 ≥30 min", "amount": 1, "unit": "step", "note": "过夜可提高低浓度样品回收率" },
+    { "name": "4. 离心 14,000×g, 15–30 min, 4°C", "amount": 1, "unit": "step" },
+    { "name": "5. 弃上清 → 加 500 µL 冰冷 70% 乙醇", "amount": 1, "unit": "step" },
+    { "name": "6. 离心 14,000×g, 5 min, 4°C", "amount": 1, "unit": "step" },
+    { "name": "7. 彻底去除上清", "amount": 1, "unit": "step", "note": "吸管小心吸, 勿碰沉淀" },
+    { "name": "8. 风干 5–10 min（勿过度干燥）", "amount": 1, "unit": "step" },
+    { "name": "9. 溶解于 TE 或 H₂O", "amount": 1, "unit": "step" }
+  ],
+  "notes": "70% 乙醇洗涤去除残余盐。异丙醇沉淀 (0.7 vol, 无需加盐) 体积更小，适合大体积样品，但沉淀含更多盐需多洗一次。SDS 会共沉淀——需先用 KOAc 沉淀去除或酚氯仿提取。不要使用乙醇沉淀从 <10 µL 体积回收 DNA。",
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; Green & Sambrook (2012) Molecular Cloning, 4th Ed"
+}

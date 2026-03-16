@@ -1,0 +1,23 @@
+{
+  "id": "northern_blot",
+  "name": "Northern Blot",
+  "nameCn": "Northern Blot（RNA 印迹）",
+  "category": "protocol",
+  "tags": ["RNA", "Northern blot", "gene expression", "mRNA detection"],
+  "components": [
+    { "name": "1. RNA 提取 + 定量 (5–30 µg total RNA)", "amount": 1, "unit": "step" },
+    { "name": "2. 变性琼脂糖凝胶（1.2% + 甲醛）", "amount": 1, "unit": "step", "note": "MOPS running buffer" },
+    { "name": "3. RNA 变性：65°C 15 min + 冰上", "amount": 1, "unit": "step", "note": "加 formaldehyde loading dye" },
+    { "name": "4. 电泳 (5 V/cm, 2–3 h)", "amount": 1, "unit": "step" },
+    { "name": "5. 平衡凝胶 (20× SSC, 2×10 min)", "amount": 1, "unit": "step" },
+    { "name": "6. 毛细转印至尼龙膜 (过夜, 20× SSC)", "amount": 1, "unit": "step", "note": "或真空转印 1–2 h" },
+    { "name": "7. UV 交联 (120 mJ/cm², Stratalinker)", "amount": 1, "unit": "step" },
+    { "name": "8. 预杂交 (42°C, 1 h)", "amount": 1, "unit": "step", "note": "含 50% 甲酰胺的杂交液" },
+    { "name": "9. 杂交 (探针 + 杂交液, 42°C 过夜)", "amount": 1, "unit": "step", "note": "DIG 标记或 ³²P 标记探针" },
+    { "name": "10. 低严格洗涤 (2× SSC/0.1% SDS, RT, 2×5 min)", "amount": 1, "unit": "step" },
+    { "name": "11. 高严格洗涤 (0.1× SSC/0.1% SDS, 65°C, 2×15 min)", "amount": 1, "unit": "step" },
+    { "name": "12. 检测（放射自显影 / DIG 化学发光）", "amount": 1, "unit": "step" }
+  ],
+  "notes": "所有操作使用 RNase-free 试剂和器具。甲醛凝胶在通风橱中操作。DIG 标记探针比放射性标记更安全，灵敏度稍低。阳性对照：管家基因（GAPDH, β-actin）。RNA 质量可通过 28S/18S 比值（~2:1）评估。",
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, Ch. 7; Alwine et al. (1977) PNAS 74:5350"
+}

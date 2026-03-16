@@ -1,0 +1,19 @@
+{
+  "id": "genomic_dna_extraction",
+  "name": "Genomic DNA Extraction (Cells/Tissue)",
+  "nameCn": "基因组 DNA 提取（细胞/组织）",
+  "category": "protocol",
+  "tags": ["DNA", "genomic", "extraction", "genotyping", "PCR"],
+  "components": [
+    { "name": "1. 裂解：加 Lysis Buffer + Proteinase K", "amount": 1, "unit": "step", "note": "56°C 孵育 1–3 h 或过夜; 组织需剪碎" },
+    { "name": "2. RNase A 处理 (可选, 37°C 30 min)", "amount": 1, "unit": "step" },
+    { "name": "3. 蛋白沉淀 (加 Protein Precipitation Sol)", "amount": 1, "unit": "step", "note": "涡旋 20 s → 冰上 5 min → 离心 16,000×g 3 min" },
+    { "name": "4. 异丙醇沉淀 DNA", "amount": 1, "unit": "step", "note": "加等体积异丙醇到上清, 轻柔翻转" },
+    { "name": "5. 离心 (16,000×g, 5 min)", "amount": 1, "unit": "step" },
+    { "name": "6. 70% 乙醇洗涤 2×", "amount": 1, "unit": "step" },
+    { "name": "7. 风干 5–15 min → 溶解于 TE", "amount": 1, "unit": "step", "note": "室温或 65°C 孵育助溶解; 勿涡旋以避免剪切" },
+    { "name": "8. 定量 (A260/280 ≈ 1.8)", "amount": 1, "unit": "step" }
+  ],
+  "notes": "酚氯仿提取法：步骤 3 换为等体积 phenol:chloroform:IAA (25:24:1) 提取 → 再用 chloroform:IAA 提取 → 乙醇沉淀。高分子量 gDNA 用宽口枪头操作，避免剪切。血液样品需先裂解红细胞。FFPE 组织需去石蜡。柱提取法 (DNeasy) 更快但产量和分子量较低。",
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; QIAGEN DNeasy Blood & Tissue Handbook"
+}

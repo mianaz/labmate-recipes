@@ -1,0 +1,21 @@
+{
+  "id": "rna_column_extraction",
+  "name": "RNA Column Extraction (Silica-based)",
+  "nameCn": "RNA 柱提取（硅胶柱法）",
+  "category": "protocol",
+  "tags": ["RNA", "extraction", "column", "RNeasy", "silica"],
+  "components": [
+    { "name": "1. 裂解：加 Buffer RLT + β-ME，涡旋", "amount": 1, "unit": "step", "note": "≤5×10⁶ cells 或 30 mg tissue" },
+    { "name": "2. 匀浆（组织用匀浆器/针头 5–10 次）", "amount": 1, "unit": "step" },
+    { "name": "3. 加等体积 70% 乙醇，混匀", "amount": 1, "unit": "step" },
+    { "name": "4. 转移至 RNeasy 柱，离心 15 s ≥8,000×g", "amount": 1, "unit": "step" },
+    { "name": "5. 洗涤 Buffer RW1 (700 µL)", "amount": 1, "unit": "step" },
+    { "name": "6. On-column DNase I 消化（可选）", "amount": 1, "unit": "step", "note": "加 80 µL DNase I mix, 室温 15 min" },
+    { "name": "7. 洗涤 Buffer RW1 (350 µL)", "amount": 1, "unit": "step" },
+    { "name": "8. 洗涤 Buffer RPE 2× (500 µL)", "amount": 1, "unit": "step", "note": "第二次离心 2 min 干燥膜" },
+    { "name": "9. 洗脱：30–50 µL RNase-free H₂O", "amount": 1, "unit": "step", "note": "静置 1 min → 离心, 可重复一次提高产量" },
+    { "name": "10. 定量 (NanoDrop: A260/280 ≈ 2.0)", "amount": 1, "unit": "step" }
+  ],
+  "notes": "快速（~30 min）且重现性好。产量低于 TRIzol，但纯度高，适合 RT-qPCR/RNA-seq。小量 RNA（<200 nt, 含 miRNA）需用 miRNA enrichment column。组织需在 RNAlater 中保存或液氮速冻。",
+  "ref": "QIAGEN RNeasy Mini Handbook; Chomczynski & Sacchi (2006) Nat Protoc 1:581"
+}

@@ -1334,6 +1334,1046 @@
         "pluripotent"
       ],
       "file": "recipes/media/esc_culture_media.json"
+    },
+    {
+      "id": "bacterial_glycerol_stock",
+      "name": "Bacterial Glycerol Stock Preparation",
+      "nameCn": "细菌甘油菌保存",
+      "category": "protocol",
+      "tags": [
+        "bacteria",
+        "glycerol stock",
+        "storage",
+        "E. coli",
+        "culture"
+      ],
+      "components": [
+        {
+          "name": "1. 挑单克隆 → 接种 3–5 mL LB + 抗性",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2. 37°C 过夜培养至对数期 (OD₆₀₀ 0.5–0.8)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 取 500 µL 菌液 + 500 µL 50% 甘油",
+          "amount": 1,
+          "unit": "step",
+          "note": "终浓度 25% 甘油; 或用 15% DMSO"
+        },
+        {
+          "name": "4. 温和混匀（勿涡旋）",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "5. 标记管子（菌株、质粒、抗性、日期）",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "6. 直接放入 -80°C 保存",
+          "amount": 1,
+          "unit": "step",
+          "note": "不要预冻 -20°C"
+        }
+      ],
+      "notes": "复苏：用无菌枪头刮取少量冻存菌（不要完全解冻！），直接划板或接种液体培养基。正确保存可存活 >10 年。做 2 份备份放不同冰箱。甘油需灭菌。标签用防冻标记笔或防冻标签。",
+      "ref": "Sambrook & Russell (2001) Molecular Cloning; Addgene Protocol: Making Glycerol Stocks"
+    },
+    {
+      "id": "bca_protein_assay",
+      "name": "BCA Protein Assay",
+      "nameCn": "BCA 蛋白定量",
+      "category": "protocol",
+      "tags": [
+        "protein",
+        "quantification",
+        "BCA",
+        "Bradford",
+        "concentration"
+      ],
+      "components": [
+        {
+          "name": "1. 准备 BSA 标准品稀释系列",
+          "amount": 1,
+          "unit": "step",
+          "note": "0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL"
+        },
+        {
+          "name": "2. 配制 BCA 工作液 (Reagent A:B = 50:1)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 96 孔板加样：25 µL 标准品/样品 per well",
+          "amount": 1,
+          "unit": "step",
+          "note": "每个做 2–3 复孔"
+        },
+        {
+          "name": "4. 加 200 µL BCA 工作液到每个孔",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "5. 37°C 孵育 30 min",
+          "amount": 1,
+          "unit": "step",
+          "note": "板封膜防蒸发"
+        },
+        {
+          "name": "6. 冷却至室温",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "7. 562 nm 读板",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "8. 标准曲线计算样品浓度",
+          "amount": 1,
+          "unit": "step",
+          "note": "四参数拟合或线性回归"
+        }
+      ],
+      "notes": "比 Bradford 更耐去垢剂（兼容 1% SDS, 1% Triton X-100）。还原剂（DTT, β-ME）和 EDTA 会干扰——需用 BCA Compatible 试剂盒或预稀释。工作液可保持稳定 24 h。样品建议做 1:5 和 1:10 两个稀释度确保在标准曲线范围内。",
+      "ref": "Smith et al. (1985) Anal Biochem 150:76–85; Thermo Scientific Pierce BCA Protein Assay Kit manual"
+    },
+    {
+      "id": "cck8_proliferation",
+      "name": "CCK-8 Cell Proliferation / Viability Assay",
+      "nameCn": "CCK-8 细胞增殖/活力检测",
+      "category": "protocol",
+      "tags": [
+        "CCK-8",
+        "cell viability",
+        "proliferation",
+        "cytotoxicity",
+        "assay"
+      ],
+      "components": [
+        {
+          "name": "1. 96 孔板铺板 (2,000–10,000 cells/well)",
+          "amount": 1,
+          "unit": "step",
+          "note": "100 µL 完全培养基; 边缘孔加 PBS 防蒸发"
+        },
+        {
+          "name": "2. 过夜贴壁 (37°C, 5% CO₂)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 加药物/处理因素",
+          "amount": 1,
+          "unit": "step",
+          "note": "每个浓度 3–6 复孔; 含空白孔 (培养基+CCK-8)"
+        },
+        {
+          "name": "4. 孵育 24/48/72 h",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "5. 每孔加 10 µL CCK-8 试剂",
+          "amount": 1,
+          "unit": "step",
+          "note": "避光操作, 勿产生气泡"
+        },
+        {
+          "name": "6. 37°C 孵育 1–4 h",
+          "amount": 1,
+          "unit": "step",
+          "note": "颜色从橙红变为深橙; 1 h 后每 30 min 检查"
+        },
+        {
+          "name": "7. 450 nm 读板 (参考波长 650 nm)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "8. 计算活力 = (OD处理 - OD空白) / (OD对照 - OD空白) × 100%",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "CCK-8 优于 MTT：水溶性无需溶解结晶、可连续检测（非终点法）、灵敏度更高。含酚红培养基会稍有背景但不影响结果。细胞数与 OD 值需在线性范围内——首次使用做标准曲线。还原性物质（DTT, β-ME）和高血清浓度可能产生假阳性。WST-1 是类似替代品。",
+      "ref": "Ishiyama et al. (1997) Talanta 44:1299; Dojindo CCK-8 Technical Manual"
+    },
+    {
+      "id": "cell_counting_hemocytometer",
+      "name": "Cell Counting (Hemocytometer)",
+      "nameCn": "细胞计数（血球计数板）",
+      "category": "protocol",
+      "tags": [
+        "cell culture",
+        "counting",
+        "hemocytometer",
+        "viability"
+      ],
+      "components": [
+        {
+          "name": "1. 胰酶消化 → 制备单细胞悬液",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2. 取 10 µL 细胞悬液 + 10 µL 台盼蓝 (1:1)",
+          "amount": 1,
+          "unit": "step",
+          "note": "稀释因子 = 2; 密度过高再稀释"
+        },
+        {
+          "name": "3. 加盖玻片到血球计数板",
+          "amount": 1,
+          "unit": "step",
+          "note": "盖玻片两侧出现牛顿环"
+        },
+        {
+          "name": "4. 加 10 µL 混合液到计数室",
+          "amount": 1,
+          "unit": "step",
+          "note": "毛细作用自动填充, 勿溢出"
+        },
+        {
+          "name": "5. 10× 镜下计数四个大方格",
+          "amount": 1,
+          "unit": "step",
+          "note": "活细胞透明; 死细胞蓝色"
+        },
+        {
+          "name": "6. 计算浓度",
+          "amount": 1,
+          "unit": "step",
+          "note": "cells/mL = (四格总数 / 4) × 稀释因子 × 10⁴"
+        },
+        {
+          "name": "7. 计算活率",
+          "amount": 1,
+          "unit": "step",
+          "note": "Viability = 活细胞数 / 总细胞数 × 100%"
+        }
+      ],
+      "notes": "台盼蓝接触时间 ≤5 min（否则活细胞也会着色）。每格理想计数 100–200 个细胞。计数线上细胞：计上不计下，计左不计右。清洗计数板：70% 乙醇擦拭，勿用超声。自动计数仪（Countess, TC20）更准确但需校准。",
+      "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 21; Louis & Bhatt (2015) Methods Mol Biol 1235:31"
+    },
+    {
+      "id": "cell_passage",
+      "name": "Cell Passaging (Subculture)",
+      "nameCn": "细胞传代",
+      "category": "protocol",
+      "tags": [
+        "cell culture",
+        "passage",
+        "subculture",
+        "trypsin",
+        "adherent"
+      ],
+      "components": [
+        {
+          "name": "1. 镜下观察细胞汇合度 (80–90%)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2. 吸去旧培养基",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. PBS 洗涤 1–2 次 (去除血清)",
+          "amount": 1,
+          "unit": "step",
+          "note": "T75: 10 mL; 6-well: 2 mL"
+        },
+        {
+          "name": "4. 加胰酶-EDTA (0.05–0.25%)",
+          "amount": 1,
+          "unit": "step",
+          "note": "T75: 2–3 mL; 均匀覆盖底面"
+        },
+        {
+          "name": "5. 37°C 孵育 2–5 min",
+          "amount": 1,
+          "unit": "step",
+          "note": "轻拍瓶壁, 镜下确认脱落"
+        },
+        {
+          "name": "6. 加含血清培养基终止消化",
+          "amount": 1,
+          "unit": "step",
+          "note": "加量 ≥2× 胰酶体积"
+        },
+        {
+          "name": "7. 吹打混匀成单细胞悬液",
+          "amount": 1,
+          "unit": "step",
+          "note": "避免过度吹打和气泡"
+        },
+        {
+          "name": "8. 按比例接种到新瓶",
+          "amount": 1,
+          "unit": "step",
+          "note": "常用传代比: 1:3–1:10; 记录代数"
+        },
+        {
+          "name": "9. 补足培养基, 标记, 放入培养箱",
+          "amount": 1,
+          "unit": "step",
+          "note": "37°C, 5% CO₂"
+        }
+      ],
+      "notes": "过度汇合会导致接触抑制和表型变化。部分细胞系对胰酶敏感（如 HEK293），用 Accutase 或 TrypLE 代替。悬浮细胞直接稀释传代。记录传代数——超过 20–30 代后细胞特性可能改变。每次传代预留样品冻存。用不含 Ca²⁺/Mg²⁺ 的 PBS。",
+      "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 13; ATCC Cell Culture Guide"
+    },
+    {
+      "id": "coomassie_staining",
+      "name": "Coomassie Brilliant Blue Staining (SDS-PAGE)",
+      "nameCn": "考马斯亮蓝染色",
+      "category": "protocol",
+      "tags": [
+        "protein",
+        "SDS-PAGE",
+        "Coomassie",
+        "staining",
+        "gel"
+      ],
+      "components": [
+        {
+          "name": "1. 固定：50% 甲醇 / 10% 乙酸, 30 min",
+          "amount": 1,
+          "unit": "step",
+          "note": "轻柔摇晃, 防止凝胶变形"
+        },
+        {
+          "name": "2. 染色：0.1% CBB R-250 / 50% 甲醇 / 10% 乙酸",
+          "amount": 1,
+          "unit": "step",
+          "note": "1 h 至过夜, 摇床"
+        },
+        {
+          "name": "3. 脱色 I：50% 甲醇 / 10% 乙酸, 30 min",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "4. 脱色 II：5% 甲醇 / 7% 乙酸",
+          "amount": 1,
+          "unit": "step",
+          "note": "换液 2–3 次直到背景清晰; 加纸巾吸附色素加速"
+        },
+        {
+          "name": "5. 水中保存或扫描成像",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "灵敏度：~100 ng 蛋白/条带。更灵敏可用 Colloidal Coomassie (Neuhoff 法, ~10 ng) 或银染 (~1 ng)。CBB G-250 (Colloidal) 不需固定步骤且背景更低。微波加速法：染色液微波 30 s → 摇 5 min → 脱色液微波 30 s → 摇 5 min，可在 15 min 内完成。凝胶可保存在 7% 乙酸中或干燥保存。",
+      "ref": "Neuhoff et al. (1988) Electrophoresis 9:255; Sambrook & Russell (2001) Molecular Cloning"
+    },
+    {
+      "id": "dna_ligation",
+      "name": "DNA Ligation (T4 Ligase)",
+      "nameCn": "DNA 连接（T4 连接酶）",
+      "category": "protocol",
+      "tags": [
+        "ligation",
+        "cloning",
+        "T4 ligase",
+        "vector",
+        "insert"
+      ],
+      "components": [
+        {
+          "name": "Linearized vector",
+          "amount": 50,
+          "unit": "ng",
+          "note": "去磷酸化可降低自连背景"
+        },
+        {
+          "name": "Insert DNA",
+          "amount": 1,
+          "unit": "step",
+          "note": "摩尔比 vector:insert = 1:3–1:5 (粘性末端) 或 1:5–1:10 (平末端)"
+        },
+        {
+          "name": "10× T4 Ligase Buffer",
+          "amount": 2,
+          "unit": "µL",
+          "note": "含 ATP, 勿反复冻融"
+        },
+        {
+          "name": "T4 DNA Ligase",
+          "amount": 1,
+          "unit": "µL",
+          "note": "400 U (NEB) 或 1 Weiss U"
+        },
+        {
+          "name": "Nuclease-free H₂O",
+          "amount": 1,
+          "unit": "to 20 µL"
+        },
+        {
+          "name": "1. 冰上配制反应体系",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2a. 粘性末端：室温 10 min 或 16°C 过夜",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2b. 平末端：16°C 过夜（或室温 2 h 用高浓度酶）",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 热灭活 65°C 10 min",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "4. 转化 2–5 µL 连接产物",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "对照组：(1) 无连接酶对照 → 评估自连背景; (2) 无 insert 对照 → 评估载体自连; (3) 未切 vector 对照 → 评估转化效率。Insert 计算公式：ng insert = (ng vector × insert bp / vector bp) × molar ratio。Quick Ligation Kit (NEB) 可 5 min 完成。",
+      "ref": "Sambrook & Russell (2001) Molecular Cloning; NEB T4 DNA Ligase protocol"
+    },
+    {
+      "id": "ethanol_precipitation",
+      "name": "Ethanol Precipitation of Nucleic Acids",
+      "nameCn": "核酸乙醇沉淀",
+      "category": "protocol",
+      "tags": [
+        "DNA",
+        "RNA",
+        "precipitation",
+        "purification",
+        "concentration"
+      ],
+      "components": [
+        {
+          "name": "1. 加 1/10 vol 3 M NaOAc (pH 5.2)",
+          "amount": 1,
+          "unit": "step",
+          "note": "DNA 也可用 NaCl 或 NH₄OAc"
+        },
+        {
+          "name": "2. 加 2.5 vol 冰冷 100% 乙醇",
+          "amount": 1,
+          "unit": "step",
+          "note": "RNA 或低浓度 DNA: 加 1 µL glycogen (20 mg/mL) 做载体"
+        },
+        {
+          "name": "3. 混匀, -20°C 放置 ≥30 min",
+          "amount": 1,
+          "unit": "step",
+          "note": "过夜可提高低浓度样品回收率"
+        },
+        {
+          "name": "4. 离心 14,000×g, 15–30 min, 4°C",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "5. 弃上清 → 加 500 µL 冰冷 70% 乙醇",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "6. 离心 14,000×g, 5 min, 4°C",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "7. 彻底去除上清",
+          "amount": 1,
+          "unit": "step",
+          "note": "吸管小心吸, 勿碰沉淀"
+        },
+        {
+          "name": "8. 风干 5–10 min（勿过度干燥）",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "9. 溶解于 TE 或 H₂O",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "70% 乙醇洗涤去除残余盐。异丙醇沉淀 (0.7 vol, 无需加盐) 体积更小，适合大体积样品，但沉淀含更多盐需多洗一次。SDS 会共沉淀——需先用 KOAc 沉淀去除或酚氯仿提取。不要使用乙醇沉淀从 <10 µL 体积回收 DNA。",
+      "ref": "Sambrook & Russell (2001) Molecular Cloning; Green & Sambrook (2012) Molecular Cloning, 4th Ed"
+    },
+    {
+      "id": "gel_extraction",
+      "name": "Gel Extraction (DNA Recovery)",
+      "nameCn": "凝胶回收（DNA 纯化）",
+      "category": "protocol",
+      "tags": [
+        "DNA",
+        "gel extraction",
+        "purification",
+        "agarose",
+        "cloning"
+      ],
+      "components": [
+        {
+          "name": "1. 琼脂糖凝胶电泳分离 DNA 片段",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2. UV/蓝光灯下切取目的条带",
+          "amount": 1,
+          "unit": "step",
+          "note": "低功率短时间暴露, 减少 UV 损伤; 蓝光更安全"
+        },
+        {
+          "name": "3. 称重胶块 → 加 3 vol Buffer QG",
+          "amount": 1,
+          "unit": "step",
+          "note": "100 mg ≈ 100 µL; 加 300 µL buffer"
+        },
+        {
+          "name": "4. 50°C 孵育 10 min, 每 2–3 min 涡旋",
+          "amount": 1,
+          "unit": "step",
+          "note": "完全溶解, 颜色应为黄色 (pH ≤7.5)"
+        },
+        {
+          "name": "5. 加 1 gel vol 异丙醇 (>4 kb 片段可选)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "6. 转移至柱, 离心 1 min",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "7. 洗涤 Buffer PE 750 µL, 离心 1 min",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "8. 空转离心 1 min 去残留乙醇",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "9. 洗脱: 30 µL EB 或 H₂O, 静置 1 min → 离心",
+          "amount": 1,
+          "unit": "step",
+          "note": "预热至 50°C 可提高大片段回收率"
+        }
+      ],
+      "notes": "回收率通常 70–80%。小片段 (<100 bp) 回收率低，建议用 Agencourt AMPure XP 磁珠代替。低熔点琼脂糖 (LMP agarose) 可直接在 37°C 溶解，减少 DNA 损伤。TAE 胶回收率优于 TBE。勿使用 >2% 琼脂糖凝胶做大片段回收。",
+      "ref": "QIAGEN QIAquick Gel Extraction Kit Handbook; Sambrook & Russell (2001) Molecular Cloning"
+    },
+    {
+      "id": "genomic_dna_extraction",
+      "name": "Genomic DNA Extraction (Cells/Tissue)",
+      "nameCn": "基因组 DNA 提取（细胞/组织）",
+      "category": "protocol",
+      "tags": [
+        "DNA",
+        "genomic",
+        "extraction",
+        "genotyping",
+        "PCR"
+      ],
+      "components": [
+        {
+          "name": "1. 裂解：加 Lysis Buffer + Proteinase K",
+          "amount": 1,
+          "unit": "step",
+          "note": "56°C 孵育 1–3 h 或过夜; 组织需剪碎"
+        },
+        {
+          "name": "2. RNase A 处理 (可选, 37°C 30 min)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 蛋白沉淀 (加 Protein Precipitation Sol)",
+          "amount": 1,
+          "unit": "step",
+          "note": "涡旋 20 s → 冰上 5 min → 离心 16,000×g 3 min"
+        },
+        {
+          "name": "4. 异丙醇沉淀 DNA",
+          "amount": 1,
+          "unit": "step",
+          "note": "加等体积异丙醇到上清, 轻柔翻转"
+        },
+        {
+          "name": "5. 离心 (16,000×g, 5 min)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "6. 70% 乙醇洗涤 2×",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "7. 风干 5–15 min → 溶解于 TE",
+          "amount": 1,
+          "unit": "step",
+          "note": "室温或 65°C 孵育助溶解; 勿涡旋以避免剪切"
+        },
+        {
+          "name": "8. 定量 (A260/280 ≈ 1.8)",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "酚氯仿提取法：步骤 3 换为等体积 phenol:chloroform:IAA (25:24:1) 提取 → 再用 chloroform:IAA 提取 → 乙醇沉淀。高分子量 gDNA 用宽口枪头操作，避免剪切。血液样品需先裂解红细胞。FFPE 组织需去石蜡。柱提取法 (DNeasy) 更快但产量和分子量较低。",
+      "ref": "Sambrook & Russell (2001) Molecular Cloning; QIAGEN DNeasy Blood & Tissue Handbook"
+    },
+    {
+      "id": "immunoprecipitation",
+      "name": "Immunoprecipitation (IP)",
+      "nameCn": "免疫沉淀 (IP)",
+      "category": "protocol",
+      "tags": [
+        "IP",
+        "immunoprecipitation",
+        "protein",
+        "antibody",
+        "pull-down"
+      ],
+      "components": [
+        {
+          "name": "1. 裂解细胞 (IP Lysis Buffer + protease inhibitors)",
+          "amount": 1,
+          "unit": "step",
+          "note": "冰上 30 min, 间歇涡旋"
+        },
+        {
+          "name": "2. 离心 (14,000×g, 15 min, 4°C) → 取上清",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 定量 → 取 500 µg–1 mg 总蛋白",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "4. 预清除 (Protein A/G beads, 4°C, 1 h)",
+          "amount": 1,
+          "unit": "step",
+          "note": "去除非特异结合; 可选"
+        },
+        {
+          "name": "5. 保留 Input (5–10% 裂解液)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "6. 加抗体 (1–5 µg) → 4°C 旋转孵育 2–4 h 或过夜",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "7. 加 Protein A/G beads (20–40 µL) → 4°C 旋转 1–2 h",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "8. 洗涤 3–5 次 (Lysis Buffer, 4°C)",
+          "amount": 1,
+          "unit": "step",
+          "note": "每次 1 mL, 旋转 5 min, 磁力架吸附"
+        },
+        {
+          "name": "9. 洗脱: 2× SDS Loading Buffer, 95°C 5 min",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "10. Western Blot 检测",
+          "amount": 1,
+          "unit": "step",
+          "note": "IP 样品 + Input + IgG 对照"
+        }
+      ],
+      "notes": "对照：(1) Normal IgG (同种属) 阴性对照; (2) Input 阳性对照。共免疫沉淀 (Co-IP)：使用温和裂解液（避免 SDS）。抗体轻链/重链干扰 WB 检测：用 Clean-Blot IP Detection Reagent 或交联抗体到 beads。磁珠比琼脂糖珠背景更低。内源性 IP 比 overexpression IP 更有生理意义。",
+      "ref": "Harlow & Lane (1988) Antibodies: A Laboratory Manual; Cell Signaling Technology IP Protocol"
+    },
+    {
+      "id": "northern_blot",
+      "name": "Northern Blot",
+      "nameCn": "Northern Blot（RNA 印迹）",
+      "category": "protocol",
+      "tags": [
+        "RNA",
+        "Northern blot",
+        "gene expression",
+        "mRNA detection"
+      ],
+      "components": [
+        {
+          "name": "1. RNA 提取 + 定量 (5–30 µg total RNA)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2. 变性琼脂糖凝胶（1.2% + 甲醛）",
+          "amount": 1,
+          "unit": "step",
+          "note": "MOPS running buffer"
+        },
+        {
+          "name": "3. RNA 变性：65°C 15 min + 冰上",
+          "amount": 1,
+          "unit": "step",
+          "note": "加 formaldehyde loading dye"
+        },
+        {
+          "name": "4. 电泳 (5 V/cm, 2–3 h)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "5. 平衡凝胶 (20× SSC, 2×10 min)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "6. 毛细转印至尼龙膜 (过夜, 20× SSC)",
+          "amount": 1,
+          "unit": "step",
+          "note": "或真空转印 1–2 h"
+        },
+        {
+          "name": "7. UV 交联 (120 mJ/cm², Stratalinker)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "8. 预杂交 (42°C, 1 h)",
+          "amount": 1,
+          "unit": "step",
+          "note": "含 50% 甲酰胺的杂交液"
+        },
+        {
+          "name": "9. 杂交 (探针 + 杂交液, 42°C 过夜)",
+          "amount": 1,
+          "unit": "step",
+          "note": "DIG 标记或 ³²P 标记探针"
+        },
+        {
+          "name": "10. 低严格洗涤 (2× SSC/0.1% SDS, RT, 2×5 min)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "11. 高严格洗涤 (0.1× SSC/0.1% SDS, 65°C, 2×15 min)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "12. 检测（放射自显影 / DIG 化学发光）",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "所有操作使用 RNase-free 试剂和器具。甲醛凝胶在通风橱中操作。DIG 标记探针比放射性标记更安全，灵敏度稍低。阳性对照：管家基因（GAPDH, β-actin）。RNA 质量可通过 28S/18S 比值（~2:1）评估。",
+      "ref": "Sambrook & Russell (2001) Molecular Cloning, Ch. 7; Alwine et al. (1977) PNAS 74:5350"
+    },
+    {
+      "id": "pcr_standard",
+      "name": "Standard PCR Amplification",
+      "nameCn": "标准 PCR 扩增",
+      "category": "protocol",
+      "tags": [
+        "PCR",
+        "amplification",
+        "Taq",
+        "DNA",
+        "genotyping"
+      ],
+      "components": [
+        {
+          "name": "2× Taq Master Mix",
+          "amount": 25,
+          "unit": "µL",
+          "note": "含 Taq, dNTPs, MgCl₂, buffer"
+        },
+        {
+          "name": "Forward primer (10 µM)",
+          "amount": 1,
+          "unit": "µL",
+          "note": "终浓度 0.2 µM"
+        },
+        {
+          "name": "Reverse primer (10 µM)",
+          "amount": 1,
+          "unit": "µL",
+          "note": "终浓度 0.2 µM"
+        },
+        {
+          "name": "Template DNA",
+          "amount": 1,
+          "unit": "µL",
+          "note": "1–100 ng gDNA; 1–10 ng plasmid"
+        },
+        {
+          "name": "Nuclease-free H₂O",
+          "amount": 22,
+          "unit": "µL",
+          "note": "至 50 µL 总体积"
+        },
+        {
+          "name": "1. 冰上配制反应体系 (做 master mix)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "2. PCR 程序",
+          "amount": 1,
+          "unit": "step",
+          "note": "95°C 3 min → (95°C 30s, Tm-5°C 30s, 72°C 1 min/kb) ×30–35 → 72°C 5 min → 4°C hold"
+        },
+        {
+          "name": "3. 琼脂糖凝胶验证",
+          "amount": 1,
+          "unit": "step",
+          "note": "取 5 µL + loading dye, 1–2% 琼脂糖凝胶"
+        }
+      ],
+      "notes": "高保真 PCR 用 Q5/Phusion（校对功能, 错误率低 100×）。Tm 计算：NEB Tm Calculator (tmcalculator.neb.com)。无模板对照 (NTC) 必须。多条带：降低引物浓度、提高退火温度、减少循环数。涂片：优化 Mg²⁺ 浓度。无产物：降低退火温度、增加模板量、检查引物方向。GC-rich 模板加 3–5% DMSO 或用 GC enhancer。",
+      "ref": "Saiki et al. (1988) Science 239:487; NEB PCR Protocol (neb.com)"
+    },
+    {
+      "id": "plasmid_maxiprep",
+      "name": "Plasmid Maxiprep (Alkaline Lysis)",
+      "nameCn": "质粒大提（碱裂解法）",
+      "category": "protocol",
+      "tags": [
+        "plasmid",
+        "maxiprep",
+        "DNA extraction",
+        "alkaline lysis",
+        "endotoxin-free"
+      ],
+      "components": [
+        {
+          "name": "1. 过夜培养 100–500 mL LB + 抗性",
+          "amount": 1,
+          "unit": "step",
+          "note": "37°C, 225 rpm, 12–16 h"
+        },
+        {
+          "name": "2. 离心收集菌体 (6,000×g, 15 min, 4°C)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 重悬 (Buffer P1/Resuspension)",
+          "amount": 1,
+          "unit": "step",
+          "note": "含 RNase A, 彻底重悬无颗粒"
+        },
+        {
+          "name": "4. 碱裂解 (Buffer P2/Lysis)",
+          "amount": 1,
+          "unit": "step",
+          "note": "轻柔翻转 4–6 次, 室温 ≤5 min"
+        },
+        {
+          "name": "5. 中和 (Buffer P3/Neutralization)",
+          "amount": 1,
+          "unit": "step",
+          "note": "立即翻转混匀, 冰上 15–20 min"
+        },
+        {
+          "name": "6. 离心去除碎片 (20,000×g, 30 min, 4°C)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "7. 过柱结合 (equilibrated column)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "8. 洗涤 2× (Wash Buffer)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "9. 洗脱 (Elution Buffer, pre-warmed 65°C)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "10. 异丙醇沉淀 (0.7 vol, -20°C 30 min)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "11. 离心 (15,000×g, 30 min, 4°C)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "12. 70% 乙醇洗涤 → 风干 → TE 溶解",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "13. 定量 (A260/280 ≈ 1.8, A260/230 > 2.0)",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "典型产量：100 mL 高拷贝质粒 → 500–1000 µg DNA。Endotoxin-free 质粒用于转染/体内实验需使用 endotoxin removal column。避免过度涡旋导致基因组 DNA 污染。",
+      "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd Ed; QIAGEN Plasmid Purification Handbook"
+    },
+    {
+      "id": "restriction_digest",
+      "name": "Restriction Enzyme Digestion",
+      "nameCn": "限制酶切",
+      "category": "protocol",
+      "tags": [
+        "restriction enzyme",
+        "digestion",
+        "cloning",
+        "DNA",
+        "endonuclease"
+      ],
+      "components": [
+        {
+          "name": "DNA template",
+          "amount": 1,
+          "unit": "µg",
+          "note": "质粒 0.5–1 µg; 基因组 DNA 5–10 µg"
+        },
+        {
+          "name": "10× Restriction Buffer",
+          "amount": 5,
+          "unit": "µL"
+        },
+        {
+          "name": "Restriction Enzyme(s)",
+          "amount": 1,
+          "unit": "µL",
+          "note": "5–10 U per µg DNA; 体积 ≤10% 总反应 (避免甘油抑制)"
+        },
+        {
+          "name": "Nuclease-free H₂O",
+          "amount": 1,
+          "unit": "to 50 µL"
+        },
+        {
+          "name": "1. 冰上配制反应体系",
+          "amount": 1,
+          "unit": "step",
+          "note": "最后加酶"
+        },
+        {
+          "name": "2. 37°C 孵育 1–2 h（或按酶推荐温度）",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 热灭活 65°C 20 min（如适用）",
+          "amount": 1,
+          "unit": "step",
+          "note": "部分酶不可热灭活，需柱纯化"
+        },
+        {
+          "name": "4. 琼脂糖凝胶电泳验证",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "双酶切时确认 buffer 兼容性（NEB 推荐使用 rCutSmart 通用 buffer）。Star activity：避免过量酶、长时间孵育、高甘油浓度。甲基化敏感酶（DpnI 仅切甲基化 DNA，用于去除模板）。部分粘性末端可能需要补平（Klenow）后连接。",
+      "ref": "Sambrook & Russell (2001) Molecular Cloning; NEB Technical Reference: Restriction Enzymes"
+    },
+    {
+      "id": "rna_column_extraction",
+      "name": "RNA Column Extraction (Silica-based)",
+      "nameCn": "RNA 柱提取（硅胶柱法）",
+      "category": "protocol",
+      "tags": [
+        "RNA",
+        "extraction",
+        "column",
+        "RNeasy",
+        "silica"
+      ],
+      "components": [
+        {
+          "name": "1. 裂解：加 Buffer RLT + β-ME，涡旋",
+          "amount": 1,
+          "unit": "step",
+          "note": "≤5×10⁶ cells 或 30 mg tissue"
+        },
+        {
+          "name": "2. 匀浆（组织用匀浆器/针头 5–10 次）",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "3. 加等体积 70% 乙醇，混匀",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "4. 转移至 RNeasy 柱，离心 15 s ≥8,000×g",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "5. 洗涤 Buffer RW1 (700 µL)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "6. On-column DNase I 消化（可选）",
+          "amount": 1,
+          "unit": "step",
+          "note": "加 80 µL DNase I mix, 室温 15 min"
+        },
+        {
+          "name": "7. 洗涤 Buffer RW1 (350 µL)",
+          "amount": 1,
+          "unit": "step"
+        },
+        {
+          "name": "8. 洗涤 Buffer RPE 2× (500 µL)",
+          "amount": 1,
+          "unit": "step",
+          "note": "第二次离心 2 min 干燥膜"
+        },
+        {
+          "name": "9. 洗脱：30–50 µL RNase-free H₂O",
+          "amount": 1,
+          "unit": "step",
+          "note": "静置 1 min → 离心, 可重复一次提高产量"
+        },
+        {
+          "name": "10. 定量 (NanoDrop: A260/280 ≈ 2.0)",
+          "amount": 1,
+          "unit": "step"
+        }
+      ],
+      "notes": "快速（~30 min）且重现性好。产量低于 TRIzol，但纯度高，适合 RT-qPCR/RNA-seq。小量 RNA（<200 nt, 含 miRNA）需用 miRNA enrichment column。组织需在 RNAlater 中保存或液氮速冻。",
+      "ref": "QIAGEN RNeasy Mini Handbook; Chomczynski & Sacchi (2006) Nat Protoc 1:581"
     }
   ]
 }
