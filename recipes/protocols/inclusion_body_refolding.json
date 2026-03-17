@@ -1,0 +1,32 @@
+{
+  "id": "inclusion_body_refolding",
+  "name": "Inclusion Body Solubilization and Protein Refolding",
+  "nameCn": "包涵体溶解与蛋白复性",
+  "category": "protocol",
+  "tags": ["inclusion body", "protein refolding", "denaturation", "urea", "GuHCl", "E. coli", "recombinant protein", "biochemistry"],
+  "components": [
+    {"name": "1. Isolate inclusion bodies: lyse cells, wash pellet 3× with wash buffer", "amount": 1, "unit": "step",
+     "note": {"en": "Lyse in lysis_buffer_mild + 1% Triton X-100. Sonicate 3× 30 s on ice. Centrifuge 15,000×g 15 min 4°C. Keep pellet. Wash pellet 3× with wash buffer (50 mM Tris pH 8.0, 100 mM NaCl, 1 mM EDTA, 0.5% Triton X-100) then 1× without Triton. Pellet = purified inclusion bodies.", "zh": "lysis_buffer_mild + 1% Triton X-100 裂解。冰上超声 3× 30 s。15,000×g 15 min 4°C。保留沉淀。洗涤缓冲液（50 mM Tris pH 8.0、100 mM NaCl、1 mM EDTA、0.5% Triton X-100）洗 3 次，再无 Triton 洗 1 次。沉淀 = 纯化的包涵体。"}},
+    {"name": "2. Solubilize: resuspend inclusion body pellet in denaturing buffer", "amount": 1, "unit": "step",
+     "note": {"en": "Denaturing buffer: 6 M GuHCl (or 8 M urea), 50 mM Tris pH 8.0, 100 mM NaCl, 10 mM β-ME (or 5 mM DTT). Resuspend at 5–20 mg/mL. Stir/rotate at RT 1–2 h until completely dissolved (solution clears).", "zh": "变性缓冲液：6 M 盐酸胍（或 8 M 尿素）、50 mM Tris pH 8.0、100 mM NaCl、10 mM β-ME（或 5 mM DTT）。5–20 mg/mL 重悬。RT 搅拌 1–2 h 至完全溶解（溶液变透明）。"}},
+    {"name": "3. Clarify: 20,000×g, 30 min, 4°C; keep supernatant", "amount": 1, "unit": "step",
+     "note": {"en": "Remove insoluble debris. Supernatant = denatured soluble protein. Check purity by SDS-PAGE.", "zh": "去除不溶性碎片。上清 = 变性可溶蛋白。SDS-PAGE 检测纯度。"}},
+    {"name": "4. Optional: Ni-NTA purification under denaturing conditions", "amount": 1, "unit": "step",
+     "note": {"en": "Bind buffer: 6 M GuHCl, 50 mM NaH₂PO₄ pH 8.0, 300 mM NaCl, 10 mM imidazole. Wash: same + 20 mM imidazole. Elute: same + 250 mM imidazole. Pool eluted fractions.", "zh": "结合缓冲液：6 M GuHCl、50 mM NaH₂PO₄ pH 8.0、300 mM NaCl、10 mM imidazole。洗涤：同上 + 20 mM imidazole。洗脱：同上 + 250 mM imidazole。合并洗脱组分。"}},
+    {"name": "5. Refolding Method A: Rapid dilution (simplest)", "amount": 1, "unit": "step",
+     "note": {"en": "Dilute protein dropwise into 50–100× volume ice-cold refolding buffer (50 mM Tris pH 8.0, 150 mM NaCl, 0.5 mM oxidized glutathione, 5 mM reduced glutathione, 10% glycerol) with constant stirring. Final protein: 0.01–0.1 mg/mL. Stir 4°C, 12–24 h.", "zh": "蛋白逐滴加入 50–100 倍体积的冰冷复性缓冲液（50 mM Tris pH 8.0、150 mM NaCl、0.5 mM 氧化型谷胱甘肽、5 mM 还原型谷胱甘肽、10% 甘油），持续搅拌。终浓度 0.01–0.1 mg/mL。4°C 搅拌 12–24 h。"}},
+    {"name": "6. Refolding Method B: Stepwise dialysis (higher yield)", "amount": 1, "unit": "step",
+     "note": {"en": "Dialyze denatured protein against decreasing denaturant: 4 M → 2 M → 1 M → 0.5 M → 0 M urea in refolding buffer. Each step: 4°C, ≥4 h (or overnight). Slow removal of denaturant allows gradual refolding. protein_dialysis tubing or Slide-A-Lyzer.", "zh": "变性蛋白对梯度去变性剂透析：4 M → 2 M → 1 M → 0.5 M → 0 M 尿素复性缓冲液。每步：4°C，≥4 h（或过夜）。缓慢去除变性剂促进逐步复性。protein_dialysis 透析袋或 Slide-A-Lyzer。"}},
+    {"name": "7. Remove aggregates: centrifuge 20,000×g 30 min 4°C; filter 0.22 µm", "amount": 1, "unit": "step",
+     "note": {"en": "Aggregated/misfolded protein pellets. Supernatant = soluble refolded protein. SEC (sec_purification) can separate properly folded monomers from misfolded aggregates.", "zh": "聚集/错误折叠蛋白在沉淀中。上清 = 可溶复性蛋白。SEC（sec_purification）可分离正确折叠单体和错误折叠聚集体。"}},
+    {"name": "8. Concentrate and verify activity: Amicon Ultra, then functional assay", "amount": 1, "unit": "step",
+     "note": {"en": "protein_concentration_amicon. Verify folding: SEC (single peak), CD spectroscopy, thermal shift assay (DSF), enzyme activity assay. Typical refolding yield: 5–30% of total denatured protein.", "zh": "protein_concentration_amicon 浓缩。验证折叠：SEC（单峰）、CD 光谱、热迁移分析（DSF）、酶活力测定。典型复性产率：变性蛋白总量的 5–30%。"}}
+  ],
+  "notes": {
+    "en": "Key factors affecting refolding: (1) Protein concentration during refolding (lower = better, ≤0.1 mg/mL); (2) Redox pair (GSH:GSSG 5:0.5 mM for disulfide-containing proteins); (3) Temperature (4°C preferred); (4) Additives: L-arginine (0.4–0.8 M) dramatically reduces aggregation (Tsumoto et al. 2004). Screen conditions with small-scale (1 mL) refolding trials before scale-up.",
+    "zh": "影响复性的关键因素：(1) 复性时蛋白浓度（越低越好，≤0.1 mg/mL）；(2) 氧化还原对（含二硫键蛋白用 GSH:GSSG 5:0.5 mM）；(3) 温度（首选 4°C）；(4) 添加剂：L-精氨酸（0.4–0.8 M）显著减少聚集（Tsumoto et al. 2004）。大规模复性前先做小规模（1 mL）条件筛选。"
+  },
+  "crosslinks": ["bacterial_protein_expression", "his_tag_purification", "lysis_buffer_mild", "protein_dialysis", "sec_purification", "protein_concentration_amicon"],
+  "ref": "Singh & Bhatt (2015) Microb Cell Fact 14:41; Tsumoto et al. (2004) Biotechnol Prog 20:1301; Clark (2001) Curr Opin Biotechnol 12:202–207",
+  "doi": "10.1186/s12934-015-0222-8"
+}

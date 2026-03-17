@@ -48,5 +48,8 @@
     "en": "Mix 500 µL overnight culture + 500 µL 50% glycerol (final 15-25%). Flash-freeze in liquid nitrogen. Store at -80°C for years. Recovery: streak on LB+antibiotic plate from frozen stock.",
     "zh": "复苏：用无菌枪头刮取少量冻存菌（不要完全解冻！），直接划板或接种液体培养基。正确保存可存活 >10 年。做 2 份备份放不同冰箱。甘油需灭菌。标签用防冻标记笔或防冻标签。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning; Addgene Protocol: Making Glycerol Stocks"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; Addgene Protocol: Making Glycerol Stocks",
+  "crosslinks": [
+    "glycerol_stock"
+  ]
 }

@@ -56,5 +56,8 @@
     "en": "Trypan blue contact ≤5 min (otherwise live cells also stain). Ideal count: 100-200 cells per large square. Cells on grid lines: count top and left, not bottom and right. Clean hemocytometer with 70% ethanol; do not sonicate. Automated counters (Countess, TC20) are more accurate but need calibration.",
     "zh": "台盼蓝接触时间 ≤5 min（否则活细胞也会着色）。每格理想计数 100–200 个细胞。计数线上细胞：计上不计下，计左不计右。清洗计数板：70% 乙醇擦拭，勿用超声。自动计数仪（Countess, TC20）更准确但需校准。"
   },
-  "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 21; Louis & Bhatt (2015) Methods Mol Biol 1235:31"
+  "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 21; Louis & Bhatt (2015) Methods Mol Biol 1235:31",
+  "crosslinks": [
+    "trypan_blue_counting"
+  ]
 }

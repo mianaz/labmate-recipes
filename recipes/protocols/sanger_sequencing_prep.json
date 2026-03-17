@@ -1,0 +1,26 @@
+{
+  "id": "sanger_sequencing_prep",
+  "name": "Sanger Sequencing Sample Preparation",
+  "nameCn": "Sanger 测序样品制备",
+  "category": "protocol",
+  "tags": ["Sanger sequencing", "DNA sequencing", "cloning verification", "molecular biology", "sequencing"],
+  "components": [
+    {"name": "1. Prepare DNA template: miniprep or PCR product", "amount": 1, "unit": "step",
+     "note": {"en": "Plasmid (miniprep): 100–500 ng/µL recommended. PCR product: must be gel-purified (gel_extraction) or ExoSAP-IT cleaned (incubate PCR product with ExoSAP-IT 37°C 15 min → 80°C 15 min inactivate). Residual primers/dNTPs interfere with sequencing.", "zh": "质粒（miniprep）：100–500 ng/µL。PCR 产物：必须胶回收纯化（gel_extraction）或 ExoSAP-IT 处理（37°C 15 min → 80°C 15 min 灭活）。残留引物/dNTP 会干扰测序。"}},
+    {"name": "2. Prepare sequencing primer: 3.2 pmol/µL", "amount": 1, "unit": "step",
+     "note": {"en": "Most providers require 3.2 pmol/µL (= 3.2 µM). Common universal primers: M13F (-20): 5'-GTAAAACGACGGCCAGT-3'; M13R: 5'-CAGGAAACAGCTATGAC-3'; T7: 5'-TAATACGACTCACTATA-3'; SP6: 5'-ATTTAGGTGACACTATAG-3'. Custom primers: Tm 55–65°C, length 18–24 nt, GC content 40–60%.", "zh": "多数服务商要求 3.2 pmol/µL（= 3.2 µM）。通用引物：M13F (-20)、M13R、T7、SP6（见英文）。自定义引物：Tm 55–65°C，长度 18–24 nt，GC 40–60%。"}},
+    {"name": "3. Prepare submission mix (per reaction)", "amount": 1, "unit": "step",
+     "note": {"en": "Premix submission (Genewiz/Azenta): 5 µL DNA (100–500 ng plasmid or 5–20 ng/100 bp PCR) + 5 µL primer (3.2 pmol/µL) = 10 µL total. Tube-only submission: DNA and primer in separate tubes. Follow provider-specific guidelines.", "zh": "预混提交（Genewiz/Azenta）：5 µL DNA（100–500 ng 质粒或 5–20 ng/100 bp PCR）+ 5 µL 引物（3.2 pmol/µL）= 10 µL。独立管提交：DNA 和引物分管。按服务商说明操作。"}},
+    {"name": "4. Label tubes clearly; keep on ice; submit same day", "amount": 1, "unit": "step",
+     "note": {"en": "Label with date, sample ID, primer name. Avoid freeze-thaw of sequencing samples. Most sequencing services: results in 24–48 h.", "zh": "清晰标注日期、样品编号、引物名称。避免冻融。多数测序服务 24–48 h 出结果。"}},
+    {"name": "5. Analyze results: align chromatogram to expected sequence", "amount": 1, "unit": "step",
+     "note": {"en": "Tools: Benchling, SnapGene Viewer, 4Peaks, ApE. BLAST against reference. Check: (a) expected insert present, (b) correct reading frame, (c) no frame-shift mutations from PCR. Reliable reads typically start at bp 50–100, end at bp 700–900.", "zh": "工具：Benchling、SnapGene Viewer、4Peaks、ApE。BLAST 比对参考序列。检查：(a) 预期插入片段存在；(b) 正确阅读框；(c) 无 PCR 引入移码突变。可靠读取通常从第 50–100 bp 开始，到第 700–900 bp 结束。"}}
+  ],
+  "notes": {
+    "en": "Read length: typical Sanger = 700–1,000 bp per reaction. For long inserts: design primers every 600–700 bp (primer walking). Troubleshooting: no reads → check DNA purity (A260/280 ≥1.8, no salt/ethanol contamination); noisy reads → secondary structure (use DMSO additive); short reads → primer-template mismatch.",
+    "zh": "读取长度：典型 Sanger = 700–1,000 bp/反应。长插入片段：每 600–700 bp 设计一个引物（引物步进法）。排查：无读取→检查 DNA 纯度（A260/280 ≥1.8，无盐/乙醇污染）；噪声大→二级结构（加 DMSO 添加剂）；读取短→引物-模板不匹配。"
+  },
+  "crosslinks": ["miniprep_protocol", "pcr_standard", "gel_extraction", "colony_pcr", "single_colony_picking"],
+  "ref": "Sanger et al. (1977) PNAS 74:5463–5467; Sambrook & Russell (2001) Molecular Cloning 3rd ed.; Genewiz/Azenta Sequencing Guidelines",
+  "doi": "10.1073/pnas.74.12.5463"
+}

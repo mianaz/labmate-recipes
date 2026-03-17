@@ -1,0 +1,30 @@
+{
+  "id": "competent_cells_electrocompetent",
+  "name": "Electrocompetent E. coli Preparation",
+  "nameCn": "电转感受态大肠杆菌的制备",
+  "category": "protocol",
+  "tags": ["competent cells", "electroporation", "E. coli", "transformation", "cloning", "molecular biology"],
+  "components": [
+    {"name": "1. Inoculate 5 mL LB from glycerol stock; 37°C 250 rpm overnight", "amount": 1, "unit": "step",
+     "note": {"en": "Use DH10B, DH5α, or XL1-Blue for cloning; BL21 for expression. Pre-chill centrifuge to 4°C the night before.", "zh": "克隆用 DH10B、DH5α 或 XL1-Blue；表达用 BL21。提前将离心机预冷至 4°C。"}},
+    {"name": "2. Dilute 1:100 into 500 mL fresh LB; shake 37°C 250 rpm to OD₆₀₀ = 0.4–0.6", "amount": 1, "unit": "step",
+     "note": {"en": "This takes 2–3 h. Monitor every 30 min after OD = 0.3. Do not exceed OD 0.6 — competence declines.", "zh": "通常需要 2–3 h。OD 到 0.3 后每 30 min 监测一次。不超过 OD 0.6 — 感受态下降。"}},
+    {"name": "3. Chill culture on ice 15–30 min; pre-chill all equipment (tubes, buffers, rotors)", "amount": 1, "unit": "step",
+     "note": {"en": "Every step from here is at 4°C or on ice. Electrocompetent cells are highly temperature-sensitive.", "zh": "从此步起所有操作在 4°C 或冰上进行。电转感受态细胞对温度极敏感。"}},
+    {"name": "4. Pellet cells: 4,000×g, 15 min, 4°C; discard supernatant", "amount": 1, "unit": "step",
+     "note": {"en": "Use pre-chilled bottles. Decant carefully — pellet is loose. Remove as much supernatant as possible (residual salt impairs electroporation).", "zh": "使用预冷离心瓶。小心倾倒——沉淀松散。尽量去除上清（残留盐分影响电穿孔）。"}},
+    {"name": "5. Wash 3× with ice-cold 10% glycerol", "amount": 1, "unit": "step",
+     "note": {"en": "Wash 1: resuspend in 500 mL 10% glycerol; spin 4,000×g 15 min 4°C. Wash 2: 250 mL. Wash 3: 50 mL. Then resuspend in 2 mL 10% glycerol. Conductivity must be <100 µS/cm (critical for electroporation efficiency).", "zh": "洗涤 1：500 mL 10% 甘油重悬；4,000×g 15 min 4°C。洗涤 2：250 mL。洗涤 3：50 mL。最后 2 mL 10% 甘油重悬。电导率需 <100 µS/cm（电穿孔效率关键）。"}},
+    {"name": "6. Aliquot 50 µL per tube; snap-freeze in liquid N₂; store −80°C", "amount": 1, "unit": "step",
+     "note": {"en": "Single-use aliquots (do not refreeze). Efficiency should be ≥10⁹ CFU/µg pUC19 (verify with test transformation).", "zh": "50 µL 单次用量分装（勿重复冻融）。效率应 ≥10⁹ CFU/µg pUC19（测试转化验证）。"}},
+    {"name": "7. Test transformation efficiency", "amount": 1, "unit": "step",
+     "note": {"en": "Electroporate 1 µL pUC19 (10 pg/µL) with 25 µL cells. Time constant: ≥5 ms (1 mm cuvette). Expect ≥10⁸–10⁹ colonies/µg pUC19 for good batch.", "zh": "用 1 µL pUC19（10 pg/µL）+ 25 µL 细胞测试电穿孔（1 mm 比色杯，时间常数 ≥5 ms）。优质批次应有 ≥10⁸–10⁹ 菌落/µg pUC19。"}}
+  ],
+  "notes": {
+    "en": "Electrocompetent cells are 10–100× more efficient than chemical competent (CaCl₂) cells. Useful for: large libraries, low-concentration ligation products, fosmid/BAC transformation. Key: eliminate all salt from cells (LB → salt → arc during electroporation = cell death).",
+    "zh": "电转感受态效率比化学法（CaCl₂）高 10–100 倍。适用于：大型文库、低浓度连接产物、fosmid/BAC 转化。关键：彻底去除细胞中所有盐分（LB→盐分→电穿孔时放弧 = 细胞死亡）。"
+  },
+  "crosslinks": ["electroporation", "heat_shock_transformation", "competent_cells_cacl2", "lb", "soc"],
+  "ref": "Dower et al. (1988) Nucleic Acids Res 16:6127–6145; Green & Sambrook (2012) Molecular Cloning 4th ed.; Sheng et al. (1995) BioTechniques 18:104",
+  "doi": "10.1093/nar/16.13.6127"
+}

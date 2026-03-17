@@ -5,47 +5,127 @@
   "tags": [
     "lentivirus",
     "viral transduction",
+    "gene delivery",
+    "shRNA",
+    "overexpression",
     "stable cell line",
-    "gene delivery"
+    "HEK293T",
+    "cell biology",
+    "molecular biology"
   ],
   "components": [
     {
-      "name": "1. Day -1: 接种 4×10⁶ HEK293T 至 10 cm 皿",
-      "amount": 1,
-      "unit": "step"
-    },
-    {
-      "name": "2. Day 0: 三质粒共转染",
+      "name": "1. Day −1: Seed 4×10⁶ HEK293T cells in 10 cm dish (DMEM + 10% FBS)",
       "amount": 1,
       "unit": "step",
-      "note": "Transfer vector : psPAX2 : pMD2.G = 4:3:1 (如 10:7.5:2.5 µg/10cm 皿); PEI 或 Lipo2000 转染"
+      "note": {
+        "en": "Cells should be 70–80% confluent on Day 0. Do not use antibiotics (impairs transfection).",
+        "zh": "Day 0 细胞汇合度应为 70–80%。不用抗生素（影响转染效率）。"
+      }
     },
     {
-      "name": "3. Day 1: 换液 (DMEM + HEPES)",
-      "amount": 1,
-      "unit": "step"
-    },
-    {
-      "name": "4. Day 3: 收集上清，0.45 µm 过滤",
-      "amount": 1,
-      "unit": "step"
-    },
-    {
-      "name": "5. 转导: 病毒上清 + Polybrene 感染靶细胞",
+      "name": "2. Day 0: Prepare 3-plasmid transfection mix",
       "amount": 1,
       "unit": "step",
-      "note": "Polybrene 8 µg/mL; MOI 0.3–1 (稳转); 可 Day 2+3 收集两批上清合并"
+      "note": {
+        "en": "DNA ratio: Transfer vector : psPAX2 : pMD2.G = 4:3:1 (µg). E.g., 10 µg : 7.5 µg : 2.5 µg per 10 cm dish. Total DNA: 20 µg. Dilute in 500 µL Opti-MEM.",
+        "zh": "质粒比例：转移载体 : psPAX2 : pMD2.G = 4:3:1（µg）。10 cm 皿：10 µg : 7.5 µg : 2.5 µg。总 DNA：20 µg。加入 500 µL Opti-MEM 稀释。"
+      }
     },
     {
-      "name": "6. Day 4+: Puromycin 筛选 (1 µg/mL)",
+      "name": "3. Day 0: Prepare transfection reagent (PEI or Lipo2000)",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "PEI (1 mg/mL linear PEI, MW 25,000): add 60 µL (3:1 PEI:DNA ratio by µg) to 500 µL Opti-MEM; mix 5 min RT. Add PEI+Opti-MEM to DNA+Opti-MEM; mix gently; incubate 20 min RT. Add dropwise to cells.",
+        "zh": "PEI（1 mg/mL 线性 PEI，MW 25,000）：60 µL PEI（PEI:DNA = 3:1 质量比）加入 500 µL Opti-MEM，RT 5 min。PEI+Opti-MEM 加入 DNA+Opti-MEM，轻柔混合，RT 20 min。逐滴加入细胞。"
+      }
+    },
+    {
+      "name": "4. Day 1 (16–18 h): Replace medium with 12 mL fresh DMEM + 10% FBS + 10 mM HEPES",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "HEPES stabilizes virus at neutral pH. Medium change reduces transfection reagent toxicity. Do gently to avoid detaching 293T cells.",
+        "zh": "HEPES 在中性 pH 下稳定病毒。换液减少转染试剂毒性。操作要轻柔，避免 293T 细胞脱落。"
+      }
+    },
+    {
+      "name": "5. Day 2 (48 h): First harvest — collect all supernatant; add 12 mL fresh medium",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Filter through 0.45 µm PES membrane (NOT nitrocellulose — binds VSV-G). Keep harvest at 4°C or process immediately.",
+        "zh": "0.45 µm PES 膜过滤（不用硝酸纤维素膜——会结合 VSV-G）。上清 4°C 保存或立即处理。"
+      }
+    },
+    {
+      "name": "6. Day 3 (72 h): Second harvest — collect supernatant; pool with Day 2",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pool Day 2 + Day 3 harvests. Day 3 typically higher titer.",
+        "zh": "合并 Day 2 + Day 3 上清。Day 3 通常滴度更高。"
+      }
+    },
+    {
+      "name": "7. Concentrate virus (optional): 10,000×g 4°C 16 h (ultracentrifuge) or PEG precipitation",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Ultracentrifugation: 25,000 rpm (SW-28 rotor) 2 h 4°C; resuspend pellet in PBS + 1% BSA. PEG-it (System Bio): add 1:4 PEG-it, 4°C overnight, 1,500×g 30 min 4°C.",
+        "zh": "超速离心：25,000 rpm（SW-28 转头）4°C 2 h；沉淀用 PBS + 1% BSA 重悬。PEG-it 沉淀：1:4 PEG-it，4°C 过夜，1,500×g 4°C 30 min。"
+      }
+    },
+    {
+      "name": "8. Titer determination: p24 ELISA or functional titer (IU/mL)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "See lentiviral_titer_p24 or lentiviral_titer_functional. Typical unconcentrated: 10⁶–10⁷ IU/mL; concentrated: 10⁸–10⁹ IU/mL.",
+        "zh": "参见 lentiviral_titer_p24 或 lentiviral_titer_functional。未浓缩：10⁶–10⁷ IU/mL；浓缩后：10⁸–10⁹ IU/mL。"
+      }
+    },
+    {
+      "name": "9. Transduce target cells: virus + polybrene (8 µg/mL); MOI 0.3–5",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "MOI 0.3–1 for stable integration (low MOI ensures single integration). MOI 5–10 for transient or high-expression needs. Spinoculation optional (800×g 30 min RT) to increase efficiency.",
+        "zh": "MOI 0.3–1 用于稳转（低 MOI 确保单拷贝整合）。MOI 5–10 用于瞬时或高表达需求。离心感染（800×g 30 min RT）可选，提高效率。"
+      }
+    },
+    {
+      "name": "10. Day 2 post-transduction: replace medium; Day 3+: add selection (Puromycin 1–2 µg/mL)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Kill curve: first establish Puromycin kill curve in untransduced cells (48–72 h for clean kill). GFP-virus: verify by flow cytometry before antibiotic selection.",
+        "zh": "先在未转导细胞中建立嘌呤霉素杀灭曲线（48–72 h 彻底杀灭）。GFP 病毒：抗生素筛选前先用流式细胞仪验证。"
+      }
+    },
+    {
+      "name": "11. Store virus: −80°C in single-use aliquots; avoid freeze-thaw",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "VSV-G lentivirus loses ~50% titer per freeze-thaw cycle. Add 10% trehalose or sucrose as cryoprotectant.",
+        "zh": "VSV-G 慢病毒每次冻融损失约 50% 滴度。可加 10% 海藻糖或蔗糖作冻存保护剂。"
+      }
     }
   ],
   "nameCn": "慢病毒包装与转导",
   "notes": {
-    "en": "2nd-gen packaging: transfer + psPAX2 (Addgene #12260) + pMD2.G (#12259). BSL-2 required. Concentrate by ultracentrifugation (25,000×g 2h) or PEG-8000 for higher titer. Typical: 10⁶–10⁷ TU/mL unconcentrated, 10⁸–10⁹ after concentration. Kill curve for puromycin on parental cells first.",
-    "zh": "二代包装体系：转移载体 + psPAX2 (Addgene #12260) + pMD2.G (#12259)。需 BSL-2。浓缩病毒：超速离心 (25,000×g 2h) 或 PEG-8000。未浓缩滴度 10⁶–10⁷ TU/mL，浓缩后 10⁸–10⁹。先做嘌呤霉素杀伤曲线确定筛选浓度。"
+    "en": "BSL-2 work: use BSL-2 practices for VSV-G pseudotyped virus. HEK293T must be >85% confluent at transfection. P24 ELISA: 1 ng p24 ≈ 10⁷ IU/mL (approximate). Typical issues: low titer → check psPAX2/pMD2.G ratio, 293T health; no selection → confirm antibiotic resistance in plasmid.",
+    "zh": "生物安全：VSV-G 假型慢病毒需 BSL-2 操作。转染时 HEK293T 需 >85% 汇合度。P24 ELISA：1 ng p24 ≈ 10⁷ IU/mL（近似）。常见问题：滴度低→检查包装质粒比例、293T 细胞状态；无筛选→确认质粒含抗生素耐药基因。"
   },
-  "ref": "protocols.io doi:10.17504/protocols.io.yxmvm132ov3p; Dull et al. (1998) J Virol 72:8463–8471"
+  "ref": "Tiscornia et al. (2006) Nat Protoc 1:241–245; Mochizuki et al. (1998) J Virol 72:8873; Kutner et al. (2009) Nat Protoc 4:495–505",
+  "crosslinks": [
+    "complete_dmem",
+    "polybrene_stock",
+    "lentiviral_titer_p24",
+    "lentiviral_titer_functional",
+    "calcium_phosphate_transfection"
+  ],
+  "doi": "10.1038/nprot.2006.37"
 }

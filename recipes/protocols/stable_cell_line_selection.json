@@ -1,0 +1,34 @@
+{
+  "id": "stable_cell_line_selection",
+  "name": "Stable Cell Line Generation (Antibiotic Selection + Single Clone Isolation)",
+  "nameCn": "稳定细胞系建立（抗生素筛选 + 单克隆分离）",
+  "category": "protocol",
+  "tags": ["stable cell line", "antibiotic selection", "puromycin", "single clone", "clonal expansion", "cell biology", "gene engineering"],
+  "components": [
+    {"name": "1. Establish kill curve for parental cells (before transfection/transduction)", "amount": 1, "unit": "step",
+     "note": {"en": "Seed 2×10⁵ cells/well in 6-well plate. Next day, add antibiotic at 0, 0.5, 1, 2, 4, 8 µg/mL (Puro) or 0, 100, 200, 400, 800 µg/mL (G418). Check daily × 7 days. Optimal = lowest dose achieving 100% kill by day 3–5 (Puro) or day 7–10 (G418).", "zh": "6 孔板每孔接种 2×10⁵ 细胞。次日加抗生素梯度：Puromycin 0, 0.5, 1, 2, 4, 8 µg/mL 或 G418 0, 100, 200, 400, 800 µg/mL。每日观察 × 7 天。最佳浓度 = 第 3–5 天（Puro）或第 7–10 天（G418）实现 100% 杀灭的最低浓度。"}},
+    {"name": "2. Transfect or transduce cells with expression construct", "amount": 1, "unit": "step",
+     "note": {"en": "Plasmid: cell_transfection (Lipofectamine/PEI). Lentivirus: lentivirus_production (MOI 0.3–1 for single integration). Wait 48 h before adding selection.", "zh": "质粒：cell_transfection（Lipofectamine/PEI）。慢病毒：lentivirus_production（MOI 0.3–1 确保单拷贝整合）。48 h 后开始加筛选药物。"}},
+    {"name": "3. Begin selection: add antibiotic at kill-curve concentration; change medium every 2–3 days", "amount": 1, "unit": "step",
+     "note": {"en": "Puromycin: typical 1–2 µg/mL; kills in 24–48 h (fast-acting). G418 (Geneticin): typical 200–800 µg/mL; kills in 5–7 days. Hygromycin: 100–400 µg/mL; 3–5 days. Blasticidin: 2–10 µg/mL; 3–5 days. Remove dead cells by medium change.", "zh": "Puromycin：通常 1–2 µg/mL；24–48 h 杀灭（快速）。G418：200–800 µg/mL；5–7 天杀灭。Hygromycin：100–400 µg/mL；3–5 天。Blasticidin：2–10 µg/mL；3–5 天。换液去除死细胞。"}},
+    {"name": "4. Maintain selection 7–14 days until resistant colonies appear", "amount": 1, "unit": "step",
+     "note": {"en": "Colonies visible by eye at ~100+ cells. Avoid disturbing plates. If too many colonies → high starting MOI; if none → kill curve, DNA quality, or transfection efficiency.", "zh": "菌落生长至 ~100+ 细胞时肉眼可见。避免移动培养皿。过多 → 初始 MOI 过高；无菌落 → 检查杀灭曲线、DNA 质量、转染效率。"}},
+    {"name": "5. Pick single clones (Method A: cloning ring)", "amount": 1, "unit": "step",
+     "note": {"en": "Wash plate with PBS. Place autoclaved glass cloning ring (8 mm dia.) over isolated colony; seal with sterile silicone grease. Add 50 µL trypsin inside ring, 3–5 min 37°C. Transfer dissociated cells to 24-well plate well (500 µL complete medium).", "zh": "PBS 洗板。灭菌玻璃克隆环（8 mm）对准单个克隆放置，无菌硅脂密封。环内加 50 µL 胰酶，37°C 3–5 min。转移解离细胞到 24 孔板（500 µL 完全培养基）。"}},
+    {"name": "6. Alternative: limiting dilution (Method B)", "amount": 1, "unit": "step",
+     "note": {"en": "Trypsinize mixed population, count, dilute to 0.5 cells/well in 96-well plate (200 µL/well). Seed multiple plates (200+ wells needed for ~50 clones). Mark wells with single cell by microscopy next day. Expand single-cell wells over 2–3 weeks.", "zh": "胰酶消化混合细胞，计数，稀释至 0.5 个细胞/孔接种 96 孔板（200 µL/孔）。铺多板（200+ 孔获得 ~50 个克隆）。次日显微镜标记单细胞孔。2–3 周扩增。"}},
+    {"name": "7. Alternative: FACS single-cell sorting (Method C)", "amount": 1, "unit": "step",
+     "note": {"en": "Sort single cells directly into 96-well plate (complete medium + 20% FBS conditioned medium). GFP+ gating if reporter available. Pre-coat wells with poly-D-lysine for poorly adherent cells. ~30–50% survival for most cell lines.", "zh": "流式分选单细胞直接入 96 孔板（完全培养基 + 20% FBS 条件培养基）。有 GFP 报告基因可门控。弱贴壁细胞预包被多聚赖氨酸。大多数细胞系存活率约 30–50%。"}},
+    {"name": "8. Expand clones: 96-well → 24-well → 6-well → T25; maintain selection throughout", "amount": 1, "unit": "step",
+     "note": {"en": "Passage when 80–90% confluent. Each expansion takes 3–7 days. Keep selection antibiotic at maintenance dose (half kill dose). Freeze early passage aliquots.", "zh": "80–90% 汇合时传代。每次扩增 3–7 天。维持剂量（杀灭浓度的一半）持续加药。早期传代冻存分装。"}},
+    {"name": "9. Validate clones: WB, qPCR, genomic PCR, functional assay", "amount": 1, "unit": "step",
+     "note": {"en": "WB: target protein expression (wb_protocol). qPCR: mRNA level (qpcr_protocol). Genomic PCR: integration site/copy number. Functional: phenotypic assay. Screen ≥10 clones; select 2–3 best.", "zh": "WB：目标蛋白表达（wb_protocol）。qPCR：mRNA 水平（qpcr_protocol）。基因组 PCR：整合位点/拷贝数。功能验证：表型分析。筛 ≥10 个克隆，选最优 2–3 个。"}}
+  ],
+  "notes": {
+    "en": "Timeline: transfection → selection (2 weeks) → clone picking (1 day) → expansion (3–4 weeks) → validation (1 week) = ~6–8 weeks total. Always freeze early-passage validated clones at P2–P3. Compare ≥2 independent clones to rule out clonal variation. For CRISPR knockouts: validate by WB + Sanger sequencing of target region.",
+    "zh": "时间线：转染→筛选（2 周）→挑克隆（1 天）→扩增（3–4 周）→验证（1 周）= 共 ~6–8 周。验证后在 P2–P3 冻存。至少比较 ≥2 个独立克隆排除克隆变异。CRISPR 基因敲除：WB + 靶区域 Sanger 测序双重验证。"
+  },
+  "crosslinks": ["cell_transfection", "lentivirus_production", "wb_protocol", "qpcr_protocol", "cell_freezing", "cell_passage"],
+  "ref": "Freshney (2016) Culture of Animal Cells, 7th ed., Ch. 13; Mao et al. (2018) STAR Protoc Preview; Kim & Bhatt (2020) Nat Protoc 15:3199–3230",
+  "doi": "10.1038/s41596-020-0389-3"
+}

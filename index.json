@@ -1,12 +1,12 @@
 {
-  "version": "1.1.0",
-  "updated": "2026-03-16",
-  "total": 159,
+  "version": "1.2.0",
+  "updated": "2026-03-17",
+  "total": 171,
   "categories": {
     "buffer": 72,
+    "protocol": 80,
     "staining": 9,
-    "media": 10,
-    "protocol": 68
+    "media": 10
   },
   "recipes": [
     {
@@ -434,6 +434,20 @@
       "file": "recipes/protocols/competent_cells_cacl2.json"
     },
     {
+      "id": "competent_cells_electrocompetent",
+      "name": "Electrocompetent E. coli Preparation",
+      "category": "protocol",
+      "tags": [
+        "competent cells",
+        "electroporation",
+        "E. coli",
+        "transformation",
+        "cloning",
+        "molecular biology"
+      ],
+      "file": "recipes/protocols/competent_cells_electrocompetent.json"
+    },
+    {
       "id": "complete_dmem",
       "name": "Complete DMEM (10% FBS)",
       "category": "media",
@@ -751,6 +765,21 @@
       "file": "recipes/protocols/flow_cytometry_protocol.json"
     },
     {
+      "id": "flow_panel_staining",
+      "name": "Multi-Color Flow Cytometry Surface & Intracellular Staining",
+      "category": "protocol",
+      "tags": [
+        "flow cytometry",
+        "immunophenotyping",
+        "surface staining",
+        "intracellular staining",
+        "FACS",
+        "cell biology",
+        "multicolor panel"
+      ],
+      "file": "recipes/protocols/flow_panel_staining.json"
+    },
+    {
       "id": "freezing_medium",
       "name": "Cell Freezing Medium (10% DMSO)",
       "category": "media",
@@ -827,23 +856,12 @@
       "category": "buffer",
       "tags": [
         "protein purification",
-        "GST",
-        "Glutathione"
-      ],
-      "file": "recipes/buffers/gst_elution.json"
-    },
-    {
-      "id": "gst_elution_reduced",
-      "name": "GST Reduced Glutathione Elution Buffer",
-      "category": "buffer",
-      "tags": [
-        "protein purification",
         "GST-tag",
         "glutathione",
         "affinity chromatography",
         "elution"
       ],
-      "file": "recipes/buffers/gst_elution_reduced.json"
+      "file": "recipes/buffers/gst_elution.json"
     },
     {
       "id": "gst_tag_purification",
@@ -870,6 +888,20 @@
         "heat shock"
       ],
       "file": "recipes/protocols/heat_shock_transformation.json"
+    },
+    {
+      "id": "hela_mycoplasma_testing",
+      "name": "Mycoplasma Testing and Cell Authentication (STR Profiling)",
+      "category": "protocol",
+      "tags": [
+        "mycoplasma",
+        "cell authentication",
+        "STR",
+        "cell culture QC",
+        "contamination",
+        "cell biology"
+      ],
+      "file": "recipes/protocols/hela_mycoplasma_testing.json"
     },
     {
       "id": "hepes_buffer",
@@ -1009,6 +1041,22 @@
       "file": "recipes/protocols/immunoprecipitation.json"
     },
     {
+      "id": "inclusion_body_refolding",
+      "name": "Inclusion Body Solubilization and Protein Refolding",
+      "category": "protocol",
+      "tags": [
+        "inclusion body",
+        "protein refolding",
+        "denaturation",
+        "urea",
+        "GuHCl",
+        "E. coli",
+        "recombinant protein",
+        "biochemistry"
+      ],
+      "file": "recipes/protocols/inclusion_body_refolding.json"
+    },
+    {
       "id": "ion_exchange_chromatography",
       "name": "Ion Exchange Chromatography (IEX)",
       "category": "protocol",
@@ -1090,14 +1138,50 @@
       "file": "recipes/media/lb_agar.json"
     },
     {
+      "id": "lentiviral_titer_functional",
+      "name": "Lentiviral Functional Titer (Infectious Units/mL)",
+      "category": "protocol",
+      "tags": [
+        "lentivirus",
+        "titer",
+        "functional titer",
+        "IU/mL",
+        "viral quantification",
+        "virology",
+        "cell biology",
+        "flow cytometry"
+      ],
+      "file": "recipes/protocols/lentiviral_titer_functional.json"
+    },
+    {
+      "id": "lentiviral_titer_p24",
+      "name": "Lentiviral Titer Determination by p24 ELISA",
+      "category": "protocol",
+      "tags": [
+        "lentivirus",
+        "titer",
+        "p24",
+        "ELISA",
+        "viral quantification",
+        "virology",
+        "cell biology"
+      ],
+      "file": "recipes/protocols/lentiviral_titer_p24.json"
+    },
+    {
       "id": "lentivirus_production",
       "name": "Lentivirus Production & Transduction",
       "category": "protocol",
       "tags": [
         "lentivirus",
         "viral transduction",
+        "gene delivery",
+        "shRNA",
+        "overexpression",
         "stable cell line",
-        "gene delivery"
+        "HEK293T",
+        "cell biology",
+        "molecular biology"
       ],
       "file": "recipes/protocols/lentivirus_production.json"
     },
@@ -1240,6 +1324,19 @@
         "oxidative phosphorylation"
       ],
       "file": "recipes/protocols/mitochondria_isolation.json"
+    },
+    {
+      "id": "mops_10x",
+      "name": "10× MOPS Buffer (RNA Gel Running Buffer)",
+      "category": "buffer",
+      "tags": [
+        "RNA",
+        "MOPS",
+        "RNA gel",
+        "denaturing gel",
+        "electrophoresis"
+      ],
+      "file": "recipes/buffers/mops_10x.json"
     },
     {
       "id": "mops_running_buffer",
@@ -1472,6 +1569,20 @@
       "file": "recipes/staining/ponceau_s.json"
     },
     {
+      "id": "protein_concentration_amicon",
+      "name": "Protein Concentration by Centrifugal Ultrafiltration (Amicon Ultra)",
+      "category": "protocol",
+      "tags": [
+        "protein purification",
+        "concentration",
+        "ultrafiltration",
+        "Amicon",
+        "buffer exchange",
+        "biochemistry"
+      ],
+      "file": "recipes/protocols/protein_concentration_amicon.json"
+    },
+    {
       "id": "protein_dialysis",
       "name": "Protein Dialysis and Buffer Exchange",
       "category": "protocol",
@@ -1495,6 +1606,21 @@
         "in situ"
       ],
       "file": "recipes/protocols/proximity_ligation_assay.json"
+    },
+    {
+      "id": "pulldown_assay",
+      "name": "GST/His Pull-Down Assay (Protein-Protein Interaction)",
+      "category": "protocol",
+      "tags": [
+        "pull-down",
+        "protein-protein interaction",
+        "GST",
+        "His-tag",
+        "in vitro binding",
+        "affinity purification",
+        "biochemistry"
+      ],
+      "file": "recipes/protocols/pulldown_assay.json"
     },
     {
       "id": "qpcr_protocol",
@@ -1530,6 +1656,21 @@
         "protein extraction"
       ],
       "file": "recipes/buffers/ripa.json"
+    },
+    {
+      "id": "rna_agarose_gel",
+      "name": "RNA Agarose Gel Electrophoresis (Denaturing)",
+      "category": "protocol",
+      "tags": [
+        "RNA",
+        "gel electrophoresis",
+        "agarose",
+        "RNA quality",
+        "denaturing gel",
+        "molecular biology",
+        "formaldehyde"
+      ],
+      "file": "recipes/protocols/rna_agarose_gel.json"
     },
     {
       "id": "rna_column_extraction",
@@ -1594,6 +1735,19 @@
       "file": "recipes/buffers/running_buffer_10x.json"
     },
     {
+      "id": "sanger_sequencing_prep",
+      "name": "Sanger Sequencing Sample Preparation",
+      "category": "protocol",
+      "tags": [
+        "Sanger sequencing",
+        "DNA sequencing",
+        "cloning verification",
+        "molecular biology",
+        "sequencing"
+      ],
+      "file": "recipes/protocols/sanger_sequencing_prep.json"
+    },
+    {
       "id": "scratch_assay",
       "name": "Wound Healing (Scratch) Assay",
       "category": "protocol",
@@ -1601,7 +1755,10 @@
         "migration",
         "wound healing",
         "scratch assay",
-        "cell migration"
+        "cell migration",
+        "cell biology",
+        "2D migration",
+        "motility"
       ],
       "file": "recipes/protocols/scratch_assay.json"
     },
@@ -1657,6 +1814,21 @@
         "sensitive"
       ],
       "file": "recipes/staining/silver_stain.json"
+    },
+    {
+      "id": "single_colony_picking",
+      "name": "Single Colony Picking and Screening",
+      "category": "protocol",
+      "tags": [
+        "cloning",
+        "colony picking",
+        "single colony",
+        "E. coli",
+        "screening",
+        "molecular biology",
+        "colony PCR"
+      ],
+      "file": "recipes/protocols/single_colony_picking.json"
     },
     {
       "id": "sirna_knockdown",
@@ -1730,6 +1902,21 @@
         "ISH"
       ],
       "file": "recipes/buffers/ssc_20x.json"
+    },
+    {
+      "id": "stable_cell_line_selection",
+      "name": "Stable Cell Line Generation (Antibiotic Selection + Single Clone Isolation)",
+      "category": "protocol",
+      "tags": [
+        "stable cell line",
+        "antibiotic selection",
+        "puromycin",
+        "single clone",
+        "clonal expansion",
+        "cell biology",
+        "gene engineering"
+      ],
+      "file": "recipes/protocols/stable_cell_line_selection.json"
     },
     {
       "id": "strip_buffer",

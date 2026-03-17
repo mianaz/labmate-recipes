@@ -1,0 +1,34 @@
+{
+  "id": "single_colony_picking",
+  "name": "Single Colony Picking and Screening",
+  "nameCn": "单克隆挑选与筛查",
+  "category": "protocol",
+  "tags": ["cloning", "colony picking", "single colony", "E. coli", "screening", "molecular biology", "colony PCR"],
+  "components": [
+    {"name": "1. Prepare transformation plates: use LB agar + appropriate antibiotic", "amount": 1, "unit": "step",
+     "note": {"en": "Plate density: 50–200 colonies/plate is ideal. Too dense (>500) → colonies too small; too sparse → wasted space. Cool agar to 55°C before pouring (25 mL/plate for 10 cm). Pre-warm plates at 37°C 30 min before use.", "zh": "理想菌落密度：50–200 个/板。过密（>500）菌落太小；过稀浪费空间。琼脂冷至 55°C 后倒板（10 cm 皿约 25 mL）。用前 37°C 预热 30 min。"}},
+    {"name": "2. Optional: blue-white screening (lacZ α-complementation)", "amount": 1, "unit": "step",
+     "note": {"en": "Add 40 µL X-gal (20 mg/mL in DMF) + 4 µL IPTG (100 mM) per plate; spread, let dry 30 min. White colonies = insert present; blue = self-ligation/empty vector. Requires lacZα vectors (pUC, pGEM, pBlueScript).", "zh": "每板加 40 µL X-gal（20 mg/mL in DMF）+ 4 µL IPTG（100 mM）；涂抹，晾干 30 min。白色 = 含插入片段；蓝色 = 自连/空载体。需要 lacZα 载体（pUC、pGEM、pBlueScript）。"}},
+    {"name": "3. Incubate plates: 37°C, 12–16 h (overnight)", "amount": 1, "unit": "step",
+     "note": {"en": "Move plates to 4°C after 16 h if not picking immediately — colonies stop growing and are easier to distinguish. Blue-white screen: return to 4°C 1–2 h to develop color.", "zh": "16 h 后如不立即挑取，移至 4°C——菌落停止生长，更易分辨。蓝白筛选：返回 4°C 1–2 h 充分显色。"}},
+    {"name": "4. Prepare culture tubes: 1.5–2 mL LB + antibiotic per clone", "amount": 1, "unit": "step",
+     "note": {"en": "Use 14 mL round-bottom or 1.5 mL Eppendorf tubes. Label carefully. Prepare 10–24 clones per ligation to ensure ≥1 correct clone.", "zh": "使用 14 mL 圆底管或 1.5 mL Eppendorf 管。认真标记。每次连接挑 10–24 个克隆以确保 ≥1 个正确克隆。"}},
+    {"name": "5. Pick colonies with sterile toothpick or 10 µL pipette tip", "amount": 1, "unit": "step",
+     "note": {"en": "Touch colony center with toothpick tip. Inoculate tube AND streak onto numbered grid on a fresh LB+antibiotic plate (master plate). Master plate: incubate 37°C overnight, store at 4°C as backup.", "zh": "用牙签或 10 µL 枪头尖端触碰菌落中心。同时接种培养管并在备用板（主板）上划线编号。主板：37°C 过夜，4°C 保存备用。"}},
+    {"name": "6. Grow overnight culture: 37°C, 200–250 rpm, 12–16 h", "amount": 1, "unit": "step",
+     "note": {"en": "Eppendorf tubes: tape closed at angle, place in shaker. Round-bottom: use at 45° angle in rack.", "zh": "Eppendorf 管：斜插入摇床。圆底管：45° 角放置。"}},
+    {"name": "7. Screen by colony PCR or diagnostic restriction digest", "amount": 1, "unit": "step",
+     "note": {"en": "Colony PCR (colony_pcr): take 1 µL of overnight culture as template; use vector-based primers (M13/T7/SP6) or gene-specific primers flanking insert. Expect correct band size. Restriction digest: miniprep first, then diagnostic digest with 1–2 enzymes that distinguish insert orientation/size.", "zh": "菌落 PCR（colony_pcr）：取 1 µL 过夜培养液作模板；用载体通用引物（M13/T7/SP6）或跨插入片段的基因特异引物。预期正确条带大小。限制酶消化：先 miniprep，再用 1–2 种酶进行诊断性酶切，区分插入方向/大小。"}},
+    {"name": "8. Select positive clones; send for Sanger sequencing", "amount": 1, "unit": "step",
+     "note": {"en": "sanger_sequencing_prep. Send miniprep DNA (50–100 ng/µL) + sequencing primer. Verify full insert sequence, no PCR errors. Select 2–3 positive + sequencing-confirmed clones.", "zh": "sanger_sequencing_prep。送 miniprep DNA（50–100 ng/µL）+ 测序引物。验证完整插入序列，无 PCR 错误。选择 2–3 个阳性且测序确认的克隆。"}},
+    {"name": "9. Prepare glycerol stocks from confirmed positive clones", "amount": 1, "unit": "step",
+     "note": {"en": "bacterial_glycerol_stock: 1 mL overnight culture + 1 mL 50% glycerol → store −80°C. Label with: clone ID, date, insert, antibiotic.", "zh": "bacterial_glycerol_stock：1 mL 过夜培养液 + 1 mL 50% 甘油 → −80°C 保存。标注：克隆编号、日期、插入片段、抗生素。"}}
+  ],
+  "notes": {
+    "en": "Colony number vs insert probability: ligation efficiency ~20–50% with directional cloning; ~5–15% without blue-white selection. Colony appearance timing: Amp resistance ~ 12 h; Kan/Cm ~ 14–16 h. White colonies in blue-white: ~50% correct by PCR; confirm all positives by sequencing.",
+    "zh": "菌落数 vs 插入概率：定向克隆连接效率约 20–50%；无蓝白筛选约 5–15%。菌落出现时间：Amp 约 12 h；Kan/Cm 约 14–16 h。蓝白筛选白色菌落约 50% PCR 阳性；测序确认所有候选。"
+  },
+  "crosslinks": ["heat_shock_transformation", "colony_pcr", "miniprep_protocol", "bacterial_glycerol_stock", "sanger_sequencing_prep", "dna_ligation", "lb", "lb_agar"],
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed. Ch. 1; Green & Sambrook (2012) Molecular Cloning 4th ed.; Ausubel et al. Current Protocols in Molecular Biology Unit 1.5",
+  "doi": "10.1101/pdb.prot093351"
+}

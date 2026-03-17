@@ -35,5 +35,8 @@
     "en": "Dissolve CBB in methanol first, then add acetic acid and water. Filter (0.45 µm) before use. Stain 1–4 h.",
     "zh": "先将 CBB 溶于甲醇，再加醋酸和水。使用前过滤 (0.45 µm)。染色 1–4 h。"
   },
-  "ref": "Gallagher (2012) Curr Protoc Mol Biol, Ch.10, Unit 10.6"
+  "ref": "Gallagher (2012) Curr Protoc Mol Biol, Ch.10, Unit 10.6",
+  "crosslinks": [
+    "coomassie_staining"
+  ]
 }

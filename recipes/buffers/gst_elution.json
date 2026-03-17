@@ -4,8 +4,10 @@
   "category": "buffer",
   "tags": [
     "protein purification",
-    "GST",
-    "Glutathione"
+    "GST-tag",
+    "glutathione",
+    "affinity chromatography",
+    "elution"
   ],
   "components": [
     {
@@ -27,10 +29,14 @@
       "unit": "mL"
     }
   ],
-  "nameCn": "GST 标签洗脱液",
+  "nameCn": "GST 谷胱甘肽洗脱液",
   "notes": {
-    "en": "Prepare fresh — glutathione oxidizes rapidly. Add just before use. Adjust pH to 8.0. Elute at RT for 10–15 min.",
-    "zh": "新鲜配制。谷胱甘肽易氧化，临用加入。调 pH 至 8.0。室温洗脱 10–15 min。"
+    "en": "Prepare fresh; reduced glutathione oxidizes quickly. Add NaCl 150 mM to improve elution from Glutathione Sepharose. Adjust pH to 8.0. Eluted fractions contain free GSH — remove by dialysis_buffer_generic before downstream assays. Higher GSH (15–50 mM) can increase yield.",
+    "zh": "需新鲜配制，还原型谷胱甘肽易氧化。可加 150 mM NaCl 提高洗脱效率。pH 调至 8.0。洗脱液含游离 GSH，下游分析敏感时需透析（dialysis_buffer_generic）去除。提高 GSH 浓度至 15–50 mM 可增加产量。"
   },
-  "ref": "Harper & Bhatt (2004) Methods Mol Biol 261:55–72; GE Healthcare GST Gene Fusion System Handbook"
+  "ref": "GE Healthcare Glutathione Sepharose 4B Instruction 71-5027-67; Harper & Speicher (2011) Curr Protoc Protein Sci 6.6.1",
+  "crosslinks": [
+    "gst_tag_purification",
+    "protein_dialysis"
+  ]
 }

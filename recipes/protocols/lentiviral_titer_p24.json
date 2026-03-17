@@ -1,0 +1,34 @@
+{
+  "id": "lentiviral_titer_p24",
+  "name": "Lentiviral Titer Determination by p24 ELISA",
+  "nameCn": "慢病毒滴度测定（p24 ELISA 法）",
+  "category": "protocol",
+  "tags": ["lentivirus", "titer", "p24", "ELISA", "viral quantification", "virology", "cell biology"],
+  "components": [
+    {"name": "1. Prepare standard: serial dilutions of p24 antigen (0–2,000 pg/mL)", "amount": 1, "unit": "step",
+     "note": {"en": "Use kit-provided p24 standard. Typical 8-point curve: 2000, 1000, 500, 250, 125, 62.5, 31.25, 0 pg/mL in assay diluent. Prepare fresh each time.", "zh": "使用试剂盒提供的 p24 标准品。典型 8 点曲线：2000、1000、500、250、125、62.5、31.25、0 pg/mL（用稀释液配制）。每次新鲜配制。"}},
+    {"name": "2. Lyse virus: add Triton X-100 to virus sample (final 0.5%); incubate RT 1 h", "amount": 1, "unit": "step",
+     "note": {"en": "Lysis disrupts viral envelope and releases p24 from intact virions. Mix gently. Dilute sample in assay diluent: test 1:10, 1:100 dilutions to fall within standard curve range.", "zh": "裂解破坏病毒包膜，释放完整病毒颗粒中的 p24。轻柔混合。用稀释液稀释样品：测试 1:10、1:100 稀释，使读数落在标准曲线范围内。"}},
+    {"name": "3. Coat ELISA plate: add anti-p24 capture antibody (2 µg/mL, 100 µL/well), 4°C overnight", "amount": 1, "unit": "step",
+     "note": {"en": "Or use pre-coated kit plates (skip this step). Coating buffer: 0.05 M carbonate pH 9.6. Seal plate.", "zh": "或使用试剂盒预包被板（跳过此步）。包被缓冲液：0.05 M 碳酸盐 pH 9.6。封板。"}},
+    {"name": "4. Block: 200 µL/well 5% BSA in PBS-T; RT 1 h; wash 3× PBST", "amount": 1, "unit": "step",
+     "note": {"en": "PBST: PBS + 0.05% Tween-20. Washing: 300 µL/well, 3×; flick and blot each wash.", "zh": "PBST：PBS + 0.05% Tween-20。洗涤：每孔 300 µL，3 次；每次甩干并吸干。"}},
+    {"name": "5. Add standards and samples (100 µL/well); RT 2 h or 4°C overnight", "amount": 1, "unit": "step",
+     "note": {"en": "Duplicates for all. Shake plate gently at 150 rpm during incubation (orbital shaker).", "zh": "所有样品做双复孔。孵育期间轻摇（150 rpm，摇床）。"}},
+    {"name": "6. Wash 5× PBST; add detection antibody (anti-p24-HRP, 100 µL/well); RT 1 h", "amount": 1, "unit": "step",
+     "note": {"en": "Dilute HRP-conjugated secondary per kit instructions (typically 1:1,000–1:5,000 in blocking buffer).", "zh": "按试剂盒说明稀释 HRP 偶联二抗（通常封闭液 1:1,000–1:5,000）。"}},
+    {"name": "7. Wash 5× PBST; add TMB substrate (100 µL/well); RT 15–30 min (dark)", "amount": 1, "unit": "step",
+     "note": {"en": "Monitor color development (blue). Stop when highest standard is deep blue (~OD 2.0 at 450 nm).", "zh": "监测显色（蓝色）。最高标准品显深蓝色时终止（450 nm OD ~2.0）。"}},
+    {"name": "8. Stop reaction: add 50 µL 2 M H₂SO₄ (solution turns yellow)", "amount": 1, "unit": "step",
+     "note": {"en": "Read A₄₅₀ nm within 30 min of stopping.", "zh": "终止后 30 min 内读取 A₄₅₀ nm。"}},
+    {"name": "9. Calculate titer: read pg/mL from standard curve; convert to IU/mL", "amount": 1, "unit": "step",
+     "note": {"en": "Conversion: 1 ng p24 ≈ 10⁶–10⁷ IU (varies by vector/envelope). Accurate IU requires functional titer (lentiviral_titer_functional). ng/mL → pg/µL; multiply by dilution factor.", "zh": "转换：1 ng p24 ≈ 10⁶–10⁷ IU（随载体/包膜变化）。精确 IU 需功能性滴度（lentiviral_titer_functional）。ng/mL → pg/µL；乘以稀释倍数得原液浓度。"}}
+  ],
+  "notes": {
+    "en": "p24 ELISA measures total physical particles (infectious + non-infectious). Ratio of physical particles to infectious units: ~100:1. Recommended kits: Alliance HIV-1 p24 ANTIGEN ELISA (Perkin Elmer), INNOTEST HIV Antigen mAb. Typical unconcentrated lentiviral supernatant: 50–200 ng/mL p24 = ~5×10⁷–2×10⁸ physical particles/mL.",
+    "zh": "p24 ELISA 测定物理颗粒总数（含感染性和非感染性）。物理颗粒与感染单位比例约 100:1。推荐试剂盒：Alliance HIV-1 p24 ANTIGEN ELISA（Perkin Elmer）、INNOTEST HIV Antigen mAb。典型未浓缩慢病毒上清：50–200 ng/mL p24 ≈ 5×10⁷–2×10⁸ 物理颗粒/mL。"
+  },
+  "crosslinks": ["lentivirus_production", "lentiviral_titer_functional"],
+  "ref": "Kutner et al. (2009) Nat Protoc 4:495–505; Geraerts et al. (2006) Gene Ther 13:1294–1299; Perkin Elmer Alliance p24 ELISA kit manual",
+  "doi": "10.1038/nprot.2009.22"
+}

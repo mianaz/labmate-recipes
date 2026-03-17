@@ -3,36 +3,128 @@
   "name": "GST-Tag Protein Purification (Glutathione Sepharose)",
   "nameCn": "GST 标签蛋白纯化（谷胱甘肽琼脂糖亲和层析）",
   "category": "protocol",
-  "tags": ["protein purification", "GST-tag", "glutathione", "affinity chromatography", "recombinant protein", "biochemistry"],
+  "tags": [
+    "protein purification",
+    "GST-tag",
+    "glutathione",
+    "affinity chromatography",
+    "recombinant protein",
+    "biochemistry"
+  ],
   "components": [
-    {"name": "1. Express GST-fusion protein in E. coli BL21(DE3)", "amount": 1, "unit": "step",
-     "note": {"en": "IPTG 0.1–0.5 mM; 18°C overnight for soluble expression (preferred over 37°C 4 h). Harvest: 5,000×g 10 min 4°C.", "zh": "IPTG 0.1–0.5 mM；18°C 过夜低温诱导（优于 37°C 4 h 高温诱导）。5,000×g 10 min 4°C 收菌。"}},
-    {"name": "2. Resuspend pellet in GST Lysis Buffer", "amount": 1, "unit": "step",
-     "note": {"en": "PBS pH 7.4 + 1% Triton X-100 + 1 mM DTT + protease inhibitors + 1 mM PMSF; 5 mL/g wet weight", "zh": "PBS pH 7.4 + 1% Triton X-100 + 1 mM DTT + 蛋白酶抑制剂 + 1 mM PMSF；每克湿重加 5 mL"}},
-    {"name": "3. Lyse: sonicate on ice (5 × 30 s, 40% amplitude, 1 min rest)", "amount": 1, "unit": "step",
-     "note": {"en": "Keep sample below 10°C throughout. Pre-cool probe.", "zh": "全程保持样品 <10°C。预冷超声探头。"}},
-    {"name": "4. Clarify: 20,000×g, 30 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Keep supernatant. Optional: 0.45 µm filter to protect column.", "zh": "保留上清。可选：0.45 µm 过滤保护柱子。"}},
-    {"name": "5. Equilibrate Glutathione Sepharose 4B: 10 CV PBS pH 7.4", "amount": 1, "unit": "step",
-     "note": {"en": "Use 1 mL resin per 10 mg expected fusion protein. Or use GSTrap FF 5 mL column (AKTA).", "zh": "每 10 mg 预估融合蛋白用 1 mL 树脂。或使用 GSTrap FF 5 mL 柱（AKTA）。"}},
-    {"name": "6. Bind: load cleared lysate, flow rate ≤1 mL/min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Gravity or peristaltic pump. Collect flow-through for SDS-PAGE.", "zh": "重力法或蠕动泵上样。收集穿透液做 SDS-PAGE 检测。"}},
-    {"name": "7. Wash: 10–20 CV PBS pH 7.4 until A280 baseline", "amount": 1, "unit": "step",
-     "note": {"en": "Optional high-salt wash: PBS + 500 mM NaCl, 5 CV.", "zh": "可选高盐洗涤：PBS + 500 mM NaCl，5 CV。"}},
-    {"name": "8. Elute: 5–10 CV gst_elution_reduced (10 mM GSH, 50 mM Tris pH 8.0)", "amount": 1, "unit": "step",
-     "note": {"en": "Collect 0.5 mL fractions; protein peak in fractions 2–6.", "zh": "收集 0.5 mL 组分；蛋白峰通常在第 2–6 组分。"}},
-    {"name": "9. Pool & dialyze to remove glutathione", "amount": 1, "unit": "step",
-     "note": {"en": "dialysis_buffer_generic; 3× changes at 4°C. Or desalt by HiTrap Desalting.", "zh": "dialysis_buffer_generic 透析换液；4°C 换 3 次。或 HiTrap Desalting 脱盐柱。"}},
-    {"name": "10. Optional: cleave GST-tag (thrombin or PreScission protease)", "amount": 1, "unit": "step",
-     "note": {"en": "Thrombin: 1 U/100 µg, RT 2 h or 4°C overnight. PreScission: 1 U/µg, 4°C overnight. Reverse purification: pass through GSTrap → cleaved protein flows through.", "zh": "凝血酶：1 U/100 µg，RT 2 h 或 4°C 过夜。PreScission：1 U/µg，4°C 过夜。反向纯化：过 GSTrap 柱 → 切割后蛋白在穿透液中。"}},
-    {"name": "11. Quantify, aliquot, store −80°C + 10% glycerol", "amount": 1, "unit": "step",
-     "note": {"en": "Typical yield: 2–20 mg/L culture.", "zh": "典型产量：2–20 mg/L 培养液。"}}
+    {
+      "name": "1. Express GST-fusion protein in E. coli BL21(DE3)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "IPTG 0.1–0.5 mM; 18°C overnight for soluble expression (preferred over 37°C 4 h). Harvest: 5,000×g 10 min 4°C.",
+        "zh": "IPTG 0.1–0.5 mM；18°C 过夜低温诱导（优于 37°C 4 h 高温诱导）。5,000×g 10 min 4°C 收菌。"
+      }
+    },
+    {
+      "name": "2. Resuspend pellet in GST Lysis Buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "PBS pH 7.4 + 1% Triton X-100 + 1 mM DTT + protease inhibitors + 1 mM PMSF; 5 mL/g wet weight",
+        "zh": "PBS pH 7.4 + 1% Triton X-100 + 1 mM DTT + 蛋白酶抑制剂 + 1 mM PMSF；每克湿重加 5 mL"
+      }
+    },
+    {
+      "name": "3. Lyse: sonicate on ice (5 × 30 s, 40% amplitude, 1 min rest)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep sample below 10°C throughout. Pre-cool probe.",
+        "zh": "全程保持样品 <10°C。预冷超声探头。"
+      }
+    },
+    {
+      "name": "4. Clarify: 20,000×g, 30 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep supernatant. Optional: 0.45 µm filter to protect column.",
+        "zh": "保留上清。可选：0.45 µm 过滤保护柱子。"
+      }
+    },
+    {
+      "name": "5. Equilibrate Glutathione Sepharose 4B: 10 CV PBS pH 7.4",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use 1 mL resin per 10 mg expected fusion protein. Or use GSTrap FF 5 mL column (AKTA).",
+        "zh": "每 10 mg 预估融合蛋白用 1 mL 树脂。或使用 GSTrap FF 5 mL 柱（AKTA）。"
+      }
+    },
+    {
+      "name": "6. Bind: load cleared lysate, flow rate ≤1 mL/min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Gravity or peristaltic pump. Collect flow-through for SDS-PAGE.",
+        "zh": "重力法或蠕动泵上样。收集穿透液做 SDS-PAGE 检测。"
+      }
+    },
+    {
+      "name": "7. Wash: 10–20 CV PBS pH 7.4 until A280 baseline",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Optional high-salt wash: PBS + 500 mM NaCl, 5 CV.",
+        "zh": "可选高盐洗涤：PBS + 500 mM NaCl，5 CV。"
+      }
+    },
+    {
+      "name": "8. Elute: 5–10 CV gst_elution_reduced (10 mM GSH, 50 mM Tris pH 8.0)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Collect 0.5 mL fractions; protein peak in fractions 2–6.",
+        "zh": "收集 0.5 mL 组分；蛋白峰通常在第 2–6 组分。"
+      }
+    },
+    {
+      "name": "9. Pool & dialyze to remove glutathione",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "dialysis_buffer_generic; 3× changes at 4°C. Or desalt by HiTrap Desalting.",
+        "zh": "dialysis_buffer_generic 透析换液；4°C 换 3 次。或 HiTrap Desalting 脱盐柱。"
+      }
+    },
+    {
+      "name": "10. Optional: cleave GST-tag (thrombin or PreScission protease)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Thrombin: 1 U/100 µg, RT 2 h or 4°C overnight. PreScission: 1 U/µg, 4°C overnight. Reverse purification: pass through GSTrap → cleaved protein flows through.",
+        "zh": "凝血酶：1 U/100 µg，RT 2 h 或 4°C 过夜。PreScission：1 U/µg，4°C 过夜。反向纯化：过 GSTrap 柱 → 切割后蛋白在穿透液中。"
+      }
+    },
+    {
+      "name": "11. Quantify, aliquot, store −80°C + 10% glycerol",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Typical yield: 2–20 mg/L culture.",
+        "zh": "典型产量：2–20 mg/L 培养液。"
+      }
+    }
   ],
   "notes": {
     "en": "GST (26 kDa) may affect folding — consider PreScission cleavage. GST often dimerizes. Lower IPTG (0.1 mM) + 18°C dramatically improves solubility. Avoid detergents >0.1% in binding buffer (strips GST from beads).",
     "zh": "GST 标签（26 kDa）可能影响蛋白折叠，建议 PreScission 蛋白酶切除。GST 易二聚化。低 IPTG（0.1 mM）+ 低温（18°C）显著提高可溶性。结合缓冲液洗涤剂 ≤0.1%。"
   },
-  "crosslinks": ["gst_elution", "gst_elution_reduced", "protein_dialysis", "dialysis_buffer_generic", "bacterial_protein_expression", "bca_protein_assay", "coomassie_staining"],
+  "crosslinks": [
+    "gst_elution",
+    "gst_elution",
+    "protein_dialysis",
+    "dialysis_buffer_generic",
+    "bacterial_protein_expression",
+    "bca_protein_assay",
+    "coomassie_staining"
+  ],
   "ref": "Harper & Speicher (2011) Curr Protoc Protein Sci 6.6.1–26; GE Healthcare Glutathione Sepharose Handbook; Smith & Johnson (1988) Gene 67:31–40",
   "doi": "10.1002/0471140864.ps0606s73"
 }

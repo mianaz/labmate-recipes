@@ -6,49 +6,94 @@
     "migration",
     "wound healing",
     "scratch assay",
-    "cell migration"
+    "cell migration",
+    "cell biology",
+    "2D migration",
+    "motility"
   ],
   "components": [
     {
-      "name": "1. 接种细胞至 >95% 融合",
+      "name": "1. Seed cells in 6-well plate; grow to >95% confluency",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Use 2–3×10⁵ cells/well for fast-growing lines (24 h); slower lines may need 48 h. Coat plate with Matrigel or fibronectin for weakly adherent cells.",
+        "zh": "快速增殖细胞（HeLa、MCF-7）每孔 2–3×10⁵，培养 24 h；缓慢增殖细胞可能需要 48 h。弱贴壁细胞可预包被 Matrigel 或纤连蛋白。"
+      }
     },
     {
-      "name": "2. 200 µL 枪头划直线",
+      "name": "2. Optional: pre-treat with Mitomycin C (10 µg/mL, 2 h, 37°C) to inhibit proliferation",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Wash 3× PBS after MMC treatment. MMC isolates migration from proliferation. Omit if growth rate is low. Alternative: serum-free medium alone.",
+        "zh": "MMC 处理后 PBS 洗 3 次。MMC 将迁移与增殖分离。生长缓慢的细胞可省略。替代方案：仅用无血清培养基。"
+      }
     },
     {
-      "name": "3. PBS 洗 2×",
+      "name": "3. Create scratch with 200 µL pipette tip held perpendicular to plate",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Drag tip firmly in one straight line. Use ruler as guide for consistent width. Mark bottom of plate with pen perpendicular to scratch for consistent imaging position.",
+        "zh": "垂直持枪头，用力划直线。用直尺保证一致宽度。在划痕垂直方向用记号笔标记培养皿底部，确保每次拍摄位置一致。"
+      }
     },
     {
-      "name": "4. 加无血清培养基 ± 处理",
+      "name": "4. Wash 2× with PBS; remove debris",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Gentle wash to remove detached cells and debris without disturbing wound edge.",
+        "zh": "轻柔冲洗，去除脱落细胞和碎片，避免扰动划痕边缘。"
+      }
     },
     {
-      "name": "5. 0h 拍照",
+      "name": "5. Add serum-free (or low-serum, 0.5–1% FBS) medium ± treatments",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Vehicle/DMSO controls must be at same concentration as treatment. For cytokines/growth factors: add to serum-free medium.",
+        "zh": "溶剂/DMSO 对照需与处理组等浓度。细胞因子/生长因子加入无血清培养基中。"
+      }
     },
     {
-      "name": "6. 定时拍照 (6h, 12h, 24h, 48h)",
+      "name": "6. Image at 0 h immediately (4× or 10× objective, phase contrast)",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Take 3–5 images per well at marked positions. Record stage coordinates (automated microscopes). ImageXpress/EVOS/Operetta all suitable.",
+        "zh": "在标记位置每孔拍 3–5 张图。记录载物台坐标（自动显微镜）。ImageXpress/EVOS/Operetta 均适用。"
+      }
     },
     {
-      "name": "7. ImageJ 分析划痕面积",
+      "name": "7. Image at regular intervals: 6 h, 12 h, 24 h, 48 h",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Frequency depends on cell migration speed. Fast migrators (MDA-MB-231): 6–12 h endpoint. Slow (primary cells): 24–48 h. Keep cells at 37°C during imaging if possible (live cell imager).",
+        "zh": "频率取决于细胞迁移速度。快速迁移细胞（MDA-MB-231）：6–12 h 终点。缓慢（原代细胞）：24–48 h。可能时保持 37°C 拍摄（活细胞成像系统）。"
+      }
+    },
+    {
+      "name": "8. Quantify: measure wound area with ImageJ (MRI Wound Healing Tool plugin)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "% Wound Closure = (Area₀ₕ − Areaₜₕ) / Area₀ₕ × 100. Or measure wound width manually (5 positions/image). Report as % closure or migration distance (µm/h).",
+        "zh": "% 愈合 = (面积₀ₕ − 面积ₜₕ) / 面积₀ₕ × 100。或手动测量 5 个位置的划痕宽度。报告愈合百分比或迁移距离（µm/h）。"
+      }
     }
   ],
   "nameCn": "划痕愈合实验",
   "notes": {
-    "en": "Simple assay to study cell migration. Create a scratch in confluent monolayer, image gap closure over time. Use serum-free medium to isolate migration from proliferation. Analyze with ImageJ MRI Wound Healing Tool.",
-    "zh": "简单经济的细胞迁移实验。用无血清培养基区分迁移和增殖。可选丝裂霉素 C 预处理抑制增殖。% 愈合 = (面积₀ₕ − 面积ₜₕ) / 面积₀ₕ × 100。"
+    "en": "Controls: (1) untreated cells (baseline), (2) no-serum negative control, (3) MMC-treated + serum (pure migration). Triplicate wells per condition. For 3D migration: transwell_migration (Boyden chamber). Limitations: does not distinguish migration vs proliferation without MMC treatment.",
+    "zh": "对照：(1) 未处理细胞（基线）；(2) 无血清阴性对照；(3) MMC 处理 + 血清（纯迁移）。每组 3 个平行孔。3D 迁移实验参见 transwell_migration（Boyden 小室）。局限性：未用 MMC 时无法区分迁移与增殖。"
   },
-  "ref": "Liang et al. (2007) Nat Protoc 2:329–333"
+  "ref": "Liang et al. (2007) Nat Protoc 2:329–333; Jonkman et al. (2014) Nat Protoc 9:1234–1248; Zordan et al. (2011) J Immunol Methods 370:56",
+  "crosslinks": [
+    "transwell_migration",
+    "cck8_proliferation"
+  ],
+  "doi": "10.1038/nprot.2007.30"
 }
