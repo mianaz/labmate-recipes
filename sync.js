@@ -16,7 +16,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const HTML_PATH = process.env.LABMATE_HTML || '/var/www/apps.bioinfospace.com/lab_toolkit/index.html';
+const HTML_PATH = process.env.LABMATE_HTML || '/var/www/apps.bioinfospace.com/labmate/index.html';
 const REPO_PATH = process.env.LABMATE_REPO || path.dirname(__filename);
 const RECIPES_DIR = path.join(REPO_PATH, 'recipes');
 
