@@ -1,0 +1,21 @@
+{
+  "id": "ficoll_400_stock",
+  "name": "Ficoll-400 Stock Solution (30% w/v)",
+  "nameCn": "Ficoll-400 母液（30% w/v）",
+  "category": "buffer",
+  "tags": ["density gradient", "Ficoll", "PBMC", "cell separation", "blood fractionation", "lymphocyte isolation"],
+  "volume": 100,
+  "volumeUnit": "mL",
+  "components": [
+    {"name": "Ficoll-400 (PM400 grade, tissue culture tested)", "amount": 30, "unit": "g",
+     "note": "MW ~400,000 Da; use sterile cell-culture grade"},
+    {"name": "Sterile PBS (1×, pH 7.4)", "amount": null, "unit": "to 100 mL",
+     "note": "Or DPBS without Ca²⁺/Mg²⁺"}
+  ],
+  "notes": {
+    "en": "Dissolve Ficoll-400 by stirring at 37°C (30–60 min) — it is highly viscous. Do NOT heat above 50°C (degrades). Filter-sterilize through 0.22 µm PES membrane (use low-protein-binding). Check density with refractometer: 30% ≈ 1.131 g/mL, adjust if needed. Store at 4°C protected from light (months); stable up to 2 years at −20°C. For Ficoll-Paque PBMC isolation: dilute to 1.077 g/mL (see ficoll_paque_pbmc buffer).",
+    "zh": "37°C 搅拌溶解 Ficoll-400（30–60 min），非常粘稠。不超过 50°C（会降解）。0.22 µm PES 膜过滤除菌（用低蛋白结合膜）。折光仪测密度：30% ≈ 1.131 g/mL，如需调整。4°C 避光保存（数月）；−20°C 稳定 2 年。PBMC 分离配制：稀释至 1.077 g/mL（见 ficoll_paque_pbmc）。"
+  },
+  "crosslinks": ["ficoll_paque_pbmc", "pbmc_isolation"],
+  "ref": "Boyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; GE Healthcare Ficoll-Paque PLUS Instructions"
+}

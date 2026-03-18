@@ -5,90 +5,80 @@
   "category": "protocol",
   "tags": [
     "cell viability",
+    "proliferation",
     "CCK-8",
     "WST-8",
-    "proliferation",
     "colorimetric",
-    "cytotoxicity",
     "cell biology",
-    "IC50",
-    "non-toxic"
+    "cytotoxicity",
+    "non-destructive"
   ],
   "components": [
     {
-      "name": "1. Seed cells in 96-well plate (100 µL complete medium per well)",
+      "name": "1. Seed cells in 96-well plate; allow overnight attachment",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "2,000–10,000 cells/well depending on cell type and assay duration. Add PBS to outer wells. Incubate 24 h before treatment.",
-        "zh": "2,000–10,000 细胞/孔，根据细胞类型和实验时长决定。外围孔加 PBS。培养 24 h 后再处理。"
+        "en": "100 µL complete medium/well. Seed density: 2,000–10,000 cells depending on doubling time (aim for ~60–70% confluency at endpoint). Fill outer-edge wells with PBS (not cells) to minimize edge effect evaporation.",
+        "zh": "每孔 100 µL 完全培养基。铺板密度：2,000–10,000 细胞（视倍增时间，终点时约 60–70% 汇合）。边缘孔加 PBS（不铺细胞）减少边缘效应蒸发。"
       }
     },
     {
-      "name": "2. Add treatment; incubate 24–72 h (37°C, 5% CO₂)",
+      "name": "2. Add treatment/drug (Day 1); incubate 24/48/72 h at 37°C, 5% CO₂",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "3–6 replicates. Untreated control (6 wells). Medium blank (3 wells, no cells). DMSO ≤0.1% final.",
-        "zh": "3–6 复孔。未处理对照 6 孔。培养基空白 3 孔（无细胞）。DMSO ≤0.1%。"
+        "en": "Controls: (a) untreated cells, (b) blank (medium only, no cells), (c) solvent control. For long treatments (>48 h): refresh medium + drug at 48 h. Drug dilution: ≥8 concentrations, 0.5-log steps, to generate IC₅₀ curve.",
+        "zh": "对照：(a) 未处理细胞；(b) 空白孔（仅培养基）；(c) 溶剂对照。长时间处理（>48 h）：48 h 换液并重新给药。IC₅₀ 曲线：≥8 个浓度梯度，0.5 对数间隔。"
       }
     },
     {
-      "name": "3. Add 10 µL CCK-8 reagent directly per well (do not remove medium)",
+      "name": "3. Add 10 µL CCK-8 reagent directly to medium; mix by pipetting once",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "CCK-8 is added directly to culture medium — no medium change required. Mix gently by pipetting up/down 3×. Avoid bubbles. Protect from direct light.",
-        "zh": "直接向培养液中加入——无需换液。轻柔吸打 3 次混匀。避免气泡。避光。"
+        "en": "Do NOT remove medium. Use multichannel pipette. Protect reagent from light. Avoid bubbles (interfere with reading). CCK-8 contains WST-8 tetrazolium salt.",
+        "zh": "不去除培养基直接加入。用多道移液器。试剂避光。避免产生气泡（影响读数）。CCK-8 含 WST-8 四唑盐。"
       }
     },
     {
-      "name": "4. Incubate 1–4 h at 37°C; check color development every 30 min after 1 h",
+      "name": "4. Incubate 1–4 h at 37°C, 5% CO₂; check color every 30 min after 1 h",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Color shifts from orange to deep orange (or dark brown at high cell density). Stop when untreated wells show A450 of ~1.0–1.5. DO NOT over-incubate (background increases).",
-        "zh": "颜色从橙色变为深橙（高密度时棕色）。未处理孔 A450 达 ~1.0–1.5 时终止。勿过度孵育（背景升高）。"
+        "en": "Optimal: orange-yellow color; OD 0.6–1.5. Too dark (OD >2.0): dilute cells or reduce incubation. Incubation time should be consistent across all plates.",
+        "zh": "最佳：橙黄色；OD 0.6–1.5。过深（OD >2.0）：减少细胞数或缩短孵育时间。各板孵育时间必须一致。"
       }
     },
     {
-      "name": "5. Read absorbance at 450 nm (reference: 650 nm) on plate reader",
+      "name": "5. Read A₄₅₀ nm (reference 630–650 nm) immediately",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Reference wavelength 630–690 nm corrects plate and medium background. Read within 30 min (WST-8 formazan is stable but phenol red continues absorbing).",
-        "zh": "参考波长 630–690 nm 校正培养板和培养基背景。30 min 内读完（WST-8 甲臜稳定但酚红持续吸光）。"
+        "en": "No need to remove medium or add DMSO — non-destructive. Can re-incubate and re-read same plate at later timepoints.",
+        "zh": "无需去除培养基或加 DMSO——非破坏性。可继续孵育后重复读取同一培养板。"
       }
     },
     {
-      "name": "6. Calculate: % Viability = (A450_treated − A650_treated − blank) / (A450_ctrl − A650_ctrl − blank) × 100",
+      "name": "6. Calculate % viability and IC₅₀",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "IC₅₀: 4-PL logistic curve fit (GraphPad Prism). For proliferation index: normalize each timepoint to T=0.",
-        "zh": "IC₅₀：GraphPad Prism 四参数 logistic 拟合。增殖指数：各时间点归一化至 T=0。"
-      }
-    },
-    {
-      "name": "7. Optional kinetic: read at multiple timepoints (T=0, 24, 48, 72 h) — same plate",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Return plate to incubator after each read. CCK-8 is non-toxic — cells remain viable. Generates growth curves in real-time on same plate.",
-        "zh": "每次读数后将培养板放回培养箱。CCK-8 无细胞毒性——细胞保持存活。可在同一培养板上实时生成生长曲线。"
+        "en": "% Viability = (OD_treated − OD_blank) / (OD_control − OD_blank) × 100. IC₅₀: nonlinear regression (4-parameter logistic, GraphPad Prism log(inhibitor) vs normalized response).",
+        "zh": "% 活力 = (OD处理 − OD空白) / (OD对照 − OD空白) × 100。IC₅₀：非线性回归（4 参数逻辑斯谛，GraphPad Prism log[inhibitor] vs 归一化响应）。"
       }
     }
   ],
   "notes": {
-    "en": "CCK-8 uses WST-8 (a tetrazolium dye, water-soluble formazan product = no DMSO needed). More sensitive and less toxic than MTT. Interference: reducing agents (DTT, β-ME, TCEP) directly reduce WST-8 (false high); colored compounds at 450 nm. Cannot re-measure after full reduction. Alternative: resazurin_assay (even less toxic, fluorescence-based).",
-    "zh": "CCK-8 使用 WST-8（四唑盐染料，甲臜产物水溶，无需 DMSO）。比 MTT 更灵敏、毒性更低。干扰：还原剂（DTT、β-ME、TCEP）直接还原 WST-8（假阳性高）；450 nm 处有色化合物干扰。完全还原后无法重复读数。替代方案：resazurin_assay（毒性更低，荧光法）。"
+    "en": "CCK-8 advantages over MTT: (1) non-destructive (can re-read), (2) no DMSO solubilization step, (3) higher sensitivity, (4) no interference from culture medium. Interference: phenol-red (small, use reference wavelength), serum >15%, strong reducers. For suspension cells: centrifuge plate before reading (300×g 5 min).",
+    "zh": "CCK-8 优于 MTT：(1) 非破坏性（可重复读）；(2) 无需 DMSO 溶解；(3) 灵敏度更高；(4) 培养基干扰小。干扰因素：酚红（小，用参考波长校正）、血清 >15%、强还原剂。悬浮细胞：读板前离心（300×g 5 min）。"
   },
-  "ref": "Ishiyama et al. (1997) Talanta 44:1299–1305; Dojindo CCK-8 Technical Manual; van Meerloo et al. (2011) Methods Mol Biol 731:237–245",
+  "ref": "Ishiyama et al. (1997) Talanta 44:1299–1305; Dojindo CCK-8 Technical Manual; Kurokawa et al. (1999) Anal Biochem 268:375–380",
   "crosslinks": [
     "mtt_assay",
     "resazurin_assay",
     "clonogenic_assay",
-    "mtt_reagent"
+    "trypan_blue_counting"
   ],
-  "doi": "10.1016/S0039-9140(96)02178-5"
+  "doi": "10.1016/S0039-9140(97)00325-4"
 }

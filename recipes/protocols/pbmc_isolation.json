@@ -1,96 +1,122 @@
 {
   "id": "pbmc_isolation",
-  "name": "PBMC Isolation by Density Gradient Centrifugation (Ficoll/Percoll)",
-  "nameCn": "密度梯度离心法分离外周血单个核细胞（PBMC）",
+  "name": "PBMC Isolation by Density Gradient Centrifugation (Ficoll)",
+  "nameCn": "密度梯度离心法分离 PBMC（外周血单个核细胞）",
   "category": "protocol",
-  "tags": ["PBMC", "density gradient", "Ficoll", "Percoll", "blood", "mononuclear cells", "immunology", "cell isolation"],
+  "tags": [
+    "PBMC",
+    "Ficoll",
+    "density gradient",
+    "blood",
+    "lymphocyte isolation",
+    "immunology",
+    "cell separation",
+    "mononuclear cells"
+  ],
   "components": [
     {
-      "name": "1. Collect blood in EDTA or heparin tubes; process within 2 h",
+      "name": "1. Collect blood into EDTA or heparin tube; process within 2 h at RT",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "EDTA (purple cap) preferred. Heparin (green cap) acceptable. Serum (red cap) is NOT suitable. Each 10 mL blood yields ~1–3×10⁷ PBMC. Keep blood at RT (not 4°C — causes platelet aggregation).",
-        "zh": "优选 EDTA 管（紫盖）。肝素管（绿盖）可用。血清管（红盖）不适用。每 10 mL 血液可分离约 1–3×10⁷ PBMC。室温保存（不要 4°C——血小板聚集）。"
+        "en": "EDTA: 1.8 mg/mL (purple-top Vacutainer). Heparin: 10–20 U/mL (green-top). Do NOT use SST (serum-separator) or clotted blood. Keep at RT (not on ice — cold causes platelet/lymphocyte aggregation).",
+        "zh": "EDTA（紫色管）或肝素（绿色管）采血管。禁用 SST（血清分离管）或已凝固血液。室温保存（不可冰上——冷藏导致血小板/淋巴细胞聚集）。采血后 2 h 内处理。"
       }
     },
     {
-      "name": "2. Dilute blood 1:1 with PBS (room temperature) in 50 mL conical tube",
+      "name": "2. Dilute blood 1:1 with RT DPBS (without Ca²⁺/Mg²⁺)",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "E.g., 10 mL blood + 10 mL PBS. Mix gently by inversion 3×. Dilution reduces viscosity and improves interface formation.",
-        "zh": "例如 10 mL 血 + 10 mL PBS。轻柔颠倒混合 3 次。稀释降低黏度，改善界面形成。"
+        "en": "Dilution reduces viscosity and improves separation. Use DPBS at RT (not cold). Gently invert to mix. 20 mL diluted blood is typical starting volume.",
+        "zh": "稀释降低黏度，改善分离效果。用室温 DPBS（不用冷的）。轻柔颠倒混匀。典型起始体积：20 mL 稀释血液。"
       }
     },
     {
-      "name": "3. Carefully layer diluted blood over Ficoll-Paque (density 1.077 g/mL)",
+      "name": "3. Add Ficoll-Paque (1.077 g/mL) to conical tube: 10 mL Ficoll per 20 mL diluted blood",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Add 15 mL Ficoll-Paque to 50 mL tube first (pre-warmed to RT). Then slowly pipette diluted blood down the tube wall to form a sharp interface — do NOT mix layers. Ratio: 3 mL diluted blood per 1 mL Ficoll (up to 35 mL diluted blood per 15 mL Ficoll). Self-prepared: use ficoll_solution (density 1.077). Alternative: Percoll at 77% IPS (percoll_gradient_buffer).",
-        "zh": "先在 50 mL 管中加 15 mL Ficoll-Paque（预热至 RT）。沿管壁缓慢加入稀释血，形成清晰界面——勿混层。比例：每 1 mL Ficoll 对应 3 mL 稀释血液。自配：ficoll_solution（密度 1.077）。替代方案：77% Percoll IPS（percoll_gradient_buffer）。"
+        "en": "Warm Ficoll-Paque to RT (critical — cold Ficoll gives poor separation). For SepMate tubes (Stem Cell Tech): add Ficoll first, then pour blood on top — faster and cleaner. Use 15 mL Ficoll for 50 mL tube; 3 mL for 15 mL tube.",
+        "zh": "Ficoll-Paque 必须恢复至室温（关键——冷的会导致分离失败）。SepMate 管（Stem Cell Tech）：先加 Ficoll 再倒血液——更快更干净。50 mL 管用 15 mL Ficoll；15 mL 管用 3 mL。"
       }
     },
     {
-      "name": "4. Centrifuge: 400×g, 30–40 min, RT; brake OFF (no deceleration!)",
+      "name": "4. Layer diluted blood slowly over Ficoll (do not mix layers)",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Critical: turn off brake and acceleration ramp must be low (set to 1–2 on Beckman/Eppendorf). High brake disrupts interface. Layers from top to bottom: plasma+platelets / PBMC buffy coat / Ficoll / RBC+granulocyte pellet.",
-        "zh": "关键：关闭制动，加速度设为低档（Beckman/Eppendorf 设为 1–2）。急刹车会破坏界面。从上至下层次：血浆+血小板 / PBMC 灰白层 / Ficoll / 红细胞+粒细胞沉淀。"
+        "en": "Tilt tube 45°; pipette diluted blood down the tube wall so it floats gently on top of Ficoll. Two distinct layers must be visible. Alternatively, underlay Ficoll under blood using a long needle.",
+        "zh": "将管倾斜 45°，沿管壁缓慢加入稀释血液，使其轻轻漂浮在 Ficoll 上方。必须可见明显两层界面。也可用长针在血液下方注入 Ficoll（倒置法）。"
       }
     },
     {
-      "name": "5. Collect buffy coat (PBMC layer) with Pasteur pipette; avoid Ficoll layer",
+      "name": "5. Centrifuge: 400×g, 30–35 min, RT (no brake, no acceleration ramp)",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Use wide-bore pipette. Aspirate ~2 cm above and below the buffy coat ring. Transfer to new 50 mL tube. Bring volume to 50 mL with PBS to dilute Ficoll.",
-        "zh": "用宽口吸管。在灰白层上下约 2 cm 范围内吸取。转入新 50 mL 管。PBS 补至 50 mL 稀释 Ficoll。"
+        "en": "CRITICAL: acceleration = 9 (slow), brake = 0 (NO BRAKE). Deceleration with brake disrupts the density interface. RT (18–25°C). Most centrifuges: set to slowest decel (0 or 1).",
+        "zh": "关键：加速度 = 9（慢速），刹车 = 0（无刹车）。刹车会扰乱密度界面。室温（18–25°C）。大多数离心机：设置最慢减速（0 或 1）。"
       }
     },
     {
-      "name": "6. Wash 2× with PBS: 300×g, 10 min, RT; discard supernatant",
+      "name": "6. Identify layers post-centrifugation",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "First wash: 300×g 10 min RT (removes Ficoll and platelets). Second wash: 200×g 10 min RT (further removes platelets — they pellet at higher g). Platelet removal important for downstream functional assays.",
-        "zh": "第一次洗涤：300×g 10 min RT（去除 Ficoll 和血小板）。第二次：200×g 10 min RT（进一步去除血小板——血小板在更高离心力下沉淀）。去血小板对下游功能实验很重要。"
+        "en": "Top: plasma + platelets. Buffy coat (white ring at Ficoll interface): PBMCs. Ficoll layer: granulocytes settling. Pellet (red): erythrocytes + granulocytes. PBMC band may be thin — collect carefully.",
+        "zh": "顶层：血浆 + 血小板。白膜层（Ficoll 界面白色环）：PBMC。Ficoll 层：粒细胞。红色沉淀：红细胞 + 粒细胞。PBMC 带可能较薄——小心收集。"
       }
     },
     {
-      "name": "7. Lyse residual RBC (if needed): RBC lysis buffer 5 min RT; wash 1× PBS",
-      "amount": 1, "unit": "step",
-      "note": {
-        "en": "Usually not needed with proper Ficoll step. If red contamination persists: 1× BD Pharm Lyse (1 mL per 10⁷ cells) 5 min RT; quench with PBS; 400×g 5 min. Or ACK lysis buffer (150 mM NH₄Cl, 10 mM KHCO₃, 0.1 mM EDTA).",
-        "zh": "Ficoll 分离正确时通常不需要。若残余红细胞较多：1× BD Pharm Lyse（1 mL/10⁷ 细胞）RT 5 min；PBS 终止；400×g 5 min。或 ACK 裂解液（150 mM NH₄Cl、10 mM KHCO₃、0.1 mM EDTA）。"
-      }
-    },
-    {
-      "name": "8. Count cells (trypan blue); assess viability (should be >90%)",
+      "name": "7. Collect buffy coat (PBMC layer): insert pipette just above Ficoll interface; aspirate 2–4 mL",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Use cell_counting_hemocytometer. Expected yield: 1–2×10⁶ PBMC/mL whole blood. Viability <90% indicates delay in processing, wrong temperature, or excessive RBC lysis. PBMC composition: ~70–80% T cells, ~10–15% B cells, ~10–15% NK cells, ~10–20% monocytes.",
-        "zh": "cell_counting_hemocytometer 计数。预期产率：1–2×10⁶ PBMC/mL 全血。活力 <90% 提示处理延迟、温度不当或 RBC 裂解过度。PBMC 组成：~70–80% T 细胞、~10–15% B 细胞、~10–15% NK 细胞、~10–20% 单核细胞。"
+        "en": "Collect in a clean 15 or 50 mL tube. Taking ≤1 mL of Ficoll is acceptable. Avoid disturbing lower layers.",
+        "zh": "收集到干净的 15 或 50 mL 管中。带入少量（≤1 mL）Ficoll 可接受。避免扰动下层。"
       }
     },
     {
-      "name": "9. Proceed to downstream use, or cryopreserve in 10% DMSO/90% FBS",
+      "name": "8. Wash 1: add 40 mL RT DPBS; 300×g 10 min RT (WITH brake); decant supernatant",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Immediate use: resuspend in complete RPMI (complete_rpmi). Cryopreservation (cell_freezing): 10% DMSO + 90% FBS; slow-freeze (CoolCell or isopropanol box −80°C); transfer to LN₂ for long-term storage. Thaw gently: 37°C water bath, dilute in warm RPMI, centrifuge 300×g 10 min to remove DMSO.",
-        "zh": "立即使用：complete_rpmi 重悬。冻存（cell_freezing）：10% DMSO + 90% FBS；缓慢降温（CoolCell 或异丙醇盒 −80°C）；长期储存转入液氮。复苏：37°C 水浴，温 RPMI 稀释，300×g 10 min 去除 DMSO。"
+        "en": "This wash removes residual Ficoll and platelets. Pellet should be white/cream (PBMCs). If red → erythrocyte contamination → add 2 mL ACK lysis buffer (150 mM NH₄Cl, 10 mM KHCO₃, 0.1 mM EDTA, pH 7.2), 5 min RT.",
+        "zh": "此步去除残余 Ficoll 和血小板。沉淀应为白色/奶油色（PBMC）。如偏红 → 红细胞污染 → 加 2 mL ACK 裂解液（150 mM NH₄Cl、10 mM KHCO₃、0.1 mM EDTA，pH 7.2），RT 5 min。"
+      }
+    },
+    {
+      "name": "9. Wash 2: resuspend in 10 mL DPBS; 200×g 10 min RT; decant",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Second wash at lower g-force to remove most remaining platelets (platelets sediment at higher g, are discarded with supernatant).",
+        "zh": "第二次洗涤用较低离心力去除残余血小板（血小板在较高 g 时沉淀，随上清丢弃）。"
+      }
+    },
+    {
+      "name": "10. Resuspend in RPMI-1640 + 10% FBS or DPBS; count and assess viability",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "cell_counting_hemocytometer with trypan blue. Typical yield: 1–2×10⁶ PBMCs/mL blood. Viability should be >90%. PBMC composition: ~80% lymphocytes (T, B, NK), ~15% monocytes, ~5% dendritic cells.",
+        "zh": "cell_counting_hemocytometer 台盼蓝计数。典型产量：每毫升血液 1–2×10⁶ PBMC。活率应 >90%。PBMC 组成：约 80% 淋巴细胞（T、B、NK）、约 15% 单核细胞、约 5% 树突状细胞。"
       }
     }
   ],
   "notes": {
-    "en": "PBMC isolation is density-dependent: lymphocytes and monocytes (density 1.055–1.077 g/mL) float on Ficoll (1.077); granulocytes (1.080–1.100) and RBC (1.090–1.110) pellet through. Freshness matters: process within 2 h of collection for best viability and function. For mouse blood: use Percoll gradient (1.083 g/mL density). For bone marrow: same principle, but pre-lyse RBC first.",
-    "zh": "PBMC 分离基于密度差：淋巴细胞和单核细胞（密度 1.055–1.077 g/mL）浮在 Ficoll（1.077）界面；粒细胞（1.080–1.100）和红细胞（1.090–1.110）沉底。新鲜度关键：采血后 2 h 内处理，保证活力和功能。小鼠血液：用 Percoll 梯度（密度 1.083）。骨髓：原理相同，但需先裂解红细胞。"
+    "en": "Critical success factors: (1) Fresh blood at RT throughout; (2) Ficoll at RT; (3) NO BRAKE on centrifuge deceleration; (4) Careful harvesting of buffy coat. For cryopreservation: resuspend at 10–20×10⁶ cells/mL in 90% FBS + 10% DMSO (cell_freezing); rapid cooling in Mr. Frosty to −80°C; transfer to liquid N₂. For immediate downstream: proceed to magnetic bead depletion (MACS), activation, or flow staining (flow_panel_staining).",
+    "zh": "成功关键因素：(1) 全程血液保持室温；(2) Ficoll 恢复至室温；(3) 离心减速无刹车；(4) 小心收集白膜层。冻存：10–20×10⁶ cells/mL 重悬于 90% FBS + 10% DMSO（cell_freezing），Mr. Frosty 缓慢降温至 −80°C，后转液氮。下游实验：磁珠分选（MACS）、细胞激活或流式染色（flow_panel_staining）。"
   },
-  "crosslinks": ["ficoll_solution", "percoll_gradient_buffer", "cell_counting_hemocytometer", "cell_freezing", "complete_rpmi", "flow_panel_staining"],
-  "ref": "Böyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; Corkum & Bhatt (2015) JOVE e52629; GE Healthcare Ficoll-Paque PLUS Handbook 2012",
-  "doi": "10.3791/52629"
+  "crosslinks": [
+    "ficoll_paque_pbmc",
+    "ficoll_400_stock",
+    "cell_counting_hemocytometer",
+    "flow_panel_staining",
+    "cell_freezing",
+    "macs_buffer"
+  ],
+  "ref": "Boyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; Ulmer et al. (1984) Immunobiology 166:238–250; Kleiveland (2015) Handbook of Cell Biology; STEMCELL Technologies EasySep Manual",
+  "doi": "10.1002/9783527698622.ch12"
 }

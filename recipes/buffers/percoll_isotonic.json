@@ -1,0 +1,21 @@
+{
+  "id": "percoll_isotonic",
+  "name": "Isotonic Percoll Stock Solution",
+  "nameCn": "等渗 Percoll 母液",
+  "category": "buffer",
+  "tags": ["density gradient", "Percoll", "cell separation", "organelle isolation", "isoosmotic", "subcellular fractionation"],
+  "volume": 10,
+  "volumeUnit": "mL",
+  "components": [
+    {"name": "Percoll (100%, undiluted, GE/Cytiva)", "amount": 9, "unit": "mL",
+     "note": "Do not autoclave; filter-sterilize if needed (0.2 µm PES)"},
+    {"name": "10× PBS (pH 7.4)", "amount": 1, "unit": "mL",
+     "note": "To achieve isotonic concentration (final 1× PBS); maintains cell/organelle osmotic balance"}
+  ],
+  "notes": {
+    "en": "This 100% isotonic Percoll = stock for dilution to desired density. Density of undiluted isotonic Percoll: ~1.123 g/mL. Prepare working concentrations by diluting with 1× PBS: 18% for PBMC-compatible layer, 30% for mitochondria interface (as in mitochondria_isolation), 70–90% for dense organelles. Percoll self-generates gradient by centrifugation (20,000–40,000×g 30–60 min 4°C). Unlike Ficoll, Percoll is colloidal silica — do NOT use in vivo. Store at 4°C (do not freeze — aggregates).",
+    "zh": "此 100% 等渗 Percoll = 稀释工作液的母液。未稀释等渗 Percoll 密度约 1.123 g/mL。用 1× PBS 稀释至所需密度：18%（PBMC 兼容层）、30%（线粒体界面，见 mitochondria_isolation）、70–90%（高密度细胞器）。Percoll 可通过离心自动形成梯度（20,000–40,000×g，30–60 min，4°C）。Percoll 是胶体二氧化硅——严禁体内使用。4°C 保存（切勿冷冻——会聚集）。"
+  },
+  "crosslinks": ["mitochondria_isolation", "pbmc_isolation", "subcellular_fractionation", "lysosome_isolation"],
+  "ref": "Pertoft (2000) J Biochem Biophys Methods 44:1–30; GE Healthcare Percoll Application Note; Ford et al. (1983) Biol Cell 48:1"
+}

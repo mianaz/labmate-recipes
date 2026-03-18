@@ -1,93 +1,36 @@
 {
   "id": "lysosome_isolation",
-  "name": "Lysosome Isolation by Differential Centrifugation",
-  "nameCn": "差速离心法分离溶酶体",
+  "name": "Lysosome Isolation by Differential and Density Gradient Centrifugation",
+  "nameCn": "溶酶体分离（差速离心 + 密度梯度法）",
   "category": "protocol",
-  "tags": ["lysosome", "organelle isolation", "differential centrifugation", "sucrose gradient", "cell biology", "biochemistry", "subcellular fractionation"],
+  "tags": ["lysosome", "organelle isolation", "density gradient", "Percoll", "subcellular fractionation", "cell biology", "autophagy"],
   "components": [
-    {
-      "name": "1. Pre-treat cells to enrich lysosomes (optional): LLOME or LED209 loading",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Optional enrichment: Treat cells with Leu-Leu-OMe (LLOME, 1 mM, 30 min) to enlarge lysosomes, OR load with 10 nm colloidal iron dextran (20 µg/mL, 2 h) then magnetic isolation. Standard protocol works without pre-treatment.",
-        "zh": "可选富集：Leu-Leu-OMe（LLOME，1 mM，30 min）处理细胞使溶酶体膨大，或用胶体铁右旋糖酐（20 µg/mL，2 h）负载后磁性分离。标准方案无需预处理。"
-      }
-    },
-    {
-      "name": "2. Wash cells 2× cold PBS; scrape into 1 mL lysosome_isolation_buffer; transfer to Dounce",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Use ≥2×10⁷ cells (e.g., two 15 cm plates). Keep ice-cold throughout. Add fresh protease inhibitors!", "zh": "使用 ≥2×10⁷ 细胞（如两个 15 cm 皿）。全程冰冷。加新鲜蛋白酶抑制剂！"
-      }
-    },
-    {
-      "name": "3. Homogenize: 20–30 strokes with tight Dounce pestle; verify disruption by trypan blue",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Check ~80% lysis: 10 µL homogenate + 10 µL trypan blue — >80% cells stained blue = adequate disruption. Do not over-homogenize (lysosome membrane disruption releases lytic contents).",
-        "zh": "验证约 80% 裂解：10 µL 匀浆 + 10 µL 台盼蓝，>80% 细胞被染蓝 = 充分裂解。避免过度匀浆（溶酶体膜破损会释放溶解酶）。"
-      }
-    },
-    {
-      "name": "4. Remove nuclei and debris: 600×g, 10 min, 4°C; keep supernatant (PNS)",
-      "amount": 1,
-      "unit": "step",
-      "note": {"en": "Repeat if nuclear/debris pellet is large.", "zh": "沉淀较大时重复一次。"}
-    },
-    {
-      "name": "5. Mitochondria/peroxisome spin: 3,000–5,000×g, 15 min, 4°C; keep supernatant",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Pellet (L fraction): mitochondria, peroxisomes — discard (or save for mitochondria_isolation). Supernatant = light mitochondrial fraction (MLF) enriched in lysosomes.",
-        "zh": "沉淀（L 组分）：线粒体、过氧化物酶体——丢弃（或保留用于 mitochondria_isolation）。上清 = 轻线粒体组分（MLF），溶酶体富集在此。"
-      }
-    },
-    {
-      "name": "6. Lysosome enrichment: 20,000×g, 20 min, 4°C",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Pellet = crude lysosomal fraction (+ mitochondrial contamination, peroxisomes). Resuspend in 1 mL lysosome_isolation_buffer.",
-        "zh": "沉淀 = 粗溶酶体组分（含线粒体污染、过氧化物酶体）。1 mL lysosome_isolation_buffer 重悬。"
-      }
-    },
-    {
-      "name": "7. Sucrose step gradient purification (for cleaner lysosomes)",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Layer in SW-41 Ti tube (from bottom): 2.5 mL 26% sucrose → 2.5 mL 19% sucrose → 2.5 mL 14.3% sucrose (all in lysosome_isolation_buffer) → load crude lysosome fraction on top. Centrifuge 150,000×g 2 h 4°C swing-bucket. Lysosomes: 19/26% interface (density 1.12–1.18 g/mL). Mitochondria: pellet (1.20 g/mL). Peroxisomes: 26% layer.",
-        "zh": "SW-41 Ti 管中从底部铺层：2.5 mL 26% 蔗糖 → 2.5 mL 19% → 2.5 mL 14.3%（均在 lysosome_isolation_buffer 中）→ 粗溶酶体加至顶部。摆角转头 150,000×g 2 h 4°C。溶酶体：19/26% 界面（密度 1.12–1.18 g/mL）。线粒体：沉底（1.20 g/mL）。过氧化物酶体：26% 层。"
-      }
-    },
-    {
-      "name": "8. Collect lysosomal band; dilute 5× PBS; pellet 20,000×g 15 min 4°C",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Resuspend in desired buffer. Quantify by BCA (bca_protein_assay). Verify by WB: LAMP1/LAMP2 (positive); VDAC (negative — mito); PMP70 (negative — peroxisome).",
-        "zh": "适当缓冲液重悬。BCA 定量（bca_protein_assay）。WB 验证：LAMP1/LAMP2（阳性）；VDAC（阴性——线粒体）；PMP70（阴性——过氧化物酶体）。"
-      }
-    },
-    {
-      "name": "9. Lysosomal enzyme activity assay (quality control)",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "β-hexosaminidase activity: 10 µL lysate + 100 µL substrate (3 mM 4-MU-N-acetyl-β-D-glucosaminide in citrate-phosphate pH 4.5) → 37°C 30 min → add 200 µL glycine buffer pH 10.4 → read fluorescence Ex 365/Em 445 nm. Cathepsin D/B Western or activity assay (Magic Red kit).",
-        "zh": "β-己糖苷酶活性：10 µL 裂解物 + 100 µL 底物（3 mM 4-MU-N-乙酰-β-D-葡糖胺苷，柠檬酸磷酸盐 pH 4.5）→ 37°C 30 min → 加 200 µL 甘氨酸缓冲液 pH 10.4 → 荧光读数 Ex 365/Em 445 nm。组织蛋白酶 D/B WB 或活性检测（Magic Red 试剂盒）。"
-      }
-    }
+    {"name": "1. Seed 5×10⁷–1×10⁸ cells; wash 2× ice-cold PBS; scrape on ice", "amount": 1, "unit": "step",
+     "note": {"en": "Use HeLa, HEK293, fibroblasts or liver tissue (100–200 mg). Scale up for low-yield cell types. Pre-chill all equipment at 4°C overnight.", "zh": "使用 HeLa、HEK293、成纤维细胞或肝组织（100–200 mg）。低产量细胞类型需放大规模。所有器材 4°C 预冷过夜。"}},
+    {"name": "2. Resuspend in 1 mL cold sucrose_gradient_homog buffer (250 mM sucrose, 10 mM HEPES pH 7.4)", "amount": 1, "unit": "step",
+     "note": {"en": "Per 5×10⁷ cells. Include protease inhibitors + 1 mM PMSF.", "zh": "每 5×10⁷ 细胞用 1 mL。加蛋白酶抑制剂 + 1 mM PMSF。"}},
+    {"name": "3. Lyse cells with Dounce homogenizer: 25–30 strokes with tight pestle, 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Monitor lysis by trypan blue (~80% cells ruptured, nuclei intact). Syringe method: 25G needle × 10 passes. Do NOT sonicate (destroys lysosomes).", "zh": "台盼蓝监测裂解（~80% 细胞破裂，核完整）。注射器法：25G 针头 × 10 次。不可超声（会破坏溶酶体）。"}},
+    {"name": "4. Nuclei/debris removal: 600×g, 10 min, 4°C (×2)", "amount": 1, "unit": "step",
+     "note": {"en": "Keep postnuclear supernatant (PNS). Save 100 µL PNS as total homogenate control.", "zh": "保留核后上清（PNS）。保存 100 µL PNS 作为总匀浆对照。"}},
+    {"name": "5. Mitochondria removal: 3,000×g, 10 min, 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Pellet = mitochondria-rich. Supernatant = post-mitochondrial supernatant (PMS).", "zh": "沉淀富含线粒体。上清 = 线粒体后上清（PMS）。"}},
+    {"name": "6. Crude lysosome pellet: 17,000×g, 20 min, 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Pellet contains lysosomes, ER fragments, mitochondrial contaminants. Supernatant = cytosol + microsomes.", "zh": "沉淀含溶酶体、ER 碎片、线粒体污染物。上清 = 细胞质 + 微粒体。"}},
+    {"name": "7. Resuspend crude pellet in 0.5 mL 250 mM sucrose buffer; layer on Percoll/sucrose gradient", "amount": 1, "unit": "step",
+     "note": {"en": "Step gradient (bottom to top in 10 mL SW-41 tube): 2 mL 2.0 M sucrose → 3 mL 1.3 M → 3 mL 0.86 M → 2 mL 0.25 M → load sample on top. OR: use 20% Percoll in sucrose buffer, self-generate gradient at 40,000×g 30 min 4°C.", "zh": "阶梯梯度（从下到上，10 mL SW-41 管）：2 mL 2.0 M 蔗糖 → 3 mL 1.3 M → 3 mL 0.86 M → 2 mL 0.25 M → 顶部加样。或：20% Percoll 溶于蔗糖缓冲液，40,000×g 30 min 4°C 自动成梯度。"}},
+    {"name": "8. Ultracentrifuge: 30,000×g (25,000 rpm SW-41), 60 min, 4°C, slow brake", "amount": 1, "unit": "step",
+     "note": {"en": "Lysosome density: 1.10–1.12 g/mL → bands between 0.86 M and 1.3 M layers. Mitochondria (1.18 g/mL) pellet. ER (1.07 g/mL) bands higher. Collect 0.5–1 mL fractions from top.", "zh": "溶酶体密度 1.10–1.12 g/mL → 在 0.86 M 和 1.3 M 层间成带。线粒体（1.18 g/mL）沉底。ER（1.07 g/mL）成带位置更高。从顶部收集 0.5–1 mL 组分。"}},
+    {"name": "9. Identify lysosome fractions: assay β-hexosaminidase or LAMP1 western blot", "amount": 1, "unit": "step",
+     "note": {"en": "β-hexosaminidase activity assay: add 10 µL fraction + 90 µL substrate (4-methylumbelliferyl-2-acetamido-2-deoxy-β-D-glucopyranoside, 1 mM in citrate buffer pH 4.5), 37°C 30 min → stop with 1 M Glycine pH 10.5 → read fluorescence Ex 365/Em 450. Western blot: LAMP1 (lysosomal), Cathepsin D.", "zh": "β-半乳糖苷酶活性法：10 µL 组分 + 90 µL 底物（4-甲基伞形酮 β-D-氨基葡萄糖苷，1 mM 柠檬酸缓冲液 pH 4.5），37°C 30 min → 1 M 甘氨酸 pH 10.5 终止 → 荧光（Ex 365/Em 450）。Western blot：LAMP1（溶酶体）、Cathepsin D。"}},
+    {"name": "10. Pool lysosome fractions; dilute 5× with PBS; re-pellet 17,000×g 20 min 4°C", "amount": 1, "unit": "step",
+     "note": {"en": "Removes sucrose/Percoll from lysosome fraction. Resuspend in desired assay buffer. Yield: ~1–5 µg lysosome protein per 10⁷ cells. Use immediately or flash-freeze in liquid N₂.", "zh": "去除溶酶体组分中的蔗糖/Percoll。用目标实验缓冲液重悬。产量：~1–5 µg 溶酶体蛋白/10⁷ 细胞。立即使用或液氮快速冷冻。"}}
   ],
   "notes": {
-    "en": "Lysosome fragility: they rupture easily (pH, mechanical stress, temperature changes). Key: work at 4°C, avoid vortexing, use gentle homogenization, do not freeze-thaw isolated lysosomes (membrane ruptures). For LysoTracker-based live-cell lysosome labeling: much simpler (LysoTracker Red 75 nM, 30 min 37°C, then fix and image).",
-    "zh": "溶酶体脆性大：pH、机械力、温度变化均可导致破裂。关键：4°C 操作、避免涡旋、轻柔匀浆、分离后的溶酶体不要冻融（膜破裂）。活细胞溶酶体标记更简便：LysoTracker Red（75 nM，37°C 30 min，固定后成像）。"
+    "en": "Alternative method: LysoIP (Ballabio lab, Nat Methods 2019) — express TMEM192-HA, immunoprecipitate with anti-HA beads (10 min, 4°C); rapid and specific but requires stable cell line. Marker verification: LAMP1/LAMP2 (membrane), Cathepsin B/D (luminal), ATP6V1A (vacuolar ATPase). Purity assessment: minimize mitochondrial (COX IV) and ER (PDI) markers.",
+    "zh": "替代法：LysoIP（Ballabio 实验室，Nat Methods 2019）——表达 TMEM192-HA，anti-HA 磁珠免疫沉淀（4°C 10 min）；快速特异但需要稳转细胞系。标记蛋白验证：LAMP1/LAMP2（膜）、Cathepsin B/D（腔内）、ATP6V1A（液泡 ATPase）。纯度评估：尽量减少线粒体（COX IV）和 ER（PDI）标记。"
   },
-  "crosslinks": ["lysosome_isolation_buffer", "sucrose_gradient_buffer", "density_gradient_centrifugation", "subcellular_fractionation", "mitochondria_isolation", "bca_protein_assay"],
-  "ref": "Bright et al. (2016) Curr Protoc Cell Biol 72:3.27.1; Rahman et al. (2020) STAR Protoc 1:100122; Graham (2002) Curr Protoc Cell Biol 3.6.1",
-  "doi": "10.1002/cpcb.15"
+  "crosslinks": ["subcellular_fractionation", "mitochondria_isolation", "er_golgi_isolation", "sucrose_gradient_homog", "percoll_isotonic", "wb_protocol"],
+  "ref": "Graham (2001) Curr Protoc Cell Biol 3.9.1; Abu-Remaileh et al. (2017) Science 358:807–813 (LysoIP); Walkley (2009) J Inherit Metab Dis 32:181",
+  "doi": "10.1126/science.aan6298"
 }

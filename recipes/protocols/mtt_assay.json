@@ -4,116 +4,97 @@
   "category": "protocol",
   "tags": [
     "cell viability",
-    "MTT",
     "proliferation",
+    "MTT",
     "colorimetric",
     "formazan",
-    "cytotoxicity",
     "cell biology",
-    "IC50"
+    "cytotoxicity"
   ],
   "components": [
     {
-      "name": "1. Seed cells in 96-well plate at appropriate density",
+      "name": "1. Seed cells in 96-well plate (5,000–10,000 cells/well, 100 µL)",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "5,000–10,000 cells/well for 24–72 h assay (100 µL complete medium). Add PBS to outer wells to prevent evaporation. Include: untreated control (6 wells), blank (medium only, no cells, 3 wells), treatment groups (3–6 wells each).",
-        "zh": "5,000–10,000 细胞/孔（100 µL 完全培养基），24–72 h 检测。外围孔加 PBS 防蒸发。设：未处理对照（6 孔）、空白（仅培养基，无细胞，3 孔）、处理组（每组 3–6 孔）。"
+        "en": "Add PBS to all outer-edge wells (replace medium) to prevent evaporation. Triplicate wells per condition. Allow cells to attach overnight at 37°C, 5% CO₂.",
+        "zh": "96 孔板边缘孔加 PBS（替代培养基）防蒸发。每组处理设三复孔。37°C 5% CO₂ 过夜贴壁。"
       }
     },
     {
-      "name": "2. Incubate overnight for adherent cells to attach (37°C, 5% CO₂)",
+      "name": "2. Day 1: add drug/treatment; incubate 24–72 h",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Suspension cells: proceed to treatment same day.",
-        "zh": "悬浮细胞：当天接种后直接处理。"
+        "en": "Dilute drugs in complete medium. Include: (a) untreated control, (b) blank (medium only, no cells), (c) solvent control (DMSO ≤0.1%). Volume per well: 100 µL. Refresh medium at 48 h if treatment >48 h.",
+        "zh": "药物用完全培养基稀释。设置：(a) 未处理对照；(b) 空白（仅培养基，无细胞）；(c) 溶剂对照（DMSO ≤0.1%）。每孔 100 µL。处理超过 48 h 时在 48 h 换液。"
       }
     },
     {
-      "name": "3. Add drug/treatment in serum-containing medium",
+      "name": "3. Prepare MTT stock: 5 mg/mL in PBS; filter-sterilize (0.22 µm); protect from light",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Use 3–7 concentrations spanning 0.001–100× IC₅₀ (estimate). Replace medium for adherent cells; for suspension add drug directly. DMSO vehicle ≤0.1% final concentration.",
-        "zh": "使用 3–7 个跨度 0.001–100× IC₅₀ 的浓度（估算）。贴壁细胞换液；悬浮细胞直接加药。DMSO 终浓度 ≤0.1%。"
+        "en": "Store at 4°C (≤4 weeks) or −20°C (months). MTT is light-sensitive (keep foil-covered). Warm to 37°C before use. Do NOT use if solution is purple (pre-reduced).",
+        "zh": "4°C 保存（≤4 周）或 −20°C（数月）。MTT 避光（锡纸包裹）。使用前温热至 37°C。如溶液已变紫色（预还原）则弃用。"
       }
     },
     {
-      "name": "4. Incubate 24–72 h (37°C, 5% CO₂)",
+      "name": "4. Add 10 µL MTT stock (5 mg/mL) to each well; final 0.5 mg/mL",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Choose endpoint: 24 h (acute toxicity), 48 h (standard), 72 h (slow-growing cells).",
-        "zh": "选择终点：24 h（急性毒性）、48 h（标准）、72 h（慢生长细胞）。"
+        "en": "Use multi-channel pipette. Add directly to medium — do NOT remove medium first. Mix gently by pipetting once.",
+        "zh": "用多道移液器加入。直接加入培养基中——不要先去除培养基。轻柔吸打一次混匀。"
       }
     },
     {
-      "name": "5. Add MTT reagent: 10 µL of 5 mg/mL MTT per well (= 0.5 mg/well)",
+      "name": "5. Incubate 2–4 h at 37°C, 5% CO₂ (monitor purple crystal formation)",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "MTT stock (mtt_reagent): 5 mg/mL in sterile PBS, 0.22 µm filtered, 4°C dark, use within 4 weeks. Protect from light. Do NOT add to blank wells if using OD-only reading.",
-        "zh": "MTT 储液（mtt_reagent）：5 mg/mL in PBS，0.22 µm 过滤，4°C 避光，4 周内使用。避光加入。空白孔若只读 OD 可不加。"
+        "en": "Stop when crystals visible under microscope but medium still orange (2–4 h typical). Over-incubation: crystals dissolve back, false low readings. Under-incubation: insufficient signal.",
+        "zh": "显微镜可见紫色结晶且培养基仍呈橙色时终止（通常 2–4 h）。过度孵育：结晶重溶，读数假低。孵育不足：信号不够。"
       }
     },
     {
-      "name": "6. Incubate 2–4 h at 37°C (monitor formazan purple crystal formation)",
+      "name": "6. Remove ALL medium carefully by aspiration (do not disturb crystals)",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Check microscopically at 2 h: purple crystals visible in live cells = ready. Avoid >4 h (crystals dissolve back). Remove ALL medium carefully by aspiration (formazan crystals adhere to cells).",
-        "zh": "2 h 后镜检：活细胞内见紫色结晶 = 可以终止。不超过 4 h（结晶溶解）。小心吸去全部培养基（甲臜结晶贴附在细胞上）。"
+        "en": "Tilt plate, aspirate from corner of well. Residual phenol-red medium interferes with absorbance. Blot plate on paper towel gently.",
+        "zh": "倾斜培养板，从孔角吸液。残余酚红培养基会干扰吸光度。将板轻扣在纸巾上吸干。"
       }
     },
     {
-      "name": "7. Aspirate medium carefully; dissolve formazan crystals with 100 µL DMSO per well",
+      "name": "7. Add 100–150 µL DMSO per well; shake 10 min RT to dissolve crystals",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Ensure complete medium removal before adding DMSO (residual medium gives inaccurate reading). Alternative solvents: 0.04 N HCl in isopropanol, or SDS-HCl (10% SDS + 0.01 N HCl).",
-        "zh": "加 DMSO 前确保培养基完全去除（残留培养基导致读数不准）。替代溶剂：异丙醇中 0.04 N HCl，或 SDS-HCl（10% SDS + 0.01 N HCl）。"
+        "en": "Orbital shaker 150–200 rpm. Crystals should fully dissolve (solution homogeneous purple). If crystals persist: warm plate to 37°C briefly.",
+        "zh": "150–200 rpm 振荡器。结晶应完全溶解（溶液均匀紫色）。结晶未溶：短暂温热至 37°C。"
       }
     },
     {
-      "name": "8. Shake plate on orbital shaker 10–15 min (ensure complete dissolution)",
+      "name": "8. Read absorbance at 570 nm (reference: 630–650 nm) within 30 min",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Undissolved crystals give heterogeneous OD. Check visually before reading.",
-        "zh": "结晶未完全溶解会导致 OD 不均匀。读板前目视确认。"
-      }
-    },
-    {
-      "name": "9. Read absorbance at 570 nm (reference: 650 nm)",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "Read within 1 h of dissolution (formazan is unstable in DMSO at RT). Reference wavelength 630–690 nm corrects for non-specific absorbance. A₅₇₀ 0.1–1.5 is linear range.",
-        "zh": "溶解后 1 h 内读板（甲臜在 DMSO 中 RT 下不稳定）。参考波长 630–690 nm 校正非特异吸光度。A₅₇₀ 0.1–1.5 为线性范围。"
-      }
-    },
-    {
-      "name": "10. Calculate: % Viability = (OD_treated − OD_blank) / (OD_control − OD_blank) × 100",
-      "amount": 1,
-      "unit": "step",
-      "note": {
-        "en": "IC₅₀: fit dose-response curve using 4-PL logistic equation (GraphPad Prism, R drc package). Plot log[drug] vs % viability.",
-        "zh": "IC₅₀：4 参数 logistic 方程拟合剂量-效应曲线（GraphPad Prism、R drc 包）。绘制 log[药物] vs % 活力图。"
+        "en": "OD must be read within 30 min (DMSO-formazan degrades). Reference wavelength corrects for plate/background. % Viability = (OD_treated − OD_blank) / (OD_control − OD_blank) × 100.",
+        "zh": "30 min 内读数（DMSO-甲臜降解）。参考波长校正背景。% 活力 = (OD处理 − OD空白) / (OD对照 − OD空白) × 100。"
       }
     }
   ],
   "nameCn": "MTT 细胞活力检测",
   "notes": {
-    "en": "MTT measures mitochondrial dehydrogenase activity (mainly succinate dehydrogenase). Caveats: (1) Some compounds (antioxidants, CoQ10) directly reduce MTT = false high viability; (2) Highly colored compounds interfere at 570 nm; (3) DMSO can be toxic to remaining cells (irreversible). Alternatives: CCK-8 (water-soluble, re-readable), Resazurin (resazurin_assay, non-toxic), LDH release (cytotoxicity). Cannot distinguish cytostasis from cytotoxicity without cell count.",
-    "zh": "MTT 测线粒体脱氢酶活性（主要是琥珀酸脱氢酶）。注意：(1) 部分化合物（抗氧化剂、CoQ10）直接还原 MTT = 假阳性高活力；(2) 强色化合物干扰 570 nm；(3) DMSO 对残余细胞有毒（不可逆）。替代方案：CCK-8（水溶性，可重复读）、Resazurin（resazurin_assay，无毒）、LDH 释放（细胞毒性）。不做细胞计数无法区分细胞抑制和细胞毒性。"
+    "en": "MTT is endpoint assay — cells are killed by DMSO. For non-destructive repeated measurement use CCK-8 (cck8_proliferation) or resazurin_assay. MTT can give false positives with: strong reducing agents (NAC, ascorbic acid, β-ME), high serum, some antioxidants. Verify cytotoxicity with morphology (phase contrast) or trypan blue.",
+    "zh": "MTT 是终点法——DMSO 杀死细胞。需重复测量同一孔用 CCK-8（cck8_proliferation）或 resazurin_assay。假阳性干扰物：强还原剂（NAC、维生素 C、β-ME）、高血清、抗氧化剂。结合形态学（相差显微镜）或台盼蓝验证细胞毒性。"
   },
-  "ref": "Mosmann (1983) J Immunol Methods 65:55–63; van Meerloo et al. (2011) Methods Mol Biol 731:237–245; Riss et al. (2004) Assay Guidance Manual (NCATS)",
+  "ref": "Mosmann (1983) J Immunol Methods 65:55–63; van Meerloo et al. (2011) Methods Mol Biol 731:237–245; Stockert et al. (2012) Acta Histochem 114:785–796",
   "crosslinks": [
-    "mtt_reagent",
     "cck8_proliferation",
     "resazurin_assay",
+    "mtt_reagent",
     "clonogenic_assay"
   ],
   "doi": "10.1007/978-1-61779-080-5_20"

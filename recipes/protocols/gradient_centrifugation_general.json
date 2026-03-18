@@ -1,0 +1,32 @@
+{
+  "id": "gradient_centrifugation_general",
+  "name": "Density Gradient Centrifugation (Principles and Applications)",
+  "nameCn": "密度梯度离心（原理与应用指南）",
+  "category": "protocol",
+  "tags": ["density gradient", "centrifugation", "sucrose", "Percoll", "Ficoll", "organelle", "cell separation", "isopycnic", "rate-zonal"],
+  "components": [
+    {"name": "1. Choose gradient medium based on application", "amount": 1, "unit": "step",
+     "note": {"en": "Sucrose: osmotic, inert, inexpensive. Use for organelles (ER, Golgi, lysosomes), viruses, ribosomes. Percoll (colloidal silica): iso-osmotic at all densities, low viscosity, self-forming. Use for cells, mitochondria, synaptosomes. Ficoll: high MW polymer, low osmolality. Use for PBMCs, leukocytes. Iodixanol (OptiPrep): iso-osmotic and iso-osmolal at all densities. Best for most organelles and EV sub-populations.", "zh": "蔗糖：高渗透压，惰性，便宜。用于细胞器（ER、Golgi、溶酶体）、病毒、核糖体。Percoll（胶体二氧化硅）：所有密度等渗，低黏度，可自动成梯度。用于细胞、线粒体、突触体。Ficoll：高分子聚合物，低渗透压。用于 PBMC、白细胞。碘克沙醇（OptiPrep）：所有密度等渗等渗透压。最适合大多数细胞器和 EV 亚群。"}},
+    {"name": "2. Gradient mode selection: rate-zonal (velocity) vs isopycnic (equilibrium)", "amount": 1, "unit": "step",
+     "note": {"en": "Rate-zonal: short spin; particles separate by size + sedimentation coefficient (S). Best for: particles of similar density but different size (ribosomes, RNA). Isopycnic: long spin until equilibrium; particles band at their buoyant density. Best for: organelles, viruses, DNA/RNA.", "zh": "速率区带（velocity）：短时间离心；按大小 + 沉降系数（S 值）分离。最适合：密度相似但大小不同的颗粒（核糖体、RNA）。等密度（isopycnic）：长时间离心至平衡；颗粒在其浮力密度处成带。最适合：细胞器、病毒、DNA/RNA。"}},
+    {"name": "3. Prepare step (discontinuous) gradient", "amount": 1, "unit": "step",
+     "note": {"en": "Pipette denser solution first (bottom of tube), carefully layer less dense solution on top using slow pipetting against tube wall. Chill tube on ice between layers. Use ≥3 steps for good resolution. Typical: 4 layers in 11 mL SW-41 Ti tube.", "zh": "先加最高密度溶液（管底），沿管壁缓慢加入较低密度溶液。加层间冰上冷却。≥3 层获得良好分辨率。典型：11 mL SW-41 Ti 管中 4 层。"}},
+    {"name": "4. Alternatively: continuous gradient (better resolution)", "amount": 1, "unit": "step",
+     "note": {"en": "Use gradient maker (two-chamber device). Pour high-density into mixing chamber, low-density into reservoir; pump into tube from bottom with peristaltic pump. Or: freeze-thaw a step gradient once at −80°C → thaw at 4°C generates linear gradient.", "zh": "使用梯度仪（双腔装置）。高密度液加入混合腔，低密度液加入储液腔；蠕动泵从管底注入。或：将阶梯梯度 −80°C 冻 1 次 → 4°C 解冻自动形成线性梯度。"}},
+    {"name": "5. Load sample (volume ≤10% of gradient volume) gently on top or bottom", "amount": 1, "unit": "step",
+     "note": {"en": "Top loading: standard for rate-zonal. Bottom loading (injection): better for equilibrium banding (uses underlayer needle). Sample in same buffer as lightest gradient layer.", "zh": "顶部上样：速率区带标准方式。底部注射：平衡成带效果更好（用针头在底部注入）。样品用最轻一层梯度相同的缓冲液配制。"}},
+    {"name": "6. Centrifuge: use swing-bucket rotor (SW-41 Ti for 11 mL; SW-28 for 38 mL)", "amount": 1, "unit": "step",
+     "note": {"en": "SW-41 Ti: 100,000×g (25,000 rpm) = RCF at tube bottom. For rate-zonal: 20,000–40,000×g 1–3 h. For isopycnic: 100,000×g 16–18 h. Always 4°C. No brake.", "zh": "SW-41 Ti：100,000×g（25,000 rpm）= 管底 RCF。速率区带：20,000–40,000×g，1–3 h。等密度：100,000×g，16–18 h。全程 4°C。不用刹车。"}},
+    {"name": "7. Fractionate from top: use fractionator, syringe, or pipette", "amount": 1, "unit": "step",
+     "note": {"en": "Automated: BioComp Gradient Station. Manual: pipette from top in 0.5–1 mL fractions. Alternative: needle puncture at tube bottom, collect drops. Number fractions sequentially from top (#1) to bottom (#n).", "zh": "自动：BioComp Gradient Station。手动：从顶部吸取 0.5–1 mL 组分。替代：底部针穿刺，收集滴液。组分从顶部（#1）至底部（#n）顺序编号。"}},
+    {"name": "8. Analyze fractions: assay-specific markers, measure density (refractometer), then assay activity or WB", "amount": 1, "unit": "step",
+     "note": {"en": "Measure refractive index (RI) of each fraction to calculate density. Plot RI vs fraction number to confirm gradient profile. Then assay by WB, enzyme activity, or qPCR depending on application.", "zh": "用折光仪测量各组分折射率（RI），计算密度。绘制 RI vs 组分编号图确认梯度分布。然后根据应用进行 WB、酶活力或 qPCR 分析。"}}
+  ],
+  "notes": {
+    "en": "Density reference: nuclei 1.30–1.45, mitochondria 1.18, lysosomes 1.10–1.12, ER 1.14–1.17, Golgi 1.08–1.10, plasma membrane 1.06–1.10, cytoplasm 1.06, exosomes 1.10–1.18 (varies). Rotor k-factor: lower = more gentle separation. Iodixanol (OptiPrep 60% w/v) is currently preferred for most applications over sucrose due to iso-osmolality.",
+    "zh": "密度参考：细胞核 1.30–1.45、线粒体 1.18、溶酶体 1.10–1.12、ER 1.14–1.17、Golgi 1.08–1.10、质膜 1.06–1.10、细胞质 1.06、外泌体 1.10–1.18（可变）。转子 k 因子越低 = 分离越温和。碘克沙醇（OptiPrep 60% w/v）因等渗透压特性，目前优先于蔗糖用于大多数实验。"
+  },
+  "crosslinks": ["mitochondria_isolation", "lysosome_isolation", "er_golgi_isolation", "exosome_isolation", "pbmc_isolation", "sucrose_gradient_homog", "percoll_isotonic", "ficoll_paque_pbmc"],
+  "ref": "Graham (2001) Curr Protoc Cell Biol 3.6.1; Bhatt (2021) STAR Protoc 2:100450; Rickwood et al. (1994) Preparative Centrifugation (IRL Press); Griffiths (2018) Curr Protoc Cell Biol 78:3.1.1",
+  "doi": "10.1002/cpcb.47"
+}
