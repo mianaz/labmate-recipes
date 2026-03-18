@@ -1,0 +1,28 @@
+{
+  "id": "ficoll_solution",
+  "name": "Ficoll-400 Density Solution (Self-Prepared, 20% w/v)",
+  "nameCn": "Ficoll-400 密度梯度溶液（自配，20% w/v）",
+  "category": "buffer",
+  "tags": ["density gradient", "Ficoll", "PBMC", "cell separation", "density centrifugation", "immunology"],
+  "volume": 100,
+  "volumeUnit": "mL",
+  "components": [
+    {
+      "name": "Ficoll-400 (Sigma F4375 or equivalent)",
+      "amount": 20,
+      "unit": "g",
+      "note": "MW ~400,000; high-viscosity hydrophilic polymer; dissolves slowly"
+    },
+    {
+      "name": "ddH₂O (pyrogen-free for cell work)",
+      "amount": null,
+      "unit": "to 100 mL"
+    }
+  ],
+  "notes": {
+    "en": "Dissolve Ficoll in warm water (37°C) with gentle stirring — takes 1–2 h. Do NOT heat >60°C. Autoclave at 121°C 15 min (solution turns slightly yellow — normal). Final density: ~1.077 g/mL for PBMC isolation. Verify density with refractometer or weighing (1 mL should weigh ~1.077 g). Store at RT up to 6 months. For standard Ficoll-Paque density 1.077: mix 20% Ficoll with sodium diatrizoate solution to reach target density, or purchase Ficoll-Paque PLUS (GE). Commercial Ficoll-Paque: density 1.077 g/mL for human PBMC; 1.083 for mouse. Self-preparation tip: dissolve 9 g Ficoll-400 + 3.1 g sodium diatrizoate (NaDiatrizoate) in 100 mL pyrogen-free water → density ~1.077.",
+    "zh": "Ficoll 溶解缓慢，37°C 温热 ddH₂O 轻搅 1–2 h。勿超过 60°C。121°C 高压灭菌 15 min（溶液略微变黄——正常现象）。终密度：~1.077 g/mL 用于 PBMC 分离。用折射仪或称重验证密度（1 mL 应重约 1.077 g）。RT 保存 6 个月。商品 Ficoll-Paque PLUS 密度 1.077（人 PBMC）；1.083（小鼠）。自配方案：9 g Ficoll-400 + 3.1 g 泛影酸钠（NaDiatrizoate）溶于 100 mL 无热原水 → 密度 ~1.077。"
+  },
+  "crosslinks": ["pbmc_isolation", "percoll_gradient_buffer"],
+  "ref": "Böyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; GE Healthcare Ficoll-Paque PLUS Datasheet; Percoll Application Note (GE Healthcare)"
+}

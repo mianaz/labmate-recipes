@@ -1,0 +1,29 @@
+{
+  "id": "resazurin_stock",
+  "name": "Resazurin Stock Solution (alamarBlue, 0.1% w/v)",
+  "nameCn": "刃天青储液（alamarBlue，0.1% w/v）",
+  "category": "buffer",
+  "tags": ["resazurin", "alamarBlue", "cell viability", "metabolic activity", "fluorescence", "colorimetric"],
+  "volume": 100,
+  "volumeUnit": "mL",
+  "components": [
+    {
+      "name": "Resazurin sodium salt",
+      "amount": 0.1,
+      "unit": "g",
+      "mw": 251.17,
+      "note": "Sigma R7017 or equivalent; deep blue powder; store at RT dark"
+    },
+    {
+      "name": "PBS (1×, sterile, pH 7.4)",
+      "amount": 100,
+      "unit": "mL"
+    }
+  ],
+  "notes": {
+    "en": "Dissolve resazurin in warm PBS (37°C) with stirring until fully dissolved (~5 min). Filter-sterilize through 0.22 µm membrane. Solution is deep blue; turns pink/red (resorufin) upon reduction by viable cells. Aliquot 1–5 mL; store at −20°C protected from light (stable 1 year). Working concentration for assay: dilute 1:10 in cell culture medium (0.01% w/v final). Commercial equivalent: alamarBlue Cell Viability Reagent (Thermo), PrestoBlue.",
+    "zh": "37°C 温热 PBS 中搅拌溶解（约 5 min）。0.22 µm 过滤除菌。溶液深蓝色；活细胞还原后变为粉红/红色（刃天青）。分装 1–5 mL，−20°C 避光保存（稳定 1 年）。实验使用浓度：10× 稀释加入培养基（终浓度 0.01% w/v）。商品等效：alamarBlue（Thermo）、PrestoBlue。"
+  },
+  "crosslinks": ["resazurin_assay", "mtt_reagent", "mtt_assay", "cck8_proliferation"],
+  "ref": "O'Brien et al. (2000) Eur J Biochem 267:5421–5426; Rampersad (2012) Sensors 12:12347–12360"
+}

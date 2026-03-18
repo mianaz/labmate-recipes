@@ -1,0 +1,88 @@
+{
+  "id": "resazurin_assay",
+  "name": "Resazurin Cell Viability Assay (alamarBlue)",
+  "nameCn": "刃天青细胞活力检测（alamarBlue）",
+  "category": "protocol",
+  "tags": ["resazurin", "alamarBlue", "cell viability", "metabolic activity", "fluorescence", "colorimetric", "non-toxic", "kinetic assay", "cell biology"],
+  "components": [
+    {
+      "name": "1. Seed cells in 96-well plate (or 384-well); incubate overnight",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Seeding density: 2,000–10,000 cells/well (96-well, 100 µL medium). Add PBS to outer wells to minimize evaporation. Incubate 37°C 5% CO₂ overnight for adherent cells; suspension cells: same day.",
+        "zh": "接种密度：96 孔板 2,000–10,000 细胞/孔（100 µL 培养基）。外围孔加 PBS 防蒸发。贴壁细胞 37°C 5% CO₂ 过夜；悬浮细胞：当天接种当天实验。"
+      }
+    },
+    {
+      "name": "2. Add treatment (drugs, siRNA, etc.); incubate 24–72 h",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "3–6 replicates per condition. Include: (a) untreated cells (100% viability), (b) medium only no-cell blank, (c) positive cytotoxic control (e.g., 1% Triton X-100 kills all cells = 0% viability).",
+        "zh": "每组 3–6 复孔。设：(a) 未处理细胞（100% 活力），(b) 仅培养基无细胞空白，(c) 阳性杀伤对照（1% Triton X-100 杀死全部细胞 = 0% 活力）。"
+      }
+    },
+    {
+      "name": "3. Prepare resazurin working solution: dilute resazurin_stock 1:10 in warm medium",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Final concentration: 0.01% resazurin (44 µM). Warm to 37°C before adding. Protect from light. Prepare just before use. Alternative: add commercial alamarBlue directly (pre-diluted at 10× or ready-to-use).",
+        "zh": "终浓度：0.01% 刃天青（44 µM）。加入前预热至 37°C。避光。现配现用。替代：直接加商品 alamarBlue（预稀释 10× 或即用型）。"
+      }
+    },
+    {
+      "name": "4. Replace/supplement medium with resazurin working solution",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Option A (medium replacement): remove treatment medium; add 100 µL resazurin working solution per well. Option B (add-in): add 10 µL of 10× resazurin stock (0.1%) directly to 100 µL culture = 0.01% final. Option B is non-disruptive; allows kinetic reads without removing treatment.",
+        "zh": "方法 A（换液）：去除处理培养基；每孔加 100 µL 刃天青工作液。方法 B（直接添加）：直接向 100 µL 培养液中加 10 µL 10× 刃天青储液（0.1%）= 终浓度 0.01%。方法 B 不打扰培养，可做动力学多次读数。"
+      }
+    },
+    {
+      "name": "5. Incubate 1–4 h at 37°C (check color change: blue → pink/red)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Monitor visually: blue (unreduced) → pink/red (resorufin, reduced). Stop when positive control wells are deep pink but not all wells are saturated. Typical: 1–2 h for fast-metabolizing cells; 2–4 h for slow or low-density. Do not exceed 4 h (complete reduction = no discrimination).",
+        "zh": "目视监测：蓝色（未还原）→ 粉红/红色（刃天青，还原产物）。当阳性对照孔变为深粉红但未全饱和时停止。快速代谢细胞通常 1–2 h；慢速或低密度 2–4 h。不超过 4 h（完全还原则无法区分组间差异）。"
+      }
+    },
+    {
+      "name": "6. Read: Fluorescence (Ex 560/Em 590 nm) — PREFERRED; or Absorbance (A570–A600 nm)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Fluorescence: 10–100× more sensitive than absorbance. Excitation 560 nm / Emission 590 nm (or Ex 530/Em 590 for some instruments). Absorbance: read A570 nm (reduced resorufin) and A600 nm (unreduced resazurin) for dual-wavelength correction: % Reduction = [(εox × A570) − (εred × A600)] / [(εox × positive_A570) − (εred × positive_A600)] × 100.",
+        "zh": "荧光法（首选）：灵敏度比吸光度法高 10–100 倍。激发 560 nm / 发射 590 nm。吸光度法：读 A570 nm（还原产物）和 A600 nm（未还原）双波长校正：% 还原 = [(εox × A570) − (εred × A600)] / [(εox × 阳性_A570) − (εred × 阳性_A600)] × 100。"
+      }
+    },
+    {
+      "name": "7. Calculate: % Viability = (Sample − Blank) / (Untreated − Blank) × 100",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Blank = medium + resazurin (no cells). Untreated = cells + resazurin (100% viable). IC₅₀ calculation: plot % viability vs log[drug]; fit sigmoidal curve (4-parameter logistic, GraphPad or R).",
+        "zh": "空白 = 培养基 + 刃天青（无细胞）。未处理 = 细胞 + 刃天青（100% 活力）。IC₅₀ 计算：绘制 % 活力 vs log[药物]；拟合 S 形曲线（四参数 logistic，GraphPad 或 R）。"
+      }
+    },
+    {
+      "name": "8. Optional: kinetic measurement — re-read same plate at multiple timepoints",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Unlike MTT (destructive), resazurin is non-toxic and can be removed after reading (wash 2× PBS) allowing continued culture. This enables true longitudinal viability tracking on the same cells.",
+        "zh": "与 MTT（破坏性）不同，刃天青无毒，读数后可洗去（PBS 洗 2 次）继续培养。可对同一批细胞做真正的纵向活力追踪。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Advantages vs MTT: non-toxic (can read multiple timepoints), no DMSO step, higher sensitivity, works for suspension cells. Interference: phenol red causes background at A570 (use phenol-red-free medium or subtract carefully); highly colored compounds (e.g., doxorubicin) can quench fluorescence — use colorimetric reading instead. Resazurin measures mitochondrial reducing capacity, not just cell number — metabolic changes can affect result without changing cell number.",
+    "zh": "相比 MTT 的优势：无毒（可多次读数）、无 DMSO 步骤、灵敏度更高、适用于悬浮细胞。干扰因素：酚红在 A570 产生背景（用无酚红培养基或校正）；强色化合物（如阿霉素）可淬灭荧光——改用比色法读数。刃天青测定线粒体还原能力，非单纯细胞数量——代谢变化可在细胞数不变的情况下影响结果。"
+  },
+  "crosslinks": ["mtt_assay", "cck8_proliferation", "resazurin_stock", "mtt_reagent"],
+  "ref": "O'Brien et al. (2000) Eur J Biochem 267:5421–5426; Rampersad (2012) Sensors 12:12347; Voytik-Harbin et al. (1998) In Vitro Cell Dev Biol 34:239–246",
+  "doi": "10.1046/j.1432-1033.2000.01606.x"
+}

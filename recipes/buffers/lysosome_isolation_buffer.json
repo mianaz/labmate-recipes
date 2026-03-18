@@ -1,0 +1,54 @@
+{
+  "id": "lysosome_isolation_buffer",
+  "name": "Lysosome Isolation Buffer (Sucrose-Based Homogenization)",
+  "nameCn": "溶酶体分离缓冲液（蔗糖匀浆法）",
+  "category": "buffer",
+  "tags": ["lysosome", "organelle isolation", "homogenization", "sucrose", "subcellular fractionation", "biochemistry"],
+  "volume": 100,
+  "volumeUnit": "mL",
+  "components": [
+    {
+      "name": "Sucrose",
+      "amount": 8.56,
+      "unit": "g",
+      "mw": 342.3,
+      "note": "250 mM; isotonic osmolality preserves lysosomes"
+    },
+    {
+      "name": "HEPES-KOH (1 M, pH 7.4)",
+      "amount": 1,
+      "unit": "mL",
+      "note": "10 mM final"
+    },
+    {
+      "name": "KCl",
+      "amount": 0.075,
+      "unit": "g",
+      "mw": 74.55,
+      "note": "10 mM"
+    },
+    {
+      "name": "MgCl₂ (1 M)",
+      "amount": 0.15,
+      "unit": "mL",
+      "note": "1.5 mM"
+    },
+    {
+      "name": "EDTA (0.5 M, pH 8.0)",
+      "amount": 0.2,
+      "unit": "mL",
+      "note": "1 mM"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "to 100 mL"
+    }
+  ],
+  "notes": {
+    "en": "Adjust pH to 7.4 with KOH. Keep all solutions ice-cold. Add protease inhibitors just before use (lysosomes contain lytic enzymes — leakage causes self-digestion). Sucrose maintains organelle osmolality during isolation. After fractionation, lysosome identity markers: LAMP1, LAMP2, cathepsin B/D, β-hexosaminidase activity.",
+    "zh": "KOH 调 pH 至 7.4。所有溶液保持冰冷。用前加蛋白酶抑制剂（溶酶体含溶解酶——泄漏导致自消化）。蔗糖维持分离过程中细胞器渗透压。分离后溶酶体标记蛋白：LAMP1、LAMP2、组织蛋白酶 B/D、β-己糖苷酶活性。"
+  },
+  "crosslinks": ["lysosome_isolation", "subcellular_fractionation", "mitochondria_buffer"],
+  "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1; Bright et al. (2016) Curr Protoc Cell Biol 72:3.27.1; Rahman et al. (2020) STAR Protoc 1:100122"
+}

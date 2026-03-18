@@ -1,0 +1,40 @@
+{
+  "id": "sucrose_gradient_buffer",
+  "name": "Sucrose Gradient Solutions (10–70% for Organelle Isolation)",
+  "nameCn": "蔗糖密度梯度液（10–70%，细胞器分离用）",
+  "category": "buffer",
+  "tags": ["sucrose gradient", "organelle isolation", "ultracentrifugation", "density gradient", "ER", "Golgi", "exosome", "biochemistry"],
+  "volume": 100,
+  "volumeUnit": "mL",
+  "components": [
+    {
+      "name": "Sucrose",
+      "amount": null,
+      "unit": "g",
+      "note": "Prepare each density separately: 10%=10 g, 20%=20 g, 30%=30 g, 40%=40 g, 50%=50 g, 60%=60 g, 70%=70 g per 100 mL"
+    },
+    {
+      "name": "HEPES-KOH (1 M, pH 7.4)",
+      "amount": 1,
+      "unit": "mL",
+      "note": "10 mM final; or use 10 mM Tris-HCl pH 7.4"
+    },
+    {
+      "name": "EDTA (0.5 M, pH 8.0)",
+      "amount": 0.2,
+      "unit": "mL",
+      "note": "1 mM final; Ca²⁺ chelation protects organelle membranes"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "to 100 mL"
+    }
+  ],
+  "notes": {
+    "en": "Sucrose density (approx, 20°C): 10%=1.040 g/mL, 20%=1.083, 30%=1.130, 40%=1.179, 50%=1.230, 60%=1.286, 70%=1.347.\nCommon layer configurations:\n- ER microsomes: 10/20/30/40% (step) or 15–45% linear\n- Golgi apparatus: 10/25/35% or linear 10–50%\n- Lysosomes: 14.3%/19%/26% step; pellet after 100,000×g 1 h\n- Exosomes: 30%/45%/60% step (or 10–70% continuous)\nPrepare continuous gradient with gradient maker or freeze-thaw method (layer, freeze −80°C, thaw at 4°C = diffusion gradient). Store at 4°C up to 2 weeks. Filter 0.22 µm for RNase-free applications.",
+    "zh": "蔗糖密度（约，20°C）：10%=1.040 g/mL、20%=1.083、30%=1.130、40%=1.179、50%=1.230、60%=1.286、70%=1.347。\n常用层次配置：\n- 内质网微粒体：10/20/30/40%（阶梯）或 15–45% 线性\n- 高尔基体：10/25/35% 或 10–50% 线性\n- 溶酶体：14.3%/19%/26% 阶梯；100,000×g 1 h 后在界面收集\n- 外泌体：30%/45%/60% 或 10–70% 连续梯度\n连续梯度：使用梯度仪或冻融扩散法（铺层后 −80°C 冷冻，4°C 融化自然扩散）。4°C 保存 2 周。RNA 相关实验需 0.22 µm 过滤。"
+  },
+  "crosslinks": ["density_gradient_centrifugation", "exosome_isolation", "organelle_isolation_golgi_er"],
+  "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1–3.6.13; de Duve et al. (1955) Biochem J 60:604–617; Bhatt & Bhatt (2021) STAR Protoc 2:100450"
+}

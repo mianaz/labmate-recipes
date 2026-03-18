@@ -1,0 +1,93 @@
+{
+  "id": "lysosome_isolation",
+  "name": "Lysosome Isolation by Differential Centrifugation",
+  "nameCn": "差速离心法分离溶酶体",
+  "category": "protocol",
+  "tags": ["lysosome", "organelle isolation", "differential centrifugation", "sucrose gradient", "cell biology", "biochemistry", "subcellular fractionation"],
+  "components": [
+    {
+      "name": "1. Pre-treat cells to enrich lysosomes (optional): LLOME or LED209 loading",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Optional enrichment: Treat cells with Leu-Leu-OMe (LLOME, 1 mM, 30 min) to enlarge lysosomes, OR load with 10 nm colloidal iron dextran (20 µg/mL, 2 h) then magnetic isolation. Standard protocol works without pre-treatment.",
+        "zh": "可选富集：Leu-Leu-OMe（LLOME，1 mM，30 min）处理细胞使溶酶体膨大，或用胶体铁右旋糖酐（20 µg/mL，2 h）负载后磁性分离。标准方案无需预处理。"
+      }
+    },
+    {
+      "name": "2. Wash cells 2× cold PBS; scrape into 1 mL lysosome_isolation_buffer; transfer to Dounce",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use ≥2×10⁷ cells (e.g., two 15 cm plates). Keep ice-cold throughout. Add fresh protease inhibitors!", "zh": "使用 ≥2×10⁷ 细胞（如两个 15 cm 皿）。全程冰冷。加新鲜蛋白酶抑制剂！"
+      }
+    },
+    {
+      "name": "3. Homogenize: 20–30 strokes with tight Dounce pestle; verify disruption by trypan blue",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Check ~80% lysis: 10 µL homogenate + 10 µL trypan blue — >80% cells stained blue = adequate disruption. Do not over-homogenize (lysosome membrane disruption releases lytic contents).",
+        "zh": "验证约 80% 裂解：10 µL 匀浆 + 10 µL 台盼蓝，>80% 细胞被染蓝 = 充分裂解。避免过度匀浆（溶酶体膜破损会释放溶解酶）。"
+      }
+    },
+    {
+      "name": "4. Remove nuclei and debris: 600×g, 10 min, 4°C; keep supernatant (PNS)",
+      "amount": 1,
+      "unit": "step",
+      "note": {"en": "Repeat if nuclear/debris pellet is large.", "zh": "沉淀较大时重复一次。"}
+    },
+    {
+      "name": "5. Mitochondria/peroxisome spin: 3,000–5,000×g, 15 min, 4°C; keep supernatant",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet (L fraction): mitochondria, peroxisomes — discard (or save for mitochondria_isolation). Supernatant = light mitochondrial fraction (MLF) enriched in lysosomes.",
+        "zh": "沉淀（L 组分）：线粒体、过氧化物酶体——丢弃（或保留用于 mitochondria_isolation）。上清 = 轻线粒体组分（MLF），溶酶体富集在此。"
+      }
+    },
+    {
+      "name": "6. Lysosome enrichment: 20,000×g, 20 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet = crude lysosomal fraction (+ mitochondrial contamination, peroxisomes). Resuspend in 1 mL lysosome_isolation_buffer.",
+        "zh": "沉淀 = 粗溶酶体组分（含线粒体污染、过氧化物酶体）。1 mL lysosome_isolation_buffer 重悬。"
+      }
+    },
+    {
+      "name": "7. Sucrose step gradient purification (for cleaner lysosomes)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Layer in SW-41 Ti tube (from bottom): 2.5 mL 26% sucrose → 2.5 mL 19% sucrose → 2.5 mL 14.3% sucrose (all in lysosome_isolation_buffer) → load crude lysosome fraction on top. Centrifuge 150,000×g 2 h 4°C swing-bucket. Lysosomes: 19/26% interface (density 1.12–1.18 g/mL). Mitochondria: pellet (1.20 g/mL). Peroxisomes: 26% layer.",
+        "zh": "SW-41 Ti 管中从底部铺层：2.5 mL 26% 蔗糖 → 2.5 mL 19% → 2.5 mL 14.3%（均在 lysosome_isolation_buffer 中）→ 粗溶酶体加至顶部。摆角转头 150,000×g 2 h 4°C。溶酶体：19/26% 界面（密度 1.12–1.18 g/mL）。线粒体：沉底（1.20 g/mL）。过氧化物酶体：26% 层。"
+      }
+    },
+    {
+      "name": "8. Collect lysosomal band; dilute 5× PBS; pellet 20,000×g 15 min 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Resuspend in desired buffer. Quantify by BCA (bca_protein_assay). Verify by WB: LAMP1/LAMP2 (positive); VDAC (negative — mito); PMP70 (negative — peroxisome).",
+        "zh": "适当缓冲液重悬。BCA 定量（bca_protein_assay）。WB 验证：LAMP1/LAMP2（阳性）；VDAC（阴性——线粒体）；PMP70（阴性——过氧化物酶体）。"
+      }
+    },
+    {
+      "name": "9. Lysosomal enzyme activity assay (quality control)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "β-hexosaminidase activity: 10 µL lysate + 100 µL substrate (3 mM 4-MU-N-acetyl-β-D-glucosaminide in citrate-phosphate pH 4.5) → 37°C 30 min → add 200 µL glycine buffer pH 10.4 → read fluorescence Ex 365/Em 445 nm. Cathepsin D/B Western or activity assay (Magic Red kit).",
+        "zh": "β-己糖苷酶活性：10 µL 裂解物 + 100 µL 底物（3 mM 4-MU-N-乙酰-β-D-葡糖胺苷，柠檬酸磷酸盐 pH 4.5）→ 37°C 30 min → 加 200 µL 甘氨酸缓冲液 pH 10.4 → 荧光读数 Ex 365/Em 445 nm。组织蛋白酶 D/B WB 或活性检测（Magic Red 试剂盒）。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Lysosome fragility: they rupture easily (pH, mechanical stress, temperature changes). Key: work at 4°C, avoid vortexing, use gentle homogenization, do not freeze-thaw isolated lysosomes (membrane ruptures). For LysoTracker-based live-cell lysosome labeling: much simpler (LysoTracker Red 75 nM, 30 min 37°C, then fix and image).",
+    "zh": "溶酶体脆性大：pH、机械力、温度变化均可导致破裂。关键：4°C 操作、避免涡旋、轻柔匀浆、分离后的溶酶体不要冻融（膜破裂）。活细胞溶酶体标记更简便：LysoTracker Red（75 nM，37°C 30 min，固定后成像）。"
+  },
+  "crosslinks": ["lysosome_isolation_buffer", "sucrose_gradient_buffer", "density_gradient_centrifugation", "subcellular_fractionation", "mitochondria_isolation", "bca_protein_assay"],
+  "ref": "Bright et al. (2016) Curr Protoc Cell Biol 72:3.27.1; Rahman et al. (2020) STAR Protoc 1:100122; Graham (2002) Curr Protoc Cell Biol 3.6.1",
+  "doi": "10.1002/cpcb.15"
+}

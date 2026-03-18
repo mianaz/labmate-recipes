@@ -4,61 +4,91 @@
   "nameCn": "CCK-8 细胞增殖/活力检测",
   "category": "protocol",
   "tags": [
-    "CCK-8",
     "cell viability",
+    "CCK-8",
+    "WST-8",
     "proliferation",
+    "colorimetric",
     "cytotoxicity",
-    "assay"
+    "cell biology",
+    "IC50",
+    "non-toxic"
   ],
   "components": [
     {
-      "name": "1. 96 孔板铺板 (2,000–10,000 cells/well)",
+      "name": "1. Seed cells in 96-well plate (100 µL complete medium per well)",
       "amount": 1,
       "unit": "step",
-      "note": "100 µL 完全培养基; 边缘孔加 PBS 防蒸发"
+      "note": {
+        "en": "2,000–10,000 cells/well depending on cell type and assay duration. Add PBS to outer wells. Incubate 24 h before treatment.",
+        "zh": "2,000–10,000 细胞/孔，根据细胞类型和实验时长决定。外围孔加 PBS。培养 24 h 后再处理。"
+      }
     },
     {
-      "name": "2. 过夜贴壁 (37°C, 5% CO₂)",
-      "amount": 1,
-      "unit": "step"
-    },
-    {
-      "name": "3. 加药物/处理因素",
+      "name": "2. Add treatment; incubate 24–72 h (37°C, 5% CO₂)",
       "amount": 1,
       "unit": "step",
-      "note": "每个浓度 3–6 复孔; 含空白孔 (培养基+CCK-8)"
+      "note": {
+        "en": "3–6 replicates. Untreated control (6 wells). Medium blank (3 wells, no cells). DMSO ≤0.1% final.",
+        "zh": "3–6 复孔。未处理对照 6 孔。培养基空白 3 孔（无细胞）。DMSO ≤0.1%。"
+      }
     },
     {
-      "name": "4. 孵育 24/48/72 h",
-      "amount": 1,
-      "unit": "step"
-    },
-    {
-      "name": "5. 每孔加 10 µL CCK-8 试剂",
+      "name": "3. Add 10 µL CCK-8 reagent directly per well (do not remove medium)",
       "amount": 1,
       "unit": "step",
-      "note": "避光操作, 勿产生气泡"
+      "note": {
+        "en": "CCK-8 is added directly to culture medium — no medium change required. Mix gently by pipetting up/down 3×. Avoid bubbles. Protect from direct light.",
+        "zh": "直接向培养液中加入——无需换液。轻柔吸打 3 次混匀。避免气泡。避光。"
+      }
     },
     {
-      "name": "6. 37°C 孵育 1–4 h",
+      "name": "4. Incubate 1–4 h at 37°C; check color development every 30 min after 1 h",
       "amount": 1,
       "unit": "step",
-      "note": "颜色从橙红变为深橙; 1 h 后每 30 min 检查"
+      "note": {
+        "en": "Color shifts from orange to deep orange (or dark brown at high cell density). Stop when untreated wells show A450 of ~1.0–1.5. DO NOT over-incubate (background increases).",
+        "zh": "颜色从橙色变为深橙（高密度时棕色）。未处理孔 A450 达 ~1.0–1.5 时终止。勿过度孵育（背景升高）。"
+      }
     },
     {
-      "name": "7. 450 nm 读板 (参考波长 650 nm)",
+      "name": "5. Read absorbance at 450 nm (reference: 650 nm) on plate reader",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "Reference wavelength 630–690 nm corrects plate and medium background. Read within 30 min (WST-8 formazan is stable but phenol red continues absorbing).",
+        "zh": "参考波长 630–690 nm 校正培养板和培养基背景。30 min 内读完（WST-8 甲臜稳定但酚红持续吸光）。"
+      }
     },
     {
-      "name": "8. 计算活力 = (OD处理 - OD空白) / (OD对照 - OD空白) × 100%",
+      "name": "6. Calculate: % Viability = (A450_treated − A650_treated − blank) / (A450_ctrl − A650_ctrl − blank) × 100",
       "amount": 1,
-      "unit": "step"
+      "unit": "step",
+      "note": {
+        "en": "IC₅₀: 4-PL logistic curve fit (GraphPad Prism). For proliferation index: normalize each timepoint to T=0.",
+        "zh": "IC₅₀：GraphPad Prism 四参数 logistic 拟合。增殖指数：各时间点归一化至 T=0。"
+      }
+    },
+    {
+      "name": "7. Optional kinetic: read at multiple timepoints (T=0, 24, 48, 72 h) — same plate",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Return plate to incubator after each read. CCK-8 is non-toxic — cells remain viable. Generates growth curves in real-time on same plate.",
+        "zh": "每次读数后将培养板放回培养箱。CCK-8 无细胞毒性——细胞保持存活。可在同一培养板上实时生成生长曲线。"
+      }
     }
   ],
   "notes": {
-    "en": "CCK-8 is more sensitive and less toxic than MTT. No need to solubilize crystals. Can re-measure the same plate at different time points. OD450 proportional to viable cells. Avoid bubbles when adding reagent.",
-    "zh": "CCK-8 优于 MTT：水溶性无需溶解结晶、可连续检测（非终点法）、灵敏度更高。含酚红培养基会稍有背景但不影响结果。细胞数与 OD 值需在线性范围内——首次使用做标准曲线。还原性物质（DTT, β-ME）和高血清浓度可能产生假阳性。WST-1 是类似替代品。"
+    "en": "CCK-8 uses WST-8 (a tetrazolium dye, water-soluble formazan product = no DMSO needed). More sensitive and less toxic than MTT. Interference: reducing agents (DTT, β-ME, TCEP) directly reduce WST-8 (false high); colored compounds at 450 nm. Cannot re-measure after full reduction. Alternative: resazurin_assay (even less toxic, fluorescence-based).",
+    "zh": "CCK-8 使用 WST-8（四唑盐染料，甲臜产物水溶，无需 DMSO）。比 MTT 更灵敏、毒性更低。干扰：还原剂（DTT、β-ME、TCEP）直接还原 WST-8（假阳性高）；450 nm 处有色化合物干扰。完全还原后无法重复读数。替代方案：resazurin_assay（毒性更低，荧光法）。"
   },
-  "ref": "Ishiyama et al. (1997) Talanta 44:1299; Dojindo CCK-8 Technical Manual"
+  "ref": "Ishiyama et al. (1997) Talanta 44:1299–1305; Dojindo CCK-8 Technical Manual; van Meerloo et al. (2011) Methods Mol Biol 731:237–245",
+  "crosslinks": [
+    "mtt_assay",
+    "resazurin_assay",
+    "clonogenic_assay",
+    "mtt_reagent"
+  ],
+  "doi": "10.1016/S0039-9140(96)02178-5"
 }

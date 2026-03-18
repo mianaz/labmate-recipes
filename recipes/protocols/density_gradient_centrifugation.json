@@ -1,0 +1,88 @@
+{
+  "id": "density_gradient_centrifugation",
+  "name": "Density Gradient Centrifugation (Step & Continuous)",
+  "nameCn": "密度梯度离心（阶梯式与连续式）",
+  "category": "protocol",
+  "tags": ["density gradient", "ultracentrifugation", "Percoll", "sucrose", "organelle isolation", "cell separation", "differential centrifugation", "biochemistry"],
+  "components": [
+    {
+      "name": "1. Choose gradient medium based on application",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Ficoll (ficoll_solution): cell separation (PBMC, lymphocytes) — non-toxic, stays outside cells. Percoll (percoll_gradient_buffer): cells and organelles — colloidal, self-forms under centrifugation. Sucrose (sucrose_gradient_buffer): organelles and macromolecules — osmotic; best for Golgi, ER, lysosomes, viruses. Iodixanol (OptiPrep): isoosmotic; cells, organelles, viruses — least osmotic stress.",
+        "zh": "Ficoll（ficoll_solution）：细胞分离（PBMC、淋巴细胞）——无毒，不进入细胞。Percoll（percoll_gradient_buffer）：细胞和细胞器——胶体，离心时自形成梯度。蔗糖（sucrose_gradient_buffer）：细胞器和大分子——渗透性强；适合高尔基体、内质网、溶酶体、病毒。碘克沙醇（OptiPrep）：等渗；细胞、细胞器、病毒——渗透压应激最小。"
+      }
+    },
+    {
+      "name": "2. Step gradient — layer sequentially in ultracentrifuge tube (heaviest at bottom)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Example (organelle fractionation, 14 mL tube): 2 mL 60% sucrose → 2 mL 45% → 2 mL 30% → 2 mL 15% → load sample on top (1 mL). Tilt tube 45° and slowly pipette each layer down the wall. Sharp interfaces = good separation.",
+        "zh": "示例（细胞器分级，14 mL 管）：2 mL 60% 蔗糖 → 2 mL 45% → 2 mL 30% → 2 mL 15% → 顶部加样（1 mL）。管倾斜 45°，缓慢沿管壁逐层加入。界面清晰 = 分离好。"
+      }
+    },
+    {
+      "name": "3. Continuous gradient — linear or exponential (for higher resolution)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Method A: Gradient mixer — two chambers with light and heavy solution. Method B: Freeze-thaw — layer steps, freeze −80°C overnight, thaw at 4°C (interdiffusion creates gradient). Method C: Self-forming (Percoll/iodixanol only) — centrifuge at 20,000–40,000×g 30 min to form gradient in situ.",
+        "zh": "方法 A：梯度混合仪——两个腔体分别装轻液和重液。方法 B：冻融扩散——铺阶梯层，−80°C 过夜冷冻，4°C 解冻（扩散形成梯度）。方法 C：自形成（仅 Percoll/碘克沙醇）——20,000–40,000×g 离心 30 min 原位形成梯度。"
+      }
+    },
+    {
+      "name": "4. Prepare sample: homogenize/lyse cells; clarify by differential centrifugation",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pre-centrifuge to remove cell debris, nuclei (600×g 10 min) and mitochondria (7,000×g 10 min) if targeting smaller organelles. For whole-cell fractionation: layer post-nuclear supernatant (PNS) directly onto gradient.",
+        "zh": "预离心去除细胞碎片、核（600×g 10 min）及线粒体（7,000×g 10 min）（如目标是更小细胞器）。全细胞分级：将核后上清（PNS）直接加至梯度顶部。"
+      }
+    },
+    {
+      "name": "5. Centrifuge (see table); use swing-bucket rotor for best separation",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "PBMC (Ficoll): 400×g 30 min (no brake). Mitochondria (Percoll 18/30%): 95,000×g 30 min 4°C. ER/Golgi (sucrose): 100,000×g 1–2 h 4°C. Lysosomes (sucrose 19/26%): 100,000×g 1 h 4°C. Exosomes (sucrose 30/45/60%): 100,000×g 2 h 4°C. Use SW-41 Ti, SW-60 Ti, or equivalent swing-bucket.",
+        "zh": "PBMC（Ficoll）：400×g 30 min（无制动）。线粒体（Percoll 18/30%）：95,000×g 30 min 4°C。内质网/高尔基（蔗糖）：100,000×g 1–2 h 4°C。溶酶体（蔗糖 19/26%）：100,000×g 1 h 4°C。外泌体（蔗糖 30/45/60%）：100,000×g 2 h 4°C。使用 SW-41 Ti、SW-60 Ti 或同等摆角转头。"
+      }
+    },
+    {
+      "name": "6. Collect fractions: pierce bottom or aspirate top (0.5–1 mL fractions)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use gradient fractionator (Brandel/BioComp) for reproducible fraction collection. Manual: aspirate slowly from top with Pasteur pipette, collecting 0.5–1 mL fractions. Number fractions top→bottom. Measure density of each fraction (refractometer).",
+        "zh": "用梯度分级仪（Brandel/BioComp）保证重复性。手动：Pasteur 吸管从顶部缓慢吸取，每份 0.5–1 mL。从上至下编号。折射仪测量每个组分密度。"
+      }
+    },
+    {
+      "name": "7. Identify fractions by marker proteins (WB) or enzyme activity",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "ER: Calnexin, BiP/GRP78; Golgi: GM130, TGN46; Lysosomes: LAMP1, cathepsin D; Mitochondria: VDAC, HSP60; Plasma membrane: Na/K-ATPase; Cytoplasm: GAPDH. Plot marker distribution across fractions (density equilibrium profile).",
+        "zh": "内质网：Calnexin、BiP/GRP78；高尔基：GM130、TGN46；溶酶体：LAMP1、组织蛋白酶 D；线粒体：VDAC、HSP60；质膜：Na/K-ATPase；细胞质：GAPDH。绘制标记蛋白在各组分中的分布图（密度平衡曲线）。"
+      }
+    },
+    {
+      "name": "8. Pool target fractions; dilute 5× with buffer; pellet by ultracentrifugation (100,000×g 1 h)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Dilution with PBS removes density medium. Final pellet resuspend in small volume of appropriate buffer for downstream assays (WB, proteomics, functional).",
+        "zh": "PBS 稀释去除密度介质。终沉淀用少量适当缓冲液重悬，用于下游实验（WB、蛋白质组学、功能分析）。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Density gradient centrifugation separates particles by buoyant density at equilibrium (isopycnic) or by sedimentation rate (rate-zonal). Rate-zonal: separate by size/shape at same density; requires shorter run. Isopycnic: run until equilibrium — particle rests at density matching its own. Subcellular organelle densities (g/mL): nuclei 1.32, mito 1.10–1.21, Golgi 1.08–1.12, ER 1.08–1.18, lysosomes 1.10–1.22, exosomes 1.13–1.19.",
+    "zh": "密度梯度离心按浮力密度平衡（等密度）或沉降速率（速率区带）分离颗粒。速率区带：按大小/形状分离（相同密度）；运行时间短。等密度：运行至平衡——颗粒停在与自身密度相等的位置。亚细胞细胞器密度（g/mL）：核 1.32、线粒体 1.10–1.21、高尔基 1.08–1.12、内质网 1.08–1.18、溶酶体 1.10–1.22、外泌体 1.13–1.19。"
+  },
+  "crosslinks": ["pbmc_isolation", "ficoll_solution", "percoll_gradient_buffer", "sucrose_gradient_buffer", "mitochondria_isolation", "exosome_isolation", "lysosome_isolation", "subcellular_fractionation"],
+  "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1; de Duve (1975) Science 189:186; Pertoft (2000) J Biochem Biophys Methods 44:1–30; Bhatt et al. (2021) STAR Protoc 2:100450",
+  "doi": "10.1002/0471143030.cb0306s16"
+}

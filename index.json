@@ -1,10 +1,10 @@
 {
-  "version": "1.2.0",
-  "updated": "2026-03-17",
-  "total": 171,
+  "version": "1.3.0",
+  "updated": "2026-03-18",
+  "total": 183,
   "categories": {
-    "buffer": 72,
-    "protocol": 80,
+    "buffer": 78,
+    "protocol": 86,
     "staining": 9,
     "media": 10
   },
@@ -207,11 +207,15 @@
       "name": "CCK-8 Cell Proliferation / Viability Assay",
       "category": "protocol",
       "tags": [
-        "CCK-8",
         "cell viability",
+        "CCK-8",
+        "WST-8",
         "proliferation",
+        "colorimetric",
         "cytotoxicity",
-        "assay"
+        "cell biology",
+        "IC50",
+        "non-toxic"
       ],
       "file": "recipes/protocols/cck8_proliferation.json"
     },
@@ -568,6 +572,22 @@
       "file": "recipes/staining/dapi_staining.json"
     },
     {
+      "id": "density_gradient_centrifugation",
+      "name": "Density Gradient Centrifugation (Step & Continuous)",
+      "category": "protocol",
+      "tags": [
+        "density gradient",
+        "ultracentrifugation",
+        "Percoll",
+        "sucrose",
+        "organelle isolation",
+        "cell separation",
+        "differential centrifugation",
+        "biochemistry"
+      ],
+      "file": "recipes/protocols/density_gradient_centrifugation.json"
+    },
+    {
       "id": "depc_water",
       "name": "DEPC-Treated Water",
       "category": "buffer",
@@ -742,6 +762,37 @@
       "file": "recipes/protocols/ethanol_precipitation.json"
     },
     {
+      "id": "exosome_isolation",
+      "name": "Exosome/Small EV Isolation by Differential Ultracentrifugation",
+      "category": "protocol",
+      "tags": [
+        "exosome",
+        "extracellular vesicles",
+        "EV",
+        "sEV",
+        "ultracentrifugation",
+        "cell communication",
+        "biomarker",
+        "proteomics",
+        "miRNA"
+      ],
+      "file": "recipes/protocols/exosome_isolation.json"
+    },
+    {
+      "id": "exosome_isolation_buffer",
+      "name": "Exosome/EV Isolation Buffer (PBS-based)",
+      "category": "buffer",
+      "tags": [
+        "exosome",
+        "extracellular vesicles",
+        "EV",
+        "ultracentrifugation",
+        "isolation",
+        "PBS"
+      ],
+      "file": "recipes/buffers/exosome_isolation_buffer.json"
+    },
+    {
       "id": "facs_buffer",
       "name": "FACS Staining Buffer",
       "category": "buffer",
@@ -751,6 +802,20 @@
         "cell sorting"
       ],
       "file": "recipes/buffers/facs_buffer.json"
+    },
+    {
+      "id": "ficoll_solution",
+      "name": "Ficoll-400 Density Solution (Self-Prepared, 20% w/v)",
+      "category": "buffer",
+      "tags": [
+        "density gradient",
+        "Ficoll",
+        "PBMC",
+        "cell separation",
+        "density centrifugation",
+        "immunology"
+      ],
+      "file": "recipes/buffers/ficoll_solution.json"
     },
     {
       "id": "flow_cytometry_protocol",
@@ -1221,6 +1286,35 @@
       "file": "recipes/buffers/lysis_buffer_mild.json"
     },
     {
+      "id": "lysosome_isolation",
+      "name": "Lysosome Isolation by Differential Centrifugation",
+      "category": "protocol",
+      "tags": [
+        "lysosome",
+        "organelle isolation",
+        "differential centrifugation",
+        "sucrose gradient",
+        "cell biology",
+        "biochemistry",
+        "subcellular fractionation"
+      ],
+      "file": "recipes/protocols/lysosome_isolation.json"
+    },
+    {
+      "id": "lysosome_isolation_buffer",
+      "name": "Lysosome Isolation Buffer (Sucrose-Based Homogenization)",
+      "category": "buffer",
+      "tags": [
+        "lysosome",
+        "organelle isolation",
+        "homogenization",
+        "sucrose",
+        "subcellular fractionation",
+        "biochemistry"
+      ],
+      "file": "recipes/buffers/lysosome_isolation_buffer.json"
+    },
+    {
       "id": "macs_buffer",
       "name": "MACS Separation Buffer",
       "category": "buffer",
@@ -1355,9 +1449,13 @@
       "category": "protocol",
       "tags": [
         "cell viability",
-        "cytotoxicity",
+        "MTT",
         "proliferation",
-        "MTT"
+        "colorimetric",
+        "formazan",
+        "cytotoxicity",
+        "cell biology",
+        "IC50"
       ],
       "file": "recipes/protocols/mtt_assay.json"
     },
@@ -1464,6 +1562,39 @@
       "file": "recipes/staining/oil_red_o.json"
     },
     {
+      "id": "organelle_isolation_golgi_er",
+      "name": "Golgi Apparatus and ER Microsome Isolation",
+      "category": "protocol",
+      "tags": [
+        "Golgi",
+        "ER",
+        "endoplasmic reticulum",
+        "microsome",
+        "organelle isolation",
+        "sucrose gradient",
+        "ultracentrifugation",
+        "cell biology",
+        "biochemistry"
+      ],
+      "file": "recipes/protocols/organelle_isolation_golgi_er.json"
+    },
+    {
+      "id": "pbmc_isolation",
+      "name": "PBMC Isolation by Density Gradient Centrifugation (Ficoll/Percoll)",
+      "category": "protocol",
+      "tags": [
+        "PBMC",
+        "density gradient",
+        "Ficoll",
+        "Percoll",
+        "blood",
+        "mononuclear cells",
+        "immunology",
+        "cell isolation"
+      ],
+      "file": "recipes/protocols/pbmc_isolation.json"
+    },
+    {
       "id": "pbs_10x",
       "name": "10× PBS",
       "category": "buffer",
@@ -1497,6 +1628,20 @@
         "genotyping"
       ],
       "file": "recipes/protocols/pcr_standard.json"
+    },
+    {
+      "id": "percoll_gradient_buffer",
+      "name": "Percoll Stock Solution (Isotonic, Self-Prepared)",
+      "category": "buffer",
+      "tags": [
+        "density gradient",
+        "Percoll",
+        "cell separation",
+        "organelle isolation",
+        "density centrifugation",
+        "PBMC"
+      ],
+      "file": "recipes/buffers/percoll_gradient_buffer.json"
     },
     {
       "id": "perm_buffer_triton",
@@ -1633,6 +1778,37 @@
         "mRNA"
       ],
       "file": "recipes/protocols/qpcr_protocol.json"
+    },
+    {
+      "id": "resazurin_assay",
+      "name": "Resazurin Cell Viability Assay (alamarBlue)",
+      "category": "protocol",
+      "tags": [
+        "resazurin",
+        "alamarBlue",
+        "cell viability",
+        "metabolic activity",
+        "fluorescence",
+        "colorimetric",
+        "non-toxic",
+        "kinetic assay",
+        "cell biology"
+      ],
+      "file": "recipes/protocols/resazurin_assay.json"
+    },
+    {
+      "id": "resazurin_stock",
+      "name": "Resazurin Stock Solution (alamarBlue, 0.1% w/v)",
+      "category": "buffer",
+      "tags": [
+        "resazurin",
+        "alamarBlue",
+        "cell viability",
+        "metabolic activity",
+        "fluorescence",
+        "colorimetric"
+      ],
+      "file": "recipes/buffers/resazurin_stock.json"
     },
     {
       "id": "restriction_digest",
@@ -1942,6 +2118,22 @@
         "protein localization"
       ],
       "file": "recipes/protocols/subcellular_fractionation.json"
+    },
+    {
+      "id": "sucrose_gradient_buffer",
+      "name": "Sucrose Gradient Solutions (10–70% for Organelle Isolation)",
+      "category": "buffer",
+      "tags": [
+        "sucrose gradient",
+        "organelle isolation",
+        "ultracentrifugation",
+        "density gradient",
+        "ER",
+        "Golgi",
+        "exosome",
+        "biochemistry"
+      ],
+      "file": "recipes/buffers/sucrose_gradient_buffer.json"
     },
     {
       "id": "tae_50x",

@@ -1,0 +1,86 @@
+{
+  "id": "exosome_isolation",
+  "name": "Exosome/Small EV Isolation by Differential Ultracentrifugation",
+  "nameCn": "差速超速离心法分离外泌体 / 小细胞外囊泡（sEV）",
+  "category": "protocol",
+  "tags": ["exosome", "extracellular vesicles", "EV", "sEV", "ultracentrifugation", "cell communication", "biomarker", "proteomics", "miRNA"],
+  "components": [
+    {
+      "name": "1. Culture cells in EV-depleted medium for 48–72 h; collect conditioned medium",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "EV-depleted FBS: ultracentrifuge standard FBS at 120,000×g 16 h 4°C; use supernatant. Or use commercial EV-depleted FBS (SBI, Thermo). Volume: 20–100 mL conditioned medium per isolation. Avoid serum starvation (alters EV secretion profile).",
+        "zh": "EV 去除血清：标准血清 120,000×g 16 h 4°C 超速离心后取上清。或购买商品 EV 去除血清（SBI、Thermo）。体积：每次分离需 20–100 mL 条件培养基。避免血清饥饿（改变 EV 分泌谱）。"
+      }
+    },
+    {
+      "name": "2. Step 1 — Remove cells: 300×g, 10 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet live cells. Keep supernatant. Use swing-bucket rotor.", "zh": "沉淀活细胞。保留上清。使用摆角转头。"
+      }
+    },
+    {
+      "name": "3. Step 2 — Remove dead cells/debris: 2,000×g, 20 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet dead cells and large debris. Keep supernatant.", "zh": "沉淀死细胞和大碎片。保留上清。"
+      }
+    },
+    {
+      "name": "4. Step 3 — Remove apoptotic bodies & large vesicles: 10,000×g, 30 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet (10k pellet) = apoptotic bodies, microvesicles (200 nm–1 µm). Keep supernatant. Optional: filter through 0.22 µm to remove any remaining large particles before ultracentrifuge.",
+        "zh": "沉淀（10k 沉淀）= 凋亡小体、微囊泡（200 nm–1 µm）。保留上清。可选：上超速离心机前 0.22 µm 过滤。"
+      }
+    },
+    {
+      "name": "5. Step 4 — Pellet small EVs/exosomes: 100,000×g, 70 min, 4°C (swing-bucket)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use Ti-70, SW-28, SW-41 Ti, or similar. k-factor matters: k = 267 for SW-41 at 40,000 rpm. Equivalent run time = k-factor × ln(rmax/rmin) / rpm². Standard: SW-41 at 35,000 rpm (~110,000×g) for 70 min covers 20–200 nm range. Pellet = crude exosome fraction (30–200 nm EVs).",
+        "zh": "使用 Ti-70、SW-28、SW-41 Ti 或同等转头。k 因子决定等效分离：SW-41 在 40,000 rpm 的 k = 267。标准：SW-41 35,000 rpm（~110,000×g）70 min 覆盖 20–200 nm 范围。沉淀 = 粗外泌体（30–200 nm EVs）。"
+      }
+    },
+    {
+      "name": "6. Wash pellet: resuspend in 1 mL exosome_isolation_buffer (filtered PBS); centrifuge again 100,000×g 70 min 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Washing removes co-precipitated protein contaminants. Critical step for proteomic/functional studies. Resuspend final pellet in 50–200 µL PBS for characterization.",
+        "zh": "洗涤去除共沉淀的蛋白质污染物。蛋白质组学/功能研究的关键步骤。最终沉淀用 50–200 µL PBS 重悬，用于表征。"
+      }
+    },
+    {
+      "name": "7. Optional: density gradient purification (sucrose or iodixanol 10–70%)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Layer crude EV pellet on sucrose_gradient_buffer (20/30/45/60%) or OptiPrep (10/20/30/40/50%). Ultracentrifuge 100,000×g 16 h 4°C (SW-41). Collect 1 mL fractions; exosomes band at 1.13–1.19 g/mL. Pool EV fractions; dilute; re-pellet 100,000×g 70 min.",
+        "zh": "粗 EV 沉淀加至蔗糖梯度（sucrose_gradient_buffer：20/30/45/60%）或 OptiPrep（10/20/30/40/50%）上。100,000×g 16 h 4°C（SW-41）。收集 1 mL 组分；外泌体在 1.13–1.19 g/mL 区带。合并 EV 组分，稀释，100,000×g 70 min 重新沉淀。"
+      }
+    },
+    {
+      "name": "8. Characterize: NTA, TEM, WB for tetraspanins",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "NTA (NanoSight/ZetaView): particle size (peak 80–150 nm for exosomes) and concentration. TEM: morphology (cup-shaped by conventional EM). WB markers: CD63, CD9, CD81 (tetraspanins), TSG101, ALIX (ESCRT). Negative controls: GM130 (Golgi), cytochrome c (Mito) — should be absent.",
+        "zh": "NTA（NanoSight/ZetaView）：颗粒粒径（外泌体峰值 80–150 nm）和浓度。TEM：形态（传统 EM 下呈杯状）。WB 标记：CD63、CD9、CD81（四次跨膜蛋白）、TSG101、ALIX（ESCRT 蛋白）。阴性对照：GM130（高尔基）、细胞色素 c（线粒体）——应为阴性。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "MISEV2018 guidelines: report EV characterization with at least three markers (2 positive tetraspanins + 1 negative organelle marker) and particle:protein ratio. Differential ultracentrifugation recovers ~5–25% of total EVs (moderate purity). For higher purity: sucrose/iodixanol gradient, SEC columns (qEV, Izon), or immunoaffinity capture. For liquid biopsy (plasma): pre-clear with additional centrifugation steps and use precipitation kits cautiously.",
+    "zh": "MISEV2018 指南：外泌体表征需报告至少三个标记（2 个阳性四次跨膜蛋白 + 1 个阴性细胞器标记）及颗粒:蛋白质比值。差速超速离心回收率约 5–25%（中等纯度）。更高纯度：蔗糖/碘克沙醇梯度、SEC 柱（qEV、Izon）或免疫亲和捕获。液体活检（血浆）：需额外离心预清除步骤，谨慎使用沉淀试剂盒。"
+  },
+  "crosslinks": ["density_gradient_centrifugation", "sucrose_gradient_buffer", "exosome_isolation_buffer", "mitochondria_isolation", "bca_protein_assay"],
+  "ref": "Théry et al. (2006) Curr Protoc Cell Biol 3.22.1; Witwer & Théry (2019) J Extracell Vesicles 8:1648167 (MISEV2018); Colombo et al. (2014) Curr Opin Cell Biol 29:45–55",
+  "doi": "10.1080/20013078.2018.1548233"
+}
