@@ -49,5 +49,18 @@
     "zh": "LIF 维持多能性——需新鲜加入。无饲养层培养：明胶 + 2i (PD0325901 + CHIR99021) + LIF。致密圆顶样克隆 = 多能。"
   },
   "ref": "Smith et al. (1988) Nature 336:688",
-  "source": "Nature"
+  "source": "Nature",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "2 weeks",
+    "sterile": "filter_022",
+    "notes": "Add LIF fresh; keep cold"
+  },
+  "usage": {
+    "en": "Embryonic stem cell (ESC) serum-containing LIF culture medium for pluripotency maintenance.",
+    "zh": "含 LIF 的胚胎干细胞培养基，用于维持多能性。"
+  }
 }

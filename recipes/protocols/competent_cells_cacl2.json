@@ -60,5 +60,13 @@
     "en": "Keep everything on ice throughout! Typical efficiency: 10⁶–10⁷ CFU/µg. Overnight incubation at 4°C can improve efficiency. For higher efficiency (>10⁸), use the Inoue method (MnCl₂/CaCl₂).",
     "zh": "全程冰上操作！效率通常 10⁶–10⁷ CFU/µg。过夜 4°C 孵育可提高效率。如需更高效率 (>10⁸)，使用 Inoue 法 (MnCl₂/CaCl₂)。"
   },
-  "ref": "Hanahan (1983) J Mol Biol 166:557–580; Sambrook & Russell (2001) Molecular Cloning"
+  "ref": "Hanahan (1983) J Mol Biol 166:557–580; Sambrook & Russell (2001) Molecular Cloning",
+  "discipline": [
+    "molecular",
+    "microbiology"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "3 hours"
+  }
 }

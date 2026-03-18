@@ -47,5 +47,12 @@
   "ref": "Neuhoff et al. (1988) Electrophoresis 9:255; Sambrook & Russell (2001) Molecular Cloning",
   "crosslinks": [
     "coomassie_stain"
-  ]
+  ],
+  "discipline": [
+    "protein"
+  ],
+  "duration": {
+    "total": "1–2 hours",
+    "hands_on": "45 minutes"
+  }
 }

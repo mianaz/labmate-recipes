@@ -48,5 +48,18 @@
     "en": "Resuspend nuclear pellet, rock on ice 15 min, centrifuge at 4°C 14,000×g for 5 min. Supernatant = nuclear extract. Add protease inhibitors.",
     "zh": "重悬核沉淀，冰上振荡 15 min，4°C 14,000×g 5 min。上清 = 核蛋白。加蛋白酶抑制剂。"
   },
-  "ref": "Suzuki et al. (2010) Nat Protoc 5:532–539"
+  "ref": "Suzuki et al. (2010) Nat Protoc 5:532–539",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Add inhibitors fresh"
+  },
+  "usage": {
+    "en": "Buffer B for nuclear protein extraction in cytoplasmic/nuclear fractionation.",
+    "zh": "细胞质/细胞核分级分离缓冲液 B（细胞核蛋白提取步骤）。"
+  }
 }

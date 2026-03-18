@@ -3,30 +3,110 @@
   "name": "GST/His Pull-Down Assay (Protein-Protein Interaction)",
   "nameCn": "GST/His Pull-Down 蛋白互作实验",
   "category": "protocol",
-  "tags": ["pull-down", "protein-protein interaction", "GST", "His-tag", "in vitro binding", "affinity purification", "biochemistry"],
+  "tags": [
+    "pull-down",
+    "protein-protein interaction",
+    "GST",
+    "His-tag",
+    "in vitro binding",
+    "affinity purification",
+    "biochemistry"
+  ],
   "components": [
-    {"name": "1. Express and purify GST-bait protein (or His-bait) from E. coli", "amount": 1, "unit": "step",
-     "note": {"en": "gst_tag_purification or his_tag_purification. Need ≥5 µg purified bait per reaction. Also purify GST-alone as negative control.", "zh": "gst_tag_purification 或 his_tag_purification。每个反应需 ≥5 µg 纯化诱饵蛋白。同时纯化 GST 单独作为阴性对照。"}},
-    {"name": "2. Prepare prey protein: cell lysate or purified recombinant", "amount": 1, "unit": "step",
-     "note": {"en": "Cell lysate: lyse 10⁷ cells in 500 µL NP-40 lysis buffer (np40_lysis + protease inhibitors), 30 min ice. Clarify: 16,000×g 15 min 4°C. Pre-clear lysate with empty beads (glutathione or Ni-NTA) 1 h 4°C.", "zh": "细胞裂解物：10⁷ 细胞加 500 µL NP-40 裂解液（np40_lysis + 蛋白酶抑制剂），冰上 30 min。16,000×g 15 min 4°C 澄清。空白磁珠预清除 1 h 4°C。"}},
-    {"name": "3. Immobilize bait: 5 µg GST-bait + 20 µL glutathione beads (or 5 µg His-bait + Ni-NTA beads)", "amount": 1, "unit": "step",
-     "note": {"en": "Rotate 1 h 4°C in binding buffer (PBS + 0.1% NP-40 + 1 mM DTT). Wash beads 3× to remove unbound bait.", "zh": "结合缓冲液（PBS + 0.1% NP-40 + 1 mM DTT）中 4°C 旋转 1 h。洗涤 3 次去除未结合诱饵。"}},
-    {"name": "4. Add prey: 500 µg cell lysate (or 5 µg purified prey) to bait-beads", "amount": 1, "unit": "step",
-     "note": {"en": "Final volume ~500 µL in binding buffer. Controls: (a) GST-alone beads + same prey (negative); (b) GST-bait beads + lysate buffer only (no-prey control).", "zh": "终体积 ~500 µL 结合缓冲液。对照：(a) GST 空白磁珠 + 同样猎物（阴性）；(b) GST-诱饵磁珠 + 仅缓冲液（无猎物对照）。"}},
-    {"name": "5. Incubate: rotate 2–4 h or overnight, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Longer incubation = more background. Start with 2 h; optimize.", "zh": "孵育时间越长背景越高。先试 2 h；后续优化。"}},
-    {"name": "6. Wash beads 4–5× with wash buffer (PBS + 0.1–0.5% NP-40 + 150–300 mM NaCl)", "amount": 1, "unit": "step",
-     "note": {"en": "High NaCl/detergent washes reduce background. Typical: 3× with 0.1% NP-40 + 150 mM NaCl; then 2× with 0.5% NP-40 + 300 mM NaCl. Centrifuge 2,500×g 2 min between washes.", "zh": "高盐/高去污剂减少背景。典型：3× 0.1% NP-40 + 150 mM NaCl；2× 0.5% NP-40 + 300 mM NaCl。洗涤间离心 2,500×g 2 min。"}},
-    {"name": "7. Elute: add 30 µL 2× Laemmli + boil 95°C 5 min; or 50 µL glutathione elution (10 mM GSH)", "amount": 1, "unit": "step",
-     "note": {"en": "SDS elution: fast and complete but denatures proteins (no downstream native assay). Glutathione elution: native, lower yield.", "zh": "SDS 洗脱：快速完全但蛋白变性（无法用于后续天然条件实验）。谷胱甘肽洗脱：非变性条件，产量低。"}},
-    {"name": "8. Western blot: detect prey protein with specific antibody", "amount": 1, "unit": "step",
-     "note": {"en": "Load: 5% input, GST-bait pull-down, GST-alone pull-down. Blot for prey protein AND bait (Coomassie or anti-GST to show equal loading). Interaction confirmed if prey band appears only in bait lane (not GST-alone).", "zh": "上样：5% input、GST-诱饵 pull-down、GST 空白 pull-down。检测猎物蛋白和诱饵蛋白（考马斯或 anti-GST 证明等量上样）。猎物条带仅在诱饵泳道出现（非 GST 空白）即确认互作。"}}
+    {
+      "name": "1. Express and purify GST-bait protein (or His-bait) from E. coli",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "gst_tag_purification or his_tag_purification. Need ≥5 µg purified bait per reaction. Also purify GST-alone as negative control.",
+        "zh": "gst_tag_purification 或 his_tag_purification。每个反应需 ≥5 µg 纯化诱饵蛋白。同时纯化 GST 单独作为阴性对照。"
+      }
+    },
+    {
+      "name": "2. Prepare prey protein: cell lysate or purified recombinant",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Cell lysate: lyse 10⁷ cells in 500 µL NP-40 lysis buffer (np40_lysis + protease inhibitors), 30 min ice. Clarify: 16,000×g 15 min 4°C. Pre-clear lysate with empty beads (glutathione or Ni-NTA) 1 h 4°C.",
+        "zh": "细胞裂解物：10⁷ 细胞加 500 µL NP-40 裂解液（np40_lysis + 蛋白酶抑制剂），冰上 30 min。16,000×g 15 min 4°C 澄清。空白磁珠预清除 1 h 4°C。"
+      }
+    },
+    {
+      "name": "3. Immobilize bait: 5 µg GST-bait + 20 µL glutathione beads (or 5 µg His-bait + Ni-NTA beads)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Rotate 1 h 4°C in binding buffer (PBS + 0.1% NP-40 + 1 mM DTT). Wash beads 3× to remove unbound bait.",
+        "zh": "结合缓冲液（PBS + 0.1% NP-40 + 1 mM DTT）中 4°C 旋转 1 h。洗涤 3 次去除未结合诱饵。"
+      }
+    },
+    {
+      "name": "4. Add prey: 500 µg cell lysate (or 5 µg purified prey) to bait-beads",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Final volume ~500 µL in binding buffer. Controls: (a) GST-alone beads + same prey (negative); (b) GST-bait beads + lysate buffer only (no-prey control).",
+        "zh": "终体积 ~500 µL 结合缓冲液。对照：(a) GST 空白磁珠 + 同样猎物（阴性）；(b) GST-诱饵磁珠 + 仅缓冲液（无猎物对照）。"
+      }
+    },
+    {
+      "name": "5. Incubate: rotate 2–4 h or overnight, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Longer incubation = more background. Start with 2 h; optimize.",
+        "zh": "孵育时间越长背景越高。先试 2 h；后续优化。"
+      }
+    },
+    {
+      "name": "6. Wash beads 4–5× with wash buffer (PBS + 0.1–0.5% NP-40 + 150–300 mM NaCl)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "High NaCl/detergent washes reduce background. Typical: 3× with 0.1% NP-40 + 150 mM NaCl; then 2× with 0.5% NP-40 + 300 mM NaCl. Centrifuge 2,500×g 2 min between washes.",
+        "zh": "高盐/高去污剂减少背景。典型：3× 0.1% NP-40 + 150 mM NaCl；2× 0.5% NP-40 + 300 mM NaCl。洗涤间离心 2,500×g 2 min。"
+      }
+    },
+    {
+      "name": "7. Elute: add 30 µL 2× Laemmli + boil 95°C 5 min; or 50 µL glutathione elution (10 mM GSH)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "SDS elution: fast and complete but denatures proteins (no downstream native assay). Glutathione elution: native, lower yield.",
+        "zh": "SDS 洗脱：快速完全但蛋白变性（无法用于后续天然条件实验）。谷胱甘肽洗脱：非变性条件，产量低。"
+      }
+    },
+    {
+      "name": "8. Western blot: detect prey protein with specific antibody",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Load: 5% input, GST-bait pull-down, GST-alone pull-down. Blot for prey protein AND bait (Coomassie or anti-GST to show equal loading). Interaction confirmed if prey band appears only in bait lane (not GST-alone).",
+        "zh": "上样：5% input、GST-诱饵 pull-down、GST 空白 pull-down。检测猎物蛋白和诱饵蛋白（考马斯或 anti-GST 证明等量上样）。猎物条带仅在诱饵泳道出现（非 GST 空白）即确认互作。"
+      }
+    }
   ],
   "notes": {
     "en": "Pull-down is the in vitro version of Co-IP — uses purified recombinant bait. Advantages: no cross-reactivity of IP antibodies, controls for direct vs indirect interaction. Limitations: bait is bacterially expressed (no PTMs); overexpression artifacts. For in vivo interaction, use coip_protocol. For transient interactions: crosslink (DSP, 0.5 mM) before lysis.",
     "zh": "Pull-down 是 Co-IP 的体外版——使用纯化重组诱饵蛋白。优势：避免 IP 抗体交叉反应，可区分直接/间接互作。局限：诱饵蛋白为原核表达（无 PTM）；过表达伪影。体内互作用 coip_protocol。短暂互作：裂解前交联（DSP，0.5 mM）。"
   },
-  "crosslinks": ["gst_tag_purification", "his_tag_purification", "coip_protocol", "immunoprecipitation", "np40_lysis", "wb_protocol", "laemmli_2x"],
+  "crosslinks": [
+    "gst_tag_purification",
+    "his_tag_purification",
+    "coip_protocol",
+    "immunoprecipitation",
+    "np40_lysis",
+    "wb_protocol",
+    "laemmli_2x"
+  ],
   "ref": "Brymora et al. (2004) Methods Mol Biol 261:247–262; Louche et al. (2017) Methods Mol Biol 1615:553–564",
-  "doi": "10.1007/978-1-4939-7033-9_37"
+  "doi": "10.1007/978-1-4939-7033-9_37",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "1 day",
+    "hands_on": "4 hours"
+  }
 }

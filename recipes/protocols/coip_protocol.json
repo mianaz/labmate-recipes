@@ -61,5 +61,13 @@
     "en": "Negative control: matched isotype IgG. Do not use RIPA (SDS disrupts protein interactions). Adjust NP-40 concentration to interaction strength (0.1–1%). Recommend ≥500 µg total protein.",
     "zh": "阴性对照: 同种属 IgG。勿用 RIPA (SDS 会破坏互作)。裂解液中 NP-40 浓度根据互作强度调整 (0.1–1%)。建议每样 500 µg–2 mg 蛋白。"
   },
-  "ref": "Miernyk & Thelen (2008) Plant J 55:415–425; Kaboord & Bhatt (2008) Methods Mol Biol 424:349–364"
+  "ref": "Miernyk & Thelen (2008) Plant J 55:415–425; Kaboord & Bhatt (2008) Methods Mol Biol 424:349–364",
+  "discipline": [
+    "protein",
+    "cell"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "4 hours"
+  }
 }

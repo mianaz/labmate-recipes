@@ -3,26 +3,89 @@
   "name": "RNA Agarose Gel Electrophoresis (Denaturing)",
   "nameCn": "RNA 琼脂糖凝胶电泳（变性条件）",
   "category": "protocol",
-  "tags": ["RNA", "gel electrophoresis", "agarose", "RNA quality", "denaturing gel", "molecular biology", "formaldehyde"],
+  "tags": [
+    "RNA",
+    "gel electrophoresis",
+    "agarose",
+    "RNA quality",
+    "denaturing gel",
+    "molecular biology",
+    "formaldehyde"
+  ],
   "components": [
-    {"name": "1. Prepare RNase-free environment", "amount": 1, "unit": "step",
-     "note": {"en": "Wipe gel tank, comb, tray with RNase Away (RNaseZap). Use RNase-free water (DEPC-treated or nuclease-free). Wear gloves throughout.", "zh": "用 RNase Away（RNaseZap）擦拭电泳槽、梳子、胶托。使用 RNase-free 水（DEPC 水或无核酸酶水）。全程戴手套。"}},
-    {"name": "2. Prepare 1% formaldehyde agarose gel (50 mL, fume hood)", "amount": 1, "unit": "step",
-     "note": {"en": "Melt 0.5 g agarose in 40 mL DEPC-ddH₂O; cool to 55°C. Add: 5 mL 10× MOPS buffer + 5 mL 37% formaldehyde (fume hood!). Mix, pour immediately, let solidify 30 min RT. Formaldehyde denatures RNA secondary structure.", "zh": "0.5 g 琼脂糖溶于 40 mL DEPC 水；冷至 55°C。通风橱中加：5 mL 10× MOPS 缓冲液 + 5 mL 37% 甲醛。混合后立即倒胶，RT 凝固 30 min。甲醛变性 RNA 二级结构。"}},
-    {"name": "3. Prepare RNA samples: denature with formaldehyde loading buffer", "amount": 1, "unit": "step",
-     "note": {"en": "Mix: RNA (0.5–5 µg) + 5× formaldehyde loading buffer (formamide:formaldehyde:10×MOPS = 500:165:100 µL, + 35 µL DEPC water + 1 µg/mL EtBr). Heat 65°C 15 min; chill on ice 2 min. Add 1 µL 6× DNA loading dye.", "zh": "混合：RNA（0.5–5 µg）+ 5× 甲醛上样缓冲液（甲酰胺:甲醛:10×MOPS = 500:165:100 µL，+ 35 µL DEPC 水 + 1 µg/mL EtBr）。65°C 15 min 变性；冰 2 min 急冷。加 1 µL 6× DNA 上样缓冲液。"}},
-    {"name": "4. Pre-run gel in 1× MOPS running buffer, 5 min at 100 V", "amount": 1, "unit": "step",
-     "note": {"en": "MOPS buffer must be fresh (yellowing indicates degradation). Fill tank until buffer just covers gel.", "zh": "MOPS 缓冲液需新鲜配制（变黄表示降解）。缓冲液液面刚好覆盖凝胶。"}},
-    {"name": "5. Load samples + RNA ladder (e.g., 0.2–10 kb); run at 80 V, ~1.5 h", "amount": 1, "unit": "step",
-     "note": {"en": "Constant voltage 80 V. Running in fume hood recommended (formaldehyde fumes). BPB should run 2/3 of gel.", "zh": "恒压 80 V。推荐在通风橱中电泳（甲醛挥发）。BPB 跑至凝胶 2/3 处。"}},
-    {"name": "6. Visualize on UV transilluminator; photograph", "amount": 1, "unit": "step",
-     "note": {"en": "Intact total RNA: 28S band ~2× intensity of 18S. Degraded RNA: smear below 18S, no discrete bands. mRNA appears as smear 0.5–10 kb. Note: 28S (4,718 bp), 18S (1,868 bp) for human.", "zh": "完整总 RNA：28S 带约为 18S 的 2 倍亮度。降解 RNA：18S 以下有拖尾，无清晰条带。mRNA 呈 0.5–10 kb 弥散带。参考：人类 28S（4,718 bp）、18S（1,868 bp）。"}}
+    {
+      "name": "1. Prepare RNase-free environment",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Wipe gel tank, comb, tray with RNase Away (RNaseZap). Use RNase-free water (DEPC-treated or nuclease-free). Wear gloves throughout.",
+        "zh": "用 RNase Away（RNaseZap）擦拭电泳槽、梳子、胶托。使用 RNase-free 水（DEPC 水或无核酸酶水）。全程戴手套。"
+      }
+    },
+    {
+      "name": "2. Prepare 1% formaldehyde agarose gel (50 mL, fume hood)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Melt 0.5 g agarose in 40 mL DEPC-ddH₂O; cool to 55°C. Add: 5 mL 10× MOPS buffer + 5 mL 37% formaldehyde (fume hood!). Mix, pour immediately, let solidify 30 min RT. Formaldehyde denatures RNA secondary structure.",
+        "zh": "0.5 g 琼脂糖溶于 40 mL DEPC 水；冷至 55°C。通风橱中加：5 mL 10× MOPS 缓冲液 + 5 mL 37% 甲醛。混合后立即倒胶，RT 凝固 30 min。甲醛变性 RNA 二级结构。"
+      }
+    },
+    {
+      "name": "3. Prepare RNA samples: denature with formaldehyde loading buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Mix: RNA (0.5–5 µg) + 5× formaldehyde loading buffer (formamide:formaldehyde:10×MOPS = 500:165:100 µL, + 35 µL DEPC water + 1 µg/mL EtBr). Heat 65°C 15 min; chill on ice 2 min. Add 1 µL 6× DNA loading dye.",
+        "zh": "混合：RNA（0.5–5 µg）+ 5× 甲醛上样缓冲液（甲酰胺:甲醛:10×MOPS = 500:165:100 µL，+ 35 µL DEPC 水 + 1 µg/mL EtBr）。65°C 15 min 变性；冰 2 min 急冷。加 1 µL 6× DNA 上样缓冲液。"
+      }
+    },
+    {
+      "name": "4. Pre-run gel in 1× MOPS running buffer, 5 min at 100 V",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "MOPS buffer must be fresh (yellowing indicates degradation). Fill tank until buffer just covers gel.",
+        "zh": "MOPS 缓冲液需新鲜配制（变黄表示降解）。缓冲液液面刚好覆盖凝胶。"
+      }
+    },
+    {
+      "name": "5. Load samples + RNA ladder (e.g., 0.2–10 kb); run at 80 V, ~1.5 h",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Constant voltage 80 V. Running in fume hood recommended (formaldehyde fumes). BPB should run 2/3 of gel.",
+        "zh": "恒压 80 V。推荐在通风橱中电泳（甲醛挥发）。BPB 跑至凝胶 2/3 处。"
+      }
+    },
+    {
+      "name": "6. Visualize on UV transilluminator; photograph",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Intact total RNA: 28S band ~2× intensity of 18S. Degraded RNA: smear below 18S, no discrete bands. mRNA appears as smear 0.5–10 kb. Note: 28S (4,718 bp), 18S (1,868 bp) for human.",
+        "zh": "完整总 RNA：28S 带约为 18S 的 2 倍亮度。降解 RNA：18S 以下有拖尾，无清晰条带。mRNA 呈 0.5–10 kb 弥散带。参考：人类 28S（4,718 bp）、18S（1,868 bp）。"
+      }
+    }
   ],
   "notes": {
     "en": "Alternative (faster): non-denaturing 1% agarose gel in 1× TAE — suitable for checking RNA integrity only (not size accuracy). Bioanalyzer (Agilent 2100) or TapeStation is more sensitive and quantitative (RIN score). Discard gel and buffer containing formaldehyde in hazardous waste.",
     "zh": "替代方案（更快）：1% 琼脂糖凝胶 1× TAE 非变性电泳——仅用于检查 RNA 完整性（尺寸不准确）。Bioanalyzer（Agilent 2100）或 TapeStation 更灵敏定量（RIN 评分）。含甲醛的凝胶和缓冲液作为危险废弃物处置。"
   },
-  "crosslinks": ["trizol_extraction", "rna_column_extraction", "rna_loading_dye", "tae_50x"],
+  "crosslinks": [
+    "trizol_extraction",
+    "rna_column_extraction",
+    "rna_loading_dye",
+    "tae_50x"
+  ],
   "ref": "Sambrook & Russell (2001) Molecular Cloning 3rd ed. Ch. 7.14; Masek et al. (2005) Electrophoresis 26:4709",
-  "doi": "10.1002/elps.200500185"
+  "doi": "10.1002/elps.200500185",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "2–3 hours",
+    "hands_on": "1.5 hours"
+  }
 }

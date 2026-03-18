@@ -24,5 +24,18 @@
     "en": "Prepare fresh. Do not use for phospho-protein detection (milk casein is phosphorylated). Use BSA blocking instead.",
     "zh": "现配现用。勿用于检测磷酸化蛋白（milk 中含酪蛋白磷酸化位点），改用 BSA。"
   },
-  "ref": "Burnette (1981) Anal Biochem 112:195–203"
+  "ref": "Burnette (1981) Anal Biochem 112:195–203",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 days",
+    "sterile": "not_required",
+    "notes": "Prepare fresh; milk degrades quickly"
+  },
+  "usage": {
+    "en": "5% non-fat dry milk blocking solution; standard WB blocking buffer.",
+    "zh": "脱脂奶粉封闭液，WB 标准封闭缓冲液。"
+  }
 }

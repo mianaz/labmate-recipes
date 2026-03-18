@@ -35,5 +35,19 @@
     "en": "Adjust pH to 8.0. Dialyze or desalt immediately after elution to remove imidazole. Gradient elution improves purity.",
     "zh": "调 pH 至 8.0。洗脱后立即透析或脱盐去除 imidazole。可用梯度洗脱提高纯度。"
   },
-  "ref": "QIAGEN Ni-NTA Handbook; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1"
+  "ref": "QIAGEN Ni-NTA Handbook; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Filter 0.22 µm and degas before FPLC use"
+  },
+  "usage": {
+    "en": "250 mM imidazole elution buffer for His-tagged protein Ni-NTA affinity chromatography.",
+    "zh": "250 mM 咪唑洗脱液，用于 Ni-NTA 亲和层析洗脱 His 标签蛋白。"
+  }
 }

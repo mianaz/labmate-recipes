@@ -29,5 +29,18 @@
     "en": "Prepare fresh. Tween-20 at 0.05–0.1% is acceptable; adjust based on background signal.",
     "zh": "现配现用。Tween-20 终浓度 0.05–0.1% 均可，根据背景调整。"
   },
-  "ref": "Burnette (1981) Anal Biochem 112:195–203"
+  "ref": "Burnette (1981) Anal Biochem 112:195–203",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Prepare fresh weekly if Tween-20 precipitates"
+  },
+  "usage": {
+    "en": "Tris-buffered saline + Tween-20; standard blocking and washing buffer for Western blot.",
+    "zh": "含 Tween-20 的 Tris 缓冲盐水，WB 标准封闭和洗涤缓冲液。"
+  }
 }

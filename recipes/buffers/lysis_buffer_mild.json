@@ -3,22 +3,82 @@
   "name": "Mild Lysis Buffer for Protein Purification",
   "nameCn": "温和裂解缓冲液（蛋白纯化用）",
   "category": "buffer",
-  "tags": ["protein purification", "cell lysis", "mild lysis", "soluble protein", "native conditions"],
+  "tags": [
+    "protein purification",
+    "cell lysis",
+    "mild lysis",
+    "soluble protein",
+    "native conditions"
+  ],
   "volume": 100,
   "volumeUnit": "mL",
   "components": [
-    {"name": "Tris-HCl (1 M, pH 8.0)", "amount": 5, "unit": "mL", "note": "50 mM"},
-    {"name": "NaCl", "amount": 0.877, "unit": "g", "mw": 58.44, "note": "150 mM"},
-    {"name": "Glycerol", "amount": 10, "unit": "mL", "note": "10% v/v; stabilizes proteins"},
-    {"name": "β-Mercaptoethanol (14.3 M)", "amount": 0.007, "unit": "mL", "note": "1 mM; or 1 mM DTT"},
-    {"name": "Lysozyme (10 mg/mL)", "amount": 0.1, "unit": "mL", "note": "0.01 mg/mL; for E. coli"},
-    {"name": "Protease inhibitor cocktail (100×)", "amount": 1, "unit": "mL", "note": "1× final; PMSF 1 mM + cOmplete tablet"},
-    {"name": "DNase I (10 mg/mL)", "amount": 0.005, "unit": "mL", "note": "0.5 µg/mL + 2 mM MgCl₂; reduces viscosity"}
+    {
+      "name": "Tris-HCl (1 M, pH 8.0)",
+      "amount": 5,
+      "unit": "mL",
+      "note": "50 mM"
+    },
+    {
+      "name": "NaCl",
+      "amount": 0.877,
+      "unit": "g",
+      "mw": 58.44,
+      "note": "150 mM"
+    },
+    {
+      "name": "Glycerol",
+      "amount": 10,
+      "unit": "mL",
+      "note": "10% v/v; stabilizes proteins"
+    },
+    {
+      "name": "β-Mercaptoethanol (14.3 M)",
+      "amount": 0.007,
+      "unit": "mL",
+      "note": "1 mM; or 1 mM DTT"
+    },
+    {
+      "name": "Lysozyme (10 mg/mL)",
+      "amount": 0.1,
+      "unit": "mL",
+      "note": "0.01 mg/mL; for E. coli"
+    },
+    {
+      "name": "Protease inhibitor cocktail (100×)",
+      "amount": 1,
+      "unit": "mL",
+      "note": "1× final; PMSF 1 mM + cOmplete tablet"
+    },
+    {
+      "name": "DNase I (10 mg/mL)",
+      "amount": 0.005,
+      "unit": "mL",
+      "note": "0.5 µg/mL + 2 mM MgCl₂; reduces viscosity"
+    }
   ],
   "notes": {
     "en": "Keep ice-cold. For E. coli: add lysozyme, 30 min ice, then sonicate (3× 30 s, 30% amplitude, ice bath). Clarify 20,000×g 30 min 4°C. Add PMSF just before use (unstable in water). Optional: 0.5% Triton X-100 for membrane proteins.",
     "zh": "全程冰冷。大肠杆菌：加溶菌酶冰上 30 min，再超声（3× 30 s，30% 振幅，冰浴）。20,000×g 4°C 30 min 澄清。PMSF 用前现加。可选加 0.5% Triton X-100 提高膜蛋白回收率。"
   },
-  "crosslinks": ["his_tag_purification", "gst_tag_purification", "bacterial_protein_expression"],
-  "ref": "Wingfield (2015) Curr Protoc Protein Sci 80:6.1.1; GE Healthcare His-tag Purification Guide"
+  "crosslinks": [
+    "his_tag_purification",
+    "gst_tag_purification",
+    "bacterial_protein_expression"
+  ],
+  "ref": "Wingfield (2015) Curr Protoc Protein Sci 80:6.1.1; GE Healthcare His-tag Purification Guide",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Add PMSF, lysozyme, DNase I fresh before use"
+  },
+  "usage": {
+    "en": "Mild native lysis buffer for extracting soluble recombinant proteins from E. coli.",
+    "zh": "温和裂解缓冲液，用于从大肠杆菌中提取可溶性重组蛋白。"
+  }
 }

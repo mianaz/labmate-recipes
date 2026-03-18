@@ -95,5 +95,12 @@
     "transwell_migration",
     "cck8_proliferation"
   ],
-  "doi": "10.1038/nprot.2007.30"
+  "doi": "10.1038/nprot.2007.30",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "24–48 hours",
+    "hands_on": "2 hours"
+  }
 }

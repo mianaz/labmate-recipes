@@ -48,5 +48,19 @@
     "en": "Can be stored as 20× concentrate. Dilute to 1× before use. Optimized for NuPAGE Bis-Tris gels; better resolution for mid-to-high MW proteins (>30 kDa) than MES buffer. Do not adjust pH.",
     "zh": "20× 浓缩液可储存，使用前稀释至 1×。适用于 NuPAGE Bis-Tris 凝胶，分离中-大分子量蛋白 (>30 kDa) 效果优于 MES。不需调 pH。"
   },
-  "ref": "Invitrogen NuPAGE Technical Guide (Thermo Fisher MAN0003690); Schägger (2006) Nat Protoc 1:16–22"
+  "ref": "Invitrogen NuPAGE Technical Guide (Thermo Fisher MAN0003690); Schägger (2006) Nat Protoc 1:16–22",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Use fresh; discard if yellow"
+  },
+  "usage": {
+    "en": "1× MOPS running buffer for denaturing RNA agarose gel electrophoresis.",
+    "zh": "1× MOPS 电泳缓冲液，用于 RNA 变性凝胶电泳。"
+  }
 }

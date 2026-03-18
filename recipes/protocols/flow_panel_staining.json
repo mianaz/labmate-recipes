@@ -3,30 +3,108 @@
   "name": "Multi-Color Flow Cytometry Surface & Intracellular Staining",
   "nameCn": "多色流式细胞术（表面 + 胞内蛋白染色）",
   "category": "protocol",
-  "tags": ["flow cytometry", "immunophenotyping", "surface staining", "intracellular staining", "FACS", "cell biology", "multicolor panel"],
+  "tags": [
+    "flow cytometry",
+    "immunophenotyping",
+    "surface staining",
+    "intracellular staining",
+    "FACS",
+    "cell biology",
+    "multicolor panel"
+  ],
   "components": [
-    {"name": "1. Prepare single-cell suspension; count and adjust to 2–5×10⁶/mL", "amount": 1, "unit": "step",
-     "note": {"en": "Dissociate tissue with gentleMACS or collagenase/trypsin. Pellet: 400×g 5 min. Resuspend in FACS buffer (facs_buffer). Aliquot 100 µL (2–5×10⁵ cells) per staining tube.", "zh": "组织用 gentleMACS 或胶原酶/胰酶解离。400×g 5 min 沉淀。FACS 缓冲液重悬。每管分 100 µL（2–5×10⁵ 细胞）。"}},
-    {"name": "2. Fc block: add anti-FcγIII/II receptor (BD Fc Block, 5 µg/mL), 15 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Prevents non-specific binding of antibodies to Fc receptors on monocytes/macrophages/NK cells. For human cells: CD16/CD32 block. For mouse: 2.4G2 clone. Omit for epithelial/cancer cell lines.", "zh": "防止单核细胞/巨噬细胞/NK 细胞 Fc 受体非特异性结合。人细胞：CD16/CD32 封闭。小鼠：2.4G2 克隆。上皮/肿瘤细胞系可省略。"}},
-    {"name": "3. Viability dye staining: add Live/Dead dye (DAPI 1 µg/mL or Zombie dye), 15–30 min, RT or 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Must stain before surface antibodies (in PBS only — no serum/BSA). DAPI (UV), 7-AAD (PE channel), Live/Dead Aqua (DAPI channel), Zombie dyes (various). Dead cells = high staining.", "zh": "必须在表面抗体染色前进行（仅用 PBS——不含血清/BSA）。DAPI（UV 激发）、7-AAD（PE 通道）、Live/Dead Aqua（DAPI 通道）、Zombie 染料（多种）。死细胞染色强。"}},
-    {"name": "4. Surface antibody staining: add antibody cocktail in FACS buffer (50–100 µL/tube), 20–30 min, 4°C, dark", "amount": 1, "unit": "step",
-     "note": {"en": "Pre-titrate each antibody (typical: 0.1–1 µg/mL). Keep cold throughout. Label/mark tubes. Prepare single-color controls and FMO (fluorescence minus one) controls.", "zh": "每种抗体需预先滴定（通常 0.1–1 µg/mL）。全程保持冷冻。准备单色对照和 FMO（少一荧光）对照。"}},
-    {"name": "5. Wash 2×: add 3 mL FACS buffer; 400×g 5 min 4°C; decant; repeat", "amount": 1, "unit": "step",
-     "note": {"en": "Decant briskly or aspirate. Do not disrupt pellet. Residual wash is OK.", "zh": "快速倾倒或抽吸。勿破坏沉淀。少量残余洗液无影响。"}},
-    {"name": "6. For surface-only panel: fix in 100 µL 1–4% PFA, 20 min RT, wash 2×", "amount": 1, "unit": "step",
-     "note": {"en": "Skip fixation if: (a) running live cells, (b) calcium flux assay, (c) sorting for downstream culture. Fixed cells: stable ≥48 h at 4°C in dark.", "zh": "如需活细胞（钙流、分选后培养）则跳过固定。固定细胞：4°C 避光稳定 ≥48 h。"}},
-    {"name": "7. Intracellular staining (if needed): fix+permeabilize with Cytofix/Cytoperm or FoxP3 buffer set", "amount": 1, "unit": "step",
-     "note": {"en": "Cytofix/Cytoperm (BD): 4°C 20 min, wash 2× in Perm/Wash, then add intracellular Ab (cytokines, Ki67) in Perm/Wash, 30 min 4°C. For transcription factors (FoxP3, T-bet): FoxP3/Transcription Factor Staining Buffer Set (eBioscience), 4°C overnight.", "zh": "Cytofix/Cytoperm（BD）：4°C 20 min，Perm/Wash 洗 2 次，胞内抗体（细胞因子、Ki67）加入 Perm/Wash，4°C 30 min。转录因子（FoxP3、T-bet）：FoxP3/转录因子染色缓冲液套装（eBioscience），4°C 过夜。"}},
-    {"name": "8. Final wash: 2× FACS buffer; resuspend in 200–500 µL FACS buffer; run on cytometer", "amount": 1, "unit": "step",
-     "note": {"en": "Run within 4 h for best results. Acquire ≥10,000 cells (lymphocytes) or 50,000 events in gate of interest. Set voltages using unstained controls.", "zh": "4 h 内上机效果最佳。采集 ≥10,000 个细胞（淋巴细胞）或门内 ≥50,000 个事件。用无染色对照设置电压。"}}
+    {
+      "name": "1. Prepare single-cell suspension; count and adjust to 2–5×10⁶/mL",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Dissociate tissue with gentleMACS or collagenase/trypsin. Pellet: 400×g 5 min. Resuspend in FACS buffer (facs_buffer). Aliquot 100 µL (2–5×10⁵ cells) per staining tube.",
+        "zh": "组织用 gentleMACS 或胶原酶/胰酶解离。400×g 5 min 沉淀。FACS 缓冲液重悬。每管分 100 µL（2–5×10⁵ 细胞）。"
+      }
+    },
+    {
+      "name": "2. Fc block: add anti-FcγIII/II receptor (BD Fc Block, 5 µg/mL), 15 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Prevents non-specific binding of antibodies to Fc receptors on monocytes/macrophages/NK cells. For human cells: CD16/CD32 block. For mouse: 2.4G2 clone. Omit for epithelial/cancer cell lines.",
+        "zh": "防止单核细胞/巨噬细胞/NK 细胞 Fc 受体非特异性结合。人细胞：CD16/CD32 封闭。小鼠：2.4G2 克隆。上皮/肿瘤细胞系可省略。"
+      }
+    },
+    {
+      "name": "3. Viability dye staining: add Live/Dead dye (DAPI 1 µg/mL or Zombie dye), 15–30 min, RT or 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Must stain before surface antibodies (in PBS only — no serum/BSA). DAPI (UV), 7-AAD (PE channel), Live/Dead Aqua (DAPI channel), Zombie dyes (various). Dead cells = high staining.",
+        "zh": "必须在表面抗体染色前进行（仅用 PBS——不含血清/BSA）。DAPI（UV 激发）、7-AAD（PE 通道）、Live/Dead Aqua（DAPI 通道）、Zombie 染料（多种）。死细胞染色强。"
+      }
+    },
+    {
+      "name": "4. Surface antibody staining: add antibody cocktail in FACS buffer (50–100 µL/tube), 20–30 min, 4°C, dark",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pre-titrate each antibody (typical: 0.1–1 µg/mL). Keep cold throughout. Label/mark tubes. Prepare single-color controls and FMO (fluorescence minus one) controls.",
+        "zh": "每种抗体需预先滴定（通常 0.1–1 µg/mL）。全程保持冷冻。准备单色对照和 FMO（少一荧光）对照。"
+      }
+    },
+    {
+      "name": "5. Wash 2×: add 3 mL FACS buffer; 400×g 5 min 4°C; decant; repeat",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Decant briskly or aspirate. Do not disrupt pellet. Residual wash is OK.",
+        "zh": "快速倾倒或抽吸。勿破坏沉淀。少量残余洗液无影响。"
+      }
+    },
+    {
+      "name": "6. For surface-only panel: fix in 100 µL 1–4% PFA, 20 min RT, wash 2×",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Skip fixation if: (a) running live cells, (b) calcium flux assay, (c) sorting for downstream culture. Fixed cells: stable ≥48 h at 4°C in dark.",
+        "zh": "如需活细胞（钙流、分选后培养）则跳过固定。固定细胞：4°C 避光稳定 ≥48 h。"
+      }
+    },
+    {
+      "name": "7. Intracellular staining (if needed): fix+permeabilize with Cytofix/Cytoperm or FoxP3 buffer set",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Cytofix/Cytoperm (BD): 4°C 20 min, wash 2× in Perm/Wash, then add intracellular Ab (cytokines, Ki67) in Perm/Wash, 30 min 4°C. For transcription factors (FoxP3, T-bet): FoxP3/Transcription Factor Staining Buffer Set (eBioscience), 4°C overnight.",
+        "zh": "Cytofix/Cytoperm（BD）：4°C 20 min，Perm/Wash 洗 2 次，胞内抗体（细胞因子、Ki67）加入 Perm/Wash，4°C 30 min。转录因子（FoxP3、T-bet）：FoxP3/转录因子染色缓冲液套装（eBioscience），4°C 过夜。"
+      }
+    },
+    {
+      "name": "8. Final wash: 2× FACS buffer; resuspend in 200–500 µL FACS buffer; run on cytometer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Run within 4 h for best results. Acquire ≥10,000 cells (lymphocytes) or 50,000 events in gate of interest. Set voltages using unstained controls.",
+        "zh": "4 h 内上机效果最佳。采集 ≥10,000 个细胞（淋巴细胞）或门内 ≥50,000 个事件。用无染色对照设置电压。"
+      }
+    }
   ],
   "notes": {
     "en": "Panel design rules: (1) brightest fluorochrome (PE, APC) for lowest-expression markers; (2) avoid spectral overlap of similar channels; (3) tandem dyes degrade (use fresh, avoid freeze-thaw). Compensation: required for all multicolor panels. Use UltraComp eBeads or anti-mouse Igκ beads for compensation controls. Analysis: FlowJo, FCS Express, Cytobank.",
     "zh": "面板设计原则：(1) 最亮荧光素（PE、APC）用于低表达标记；(2) 避免相邻通道光谱重叠；(3) 串联染料易降解（新鲜使用，避免冻融）。补偿校正：多色面板必须做。用 UltraComp eBeads 或抗小鼠 Igκ 磁珠做补偿对照。分析软件：FlowJo、FCS Express、Cytobank。"
   },
-  "crosslinks": ["facs_buffer", "flow_cytometry_protocol", "annexin_v_apoptosis", "cell_cycle_pi", "pfa_4"],
+  "crosslinks": [
+    "facs_buffer",
+    "flow_cytometry_protocol",
+    "annexin_v_apoptosis",
+    "cell_cycle_pi",
+    "pfa_4"
+  ],
   "ref": "Mahnke & Roederer (2007) Clin Lab Med 27:469–485; Chattopadhyay et al. (2014) Nat Protoc 9:147–154; Cossarizza et al. (2021) Eur J Immunol 51:2708",
-  "doi": "10.1038/nprot.2013.160"
+  "doi": "10.1038/nprot.2013.160",
+  "discipline": [
+    "cell",
+    "immunology"
+  ],
+  "duration": {
+    "total": "4–6 hours",
+    "hands_on": "3 hours"
+  }
 }

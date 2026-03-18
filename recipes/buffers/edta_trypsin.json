@@ -33,5 +33,18 @@
     "en": "Filter-sterilize (0.22 µm). Aliquot and store at −20°C; working aliquots at 4°C for up to 2 weeks. Pre-warm to 37°C before use. Optimize digestion time for each cell type (1–5 min). Neutralize with serum-containing medium. EDTA chelates Ca²⁺ to disrupt cell-cell junctions.",
     "zh": "0.22 µm 过滤除菌。分装后 -20°C 保存，工作液 4°C (2 周内用完)。使用前预热至 37°C。消化时间需根据细胞类型优化 (1–5 min)。加含血清培养基终止消化。EDTA 螯合 Ca²⁺ 破坏细胞间连接辅助消化。"
   },
-  "ref": "Freshney (2010) Culture of Animal Cells, 6th ed., Wiley"
+  "ref": "Freshney (2010) Culture of Animal Cells, 6th ed., Wiley",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "filter_022",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

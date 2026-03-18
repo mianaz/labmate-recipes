@@ -48,5 +48,19 @@
     "en": "Dilute SDS lysate 10× with this buffer before immunoprecipitation. Add protease inhibitors.",
     "zh": "将 SDS 裂解产物稀释 10× 后用于免疫沉淀。加蛋白酶抑制剂。"
   },
-  "ref": "Upstate/Millipore ChIP Protocol; Nelson et al. (2006) Nat Protoc 1:179–185"
+  "ref": "Upstate/Millipore ChIP Protocol; Nelson et al. (2006) Nat Protoc 1:179–185",
+  "discipline": [
+    "molecular",
+    "genomics"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

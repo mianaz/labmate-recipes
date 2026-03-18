@@ -3,30 +3,108 @@
   "name": "Resazurin (alamarBlue) Cell Viability Assay",
   "nameCn": "刃天青（alamarBlue）细胞活力检测",
   "category": "protocol",
-  "tags": ["cell viability", "proliferation", "resazurin", "alamarBlue", "fluorometric", "colorimetric", "non-destructive", "cell biology", "cytotoxicity"],
+  "tags": [
+    "cell viability",
+    "proliferation",
+    "resazurin",
+    "alamarBlue",
+    "fluorometric",
+    "colorimetric",
+    "non-destructive",
+    "cell biology",
+    "cytotoxicity"
+  ],
   "components": [
-    {"name": "1. Seed cells in 96-well plate; overnight attachment", "amount": 1, "unit": "step",
-     "note": {"en": "5,000–20,000 cells/well, 100 µL complete medium. Fill edge wells with PBS. For bacteria/yeast: use 200 µL/well. Same edge-effect precautions as MTT/CCK-8.", "zh": "每孔 5,000–20,000 细胞，100 µL 完全培养基。边缘孔加 PBS。细菌/酵母用 200 µL/孔。与 MTT/CCK-8 相同的边缘效应注意事项。"}},
-    {"name": "2. Prepare resazurin stock: 0.15 mg/mL (440 µM) in PBS; filter-sterilize 0.22 µm", "amount": 1, "unit": "step",
-     "note": {"en": "Stock: dissolve 1.5 mg resazurin sodium salt (MW 251.17) in 10 mL PBS. Sterile filter. Store 4°C in dark (stable 3 months) or −20°C long-term. Solution should be dark blue/purple (oxidized = non-fluorescent).", "zh": "母液：1.5 mg 刃天青钠盐（MW 251.17）溶于 10 mL PBS。0.22 µm 过滤除菌。4°C 避光保存（稳定 3 个月）或 −20°C 长期保存。溶液应为深蓝/紫色（氧化态 = 无荧光）。"}},
-    {"name": "3. Add treatment/drug; incubate 24–72 h", "amount": 1, "unit": "step",
-     "note": {"en": "Same controls as MTT: untreated cells, blank (medium only), solvent control. For multi-timepoint: plate separate plates per timepoint.", "zh": "与 MTT 相同对照：未处理细胞、空白孔（仅培养基）、溶剂对照。多时间点测定：每个时间点单独铺板。"}},
-    {"name": "4. Add resazurin: 10 µL of 0.15 mg/mL stock per 100 µL medium (final 0.015 mg/mL = 10% v/v)", "amount": 1, "unit": "step",
-     "note": {"en": "OR: use commercial alamarBlue (BioRad) at 10% v/v directly. Do NOT remove medium. Wrap plate in foil.", "zh": "或：直接用商品化 alamarBlue（BioRad）按 10% v/v 加入。不去除培养基。用锡纸包裹培养板。"}},
-    {"name": "5. Incubate 1–4 h at 37°C, 5% CO₂ (or overnight for slow metabolizers)", "amount": 1, "unit": "step",
-     "note": {"en": "Monitor color shift: blue → pink/red = reduction by viable cells. Optimal: 20–40% reduction at midpoint. Bacteria/yeast: 2–6 h at appropriate growth temperature.", "zh": "监测颜色变化：蓝色→粉红/红色 = 活细胞还原。最佳：中间时间点还原率 20–40%。细菌/酵母：在适当生长温度下 2–6 h。"}},
-    {"name": "6A. Fluorometric reading (preferred): Ex 560 nm / Em 590 nm", "amount": 1, "unit": "step",
-     "note": {"en": "10–100× more sensitive than absorbance. Use black-sided clear-bottom 96-well plates. Gain: set to give RFU ~50,000–100,000 for controls.", "zh": "灵敏度比比色法高 10–100 倍。使用黑边透明底 96 孔板。增益：设定使对照孔 RFU 约 50,000–100,000。"}},
-    {"name": "6B. Colorimetric reading (alternative): A₅₇₀ nm (reference 600 nm)", "amount": 1, "unit": "step",
-     "note": {"en": "Less sensitive but works with standard plate reader. % Reduction = [(εox at 600 × A570) − (εox at 570 × A600)] / [(εred at 570 × A600_control) − (εred at 600 × A570_control)] × 100. Or use simplified: OD570/OD600 ratio.", "zh": "灵敏度较低但普通酶标仪即可。公式见英文（需使用摩尔吸收系数）。简化版：OD570/OD600 比值。"}},
-    {"name": "7. Calculate % viability", "amount": 1, "unit": "step",
-     "note": {"en": "% Viability = (RFU_treated − RFU_blank) / (RFU_control − RFU_blank) × 100. Non-destructive: can remove 10 µL aliquot for reading, return plate to incubator, re-read at later timepoints.", "zh": "% 活力 = (RFU处理 − RFU空白) / (RFU对照 − RFU空白) × 100。非破坏性：取 10 µL 读完后放回孵育箱，可在不同时间点重复读取。"}}
+    {
+      "name": "1. Seed cells in 96-well plate; overnight attachment",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "5,000–20,000 cells/well, 100 µL complete medium. Fill edge wells with PBS. For bacteria/yeast: use 200 µL/well. Same edge-effect precautions as MTT/CCK-8.",
+        "zh": "每孔 5,000–20,000 细胞，100 µL 完全培养基。边缘孔加 PBS。细菌/酵母用 200 µL/孔。与 MTT/CCK-8 相同的边缘效应注意事项。"
+      }
+    },
+    {
+      "name": "2. Prepare resazurin stock: 0.15 mg/mL (440 µM) in PBS; filter-sterilize 0.22 µm",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Stock: dissolve 1.5 mg resazurin sodium salt (MW 251.17) in 10 mL PBS. Sterile filter. Store 4°C in dark (stable 3 months) or −20°C long-term. Solution should be dark blue/purple (oxidized = non-fluorescent).",
+        "zh": "母液：1.5 mg 刃天青钠盐（MW 251.17）溶于 10 mL PBS。0.22 µm 过滤除菌。4°C 避光保存（稳定 3 个月）或 −20°C 长期保存。溶液应为深蓝/紫色（氧化态 = 无荧光）。"
+      }
+    },
+    {
+      "name": "3. Add treatment/drug; incubate 24–72 h",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Same controls as MTT: untreated cells, blank (medium only), solvent control. For multi-timepoint: plate separate plates per timepoint.",
+        "zh": "与 MTT 相同对照：未处理细胞、空白孔（仅培养基）、溶剂对照。多时间点测定：每个时间点单独铺板。"
+      }
+    },
+    {
+      "name": "4. Add resazurin: 10 µL of 0.15 mg/mL stock per 100 µL medium (final 0.015 mg/mL = 10% v/v)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "OR: use commercial alamarBlue (BioRad) at 10% v/v directly. Do NOT remove medium. Wrap plate in foil.",
+        "zh": "或：直接用商品化 alamarBlue（BioRad）按 10% v/v 加入。不去除培养基。用锡纸包裹培养板。"
+      }
+    },
+    {
+      "name": "5. Incubate 1–4 h at 37°C, 5% CO₂ (or overnight for slow metabolizers)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Monitor color shift: blue → pink/red = reduction by viable cells. Optimal: 20–40% reduction at midpoint. Bacteria/yeast: 2–6 h at appropriate growth temperature.",
+        "zh": "监测颜色变化：蓝色→粉红/红色 = 活细胞还原。最佳：中间时间点还原率 20–40%。细菌/酵母：在适当生长温度下 2–6 h。"
+      }
+    },
+    {
+      "name": "6A. Fluorometric reading (preferred): Ex 560 nm / Em 590 nm",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "10–100× more sensitive than absorbance. Use black-sided clear-bottom 96-well plates. Gain: set to give RFU ~50,000–100,000 for controls.",
+        "zh": "灵敏度比比色法高 10–100 倍。使用黑边透明底 96 孔板。增益：设定使对照孔 RFU 约 50,000–100,000。"
+      }
+    },
+    {
+      "name": "6B. Colorimetric reading (alternative): A₅₇₀ nm (reference 600 nm)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Less sensitive but works with standard plate reader. % Reduction = [(εox at 600 × A570) − (εox at 570 × A600)] / [(εred at 570 × A600_control) − (εred at 600 × A570_control)] × 100. Or use simplified: OD570/OD600 ratio.",
+        "zh": "灵敏度较低但普通酶标仪即可。公式见英文（需使用摩尔吸收系数）。简化版：OD570/OD600 比值。"
+      }
+    },
+    {
+      "name": "7. Calculate % viability",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "% Viability = (RFU_treated − RFU_blank) / (RFU_control − RFU_blank) × 100. Non-destructive: can remove 10 µL aliquot for reading, return plate to incubator, re-read at later timepoints.",
+        "zh": "% 活力 = (RFU处理 − RFU空白) / (RFU对照 − RFU空白) × 100。非破坏性：取 10 µL 读完后放回孵育箱，可在不同时间点重复读取。"
+      }
+    }
   ],
   "notes": {
     "en": "Key advantages: (1) Fully non-destructive — can continue culturing after reading; (2) Fluorometric mode: highly sensitive for low cell numbers (100–500 cells); (3) Works with all cell types including primary cells, bacteria, yeast, fungi. Pitfalls: some compounds (quinones, flavonoids) directly reduce resazurin (false positive) — confirm with alternative assay. Stable endpoint: resorufin (pink) is stable for hours; fully reduced = colorless (false low if over-reduced).",
     "zh": "关键优势：(1) 完全非破坏性——读取后可继续培养；(2) 荧光模式灵敏度极高，适合低细胞数（100–500 个细胞）；(3) 适用于所有细胞类型，包括原代细胞、细菌、酵母、真菌。注意：某些化合物（醌类、黄酮类）可直接还原刃天青（假阳性）——用其他方法验证。终点稳定：resorufin（粉红色）稳定数小时；过度还原会变无色（假阴性）。"
   },
-  "crosslinks": ["mtt_assay", "cck8_proliferation", "clonogenic_assay", "trypan_blue_counting"],
+  "crosslinks": [
+    "mtt_assay",
+    "cck8_proliferation",
+    "clonogenic_assay",
+    "trypan_blue_counting"
+  ],
   "ref": "O'Brien et al. (2000) Eur J Biochem 267:5421–5426; Rampersad (2012) Sensors 12:12347–12360; alamarBlue Assay User Guide (BioRad #BUL0012)",
-  "doi": "10.1046/j.1432-1327.2000.01606.x"
+  "doi": "10.1046/j.1432-1327.2000.01606.x",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "1–3 days",
+    "hands_on": "1 hour"
+  }
 }

@@ -26,5 +26,18 @@
     "en": "Apply to PFA-fixed cells only. Incubate at RT for 10–15 min. Triton concentration can range 0.1–0.5%; higher concentrations increase permeabilization but reduce morphology preservation. Use 0.5% for nuclear antigens. Wash 3× with PBS before immunostaining.",
     "zh": "用于固定后的细胞透化 (PFA 固定后)。室温处理 10–15 min。Triton 浓度 0.1–0.5% 可选，浓度越高透化越强但形态保存越差。对于核抗原，0.5% 效果更好。使用后 PBS 洗 3 次再做免疫染色。"
   },
-  "ref": "Donaldson (2015) Curr Protoc Cell Biol 69:4.3.1–4.3.7"
+  "ref": "Donaldson (2015) Curr Protoc Cell Biol 69:4.3.1–4.3.7",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

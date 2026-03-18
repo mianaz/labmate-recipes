@@ -127,5 +127,25 @@
     "lentiviral_titer_functional",
     "calcium_phosphate_transfection"
   ],
-  "doi": "10.1038/nprot.2006.37"
+  "doi": "10.1038/nprot.2006.37",
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "duration": {
+    "total": "5–7 days",
+    "hands_on": "3 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Day 2 harvest filtered and stored",
+      "condition": "4°C",
+      "duration": "48 hours"
+    },
+    {
+      "afterStep": "Final virus aliquots frozen",
+      "condition": "−80°C single-use aliquots",
+      "duration": "12 months"
+    }
+  ]
 }

@@ -44,5 +44,19 @@
     "zh": "临用加 Proteinase K 至 100 µg/mL。55°C 过夜消化。95°C 灭活 10 min。1 µL 直接用于 PCR。"
   },
   "ref": "Truett et al. (2000) BioTechniques 29:52",
-  "source": "BioTechniques"
+  "source": "BioTechniques",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Lysis buffer for genomic DNA extraction from mouse tail or ear clips.",
+    "zh": "裂解缓冲液，用于从小鼠尾尖或耳朵提取基因组 DNA。"
+  }
 }

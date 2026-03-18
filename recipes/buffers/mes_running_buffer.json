@@ -48,5 +48,18 @@
     "en": "Dilute to 1× before use. Optimized for NuPAGE Bis-Tris gels; better resolution for low MW proteins (<30 kDa) compared to MOPS buffer. Do not adjust pH.",
     "zh": "20× 母液。使用前稀释至 1×。适用于 NuPAGE Bis-Tris 凝胶，分辨低分子量蛋白 (<30 kDa) 优于 MOPS。不要调 pH。"
   },
-  "ref": "Invitrogen NuPAGE Technical Guide (Thermo Fisher MAN0003690)"
+  "ref": "Invitrogen NuPAGE Technical Guide (Thermo Fisher MAN0003690)",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "MES SDS running buffer for resolving low-MW proteins (3.5–60 kDa) on Bis-Tris gels.",
+    "zh": "MES SDS 电泳缓冲液，用于 Bis-Tris 胶上分辨低分子量蛋白（3.5–60 kDa）。"
+  }
 }

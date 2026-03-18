@@ -49,5 +49,19 @@
     "en": "Add protease/phosphatase inhibitors before use. For Co-IP use mild detergent (0.5% NP-40) to preserve interactions. Lyse on ice 30 min, centrifuge at 4°C 14,000×g for 15 min.",
     "zh": "使用前加蛋白酶/磷酸酶抑制剂。Co-IP 用温和去垢剂 (0.5% NP-40) 保持蛋白互作。冰上裂解 30 min，4°C 14,000×g 离心 15 min。"
   },
-  "ref": "Miernyk & Thelen (2008) Plant J 55:415–425; Nature Protocols"
+  "ref": "Miernyk & Thelen (2008) Plant J 55:415–425; Nature Protocols",
+  "discipline": [
+    "protein",
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Add protease/phosphatase inhibitors fresh"
+  },
+  "usage": {
+    "en": "Native lysis buffer optimized for immunoprecipitation (IP) and Co-IP experiments.",
+    "zh": "专为 IP 和 Co-IP 优化的天然条件裂解缓冲液。"
+  }
 }

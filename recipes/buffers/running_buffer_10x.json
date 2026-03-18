@@ -34,5 +34,18 @@
   "notes": {
     "en": "Do NOT add SDS when making 10×. Add SDS when diluting to 1× (or add separately). Do not adjust pH — should be ~8.3 without adjustment. Do not autoclave.",
     "zh": "配 10× 时不加 SDS。稀释成 1× 时加 SDS（或另加）。不调 pH——不调即为 ~8.3。不可高压灭菌。"
+  },
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
   }
 }

@@ -44,5 +44,19 @@
     "zh": "通用体外激酶检测缓冲液。DTT 和磷酸酶抑制剂需临用加入。"
   },
   "ref": "Cell Signaling Technology #9802",
-  "source": "CST"
+  "source": "CST",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Add ATP fresh before use"
+  },
+  "usage": {
+    "en": "Reaction buffer for in vitro kinase assays with ATP as phosphate donor.",
+    "zh": "体外激酶反应缓冲液，以 ATP 作为磷酸供体。"
+  }
 }

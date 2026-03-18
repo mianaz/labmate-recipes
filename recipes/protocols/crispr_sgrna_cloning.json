@@ -50,5 +50,12 @@
     "heat_shock_transformation",
     "colony_pcr"
   ],
-  "source": "Nature Protocols"
+  "source": "Nature Protocols",
+  "discipline": [
+    "molecular"
+  ],
+  "duration": {
+    "total": "3–5 days",
+    "hands_on": "4 hours"
+  }
 }

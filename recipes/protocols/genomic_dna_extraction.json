@@ -60,5 +60,13 @@
     "en": "Phenol-chloroform method: replace step 3 with equal volume phenol:chloroform:IAA (25:24:1) extraction → chloroform:IAA extraction → ethanol precipitation. Use wide-bore tips for high-MW gDNA to avoid shearing. Blood samples: lyse RBCs first. FFPE tissue: deparaffinize first. Column extraction (DNeasy) is faster but yields lower MW DNA.",
     "zh": "酚氯仿提取法：步骤 3 换为等体积 phenol:chloroform:IAA (25:24:1) 提取 → 再用 chloroform:IAA 提取 → 乙醇沉淀。高分子量 gDNA 用宽口枪头操作，避免剪切。血液样品需先裂解红细胞。FFPE 组织需去石蜡。柱提取法 (DNeasy) 更快但产量和分子量较低。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning; QIAGEN DNeasy Blood & Tissue Handbook"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; QIAGEN DNeasy Blood & Tissue Handbook",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "2–3 hours",
+    "hands_on": "2 hours"
+  }
 }

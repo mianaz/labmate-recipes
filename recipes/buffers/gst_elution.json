@@ -38,5 +38,19 @@
   "crosslinks": [
     "gst_tag_purification",
     "protein_dialysis"
-  ]
+  ],
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "Use fresh",
+    "duration": "24 hours",
+    "sterile": "not_required",
+    "notes": "Reduced glutathione oxidizes rapidly; prepare fresh or aliquot at -80°C"
+  },
+  "usage": {
+    "en": "Reduced glutathione elution buffer for releasing GST-fusion proteins from Glutathione Sepharose.",
+    "zh": "还原型谷胱甘肽洗脱液，用于从谷胱甘肽琼脂糖中释放 GST 融合蛋白。"
+  }
 }

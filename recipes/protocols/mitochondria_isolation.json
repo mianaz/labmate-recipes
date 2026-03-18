@@ -3,32 +3,114 @@
   "name": "Mitochondria Isolation by Differential Centrifugation",
   "nameCn": "差速离心法分离线粒体",
   "category": "protocol",
-  "tags": ["mitochondria", "organelle isolation", "differential centrifugation", "cell biology", "bioenergetics", "oxidative phosphorylation"],
+  "tags": [
+    "mitochondria",
+    "organelle isolation",
+    "differential centrifugation",
+    "cell biology",
+    "bioenergetics",
+    "oxidative phosphorylation"
+  ],
   "components": [
-    {"name": "1. Collect tissue (0.5–2 g liver/heart) or cells (≥5×10⁷); keep ice-cold", "amount": 1, "unit": "step",
-     "note": {"en": "All steps at 4°C. Pre-chill all tools, buffers, centrifuge rotors.", "zh": "全程 4°C 操作。预冷所有工具、缓冲液、离心转头。"}},
-    {"name": "2. Mince tissue; wash 3× ice-cold mitochondria_buffer", "amount": 1, "unit": "step",
-     "note": {"en": "Transfer to Dounce homogenizer, 5–10 mL buffer/g tissue.", "zh": "转入 Dounce 匀浆器，每克组织加 5–10 mL 缓冲液。"}},
-    {"name": "3. Homogenize: 10–15 strokes with tight pestle", "amount": 1, "unit": "step",
-     "note": {"en": "Gentle, even pressure. Over-homogenization destroys mitochondria. Cells: N₂ cavitation (1,000 psi, 10 min, 4°C) or 25G syringe needle × 10 strokes.", "zh": "轻柔均匀推拉。过度匀浆破坏线粒体。细胞：氮气空化（1,000 psi，10 min，4°C）或 25G 针头 × 10 次。"}},
-    {"name": "4. Remove debris: 600×g, 10 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Keep supernatant (PNS). Discard pellet (nuclei, unbroken cells). Repeat if pellet is large.", "zh": "保留上清（PNS）。弃沉淀（核、未破碎细胞）。沉淀大时重复一次。"}},
-    {"name": "5. Mitochondria spin: 7,000×g, 10 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Supernatant = cytoplasmic fraction. Pellet = crude mitochondria.", "zh": "上清 = 细胞质组分。沉淀 = 粗线粒体。"}},
-    {"name": "6. Wash: resuspend pellet in 5 mL buffer; repeat 7,000×g spin (×2–3)", "amount": 1, "unit": "step",
-     "note": {"en": "Pellet becomes tighter and less brownish with each wash.", "zh": "每次洗涤后沉淀更紧实、颜色更浅（去除肌红蛋白和细胞色素 c）。"}},
-    {"name": "7. Optional: Percoll gradient for pure mitochondria", "amount": 1, "unit": "step",
-     "note": {"en": "18%/30% Percoll gradient in buffer. 95,000×g 30 min 4°C (SW-41 Ti). Mitochondria at 18/30% interface. Wash 2× at 6,000×g 10 min.", "zh": "18%/30% Percoll 梯度（缓冲液配制）。95,000×g 30 min 4°C（SW-41 Ti 转头）。线粒体在 18/30% 界面。6,000×g 洗 2 次。"}},
-    {"name": "8. Resuspend in assay buffer (without BSA for functional assays); quantify by BCA", "amount": 1, "unit": "step",
-     "note": {"en": "1–10 mg/mL protein. Integrity: cytochrome c oxidase activity ± detergent.", "zh": "蛋白浓度 1–10 mg/mL。完整性验证：细胞色素 c 氧化酶活性（± 去污剂）。"}},
-    {"name": "9. Functional integrity check: OCR (Seahorse/Clark electrode) or JC-1/TMRM", "amount": 1, "unit": "step",
-     "note": {"en": "Healthy mito: JC-1 red aggregates; depolarized: green monomers. Use within 4–6 h of isolation.", "zh": "健康线粒体：JC-1 红色聚集体；去极化：绿色单体。分离后 4–6 h 内使用。"}}
+    {
+      "name": "1. Collect tissue (0.5–2 g liver/heart) or cells (≥5×10⁷); keep ice-cold",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "All steps at 4°C. Pre-chill all tools, buffers, centrifuge rotors.",
+        "zh": "全程 4°C 操作。预冷所有工具、缓冲液、离心转头。"
+      }
+    },
+    {
+      "name": "2. Mince tissue; wash 3× ice-cold mitochondria_buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Transfer to Dounce homogenizer, 5–10 mL buffer/g tissue.",
+        "zh": "转入 Dounce 匀浆器，每克组织加 5–10 mL 缓冲液。"
+      }
+    },
+    {
+      "name": "3. Homogenize: 10–15 strokes with tight pestle",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Gentle, even pressure. Over-homogenization destroys mitochondria. Cells: N₂ cavitation (1,000 psi, 10 min, 4°C) or 25G syringe needle × 10 strokes.",
+        "zh": "轻柔均匀推拉。过度匀浆破坏线粒体。细胞：氮气空化（1,000 psi，10 min，4°C）或 25G 针头 × 10 次。"
+      }
+    },
+    {
+      "name": "4. Remove debris: 600×g, 10 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep supernatant (PNS). Discard pellet (nuclei, unbroken cells). Repeat if pellet is large.",
+        "zh": "保留上清（PNS）。弃沉淀（核、未破碎细胞）。沉淀大时重复一次。"
+      }
+    },
+    {
+      "name": "5. Mitochondria spin: 7,000×g, 10 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Supernatant = cytoplasmic fraction. Pellet = crude mitochondria.",
+        "zh": "上清 = 细胞质组分。沉淀 = 粗线粒体。"
+      }
+    },
+    {
+      "name": "6. Wash: resuspend pellet in 5 mL buffer; repeat 7,000×g spin (×2–3)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet becomes tighter and less brownish with each wash.",
+        "zh": "每次洗涤后沉淀更紧实、颜色更浅（去除肌红蛋白和细胞色素 c）。"
+      }
+    },
+    {
+      "name": "7. Optional: Percoll gradient for pure mitochondria",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "18%/30% Percoll gradient in buffer. 95,000×g 30 min 4°C (SW-41 Ti). Mitochondria at 18/30% interface. Wash 2× at 6,000×g 10 min.",
+        "zh": "18%/30% Percoll 梯度（缓冲液配制）。95,000×g 30 min 4°C（SW-41 Ti 转头）。线粒体在 18/30% 界面。6,000×g 洗 2 次。"
+      }
+    },
+    {
+      "name": "8. Resuspend in assay buffer (without BSA for functional assays); quantify by BCA",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "1–10 mg/mL protein. Integrity: cytochrome c oxidase activity ± detergent.",
+        "zh": "蛋白浓度 1–10 mg/mL。完整性验证：细胞色素 c 氧化酶活性（± 去污剂）。"
+      }
+    },
+    {
+      "name": "9. Functional integrity check: OCR (Seahorse/Clark electrode) or JC-1/TMRM",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Healthy mito: JC-1 red aggregates; depolarized: green monomers. Use within 4–6 h of isolation.",
+        "zh": "健康线粒体：JC-1 红色聚集体；去极化：绿色单体。分离后 4–6 h 内使用。"
+      }
+    }
   ],
   "notes": {
     "en": "Differential centrifugation gives ~70% pure mitochondria. For functional studies, Percoll gradient recommended. Keep at 4°C; use within 4–6 h. WB markers: VDAC/TOMM20 (outer membrane), HSP60 (matrix), cytochrome c (IMS).",
     "zh": "差速离心纯度约 70%。功能性实验推荐 Percoll 梯度纯化。4°C 保存，4–6 h 内使用。WB 标记：VDAC/TOMM20（外膜）、HSP60（基质）、细胞色素 c（膜间隙）。"
   },
-  "crosslinks": ["mitochondria_buffer", "subcellular_fractionation", "bca_protein_assay"],
+  "crosslinks": [
+    "mitochondria_buffer",
+    "subcellular_fractionation",
+    "bca_protein_assay"
+  ],
   "ref": "Frezza et al. (2007) Nat Protoc 2:287–295; Wieckowski et al. (2009) Nat Protoc 4:1582–1590",
-  "doi": "10.1038/nprot.2007.44"
+  "doi": "10.1038/nprot.2007.44",
+  "discipline": [
+    "cell",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "3 hours"
+  }
 }

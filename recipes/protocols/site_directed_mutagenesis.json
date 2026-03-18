@@ -45,5 +45,12 @@
     "en": "Introduce point mutations, insertions, or deletions into plasmid DNA. Based on inverse PCR with phosphorylation, ligation, and DpnI digestion of template in a single KLD step.",
     "zh": "在质粒 DNA 中引入点突变、插入或缺失。基于反向 PCR，在单一 KLD 步骤中完成磷酸化、连接和 DpnI 消化模板。"
   },
-  "ref": "NEB Q5 SDM Kit Protocol E0554 (protocols.io doi:10.17504/protocols.io.bddei23e)"
+  "ref": "NEB Q5 SDM Kit Protocol E0554 (protocols.io doi:10.17504/protocols.io.bddei23e)",
+  "discipline": [
+    "molecular"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "2 hours"
+  }
 }

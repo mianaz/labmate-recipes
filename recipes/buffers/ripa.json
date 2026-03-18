@@ -48,5 +48,19 @@
     "en": "Add protease inhibitor cocktail (1:100) and phosphatase inhibitors before use. Work on ice, store at 4°C.",
     "zh": "使用前加入蛋白酶抑制剂 cocktail (1:100) 和磷酸酶抑制剂。冰上操作，4°C 保存。"
   },
-  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29–40; Abcam RIPA Buffer Recipe"
+  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29–40; Abcam RIPA Buffer Recipe",
+  "discipline": [
+    "protein",
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Add protease inhibitors fresh; store inhibitor-free base at 4°C"
+  },
+  "usage": {
+    "en": "Stringent lysis buffer for total protein extraction from cells/tissues for WB and IP.",
+    "zh": "裂解缓冲液，用于 WB 和 IP 的全细胞蛋白提取。"
+  }
 }

@@ -70,5 +70,12 @@
     "en": "Controls: (1) no ligase → assess background; (2) no insert → assess vector self-ligation; (3) uncut vector → assess transformation efficiency. Insert calculation: ng insert = (ng vector × insert bp / vector bp) × molar ratio. Quick Ligation Kit (NEB) completes in 5 min.",
     "zh": "对照组：(1) 无连接酶对照 → 评估自连背景; (2) 无 insert 对照 → 评估载体自连; (3) 未切 vector 对照 → 评估转化效率。Insert 计算公式：ng insert = (ng vector × insert bp / vector bp) × molar ratio。Quick Ligation Kit (NEB) 可 5 min 完成。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning; NEB T4 DNA Ligase protocol"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; NEB T4 DNA Ligase protocol",
+  "discipline": [
+    "molecular"
+  ],
+  "duration": {
+    "total": "2 hours or overnight",
+    "hands_on": "20 minutes"
+  }
 }

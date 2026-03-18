@@ -40,5 +40,18 @@
     "en": "Prepare Tris-EDTA, autoclave, cool to RT, then add RNase A. RNase A is heat-sensitive — do not autoclave. Store at 4°C.",
     "zh": "先配 Tris-EDTA，高压灭菌后冷却，再加 RNase A。RNase A 热敏，不可高压灭菌。4°C 保存。"
   },
-  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513; Sambrook & Russell (2001)"
+  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513; Sambrook & Russell (2001)",
+  "discipline": [
+    "molecular"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Add RNase A fresh or store P1+RNase at 4°C"
+  },
+  "usage": {
+    "en": "Resuspension buffer for alkaline lysis miniprep plasmid extraction (contains RNase A).",
+    "zh": "碱裂解 miniprep 质粒提取的重悬缓冲液（含 RNase A）。"
+  }
 }

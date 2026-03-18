@@ -68,5 +68,12 @@
     "en": "Over-confluence causes contact inhibition and phenotypic changes. Some cell lines are trypsin-sensitive (e.g., HEK293) — use Accutase or TrypLE instead. Suspension cells: dilute directly. Track passage number — characteristics may change after 20-30 passages. Freeze backup samples at each passage. Use Ca²⁺/Mg²⁺-free PBS.",
     "zh": "过度汇合会导致接触抑制和表型变化。部分细胞系对胰酶敏感（如 HEK293），用 Accutase 或 TrypLE 代替。悬浮细胞直接稀释传代。记录传代数——超过 20–30 代后细胞特性可能改变。每次传代预留样品冻存。用不含 Ca²⁺/Mg²⁺ 的 PBS。"
   },
-  "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 13; ATCC Cell Culture Guide"
+  "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 13; ATCC Cell Culture Guide",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "20–30 minutes",
+    "hands_on": "20 minutes"
+  }
 }

@@ -33,5 +33,18 @@
     "en": "Dissolve potassium acetate, adjust pH to 5.5 with glacial acetic acid. K⁺ precipitates SDS (forming KDS), co-precipitating denatured proteins and genomic DNA. Plasmid DNA remains in the supernatant.",
     "zh": "溶解醋酸钾，用冰醋酸调 pH 至 5.5。加入后轻柔混匀。K⁺ 使 SDS 沉淀（形成 KDS），携带变性蛋白和基因组 DNA 一起沉淀。质粒 DNA 留在上清。"
   },
-  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513"
+  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513",
+  "discipline": [
+    "molecular"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Neutralization/precipitation buffer for precipitating cell debris in miniprep plasmid extraction.",
+    "zh": "中和/沉淀缓冲液，用于 miniprep 中沉淀细胞碎片。"
+  }
 }

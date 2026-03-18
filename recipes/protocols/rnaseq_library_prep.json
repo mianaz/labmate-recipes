@@ -3,34 +3,143 @@
   "name": "RNA-seq Library Preparation (PolyA Selection)",
   "nameCn": "RNA-seq 建库（PolyA 富集法）",
   "category": "protocol",
-  "tags": ["RNA-seq", "transcriptomics", "library preparation", "NGS", "polyA selection", "RNA", "Illumina", "mRNA", "genomics"],
+  "tags": [
+    "RNA-seq",
+    "transcriptomics",
+    "library preparation",
+    "NGS",
+    "polyA selection",
+    "RNA",
+    "Illumina",
+    "mRNA",
+    "genomics"
+  ],
   "components": [
-    {"name": "1. RNA extraction and QC", "amount": 1, "unit": "step",
-     "note": {"en": "trizol_extraction or rna_column_extraction. Bioanalyzer RIN ≥7.0 (≥8 preferred). Nanodrop: A260/280 ≥2.0, A260/230 ≥1.8. Qubit RNA HS for accurate quantification.", "zh": "trizol_extraction 或 rna_column_extraction。Bioanalyzer RIN ≥7.0（≥8 优选）。Nanodrop：A260/280 ≥2.0、A260/230 ≥1.8。Qubit RNA HS 精确定量。"}},
-    {"name": "2. Input: 100 ng–1 µg total RNA (optimal 500 ng)", "amount": 1, "unit": "step",
-     "note": {"en": "Degraded RNA: use RiboZero rRNA depletion instead of polyA. Single-cell: 10× Chromium or Smart-seq2.", "zh": "降解 RNA：用 RiboZero rRNA 去除替代 polyA。单细胞：10× Chromium 或 Smart-seq2。"}},
-    {"name": "3. PolyA selection: oligo-dT magnetic beads, 65°C 5 min → RT 5 min → wash × 2 → elute 80°C 2 min; repeat once", "amount": 1, "unit": "step",
-     "note": {"en": "2× binding buffer: 10 mM Tris pH 7.5, 500 mM LiCl, 1 mM EDTA. Double selection reduces rRNA contamination to <5%.", "zh": "2× 结合缓冲液：10 mM Tris pH 7.5、500 mM LiCl、1 mM EDTA。双次选择将 rRNA 污染降至 <5%。"}},
-    {"name": "4. Fragmentation: 94°C, 2–8 min in First Strand Buffer", "amount": 1, "unit": "step",
-     "note": {"en": "Target 150–300 bp inserts for Illumina short-read. Stop with 0.5 M EDTA. 2 min → ~300 bp; 8 min → ~130 bp.", "zh": "目标片段 150–300 bp（Illumina 短读）。0.5 M EDTA 终止。2 min → ~300 bp；8 min → ~130 bp。"}},
-    {"name": "5. First-strand cDNA: random hexamers + RT (SuperScript III/IV)", "amount": 1, "unit": "step",
-     "note": {"en": "65°C 5 min (denature) → ice 1 min → add RT mix (1× FS Buffer, 5 mM DTT, RNaseOUT, RT enzyme) → 25°C 10 min → 50°C 50 min → 70°C 15 min → RNase H 37°C 20 min.", "zh": "65°C 5 min（变性）→ 冰 1 min → 加 RT 混合物（1× FS 缓冲液、5 mM DTT、RNaseOUT、逆转录酶）→ 25°C 10 min → 50°C 50 min → 70°C 15 min → RNase H 37°C 20 min。"}},
-    {"name": "6. Second-strand cDNA: DNA Pol I + E. coli ligase + RNase H, 16°C 2.5 h", "amount": 1, "unit": "step",
-     "note": {"en": "For strand-specific: replace dTTP with dUTP. Purify with 1.8× AMPure XP (SPRI) beads.", "zh": "链特异性建库：将 dTTP 替换为 dUTP。1.8× AMPure XP（SPRI）磁珠纯化。"}},
-    {"name": "7. End repair + dA-tailing", "amount": 1, "unit": "step",
-     "note": {"en": "End repair: T4 DNA Pol + T4 PNK + Klenow, 30°C 30 min. dA-tailing: Klenow (exo-), 37°C 30 min. Purify 1× AMPure XP.", "zh": "末端修复：T4 DNA Pol + T4 PNK + Klenow，30°C 30 min。加 A 尾：Klenow（exo-），37°C 30 min。1× AMPure XP 纯化。"}},
-    {"name": "8. Adapter ligation: dual-index Y-adapters, T4 ligase, RT 15 min", "amount": 1, "unit": "step",
-     "note": {"en": "Adapter:insert 10:1 molar. Heat inactivate 65°C 10 min. Size select: 0.8× then 0.2× AMPure XP (removes adapter-dimers at ~130 bp).", "zh": "接头:插入片段 10:1 摩尔比。65°C 10 min 灭活。双面选择：0.8× + 0.2× AMPure XP（去除 ~130 bp 接头二聚体）。"}},
-    {"name": "9. PCR enrichment: 98°C 30s → [98°C 10s, 60°C 30s, 72°C 30s] × 8–14 cycles → 72°C 5 min", "amount": 1, "unit": "step",
-     "note": {"en": "8 cycles for 500 ng input; 12–14 for <100 ng. KAPA HiFi or Q5 polymerase. 1× AMPure XP cleanup.", "zh": "500 ng 投入量 8 个循环；<100 ng 用 12–14 个循环。KAPA HiFi 或 Q5 聚合酶。1× AMPure XP 纯化。"}},
-    {"name": "10. Library QC: Bioanalyzer + qPCR quantification", "amount": 1, "unit": "step",
-     "note": {"en": "Expect ~280–350 bp (insert + adapters). No adapter-dimer (<1% at 130 bp). Qubit dsDNA HS + NEBNext Library Quant qPCR. Sequence: 20–50 M 150 bp PE reads/sample.", "zh": "预期 ~280–350 bp（插入片段 + 接头）。无接头二聚体（130 bp 处 <1%）。Qubit dsDNA HS + NEBNext Library Quant qPCR 定量。测序：每样品 2,000–5,000 万条 150 bp PE reads。"}}
+    {
+      "name": "1. RNA extraction and QC",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "trizol_extraction or rna_column_extraction. Bioanalyzer RIN ≥7.0 (≥8 preferred). Nanodrop: A260/280 ≥2.0, A260/230 ≥1.8. Qubit RNA HS for accurate quantification.",
+        "zh": "trizol_extraction 或 rna_column_extraction。Bioanalyzer RIN ≥7.0（≥8 优选）。Nanodrop：A260/280 ≥2.0、A260/230 ≥1.8。Qubit RNA HS 精确定量。"
+      }
+    },
+    {
+      "name": "2. Input: 100 ng–1 µg total RNA (optimal 500 ng)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Degraded RNA: use RiboZero rRNA depletion instead of polyA. Single-cell: 10× Chromium or Smart-seq2.",
+        "zh": "降解 RNA：用 RiboZero rRNA 去除替代 polyA。单细胞：10× Chromium 或 Smart-seq2。"
+      }
+    },
+    {
+      "name": "3. PolyA selection: oligo-dT magnetic beads, 65°C 5 min → RT 5 min → wash × 2 → elute 80°C 2 min; repeat once",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "2× binding buffer: 10 mM Tris pH 7.5, 500 mM LiCl, 1 mM EDTA. Double selection reduces rRNA contamination to <5%.",
+        "zh": "2× 结合缓冲液：10 mM Tris pH 7.5、500 mM LiCl、1 mM EDTA。双次选择将 rRNA 污染降至 <5%。"
+      }
+    },
+    {
+      "name": "4. Fragmentation: 94°C, 2–8 min in First Strand Buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Target 150–300 bp inserts for Illumina short-read. Stop with 0.5 M EDTA. 2 min → ~300 bp; 8 min → ~130 bp.",
+        "zh": "目标片段 150–300 bp（Illumina 短读）。0.5 M EDTA 终止。2 min → ~300 bp；8 min → ~130 bp。"
+      }
+    },
+    {
+      "name": "5. First-strand cDNA: random hexamers + RT (SuperScript III/IV)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "65°C 5 min (denature) → ice 1 min → add RT mix (1× FS Buffer, 5 mM DTT, RNaseOUT, RT enzyme) → 25°C 10 min → 50°C 50 min → 70°C 15 min → RNase H 37°C 20 min.",
+        "zh": "65°C 5 min（变性）→ 冰 1 min → 加 RT 混合物（1× FS 缓冲液、5 mM DTT、RNaseOUT、逆转录酶）→ 25°C 10 min → 50°C 50 min → 70°C 15 min → RNase H 37°C 20 min。"
+      }
+    },
+    {
+      "name": "6. Second-strand cDNA: DNA Pol I + E. coli ligase + RNase H, 16°C 2.5 h",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "For strand-specific: replace dTTP with dUTP. Purify with 1.8× AMPure XP (SPRI) beads.",
+        "zh": "链特异性建库：将 dTTP 替换为 dUTP。1.8× AMPure XP（SPRI）磁珠纯化。"
+      }
+    },
+    {
+      "name": "7. End repair + dA-tailing",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "End repair: T4 DNA Pol + T4 PNK + Klenow, 30°C 30 min. dA-tailing: Klenow (exo-), 37°C 30 min. Purify 1× AMPure XP.",
+        "zh": "末端修复：T4 DNA Pol + T4 PNK + Klenow，30°C 30 min。加 A 尾：Klenow（exo-），37°C 30 min。1× AMPure XP 纯化。"
+      }
+    },
+    {
+      "name": "8. Adapter ligation: dual-index Y-adapters, T4 ligase, RT 15 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Adapter:insert 10:1 molar. Heat inactivate 65°C 10 min. Size select: 0.8× then 0.2× AMPure XP (removes adapter-dimers at ~130 bp).",
+        "zh": "接头:插入片段 10:1 摩尔比。65°C 10 min 灭活。双面选择：0.8× + 0.2× AMPure XP（去除 ~130 bp 接头二聚体）。"
+      }
+    },
+    {
+      "name": "9. PCR enrichment: 98°C 30s → [98°C 10s, 60°C 30s, 72°C 30s] × 8–14 cycles → 72°C 5 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "8 cycles for 500 ng input; 12–14 for <100 ng. KAPA HiFi or Q5 polymerase. 1× AMPure XP cleanup.",
+        "zh": "500 ng 投入量 8 个循环；<100 ng 用 12–14 个循环。KAPA HiFi 或 Q5 聚合酶。1× AMPure XP 纯化。"
+      }
+    },
+    {
+      "name": "10. Library QC: Bioanalyzer + qPCR quantification",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Expect ~280–350 bp (insert + adapters). No adapter-dimer (<1% at 130 bp). Qubit dsDNA HS + NEBNext Library Quant qPCR. Sequence: 20–50 M 150 bp PE reads/sample.",
+        "zh": "预期 ~280–350 bp（插入片段 + 接头）。无接头二聚体（130 bp 处 <1%）。Qubit dsDNA HS + NEBNext Library Quant qPCR 定量。测序：每样品 2,000–5,000 万条 150 bp PE reads。"
+      }
+    }
   ],
   "notes": {
     "en": "Strand-specific: replace dTTP with dUTP, then UNG digest before PCR → preserves strand info. Low input (<10 ng): Smart-seq2 or NEBNext Single Cell. rRNA depletion (RiboZero) for degraded RNA or non-polyA transcripts (lncRNA, histone mRNA).",
     "zh": "链特异性：第二链合成 dTTP→dUTP，PCR 前 UNG 酶切 → 保留链信息。低投入（<10 ng）：Smart-seq2 或 NEBNext Single Cell。降解 RNA 或非 polyA 转录本：RiboZero rRNA 去除。"
   },
-  "crosslinks": ["trizol_extraction", "rna_column_extraction", "qpcr_protocol"],
+  "crosslinks": [
+    "trizol_extraction",
+    "rna_column_extraction",
+    "qpcr_protocol"
+  ],
   "ref": "Illumina TruSeq Stranded mRNA Reference Guide 15031047; Adiconis et al. (2013) Nat Methods 10:623–629",
-  "doi": "10.1038/nmeth.2474"
+  "doi": "10.1038/nmeth.2474",
+  "discipline": [
+    "genomics",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "8 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "First-strand cDNA",
+      "condition": "−20°C",
+      "duration": "1 week"
+    },
+    {
+      "afterStep": "Adapter-ligated size-selected library",
+      "condition": "−20°C",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "Final PCR-amplified library",
+      "condition": "−20°C",
+      "duration": "12 months"
+    }
+  ]
 }

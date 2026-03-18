@@ -25,5 +25,19 @@
     "en": "Use for RNA work only. Do NOT add DEPC to Tris buffers (reacts with amine groups). Modern alternative: commercial nuclease-free water.",
     "zh": "用于 RNA 实验。不要加 DEPC 到 Tris 缓冲液（与氨基反应）。替代品：商品化无核酸酶水。"
   },
-  "ref": "CSH Protocols doi:10.1101/pdb.rec8135; Sambrook & Russell (2001) Molecular Cloning"
+  "ref": "CSH Protocols doi:10.1101/pdb.rec8135; Sambrook & Russell (2001) Molecular Cloning",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "6 months",
+    "sterile": "autoclave",
+    "notes": "Autoclave after DEPC treatment to inactivate residues"
+  },
+  "usage": {
+    "en": "DEPC-treated RNase-free water for RNA work and RNase-sensitive experiments.",
+    "zh": "DEPC 处理的无 RNase 水，用于 RNA 实验和对 RNase 敏感的操作。"
+  }
 }

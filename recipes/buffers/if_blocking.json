@@ -31,5 +31,19 @@
     "en": "Block 1 h at RT. Serum species should match the secondary antibody host. 10% donkey serum also works.",
     "zh": "封闭 1 h 室温。serum 种属应与二抗宿主一致。也可用 10% donkey serum。"
   },
-  "ref": "Donaldson (2015) Curr Protoc Cell Biol 69:4.3.1; Im et al. (2019) STAR Protoc Preview"
+  "ref": "Donaldson (2015) Curr Protoc Cell Biol 69:4.3.1; Im et al. (2019) STAR Protoc Preview",
+  "discipline": [
+    "cell",
+    "histology"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Blocking buffer for immunofluorescence (IF) to reduce nonspecific antibody binding.",
+    "zh": "免疫荧光（IF）封闭缓冲液，减少非特异性抗体结合。"
+  }
 }

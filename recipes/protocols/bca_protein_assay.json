@@ -59,5 +59,13 @@
     "en": "BCA assay is compatible with up to 5% SDS but not with reducing agents (DTT, β-ME). Standard range: 25-2000 µg/mL. For low-concentration samples, use Micro BCA kit (0.5-20 µg/mL). R² > 0.99 for standard curve. Bradford assay is an alternative (Coomassie binding, 595 nm) but incompatible with detergents.",
     "zh": "比 Bradford 更耐去垢剂（兼容 1% SDS, 1% Triton X-100）。还原剂（DTT, β-ME）和 EDTA 会干扰——需用 BCA Compatible 试剂盒或预稀释。工作液可保持稳定 24 h。样品建议做 1:5 和 1:10 两个稀释度确保在标准曲线范围内。"
   },
-  "ref": "Smith et al. (1985) Anal Biochem 150:76–85; Thermo Scientific Pierce BCA Protein Assay Kit manual"
+  "ref": "Smith et al. (1985) Anal Biochem 150:76–85; Thermo Scientific Pierce BCA Protein Assay Kit manual",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "1 hour",
+    "hands_on": "30 minutes"
+  }
 }

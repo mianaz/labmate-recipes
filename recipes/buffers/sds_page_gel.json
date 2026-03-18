@@ -50,5 +50,18 @@
     "en": "Use 30% Acrylamide/Bis (29:1) stock. Add APS and TEMED last — gel polymerizes quickly once added. Overlay with isopropanol or water-saturated butanol while resolving gel sets. Pour stacking gel after resolving is solid. Acrylamide is a neurotoxin — wear gloves.",
     "zh": "此为 10% 分离胶配方（10 mL / 2 块胶）。可在 Calculator → SDS-PAGE 中调整浓度和体积。浓缩胶另配。"
   },
-  "ref": "Laemmli (1970) Nature 227:680–685; Bio-Rad Mini-PROTEAN Manual"
+  "ref": "Laemmli (1970) Nature 227:680–685; Bio-Rad Mini-PROTEAN Manual",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 week",
+    "sterile": "not_required",
+    "notes": "Wrap in wet paper towel + plastic bag"
+  },
+  "usage": {
+    "en": "Pre-cast or hand-cast SDS-PAGE gel recipe for protein size separation.",
+    "zh": "SDS-PAGE 凝胶配方，用于蛋白质按分子量大小分离。"
+  }
 }

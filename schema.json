@@ -1,45 +1,154 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "LabMate Recipe",
+  "title": "LabMate Recipe v2",
+  "description": "Unified schema for LabMate buffers, protocols, staining reagents, and media",
   "type": "object",
   "required": ["id", "name", "category", "components"],
+
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
-    "name": { "type": "string" },
-    "nameCn": { "type": "string" },
-    "category": { "type": "string", "enum": ["buffer", "protocol", "staining", "media"] },
-    "tags": { "type": "array", "items": { "type": "string" } },
-    "volume": { "type": "number" },
-    "volumeUnit": { "type": "string" },
+    "id":     { "type": "string", "pattern": "^[a-z0-9_]+$", "description": "Unique snake_case identifier" },
+    "name":   { "type": "string", "description": "Full English name" },
+    "nameCn": { "type": "string", "description": "Full Chinese name" },
+
+    "category": {
+      "type": "string",
+      "enum": ["buffer", "protocol", "staining", "media"],
+      "description": "Top-level category (used for tab filtering)"
+    },
+
+    "discipline": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "molecular",
+          "cell",
+          "protein",
+          "rna_dna",
+          "immunology",
+          "microbiology",
+          "biochemistry",
+          "histology",
+          "genomics",
+          "general"
+        ]
+      },
+      "description": "Scientific discipline labels for fine-grained filtering"
+    },
+
+    "tags": { "type": "array", "items": { "type": "string" }, "description": "Freeform keyword tags" },
+
+    "usage": {
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "properties": { "en": { "type": "string" }, "zh": { "type": "string" } } }
+      ],
+      "description": "One-sentence description of what this buffer/reagent is used for"
+    },
+
+    "volume":     { "type": "number",  "description": "Default preparation volume (buffer/staining/media)" },
+    "volumeUnit": { "type": "string",  "description": "Unit for volume field (mL, L, etc.)" },
+
+    "storage": {
+      "type": "object",
+      "properties": {
+        "temperature": { "type": "string", "description": "e.g. 4°C, -20°C, RT, -80°C" },
+        "duration":    { "type": "string", "description": "e.g. 6 months, 1 week, use fresh" },
+        "notes":       { "type": "string", "description": "Aliquoting, light sensitivity, etc." },
+        "sterile":     {
+          "type": "string",
+          "enum": ["autoclave", "filter_022", "filter_045", "not_required"],
+          "description": "Sterilization method required"
+        }
+      },
+      "description": "Storage conditions (buffers, media, staining reagents)"
+    },
+
     "components": {
       "type": "array",
+      "description": "Reagent list (buffers/media) OR step list (protocols)",
       "items": {
         "type": "object",
         "required": ["name"],
         "properties": {
-          "name": { "type": "string" },
-          "amount": { "type": ["number", "null"] },
-          "unit": { "type": "string" },
-          "mw": { "type": "number" },
+          "name":         { "type": "string" },
+          "amount":       { "type": ["number", "null"] },
+          "unit":         { "type": "string" },
+          "concentration":{ "type": "string", "description": "Final concentration, e.g. 50 mM" },
+          "mw":           { "type": "number", "description": "Molecular weight (g/mol)" },
           "note": {
             "oneOf": [
               { "type": "string" },
               { "type": "object", "properties": { "en": { "type": "string" }, "zh": { "type": "string" } } }
             ]
           },
-          "linkedRecipe": { "type": "string" }
+          "linkedRecipe": { "type": "string", "description": "ID of a linked buffer/recipe" },
+          "optional":     { "type": "boolean", "description": "Whether this component is optional" }
         }
       }
     },
+
+    "prepSteps": {
+      "type": "array",
+      "description": "Preparation instructions for buffers/media (separate from component table)",
+      "items": {
+        "type": "object",
+        "required": ["step"],
+        "properties": {
+          "step":    { "type": "string", "description": "Instruction text" },
+          "note":    { "type": "string", "description": "Additional detail" },
+          "warning": { "type": "string", "description": "Safety or critical note" }
+        }
+      }
+    },
+
+    "duration": {
+      "type": "object",
+      "description": "Protocol experiment duration (protocols only)",
+      "properties": {
+        "total":  { "type": "string", "description": "e.g. 2 days, 4 hours" },
+        "hands_on":{ "type": "string", "description": "Active hands-on time" },
+        "notes":  { "type": "string" }
+      }
+    },
+
+    "materials": {
+      "type": "array",
+      "description": "Equipment and reagents required for a protocol",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name":         { "type": "string" },
+          "linkedRecipe": { "type": "string" },
+          "optional":     { "type": "boolean" }
+        }
+      }
+    },
+
+    "stoppingPoints": {
+      "type": "array",
+      "description": "Safe pause points within a protocol",
+      "items": {
+        "type": "object",
+        "properties": {
+          "afterStep": { "type": "string", "description": "Step id or short description" },
+          "condition": { "type": "string", "description": "Storage condition if paused here" },
+          "duration":  { "type": "string", "description": "How long you can pause" }
+        }
+      }
+    },
+
     "notes": {
       "oneOf": [
         { "type": "string" },
         { "type": "object", "properties": { "en": { "type": "string" }, "zh": { "type": "string" } } }
-      ]
+      ],
+      "description": "Troubleshooting, tips, background"
     },
-    "ref": { "type": "string" },
-    "doi": { "type": "string" },
-    "crosslinks": { "type": "array", "items": { "type": "string" } },
-    "source": { "type": "string" }
+
+    "ref":   { "type": "string",  "description": "Citation string" },
+    "doi":   { "type": "string",  "description": "DOI without https://doi.org prefix" },
+    "source":{ "type": "string",  "description": "Journal / book source" },
+    "crosslinks": { "type": "array", "items": { "type": "string" }, "description": "Related recipe IDs" }
   }
 }

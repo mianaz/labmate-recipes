@@ -43,5 +43,12 @@
   "crosslinks": [
     "matrigel_coating"
   ],
-  "source": "Nature Protocols"
+  "source": "Nature Protocols",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "6–24 hours",
+    "hands_on": "2 hours"
+  }
 }

@@ -44,5 +44,12 @@
   "crosslinks": [
     "crystal_violet_stain"
   ],
-  "source": "Nature Protocols"
+  "source": "Nature Protocols",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "1–3 weeks",
+    "hands_on": "2 hours"
+  }
 }

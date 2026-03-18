@@ -26,5 +26,18 @@
     "en": "Filter-sterilize (0.22 µm). Aliquot and store at −20°C protected from light. Add 10 µL per 100 µL medium. After 37°C 4 h incubation, discard supernatant and solubilize formazan.",
     "zh": "过滤除菌 (0.22 µm)。分装 -20°C 避光保存。使用时每孔加 10 µL/100 µL 培养基。37°C 4 h 后弃上清，加 DMSO 150 µL 溶解紫色结晶。490–570 nm 读数。"
   },
-  "ref": "Mosmann (1983) J Immunol Methods 65:55–63; van Meerloo et al. (2011) Methods Mol Biol 731:237–245"
+  "ref": "Mosmann (1983) J Immunol Methods 65:55–63; van Meerloo et al. (2011) Methods Mol Biol 731:237–245",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "6 months",
+    "sterile": "filter_022",
+    "notes": "Light-sensitive; aliquot; prepare 5 mg/mL in PBS"
+  },
+  "usage": {
+    "en": "MTT (3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium) stock solution for cell viability assay.",
+    "zh": "MTT 母液，用于细胞活力检测（线粒体还原酶催化生成甲臜）。"
+  }
 }

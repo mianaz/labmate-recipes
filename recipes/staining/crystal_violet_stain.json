@@ -31,5 +31,18 @@
     "en": "Fix and stain adherent cells: wash with PBS, apply staining solution for 20 min at RT, rinse thoroughly with ddH₂O, air-dry. To quantify: dissolve stain in 10% acetic acid, read absorbance at OD₅₉₅. Used for colony formation assays and biofilm detection.",
     "zh": "固定并染色贴壁细胞: PBS 洗 → 加染色液覆盖 → 室温 20 min → ddH₂O 反复冲洗 → 晾干。定量: 加 10% 冰醋酸溶解结晶紫，OD₅₉₅ 测吸光度。适用于克隆形成实验 (colony formation assay) 和生物膜检测。"
   },
-  "ref": "Feoktistova et al. (2016) Cold Spring Harb Protoc 2016(4):pdb.prot087379"
+  "ref": "Feoktistova et al. (2016) Cold Spring Harb Protoc 2016(4):pdb.prot087379",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Crystal violet cell stain for colony counting, cell viability, and migration assays.",
+    "zh": "结晶紫细胞染色液，用于克隆计数、细胞活力和迁移实验。"
+  }
 }

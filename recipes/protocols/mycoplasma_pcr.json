@@ -45,5 +45,13 @@
     "en": "Fast, sensitive PCR-based detection of mycoplasma contamination in cell cultures. Uses universal primers GPO-3/MGSO targeting 16S rRNA gene. Positive result: ~270 bp band. Test every cell line every 2-4 weeks.",
     "zh": "快速灵敏的 PCR 法检测细胞培养支原体污染。使用靶向 16S rRNA 基因的通用引物 GPO-3/MGSO。阳性结果：约 270 bp 条带。每 2-4 周检测一次。"
   },
-  "ref": "van Kuppeveld et al. (1994) Appl Environ Microbiol 60:149-152; Young et al. (2010) Nat Protoc 5:929-934"
+  "ref": "van Kuppeveld et al. (1994) Appl Environ Microbiol 60:149-152; Young et al. (2010) Nat Protoc 5:929-934",
+  "discipline": [
+    "molecular",
+    "cell"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "1 hour"
+  }
 }

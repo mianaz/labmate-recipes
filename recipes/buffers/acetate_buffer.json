@@ -33,5 +33,18 @@
     "en": "Dissolve sodium acetate, adjust to target pH with glacial acetic acid. Effective buffering range pH 3.6–5.6. Commonly used for enzyme assays and protein purification. Autoclave and store at RT.",
     "zh": "先溶醋酸钠，用冰醋酸调至目标 pH。有效缓冲范围 pH 3.6–5.6。常用于酶学实验和蛋白纯化。高压灭菌后保存。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Sodium acetate buffer for pH 4.0–5.5 applications including nucleic acid precipitation.",
+    "zh": "醋酸钠缓冲液，用于 pH 4.0–5.5 应用，包括核酸沉淀。"
+  }
 }

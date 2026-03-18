@@ -40,5 +40,18 @@
     "zh": "密度比 LB 高 2-3 倍。甘油提供碳源；磷酸盐防止 pH 下降。适合重组蛋白表达。磷酸盐须单独灭菌！"
   },
   "ref": "Tartof & Hobbs (1987) Bethesda Res Lab Focus 9:12",
-  "source": "CSHL"
+  "source": "CSHL",
+  "discipline": [
+    "microbiology"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "autoclave",
+    "notes": "Autoclave salts and glycerol separately; mix after cooling"
+  },
+  "usage": {
+    "en": "Terrific broth for high-density E. coli culture in recombinant protein expression.",
+    "zh": "Terrific Broth 培养基，用于重组蛋白表达时的高密度大肠杆菌培养。"
+  }
 }

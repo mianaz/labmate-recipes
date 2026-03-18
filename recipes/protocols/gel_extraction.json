@@ -65,5 +65,13 @@
     "en": "Typical recovery 70-80%. Small fragments (<100 bp) recover poorly — use AMPure XP beads instead. Low-melting-point (LMP) agarose melts at 37°C, reducing DNA damage. TAE gels give better recovery than TBE. Do not use >2% agarose for large fragment recovery.",
     "zh": "回收率通常 70–80%。小片段 (<100 bp) 回收率低，建议用 Agencourt AMPure XP 磁珠代替。低熔点琼脂糖 (LMP agarose) 可直接在 37°C 溶解，减少 DNA 损伤。TAE 胶回收率优于 TBE。勿使用 >2% 琼脂糖凝胶做大片段回收。"
   },
-  "ref": "QIAGEN QIAquick Gel Extraction Kit Handbook; Sambrook & Russell (2001) Molecular Cloning"
+  "ref": "QIAGEN QIAquick Gel Extraction Kit Handbook; Sambrook & Russell (2001) Molecular Cloning",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "30 minutes",
+    "hands_on": "30 minutes"
+  }
 }

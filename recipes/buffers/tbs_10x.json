@@ -25,5 +25,18 @@
   "notes": {
     "en": "Adjust pH to 7.6 with HCl. Autoclave. Dilute 1:10 for 1× TBS. Add 0.1% Tween-20 to make TBST.",
     "zh": "用 HCl 调 pH 至 7.6。高压灭菌。1:10 稀释得 1× TBS。加 0.1% Tween-20 即为 TBST。"
+  },
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Tris-buffered saline concentrate; dilute to 1× for WB membrane washing.",
+    "zh": "Tris 缓冲盐水浓缩液，稀释至 1× 后用于 WB 膜洗涤。"
   }
 }

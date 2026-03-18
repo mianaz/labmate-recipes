@@ -39,5 +39,18 @@
   "notes": {
     "en": "Autoclave to sterilize. Dilute 1:10 with dH₂O for 1× PBS. Check pH after dilution — should be 7.4. Store at RT.",
     "zh": "高压灭菌。用 dH₂O 1:10 稀释得 1× PBS。稀释后需校 pH（应为 7.4）。室温保存。"
+  },
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "12 months",
+    "sterile": "autoclave",
+    "notes": "Autoclave or sterile-filter for cell culture"
+  },
+  "usage": {
+    "en": "Concentrated phosphate-buffered saline; dilute to 1× for universal wash and diluent.",
+    "zh": "磷酸盐缓冲液浓缩液，稀释至 1× 后用于通用洗涤和稀释。"
   }
 }

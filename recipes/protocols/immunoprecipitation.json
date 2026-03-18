@@ -70,5 +70,13 @@
     "en": "Controls: (1) Normal IgG (same species) negative control; (2) Input positive control. For Co-IP: use mild lysis buffer (avoid SDS). Ab light/heavy chain interference in WB: use Clean-Blot IP Detection Reagent or crosslink Ab to beads. Magnetic beads have lower background than agarose. Endogenous IP is more physiologically relevant than overexpression IP.",
     "zh": "对照：(1) Normal IgG (同种属) 阴性对照; (2) Input 阳性对照。共免疫沉淀 (Co-IP)：使用温和裂解液（避免 SDS）。抗体轻链/重链干扰 WB 检测：用 Clean-Blot IP Detection Reagent 或交联抗体到 beads。磁珠比琼脂糖珠背景更低。内源性 IP 比 overexpression IP 更有生理意义。"
   },
-  "ref": "Harlow & Lane (1988) Antibodies: A Laboratory Manual; Cell Signaling Technology IP Protocol"
+  "ref": "Harlow & Lane (1988) Antibodies: A Laboratory Manual; Cell Signaling Technology IP Protocol",
+  "discipline": [
+    "protein",
+    "cell"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "4 hours"
+  }
 }

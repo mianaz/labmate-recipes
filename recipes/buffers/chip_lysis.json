@@ -37,5 +37,19 @@
     "en": "Use after crosslinking (1% formaldehyde, RT 10 min). Add protease inhibitors. Sonicate to generate 200–500 bp DNA fragments.",
     "zh": "交联后 (1% 甲醛，室温 10 min) 使用。加蛋白酶抑制剂。超声使 DNA 片段 200–500 bp。"
   },
-  "ref": "Lee et al. (2006) Cell 125:301–313; Collas (2010) Mol Biotechnol 45:87–100"
+  "ref": "Lee et al. (2006) Cell 125:301–313; Collas (2010) Mol Biotechnol 45:87–100",
+  "discipline": [
+    "molecular",
+    "genomics"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "SDS lysis buffer for chromatin solubilization in ChIP and CUT&RUN experiments.",
+    "zh": "SDS 裂解缓冲液，用于 ChIP 和 CUT&RUN 实验中的染色质溶解。"
+  }
 }

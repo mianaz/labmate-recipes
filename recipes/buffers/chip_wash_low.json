@@ -48,5 +48,19 @@
     "en": "ChIP wash step; rotate at 4°C for 5 min each wash.",
     "zh": "ChIP 洗涤步骤，每步 4°C 旋转 5 min。"
   },
-  "ref": "Nelson et al. (2006) Nat Protoc 1:179–185"
+  "ref": "Nelson et al. (2006) Nat Protoc 1:179–185",
+  "discipline": [
+    "molecular",
+    "genomics"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

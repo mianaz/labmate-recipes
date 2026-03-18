@@ -51,5 +51,12 @@
     "zh": "AV⁻/PI⁻=活；AV⁺/PI⁻=早期凋亡；AV⁺/PI⁺=晚期凋亡；AV⁻/PI⁺=坏死。需含 CaCl₂。阳性对照：星形孢菌素 1 µM 6 h。"
   },
   "ref": "Vermes et al. (1995) J Immunol Methods 184:39",
-  "source": "Nature Protocols"
+  "source": "Nature Protocols",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "2 hours"
+  }
 }

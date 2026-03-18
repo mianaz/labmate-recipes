@@ -3,30 +3,117 @@
   "name": "Size Exclusion Chromatography (SEC / Gel Filtration)",
   "nameCn": "分子排阻色谱（SEC / 凝胶过滤）蛋白纯化",
   "category": "protocol",
-  "tags": ["protein purification", "SEC", "gel filtration", "FPLC", "AKTA", "oligomeric state", "biochemistry", "native protein", "polishing step"],
+  "tags": [
+    "protein purification",
+    "SEC",
+    "gel filtration",
+    "FPLC",
+    "AKTA",
+    "oligomeric state",
+    "biochemistry",
+    "native protein",
+    "polishing step"
+  ],
   "components": [
-    {"name": "1. Prepare sample: ≥1 mg/mL, centrifuge 20,000×g 20 min 4°C, filter 0.22 µm", "amount": 1, "unit": "step",
-     "note": {"en": "Remove aggregates before injection. Analytical: ≤500 µL; preparative: ≤5 mL (16/60 column).", "zh": "进样前去除聚集体。分析型：≤500 µL；制备型：≤5 mL（16/60 柱）。"}},
-    {"name": "2. Select SEC column by MW range", "amount": 1, "unit": "step",
-     "note": {"en": "Superdex 75 (3–70 kDa), Superdex 200 (10–600 kDa), Superose 6 (5–5,000 kDa). Analytical: 10/300 GL (24 mL). Preparative: 16/60 (120 mL) or 26/60 (320 mL).", "zh": "Superdex 75（3–70 kDa）、Superdex 200（10–600 kDa）、Superose 6（5–5,000 kDa）。分析型：10/300 GL（24 mL）。制备型：16/60（120 mL）。"}},
-    {"name": "3. Equilibrate column: 1.5 CV sec_running_buffer", "amount": 1, "unit": "step",
-     "note": {"en": "Flow rate: 0.4–0.5 mL/min (10/300 GL); 1.0–1.5 mL/min (16/60). Pressure limit: 1.5–1.8 MPa. Monitor A280 baseline stability.", "zh": "流速：0.4–0.5 mL/min（10/300 GL）；1.0–1.5 mL/min（16/60）。压力限：1.5–1.8 MPa。监测 A280 基线稳定。"}},
-    {"name": "4. Inject sample via clean sample loop", "amount": 1, "unit": "step",
-     "note": {"en": "Rinse loop with water then running buffer before injection. Inject at 0.5 mL/min.", "zh": "上样环先用水再用运行缓冲液冲洗。0.5 mL/min 注入。"}},
-    {"name": "5. Run: 1.2 CV at constant flow; collect 0.5 mL (analytical) or 1–2 mL (preparative) fractions", "amount": 1, "unit": "step",
-     "note": {"en": "Monitor A280 (protein), A260 (nucleic acids). V₀ ≈ 0.35 CV; Vt ≈ CV.", "zh": "监测 A280（蛋白）、A260（核酸）。V₀ ≈ 0.35 CV；Vt ≈ CV。"}},
-    {"name": "6. Pool symmetric peak fractions; verify by SDS-PAGE", "amount": 1, "unit": "step",
-     "note": {"en": "Asymmetric tailing = aggregation or multiple species. Only pool the main symmetric peak.", "zh": "不对称拖尾 = 聚集体或多组分。仅合并对称峰组分。"}},
-    {"name": "7. Optional: run MW calibration standards (first time per column)", "amount": 1, "unit": "step",
-     "note": {"en": "GE LMW/HMW kit. Plot log(MW) vs Kav = (Ve−V₀)/(Vt−V₀). Couple with SEC-MALS for absolute MW.", "zh": "GE LMW/HMW 校准套装。绘 log(MW) vs Kav = (Ve−V₀)/(Vt−V₀)。联用 SEC-MALS 可测绝对分子量。"}},
-    {"name": "8. Clean column: 1 CV 2 M NaCl, re-equilibrate; store in 20% EtOH at 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Never run column dry. Monthly: 0.5 CV 0.5 M NaOH for biofilm removal (check column compatibility).", "zh": "切勿让柱子跑干。每月：0.5 CV 0.5 M NaOH 清除生物膜（需确认柱子兼容性）。"}}
+    {
+      "name": "1. Prepare sample: ≥1 mg/mL, centrifuge 20,000×g 20 min 4°C, filter 0.22 µm",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove aggregates before injection. Analytical: ≤500 µL; preparative: ≤5 mL (16/60 column).",
+        "zh": "进样前去除聚集体。分析型：≤500 µL；制备型：≤5 mL（16/60 柱）。"
+      }
+    },
+    {
+      "name": "2. Select SEC column by MW range",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Superdex 75 (3–70 kDa), Superdex 200 (10–600 kDa), Superose 6 (5–5,000 kDa). Analytical: 10/300 GL (24 mL). Preparative: 16/60 (120 mL) or 26/60 (320 mL).",
+        "zh": "Superdex 75（3–70 kDa）、Superdex 200（10–600 kDa）、Superose 6（5–5,000 kDa）。分析型：10/300 GL（24 mL）。制备型：16/60（120 mL）。"
+      }
+    },
+    {
+      "name": "3. Equilibrate column: 1.5 CV sec_running_buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Flow rate: 0.4–0.5 mL/min (10/300 GL); 1.0–1.5 mL/min (16/60). Pressure limit: 1.5–1.8 MPa. Monitor A280 baseline stability.",
+        "zh": "流速：0.4–0.5 mL/min（10/300 GL）；1.0–1.5 mL/min（16/60）。压力限：1.5–1.8 MPa。监测 A280 基线稳定。"
+      }
+    },
+    {
+      "name": "4. Inject sample via clean sample loop",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Rinse loop with water then running buffer before injection. Inject at 0.5 mL/min.",
+        "zh": "上样环先用水再用运行缓冲液冲洗。0.5 mL/min 注入。"
+      }
+    },
+    {
+      "name": "5. Run: 1.2 CV at constant flow; collect 0.5 mL (analytical) or 1–2 mL (preparative) fractions",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Monitor A280 (protein), A260 (nucleic acids). V₀ ≈ 0.35 CV; Vt ≈ CV.",
+        "zh": "监测 A280（蛋白）、A260（核酸）。V₀ ≈ 0.35 CV；Vt ≈ CV。"
+      }
+    },
+    {
+      "name": "6. Pool symmetric peak fractions; verify by SDS-PAGE",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Asymmetric tailing = aggregation or multiple species. Only pool the main symmetric peak.",
+        "zh": "不对称拖尾 = 聚集体或多组分。仅合并对称峰组分。"
+      }
+    },
+    {
+      "name": "7. Optional: run MW calibration standards (first time per column)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "GE LMW/HMW kit. Plot log(MW) vs Kav = (Ve−V₀)/(Vt−V₀). Couple with SEC-MALS for absolute MW.",
+        "zh": "GE LMW/HMW 校准套装。绘 log(MW) vs Kav = (Ve−V₀)/(Vt−V₀)。联用 SEC-MALS 可测绝对分子量。"
+      }
+    },
+    {
+      "name": "8. Clean column: 1 CV 2 M NaCl, re-equilibrate; store in 20% EtOH at 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Never run column dry. Monthly: 0.5 CV 0.5 M NaOH for biofilm removal (check column compatibility).",
+        "zh": "切勿让柱子跑干。每月：0.5 CV 0.5 M NaOH 清除生物膜（需确认柱子兼容性）。"
+      }
+    }
   ],
   "notes": {
     "en": "SEC is gold-standard polishing step. Separates by hydrodynamic radius. Excellent for: removing aggregates, determining oligomeric state, buffer exchange. Keep sample:column volume ≤1–2% for best resolution. Run at 4°C for labile proteins.",
     "zh": "SEC 是蛋白精修的金标准。按流体力学半径分离。适合去除聚集体、确定寡聚状态、换液。样品:柱体积 ≤1–2% 以获最佳分辨率。不稳定蛋白在 4°C 进行。"
   },
-  "crosslinks": ["his_tag_purification", "gst_tag_purification", "sec_running_buffer", "protein_dialysis", "coomassie_staining"],
+  "crosslinks": [
+    "his_tag_purification",
+    "gst_tag_purification",
+    "sec_running_buffer",
+    "protein_dialysis",
+    "coomassie_staining"
+  ],
   "ref": "Wyatt et al. (2017) Nat Protoc 12:1683–1701; GE Healthcare SEC Application Note 18-1114-02",
-  "doi": "10.1038/nprot.2017.064"
+  "doi": "10.1038/nprot.2017.064",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "2 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Peak fractions pooled",
+      "condition": "4°C on ice",
+      "duration": "overnight"
+    }
+  ]
 }

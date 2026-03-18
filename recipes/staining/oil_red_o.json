@@ -25,5 +25,18 @@
     "zh": "将中性脂肪染成红橙色。工作液须现配。定量：异丙醇提取，OD510。"
   },
   "ref": "Ramírez-Zacarías et al. (1992) Histochemistry 97:493",
-  "source": "Histochemistry"
+  "source": "Histochemistry",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Filter before each use"
+  },
+  "usage": {
+    "en": "Oil Red O stain for detecting intracellular lipid droplets in adipocytes.",
+    "zh": "油红 O 染色，用于检测脂肪细胞内的脂滴。"
+  }
 }

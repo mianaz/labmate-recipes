@@ -61,5 +61,19 @@
     "en": "Standard cryopreservation protocol. Controlled-rate freezing (-1°C/min) in 10% DMSO/90% FBS. Use Mr. Frosty or CoolCell. Transfer to liquid nitrogen within 24–48h. Essential for cell banking.",
     "zh": "细胞应处于对数生长期。10% DMSO/90% FBS 冻存液。-1°C/min 程序降温防止冰晶损伤。标记细胞系、代次、日期。"
   },
-  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed.; ATCC Cell Culture Guide"
+  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed.; ATCC Cell Culture Guide",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "30 minutes + overnight",
+    "hands_on": "30 minutes"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Cryovials in Mr. Frosty at −80°C",
+      "condition": "Transfer to liquid N₂ after 24 h",
+      "duration": "indefinite"
+    }
+  ]
 }

@@ -72,5 +72,13 @@
     "en": "siRNA: 25–50 pmol per well + 5 µL Lipo RNAiMAX. Switching to serum-free medium before transfection improves efficiency.",
     "zh": "siRNA 转染: 每孔 25–50 pmol siRNA + 5 µL Lipo RNAiMAX。转染前换无血清培养基效果更好。DNA:Lipo 比例需优化 (1:2–1:4)。"
   },
-  "ref": "Dalby et al. (2004) Methods 33:95–103; Bhatt et al. (2012) Methods Mol Biol 869:29–40; Thermo Fisher Lipofectamine Protocol"
+  "ref": "Dalby et al. (2004) Methods 33:95–103; Bhatt et al. (2012) Methods Mol Biol 869:29–40; Thermo Fisher Lipofectamine Protocol",
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "duration": {
+    "total": "2–3 days",
+    "hands_on": "1 hour"
+  }
 }

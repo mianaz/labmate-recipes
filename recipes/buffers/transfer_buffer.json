@@ -33,5 +33,18 @@
     "en": "Add methanol last, bring to 1 L. For proteins >100 kDa, add 0.01–0.05% SDS. Use cold (4°C). Do not adjust pH.",
     "zh": "加入甲醇后定容至 1 L。转膜大蛋白 (>100 kDa) 可加 0.01–0.05% SDS。4°C 使用。不要调 pH。"
   },
-  "ref": "Towbin et al. (1979) PNAS 76:4350–4354"
+  "ref": "Towbin et al. (1979) PNAS 76:4350–4354",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Add methanol fresh; keep cold during wet transfer"
+  },
+  "usage": {
+    "en": "Wet or semi-dry transfer buffer for moving proteins from SDS-PAGE gel to membrane.",
+    "zh": "蛋白转膜缓冲液，用于 SDS-PAGE 后湿转或半干转膜。"
+  }
 }

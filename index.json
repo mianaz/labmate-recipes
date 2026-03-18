@@ -1,11 +1,12 @@
 {
-  "version": "1.3.0",
+  "version": "2.0.0",
   "updated": "2026-03-18",
-  "total": 189,
+  "schemaVersion": "v2",
+  "total": 187,
   "categories": {
     "buffer": 82,
-    "protocol": 88,
-    "staining": 9,
+    "protocol": 87,
+    "staining": 8,
     "media": 10
   },
   "recipes": [
@@ -18,6 +19,9 @@
         "E. coli",
         "phage display"
       ],
+      "discipline": [
+        "microbiology"
+      ],
       "file": "recipes/media/2yt_media.json"
     },
     {
@@ -28,6 +32,9 @@
         "buffer",
         "pH adjustment",
         "enzyme assay"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/buffers/acetate_buffer.json"
     },
@@ -41,6 +48,10 @@
         "RNA",
         "agarose"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/agarose_gel_electrophoresis.json"
     },
     {
@@ -51,6 +62,9 @@
         "staining",
         "calcium",
         "osteogenic"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/staining/alizarin_red.json"
     },
@@ -63,6 +77,9 @@
         "flow cytometry",
         "Annexin V",
         "PI"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/annexin_v_apoptosis.json"
     },
@@ -77,6 +94,9 @@
         "EDTA",
         "HIER"
       ],
+      "discipline": [
+        "histology"
+      ],
       "file": "recipes/buffers/ar_edta_ph9.json"
     },
     {
@@ -89,6 +109,9 @@
         "storage",
         "E. coli",
         "culture"
+      ],
+      "discipline": [
+        "microbiology"
       ],
       "file": "recipes/protocols/bacterial_glycerol_stock.json"
     },
@@ -105,6 +128,10 @@
         "molecular biology",
         "biochemistry"
       ],
+      "discipline": [
+        "protein",
+        "microbiology"
+      ],
       "file": "recipes/protocols/bacterial_protein_expression.json"
     },
     {
@@ -117,6 +144,10 @@
         "BCA",
         "concentration"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/bca_protein_assay.json"
     },
     {
@@ -128,6 +159,9 @@
         "blocking",
         "phosphoprotein"
       ],
+      "discipline": [
+        "protein"
+      ],
       "file": "recipes/buffers/blocking_bsa.json"
     },
     {
@@ -137,6 +171,9 @@
       "tags": [
         "WB",
         "blocking"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/blocking_milk.json"
     },
@@ -148,6 +185,9 @@
         "BN-PAGE",
         "protein complex",
         "mitochondria"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/bn_page_cathode.json"
     },
@@ -164,6 +204,10 @@
         "spectrophotometry",
         "biochemistry"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/bradford_assay_protocol.json"
     },
     {
@@ -176,17 +220,25 @@
         "Coomassie G-250",
         "colorimetric"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/buffers/bradford_reagent.json"
     },
     {
       "id": "bsa_standard_curve",
-      "name": "BSA Standard Curve (BCA/Bradford)",
+      "name": "BSA Standard Curve Dilution Series (2 mg/mL Stock)",
       "category": "buffer",
       "tags": [
         "protein",
         "quantification",
         "BCA",
         "Bradford"
+      ],
+      "discipline": [
+        "protein",
+        "biochemistry"
       ],
       "file": "recipes/buffers/bsa_standard_curve.json"
     },
@@ -199,6 +251,10 @@
         "plasmid",
         "HEK293",
         "lentivirus packaging"
+      ],
+      "discipline": [
+        "cell",
+        "molecular"
       ],
       "file": "recipes/protocols/calcium_phosphate_transfection.json"
     },
@@ -216,6 +272,9 @@
         "cytotoxicity",
         "non-destructive"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/cck8_proliferation.json"
     },
     {
@@ -227,6 +286,9 @@
         "counting",
         "hemocytometer",
         "viability"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/cell_counting_hemocytometer.json"
     },
@@ -240,6 +302,9 @@
         "PI",
         "DNA"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/cell_cycle_pi.json"
     },
     {
@@ -251,6 +316,9 @@
         "cryopreservation",
         "freezing",
         "banking"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/cell_freezing.json"
     },
@@ -265,6 +333,9 @@
         "trypsin",
         "adherent"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/cell_passage.json"
     },
     {
@@ -276,6 +347,9 @@
         "thawing",
         "recovery",
         "banking"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/cell_thawing.json"
     },
@@ -289,6 +363,10 @@
         "plasmid",
         "siRNA"
       ],
+      "discipline": [
+        "cell",
+        "molecular"
+      ],
       "file": "recipes/protocols/cell_transfection.json"
     },
     {
@@ -298,6 +376,10 @@
       "tags": [
         "ChIP",
         "epigenetics"
+      ],
+      "discipline": [
+        "molecular",
+        "genomics"
       ],
       "file": "recipes/buffers/chip_dilution.json"
     },
@@ -309,6 +391,10 @@
         "ChIP",
         "epigenetics",
         "histone"
+      ],
+      "discipline": [
+        "molecular",
+        "genomics"
       ],
       "file": "recipes/buffers/chip_lysis.json"
     },
@@ -322,6 +408,10 @@
         "histone modification",
         "DNA-binding protein"
       ],
+      "discipline": [
+        "genomics",
+        "molecular"
+      ],
       "file": "recipes/protocols/chip_protocol.json"
     },
     {
@@ -331,6 +421,10 @@
       "tags": [
         "ChIP",
         "epigenetics"
+      ],
+      "discipline": [
+        "molecular",
+        "genomics"
       ],
       "file": "recipes/buffers/chip_wash_high.json"
     },
@@ -342,6 +436,10 @@
         "ChIP",
         "epigenetics"
       ],
+      "discipline": [
+        "molecular",
+        "genomics"
+      ],
       "file": "recipes/buffers/chip_wash_low.json"
     },
     {
@@ -352,6 +450,9 @@
         "transfection",
         "lentivirus",
         "endosome inhibitor"
+      ],
+      "discipline": [
+        "molecular"
       ],
       "file": "recipes/buffers/chloroquine_stock.json"
     },
@@ -365,6 +466,10 @@
         "accessibility",
         "epigenetics"
       ],
+      "discipline": [
+        "genomics",
+        "molecular"
+      ],
       "file": "recipes/protocols/chromatin_accessibility_atac.json"
     },
     {
@@ -376,6 +481,9 @@
         "antigen retrieval",
         "immunohistochemistry"
       ],
+      "discipline": [
+        "histology"
+      ],
       "file": "recipes/buffers/citrate_buffer_ar.json"
     },
     {
@@ -386,6 +494,9 @@
         "colony",
         "survival",
         "drug response"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/clonogenic_assay.json"
     },
@@ -399,6 +510,10 @@
         "protein interaction",
         "PPI"
       ],
+      "discipline": [
+        "protein",
+        "cell"
+      ],
       "file": "recipes/protocols/coip_protocol.json"
     },
     {
@@ -411,6 +526,10 @@
         "screening",
         "molecular cloning"
       ],
+      "discipline": [
+        "molecular",
+        "microbiology"
+      ],
       "file": "recipes/protocols/colony_pcr.json"
     },
     {
@@ -421,6 +540,9 @@
         "DNA damage",
         "genotoxicity",
         "comet"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/comet_assay.json"
     },
@@ -433,6 +555,10 @@
         "competent cells",
         "E. coli",
         "molecular cloning"
+      ],
+      "discipline": [
+        "molecular",
+        "microbiology"
       ],
       "file": "recipes/protocols/competent_cells_cacl2.json"
     },
@@ -448,6 +574,10 @@
         "cloning",
         "molecular biology"
       ],
+      "discipline": [
+        "molecular",
+        "microbiology"
+      ],
       "file": "recipes/protocols/competent_cells_electrocompetent.json"
     },
     {
@@ -458,6 +588,9 @@
         "cell culture",
         "DMEM",
         "growth medium"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/media/complete_dmem.json"
     },
@@ -471,6 +604,10 @@
         "suspension cells",
         "lymphocytes"
       ],
+      "discipline": [
+        "cell",
+        "immunology"
+      ],
       "file": "recipes/media/complete_rpmi.json"
     },
     {
@@ -481,6 +618,9 @@
         "SDS-PAGE",
         "staining"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/staining/coomassie_destain.json"
     },
     {
@@ -490,6 +630,9 @@
       "tags": [
         "SDS-PAGE",
         "staining"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/staining/coomassie_stain.json"
     },
@@ -504,6 +647,9 @@
         "staining",
         "gel"
       ],
+      "discipline": [
+        "protein"
+      ],
       "file": "recipes/protocols/coomassie_staining.json"
     },
     {
@@ -515,6 +661,9 @@
         "Cas9",
         "gene editing",
         "RNP"
+      ],
+      "discipline": [
+        "molecular"
       ],
       "file": "recipes/buffers/crispr_rnp.json"
     },
@@ -528,6 +677,9 @@
         "cloning",
         "Cas9"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/protocols/crispr_sgrna_cloning.json"
     },
     {
@@ -538,6 +690,9 @@
         "colony assay",
         "colony formation",
         "biofilm"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/staining/crystal_violet_stain.json"
     },
@@ -555,6 +710,10 @@
         "ChIP alternative",
         "Henikoff"
       ],
+      "discipline": [
+        "genomics",
+        "molecular"
+      ],
       "file": "recipes/protocols/cut_and_run.json"
     },
     {
@@ -568,23 +727,10 @@
         "IF",
         "flow cytometry"
       ],
-      "file": "recipes/staining/dapi_staining.json"
-    },
-    {
-      "id": "density_gradient_centrifugation",
-      "name": "Density Gradient Centrifugation (Step & Continuous)",
-      "category": "protocol",
-      "tags": [
-        "density gradient",
-        "ultracentrifugation",
-        "Percoll",
-        "sucrose",
-        "organelle isolation",
-        "cell separation",
-        "differential centrifugation",
-        "biochemistry"
+      "discipline": [
+        "general"
       ],
-      "file": "recipes/protocols/density_gradient_centrifugation.json"
+      "file": "recipes/staining/dapi_staining.json"
     },
     {
       "id": "depc_water",
@@ -594,6 +740,10 @@
         "RNA",
         "RNase-free",
         "DEPC"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/buffers/depc_water.json"
     },
@@ -606,6 +756,10 @@
         "dialysis",
         "buffer exchange",
         "storage"
+      ],
+      "discipline": [
+        "protein",
+        "biochemistry"
       ],
       "file": "recipes/buffers/dialysis_buffer_generic.json"
     },
@@ -620,6 +774,9 @@
         "vector",
         "insert"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/protocols/dna_ligation.json"
     },
     {
@@ -630,6 +787,10 @@
         "electrophoresis",
         "agarose",
         "DNA"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/buffers/dna_loading_dye_6x.json"
     },
@@ -642,6 +803,10 @@
         "reporter",
         "promoter",
         "transcription"
+      ],
+      "discipline": [
+        "cell",
+        "molecular"
       ],
       "file": "recipes/protocols/dual_luciferase.json"
     },
@@ -656,6 +821,9 @@
         "HRP",
         "chemiluminescence"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/staining/ecl_enhanced.json"
     },
     {
@@ -666,6 +834,9 @@
         "cell culture",
         "passaging",
         "dissociation"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/buffers/edta_trypsin.json"
     },
@@ -679,6 +850,10 @@
         "E. coli",
         "cloning"
       ],
+      "discipline": [
+        "molecular",
+        "microbiology"
+      ],
       "file": "recipes/protocols/electroporation.json"
     },
     {
@@ -690,6 +865,10 @@
         "immunoassay",
         "cytokine"
       ],
+      "discipline": [
+        "protein",
+        "immunology"
+      ],
       "file": "recipes/protocols/elisa_sandwich.json"
     },
     {
@@ -700,6 +879,10 @@
         "EMSA",
         "gel shift",
         "DNA binding"
+      ],
+      "discipline": [
+        "molecular",
+        "biochemistry"
       ],
       "file": "recipes/buffers/emsa_binding_buffer.json"
     },
@@ -717,6 +900,10 @@
         "biochemistry",
         "molecular biology"
       ],
+      "discipline": [
+        "biochemistry",
+        "molecular"
+      ],
       "file": "recipes/protocols/emsa_gel_shift.json"
     },
     {
@@ -732,6 +919,9 @@
         "biochemistry",
         "enzyme assay",
         "spectrophotometry"
+      ],
+      "discipline": [
+        "biochemistry"
       ],
       "file": "recipes/protocols/enzyme_kinetics_michaelis.json"
     },
@@ -750,6 +940,10 @@
         "cell biology",
         "microsome"
       ],
+      "discipline": [
+        "cell",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/er_golgi_isolation.json"
     },
     {
@@ -761,6 +955,9 @@
         "stem cell",
         "LIF",
         "pluripotent"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/media/esc_culture_media.json"
     },
@@ -774,6 +971,10 @@
         "precipitation",
         "purification",
         "concentration"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/protocols/ethanol_precipitation.json"
     },
@@ -791,6 +992,10 @@
         "biomarker",
         "ISEV"
       ],
+      "discipline": [
+        "cell",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/exosome_isolation.json"
     },
     {
@@ -805,6 +1010,9 @@
         "isolation",
         "PBS"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/exosome_isolation_buffer.json"
     },
     {
@@ -815,6 +1023,10 @@
         "FACS",
         "flow cytometry",
         "cell sorting"
+      ],
+      "discipline": [
+        "cell",
+        "immunology"
       ],
       "file": "recipes/buffers/facs_buffer.json"
     },
@@ -830,6 +1042,10 @@
         "blood fractionation",
         "lymphocyte isolation"
       ],
+      "discipline": [
+        "cell",
+        "immunology"
+      ],
       "file": "recipes/buffers/ficoll_400_stock.json"
     },
     {
@@ -843,6 +1059,10 @@
         "lymphocyte isolation",
         "blood fractionation",
         "density 1.077"
+      ],
+      "discipline": [
+        "cell",
+        "immunology"
       ],
       "file": "recipes/buffers/ficoll_paque_pbmc.json"
     },
@@ -858,6 +1078,9 @@
         "density centrifugation",
         "immunology"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/ficoll_solution.json"
     },
     {
@@ -869,6 +1092,10 @@
         "flow cytometry",
         "surface markers",
         "immunophenotyping"
+      ],
+      "discipline": [
+        "cell",
+        "immunology"
       ],
       "file": "recipes/protocols/flow_cytometry_protocol.json"
     },
@@ -885,6 +1112,10 @@
         "cell biology",
         "multicolor panel"
       ],
+      "discipline": [
+        "cell",
+        "immunology"
+      ],
       "file": "recipes/protocols/flow_panel_staining.json"
     },
     {
@@ -895,6 +1126,9 @@
         "cell culture",
         "cryopreservation",
         "DMSO"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/media/freezing_medium.json"
     },
@@ -909,6 +1143,10 @@
         "agarose",
         "cloning"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/gel_extraction.json"
     },
     {
@@ -922,6 +1160,10 @@
         "genotyping",
         "PCR"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/genomic_dna_extraction.json"
     },
     {
@@ -934,6 +1176,9 @@
         "seamless cloning",
         "DNA assembly"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/protocols/gibson_assembly.json"
     },
     {
@@ -945,6 +1190,9 @@
         "Gibson assembly",
         "isothermal assembly"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/buffers/gibson_mastermix.json"
     },
     {
@@ -955,6 +1203,9 @@
         "storage",
         "strain",
         "glycerol"
+      ],
+      "discipline": [
+        "microbiology"
       ],
       "file": "recipes/media/glycerol_stock.json"
     },
@@ -973,6 +1224,10 @@
         "isopycnic",
         "rate-zonal"
       ],
+      "discipline": [
+        "cell",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/gradient_centrifugation_general.json"
     },
     {
@@ -985,6 +1240,10 @@
         "glutathione",
         "affinity chromatography",
         "elution"
+      ],
+      "discipline": [
+        "protein",
+        "biochemistry"
       ],
       "file": "recipes/buffers/gst_elution.json"
     },
@@ -1000,6 +1259,10 @@
         "recombinant protein",
         "biochemistry"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/gst_tag_purification.json"
     },
     {
@@ -1011,6 +1274,10 @@
         "cloning",
         "E. coli",
         "heat shock"
+      ],
+      "discipline": [
+        "molecular",
+        "microbiology"
       ],
       "file": "recipes/protocols/heat_shock_transformation.json"
     },
@@ -1026,6 +1293,9 @@
         "contamination",
         "cell biology"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/hela_mycoplasma_testing.json"
     },
     {
@@ -1036,6 +1306,9 @@
         "cell culture",
         "buffering",
         "pH"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/buffers/hepes_buffer.json"
     },
@@ -1048,6 +1321,10 @@
         "His-tag",
         "Ni-NTA"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/buffers/his_binding.json"
     },
     {
@@ -1058,6 +1335,10 @@
         "protein purification",
         "His-tag",
         "Ni-NTA"
+      ],
+      "discipline": [
+        "protein",
+        "biochemistry"
       ],
       "file": "recipes/buffers/his_elution.json"
     },
@@ -1074,6 +1355,10 @@
         "recombinant protein",
         "biochemistry"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/his_tag_purification.json"
     },
     {
@@ -1084,6 +1369,10 @@
         "IF",
         "fluorescence",
         "blocking"
+      ],
+      "discipline": [
+        "cell",
+        "histology"
       ],
       "file": "recipes/buffers/if_blocking.json"
     },
@@ -1096,6 +1385,10 @@
         "fluorescence",
         "permeabilization"
       ],
+      "discipline": [
+        "cell",
+        "histology"
+      ],
       "file": "recipes/buffers/if_permeabilization.json"
     },
     {
@@ -1107,6 +1400,10 @@
         "fluorescence",
         "confocal",
         "imaging"
+      ],
+      "discipline": [
+        "histology",
+        "cell"
       ],
       "file": "recipes/protocols/if_protocol.json"
     },
@@ -1124,6 +1421,9 @@
         "tissue staining",
         "pathology"
       ],
+      "discipline": [
+        "histology"
+      ],
       "file": "recipes/protocols/ihc_paraffin_protocol.json"
     },
     {
@@ -1136,6 +1436,10 @@
         "Ni-NTA",
         "IMAC",
         "elution"
+      ],
+      "discipline": [
+        "protein",
+        "biochemistry"
       ],
       "file": "recipes/buffers/imac_elution_500.json"
     },
@@ -1150,6 +1454,10 @@
         "IMAC",
         "wash"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/buffers/imac_wash_highsalt.json"
     },
     {
@@ -1162,6 +1470,10 @@
         "protein",
         "antibody",
         "pull-down"
+      ],
+      "discipline": [
+        "protein",
+        "cell"
       ],
       "file": "recipes/protocols/immunoprecipitation.json"
     },
@@ -1177,6 +1489,10 @@
         "GuHCl",
         "E. coli",
         "recombinant protein",
+        "biochemistry"
+      ],
+      "discipline": [
+        "protein",
         "biochemistry"
       ],
       "file": "recipes/protocols/inclusion_body_refolding.json"
@@ -1196,6 +1512,10 @@
         "polishing step",
         "biochemistry"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/ion_exchange_chromatography.json"
     },
     {
@@ -1206,6 +1526,10 @@
         "IP",
         "Co-IP",
         "protein interaction"
+      ],
+      "discipline": [
+        "protein",
+        "cell"
       ],
       "file": "recipes/buffers/ip_lysis.json"
     },
@@ -1218,6 +1542,10 @@
         "assay",
         "phosphorylation"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/buffers/kinase_buffer.json"
     },
     {
@@ -1228,6 +1556,9 @@
         "WB",
         "SDS-PAGE"
       ],
+      "discipline": [
+        "protein"
+      ],
       "file": "recipes/buffers/laemmli_2x.json"
     },
     {
@@ -1237,6 +1568,9 @@
       "tags": [
         "WB",
         "SDS-PAGE"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/laemmli_4x.json"
     },
@@ -1249,6 +1583,9 @@
         "E. coli",
         "cloning"
       ],
+      "discipline": [
+        "microbiology"
+      ],
       "file": "recipes/media/lb.json"
     },
     {
@@ -1259,6 +1596,9 @@
         "microbiology",
         "E. coli",
         "plating"
+      ],
+      "discipline": [
+        "microbiology"
       ],
       "file": "recipes/media/lb_agar.json"
     },
@@ -1276,6 +1616,10 @@
         "cell biology",
         "flow cytometry"
       ],
+      "discipline": [
+        "cell",
+        "immunology"
+      ],
       "file": "recipes/protocols/lentiviral_titer_functional.json"
     },
     {
@@ -1290,6 +1634,10 @@
         "viral quantification",
         "virology",
         "cell biology"
+      ],
+      "discipline": [
+        "cell",
+        "immunology"
       ],
       "file": "recipes/protocols/lentiviral_titer_p24.json"
     },
@@ -1308,6 +1656,10 @@
         "cell biology",
         "molecular biology"
       ],
+      "discipline": [
+        "cell",
+        "molecular"
+      ],
       "file": "recipes/protocols/lentivirus_production.json"
     },
     {
@@ -1319,6 +1671,9 @@
         "WB",
         "non-reducing"
       ],
+      "discipline": [
+        "protein"
+      ],
       "file": "recipes/buffers/loading_buffer_nr.json"
     },
     {
@@ -1329,6 +1684,10 @@
         "luciferase",
         "reporter",
         "lysis"
+      ],
+      "discipline": [
+        "cell",
+        "molecular"
       ],
       "file": "recipes/buffers/luciferase_lysis_buffer.json"
     },
@@ -1342,6 +1701,10 @@
         "mild lysis",
         "soluble protein",
         "native conditions"
+      ],
+      "discipline": [
+        "protein",
+        "biochemistry"
       ],
       "file": "recipes/buffers/lysis_buffer_mild.json"
     },
@@ -1358,6 +1721,10 @@
         "cell biology",
         "autophagy"
       ],
+      "discipline": [
+        "cell",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/lysosome_isolation.json"
     },
     {
@@ -1372,6 +1739,9 @@
         "subcellular fractionation",
         "biochemistry"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/lysosome_isolation_buffer.json"
     },
     {
@@ -1382,6 +1752,10 @@
         "MACS",
         "magnetic beads",
         "cell sorting"
+      ],
+      "discipline": [
+        "cell",
+        "immunology"
       ],
       "file": "recipes/buffers/macs_buffer.json"
     },
@@ -1395,6 +1769,9 @@
         "3D culture",
         "coating"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/buffers/matrigel_coating.json"
     },
     {
@@ -1405,6 +1782,9 @@
         "SDS-PAGE",
         "electrophoresis",
         "NuPAGE"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/mes_running_buffer.json"
     },
@@ -1417,6 +1797,9 @@
         "plasmid",
         "DNA extraction"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/buffers/miniprep_p1.json"
     },
     {
@@ -1428,6 +1811,9 @@
         "plasmid",
         "DNA extraction"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/buffers/miniprep_p2.json"
     },
     {
@@ -1438,6 +1824,9 @@
         "miniprep",
         "plasmid",
         "DNA extraction"
+      ],
+      "discipline": [
+        "molecular"
       ],
       "file": "recipes/buffers/miniprep_p3.json"
     },
@@ -1451,6 +1840,10 @@
         "miniprep",
         "cloning"
       ],
+      "discipline": [
+        "molecular",
+        "microbiology"
+      ],
       "file": "recipes/protocols/miniprep_protocol.json"
     },
     {
@@ -1462,6 +1855,9 @@
         "subcellular fractionation",
         "organelle isolation",
         "differential centrifugation"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/buffers/mitochondria_buffer.json"
     },
@@ -1477,6 +1873,10 @@
         "bioenergetics",
         "oxidative phosphorylation"
       ],
+      "discipline": [
+        "cell",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/mitochondria_isolation.json"
     },
     {
@@ -1490,6 +1890,10 @@
         "denaturing gel",
         "electrophoresis"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/buffers/mops_10x.json"
     },
     {
@@ -1500,6 +1904,10 @@
         "SDS-PAGE",
         "NuPAGE",
         "electrophoresis"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/buffers/mops_running_buffer.json"
     },
@@ -1516,6 +1924,9 @@
         "cell biology",
         "cytotoxicity"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/mtt_assay.json"
     },
     {
@@ -1526,6 +1937,9 @@
         "MTT",
         "cell viability",
         "proliferation"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/buffers/mtt_reagent.json"
     },
@@ -1539,6 +1953,10 @@
         "PCR",
         "contamination"
       ],
+      "discipline": [
+        "molecular",
+        "cell"
+      ],
       "file": "recipes/protocols/mycoplasma_pcr.json"
     },
     {
@@ -1549,6 +1967,9 @@
         "Native-PAGE",
         "native gel",
         "protein interaction"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/native_page_buffer.json"
     },
@@ -1562,6 +1983,10 @@
         "gene expression",
         "mRNA detection"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/northern_blot.json"
     },
     {
@@ -1574,6 +1999,10 @@
         "Co-IP",
         "mild"
       ],
+      "discipline": [
+        "protein",
+        "cell"
+      ],
       "file": "recipes/buffers/np40_lysis.json"
     },
     {
@@ -1584,6 +2013,9 @@
         "nuclear extraction",
         "subcellular fractionation"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/buffers/nuc_cyt_a.json"
     },
     {
@@ -1593,6 +2025,9 @@
       "tags": [
         "nuclear extraction",
         "subcellular fractionation"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/buffers/nuc_cyt_b.json"
     },
@@ -1607,6 +2042,9 @@
         "NP-40",
         "fractionation"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/buffers/nuclei_isolation_buffer.json"
     },
     {
@@ -1618,24 +2056,10 @@
         "lipid",
         "adipocyte"
       ],
-      "file": "recipes/staining/oil_red_o.json"
-    },
-    {
-      "id": "organelle_isolation_golgi_er",
-      "name": "Golgi Apparatus and ER Microsome Isolation",
-      "category": "protocol",
-      "tags": [
-        "Golgi",
-        "ER",
-        "endoplasmic reticulum",
-        "microsome",
-        "organelle isolation",
-        "sucrose gradient",
-        "ultracentrifugation",
-        "cell biology",
-        "biochemistry"
+      "discipline": [
+        "general"
       ],
-      "file": "recipes/protocols/organelle_isolation_golgi_er.json"
+      "file": "recipes/staining/oil_red_o.json"
     },
     {
       "id": "pbmc_isolation",
@@ -1651,6 +2075,10 @@
         "cell separation",
         "mononuclear cells"
       ],
+      "discipline": [
+        "cell",
+        "immunology"
+      ],
       "file": "recipes/protocols/pbmc_isolation.json"
     },
     {
@@ -1663,6 +2091,9 @@
         "WB",
         "IHC"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/pbs_10x.json"
     },
     {
@@ -1672,6 +2103,9 @@
       "tags": [
         "common",
         "cell biology"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/buffers/pbs_1x.json"
     },
@@ -1685,6 +2119,10 @@
         "Taq",
         "DNA",
         "genotyping"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/protocols/pcr_standard.json"
     },
@@ -1700,6 +2138,9 @@
         "density centrifugation",
         "PBMC"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/percoll_gradient_buffer.json"
     },
     {
@@ -1714,6 +2155,10 @@
         "isoosmotic",
         "subcellular fractionation"
       ],
+      "discipline": [
+        "cell",
+        "biochemistry"
+      ],
       "file": "recipes/buffers/percoll_isotonic.json"
     },
     {
@@ -1725,6 +2170,9 @@
         "permeabilization",
         "immunofluorescence",
         "intracellular"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/buffers/perm_buffer_triton.json"
     },
@@ -1738,6 +2186,10 @@
         "fixation",
         "PFA"
       ],
+      "discipline": [
+        "cell",
+        "histology"
+      ],
       "file": "recipes/buffers/pfa_4.json"
     },
     {
@@ -1748,6 +2200,10 @@
         "phosphatase",
         "inhibitor",
         "phosphorylation"
+      ],
+      "discipline": [
+        "protein",
+        "cell"
       ],
       "file": "recipes/buffers/phosphatase_inhibitor_na3vo4.json"
     },
@@ -1762,6 +2218,10 @@
         "alkaline lysis",
         "endotoxin-free"
       ],
+      "discipline": [
+        "molecular",
+        "microbiology"
+      ],
       "file": "recipes/protocols/plasmid_maxiprep.json"
     },
     {
@@ -1774,6 +2234,10 @@
         "retrovirus",
         "polybrene"
       ],
+      "discipline": [
+        "cell",
+        "molecular"
+      ],
       "file": "recipes/buffers/polybrene_stock.json"
     },
     {
@@ -1783,6 +2247,9 @@
       "tags": [
         "WB",
         "transfer verification"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/staining/ponceau_s.json"
     },
@@ -1796,6 +2263,10 @@
         "ultrafiltration",
         "Amicon",
         "buffer exchange",
+        "biochemistry"
+      ],
+      "discipline": [
+        "protein",
         "biochemistry"
       ],
       "file": "recipes/protocols/protein_concentration_amicon.json"
@@ -1812,6 +2283,10 @@
         "imidazole removal",
         "biochemistry"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/protein_dialysis.json"
     },
     {
@@ -1822,6 +2297,10 @@
         "PLA",
         "protein interaction",
         "in situ"
+      ],
+      "discipline": [
+        "protein",
+        "histology"
       ],
       "file": "recipes/protocols/proximity_ligation_assay.json"
     },
@@ -1838,6 +2317,10 @@
         "affinity purification",
         "biochemistry"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/pulldown_assay.json"
     },
     {
@@ -1849,6 +2332,10 @@
         "RT-PCR",
         "gene expression",
         "mRNA"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/protocols/qpcr_protocol.json"
     },
@@ -1867,6 +2354,9 @@
         "cell biology",
         "cytotoxicity"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/resazurin_assay.json"
     },
     {
@@ -1881,6 +2371,9 @@
         "fluorescence",
         "colorimetric"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/resazurin_stock.json"
     },
     {
@@ -1894,6 +2387,9 @@
         "DNA",
         "endonuclease"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/protocols/restriction_digest.json"
     },
     {
@@ -1903,6 +2399,10 @@
       "tags": [
         "WB",
         "protein extraction"
+      ],
+      "discipline": [
+        "protein",
+        "cell"
       ],
       "file": "recipes/buffers/ripa.json"
     },
@@ -1919,6 +2419,10 @@
         "molecular biology",
         "formaldehyde"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/rna_agarose_gel.json"
     },
     {
@@ -1932,6 +2436,10 @@
         "RNeasy",
         "silica"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/rna_column_extraction.json"
     },
     {
@@ -1942,6 +2450,10 @@
         "RNA",
         "electrophoresis",
         "agarose gel"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/buffers/rna_loading_dye.json"
     },
@@ -1960,6 +2472,10 @@
         "mRNA",
         "genomics"
       ],
+      "discipline": [
+        "genomics",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/rnaseq_library_prep.json"
     },
     {
@@ -1971,6 +2487,9 @@
         "SDS-PAGE",
         "electrophoresis"
       ],
+      "discipline": [
+        "protein"
+      ],
       "file": "recipes/buffers/running_buffer.json"
     },
     {
@@ -1980,6 +2499,9 @@
       "tags": [
         "WB",
         "SDS-PAGE"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/running_buffer_10x.json"
     },
@@ -1993,6 +2515,9 @@
         "cloning verification",
         "molecular biology",
         "sequencing"
+      ],
+      "discipline": [
+        "molecular"
       ],
       "file": "recipes/protocols/sanger_sequencing_prep.json"
     },
@@ -2009,6 +2534,9 @@
         "2D migration",
         "motility"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/scratch_assay.json"
     },
     {
@@ -2019,6 +2547,9 @@
         "WB",
         "SDS-PAGE",
         "gel"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/sds_page_gel.json"
     },
@@ -2037,6 +2568,10 @@
         "native protein",
         "polishing step"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/protocols/sec_purification.json"
     },
     {
@@ -2050,19 +2585,28 @@
         "FPLC",
         "AKTA"
       ],
+      "discipline": [
+        "protein",
+        "biochemistry"
+      ],
       "file": "recipes/buffers/sec_running_buffer.json"
     },
     {
       "id": "silver_stain",
       "name": "Silver Stain (SDS-PAGE)",
-      "category": "staining",
+      "category": "protocol",
       "tags": [
-        "staining",
+        "silver stain",
         "SDS-PAGE",
+        "protein detection",
+        "sensitive",
         "protein",
-        "sensitive"
+        "gel staining"
       ],
-      "file": "recipes/staining/silver_stain.json"
+      "discipline": [
+        "protein"
+      ],
+      "file": "recipes/protocols/silver_stain.json"
     },
     {
       "id": "single_colony_picking",
@@ -2076,6 +2620,10 @@
         "screening",
         "molecular biology",
         "colony PCR"
+      ],
+      "discipline": [
+        "molecular",
+        "microbiology"
       ],
       "file": "recipes/protocols/single_colony_picking.json"
     },
@@ -2093,6 +2641,10 @@
         "molecular biology",
         "functional genomics"
       ],
+      "discipline": [
+        "cell",
+        "molecular"
+      ],
       "file": "recipes/protocols/sirna_knockdown.json"
     },
     {
@@ -2105,6 +2657,9 @@
         "point mutation",
         "cloning"
       ],
+      "discipline": [
+        "molecular"
+      ],
       "file": "recipes/protocols/site_directed_mutagenesis.json"
     },
     {
@@ -2114,6 +2669,9 @@
       "tags": [
         "microbiology",
         "transformation"
+      ],
+      "discipline": [
+        "microbiology"
       ],
       "file": "recipes/media/soc.json"
     },
@@ -2125,6 +2683,9 @@
         "anchorage-independent",
         "transformation",
         "cancer"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/soft_agar_assay.json"
     },
@@ -2138,6 +2699,10 @@
         "hybridization",
         "genomic"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/southern_blot.json"
     },
     {
@@ -2149,6 +2714,10 @@
         "Northern",
         "Southern",
         "ISH"
+      ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
       ],
       "file": "recipes/buffers/ssc_20x.json"
     },
@@ -2165,6 +2734,9 @@
         "cell biology",
         "gene engineering"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/stable_cell_line_selection.json"
     },
     {
@@ -2174,6 +2746,9 @@
       "tags": [
         "WB",
         "stripping"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/strip_buffer.json"
     },
@@ -2189,6 +2764,9 @@
         "organelle",
         "cell biology",
         "protein localization"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/subcellular_fractionation.json"
     },
@@ -2206,6 +2784,9 @@
         "exosome",
         "biochemistry"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/sucrose_gradient_buffer.json"
     },
     {
@@ -2221,6 +2802,10 @@
         "Golgi isolation",
         "lysosome"
       ],
+      "discipline": [
+        "cell",
+        "biochemistry"
+      ],
       "file": "recipes/buffers/sucrose_gradient_homog.json"
     },
     {
@@ -2233,6 +2818,10 @@
         "agarose gel",
         "TAE"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/buffers/tae_50x.json"
     },
     {
@@ -2244,6 +2833,10 @@
         "mouse",
         "PCR"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/buffers/tail_lysis_buffer.json"
     },
     {
@@ -2254,6 +2847,9 @@
         "media",
         "bacteria",
         "protein expression"
+      ],
+      "discipline": [
+        "microbiology"
       ],
       "file": "recipes/media/tb_media.json"
     },
@@ -2267,6 +2863,10 @@
         "PAGE",
         "TBE"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/buffers/tbe_10x.json"
     },
     {
@@ -2277,6 +2877,9 @@
         "WB",
         "common"
       ],
+      "discipline": [
+        "general"
+      ],
       "file": "recipes/buffers/tbs_10x.json"
     },
     {
@@ -2286,6 +2889,9 @@
       "tags": [
         "WB",
         "common"
+      ],
+      "discipline": [
+        "general"
       ],
       "file": "recipes/buffers/tbst.json"
     },
@@ -2299,6 +2905,10 @@
         "storage",
         "Tris-EDTA"
       ],
+      "discipline": [
+        "general",
+        "rna_dna"
+      ],
       "file": "recipes/buffers/te.json"
     },
     {
@@ -2308,6 +2918,9 @@
       "tags": [
         "WB",
         "transfer"
+      ],
+      "discipline": [
+        "protein"
       ],
       "file": "recipes/buffers/transfer_buffer.json"
     },
@@ -2320,6 +2933,9 @@
         "invasion",
         "Boyden chamber",
         "chemotaxis"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/transwell_migration.json"
     },
@@ -2334,6 +2950,10 @@
         "qPCR",
         "total RNA"
       ],
+      "discipline": [
+        "molecular",
+        "rna_dna"
+      ],
       "file": "recipes/protocols/trizol_extraction.json"
     },
     {
@@ -2344,6 +2964,9 @@
         "cell counting",
         "viability",
         "trypan blue"
+      ],
+      "discipline": [
+        "cell"
       ],
       "file": "recipes/protocols/trypan_blue_counting.json"
     },
@@ -2356,6 +2979,9 @@
         "endothelial",
         "Matrigel"
       ],
+      "discipline": [
+        "cell"
+      ],
       "file": "recipes/protocols/tube_formation_assay.json"
     },
     {
@@ -2366,6 +2992,10 @@
         "WB",
         "full protocol",
         "protein detection"
+      ],
+      "discipline": [
+        "protein",
+        "cell"
       ],
       "file": "recipes/protocols/wb_protocol.json"
     }

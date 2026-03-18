@@ -3,7 +3,14 @@
   "name": "Lysosome Isolation Buffer (Sucrose-Based Homogenization)",
   "nameCn": "溶酶体分离缓冲液（蔗糖匀浆法）",
   "category": "buffer",
-  "tags": ["lysosome", "organelle isolation", "homogenization", "sucrose", "subcellular fractionation", "biochemistry"],
+  "tags": [
+    "lysosome",
+    "organelle isolation",
+    "homogenization",
+    "sucrose",
+    "subcellular fractionation",
+    "biochemistry"
+  ],
   "volume": 100,
   "volumeUnit": "mL",
   "components": [
@@ -49,6 +56,23 @@
     "en": "Adjust pH to 7.4 with KOH. Keep all solutions ice-cold. Add protease inhibitors just before use (lysosomes contain lytic enzymes — leakage causes self-digestion). Sucrose maintains organelle osmolality during isolation. After fractionation, lysosome identity markers: LAMP1, LAMP2, cathepsin B/D, β-hexosaminidase activity.",
     "zh": "KOH 调 pH 至 7.4。所有溶液保持冰冷。用前加蛋白酶抑制剂（溶酶体含溶解酶——泄漏导致自消化）。蔗糖维持分离过程中细胞器渗透压。分离后溶酶体标记蛋白：LAMP1、LAMP2、组织蛋白酶 B/D、β-己糖苷酶活性。"
   },
-  "crosslinks": ["lysosome_isolation", "subcellular_fractionation", "mitochondria_buffer"],
-  "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1; Bright et al. (2016) Curr Protoc Cell Biol 72:3.27.1; Rahman et al. (2020) STAR Protoc 1:100122"
+  "crosslinks": [
+    "lysosome_isolation",
+    "subcellular_fractionation",
+    "mitochondria_buffer"
+  ],
+  "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1; Bright et al. (2016) Curr Protoc Cell Biol 72:3.27.1; Rahman et al. (2020) STAR Protoc 1:100122",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

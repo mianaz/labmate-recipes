@@ -37,5 +37,18 @@
     "en": "Prepare under sterile conditions. Heat-inactivate FBS at 56°C for 30 min. Complete medium stored at 4°C for up to 4 weeks. Pre-warm to 37°C before use. Suitable for HEK293, HeLa, NIH3T3, and other adherent cell lines.",
     "zh": "无菌操作。FBS 需 56°C 灭活 30 min。完全培养基 4°C 保存不超过 4 周。使用前预热至 37°C。适用于 HEK293、HeLa、NIH3T3 等贴壁细胞系。"
   },
-  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed.; ATCC cell culture guide"
+  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed.; ATCC cell culture guide",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "4 weeks",
+    "sterile": "filter_022",
+    "notes": "Sterile; prepare in BSC; add FBS after warming"
+  },
+  "usage": {
+    "en": "DMEM complete medium (10% FBS) for standard mammalian cell line culture.",
+    "zh": "含 10% FBS 的 DMEM 完全培养基，用于常规哺乳动物细胞培养。"
+  }
 }

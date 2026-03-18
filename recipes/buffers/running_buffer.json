@@ -35,5 +35,18 @@
     "en": "pH should naturally reach ~8.3; no adjustment needed. Can also dilute from 10× stock.",
     "zh": "pH 应自然达到 ~8.3，无需调 pH。也可由 10× 母液稀释。"
   },
-  "ref": "Laemmli (1970) Nature 227:680–685; Gallagher (2012) Curr Protoc Mol Biol Ch.10"
+  "ref": "Laemmli (1970) Nature 227:680–685; Gallagher (2012) Curr Protoc Mol Biol Ch.10",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

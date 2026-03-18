@@ -31,5 +31,19 @@
     "zh": "酪氨酸磷酸酶抑制剂。需活化：调 pH 10，煮沸，冷却，再调 pH。重复至溶液稳定无色。终浓度 1 mM。"
   },
   "ref": "Gordon (1991) Methods Enzymol 201:477",
-  "source": "Methods Enzymol"
+  "source": "Methods Enzymol",
+  "discipline": [
+    "protein",
+    "cell"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Aliquot; add fresh to lysis buffers"
+  },
+  "usage": {
+    "en": "Sodium orthovanadate phosphatase inhibitor stock for preserving phosphorylation in cell lysates.",
+    "zh": "正钒酸钠磷酸酶抑制剂母液，用于保护细胞裂解液中的磷酸化状态。"
+  }
 }

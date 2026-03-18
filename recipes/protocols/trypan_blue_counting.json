@@ -48,5 +48,12 @@
   "ref": "Strober (2015) Curr Protoc Immunol 111:A.3B.1–A.3B.3",
   "crosslinks": [
     "cell_counting_hemocytometer"
-  ]
+  ],
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "15 minutes",
+    "hands_on": "15 minutes"
+  }
 }

@@ -32,5 +32,19 @@
     "en": "Used for dissolving and storing DNA. Autoclave before storage. Low TE (0.1 mM EDTA) is suitable for PCR templates.",
     "zh": "10 mM Tris-HCl, 1 mM EDTA, pH 8.0。DNA 保存标准缓冲液。EDTA 螯合二价阳离子抑制核酸酶。高压灭菌，室温保存。低 TE (0.1 mM EDTA) 适合 PCR 模板。"
   },
-  "ref": "CSH Protocols; Sambrook & Russell (2001) Molecular Cloning, 3rd ed."
+  "ref": "CSH Protocols; Sambrook & Russell (2001) Molecular Cloning, 3rd ed.",
+  "discipline": [
+    "general",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "autoclave",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Tris-EDTA buffer for long-term storage of DNA and RNA at neutral pH.",
+    "zh": "Tris-EDTA 缓冲液，用于 DNA 和 RNA 的长期保存。"
+  }
 }

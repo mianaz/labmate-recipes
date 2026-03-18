@@ -24,5 +24,18 @@
     "en": "Filter-sterilize 0.22 µm. Aliquot and protect from light. Working concentration 25 µM (1:1000 dilution). Chloroquine inhibits endosomal acidification, improving CaPO₄ and PEI transfection efficiency. Must replace medium within 5h — prolonged exposure is cytotoxic.",
     "zh": "0.22 µm 过滤除菌。分装避光保存。使用浓度 25 µM（1:1000 稀释）。氯喹抑制内体酸化，提高 CaPO₄ 和 PEI 转染效率。加入培养基后 5h 内须更换培养基，氯喹长时间暴露有细胞毒性。"
   },
-  "ref": "Luthman & Magnusson (1983) Nucleic Acids Res 11:1295"
+  "ref": "Luthman & Magnusson (1983) Nucleic Acids Res 11:1295",
+  "discipline": [
+    "molecular"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "filter_022",
+    "notes": "Light-sensitive; aliquot"
+  },
+  "usage": {
+    "en": "Chloroquine stock solution for enhancing plasmid transfection efficiency (calcium phosphate method).",
+    "zh": "氯喹母液，用于提高质粒转染效率（磷酸钙法）。"
+  }
 }

@@ -35,5 +35,12 @@
     "zh": "锚定非依赖性生长金标准。Noble 琼脂精确 42°C。克隆 >50 µm 计数。"
   },
   "ref": "Borowicz et al. (2014) J Vis Exp 92:e51998",
-  "source": "JoVE"
+  "source": "JoVE",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "2–4 weeks",
+    "hands_on": "2 hours"
+  }
 }

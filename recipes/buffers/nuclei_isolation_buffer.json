@@ -3,22 +3,80 @@
   "name": "Nuclei Isolation Buffer (NP-40 Hypotonic Lysis)",
   "nameCn": "细胞核分离缓冲液（NP-40 低渗裂解）",
   "category": "buffer",
-  "tags": ["subcellular fractionation", "nuclei", "hypotonic lysis", "NP-40", "fractionation"],
+  "tags": [
+    "subcellular fractionation",
+    "nuclei",
+    "hypotonic lysis",
+    "NP-40",
+    "fractionation"
+  ],
   "volume": 50,
   "volumeUnit": "mL",
   "components": [
-    {"name": "HEPES (1 M, pH 7.9)", "amount": 0.5, "unit": "mL", "note": "10 mM"},
-    {"name": "KCl", "amount": 0.037, "unit": "g", "mw": 74.55, "note": "10 mM"},
-    {"name": "MgCl₂ (1 M)", "amount": 0.075, "unit": "mL", "note": "1.5 mM"},
-    {"name": "DTT (1 M)", "amount": 0.05, "unit": "mL", "note": "1 mM; add fresh"},
-    {"name": "NP-40", "amount": 0.05, "unit": "mL", "note": "0.1%; add fresh for membrane disruption"},
-    {"name": "Protease inhibitor cocktail (100×)", "amount": 0.5, "unit": "mL", "note": "1× final; add fresh"},
-    {"name": "ddH₂O", "amount": null, "unit": "to 50 mL"}
+    {
+      "name": "HEPES (1 M, pH 7.9)",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "10 mM"
+    },
+    {
+      "name": "KCl",
+      "amount": 0.037,
+      "unit": "g",
+      "mw": 74.55,
+      "note": "10 mM"
+    },
+    {
+      "name": "MgCl₂ (1 M)",
+      "amount": 0.075,
+      "unit": "mL",
+      "note": "1.5 mM"
+    },
+    {
+      "name": "DTT (1 M)",
+      "amount": 0.05,
+      "unit": "mL",
+      "note": "1 mM; add fresh"
+    },
+    {
+      "name": "NP-40",
+      "amount": 0.05,
+      "unit": "mL",
+      "note": "0.1%; add fresh for membrane disruption"
+    },
+    {
+      "name": "Protease inhibitor cocktail (100×)",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "1× final; add fresh"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "to 50 mL"
+    }
   ],
   "notes": {
     "en": "Prepare base buffer without DTT, NP-40, and inhibitors; add these fresh before use. Incubate cells on ice 10–15 min. Adjust NP-40 (0.05–0.2%) by cell type. Spin 300–600×g 5 min 4°C to pellet nuclei; cytoplasmic fraction in supernatant.",
     "zh": "基础缓冲液不加 DTT、NP-40 和抑制剂，用前现加。细胞冰上孵育 10–15 min。根据细胞类型调整 NP-40 浓度（0.05–0.2%）。300–600×g 5 min 4°C 离心收核；上清为细胞质组分。"
   },
-  "crosslinks": ["subcellular_fractionation", "nuc_cyt_a", "nuc_cyt_b"],
-  "ref": "Bhatt et al. (2021) STAR Protoc 2:100450; Dignam et al. (1983) Nucleic Acids Res 11:1475"
+  "crosslinks": [
+    "subcellular_fractionation",
+    "nuc_cyt_a",
+    "nuc_cyt_b"
+  ],
+  "ref": "Bhatt et al. (2021) STAR Protoc 2:100450; Dignam et al. (1983) Nucleic Acids Res 11:1475",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Add NP-40, DTT, inhibitors fresh before use"
+  },
+  "usage": {
+    "en": "Hypotonic NP-40 lysis buffer for nucleus isolation from mammalian cells.",
+    "zh": "低渗 NP-40 裂解缓冲液，用于哺乳动物细胞核分离。"
+  }
 }

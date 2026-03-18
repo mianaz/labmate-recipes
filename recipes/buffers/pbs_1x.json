@@ -37,5 +37,18 @@
   "notes": {
     "en": "Adjust pH to 7.4 with HCl or NaOH. Autoclave. Can also dilute from 10× PBS. Store at RT, stable for months.",
     "zh": "用 HCl 或 NaOH 调 pH 至 7.4。高压灭菌。也可由 10× PBS 稀释。室温保存，可稳定数月。"
+  },
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "autoclave",
+    "notes": "Autoclave or sterile-filter for cell culture"
+  },
+  "usage": {
+    "en": "Isotonic phosphate-buffered saline; universal wash buffer for cells, tissues, and proteins.",
+    "zh": "等渗磷酸盐缓冲液，用于细胞、组织和蛋白质的通用洗涤。"
   }
 }

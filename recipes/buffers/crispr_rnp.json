@@ -50,5 +50,18 @@
     "en": "sgRNA:Cas9 molar ratio 1.2:1–3:1. Incubate at RT for 10 min to assemble RNP complex. Deliver by electroporation or lipofection.",
     "zh": "sgRNA:Cas9 摩尔比 1.2:1–3:1。室温孵育 10 min 组装 RNP。电转或脂质体转染。"
   },
-  "ref": "Kim et al. (2014) Genome Res 24:1012–1019; Hanna & Doench (2020) Nat Biotechnol 38:824–844"
+  "ref": "Kim et al. (2014) Genome Res 24:1012–1019; Hanna & Doench (2020) Nat Biotechnol 38:824–844",
+  "discipline": [
+    "molecular"
+  ],
+  "storage": {
+    "temperature": "Use fresh or -80°C",
+    "duration": "3 months (-80°C)",
+    "sterile": "not_required",
+    "notes": "Assemble RNP fresh; freeze single-use aliquots"
+  },
+  "usage": {
+    "en": "Pre-assembled Cas9 ribonucleoprotein (RNP) complex for efficient CRISPR genome editing.",
+    "zh": "预组装的 Cas9 核糖核蛋白（RNP）复合体，用于高效 CRISPR 基因组编辑。"
+  }
 }

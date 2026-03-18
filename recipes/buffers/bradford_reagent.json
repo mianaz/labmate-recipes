@@ -3,19 +3,57 @@
   "name": "Bradford Reagent (Coomassie Brilliant Blue G-250)",
   "nameCn": "Bradford 考马斯亮蓝 G-250 染料试剂",
   "category": "buffer",
-  "tags": ["protein quantification", "Bradford", "Coomassie G-250", "colorimetric"],
+  "tags": [
+    "protein quantification",
+    "Bradford",
+    "Coomassie G-250",
+    "colorimetric"
+  ],
   "volume": 1000,
   "volumeUnit": "mL",
   "components": [
-    {"name": "Coomassie Brilliant Blue G-250", "amount": 0.1, "unit": "g"},
-    {"name": "95% Ethanol", "amount": 50, "unit": "mL"},
-    {"name": "85% Phosphoric acid (H₃PO₄)", "amount": 100, "unit": "mL"},
-    {"name": "ddH₂O", "amount": null, "unit": "to 1000 mL"}
+    {
+      "name": "Coomassie Brilliant Blue G-250",
+      "amount": 0.1,
+      "unit": "g"
+    },
+    {
+      "name": "95% Ethanol",
+      "amount": 50,
+      "unit": "mL"
+    },
+    {
+      "name": "85% Phosphoric acid (H₃PO₄)",
+      "amount": 100,
+      "unit": "mL"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "to 1000 mL"
+    }
   ],
   "notes": {
     "en": "Dissolve CBB G-250 in ethanol first, then add phosphoric acid, then water. Filter through Whatman No.1 paper. Store at RT protected from light; stable for months. Solution appears brown-red before reaction, shifting to blue with protein. Alternatively use commercial Bio-Rad Protein Assay (5× concentrate: dilute 1:5).",
     "zh": "先将 CBB G-250 溶于乙醇，再加磷酸，最后加水至定量。Whatman 1 号滤纸过滤。室温避光保存，稳定数月。试剂未与蛋白反应时呈棕红色，与蛋白结合后变蓝色。也可直接购买 Bio-Rad Protein Assay（5× 浓缩，1:5 稀释使用）。"
   },
-  "crosslinks": ["bradford_assay_protocol", "bca_protein_assay"],
-  "ref": "Bradford (1976) Anal Biochem 72:248–254; Bio-Rad Protein Assay Technical Note 1"
+  "crosslinks": [
+    "bradford_assay_protocol",
+    "bca_protein_assay"
+  ],
+  "ref": "Bradford (1976) Anal Biochem 72:248–254; Bio-Rad Protein Assay Technical Note 1",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Store in dark bottle"
+  },
+  "usage": {
+    "en": "Coomassie G-250 dye solution for Bradford colorimetric protein quantification at A595.",
+    "zh": "考马斯亮蓝 G-250 试剂，用于 Bradford 比色法蛋白定量（A595）。"
+  }
 }

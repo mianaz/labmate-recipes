@@ -3,7 +3,14 @@
   "name": "Percoll Stock Solution (Isotonic, Self-Prepared)",
   "nameCn": "Percoll 等渗储液（自配）",
   "category": "buffer",
-  "tags": ["density gradient", "Percoll", "cell separation", "organelle isolation", "density centrifugation", "PBMC"],
+  "tags": [
+    "density gradient",
+    "Percoll",
+    "cell separation",
+    "organelle isolation",
+    "density centrifugation",
+    "PBMC"
+  ],
   "volume": 50,
   "volumeUnit": "mL",
   "components": [
@@ -24,6 +31,24 @@
     "en": "Mix 9 parts Percoll + 1 part 10× PBS to create Isotonic Percoll Stock (IPS, density ~1.124 g/mL). Prepare working gradients by diluting IPS with 1× PBS:\n- For PBMC (density 1.077): 77% IPS in 1× PBS → (0.77 × 1.124) + (0.23 × 1.007) = 1.077 g/mL\n- For mitochondria: 18% and 30% IPS layers (see mitochondria_isolation)\n- For neutrophils: 70% and 55% IPS layers (density 1.08 and 1.10)\nVerify density of each layer by weighing 1.000 mL on analytical balance. Do NOT autoclave (degrades coating). Filter-sterilize (0.22 µm) for cell work. Store at 4°C; stable 1 year.",
     "zh": "9 份 Percoll + 1 份 10× PBS 配制等渗 Percoll 储液（IPS，密度 ~1.124 g/mL）。IPS 用 1× PBS 稀释配制工作梯度：\n- PBMC（密度 1.077）：77% IPS in 1× PBS\n- 线粒体：18% 和 30% IPS 层（参见 mitochondria_isolation）\n- 中性粒细胞：70% 和 55% IPS 层（密度 1.08 和 1.10）\n每层密度用分析天平称量 1.000 mL 验证。勿高压灭菌（破坏包被）。细胞实验用 0.22 µm 过滤除菌。4°C 保存，稳定 1 年。"
   },
-  "crosslinks": ["pbmc_isolation", "ficoll_solution", "mitochondria_isolation", "density_gradient_centrifugation"],
-  "ref": "GE Healthcare Percoll Methodology and Applications Booklet; Böyum et al. (1991) Eur J Haematol 47:308; Pertoft (2000) J Biochem Biophys Methods 44:1–30"
+  "crosslinks": [
+    "pbmc_isolation",
+    "ficoll_solution",
+    "mitochondria_isolation",
+    "density_gradient_centrifugation"
+  ],
+  "ref": "GE Healthcare Percoll Methodology and Applications Booklet; Böyum et al. (1991) Eur J Haematol 47:308; Pertoft (2000) J Biochem Biophys Methods 44:1–30",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

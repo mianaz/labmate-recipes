@@ -45,5 +45,12 @@
     "en": "Quantitative assay for cell migration/invasion using Boyden chamber principle. Cells migrate through 8 µm pores toward chemoattractant (serum). For invasion assay, coat inserts with Matrigel. Count migrated cells on lower surface after crystal violet staining.",
     "zh": "基于 Boyden 小室原理的定量细胞迁移/侵袭实验。细胞通过 8 µm 孔向趋化因子（血清）迁移。侵袭实验需在膜上涂 Matrigel。结晶紫染色后计数下表面迁移细胞。"
   },
-  "ref": "Justus et al. (2014) J Vis Exp 88:e51046; protocols.io doi:10.17504/protocols.io.261ge3d5ov47"
+  "ref": "Justus et al. (2014) J Vis Exp 88:e51046; protocols.io doi:10.17504/protocols.io.261ge3d5ov47",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "1–2 days",
+    "hands_on": "2 hours"
+  }
 }

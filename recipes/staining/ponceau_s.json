@@ -30,5 +30,18 @@
     "en": "Soak PVDF/NC membrane for 1–5 min after transfer. Rinse with TBS or water to destain. Solution is reusable.",
     "zh": "转膜后浸泡 PVDF/NC 膜 1–5 min，TBS 或水洗即可脱色。可重复使用。"
   },
-  "ref": "Romero-Calvo et al. (2010) Anal Biochem 401:318–320"
+  "ref": "Romero-Calvo et al. (2010) Anal Biochem 401:318–320",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Reuse 2-3 times; discard if faded"
+  },
+  "usage": {
+    "en": "Reversible red protein stain for verifying transfer efficiency on western blot membranes.",
+    "zh": "可逆红色蛋白染色，用于验证 Western blot 转膜效率。"
+  }
 }

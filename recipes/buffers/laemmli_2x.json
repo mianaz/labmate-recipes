@@ -49,5 +49,18 @@
     "en": "Aliquot and store at −20°C. β-mercaptoethanol can be replaced with DTT (200 mM). Heat at 95–100°C for 5 min before loading.",
     "zh": "分装后 -20°C 保存。β-mercaptoethanol 可用 DTT (200 mM) 替代。使用前 95–100°C 加热 5 min。"
   },
-  "ref": "Laemmli (1970) Nature 227:680–685"
+  "ref": "Laemmli (1970) Nature 227:680–685",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "RT or 4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Aliquot; add reducing agent fresh; -20°C for long storage"
+  },
+  "usage": {
+    "en": "2× SDS-PAGE sample loading buffer for protein denaturation before gel electrophoresis.",
+    "zh": "SDS-PAGE 上样缓冲液（2×），蛋白变性后上样。"
+  }
 }

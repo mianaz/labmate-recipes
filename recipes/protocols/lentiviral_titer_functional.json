@@ -3,28 +3,99 @@
   "name": "Lentiviral Functional Titer (Infectious Units/mL)",
   "nameCn": "慢病毒功能性滴度测定（感染单位/mL）",
   "category": "protocol",
-  "tags": ["lentivirus", "titer", "functional titer", "IU/mL", "viral quantification", "virology", "cell biology", "flow cytometry"],
+  "tags": [
+    "lentivirus",
+    "titer",
+    "functional titer",
+    "IU/mL",
+    "viral quantification",
+    "virology",
+    "cell biology",
+    "flow cytometry"
+  ],
   "components": [
-    {"name": "1. Day 0: Seed HEK293T or HeLa cells in 24-well plate", "amount": 1, "unit": "step",
-     "note": {"en": "1×10⁵ cells/well (HEK293T) or 0.5×10⁵ (HeLa). Cells should be 20–30% confluent at time of infection (exponential growth). Avoid antibiotics.", "zh": "HEK293T：每孔 1×10⁵；HeLa：0.5×10⁵。感染时细胞汇合度 20–30%（指数生长期）。不加抗生素。"}},
-    {"name": "2. Day 1: Prepare serial dilutions of virus (10-fold series)", "amount": 1, "unit": "step",
-     "note": {"en": "In complete medium: undiluted, 1:10, 1:100, 1:1,000, 1:10,000. Add polybrene (8 µg/mL final). Infect in duplicate wells per dilution. Total volume: 500 µL/well.", "zh": "完全培养基中：原液、1:10、1:100、1:1,000、1:10,000。加 Polybrene（终浓度 8 µg/mL）。每稀释度双复孔感染。每孔总体积 500 µL。"}},
-    {"name": "3. Optional: spinoculation at 800×g, 30 min, RT", "amount": 1, "unit": "step",
-     "note": {"en": "Increases transduction efficiency 2–5×. Preferred for hard-to-infect cells.", "zh": "感染效率提高 2–5 倍。推荐用于难感染细胞。"}},
-    {"name": "4. Day 2 (24 h): replace medium with fresh complete medium (remove virus)", "amount": 1, "unit": "step",
-     "note": {"en": "Remove virus-containing medium to reduce toxicity.", "zh": "去除含病毒培养基以减少毒性。"}},
-    {"name": "5. Day 4–5 (72–96 h post-transduction): harvest cells for analysis", "amount": 1, "unit": "step",
-     "note": {"en": "GFP/reporter virus: analyze by flow cytometry. Antibiotic resistance: fix at 72 h, select with antibiotic for 7 days, count colonies.", "zh": "GFP/报告基因病毒：流式细胞仪分析。抗生素抗性：72 h 固定，抗生素筛选 7 天，克隆计数。"}},
-    {"name": "6. Flow cytometry analysis (GFP method)", "amount": 1, "unit": "step",
-     "note": {"en": "Count % GFP+ cells (FITC channel). Gate on live cells (FSC/SSC + DAPI-). Use dilutions where 1–20% cells are GFP+ (linear range, MOI ≤0.2 ensures single integration).", "zh": "计数 GFP+ 细胞百分比（FITC 通道）。门控活细胞（FSC/SSC + DAPI-）。使用 1–20% GFP+ 的稀释度（线性范围，MOI ≤0.2 确保单次整合）。"}},
-    {"name": "7. Calculate titer (IU/mL)", "amount": 1, "unit": "step",
-     "note": {"en": "IU/mL = (% GFP+ / 100) × total cell count × dilution factor / volume infected (mL). Example: 10% GFP+, 10⁵ cells, 1:1,000 dilution, 0.5 mL → (0.10 × 10⁵ × 1,000) / 0.5 = 2×10⁷ IU/mL.", "zh": "IU/mL = (% GFP+ / 100) × 细胞总数 × 稀释倍数 / 感染体积（mL）。例：10% GFP+，10⁵ 细胞，1:1,000 稀释，0.5 mL → (0.10 × 10⁵ × 1,000) / 0.5 = 2×10⁷ IU/mL。"}}
+    {
+      "name": "1. Day 0: Seed HEK293T or HeLa cells in 24-well plate",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "1×10⁵ cells/well (HEK293T) or 0.5×10⁵ (HeLa). Cells should be 20–30% confluent at time of infection (exponential growth). Avoid antibiotics.",
+        "zh": "HEK293T：每孔 1×10⁵；HeLa：0.5×10⁵。感染时细胞汇合度 20–30%（指数生长期）。不加抗生素。"
+      }
+    },
+    {
+      "name": "2. Day 1: Prepare serial dilutions of virus (10-fold series)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "In complete medium: undiluted, 1:10, 1:100, 1:1,000, 1:10,000. Add polybrene (8 µg/mL final). Infect in duplicate wells per dilution. Total volume: 500 µL/well.",
+        "zh": "完全培养基中：原液、1:10、1:100、1:1,000、1:10,000。加 Polybrene（终浓度 8 µg/mL）。每稀释度双复孔感染。每孔总体积 500 µL。"
+      }
+    },
+    {
+      "name": "3. Optional: spinoculation at 800×g, 30 min, RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Increases transduction efficiency 2–5×. Preferred for hard-to-infect cells.",
+        "zh": "感染效率提高 2–5 倍。推荐用于难感染细胞。"
+      }
+    },
+    {
+      "name": "4. Day 2 (24 h): replace medium with fresh complete medium (remove virus)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove virus-containing medium to reduce toxicity.",
+        "zh": "去除含病毒培养基以减少毒性。"
+      }
+    },
+    {
+      "name": "5. Day 4–5 (72–96 h post-transduction): harvest cells for analysis",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "GFP/reporter virus: analyze by flow cytometry. Antibiotic resistance: fix at 72 h, select with antibiotic for 7 days, count colonies.",
+        "zh": "GFP/报告基因病毒：流式细胞仪分析。抗生素抗性：72 h 固定，抗生素筛选 7 天，克隆计数。"
+      }
+    },
+    {
+      "name": "6. Flow cytometry analysis (GFP method)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Count % GFP+ cells (FITC channel). Gate on live cells (FSC/SSC + DAPI-). Use dilutions where 1–20% cells are GFP+ (linear range, MOI ≤0.2 ensures single integration).",
+        "zh": "计数 GFP+ 细胞百分比（FITC 通道）。门控活细胞（FSC/SSC + DAPI-）。使用 1–20% GFP+ 的稀释度（线性范围，MOI ≤0.2 确保单次整合）。"
+      }
+    },
+    {
+      "name": "7. Calculate titer (IU/mL)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "IU/mL = (% GFP+ / 100) × total cell count × dilution factor / volume infected (mL). Example: 10% GFP+, 10⁵ cells, 1:1,000 dilution, 0.5 mL → (0.10 × 10⁵ × 1,000) / 0.5 = 2×10⁷ IU/mL.",
+        "zh": "IU/mL = (% GFP+ / 100) × 细胞总数 × 稀释倍数 / 感染体积（mL）。例：10% GFP+，10⁵ 细胞，1:1,000 稀释，0.5 mL → (0.10 × 10⁵ × 1,000) / 0.5 = 2×10⁷ IU/mL。"
+      }
+    }
   ],
   "notes": {
     "en": "Functional titer reports true infectious units (transducing units, TU). More accurate than p24 ELISA for biological experiments. Use MOI ≤0.2 for titer calculation (Poisson distribution: ensures single integration events). For non-GFP vectors, use qPCR-based titer: measure proviral DNA copies per cell at 72 h post-transduction.",
     "zh": "功能性滴度报告真实感染单位（转导单位，TU）。生物学实验比 p24 ELISA 更准确。计算滴度时 MOI ≤0.2（泊松分布确保单次整合事件）。非 GFP 载体可用 qPCR 法：72 h 后测每个细胞中病毒 DNA 拷贝数。"
   },
-  "crosslinks": ["lentivirus_production", "lentiviral_titer_p24", "polybrene_stock", "flow_cytometry_protocol"],
+  "crosslinks": [
+    "lentivirus_production",
+    "lentiviral_titer_p24",
+    "polybrene_stock",
+    "flow_cytometry_protocol"
+  ],
   "ref": "Kutner et al. (2009) Nat Protoc 4:495–505; Geraerts et al. (2006) Gene Ther 13:1294–1299; Salmon & Trono (2006) Curr Protoc Hum Genet 12.10.1",
-  "doi": "10.1038/nprot.2009.22"
+  "doi": "10.1038/nprot.2009.22",
+  "discipline": [
+    "cell",
+    "immunology"
+  ],
+  "duration": {
+    "total": "4–5 days",
+    "hands_on": "3 hours"
+  }
 }

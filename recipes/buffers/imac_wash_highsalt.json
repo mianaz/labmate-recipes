@@ -3,19 +3,65 @@
   "name": "IMAC High-Salt Wash Buffer",
   "nameCn": "IMAC 高盐洗涤缓冲液",
   "category": "buffer",
-  "tags": ["protein purification", "His-tag", "Ni-NTA", "IMAC", "wash"],
+  "tags": [
+    "protein purification",
+    "His-tag",
+    "Ni-NTA",
+    "IMAC",
+    "wash"
+  ],
   "volume": 500,
   "volumeUnit": "mL",
   "components": [
-    {"name": "NaH₂PO₄", "amount": 3.45, "unit": "g", "mw": 119.98, "note": "50 mM"},
-    {"name": "NaCl", "amount": 14.61, "unit": "g", "mw": 58.44, "note": "500 mM; reduces nonspecific binding"},
-    {"name": "Imidazole", "amount": 1.7, "unit": "g", "mw": 68.08, "note": "50 mM"},
-    {"name": "ddH₂O", "amount": null, "unit": "to 500 mL"}
+    {
+      "name": "NaH₂PO₄",
+      "amount": 3.45,
+      "unit": "g",
+      "mw": 119.98,
+      "note": "50 mM"
+    },
+    {
+      "name": "NaCl",
+      "amount": 14.61,
+      "unit": "g",
+      "mw": 58.44,
+      "note": "500 mM; reduces nonspecific binding"
+    },
+    {
+      "name": "Imidazole",
+      "amount": 1.7,
+      "unit": "g",
+      "mw": 68.08,
+      "note": "50 mM"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "to 500 mL"
+    }
   ],
   "notes": {
     "en": "pH 8.0 with NaOH. High NaCl (500 mM) reduces electrostatic nonspecific binding. Use as second wash after standard wash buffer. Optional: add 1 mM ATP + 5 mM MgCl₂ to strip chaperones (Hsp70/DnaK).",
     "zh": "NaOH 调 pH 8.0。高 NaCl（500 mM）减少非特异性静电结合。作为第二步洗涤液使用。可选：加 1 mM ATP + 5 mM MgCl₂ 以去除共纯化的分子伴侣（Hsp70/DnaK）。"
   },
-  "crosslinks": ["his_binding", "his_tag_purification", "imac_elution_500"],
-  "ref": "QIAGEN Ni-NTA Handbook; Bornhorst & Falke (2000) Methods Enzymol 326:245–254"
+  "crosslinks": [
+    "his_binding",
+    "his_tag_purification",
+    "imac_elution_500"
+  ],
+  "ref": "QIAGEN Ni-NTA Handbook; Bornhorst & Falke (2000) Methods Enzymol 326:245–254",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "High-salt wash buffer (500 mM NaCl) for removing nonspecific proteins from Ni-NTA resin.",
+    "zh": "高盐洗涤缓冲液（500 mM NaCl），去除 Ni-NTA 树脂非特异性结合蛋白。"
+  }
 }

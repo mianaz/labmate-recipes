@@ -32,5 +32,19 @@
     "en": "Provides higher resolution than TAE for certain applications. Use at 0.5× or 1×.",
     "zh": "分辨率要求高时用 TBE (优于 TAE)。稀释至 0.5× 或 1× 使用。0.5× = 45 mM Tris-borate, 1 mM EDTA, pH ~8.3。室温保存，过 0.22 µm 滤膜防沉淀。"
   },
-  "ref": "CSH Protocols doi:10.1101/pdb.rec8458; Sambrook & Russell (2001) Molecular Cloning"
+  "ref": "CSH Protocols doi:10.1101/pdb.rec8458; Sambrook & Russell (2001) Molecular Cloning",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "10× TBE buffer; dilute to 0.5–1× for DNA/RNA gel electrophoresis and EMSA.",
+    "zh": "10× TBE 缓冲液，稀释至 0.5–1× 用于 DNA/RNA 凝胶电泳和 EMSA。"
+  }
 }

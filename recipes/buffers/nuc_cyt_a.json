@@ -48,5 +48,18 @@
     "en": "Incubate on ice 15 min, add 10% NP-40 to final 0.6%, vortex 10 s, centrifuge at 4°C 14,000×g for 30 s. Supernatant = cytoplasmic fraction.",
     "zh": "冰上孵育 15 min，加 10% NP-40 至终浓度 0.6%，涡旋 10 s，4°C 14,000×g 30 s。上清 = 胞浆。"
   },
-  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29; Suzuki et al. (2010) Nat Protoc 5:532–539"
+  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29; Suzuki et al. (2010) Nat Protoc 5:532–539",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Add inhibitors fresh"
+  },
+  "usage": {
+    "en": "Buffer A for cytoplasmic/nuclear fractionation (hypotonic lysis step).",
+    "zh": "细胞质/细胞核分级分离缓冲液 A（低渗裂解步骤）。"
+  }
 }

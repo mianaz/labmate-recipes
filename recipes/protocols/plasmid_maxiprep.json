@@ -85,5 +85,13 @@
     "en": "Typical yield: 100 mL high-copy plasmid culture → 500-1000 µg DNA. Endotoxin-free plasmid for transfection/in vivo use requires endotoxin removal column. Avoid excessive vortexing to prevent genomic DNA contamination.",
     "zh": "典型产量：100 mL 高拷贝质粒 → 500–1000 µg DNA。Endotoxin-free 质粒用于转染/体内实验需使用 endotoxin removal column。避免过度涡旋导致基因组 DNA 污染。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd Ed; QIAGEN Plasmid Purification Handbook"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd Ed; QIAGEN Plasmid Purification Handbook",
+  "discipline": [
+    "molecular",
+    "microbiology"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "2 hours"
+  }
 }

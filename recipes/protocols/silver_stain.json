@@ -1,0 +1,134 @@
+{
+  "id": "silver_stain",
+  "name": "Silver Stain (SDS-PAGE)",
+  "nameCn": "银染",
+  "category": "protocol",
+  "tags": [
+    "silver stain",
+    "SDS-PAGE",
+    "protein detection",
+    "sensitive",
+    "protein",
+    "gel staining"
+  ],
+  "components": [
+    {
+      "name": "1. Fix gel: 50% MeOH + 12% AcOH + 0.05% formaldehyde, ≥1 h (overnight OK), RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Fix in 200 mL fixer per standard mini gel. Removes SDS and stops protein migration. Minimum 1 h; overnight improves sensitivity.",
+        "zh": "每块标准 mini 胶用 200 mL 固定液。去除 SDS 并停止蛋白迁移。最少 1 h；过夜固定可提高灵敏度。"
+      }
+    },
+    {
+      "name": "2. Wash: 50% EtOH, 3 × 20 min, RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Removes acetic acid and most methanol. Fresh EtOH each wash.",
+        "zh": "去除乙酸和大部分甲醇。每次用新鲜乙醇。"
+      }
+    },
+    {
+      "name": "3. Sensitize: 0.02% Na₂S₂O₃ (sodium thiosulfate) in water, exactly 1 min, RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "CRITICAL: exactly 1 min. Sensitization enhances silver binding to proteins. Immediately wash 3 × 20 s ddH₂O after.",
+        "zh": "关键：精确计时 1 min。增强银与蛋白的结合。立即用 ddH₂O 洗 3 × 20 s。"
+      }
+    },
+    {
+      "name": "4. Rinse: ddH₂O, 3 × 20 s",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Rapid rinses only — do not over-wash here.",
+        "zh": "快速冲洗——此步不可过长。"
+      }
+    },
+    {
+      "name": "5. Silver impregnation: 0.2% AgNO₃ + 0.075% formaldehyde, 20 min, 4°C or RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Prepare fresh: 0.2 g AgNO₃/100 mL ddH₂O + 75 µL 37% formaldehyde. 4°C gives more uniform staining. Protect from light.",
+        "zh": "新鲜配制：0.2 g AgNO₃/100 mL 水 + 75 µL 37% 甲醛。4°C 染色更均匀。避光操作。"
+      }
+    },
+    {
+      "name": "6. Rinse: ddH₂O, 2 × 20 s",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Removes unbound silver. Do not over-rinse.",
+        "zh": "去除未结合的银。不可过长冲洗。"
+      }
+    },
+    {
+      "name": "7. Develop: 6% Na₂CO₃ + 0.05% formaldehyde + 0.0004% Na₂S₂O₃, RT; monitor until bands appear",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Develop time: 30 s – 10 min. Monitor carefully — over-development gives dark background. Fresh developer required. Swirl gently throughout.",
+        "zh": "显影时间：30 s – 10 min。仔细监控——过度显影导致背景过深。需新鲜配制显影液。轻柔摇动。"
+      }
+    },
+    {
+      "name": "8. Stop: 50% MeOH + 12% AcOH, 10 min; rinse 3 × ddH₂O, 5 min each",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Immediately add stop solution as soon as desired staining intensity is reached. Final rinse in ddH₂O before imaging.",
+        "zh": "达到所需染色强度后立即加终止液。成像前用 ddH₂O 末次冲洗。"
+      }
+    },
+    {
+      "name": "9. Image gel on white-light transilluminator or scanner",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use flatbed scanner (600 dpi minimum) or gel documentation system with white light. For densitometry: Image Lab or ImageJ.",
+        "zh": "用平板扫描仪（至少 600 dpi）或凝胶成像系统（白光）拍照。密度扫描：Image Lab 或 ImageJ。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Sensitivity: 1–10 ng protein/band (10–100× more sensitive than Coomassie). MS-compatible silver stain: omit glutaraldehyde and formaldehyde (use Shevchenko MS-compatible protocol: sensitizer = sodium thiosulfate, developer = Na₂CO₃ only). Interference: keratin (skin) gives false bands — wear gloves, use clean reagents. Contamination with dust/fingerprints ruins gel.",
+    "zh": "灵敏度：1–10 ng 蛋白/条带（比考马斯蓝灵敏 10–100 倍）。质谱兼容银染：省去戊二醛和甲醛（用 Shevchenko MS 兼容方案：仅用硫代硫酸钠增敏，Na₂CO₃ 显影）。干扰：角蛋白（皮肤来源）产生假阳性条带——戴手套，使用清洁试剂。灰尘/指纹会损坏结果。"
+  },
+  "ref": "Shevchenko et al. (1996) Anal Chem 68:850–858; Blum et al. (1987) Electrophoresis 8:93–99; Mortz et al. (2001) Proteomics 1:1359",
+  "source": "Analytical Chemistry",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  },
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "3 hours",
+    "notes": "Mostly incubation steps"
+  },
+  "crosslinks": [
+    "coomassie_staining",
+    "wb_protocol",
+    "sds_page_gel"
+  ],
+  "doi": "10.1021/ac950914h",
+  "stoppingPoints": [
+    {
+      "afterStep": "Gel fixed overnight",
+      "condition": "50% MeOH/12% AcOH at RT",
+      "duration": "overnight"
+    }
+  ]
+}

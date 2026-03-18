@@ -44,5 +44,19 @@
     "zh": "温和裂解保留荧光素酶活性。室温 15 min。20 µL 裂解液 + 100 µL 底物。"
   },
   "ref": "Promega E1500",
-  "source": "Promega"
+  "source": "Promega",
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Aliquot; avoid repeated freeze-thaw"
+  },
+  "usage": {
+    "en": "Passive lysis buffer for dual-luciferase reporter assays (Promega-compatible).",
+    "zh": "被动裂解缓冲液，用于双荧光素酶报告基因检测（与 Promega 兼容）。"
+  }
 }

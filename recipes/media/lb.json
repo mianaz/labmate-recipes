@@ -30,5 +30,18 @@
   "notes": {
     "en": "Adjust pH to 7.0 with NaOH. Autoclave 121°C 15 min. Add antibiotics after cooling to <55°C. For agar plates, add 15 g/L agar before autoclaving.",
     "zh": "用 NaOH 调 pH 至 7.0。121°C 高压灭菌 15 min。冷却至 <55°C 后加抗生素。制备平板加 15 g/L 琼脂后再灭菌。"
+  },
+  "discipline": [
+    "microbiology"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "autoclave",
+    "notes": "Autoclave at 121°C 20 min; add antibiotics at <55°C"
+  },
+  "usage": {
+    "en": "Lysogeny broth (LB) liquid medium for routine E. coli culture.",
+    "zh": "LB 培养基，用于常规大肠杆菌液体培养。"
   }
 }

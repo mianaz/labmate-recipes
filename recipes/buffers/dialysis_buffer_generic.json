@@ -3,19 +3,63 @@
   "name": "Protein Dialysis Buffer (Generic)",
   "nameCn": "蛋白透析缓冲液（通用型）",
   "category": "buffer",
-  "tags": ["protein purification", "dialysis", "buffer exchange", "storage"],
+  "tags": [
+    "protein purification",
+    "dialysis",
+    "buffer exchange",
+    "storage"
+  ],
   "volume": 1000,
   "volumeUnit": "mL",
   "components": [
-    {"name": "HEPES (1 M, pH 7.5)", "amount": 20, "unit": "mL", "note": "20 mM"},
-    {"name": "NaCl", "amount": 8.77, "unit": "g", "mw": 58.44, "note": "150 mM"},
-    {"name": "EDTA (0.5 M, pH 8.0)", "amount": 0.2, "unit": "mL", "note": "0.1 mM; optional metal chelator"},
-    {"name": "DTT (1 M)", "amount": 0.5, "unit": "mL", "note": "0.5 mM; optional for Cys-containing proteins"}
+    {
+      "name": "HEPES (1 M, pH 7.5)",
+      "amount": 20,
+      "unit": "mL",
+      "note": "20 mM"
+    },
+    {
+      "name": "NaCl",
+      "amount": 8.77,
+      "unit": "g",
+      "mw": 58.44,
+      "note": "150 mM"
+    },
+    {
+      "name": "EDTA (0.5 M, pH 8.0)",
+      "amount": 0.2,
+      "unit": "mL",
+      "note": "0.1 mM; optional metal chelator"
+    },
+    {
+      "name": "DTT (1 M)",
+      "amount": 0.5,
+      "unit": "mL",
+      "note": "0.5 mM; optional for Cys-containing proteins"
+    }
   ],
   "notes": {
     "en": "Use ≥200× volume excess relative to sample. Change dialysis buffer 2–3 times (2 h each at 4°C, or overnight for last change). MWCO: 3.5 kDa for <20 kDa proteins, 12–14 kDa for larger. Add 10% glycerol for long-term storage after dialysis.",
     "zh": "透析液体积需 ≥200 倍样品体积。更换 2–3 次（每次 4°C 2 h，最后一次可过夜）。截留分子量：<20 kDa 蛋白用 3.5 kDa MWCO，大蛋白用 12–14 kDa MWCO。透析后加 10% 甘油可延长储存期。"
   },
-  "crosslinks": ["his_tag_purification", "gst_tag_purification", "protein_dialysis"],
-  "ref": "Scopes (1994) Protein Purification, 3rd ed., Springer; Wingfield (2001) Curr Protoc Protein Sci A.3B.1"
+  "crosslinks": [
+    "his_tag_purification",
+    "gst_tag_purification",
+    "protein_dialysis"
+  ],
+  "ref": "Scopes (1994) Protein Purification, 3rd ed., Springer; Wingfield (2001) Curr Protoc Protein Sci A.3B.1",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 week",
+    "sterile": "not_required",
+    "notes": "Prepare fresh; add DTT just before use"
+  },
+  "usage": {
+    "en": "General dialysis buffer for buffer exchange to remove imidazole, salt, or small molecules.",
+    "zh": "通用透析缓冲液，用于换液去除咪唑、盐分等小分子。"
+  }
 }

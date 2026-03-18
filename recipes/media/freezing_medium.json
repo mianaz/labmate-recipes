@@ -26,5 +26,18 @@
     "en": "Prepare fresh or pre-chill at 4°C. DMSO is a penetrating cryoprotectant that prevents ice crystal formation. After resuspending cells, transfer quickly to cryovials, use a controlled-rate freezing container (-1°C/min) to -80°C, then move to liquid nitrogen after 24h. DMSO is cytotoxic at 37°C — dilute promptly after thawing.",
     "zh": "使用前现配或 4°C 预冷。DMSO 是渗透性冷冻保护剂，防止冰晶形成。细胞重悬后迅速转移至冻存管，使用梯度降温盒 (-1°C/min) 放入 -80°C，24h 后转液氮。DMSO 在 37°C 对细胞有毒，解冻后尽快稀释。"
   },
-  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed."
+  "ref": "Freshney (2015) Culture of Animal Cells, 7th ed.",
+  "discipline": [
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C (short) or -20°C (long)",
+    "duration": "6 months",
+    "sterile": "filter_022",
+    "notes": "Add DMSO just before use; DMSO is toxic at RT"
+  },
+  "usage": {
+    "en": "Cryopreservation medium (DMSO + FBS) for long-term storage of cell lines in liquid nitrogen.",
+    "zh": "冻存培养基（DMSO + FBS），用于液氮长期保存细胞系。"
+  }
 }

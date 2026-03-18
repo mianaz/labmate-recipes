@@ -3,32 +3,118 @@
   "name": "Exosome / Extracellular Vesicle Isolation (Differential Ultracentrifugation)",
   "nameCn": "外泌体/胞外囊泡分离（差速超速离心法）",
   "category": "protocol",
-  "tags": ["exosome", "extracellular vesicle", "EV", "ultracentrifugation", "cell biology", "liquid biopsy", "biomarker", "ISEV"],
+  "tags": [
+    "exosome",
+    "extracellular vesicle",
+    "EV",
+    "ultracentrifugation",
+    "cell biology",
+    "liquid biopsy",
+    "biomarker",
+    "ISEV"
+  ],
   "components": [
-    {"name": "1. Culture cells in EV-depleted medium (48–72 h conditioned medium)", "amount": 1, "unit": "step",
-     "note": {"en": "EV-free FBS: ultracentrifuge commercial FBS at 100,000×g 18 h 4°C; collect supernatant. Or use serum-free medium for last 24–48 h (lower contamination, lower yield). Volume: ≥50 mL conditioned medium needed.", "zh": "去 EV 血清：商业 FBS 100,000×g 4°C 18 h 超速离心；取上清。或最后 24–48 h 改无血清培养基（污染少，产量低）。需 ≥50 mL 条件培养基。"}},
-    {"name": "2. Cell debris removal: 300×g, 10 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Remove cells. Keep supernatant.", "zh": "去除细胞。保留上清。"}},
-    {"name": "3. Dead cell/apoptotic body removal: 2,000×g, 10 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Pellet = apoptotic bodies (discard). Keep supernatant.", "zh": "沉淀 = 凋亡小体（弃去）。保留上清。"}},
-    {"name": "4. Large microvesicle removal: 10,000×g, 30 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Pellet = large microvesicles/MVBs (200–1,000 nm). Can collect separately. Keep supernatant for exosome isolation.", "zh": "沉淀 = 大型微囊泡/MVB（200–1,000 nm，可单独收集）。保留上清用于外泌体分离。"}},
-    {"name": "5. Filter supernatant through 0.22 µm membrane", "amount": 1, "unit": "step",
-     "note": {"en": "Removes residual large particles. PES membrane (low protein binding). Keep filtrate.", "zh": "去除残余大颗粒。用低蛋白结合 PES 膜。保留滤液。"}},
-    {"name": "6. Exosome pellet: 100,000×g, 70–90 min, 4°C (Ti-45 or SW-41 Ti rotor)", "amount": 1, "unit": "step",
-     "note": {"en": "First 100k spin pellets exosomes (30–200 nm). Discard supernatant (cytosol + soluble proteins).", "zh": "第一次 100k 离心沉淀外泌体（30–200 nm）。弃去上清（细胞质 + 可溶蛋白）。"}},
-    {"name": "7. Wash: resuspend pellet in 10 mL cold PBS; 100,000×g, 70 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Removes contaminating soluble proteins. Repeat once more for higher purity.", "zh": "去除污染的可溶蛋白。再重复一次可提高纯度。"}},
-    {"name": "8. Resuspend final pellet in PBS or appropriate buffer (50–200 µL)", "amount": 1, "unit": "step",
-     "note": {"en": "Pipette gently. Do not vortex. Store at −80°C (single-use aliquots) or use fresh. Avoid repeated freeze-thaw.", "zh": "轻柔吸打重悬。不涡旋。−80°C 单次分装保存或新鲜使用。避免反复冻融。"}},
-    {"name": "9. Characterize: NTA (particle size/concentration), TEM (morphology), WB (CD63/CD9/CD81/Alix)", "amount": 1, "unit": "step",
-     "note": {"en": "MISEV2018 guidelines (Théry 2018): report at least 3 markers. NTA (NanoSight, ZetaView): size 50–200 nm, report concentration/mL. TEM: cup-shaped morphology. Negative markers: GM130 (no Golgi contamination), Cytochrome C (no mitochondria).", "zh": "MISEV2018 指南（Théry 2018）：至少报告 3 个标记。NTA（NanoSight、ZetaView）：尺寸 50–200 nm，报告浓度/mL。透射电镜：杯形形态。阴性标记：GM130（无 Golgi 污染）、细胞色素 c（无线粒体）。"}}
+    {
+      "name": "1. Culture cells in EV-depleted medium (48–72 h conditioned medium)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "EV-free FBS: ultracentrifuge commercial FBS at 100,000×g 18 h 4°C; collect supernatant. Or use serum-free medium for last 24–48 h (lower contamination, lower yield). Volume: ≥50 mL conditioned medium needed.",
+        "zh": "去 EV 血清：商业 FBS 100,000×g 4°C 18 h 超速离心；取上清。或最后 24–48 h 改无血清培养基（污染少，产量低）。需 ≥50 mL 条件培养基。"
+      }
+    },
+    {
+      "name": "2. Cell debris removal: 300×g, 10 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove cells. Keep supernatant.",
+        "zh": "去除细胞。保留上清。"
+      }
+    },
+    {
+      "name": "3. Dead cell/apoptotic body removal: 2,000×g, 10 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet = apoptotic bodies (discard). Keep supernatant.",
+        "zh": "沉淀 = 凋亡小体（弃去）。保留上清。"
+      }
+    },
+    {
+      "name": "4. Large microvesicle removal: 10,000×g, 30 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pellet = large microvesicles/MVBs (200–1,000 nm). Can collect separately. Keep supernatant for exosome isolation.",
+        "zh": "沉淀 = 大型微囊泡/MVB（200–1,000 nm，可单独收集）。保留上清用于外泌体分离。"
+      }
+    },
+    {
+      "name": "5. Filter supernatant through 0.22 µm membrane",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Removes residual large particles. PES membrane (low protein binding). Keep filtrate.",
+        "zh": "去除残余大颗粒。用低蛋白结合 PES 膜。保留滤液。"
+      }
+    },
+    {
+      "name": "6. Exosome pellet: 100,000×g, 70–90 min, 4°C (Ti-45 or SW-41 Ti rotor)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "First 100k spin pellets exosomes (30–200 nm). Discard supernatant (cytosol + soluble proteins).",
+        "zh": "第一次 100k 离心沉淀外泌体（30–200 nm）。弃去上清（细胞质 + 可溶蛋白）。"
+      }
+    },
+    {
+      "name": "7. Wash: resuspend pellet in 10 mL cold PBS; 100,000×g, 70 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Removes contaminating soluble proteins. Repeat once more for higher purity.",
+        "zh": "去除污染的可溶蛋白。再重复一次可提高纯度。"
+      }
+    },
+    {
+      "name": "8. Resuspend final pellet in PBS or appropriate buffer (50–200 µL)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pipette gently. Do not vortex. Store at −80°C (single-use aliquots) or use fresh. Avoid repeated freeze-thaw.",
+        "zh": "轻柔吸打重悬。不涡旋。−80°C 单次分装保存或新鲜使用。避免反复冻融。"
+      }
+    },
+    {
+      "name": "9. Characterize: NTA (particle size/concentration), TEM (morphology), WB (CD63/CD9/CD81/Alix)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "MISEV2018 guidelines (Théry 2018): report at least 3 markers. NTA (NanoSight, ZetaView): size 50–200 nm, report concentration/mL. TEM: cup-shaped morphology. Negative markers: GM130 (no Golgi contamination), Cytochrome C (no mitochondria).",
+        "zh": "MISEV2018 指南（Théry 2018）：至少报告 3 个标记。NTA（NanoSight、ZetaView）：尺寸 50–200 nm，报告浓度/mL。透射电镜：杯形形态。阴性标记：GM130（无 Golgi 污染）、细胞色素 c（无线粒体）。"
+      }
+    }
   ],
   "notes": {
     "en": "This protocol yields crude exosome preparation. For higher purity: further fractionate on iodixanol (OptiPrep) density gradient (top-loading, 40,000×g 18 h). Typical yield: 10⁹–10¹⁰ particles/mL from 50 mL conditioned medium. Alternative methods: SEC (size exclusion on qEV columns), precipitation (ExoQuick, fast but impure), immunoaffinity (anti-CD63 beads). All reported per MISEV2018 guidelines.",
     "zh": "本方案获得粗制外泌体制品。更高纯度：碘克沙醇（OptiPrep）密度梯度进一步分离（顶部上样，40,000×g 18 h）。典型产量：50 mL 条件培养基 → 10⁹–10¹⁰ 颗粒/mL。替代方法：SEC（qEV 柱分子排阻）、沉淀法（ExoQuick，快速但不纯）、免疫亲和法（anti-CD63 磁珠）。所有报告遵循 MISEV2018 指南。"
   },
-  "crosslinks": ["subcellular_fractionation", "mitochondria_isolation", "sec_purification", "bca_protein_assay", "wb_protocol"],
+  "crosslinks": [
+    "subcellular_fractionation",
+    "mitochondria_isolation",
+    "sec_purification",
+    "bca_protein_assay",
+    "wb_protocol"
+  ],
   "ref": "Théry et al. (2006) Curr Protoc Cell Biol 3.22.1; Théry et al. (2018) J Extracell Vesicles 7:1535750 (MISEV2018); Witwer et al. (2021) J Extracell Vesicles 10:e12080",
-  "doi": "10.1080/20013078.2018.1535750"
+  "doi": "10.1080/20013078.2018.1535750",
+  "discipline": [
+    "cell",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "4 hours"
+  }
 }

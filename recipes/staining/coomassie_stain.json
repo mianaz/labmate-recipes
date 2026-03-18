@@ -38,5 +38,18 @@
   "ref": "Gallagher (2012) Curr Protoc Mol Biol, Ch.10, Unit 10.6",
   "crosslinks": [
     "coomassie_staining"
-  ]
+  ],
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Reuse multiple times"
+  },
+  "usage": {
+    "en": "Coomassie Brilliant Blue R-250 staining solution for visualizing proteins in SDS-PAGE gels.",
+    "zh": "考马斯亮蓝 R-250 染色液，用于 SDS-PAGE 胶中蛋白质可视化。"
+  }
 }

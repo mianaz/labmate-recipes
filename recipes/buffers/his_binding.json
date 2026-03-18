@@ -35,5 +35,19 @@
     "en": "Adjust pH to 8.0 with NaOH. Binding buffer: 10–20 mM imidazole; wash buffer: 20–50 mM; elution buffer: 250–500 mM.",
     "zh": "NaOH 调 pH 至 8.0。结合液含 10–20 mM imidazole；洗涤液 20–50 mM；洗脱液 250–500 mM。"
   },
-  "ref": "QIAGEN Ni-NTA Handbook; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1–9.9.23"
+  "ref": "QIAGEN Ni-NTA Handbook; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1–9.9.23",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Filter 0.22 µm and degas before FPLC use"
+  },
+  "usage": {
+    "en": "Ni-NTA binding and wash buffer (20 mM imidazole) for His-tagged protein IMAC purification.",
+    "zh": "Ni-NTA 结合/洗涤缓冲液（20 mM 咪唑），用于 His 标签蛋白 IMAC 纯化。"
+  }
 }

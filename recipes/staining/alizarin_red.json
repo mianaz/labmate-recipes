@@ -26,5 +26,18 @@
     "zh": "检测钙沉积。4% PFA 固定，室温染色 20 min。十六烷基氯化吡啶提取，OD562 定量。"
   },
   "ref": "Gregory et al. (2004) Anal Biochem 329:77",
-  "source": "Analytical Biochemistry"
+  "source": "Analytical Biochemistry",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Light-sensitive"
+  },
+  "usage": {
+    "en": "Alizarin Red S stain for detecting calcium deposits in osteogenic differentiation assays.",
+    "zh": "茜素红 S 染色，用于检测成骨分化实验中的钙沉积。"
+  }
 }

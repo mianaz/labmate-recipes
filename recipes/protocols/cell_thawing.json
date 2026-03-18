@@ -62,5 +62,12 @@
     "en": "Quick-thaw to recover frozen cells. Key is speed — DMSO is cytotoxic at 37°C. Most cell lines: centrifuge to remove DMSO. Very fragile cells (e.g., primary neurons): dilute directly without centrifugation. Check viability >90% after recovery. Allow 1–2 passages before experiments.",
     "zh": "关键是速度——DMSO 在 37°C 对细胞有毒。解冻至剩小冰晶即可。大多数细胞系建议离心去 DMSO；极脆弱细胞（如原代神经元）可直接稀释铺板。恢复后确认活力 >90%。"
   },
-  "ref": "Freshney (2015) Culture of Animal Cells; ATCC Cell Thawing Protocol"
+  "ref": "Freshney (2015) Culture of Animal Cells; ATCC Cell Thawing Protocol",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "20 minutes",
+    "hands_on": "20 minutes"
+  }
 }

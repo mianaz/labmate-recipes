@@ -81,5 +81,13 @@
     "en": "2× HBS pH must be precisely 7.05 ± 0.02; deviations severely reduce efficiency. Optional glycerol shock: treat with 15% glycerol/PBS for 2 min at 8 h post-transfection, wash 2× PBS, replace medium. HEK293/293T efficiency can reach 80–90%. Preferred method for lentivirus packaging (low cost).",
     "zh": "2× HBS 的 pH 必须精确到 7.05 ± 0.02，偏差会严重影响效率！可选 glycerol shock: 转染后 8 h 用 15% 甘油/PBS 处理 2 min，PBS 洗 2 次，换新培养基。HEK293/293T 效率可达 80–90%。慢病毒包装首选此法 (成本低)。"
   },
-  "ref": "Kingston et al. (2003) Curr Protoc Mol Biol 9.1.1–9.1.11; Graham & van der Eb (1973) Virology 52:456–467"
+  "ref": "Kingston et al. (2003) Curr Protoc Mol Biol 9.1.1–9.1.11; Graham & van der Eb (1973) Virology 52:456–467",
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "duration": {
+    "total": "2–3 days",
+    "hands_on": "1 hour"
+  }
 }

@@ -50,5 +50,13 @@
     "zh": "每个荧光点 = 一次互作（<40 nm）。包含单抗体对照。用 ImageJ 定量每细胞点数。"
   },
   "ref": "Söderberg et al. (2006) Nat Methods 3:995",
-  "source": "Nature Methods"
+  "source": "Nature Methods",
+  "discipline": [
+    "protein",
+    "histology"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "5 hours"
+  }
 }

@@ -26,5 +26,18 @@
     "en": "HEPES maintains pH stability outside the CO₂ incubator, ideal for extended bench work and live imaging.",
     "zh": "HEPES 在 CO₂ 培养箱外能维持 pH 稳定，适合长时间台面操作和活细胞成像。"
   },
-  "ref": "Good et al. (1966) Biochemistry 5:467–477; Sigma-Aldrich HEPES Buffer Protocol"
+  "ref": "Good et al. (1966) Biochemistry 5:467–477; Sigma-Aldrich HEPES Buffer Protocol",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "filter_022",
+    "notes": ""
+  },
+  "usage": {
+    "en": "HEPES-based physiological buffer for cell culture and biochemical assays.",
+    "zh": "HEPES 生理缓冲液，用于细胞培养和生化实验。"
+  }
 }

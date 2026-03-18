@@ -44,5 +44,19 @@
     "en": "Suitable for suspension cells, lymphocytes, hybridomas. β-ME is important for lymphocyte culture (antioxidant). HEPES maintains pH stability during bench work outside CO₂ incubator.",
     "zh": "适用于悬浮细胞、淋巴细胞、杂交瘤。β-ME 对淋巴细胞培养很重要（抗氧化）。HEPES 维持 pH 稳定（CO₂ 培养箱外操作时）。"
   },
-  "ref": "Moore et al. (1967) JAMA 199:519; Freshney (2015) Culture of Animal Cells"
+  "ref": "Moore et al. (1967) JAMA 199:519; Freshney (2015) Culture of Animal Cells",
+  "discipline": [
+    "cell",
+    "immunology"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "4 weeks",
+    "sterile": "filter_022",
+    "notes": "Sterile; prepare in BSC"
+  },
+  "usage": {
+    "en": "RPMI-1640 complete medium (10% FBS) for lymphocyte and hematopoietic cell culture.",
+    "zh": "含 10% FBS 的 RPMI-1640 完全培养基，用于淋巴细胞和造血细胞培养。"
+  }
 }

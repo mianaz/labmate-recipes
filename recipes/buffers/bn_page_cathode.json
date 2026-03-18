@@ -34,5 +34,18 @@
     "en": "Do not adjust pH (~7.0). After the gel front has migrated ~1/3, switch to cathode buffer without CBB to reduce background.",
     "zh": "不调 pH (约 7.0)。电泳 1/3 后可换不含 CBB 的阴极缓冲液。"
   },
-  "ref": "Wittig et al. (2006) Nat Protoc 1:418–428"
+  "ref": "Wittig et al. (2006) Nat Protoc 1:418–428",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 week",
+    "sterile": "not_required",
+    "notes": "Prepare fresh; CBB G-250 degrades"
+  },
+  "usage": {
+    "en": "Blue-native PAGE cathode buffer (CBB G-250) for membrane protein complex analysis.",
+    "zh": "蓝色天然 PAGE 阴极缓冲液（CBB G-250），用于膜蛋白复合体分析。"
+  }
 }

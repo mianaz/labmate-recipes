@@ -70,5 +70,13 @@
     "en": "Fast (~30 min) and reproducible. Lower yield than TRIzol but higher purity, ideal for RT-qPCR/RNA-seq. Small RNAs (<200 nt, including miRNA) require miRNA enrichment column. Tissue must be stored in RNAlater or flash-frozen in liquid nitrogen.",
     "zh": "快速（~30 min）且重现性好。产量低于 TRIzol，但纯度高，适合 RT-qPCR/RNA-seq。小量 RNA（<200 nt, 含 miRNA）需用 miRNA enrichment column。组织需在 RNAlater 中保存或液氮速冻。"
   },
-  "ref": "QIAGEN RNeasy Mini Handbook; Chomczynski & Sacchi (2006) Nat Protoc 1:581"
+  "ref": "QIAGEN RNeasy Mini Handbook; Chomczynski & Sacchi (2006) Nat Protoc 1:581",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "30 minutes",
+    "hands_on": "30 minutes"
+  }
 }

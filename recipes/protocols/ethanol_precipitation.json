@@ -65,5 +65,13 @@
     "en": "70% ethanol wash removes residual salts. Isopropanol precipitation (0.7 vol, no salt needed) uses less volume, good for large samples, but pellet contains more salt — wash extra. SDS co-precipitates — remove with KOAc or phenol-chloroform first. Do not use ethanol precipitation to recover DNA from <10 µL volumes.",
     "zh": "70% 乙醇洗涤去除残余盐。异丙醇沉淀 (0.7 vol, 无需加盐) 体积更小，适合大体积样品，但沉淀含更多盐需多洗一次。SDS 会共沉淀——需先用 KOAc 沉淀去除或酚氯仿提取。不要使用乙醇沉淀从 <10 µL 体积回收 DNA。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning; Green & Sambrook (2012) Molecular Cloning, 4th Ed"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; Green & Sambrook (2012) Molecular Cloning, 4th Ed",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "2–3 hours",
+    "hands_on": "30 minutes"
+  }
 }

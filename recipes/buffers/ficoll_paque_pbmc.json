@@ -3,20 +3,57 @@
   "name": "Ficoll-Paque Density Gradient Solution (1.077 g/mL for PBMC)",
   "nameCn": "Ficoll-Paque 密度梯度液（PBMC 分离用，1.077 g/mL）",
   "category": "buffer",
-  "tags": ["density gradient", "Ficoll", "PBMC", "lymphocyte isolation", "blood fractionation", "density 1.077"],
+  "tags": [
+    "density gradient",
+    "Ficoll",
+    "PBMC",
+    "lymphocyte isolation",
+    "blood fractionation",
+    "density 1.077"
+  ],
   "volume": 100,
   "volumeUnit": "mL",
   "components": [
-    {"name": "Ficoll-400 stock (30% w/v)", "amount": 34.0, "unit": "mL", "linkedRecipe": "ficoll_400_stock",
-     "note": "Provides density base"},
-    {"name": "Diatrizoate sodium (sodium diatrizoate / Hypaque-sodium, 50% solution)", "amount": 16.0, "unit": "mL",
-     "note": "MW 635.1; provides radiopacity and density modulation. Sterile solution."},
-    {"name": "Sterile ddH₂O or DPBS", "amount": null, "unit": "to 100 mL"}
+    {
+      "name": "Ficoll-400 stock (30% w/v)",
+      "amount": 34.0,
+      "unit": "mL",
+      "linkedRecipe": "ficoll_400_stock",
+      "note": "Provides density base"
+    },
+    {
+      "name": "Diatrizoate sodium (sodium diatrizoate / Hypaque-sodium, 50% solution)",
+      "amount": 16.0,
+      "unit": "mL",
+      "note": "MW 635.1; provides radiopacity and density modulation. Sterile solution."
+    },
+    {
+      "name": "Sterile ddH₂O or DPBS",
+      "amount": null,
+      "unit": "to 100 mL"
+    }
   ],
   "notes": {
     "en": "Target density: 1.077 g/mL at 20°C. Verify with calibrated pycnometer or densitometer. Adjust: more Ficoll → higher density; more diluent → lower density. At 1.077 g/mL: erythrocytes + granulocytes (1.08–1.09) sink; PBMCs (1.07–1.075) band at interface; platelets stay in plasma layer. pH 7.2–7.4. Osmolality: 290–310 mOsm. Warm to room temperature before use (critical for proper separation). Commercially available as Ficoll-Paque PLUS (Cytiva), Lymphoprep (Stem Cell Technologies), Histopaque-1077 (Sigma).",
     "zh": "目标密度：20°C 时 1.077 g/mL。用校准比重计或密度计验证。调整：增加 Ficoll → 密度升高；增加稀释液 → 密度降低。1.077 g/mL 时：红细胞 + 粒细胞（1.08–1.09）沉入底部；PBMC（1.07–1.075）在界面成带；血小板留在血浆层。pH 7.2–7.4。渗透压：290–310 mOsm。使用前务必恢复室温（对分离效果至关重要）。商品化产品：Ficoll-Paque PLUS（Cytiva）、Lymphoprep（Stem Cell Technologies）、Histopaque-1077（Sigma）。"
   },
-  "crosslinks": ["ficoll_400_stock", "pbmc_isolation"],
-  "ref": "Boyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; Broxmeyer et al. (2011) Curr Protoc Stem Cell Biol 19:Unit2A.3; GE Healthcare Ficoll-Paque PLUS Instructions 71-7167-00"
+  "crosslinks": [
+    "ficoll_400_stock",
+    "pbmc_isolation"
+  ],
+  "ref": "Boyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; Broxmeyer et al. (2011) Curr Protoc Stem Cell Biol 19:Unit2A.3; GE Healthcare Ficoll-Paque PLUS Instructions 71-7167-00",
+  "discipline": [
+    "cell",
+    "immunology"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "filter_022",
+    "notes": "Warm to RT before use; do not freeze"
+  },
+  "usage": {
+    "en": "Density gradient solution (1.077 g/mL) for isolating peripheral blood mononuclear cells (PBMCs).",
+    "zh": "密度 1.077 g/mL 的梯度液，用于从外周血分离单个核细胞（PBMC）。"
+  }
 }

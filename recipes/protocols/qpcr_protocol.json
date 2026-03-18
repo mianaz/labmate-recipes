@@ -84,5 +84,13 @@
     "en": "Reference genes: GAPDH / ACTB / 18S rRNA. Analysis: 2^(−ΔΔCt) method. ≥3 technical replicates, ≥3 biological replicates. Primer efficiency should be 90–110%.",
     "zh": "内参基因: GAPDH / ACTB / 18S rRNA。分析: 2^(-ΔΔCt) 法。技术重复 ≥3，生物学重复 ≥3。引物效率应在 90–110%。NTC (no template control) 必需。"
   },
-  "ref": "Bustin et al. (2009) Clin Chem 55:611–622 (MIQE Guidelines); Livak & Schmittgen (2001) Methods 25:402–408"
+  "ref": "Bustin et al. (2009) Clin Chem 55:611–622 (MIQE Guidelines); Livak & Schmittgen (2001) Methods 25:402–408",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "1 hour"
+  }
 }

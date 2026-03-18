@@ -25,5 +25,18 @@
     "en": "Suitable for phospho-protein detection. Add 0.02% NaN₃ to store at 4°C for ~1 week.",
     "zh": "适用于磷酸化蛋白检测。加 0.02% NaN₃ 可 4°C 保存约 1 周。"
   },
-  "ref": "Gallagher (2012) Curr Protoc Mol Biol Ch.10, Unit 10.2A"
+  "ref": "Gallagher (2012) Curr Protoc Mol Biol Ch.10, Unit 10.2A",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 week",
+    "sterile": "not_required",
+    "notes": "Prepare fresh weekly; add 0.02% NaN3 to extend to 2 weeks"
+  },
+  "usage": {
+    "en": "5% BSA blocking solution for WB; preferred for phospho-protein and phospho-antibody use.",
+    "zh": "BSA 封闭液，WB 用，特别适用于磷酸化蛋白和磷酸化抗体。"
+  }
 }

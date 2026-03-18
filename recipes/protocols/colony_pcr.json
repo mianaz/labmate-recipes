@@ -53,5 +53,13 @@
     "en": "Initial 5 min denaturation at 95°C lyses bacteria to release template DNA. Use M13 universal primers (for pUC vectors) or gene-specific primers. Positive clones should be sequence-verified. Streak colonies onto a master plate in parallel.",
     "zh": "初始变性 5 min 用于裂解菌体释放模板。引物可用 M13 通用引物 (pUC 系列) 或基因特异引物。阳性克隆应送测序验证。同时划线保存菌落至新 LB 平板。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.; Bergkessel & Guthrie (2013) Methods Enzymol 529:141–149"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.; Bergkessel & Guthrie (2013) Methods Enzymol 529:141–149",
+  "discipline": [
+    "molecular",
+    "microbiology"
+  ],
+  "duration": {
+    "total": "3 hours",
+    "hands_on": "1 hour"
+  }
 }

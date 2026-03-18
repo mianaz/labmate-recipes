@@ -34,5 +34,18 @@
     "en": "Prepare fresh or store at RT. NaOH denatures genomic DNA and proteins; SDS solubilizes cell membranes. Mix gently by inversion (DO NOT vortex!) to avoid shearing genomic DNA.",
     "zh": "现用现配或室温保存。NaOH 变性基因组 DNA 和蛋白，SDS 溶解细胞膜。使用时轻柔混匀（不可涡旋！），避免剪切基因组 DNA。"
   },
-  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513"
+  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513",
+  "discipline": [
+    "molecular"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Keep tightly closed; NaOH absorbs CO2"
+  },
+  "usage": {
+    "en": "Alkaline lysis buffer (NaOH + SDS) for cell disruption in miniprep plasmid extraction.",
+    "zh": "碱裂解缓冲液（NaOH + SDS），用于 miniprep 质粒提取的细胞破碎。"
+  }
 }

@@ -38,5 +38,19 @@
     "zh": "结合反应稀释至 1×。加 poly(dI-dC) 作为非特异竞争物。4°C 0.5× TBE 中 5-6% 非变性 PAGE。"
   },
   "ref": "Garner & Revzin (1981) Nucleic Acids Res 9:3047",
-  "source": "CSHL"
+  "source": "CSHL",
+  "discipline": [
+    "molecular",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Add DTT fresh"
+  },
+  "usage": {
+    "en": "Optimized buffer for EMSA protein-nucleic acid binding reactions.",
+    "zh": "EMSA 蛋白-核酸结合反应的优化缓冲液。"
+  }
 }

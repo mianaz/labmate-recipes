@@ -1,7 +1,7 @@
 {
   "id": "bsa_standard_curve",
-  "name": "BSA Standard Curve (BCA/Bradford)",
-  "nameCn": "BSA 标准曲线",
+  "name": "BSA Standard Curve Dilution Series (2 mg/mL Stock)",
+  "nameCn": "BSA 标准曲线稀释系列（2 mg/mL 母液）",
   "category": "buffer",
   "tags": [
     "protein",
@@ -11,14 +11,51 @@
   ],
   "components": [
     {
-      "name": "BSA stock 2 mg/mL",
-      "amount": 1,
-      "unit": "mL"
+      "name": "BSA (bovine serum albumin, fraction V)",
+      "amount": 2.0,
+      "unit": "mg/mL",
+      "note": "2 mg/mL stock in ddH₂O or same buffer as samples; aliquot 200 µL at -20°C"
     },
     {
-      "name": "Standards: 0, 25, 125, 250, 500, 1000, 1500, 2000 µg/mL",
-      "amount": 1,
-      "unit": "step"
+      "name": "Point 1: 0 µg/mL (blank)",
+      "amount": 0,
+      "unit": "µg/mL",
+      "note": "Buffer only"
+    },
+    {
+      "name": "Point 2: 25 µg/mL",
+      "amount": 25,
+      "unit": "µg/mL"
+    },
+    {
+      "name": "Point 3: 125 µg/mL",
+      "amount": 125,
+      "unit": "µg/mL"
+    },
+    {
+      "name": "Point 4: 250 µg/mL",
+      "amount": 250,
+      "unit": "µg/mL"
+    },
+    {
+      "name": "Point 5: 500 µg/mL",
+      "amount": 500,
+      "unit": "µg/mL"
+    },
+    {
+      "name": "Point 6: 1000 µg/mL",
+      "amount": 1000,
+      "unit": "µg/mL"
+    },
+    {
+      "name": "Point 7: 1500 µg/mL",
+      "amount": 1500,
+      "unit": "µg/mL"
+    },
+    {
+      "name": "Point 8: 2000 µg/mL",
+      "amount": 2000,
+      "unit": "µg/mL"
     }
   ],
   "notes": {
@@ -26,5 +63,34 @@
     "zh": "用与样品相同的缓冲液配制。BCA：37°C 30 min，A562。Bradford：室温 5 min，A595。三重复。"
   },
   "ref": "Smith et al. (1985) Anal Biochem 150:76 / Bradford (1976) Anal Biochem 72:248",
-  "source": "Analytical Biochemistry"
+  "source": "Analytical Biochemistry",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Aliquot 2 mg/mL stock; single-use aliquots"
+  },
+  "usage": {
+    "en": "Diluted BSA standard curve for protein quantification assays (BCA at 37°C A562, Bradford at RT A595).",
+    "zh": "BSA 标准曲线稀释系列，用于 BCA（A562）和 Bradford（A595）蛋白定量。"
+  },
+  "prepSteps": [
+    {
+      "step": "Prepare 2 mg/mL BSA stock: dissolve in ddH₂O or in the same buffer used for protein samples (important for matrix matching).",
+      "note": "Aliquot 200 µL per tube; freeze at -20°C. Thaw fresh for each use."
+    },
+    {
+      "step": "Prepare dilution series in sample buffer. Pipette in duplicate or triplicate."
+    },
+    {
+      "step": "BCA assay: add 200 µL BCA working reagent; 37°C 30 min; read A562. Bradford: add 200 µL Bradford reagent; RT 5 min; read A595."
+    },
+    {
+      "step": "Fit linear regression (R² > 0.99) to calculate unknown protein concentration."
+    }
+  ]
 }

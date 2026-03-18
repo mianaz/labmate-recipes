@@ -31,5 +31,19 @@
     "en": "Dilute to 1× (40 mM Tris-acetate, 1 mM EDTA) for gel electrophoresis. TAE gives better DNA recovery than TBE but lower buffering capacity — change buffer for long runs. Store 50× at RT.",
     "zh": "稀释至 1×（40 mM Tris-acetate, 1 mM EDTA）用于凝胶电泳。TAE 比 TBE DNA 回收率更高但缓冲能力较弱——长时间电泳需换液。50× 室温保存。"
   },
-  "ref": "CSH Protocols doi:10.1101/pdb.rec8644; Sambrook & Russell (2001) Molecular Cloning"
+  "ref": "CSH Protocols doi:10.1101/pdb.rec8644; Sambrook & Russell (2001) Molecular Cloning",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "50× TAE buffer concentrate; dilute to 1× for DNA agarose gel electrophoresis and gel extraction.",
+    "zh": "50× TAE 缓冲液浓缩液，稀释至 1× 用于 DNA 凝胶电泳和胶回收。"
+  }
 }

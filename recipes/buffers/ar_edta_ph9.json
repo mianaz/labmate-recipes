@@ -3,18 +3,55 @@
   "name": "Antigen Retrieval Buffer (EDTA, pH 9.0)",
   "nameCn": "抗原修复缓冲液（EDTA，pH 9.0）",
   "category": "buffer",
-  "tags": ["IHC", "immunohistochemistry", "antigen retrieval", "EDTA", "HIER"],
+  "tags": [
+    "IHC",
+    "immunohistochemistry",
+    "antigen retrieval",
+    "EDTA",
+    "HIER"
+  ],
   "volume": 1000,
   "volumeUnit": "mL",
   "components": [
-    {"name": "EDTA", "amount": 0.372, "unit": "g", "mw": 372.24, "note": "1 mM"},
-    {"name": "Tween-20", "amount": 0.05, "unit": "mL", "note": "0.05% v/v"},
-    {"name": "ddH₂O", "amount": null, "unit": "to 1000 mL"}
+    {
+      "name": "EDTA",
+      "amount": 0.372,
+      "unit": "g",
+      "mw": 372.24,
+      "note": "1 mM"
+    },
+    {
+      "name": "Tween-20",
+      "amount": 0.05,
+      "unit": "mL",
+      "note": "0.05% v/v"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "to 1000 mL"
+    }
   ],
   "notes": {
     "en": "Adjust pH to 9.0 with NaOH. For nuclear antigens (Ki67, H3K4me3), membrane antigens (HER2), or when citrate pH 6.0 fails. Heat 95–100°C 20 min (pressure cooker or water bath). Cool 20 min at RT before use.",
     "zh": "NaOH 调 pH 至 9.0。适用于核抗原（Ki67、H3K4me3）、膜抗原（HER2）及柠檬酸缓冲液效果差的情况。95–100°C 加热 20 min。冷却 20 min 后继续操作。"
   },
-  "crosslinks": ["ihc_paraffin_protocol", "citrate_buffer_ar"],
-  "ref": "Shi et al. (2001) J Histochem Cytochem 49:931–937; Ramos-Vara & Miller (2014) Vet Pathol 51:42–87"
+  "crosslinks": [
+    "ihc_paraffin_protocol",
+    "citrate_buffer_ar"
+  ],
+  "ref": "Shi et al. (2001) J Histochem Cytochem 49:931–937; Ramos-Vara & Miller (2014) Vet Pathol 51:42–87",
+  "discipline": [
+    "histology"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "EDTA antigen retrieval buffer (pH 9.0) for nuclear antigens in IHC (Ki67, H3K4me3).",
+    "zh": "EDTA 抗原修复缓冲液（pH 9.0），用于 IHC 中核抗原（Ki67、H3K4me3）的修复。"
+  }
 }

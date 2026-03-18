@@ -3,40 +3,169 @@
   "name": "His-Tag Protein Purification (Ni-NTA IMAC)",
   "nameCn": "His 标签蛋白纯化（Ni-NTA IMAC 亲和层析）",
   "category": "protocol",
-  "tags": ["protein purification", "His-tag", "Ni-NTA", "IMAC", "affinity chromatography", "recombinant protein", "biochemistry"],
+  "tags": [
+    "protein purification",
+    "His-tag",
+    "Ni-NTA",
+    "IMAC",
+    "affinity chromatography",
+    "recombinant protein",
+    "biochemistry"
+  ],
   "components": [
-    {"name": "1. Express protein in E. coli (BL21/BL21-DE3)", "amount": 1, "unit": "step",
-     "note": {"en": "See bacterial_protein_expression; IPTG induction; harvest cells 5,000×g 10 min 4°C", "zh": "参见 bacterial_protein_expression；IPTG 诱导；5,000×g 10 min 4°C 收菌"}},
-    {"name": "2. Resuspend pellet in Lysis Buffer", "amount": 1, "unit": "step",
-     "note": {"en": "~5 mL per gram wet pellet; lysis_buffer_mild or 50 mM NaH₂PO₄, 300 mM NaCl, 10 mM imidazole, pH 8.0", "zh": "每克湿菌体加 ~5 mL；lysis_buffer_mild 或 50 mM NaH₂PO₄、300 mM NaCl、10 mM imidazole，pH 8.0"}},
-    {"name": "3. Lyse cells by sonication on ice", "amount": 1, "unit": "step",
-     "note": {"en": "3–5 × 30 s pulses, 30–40% amplitude, 60 s rest between pulses, ice bath; or French press 18,000 psi × 2 passes; or freeze-thaw 3× (−80°C/37°C)", "zh": "超声：3–5 × 30 s，30–40% 振幅，间隔 60 s 冰浴；或法压机 18,000 psi × 2 次；或冻融 3× (−80°C/37°C)"}},
-    {"name": "4. Clarify lysate: 20,000×g, 30 min, 4°C", "amount": 1, "unit": "step",
-     "note": {"en": "Keep supernatant (soluble fraction). Save pellet for inclusion body protocol if needed. Optional: add 0.1% Triton X-100 before spin.", "zh": "上清为可溶组分。保留沉淀做包涵体纯化（如需要）。可选：离心前加 0.1% Triton X-100 减少非特异结合。"}},
-    {"name": "5. Equilibrate Ni-NTA resin with Binding Buffer", "amount": 1, "unit": "step",
-     "note": {"en": "1–2 mL resin per 50 mL lysate (batch) or 5 mL column for FPLC. Wash 5 CV his_binding buffer (20 mM imidazole)", "zh": "批量法：每 50 mL 裂解液用 1–2 mL 树脂；FPLC 用 5 mL 柱。5 CV his_binding 缓冲液（20 mM imidazole）平衡"}},
-    {"name": "6. Bind: incubate lysate with resin, 4°C rotate 1 h", "amount": 1, "unit": "step",
-     "note": {"en": "Batch: rotate 1 h 4°C; Column: load 0.5–1 mL/min. Keep flow-through for SDS-PAGE.", "zh": "批量法：4°C 旋转 1 h；柱层析：0.5–1 mL/min 上样。保留穿透液做 SDS-PAGE 检测。"}},
-    {"name": "7. Wash 1: 10 CV Binding Buffer (20 mM imidazole)", "amount": 1, "unit": "step",
-     "note": {"en": "Remove bulk contaminants. Collect fractions for SDS-PAGE monitoring.", "zh": "去除大部分杂蛋白。收集洗涤液做 SDS-PAGE 监测。"}},
-    {"name": "8. Wash 2 (optional): 5 CV high-salt wash (500 mM NaCl, 50 mM imidazole)", "amount": 1, "unit": "step",
-     "note": {"en": "imac_wash_highsalt; removes DnaK. Optional: add 1 mM ATP + 5 mM MgCl₂.", "zh": "imac_wash_highsalt 高盐洗涤；去除 DnaK。可选加 1 mM ATP + 5 mM MgCl₂。"}},
-    {"name": "9. Elute: 5–10 CV 250–500 mM imidazole", "amount": 1, "unit": "step",
-     "note": {"en": "imac_elution_500; collect 0.5–1 mL fractions. Pool peak A280 fractions; run SDS-PAGE.", "zh": "imac_elution_500；收集 0.5–1 mL 组分。合并 A280 峰组分；SDS-PAGE 检测。"}},
-    {"name": "10. Pool & dialyze to remove imidazole", "amount": 1, "unit": "step",
-     "note": {"en": "dialysis_buffer_generic, 2× changes 2 h 4°C; or HiTrap Desalting on FPLC (5 min). Imidazole absorbs UV and inhibits some assays.", "zh": "dialysis_buffer_generic 透析换液，4°C 每次 2 h 换 2 次；或 HiTrap Desalting 脱盐柱（5 min）。咪唑有紫外吸收且抑制部分实验。"}},
-    {"name": "11. Quantify (BCA/Bradford); run SDS-PAGE + Coomassie", "amount": 1, "unit": "step",
-     "note": {"en": "Expect >90% purity from single Ni-NTA step; 1–10 mg/L culture typical yield.", "zh": "单步 Ni-NTA 纯度 >90%；典型产量 1–10 mg/L 培养液。"}},
-    {"name": "12. Optional: TEV/thrombin cleavage + reverse IMAC", "amount": 1, "unit": "step",
-     "note": {"en": "TEV: 1:50 enzyme:substrate, 4°C overnight or 30°C 2 h (50 mM Tris pH 8.0, 0.5 mM EDTA, 1 mM DTT). Reverse Ni-NTA: cleaved protein in flow-through; His-tag + uncleaved bind.", "zh": "TEV: 酶:底物 = 1:50，4°C 过夜或 30°C 2 h（50 mM Tris pH 8.0、0.5 mM EDTA、1 mM DTT）。反向 Ni-NTA：切割后蛋白在穿透液中；His-tag 和未切割蛋白结合。"}},
-    {"name": "13. Store: aliquot, snap-freeze (liquid N₂), −80°C", "amount": 1, "unit": "step",
-     "note": {"en": "Add 10% glycerol for cryoprotection. Stable 6–12 months at −80°C. Avoid repeated freeze-thaw.", "zh": "加 10% 甘油冻存保护。−80°C 稳定 6–12 个月。避免反复冻融。"}}
+    {
+      "name": "1. Express protein in E. coli (BL21/BL21-DE3)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "See bacterial_protein_expression; IPTG induction; harvest cells 5,000×g 10 min 4°C",
+        "zh": "参见 bacterial_protein_expression；IPTG 诱导；5,000×g 10 min 4°C 收菌"
+      }
+    },
+    {
+      "name": "2. Resuspend pellet in Lysis Buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "~5 mL per gram wet pellet; lysis_buffer_mild or 50 mM NaH₂PO₄, 300 mM NaCl, 10 mM imidazole, pH 8.0",
+        "zh": "每克湿菌体加 ~5 mL；lysis_buffer_mild 或 50 mM NaH₂PO₄、300 mM NaCl、10 mM imidazole，pH 8.0"
+      }
+    },
+    {
+      "name": "3. Lyse cells by sonication on ice",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "3–5 × 30 s pulses, 30–40% amplitude, 60 s rest between pulses, ice bath; or French press 18,000 psi × 2 passes; or freeze-thaw 3× (−80°C/37°C)",
+        "zh": "超声：3–5 × 30 s，30–40% 振幅，间隔 60 s 冰浴；或法压机 18,000 psi × 2 次；或冻融 3× (−80°C/37°C)"
+      }
+    },
+    {
+      "name": "4. Clarify lysate: 20,000×g, 30 min, 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep supernatant (soluble fraction). Save pellet for inclusion body protocol if needed. Optional: add 0.1% Triton X-100 before spin.",
+        "zh": "上清为可溶组分。保留沉淀做包涵体纯化（如需要）。可选：离心前加 0.1% Triton X-100 减少非特异结合。"
+      }
+    },
+    {
+      "name": "5. Equilibrate Ni-NTA resin with Binding Buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "1–2 mL resin per 50 mL lysate (batch) or 5 mL column for FPLC. Wash 5 CV his_binding buffer (20 mM imidazole)",
+        "zh": "批量法：每 50 mL 裂解液用 1–2 mL 树脂；FPLC 用 5 mL 柱。5 CV his_binding 缓冲液（20 mM imidazole）平衡"
+      }
+    },
+    {
+      "name": "6. Bind: incubate lysate with resin, 4°C rotate 1 h",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Batch: rotate 1 h 4°C; Column: load 0.5–1 mL/min. Keep flow-through for SDS-PAGE.",
+        "zh": "批量法：4°C 旋转 1 h；柱层析：0.5–1 mL/min 上样。保留穿透液做 SDS-PAGE 检测。"
+      }
+    },
+    {
+      "name": "7. Wash 1: 10 CV Binding Buffer (20 mM imidazole)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove bulk contaminants. Collect fractions for SDS-PAGE monitoring.",
+        "zh": "去除大部分杂蛋白。收集洗涤液做 SDS-PAGE 监测。"
+      }
+    },
+    {
+      "name": "8. Wash 2 (optional): 5 CV high-salt wash (500 mM NaCl, 50 mM imidazole)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "imac_wash_highsalt; removes DnaK. Optional: add 1 mM ATP + 5 mM MgCl₂.",
+        "zh": "imac_wash_highsalt 高盐洗涤；去除 DnaK。可选加 1 mM ATP + 5 mM MgCl₂。"
+      }
+    },
+    {
+      "name": "9. Elute: 5–10 CV 250–500 mM imidazole",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "imac_elution_500; collect 0.5–1 mL fractions. Pool peak A280 fractions; run SDS-PAGE.",
+        "zh": "imac_elution_500；收集 0.5–1 mL 组分。合并 A280 峰组分；SDS-PAGE 检测。"
+      }
+    },
+    {
+      "name": "10. Pool & dialyze to remove imidazole",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "dialysis_buffer_generic, 2× changes 2 h 4°C; or HiTrap Desalting on FPLC (5 min). Imidazole absorbs UV and inhibits some assays.",
+        "zh": "dialysis_buffer_generic 透析换液，4°C 每次 2 h 换 2 次；或 HiTrap Desalting 脱盐柱（5 min）。咪唑有紫外吸收且抑制部分实验。"
+      }
+    },
+    {
+      "name": "11. Quantify (BCA/Bradford); run SDS-PAGE + Coomassie",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Expect >90% purity from single Ni-NTA step; 1–10 mg/L culture typical yield.",
+        "zh": "单步 Ni-NTA 纯度 >90%；典型产量 1–10 mg/L 培养液。"
+      }
+    },
+    {
+      "name": "12. Optional: TEV/thrombin cleavage + reverse IMAC",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "TEV: 1:50 enzyme:substrate, 4°C overnight or 30°C 2 h (50 mM Tris pH 8.0, 0.5 mM EDTA, 1 mM DTT). Reverse Ni-NTA: cleaved protein in flow-through; His-tag + uncleaved bind.",
+        "zh": "TEV: 酶:底物 = 1:50，4°C 过夜或 30°C 2 h（50 mM Tris pH 8.0、0.5 mM EDTA、1 mM DTT）。反向 Ni-NTA：切割后蛋白在穿透液中；His-tag 和未切割蛋白结合。"
+      }
+    },
+    {
+      "name": "13. Store: aliquot, snap-freeze (liquid N₂), −80°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Add 10% glycerol for cryoprotection. Stable 6–12 months at −80°C. Avoid repeated freeze-thaw.",
+        "zh": "加 10% 甘油冻存保护。−80°C 稳定 6–12 个月。避免反复冻融。"
+      }
+    }
   ],
   "notes": {
     "en": "Yield: 1–10 mg/L E. coli culture. For inclusion bodies: solubilize with 8 M urea or 6 M GuHCl; bind under denaturing conditions; refold by dialysis against decreasing denaturant. Monitor all fractions by SDS-PAGE. Use Bradford/BCA for quantification.",
     "zh": "产量：每升 E. coli 培养液 1–10 mg。包涵体蛋白：加 8 M 尿素或 6 M 盐酸胍溶解，变性条件下结合，通过梯度透析复性。全程收集 SDS-PAGE 监测。BCA 或 Bradford 定量。"
   },
-  "crosslinks": ["bacterial_protein_expression", "his_binding", "imac_elution_500", "imac_wash_highsalt", "lysis_buffer_mild", "protein_dialysis", "bca_protein_assay", "sds_page_gel", "coomassie_staining"],
+  "crosslinks": [
+    "bacterial_protein_expression",
+    "his_binding",
+    "imac_elution_500",
+    "imac_wash_highsalt",
+    "lysis_buffer_mild",
+    "protein_dialysis",
+    "bca_protein_assay",
+    "sds_page_gel",
+    "coomassie_staining"
+  ],
   "ref": "Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1–23; Bornhorst & Falke (2000) Methods Enzymol 326:245; QIAGEN Ni-NTA Manual 5th ed.; Hochuli et al. (1988) Bio/Technology 6:1321",
-  "doi": "10.1002/0471140864.ps0909s73"
+  "doi": "10.1002/0471140864.ps0909s73",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "1–2 days",
+    "hands_on": "6 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Ni-NTA elution (pre-dialysis)",
+      "condition": "4°C on ice",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": "Dialysis/desalting complete",
+      "condition": "−80°C + 10% glycerol",
+      "duration": "12 months"
+    }
+  ]
 }

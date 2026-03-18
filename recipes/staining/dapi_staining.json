@@ -27,5 +27,18 @@
     "en": "DAPI stock: dissolve 5 mg in 1 mL ddH₂O, aliquot and store at −20°C protected from light. Working solution (1 µg/mL) should be prepared fresh. For fixed/permeabilized cells: incubate 5–10 min at RT in the dark, wash 2× with PBS. Ex/Em: 358/461 nm (blue fluorescence). Membrane-impermeant in live cells — used for dead cell exclusion in flow cytometry (0.1–0.5 µg/mL). Mounting media with DAPI is more convenient for microscopy.",
     "zh": "DAPI stock: 5 mg 溶于 1 mL ddH₂O，分装后 -20°C 避光保存。工作液 (1 µg/mL) 现配现用。固定透化后的细胞: 室温避光孵育 5–10 min，PBS 洗 2 次。Ex/Em: 358/461 nm (蓝色荧光)。活细胞不透膜，用于死细胞排除 (流式 0.1–0.5 µg/mL)。封片用含 DAPI 的封片剂更方便。"
   },
-  "ref": "Kapuscinski (1995) Biotech Histochem 70:220–233"
+  "ref": "Kapuscinski (1995) Biotech Histochem 70:220–233",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Light-sensitive; aliquot from 1 mg/mL stock"
+  },
+  "usage": {
+    "en": "DAPI fluorescent nuclear counterstain for immunofluorescence and flow cytometry.",
+    "zh": "DAPI 荧光核染料，用于免疫荧光和流式细胞术的细胞核复染。"
+  }
 }

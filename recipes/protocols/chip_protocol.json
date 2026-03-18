@@ -76,5 +76,30 @@
     "en": "Optimize sonication conditions for each cell line. Positive control: H3 antibody; negative: IgG. Recommend ≥1×10⁶ cells. Express results as % Input or Fold Enrichment.",
     "zh": "超声条件需针对不同细胞系优化。阳性对照: H3 抗体；阴性对照: IgG。建议每次至少 1×10⁶ 细胞。结果用 % Input 或 Fold Enrichment 表示。"
   },
-  "ref": "Nelson et al. (2006) Nat Protoc 1:179–185; Collas (2010) Mol Biotechnol 45:87–100; Haring et al. (2007) Plant Methods 3:11"
+  "ref": "Nelson et al. (2006) Nat Protoc 1:179–185; Collas (2010) Mol Biotechnol 45:87–100; Haring et al. (2007) Plant Methods 3:11",
+  "discipline": [
+    "genomics",
+    "molecular"
+  ],
+  "duration": {
+    "total": "3 days",
+    "hands_on": "8 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Crosslinking and lysis",
+      "condition": "−80°C in SDS lysis buffer",
+      "duration": "6 months"
+    },
+    {
+      "afterStep": "Sonication (sheared chromatin)",
+      "condition": "−80°C",
+      "duration": "6 months"
+    },
+    {
+      "afterStep": "Reverse crosslinking — purified DNA",
+      "condition": "−20°C",
+      "duration": "6 months"
+    }
+  ]
 }

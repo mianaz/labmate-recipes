@@ -50,5 +50,20 @@
     "zh": "7 点标准曲线 + 空白。高结合力板。每步间用 PBST 洗 3-5 次。R² > 0.99。"
   },
   "ref": "Engvall & Perlmann (1971) Immunochemistry 8:871",
-  "source": "Nature Protocols"
+  "source": "Nature Protocols",
+  "discipline": [
+    "protein",
+    "immunology"
+  ],
+  "duration": {
+    "total": "1 day",
+    "hands_on": "4 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Plate coated",
+      "condition": "4°C sealed",
+      "duration": "overnight (or up to 48 h)"
+    }
+  ]
 }

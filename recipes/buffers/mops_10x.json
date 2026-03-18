@@ -3,19 +3,64 @@
   "name": "10× MOPS Buffer (RNA Gel Running Buffer)",
   "nameCn": "10× MOPS 缓冲液（RNA 凝胶电泳缓冲液）",
   "category": "buffer",
-  "tags": ["RNA", "MOPS", "RNA gel", "denaturing gel", "electrophoresis"],
+  "tags": [
+    "RNA",
+    "MOPS",
+    "RNA gel",
+    "denaturing gel",
+    "electrophoresis"
+  ],
   "volume": 1000,
   "volumeUnit": "mL",
   "components": [
-    {"name": "MOPS (free acid)", "amount": 41.86, "unit": "g", "mw": 209.26, "note": "200 mM"},
-    {"name": "Sodium acetate (NaOAc·3H₂O)", "amount": 6.80, "unit": "g", "mw": 136.08, "note": "50 mM"},
-    {"name": "EDTA (0.5 M, pH 8.0)", "amount": 20, "unit": "mL", "note": "10 mM final"},
-    {"name": "DEPC-treated ddH₂O", "amount": null, "unit": "to 1000 mL"}
+    {
+      "name": "MOPS (free acid)",
+      "amount": 41.86,
+      "unit": "g",
+      "mw": 209.26,
+      "note": "200 mM"
+    },
+    {
+      "name": "Sodium acetate (NaOAc·3H₂O)",
+      "amount": 6.8,
+      "unit": "g",
+      "mw": 136.08,
+      "note": "50 mM"
+    },
+    {
+      "name": "EDTA (0.5 M, pH 8.0)",
+      "amount": 20,
+      "unit": "mL",
+      "note": "10 mM final"
+    },
+    {
+      "name": "DEPC-treated ddH₂O",
+      "amount": null,
+      "unit": "to 1000 mL"
+    }
   ],
   "notes": {
     "en": "Adjust pH to 7.0 with NaOH. MOPS is light-sensitive — store in dark bottle at RT (or 4°C). Solution yellowing = degraded, prepare fresh. Autoclave or filter-sterilize. Dilute 1:10 to 1× for gel and running buffer.",
     "zh": "NaOH 调 pH 至 7.0。MOPS 对光敏感——棕色瓶中 RT 或 4°C 保存。溶液变黄 = 降解，需重新配制。可高压灭菌或过滤除菌。用时稀释 10 倍至 1×（凝胶和电泳缓冲液）。"
   },
-  "crosslinks": ["rna_agarose_gel", "rna_loading_dye", "trizol_extraction"],
-  "ref": "Sambrook & Russell (2001) Molecular Cloning 3rd ed.; Rio et al. (2010) RNA: A Laboratory Manual, CSHL Press"
+  "crosslinks": [
+    "rna_agarose_gel",
+    "rna_loading_dye",
+    "trizol_extraction"
+  ],
+  "ref": "Sambrook & Russell (2001) Molecular Cloning 3rd ed.; Rio et al. (2010) RNA: A Laboratory Manual, CSHL Press",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Light-sensitive; store in dark bottle; yellowing = degraded"
+  },
+  "usage": {
+    "en": "10× MOPS buffer for denaturing RNA agarose gel electrophoresis.",
+    "zh": "10× MOPS 缓冲液，用于 RNA 变性凝胶电泳。"
+  }
 }

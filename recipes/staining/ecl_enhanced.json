@@ -65,5 +65,18 @@
   },
   "ref": "Haan & Bhakri (2014) Anal Biochem 450:7-12",
   "doi": "10.1016/j.ab.2013.12.033",
-  "source": "Analytical Biochemistry"
+  "source": "Analytical Biochemistry",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "Use fresh",
+    "duration": "24 hours",
+    "sterile": "not_required",
+    "notes": "Mix A+B immediately before use"
+  },
+  "usage": {
+    "en": "Chemiluminescent substrate for HRP-based Western blot signal detection.",
+    "zh": "HRP 化学发光底物，用于 Western blot 信号检测。"
+  }
 }

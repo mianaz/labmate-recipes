@@ -29,5 +29,19 @@
     "en": "Adjust pH to 7.0 with HCl. Autoclave and store at room temperature. For Southern/Northern blot hybridization use 2×–6× SSC; for stringent washes use 0.1×–0.5× SSC. Also required for in situ hybridization (ISH).",
     "zh": "用 HCl 调 pH 至 7.0。高压灭菌后室温保存。杂交 (Southern/Northern blot) 时使用 2×–6× SSC；严格洗膜用 0.1×–0.5× SSC。ISH (原位杂交) 也需要。"
   },
-  "ref": "CSH Protocols doi:10.1101/pdb.rec8765; Sambrook & Russell (2001) Molecular Cloning"
+  "ref": "CSH Protocols doi:10.1101/pdb.rec8765; Sambrook & Russell (2001) Molecular Cloning",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "autoclave",
+    "notes": ""
+  },
+  "usage": {
+    "en": "20× SSC (saline-sodium citrate) concentrate for Northern blot, Southern blot, and FISH.",
+    "zh": "20× SSC 浓缩液，用于 Northern blot、Southern blot 和 FISH 实验。"
+  }
 }

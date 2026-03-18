@@ -3,30 +3,107 @@
   "name": "Protein Concentration by Centrifugal Ultrafiltration (Amicon Ultra)",
   "nameCn": "离心超滤浓缩蛋白（Amicon Ultra）",
   "category": "protocol",
-  "tags": ["protein purification", "concentration", "ultrafiltration", "Amicon", "buffer exchange", "biochemistry"],
+  "tags": [
+    "protein purification",
+    "concentration",
+    "ultrafiltration",
+    "Amicon",
+    "buffer exchange",
+    "biochemistry"
+  ],
   "components": [
-    {"name": "1. Choose correct MWCO filter", "amount": 1, "unit": "step",
-     "note": {"en": "MWCO should be 3–6× smaller than protein MW. Common: 3 kDa (peptides/small proteins), 10 kDa (general), 30 kDa (>60 kDa proteins), 50 kDa (>100 kDa). Amicon Ultra-4 (4 mL), Ultra-15 (15 mL), Ultra-0.5 (0.5 mL) available.", "zh": "MWCO 应为蛋白 MW 的 1/3–1/6。常用：3 kDa（多肽/小蛋白）、10 kDa（通用）、30 kDa（>60 kDa 蛋白）、50 kDa（>100 kDa）。可选 Amicon Ultra-4（4 mL）、Ultra-15（15 mL）、Ultra-0.5（0.5 mL）。"}},
-    {"name": "2. Pre-wet membrane: add 500 µL storage buffer; spin 2 min at 4,000×g; discard", "amount": 1, "unit": "step",
-     "note": {"en": "Removes glycerol storage solution from new membranes. Some protocols skip this step.", "zh": "去除新膜上的甘油储存液。部分方案可跳过此步。"}},
-    {"name": "3. Load protein sample into concentrator (do not exceed max volume)", "amount": 1, "unit": "step",
-     "note": {"en": "Max fill: 4 mL (Ultra-4), 15 mL (Ultra-15). Leave 10% headspace. Apply sample gently (do not pipette directly onto membrane).", "zh": "最大体积：Ultra-4 为 4 mL，Ultra-15 为 15 mL。留 10% 空间。轻柔加样（勿直接往膜上吸打）。"}},
-    {"name": "4. Centrifuge: 3,500–4,000×g, 4°C; check every 5–10 min", "amount": 1, "unit": "step",
-     "note": {"en": "Do NOT exceed 4,000×g (damages membrane). 4°C preferred for protein stability. Check volume every 5–10 min — do not let membrane go dry (protein aggregates irreversibly on dry membrane).", "zh": "不超过 4,000×g（损坏膜）。4°C 保护蛋白稳定性。每 5–10 min 检查一次体积——绝不让膜干燥（蛋白会不可逆地聚集在干膜上）。"}},
-    {"name": "5. Continue centrifugation until desired volume reached", "amount": 1, "unit": "step",
-     "note": {"en": "Typical: 50-fold concentration takes ~30–60 min. Stop at ≥50 µL (Amicon Ultra-4) to allow easy recovery. Mix gently by pipetting up/down every 15–20 min to prevent boundary layer effect.", "zh": "典型 50 倍浓缩约 30–60 min。停在 ≥50 µL（Ultra-4）以便回收。每 15–20 min 轻柔吸打混匀，防止边界层效应。"}},
-    {"name": "6. Recover concentrated protein", "amount": 1, "unit": "step",
-     "note": {"en": "Invert device, place in recovery tube, spin 2 min at 1,000×g. Typical recovery: 90–95%. Rinse membrane with 20–50 µL buffer for maximum recovery.", "zh": "倒置装置，放入回收管，1,000×g 离心 2 min。典型回收率：90–95%。用 20–50 µL 缓冲液冲洗膜，最大化回收。"}},
-    {"name": "7. Buffer exchange (optional): dilute 10× in new buffer, repeat concentration (×3 cycles)", "amount": 1, "unit": "step",
-     "note": {"en": "3 cycles of 10× dilution + concentration removes >99.9% of original buffer components. Equivalent to dialysis but much faster (30 min vs 6–12 h).", "zh": "3 次 10 倍稀释 + 浓缩循环，去除 >99.9% 原缓冲液成分。效果等同透析，但速度快（30 min vs 6–12 h）。"}},
-    {"name": "8. Quantify concentrated protein (BCA or Bradford); run SDS-PAGE QC", "amount": 1, "unit": "step",
-     "note": {"en": "Compare before and after by SDS-PAGE to check for aggregation or protein loss.", "zh": "浓缩前后 SDS-PAGE 对比，检查是否有聚集或蛋白损失。"}}
+    {
+      "name": "1. Choose correct MWCO filter",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "MWCO should be 3–6× smaller than protein MW. Common: 3 kDa (peptides/small proteins), 10 kDa (general), 30 kDa (>60 kDa proteins), 50 kDa (>100 kDa). Amicon Ultra-4 (4 mL), Ultra-15 (15 mL), Ultra-0.5 (0.5 mL) available.",
+        "zh": "MWCO 应为蛋白 MW 的 1/3–1/6。常用：3 kDa（多肽/小蛋白）、10 kDa（通用）、30 kDa（>60 kDa 蛋白）、50 kDa（>100 kDa）。可选 Amicon Ultra-4（4 mL）、Ultra-15（15 mL）、Ultra-0.5（0.5 mL）。"
+      }
+    },
+    {
+      "name": "2. Pre-wet membrane: add 500 µL storage buffer; spin 2 min at 4,000×g; discard",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Removes glycerol storage solution from new membranes. Some protocols skip this step.",
+        "zh": "去除新膜上的甘油储存液。部分方案可跳过此步。"
+      }
+    },
+    {
+      "name": "3. Load protein sample into concentrator (do not exceed max volume)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Max fill: 4 mL (Ultra-4), 15 mL (Ultra-15). Leave 10% headspace. Apply sample gently (do not pipette directly onto membrane).",
+        "zh": "最大体积：Ultra-4 为 4 mL，Ultra-15 为 15 mL。留 10% 空间。轻柔加样（勿直接往膜上吸打）。"
+      }
+    },
+    {
+      "name": "4. Centrifuge: 3,500–4,000×g, 4°C; check every 5–10 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Do NOT exceed 4,000×g (damages membrane). 4°C preferred for protein stability. Check volume every 5–10 min — do not let membrane go dry (protein aggregates irreversibly on dry membrane).",
+        "zh": "不超过 4,000×g（损坏膜）。4°C 保护蛋白稳定性。每 5–10 min 检查一次体积——绝不让膜干燥（蛋白会不可逆地聚集在干膜上）。"
+      }
+    },
+    {
+      "name": "5. Continue centrifugation until desired volume reached",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Typical: 50-fold concentration takes ~30–60 min. Stop at ≥50 µL (Amicon Ultra-4) to allow easy recovery. Mix gently by pipetting up/down every 15–20 min to prevent boundary layer effect.",
+        "zh": "典型 50 倍浓缩约 30–60 min。停在 ≥50 µL（Ultra-4）以便回收。每 15–20 min 轻柔吸打混匀，防止边界层效应。"
+      }
+    },
+    {
+      "name": "6. Recover concentrated protein",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Invert device, place in recovery tube, spin 2 min at 1,000×g. Typical recovery: 90–95%. Rinse membrane with 20–50 µL buffer for maximum recovery.",
+        "zh": "倒置装置，放入回收管，1,000×g 离心 2 min。典型回收率：90–95%。用 20–50 µL 缓冲液冲洗膜，最大化回收。"
+      }
+    },
+    {
+      "name": "7. Buffer exchange (optional): dilute 10× in new buffer, repeat concentration (×3 cycles)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "3 cycles of 10× dilution + concentration removes >99.9% of original buffer components. Equivalent to dialysis but much faster (30 min vs 6–12 h).",
+        "zh": "3 次 10 倍稀释 + 浓缩循环，去除 >99.9% 原缓冲液成分。效果等同透析，但速度快（30 min vs 6–12 h）。"
+      }
+    },
+    {
+      "name": "8. Quantify concentrated protein (BCA or Bradford); run SDS-PAGE QC",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Compare before and after by SDS-PAGE to check for aggregation or protein loss.",
+        "zh": "浓缩前后 SDS-PAGE 对比，检查是否有聚集或蛋白损失。"
+      }
+    }
   ],
   "notes": {
     "en": "Troubleshooting: Slow filtration → protein aggregating on membrane (reduce concentration, add mild detergent 0.01% Tween-20, or switch to lower MWCO). Protein in filtrate → wrong MWCO or membrane integrity issue. Sticky proteins: add BSA 0.1% carrier, or use PES membranes instead of regenerated cellulose.",
     "zh": "排查：过滤慢→蛋白在膜上聚集（降低浓度、加 0.01% Tween-20 或换更小 MWCO）；蛋白在滤液中→MWCO 选错或膜破损；粘性蛋白：加 0.1% BSA 载体蛋白，或换 PES 膜替代再生纤维素膜。"
   },
-  "crosslinks": ["protein_dialysis", "his_tag_purification", "sec_purification", "bca_protein_assay", "bradford_assay_protocol"],
+  "crosslinks": [
+    "protein_dialysis",
+    "his_tag_purification",
+    "sec_purification",
+    "bca_protein_assay",
+    "bradford_assay_protocol"
+  ],
   "ref": "Millipore Amicon Ultra User Guide; Wingfield (2015) Curr Protoc Protein Sci 80:A.3F.1",
-  "doi": "10.1002/0471140864.psa03fs80"
+  "doi": "10.1002/0471140864.psa03fs80",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "1–2 hours",
+    "hands_on": "1 hour"
+  }
 }

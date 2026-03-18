@@ -77,5 +77,30 @@
     "en": "Primary antibody: 1:500–1:2000; HRP secondary: 1:5000–1:10000. Use BSA blocking for phospho-proteins. Semi-dry transfer suitable for proteins <100 kDa.",
     "zh": "一抗稀释比通常 1:500–1:2000；HRP 二抗 1:5000–1:10000。磷酸化蛋白用 BSA 封闭。半干转适合 <100 kDa 蛋白。PVDF 需甲醇活化。"
   },
-  "ref": "Mahmood & Yang (2012) N Am J Med Sci 4:429–434; Bass et al. (2017) STAR Protoc Preview; Towbin et al. (1979) PNAS 76:4350"
+  "ref": "Mahmood & Yang (2012) N Am J Med Sci 4:429–434; Bass et al. (2017) STAR Protoc Preview; Towbin et al. (1979) PNAS 76:4350",
+  "discipline": [
+    "protein",
+    "cell"
+  ],
+  "duration": {
+    "total": "1–2 days",
+    "hands_on": "3–4 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Sample preparation",
+      "condition": "−20°C in 1× Laemmli buffer",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "Blocking complete",
+      "condition": "4°C in TBST (membrane in sealed bag)",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": "Primary antibody incubation",
+      "condition": "4°C in TBST",
+      "duration": "24 hours"
+    }
+  ]
 }

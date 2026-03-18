@@ -63,5 +63,13 @@
     "en": "Use Q5/Phusion for high-fidelity PCR (proofreading, 100× lower error rate). Tm calculator: NEB Tm Calculator (tmcalculator.neb.com). NTC (no template control) required. Multiple bands: reduce primer concentration, raise annealing temp, reduce cycles. Smear: optimize Mg²⁺. No product: lower annealing temp, increase template, check primer orientation. GC-rich templates: add 3-5% DMSO or GC enhancer.",
     "zh": "高保真 PCR 用 Q5/Phusion（校对功能, 错误率低 100×）。Tm 计算：NEB Tm Calculator (tmcalculator.neb.com)。无模板对照 (NTC) 必须。多条带：降低引物浓度、提高退火温度、减少循环数。涂片：优化 Mg²⁺ 浓度。无产物：降低退火温度、增加模板量、检查引物方向。GC-rich 模板加 3–5% DMSO 或用 GC enhancer。"
   },
-  "ref": "Saiki et al. (1988) Science 239:487; NEB PCR Protocol (neb.com)"
+  "ref": "Saiki et al. (1988) Science 239:487; NEB PCR Protocol (neb.com)",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "2–3 hours",
+    "hands_on": "30 minutes"
+  }
 }

@@ -36,5 +36,18 @@
     "en": "Autoclave, cool to ~55°C before adding antibiotics, then pour plates. ~25 mL per 100 mm dish.",
     "zh": "高压灭菌后冷至 ~55°C 加抗生素，倒板。每板约 25 mL (100 mm dish)。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed."
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.",
+  "discipline": [
+    "microbiology"
+  ],
+  "storage": {
+    "temperature": "4°C (plates, inverted)",
+    "duration": "1 month",
+    "sterile": "autoclave",
+    "notes": "Pour plates at 55°C; store inverted at 4°C with antibiotics"
+  },
+  "usage": {
+    "en": "LB agar for pouring solid plates for E. coli transformation and colony selection.",
+    "zh": "LB 琼脂，用于倒板，进行大肠杆菌转化和克隆筛选。"
+  }
 }

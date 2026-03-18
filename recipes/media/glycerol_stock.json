@@ -29,5 +29,18 @@
   "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press",
   "crosslinks": [
     "bacterial_glycerol_stock"
-  ]
+  ],
+  "discipline": [
+    "microbiology"
+  ],
+  "storage": {
+    "temperature": "-80°C",
+    "duration": "indefinite",
+    "sterile": "not_required",
+    "notes": "Do not thaw — streak directly; avoid freeze-thaw"
+  },
+  "usage": {
+    "en": "Long-term bacterial glycerol cryostock for preserving E. coli strains at -80°C.",
+    "zh": "细菌甘油冻存液，用于 -80°C 长期保存大肠杆菌菌株。"
+  }
 }

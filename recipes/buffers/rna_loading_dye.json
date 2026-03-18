@@ -44,5 +44,19 @@
     "en": "For denaturing agarose gel electrophoresis. Mix sample 1:1 with dye, heat at 65°C for 5 min, snap-cool on ice, then load. Formamide denatures RNA secondary structure.",
     "zh": "用于变性琼脂糖凝胶电泳。样品与 dye 1:1 混合后 65°C 加热 5 min，立即冰上冷却后上样。甲酰胺变性 RNA 二级结构。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning; Rio et al. (2010) CSH Protocols"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning; Rio et al. (2010) CSH Protocols",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Aliquot; contains formamide"
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

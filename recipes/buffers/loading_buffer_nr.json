@@ -44,5 +44,18 @@
     "en": "No β-mercaptoethanol or DTT. Use for non-reducing SDS-PAGE: preserves disulfide bonds, suitable for detecting multimers, intact IgG heavy/light chains, or ligand-receptor complexes. Mix 1:1 with sample and heat at 70°C for 10 min (do not boil to avoid aggregation).",
     "zh": "不含 β-巯基乙醇或 DTT。用于非还原 SDS-PAGE：保留二硫键，适合检测多聚体、IgG 重/轻链不分离、或配体-受体复合物。与样品 1:1 混合后 70°C 加热 10 min (不要煮沸，避免聚集)。"
   },
-  "ref": "Laemmli (1970) Nature 227:680–685"
+  "ref": "Laemmli (1970) Nature 227:680–685",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Non-reducing; omit reducing agent"
+  },
+  "usage": {
+    "en": "Non-reducing SDS-PAGE loading buffer for analyzing disulfide-bonded proteins.",
+    "zh": "非还原 SDS-PAGE 上样缓冲液，用于分析含二硫键蛋白。"
+  }
 }

@@ -31,5 +31,19 @@
     "en": "Degas before use. Store at 4°C. 2% FBS can substitute BSA.",
     "zh": "脱气后使用。4°C 保存。也可用 FBS 替代 BSA (2% FBS)。"
   },
-  "ref": "Miltenyi Biotec MACS Handbook; Cossarizza et al. (2019) Eur J Immunol 49:1457"
+  "ref": "Miltenyi Biotec MACS Handbook; Cossarizza et al. (2019) Eur J Immunol 49:1457",
+  "discipline": [
+    "cell",
+    "immunology"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "filter_022",
+    "notes": "Keep cold; use same day ideally"
+  },
+  "usage": {
+    "en": "Cold PBS buffer for MACS magnetic bead separation; keeps cells viable during separation.",
+    "zh": "冷 PBS 缓冲液，用于 MACS 磁珠分选，保持细胞活力。"
+  }
 }

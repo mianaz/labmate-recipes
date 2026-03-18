@@ -51,5 +51,13 @@
     "zh": "关键：新鲜细胞，不可过度裂解。核小体梯度条带 = 文库合格。通常 9-12 轮 PCR。≥50M reads/样品。"
   },
   "ref": "Buenrostro et al. (2013) Nat Methods 10:1213",
-  "source": "Nature Methods"
+  "source": "Nature Methods",
+  "discipline": [
+    "genomics",
+    "molecular"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "8 hours"
+  }
 }

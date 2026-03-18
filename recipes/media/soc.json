@@ -46,5 +46,18 @@
     "en": "Autoclave Tryptone/Yeast/NaCl/KCl together. After cooling to <60°C, add sterile MgCl₂ and filter-sterilized glucose. Aliquot at −20°C.",
     "zh": "灭菌前加 Tryptone/Yeast/NaCl/KCl。灭菌后冷却至 <60°C 加 MgCl₂ 和 Glucose。分装 -20°C。"
   },
-  "ref": "Hanahan (1983) J Mol Biol 166:557–580"
+  "ref": "Hanahan (1983) J Mol Biol 166:557–580",
+  "discipline": [
+    "microbiology"
+  ],
+  "storage": {
+    "temperature": "RT or 4°C",
+    "duration": "6 months",
+    "sterile": "filter_022",
+    "notes": "Sterile-filter; avoid autoclaving (glucose caramelizes)"
+  },
+  "usage": {
+    "en": "Rich recovery medium for bacteria post-electroporation or heat-shock transformation.",
+    "zh": "富集恢复培养基，用于电穿孔或热激转化后的细菌恢复培养。"
+  }
 }

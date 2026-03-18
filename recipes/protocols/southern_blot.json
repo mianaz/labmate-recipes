@@ -55,5 +55,13 @@
     "ssc_20x",
     "agarose_gel_electrophoresis"
   ],
-  "source": "CSHL"
+  "source": "CSHL",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "3 days",
+    "hands_on": "8 hours"
+  }
 }

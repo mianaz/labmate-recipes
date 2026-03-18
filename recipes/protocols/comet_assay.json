@@ -46,5 +46,12 @@
     "zh": "检测 SSB、DSB、碱不稳定位点。全程 4°C 避光。指标：尾部 DNA 百分比、尾矩。阳性对照：H₂O₂ 100 µM 10 min。"
   },
   "ref": "Singh et al. (1988) Exp Cell Res 175:184",
-  "source": "Nature Protocols"
+  "source": "Nature Protocols",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "1 day",
+    "hands_on": "5 hours"
+  }
 }

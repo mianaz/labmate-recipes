@@ -46,5 +46,12 @@
     "zh": "RNase A 必需（PI 也结合 RNA）。FSC-H vs FSC-A 门控去除双联体。G1=2N, S=中间, G2/M=4N。固定后 -20°C 可保存数周。"
   },
   "ref": "Krishan (1975) J Cell Biol 66:188",
-  "source": "CSHL"
+  "source": "CSHL",
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "4–5 hours",
+    "hands_on": "2 hours"
+  }
 }

@@ -62,5 +62,13 @@
     "en": "For intracellular staining: fix with 4% PFA 20 min, then permeabilize with 0.1% saponin. Titrate each antibody individually. Compensation controls required.",
     "zh": "胞内染色需先固定 (4% PFA 20 min) 再透化 (0.1% saponin)。每个抗体需单独滴度实验。compensation controls 必需。FMO controls 用于 gating。"
   },
-  "ref": "Cossarizza et al. (2019) Eur J Immunol 49:1457–1973; Perfetto et al. (2004) Nat Rev Immunol 4:648–655"
+  "ref": "Cossarizza et al. (2019) Eur J Immunol 49:1457–1973; Perfetto et al. (2004) Nat Rev Immunol 4:648–655",
+  "discipline": [
+    "cell",
+    "immunology"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "2 hours"
+  }
 }

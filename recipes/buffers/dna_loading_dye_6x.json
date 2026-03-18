@@ -37,5 +37,19 @@
     "en": "Aliquot and store at −20°C; stable at 4°C for months. Mix 1:5 with sample (1 µL dye + 5 µL sample). Bromophenol blue co-migrates with ~300 bp in 1% agarose; xylene cyanol co-migrates with ~4 kb. Optionally add EDTA (10 mM final) to chelate DNases.",
     "zh": "分装后 -20°C 保存，4°C 可存数月。使用时 1:5 混合 (1 µL dye + 5 µL 样品)。Bromophenol Blue 在 1% 琼脂糖中迁移率 ~300 bp，Xylene Cyanol ~4 kb。可选加 EDTA (终浓度 10 mM) 螯合 DNase。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press, Appendix 1"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed., CSHL Press, Appendix 1",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "See notes for usage.",
+    "zh": "详见备注。"
+  }
 }

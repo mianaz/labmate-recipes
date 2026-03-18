@@ -3,20 +3,72 @@
   "name": "Sucrose Homogenization Buffer (Organelle Isolation)",
   "nameCn": "蔗糖匀浆缓冲液（细胞器分离用）",
   "category": "buffer",
-  "tags": ["subcellular fractionation", "organelle isolation", "sucrose", "homogenization", "ER isolation", "Golgi isolation", "lysosome"],
+  "tags": [
+    "subcellular fractionation",
+    "organelle isolation",
+    "sucrose",
+    "homogenization",
+    "ER isolation",
+    "Golgi isolation",
+    "lysosome"
+  ],
   "volume": 100,
   "volumeUnit": "mL",
   "components": [
-    {"name": "Sucrose", "amount": 7.98, "unit": "g", "mw": 342.3, "note": "250 mM; iso-osmotic, stabilizes membranes"},
-    {"name": "HEPES (1 M, pH 7.4)", "amount": 1, "unit": "mL", "note": "10 mM"},
-    {"name": "EDTA (0.5 M, pH 8.0)", "amount": 0.2, "unit": "mL", "note": "1 mM; chelates Ca²⁺"},
-    {"name": "Protease inhibitor cocktail (100×)", "amount": 1, "unit": "mL", "note": "1× final; add fresh"},
-    {"name": "ddH₂O", "amount": null, "unit": "to 100 mL"}
+    {
+      "name": "Sucrose",
+      "amount": 7.98,
+      "unit": "g",
+      "mw": 342.3,
+      "note": "250 mM; iso-osmotic, stabilizes membranes"
+    },
+    {
+      "name": "HEPES (1 M, pH 7.4)",
+      "amount": 1,
+      "unit": "mL",
+      "note": "10 mM"
+    },
+    {
+      "name": "EDTA (0.5 M, pH 8.0)",
+      "amount": 0.2,
+      "unit": "mL",
+      "note": "1 mM; chelates Ca²⁺"
+    },
+    {
+      "name": "Protease inhibitor cocktail (100×)",
+      "amount": 1,
+      "unit": "mL",
+      "note": "1× final; add fresh"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "to 100 mL"
+    }
   ],
   "notes": {
     "en": "Adjust pH to 7.4 with KOH. Sucrose 250 mM is isotonic and stabilizes organelle membranes. For ER isolation: use 0.25 M sucrose; for dense-core vesicles: 0.32 M. Used as base buffer for step sucrose gradients (0.25 M / 0.86 M / 1.3 M / 2.0 M layered for ER/Golgi separation) or continuous gradient (0.25–2.0 M). Keep all solutions ice-cold throughout.",
     "zh": "KOH 调 pH 至 7.4。250 mM 蔗糖等渗，稳定细胞器膜。内质网分离用 0.25 M 蔗糖；致密核心囊泡用 0.32 M。可作阶梯蔗糖梯度（0.25/0.86/1.3/2.0 M 分离 ER/Golgi）或连续梯度（0.25–2.0 M）的基础缓冲液。全程保持冰冷。"
   },
-  "crosslinks": ["er_golgi_isolation", "lysosome_isolation", "subcellular_fractionation", "mitochondria_isolation"],
-  "ref": "Graham (2001) Curr Protoc Cell Biol 3.6.1; Bhatt et al. (2021) STAR Protoc 2:100450"
+  "crosslinks": [
+    "er_golgi_isolation",
+    "lysosome_isolation",
+    "subcellular_fractionation",
+    "mitochondria_isolation"
+  ],
+  "ref": "Graham (2001) Curr Protoc Cell Biol 3.6.1; Bhatt et al. (2021) STAR Protoc 2:100450",
+  "discipline": [
+    "cell",
+    "biochemistry"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Add protease inhibitors fresh"
+  },
+  "usage": {
+    "en": "250 mM sucrose buffer for cell homogenization and organelle isolation by density gradient.",
+    "zh": "250 mM 蔗糖匀浆缓冲液，用于细胞匀浆和密度梯度法分离细胞器。"
+  }
 }

@@ -48,5 +48,19 @@
     "en": "Mild lysis buffer that preserves protein-protein interactions, ideal for Co-IP. NP-40 does not lyse the nuclear membrane. Add protease inhibitors fresh before use. Add phosphatase inhibitors for phosphoprotein detection.",
     "zh": "温和裂解液，保留蛋白-蛋白相互作用，适合 Co-IP。NP-40 不裂解核膜。使用前加蛋白酶抑制剂。可加磷酸酶抑制剂用于磷酸化蛋白检测。"
   },
-  "ref": "Abcam Co-IP protocol; Sambrook & Russell (2001)"
+  "ref": "Abcam Co-IP protocol; Sambrook & Russell (2001)",
+  "discipline": [
+    "protein",
+    "cell"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Add protease inhibitors fresh"
+  },
+  "usage": {
+    "en": "Mild non-ionic detergent lysis buffer for IP and Co-IP under native conditions.",
+    "zh": "温和非离子去污剂裂解缓冲液，用于天然条件下的 IP 和 Co-IP。"
+  }
 }

@@ -28,5 +28,18 @@
     "en": "Same as SDS-PAGE but without SDS. pH ~8.3 forms naturally. Do not boil samples or add reducing agents. Run at 4°C.",
     "zh": "与 SDS-PAGE 相同但不加 SDS。pH ~8.3 自然形成。样品不煮沸不加还原剂。4°C 电泳。"
   },
-  "ref": "Wittig et al. (2006) Nat Protoc 1:418–428"
+  "ref": "Wittig et al. (2006) Nat Protoc 1:418–428",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Keep cold; do not add SDS"
+  },
+  "usage": {
+    "en": "Native PAGE running buffer for non-denaturing protein electrophoresis.",
+    "zh": "天然 PAGE 电泳缓冲液，用于非变性蛋白质电泳。"
+  }
 }

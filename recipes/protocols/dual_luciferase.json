@@ -3,20 +3,66 @@
   "name": "Dual-Luciferase Reporter Assay",
   "nameCn": "双荧光素酶报告基因",
   "category": "protocol",
-  "tags": ["luciferase", "reporter", "promoter", "transcription"],
+  "tags": [
+    "luciferase",
+    "reporter",
+    "promoter",
+    "transcription"
+  ],
   "components": [
-    { "name": "1. 共转染 Firefly 报告质粒 + Renilla 内参质粒", "amount": 1, "unit": "step", "note": "比例 10:1 (如 500 ng Firefly + 50 ng Renilla/24 孔); 加实验质粒或 miRNA mimics" },
-    { "name": "2. 24–48 h 后弃培养基, PBS 洗 1×", "amount": 1, "unit": "step" },
-    { "name": "3. 加 1× PLB 裂解", "amount": 1, "unit": "step", "note": "24-well: 100 µL/孔; 96-well: 20 µL/孔; 摇床 15 min RT" },
-    { "name": "4. 取 20 µL 裂解液至检测板", "amount": 1, "unit": "step", "note": "白色不透明板减少串扰" },
-    { "name": "5. 加 100 µL LAR II → 读 Firefly (2 s delay, 10 s read)", "amount": 1, "unit": "step" },
-    { "name": "6. 加 100 µL Stop & Glo → 读 Renilla", "amount": 1, "unit": "step", "note": "Stop & Glo 猝灭 Firefly 同时激发 Renilla" },
-    { "name": "7. 计算 Ratio = Firefly RLU / Renilla RLU", "amount": 1, "unit": "step", "note": "归一化后比较各组差异" }
+    {
+      "name": "1. 共转染 Firefly 报告质粒 + Renilla 内参质粒",
+      "amount": 1,
+      "unit": "step",
+      "note": "比例 10:1 (如 500 ng Firefly + 50 ng Renilla/24 孔); 加实验质粒或 miRNA mimics"
+    },
+    {
+      "name": "2. 24–48 h 后弃培养基, PBS 洗 1×",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. 加 1× PLB 裂解",
+      "amount": 1,
+      "unit": "step",
+      "note": "24-well: 100 µL/孔; 96-well: 20 µL/孔; 摇床 15 min RT"
+    },
+    {
+      "name": "4. 取 20 µL 裂解液至检测板",
+      "amount": 1,
+      "unit": "step",
+      "note": "白色不透明板减少串扰"
+    },
+    {
+      "name": "5. 加 100 µL LAR II → 读 Firefly (2 s delay, 10 s read)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. 加 100 µL Stop & Glo → 读 Renilla",
+      "amount": 1,
+      "unit": "step",
+      "note": "Stop & Glo 猝灭 Firefly 同时激发 Renilla"
+    },
+    {
+      "name": "7. 计算 Ratio = Firefly RLU / Renilla RLU",
+      "amount": 1,
+      "unit": "step",
+      "note": "归一化后比较各组差异"
+    }
   ],
   "notes": {
     "en": "Firefly = experimental reporter, Renilla = internal control for transfection efficiency. LAR II and Stop & Glo should be at RT before use. Prepare only enough for immediate use (LAR II stable ~8h at RT). Background: <100 RLU. Triplicate wells minimum. For 3'UTR/miRNA target validation: clone target site into psiCHECK-2 (Renilla is the reporter).",
     "zh": "Firefly = 实验报告基因，Renilla = 内参控制转染效率。LAR II 和 Stop & Glo 使用前恢复至室温。LAR II 室温稳定约 8h，现配现用。背景 <100 RLU。至少 3 个重复孔。3'UTR/miRNA 靶标验证：用 psiCHECK-2（Renilla 为报告基因）。"
   },
   "ref": "Sherf et al. (1996) Promega Notes 57:2; Promega Dual-Luciferase Reporter Assay System Technical Manual TM040",
-  "source": "Promega"
+  "source": "Promega",
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "duration": {
+    "total": "3–4 hours",
+    "hands_on": "2 hours"
+  }
 }

@@ -45,5 +45,12 @@
     "en": "Seamless, scarless DNA assembly. Joins 2-6 fragments with 15-25 bp overlaps in a single isothermal reaction. No restriction enzymes or ligase needed separately — T5 exonuclease, Phusion polymerase, and Taq ligase work together in one tube.",
     "zh": "无缝无疤 DNA 组装。通过 15-25 bp 重叠区在单一等温反应中连接 2-6 个片段。无需单独使用限制酶或连接酶——T5 外切酶、Phusion 聚合酶和 Taq 连接酶在同一管中协同工作。"
   },
-  "ref": "Gibson et al. (2009) Nat Methods 6:343–345; NEB Protocol E5510 (protocols.io doi:10.17504/protocols.io.bdddi226)"
+  "ref": "Gibson et al. (2009) Nat Methods 6:343–345; NEB Protocol E5510 (protocols.io doi:10.17504/protocols.io.bdddi226)",
+  "discipline": [
+    "molecular"
+  ],
+  "duration": {
+    "total": "1 hour",
+    "hands_on": "20 minutes"
+  }
 }

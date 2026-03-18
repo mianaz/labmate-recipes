@@ -33,5 +33,18 @@
     "en": "Adjust pH to 2.2 with HCl. Incubate at 37°C for 10–15 min × 2, then wash with TBST 3 × 10 min, then re-block.",
     "zh": "用 HCl 调 pH 至 2.2。37°C 孵育 10–15 min × 2 次，然后 TBST 洗 3 次 × 10 min，重新封闭。"
   },
-  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29–40"
+  "ref": "Bhatt et al. (2012) Methods Mol Biol 869:29–40",
+  "discipline": [
+    "protein"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Contains reducing agent; prepare in fume hood"
+  },
+  "usage": {
+    "en": "Western blot membrane stripping buffer for antibody removal and membrane re-probing.",
+    "zh": "WB 膜剥脱缓冲液，用于去除抗体后重新探针。"
+  }
 }

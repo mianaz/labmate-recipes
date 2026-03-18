@@ -59,5 +59,12 @@
   "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 21; Louis & Bhatt (2015) Methods Mol Biol 1235:31",
   "crosslinks": [
     "trypan_blue_counting"
-  ]
+  ],
+  "discipline": [
+    "cell"
+  ],
+  "duration": {
+    "total": "15 minutes",
+    "hands_on": "15 minutes"
+  }
 }

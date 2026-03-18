@@ -126,5 +126,25 @@
     "coomassie_staining"
   ],
   "ref": "Harper & Speicher (2011) Curr Protoc Protein Sci 6.6.1–26; GE Healthcare Glutathione Sepharose Handbook; Smith & Johnson (1988) Gene 67:31–40",
-  "doi": "10.1002/0471140864.ps0606s73"
+  "doi": "10.1002/0471140864.ps0606s73",
+  "discipline": [
+    "protein",
+    "biochemistry"
+  ],
+  "duration": {
+    "total": "1–2 days",
+    "hands_on": "6 hours"
+  },
+  "stoppingPoints": [
+    {
+      "afterStep": "Glutathione elution",
+      "condition": "4°C on ice",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": "Dialysis complete",
+      "condition": "−80°C + 10% glycerol",
+      "duration": "12 months"
+    }
+  ]
 }

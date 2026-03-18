@@ -73,5 +73,13 @@
     "en": "TAE is better for large fragments and gel extraction (low ionic strength, easier to cut bands); TBE provides higher resolution for small fragments (<1 kb). EtBr is carcinogenic — use GelRed/SYBR Safe alternatives. Running buffer and gel buffer must match. Avoid air bubbles. RNA gels require formaldehyde denaturing agarose.",
     "zh": "TAE 适合大片段和胶回收 (低离子强度，跑得慢易切胶)；TBE 分辨率更高适合小片段 (<1 kb)。EtBr 致癌，推荐用 GelRed/SYBR Safe 等替代品。电泳缓冲液和制胶缓冲液须一致。避免气泡。RNA 胶需用甲醛变性凝胶。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.; Lee et al. (2012) J Vis Exp 62:e3923"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.; Lee et al. (2012) J Vis Exp 62:e3923",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "1–2 hours",
+    "hands_on": "30 minutes"
+  }
 }

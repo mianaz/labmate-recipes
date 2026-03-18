@@ -80,5 +80,13 @@
     "en": "Use RNase-free reagents and equipment throughout. Run formaldehyde gel in fume hood. DIG-labeled probes are safer than radioactive, slightly less sensitive. Positive control: housekeeping gene (GAPDH, β-actin). RNA quality assessed by 28S/18S ratio (~2:1).",
     "zh": "所有操作使用 RNase-free 试剂和器具。甲醛凝胶在通风橱中操作。DIG 标记探针比放射性标记更安全，灵敏度稍低。阳性对照：管家基因（GAPDH, β-actin）。RNA 质量可通过 28S/18S 比值（~2:1）评估。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, Ch. 7; Alwine et al. (1977) PNAS 74:5350"
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, Ch. 7; Alwine et al. (1977) PNAS 74:5350",
+  "discipline": [
+    "molecular",
+    "rna_dna"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "8 hours"
+  }
 }

@@ -38,5 +38,19 @@
     "en": "Include NaN₃ to prevent capping; omit for live cell sorting. Store at 4°C. Filter through 0.22 µm.",
     "zh": "NaN₃ 防止 cap-and-strip；若做活细胞分选则不加 NaN₃。4°C 保存。过滤 (0.22 µm)。"
   },
-  "ref": "Cossarizza et al. (2019) Eur J Immunol 49:1457–1973 (Guidelines for flow cytometry)"
+  "ref": "Cossarizza et al. (2019) Eur J Immunol 49:1457–1973 (Guidelines for flow cytometry)",
+  "discipline": [
+    "cell",
+    "immunology"
+  ],
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "filter_022",
+    "notes": "Sterile-filter for live-cell staining"
+  },
+  "usage": {
+    "en": "PBS + BSA/FBS + EDTA for cell suspension and antibody incubation in flow cytometry.",
+    "zh": "含 BSA/FBS 和 EDTA 的 PBS，用于流式细胞术细胞悬液和抗体孵育。"
+  }
 }

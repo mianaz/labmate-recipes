@@ -65,5 +65,13 @@
     "en": "Dilute to 1× before use. Classic alkaline lysis method. Yields 5–20 µg from 3 mL overnight culture. A260/280 should be 1.8–2.0 for pure DNA.",
     "zh": "经典碱裂解法。3 mL 过夜培养物可获 5–20 µg 质粒 DNA。A260/280 应为 1.8–2.0。如需更高纯度，使用商业柱提试剂盒。"
   },
-  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513–1523; Sambrook & Russell (2001)"
+  "ref": "Birnboim & Doly (1979) Nucleic Acids Res 7:1513–1523; Sambrook & Russell (2001)",
+  "discipline": [
+    "molecular",
+    "microbiology"
+  ],
+  "duration": {
+    "total": "30 minutes",
+    "hands_on": "30 minutes"
+  }
 }

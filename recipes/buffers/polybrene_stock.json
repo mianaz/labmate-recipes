@@ -25,5 +25,19 @@
     "en": "Filter-sterilize through 0.22 µm after dissolving. Aliquot 100-500 µL and freeze. Working concentration typically 4-8 µg/mL. Polybrene enhances viral adsorption by neutralizing charge. Some cells (e.g. primary T cells) are sensitive — reduce concentration or use protamine sulfate instead.",
     "zh": "溶解后 0.22 µm 过滤除菌。分装为 100-500 µL 小份冻存。使用浓度通常为 4-8 µg/mL。Polybrene 通过中和电荷增强病毒吸附。某些细胞（如原代 T 细胞）对 Polybrene 敏感，需降低浓度或改用 protamine sulfate。"
   },
-  "ref": "Davis et al. (2004) Curr Protoc Mol Biol 9.9"
+  "ref": "Davis et al. (2004) Curr Protoc Mol Biol 9.9",
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "filter_022",
+    "notes": "Aliquot at -20°C; cytotoxic"
+  },
+  "usage": {
+    "en": "Polybrene (hexadimethrine bromide) stock for enhancing lentiviral/retroviral transduction efficiency.",
+    "zh": "聚凝胺母液，用于提高慢病毒/逆转录病毒的转导效率。"
+  }
 }

@@ -30,5 +30,18 @@
     "en": "Change destain solution multiple times; adding Kimwipes absorbs released dye and speeds destaining.",
     "zh": "多次换液，加 Kimwipe 吸附可加速脱色。"
   },
-  "ref": "Gallagher (2012) Curr Protoc Mol Biol, Ch.10"
+  "ref": "Gallagher (2012) Curr Protoc Mol Biol, Ch.10",
+  "discipline": [
+    "general"
+  ],
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": ""
+  },
+  "usage": {
+    "en": "Methanol/acetic acid destaining solution for removing background Coomassie from SDS-PAGE gels.",
+    "zh": "甲醇/乙酸脱色液，用于 SDS-PAGE 胶的考马斯蓝背景脱色。"
+  }
 }
