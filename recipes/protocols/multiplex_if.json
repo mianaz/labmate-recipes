@@ -1,0 +1,55 @@
+{
+  "id": "multiplex_if",
+  "name": "Multiple Immunofluorescence Protocol (FFPE & Frozen)",
+  "nameCn": "多重免疫荧光染色方案（石蜡切片及冰冻切片）",
+  "category": "protocol",
+  "discipline": ["histology", "immunology"],
+  "tags": ["multiplex IF", "immunofluorescence", "FFPE", "paraffin", "frozen section", "antigen retrieval", "multiple antibodies"],
+  "usage": {
+    "en": "Multiplex immunofluorescence staining of FFPE or frozen tissue sections with multiple primary antibodies and fluorochrome-conjugated secondaries in a single tissue section.",
+    "zh": "FFPE 或冰冻切片的多重免疫荧光染色方案，在同一组织切片上使用多种一抗和荧光标记二抗。"
+  },
+  "duration": {
+    "total": "2 days (overnight primary antibody)",
+    "hands_on": "3-4 hours"
+  },
+  "materials": [
+    {"name": "Xylene"},
+    {"name": "Ethanol series (100%, 95%, 70%, 50%)"},
+    {"name": "TBST", "linkedRecipe": "tbst"},
+    {"name": "Citrate unmasking buffer (10 mM sodium citrate pH 6.0)", "linkedRecipe": "citrate_buffer_ar"},
+    {"name": "Antibody dilution buffer: 1% BSA + 0.3% Triton X-100 in PBS, pH 8"},
+    {"name": "Blocking buffer: 5% normal goat serum in TBST (or 2-5% FBS + 0.3% Triton in PBS)"},
+    {"name": "Primary antibody panel"},
+    {"name": "Fluorochrome-conjugated secondary antibody panel"},
+    {"name": "Anti-fade mounting medium", "linkedRecipe": "mounting_medium_antifade"},
+    {"name": "Liquid blocker pen (PAP pen)"},
+    {"name": "Pressure cooker"},
+    {"name": "Humidity chamber (dark box with water)"}
+  ],
+  "components": [
+    {"name": "Section A — FFPE Deparaffinize: 3×5 min xylene → 2×5 min 100% EtOH → 5 min 95% → 1 min 70% → 1 min 50% → 2×5 min dH₂O."},
+    {"name": "Section B — Antigen Unmasking: Place in citrate buffer pH 6.0. Pressure cooker: 95°C 30 min (slow cook, vent open), then 115°C 1 min (close vent). Cool ≥30 min before opening.", "note": {"en": "For frozen fixed tissue: rewarm 20 min RT, then go to staining. For unfixed frozen: fix with 4% PFA 15 min, wash 3×5 min TBST.", "zh": "冰冻固定组织：室温复温 20 分钟后直接染色。未固定冰冻：4% PFA 固定 15 分钟，TBST 洗 3×5 分钟。"}},
+    {"name": "Section C Step 1: Wash in dH₂O 5 min."},
+    {"name": "Step 2: Draw rectangle around tissue with liquid blocker pen."},
+    {"name": "Step 3: Wash 2×5 min in TBST."},
+    {"name": "Step 4: Block with 100-200 µL blocking buffer for 1 h.", "note": {"en": "Choose blocking serum from host species of secondary antibody (e.g. goat serum for goat anti-rabbit/mouse secondaries).", "zh": "封闭血清选二抗的宿主（如山羊二抗用山羊血清封闭）。"}},
+    {"name": "Step 5: Apply 100 µL primary antibody mixture (in antibody dilution buffer) overnight at 4°C in dark humid box."},
+    {"name": "Step 6: Wash 3×5 min TBST."},
+    {"name": "Step 7: Apply 100 µL fluorochrome-conjugated secondary antibody mixture, 1-2 h at RT in dark."},
+    {"name": "Step 8: Wash 3×5 min TBST."},
+    {"name": "Step 9 (if using conjugated primary Ab): After secondary staining, incubate conjugated primary antibody 1-2 h RT in dark, then wash 3×5 min TBST."},
+    {"name": "Step 10: Aspirate liquid outside tissue. Apply 20 µL anti-fade mounting medium along rectangle margin. Carefully place coverslip (avoid bubbles). Seal with nail polish."},
+    {"name": "Step 11: Image after ≥4 h. Best results: cure overnight at RT. Long-term storage: 4°C protected from light."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Step 5", "condition": "4°C overnight in humidity chamber", "duration": "Required overnight"},
+    {"afterStep": "Step 10", "condition": "4°C protected from light", "duration": "Weeks"}
+  ],
+  "notes": {
+    "en": "Panel design: ensure primary antibodies are from different host species (or use directly conjugated primaries). Match secondary antibodies to primary host species. Cannot use goat serum blocking if a primary antibody is raised in goat. Do not let sections dry at any point — use humid box with water during all incubations.",
+    "zh": "面板设计：确保一抗来自不同宿主（或使用直接标记一抗）。二抗与一抗宿主匹配。一抗是山羊来源时不能用山羊血清封闭。整个过程切勿让切片干燥——所有孵育使用加水的避光湿盒。"
+  },
+  "ref": "Adapted from Cell Signaling Technology IF Guide; multiplex IF best practices (2019)",
+  "crosslinks": ["citrate_buffer_ar", "pfa_4", "mounting_medium_antifade", "tbst", "if_protocol", "if_cryostat", "ihc_paraffin_protocol"]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "ngn2_neuron_induction",
+  "name": "Ngn2 Induced Neuron Differentiation from Human ES/iPS Cells",
+  "nameCn": "Ngn2 诱导人 ES/iPS 细胞神经元分化方案",
+  "category": "protocol",
+  "discipline": ["cell"],
+  "tags": ["iPSC", "neuron", "differentiation", "Ngn2", "human ES", "iPS", "doxycycline-inducible", "stem cell"],
+  "usage": {
+    "en": "Doxycycline-inducible Ngn2 overexpression protocol for rapid generation of glutamatergic neurons from human ES or iPS cells, with glia co-culture for maturation.",
+    "zh": "多西环素诱导 Ngn2 过表达方案，从人 ES 或 iPS 细胞快速生成谷氨酸能神经元，配合胶质细胞共培养促进成熟。"
+  },
+  "duration": {
+    "total": "21+ days",
+    "hands_on": "Intermittent, ~30 min per media change"
+  },
+  "materials": [
+    {"name": "Matrigel", "linkedRecipe": "matrigel_coating"},
+    {"name": "Accutase"},
+    {"name": "mTeSR medium"},
+    {"name": "Thiazovivin (2 µM)"},
+    {"name": "N2 medium: DMEM/F12 + 1× N2 + 1× NEAA"},
+    {"name": "B27 medium: Neurobasal-A + 1× Glutamax + 1× B27"},
+    {"name": "Neuronal growth medium: Neurobasal-A + 1× Glutamax + 1× B27 + 5% FBS"},
+    {"name": "BDNF (10 ng/mL)"},
+    {"name": "NT3 (10 ng/mL)"},
+    {"name": "Laminin (0.2 µg/mL)"},
+    {"name": "Doxycycline (2 µg/mL)"},
+    {"name": "Puromycin (1 µg/mL)"},
+    {"name": "Ara-C (2 µM)"},
+    {"name": "Lentivirus: TetO-Ngn2-Puro + Ubi-rtTA", "linkedRecipe": "lentivirus_production"},
+    {"name": "Primary mouse glia (p0 or p1)"}
+  ],
+  "components": [
+    {"name": "Day -1: Coat matrigel ≥1 h. Split ES/iPS with accutase (1 mL/well 6-well, check at 3 min). Collect, spin 1000 rpm 5 min, count. Plate 30-45k cells/mL in mTeSR + Thiazovivin. Infect with lentivirus (TetO-Ngn2-Puro + Ubi-rtTA).", "note": {"en": "Cell density depends on cell line fragility. For H1: 0.5-1M per 24-well plate.", "zh": "密度取决于细胞系脆弱程度。H1: 0.5-1M/24 孔板。"}},
+    {"name": "Day 0: Switch to N2 medium + BDNF (10 ng/mL) + NT3 (10 ng/mL) + Laminin (0.2 µg/mL) + Doxycycline (2 µg/mL)."},
+    {"name": "Day 1: Add Puromycin (1 µg/mL) to N2 medium with BDNF/NT3/Laminin/Dox."},
+    {"name": "Day 3: Add glia (1 confluent T75 glia for 2-3 × 24-well plates) in B27 medium + BDNF/NT3/Laminin/Dox + Ara-C (2 µM)."},
+    {"name": "Day 4-7: Change half B27 medium (with BDNF/NT3/Laminin/Dox/Ara-C) every 2-3 days."},
+    {"name": "Day 7-10: Change half medium with neuronal growth medium + Ara-C (± Dox)."},
+    {"name": "Day 10-21: Add neuronal growth medium to 1 mL, change 1/3 medium weekly."},
+    {"name": "After Day 21: Change ≥75% medium at least once per week for maintenance."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Day 3", "condition": "Neurons on glia, B27 medium", "duration": "Continue culture"}
+  ],
+  "notes": {
+    "en": "N2 medium: DMEM/F12 + 1× N2 supplement + 1× NEAA. B27 medium: Neurobasal-A + 1× Glutamax + 1× B27. Neuronal growth medium: Neurobasal-A + 1× Glutamax + 1× B27 + 5% FBS. Glia can be p0 or p1, dissociated with trypsin. Virus volume may need optimization per batch (~0.3 µL concentrated virus per well of 24-well).",
+    "zh": "N2 培养基：DMEM/F12 + 1× N2 + 1× NEAA。B27 培养基：Neurobasal-A + 1× Glutamax + 1× B27。神经元生长液：Neurobasal-A + 1× Glutamax + 1× B27 + 5% FBS。胶质细胞用 p0 或 p1，胰蛋白酶消化。病毒用量需按批次优化。"
+  },
+  "ref": "Zhang et al. Neuron (2013) 78(5):785-798; doi: 10.1016/j.neuron.2013.05.029",
+  "crosslinks": ["matrigel_coating", "lentivirus_production"]
+}

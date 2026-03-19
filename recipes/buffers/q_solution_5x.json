@@ -1,0 +1,38 @@
+{
+  "id": "q_solution_5x",
+  "name": "5× Q-Solution (Betaine GC-Enhancer)",
+  "nameCn": "5× Q-Solution（甜菜碱 GC 增强剂）",
+  "category": "buffer",
+  "discipline": ["molecular"],
+  "tags": ["PCR", "Q-solution", "betaine", "GC-rich", "enhancer"],
+  "usage": {
+    "en": "5 M Betaine stock (Qiagen Q-Solution equivalent) for amplifying GC-rich templates. Equalizes AT and GC melting temperatures, prevents polymerase stalling on secondary structures.",
+    "zh": "5 M 甜菜碱母液（等效 Qiagen Q-Solution），用于扩增 GC 富含模板。均衡 AT/GC 碱基对熔解温度，防止聚合酶在二级结构处停滞。"
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "filter_022",
+    "notes": "Aliquot 1 mL/tube, store -20°C"
+  },
+  "components": [
+    {"name": "Anhydrous Betaine (NOT Betaine-HCl)", "amount": 5.86, "unit": "g", "mw": 117.15, "concentration": "5 M"},
+    {"name": "Nuclease-free water", "amount": null, "unit": "mL", "note": "To 10 mL final volume"}
+  ],
+  "prepSteps": [
+    {"step": "Weigh exactly 5.86 g anhydrous Betaine (do NOT use Betaine-HCl)."},
+    {"step": "Add to 15 mL tube with ~5 mL nuclease-free water."},
+    {"step": "Vortex/shake until completely dissolved."},
+    {"step": "Adjust final volume to 10.0 mL with nuclease-free water."},
+    {"step": "Filter-sterilize through 0.22 µm syringe filter."},
+    {"step": "Aliquot 1 mL/tube, store at -20°C."}
+  ],
+  "notes": {
+    "en": "Use at 1× final concentration (1 M Betaine). For 50 µL PCR: add 10 µL of 5× Q-Solution and subtract from water volume. Use ONLY as troubleshooting additive for GC >60% or strong secondary structures (hairpins). Do NOT use Betaine-HCl — must be anhydrous Betaine.",
+    "zh": "终浓度 1×（1 M 甜菜碱）。50 µL PCR 体系加 10 µL 5× Q-Solution（相应减少水量）。仅用于 GC 含量 >60% 或强二级结构的 troubleshooting。必须用无水甜菜碱，不可用盐酸甜菜碱。"
+  },
+  "ref": "Qiagen Q-Solution equivalent recipe",
+  "crosslinks": ["pcr_buffer_10x", "pcr_standard"]
+}

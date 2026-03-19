@@ -1,0 +1,36 @@
+{
+  "id": "buprenorphine_solution",
+  "name": "Buprenorphine Working Solution (0.01 mg/mL)",
+  "nameCn": "丁丙诺啡工作液 (0.01 mg/mL)",
+  "category": "buffer",
+  "discipline": ["general"],
+  "tags": ["analgesic", "animal", "mouse", "surgery", "pain management"],
+  "usage": {
+    "en": "Buprenorphine working solution for post-surgical analgesia in mice. Dose: 0.05 mg/kg (1 µg for a 20 g mouse).",
+    "zh": "丁丙诺啡工作液，用于小鼠术后镇痛。剂量：0.05 mg/kg（20 g 小鼠约 1 µg）。"
+  },
+  "volume": 30,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "RT",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Aliquot ~15 mL into vacuum bottles from animal facility. Store per IACUC guidelines."
+  },
+  "components": [
+    {"name": "Buprenorphine (0.3 mg/mL stock, 1 mL vial)", "amount": 1, "unit": "mL"},
+    {"name": "Sterile PBS", "amount": 29, "unit": "mL"}
+  ],
+  "prepSteps": [
+    {"step": "Transfer 1 mL buprenorphine (0.3 mg/mL) to a 50 mL conical tube."},
+    {"step": "Add 29 mL sterile PBS to total 30 mL volume (final: 0.01 mg/mL)."},
+    {"step": "Mix well."},
+    {"step": "Aliquot ~15 mL into each of 2 vacuum bottles (max 20 mL/bottle) using sterile syringe and needle."}
+  ],
+  "notes": {
+    "en": "Final concentration 0.01 mg/mL. Dosing: 0.05 mg/kg body weight. For a 20 g mouse, this equals 1 µg total = 100 µL of working solution. Follow institutional IACUC protocols for controlled substance handling.",
+    "zh": "终浓度 0.01 mg/mL。给药：0.05 mg/kg 体重。20 g 小鼠用 1 µg = 100 µL 工作液。按 IACUC 规定操作管制药品。"
+  },
+  "ref": "Standard veterinary analgesic protocol",
+  "crosslinks": ["pdx_implantation"]
+}

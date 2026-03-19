@@ -1,0 +1,40 @@
+{
+  "id": "rbc_lysis_10x",
+  "name": "10× RBC Lysis Buffer",
+  "nameCn": "10× 红细胞裂解液",
+  "category": "buffer",
+  "discipline": ["immunology", "cell"],
+  "tags": ["RBC lysis", "red blood cell", "ammonium chloride", "FACS", "flow cytometry"],
+  "usage": {
+    "en": "10× stock ammonium chloride-based red blood cell lysis buffer. Dilute to 1× with sterile water before use.",
+    "zh": "10× 氯化铵红细胞裂解液母液。使用前用无菌水稀释至 1×。"
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "12 months",
+    "sterile": "filter_022",
+    "notes": "Dilute to 1× with sterile water fresh before use. Do not dilute with PBS."
+  },
+  "components": [
+    {"name": "NH₄Cl", "amount": 82.9, "unit": "g", "mw": 53.49, "concentration": "1.55 M (10×)"},
+    {"name": "KHCO₃", "amount": 10, "unit": "g", "mw": 100.12, "concentration": "100 mM (10×)"},
+    {"name": "EDTA-Na₂", "amount": 3.72, "unit": "g", "mw": 372.24, "concentration": "10 mM (10×)"},
+    {"name": "ddH₂O", "amount": null, "unit": "mL", "note": "To 1000 mL"}
+  ],
+  "prepSteps": [
+    {"step": "Dissolve NH₄Cl (82.9 g), KHCO₃ (10 g), and EDTA-Na₂ (3.72 g) in ~800 mL ddH₂O."},
+    {"step": "Stir until fully dissolved."},
+    {"step": "Adjust pH to ~7.3 if needed (usually no adjustment required)."},
+    {"step": "Bring to 1000 mL with ddH₂O."},
+    {"step": "Filter-sterilize through 0.22 µm (or autoclave). Store at 4°C."},
+    {"step": "Dilute to 1× with sterile water (not PBS) immediately before use."}
+  ],
+  "notes": {
+    "en": "1× working concentrations: 155 mM NH₄Cl, 10 mM KHCO₃, 1 mM EDTA. For tissue dissociation: add 1 mL 1× RBC lysis to pellet, incubate 1-5 min on ice, then quench with culture medium. Do not leave cells in lysis buffer too long — can damage white blood cells. If red blood cells persist, repeat lysis step.",
+    "zh": "1× 工作浓度：155 mM NH₄Cl、10 mM KHCO₃、1 mM EDTA。组织消化用：加 1 mL 1× 裂解液至细胞沉淀，冰上 1-5 分钟，培养基终止。不要放置过久以免损伤白细胞。红细胞残留可重复裂解。"
+  },
+  "ref": "Standard ammonium chloride RBC lysis protocol",
+  "crosslinks": ["tumor_dissociation", "pbmc_isolation", "flow_cytometry_protocol"]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "pei_stock",
+  "name": "PEI Stock Solution (1 mg/mL, Linear 25 kDa)",
+  "nameCn": "PEI 母液 (1 mg/mL, 线性 25 kDa)",
+  "category": "buffer",
+  "discipline": ["cell", "molecular"],
+  "tags": ["transfection", "PEI", "polyethylenimine", "lentivirus production"],
+  "usage": {
+    "en": "Linear polyethylenimine (PEI 25 kDa) stock for calcium-independent transfection. Commonly used for lentivirus production and transient transfection.",
+    "zh": "线性聚乙烯亚胺（PEI 25 kDa）母液，用于非钙依赖性转染。常用于慢病毒包装和瞬时转染。"
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "filter_022",
+    "notes": "Aliquot 500-1000 µL per tube. Thawed working stock stable at 4°C for up to 2 months."
+  },
+  "components": [
+    {"name": "PEI, 25 kDa linear powder (Polysciences)", "amount": 500, "unit": "mg"},
+    {"name": "Milli-Q H₂O", "amount": 500, "unit": "mL"},
+    {"name": "12 M HCl", "amount": null, "unit": "µL", "note": "~800 µL for dissolving"},
+    {"name": "10 M NaOH", "amount": null, "unit": "µL", "note": "~500 µL for pH adjustment"}
+  ],
+  "prepSteps": [
+    {"step": "Pour ~450 mL Milli-Q H₂O into a 500 mL glass beaker."},
+    {"step": "Add 500 mg PEI powder while stirring."},
+    {"step": "Add concentrated HCl dropwise to pH <2.0. Stir 2-3 hours until dissolved.", "note": "~800 µL of 12 M HCl needed. Small fiber particles may remain."},
+    {"step": "Add 10 M NaOH dropwise to pH 7.0.", "note": "~500 µL needed. pH drifts rapidly — add a few drops at a time, wait, recheck."},
+    {"step": "Allow to mix 10 min, recheck pH to ensure no drift."},
+    {"step": "Bring to 500 mL final volume with Milli-Q H₂O."},
+    {"step": "Filter-sterilize through 0.22 µm membrane."},
+    {"step": "Aliquot 500-1000 µL and store at -20°C. Discard thawed aliquot after 2 months at 4°C."}
+  ],
+  "notes": {
+    "en": "Rinse all glassware 3× with high-purity H₂O before use. Linear PEI 40,000 Da may be more efficient than 25,000 Da. Commercial alternatives: Apex Biotech, Biotechne PEI STAR. For lentivirus production, typical PEI:DNA ratio is 3:1 (w/w).",
+    "zh": "使用前所有玻璃器皿用高纯水冲洗 3 次。线性 PEI 40 kDa 可能比 25 kDa 效率更高。慢病毒包装常用 PEI:DNA = 3:1（w/w）。"
+  },
+  "ref": "CSHL Protocols (2008) pdb.rec11323; Addgene transfection protocol",
+  "crosslinks": ["lentivirus_production", "cell_transfection"]
+}

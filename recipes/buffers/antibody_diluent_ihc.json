@@ -1,0 +1,78 @@
+{
+  "id": "antibody_diluent_ihc",
+  "name": "IHC Primary Antibody Diluent",
+  "nameCn": "IHC 一抗稀释液",
+  "category": "buffer",
+  "discipline": [
+    "histology",
+    "immunology"
+  ],
+  "tags": [
+    "IHC",
+    "immunohistochemistry",
+    "antibody diluent",
+    "primary antibody"
+  ],
+  "usage": {
+    "en": "General-purpose primary antibody diluent for IHC staining. Contains sodium azide to prevent microbial growth — do NOT use for secondary antibody dilution (azide inhibits HRP).",
+    "zh": "IHC 通用一抗稀释液。含叠氮钠防腐——切勿用于稀释二抗（叠氮钠抑制 HRP）。"
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Store at 4°C for lab sharing. Azide prevents microbial growth."
+  },
+  "components": [
+    {
+      "name": "1× sterile PBS",
+      "amount": 94.85,
+      "unit": "mL",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Tween-20",
+      "amount": 0.1,
+      "unit": "mL",
+      "concentration": "0.1%"
+    },
+    {
+      "name": "Normal goat serum (CST 5425S)",
+      "amount": 5,
+      "unit": "mL",
+      "concentration": "5%"
+    },
+    {
+      "name": "5% Sodium azide stock",
+      "amount": 1,
+      "unit": "mL",
+      "concentration": "0.05% final",
+      "note": "Prepare or purchase as stock solution"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Add PBS to a clean bottle."
+    },
+    {
+      "step": "Add Tween-20 and mix gently (avoid excessive foaming)."
+    },
+    {
+      "step": "Add normal goat serum and sodium azide stock."
+    },
+    {
+      "step": "Mix well. Store at 4°C."
+    }
+  ],
+  "notes": {
+    "en": "Azide inhibits HRP enzyme — NEVER dilute HRP-conjugated secondary antibodies in this solution. Normal goat serum from CST 5425S.",
+    "zh": "叠氮钠会抑制 HRP——绝对不要用此液稀释 HRP 标记的二抗。正常山羊血清来自 CST 5425S。"
+  },
+  "ref": "Cell Signaling Technology IHC Protocol; Abcam IHC staining guide",
+  "crosslinks": [
+    "ihc_paraffin_protocol",
+    "pbs_1x"
+  ]
+}

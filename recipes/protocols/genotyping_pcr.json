@@ -1,0 +1,46 @@
+{
+  "id": "genotyping_pcr",
+  "name": "Mouse Genotyping PCR Workflow",
+  "nameCn": "小鼠基因分型 PCR 流程",
+  "category": "protocol",
+  "discipline": ["molecular", "genomics"],
+  "tags": ["genotyping", "PCR", "mouse", "tail lysis", "agarose gel"],
+  "usage": {
+    "en": "Complete workflow for mouse genotyping from tail lysis through PCR and gel electrophoresis.",
+    "zh": "小鼠基因分型完整流程：尾巴裂解 → PCR → 琼脂糖凝胶电泳。"
+  },
+  "duration": {
+    "total": "1 day",
+    "hands_on": "2 hours"
+  },
+  "materials": [
+    {"name": "10 M NaOH"},
+    {"name": "0.5 M EDTA"},
+    {"name": "40 mM Tris-HCl"},
+    {"name": "PCR master mix (gene-specific)"},
+    {"name": "Taq DNA polymerase"},
+    {"name": "Agarose"},
+    {"name": "TAE buffer", "linkedRecipe": "tae_50x"},
+    {"name": "Ethidium bromide"},
+    {"name": "100 bp DNA ladder"},
+    {"name": "96-well plate, PCR sealing film"},
+    {"name": "Thermal cycler"}
+  ],
+  "components": [
+    {"name": "Step 1 (Tail lysis): Spin plate 3000 rpm, 4°C, 3 min to position tails. Prepare fresh lysis buffer: 17.5 µL 10 M NaOH + 14 µL 0.5 M EDTA + H₂O to 10 mL (per 130 tails). Add 75 µL per well.", "note": {"en": "Scale down to 5 mL for 65 tails.", "zh": "65 个样本可缩至 5 mL。"}},
+    {"name": "Step 2: Seal plate. Run 'Tail-Lyse' thermal cycler protocol (~46 min)."},
+    {"name": "Step 3: Spin 1000 rpm, 4°C, 1 min. Add 75 µL 40 mM Tris-HCl. Mix with pipette. Seal. Spin 1000 rpm, 4°C, 2 min. Store plate at 4°C."},
+    {"name": "Step 4 (Master mix): Prepare gene-specific master mix. Add Taq polymerase last.", "note": {"en": "Do NOT vortex or shake enzymes!", "zh": "绝对不要涡旋或摇晃酶！"}},
+    {"name": "Step 5 (PCR setup): Add 22.5 µL master mix + Taq per well. Add 2.5 µL lysate sample. Seal and spin down briefly."},
+    {"name": "Step 6: Run PCR program (~2.5 h). Store at 4°C."},
+    {"name": "Step 7 (Gel): Prepare 2% agarose-TAE gel (4 g agarose + 200 mL TAE + 5 µL EtBr for large gel). Some genes need 3%.", "note": {"en": "Check gene-specific gel % requirements.", "zh": "查阅各基因所需凝胶浓度。"}},
+    {"name": "Step 8: Load 20 µL sample per well (8 µL 100 bp ladder in middle well). Run at 150-200 V for 15-20 min."},
+    {"name": "Step 9 (Imaging): Select 'Nucleic Acids / Ethidium Bromide', optimize 'Faint Bands', Filter 1. Position gel, run protocol, invert to view."}
+  ],
+  "notes": {
+    "en": "Lysis buffer composition: ~17.5 mM NaOH + ~0.7 mM EDTA. After lysis, Tris-HCl neutralizes the NaOH. Master mix recipes are gene-specific — refer to genotyping database for primer sequences and PCR conditions. Some genes (2C-TCR, Pygo2) require overnight high-quality DNA isolation with proteinase K instead of quick alkaline lysis.",
+    "zh": "裂解液组成：约 17.5 mM NaOH + 0.7 mM EDTA。裂解后 Tris-HCl 中和 NaOH。Master mix 配方因基因而异——参考基因分型数据库获取引物序列和 PCR 条件。某些基因（如 2C-TCR、Pygo2）需过夜 proteinase K 高质量 DNA 提取。"
+  },
+  "ref": "Adapted from standard alkaline tail lysis protocol",
+  "crosslinks": ["tae_50x", "agarose_gel_electrophoresis", "pcr_standard"]
+}

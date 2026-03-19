@@ -1,0 +1,53 @@
+{
+  "id": "your_media_id",
+  "name": "Medium Name",
+  "nameCn": "培养基中文名称",
+  "category": "media",
+  "discipline": ["cell"],
+  "tags": ["cell culture", "tag2"],
+  "usage": {
+    "en": "One-sentence description of which cells/organisms this medium supports.",
+    "zh": "一句话描述此培养基支持的细胞或生物体。"
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Pre-warm to 37°C before use"
+  },
+  "components": [
+    {
+      "name": "Base medium (e.g. DMEM, RPMI-1640)",
+      "amount": 500,
+      "unit": "mL"
+    },
+    {
+      "name": "FBS (heat-inactivated)",
+      "amount": 50,
+      "unit": "mL",
+      "concentration": "10%"
+    },
+    {
+      "name": "Penicillin-Streptomycin (100×)",
+      "amount": 5,
+      "unit": "mL",
+      "concentration": "1×"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Add supplements to base medium bottle aseptically."
+    },
+    {
+      "step": "Mix gently by inversion. Store at 4°C."
+    }
+  ],
+  "notes": {
+    "en": "Tips, cell-line-specific notes, or alternative formulations.",
+    "zh": "提示、细胞系特异性说明或替代配方。"
+  },
+  "ref": "ATCC culture guide or published protocol reference",
+  "crosslinks": ["related_recipe_id"]
+}

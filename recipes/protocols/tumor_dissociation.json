@@ -1,0 +1,46 @@
+{
+  "id": "tumor_dissociation",
+  "name": "Tumor Dissociation Protocol (Enzymatic)",
+  "nameCn": "肿瘤组织消化分离方案（酶消化法）",
+  "category": "protocol",
+  "discipline": ["cell", "immunology"],
+  "tags": ["tumor dissociation", "single cell", "FACS", "collagenase", "prostate cancer", "PDX"],
+  "usage": {
+    "en": "Enzymatic dissociation of solid tumors into single-cell suspension using collagenase, trypsin, and DNase I for downstream FACS, scRNA-seq, or cell line establishment.",
+    "zh": "使用胶原酶、胰蛋白酶和 DNase I 将实体瘤酶消化为单细胞悬液，用于 FACS、scRNA-seq 或细胞系建立。"
+  },
+  "duration": {
+    "total": "3-4 hours",
+    "hands_on": "1 hour"
+  },
+  "materials": [
+    {"name": "Dissecting media: DMEM + 10% FBS + 1× Pen/Strep"},
+    {"name": "Collagenase Type I or IV (10 mg/mL stock in RPMI, filter 0.22 µm, aliquot 1 mL at -20°C)", "note": "Type IV preserves surface antigens better"},
+    {"name": "0.05% Trypsin/EDTA (dilute 0.25% stock 5× with PBS or HBSS without Ca²⁺/Mg²⁺)"},
+    {"name": "DNase I (2 mg/mL in PBS, ~4000 Kunitz U/mL, aliquot at -20°C)"},
+    {"name": "1× RBC lysis buffer (from 10× stock)", "linkedRecipe": "rbc_lysis_10x"},
+    {"name": "FACS buffer (PBS + 2% FBS + 2 mM EDTA)", "linkedRecipe": "facs_buffer"},
+    {"name": "5 mL syringe, 18G and 20G needles"},
+    {"name": "70 µm cell strainer (or 40 µm)"},
+    {"name": "Razor blades, hemostat, sterile petri dish"}
+  ],
+  "components": [
+    {"name": "Step 1: Prepare digestion medium — dilute collagenase stock to 1 mg/mL in dissecting media. 10 mL per tumor. Keep on ice."},
+    {"name": "Step 2: Mince tumor on sterile petri dish with razor blades. Add 0.5 mL digestion medium to prevent drying."},
+    {"name": "Step 3: Transfer minced tissue to 9.5 mL digestion medium in 15 mL tube. Rotate 1-2 h at 37°C.", "note": {"en": "Immunophenotyping: 1 h is enough. Epithelial cell isolation: 2 h needed.", "zh": "免疫分型：1 小时足够。上皮细胞分离：需 2 小时。"}},
+    {"name": "Step 4: Spin 300 g, 5 min, 4°C. Remove supernatant. Add 2 mL warm 0.05% trypsin/EDTA. Mix with P1000. Incubate 37°C for 5 min.", "note": {"en": "Caution: trypsin trims surface receptors — limit exposure time.", "zh": "注意：胰蛋白酶会切割表面受体——限制作用时间。"}},
+    {"name": "Step 5: Add 3 mL dissecting media + 125 µL DNase I (~500 Kunitz U). Pass through 18G syringe 5-10×, then 20G syringe 5-10×. Avoid bubbles."},
+    {"name": "Step 6: Spin 300 g, 5 min, 4°C. Add 1 mL 1× RBC lysis, 1 min on ice. Add 2 mL media. Filter through 70 µm strainer into 50 mL tube. Transfer to new 15 mL tube.", "note": {"en": "RBC lysis is critical — do not omit.", "zh": "红细胞裂解很关键——不可省略。"}},
+    {"name": "Step 7: Spin 300 g, 5 min, 4°C. Resuspend in 2 mL dissecting media (or FACS buffer for immunophenotyping). Count cells.", "note": {"en": "If RBCs still abundant, repeat lysis step.", "zh": "如红细胞仍多，重复裂解步骤。"}},
+    {"name": "Step 8: For cell line establishment — spin, resuspend in appropriate medium, seed into plates."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Step 7", "condition": "Keep on ice in FACS buffer", "duration": "1-2 hours"}
+  ],
+  "notes": {
+    "en": "Collagenase Type IV is preferred over Type I for preserving surface antigens (lacks tryptic activity). Avoid repeated freeze-thaw of enzyme stocks. Use HBSS without Ca²⁺/Mg²⁺ for trypsin/EDTA dilution. 15 mL tubes form better pellets than 50 mL tubes.",
+    "zh": "胶原酶 IV 型优于 I 型（无胰蛋白酶活性，保留表面抗原）。避免酶母液反复冻融。用无 Ca²⁺/Mg²⁺ 的 HBSS 稀释胰蛋白酶/EDTA。15 mL 管比 50 mL 管沉淀效果更好。"
+  },
+  "ref": "Lukacs et al. Nat Protoc. 2010;5(4):702-13. PMID: 20360765",
+  "crosslinks": ["rbc_lysis_10x", "facs_buffer", "complete_dmem", "cite_seq_10x"]
+}

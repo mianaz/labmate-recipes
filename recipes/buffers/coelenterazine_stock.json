@@ -1,0 +1,67 @@
+{
+  "id": "coelenterazine_stock",
+  "name": "Coelenterazine Stock for Renilla Luciferase Imaging",
+  "nameCn": "腔肠素母液 (Renilla 荧光素酶成像)",
+  "category": "buffer",
+  "discipline": [
+    "cell"
+  ],
+  "tags": [
+    "luciferase",
+    "Renilla",
+    "bioluminescence",
+    "IVIS",
+    "animal imaging",
+    "coelenterazine"
+  ],
+  "usage": {
+    "en": "Native coelenterazine stock for in vivo Renilla luciferase bioluminescence imaging. Working: 200 µg/mL, dose 100 µL/mouse (20 µg/mouse).",
+    "zh": "天然腔肠素母液，用于活体 Renilla 荧光素酶成像。工作浓度 200 µg/mL，100 µL/只小鼠（20 µg/鼠）。"
+  },
+  "volume": 5,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "-80°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Aliquot 100 µL/tube. Light-sensitive — wrap in foil when thawed."
+  },
+  "components": [
+    {
+      "name": "Native coelenterazine (RPI C70900-0.01 or equivalent)",
+      "amount": 10,
+      "unit": "mg"
+    },
+    {
+      "name": "50/50 1,2-propanediol (Sigma 398039) / ethanol solvent",
+      "amount": 5,
+      "unit": "mL"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Prepare 50:50 (v/v) 1,2-propanediol and ethanol solvent."
+    },
+    {
+      "step": "Dissolve 10 mg coelenterazine in 5 mL solvent (2 mg/mL stock)."
+    },
+    {
+      "step": "Aliquot 100 µL/tube, freeze at -80°C."
+    },
+    {
+      "step": "Before use: thaw vial (wrap in foil), dilute 10× with sterile PBS to 1 mL (200 µg/mL working concentration)."
+    },
+    {
+      "step": "Retro-orbital injection: 100 µL/mouse (20 µg coelenterazine per mouse). Image immediately — signals decay fast."
+    }
+  ],
+  "notes": {
+    "en": "WARNING: Mouse mortality has been reported with this formulation — titrate carefully and investigate before routine use. Signals decay fast — image immediately after injection. Better vendors: nanolight.com (h-coelenterazine-in-vivo) or PerkinElmer (Xenolight RediJect 760506).",
+    "zh": "警告：曾报告使用此配方导致小鼠死亡——使用前需仔细滴定并排查原因。信号衰减快——注射后立即成像。更好的供应商：nanolight.com 或 PerkinElmer。"
+  },
+  "ref": "Bhaumik & Bhaumik (2007) Nat Protoc 2:1236-1244; NanoLight Technology coelenterazine handling guide",
+  "crosslinks": [
+    "dual_luciferase",
+    "d_luciferin_stock"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "pdx_implantation",
+  "name": "Patient-Derived Xenograft (PDX) Subcutaneous Implantation",
+  "nameCn": "PDX 皮下移植方案",
+  "category": "protocol",
+  "discipline": ["cell"],
+  "tags": ["PDX", "xenograft", "subcutaneous", "prostate cancer", "SCID", "tumor implantation"],
+  "usage": {
+    "en": "Subcutaneous implantation of frozen or fresh patient-derived tumor xenograft tissue into immunodeficient mice, with propagation and tissue banking procedures.",
+    "zh": "将冻存或新鲜的 PDX 肿瘤组织皮下移植到免疫缺陷小鼠，包括传代和组织冻存流程。"
+  },
+  "duration": {
+    "total": "2-3 hours",
+    "hands_on": "30 min per mouse"
+  },
+  "materials": [
+    {"name": "Shaver"},
+    {"name": "Sterile surgical tools, clean surgical blades"},
+    {"name": "Sterile PBS"},
+    {"name": "Culture medium (DMEM/F12 + 10% FBS + antibiotics)"},
+    {"name": "10% formalin (for fixation)"},
+    {"name": "Ketamine (10 mg/mL) or isoflurane anesthesia"},
+    {"name": "Wound clips and applicator"},
+    {"name": "Curved mosquito forceps"},
+    {"name": "1 mL syringe (no needle, for spilled cells)"},
+    {"name": "50 mL conical tubes"},
+    {"name": "Cryogenic vials and freezing container (Nalgene Cryo 1°C)"}
+  ],
+  "components": [
+    {"name": "Step 1 (Thaw frozen tissue): Roll vial between hands 10-15 s. Thaw in 37°C water bath until small ice crystal remains (~2 min). Spray with 70% ethanol.", "note": {"en": "Wear eye protection — vials may explode from LN₂ storage.", "zh": "戴护目镜——液氮储存的冻存管可能爆裂。"}},
+    {"name": "Step 2 (Wash): Pour tissue into 50 mL tube. Slowly add 10 mL culture medium. Mix gently. Spin 200 g, 5 min, RT. Remove supernatant. Repeat wash once.", "note": {"en": "Add medium slowly to prevent osmotic shock.", "zh": "缓慢加培养基防止渗透冲击。"}},
+    {"name": "Step 3: Resuspend in 0.5 mL PBS. Keep on ice. ~0.5 cm³ tissue per implant."},
+    {"name": "Step 4: Anesthetize mouse — ketamine 10 mg/mL, 100 µL per 10 g body weight (IP), or isoflurane per institutional protocol."},
+    {"name": "Step 5: Shave between shoulder blades. Spray shaved area with 70% ethanol."},
+    {"name": "Step 6: Make 2-3 mm skin incision. Insert curved mosquito forceps 1-1.5 cm into deep fascia toward flank."},
+    {"name": "Step 7: Implant ~0.5 cm³ prepared tumor tissue into pocket. Collect spilled cells with 1 mL syringe (no needle) and inject into pocket."},
+    {"name": "Step 8: Close with 1-2 wound clips. Monitor 24 h for distress or missing clips. Remove clips at 10-14 days (manual restraint only)."},
+    {"name": "Step 9 (Propagation): Harvest tumors at ≤1.5 cm longest dimension (3-12 weeks). Clean tumor of connective/necrotic tissue. Cut into ~0.5 cm³ pieces. Implant into new recipients."},
+    {"name": "Step 10 (Freezing): Cut tumor into ~0.5 cm³ pieces. Place in cryovials with 1.5 mL freezing medium (50% FBS + 40% DMEM + 10% DMSO). Slow-freeze in Nalgene container at -80°C overnight, then transfer to liquid nitrogen."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Step 3", "condition": "Keep tissue on ice in PBS", "duration": "1-2 hours"},
+    {"afterStep": "Step 10", "condition": "Liquid nitrogen", "duration": "Years"}
+  ],
+  "notes": {
+    "en": "Tumor growth varies by xenograft line (3-12 weeks to 1.5 cm). Monitor twice weekly. Save representative tissue for histology (formalin), protein/RNA (snap freeze), and OCT embedding. Freezing medium: 50% FBS, 40% DMEM, 10% DMSO — prepare fresh.",
+    "zh": "肿瘤生长因品系而异（3-12 周至 1.5 cm）。每周检查两次。保留代表性组织用于组织学（福尔马林）、蛋白/RNA（速冻）和 OCT 包埋。冻存液：50% FBS、40% DMEM、10% DMSO——现配现用。"
+  },
+  "ref": "Adapted from NCI PDXNet recommendations; JoVE Protocol 54393",
+  "crosslinks": ["freezing_medium", "tumor_dissociation", "buprenorphine_solution"]
+}

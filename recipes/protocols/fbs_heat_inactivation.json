@@ -1,0 +1,45 @@
+{
+  "id": "fbs_heat_inactivation",
+  "name": "FBS Heat Inactivation & Aliquoting SOP",
+  "nameCn": "FBS 热灭活与分装标准操作规程",
+  "category": "protocol",
+  "discipline": ["cell"],
+  "tags": ["FBS", "fetal bovine serum", "heat inactivation", "aliquoting", "cell culture", "SOP"],
+  "usage": {
+    "en": "Standard operating procedure for heat-inactivating and aliquoting fetal bovine serum for cell culture use.",
+    "zh": "胎牛血清热灭活及分装标准操作规程。"
+  },
+  "duration": {
+    "total": "2 days (overnight thaw + processing)",
+    "hands_on": "2 hours"
+  },
+  "materials": [
+    {"name": "FBS bottles (500 mL each, non-heat-inactivated)"},
+    {"name": "56°C water bath (with thermometer verification)"},
+    {"name": "Biosafety cabinet (TC hood)"},
+    {"name": "50 mL serological pipettes"},
+    {"name": "50 mL conical tubes (25 per 2 bottles)"},
+    {"name": "Timer"},
+    {"name": "-30°C or -20°C freezer"}
+  ],
+  "components": [
+    {"name": "Day 1 PM: Thaw FBS bottles (up to 4 × 500 mL) overnight at room temperature. Turn on 56°C water bath. Verify temperature with thermometer reads ~56°C."},
+    {"name": "Day 2 AM: Gently rotate thawed FBS (avoid excessive bubbles). Place bottles in 56°C water bath.", "note": {"en": "Confirm thermometer inside bath reads ~56°C before starting.", "zh": "开始前确认浴槽内温度计显示 ~56°C。"}},
+    {"name": "Set timer. Heat-inactivate for EXACTLY 30 minutes. Do NOT exceed 30 min.", "note": {"en": "CRITICAL: Exceeding 30 min degrades growth factors.", "zh": "关键：超过 30 分钟会降解生长因子。"}},
+    {"name": "Remove bottles. Turn off water bath."},
+    {"name": "Wipe bottles dry, spray with 70% ethanol, bring into biosafety cabinet."},
+    {"name": "Layout 25 × 50 mL tubes. Label caps 'FBS'. Aliquot ~40 mL per tube (2 bottles = ~25 tubes).", "note": {"en": "Aseptic technique is critical — change serological pipette at any sign of contamination.", "zh": "无菌操作至关重要——如怀疑污染立即更换移液管。"}},
+    {"name": "Tighten caps. Transfer to -30°C (or -20°C) freezer."},
+    {"name": "Label storage with date and tube count."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Day 1", "condition": "RT thawing", "duration": "Overnight"},
+    {"afterStep": "Final", "condition": "-30°C or -20°C", "duration": "12 months"}
+  ],
+  "notes": {
+    "en": "Heat inactivation at 56°C for 30 min destroys complement proteins while preserving growth factors. Do NOT heat-inactivate for longer — it reduces serum quality. Typical FBS: Characterized, Canadian origin (e.g. Cytiva SH30396.03). Each 500 mL bottle yields ~12 aliquots at 40 mL each.",
+    "zh": "56°C 30 分钟热灭活破坏补体蛋白同时保留生长因子。不可加热过久——降低血清质量。每瓶 500 mL 约分装 12 管（每管 40 mL）。"
+  },
+  "ref": "Standard cell culture protocol",
+  "crosslinks": ["complete_dmem", "complete_rpmi", "freezing_medium"]
+}

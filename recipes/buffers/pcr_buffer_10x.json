@@ -1,0 +1,41 @@
+{
+  "id": "pcr_buffer_10x",
+  "name": "10× PCR Buffer (Qiagen-Equivalent, Dual-Cation)",
+  "nameCn": "10× PCR 缓冲液（仿 Qiagen 双阳离子）",
+  "category": "buffer",
+  "discipline": ["molecular"],
+  "tags": ["PCR", "buffer", "Qiagen", "Taq", "KCl", "ammonium sulfate"],
+  "usage": {
+    "en": "Dual-cation 10× PCR buffer functionally equivalent to Qiagen's standard buffer. K⁺ and NH₄⁺ ions increase the annealing window and reduce non-specific amplification.",
+    "zh": "仿 Qiagen 标准缓冲液的双阳离子 10× PCR buffer。K⁺ 和 NH₄⁺ 扩大退火窗口、降低非特异性扩增。"
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Aliquot 1 mL/tube, store -20°C"
+  },
+  "components": [
+    {"name": "1 M Tris-HCl pH 8.7", "amount": 1.0, "unit": "mL", "concentration": "100 mM"},
+    {"name": "2 M KCl", "amount": 2.5, "unit": "mL", "concentration": "500 mM"},
+    {"name": "1 M (NH₄)₂SO₄", "amount": 1.0, "unit": "mL", "concentration": "100 mM"},
+    {"name": "1 M MgCl₂", "amount": 0.15, "unit": "mL", "concentration": "15 mM"},
+    {"name": "Nuclease-free water", "amount": 5.35, "unit": "mL"}
+  ],
+  "prepSteps": [
+    {"step": "Add 1.0 mL of 1 M Tris-HCl (pH 8.7 at 20°C)."},
+    {"step": "Add 2.5 mL of 2 M KCl."},
+    {"step": "Add 1.0 mL of 1 M (NH₄)₂SO₄."},
+    {"step": "Add 150 µL of 1 M MgCl₂."},
+    {"step": "Add 5.35 mL nuclease-free water to reach 10.0 mL."},
+    {"step": "Vortex thoroughly. Aliquot 1 mL/tube. Store at -20°C."}
+  ],
+  "notes": {
+    "en": "Use sterile nuclease-free stock solutions. Final 1× concentrations: 10 mM Tris-HCl, 50 mM KCl, 10 mM (NH₄)₂SO₄, 1.5 mM MgCl₂. Combine with 10× Cresol red dye for CoralLoad-equivalent PCR buffer.",
+    "zh": "使用无菌无核酸酶的母液。1× 终浓度：10 mM Tris-HCl、50 mM KCl、10 mM (NH₄)₂SO₄、1.5 mM MgCl₂。可与 10× 甲酚红染料搭配使用。"
+  },
+  "ref": "Reverse-engineered from Qiagen PCR Buffer specifications",
+  "crosslinks": ["cresol_red_10x", "q_solution_5x", "pcr_standard"]
+}

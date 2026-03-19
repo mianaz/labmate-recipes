@@ -1,0 +1,50 @@
+{
+  "id": "cite_seq_10x",
+  "name": "10X Genomics + CITE-seq Protocol",
+  "nameCn": "10X Genomics + CITE-seq 方案",
+  "category": "protocol",
+  "discipline": ["genomics", "immunology", "cell"],
+  "tags": ["10X Genomics", "CITE-seq", "scRNA-seq", "single-cell", "Percoll gradient", "tumor immunophenotyping", "hashing"],
+  "usage": {
+    "en": "Single-cell preparation from solid tumor with Percoll gradient purification, CITE-seq antibody staining with hashing (HTO), and 10X Chromium loading.",
+    "zh": "从实体瘤制备单细胞悬液，Percoll 密度梯度纯化，CITE-seq 抗体染色（含 hashing），10X Chromium 上样。"
+  },
+  "duration": {
+    "total": "5-6 hours",
+    "hands_on": "3 hours"
+  },
+  "materials": [
+    {"name": "Miltenyi Tumor Dissociation Kit (130-096-730)"},
+    {"name": "Percoll"},
+    {"name": "10× HBSS (without CaCl₂, MgCl₂, CaSO₄)"},
+    {"name": "1× HBSS without Ca²⁺/Mg²⁺ (with and without Phenol Red)"},
+    {"name": "40 or 70 µm strainers"},
+    {"name": "CITE-seq oligo-tagged antibodies"},
+    {"name": "HTO (hashing) antibodies"},
+    {"name": "FcR Blocking Reagent (mouse)"},
+    {"name": "CITE-seq staining buffer, Wash Buffers A/B/C"},
+    {"name": "Swinging-bucket centrifuge"},
+    {"name": "Wide-bore pipette tips"}
+  ],
+  "components": [
+    {"name": "Step 1 (Dissociation): Prepare dissociation medium per Miltenyi kit. Mince 0.04-1 g tumor with razor. Transfer to tube, rotate 37°C 1 h."},
+    {"name": "Step 2: Centrifuge 400 g 4°C 5 min. Aspirate, add 10 mL cold PBS, filter through 40-70 µm strainer."},
+    {"name": "Step 3 (Percoll gradient): Resuspend pellet in 4 mL 70% Percoll. Layer 4 mL 37% Red Percoll on top. Layer 4 mL 30% Percoll on top.", "note": {"en": "Prepare Percoll day-of-use only. Keep at RT (22-25°C).", "zh": "Percoll 仅当天配制。保持室温 (22-25°C)。"}},
+    {"name": "Step 4: Centrifuge swinging bucket 800 g, 25 min, RT, LOWEST acceleration, NO BRAKE.", "note": {"en": "CRITICAL: Low acceleration and no brake prevent gradient disruption.", "zh": "关键：低加速和无制动防止梯度破坏。"}},
+    {"name": "Step 5: Remove layers above buffy coat at 37%/70% interface (slowly, tip at surface). Extract buffy coat with wide-bore tip into new 15 mL tube."},
+    {"name": "Step 6: Wash to 15 mL with cold PBS. Centrifuge 400 g 7 min 4°C. Resuspend in staining buffer."},
+    {"name": "Step 7 (Fc block): Resuspend 0.5M cells in 50 µL FcR block (1:5 in staining buffer). Incubate 20 min on ice."},
+    {"name": "Step 8 (CITE-seq staining): Add 50 µL antibody cocktail (0.125 µg each CITE-seq Ab + unique HTO antibody per sample). Incubate 25 min on ice.", "note": {"en": "CRITICAL: Each sample must receive a UNIQUE HTO antibody for hashing.", "zh": "关键：每个样本必须使用唯一的 HTO 抗体。"}},
+    {"name": "Step 9 (Washes): Wash with ≥5 mL staining buffer (350-400 g 5 min 4°C) → Wash A → Wash B → Wash C. Count cells during final wash."},
+    {"name": "Step 10: Resuspend at 1,600 cells/µL in staining buffer for 10X superloading."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Step 2", "condition": "Keep on ice in PBS", "duration": "30 min max"}
+  ],
+  "notes": {
+    "en": "Percoll preparation: Working stock (WS) = 6.42 mL Percoll + 0.71 mL 10× HBSS. 70% = 3.5 mL WS + 1 mL 1× HBSS. 37% Red = 1.85 mL WS + 2.65 mL red HBSS. 30% = 1.5 mL WS + 3 mL 1× HBSS. Red HBSS enhances buffy coat visibility. Centrifuge Percoll within 10 min of layering. Minimize Percoll carryover when extracting buffy coat. Titrate antibodies by flow cytometry before CITE-seq.",
+    "zh": "Percoll 配制：工作液 (WS) = 6.42 mL Percoll + 0.71 mL 10× HBSS。70% = 3.5 mL WS + 1 mL 1× HBSS。37% 红 = 1.85 mL WS + 2.65 mL 含酚红 HBSS。30% = 1.5 mL WS + 3 mL 1× HBSS。分层后 10 分钟内离心。取 buffy coat 时减少 Percoll 带出。"
+  },
+  "ref": "Adapted from 10X Genomics + CITE-seq protocol; BioLegend TotalSeq guidelines",
+  "crosslinks": ["tumor_dissociation", "percoll_gradient_buffer", "percoll_isotonic"]
+}

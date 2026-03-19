@@ -1,0 +1,74 @@
+{
+  "id": "antibody_diluent_wb",
+  "name": "Western Blot Primary Antibody Diluent",
+  "nameCn": "Western Blot 一抗稀释液",
+  "category": "buffer",
+  "discipline": [
+    "protein"
+  ],
+  "tags": [
+    "WB",
+    "western blot",
+    "antibody diluent",
+    "primary antibody",
+    "BSA"
+  ],
+  "usage": {
+    "en": "Primary antibody diluent for Western blot. Contains BSA and sodium azide — do NOT use for HRP-conjugated secondary antibodies.",
+    "zh": "Western Blot 一抗稀释液。含 BSA 和叠氮钠——不可用于稀释 HRP 标记二抗。"
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Store at 4°C for lab sharing. Azide prevents microbial growth."
+  },
+  "components": [
+    {
+      "name": "1× TBST",
+      "amount": 82.3,
+      "unit": "mL",
+      "linkedRecipe": "tbst"
+    },
+    {
+      "name": "30% BSA stock",
+      "amount": 16.7,
+      "unit": "mL",
+      "concentration": "5% final",
+      "note": "Prepare or purchase as stock solution"
+    },
+    {
+      "name": "5% Sodium azide stock",
+      "amount": 1,
+      "unit": "mL",
+      "concentration": "0.05% final",
+      "note": "Prepare or purchase as stock solution"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Add TBST to a clean bottle."
+    },
+    {
+      "step": "Add 30% BSA stock (16.7 mL per 100 mL for 5% final) and mix."
+    },
+    {
+      "step": "Add 5% sodium azide stock (1 mL per 100 mL for 0.05% final)."
+    },
+    {
+      "step": "Mix well. Store at 4°C."
+    }
+  ],
+  "notes": {
+    "en": "Azide inhibits HRP enzyme — NEVER dilute HRP-conjugated secondary antibodies in this solution. Use TBST + 5% milk for secondary antibody dilution instead.",
+    "zh": "叠氮钠会抑制 HRP——绝对不要用此液稀释 HRP 标记二抗。二抗用 TBST + 5% 脱脂奶粉稀释。"
+  },
+  "ref": "Cell Signaling Technology Western Blotting Protocol; Bhatt et al. Methods Mol Biol (2012)",
+  "crosslinks": [
+    "wb_protocol",
+    "tbst",
+    "blocking_bsa"
+  ]
+}

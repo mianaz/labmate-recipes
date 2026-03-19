@@ -1,0 +1,65 @@
+{
+  "id": "your_buffer_id",
+  "name": "Buffer Name (with concentration if applicable)",
+  "nameCn": "缓冲液中文名称",
+  "category": "buffer",
+  "discipline": ["protein"],
+  "tags": ["tag1", "tag2"],
+  "usage": {
+    "en": "One-sentence description of what this buffer is used for.",
+    "zh": "一句话描述此缓冲液的用途。"
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "notes": "Additional storage notes (aliquoting, light sensitivity, etc.)"
+  },
+  "components": [
+    {
+      "name": "Reagent A (stock concentration)",
+      "amount": 10,
+      "unit": "mL",
+      "concentration": "50 mM final",
+      "mw": 0,
+      "note": "Optional note about this component"
+    },
+    {
+      "name": "Reagent B",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "mL",
+      "note": "To final volume"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Dissolve Reagent B in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Add Reagent A and mix.",
+      "note": "Optional additional detail"
+    },
+    {
+      "step": "Adjust pH to 7.4 with HCl.",
+      "warning": "Optional safety or critical note"
+    },
+    {
+      "step": "Bring to final volume. Store at 4°C."
+    }
+  ],
+  "notes": {
+    "en": "Troubleshooting tips, background information, or important caveats.",
+    "zh": "故障排除提示、背景信息或重要注意事项。"
+  },
+  "ref": "Author et al. (Year) Journal Volume:Pages; or Organization Protocol Name",
+  "doi": "10.xxxx/xxxxx",
+  "source": "Journal or publisher name",
+  "crosslinks": ["related_recipe_id", "related_protocol_id"]
+}

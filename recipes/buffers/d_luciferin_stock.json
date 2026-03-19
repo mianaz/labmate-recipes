@@ -1,0 +1,66 @@
+{
+  "id": "d_luciferin_stock",
+  "name": "D-Luciferin Stock (15 mg/mL) for Firefly Luciferase Imaging",
+  "nameCn": "D-荧光素母液 (15 mg/mL)",
+  "category": "buffer",
+  "discipline": [
+    "cell"
+  ],
+  "tags": [
+    "luciferase",
+    "bioluminescence",
+    "IVIS",
+    "animal imaging",
+    "in vivo",
+    "D-luciferin"
+  ],
+  "usage": {
+    "en": "D-Luciferin stock solution for in vivo firefly luciferase bioluminescence imaging. Dose: 100 µL/mouse.",
+    "zh": "D-荧光素母液，用于活体萤火虫荧光素酶生物发光成像。剂量：100 µL/只小鼠。"
+  },
+  "volume": 66.6,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "-80°C",
+    "duration": "12 months",
+    "sterile": "filter_022",
+    "notes": "Aliquot 1 mL/tube. Light-sensitive — prepare in dark. Thaw individual aliquots before use."
+  },
+  "components": [
+    {
+      "name": "D-Luciferin Firefly potassium salt (e.g. Goldbio LUCK-1G)",
+      "amount": 1,
+      "unit": "g"
+    },
+    {
+      "name": "Sterile PBS (tissue-culture grade)",
+      "amount": 66.6,
+      "unit": "mL"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Work in TC hood with light OFF inside the hood — keep dark."
+    },
+    {
+      "step": "Dissolve 1 g D-Luciferin in 66.6 mL sterile PBS (15 mg/mL)."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm syringe filter into 50 mL tubes."
+    },
+    {
+      "step": "Aliquot 1 mL per sterile Eppendorf tube. Label on cap."
+    },
+    {
+      "step": "Freeze at -80°C. In vivo use: 100 µL/mouse."
+    }
+  ],
+  "notes": {
+    "en": "Scale up proportionally if preparing from >1 g. Light-sensitive — work in the dark. Store aliquots at -80°C. For in vivo imaging, inject 100 µL per mouse (IP or retro-orbital per protocol).",
+    "zh": "如用量超过 1g，按比例放大。避光操作。-80°C 保存。活体成像用量：100 µL/只小鼠。"
+  },
+  "ref": "Gold Biotechnology D-Luciferin product guide; Contag & Bachmann (2002) Annu Rev Biomed Eng 4:235-260",
+  "crosslinks": [
+    "dual_luciferase"
+  ]
+}

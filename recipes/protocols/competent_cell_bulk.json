@@ -1,0 +1,45 @@
+{
+  "id": "competent_cell_bulk",
+  "name": "Bulk Competent Cell Preparation (CaCl₂ Method)",
+  "nameCn": "大量感受态细胞制备（CaCl₂ 法）",
+  "category": "protocol",
+  "discipline": ["microbiology", "molecular"],
+  "tags": ["competent cells", "CaCl2", "transformation", "DH10", "cloning", "E. coli"],
+  "usage": {
+    "en": "Bulk preparation of chemically competent E. coli (DH10B or similar) using CaCl₂ method, with heat-shock transformation protocol.",
+    "zh": "CaCl₂ 法大量制备化学感受态大肠杆菌（DH10B 或类似菌株），含热激转化流程。"
+  },
+  "duration": {
+    "total": "2 days (overnight culture + preparation)",
+    "hands_on": "4 hours"
+  },
+  "materials": [
+    {"name": "LB medium (without antibiotics)", "linkedRecipe": "lb"},
+    {"name": "0.1 M CaCl₂ (sterile, ice-cold)"},
+    {"name": "0.1 M CaCl₂ + 30% glycerol (sterile, ice-cold)"},
+    {"name": "Autoclaved 1 L flasks"},
+    {"name": "Liquid nitrogen"},
+    {"name": "Spectrophotometer (OD600)"},
+    {"name": "Precooled 1.5 mL tubes"},
+    {"name": "LB agar plates with antibiotics", "linkedRecipe": "lb_agar"}
+  ],
+  "components": [
+    {"name": "Step 1: Inoculate bacteria from -80°C stock into LB, shake 250 rpm overnight at 37°C (no antibiotics).", "note": {"en": "If stock is >12 months old or efficiency is low, streak on blank LB plate and pick single colony to restart.", "zh": "若甘油菌 >12 个月或效率下降，先划线 LB 平板挑单克隆重新开始。"}},
+    {"name": "Step 2: Next day — rinse autoclaved 1 L flasks with LB. Prewarm 150-200 mL LB per flask to 37°C. Dilute overnight culture 1:100. Grow 37°C 250 rpm until OD600 0.4-0.6 (~2.5 h).", "note": {"en": "Typical growth: OD 0.05 at 1 h, 0.25-0.28 at 2 h, 0.5-0.6 at 2.5 h. Optimal growth conditions are critical.", "zh": "典型生长：1 h OD 0.05，2 h 0.25-0.28，2.5 h 0.5-0.6。最佳生长条件至关重要。"}},
+    {"name": "Step 3: Transfer to precooled flasks on ice, incubate 15 min. All subsequent steps on ice or in cold room.", "note": {"en": "CRITICAL: precool everything. Keep entire procedure at 0-4°C, preferably in cold room.", "zh": "关键：预冷所有器具。全程 0-4°C，最好在冷室操作。"}},
+    {"name": "Step 4: Spin 4000 rpm 10 min 4°C."},
+    {"name": "Step 5: Resuspend thoroughly in 50-100 mL ice-cold 0.1 M CaCl₂ (avoid vortex). Leave on ice 20-30 min."},
+    {"name": "Step 6: Spin 4000 rpm 10 min 4°C. Resuspend in 4 mL 0.1 M CaCl₂ per 200 mL culture. Add 4 mL 0.1 M CaCl₂ + 30% glycerol (final 15% glycerol). Leave on ice."},
+    {"name": "Step 7: Aliquot 50 µL or 200 µL into precooled 1.5 mL tubes. Flash-freeze in liquid nitrogen."},
+    {"name": "Step 8: Store at -80°C. Test efficiency with several aliquots."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Step 8", "condition": "-80°C", "duration": "12 months"}
+  ],
+  "notes": {
+    "en": "Transformation: thaw on ice, add DNA (<1/10 volume for ligation products, 50 pg-1 ng for plasmid), ice 30 min, heat shock 42°C 30-40 s, ice 5-10 min, add 1 mL LB, recover 37°C 1 h, plate 100-150 µL. Quick alternative (skip recovery): after heat shock + 5 min ice, add 100 µL LB, plate directly (5-10× lower efficiency but sufficient for simple cloning). Antibiotics: Ampicillin stock 50 mg/mL (1:1000). LB Broth: 25 g/L. LB Agar: 25 g LB + 15 g agar per L.",
+    "zh": "转化：冰上融化，加 DNA（连接产物 <1/10 体积，质粒 50 pg-1 ng），冰 30 分钟，42°C 热激 30-40 秒，冰 5-10 分钟，加 1 mL LB，37°C 复苏 1 小时，涂板 100-150 µL。快速替代：热激后冰 5 分钟直接涂板（效率降低 5-10 倍但足够简单克隆）。"
+  },
+  "ref": "Adapted from standard CaCl₂ competent cell protocol; Protocol by YW",
+  "crosslinks": ["lb", "lb_agar", "heat_shock_transformation", "competent_cells_cacl2"]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "your_staining_id",
+  "name": "Staining Solution Name",
+  "nameCn": "染色液中文名称",
+  "category": "staining",
+  "discipline": ["protein"],
+  "tags": ["staining", "tag2"],
+  "usage": {
+    "en": "One-sentence description of what this stain detects or visualizes.",
+    "zh": "一句话描述此染色液的检测或可视化目的。"
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Can be reused multiple times"
+  },
+  "components": [
+    {
+      "name": "Dye or stain reagent",
+      "amount": 1,
+      "unit": "g"
+    },
+    {
+      "name": "Solvent (e.g. acetic acid, methanol)",
+      "amount": 100,
+      "unit": "mL"
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "mL",
+      "note": "To final volume"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Dissolve dye in solvent."
+    },
+    {
+      "step": "Bring to final volume with ddH₂O."
+    }
+  ],
+  "notes": {
+    "en": "Staining time, destaining tips, sensitivity notes.",
+    "zh": "染色时间、脱色提示、灵敏度说明。"
+  },
+  "ref": "Published reference or standard protocol source",
+  "crosslinks": ["related_destain_id", "related_protocol_id"]
+}

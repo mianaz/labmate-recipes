@@ -1,0 +1,49 @@
+{
+  "id": "if_cryostat",
+  "name": "Immunofluorescence Staining for Cryostat Sections",
+  "nameCn": "冰冻切片免疫荧光染色方案",
+  "category": "protocol",
+  "discipline": ["histology", "immunology"],
+  "tags": ["immunofluorescence", "IF", "cryostat", "frozen section", "fluorescence microscopy"],
+  "usage": {
+    "en": "Immunofluorescence staining protocol for cryostat-sectioned frozen tissue with saponin-based permeabilization.",
+    "zh": "冰冻切片免疫荧光染色方案，使用皂苷通透。"
+  },
+  "duration": {
+    "total": "2 days (overnight primary antibody)",
+    "hands_on": "2 hours"
+  },
+  "materials": [
+    {"name": "3.2% PFA (prewarmed to 37°C)"},
+    {"name": "PBS", "linkedRecipe": "pbs_1x"},
+    {"name": "Blocking buffer: PBS + 0.5% saponin + 2% BSA + 1% goat serum"},
+    {"name": "Primary antibodies"},
+    {"name": "Fluorescent secondary antibodies"},
+    {"name": "DAPI (1:1000 in blocking buffer)"},
+    {"name": "Anti-fade mounting medium", "linkedRecipe": "mounting_medium_antifade"},
+    {"name": "Nail polish"},
+    {"name": "Humidity chamber (dark box with water)"}
+  ],
+  "components": [
+    {"name": "Step 1: Fix tissue sections with 3.2% PFA (prewarmed at 37°C) for 15 min."},
+    {"name": "Step 2: Rinse 3× with PBS, 5 min each."},
+    {"name": "Step 3: Block for 30 min with blocking buffer (PBS + 0.5% saponin + 2% BSA + 1% goat serum)."},
+    {"name": "Step 4: Prepare primary antibody in blocking buffer.", "note": {"en": "Typical: 1:200. Some antibodies (e.g. Ly6G 2 mg/mL): 1:800. Titrate if high background.", "zh": "通常 1:200。某些抗体（如 Ly6G 2 mg/mL）：1:800。背景高则滴定优化。"}},
+    {"name": "Step 5: Incubate primary antibody overnight at 4°C."},
+    {"name": "Step 6: Wash 3× with PBS, 5 min each."},
+    {"name": "Step 7: Prepare secondary antibody (1:500 typical) in blocking buffer with DAPI (1:1000). Incubate 1 h at RT.", "note": {"en": "Some antibodies may need higher dilution to reduce background.", "zh": "某些二抗可能需更高稀释倍数减少背景。"}},
+    {"name": "Step 8: Wash 3× with PBS."},
+    {"name": "Step 9: Mount in anti-fade mounting buffer. Seal with nail polish. Dry overnight at RT."},
+    {"name": "Step 10: Image on fluorescence microscope, or store at -20°C for later use."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Step 5", "condition": "4°C in humidity chamber", "duration": "Overnight (required)"},
+    {"afterStep": "Step 9", "condition": "-20°C protected from light", "duration": "Weeks"}
+  ],
+  "notes": {
+    "en": "Saponin-based blocking buffer is suitable for intracellular targets. For membrane-only targets, 0.1% Triton X-100 can substitute for saponin. Keep sections moist throughout — never let them dry. Use a humid dark box during antibody incubations.",
+    "zh": "皂苷通透适合细胞内靶标。仅膜靶标可用 0.1% Triton X-100 替代皂苷。全程保持切片湿润——切勿干燥。抗体孵育时使用避光湿盒。"
+  },
+  "ref": "Adapted from standard cryostat immunofluorescence protocol (2021)",
+  "crosslinks": ["pfa_4", "mounting_medium_antifade", "dapi_staining", "if_protocol", "multiplex_if"]
+}

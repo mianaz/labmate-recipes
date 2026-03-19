@@ -1,0 +1,38 @@
+{
+  "id": "mounting_medium_antifade",
+  "name": "Anti-Fade Mounting Medium",
+  "nameCn": "抗荧光淬灭封片剂",
+  "category": "buffer",
+  "discipline": ["histology", "cell"],
+  "tags": ["mounting medium", "anti-fade", "immunofluorescence", "microscopy", "n-propyl gallate"],
+  "usage": {
+    "en": "Anti-fade mounting medium for fluorescence microscopy. Reduces photobleaching of fluorophores with n-propyl gallate in glycerol.",
+    "zh": "荧光显微镜抗淬灭封片剂。含正丙基没食子酸酯（NPG）减少荧光漂白。"
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "3 months",
+    "sterile": "not_required",
+    "notes": "Store at 4°C protected from light."
+  },
+  "components": [
+    {"name": "1 M Tris pH 8.0", "amount": 0.2, "unit": "mL", "concentration": "20 mM final"},
+    {"name": "N-propyl gallate (Sigma P3130)", "amount": 0.05, "unit": "g", "concentration": "0.5%"},
+    {"name": "Glycerol (ACS grade 99-100%)", "amount": 9, "unit": "mL", "note": "90% for fluorescence-only; 50% for DIC+fluorescence"}
+  ],
+  "prepSteps": [
+    {"step": "Prepare 20% (w/v) n-propyl gallate stock in DMSO or DMF (NPG does not dissolve well in water)."},
+    {"step": "Mix 0.2 mL of 1 M Tris pH 8.0 with 9 mL glycerol (or 5 mL for 50% glycerol formulation)."},
+    {"step": "Add 0.25 mL of 20% NPG stock dropwise with rapid stirring (0.5% final concentration)."},
+    {"step": "Warm to 37°C and vortex if needed to dissolve completely."},
+    {"step": "Adjust to ~10 mL final volume. Store at 4°C protected from light."}
+  ],
+  "notes": {
+    "en": "Use 6-8 µL per 18mm coverslip — solution should slowly spread to edges. Too much will prevent nail polish seal. This medium does NOT harden — seal with nail polish to prevent drying. For fluorescence-only: use 90% glycerol (best resolution). For DIC + fluorescence: use 50% glycerol (preserves DIC contrast). Many fluorophores are brighter at higher pH — Tris pH 8.0 helps.",
+    "zh": "每个 18mm 盖玻片用 6-8 µL。封片剂不会硬化——必须用指甲油密封防止干燥。纯荧光用 90% 甘油（最佳分辨率），DIC+荧光用 50% 甘油（保留 DIC 对比度）。高 pH 下多数荧光团更亮。"
+  },
+  "ref": "Jackson ImmunoResearch; Harvard NIC",
+  "crosslinks": ["if_protocol", "if_cryostat", "multiplex_if", "dapi_staining"]
+}

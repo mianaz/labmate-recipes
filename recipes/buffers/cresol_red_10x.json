@@ -1,0 +1,76 @@
+{
+  "id": "cresol_red_10x",
+  "name": "10× Cresol Red Dye for PCR Gel Loading",
+  "nameCn": "10× 甲酚红 PCR 上样染料",
+  "category": "buffer",
+  "discipline": [
+    "molecular"
+  ],
+  "tags": [
+    "PCR",
+    "gel loading",
+    "cresol red",
+    "electrophoresis"
+  ],
+  "usage": {
+    "en": "Alternative loading dye for gel electrophoresis; can be added to PCR master mix before amplification and loaded directly onto gel without additional dye.",
+    "zh": "琼脂糖凝胶电泳替代上样染料，可在 PCR 反应前加入 master mix，反应后直接上样无需额外加 loading dye。"
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "6 months",
+    "sterile": "filter_022",
+    "notes": "Also can aliquot and freeze at -20°C. Inspect before use — sucrose solution may grow bacteria; discard if cloudy."
+  },
+  "components": [
+    {
+      "name": "Sucrose",
+      "amount": 30,
+      "unit": "g",
+      "concentration": "60%",
+      "note": "Sucrose also occupies volume"
+    },
+    {
+      "name": "Cresol red sodium salt (Sigma 114480)",
+      "amount": 0.1,
+      "unit": "g",
+      "concentration": "5 mM (0.2%)",
+      "mw": 404
+    },
+    {
+      "name": "ddH₂O",
+      "amount": null,
+      "unit": "mL",
+      "note": "To 50 mL final volume"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Add water to beaker (~20 mL for 50 mL batch)."
+    },
+    {
+      "step": "While stirring, add sucrose (30 g) and cresol red sodium salt (0.1 g)."
+    },
+    {
+      "step": "Continue stirring until completely dissolved. Add water to reach 50 mL final volume."
+    },
+    {
+      "step": "Filter through 0.22 µm filter in the hood."
+    },
+    {
+      "step": "Aliquot to 2 mL sterile tubes. Label '10X Cresol red'. Store at 4°C or freeze at -20°C."
+    }
+  ],
+  "notes": {
+    "en": "This is ONLY the dye — not PCR buffer. You still need colorless 10× PCR buffer. Add 10% volume of 10× Cresol red to the PCR master mix. Load PCR product directly onto gel — do NOT add additional loading dye. Cresol red runs at ~1000 bp in 1% agarose (between xylene cyanol ~5000 bp and bromophenol blue ~500 bp). Combining with transparent PCR buffer equals CoralLoad PCR Buffer (QIAGEN). If frozen, warm to 37°C or 55°C to fully thaw before use.",
+    "zh": "这只是染料，不是 PCR 缓冲液！需要另外加无色 10× PCR buffer。在 PCR master mix 中加入总体积 10% 的 10× 甲酚红。PCR 后直接上样，无需额外 loading dye。甲酚红在 1% 琼脂糖凝胶中迁移位置约 1000 bp。冷冻后需 37°C 或 55°C 完全融化后使用。"
+  },
+  "ref": "Gold Biotechnology Cresol Red guide; QIAGEN CoralLoad PCR Buffer product note",
+  "crosslinks": [
+    "pcr_buffer_10x",
+    "agarose_gel_electrophoresis",
+    "tae_50x"
+  ]
+}

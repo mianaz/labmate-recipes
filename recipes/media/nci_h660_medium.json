@@ -1,0 +1,44 @@
+{
+  "id": "nci_h660_medium",
+  "name": "NCI-H660 Complete Medium",
+  "nameCn": "NCI-H660 完全培养基",
+  "category": "media",
+  "discipline": ["cell"],
+  "tags": ["NCI-H660", "prostate cancer", "NEPC", "neuroendocrine", "RPMI"],
+  "usage": {
+    "en": "Complete medium for NCI-H660 neuroendocrine prostate cancer cell line per ATCC recommendation.",
+    "zh": "NCI-H660 神经内分泌前列腺癌细胞系完全培养基（ATCC 推荐配方）。"
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "4°C",
+    "duration": "1 month",
+    "sterile": "not_required",
+    "notes": "Store at 4°C protected from light. Pre-warm to 37°C before use."
+  },
+  "components": [
+    {"name": "RPMI-1640 medium", "amount": 500, "unit": "mL", "note": "Base medium"},
+    {"name": "ITS-G (Thermo 41400045)", "amount": 5, "unit": "mL", "concentration": "1%", "note": "Method 1: convenient but expensive"},
+    {"name": "Hydrocortisone (from 10 mM stock)", "amount": 0.5, "unit": "µL via serial dilution", "concentration": "10 nM final", "note": "Serial dilute 1,000,000×: 1 µL → 1000 µL medium, then 500 µL → bottle"},
+    {"name": "β-estradiol (from 50 mM stock)", "amount": 0.1, "unit": "µL via serial dilution", "concentration": "10 nM final", "note": "Serial dilute 5,000,000×: 1 µL → 1000 µL medium, then 100 µL → bottle. Vortex stock to dissolve precipitates."},
+    {"name": "L-glutamine (200 mM stock)", "amount": 5, "unit": "mL", "concentration": "2 mM extra (4 mM total)", "note": "Thaw at 37°C, vortex to dissolve precipitates"},
+    {"name": "FBS (heat-inactivated)", "amount": 25, "unit": "mL", "concentration": "5%"},
+    {"name": "Pen/Strep (100×)", "amount": 5, "unit": "mL", "concentration": "1%"}
+  ],
+  "prepSteps": [
+    {"step": "Add 5 mL ITS-G to 500 mL RPMI-1640 bottle."},
+    {"step": "Prepare hydrocortisone: serial dilute 10 mM stock 1,000,000× (1 µL into 1000 µL medium, then add 500 µL to bottle). Stock is fluid at -80°C — keep on ice.", "note": "Final 10 nM"},
+    {"step": "Prepare β-estradiol: vortex 50 mM stock to dissolve precipitates. Serial dilute 5,000,000× (1 µL into 1000 µL medium, then add 100 µL to bottle).", "note": "Final 10 nM"},
+    {"step": "Thaw L-glutamine at 37°C water bath, vortex to dissolve precipitates. Add 5 mL to bottle."},
+    {"step": "Add 25 mL FBS (5% final)."},
+    {"step": "Add 5 mL Pen/Strep (1% final)."},
+    {"step": "Mix gently by inversion. Store at 4°C."}
+  ],
+  "notes": {
+    "en": "Method 2 (alternative to ITS-G): use separate Insulin (0.005 mg/mL from 10 mg/mL stock, 250 µL per 500 mL), Transferrin (0.01 mg/mL from 2.2 mg/mL stock, 2.27 mL per 500 mL), and Sodium selenite (30 nM from 5 mg/mL stock, serial dilute 963,000×). Hydrocortisone and β-estradiol stocks are fluid even at -80°C. Useful calculator: selleckchem.com/molaritycalculator.jsp",
+    "zh": "方法2（替代 ITS-G）：分别加 Insulin (0.005 mg/mL)、Transferrin (0.01 mg/mL)、Sodium selenite (30 nM)。氢化可的松和雌二醇母液在 -80°C 仍为液态。"
+  },
+  "ref": "ATCC NCI-H660 culture guide",
+  "crosslinks": ["complete_rpmi"]
+}

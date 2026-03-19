@@ -1,0 +1,63 @@
+{
+  "id": "g418_stock",
+  "name": "G418 Stock Solution (250 mg/mL)",
+  "nameCn": "G418 母液 (250 mg/mL)",
+  "category": "buffer",
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "tags": [
+    "selection",
+    "G418",
+    "geneticin",
+    "neomycin",
+    "stable cell line"
+  ],
+  "usage": {
+    "en": "G418 (Geneticin) stock for selection of stably transfected mammalian cells carrying neomycin resistance.",
+    "zh": "G418 母液，用于筛选携带新霉素抗性基因的稳定转染哺乳动物细胞系。"
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "filter_022",
+    "notes": "Aliquot into Eppendorf tubes. Can also store at 4°C short-term."
+  },
+  "components": [
+    {
+      "name": "G418 Sulfate (Caisson G030-10GM)",
+      "amount": 2.5,
+      "unit": "g"
+    },
+    {
+      "name": "Sterile DPBS",
+      "amount": 10,
+      "unit": "mL"
+    }
+  ],
+  "prepSteps": [
+    {
+      "step": "Dissolve 2.5 g G418 Sulfate in 10 mL sterile DPBS (250 mg/mL)."
+    },
+    {
+      "step": "Filter through 0.22 µm filter into a sterile tube."
+    },
+    {
+      "step": "Aliquot into Eppendorf tubes. Label 'G418, 250 mg/mL' and date."
+    },
+    {
+      "step": "Store at -20°C."
+    }
+  ],
+  "notes": {
+    "en": "Working concentration varies by cell line, typically 200-1000 µg/mL. Perform a kill curve to determine optimal concentration. Chemical stored at 4°C or -20°C.",
+    "zh": "工作浓度因细胞系而异，通常 200-1000 µg/mL。需做杀伤曲线确定最佳浓度。化学品保存 4°C 或 -20°C。"
+  },
+  "ref": "Caisson Laboratories G418 product protocol; Bhatt et al. Methods Mol Biol (2012)",
+  "crosslinks": [
+    "stable_cell_line_selection"
+  ]
+}

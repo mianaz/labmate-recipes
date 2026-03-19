@@ -1,0 +1,37 @@
+{
+  "id": "tris_hcl_1_5m",
+  "name": "1.5 M Tris-HCl pH 6.8",
+  "nameCn": "1.5 M Tris-HCl pH 6.8",
+  "category": "buffer",
+  "discipline": ["protein", "general"],
+  "tags": ["Tris", "SDS-PAGE", "stacking gel", "buffer stock"],
+  "usage": {
+    "en": "1.5 M Tris-HCl pH 6.8 stock for SDS-PAGE stacking gel and sample buffer preparation.",
+    "zh": "1.5 M Tris-HCl pH 6.8 母液，用于 SDS-PAGE 浓缩胶和上样缓冲液配制。"
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "RT",
+    "duration": "12 months",
+    "sterile": "autoclave",
+    "notes": "Autoclave to sterilize. Store at RT."
+  },
+  "components": [
+    {"name": "Tris base", "amount": 181.65, "unit": "g", "mw": 121.14},
+    {"name": "ddH₂O", "amount": 700, "unit": "mL"},
+    {"name": "Concentrated HCl (37%, 12.1 N)", "amount": 118, "unit": "mL", "note": "Approximate — fine-adjust to pH 6.8"}
+  ],
+  "prepSteps": [
+    {"step": "Dissolve 181.65 g Tris base in 700 mL ddH₂O with stirring."},
+    {"step": "Add ~118 mL concentrated HCl to adjust pH to 6.8. Fine-adjust as needed.", "warning": "Many electronic pH meters are inaccurate with concentrated Tris solutions — use an appropriate probe."},
+    {"step": "Bring to 1000 mL final volume with ddH₂O."},
+    {"step": "Autoclave to sterilize. Store at RT."}
+  ],
+  "notes": {
+    "en": "pH meter accuracy warning: many electronic pH meters cannot accurately read concentrated Tris solutions. Use a probe rated for high-ionic-strength solutions. Start with ~118 mL HCl and fine-tune. Also used for preparing 4× Laemmli sample buffer.",
+    "zh": "pH 计精度警告：许多电子 pH 计无法准确测量高浓度 Tris 溶液。使用适合高离子强度的探头。先加约 118 mL HCl 再微调。也用于配制 4× 上样缓冲液。"
+  },
+  "ref": "Standard biochemistry protocol",
+  "crosslinks": ["sds_page_gel", "laemmli_4x", "laemmli_5x"]
+}

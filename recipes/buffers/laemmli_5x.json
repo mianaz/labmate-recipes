@@ -1,0 +1,41 @@
+{
+  "id": "laemmli_5x",
+  "name": "5× Laemmli Sample Buffer",
+  "nameCn": "5× 上样缓冲液",
+  "category": "buffer",
+  "discipline": ["protein"],
+  "tags": ["WB", "SDS-PAGE", "sample buffer", "loading buffer"],
+  "usage": {
+    "en": "5× concentrated SDS-PAGE sample buffer; mix 1:4 with protein sample before loading.",
+    "zh": "SDS-PAGE 上样缓冲液（5×），与蛋白样品 1:4 混合后上样。"
+  },
+  "volume": 15,
+  "volumeUnit": "mL",
+  "storage": {
+    "temperature": "-20°C",
+    "duration": "12 months",
+    "sterile": "not_required",
+    "notes": "Aliquot 1 mL/tube at -20°C"
+  },
+  "components": [
+    {"name": "1.0 M Tris-HCl pH 6.8", "amount": 3.75, "unit": "mL", "concentration": "250 mM"},
+    {"name": "20% SDS", "amount": 3, "unit": "mL", "concentration": "4%"},
+    {"name": "Glycerol", "amount": 4.5, "unit": "mL", "concentration": "30%"},
+    {"name": "Bromophenol blue", "amount": 9, "unit": "mg"},
+    {"name": "DTT", "amount": 1.16, "unit": "g", "note": "Or substitute β-mercaptoethanol"},
+    {"name": "ddH₂O", "amount": null, "unit": "mL", "note": "To 15 mL"}
+  ],
+  "prepSteps": [
+    {"step": "Combine Tris-HCl, SDS, and glycerol."},
+    {"step": "Add bromophenol blue and DTT. Mix until dissolved."},
+    {"step": "Bring to 15 mL final volume with ddH₂O."},
+    {"step": "Aliquot 1 mL into 1.5 mL Eppendorf tubes."},
+    {"step": "Store at -20°C."}
+  ],
+  "notes": {
+    "en": "Dilute 1:4 with sample before loading (e.g. 5 µL buffer + 20 µL sample). Heat at 95-100°C for 5 min before loading gel.",
+    "zh": "上样前 1:4 稀释（如 5 µL buffer + 20 µL 样品）。95-100°C 加热 5 分钟后上样。"
+  },
+  "ref": "lifescience.net; Laemmli (1970) Nature 227:680-685",
+  "crosslinks": ["wb_protocol", "laemmli_4x", "laemmli_2x"]
+}

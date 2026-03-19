@@ -1,0 +1,66 @@
+{
+  "id": "your_protocol_id",
+  "name": "Protocol Name",
+  "nameCn": "方案中文名称",
+  "category": "protocol",
+  "discipline": ["cell", "protein"],
+  "tags": ["tag1", "tag2"],
+  "usage": {
+    "en": "One-sentence description of what this protocol accomplishes.",
+    "zh": "一句话描述此方案的目的。"
+  },
+  "duration": {
+    "total": "1-2 days",
+    "hands_on": "3 hours",
+    "notes": "Optional timing notes"
+  },
+  "materials": [
+    {
+      "name": "Required reagent or buffer",
+      "linkedRecipe": "existing_recipe_id"
+    },
+    {
+      "name": "Equipment item"
+    },
+    {
+      "name": "Optional reagent",
+      "optional": true
+    }
+  ],
+  "components": [
+    {
+      "name": "Step 1: Brief description of what to do.",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Optional English tip or detail for this step.",
+        "zh": "此步骤的可选中文提示或详细说明。"
+      }
+    },
+    {
+      "name": "Step 2: Next action in the protocol.",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "Step 3: Continue with remaining steps.",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Step description or number",
+      "condition": "Storage condition if paused (e.g. -20°C in buffer)",
+      "duration": "How long you can pause (e.g. overnight, 1 month)"
+    }
+  ],
+  "notes": {
+    "en": "Troubleshooting, tips, critical success factors, or background information.",
+    "zh": "故障排除、提示、关键成功因素或背景信息。"
+  },
+  "ref": "Author et al. (Year) Journal Volume:Pages; PMID: 12345678",
+  "doi": "10.xxxx/xxxxx",
+  "source": "Journal or publisher name",
+  "crosslinks": ["related_buffer_id", "related_protocol_id"]
+}

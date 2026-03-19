@@ -1,0 +1,35 @@
+{
+  "id": "therapeutic_antibody_dilution",
+  "name": "Therapeutic Antibody Dilution for In Vivo Dosing",
+  "nameCn": "治疗性抗体稀释（体内给药）",
+  "category": "protocol",
+  "discipline": ["immunology", "cell"],
+  "tags": ["therapeutic antibody", "in vivo", "dilution", "dosing", "PD-1", "checkpoint", "PBS"],
+  "usage": {
+    "en": "Protocol for diluting therapeutic antibodies (e.g. anti-PD-1, anti-CTLA-4) from stock concentration to desired in vivo dosing concentration using sterile D-PBS.",
+    "zh": "将治疗性抗体（如 anti-PD-1、anti-CTLA-4）从库存浓度稀释至所需体内给药浓度的操作方案。"
+  },
+  "duration": {
+    "total": "30 min",
+    "hands_on": "30 min"
+  },
+  "materials": [
+    {"name": "Stock therapeutic antibody"},
+    {"name": "Cold sterile D-PBS (cell culture grade)"},
+    {"name": "1.5 mL microcentrifuge tubes"},
+    {"name": "50 mL conical tube (if needed for transfer)"}
+  ],
+  "components": [
+    {"name": "Step 1: Calculate dilution volume. Given: A mg total at B mg/mL stock (volume C = A/B mL). Target: B' mg/mL. Need X mL D-PBS where A = B' × (C + X), so X = (A/B') - C.", "note": {"en": "Example: 50 mg at 2.15 mg/mL (23.26 mL), target 2.0 mg/mL → X = 1.74 mL PBS.", "zh": "示例：50 mg, 2.15 mg/mL (23.26 mL), 目标 2.0 mg/mL → X = 1.74 mL PBS。"}},
+    {"name": "Step 2: Add X mL cold D-PBS to stock bottle (or transfer stock to 50 mL tube first if bottle is small). Mix well by gentle inversion."},
+    {"name": "Step 3: Aliquot 1 mL per microcentrifuge tube. Do not waste any antibody solution.", "note": {"en": "Example: 50 mg at 2 mg/mL = 25 mL total → ~25 tubes of 1 mL each.", "zh": "示例：50 mg, 2 mg/mL = 25 mL → 约 25 管，每管 1 mL。"}},
+    {"name": "Step 4: Label tube caps with critical info (antibody name, concentration, date)."},
+    {"name": "Step 5: Keep original stock label as a record. Store diluted antibody tubes at 4°C."}
+  ],
+  "notes": {
+    "en": "Handle therapeutic antibodies carefully — they are expensive. Use cold sterile D-PBS for dilution. Keep antibodies at 4°C (do NOT freeze unless specified by manufacturer). Common suppliers: BioLegend, BioXcell, Leinco. Always verify stock concentration matches label before diluting.",
+    "zh": "治疗性抗体昂贵——小心操作。使用冷的无菌 D-PBS 稀释。4°C 保存（除非厂家另有说明，勿冷冻）。常见供应商：BioLegend、BioXcell、Leinco。稀释前务必核实库存浓度与标签一致。"
+  },
+  "ref": "Standard in vivo dosing protocol",
+  "crosslinks": ["pbs_1x"]
+}

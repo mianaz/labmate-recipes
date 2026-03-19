@@ -1,0 +1,53 @@
+{
+  "id": "cytof_staining",
+  "name": "CyTOF Combined Surface & Intracellular Staining",
+  "nameCn": "CyTOF 联合表面和胞内染色方案",
+  "category": "protocol",
+  "discipline": ["immunology", "cell"],
+  "tags": ["CyTOF", "mass cytometry", "intracellular staining", "surface staining", "phospho-protein", "metal-conjugated antibodies"],
+  "usage": {
+    "en": "Combined surface and intracellular staining protocol for mass cytometry (CyTOF) with optional stimulation, methanol permeabilization, and Ir-intercalator DNA staining.",
+    "zh": "质谱流式（CyTOF）联合表面和胞内染色方案，包含可选刺激、甲醇通透和 Ir-intercalator DNA 染色。"
+  },
+  "duration": {
+    "total": "6-8 hours (or overnight with Ir-intercalator)",
+    "hands_on": "3 hours"
+  },
+  "materials": [
+    {"name": "16% PFA (formaldehyde)"},
+    {"name": "Wash buffer: PBS + 0.5% BSA + 0.02% sodium azide"},
+    {"name": "Staining buffer: 0.5% BSA in PBS"},
+    {"name": "100% methanol (cold)"},
+    {"name": "Rh103 viability dye (1:500 in PBS)"},
+    {"name": "25 µM cisplatin (alternative viability dye)"},
+    {"name": "Ir-intercalator (Fluidigm)"},
+    {"name": "Metal-conjugated antibody panels (surface and intracellular)"},
+    {"name": "MilliQ water"},
+    {"name": "35 µm filter-cap tubes"},
+    {"name": "EQ calibration beads"}
+  ],
+  "components": [
+    {"name": "Step 1 (Optional stimulation): Stimulate/treat 1×10⁶ cells per sample. To stop signaling: add 16% PFA 1:10 (100 µL/tube), 10 min RT. Spin 600 g 6 min 4°C. Wash 3× with wash buffer.", "note": {"en": "PFA fixation before surface staining may affect some antibody epitopes.", "zh": "表面染色前 PFA 固定可能影响部分抗体表位。"}},
+    {"name": "Step 2 (Surface staining): Resuspend ≤1.5M cells in 35-40 µL staining buffer. Add Ab mix (10-15 µL, total 50 µL). Incubate 30-60 min RT."},
+    {"name": "Step 3: Wash 2-3× with 1.5 mL wash buffer. Vortex to mix."},
+    {"name": "Step 4 (Optional viability): Stain with 1:500 Rh103 in PBS for 20 min, OR 25 µM cisplatin for 1 min."},
+    {"name": "Step 5 (Fixation): Add 300-500 µL 1.6% PFA in PBS. Incubate 10 min (or 1 h) RT. Spin, discard supernatant (no wash needed)."},
+    {"name": "Step 6 (Permeabilization): Leave ~100 µL on pellet, break up by vortexing. Add cold 100% methanol (0.9 mL per 10⁶ cells, final 90%). Incubate 10 min 4°C (prefer -20°C for 20 min).", "note": {"en": "Can store at -20°C up to 24 h, or -80°C up to 1 month.", "zh": "可 -20°C 保存 24 h，-80°C 保存 1 个月。"}},
+    {"name": "Step 7: Wash 2-4× with >1 mL wash buffer.", "note": {"en": "BSA precipitates in methanol — add >1 mL buffer to dissolve.", "zh": "BSA 在甲醇中沉淀——加 >1 mL 缓冲液溶解。"}},
+    {"name": "Step 8 (Intracellular staining): Resuspend in 35-40 µL buffer + Ab mix (10-15 µL), total exactly 50 µL. Incubate 30-60 min RT with gentle agitation."},
+    {"name": "Step 9: Wash 2-3× with wash buffer."},
+    {"name": "Step 10 (Ir-intercalator): Add 0.5 mL of 1:1000 Ir-intercalator in PBS + 1.6% PFA. Incubate ≥30 min RT (preferred: overnight at 4°C)."},
+    {"name": "Step 11: Wash 2× with wash buffer. Wash 1× with MilliQ water (use 0.1% BSA in MilliQ if cells stick to plastic). Filter through 35 µm cap. Add EQ beads for acquisition."}
+  ],
+  "stoppingPoints": [
+    {"afterStep": "Step 6", "condition": "-20°C in methanol", "duration": "Up to 24 hours"},
+    {"afterStep": "Step 6", "condition": "-80°C in methanol", "duration": "Up to 1 month"},
+    {"afterStep": "Step 10", "condition": "4°C in Ir-intercalator/PFA", "duration": "Up to 1 week"}
+  ],
+  "notes": {
+    "en": "Staining concentrations matter especially for phospho-proteins. Ab bank mixes are designed for 50 µL final volume. Some cells stick to plastic in MilliQ water wash — add 0.1% BSA. For autosampler: resuspend in 50 µL MilliQ, add 50 µL EQ beads, transfer to 96-deep-well plate. Ideal: 0.5M cells per injection of 400 µL.",
+    "zh": "染色浓度对磷酸化蛋白尤其重要。抗体库配方按 50 µL 终体积设计。某些细胞在 MilliQ 水洗涤时粘壁——加 0.1% BSA。自动进样：50 µL MilliQ 重悬 + 50 µL EQ beads。最佳：0.5M 细胞/400 µL。"
+  },
+  "ref": "Adapted from Fluidigm CyTOF protocol (AH Mar 2012, DM Mar 2015)",
+  "crosslinks": ["pfa_4", "facs_buffer", "flow_panel_staining"]
+}
