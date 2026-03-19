@@ -132,5 +132,111 @@
   "usage": {
     "en": "Prepare electrocompetent E. coli cells for high-efficiency electroporation.",
     "zh": "制备电转化感受态大肠杆菌，用于高效电转化。"
-  }
+  },
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Overnight culture grows while you sleep",
+        "zh": "过夜培养是自然停顿点"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Aliquoted electrocompetent cells stored at −80°C are stable for 6 months",
+        "zh": "分装的电转感受态细胞 −80°C 保存可达 6 个月"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 1 — Overnight Culture**",
+      "zh": "**第一天 — 过夜培养**",
+      "isHeader": true
+    },
+    {
+      "en": "Inoculate 5 mL LB from glycerol stock. Shake at 37°C, 250 rpm overnight. Pre-chill centrifuge to 4°C",
+      "zh": "从甘油菌接种 5 mL LB。37°C 250 rpm 摇菌过夜。提前将离心机预冷至 4°C",
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Day 2 — Cell Growth & Washing**",
+      "zh": "**第二天 — 菌体生长与洗涤**",
+      "isHeader": true
+    },
+    {
+      "en": "Dilute overnight culture 1:100 into 500 mL fresh LB. Shake at 37°C, 250 rpm until OD₆₀₀ = 0.4–0.6 (~2–3 h). Monitor every 30 min after OD 0.3",
+      "zh": "过夜菌液 1:100 稀释至 500 mL 新鲜 LB。37°C 250 rpm 摇至 OD₆₀₀ = 0.4–0.6（~2–3 h）。OD 到 0.3 后每 30 min 监测",
+      "time": "2–3 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Chill culture on ice for 15–30 min. Pre-chill all tubes, buffers, and rotors to 4°C. All subsequent steps on ice",
+      "zh": "菌液冰上冷却 15–30 min。预冷所有管、缓冲液和转头至 4°C。此后全程冰上操作",
+      "time": "15–30 min",
+      "temp": "0–4°C"
+    },
+    {
+      "en": "Pellet cells at 4,000×g, 15 min, 4°C. Decant supernatant carefully — pellet is loose",
+      "zh": "4,000×g 离心 15 min，4°C。小心倾倒上清——沉淀松散",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash 1: resuspend pellet in 500 mL ice-cold 10% glycerol; spin 4,000×g 15 min 4°C",
+      "zh": "洗涤 1：用 500 mL 冰冷 10% 甘油重悬沉淀；4,000×g 15 min 4°C 离心",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash 2: resuspend in 250 mL ice-cold 10% glycerol; spin 4,000×g 15 min 4°C",
+      "zh": "洗涤 2：用 250 mL 冰冷 10% 甘油重悬；4,000×g 15 min 4°C 离心",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash 3: resuspend in 50 mL ice-cold 10% glycerol; spin 4,000×g 15 min 4°C. Resuspend final pellet in 2 mL ice-cold 10% glycerol",
+      "zh": "洗涤 3：用 50 mL 冰冷 10% 甘油重悬；4,000×g 15 min 4°C 离心。最终沉淀用 2 mL 冰冷 10% 甘油重悬",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Aliquoting & Storage**",
+      "zh": "**分装与保存**",
+      "isHeader": true
+    },
+    {
+      "en": "Aliquot 50 µL per pre-chilled tube. Snap-freeze in liquid nitrogen. Store at −80°C (single-use aliquots, do not refreeze)",
+      "zh": "每管分装 50 µL（预冷管）。液氮速冻。−80°C 保存（单次使用，勿重复冻融）",
+      "time": "15 min",
+      "temp": "−80°C"
+    },
+    {
+      "en": "**Test Transformation Efficiency**",
+      "zh": "**测试转化效率**",
+      "isHeader": true
+    },
+    {
+      "en": "Electroporate 1 µL pUC19 (10 pg/µL) with 25 µL cells in 1 mm cuvette. Time constant should be ≥5 ms. Expect ≥10⁸–10⁹ colonies/µg pUC19",
+      "zh": "取 1 µL pUC19（10 pg/µL）+ 25 µL 细胞于 1 mm 比色杯中电穿孔。时间常数应 ≥5 ms。预期效率 ≥10⁸–10⁹ 菌落/µg pUC19",
+      "time": "30 min",
+      "temp": "37°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Overnight culture → dilute 1:100 → grow to OD 0.4–0.6 → ice chill → spin → wash 3× with ice-cold 10% glycerol (500→250→50 mL) → resuspend 2 mL → aliquot 50 µL → snap-freeze → −80°C → test efficiency",
+      "zh": "过夜培养 → 1:100 稀释 → 培养至 OD 0.4–0.6 → 冰上冷却 → 离心 → 冰冷 10% 甘油洗涤 3 次（500→250→50 mL）→ 2 mL 重悬 → 50 µL 分装 → 液氮速冻 → −80°C → 测试效率"
+    }
+  ],
+  "relatedProtocols": [
+    "electroporation",
+    "heat_shock_transformation",
+    "competent_cells_cacl2",
+    "lb",
+    "soc",
+    "competent_cell_bulk"
+  ]
 }

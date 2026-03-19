@@ -101,6 +101,15 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "After centrifugation, cell pellet can sit on ice for up to 30 min if needed (e.g., for counting). Do not leave too long without medium",
+        "zh": "离心后细胞沉淀可冰上放置最长 30 min（例如计数时）。不要在无培养基的情况下放置过久"
+      }
+    }
+  ],
   "usage": {
     "en": "Subculture adherent mammalian cells by trypsinization and re-plating.",
     "zh": "通过胰酶消化传代贴壁哺乳动物细胞。"

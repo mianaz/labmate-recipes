@@ -118,9 +118,97 @@
       "name": "Gel imaging system"
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Assess RNA integrity and size by denaturing formaldehyde agarose gel electrophoresis.",
     "zh": "变性甲醛琼脂糖胶电泳检测 RNA 完整性和大小。"
-  }
+  },
+  "relatedProtocols": [
+    "trizol_extraction",
+    "rna_column_extraction",
+    "rna_loading_dye",
+    "tae_50x"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Solidified gel can be wrapped in cling film with 1× MOPS and stored at 4°C for up to 24 h",
+        "zh": "凝固后的凝胶可用保鲜膜包裹并加 1× MOPS，4°C 保存最多 24 h"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Preparation (RNase-free Environment)**",
+      "zh": "**准备工作（无 RNase 环境）**",
+      "isHeader": true
+    },
+    {
+      "en": "Wipe gel tank, comb, and tray with RNase Away (RNaseZap). Use only RNase-free water (DEPC-treated or nuclease-free). Wear fresh gloves throughout",
+      "zh": "用 RNase Away（RNaseZap）擦拭电泳槽、梳子和胶托。全程使用 RNase-free 水（DEPC 处理或无核酸酶水）。全程戴新手套",
+      "time": "10 min"
+    },
+    {
+      "en": "**Gel Preparation (Fume Hood)**",
+      "zh": "**凝胶制备（通风橱内操作）**",
+      "isHeader": true
+    },
+    {
+      "en": "Melt 0.5 g agarose in 40 mL DEPC-treated water by microwaving. Cool to 55°C. In fume hood: add 5 mL 10× MOPS buffer + 5 mL 37% formaldehyde. Mix, pour immediately into tray with comb. Let solidify at RT for 30 min",
+      "zh": "微波溶解 0.5 g 琼脂糖于 40 mL DEPC 水中。冷却至 55°C。通风橱中：加入 5 mL 10× MOPS 缓冲液 + 5 mL 37% 甲醛。混合后立即倒入带梳胶托。室温凝固 30 min",
+      "time": "40 min",
+      "temp": "55°C → RT"
+    },
+    {
+      "en": "**Sample Preparation**",
+      "zh": "**样品制备**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare RNA samples (0.5–5 µg each): mix RNA with 5× formaldehyde loading buffer (formamide:formaldehyde:10×MOPS = 500:165:100 µL + 35 µL DEPC water + 1 µg/mL EtBr). Heat denature at 65°C for 15 min, then chill on ice 2 min. Add 1 µL 6× DNA loading dye for tracking",
+      "zh": "制备 RNA 样品（各 0.5–5 µg）：RNA 与 5× 甲醛上样缓冲液混合（甲酰胺:甲醛:10×MOPS = 500:165:100 µL + 35 µL DEPC 水 + 1 µg/mL EtBr）。65°C 变性 15 min，冰上急冷 2 min。加 1 µL 6× DNA 上样缓冲液用于示踪",
+      "time": "20 min",
+      "temp": "65°C"
+    },
+    {
+      "en": "**Electrophoresis**",
+      "zh": "**电泳**",
+      "isHeader": true
+    },
+    {
+      "en": "Fill tank with 1× MOPS running buffer (fresh — yellowing indicates degradation). Pre-run gel at 100 V for 5 min",
+      "zh": "电泳槽中加入 1× MOPS 电泳缓冲液（新鲜配制 — 变黄表示降解）。100 V 预电泳 5 min",
+      "time": "5 min"
+    },
+    {
+      "en": "Load denatured RNA samples and RNA ladder (0.2–10 kb). Run at 80 V constant voltage for ~1.5 h (until BPB migrates 2/3 of gel). Run in fume hood due to formaldehyde fumes",
+      "zh": "上样变性 RNA 和 RNA 分子量标准（0.2–10 kb）。恒压 80 V 电泳约 1.5 h（BPB 迁移至凝胶 2/3 处）。因甲醛挥发需在通风橱中电泳",
+      "time": "1.5 h"
+    },
+    {
+      "en": "**Visualization & Interpretation**",
+      "zh": "**可视化与结果判读**",
+      "isHeader": true
+    },
+    {
+      "en": "Visualize on UV transilluminator and photograph. Intact total RNA: 28S rRNA band should be ~2× intensity of 18S band. Degraded RNA: smear below 18S with no discrete bands. Dispose of formaldehyde-containing gel and buffer as hazardous waste",
+      "zh": "UV 透射仪下观察并拍照。完整总 RNA：28S rRNA 条带亮度约为 18S 的 2 倍。降解 RNA：18S 以下弥散拖尾无清晰条带。含甲醛的凝胶和缓冲液作为危险废弃物处置",
+      "time": "10 min"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Clean with RNase Away → cast 1% formaldehyde-MOPS agarose gel → denature RNA (65°C 15 min) → pre-run gel → load & run 80 V 1.5 h → UV image → assess 28S:18S ratio",
+      "zh": "RNase Away 清洁 → 灌制 1% 甲醛-MOPS 琼脂糖凝胶 → RNA 变性（65°C 15 min）→ 预电泳 → 上样 80 V 1.5 h → UV 成像 → 评估 28S:18S 比值"
+    }
+  ]
 }

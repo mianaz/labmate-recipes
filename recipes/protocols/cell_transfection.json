@@ -100,6 +100,22 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 0,
+      "note": {
+        "en": "Cells plate overnight to reach optimal confluency; proceed next morning",
+        "zh": "细胞过夜铺板至最佳汇合度；次日早上继续"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "After replacing media, cells incubate 24–72 h for expression; harvest time is flexible",
+        "zh": "换液后细胞孵育 24–72 h 待表达；收获时间灵活"
+      }
+    }
+  ],
   "usage": {
     "en": "Introduce exogenous DNA or RNA into mammalian cells using lipid-based transfection.",
     "zh": "脂质体法将外源 DNA 或 RNA 导入哺乳动物细胞。"

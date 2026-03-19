@@ -3,8 +3,19 @@
   "name": "Therapeutic Antibody Dilution for In Vivo Dosing",
   "nameCn": "治疗性抗体稀释（体内给药）",
   "category": "protocol",
-  "discipline": ["immunology", "cell"],
-  "tags": ["therapeutic antibody", "in vivo", "dilution", "dosing", "PD-1", "checkpoint", "PBS"],
+  "discipline": [
+    "immunology",
+    "cell"
+  ],
+  "tags": [
+    "therapeutic antibody",
+    "in vivo",
+    "dilution",
+    "dosing",
+    "PD-1",
+    "checkpoint",
+    "PBS"
+  ],
   "usage": {
     "en": "Protocol for diluting therapeutic antibodies (e.g. anti-PD-1, anti-CTLA-4) from stock concentration to desired in vivo dosing concentration using sterile D-PBS.",
     "zh": "将治疗性抗体（如 anti-PD-1、anti-CTLA-4）从库存浓度稀释至所需体内给药浓度的操作方案。"
@@ -14,22 +25,125 @@
     "hands_on": "30 min"
   },
   "materials": [
-    {"name": "Stock therapeutic antibody"},
-    {"name": "Cold sterile D-PBS (cell culture grade)"},
-    {"name": "1.5 mL microcentrifuge tubes"},
-    {"name": "50 mL conical tube (if needed for transfer)"}
+    {
+      "name": "Stock therapeutic antibody"
+    },
+    {
+      "name": "Cold sterile D-PBS (cell culture grade)"
+    },
+    {
+      "name": "1.5 mL microcentrifuge tubes"
+    },
+    {
+      "name": "50 mL conical tube (if needed for transfer)"
+    }
   ],
   "components": [
-    {"name": "Step 1: Calculate dilution volume. Given: A mg total at B mg/mL stock (volume C = A/B mL). Target: B' mg/mL. Need X mL D-PBS where A = B' × (C + X), so X = (A/B') - C.", "note": {"en": "Example: 50 mg at 2.15 mg/mL (23.26 mL), target 2.0 mg/mL → X = 1.74 mL PBS.", "zh": "示例：50 mg, 2.15 mg/mL (23.26 mL), 目标 2.0 mg/mL → X = 1.74 mL PBS。"}},
-    {"name": "Step 2: Add X mL cold D-PBS to stock bottle (or transfer stock to 50 mL tube first if bottle is small). Mix well by gentle inversion."},
-    {"name": "Step 3: Aliquot 1 mL per microcentrifuge tube. Do not waste any antibody solution.", "note": {"en": "Example: 50 mg at 2 mg/mL = 25 mL total → ~25 tubes of 1 mL each.", "zh": "示例：50 mg, 2 mg/mL = 25 mL → 约 25 管，每管 1 mL。"}},
-    {"name": "Step 4: Label tube caps with critical info (antibody name, concentration, date)."},
-    {"name": "Step 5: Keep original stock label as a record. Store diluted antibody tubes at 4°C."}
+    {
+      "name": "Step 1: Calculate dilution volume. Given: A mg total at B mg/mL stock (volume C = A/B mL). Target: B' mg/mL. Need X mL D-PBS where A = B' × (C + X), so X = (A/B') - C.",
+      "note": {
+        "en": "Example: 50 mg at 2.15 mg/mL (23.26 mL), target 2.0 mg/mL → X = 1.74 mL PBS.",
+        "zh": "示例：50 mg, 2.15 mg/mL (23.26 mL), 目标 2.0 mg/mL → X = 1.74 mL PBS。"
+      }
+    },
+    {
+      "name": "Step 2: Add X mL cold D-PBS to stock bottle (or transfer stock to 50 mL tube first if bottle is small). Mix well by gentle inversion."
+    },
+    {
+      "name": "Step 3: Aliquot 1 mL per microcentrifuge tube. Do not waste any antibody solution.",
+      "note": {
+        "en": "Example: 50 mg at 2 mg/mL = 25 mL total → ~25 tubes of 1 mL each.",
+        "zh": "示例：50 mg, 2 mg/mL = 25 mL → 约 25 管，每管 1 mL。"
+      }
+    },
+    {
+      "name": "Step 4: Label tube caps with critical info (antibody name, concentration, date)."
+    },
+    {
+      "name": "Step 5: Keep original stock label as a record. Store diluted antibody tubes at 4°C."
+    }
   ],
   "notes": {
     "en": "Handle therapeutic antibodies carefully — they are expensive. Use cold sterile D-PBS for dilution. Keep antibodies at 4°C (do NOT freeze unless specified by manufacturer). Common suppliers: BioLegend, BioXcell, Leinco. Always verify stock concentration matches label before diluting.",
     "zh": "治疗性抗体昂贵——小心操作。使用冷的无菌 D-PBS 稀释。4°C 保存（除非厂家另有说明，勿冷冻）。常见供应商：BioLegend、BioXcell、Leinco。稀释前务必核实库存浓度与标签一致。"
   },
   "ref": "Standard in vivo dosing protocol",
-  "crosslinks": ["pbs_1x"]
+  "crosslinks": [
+    "pbs_1x"
+  ],
+  "relatedProtocols": [
+    "pbs_1x"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Diluted antibody aliquots can be stored at 4°C for weeks (per manufacturer's recommendation; do NOT freeze unless specified)",
+        "zh": "稀释后的抗体分装管可 4°C 保存数周（按厂家建议；除非特别说明否则勿冷冻）"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Dilution Calculation & Preparation**",
+      "zh": "**稀释计算与配制**",
+      "isHeader": true
+    },
+    {
+      "en": "Verify stock antibody concentration matches the label (e.g., by Nanodrop A₂₈₀ if needed). Record: total mass (A mg), stock concentration (B mg/mL), stock volume (C = A/B mL), target concentration (B' mg/mL)",
+      "zh": "核实抗体库存浓度与标签一致（必要时 Nanodrop A₂₈₀ 确认）。记录：总质量（A mg）、库存浓度（B mg/mL）、库存体积（C = A/B mL）、目标浓度（B' mg/mL）",
+      "time": "5 min"
+    },
+    {
+      "en": "Calculate D-PBS volume to add: X = (A / B') − C mL. Example: 50 mg at 2.15 mg/mL (23.26 mL stock), target 2.0 mg/mL → X = (50/2.0) − 23.26 = 1.74 mL PBS",
+      "zh": "计算需加入的 D-PBS 体积：X = (A / B') − C mL。示例：50 mg，2.15 mg/mL（23.26 mL 库存），目标 2.0 mg/mL → X = (50/2.0) − 23.26 = 1.74 mL PBS",
+      "time": "2 min"
+    },
+    {
+      "en": "Add calculated volume of cold sterile D-PBS (cell culture grade) to stock bottle. If bottle is too small, transfer stock to a sterile 50 mL conical tube first. Mix by gentle inversion 10–15 times — do NOT vortex",
+      "zh": "将计算好的冷无菌 D-PBS（细胞培养级）加入库存瓶中。如瓶太小，先将库存转移至无菌 50 mL 锥形管。轻柔倒转混匀 10–15 次 — 勿涡旋",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Aliquoting**",
+      "zh": "**分装**",
+      "isHeader": true
+    },
+    {
+      "en": "Aliquot 1 mL per labeled 1.5 mL microcentrifuge tube. Do not waste any antibody solution. Example: 50 mg at 2 mg/mL = 25 mL total → ~25 tubes of 1 mL",
+      "zh": "每管分装 1 mL 至已标记的 1.5 mL 离心管。不浪费任何抗体溶液。示例：50 mg，2 mg/mL = 25 mL → 约 25 管，每管 1 mL",
+      "time": "15 min"
+    },
+    {
+      "en": "Label each tube cap with: antibody name, final concentration (mg/mL), date of dilution. Keep original stock label as a record",
+      "zh": "每管盖标注：抗体名称、终浓度（mg/mL）、稀释日期。保留原始库存标签作为记录",
+      "time": "5 min"
+    },
+    {
+      "en": "**Storage**",
+      "zh": "**保存**",
+      "isHeader": true
+    },
+    {
+      "en": "Store all diluted antibody aliquots at 4°C. Do NOT freeze unless manufacturer specifically recommends it. Typical therapeutic antibodies (BioXcell, BioLegend, Leinco) are stable at 4°C for the stated shelf life",
+      "zh": "所有稀释后抗体分装管 4°C 保存。除非厂家特别建议，否则勿冷冻。典型治疗性抗体（BioXcell、BioLegend、Leinco）在 4°C 条件下可保存至标注有效期",
+      "temp": "4°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Verify stock concentration → calculate PBS volume (X = A/B' − C) → add cold D-PBS, mix gently → aliquot 1 mL/tube → label → store 4°C",
+      "zh": "核实库存浓度 → 计算 PBS 体积（X = A/B' − C）→ 加冷 D-PBS 轻柔混匀 → 分装 1 mL/管 → 标记 → 4°C 保存"
+    }
+  ]
 }

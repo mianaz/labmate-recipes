@@ -91,6 +91,22 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Diluted protein samples can be stored on ice for up to 1 h or at -20°C for longer",
+        "zh": "稀释后的蛋白样品可冰上放置最长 1 h，或 -20°C 保存更久"
+      }
+    },
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Loaded plate can sit at RT for a few minutes before adding working reagent",
+        "zh": "加样后的板可在室温放置几分钟再加工作液"
+      }
+    }
+  ],
   "usage": {
     "en": "Quantify total protein concentration using the BCA colorimetric assay.",
     "zh": "BCA 比色法定量蛋白质总浓度。"

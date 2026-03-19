@@ -126,9 +126,98 @@
       "name": "Multichannel pipette"
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Measure cell viability and proliferation using resazurin (alamarBlue) fluorometric assay.",
     "zh": "刃天青（alamarBlue）荧光法检测细胞活力和增殖。"
-  }
+  },
+  "relatedProtocols": [
+    "mtt_assay",
+    "cck8_proliferation",
+    "clonogenic_assay",
+    "trypan_blue_counting"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Seeded plate with attached cells can be stored at 37°C/5% CO₂ overnight before adding treatments",
+        "zh": "已接种并贴壁的细胞板可在 37°C/5% CO₂ 过夜保存，次日再加药物处理"
+      }
+    },
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "After drug treatment (24–72 h), plate can be processed immediately or within 1–2 h for resazurin addition",
+        "zh": "药物处理（24–72 h）后，可立即处理或 1–2 h 内加入刃天青"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 0 — Cell Seeding**",
+      "zh": "**第 0 天 — 细胞接种**",
+      "isHeader": true
+    },
+    {
+      "en": "Seed 5,000–20,000 cells/well in 96-well plate with 100 µL complete medium. Fill edge wells with PBS to minimize evaporation (edge effect). Include blank wells (medium only, no cells)",
+      "zh": "96 孔板中接种 5,000–20,000 细胞/孔，100 µL 完全培养基。边缘孔加 PBS 减少蒸发（边缘效应）。设置空白孔（仅培养基，无细胞）",
+      "time": "30 min"
+    },
+    {
+      "en": "Incubate overnight at 37°C, 5% CO₂ for cell attachment",
+      "zh": "37°C、5% CO₂ 过夜孵育使细胞贴壁",
+      "time": "O/N",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Day 1 — Treatment**",
+      "zh": "**第 1 天 — 处理**",
+      "isHeader": true
+    },
+    {
+      "en": "Add drug/treatment at desired concentrations. Include controls: untreated cells, solvent control (vehicle), blank wells. Incubate 24–72 h as per experimental design",
+      "zh": "加入药物/处理至所需浓度。设置对照：未处理细胞、溶剂对照（载体）、空白孔。按实验设计孵育 24–72 h",
+      "time": "30 min"
+    },
+    {
+      "en": "**Day 2–4 — Resazurin Addition & Reading**",
+      "zh": "**第 2–4 天 — 加入刃天青与读数**",
+      "isHeader": true
+    },
+    {
+      "en": "Add 10 µL resazurin stock (0.15 mg/mL) per 100 µL medium (final 0.015 mg/mL, 10% v/v). Do NOT remove existing medium. Wrap plate in foil to protect from light",
+      "zh": "每 100 µL 培养基加 10 µL 刃天青母液（0.15 mg/mL）（终浓度 0.015 mg/mL，10% v/v）。不去除现有培养基。锡纸避光包裹",
+      "time": "10 min"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 1–4 h. Monitor color change from blue (oxidized) to pink/red (reduced by viable cells). Optimal: 20–40% reduction at reading time",
+      "zh": "37°C、5% CO₂ 孵育 1–4 h。监测颜色从蓝色（氧化态）到粉红/红色（活细胞还原）的变化。最佳：读取时还原率 20–40%",
+      "time": "1–4 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Read fluorescence (preferred): Ex 560 nm / Em 590 nm (use black-sided clear-bottom plates). OR read absorbance: A₅₇₀ nm with A₆₀₀ nm reference",
+      "zh": "读取荧光（首选）：激发 560 nm / 发射 590 nm（使用黑边透明底板）。或读取吸光度：A₅₇₀ nm，A₆₀₀ nm 参考",
+      "time": "15 min"
+    },
+    {
+      "en": "Calculate % viability: (RFU_treated − RFU_blank) / (RFU_control − RFU_blank) × 100. Non-destructive assay: plate can be returned to incubator for re-reading at later timepoints",
+      "zh": "计算 % 活力：(RFU处理 − RFU空白) / (RFU对照 − RFU空白) × 100。非破坏性检测：培养板可放回孵育箱在后续时间点再次读取"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Seed cells (96-well) → attach O/N → add drug/treatment (24–72 h) → add resazurin (10% v/v) → incubate 1–4 h → read fluorescence (Ex 560/Em 590) → calculate % viability",
+      "zh": "接种细胞（96 孔板）→ 过夜贴壁 → 加药物处理（24–72 h）→ 加刃天青（10% v/v）→ 孵育 1–4 h → 读荧光（Ex 560/Em 590）→ 计算 % 活力"
+    }
+  ]
 }

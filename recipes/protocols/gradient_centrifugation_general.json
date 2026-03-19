@@ -154,5 +154,112 @@
   "usage": {
     "en": "Separate cellular components or particles by density gradient centrifugation.",
     "zh": "密度梯度离心分离细胞组分或颗粒。"
-  }
+  },
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Prepared gradient can be stored at 4°C for up to 2 h without disturbing",
+        "zh": "制备好的梯度可 4°C 静置保存 2 h"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Collected fractions can be stored at 4°C short-term or snap-frozen at −80°C depending on application",
+        "zh": "收集的组分可 4°C 短期保存或根据应用 −80°C 速冻保存"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Planning & Medium Selection**",
+      "zh": "**规划与介质选择**",
+      "isHeader": true
+    },
+    {
+      "en": "Choose gradient medium: Sucrose (organelles, viruses), Percoll (cells, mitochondria), Ficoll (PBMCs), or Iodixanol/OptiPrep (best for most organelles and EVs)",
+      "zh": "选择梯度介质：蔗糖（细胞器、病毒）、Percoll（细胞、线粒体）、Ficoll（PBMC）或碘克沙醇/OptiPrep（适用于大多数细胞器和 EV）"
+    },
+    {
+      "en": "Select gradient mode: rate-zonal (short spin, separates by size/sedimentation coefficient) or isopycnic (long spin to equilibrium, separates by buoyant density)",
+      "zh": "选择梯度模式：速率区带（短时间离心，按大小/沉降系数分离）或等密度（长时间离心至平衡，按浮力密度分离）"
+    },
+    {
+      "en": "**Gradient Preparation**",
+      "zh": "**梯度制备**",
+      "isHeader": true
+    },
+    {
+      "en": "For step (discontinuous) gradient: pipette densest solution first (tube bottom), carefully layer less dense solutions on top against tube wall. Use ≥3 steps for good resolution. Chill on ice between layers",
+      "zh": "阶梯（不连续）梯度：先加最高密度溶液（管底），沿管壁缓慢覆加较低密度溶液。≥3 层获得良好分辨率。加层间冰上冷却",
+      "time": "15–30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "For continuous gradient: use gradient maker (two-chamber device) with peristaltic pump. Alternative: freeze-thaw step gradient at −80°C once then thaw at 4°C to generate linear gradient",
+      "zh": "连续梯度：使用梯度仪（双腔装置）配合蠕动泵。替代方法：阶梯梯度 −80°C 冻 1 次再 4°C 解冻形成线性梯度",
+      "time": "30–60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Sample Loading & Centrifugation**",
+      "zh": "**上样与离心**",
+      "isHeader": true
+    },
+    {
+      "en": "Load sample gently on top (rate-zonal) or bottom (isopycnic). Sample volume should be ≤10% of total gradient volume",
+      "zh": "轻柔地将样品加在顶部（速率区带）或底部（等密度）。样品体积应 ≤ 梯度总体积的 10%",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Centrifuge in swing-bucket rotor (SW-41 Ti for 11 mL; SW-28 for 38 mL). Rate-zonal: 20,000–40,000×g, 1–3 h. Isopycnic: 100,000×g, 16–18 h. Always 4°C, no brake",
+      "zh": "摇摆转头离心（SW-41 Ti 用于 11 mL；SW-28 用于 38 mL）。速率区带：20,000–40,000×g，1–3 h。等密度：100,000×g，16–18 h。全程 4°C，无刹车",
+      "time": "1–18 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Fractionation & Analysis**",
+      "zh": "**分级收集与分析**",
+      "isHeader": true
+    },
+    {
+      "en": "Fractionate from top: collect 0.5–1 mL fractions sequentially using pipette, fraction collector, or bottom-puncture needle. Number fractions from top (#1) to bottom (#n)",
+      "zh": "从顶部收集：用移液器、分级收集器或底部穿刺针依次收集 0.5–1 mL 组分。从顶部（#1）到底部（#n）编号",
+      "time": "20–40 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Measure refractive index (RI) of each fraction with refractometer to calculate density. Plot RI vs fraction number to confirm gradient profile",
+      "zh": "用折光仪测量每个组分的折射率（RI）以计算密度。绘制 RI vs 组分编号图确认梯度分布",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Analyze fractions by Western blot, enzyme activity assay, or qPCR depending on application. Use organelle-specific markers to identify target fractions",
+      "zh": "根据应用通过 Western blot、酶活性检测或 qPCR 分析各组分。使用细胞器特异性标记鉴定目标组分",
+      "time": "variable"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Choose medium & mode → prepare step/continuous gradient → load sample → centrifuge (swing-bucket, 4°C, no brake) → fractionate from top → measure density (RI) → analyze fractions (WB/activity/qPCR)",
+      "zh": "选择介质与模式 → 制备阶梯/连续梯度 → 上样 → 离心（摇摆转头，4°C，无刹车） → 从顶部分级收集 → 测密度（RI） → 分析组分（WB/活性/qPCR）"
+    }
+  ],
+  "relatedProtocols": [
+    "percoll_isotonic",
+    "pbmc_isolation",
+    "lysosome_isolation",
+    "mitochondria_isolation",
+    "er_golgi_isolation",
+    "ficoll_solution",
+    "subcellular_fractionation",
+    "sucrose_gradient_homog",
+    "sucrose_gradient_buffer",
+    "ficoll_paque_pbmc",
+    "percoll_gradient_buffer",
+    "exosome_isolation"
+  ]
 }

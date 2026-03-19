@@ -98,16 +98,22 @@ function convertRepoRecipe(repo) {
   }
 
   if (repo.discipline) app.discipline = repo.discipline;
-  if (repo.crosslinks && repo.crosslinks.length > 0) app.relatedProtocols = repo.crosslinks;
+  if (repo.relatedProtocols && repo.relatedProtocols.length > 0) app.relatedProtocols = repo.relatedProtocols;
+  else if (repo.crosslinks && repo.crosslinks.length > 0) app.relatedProtocols = repo.crosslinks;
   if (repo.doi) app.doi = repo.doi;
 
   if (!isProtocol && repo.prepSteps && repo.prepSteps.length > 0) {
-    app.prepSteps = repo.prepSteps.map(ps => {
-      let en = ps.step || '';
-      if (ps.note) en += ` (${ps.note})`;
-      if (ps.warning) en += ` ⚠️ ${ps.warning}`;
-      return { en, zh: en };
-    });
+    // If prepSteps are already bilingual {en, zh}, pass through; otherwise convert
+    if (repo.prepSteps[0] && repo.prepSteps[0].en) {
+      app.prepSteps = repo.prepSteps;
+    } else {
+      app.prepSteps = repo.prepSteps.map(ps => {
+        let en = ps.step || '';
+        if (ps.note) en += ` (${ps.note})`;
+        if (ps.warning) en += ` ⚠️ ${ps.warning}`;
+        return { en, zh: en };
+      });
+    }
   }
 
   if (isProtocol) {
@@ -124,12 +130,16 @@ function convertRepoRecipe(repo) {
     if (repo.materials && repo.materials.length > 0) {
       app.materials = repo.materials.map(m => ({ name: m.name, ...(m.linkedRecipe ? { linkedRecipe: m.linkedRecipe } : {}), ...(m.optional ? { optional: true } : {}) }));
     }
-    if (repo.stoppingPoints && repo.stoppingPoints.length > 0) {
+    if (repo.stoppingPoints && repo.stoppingPoints.length > 0 && !repo.safeStops) {
       app.safeStops = repo.stoppingPoints.map(sp => ({
         afterStep: sp.afterStep,
         note: { en: `${sp.condition || ''}${sp.duration ? ` (up to ${sp.duration})` : ''}`.trim(), zh: `${sp.condition || ''}${sp.duration ? ` (最长 ${sp.duration})` : ''}`.trim() },
       }));
     }
+    // Pass through v2 fields directly if present
+    if (repo.safeStops && repo.safeStops.length > 0) app.safeStops = repo.safeStops;
+    if (repo.detailedSteps && repo.detailedSteps.length > 0) app.detailedSteps = repo.detailedSteps;
+    if (repo.briefSteps && repo.briefSteps.length > 0) app.briefSteps = repo.briefSteps;
   }
 
   return app;

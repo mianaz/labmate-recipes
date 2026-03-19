@@ -128,6 +128,22 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Cells attach overnight at 37°C before adding treatment",
+        "zh": "细胞 37°C 过夜贴壁后再加药处理"
+      }
+    },
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Treatment incubation (24–72 h) is a natural overnight stopping point",
+        "zh": "药物处理孵育（24–72 h）为自然过夜停顿点"
+      }
+    }
+  ],
   "usage": {
     "en": "Measure cell viability and proliferation using MTT colorimetric assay.",
     "zh": "MTT 比色法检测细胞活力和增殖。"

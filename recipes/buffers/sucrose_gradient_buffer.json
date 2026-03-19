@@ -45,9 +45,9 @@
     "zh": "蔗糖密度（约，20°C）：10%=1.040 g/mL、20%=1.083、30%=1.130、40%=1.179、50%=1.230、60%=1.286、70%=1.347。\n常用层次配置：\n- 内质网微粒体：10/20/30/40%（阶梯）或 15–45% 线性\n- 高尔基体：10/25/35% 或 10–50% 线性\n- 溶酶体：14.3%/19%/26% 阶梯；100,000×g 1 h 后在界面收集\n- 外泌体：30%/45%/60% 或 10–70% 连续梯度\n连续梯度：使用梯度仪或冻融扩散法（铺层后 −80°C 冷冻，4°C 融化自然扩散）。4°C 保存 2 周。RNA 相关实验需 0.22 µm 过滤。"
   },
   "crosslinks": [
-    "density_gradient_centrifugation",
+    "gradient_centrifugation_general",
     "exosome_isolation",
-    "organelle_isolation_golgi_er"
+    "er_golgi_isolation"
   ],
   "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1–3.6.13; de Duve et al. (1955) Biochem J 60:604–617; Bhatt & Bhatt (2021) STAR Protoc 2:100450",
   "discipline": [

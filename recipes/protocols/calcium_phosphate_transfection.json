@@ -114,6 +114,22 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 0,
+      "note": {
+        "en": "Cells plate overnight at 37°C; proceed next morning",
+        "zh": "细胞 37°C 过夜铺板；次日早上继续"
+      }
+    },
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "After medium change on Day 2, cells incubate 24–48 h for expression; harvest timing is flexible",
+        "zh": "Day 2 换液后细胞孵育 24–48 h 待表达；收获时间灵活"
+      }
+    }
+  ],
   "usage": {
     "en": "Transfect mammalian cells using calcium phosphate co-precipitation.",
     "zh": "磷酸钙共沉淀法转染哺乳动物细胞。"

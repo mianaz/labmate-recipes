@@ -3,8 +3,17 @@
   "name": "Immunofluorescence Staining for Cryostat Sections",
   "nameCn": "冰冻切片免疫荧光染色方案",
   "category": "protocol",
-  "discipline": ["histology", "immunology"],
-  "tags": ["immunofluorescence", "IF", "cryostat", "frozen section", "fluorescence microscopy"],
+  "discipline": [
+    "histology",
+    "immunology"
+  ],
+  "tags": [
+    "immunofluorescence",
+    "IF",
+    "cryostat",
+    "frozen section",
+    "fluorescence microscopy"
+  ],
   "usage": {
     "en": "Immunofluorescence staining protocol for cryostat-sectioned frozen tissue with saponin-based permeabilization.",
     "zh": "冰冻切片免疫荧光染色方案，使用皂苷通透。"
@@ -14,36 +23,211 @@
     "hands_on": "2 hours"
   },
   "materials": [
-    {"name": "3.2% PFA (prewarmed to 37°C)"},
-    {"name": "PBS", "linkedRecipe": "pbs_1x"},
-    {"name": "Blocking buffer: PBS + 0.5% saponin + 2% BSA + 1% goat serum"},
-    {"name": "Primary antibodies"},
-    {"name": "Fluorescent secondary antibodies"},
-    {"name": "DAPI (1:1000 in blocking buffer)"},
-    {"name": "Anti-fade mounting medium", "linkedRecipe": "mounting_medium_antifade"},
-    {"name": "Nail polish"},
-    {"name": "Humidity chamber (dark box with water)"}
+    {
+      "name": "3.2% PFA (prewarmed to 37°C)"
+    },
+    {
+      "name": "PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Blocking buffer: PBS + 0.5% saponin + 2% BSA + 1% goat serum"
+    },
+    {
+      "name": "Primary antibodies"
+    },
+    {
+      "name": "Fluorescent secondary antibodies"
+    },
+    {
+      "name": "DAPI (1:1000 in blocking buffer)"
+    },
+    {
+      "name": "Anti-fade mounting medium",
+      "linkedRecipe": "mounting_medium_antifade"
+    },
+    {
+      "name": "Nail polish"
+    },
+    {
+      "name": "Humidity chamber (dark box with water)"
+    }
   ],
   "components": [
-    {"name": "Step 1: Fix tissue sections with 3.2% PFA (prewarmed at 37°C) for 15 min."},
-    {"name": "Step 2: Rinse 3× with PBS, 5 min each."},
-    {"name": "Step 3: Block for 30 min with blocking buffer (PBS + 0.5% saponin + 2% BSA + 1% goat serum)."},
-    {"name": "Step 4: Prepare primary antibody in blocking buffer.", "note": {"en": "Typical: 1:200. Some antibodies (e.g. Ly6G 2 mg/mL): 1:800. Titrate if high background.", "zh": "通常 1:200。某些抗体（如 Ly6G 2 mg/mL）：1:800。背景高则滴定优化。"}},
-    {"name": "Step 5: Incubate primary antibody overnight at 4°C."},
-    {"name": "Step 6: Wash 3× with PBS, 5 min each."},
-    {"name": "Step 7: Prepare secondary antibody (1:500 typical) in blocking buffer with DAPI (1:1000). Incubate 1 h at RT.", "note": {"en": "Some antibodies may need higher dilution to reduce background.", "zh": "某些二抗可能需更高稀释倍数减少背景。"}},
-    {"name": "Step 8: Wash 3× with PBS."},
-    {"name": "Step 9: Mount in anti-fade mounting buffer. Seal with nail polish. Dry overnight at RT."},
-    {"name": "Step 10: Image on fluorescence microscope, or store at -20°C for later use."}
+    {
+      "name": "Step 1: Fix tissue sections with 3.2% PFA (prewarmed at 37°C) for 15 min."
+    },
+    {
+      "name": "Step 2: Rinse 3× with PBS, 5 min each."
+    },
+    {
+      "name": "Step 3: Block for 30 min with blocking buffer (PBS + 0.5% saponin + 2% BSA + 1% goat serum)."
+    },
+    {
+      "name": "Step 4: Prepare primary antibody in blocking buffer.",
+      "note": {
+        "en": "Typical: 1:200. Some antibodies (e.g. Ly6G 2 mg/mL): 1:800. Titrate if high background.",
+        "zh": "通常 1:200。某些抗体（如 Ly6G 2 mg/mL）：1:800。背景高则滴定优化。"
+      }
+    },
+    {
+      "name": "Step 5: Incubate primary antibody overnight at 4°C."
+    },
+    {
+      "name": "Step 6: Wash 3× with PBS, 5 min each."
+    },
+    {
+      "name": "Step 7: Prepare secondary antibody (1:500 typical) in blocking buffer with DAPI (1:1000). Incubate 1 h at RT.",
+      "note": {
+        "en": "Some antibodies may need higher dilution to reduce background.",
+        "zh": "某些二抗可能需更高稀释倍数减少背景。"
+      }
+    },
+    {
+      "name": "Step 8: Wash 3× with PBS."
+    },
+    {
+      "name": "Step 9: Mount in anti-fade mounting buffer. Seal with nail polish. Dry overnight at RT."
+    },
+    {
+      "name": "Step 10: Image on fluorescence microscope, or store at -20°C for later use."
+    }
   ],
   "stoppingPoints": [
-    {"afterStep": "Step 5", "condition": "4°C in humidity chamber", "duration": "Overnight (required)"},
-    {"afterStep": "Step 9", "condition": "-20°C protected from light", "duration": "Weeks"}
+    {
+      "afterStep": "Step 5",
+      "condition": "4°C in humidity chamber",
+      "duration": "Overnight (required)"
+    },
+    {
+      "afterStep": "Step 9",
+      "condition": "-20°C protected from light",
+      "duration": "Weeks"
+    }
   ],
   "notes": {
     "en": "Saponin-based blocking buffer is suitable for intracellular targets. For membrane-only targets, 0.1% Triton X-100 can substitute for saponin. Keep sections moist throughout — never let them dry. Use a humid dark box during antibody incubations.",
     "zh": "皂苷通透适合细胞内靶标。仅膜靶标可用 0.1% Triton X-100 替代皂苷。全程保持切片湿润——切勿干燥。抗体孵育时使用避光湿盒。"
   },
   "ref": "Adapted from standard cryostat immunofluorescence protocol (2021)",
-  "crosslinks": ["pfa_4", "mounting_medium_antifade", "dapi_staining", "if_protocol", "multiplex_if"]
+  "crosslinks": [
+    "pfa_4",
+    "mounting_medium_antifade",
+    "dapi_staining",
+    "if_protocol",
+    "multiplex_if"
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Primary antibody incubation is overnight at 4°C — this is the natural stopping point",
+        "zh": "一抗 4°C 过夜孵育 — 这是自然的停顿点"
+      }
+    },
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Mounted and sealed slides can be stored at −20°C protected from light for weeks",
+        "zh": "封片后的载玻片可 −20°C 避光保存数周"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Fixation & Washing**",
+      "zh": "**固定与洗涤**",
+      "isHeader": true
+    },
+    {
+      "en": "Fix cryostat tissue sections with 3.2% PFA (prewarmed to 37°C) for 15 min at RT",
+      "zh": "用 3.2% PFA（预热至 37°C）固定冰冻切片，RT 孵育 15 min",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Rinse slides 3× with PBS, 5 min each wash",
+      "zh": "PBS 洗涤载玻片 3 次，每次 5 min",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**Blocking & Permeabilization**",
+      "zh": "**封闭与通透**",
+      "isHeader": true
+    },
+    {
+      "en": "Block for 30 min with blocking buffer (PBS + 0.5% saponin + 2% BSA + 1% goat serum) in humidity chamber",
+      "zh": "在湿盒中用封闭液（PBS + 0.5% 皂苷 + 2% BSA + 1% 山羊血清）封闭 30 min",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**Primary Antibody Incubation**",
+      "zh": "**一抗孵育**",
+      "isHeader": true
+    },
+    {
+      "en": "Dilute primary antibody in blocking buffer (typical 1:200; titrate for specific antibodies). Apply to sections",
+      "zh": "用封闭液稀释一抗（通常 1:200；特定抗体需滴定优化）。涂覆于切片上",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Incubate overnight at 4°C in sealed humidity chamber (dark box with water to prevent drying)",
+      "zh": "4°C 避光湿盒中过夜孵育（盒内加水防止干燥）",
+      "time": "12–16 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Day 2 — Secondary Antibody & Mounting**",
+      "zh": "**第二天 — 二抗与封片**",
+      "isHeader": true
+    },
+    {
+      "en": "Wash 3× with PBS, 5 min each",
+      "zh": "PBS 洗涤 3 次，每次 5 min",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Prepare secondary antibody (1:500 typical) in blocking buffer with DAPI (1:1000). Apply to sections. Incubate 1 h at RT in humidity chamber, protected from light",
+      "zh": "用封闭液配制二抗（通常 1:500）+ DAPI（1:1000）。涂覆于切片。RT 避光湿盒中孵育 1 h",
+      "time": "60 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 3× with PBS, 5 min each. Keep slides moist — never let sections dry",
+      "zh": "PBS 洗涤 3 次，每次 5 min。保持载玻片湿润——切勿让切片干燥",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Mount with anti-fade mounting medium. Seal edges with nail polish. Dry overnight at RT protected from light",
+      "zh": "用抗荧光淬灭封片剂封片。指甲油封边。RT 避光过夜晾干",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Image on fluorescence/confocal microscope, or store slides at −20°C protected from light",
+      "zh": "荧光/共聚焦显微镜成像，或 −20°C 避光保存",
+      "temp": "−20°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Fix PFA 15 min → wash 3× PBS → block 30 min (saponin/BSA/serum) → primary Ab overnight 4°C → wash 3× → secondary Ab + DAPI 1 h RT → wash 3× → mount anti-fade → seal → image",
+      "zh": "PFA 固定 15 min → PBS 洗 3 次 → 封闭 30 min（皂苷/BSA/血清）→ 一抗 4°C 过夜 → 洗 3 次 → 二抗 + DAPI RT 1 h → 洗 3 次 → 抗淬灭封片 → 封边 → 成像"
+    }
+  ],
+  "relatedProtocols": [
+    "pfa_4",
+    "mounting_medium_antifade",
+    "dapi_staining",
+    "if_protocol",
+    "multiplex_if",
+    "pbs_1x",
+    "if_blocking",
+    "if_permeabilization"
+  ]
 }

@@ -14,7 +14,7 @@
     "hands_on": "Intermittent, ~30 min per media change"
   },
   "materials": [
-    {"name": "Matrigel", "linkedRecipe": "matrigel_coating"},
+    {"name": "Matrigel-coated plates", "linkedRecipe": "matrigel_coating"},
     {"name": "Accutase"},
     {"name": "mTeSR medium"},
     {"name": "Thiazovivin (2 µM)"},
@@ -28,17 +28,46 @@
     {"name": "Puromycin (1 µg/mL)"},
     {"name": "Ara-C (2 µM)"},
     {"name": "Lentivirus: TetO-Ngn2-Puro + Ubi-rtTA", "linkedRecipe": "lentivirus_production"},
-    {"name": "Primary mouse glia (p0 or p1)"}
+    {"name": "Primary mouse glia (p0 or p1)"},
+    {"name": "Complete DMEM for glia culture", "linkedRecipe": "complete_dmem"}
   ],
   "components": [
-    {"name": "Day -1: Coat matrigel ≥1 h. Split ES/iPS with accutase (1 mL/well 6-well, check at 3 min). Collect, spin 1000 rpm 5 min, count. Plate 30-45k cells/mL in mTeSR + Thiazovivin. Infect with lentivirus (TetO-Ngn2-Puro + Ubi-rtTA).", "note": {"en": "Cell density depends on cell line fragility. For H1: 0.5-1M per 24-well plate.", "zh": "密度取决于细胞系脆弱程度。H1: 0.5-1M/24 孔板。"}},
+    {"name": "Day -1: Coat matrigel ≥1 h. Split ES/iPS with accutase (1 mL/well 6-well, check at 3 min). Collect, spin 1000 rpm 5 min, count. Plate 30–45k cells/mL in mTeSR + Thiazovivin. Infect with lentivirus (TetO-Ngn2-Puro + Ubi-rtTA).", "note": {"en": "Cell density depends on cell line fragility. For H1: 0.5–1M per 24-well plate.", "zh": "密度取决于细胞系脆弱程度。H1: 0.5–1M/24 孔板。"}},
     {"name": "Day 0: Switch to N2 medium + BDNF (10 ng/mL) + NT3 (10 ng/mL) + Laminin (0.2 µg/mL) + Doxycycline (2 µg/mL)."},
     {"name": "Day 1: Add Puromycin (1 µg/mL) to N2 medium with BDNF/NT3/Laminin/Dox."},
-    {"name": "Day 3: Add glia (1 confluent T75 glia for 2-3 × 24-well plates) in B27 medium + BDNF/NT3/Laminin/Dox + Ara-C (2 µM)."},
-    {"name": "Day 4-7: Change half B27 medium (with BDNF/NT3/Laminin/Dox/Ara-C) every 2-3 days."},
-    {"name": "Day 7-10: Change half medium with neuronal growth medium + Ara-C (± Dox)."},
-    {"name": "Day 10-21: Add neuronal growth medium to 1 mL, change 1/3 medium weekly."},
+    {"name": "Day 3: Add glia (1 confluent T75 glia for 2–3 × 24-well plates) in B27 medium + BDNF/NT3/Laminin/Dox + Ara-C (2 µM)."},
+    {"name": "Day 4–7: Change half B27 medium (with BDNF/NT3/Laminin/Dox/Ara-C) every 2–3 days."},
+    {"name": "Day 7–10: Change half medium with neuronal growth medium + Ara-C (± Dox)."},
+    {"name": "Day 10–21: Add neuronal growth medium to 1 mL, change 1/3 medium weekly."},
     {"name": "After Day 21: Change ≥75% medium at least once per week for maintenance."}
+  ],
+  "detailedSteps": [
+    {"en": "**Day −1 — Plating & lentiviral infection**", "zh": "**第 −1 天 — 接种与慢病毒感染**", "isHeader": true},
+    {"en": "Coat plates with Matrigel (1:50 dilution in cold DMEM/F12) for ≥1 h at 37°C or overnight at 4°C.", "zh": "Matrigel（1:50 冷 DMEM/F12 稀释）包被培养板，37°C ≥1 h 或 4°C 过夜。", "time": "≥1 h", "temp": "37°C"},
+    {"en": "Dissociate ES/iPS cells with Accutase (1 mL per 6-well, check at 3 min). Collect cells, spin 1000 rpm 5 min, count. Plate at 30–45k cells/mL in mTeSR + 2 µM Thiazovivin.", "zh": "Accutase 消化 ES/iPS 细胞（每 6 孔 1 mL，3 min 检查）。收集细胞，1000 rpm 离心 5 min，计数。mTeSR + 2 µM Thiazovivin 接种 30–45k/mL。", "time": "30 min", "temp": "37°C"},
+    {"en": "Add concentrated lentivirus (TetO-Ngn2-Puro + Ubi-rtTA) to cells. ~0.3 µL concentrated virus per well of 24-well plate. Incubate overnight.", "zh": "向细胞中加入浓缩慢病毒（TetO-Ngn2-Puro + Ubi-rtTA）。24 孔板每孔约 0.3 µL 浓缩病毒。过夜孵育。", "time": "overnight", "temp": "37°C"},
+    {"en": "**Day 0 — Induction**", "zh": "**第 0 天 — 诱导**", "isHeader": true},
+    {"en": "Replace medium with N2 medium (DMEM/F12 + 1× N2 + 1× NEAA) supplemented with BDNF (10 ng/mL), NT3 (10 ng/mL), Laminin (0.2 µg/mL), and Doxycycline (2 µg/mL).", "zh": "换为 N2 培养基（DMEM/F12 + 1× N2 + 1× NEAA），添加 BDNF（10 ng/mL）、NT3（10 ng/mL）、Laminin（0.2 µg/mL）和多西环素（2 µg/mL）。", "temp": "37°C"},
+    {"en": "**Day 1 — Puromycin selection**", "zh": "**第 1 天 — 嘌呤霉素筛选**", "isHeader": true},
+    {"en": "Add Puromycin (1 µg/mL) to N2 medium with BDNF/NT3/Laminin/Dox. Non-transduced cells die within 24–48 h.", "zh": "N2 培养基（含 BDNF/NT3/Laminin/Dox）中加入嘌呤霉素（1 µg/mL）。未转导细胞在 24–48 h 内死亡。", "temp": "37°C"},
+    {"en": "**Day 3 — Add glia co-culture**", "zh": "**第 3 天 — 加入胶质细胞共培养**", "isHeader": true},
+    {"en": "Dissociate primary mouse glia (p0 or p1) with trypsin. Add glia (~1 confluent T75 per 2–3 × 24-well plates) in B27 medium (Neurobasal-A + Glutamax + B27) + BDNF/NT3/Laminin/Dox + Ara-C (2 µM).", "zh": "胰蛋白酶消化小鼠原代胶质细胞（p0 或 p1）。B27 培养基（Neurobasal-A + Glutamax + B27）+ BDNF/NT3/Laminin/Dox + Ara-C（2 µM），加入胶质细胞（约 1 个 T75 汇合的量对应 2–3 块 24 孔板）。", "temp": "37°C"},
+    {"en": "**Day 4–7 — B27 medium maintenance**", "zh": "**第 4–7 天 — B27 培养基维持**", "isHeader": true},
+    {"en": "Change half the B27 medium (with BDNF/NT3/Laminin/Dox/Ara-C) every 2–3 days. Neurons begin extending processes.", "zh": "每 2–3 天换半量 B27 培养基（含 BDNF/NT3/Laminin/Dox/Ara-C）。神经元开始伸出突起。", "time": "~15 min per change", "temp": "37°C"},
+    {"en": "**Day 7–10 — Switch to neuronal growth medium**", "zh": "**第 7–10 天 — 换为神经元生长培养基**", "isHeader": true},
+    {"en": "Change half medium with neuronal growth medium (Neurobasal-A + Glutamax + B27 + 5% FBS) + Ara-C. Doxycycline optional after Day 7.", "zh": "换半量为神经元生长培养基（Neurobasal-A + Glutamax + B27 + 5% FBS）+ Ara-C。第 7 天后多西环素可选。", "temp": "37°C"},
+    {"en": "**Day 10–21 — Maturation**", "zh": "**第 10–21 天 — 成熟**", "isHeader": true},
+    {"en": "Add neuronal growth medium to 1 mL per well. Change 1/3 medium weekly. Neurons develop synaptic connections and electrophysiological activity by Day 14–21.", "zh": "每孔补至 1 mL 神经元生长培养基。每周换 1/3 培养基。神经元在第 14–21 天发育突触连接和电生理活性。", "time": "~15 min per change", "temp": "37°C"},
+    {"en": "**After Day 21 — Long-term maintenance**", "zh": "**第 21 天后 — 长期维持**", "isHeader": true},
+    {"en": "Change ≥75% medium at least once per week. Neurons can be maintained for months with proper feeding. Perform downstream assays (electrophysiology, IF, calcium imaging).", "zh": "每周至少换 ≥75% 培养基。适当喂养可维持数月。进行下游实验（电生理、IF、钙成像）。", "temp": "37°C"}
+  ],
+  "briefSteps": [
+    {"en": "Day −1: Plate iPSC + lentivirus → Day 0: N2 + Dox/BDNF/NT3 → Day 1: Add Puro → Day 3: Add glia + B27 + Ara-C → Day 4–7: Half-change B27 q2–3d → Day 7–10: Switch to growth medium → Day 10–21: 1/3 change weekly → Day 21+: Maintain", "zh": "第 −1 天：接种 iPSC + 慢病毒 → 第 0 天：N2 + Dox/BDNF/NT3 → 第 1 天：加 Puro → 第 3 天：加胶质 + B27 + Ara-C → 第 4–7 天：B27 半换 q2–3d → 第 7–10 天：换生长培养基 → 第 10–21 天：每周换 1/3 → 第 21 天后：维持"}
+  ],
+  "safeStops": [
+    {"afterStep": 3, "note": {"en": "After lentiviral infection overnight, cells are committed; switch medium on Day 0 as scheduled", "zh": "慢病毒过夜感染后细胞已定型；按计划在第 0 天换液"}},
+    {"afterStep": 9, "note": {"en": "After glia addition on Day 3, the culture system is established — continue with scheduled feeds", "zh": "第 3 天加入胶质细胞后培养体系建立——按计划继续喂养"}},
+    {"afterStep": 15, "note": {"en": "Mature neurons (Day 14–21+) can be maintained long-term; cells cannot be frozen and re-plated at this stage", "zh": "成熟神经元（第 14–21+ 天）可长期维持；此阶段不能冻存后重新接种"}}
   ],
   "stoppingPoints": [
     {"afterStep": "Day 3", "condition": "Neurons on glia, B27 medium", "duration": "Continue culture"}
@@ -48,5 +77,18 @@
     "zh": "N2 培养基：DMEM/F12 + 1× N2 + 1× NEAA。B27 培养基：Neurobasal-A + 1× Glutamax + 1× B27。神经元生长液：Neurobasal-A + 1× Glutamax + 1× B27 + 5% FBS。胶质细胞用 p0 或 p1，胰蛋白酶消化。病毒用量需按批次优化。"
   },
   "ref": "Zhang et al. Neuron (2013) 78(5):785-798; doi: 10.1016/j.neuron.2013.05.029",
-  "crosslinks": ["matrigel_coating", "lentivirus_production"]
+  "doi": "10.1016/j.neuron.2013.05.029",
+  "crosslinks": ["matrigel_coating", "lentivirus_production", "complete_dmem"],
+  "relatedProtocols": [
+    "matrigel_coating",
+    "lentivirus_production",
+    "cell_passage",
+    "if_protocol"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  }
 }

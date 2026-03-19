@@ -85,6 +85,30 @@
       }
     }
   ],
+  "detailedSteps": [
+    {"en": "**Preparation**", "zh": "**准备**", "isHeader": true},
+    {"en": "Select appropriate Amicon Ultra filter based on protein molecular weight. MWCO should be 3–6× smaller than the protein MW. Available sizes: Ultra-0.5 (0.5 mL), Ultra-4 (4 mL), Ultra-15 (15 mL).", "zh": "根据蛋白分子量选择合适的 Amicon Ultra 滤器。MWCO 应为蛋白 MW 的 1/3–1/6。规格：Ultra-0.5（0.5 mL）、Ultra-4（4 mL）、Ultra-15（15 mL）。"},
+    {"en": "Pre-wet new membrane: add 500 µL of your storage buffer (or water) to the concentrator. Centrifuge at 4,000×g, 2 min, 4°C. Discard flow-through.", "zh": "新膜预湿：向浓缩器中加 500 µL 储存缓冲液（或水）。4,000×g 离心 2 min，4°C。弃滤过液。", "time": "2 min", "temp": "4°C"},
+    {"en": "**Sample loading & concentration**", "zh": "**加样与浓缩**", "isHeader": true},
+    {"en": "Load protein sample into the concentrator. Do not exceed maximum volume: 4 mL (Ultra-4) or 15 mL (Ultra-15). Leave ~10% headspace. Apply sample gently — do not pipette directly onto the membrane.", "zh": "将蛋白样品加入浓缩器。不超过最大体积：Ultra-4 为 4 mL，Ultra-15 为 15 mL。留约 10% 空间。轻柔加样——勿直接往膜上吹打。", "time": "5 min", "temp": "4°C"},
+    {"en": "Centrifuge at 3,500–4,000×g in a swinging-bucket rotor at 4°C. Check every 5–10 min. Do NOT exceed 4,000×g — this damages the membrane and causes protein leakage.", "zh": "摆桶转子 3,500–4,000×g 离心，4°C。每 5–10 min 检查一次。不超过 4,000×g——会损坏膜并导致蛋白漏过。", "time": "30–60 min typical", "temp": "4°C"},
+    {"en": "Every 15–20 min, stop centrifuge and gently pipette sample up/down 2–3 times to resuspend any concentrated protein at the membrane bottom (boundary layer effect). Return to centrifuge.", "zh": "每 15–20 min 停止离心，轻柔吸打样品 2–3 次重悬膜底部的浓缩蛋白（边界层效应）。放回离心机。", "time": "1 min each", "temp": "4°C"},
+    {"en": "Continue centrifugation until desired concentration is reached. For Amicon Ultra-4: stop at ≥50 µL to allow easy recovery. For Amicon Ultra-15: stop at ≥200 µL.", "zh": "继续离心直到达到目标浓度。Ultra-4：停在 ≥50 µL 以便回收。Ultra-15：停在 ≥200 µL。", "time": "30–90 min total"},
+    {"en": "**Recovery**", "zh": "**回收**", "isHeader": true},
+    {"en": "To recover concentrated protein: invert the device in a clean collection tube. Centrifuge at 1,000×g for 2 min at 4°C. The concentrate will collect in the bottom of the collection tube.", "zh": "回收浓缩蛋白：将装置倒置放入干净的收集管。1,000×g 离心 2 min，4°C。浓缩液会聚集在收集管底部。", "time": "2 min", "temp": "4°C"},
+    {"en": "For maximum recovery: add 20–50 µL of your desired buffer to the membrane, pipette up/down to rinse, then invert and spin again at 1,000×g for 1 min. Combine with main concentrate.", "zh": "最大化回收：膜上加 20–50 µL 目标缓冲液，吸打冲洗，倒置 1,000×g 再离心 1 min。与主浓缩液合并。", "time": "2 min", "temp": "4°C"},
+    {"en": "**Buffer exchange (optional)**", "zh": "**换液（可选）**", "isHeader": true},
+    {"en": "For buffer exchange: add the desired buffer to bring the sample back to the original volume (e.g., add 4 mL to Ultra-4). Concentrate again to the desired volume. Repeat 3× to achieve >99.9% buffer exchange.", "zh": "换液：加目标缓冲液恢复原始体积（如 Ultra-4 加 4 mL）。再浓缩到目标体积。重复 3 次以实现 >99.9% 换液。", "time": "30–60 min (3 cycles)", "temp": "4°C"},
+    {"en": "**Quality control**", "zh": "**质量控制**", "isHeader": true},
+    {"en": "Quantify concentrated protein by BCA or Bradford assay. Run SDS-PAGE before and after concentration to check for aggregation or protein loss. Store at 4°C (short-term) or −80°C with 10% glycerol (long-term).", "zh": "BCA 或 Bradford 法测定浓缩蛋白浓度。浓缩前后 SDS-PAGE 检查聚集或蛋白损失。4°C 保存（短期）或 −80°C 加 10% 甘油保存（长期）。", "time": "1–2 h"}
+  ],
+  "briefSteps": [
+    {"en": "Pre-wet membrane → Load sample (≤max vol) → Spin 3,500–4,000×g 4°C, check q15 min → Recover by inverting & spin 1,000×g 2 min → (Optional: buffer exchange ×3 cycles) → Quantify & SDS-PAGE QC", "zh": "预湿膜 → 加样（≤最大体积）→ 3,500–4,000×g 4°C 离心，每 15 min 检查 → 倒置 1,000×g 2 min 回收 →（可选：3 次换液循环）→ 定量 + SDS-PAGE 质检"}
+  ],
+  "safeStops": [
+    {"afterStep": 11, "note": {"en": "Concentrated protein can be stored at 4°C for days or at −80°C with 10% glycerol for months", "zh": "浓缩蛋白可 4°C 保存数天或加 10% 甘油 −80°C 保存数月"}},
+    {"afterStep": 13, "note": {"en": "After buffer exchange, protein can be used immediately or stored at −80°C", "zh": "换液后的蛋白可立即使用或 −80°C 保存"}}
+  ],
   "notes": {
     "en": "Troubleshooting: Slow filtration → protein aggregating on membrane (reduce concentration, add mild detergent 0.01% Tween-20, or switch to lower MWCO). Protein in filtrate → wrong MWCO or membrane integrity issue. Sticky proteins: add BSA 0.1% carrier, or use PES membranes instead of regenerated cellulose.",
     "zh": "排查：过滤慢→蛋白在膜上聚集（降低浓度、加 0.01% Tween-20 或换更小 MWCO）；蛋白在滤液中→MWCO 选错或膜破损；粘性蛋白：加 0.1% BSA 载体蛋白，或换 PES 膜替代再生纤维素膜。"
@@ -92,6 +116,12 @@
   "crosslinks": [
     "protein_dialysis",
     "his_tag_purification",
+    "sec_purification",
+    "bca_protein_assay",
+    "bradford_assay_protocol"
+  ],
+  "relatedProtocols": [
+    "protein_dialysis",
     "sec_purification",
     "bca_protein_assay",
     "bradford_assay_protocol"
@@ -114,23 +144,25 @@
       "name": "Amicon Ultra centrifugal filter (appropriate MWCO)"
     },
     {
-      "name": "Buffer for exchange (if needed)"
+      "name": "Swinging-bucket centrifuge rotor (4°C)"
     },
     {
-      "name": "Centrifuge (swinging-bucket rotor, 4°C)"
+      "name": "Collection tubes (provided with Amicon)"
+    },
+    {
+      "name": "Buffer for exchange (if needed)"
     },
     {
       "name": "BCA or Bradford assay reagents",
       "optional": true
     }
   ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Protein concentrated",
-      "condition": "4°C (short) or −80°C with glycerol (long)",
-      "duration": "varies"
-    }
-  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  },
   "usage": {
     "en": "Concentrate and buffer-exchange proteins using Amicon centrifugal ultrafiltration units.",
     "zh": "Amicon 超滤离心管浓缩和换液蛋白质。"

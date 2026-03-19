@@ -126,6 +126,22 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 0,
+      "note": {
+        "en": "Cells grow to >95% confluency overnight (24–48 h); proceed when ready",
+        "zh": "细胞过夜生长至 >95% 汇合度（24–48 h）；准备好后继续"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "After 0 h imaging, plate returns to incubator; next imaging at 6–12 h is an overnight stopping point for slow-migrating cells",
+        "zh": "0 h 拍照后放回培养箱；迁移慢的细胞可在 6–12 h 成像间隔过夜"
+      }
+    }
+  ],
   "usage": {
     "en": "Measure cell migration by wound healing (scratch) assay.",
     "zh": "划痕实验（wound healing）检测细胞迁移能力。"

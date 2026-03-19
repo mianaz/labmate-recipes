@@ -95,11 +95,47 @@
       }
     }
   ],
+  "detailedSteps": [
+    {"en": "**Week 1 — Kill curve establishment**", "zh": "**第一周 — 杀灭曲线建立**", "isHeader": true},
+    {"en": "Seed parental cells (not transfected) at 2×10⁵ cells/well in a 6-well plate (2 mL/well complete medium). Incubate overnight at 37°C.", "zh": "亲本细胞（未转染）按 2×10⁵/孔接种 6 孔板（2 mL/孔完全培养基）。37°C 过夜孵育。", "time": "overnight", "temp": "37°C"},
+    {"en": "Next day, add antibiotics at serial dilutions: for Puromycin: 0, 0.5, 1, 2, 4, 8 µg/mL; for G418: 0, 100, 200, 400, 800 µg/mL. Return to incubator.", "zh": "次日加梯度抗生素：Puromycin：0, 0.5, 1, 2, 4, 8 µg/mL；G418：0, 100, 200, 400, 800 µg/mL。放回培养箱。", "temp": "37°C"},
+    {"en": "Check cells daily for 7 days. Record % cell death at each concentration. The optimal antibiotic concentration = lowest dose that kills 100% of cells by day 3–5 (Puromycin) or day 7–10 (G418).", "zh": "每日检查 7 天。记录每个浓度下的细胞死亡百分比。最佳抗生素浓度 = 第 3–5 天（Puro）或第 7–10 天（G418）100% 杀灭的最低浓度。", "time": "7 days", "temp": "37°C"},
+    {"en": "**Week 1–2 — Transfection/Transduction**", "zh": "**第一至二周 — 转染/转导**", "isHeader": true},
+    {"en": "Transfect cells with plasmid DNA (cell_transfection protocol) or transduce with lentivirus (lentivirus_production) at MOI 0.3–1 for single integration. Return to incubator.", "zh": "质粒 DNA 转染（cell_transfection 方案）或慢病毒转导（lentivirus_production），MOI 0.3–1 以确保单拷贝整合。放回培养箱。", "time": "1–2 days", "temp": "37°C"},
+    {"en": "Wait 48 h after transfection/transduction for expression before starting antibiotic selection.", "zh": "转染/转导后等待 48 h 表达，再开始抗生素筛选。", "time": "48 h", "temp": "37°C"},
+    {"en": "**Week 2–3 — Selection**", "zh": "**第二至三周 — 筛选**", "isHeader": true},
+    {"en": "Add antibiotic at the kill-curve concentration to the culture. Change medium + antibiotic every 2–3 days. Dead cells will round up and detach.", "zh": "按杀灭曲线浓度向培养物加抗生素。每 2–3 天换液加药。死细胞变圆脱落。", "time": "every 2–3 days", "temp": "37°C"},
+    {"en": "Continue selection for 7–14 days until resistant colonies appear (~100+ cells, visible by eye). Do not disturb plates during this period.", "zh": "持续筛选 7–14 天直到抗性菌落出现（约 100+ 细胞，肉眼可见）。此期间勿移动培养皿。", "time": "7–14 days", "temp": "37°C"},
+    {"en": "**Single clone isolation (choose one method)**", "zh": "**单克隆分离（选一种方法）**", "isHeader": true},
+    {"en": "Method A (Cloning ring): Wash plate with PBS. Place autoclaved glass cloning ring (8 mm) over an isolated colony. Seal with sterile silicone grease. Add 50 µL trypsin inside ring, 3–5 min at 37°C. Transfer dissociated cells to one well of a 24-well plate with 500 µL complete medium + antibiotic.", "zh": "方法 A（克隆环）：PBS 洗板。灭菌玻璃克隆环（8 mm）对准单个克隆放置。无菌硅脂密封。环内加 50 µL 胰酶，37°C 3–5 min。转移解离细胞到 24 孔板（500 µL 完全培养基 + 抗生素）。", "time": "20 min", "temp": "37°C"},
+    {"en": "Method B (Limiting dilution): Trypsinize entire population, count cells. Dilute to 0.5 cells/200 µL/well in 96-well plate. Seed multiple plates (200+ wells needed to obtain ~50 clones). Check next day under microscope; mark wells with exactly one cell. Expand over 2–3 weeks.", "zh": "方法 B（有限稀释）：胰酶消化全部细胞，计数。稀释至 0.5 个细胞/200 µL/孔，接种 96 孔板。铺多板（200+ 孔以获得约 50 个克隆）。次日显微镜检查；标记仅有一个细胞的孔。2–3 周扩增。", "time": "1 day + 2–3 weeks", "temp": "37°C"},
+    {"en": "Method C (FACS sorting): Trypsinize, resuspend in complete medium + 20% FBS conditioned medium. Sort single cells directly into 96-well plates using FACS. Pre-coat plates with poly-D-lysine for poorly adherent cells. Return to incubator.", "zh": "方法 C（FACS 分选）：胰酶消化，完全培养基 + 20% FBS 条件培养基重悬。流式细胞仪分选单细胞入 96 孔板。弱贴壁细胞预先包被多聚赖氨酸。放回培养箱。", "time": "1–2 h", "temp": "37°C"},
+    {"en": "**Clone expansion & validation**", "zh": "**克隆扩增与验证**", "isHeader": true},
+    {"en": "Expand clones stepwise: 24-well → 12-well → 6-well → T25 flask. Passage when 80–90% confluent. Maintain antibiotic selection at maintenance dose (½ kill-curve concentration) throughout expansion.", "zh": "逐步扩增克隆：24 孔 → 12 孔 → 6 孔 → T25 瓶。80–90% 汇合时传代。全程维持抗生素（杀灭浓度的 ½）筛选。", "time": "3–5 weeks", "temp": "37°C"},
+    {"en": "Freeze early-passage clones (P2–P3): trypsinize, count, resuspend at 1–5×10⁶ cells/mL in 90% FBS + 10% DMSO. Slow-freeze at −80°C in Mr. Frosty, transfer to LN₂.", "zh": "早期传代克隆（P2–P3）冻存：胰酶消化，计数，90% FBS + 10% DMSO 重悬至 1–5×10⁶/mL。Mr. Frosty −80°C 慢速降温，转液氮。", "time": "30 min"},
+    {"en": "Validate by WB: check target protein expression (wb_protocol). By qPCR: check mRNA level (qpcr_protocol). Genomic PCR: confirm integration. Functional assay: verify phenotype. Screen ≥10 clones; select 2–3 best for further use.", "zh": "WB 验证：检查目标蛋白表达（wb_protocol）。qPCR：检查 mRNA 水平（qpcr_protocol）。基因组 PCR：确认整合。功能验证：表型分析。筛选 ≥10 个克隆；选最优 2–3 个进一步使用。", "time": "1 week"}
+  ],
+  "briefSteps": [
+    {"en": "Kill curve (1 week) → Transfect/transduce cells → 48 h expression → Add antibiotic, select 7–14 d → Pick single clones (ring/limiting dilution/FACS) → Expand 96→24→6-well → Maintain selection → Freeze P2–P3 → Validate by WB/qPCR/functional assay", "zh": "杀灭曲线（1 周）→ 转染/转导细胞 → 48 h 表达 → 加抗生素筛选 7–14 天 → 挑单克隆（环/有限稀释/FACS）→ 扩增 96→24→6 孔 → 维持筛选 → P2–P3 冻存 → WB/qPCR/功能验证"}
+  ],
+  "safeStops": [
+    {"afterStep": 13, "note": {"en": "Cells can be maintained under antibiotic selection at 37°C for 1–3 weeks — change medium every 2–3 days", "zh": "细胞可在 37°C 抗生素筛选下维持 1–3 周——每 2–3 天换液"}},
+    {"afterStep": 21, "note": {"en": "Validated clones frozen at P2–P3 in LN₂ can be stored indefinitely", "zh": "P2–P3 验证克隆冻存于液氮中可无限期保存"}},
+    {"afterStep": 18, "note": {"en": "Expanded clones at any passage can be frozen as backup stocks", "zh": "任何传代的扩增克隆都可冻存作为备份"}}
+  ],
   "notes": {
     "en": "Timeline: transfection → selection (2 weeks) → clone picking (1 day) → expansion (3–4 weeks) → validation (1 week) = ~6–8 weeks total. Always freeze early-passage validated clones at P2–P3. Compare ≥2 independent clones to rule out clonal variation. For CRISPR knockouts: validate by WB + Sanger sequencing of target region.",
     "zh": "时间线：转染→筛选（2 周）→挑克隆（1 天）→扩增（3–4 周）→验证（1 周）= 共 ~6–8 周。验证后在 P2–P3 冻存。至少比较 ≥2 个独立克隆排除克隆变异。CRISPR 基因敲除：WB + 靶区域 Sanger 测序双重验证。"
   },
   "crosslinks": [
+    "cell_transfection",
+    "lentivirus_production",
+    "wb_protocol",
+    "qpcr_protocol",
+    "cell_freezing",
+    "cell_passage"
+  ],
+  "relatedProtocols": [
     "cell_transfection",
     "lentivirus_production",
     "wb_protocol",
@@ -118,6 +154,9 @@
   },
   "materials": [
     {
+      "name": "Parental cells for kill curve"
+    },
+    {
       "name": "Transfected or transduced cells"
     },
     {
@@ -128,26 +167,28 @@
       "linkedRecipe": "complete_dmem"
     },
     {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
       "name": "96-well plates (for single-cell cloning)",
       "optional": true
     },
     {
-      "name": "1× PBS",
-      "linkedRecipe": "pbs_1x"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Selection begun",
-      "condition": "37°C incubator, change medium every 2–3 days",
-      "duration": "1–3 weeks"
+      "name": "Cloning rings (glass, 8 mm)",
+      "optional": true
     },
     {
-      "afterStep": "Clones expanded",
-      "condition": "Freeze stocks of validated clones",
-      "duration": "indefinite"
+      "name": "Silicone grease (sterile)",
+      "optional": true
     }
   ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  },
   "usage": {
     "en": "Generate stable cell lines by antibiotic selection after transfection or transduction.",
     "zh": "转染或转导后通过抗生素筛选建立稳定细胞系。"

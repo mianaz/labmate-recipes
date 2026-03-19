@@ -90,6 +90,15 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 0,
+      "note": {
+        "en": "Cells remain in apoptosis-inducing treatment for the required duration (6–72 h depending on agent); plan staining the next morning if using overnight treatment",
+        "zh": "细胞在凋亡诱导处理中保留所需时长（6–72 h，取决于试剂）；过夜处理时可次日早上再染色"
+      }
+    }
+  ],
   "usage": {
     "en": "Detect early and late apoptosis by Annexin V/PI staining and flow cytometry.",
     "zh": "通过 Annexin V/PI 染色和流式细胞术检测早期和晚期凋亡。"

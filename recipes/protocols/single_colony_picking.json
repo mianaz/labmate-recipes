@@ -138,9 +138,121 @@
       "name": "37°C shaking incubator"
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Pick isolated bacterial colonies for liquid culture and downstream analysis.",
     "zh": "挑取单克隆菌落进行液体培养和下游分析。"
-  }
+  },
+  "relatedProtocols": [
+    "heat_shock_transformation",
+    "colony_pcr",
+    "miniprep_protocol",
+    "bacterial_glycerol_stock",
+    "sanger_sequencing_prep",
+    "dna_ligation",
+    "lb",
+    "lb_agar"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Transformation plates can be stored at 4°C for up to 1 week (wrap in parafilm). Colonies remain viable but stop growing",
+        "zh": "转化平板可 4°C 保存最多 1 周（封口膜密封）。菌落保持活性但停止生长"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Master plate (re-streaked grid) can be stored at 4°C for 1–2 weeks as backup. Overnight cultures can be used for miniprep next morning",
+        "zh": "主板（划线网格板）可 4°C 保存 1–2 周作为备份。过夜培养液次日早晨即可用于 miniprep"
+      }
+    },
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Glycerol stocks at -80°C are permanent safe stops — viable for years",
+        "zh": "甘油菌 -80°C 保存为永久安全停止点 — 可存活数年"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 1 — Plate Preparation & Colony Growth**",
+      "zh": "**第 1 天 — 平板准备与菌落生长**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare LB agar plates with appropriate antibiotic (pre-warm at 37°C for 30 min before plating). Ideal colony density: 50–200 colonies per 10 cm plate",
+      "zh": "配制含适当抗生素的 LB 琼脂平板（铺板前 37°C 预热 30 min）。理想菌落密度：10 cm 平板 50–200 个菌落",
+      "time": "10 min"
+    },
+    {
+      "en": "Optional blue-white screening: spread 40 µL X-gal (20 mg/mL in DMF) + 4 µL IPTG (100 mM) per plate. Let dry 30 min before plating transformed bacteria",
+      "zh": "可选蓝白筛选：每板涂 40 µL X-gal（20 mg/mL in DMF）+ 4 µL IPTG（100 mM）。晾干 30 min 后再铺转化菌",
+      "time": "30 min"
+    },
+    {
+      "en": "Plate transformed bacteria and incubate at 37°C overnight (12–16 h). Move to 4°C after 16 h if not picking immediately. For blue-white: 4°C 1–2 h to develop color",
+      "zh": "铺转化菌并 37°C 过夜培养（12–16 h）。如不立即挑取，16 h 后移至 4°C。蓝白筛选：4°C 1–2 h 充分显色",
+      "time": "O/N",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Day 2 — Colony Picking & Liquid Culture**",
+      "zh": "**第 2 天 — 挑取菌落与液体培养**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare culture tubes: 1.5–2 mL LB + antibiotic per clone. Label carefully. Prepare 10–24 clones per ligation",
+      "zh": "准备培养管：每个克隆 1.5–2 mL LB + 抗生素。认真标记。每次连接准备 10–24 个克隆",
+      "time": "10 min"
+    },
+    {
+      "en": "Pick colonies with sterile toothpick or 10 µL pipette tip: touch colony center, inoculate culture tube, AND streak onto numbered master plate (fresh LB + antibiotic plate). Incubate master plate at 37°C overnight, then store at 4°C as backup",
+      "zh": "用无菌牙签或 10 µL 枪头挑取菌落：触碰菌落中心，接种培养管，同时在主板（新 LB + 抗生素平板）上划线编号。主板 37°C 过夜后 4°C 保存备用",
+      "time": "30 min"
+    },
+    {
+      "en": "Grow overnight cultures at 37°C, 200–250 rpm, 12–16 h",
+      "zh": "37°C、200–250 rpm 振荡过夜培养 12–16 h",
+      "time": "O/N",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Day 3 — Screening & Verification**",
+      "zh": "**第 3 天 — 筛选与验证**",
+      "isHeader": true
+    },
+    {
+      "en": "Screen by colony PCR (1 µL overnight culture as template, vector primers M13/T7/SP6 or gene-specific primers) and/or miniprep followed by diagnostic restriction digest",
+      "zh": "菌落 PCR 筛选（1 µL 过夜培养液为模板，载体引物 M13/T7/SP6 或基因特异引物）和/或 miniprep 后诊断性酶切",
+      "time": "2–3 h"
+    },
+    {
+      "en": "Select positive clones. Send miniprep DNA (50–100 ng/µL) + sequencing primer for Sanger sequencing. Verify full insert sequence with no PCR-introduced mutations",
+      "zh": "选择阳性克隆。送 miniprep DNA（50–100 ng/µL）+ 测序引物进行 Sanger 测序。验证完整插入序列无 PCR 引入突变",
+      "time": "1–3 days"
+    },
+    {
+      "en": "Prepare glycerol stocks from 2–3 confirmed positive clones: mix 1 mL overnight culture + 1 mL 50% glycerol. Label (clone ID, date, insert, antibiotic). Store at -80°C",
+      "zh": "从 2–3 个确认阳性克隆制备甘油菌：1 mL 过夜培养液 + 1 mL 50% 甘油混合。标注（克隆编号、日期、插入片段、抗生素）。-80°C 保存",
+      "time": "15 min",
+      "temp": "-80°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Transform → plate on LB+antibiotic O/N → pick 10–24 colonies → liquid culture O/N → colony PCR / miniprep + restriction digest → Sanger sequencing → glycerol stock (-80°C)",
+      "zh": "转化 → LB+抗生素平板过夜 → 挑取 10–24 个菌落 → 液体过夜培养 → 菌落 PCR / miniprep + 酶切 → Sanger 测序 → 甘油菌（-80°C）"
+    }
+  ]
 }

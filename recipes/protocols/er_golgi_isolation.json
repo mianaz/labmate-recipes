@@ -115,7 +115,7 @@
     "mitochondria_isolation",
     "subcellular_fractionation",
     "sucrose_gradient_homog",
-    "density_gradient_centrifugation",
+    "gradient_centrifugation_general",
     "wb_protocol",
     "lysosome_isolation_buffer",
     "sucrose_gradient_buffer"
@@ -170,5 +170,124 @@
   "usage": {
     "en": "Isolate endoplasmic reticulum and Golgi membrane fractions by sucrose density gradient centrifugation.",
     "zh": "蔗糖密度梯度离心分离内质网和高尔基体膜组分。"
-  }
+  },
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Post-nuclear supernatant (PNS) can be kept on ice for up to 1 h before further fractionation",
+        "zh": "核后上清（PNS）可在冰上保存 1 h 后再进一步分级"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Crude microsome pellet can be snap-frozen at −80°C for up to 1 week",
+        "zh": "粗微粒体沉淀可 −80°C 速冻保存 1 周"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "Purified ER/Golgi fractions in aliquots can be stored at −80°C for up to 1 month",
+        "zh": "纯化的 ER/Golgi 组分分装后可 −80°C 保存 1 个月"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Cell Harvest & Homogenization**",
+      "zh": "**细胞收获与匀浆**",
+      "isHeader": true
+    },
+    {
+      "en": "Seed 1–2×10⁸ cells. Wash 2× with cold PBS. Scrape cells in cold sucrose homogenization buffer (5 mL per 10⁸ cells). For tissue: mince 100–500 mg, wash with cold buffer",
+      "zh": "准备 1–2×10⁸ 细胞。冷 PBS 洗 2 次。用冷蔗糖匀浆缓冲液（每 10⁸ 细胞 5 mL）刮取细胞。组织：切碎 100–500 mg，冷缓冲液洗涤",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Homogenize with 30–40 Dounce strokes (tight pestle) until >80% cell lysis. Check by trypan blue every 10 strokes. Alternatively: N₂ cavitation (600–800 psi, 15 min) for gentler ER-preserving lysis",
+      "zh": "Dounce 匀浆器 30–40 次（紧配研杵）直至 >80% 细胞裂解。每 10 次用台盼蓝检查。替代方法：氮气空化（600–800 psi，15 min）更温和保护 ER",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Differential Centrifugation**",
+      "zh": "**差速离心**",
+      "isHeader": true
+    },
+    {
+      "en": "Remove nuclei/debris: 600×g, 10 min, 4°C. Repeat once. Keep post-nuclear supernatant (PNS)",
+      "zh": "去除细胞核/碎片：600×g 离心 10 min，4°C。重复 1 次。保留核后上清（PNS）",
+      "time": "25 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Remove mitochondria: 5,000×g, 10 min, 4°C. Keep post-mitochondrial supernatant (PMS). Save 100 µL for WB input",
+      "zh": "去除线粒体：5,000×g 离心 10 min，4°C。保留线粒体后上清（PMS）。取 100 µL 作 WB 投入量",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Pellet crude microsomes: 100,000×g, 60 min, 4°C. Resuspend pellet in 0.5 mL 250 mM sucrose buffer. Supernatant = cytosol (save aliquot)",
+      "zh": "沉淀粗微粒体：100,000×g 离心 60 min，4°C。用 0.5 mL 250 mM 蔗糖缓冲液重悬沉淀。上清 = 细胞质（留样）",
+      "time": "65 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Sucrose Density Gradient Separation**",
+      "zh": "**蔗糖密度梯度分离**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare discontinuous sucrose gradient in SW-41 Ti tube (11 mL): layer from bottom — 2.0 M (1.5 mL) → 1.3 M (3 mL) → 1.15 M (3 mL) → 0.86 M (2 mL). Load sample (0.5 mL) on top",
+      "zh": "在 SW-41 Ti 管（11 mL）中制备不连续蔗糖梯度：从底部分层 — 2.0 M（1.5 mL）→ 1.3 M（3 mL）→ 1.15 M（3 mL）→ 0.86 M（2 mL）。样品（0.5 mL）加在顶部",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Ultracentrifuge: 100,000×g (25,000 rpm SW-41), 16–18 h, 4°C. Slow acceleration (setting 3), no brake (decel 0)",
+      "zh": "超速离心：100,000×g（SW-41 25,000 rpm），16–18 h，4°C。慢加速（3 档），无刹车（减速 0 档）",
+      "time": "16–18 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Fraction Collection & Validation**",
+      "zh": "**组分收集与验证**",
+      "isHeader": true
+    },
+    {
+      "en": "Collect 0.5–1 mL fractions from top. Golgi bands at 0.86 M/1.15 M interface (density 1.08–1.10 g/mL). Rough ER bands at 1.3 M/2.0 M interface (density 1.17–1.20 g/mL). Smooth ER ~1.14 g/mL",
+      "zh": "从顶部收集 0.5–1 mL 组分。Golgi 在 0.86 M/1.15 M 界面（密度 1.08–1.10 g/mL）。粗面 ER 在 1.3 M/2.0 M 界面（密度 1.17–1.20 g/mL）。光面 ER ~1.14 g/mL",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Validate by Western blot: ER markers (Calnexin, PDI, KDEL), Golgi markers (GM130, TGN46). Include contamination controls: COX IV (mito), Na/K-ATPase (PM), LAMP1 (lysosome)",
+      "zh": "Western blot 验证：ER 标记（Calnexin、PDI、KDEL），Golgi 标记（GM130、TGN46）。包含污染对照：COX IV（线粒体）、Na/K-ATPase（质膜）、LAMP1（溶酶体）"
+    },
+    {
+      "en": "Pool target fractions, dilute 5× in PBS, pellet at 100,000×g 60 min 4°C to remove sucrose. Resuspend in desired buffer. Aliquot and store at −80°C",
+      "zh": "合并目标组分，PBS 稀释 5 倍，100,000×g 离心 60 min 4°C 去除蔗糖。用目标缓冲液重悬。分装 −80°C 保存",
+      "time": "65 min",
+      "temp": "4°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Harvest cells → Dounce homogenize → 600×g remove nuclei → 5,000×g remove mito → 100,000×g pellet microsomes → sucrose gradient (0.86/1.15/1.3/2.0 M) → ultracentrifuge 16–18 h → collect Golgi & ER fractions → WB validate → pool & pellet",
+      "zh": "收获细胞 → Dounce 匀浆 → 600×g 去核 → 5,000×g 去线粒体 → 100,000×g 沉淀微粒体 → 蔗糖梯度（0.86/1.15/1.3/2.0 M）→ 超离 16–18 h → 收集 Golgi 和 ER 组分 → WB 验证 → 合并沉淀"
+    }
+  ],
+  "relatedProtocols": [
+    "lysosome_isolation",
+    "mitochondria_isolation",
+    "subcellular_fractionation",
+    "sucrose_gradient_homog",
+    "gradient_centrifugation_general",
+    "wb_protocol",
+    "lysosome_isolation_buffer",
+    "sucrose_gradient_buffer"
+  ]
 }

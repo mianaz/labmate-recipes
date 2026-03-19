@@ -87,11 +87,44 @@
       }
     }
   ],
+  "detailedSteps": [
+    {"en": "**Day 1 — Inclusion body isolation & solubilization**", "zh": "**第一天 — 包涵体分离与溶解**", "isHeader": true},
+    {"en": "Resuspend bacterial pellet (from 500 mL–1 L culture) in 20 mL lysis buffer (50 mM Tris pH 8.0, 100 mM NaCl, 1 mM EDTA, 1% Triton X-100, 1 mM PMSF, lysozyme 0.2 mg/mL). Incubate on ice 30 min.", "zh": "将细菌沉淀（来自 500 mL–1 L 培养物）重悬于 20 mL 裂解缓冲液（50 mM Tris pH 8.0、100 mM NaCl、1 mM EDTA、1% Triton X-100、1 mM PMSF、溶菌酶 0.2 mg/mL）。冰上孵育 30 min。", "time": "30 min", "temp": "4°C"},
+    {"en": "Sonicate on ice: 3 cycles × 30 s ON / 30 s OFF at 40% amplitude. Keep sample cold throughout.", "zh": "冰上超声：3 个循环 × 30 s 开 / 30 s 关，40% 振幅。全程保持低温。", "time": "3 min", "temp": "4°C"},
+    {"en": "Centrifuge lysate at 15,000×g for 15 min at 4°C. Discard supernatant. Keep pellet (inclusion bodies).", "zh": "15,000×g 离心 15 min，4°C。弃上清，保留沉淀（包涵体）。", "time": "15 min", "temp": "4°C"},
+    {"en": "Wash pellet 3× with wash buffer (50 mM Tris pH 8.0, 100 mM NaCl, 1 mM EDTA, 0.5% Triton X-100): resuspend by vortex, centrifuge 15,000×g 10 min 4°C each. Final wash without Triton.", "zh": "洗涤缓冲液洗沉淀 3 次（50 mM Tris pH 8.0、100 mM NaCl、1 mM EDTA、0.5% Triton X-100）：涡旋重悬，15,000×g 离心 10 min 4°C。最后一次洗不加 Triton。", "time": "45 min", "temp": "4°C"},
+    {"en": "Solubilize IB pellet in denaturing buffer (6 M GuHCl or 8 M urea, 50 mM Tris pH 8.0, 100 mM NaCl, 10 mM β-ME) at 5–20 mg/mL. Stir/rotate at RT for 1–2 h until solution clears.", "zh": "将包涵体沉淀溶于变性缓冲液（6 M 盐酸胍或 8 M 尿素、50 mM Tris pH 8.0、100 mM NaCl、10 mM β-ME），浓度 5–20 mg/mL。室温搅拌 1–2 h 至溶液变透明。", "time": "1–2 h", "temp": "RT"},
+    {"en": "Clarify by centrifugation at 20,000×g for 30 min at 4°C. Collect supernatant (solubilized denatured protein). Check purity by SDS-PAGE.", "zh": "20,000×g 离心 30 min，4°C 澄清。收集上清（溶解的变性蛋白）。SDS-PAGE 检查纯度。", "time": "30 min", "temp": "4°C"},
+    {"en": "**(Optional)** Purify under denaturing conditions by Ni-NTA: bind in 6 M GuHCl + 10 mM imidazole → wash 20 mM imidazole → elute 250 mM imidazole. Pool eluted fractions.", "zh": "**（可选）**变性条件下 Ni-NTA 纯化：6 M GuHCl + 10 mM imidazole 结合→ 20 mM imidazole 洗涤→ 250 mM imidazole 洗脱。合并洗脱组分。", "time": "1–2 h", "temp": "4°C"},
+    {"en": "**Day 2 — Refolding**", "zh": "**第二天 — 蛋白复性**", "isHeader": true},
+    {"en": "**Method A (Rapid dilution):** Dilute denatured protein dropwise into 50–100× volume ice-cold refolding buffer (50 mM Tris pH 8.0, 150 mM NaCl, 0.5 mM GSSG, 5 mM GSH, 10% glycerol) with constant stirring. Final protein ≤0.1 mg/mL. Stir at 4°C for 12–24 h.", "zh": "**方法 A（快速稀释）：**将变性蛋白逐滴加入 50–100 倍体积冰冷复性缓冲液（50 mM Tris pH 8.0、150 mM NaCl、0.5 mM GSSG、5 mM GSH、10% 甘油），持续搅拌。终蛋白浓度 ≤0.1 mg/mL。4°C 搅拌 12–24 h。", "time": "12–24 h", "temp": "4°C"},
+    {"en": "**Method B (Stepwise dialysis):** Dialyze against decreasing urea: 4 M → 2 M → 1 M → 0.5 M → 0 M in refolding buffer. Each step ≥4 h or overnight at 4°C.", "zh": "**方法 B（逐步透析）：**对梯度尿素透析：4 M → 2 M → 1 M → 0.5 M → 0 M 复性缓冲液。每步 ≥4 h 或过夜，4°C。", "time": "20–48 h", "temp": "4°C"},
+    {"en": "**Day 2–3 — Aggregate removal & QC**", "zh": "**第二至三天 — 去除聚集体与质检**", "isHeader": true},
+    {"en": "Centrifuge refolded protein at 20,000×g for 30 min at 4°C. Collect supernatant. Filter through 0.22 µm membrane.", "zh": "复性蛋白 20,000×g 离心 30 min，4°C。收集上清，0.22 µm 过滤。", "time": "30 min", "temp": "4°C"},
+    {"en": "Concentrate using Amicon Ultra centrifugal filter (appropriate MWCO). Quantify by BCA or Bradford assay.", "zh": "Amicon Ultra 超滤管（合适 MWCO）浓缩。BCA 或 Bradford 定量。", "time": "30–60 min", "temp": "4°C"},
+    {"en": "Verify folding by SEC (single monomer peak), CD spectroscopy, thermal shift assay (DSF), or functional/enzyme activity assay. Typical refolding yield: 5–30%.", "zh": "验证折叠：SEC（单体单峰）、CD 光谱、热迁移分析（DSF）或功能/酶活力测定。典型复性产率：5–30%。", "time": "1–3 h", "temp": "varies"}
+  ],
+  "briefSteps": [
+    {"en": "Lyse bacteria → Wash IB pellet 3× → Solubilize in 6M GuHCl/8M urea → Clarify 20,000×g → (Optional Ni-NTA) → Refold by rapid dilution or stepwise dialysis → Remove aggregates → Concentrate → Verify folding by SEC/activity assay", "zh": "裂解细菌 → 洗涤包涵体 3× → 6M GuHCl/8M 尿素溶解 → 20,000×g 澄清 → （可选 Ni-NTA）→ 快速稀释或逐步透析复性 → 去除聚集体 → 浓缩 → SEC/活性验证折叠"}
+  ],
+  "safeStops": [
+    {"afterStep": 6, "note": {"en": "Solubilized inclusion bodies in denaturing buffer can be stored at −80°C for up to 1 month", "zh": "变性缓冲液中的包涵体溶解液可 −80°C 保存最长 1 个月"}},
+    {"afterStep": 7, "note": {"en": "Denatured protein purified by Ni-NTA can be stored at −80°C in elution buffer", "zh": "Ni-NTA 纯化的变性蛋白可在洗脱缓冲液中 −80°C 保存"}},
+    {"afterStep": 13, "note": {"en": "Refolded, concentrated protein can be stored at 4°C short-term (days) or flash-frozen at −80°C with 10% glycerol for months", "zh": "复性浓缩蛋白可 4°C 短期保存（数天）或加 10% 甘油液氮速冻后 −80°C 保存数月"}}
+  ],
   "notes": {
     "en": "Key factors affecting refolding: (1) Protein concentration during refolding (lower = better, ≤0.1 mg/mL); (2) Redox pair (GSH:GSSG 5:0.5 mM for disulfide-containing proteins); (3) Temperature (4°C preferred); (4) Additives: L-arginine (0.4–0.8 M) dramatically reduces aggregation (Tsumoto et al. 2004). Screen conditions with small-scale (1 mL) refolding trials before scale-up.",
     "zh": "影响复性的关键因素：(1) 复性时蛋白浓度（越低越好，≤0.1 mg/mL）；(2) 氧化还原对（含二硫键蛋白用 GSH:GSSG 5:0.5 mM）；(3) 温度（首选 4°C）；(4) 添加剂：L-精氨酸（0.4–0.8 M）显著减少聚集（Tsumoto et al. 2004）。大规模复性前先做小规模（1 mL）条件筛选。"
   },
   "crosslinks": [
+    "bacterial_protein_expression",
+    "his_tag_purification",
+    "lysis_buffer_mild",
+    "protein_dialysis",
+    "sec_purification",
+    "protein_concentration_amicon"
+  ],
+  "relatedProtocols": [
     "bacterial_protein_expression",
     "his_tag_purification",
     "lysis_buffer_mild",
@@ -111,40 +144,43 @@
   },
   "materials": [
     {
-      "name": "Inclusion body pellet (from bacterial expression)"
+      "name": "Inclusion body pellet (from bacterial expression)",
+      "linkedRecipe": "bacterial_protein_expression"
     },
     {
-      "name": "Solubilization buffer (6–8 M urea or guanidine HCl)"
+      "name": "Lysis buffer",
+      "linkedRecipe": "lysis_buffer_mild"
     },
     {
-      "name": "Dialysis buffer",
-      "linkedRecipe": "dialysis_buffer_generic"
-    },
-    {
-      "name": "Refolding buffer (decreasing denaturant gradient)"
+      "name": "Solubilization buffer (6 M GuHCl or 8 M urea, 50 mM Tris pH 8.0)"
     },
     {
       "name": "DTT or β-mercaptoethanol"
     },
     {
-      "name": "Dialysis cassettes or tubing (appropriate MWCO)"
+      "name": "Refolding buffer (50 mM Tris pH 8.0, GSH/GSSG, 10% glycerol)"
     },
     {
-      "name": "Centrifuge (for clearing aggregates)"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Inclusion bodies solubilized",
-      "condition": "−80°C in denaturant",
-      "duration": "1 month"
+      "name": "Dialysis cassettes or tubing",
+      "linkedRecipe": "dialysis_buffer_generic"
     },
     {
-      "afterStep": "Refolded protein",
-      "condition": "4°C or −80°C with glycerol",
-      "duration": "varies"
+      "name": "Amicon Ultra centrifugal filter",
+      "linkedRecipe": "protein_concentration_amicon"
+    },
+    {
+      "name": "Centrifuge (up to 20,000×g, 4°C)"
+    },
+    {
+      "name": "0.22 µm syringe filter"
     }
   ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  },
   "usage": {
     "en": "Solubilize and refold proteins from bacterial inclusion bodies using denaturant dilution or dialysis.",
     "zh": "变性剂稀释或透析法溶解和复性细菌包涵体蛋白。"

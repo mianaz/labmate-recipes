@@ -3,8 +3,18 @@
   "name": "Bulk Competent Cell Preparation (CaCl₂ Method)",
   "nameCn": "大量感受态细胞制备（CaCl₂ 法）",
   "category": "protocol",
-  "discipline": ["microbiology", "molecular"],
-  "tags": ["competent cells", "CaCl2", "transformation", "DH10", "cloning", "E. coli"],
+  "discipline": [
+    "microbiology",
+    "molecular"
+  ],
+  "tags": [
+    "competent cells",
+    "CaCl2",
+    "transformation",
+    "DH10",
+    "cloning",
+    "E. coli"
+  ],
   "usage": {
     "en": "Bulk preparation of chemically competent E. coli (DH10B or similar) using CaCl₂ method, with heat-shock transformation protocol.",
     "zh": "CaCl₂ 法大量制备化学感受态大肠杆菌（DH10B 或类似菌株），含热激转化流程。"
@@ -14,32 +24,176 @@
     "hands_on": "4 hours"
   },
   "materials": [
-    {"name": "LB medium (without antibiotics)", "linkedRecipe": "lb"},
-    {"name": "0.1 M CaCl₂ (sterile, ice-cold)"},
-    {"name": "0.1 M CaCl₂ + 30% glycerol (sterile, ice-cold)"},
-    {"name": "Autoclaved 1 L flasks"},
-    {"name": "Liquid nitrogen"},
-    {"name": "Spectrophotometer (OD600)"},
-    {"name": "Precooled 1.5 mL tubes"},
-    {"name": "LB agar plates with antibiotics", "linkedRecipe": "lb_agar"}
+    {
+      "name": "LB medium (without antibiotics)",
+      "linkedRecipe": "lb"
+    },
+    {
+      "name": "0.1 M CaCl₂ (sterile, ice-cold)"
+    },
+    {
+      "name": "0.1 M CaCl₂ + 30% glycerol (sterile, ice-cold)"
+    },
+    {
+      "name": "Autoclaved 1 L flasks"
+    },
+    {
+      "name": "Liquid nitrogen"
+    },
+    {
+      "name": "Spectrophotometer (OD600)"
+    },
+    {
+      "name": "Precooled 1.5 mL tubes"
+    },
+    {
+      "name": "LB agar plates with antibiotics",
+      "linkedRecipe": "lb_agar"
+    }
   ],
   "components": [
-    {"name": "Step 1: Inoculate bacteria from -80°C stock into LB, shake 250 rpm overnight at 37°C (no antibiotics).", "note": {"en": "If stock is >12 months old or efficiency is low, streak on blank LB plate and pick single colony to restart.", "zh": "若甘油菌 >12 个月或效率下降，先划线 LB 平板挑单克隆重新开始。"}},
-    {"name": "Step 2: Next day — rinse autoclaved 1 L flasks with LB. Prewarm 150-200 mL LB per flask to 37°C. Dilute overnight culture 1:100. Grow 37°C 250 rpm until OD600 0.4-0.6 (~2.5 h).", "note": {"en": "Typical growth: OD 0.05 at 1 h, 0.25-0.28 at 2 h, 0.5-0.6 at 2.5 h. Optimal growth conditions are critical.", "zh": "典型生长：1 h OD 0.05，2 h 0.25-0.28，2.5 h 0.5-0.6。最佳生长条件至关重要。"}},
-    {"name": "Step 3: Transfer to precooled flasks on ice, incubate 15 min. All subsequent steps on ice or in cold room.", "note": {"en": "CRITICAL: precool everything. Keep entire procedure at 0-4°C, preferably in cold room.", "zh": "关键：预冷所有器具。全程 0-4°C，最好在冷室操作。"}},
-    {"name": "Step 4: Spin 4000 rpm 10 min 4°C."},
-    {"name": "Step 5: Resuspend thoroughly in 50-100 mL ice-cold 0.1 M CaCl₂ (avoid vortex). Leave on ice 20-30 min."},
-    {"name": "Step 6: Spin 4000 rpm 10 min 4°C. Resuspend in 4 mL 0.1 M CaCl₂ per 200 mL culture. Add 4 mL 0.1 M CaCl₂ + 30% glycerol (final 15% glycerol). Leave on ice."},
-    {"name": "Step 7: Aliquot 50 µL or 200 µL into precooled 1.5 mL tubes. Flash-freeze in liquid nitrogen."},
-    {"name": "Step 8: Store at -80°C. Test efficiency with several aliquots."}
+    {
+      "name": "Step 1: Inoculate bacteria from -80°C stock into LB, shake 250 rpm overnight at 37°C (no antibiotics).",
+      "note": {
+        "en": "If stock is >12 months old or efficiency is low, streak on blank LB plate and pick single colony to restart.",
+        "zh": "若甘油菌 >12 个月或效率下降，先划线 LB 平板挑单克隆重新开始。"
+      }
+    },
+    {
+      "name": "Step 2: Next day — rinse autoclaved 1 L flasks with LB. Prewarm 150-200 mL LB per flask to 37°C. Dilute overnight culture 1:100. Grow 37°C 250 rpm until OD600 0.4-0.6 (~2.5 h).",
+      "note": {
+        "en": "Typical growth: OD 0.05 at 1 h, 0.25-0.28 at 2 h, 0.5-0.6 at 2.5 h. Optimal growth conditions are critical.",
+        "zh": "典型生长：1 h OD 0.05，2 h 0.25-0.28，2.5 h 0.5-0.6。最佳生长条件至关重要。"
+      }
+    },
+    {
+      "name": "Step 3: Transfer to precooled flasks on ice, incubate 15 min. All subsequent steps on ice or in cold room.",
+      "note": {
+        "en": "CRITICAL: precool everything. Keep entire procedure at 0-4°C, preferably in cold room.",
+        "zh": "关键：预冷所有器具。全程 0-4°C，最好在冷室操作。"
+      }
+    },
+    {
+      "name": "Step 4: Spin 4000 rpm 10 min 4°C."
+    },
+    {
+      "name": "Step 5: Resuspend thoroughly in 50-100 mL ice-cold 0.1 M CaCl₂ (avoid vortex). Leave on ice 20-30 min."
+    },
+    {
+      "name": "Step 6: Spin 4000 rpm 10 min 4°C. Resuspend in 4 mL 0.1 M CaCl₂ per 200 mL culture. Add 4 mL 0.1 M CaCl₂ + 30% glycerol (final 15% glycerol). Leave on ice."
+    },
+    {
+      "name": "Step 7: Aliquot 50 µL or 200 µL into precooled 1.5 mL tubes. Flash-freeze in liquid nitrogen."
+    },
+    {
+      "name": "Step 8: Store at -80°C. Test efficiency with several aliquots."
+    }
   ],
   "stoppingPoints": [
-    {"afterStep": "Step 8", "condition": "-80°C", "duration": "12 months"}
+    {
+      "afterStep": "Step 8",
+      "condition": "-80°C",
+      "duration": "12 months"
+    }
   ],
   "notes": {
     "en": "Transformation: thaw on ice, add DNA (<1/10 volume for ligation products, 50 pg-1 ng for plasmid), ice 30 min, heat shock 42°C 30-40 s, ice 5-10 min, add 1 mL LB, recover 37°C 1 h, plate 100-150 µL. Quick alternative (skip recovery): after heat shock + 5 min ice, add 100 µL LB, plate directly (5-10× lower efficiency but sufficient for simple cloning). Antibiotics: Ampicillin stock 50 mg/mL (1:1000). LB Broth: 25 g/L. LB Agar: 25 g LB + 15 g agar per L.",
     "zh": "转化：冰上融化，加 DNA（连接产物 <1/10 体积，质粒 50 pg-1 ng），冰 30 分钟，42°C 热激 30-40 秒，冰 5-10 分钟，加 1 mL LB，37°C 复苏 1 小时，涂板 100-150 µL。快速替代：热激后冰 5 分钟直接涂板（效率降低 5-10 倍但足够简单克隆）。"
   },
   "ref": "Adapted from standard CaCl₂ competent cell protocol; Protocol by YW",
-  "crosslinks": ["lb", "lb_agar", "heat_shock_transformation", "competent_cells_cacl2"]
+  "crosslinks": [
+    "lb",
+    "lb_agar",
+    "heat_shock_transformation",
+    "competent_cells_cacl2"
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Overnight culture grows while you sleep — this is the natural stopping point",
+        "zh": "过夜培养期间自然停顿点"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Aliquoted competent cells stored at −80°C are stable for up to 12 months",
+        "zh": "分装的感受态细胞 −80°C 保存可达 12 个月"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 1 — Overnight Culture**",
+      "zh": "**第一天 — 过夜培养**",
+      "isHeader": true
+    },
+    {
+      "en": "Inoculate bacteria from −80°C glycerol stock into LB medium (no antibiotics). Shake at 250 rpm, 37°C overnight",
+      "zh": "从 −80°C 甘油菌中接种至 LB 培养基（无抗生素）。37°C 250 rpm 摇菌过夜",
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Day 2 — Competent Cell Preparation**",
+      "zh": "**第二天 — 感受态制备**",
+      "isHeader": true
+    },
+    {
+      "en": "Prewarm 150–200 mL LB per autoclaved 1 L flask to 37°C. Dilute overnight culture 1:100. Grow at 37°C 250 rpm until OD₆₀₀ = 0.4–0.6 (~2.5 h)",
+      "zh": "将 150–200 mL LB 预热至 37°C（每个已灭菌 1 L 锥形瓶）。过夜菌液 1:100 稀释接种。37°C 250 rpm 摇至 OD₆₀₀ = 0.4–0.6（~2.5 h）",
+      "time": "2.5 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Transfer culture to precooled flasks/bottles on ice. Incubate on ice for 15 min. All subsequent steps at 0–4°C",
+      "zh": "将菌液转入冰上预冷的瓶中。冰上孵育 15 min。此后所有操作均在 0–4°C 进行",
+      "time": "15 min",
+      "temp": "0–4°C"
+    },
+    {
+      "en": "Centrifuge at 4,000 rpm for 10 min at 4°C. Discard supernatant",
+      "zh": "4°C 4,000 rpm 离心 10 min。弃去上清",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Gently resuspend pellet in 50–100 mL ice-cold 0.1 M CaCl₂ (do not vortex). Leave on ice 20–30 min",
+      "zh": "轻柔重悬沉淀于 50–100 mL 冰冷 0.1 M CaCl₂（勿涡旋）。冰上静置 20–30 min",
+      "time": "30 min",
+      "temp": "0–4°C"
+    },
+    {
+      "en": "Centrifuge 4,000 rpm, 10 min, 4°C. Resuspend in 4 mL 0.1 M CaCl₂ per 200 mL culture. Add equal volume 0.1 M CaCl₂ + 30% glycerol (final 15% glycerol). Keep on ice",
+      "zh": "4,000 rpm 离心 10 min，4°C。每 200 mL 菌液用 4 mL 0.1 M CaCl₂ 重悬。加等体积 0.1 M CaCl₂ + 30% 甘油（终浓度 15% 甘油）。冰上放置",
+      "time": "15 min",
+      "temp": "0–4°C"
+    },
+    {
+      "en": "Aliquot 50 µL or 200 µL into precooled 1.5 mL tubes. Flash-freeze in liquid nitrogen",
+      "zh": "分装 50 µL 或 200 µL 至预冷的 1.5 mL 管。液氮速冻",
+      "time": "20 min",
+      "temp": "0–4°C"
+    },
+    {
+      "en": "Store at −80°C. Test transformation efficiency with several aliquots using standard plasmid",
+      "zh": "−80°C 保存。取数管用标准质粒测试转化效率",
+      "time": "5 min",
+      "temp": "−80°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Overnight culture → dilute 1:100 → grow to OD 0.4–0.6 → ice 15 min → spin → CaCl₂ resuspend on ice 30 min → spin → CaCl₂/glycerol resuspend → aliquot → flash-freeze → −80°C",
+      "zh": "过夜培养 → 1:100 稀释 → 培养至 OD 0.4–0.6 → 冰上 15 min → 离心 → CaCl₂ 重悬冰上 30 min → 离心 → CaCl₂/甘油重悬 → 分装 → 液氮速冻 → −80°C"
+    }
+  ],
+  "relatedProtocols": [
+    "lb",
+    "lb_agar",
+    "heat_shock_transformation",
+    "competent_cells_cacl2",
+    "competent_cells_electrocompetent"
+  ]
 }

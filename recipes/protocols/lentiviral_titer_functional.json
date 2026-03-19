@@ -125,9 +125,120 @@
       "name": "6-well or 12-well plates"
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Determine functional lentiviral titer by serial dilution and colony counting or antibiotic selection.",
     "zh": "连续稀释法通过菌落计数或抗生素筛选测定慢病毒功能性滴度。"
-  }
+  },
+  "relatedProtocols": [
+    "lentivirus_production",
+    "lentiviral_titer_p24",
+    "polybrene_stock",
+    "flow_cytometry_protocol"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "After seeding cells (Day 0), cells attach overnight — natural stopping point",
+        "zh": "接种细胞后（第 0 天），细胞过夜贴壁 — 自然停止点"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "After medium change (Day 2), wait 48–72 h for reporter expression before analysis",
+        "zh": "换液后（第 2 天），等待 48–72 h 报告基因表达后再分析"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 0 — Seed Target Cells**",
+      "zh": "**第 0 天 — 接种靶细胞**",
+      "isHeader": true
+    },
+    {
+      "en": "Seed HEK293T (1×10⁵/well) or HeLa (0.5×10⁵/well) in 24-well plate with 500 µL complete DMEM. Cells should be 20–30% confluent at time of infection. Do not add antibiotics",
+      "zh": "在 24 孔板中接种 HEK293T（1×10⁵/孔）或 HeLa（0.5×10⁵/孔），500 µL 完全 DMEM。感染时细胞汇合度应为 20–30%。不加抗生素",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Incubate overnight at 37°C, 5% CO₂ for cell attachment",
+      "zh": "37°C、5% CO₂ 过夜孵育使细胞贴壁",
+      "time": "O/N",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Day 1 — Viral Transduction**",
+      "zh": "**第 1 天 — 病毒转导**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare 10-fold serial dilutions of viral supernatant in complete medium: undiluted, 1:10, 1:100, 1:1,000, 1:10,000. Add polybrene to 8 µg/mL final concentration",
+      "zh": "用完全培养基配制 10 倍梯度稀释的病毒上清：原液、1:10、1:100、1:1,000、1:10,000。加入 Polybrene 至终浓度 8 µg/mL",
+      "time": "20 min"
+    },
+    {
+      "en": "Replace medium with 500 µL virus dilution per well (duplicate wells per dilution). Include uninfected control wells",
+      "zh": "每孔换 500 µL 病毒稀释液（每个稀释度双复孔）。设未感染对照孔",
+      "time": "15 min"
+    },
+    {
+      "en": "Optional: spinoculation at 800×g, 30 min at RT to enhance transduction 2–5×",
+      "zh": "可选：800×g 室温离心 30 min 以增强转导效率 2–5 倍",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ overnight",
+      "zh": "37°C、5% CO₂ 过夜孵育",
+      "time": "O/N",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Day 2 — Medium Change**",
+      "zh": "**第 2 天 — 换液**",
+      "isHeader": true
+    },
+    {
+      "en": "Remove virus-containing medium. Replace with 500 µL fresh complete DMEM (no polybrene) to reduce cytotoxicity",
+      "zh": "去除含病毒培养基。换 500 µL 新鲜完全 DMEM（不加 Polybrene）以减少细胞毒性",
+      "time": "15 min"
+    },
+    {
+      "en": "**Day 4–5 — Harvest & Analysis**",
+      "zh": "**第 4–5 天 — 收获与分析**",
+      "isHeader": true
+    },
+    {
+      "en": "Trypsinize cells and resuspend in FACS buffer. For GFP/fluorescent reporters: analyze by flow cytometry (FITC channel). Gate on live cells (FSC/SSC + DAPI⁻)",
+      "zh": "胰酶消化细胞并用 FACS 缓冲液重悬。GFP/荧光报告基因：流式细胞仪分析（FITC 通道）。门控活细胞（FSC/SSC + DAPI⁻）",
+      "time": "1 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Use dilutions where 1–20% of cells are GFP⁺ (linear range, MOI ≤0.2 ensures single integration events per Poisson distribution)",
+      "zh": "选择 1–20% GFP⁺ 的稀释度（线性范围，MOI ≤0.2 确保泊松分布下的单次整合事件）"
+    },
+    {
+      "en": "Calculate titer: IU/mL = (% GFP⁺ / 100) × total cell count × dilution factor / volume infected (mL). Report average of duplicate wells",
+      "zh": "计算滴度：IU/mL = (% GFP⁺ / 100) × 细胞总数 × 稀释倍数 / 感染体积 (mL)。报告双复孔的平均值"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Seed cells (Day 0) → serial dilution + polybrene transduction (Day 1) → medium change (Day 2) → flow cytometry for GFP⁺ % (Day 4–5) → calculate IU/mL",
+      "zh": "接种细胞（第 0 天）→ 梯度稀释 + Polybrene 转导（第 1 天）→ 换液（第 2 天）→ 流式检测 GFP⁺ %（第 4–5 天）→ 计算 IU/mL"
+    }
+  ]
 }

@@ -74,6 +74,15 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Cell suspension aliquot can be kept at RT briefly before trypan blue staining; do not exceed 30 min",
+        "zh": "细胞悬液取样后可室温短暂放置再染色；不超过 30 min"
+      }
+    }
+  ],
   "usage": {
     "en": "Assess cell viability and count cells using trypan blue dye exclusion.",
     "zh": "台盼蓝排斥法评估细胞活力和计数。"

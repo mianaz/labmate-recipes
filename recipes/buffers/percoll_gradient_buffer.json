@@ -35,7 +35,7 @@
     "pbmc_isolation",
     "ficoll_solution",
     "mitochondria_isolation",
-    "density_gradient_centrifugation"
+    "gradient_centrifugation_general"
   ],
   "ref": "GE Healthcare Percoll Methodology and Applications Booklet; Böyum et al. (1991) Eur J Haematol 47:308; Pertoft (2000) J Biochem Biophys Methods 44:1–30",
   "discipline": [

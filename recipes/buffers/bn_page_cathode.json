@@ -67,5 +67,10 @@
       "step": "Store at 4°C protected from light."
     }
   ],
-  "crosslinks": []
+  "crosslinks": [],
+  "relatedProtocols": [
+    "native_page_buffer",
+    "mitochondria_isolation",
+    "coomassie_staining"
+  ]
 }

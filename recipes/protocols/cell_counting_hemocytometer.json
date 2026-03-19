@@ -89,6 +89,15 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Cell suspension can be kept at RT for a short time before mixing with trypan blue; do not exceed 30 min to maintain viability accuracy",
+        "zh": "细胞悬液混合台盼蓝前可短暂室温放置；不超过 30 min 以保证活力计数准确"
+      }
+    }
+  ],
   "usage": {
     "en": "Count cells and assess viability using a hemocytometer with trypan blue exclusion.",
     "zh": "使用血球计数板和台盼蓝排斥法计数细胞并评估活力。"

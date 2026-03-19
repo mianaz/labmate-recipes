@@ -3,8 +3,19 @@
   "name": "Circulating Tumor Cell (CTC) Detection by PCR",
   "nameCn": "循环肿瘤细胞 (CTC) PCR 检测方案",
   "category": "protocol",
-  "discipline": ["molecular", "genomics"],
-  "tags": ["CTC", "circulating tumor cells", "Pten", "genotyping", "liquid biopsy", "prostate cancer", "blood"],
+  "discipline": [
+    "molecular",
+    "genomics"
+  ],
+  "tags": [
+    "CTC",
+    "circulating tumor cells",
+    "Pten",
+    "genotyping",
+    "liquid biopsy",
+    "prostate cancer",
+    "blood"
+  ],
   "usage": {
     "en": "Detects circulating tumor cells in mouse blood by PCR targeting Cre-excised (floxed) Pten allele. Distinguishes Flox Pten (~1000 bp), wildtype (~814 bp), and Cre'd-out (~210 bp) alleles.",
     "zh": "通过 PCR 检测小鼠血液中循环肿瘤细胞，靶向 Cre 切除的 Pten 等位基因。区分 Flox Pten (~1000 bp)、野生型 (~814 bp) 和 Cre 切除 (~210 bp)。"
@@ -14,33 +25,195 @@
     "hands_on": "2 hours"
   },
   "materials": [
-    {"name": "QIAGEN DNeasy Blood & Tissue Kit"},
-    {"name": "EDTA solution (anticoagulant)"},
-    {"name": "1× RBC lysis buffer", "linkedRecipe": "rbc_lysis_10x"},
-    {"name": "DMEM"},
-    {"name": "10× PCR buffer"},
-    {"name": "10 mM dNTP mix"},
-    {"name": "Primer XL022_CPF1: CTTCGGAGCATGTCTGGCAATGC"},
-    {"name": "Primer XL024_PTR14: AAGGAAGAGGGTGGGGATAC"},
-    {"name": "Q buffer (5× betaine)", "linkedRecipe": "q_solution_5x"},
-    {"name": "Taq polymerase"},
-    {"name": "Nanodrop spectrophotometer"}
+    {
+      "name": "QIAGEN DNeasy Blood & Tissue Kit"
+    },
+    {
+      "name": "EDTA solution (anticoagulant)"
+    },
+    {
+      "name": "1× RBC lysis buffer",
+      "linkedRecipe": "rbc_lysis_10x"
+    },
+    {
+      "name": "DMEM"
+    },
+    {
+      "name": "10× PCR buffer"
+    },
+    {
+      "name": "10 mM dNTP mix"
+    },
+    {
+      "name": "Primer XL022_CPF1: CTTCGGAGCATGTCTGGCAATGC"
+    },
+    {
+      "name": "Primer XL024_PTR14: AAGGAAGAGGGTGGGGATAC"
+    },
+    {
+      "name": "Q buffer (5× betaine)",
+      "linkedRecipe": "q_solution_5x"
+    },
+    {
+      "name": "Taq polymerase"
+    },
+    {
+      "name": "Nanodrop spectrophotometer"
+    }
   ],
   "components": [
-    {"name": "Step 1 (Blood collection): Harvest 100 µL cheek blood into 1.5 mL tube containing 4 µL EDTA solution."},
-    {"name": "Step 2 (RBC lysis): Add 400 µL 1× RBC lysis, RT 5 min. Add 700 µL DMEM to stop. Centrifuge 10,000 rcf 2 min. Remove supernatant."},
-    {"name": "Step 3 (DNA extraction): Adjust to 220 µL with PBS. Add 4 µL proteinase K + 200 µL Buffer AL. Vortex. Incubate 56°C 10 min (dry bath preferred over oven)."},
-    {"name": "Step 4: Add 200 µL ethanol (96-100%). Mix by pipetting. Transfer to DNeasy spin column. Centrifuge ≥6000 g 1 min."},
-    {"name": "Step 5: Wash with 500 µL Buffer AW1 (spin 1 min), then 500 µL Buffer AW2 (spin 1 min). Dry spin 20,000 g 3 min."},
-    {"name": "Step 6: Transfer column to new tube. Air-dry 5 min. Elute with 35 µL Buffer AE (incubate 5 min RT, spin 1 min). Measure concentration on Nanodrop."},
-    {"name": "Step 7 (PCR): 2.5 µL 10× buffer + 0.5 µL dNTPs + 0.5 µL each primer (100 µM, 4× diluted) + 2.5 µL Q buffer + 15.5 µL H₂O + 1 µL Taq + 2 µL DNA = 25 µL total."},
-    {"name": "Step 8 (Cycling): 94°C 5 min → 12 cycles (94°C 45 s, 64→58°C touchdown -0.5°C/cycle 45 s, 72°C 60 s) → 35 cycles (94°C 45 s, 58°C 45 s, 72°C 60 s) → 72°C 10 min → 4°C hold.", "note": {"en": "Adjust 35 cycles to 30-45 based on DNA concentration.", "zh": "根据 DNA 浓度调整 35 个循环为 30-45 个。"}},
-    {"name": "Step 9 (Gel): 2.5% agarose gel, 150 V for 30 min. Load 18 µL (3 µL 6× loading buffer + 8 µL sample + 7 µL H₂O) + 6 µL ladder.", "note": {"en": "Expected bands: Flox Pten ~1000 bp, wildtype ~814 bp, Cre'd-out ~210 bp.", "zh": "预期条带：Flox Pten ~1000 bp, 野生型 ~814 bp, Cre 切除 ~210 bp。"}}
+    {
+      "name": "Step 1 (Blood collection): Harvest 100 µL cheek blood into 1.5 mL tube containing 4 µL EDTA solution."
+    },
+    {
+      "name": "Step 2 (RBC lysis): Add 400 µL 1× RBC lysis, RT 5 min. Add 700 µL DMEM to stop. Centrifuge 10,000 rcf 2 min. Remove supernatant."
+    },
+    {
+      "name": "Step 3 (DNA extraction): Adjust to 220 µL with PBS. Add 4 µL proteinase K + 200 µL Buffer AL. Vortex. Incubate 56°C 10 min (dry bath preferred over oven)."
+    },
+    {
+      "name": "Step 4: Add 200 µL ethanol (96-100%). Mix by pipetting. Transfer to DNeasy spin column. Centrifuge ≥6000 g 1 min."
+    },
+    {
+      "name": "Step 5: Wash with 500 µL Buffer AW1 (spin 1 min), then 500 µL Buffer AW2 (spin 1 min). Dry spin 20,000 g 3 min."
+    },
+    {
+      "name": "Step 6: Transfer column to new tube. Air-dry 5 min. Elute with 35 µL Buffer AE (incubate 5 min RT, spin 1 min). Measure concentration on Nanodrop."
+    },
+    {
+      "name": "Step 7 (PCR): 2.5 µL 10× buffer + 0.5 µL dNTPs + 0.5 µL each primer (100 µM, 4× diluted) + 2.5 µL Q buffer + 15.5 µL H₂O + 1 µL Taq + 2 µL DNA = 25 µL total."
+    },
+    {
+      "name": "Step 8 (Cycling): 94°C 5 min → 12 cycles (94°C 45 s, 64→58°C touchdown -0.5°C/cycle 45 s, 72°C 60 s) → 35 cycles (94°C 45 s, 58°C 45 s, 72°C 60 s) → 72°C 10 min → 4°C hold.",
+      "note": {
+        "en": "Adjust 35 cycles to 30-45 based on DNA concentration.",
+        "zh": "根据 DNA 浓度调整 35 个循环为 30-45 个。"
+      }
+    },
+    {
+      "name": "Step 9 (Gel): 2.5% agarose gel, 150 V for 30 min. Load 18 µL (3 µL 6× loading buffer + 8 µL sample + 7 µL H₂O) + 6 µL ladder.",
+      "note": {
+        "en": "Expected bands: Flox Pten ~1000 bp, wildtype ~814 bp, Cre'd-out ~210 bp.",
+        "zh": "预期条带：Flox Pten ~1000 bp, 野生型 ~814 bp, Cre 切除 ~210 bp。"
+      }
+    }
   ],
   "notes": {
     "en": "Touchdown PCR reduces non-specific amplification. The 210 bp Cre'd-out Pten band indicates presence of CTCs carrying the tumor-specific deletion. Cycle number (30-45) should be adjusted based on DNA yield from Nanodrop.",
     "zh": "Touchdown PCR 降低非特异性扩增。210 bp Cre 切除 Pten 条带表明存在携带肿瘤特异性缺失的 CTC。循环数（30-45）根据 Nanodrop DNA 产量调整。"
   },
   "ref": "Internal genotyping protocol (2024); QIAGEN DNeasy Blood & Tissue Kit handbook",
-  "crosslinks": ["rbc_lysis_10x", "agarose_gel_electrophoresis", "q_solution_5x", "genomic_dna_extraction"]
+  "crosslinks": [
+    "rbc_lysis_10x",
+    "agarose_gel_electrophoresis",
+    "q_solution_5x",
+    "genomic_dna_extraction"
+  ],
+  "relatedProtocols": [
+    "rbc_lysis_10x",
+    "agarose_gel_electrophoresis",
+    "q_solution_5x",
+    "genomic_dna_extraction"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Extracted DNA can be stored at -20°C for months",
+        "zh": "提取的 DNA 可在 -20°C 保存数月"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "PCR products can be stored at 4°C overnight or -20°C long-term before gel analysis",
+        "zh": "PCR 产物可 4°C 过夜或 -20°C 长期保存，之后再进行凝胶分析"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Sample Collection & DNA Extraction**",
+      "zh": "**样品采集与 DNA 提取**",
+      "isHeader": true
+    },
+    {
+      "en": "Harvest 100 µL cheek blood into 1.5 mL tube containing 4 µL EDTA anticoagulant solution",
+      "zh": "从面颊采血 100 µL 至含 4 µL EDTA 抗凝剂的 1.5 mL 管中",
+      "time": "2 min"
+    },
+    {
+      "en": "Add 400 µL 1× RBC lysis buffer, incubate at RT for 5 min. Add 700 µL DMEM to stop lysis. Centrifuge at 10,000 rcf for 2 min. Remove supernatant carefully",
+      "zh": "加入 400 µL 1× 红细胞裂解液，室温孵育 5 min。加入 700 µL DMEM 终止裂解。10,000 rcf 离心 2 min。小心去除上清",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Adjust pellet volume to 220 µL with PBS. Add 4 µL proteinase K and 200 µL Buffer AL. Vortex thoroughly. Incubate at 56°C for 10 min (dry bath preferred over oven)",
+      "zh": "用 PBS 将沉淀调至 220 µL。加入 4 µL 蛋白酶 K 和 200 µL Buffer AL。充分涡旋。56°C 孵育 10 min（干浴优于烘箱）",
+      "time": "10 min",
+      "temp": "56°C"
+    },
+    {
+      "en": "Add 200 µL ethanol (96–100%). Mix by pipetting. Transfer to DNeasy spin column. Centrifuge at ≥6,000×g for 1 min. Discard flow-through",
+      "zh": "加入 200 µL 乙醇（96–100%）。吹打混匀。转移至 DNeasy 离心柱。≥6,000×g 离心 1 min。弃流出液",
+      "time": "3 min"
+    },
+    {
+      "en": "Wash with 500 µL Buffer AW1, spin 1 min. Wash with 500 µL Buffer AW2, spin 1 min. Dry spin at 20,000×g for 3 min",
+      "zh": "500 µL Buffer AW1 洗涤，离心 1 min。500 µL Buffer AW2 洗涤，离心 1 min。20,000×g 干燥离心 3 min",
+      "time": "8 min"
+    },
+    {
+      "en": "Transfer column to new 1.5 mL tube. Air-dry 5 min. Elute with 35 µL Buffer AE (incubate at RT 5 min, then spin 1 min). Measure concentration on Nanodrop",
+      "zh": "将离心柱转至新 1.5 mL 管。晾干 5 min。35 µL Buffer AE 洗脱（室温孵育 5 min 后离心 1 min）。Nanodrop 测浓度",
+      "time": "12 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**PCR Amplification**",
+      "zh": "**PCR 扩增**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare 25 µL PCR reaction: 2.5 µL 10× buffer + 0.5 µL dNTPs (10 mM) + 0.5 µL each primer (XL022/XL024, 25 µM) + 2.5 µL Q buffer (5×) + 15.5 µL H₂O + 1 µL Taq + 2 µL DNA template",
+      "zh": "配制 25 µL PCR 反应：2.5 µL 10× 缓冲液 + 0.5 µL dNTPs (10 mM) + 各 0.5 µL 引物 (XL022/XL024, 25 µM) + 2.5 µL Q 缓冲液 (5×) + 15.5 µL H₂O + 1 µL Taq + 2 µL DNA 模板",
+      "time": "10 min"
+    },
+    {
+      "en": "Run touchdown PCR: 94°C 5 min → 12 cycles (94°C 45 s, 64→58°C touchdown −0.5°C/cycle 45 s, 72°C 60 s) → 35 cycles (94°C 45 s, 58°C 45 s, 72°C 60 s) → 72°C 10 min → 4°C hold",
+      "zh": "运行 Touchdown PCR：94°C 5 min → 12 个循环（94°C 45 s，64→58°C 每循环降 0.5°C 45 s，72°C 60 s）→ 35 个循环（94°C 45 s，58°C 45 s，72°C 60 s）→ 72°C 10 min → 4°C 保持",
+      "time": "~2.5 h"
+    },
+    {
+      "en": "**Gel Electrophoresis & Analysis**",
+      "zh": "**凝胶电泳与分析**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare 2.5% agarose gel. Load 18 µL per lane (3 µL 6× loading buffer + 8 µL PCR product + 7 µL H₂O). Load 6 µL DNA ladder. Run at 150 V for 30 min",
+      "zh": "制备 2.5% 琼脂糖凝胶。每孔加 18 µL（3 µL 6× 上样缓冲液 + 8 µL PCR 产物 + 7 µL H₂O）。加 6 µL DNA 分子量标准。150 V 电泳 30 min",
+      "time": "30 min"
+    },
+    {
+      "en": "Image gel under UV. Interpret bands: Flox Pten ~1000 bp, wildtype ~814 bp, Cre-excised (CTC marker) ~210 bp",
+      "zh": "UV 下成像。判读条带：Flox Pten ~1000 bp，野生型 ~814 bp，Cre 切除（CTC 标记）~210 bp",
+      "time": "5 min"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Cheek blood → RBC lysis → DNeasy DNA extraction → Nanodrop → touchdown PCR (Pten primers) → 2.5% agarose gel → UV imaging (210 bp = CTC+)",
+      "zh": "面颊采血 → 红细胞裂解 → DNeasy DNA 提取 → Nanodrop 测浓度 → Touchdown PCR（Pten 引物）→ 2.5% 琼脂糖凝胶 → UV 成像（210 bp = CTC 阳性）"
+    }
+  ]
 }

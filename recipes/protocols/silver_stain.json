@@ -94,6 +94,33 @@
       }
     }
   ],
+  "detailedSteps": [
+    {"en": "**Day 1 — SDS-PAGE & Fixation**", "zh": "**第一天 — SDS-PAGE 与固定**", "isHeader": true},
+    {"en": "Run SDS-PAGE gel according to standard protocol. Rinse gel in ddH₂O briefly to remove SDS.", "zh": "按标准方案 SDS-PAGE 电泳。短暂 ddH₂O 冲洗胶去除 SDS。", "time": "5 min"},
+    {"en": "Fix gel: place in container with 200 mL fixative (50% MeOH + 12% AcOH + 0.05% formaldehyde) per mini gel. Incubate on shaker at RT for ≥1 h (overnight is fine — increases sensitivity).", "zh": "固定：每块 mini 胶加 200 mL 固定液（50% MeOH + 12% AcOH + 0.05% 甲醛）。RT 摇床孵育 ≥1 h（过夜更好——提高灵敏度）。", "time": "≥1 h", "temp": "RT"},
+    {"en": "**Day 2 — Washing & sensitization**", "zh": "**第二天 — 洗涤与增敏**", "isHeader": true},
+    {"en": "Wash in 50% EtOH: 3 × 20 min on shaker at RT. Use fresh EtOH for each wash.", "zh": "50% EtOH 洗涤：3 × 20 min，RT 摇床。每次用新鲜 EtOH。", "time": "60 min", "temp": "RT"},
+    {"en": "Sensitize: 0.02% sodium thiosulfate (Na₂S₂O₃) in ddH₂O. CRITICAL: soak exactly 1 min. Longer = high background. Immediately proceed to rinses.", "zh": "增敏：ddH₂O 中 0.02% 硫代硫酸钠（Na₂S₂O₃）。关键：精确 1 min。过长 = 高背景。立即进入冲洗步骤。", "time": "1 min", "temp": "RT"},
+    {"en": "Rinse: ddH₂O, 3 × 20 s rapid washes. Do not over-rinse.", "zh": "冲洗：ddH₂O，3 × 20 s 快速冲洗。不可过长。", "time": "1 min", "temp": "RT"},
+    {"en": "**Silver impregnation**", "zh": "**银浸染**", "isHeader": true},
+    {"en": "Prepare silver nitrate solution fresh: 0.2 g AgNO₃ dissolved in 100 mL ddH₂O + 75 µL 37% formaldehyde. Protect from light. Can be used at RT or pre-chilled to 4°C for more uniform staining.", "zh": "新鲜配制硝酸银溶液：0.2 g AgNO₃ 溶于 100 mL ddH₂O + 75 µL 37% 甲醛。避光。RT 使用或预冷至 4°C 可使染色更均匀。", "time": "5 min"},
+    {"en": "Impregnate gel in silver solution: 20 min at RT (or 4°C) on shaker. Protect from light throughout.", "zh": "银溶液中浸染：RT（或 4°C）摇床 20 min。全程避光。", "time": "20 min", "temp": "RT or 4°C"},
+    {"en": "Rinse gel in ddH₂O: 2 × 20 s to remove unbound silver.", "zh": "ddH₂O 冲洗胶：2 × 20 s 去除未结合银。", "time": "40 s", "temp": "RT"},
+    {"en": "**Development**", "zh": "**显影**", "isHeader": true},
+    {"en": "Prepare developer fresh: 6% Na₂CO₃ + 0.05% formaldehyde + 0.0004% Na₂S₂O₃ in ddH₂O. For 100 mL: 6 g Na₂CO₃ + 50 µL 37% formaldehyde + 400 µL of 0.1% Na₂S₂O₃.", "zh": "新鲜配制显影液：ddH₂O 中 6% Na₂CO₃ + 0.05% 甲醛 + 0.0004% Na₂S₂O₃。100 mL 用量：6 g Na₂CO₃ + 50 µL 37% 甲醛 + 400 µL 0.1% Na₂S₂O₃。", "time": "5 min"},
+    {"en": "Develop gel: immerse in developer, gently shake. Bands appear in 30 s – 10 min. Monitor closely — over-development causes dark background and high noise. When bands reach desired intensity, immediately proceed to stop solution.", "zh": "显影：胶浸入显影液，轻柔摇动。条带在 30 s – 10 min 内出现。密切监控——过度显影导致背景深、噪声高。条带达到所需强度时立即进入终止液。", "time": "30 s – 10 min", "temp": "RT"},
+    {"en": "**Stop & imaging**", "zh": "**终止与成像**", "isHeader": true},
+    {"en": "Stop reaction: transfer gel to stop solution (50% MeOH + 12% AcOH). Incubate 10 min on shaker.", "zh": "终止反应：胶转移至终止液（50% MeOH + 12% AcOH）。摇床孵育 10 min。", "time": "10 min", "temp": "RT"},
+    {"en": "Rinse gel in ddH₂O: 3 × 5 min to remove acid.", "zh": "ddH₂O 冲洗胶：3 × 5 min 去除酸。", "time": "15 min", "temp": "RT"},
+    {"en": "Image gel using flatbed scanner (≥600 dpi) with white light transillumination, or gel documentation system. For densitometry quantification: use Image Lab or ImageJ.", "zh": "平板扫描仪（至少 600 dpi）白光透射成像，或凝胶成像系统。密度定量：Image Lab 或 ImageJ。", "time": "10 min"}
+  ],
+  "briefSteps": [
+    {"en": "Fix gel 1 h–O/N → 50% EtOH wash 3× → Sensitize 1 min (Na₂S₂O₃) → Rinse → Silver nitrate 20 min → Rinse → Develop (monitor bands) → Stop → Image", "zh": "固定胶 1 h–过夜 → 50% EtOH 洗 3× → 增敏 1 min（Na₂S₂O₃）→ 冲洗 → 硝酸银 20 min → 冲洗 → 显影（监控条带）→ 终止 → 成像"}
+  ],
+  "safeStops": [
+    {"afterStep": 3, "note": {"en": "Fixed gel in 50% MeOH/12% AcOH can be stored at RT for up to 1 week before proceeding", "zh": "固定后的胶在 50% MeOH/12% AcOH 中 RT 可保存最多 1 周再继续处理"}},
+    {"afterStep": 12, "note": {"en": "Stained gel in stop solution can be stored at RT for several days; image as soon as possible for best quality", "zh": "终止液中的染色胶 RT 可保存数天；尽快成像以获得最佳质量"}}
+  ],
   "notes": {
     "en": "Sensitivity: 1–10 ng protein/band (10–100× more sensitive than Coomassie). MS-compatible silver stain: omit glutaraldehyde and formaldehyde (use Shevchenko MS-compatible protocol: sensitizer = sodium thiosulfate, developer = Na₂CO₃ only). Interference: keratin (skin) gives false bands — wear gloves, use clean reagents. Contamination with dust/fingerprints ruins gel.",
     "zh": "灵敏度：1–10 ng 蛋白/条带（比考马斯蓝灵敏 10–100 倍）。质谱兼容银染：省去戊二醛和甲醛（用 Shevchenko MS 兼容方案：仅用硫代硫酸钠增敏，Na₂CO₃ 显影）。干扰：角蛋白（皮肤来源）产生假阳性条带——戴手套，使用清洁试剂。灰尘/指纹会损坏结果。"
@@ -103,18 +130,8 @@
   "discipline": [
     "protein"
   ],
-  "storage": {
-    "temperature": "4°C",
-    "duration": "6 months",
-    "sterile": "not_required",
-    "notes": ""
-  },
-  "usage": {
-    "en": "See notes for usage.",
-    "zh": "详见备注。"
-  },
   "duration": {
-    "total": "3–4 hours",
+    "total": "3–4 hours (excluding overnight fixation)",
     "hands_on": "3 hours",
     "notes": "Mostly incubation steps"
   },
@@ -123,13 +140,10 @@
     "wb_protocol",
     "sds_page_gel"
   ],
-  "doi": "10.1021/ac950914h",
-  "stoppingPoints": [
-    {
-      "afterStep": "Gel fixed overnight",
-      "condition": "50% MeOH/12% AcOH at RT",
-      "duration": "overnight"
-    }
+  "relatedProtocols": [
+    "coomassie_staining",
+    "wb_protocol",
+    "sds_page_gel"
   ],
   "materials": [
     {
@@ -140,22 +154,36 @@
       "name": "Fixation solution (50% methanol, 12% acetic acid)"
     },
     {
+      "name": "Ethanol (50%, 100%)"
+    },
+    {
       "name": "Sensitizing solution (0.02% Na₂S₂O₃)"
     },
     {
-      "name": "Silver nitrate solution (0.1% AgNO₃)"
+      "name": "Silver nitrate solution (0.2% AgNO₃, 0.075% formaldehyde)"
     },
     {
-      "name": "Developer (2% Na₂CO₃, 0.04% formaldehyde)"
+      "name": "Developer (6% Na₂CO₃, 0.05% formaldehyde, 0.0004% Na₂S₂O₃)"
     },
     {
-      "name": "Stop solution (5% acetic acid)"
+      "name": "Stop solution (50% MeOH, 12% acetic acid)"
     },
     {
       "name": "ddH₂O (ultrapure)"
     },
     {
-      "name": "Gel imaging system"
+      "name": "Gel imaging system or flatbed scanner"
     }
-  ]
+  ],
+  "storage": {
+    "temp": "4°C",
+    "duration": "6 months",
+    "sterile": "not_required",
+    "icon": "🧪",
+    "label": {"en": "Reagents stable at 4°C for 6 months", "zh": "试剂 4°C 保存 6 个月稳定"}
+  },
+  "usage": {
+    "en": "Silver stain for SDS-PAGE gels to detect proteins at nanogram sensitivity (1–10 ng/band), 10–100× more sensitive than Coomassie blue.",
+    "zh": "SDS-PAGE 凝胶银染检测蛋白，灵敏度 1–10 ng/条带，比考马斯亮蓝高 10–100 倍。"
+  }
 }

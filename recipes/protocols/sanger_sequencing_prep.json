@@ -57,11 +57,42 @@
       }
     }
   ],
+  "detailedSteps": [
+    {"en": "**DNA template preparation**", "zh": "**DNA 模板制备**", "isHeader": true},
+    {"en": "For plasmid DNA: purify with miniprep or midiprep kit. Quantify by NanoDrop (A260/280 should be 1.8–2.0). Dilute to 100–500 ng/µL in nuclease-free water or TE buffer.", "zh": "质粒 DNA：miniprep 或 midiprep 试剂盒纯化。NanoDrop 定量（A260/280 应为 1.8–2.0）。稀释至 100–500 ng/µL（无核酸酶水或 TE 缓冲液）。", "time": "30 min"},
+    {"en": "For PCR products: run 5 µL on agarose gel to confirm single band. Purify by gel extraction (gel_extraction) or ExoSAP-IT cleanup. ExoSAP-IT: add 2 µL ExoSAP-IT per 5 µL PCR product, incubate 37°C 15 min → 80°C 15 min to inactivate.", "zh": "PCR 产物：取 5 µL 琼脂糖凝胶电泳确认单一条带。胶回收（gel_extraction）或 ExoSAP-IT 纯化。ExoSAP-IT：每 5 µL PCR 产物加 2 µL ExoSAP-IT，37°C 15 min → 80°C 15 min 灭活。", "time": "30–45 min"},
+    {"en": "Check DNA purity: A260/280 ≥1.8 (minimal protein/salt contamination), A260/230 ≥2.0 (minimal phenol/ethanol contamination). Re-purify if needed.", "zh": "检查 DNA 纯度：A260/280 ≥1.8（蛋白/盐污染少），A260/230 ≥2.0（酚/乙醇污染少）。如需要重新纯化。", "time": "5 min"},
+    {"en": "**Primer preparation**", "zh": "**引物制备**", "isHeader": true},
+    {"en": "Resuspend primers to 100 µM in nuclease-free water (add volume = nmol × 10). Store at −20°C.", "zh": "引物重悬至 100 µM（加入体积 = nmol × 10）。−20°C 保存。", "time": "5 min"},
+    {"en": "Dilute to 3.2 pmol/µL (3.2 µM) for sequencing submission. For example: 1 µL of 100 µM primer + 30 µL nuclease-free water = 3.2 pmol/µL.", "zh": "稀释至 3.2 pmol/µL（3.2 µM）用于测序提交。例如：1 µL 100 µM 引物 + 30 µL 无核酸酶水 = 3.2 pmol/µL。", "time": "5 min"},
+    {"en": "Common universal sequencing primers (dilute to 3.2 pmol/µL): M13F (-20): GTAAAACGACGGCCAGT; M13R: CAGGAAACAGCTATGAC; T7: TAATACGACTCACTATA; SP6: ATTTAGGTGACACTATAG.", "zh": "常用通用测序引物（稀释至 3.2 pmol/µL）：M13F (-20)：GTAAAACGACGGCCAGT；M13R：CAGGAAACAGCTATGAC；T7：TAATACGACTCACTATA；SP6：ATTTAGGTGACACTATAG。", "time": "5 min"},
+    {"en": "**Submission mix preparation**", "zh": "**提交混合液制备**", "isHeader": true},
+    {"en": "For premix submission (most providers): combine in a 1.5 mL tube: 5 µL DNA template + 5 µL primer (3.2 pmol/µL) = 10 µL total per reaction. Mix gently by pipetting. Keep on ice.", "zh": "预混提交（多数服务商）：1.5 mL 管中混合：5 µL DNA 模板 + 5 µL 引物（3.2 pmol/µL）= 每反应 10 µL。移液器轻柔混匀。置于冰上。", "time": "10 min"},
+    {"en": "Label tubes clearly with sample name, primer name, and date. For multiple samples, use 8-strip tubes. Include a sample submission form per provider instructions.", "zh": "清晰标注管子：样品名、引物名、日期。多样品用 8 连管。按服务商说明填写提交表。", "time": "10 min"},
+    {"en": "**Shipping & analysis**", "zh": "**运输与分析**", "isHeader": true},
+    {"en": "Submit samples on ice or at 4°C (gel ice pack) the same day. Most services deliver results in 24–48 h. For long-distance shipping: dry ice may be required.", "zh": "当日冰上或 4°C（凝胶冰袋）提交样品。多数服务 24–48 h 出结果。远途运输可能需要干冰。", "time": "same day"},
+    {"en": "Download chromatogram (.ab1) files. Open in sequence analysis software (Benchling, SnapGene Viewer, 4Peaks, ApE). Check quality scores (QV ≥20 for reliable base calls).", "zh": "下载色谱图文件（.ab1）。序列分析软件打开（Benchling、SnapGene Viewer、4Peaks、ApE）。检查质量分数（QV ≥20 为可靠碱基读取）。", "time": "15–30 min"},
+    {"en": "Align to expected reference sequence. Verify: (a) target region sequenced in full, (b) no unexpected mutations, (c) no mixed signals (heterozygote peaks = contamination or polyclonal sample). BLAST any unexpected variants.", "zh": "与预期参考序列比对。验证：(a) 目标区域完整测序，(b) 无意外突变，(c) 无混合信号（杂合峰 = 污染或多克隆样品）。任何意外变体做 BLAST。", "time": "15–30 min"}
+  ],
+  "briefSteps": [
+    {"en": "Prepare DNA (miniprep 100–500 ng/µL or gel-purified PCR) → Dilute primer to 3.2 pmol/µL → Mix 5 µL DNA + 5 µL primer = 10 µL → Label & keep on ice → Submit same day → Analyze .ab1 chromatogram", "zh": "制备 DNA（miniprep 100–500 ng/µL 或胶回收 PCR）→ 引物稀释至 3.2 pmol/µL → 5 µL DNA + 5 µL 引物混匀 = 10 µL → 标注冰上保存 → 当日提交 → 分析 .ab1 色谱图"}
+  ],
+  "safeStops": [
+    {"afterStep": 5, "note": {"en": "Diluted primers at 3.2 pmol/µL can be stored at −20°C for up to 1 month; avoid repeated freeze-thaw", "zh": "3.2 pmol/µL 稀释引物 −20°C 可保存 1 个月；避免反复冻融"}},
+    {"afterStep": 10, "note": {"en": "Prepared sequencing samples can be stored at 4°C overnight or −20°C for up to 1 week before submission", "zh": "制备好的测序样品可 4°C 过夜或 −20°C 保存最多 1 周后再提交"}}
+  ],
   "notes": {
     "en": "Read length: typical Sanger = 700–1,000 bp per reaction. For long inserts: design primers every 600–700 bp (primer walking). Troubleshooting: no reads → check DNA purity (A260/280 ≥1.8, no salt/ethanol contamination); noisy reads → secondary structure (use DMSO additive); short reads → primer-template mismatch.",
     "zh": "读取长度：典型 Sanger = 700–1,000 bp/反应。长插入片段：每 600–700 bp 设计一个引物（引物步进法）。排查：无读取→检查 DNA 纯度（A260/280 ≥1.8，无盐/乙醇污染）；噪声大→二级结构（加 DMSO 添加剂）；读取短→引物-模板不匹配。"
   },
   "crosslinks": [
+    "miniprep_protocol",
+    "pcr_standard",
+    "gel_extraction",
+    "colony_pcr",
+    "single_colony_picking"
+  ],
+  "relatedProtocols": [
     "miniprep_protocol",
     "pcr_standard",
     "gel_extraction",
@@ -79,10 +110,11 @@
   },
   "materials": [
     {
-      "name": "Purified plasmid DNA (100–300 ng/µL)"
+      "name": "Purified plasmid DNA (100–300 ng/µL)",
+      "linkedRecipe": "miniprep_protocol"
     },
     {
-      "name": "Sequencing primer (3.2 pmol/µL or 10 µM)"
+      "name": "Sequencing primer (3.2 pmol/µL)"
     },
     {
       "name": "Nuclease-free water"
@@ -92,15 +124,18 @@
     },
     {
       "name": "Spectrophotometer (NanoDrop) for quantification"
-    }
-  ],
-  "stoppingPoints": [
+    },
     {
-      "afterStep": "Samples prepared",
-      "condition": "4°C (short) or −20°C",
-      "duration": "1 week"
+      "name": "ExoSAP-IT (for PCR cleanup)",
+      "optional": true
     }
   ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  },
   "usage": {
     "en": "Prepare DNA samples and primers for Sanger sequencing submission.",
     "zh": "准备 DNA 样品和引物，提交 Sanger 测序。"

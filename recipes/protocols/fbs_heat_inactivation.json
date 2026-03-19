@@ -3,8 +3,17 @@
   "name": "FBS Heat Inactivation & Aliquoting SOP",
   "nameCn": "FBS 热灭活与分装标准操作规程",
   "category": "protocol",
-  "discipline": ["cell"],
-  "tags": ["FBS", "fetal bovine serum", "heat inactivation", "aliquoting", "cell culture", "SOP"],
+  "discipline": [
+    "cell"
+  ],
+  "tags": [
+    "FBS",
+    "fetal bovine serum",
+    "heat inactivation",
+    "aliquoting",
+    "cell culture",
+    "SOP"
+  ],
   "usage": {
     "en": "Standard operating procedure for heat-inactivating and aliquoting fetal bovine serum for cell culture use.",
     "zh": "胎牛血清热灭活及分装标准操作规程。"
@@ -14,32 +23,173 @@
     "hands_on": "2 hours"
   },
   "materials": [
-    {"name": "FBS bottles (500 mL each, non-heat-inactivated)"},
-    {"name": "56°C water bath (with thermometer verification)"},
-    {"name": "Biosafety cabinet (TC hood)"},
-    {"name": "50 mL serological pipettes"},
-    {"name": "50 mL conical tubes (25 per 2 bottles)"},
-    {"name": "Timer"},
-    {"name": "-30°C or -20°C freezer"}
+    {
+      "name": "FBS bottles (500 mL each, non-heat-inactivated)"
+    },
+    {
+      "name": "56°C water bath (with thermometer verification)"
+    },
+    {
+      "name": "Biosafety cabinet (TC hood)"
+    },
+    {
+      "name": "50 mL serological pipettes"
+    },
+    {
+      "name": "50 mL conical tubes (25 per 2 bottles)"
+    },
+    {
+      "name": "Timer"
+    },
+    {
+      "name": "-30°C or -20°C freezer"
+    }
   ],
   "components": [
-    {"name": "Day 1 PM: Thaw FBS bottles (up to 4 × 500 mL) overnight at room temperature. Turn on 56°C water bath. Verify temperature with thermometer reads ~56°C."},
-    {"name": "Day 2 AM: Gently rotate thawed FBS (avoid excessive bubbles). Place bottles in 56°C water bath.", "note": {"en": "Confirm thermometer inside bath reads ~56°C before starting.", "zh": "开始前确认浴槽内温度计显示 ~56°C。"}},
-    {"name": "Set timer. Heat-inactivate for EXACTLY 30 minutes. Do NOT exceed 30 min.", "note": {"en": "CRITICAL: Exceeding 30 min degrades growth factors.", "zh": "关键：超过 30 分钟会降解生长因子。"}},
-    {"name": "Remove bottles. Turn off water bath."},
-    {"name": "Wipe bottles dry, spray with 70% ethanol, bring into biosafety cabinet."},
-    {"name": "Layout 25 × 50 mL tubes. Label caps 'FBS'. Aliquot ~40 mL per tube (2 bottles = ~25 tubes).", "note": {"en": "Aseptic technique is critical — change serological pipette at any sign of contamination.", "zh": "无菌操作至关重要——如怀疑污染立即更换移液管。"}},
-    {"name": "Tighten caps. Transfer to -30°C (or -20°C) freezer."},
-    {"name": "Label storage with date and tube count."}
+    {
+      "name": "Day 1 PM: Thaw FBS bottles (up to 4 × 500 mL) overnight at room temperature. Turn on 56°C water bath. Verify temperature with thermometer reads ~56°C."
+    },
+    {
+      "name": "Day 2 AM: Gently rotate thawed FBS (avoid excessive bubbles). Place bottles in 56°C water bath.",
+      "note": {
+        "en": "Confirm thermometer inside bath reads ~56°C before starting.",
+        "zh": "开始前确认浴槽内温度计显示 ~56°C。"
+      }
+    },
+    {
+      "name": "Set timer. Heat-inactivate for EXACTLY 30 minutes. Do NOT exceed 30 min.",
+      "note": {
+        "en": "CRITICAL: Exceeding 30 min degrades growth factors.",
+        "zh": "关键：超过 30 分钟会降解生长因子。"
+      }
+    },
+    {
+      "name": "Remove bottles. Turn off water bath."
+    },
+    {
+      "name": "Wipe bottles dry, spray with 70% ethanol, bring into biosafety cabinet."
+    },
+    {
+      "name": "Layout 25 × 50 mL tubes. Label caps 'FBS'. Aliquot ~40 mL per tube (2 bottles = ~25 tubes).",
+      "note": {
+        "en": "Aseptic technique is critical — change serological pipette at any sign of contamination.",
+        "zh": "无菌操作至关重要——如怀疑污染立即更换移液管。"
+      }
+    },
+    {
+      "name": "Tighten caps. Transfer to -30°C (or -20°C) freezer."
+    },
+    {
+      "name": "Label storage with date and tube count."
+    }
   ],
   "stoppingPoints": [
-    {"afterStep": "Day 1", "condition": "RT thawing", "duration": "Overnight"},
-    {"afterStep": "Final", "condition": "-30°C or -20°C", "duration": "12 months"}
+    {
+      "afterStep": "Day 1",
+      "condition": "RT thawing",
+      "duration": "Overnight"
+    },
+    {
+      "afterStep": "Final",
+      "condition": "-30°C or -20°C",
+      "duration": "12 months"
+    }
   ],
   "notes": {
     "en": "Heat inactivation at 56°C for 30 min destroys complement proteins while preserving growth factors. Do NOT heat-inactivate for longer — it reduces serum quality. Typical FBS: Characterized, Canadian origin (e.g. Cytiva SH30396.03). Each 500 mL bottle yields ~12 aliquots at 40 mL each.",
     "zh": "56°C 30 分钟热灭活破坏补体蛋白同时保留生长因子。不可加热过久——降低血清质量。每瓶 500 mL 约分装 12 管（每管 40 mL）。"
   },
   "ref": "Standard cell culture protocol",
-  "crosslinks": ["complete_dmem", "complete_rpmi", "freezing_medium"]
+  "crosslinks": [
+    "complete_dmem",
+    "complete_rpmi",
+    "freezing_medium"
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "FBS bottles thawing overnight at RT — this is the natural overnight pause",
+        "zh": "FBS 室温过夜解冻 — 这是自然的过夜停顿点"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Heat-inactivated FBS aliquots stored at −20/−30°C are stable for 12 months",
+        "zh": "热灭活 FBS 分装于 −20/−30°C 可保存 12 个月"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 1 PM — Thaw & Prepare**",
+      "zh": "**第一天下午 — 解冻与准备**",
+      "isHeader": true
+    },
+    {
+      "en": "Place FBS bottles (up to 4 × 500 mL) at room temperature to thaw overnight. Turn on 56°C water bath and verify temperature with thermometer",
+      "zh": "将 FBS（最多 4 × 500 mL）置于室温过夜解冻。打开 56°C 水浴锅，温度计确认温度",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**Day 2 AM — Heat Inactivation**",
+      "zh": "**第二天上午 — 热灭活**",
+      "isHeader": true
+    },
+    {
+      "en": "Gently rotate thawed FBS bottles to mix (avoid excessive bubbles). Confirm water bath thermometer reads ~56°C",
+      "zh": "轻柔旋转已解冻的 FBS 瓶混匀（避免过多气泡）。确认水浴温度计显示 ~56°C",
+      "time": "2 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Place FBS bottles in 56°C water bath. Start timer. Heat-inactivate for EXACTLY 30 min. DO NOT exceed 30 min — this degrades growth factors",
+      "zh": "将 FBS 瓶放入 56°C 水浴。开始计时。热灭活恰好 30 分钟。不可超过 30 分钟 — 会降解生长因子",
+      "time": "30 min",
+      "temp": "56°C"
+    },
+    {
+      "en": "Remove bottles immediately at 30 min. Turn off water bath",
+      "zh": "30 分钟到后立即取出。关闭水浴锅",
+      "time": "1 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**Aliquoting**",
+      "zh": "**分装**",
+      "isHeader": true
+    },
+    {
+      "en": "Wipe bottles dry, spray with 70% ethanol. Bring into biosafety cabinet. Arrange 25 × 50 mL conical tubes and label caps 'FBS'",
+      "zh": "擦干瓶身，喷 70% 乙醇。转入生物安全柜。排列 25 × 50 mL 锥形管，标记管盖 'FBS'",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Aliquot ~40 mL per tube using sterile 50 mL serological pipette (2 bottles ≈ 25 tubes). Change pipette at any sign of contamination",
+      "zh": "用无菌 50 mL 移液管分装，每管 ~40 mL（2 瓶 ≈ 25 管）。如有污染嫌疑立即更换移液管",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Tighten caps securely. Transfer to −20°C or −30°C freezer. Label storage box with date and tube count",
+      "zh": "拧紧管盖。转入 −20°C 或 −30°C 冰箱。在存储盒上标注日期和管数",
+      "time": "5 min",
+      "temp": "−20/−30°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Thaw FBS overnight RT → 56°C water bath exactly 30 min → cool → aseptic aliquot ~40 mL/tube in BSC → −20/−30°C freezer",
+      "zh": "室温过夜解冻 FBS → 56°C 水浴恰好 30 min → 冷却 → 生物安全柜无菌分装 ~40 mL/管 → −20/−30°C 冻存"
+    }
+  ],
+  "relatedProtocols": [
+    "complete_dmem",
+    "complete_rpmi",
+    "freezing_medium",
+    "cell_thawing"
+  ]
 }

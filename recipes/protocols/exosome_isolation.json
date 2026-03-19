@@ -155,5 +155,117 @@
   "usage": {
     "en": "Isolate exosomes/small extracellular vesicles from cell culture medium by differential ultracentrifugation.",
     "zh": "差速超离法从细胞培养液中分离外泌体/小细胞外囊泡。"
-  }
+  },
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Conditioned medium can be stored at −80°C for up to 3 months before processing",
+        "zh": "条件培养基可 −80°C 保存 3 个月后再处理"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Filtered supernatant (post 0.22 µm) can be stored at 4°C overnight before ultracentrifugation",
+        "zh": "过滤后上清（0.22 µm 后）可 4°C 过夜保存再超离"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Resuspended exosome pellet can be stored at −80°C in single-use aliquots for 1 month",
+        "zh": "重悬的外泌体沉淀可 −80°C 单次分装保存 1 个月"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Conditioned Medium Collection**",
+      "zh": "**条件培养基收集**",
+      "isHeader": true
+    },
+    {
+      "en": "Culture cells in exosome-depleted FBS medium (or serum-free for last 24–48 h). Collect 48–72 h conditioned medium (≥50 mL needed)",
+      "zh": "在去外泌体 FBS 培养基中培养细胞（或最后 24–48 h 改无血清）。收集 48–72 h 条件培养基（需 ≥50 mL）",
+      "time": "48–72 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "**Serial Differential Centrifugation**",
+      "zh": "**连续差速离心**",
+      "isHeader": true
+    },
+    {
+      "en": "Remove live cells: 300×g, 10 min, 4°C. Transfer supernatant to new tube",
+      "zh": "去除活细胞：300×g 离心 10 min，4°C。转移上清至新管",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Remove dead cells/apoptotic bodies: 2,000×g, 10 min, 4°C. Discard pellet, keep supernatant",
+      "zh": "去除死细胞/凋亡小体：2,000×g 离心 10 min，4°C。弃沉淀，保留上清",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Remove large microvesicles: 10,000×g, 30 min, 4°C. Pellet = large MVs (200–1,000 nm, collect separately if needed). Keep supernatant",
+      "zh": "去除大型微囊泡：10,000×g 离心 30 min，4°C。沉淀 = 大 MV（200–1,000 nm，需要时可单独收集）。保留上清",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Filter supernatant through 0.22 µm PES membrane (low protein binding) to remove residual large particles",
+      "zh": "将上清过 0.22 µm PES 膜（低蛋白结合）去除残余大颗粒",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Exosome Pelleting**",
+      "zh": "**外泌体沉淀**",
+      "isHeader": true
+    },
+    {
+      "en": "Ultracentrifuge at 100,000×g, 70–90 min, 4°C (Ti-45 or SW-41 Ti rotor). Discard supernatant",
+      "zh": "100,000×g 超速离心 70–90 min，4°C（Ti-45 或 SW-41 Ti 转头）。弃上清",
+      "time": "70–90 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash pellet: resuspend in 10 mL cold PBS, ultracentrifuge again at 100,000×g, 70 min, 4°C. Repeat once for higher purity",
+      "zh": "洗涤沉淀：用 10 mL 冷 PBS 重悬，再次 100,000×g 离心 70 min，4°C。重复一次以提高纯度",
+      "time": "70 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend final exosome pellet in 50–200 µL PBS (pipette gently, do not vortex). Store at −80°C in single-use aliquots",
+      "zh": "用 50–200 µL PBS 轻柔重悬最终外泌体沉淀（勿涡旋）。−80°C 单次分装保存",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Characterization (per MISEV2018)**",
+      "zh": "**表征（按 MISEV2018 指南）**",
+      "isHeader": true
+    },
+    {
+      "en": "NTA (NanoSight/ZetaView): confirm size 50–200 nm, report concentration/mL. TEM: verify cup-shaped morphology. Western blot: positive markers CD63/CD9/CD81/Alix; negative markers GM130 (Golgi), Cytochrome C (mito)",
+      "zh": "NTA（NanoSight/ZetaView）：确认尺寸 50–200 nm，报告浓度/mL。TEM：验证杯形形态。Western blot：阳性标记 CD63/CD9/CD81/Alix；阴性标记 GM130（Golgi）、细胞色素 c（线粒体）"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Collect conditioned medium → 300×g remove cells → 2,000×g remove debris → 10,000×g remove large MVs → 0.22 µm filter → 100,000×g pellet exosomes → PBS wash 100,000×g → resuspend → characterize (NTA/TEM/WB)",
+      "zh": "收集条件培养基 → 300×g 去细胞 → 2,000×g 去碎片 → 10,000×g 去大 MV → 0.22 µm 过滤 → 100,000×g 沉淀外泌体 → PBS 洗 100,000×g → 重悬 → 表征（NTA/TEM/WB）"
+    }
+  ],
+  "relatedProtocols": [
+    "subcellular_fractionation",
+    "mitochondria_isolation",
+    "sec_purification",
+    "bca_protein_assay",
+    "wb_protocol",
+    "exosome_isolation_buffer",
+    "pbs_1x"
+  ]
 }

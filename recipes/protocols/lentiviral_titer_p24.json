@@ -130,9 +130,127 @@
       "name": "Lysis buffer (0.5% Triton X-100)"
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Quantify lentiviral particles using p24 capsid protein ELISA.",
     "zh": "p24 衣壳蛋白 ELISA 定量慢病毒颗粒数。"
-  }
+  },
+  "relatedProtocols": [
+    "lentivirus_production",
+    "lentiviral_titer_functional"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Lysed virus samples can be stored at -80°C before ELISA",
+        "zh": "裂解后的病毒样品可在 -80°C 保存后再进行 ELISA"
+      }
+    },
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "After coating plate overnight at 4°C — plate is ready for blocking next morning",
+        "zh": "4°C 过夜包被后 — 次日早晨即可进行封闭"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "After sample incubation, plate can be stored at 4°C overnight before detection antibody step",
+        "zh": "样品孵育后，板可 4°C 过夜保存，次日再加检测抗体"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Virus Lysis & Standard Preparation**",
+      "zh": "**病毒裂解与标准品制备**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare p24 standard serial dilutions: 2000, 1000, 500, 250, 125, 62.5, 31.25, 0 pg/mL in assay diluent. Prepare fresh each time",
+      "zh": "配制 p24 标准品梯度稀释：2000、1000、500、250、125、62.5、31.25、0 pg/mL（用检测稀释液）。每次新鲜配制",
+      "time": "15 min"
+    },
+    {
+      "en": "Lyse viral samples: add Triton X-100 to 0.5% final concentration. Incubate at RT for 1 h to disrupt viral envelope and release p24 from intact virions",
+      "zh": "裂解病毒样品：加入 Triton X-100 至终浓度 0.5%。室温孵育 1 h 以破坏病毒包膜释放 p24",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Prepare sample dilutions in assay diluent: test 1:10 and 1:100 to ensure readings fall within standard curve range",
+      "zh": "用检测稀释液配制样品稀释液：测试 1:10 和 1:100 以确保读数在标准曲线范围内",
+      "time": "10 min"
+    },
+    {
+      "en": "**ELISA Plate Preparation**",
+      "zh": "**ELISA 板制备**",
+      "isHeader": true
+    },
+    {
+      "en": "Coat 96-well ELISA plate with anti-p24 capture antibody (2 µg/mL in 0.05 M carbonate buffer pH 9.6, 100 µL/well). Seal plate and incubate at 4°C overnight (or use pre-coated kit plate — skip to blocking)",
+      "zh": "96 孔 ELISA 板包被 anti-p24 捕获抗体（2 µg/mL，0.05 M 碳酸盐缓冲液 pH 9.6，100 µL/孔）。封板 4°C 过夜（或使用试剂盒预包被板 — 跳至封闭步骤）",
+      "time": "O/N",
+      "temp": "4°C"
+    },
+    {
+      "en": "Block with 200 µL/well 5% BSA in PBS-T (PBS + 0.05% Tween-20) at RT for 1 h. Wash 3× with 300 µL/well PBST (flick and blot)",
+      "zh": "200 µL/孔 5% BSA-PBST（PBS + 0.05% Tween-20）封闭，室温 1 h。300 µL/孔 PBST 洗涤 3 次（甩干并吸干）",
+      "time": "1.5 h",
+      "temp": "RT"
+    },
+    {
+      "en": "**Sample Incubation & Detection**",
+      "zh": "**样品孵育与检测**",
+      "isHeader": true
+    },
+    {
+      "en": "Add 100 µL/well of standards and diluted samples (in duplicate). Incubate at RT for 2 h on orbital shaker at 150 rpm (or 4°C overnight)",
+      "zh": "每孔加 100 µL 标准品和稀释样品（双复孔）。室温摇床 150 rpm 孵育 2 h（或 4°C 过夜）",
+      "time": "2 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 5× with PBST. Add 100 µL/well HRP-conjugated anti-p24 detection antibody (diluted per kit instructions, typically 1:1,000–1:5,000 in blocking buffer). Incubate at RT for 1 h",
+      "zh": "PBST 洗涤 5 次。每孔加 100 µL HRP 偶联的 anti-p24 检测抗体（按试剂盒说明稀释，通常封闭液 1:1,000–1:5,000）。室温孵育 1 h",
+      "time": "1.5 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 5× with PBST. Add 100 µL/well TMB substrate. Incubate at RT for 15–30 min in the dark, monitoring color development (blue). Stop when highest standard reaches OD ~2.0 at 450 nm",
+      "zh": "PBST 洗涤 5 次。每孔加 100 µL TMB 底物。室温避光孵育 15–30 min，监测显色（蓝色）。最高标准品 OD 450 nm 达 ~2.0 时终止",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add 50 µL/well 2 M H₂SO₄ to stop reaction (color turns yellow). Read absorbance at 450 nm within 30 min",
+      "zh": "每孔加 50 µL 2 M H₂SO₄ 终止反应（颜色变黄）。30 min 内读取 450 nm 吸光度",
+      "time": "15 min"
+    },
+    {
+      "en": "**Data Analysis**",
+      "zh": "**数据分析**",
+      "isHeader": true
+    },
+    {
+      "en": "Plot standard curve (4-parameter logistic fit). Calculate p24 concentration (pg/mL) from sample OD values. Convert: 1 ng p24 ≈ 10⁶–10⁷ IU (varies by vector). Multiply by dilution factor for stock concentration",
+      "zh": "绘制标准曲线（四参数 Logistic 拟合）。从样品 OD 值计算 p24 浓度 (pg/mL)。换算：1 ng p24 ≈ 10⁶–10⁷ IU（因载体而异）。乘以稀释倍数得到原液浓度"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Lyse virus (Triton X-100) → prepare p24 standards → coat ELISA plate O/N → block → add samples 2 h → detection Ab 1 h → TMB substrate → stop (H₂SO₄) → read A₄₅₀ → calculate titer",
+      "zh": "裂解病毒（Triton X-100）→ 配标准品 → ELISA 板过夜包被 → 封闭 → 加样品 2 h → 检测抗体 1 h → TMB 底物 → 终止（H₂SO₄）→ 读取 A₄₅₀ → 计算滴度"
+    }
+  ]
 }

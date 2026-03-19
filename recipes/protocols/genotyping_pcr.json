@@ -3,8 +3,17 @@
   "name": "Mouse Genotyping PCR Workflow",
   "nameCn": "小鼠基因分型 PCR 流程",
   "category": "protocol",
-  "discipline": ["molecular", "genomics"],
-  "tags": ["genotyping", "PCR", "mouse", "tail lysis", "agarose gel"],
+  "discipline": [
+    "molecular",
+    "genomics"
+  ],
+  "tags": [
+    "genotyping",
+    "PCR",
+    "mouse",
+    "tail lysis",
+    "agarose gel"
+  ],
   "usage": {
     "en": "Complete workflow for mouse genotyping from tail lysis through PCR and gel electrophoresis.",
     "zh": "小鼠基因分型完整流程：尾巴裂解 → PCR → 琼脂糖凝胶电泳。"
@@ -14,33 +23,195 @@
     "hands_on": "2 hours"
   },
   "materials": [
-    {"name": "10 M NaOH"},
-    {"name": "0.5 M EDTA"},
-    {"name": "40 mM Tris-HCl"},
-    {"name": "PCR master mix (gene-specific)"},
-    {"name": "Taq DNA polymerase"},
-    {"name": "Agarose"},
-    {"name": "TAE buffer", "linkedRecipe": "tae_50x"},
-    {"name": "Ethidium bromide"},
-    {"name": "100 bp DNA ladder"},
-    {"name": "96-well plate, PCR sealing film"},
-    {"name": "Thermal cycler"}
+    {
+      "name": "10 M NaOH"
+    },
+    {
+      "name": "0.5 M EDTA"
+    },
+    {
+      "name": "40 mM Tris-HCl"
+    },
+    {
+      "name": "PCR master mix (gene-specific)"
+    },
+    {
+      "name": "Taq DNA polymerase"
+    },
+    {
+      "name": "Agarose"
+    },
+    {
+      "name": "TAE buffer",
+      "linkedRecipe": "tae_50x"
+    },
+    {
+      "name": "Ethidium bromide"
+    },
+    {
+      "name": "100 bp DNA ladder"
+    },
+    {
+      "name": "96-well plate, PCR sealing film"
+    },
+    {
+      "name": "Thermal cycler"
+    }
   ],
   "components": [
-    {"name": "Step 1 (Tail lysis): Spin plate 3000 rpm, 4°C, 3 min to position tails. Prepare fresh lysis buffer: 17.5 µL 10 M NaOH + 14 µL 0.5 M EDTA + H₂O to 10 mL (per 130 tails). Add 75 µL per well.", "note": {"en": "Scale down to 5 mL for 65 tails.", "zh": "65 个样本可缩至 5 mL。"}},
-    {"name": "Step 2: Seal plate. Run 'Tail-Lyse' thermal cycler protocol (~46 min)."},
-    {"name": "Step 3: Spin 1000 rpm, 4°C, 1 min. Add 75 µL 40 mM Tris-HCl. Mix with pipette. Seal. Spin 1000 rpm, 4°C, 2 min. Store plate at 4°C."},
-    {"name": "Step 4 (Master mix): Prepare gene-specific master mix. Add Taq polymerase last.", "note": {"en": "Do NOT vortex or shake enzymes!", "zh": "绝对不要涡旋或摇晃酶！"}},
-    {"name": "Step 5 (PCR setup): Add 22.5 µL master mix + Taq per well. Add 2.5 µL lysate sample. Seal and spin down briefly."},
-    {"name": "Step 6: Run PCR program (~2.5 h). Store at 4°C."},
-    {"name": "Step 7 (Gel): Prepare 2% agarose-TAE gel (4 g agarose + 200 mL TAE + 5 µL EtBr for large gel). Some genes need 3%.", "note": {"en": "Check gene-specific gel % requirements.", "zh": "查阅各基因所需凝胶浓度。"}},
-    {"name": "Step 8: Load 20 µL sample per well (8 µL 100 bp ladder in middle well). Run at 150-200 V for 15-20 min."},
-    {"name": "Step 9 (Imaging): Select 'Nucleic Acids / Ethidium Bromide', optimize 'Faint Bands', Filter 1. Position gel, run protocol, invert to view."}
+    {
+      "name": "Step 1 (Tail lysis): Spin plate 3000 rpm, 4°C, 3 min to position tails. Prepare fresh lysis buffer: 17.5 µL 10 M NaOH + 14 µL 0.5 M EDTA + H₂O to 10 mL (per 130 tails). Add 75 µL per well.",
+      "note": {
+        "en": "Scale down to 5 mL for 65 tails.",
+        "zh": "65 个样本可缩至 5 mL。"
+      }
+    },
+    {
+      "name": "Step 2: Seal plate. Run 'Tail-Lyse' thermal cycler protocol (~46 min)."
+    },
+    {
+      "name": "Step 3: Spin 1000 rpm, 4°C, 1 min. Add 75 µL 40 mM Tris-HCl. Mix with pipette. Seal. Spin 1000 rpm, 4°C, 2 min. Store plate at 4°C."
+    },
+    {
+      "name": "Step 4 (Master mix): Prepare gene-specific master mix. Add Taq polymerase last.",
+      "note": {
+        "en": "Do NOT vortex or shake enzymes!",
+        "zh": "绝对不要涡旋或摇晃酶！"
+      }
+    },
+    {
+      "name": "Step 5 (PCR setup): Add 22.5 µL master mix + Taq per well. Add 2.5 µL lysate sample. Seal and spin down briefly."
+    },
+    {
+      "name": "Step 6: Run PCR program (~2.5 h). Store at 4°C."
+    },
+    {
+      "name": "Step 7 (Gel): Prepare 2% agarose-TAE gel (4 g agarose + 200 mL TAE + 5 µL EtBr for large gel). Some genes need 3%.",
+      "note": {
+        "en": "Check gene-specific gel % requirements.",
+        "zh": "查阅各基因所需凝胶浓度。"
+      }
+    },
+    {
+      "name": "Step 8: Load 20 µL sample per well (8 µL 100 bp ladder in middle well). Run at 150-200 V for 15-20 min."
+    },
+    {
+      "name": "Step 9 (Imaging): Select 'Nucleic Acids / Ethidium Bromide', optimize 'Faint Bands', Filter 1. Position gel, run protocol, invert to view."
+    }
   ],
   "notes": {
     "en": "Lysis buffer composition: ~17.5 mM NaOH + ~0.7 mM EDTA. After lysis, Tris-HCl neutralizes the NaOH. Master mix recipes are gene-specific — refer to genotyping database for primer sequences and PCR conditions. Some genes (2C-TCR, Pygo2) require overnight high-quality DNA isolation with proteinase K instead of quick alkaline lysis.",
     "zh": "裂解液组成：约 17.5 mM NaOH + 0.7 mM EDTA。裂解后 Tris-HCl 中和 NaOH。Master mix 配方因基因而异——参考基因分型数据库获取引物序列和 PCR 条件。某些基因（如 2C-TCR、Pygo2）需过夜 proteinase K 高质量 DNA 提取。"
   },
   "ref": "Adapted from standard alkaline tail lysis protocol",
-  "crosslinks": ["tae_50x", "agarose_gel_electrophoresis", "pcr_standard"]
+  "crosslinks": [
+    "tae_50x",
+    "agarose_gel_electrophoresis",
+    "pcr_standard"
+  ],
+  "relatedProtocols": [
+    "tae_50x",
+    "agarose_gel_electrophoresis",
+    "pcr_standard"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Neutralized tail lysate can be stored at 4°C for up to 1 week or -20°C long-term",
+        "zh": "中和后的尾巴裂解液可 4°C 保存 1 周或 -20°C 长期保存"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "PCR products can be stored at 4°C overnight or -20°C before gel analysis",
+        "zh": "PCR 产物可 4°C 过夜或 -20°C 保存后再进行凝胶分析"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Tail Lysis**",
+      "zh": "**尾巴裂解**",
+      "isHeader": true
+    },
+    {
+      "en": "Place tail snips in 96-well plate. Spin at 3,000 rpm, 4°C, 3 min to position tails at bottom",
+      "zh": "将尾尖放入 96 孔板。3,000 rpm，4°C，离心 3 min 使尾尖沉至底部",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Prepare fresh alkaline lysis buffer: 17.5 µL 10 M NaOH + 14 µL 0.5 M EDTA + H₂O to 10 mL (for ~130 tails; scale to 5 mL for ~65 tails). Add 75 µL per well",
+      "zh": "新鲜配制碱裂解液：17.5 µL 10 M NaOH + 14 µL 0.5 M EDTA + H₂O 至 10 mL（约 130 个尾巴；约 65 个缩至 5 mL）。每孔加 75 µL",
+      "time": "10 min"
+    },
+    {
+      "en": "Seal plate with adhesive film. Run 'Tail-Lyse' thermal cycler program (~46 min)",
+      "zh": "用封板膜密封。运行 'Tail-Lyse' 热循环程序（约 46 min）",
+      "time": "46 min"
+    },
+    {
+      "en": "Spin at 1,000 rpm, 4°C, 1 min. Add 75 µL 40 mM Tris-HCl to neutralize. Mix by pipetting. Seal. Spin at 1,000 rpm, 4°C, 2 min. Store lysate plate at 4°C",
+      "zh": "1,000 rpm，4°C 离心 1 min。加 75 µL 40 mM Tris-HCl 中和。吹打混匀。密封。1,000 rpm，4°C 离心 2 min。裂解液板 4°C 保存",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**PCR Setup & Amplification**",
+      "zh": "**PCR 配制与扩增**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare gene-specific master mix (22.5 µL per reaction). Add Taq polymerase last — do NOT vortex or shake enzymes",
+      "zh": "配制基因特异性 Master Mix（每个反应 22.5 µL）。最后加 Taq 聚合酶 — 绝不涡旋或摇晃酶",
+      "time": "15 min"
+    },
+    {
+      "en": "Dispense 22.5 µL master mix + Taq per well in new PCR plate. Add 2.5 µL tail lysate per well. Seal plate, spin down briefly",
+      "zh": "新 PCR 板中每孔分装 22.5 µL Master Mix + Taq。每孔加 2.5 µL 尾巴裂解液。封板，短暂离心",
+      "time": "20 min"
+    },
+    {
+      "en": "Run gene-specific PCR program (~2.5 h). Store products at 4°C",
+      "zh": "运行基因特异性 PCR 程序（约 2.5 h）。产物 4°C 保存",
+      "time": "2.5 h"
+    },
+    {
+      "en": "**Gel Electrophoresis & Imaging**",
+      "zh": "**凝胶电泳与成像**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare 2% agarose gel in TAE (4 g agarose + 200 mL TAE + 5 µL EtBr for large gel). Some genes require 3% gel — check gene-specific protocol",
+      "zh": "配制 2% 琼脂糖凝胶（4 g 琼脂糖 + 200 mL TAE + 5 µL EtBr，大胶）。部分基因需 3% 凝胶 — 查阅基因特异性方案",
+      "time": "20 min"
+    },
+    {
+      "en": "Load 20 µL PCR product per well. Load 8 µL 100 bp DNA ladder in reference well. Run at 150–200 V for 15–20 min",
+      "zh": "每孔加载 20 µL PCR 产物。参考孔加 8 µL 100 bp DNA ladder。150–200 V 电泳 15–20 min",
+      "time": "20 min"
+    },
+    {
+      "en": "Image gel under UV: select 'Nucleic Acids / Ethidium Bromide' protocol, optimize for faint bands. Record genotyping results",
+      "zh": "UV 下成像凝胶：选择 '核酸 / 溴化乙锭' 程序，优化弱条带显示。记录基因分型结果",
+      "time": "10 min"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Tail snips → alkaline lysis (46 min) → Tris-HCl neutralize → gene-specific PCR (~2.5 h) → 2% agarose gel (150–200 V) → UV imaging → genotype call",
+      "zh": "尾尖 → 碱裂解（46 min）→ Tris-HCl 中和 → 基因特异性 PCR（~2.5 h）→ 2% 琼脂糖凝胶（150–200 V）→ UV 成像 → 基因型判定"
+    }
+  ]
 }

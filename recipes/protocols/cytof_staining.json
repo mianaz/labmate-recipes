@@ -3,8 +3,18 @@
   "name": "CyTOF Combined Surface & Intracellular Staining",
   "nameCn": "CyTOF 联合表面和胞内染色方案",
   "category": "protocol",
-  "discipline": ["immunology", "cell"],
-  "tags": ["CyTOF", "mass cytometry", "intracellular staining", "surface staining", "phospho-protein", "metal-conjugated antibodies"],
+  "discipline": [
+    "immunology",
+    "cell"
+  ],
+  "tags": [
+    "CyTOF",
+    "mass cytometry",
+    "intracellular staining",
+    "surface staining",
+    "phospho-protein",
+    "metal-conjugated antibodies"
+  ],
   "usage": {
     "en": "Combined surface and intracellular staining protocol for mass cytometry (CyTOF) with optional stimulation, methanol permeabilization, and Ir-intercalator DNA staining.",
     "zh": "质谱流式（CyTOF）联合表面和胞内染色方案，包含可选刺激、甲醇通透和 Ir-intercalator DNA 染色。"
@@ -14,40 +24,251 @@
     "hands_on": "3 hours"
   },
   "materials": [
-    {"name": "16% PFA (formaldehyde)"},
-    {"name": "Wash buffer: PBS + 0.5% BSA + 0.02% sodium azide"},
-    {"name": "Staining buffer: 0.5% BSA in PBS"},
-    {"name": "100% methanol (cold)"},
-    {"name": "Rh103 viability dye (1:500 in PBS)"},
-    {"name": "25 µM cisplatin (alternative viability dye)"},
-    {"name": "Ir-intercalator (Fluidigm)"},
-    {"name": "Metal-conjugated antibody panels (surface and intracellular)"},
-    {"name": "MilliQ water"},
-    {"name": "35 µm filter-cap tubes"},
-    {"name": "EQ calibration beads"}
+    {
+      "name": "16% PFA (formaldehyde)"
+    },
+    {
+      "name": "Wash buffer: PBS + 0.5% BSA + 0.02% sodium azide"
+    },
+    {
+      "name": "Staining buffer: 0.5% BSA in PBS"
+    },
+    {
+      "name": "100% methanol (cold)"
+    },
+    {
+      "name": "Rh103 viability dye (1:500 in PBS)"
+    },
+    {
+      "name": "25 µM cisplatin (alternative viability dye)"
+    },
+    {
+      "name": "Ir-intercalator (Fluidigm)"
+    },
+    {
+      "name": "Metal-conjugated antibody panels (surface and intracellular)"
+    },
+    {
+      "name": "MilliQ water"
+    },
+    {
+      "name": "35 µm filter-cap tubes"
+    },
+    {
+      "name": "EQ calibration beads"
+    }
   ],
   "components": [
-    {"name": "Step 1 (Optional stimulation): Stimulate/treat 1×10⁶ cells per sample. To stop signaling: add 16% PFA 1:10 (100 µL/tube), 10 min RT. Spin 600 g 6 min 4°C. Wash 3× with wash buffer.", "note": {"en": "PFA fixation before surface staining may affect some antibody epitopes.", "zh": "表面染色前 PFA 固定可能影响部分抗体表位。"}},
-    {"name": "Step 2 (Surface staining): Resuspend ≤1.5M cells in 35-40 µL staining buffer. Add Ab mix (10-15 µL, total 50 µL). Incubate 30-60 min RT."},
-    {"name": "Step 3: Wash 2-3× with 1.5 mL wash buffer. Vortex to mix."},
-    {"name": "Step 4 (Optional viability): Stain with 1:500 Rh103 in PBS for 20 min, OR 25 µM cisplatin for 1 min."},
-    {"name": "Step 5 (Fixation): Add 300-500 µL 1.6% PFA in PBS. Incubate 10 min (or 1 h) RT. Spin, discard supernatant (no wash needed)."},
-    {"name": "Step 6 (Permeabilization): Leave ~100 µL on pellet, break up by vortexing. Add cold 100% methanol (0.9 mL per 10⁶ cells, final 90%). Incubate 10 min 4°C (prefer -20°C for 20 min).", "note": {"en": "Can store at -20°C up to 24 h, or -80°C up to 1 month.", "zh": "可 -20°C 保存 24 h，-80°C 保存 1 个月。"}},
-    {"name": "Step 7: Wash 2-4× with >1 mL wash buffer.", "note": {"en": "BSA precipitates in methanol — add >1 mL buffer to dissolve.", "zh": "BSA 在甲醇中沉淀——加 >1 mL 缓冲液溶解。"}},
-    {"name": "Step 8 (Intracellular staining): Resuspend in 35-40 µL buffer + Ab mix (10-15 µL), total exactly 50 µL. Incubate 30-60 min RT with gentle agitation."},
-    {"name": "Step 9: Wash 2-3× with wash buffer."},
-    {"name": "Step 10 (Ir-intercalator): Add 0.5 mL of 1:1000 Ir-intercalator in PBS + 1.6% PFA. Incubate ≥30 min RT (preferred: overnight at 4°C)."},
-    {"name": "Step 11: Wash 2× with wash buffer. Wash 1× with MilliQ water (use 0.1% BSA in MilliQ if cells stick to plastic). Filter through 35 µm cap. Add EQ beads for acquisition."}
+    {
+      "name": "Step 1 (Optional stimulation): Stimulate/treat 1×10⁶ cells per sample. To stop signaling: add 16% PFA 1:10 (100 µL/tube), 10 min RT. Spin 600 g 6 min 4°C. Wash 3× with wash buffer.",
+      "note": {
+        "en": "PFA fixation before surface staining may affect some antibody epitopes.",
+        "zh": "表面染色前 PFA 固定可能影响部分抗体表位。"
+      }
+    },
+    {
+      "name": "Step 2 (Surface staining): Resuspend ≤1.5M cells in 35-40 µL staining buffer. Add Ab mix (10-15 µL, total 50 µL). Incubate 30-60 min RT."
+    },
+    {
+      "name": "Step 3: Wash 2-3× with 1.5 mL wash buffer. Vortex to mix."
+    },
+    {
+      "name": "Step 4 (Optional viability): Stain with 1:500 Rh103 in PBS for 20 min, OR 25 µM cisplatin for 1 min."
+    },
+    {
+      "name": "Step 5 (Fixation): Add 300-500 µL 1.6% PFA in PBS. Incubate 10 min (or 1 h) RT. Spin, discard supernatant (no wash needed)."
+    },
+    {
+      "name": "Step 6 (Permeabilization): Leave ~100 µL on pellet, break up by vortexing. Add cold 100% methanol (0.9 mL per 10⁶ cells, final 90%). Incubate 10 min 4°C (prefer -20°C for 20 min).",
+      "note": {
+        "en": "Can store at -20°C up to 24 h, or -80°C up to 1 month.",
+        "zh": "可 -20°C 保存 24 h，-80°C 保存 1 个月。"
+      }
+    },
+    {
+      "name": "Step 7: Wash 2-4× with >1 mL wash buffer.",
+      "note": {
+        "en": "BSA precipitates in methanol — add >1 mL buffer to dissolve.",
+        "zh": "BSA 在甲醇中沉淀——加 >1 mL 缓冲液溶解。"
+      }
+    },
+    {
+      "name": "Step 8 (Intracellular staining): Resuspend in 35-40 µL buffer + Ab mix (10-15 µL), total exactly 50 µL. Incubate 30-60 min RT with gentle agitation."
+    },
+    {
+      "name": "Step 9: Wash 2-3× with wash buffer."
+    },
+    {
+      "name": "Step 10 (Ir-intercalator): Add 0.5 mL of 1:1000 Ir-intercalator in PBS + 1.6% PFA. Incubate ≥30 min RT (preferred: overnight at 4°C)."
+    },
+    {
+      "name": "Step 11: Wash 2× with wash buffer. Wash 1× with MilliQ water (use 0.1% BSA in MilliQ if cells stick to plastic). Filter through 35 µm cap. Add EQ beads for acquisition."
+    }
   ],
   "stoppingPoints": [
-    {"afterStep": "Step 6", "condition": "-20°C in methanol", "duration": "Up to 24 hours"},
-    {"afterStep": "Step 6", "condition": "-80°C in methanol", "duration": "Up to 1 month"},
-    {"afterStep": "Step 10", "condition": "4°C in Ir-intercalator/PFA", "duration": "Up to 1 week"}
+    {
+      "afterStep": "Step 6",
+      "condition": "-20°C in methanol",
+      "duration": "Up to 24 hours"
+    },
+    {
+      "afterStep": "Step 6",
+      "condition": "-80°C in methanol",
+      "duration": "Up to 1 month"
+    },
+    {
+      "afterStep": "Step 10",
+      "condition": "4°C in Ir-intercalator/PFA",
+      "duration": "Up to 1 week"
+    }
   ],
   "notes": {
     "en": "Staining concentrations matter especially for phospho-proteins. Ab bank mixes are designed for 50 µL final volume. Some cells stick to plastic in MilliQ water wash — add 0.1% BSA. For autosampler: resuspend in 50 µL MilliQ, add 50 µL EQ beads, transfer to 96-deep-well plate. Ideal: 0.5M cells per injection of 400 µL.",
     "zh": "染色浓度对磷酸化蛋白尤其重要。抗体库配方按 50 µL 终体积设计。某些细胞在 MilliQ 水洗涤时粘壁——加 0.1% BSA。自动进样：50 µL MilliQ 重悬 + 50 µL EQ beads。最佳：0.5M 细胞/400 µL。"
   },
   "ref": "Adapted from Fluidigm CyTOF protocol (AH Mar 2012, DM Mar 2015)",
-  "crosslinks": ["pfa_4", "facs_buffer", "flow_panel_staining"]
+  "crosslinks": [
+    "pfa_4",
+    "facs_buffer",
+    "flow_panel_staining"
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "After fixation with 1.6% PFA, cells can be stored at 4°C for up to 24 h before permeabilization",
+        "zh": "1.6% PFA 固定后，细胞可 4°C 保存 24 h 再进行通透"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Cells in 90% methanol can be stored at −20°C up to 24 h, or −80°C up to 1 month",
+        "zh": "90% 甲醇中的细胞可 −20°C 保存 24 h，或 −80°C 保存 1 个月"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "Cells in Ir-intercalator/PFA can be stored at 4°C for up to 1 week before acquisition",
+        "zh": "Ir-intercalator/PFA 中的细胞可 4°C 保存 1 周后再上机"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Optional: Stimulation & Fixation**",
+      "zh": "**可选：刺激与固定**",
+      "isHeader": true
+    },
+    {
+      "en": "Stimulate/treat 1×10⁶ cells per sample as needed. To stop signaling: add 16% PFA 1:10 (100 µL per tube) for 10 min at RT",
+      "zh": "根据需要刺激/处理每管 1×10⁶ 细胞。终止信号：加 16% PFA 1:10（100 µL/管），RT 孵育 10 min",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Centrifuge 600×g, 6 min, 4°C. Wash 3× with wash buffer (PBS + 0.5% BSA + 0.02% NaN₃)",
+      "zh": "600×g 离心 6 min，4°C。用洗涤液（PBS + 0.5% BSA + 0.02% NaN₃）洗涤 3 次",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Surface Staining**",
+      "zh": "**表面染色**",
+      "isHeader": true
+    },
+    {
+      "en": "Resuspend ≤1.5×10⁶ cells in 35–40 µL staining buffer (0.5% BSA/PBS). Add metal-conjugated antibody mix (10–15 µL, total 50 µL). Incubate 30–60 min at RT",
+      "zh": "将 ≤1.5×10⁶ 细胞重悬于 35–40 µL 染色缓冲液（0.5% BSA/PBS）。加金属标记抗体混合液（10–15 µL，总体积 50 µL）。RT 孵育 30–60 min",
+      "time": "30–60 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 2–3× with 1.5 mL wash buffer. Vortex briefly to resuspend",
+      "zh": "用 1.5 mL 洗涤液洗涤 2–3 次。短暂涡旋重悬",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Optional: Viability Staining**",
+      "zh": "**可选：活力染色**",
+      "isHeader": true
+    },
+    {
+      "en": "Stain with 1:500 Rh103 in PBS for 20 min on ice, OR 25 µM cisplatin for 1 min at RT",
+      "zh": "用 1:500 Rh103/PBS 冰上染色 20 min，或 25 µM 顺铂 RT 染色 1 min",
+      "time": "1–20 min",
+      "temp": "4°C or RT"
+    },
+    {
+      "en": "**Fixation & Methanol Permeabilization**",
+      "zh": "**固定与甲醇通透**",
+      "isHeader": true
+    },
+    {
+      "en": "Add 300–500 µL 1.6% PFA in PBS. Incubate 10 min at RT (or 1 h). Centrifuge and discard supernatant",
+      "zh": "加 300–500 µL 1.6% PFA/PBS。RT 孵育 10 min（或 1 h）。离心弃上清",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Break up pellet by vortexing (~100 µL residual). Add cold 100% methanol (0.9 mL per 10⁶ cells, final ~90%). Incubate at 4°C for 10 min or −20°C for 20 min",
+      "zh": "涡旋打散沉淀（保留 ~100 µL 残液）。加冷 100% 甲醇（0.9 mL/10⁶ 细胞，终浓度 ~90%）。4°C 10 min 或 −20°C 20 min",
+      "time": "10–20 min",
+      "temp": "4°C or −20°C"
+    },
+    {
+      "en": "**Intracellular Staining**",
+      "zh": "**胞内染色**",
+      "isHeader": true
+    },
+    {
+      "en": "Wash 2–4× with >1 mL wash buffer (to dissolve BSA precipitate from methanol)",
+      "zh": "用 >1 mL 洗涤液洗涤 2–4 次（溶解甲醇中沉淀的 BSA）",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend in 35–40 µL buffer. Add intracellular Ab mix (10–15 µL, total 50 µL exactly). Incubate 30–60 min at RT with gentle agitation",
+      "zh": "用 35–40 µL 缓冲液重悬。加胞内抗体混合液（10–15 µL，总体积恰好 50 µL）。RT 轻柔振荡孵育 30–60 min",
+      "time": "30–60 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 2–3× with wash buffer",
+      "zh": "用洗涤液洗涤 2–3 次",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Ir-Intercalator DNA Staining & Acquisition**",
+      "zh": "**Ir-Intercalator DNA 染色与上机**",
+      "isHeader": true
+    },
+    {
+      "en": "Add 0.5 mL of 1:1000 Ir-intercalator in PBS + 1.6% PFA. Incubate ≥30 min RT (preferred: overnight at 4°C)",
+      "zh": "加 0.5 mL 1:1000 Ir-intercalator（PBS + 1.6% PFA）。RT 孵育 ≥30 min（推荐：4°C 过夜）",
+      "time": "30 min – O/N",
+      "temp": "RT or 4°C"
+    },
+    {
+      "en": "Wash 2× with wash buffer. Wash 1× with MilliQ water (add 0.1% BSA if cells stick). Filter through 35 µm cap tube. Add EQ calibration beads. Acquire on CyTOF",
+      "zh": "洗涤液洗 2 次。MilliQ 水洗 1 次（细胞粘壁可加 0.1% BSA）。过 35 µm 滤帽管。加 EQ 校准珠。上 CyTOF",
+      "time": "15 min",
+      "temp": "RT"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Stimulate (opt.) → fix PFA → surface Ab 30–60 min RT → wash → viability dye (opt.) → fix 1.6% PFA → MeOH perm → wash → intracellular Ab 30–60 min → wash → Ir-intercalator O/N → wash → MilliQ → EQ beads → acquire",
+      "zh": "刺激（可选）→ PFA 固定 → 表面抗体 30–60 min RT → 洗 → 活力染色（可选）→ 1.6% PFA 固定 → 甲醇通透 → 洗 → 胞内抗体 30–60 min → 洗 → Ir-intercalator 过夜 → 洗 → MilliQ → EQ 珠 → 上机"
+    }
+  ],
+  "relatedProtocols": [
+    "pfa_4",
+    "facs_buffer",
+    "flow_panel_staining",
+    "flow_cytometry_protocol"
+  ]
 }

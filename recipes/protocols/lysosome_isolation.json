@@ -104,6 +104,30 @@
       }
     }
   ],
+  "detailedSteps": [
+    {"en": "**Cell harvesting & homogenization**", "zh": "**细胞收获与匀浆**", "isHeader": true},
+    {"en": "Seed 5×10⁷–1×10⁸ cells (or use 100–200 mg liver tissue). Wash 2× with ice-cold PBS. Scrape cells on ice and pellet at 300×g, 5 min, 4°C.", "zh": "接种 5×10⁷–1×10⁸ 细胞（或用 100–200 mg 肝组织）。冰冷 PBS 洗 2 次。冰上刮取细胞，300×g 离心 5 min，4°C。", "time": "15 min", "temp": "4°C"},
+    {"en": "Resuspend pellet in 1 mL cold homogenization buffer (250 mM sucrose, 10 mM HEPES pH 7.4, protease inhibitors, 1 mM PMSF) per 5×10⁷ cells.", "zh": "每 5×10⁷ 细胞用 1 mL 冷匀浆缓冲液（250 mM 蔗糖、10 mM HEPES pH 7.4、蛋白酶抑制剂、1 mM PMSF）重悬沉淀。", "time": "5 min", "temp": "4°C"},
+    {"en": "Lyse with Dounce homogenizer: 25–30 strokes with tight pestle on ice. Verify ~80% lysis by trypan blue (nuclei should remain intact). Do NOT sonicate.", "zh": "Dounce 匀浆器冰上裂解：紧密杵 25–30 次。台盼蓝验证约 80% 裂解（核应完整）。不可超声。", "time": "10 min", "temp": "4°C"},
+    {"en": "**Differential centrifugation**", "zh": "**差速离心**", "isHeader": true},
+    {"en": "Remove nuclei/debris: centrifuge 600×g, 10 min, 4°C. Transfer supernatant to new tube. Repeat once. This is the postnuclear supernatant (PNS). Save 100 µL PNS as total homogenate control.", "zh": "去核/碎片：600×g 离心 10 min，4°C。上清转新管。重复一次。此为核后上清（PNS）。保存 100 µL PNS 作为总匀浆对照。", "time": "25 min", "temp": "4°C"},
+    {"en": "Remove mitochondria: centrifuge PNS at 3,000×g, 10 min, 4°C. Keep supernatant (post-mitochondrial supernatant, PMS).", "zh": "去线粒体：PNS 3,000×g 离心 10 min，4°C。保留上清（线粒体后上清，PMS）。", "time": "15 min", "temp": "4°C"},
+    {"en": "Pellet crude lysosomes: centrifuge PMS at 17,000×g, 20 min, 4°C. Pellet = crude lysosome/endosome fraction.", "zh": "沉淀粗溶酶体：PMS 17,000×g 离心 20 min，4°C。沉淀 = 粗溶酶体/内体组分。", "time": "25 min", "temp": "4°C"},
+    {"en": "**Density gradient separation**", "zh": "**密度梯度分离**", "isHeader": true},
+    {"en": "Resuspend crude pellet in 0.5 mL 250 mM sucrose buffer. Layer on top of step gradient in SW-41 tube: 2 mL 2.0 M → 3 mL 1.3 M → 3 mL 0.86 M → 2 mL 0.25 M sucrose. OR: load on 20% Percoll in sucrose buffer.", "zh": "将粗沉淀重悬于 0.5 mL 250 mM 蔗糖缓冲液。层叠于 SW-41 管梯度上：2 mL 2.0 M → 3 mL 1.3 M → 3 mL 0.86 M → 2 mL 0.25 M 蔗糖。或：加载至 20% Percoll 蔗糖缓冲液。", "time": "20 min", "temp": "4°C"},
+    {"en": "Ultracentrifuge at 30,000×g (25,000 rpm SW-41 rotor) for 60 min at 4°C with slow brake. Lysosomes band at density 1.10–1.12 g/mL (between 0.86 M and 1.3 M layers).", "zh": "超速离心 30,000×g（SW-41 转子 25,000 rpm），60 min，4°C，慢刹车。溶酶体在密度 1.10–1.12 g/mL 处成带（0.86 M 和 1.3 M 层之间）。", "time": "60 min", "temp": "4°C"},
+    {"en": "Collect 0.5–1 mL fractions from top. Identify lysosome-enriched fractions by β-hexosaminidase activity assay or LAMP1 western blot.", "zh": "从顶部收集 0.5–1 mL 组分。β-半乳糖苷酶活性测定或 LAMP1 Western blot 鉴定溶酶体富集组分。", "time": "30–60 min", "temp": "4°C"},
+    {"en": "**Cleanup & storage**", "zh": "**清洗与保存**", "isHeader": true},
+    {"en": "Pool lysosome-positive fractions. Dilute 5× with PBS. Re-pellet at 17,000×g, 20 min, 4°C. Resuspend in assay buffer. Yield: ~1–5 µg lysosome protein per 10⁷ cells.", "zh": "合并溶酶体阳性组分。PBS 稀释 5 倍。17,000×g 再沉淀 20 min，4°C。用实验缓冲液重悬。产量：~1–5 µg 溶酶体蛋白/10⁷ 细胞。", "time": "30 min", "temp": "4°C"},
+    {"en": "Use immediately for downstream assays, or flash-freeze aliquots in liquid N₂ and store at −80°C.", "zh": "立即用于下游实验，或液氮速冻分装保存于 −80°C。", "temp": "−80°C"}
+  ],
+  "briefSteps": [
+    {"en": "Harvest cells → Dounce homogenize → 600×g remove nuclei → 3,000×g remove mito → 17,000×g pellet crude lysosomes → Sucrose/Percoll gradient ultracentrifuge → Collect lysosome band → Verify by LAMP1/β-hex → Pool & wash", "zh": "收获细胞 → Dounce 匀浆 → 600×g 去核 → 3,000×g 去线粒体 → 17,000×g 粗溶酶体 → 蔗糖/Percoll 梯度超速离心 → 收集溶酶体带 → LAMP1/β-hex 验证 → 合并洗涤"}
+  ],
+  "safeStops": [
+    {"afterStep": 7, "note": {"en": "Crude lysosome pellet can be kept on ice for up to 1 h before gradient loading — process as quickly as possible", "zh": "粗溶酶体沉淀可冰上保存最多 1 h 后再进行梯度加载——尽快处理"}},
+    {"afterStep": 13, "note": {"en": "Purified lysosome fraction can be flash-frozen in liquid N₂ and stored at −80°C for up to 1 month", "zh": "纯化的溶酶体组分可液氮速冻后 −80°C 保存最长 1 个月"}}
+  ],
   "notes": {
     "en": "Alternative method: LysoIP (Ballabio lab, Nat Methods 2019) — express TMEM192-HA, immunoprecipitate with anti-HA beads (10 min, 4°C); rapid and specific but requires stable cell line. Marker verification: LAMP1/LAMP2 (membrane), Cathepsin B/D (luminal), ATP6V1A (vacuolar ATPase). Purity assessment: minimize mitochondrial (COX IV) and ER (PDI) markers.",
     "zh": "替代法：LysoIP（Ballabio 实验室，Nat Methods 2019）——表达 TMEM192-HA，anti-HA 磁珠免疫沉淀（4°C 10 min）；快速特异但需要稳转细胞系。标记蛋白验证：LAMP1/LAMP2（膜）、Cathepsin B/D（腔内）、ATP6V1A（液泡 ATPase）。纯度评估：尽量减少线粒体（COX IV）和 ER（PDI）标记。"
@@ -114,6 +138,12 @@
     "er_golgi_isolation",
     "sucrose_gradient_homog",
     "percoll_isotonic",
+    "wb_protocol"
+  ],
+  "relatedProtocols": [
+    "subcellular_fractionation",
+    "mitochondria_isolation",
+    "er_golgi_isolation",
     "wb_protocol"
   ],
   "ref": "Graham (2001) Curr Protoc Cell Biol 3.9.1; Abu-Remaileh et al. (2017) Science 358:807–813 (LysoIP); Walkley (2009) J Inherit Metab Dis 32:181",
@@ -139,27 +169,29 @@
       "linkedRecipe": "sucrose_gradient_buffer"
     },
     {
+      "name": "Percoll isotonic solution",
+      "linkedRecipe": "percoll_isotonic"
+    },
+    {
       "name": "Dounce homogenizer"
     },
     {
-      "name": "Ultracentrifuge"
+      "name": "Ultracentrifuge (SW-41 rotor)"
     },
     {
       "name": "Protease inhibitor cocktail"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Homogenization",
-      "condition": "Keep on ice, process immediately",
-      "duration": "1 hour"
     },
     {
-      "afterStep": "Lysosome-enriched fraction collected",
-      "condition": "−80°C",
-      "duration": "1 month"
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
     }
   ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  },
   "usage": {
     "en": "Isolate lysosome-enriched fractions by differential and density gradient centrifugation.",
     "zh": "差速和密度梯度离心分离富集溶酶体组分。"

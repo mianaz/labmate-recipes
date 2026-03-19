@@ -104,9 +104,103 @@
       "optional": true
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Test cell cultures for mycoplasma contamination using PCR or biochemical assay.",
     "zh": "PCR 或生化法检测细胞培养物是否存在支原体污染。"
-  }
+  },
+  "relatedProtocols": [
+    "mycoplasma_pcr",
+    "genomic_dna_extraction",
+    "agarose_gel_electrophoresis",
+    "cell_passage"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "🧪",
+    "label": {
+      "en": "Protocol — no storage required",
+      "zh": "实验方案 — 无需存储"
+    }
+  },
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Boiled supernatant template can be stored at -20°C for weeks before PCR",
+        "zh": "煮沸的上清模板可在 -20°C 保存数周后再进行 PCR"
+      }
+    },
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Extracted gDNA for STR profiling can be stored at -20°C for months",
+        "zh": "用于 STR 分析的提取 gDNA 可 -20°C 保存数月"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Mycoplasma PCR Testing**",
+      "zh": "**支原体 PCR 检测**",
+      "isHeader": true
+    },
+    {
+      "en": "Collect 1 mL conditioned medium from 70–90% confluent culture grown 48–72 h without medium change or antibiotics",
+      "zh": "从 70–90% 汇合度的培养物中收集 1 mL 条件培养基（48–72 h 不换液、不加抗生素）",
+      "time": "5 min"
+    },
+    {
+      "en": "Centrifuge at 250×g for 5 min to pellet cells. Transfer supernatant to new tube. Boil 100 µL supernatant at 95°C for 10 min to prepare template DNA",
+      "zh": "250×g 离心 5 min 沉淀细胞。转移上清至新管。取 100 µL 上清 95°C 煮沸 10 min 制备模板 DNA",
+      "time": "15 min",
+      "temp": "95°C"
+    },
+    {
+      "en": "Set up PCR with mycoplasma-specific 16S rRNA primers (Forward: 5'-GGGAGCAAACAGGATTAGATACCCT-3', Reverse: 5'-TGCACCATCTGTCACTCTGTTAACCTC-3'). Include positive and negative controls",
+      "zh": "使用支原体特异性 16S rRNA 引物进行 PCR（正向/反向引物见英文）。设置阳性和阴性对照",
+      "time": "1.5 h"
+    },
+    {
+      "en": "Run PCR products on 2% agarose gel. Positive result: band at ~280 bp (contamination confirmed). Negative: no band (clean culture)",
+      "zh": "PCR 产物在 2% 琼脂糖凝胶上电泳。阳性：~280 bp 条带（确认污染）。阴性：无条带（培养无污染）",
+      "time": "30 min"
+    },
+    {
+      "en": "**Alternative: MycoAlert Bioluminescence Assay**",
+      "zh": "**替代方案：MycoAlert 生物发光检测**",
+      "isHeader": true
+    },
+    {
+      "en": "Mix 100 µL MycoAlert Reagent + 100 µL cell culture supernatant. Read luminescence (Reading A). Add 100 µL MycoAlert Substrate, incubate 10 min, read again (Reading B). Interpret: B/A < 0.9 = negative; 0.9–1.2 = borderline (re-test); >1.2 = positive",
+      "zh": "100 µL MycoAlert 试剂 + 100 µL 培养上清混合。读发光值（读数 A）。加 100 µL MycoAlert 底物，孵育 10 min，再读（读数 B）。判读：B/A < 0.9 = 阴性；0.9–1.2 = 可疑（重测）；>1.2 = 阳性",
+      "time": "20 min"
+    },
+    {
+      "en": "**If Positive: Treatment or Discard**",
+      "zh": "**若阳性：治疗或丢弃**",
+      "isHeader": true
+    },
+    {
+      "en": "Option A: Treat with Plasmocin (InvivoGen) 25 µg/mL for 2 weeks. Option B: BM Cyclin (Roche) treatment cycle (3 days treatment 1 → 4 days treatment 2 × 2 cycles). Re-test 2 weeks after treatment ends. If persistent, discard cells entirely",
+      "zh": "方案 A：Plasmocin（InvivoGen）25 µg/mL 处理 2 周。方案 B：BM Cyclin（Roche）处理循环（处理 1 三天 → 处理 2 四天 × 2 个循环）。停药 2 周后重新检测。持续阳性则彻底丢弃细胞",
+      "time": "2–4 weeks"
+    },
+    {
+      "en": "**Cell Authentication — STR Profiling**",
+      "zh": "**细胞鉴定 — STR 分析**",
+      "isHeader": true
+    },
+    {
+      "en": "Collect ≥10⁶ cells and extract genomic DNA. Send DNA to STR profiling service (ATCC, DSMZ, or in-house). Compare against Cellosaurus/ATCC database (≥80% match confirms identity). Required before publication per NIH/ATCC guidelines",
+      "zh": "收集 ≥10⁶ 细胞并提取基因组 DNA。送 STR 分析服务（ATCC、DSMZ 或内部检测）。与 Cellosaurus/ATCC 数据库比对（≥80% 匹配确认身份）。NIH/ATCC 指南要求发表前必须鉴定",
+      "time": "1–2 weeks"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Conditioned medium → boil template → mycoplasma PCR (16S rRNA primers) → 2% gel (280 bp = positive) → treat/discard if contaminated → STR profiling for authentication",
+      "zh": "条件培养基 → 煮沸制模板 → 支原体 PCR（16S rRNA 引物）→ 2% 凝胶（280 bp = 阳性）→ 阳性则治疗/丢弃 → STR 分析鉴定"
+    }
+  ]
 }

@@ -86,6 +86,33 @@
       }
     }
   ],
+  "detailedSteps": [
+    {"en": "**Sample preparation**", "zh": "**样品制备**", "isHeader": true},
+    {"en": "Prepare single-cell suspension from tissue (collagenase/trypsin digestion) or blood (Ficoll gradient). Pellet at 400×g, 5 min. Resuspend in FACS buffer to 2–5×10⁶ cells/mL. Aliquot 100 µL (2–5×10⁵ cells) per FACS tube.", "zh": "从组织（胶原酶/胰酶消化）或血液（Ficoll 梯度）制备单细胞悬液。400×g 离心 5 min。FACS 缓冲液重悬至 2–5×10⁶/mL。每管分装 100 µL（2–5×10⁵ 细胞）。", "time": "30 min", "temp": "4°C"},
+    {"en": "Prepare controls: unstained, single-color compensation (beads or cells), FMO controls for each channel.", "zh": "准备对照：未染色对照、单色补偿对照（磁珠或细胞）、每个通道的 FMO 对照。", "time": "15 min"},
+    {"en": "**Fc block & viability staining**", "zh": "**Fc 封闭与活力染色**", "isHeader": true},
+    {"en": "Add Fc block (anti-CD16/CD32, 5 µg/mL) to each tube. Incubate 15 min at 4°C. No wash needed.", "zh": "每管加 Fc 封闭液（anti-CD16/CD32，5 µg/mL）。4°C 孵育 15 min。无需洗涤。", "time": "15 min", "temp": "4°C"},
+    {"en": "Add viability dye (Live/Dead Aqua, Zombie dye, or DAPI 1 µg/mL) in PBS (no BSA/serum). Incubate 15–30 min at RT or 4°C in the dark.", "zh": "PBS（无 BSA/血清）中加活力染料（Live/Dead Aqua、Zombie 染料或 DAPI 1 µg/mL）。RT 或 4°C 避光孵育 15–30 min。", "time": "15–30 min", "temp": "RT or 4°C"},
+    {"en": "Wash once: add 3 mL FACS buffer, centrifuge 400×g 5 min 4°C, decant.", "zh": "洗涤一次：加 3 mL FACS 缓冲液，400×g 离心 5 min 4°C，倾去上清。", "time": "10 min", "temp": "4°C"},
+    {"en": "**Surface antibody staining**", "zh": "**表面抗体染色**", "isHeader": true},
+    {"en": "Add pre-titrated antibody cocktail (50–100 µL in FACS buffer) to each tube. Incubate 20–30 min at 4°C in the dark.", "zh": "每管加预滴定的抗体混合液（50–100 µL FACS 缓冲液中）。4°C 避光孵育 20–30 min。", "time": "20–30 min", "temp": "4°C"},
+    {"en": "Wash 2×: add 3 mL FACS buffer, 400×g 5 min 4°C, decant. Repeat.", "zh": "洗涤 2×：加 3 mL FACS 缓冲液，400×g 离心 5 min 4°C，倾去上清。重复。", "time": "15 min", "temp": "4°C"},
+    {"en": "**Fixation (surface-only panel)**", "zh": "**固定（仅表面染色 panel）**", "isHeader": true},
+    {"en": "For surface-only: fix in 100 µL 1–4% PFA for 20 min at RT. Wash 2× with FACS buffer. Resuspend in 200–500 µL FACS buffer. Proceed to acquisition or store at 4°C in dark ≤48 h.", "zh": "仅表面染色：100 µL 1–4% PFA 固定 20 min RT。FACS 缓冲液洗 2 次。重悬于 200–500 µL FACS 缓冲液。上机或 4°C 避光保存 ≤48 h。", "time": "30 min", "temp": "RT"},
+    {"en": "**Intracellular staining (optional)**", "zh": "**胞内染色（可选）**", "isHeader": true},
+    {"en": "Fix/permeabilize with Cytofix/Cytoperm (BD): 250 µL per tube, 4°C for 20 min. Wash 2× with 1× Perm/Wash buffer.", "zh": "Cytofix/Cytoperm（BD）固定/透化：每管 250 µL，4°C 20 min。1× Perm/Wash 缓冲液洗 2 次。", "time": "30 min", "temp": "4°C"},
+    {"en": "Add intracellular antibodies (cytokines, Ki67) diluted in Perm/Wash buffer. Incubate 30 min at 4°C in the dark. For transcription factors (FoxP3, T-bet): use eBioscience FoxP3 buffer set, fix/perm overnight at 4°C.", "zh": "Perm/Wash 缓冲液稀释的胞内抗体（细胞因子、Ki67）。4°C 避光孵育 30 min。转录因子（FoxP3、T-bet）：用 eBioscience FoxP3 缓冲液套装，4°C 过夜固定/透化。", "time": "30 min–O/N", "temp": "4°C"},
+    {"en": "Wash 2× with Perm/Wash buffer. Resuspend in 200–500 µL FACS buffer.", "zh": "Perm/Wash 缓冲液洗 2 次。重悬于 200–500 µL FACS 缓冲液。", "time": "10 min", "temp": "4°C"},
+    {"en": "**Acquisition**", "zh": "**上机采集**", "isHeader": true},
+    {"en": "Run on flow cytometer within 4 h. Set voltages using unstained control. Run compensation with single-color controls. Acquire ≥10,000 events in lymphocyte gate or ≥50,000 total events.", "zh": "4 h 内上流式细胞仪。未染色对照设电压。单色对照做补偿。淋巴细胞门 ≥10,000 个事件或总 ≥50,000 个事件。", "time": "30–60 min"}
+  ],
+  "briefSteps": [
+    {"en": "Prepare single cells → Fc block 15 min → Viability dye 15–30 min → Surface Ab cocktail 20–30 min 4°C → Wash 2× → Fix (PFA or Cytofix/Cytoperm) → (Optional: Perm + intracellular Ab 30 min) → Wash → Acquire on cytometer", "zh": "制备单细胞 → Fc 封闭 15 min → 活力染料 15–30 min → 表面抗体 20–30 min 4°C → 洗 2× → 固定（PFA 或 Cytofix/Cytoperm）→（可选：透化 + 胞内抗体 30 min）→ 洗涤 → 上机采集"}
+  ],
+  "safeStops": [
+    {"afterStep": 10, "note": {"en": "After surface staining and fixation in PFA, cells can be stored at 4°C in the dark for up to 1 week", "zh": "表面染色并 PFA 固定后，细胞可 4°C 避光保存最长 1 周"}},
+    {"afterStep": 15, "note": {"en": "After intracellular staining, samples should be acquired within 24 h for best signal (store 4°C, dark)", "zh": "胞内染色后，样品应在 24 h 内采集以获最佳信号（4°C 避光保存）"}}
+  ],
   "notes": {
     "en": "Panel design rules: (1) brightest fluorochrome (PE, APC) for lowest-expression markers; (2) avoid spectral overlap of similar channels; (3) tandem dyes degrade (use fresh, avoid freeze-thaw). Compensation: required for all multicolor panels. Use UltraComp eBeads or anti-mouse Igκ beads for compensation controls. Analysis: FlowJo, FCS Express, Cytobank.",
     "zh": "面板设计原则：(1) 最亮荧光素（PE、APC）用于低表达标记；(2) 避免相邻通道光谱重叠；(3) 串联染料易降解（新鲜使用，避免冻融）。补偿校正：多色面板必须做。用 UltraComp eBeads 或抗小鼠 Igκ 磁珠做补偿对照。分析软件：FlowJo、FCS Express、Cytobank。"
@@ -96,6 +123,13 @@
     "annexin_v_apoptosis",
     "cell_cycle_pi",
     "pfa_4"
+  ],
+  "relatedProtocols": [
+    "flow_cytometry_protocol",
+    "annexin_v_apoptosis",
+    "cell_cycle_pi",
+    "pbmc_isolation",
+    "tumor_dissociation"
   ],
   "ref": "Mahnke & Roederer (2007) Clin Lab Med 27:469–485; Chattopadhyay et al. (2014) Nat Protoc 9:147–154; Cossarizza et al. (2021) Eur J Immunol 51:2708",
   "doi": "10.1038/nprot.2013.160",
@@ -116,14 +150,14 @@
       "name": "Antibody panel (pre-titrated)"
     },
     {
-      "name": "Viability dye"
+      "name": "Viability dye (DAPI, Zombie, or Live/Dead)"
     },
     {
-      "name": "Fc block",
+      "name": "Fc block (anti-CD16/CD32)",
       "optional": true
     },
     {
-      "name": "Fixation buffer (4% PFA or commercial)",
+      "name": "Fixation buffer (4% PFA)",
       "linkedRecipe": "pfa_4"
     },
     {
@@ -132,19 +166,21 @@
       "optional": true
     },
     {
-      "name": "Compensation beads"
+      "name": "Compensation beads (UltraComp eBeads)"
+    },
+    {
+      "name": "FACS tubes (5 mL polystyrene)"
     },
     {
       "name": "Flow cytometer"
     }
   ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Surface staining and fixation",
-      "condition": "4°C in dark",
-      "duration": "1 week"
-    }
-  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  },
   "usage": {
     "en": "Perform multi-parameter flow cytometry staining panel for immunophenotyping.",
     "zh": "多参数流式染色 panel 进行免疫表型分析。"

@@ -10,37 +10,82 @@
     "zh": "使用胶原酶、胰蛋白酶和 DNase I 将实体瘤酶消化为单细胞悬液，用于 FACS、scRNA-seq 或细胞系建立。"
   },
   "duration": {
-    "total": "3-4 hours",
+    "total": "3–4 hours",
     "hands_on": "1 hour"
   },
   "materials": [
-    {"name": "Dissecting media: DMEM + 10% FBS + 1× Pen/Strep"},
-    {"name": "Collagenase Type I or IV (10 mg/mL stock in RPMI, filter 0.22 µm, aliquot 1 mL at -20°C)", "note": "Type IV preserves surface antigens better"},
-    {"name": "0.05% Trypsin/EDTA (dilute 0.25% stock 5× with PBS or HBSS without Ca²⁺/Mg²⁺)"},
-    {"name": "DNase I (2 mg/mL in PBS, ~4000 Kunitz U/mL, aliquot at -20°C)"},
+    {"name": "Dissecting media: DMEM + 10% FBS + 1× Pen/Strep", "linkedRecipe": "complete_dmem"},
+    {"name": "Collagenase Type I or IV (10 mg/mL stock in RPMI, filter 0.22 µm, aliquot 1 mL at −20°C)", "note": "Type IV preserves surface antigens better"},
+    {"name": "0.05% Trypsin/EDTA (dilute 0.25% stock 5× with HBSS without Ca²⁺/Mg²⁺)"},
+    {"name": "DNase I (2 mg/mL in PBS, ~4000 Kunitz U/mL, aliquot at −20°C)"},
     {"name": "1× RBC lysis buffer (from 10× stock)", "linkedRecipe": "rbc_lysis_10x"},
     {"name": "FACS buffer (PBS + 2% FBS + 2 mM EDTA)", "linkedRecipe": "facs_buffer"},
     {"name": "5 mL syringe, 18G and 20G needles"},
-    {"name": "70 µm cell strainer (or 40 µm)"},
+    {"name": "70 µm cell strainer"},
     {"name": "Razor blades, hemostat, sterile petri dish"}
   ],
   "components": [
     {"name": "Step 1: Prepare digestion medium — dilute collagenase stock to 1 mg/mL in dissecting media. 10 mL per tumor. Keep on ice."},
     {"name": "Step 2: Mince tumor on sterile petri dish with razor blades. Add 0.5 mL digestion medium to prevent drying."},
-    {"name": "Step 3: Transfer minced tissue to 9.5 mL digestion medium in 15 mL tube. Rotate 1-2 h at 37°C.", "note": {"en": "Immunophenotyping: 1 h is enough. Epithelial cell isolation: 2 h needed.", "zh": "免疫分型：1 小时足够。上皮细胞分离：需 2 小时。"}},
+    {"name": "Step 3: Transfer minced tissue to 9.5 mL digestion medium in 15 mL tube. Rotate 1–2 h at 37°C.", "note": {"en": "Immunophenotyping: 1 h is enough. Epithelial cell isolation: 2 h needed.", "zh": "免疫分型：1 小时足够。上皮细胞分离：需 2 小时。"}},
     {"name": "Step 4: Spin 300 g, 5 min, 4°C. Remove supernatant. Add 2 mL warm 0.05% trypsin/EDTA. Mix with P1000. Incubate 37°C for 5 min.", "note": {"en": "Caution: trypsin trims surface receptors — limit exposure time.", "zh": "注意：胰蛋白酶会切割表面受体——限制作用时间。"}},
-    {"name": "Step 5: Add 3 mL dissecting media + 125 µL DNase I (~500 Kunitz U). Pass through 18G syringe 5-10×, then 20G syringe 5-10×. Avoid bubbles."},
+    {"name": "Step 5: Add 3 mL dissecting media + 125 µL DNase I (~500 Kunitz U). Pass through 18G syringe 5–10×, then 20G syringe 5–10×. Avoid bubbles."},
     {"name": "Step 6: Spin 300 g, 5 min, 4°C. Add 1 mL 1× RBC lysis, 1 min on ice. Add 2 mL media. Filter through 70 µm strainer into 50 mL tube. Transfer to new 15 mL tube.", "note": {"en": "RBC lysis is critical — do not omit.", "zh": "红细胞裂解很关键——不可省略。"}},
     {"name": "Step 7: Spin 300 g, 5 min, 4°C. Resuspend in 2 mL dissecting media (or FACS buffer for immunophenotyping). Count cells.", "note": {"en": "If RBCs still abundant, repeat lysis step.", "zh": "如红细胞仍多，重复裂解步骤。"}},
     {"name": "Step 8: For cell line establishment — spin, resuspend in appropriate medium, seed into plates."}
   ],
+  "detailedSteps": [
+    {"en": "**Preparation**", "zh": "**准备**", "isHeader": true},
+    {"en": "Prepare digestion medium: dilute collagenase stock (10 mg/mL in RPMI) to 1 mg/mL in dissecting media (DMEM + 10% FBS + Pen/Strep). Use 10 mL per tumor piece. Keep on ice.", "zh": "制备消化培养基：胶原酶母液（10 mg/mL RPMI）稀释至 1 mg/mL 溶解培养基（DMEM + 10% FBS + Pen/Strep）。每个肿瘤块用 10 mL。置于冰上。", "time": "10 min"},
+    {"en": "Prepare instruments: sterilize razor blades, forceps, and hemostats. Pre-chill centrifuge to 4°C. Label collection tubes.", "zh": "准备器械：手术刀片、镊子、止血钳灭菌。离心机预冷至 4°C。标记收集管。", "time": "10 min"},
+    {"en": "**Tumor mincing**", "zh": "**肿瘤切碎**", "isHeader": true},
+    {"en": "Place tumor tissue in a sterile 10 cm petri dish on ice. Mince finely with two razor blades (or scalpel) into ~1–2 mm³ pieces. Keep tissue cold throughout mincing.", "zh": "将肿瘤组织置于无菌 10 cm 培养皿中（放冰上）。两把手术刀片（或手术刀）切成约 1–2 mm³ 小块。切碎时保持组织低温。", "time": "10 min", "temp": "4°C"},
+    {"en": "Add 0.5 mL cold digestion medium to the dish to prevent tissue from drying during mincing. Transfer minced tissue to a 15 mL tube.", "zh": "切碎过程中向皿中加 0.5 mL 冷消化培养基防止组织干燥。转移切碎组织到 15 mL 管中。", "time": "5 min"},
+    {"en": "Add 9.5 mL digestion medium (1 mg/mL collagenase in dissecting media) to the tube. Cap tightly.", "zh": "向管中加 9.5 mL 消化培养基（溶解培养基中 1 mg/mL 胶原酶）。拧紧盖子。", "time": "2 min"},
+    {"en": "**Enzymatic digestion**", "zh": "**酶消化**", "isHeader": true},
+    {"en": "Place tube in a tube rotator or shaking water bath at 37°C. Rotate/hshake gently. Digestion time: 1 h for immunophenotyping/FACS; 2 h for epithelial cell isolation.", "zh": "管放入旋转仪或摇水浴 37°C。轻柔旋转/摇动。消化时间：免疫分型/FACS 1 h；上皮细胞分离 2 h。", "time": "1–2 h", "temp": "37°C"},
+    {"en": "After collagenase digestion, centrifuge at 300×g for 5 min at 4°C. Remove supernatant carefully.", "zh": "胶原酶消化后，4°C 300×g 离心 5 min。小心去除上清。", "time": "10 min", "temp": "4°C"},
+    {"en": "**Trypsin treatment**", "zh": "**胰蛋白酶处理**", "isHeader": true},
+    {"en": "Resuspend pellet in 2 mL warm 0.05% Trypsin/EDTA (dilute 0.25% stock 5× with HBSS without Ca²⁺/Mg²⁺). Triturate 5–10 times with P1000. Incubate at 37°C for 5 min.", "zh": "沉淀用 2 mL 温 0.05% 胰酶/EDTA 重悬（0.25% 母液用无 Ca²⁺/Mg²⁺ HBSS 5 倍稀释）。P1000 吹打 5–10 次。37°C 孵育 5 min。", "time": "5 min", "temp": "37°C"},
+    {"en": "Add 3 mL cold dissecting media to inactivate trypsin. Add 125 µL DNase I (~500 Kunitz U) to degrade DNA released from lysed cells.", "zh": "加 3 mL 冷溶解培养基灭活胰酶。加 125 µL DNase I（约 500 Kunitz U）降解裂解细胞释放的 DNA。", "time": "2 min"},
+    {"en": "**Mechanical dissociation**", "zh": "**机械解离**", "isHeader": true},
+    {"en": "Pass the cell suspension through 18G syringe needle 5–10 times gently. Then pass through 20G syringe needle 5–10 times. Avoid creating bubbles — Frothing damages cells.", "zh": "细胞悬液用 18G 针头轻柔吹打 5–10 次。再用 20G 针头吹打 5–10 次。避免产生气泡——气泡会损伤细胞。", "time": "10 min"},
+    {"en": "Filter through 70 µm cell strainer into a 50 mL tube to remove debris. Rinse strainer with 5 mL FACS buffer.", "zh": "通过 70 µm 细胞筛网过滤到 50 mL 管中去除碎片。用 5 mL FACS 缓冲液冲洗筛网。", "time": "5 min"},
+    {"en": "Transfer filtrate to a fresh 15 mL tube.", "zh": "滤液转移到新的 15 mL 管中。", "time": "2 min"},
+    {"en": "**RBC lysis & counting**", "zh": "**红细胞裂解与计数**", "isHeader": true},
+    {"en": "Centrifuge at 300×g for 5 min at 4°C. Remove supernatant. Add 1 mL 1× RBC lysis buffer. Incubate on ice for 1 min only (do NOT exceed 2 min).", "zh": "4°C 300×g 离心 5 min。去上清。加 1 mL 1× RBC 裂解液。冰上孵育仅 1 min（勿超过 2 min）。", "time": "1 min", "temp": "4°C"},
+    {"en": "Add 2 mL cold dissecting media or FACS buffer to stop lysis. Centrifuge 300×g, 5 min, 4°C.", "zh": "加 2 mL 冷溶解培养基或 FACS 缓冲液终止裂解。300×g 离心 5 min，4°C。", "time": "10 min", "temp": "4°C"},
+    {"en": "Resuspend pellet in 2 mL dissecting media (or FACS buffer if proceeding directly to flow staining). Count cells with hemocytometer. Assess viability with trypan blue.", "zh": "沉淀重悬于 2 mL 溶解培养基（或 FACS 缓冲液，如直接进行流式染色）。血球计数室计数。台盼蓝评估活率。", "time": "10 min", "temp": "4°C"},
+    {"en": "If RBC contamination persists (red pellet), repeat RBC lysis step once.", "zh": "如仍有红细胞污染（红色沉淀），重复 RBC 裂解步骤一次。", "time": "5 min", "temp": "4°C"},
+    {"en": "**Downstream use**", "zh": "**下游应用**", "isHeader": true},
+    {"en": "For FACS/scRNA-seq: resuspend cells in FACS buffer at 1–5×10⁶ cells/mL. Keep on ice. Proceed within 1–2 h.", "zh": "FACS/scRNA-seq：用 FACS 缓冲液重悬细胞至 1–5×10⁶/mL。置于冰上。1–2 h 内处理。", "temp": "4°C"},
+    {"en": "For cell line establishment: resuspend in appropriate complete medium, seed into culture plates. For tumor dissociation for PDX implantation (pdx_implantation): do NOT dissociate — use minced tissue directly.", "zh": "细胞系建立：适当完全培养基重悬，接种培养板。PDX 移植（pdx_implantation）用肿瘤解离：不要解离——直接用切碎组织。", "temp": "37°C"}
+  ],
+  "briefSteps": [
+    {"en": "Mince tumor into 1–2 mm³ pieces → Collagenase digestion 1–2 h 37°C → Trypsin 5 min 37°C → DNase I + mechanical dissociation (18G→20G syringe) → Filter 70 µm → RBC lysis 1 min ice → Wash & count → Use fresh for FACS/scRNA-seq", "zh": "肿瘤切碎 1–2 mm³ → 胶原酶消化 1–2 h 37°C → 胰酶 5 min 37°C → DNase I + 机械解离（18G→20G 针头）→ 70 µm 过滤 → RBC 裂解 1 min 冰上 → 洗涤计数 → 新鲜用于 FACS/scRNA-seq"}
+  ],
+  "safeStops": [
+    {"afterStep": 19, "note": {"en": "Single-cell suspension can be held on ice in FACS buffer for 1–2 hours before downstream processing", "zh": "单细胞悬液在 FACS 缓冲液中冰上可保存 1–2 小时再进行下游处理"}},
+    {"afterStep": 22, "note": {"en": "Cells for cell line establishment can be seeded immediately after counting — do not store", "zh": "用于细胞系建立的细胞计数后应立即接种——不要保存"}}
+  ],
   "stoppingPoints": [
-    {"afterStep": "Step 7", "condition": "Keep on ice in FACS buffer", "duration": "1-2 hours"}
+    {"afterStep": "Step 7", "condition": "Keep on ice in FACS buffer", "duration": "1–2 hours"}
   ],
   "notes": {
-    "en": "Collagenase Type IV is preferred over Type I for preserving surface antigens (lacks tryptic activity). Avoid repeated freeze-thaw of enzyme stocks. Use HBSS without Ca²⁺/Mg²⁺ for trypsin/EDTA dilution. 15 mL tubes form better pellets than 50 mL tubes.",
-    "zh": "胶原酶 IV 型优于 I 型（无胰蛋白酶活性，保留表面抗原）。避免酶母液反复冻融。用无 Ca²⁺/Mg²⁺ 的 HBSS 稀释胰蛋白酶/EDTA。15 mL 管比 50 mL 管沉淀效果更好。"
+    "en": "Collagenase Type IV is preferred over Type I for preserving surface antigens (lacks tryptic activity). Avoid repeated freeze-thaw of enzyme stocks. Use HBSS without Ca²⁺/Mg²⁺ for trypsin/EDTA dilution. 15 mL tubes form better pellets than 50 mL tubes. For very fibrous tumors: increase collagenase concentration to 2 mg/mL or add 0.5 mg/mL hyaluronidase.",
+    "zh": "胶原酶 IV 型优于 I 型（无胰蛋白酶活性，保留表面抗原）。避免酶母液反复冻融。用无 Ca²⁺/Mg²⁺ 的 HBSS 稀释胰蛋白酶/EDTA。15 mL 管比 50 mL 管沉淀效果更好。对于纤维化程度高的肿瘤：提高胶原酶浓度至 2 mg/mL 或加 0.5 mg/mL 透明质酸酶。"
   },
   "ref": "Lukacs et al. Nat Protoc. 2010;5(4):702-13. PMID: 20360765",
-  "crosslinks": ["rbc_lysis_10x", "facs_buffer", "complete_dmem", "cite_seq_10x"]
+  "crosslinks": ["rbc_lysis_10x", "facs_buffer", "complete_dmem", "cite_seq_10x", "pdx_implantation"],
+  "relatedProtocols": [
+    "pdx_implantation",
+    "facs_buffer",
+    "rbc_lysis_10x"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "N/A",
+    "icon": "📋",
+    "label": {"en": "See protocol notes", "zh": "见方案备注"}
+  }
 }

@@ -145,5 +145,122 @@
   "usage": {
     "en": "Detect direct protein-protein interactions using an in vitro pulldown assay with tagged bait protein.",
     "zh": "体外 pulldown 实验检测标签蛋白与靶蛋白的直接相互作用。"
-  }
+  },
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Purified bait protein can be stored at −80°C in aliquots for months",
+        "zh": "纯化的诱饵蛋白可 −80°C 分装保存数月"
+      }
+    },
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Pre-cleared cell lysate can be snap-frozen at −80°C for later use",
+        "zh": "预清除的细胞裂解物可 −80°C 速冻保存"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Eluted samples in Laemmli buffer can be stored at −20°C for up to 1 month before WB",
+        "zh": "Laemmli 缓冲液中的洗脱样品可 −20°C 保存 1 个月后再 WB"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Bait & Prey Preparation**",
+      "zh": "**诱饵与猎物蛋白制备**",
+      "isHeader": true
+    },
+    {
+      "en": "Express and purify GST-bait (or His-bait) protein from E. coli. Need ≥5 µg per reaction. Also purify GST-alone as negative control",
+      "zh": "从大肠杆菌表达并纯化 GST-诱饵（或 His-诱饵）蛋白。每个反应需 ≥5 µg。同时纯化 GST 空白作为阴性对照"
+    },
+    {
+      "en": "Prepare prey: lyse 10⁷ cells in 500 µL NP-40 lysis buffer + protease inhibitors, 30 min on ice. Clarify at 16,000×g, 15 min, 4°C. Pre-clear lysate with empty beads for 1 h at 4°C",
+      "zh": "制备猎物蛋白：10⁷ 细胞加 500 µL NP-40 裂解液 + 蛋白酶抑制剂，冰上 30 min。16,000×g 离心 15 min，4°C 澄清。空白珠子 4°C 预清除 1 h",
+      "time": "2 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Bait Immobilization**",
+      "zh": "**诱饵蛋白固定**",
+      "isHeader": true
+    },
+    {
+      "en": "Mix 5 µg GST-bait with 20 µL glutathione beads (or His-bait with Ni-NTA beads) in binding buffer (PBS + 0.1% NP-40 + 1 mM DTT). Rotate 1 h at 4°C",
+      "zh": "将 5 µg GST-诱饵与 20 µL 谷胱甘肽珠（或 His-诱饵与 Ni-NTA 珠）在结合缓冲液（PBS + 0.1% NP-40 + 1 mM DTT）中混合。4°C 旋转 1 h",
+      "time": "60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash bait-loaded beads 3× with binding buffer to remove unbound bait protein",
+      "zh": "用结合缓冲液洗涤已结合诱饵的珠子 3 次，去除未结合的诱饵蛋白",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Binding & Pull-Down**",
+      "zh": "**结合与 Pull-Down**",
+      "isHeader": true
+    },
+    {
+      "en": "Add 500 µg pre-cleared cell lysate (or 5 µg purified prey) to bait-beads in ~500 µL total. Set up controls: (a) GST-alone beads + prey; (b) bait-beads + buffer only",
+      "zh": "将 500 µg 预清除裂解物（或 5 µg 纯化猎物）加入诱饵珠中，总体积 ~500 µL。设置对照：(a) GST 空白珠 + 猎物；(b) 诱饵珠 + 仅缓冲液",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Incubate with rotation at 4°C for 2–4 h (start with 2 h; longer incubation increases background)",
+      "zh": "4°C 旋转孵育 2–4 h（先试 2 h；孵育时间越长背景越高）",
+      "time": "2–4 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Washes & Elution**",
+      "zh": "**洗涤与洗脱**",
+      "isHeader": true
+    },
+    {
+      "en": "Wash beads 4–5×: 3× with PBS + 0.1% NP-40 + 150 mM NaCl, then 2× with PBS + 0.5% NP-40 + 300 mM NaCl. Spin 2,500×g 2 min between washes",
+      "zh": "洗涤珠子 4–5 次：3× PBS + 0.1% NP-40 + 150 mM NaCl，再 2× PBS + 0.5% NP-40 + 300 mM NaCl。洗涤间 2,500×g 离心 2 min",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute: add 30 µL 2× Laemmli buffer, boil at 95°C for 5 min. Alternative: 50 µL glutathione elution (10 mM reduced GSH) for native elution",
+      "zh": "洗脱：加 30 µL 2× Laemmli，95°C 煮 5 min。替代方法：50 µL 谷胱甘肽洗脱液（10 mM 还原型 GSH）用于非变性洗脱",
+      "time": "10 min",
+      "temp": "95°C"
+    },
+    {
+      "en": "**Western Blot Detection**",
+      "zh": "**Western Blot 检测**",
+      "isHeader": true
+    },
+    {
+      "en": "Load on SDS-PAGE: 5% input, GST-bait pull-down, GST-alone pull-down. Blot for prey protein and bait (anti-GST or Coomassie). Interaction confirmed if prey band present only in bait lane",
+      "zh": "SDS-PAGE 上样：5% input、GST-诱饵 pull-down、GST 空白 pull-down。检测猎物蛋白和诱饵（anti-GST 或考马斯）。猎物条带仅在诱饵泳道出现即确认互作"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Purify GST-bait + GST control → prepare prey lysate → immobilize bait on beads → add prey → rotate 2–4 h 4°C → wash 4–5× (low/high stringency) → elute (Laemmli or GSH) → WB detect",
+      "zh": "纯化 GST-诱饵 + GST 对照 → 制备猎物裂解物 → 诱饵固定于珠上 → 加猎物 → 4°C 旋转 2–4 h → 洗涤 4–5 次（低/高严格度）→ 洗脱（Laemmli 或 GSH）→ WB 检测"
+    }
+  ],
+  "relatedProtocols": [
+    "gst_tag_purification",
+    "his_tag_purification",
+    "coip_protocol",
+    "immunoprecipitation",
+    "np40_lysis",
+    "wb_protocol",
+    "laemmli_2x",
+    "ip_lysis",
+    "pbs_1x"
+  ]
 }

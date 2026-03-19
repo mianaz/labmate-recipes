@@ -79,6 +79,22 @@
     }
   ],
   "stoppingPoints": [],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Boiled lysate can be stored at -20°C for weeks before PCR",
+        "zh": "煮沸裂解液可 -20°C 保存数周后再行 PCR"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "PCR products can be stored at 4°C overnight or -20°C for weeks before gel electrophoresis",
+        "zh": "PCR 产物可 4°C 过夜或 -20°C 保存数周后再电泳"
+      }
+    }
+  ],
   "usage": {
     "en": "Detect mycoplasma contamination in cell cultures by PCR amplification of mycoplasma 16S rRNA genes.",
     "zh": "PCR 扩增支原体 16S rRNA 基因检测细胞培养物支原体污染。"
