@@ -68,5 +68,48 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "3 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "E. coli cells (DH5α, TOP10, or similar)"
+    },
+    {
+      "name": "LB medium",
+      "linkedRecipe": "lb"
+    },
+    {
+      "name": "CaCl₂ (100 mM, ice-cold, sterile)"
+    },
+    {
+      "name": "CaCl₂ + 15% glycerol (ice-cold)"
+    },
+    {
+      "name": "SOC medium",
+      "linkedRecipe": "soc"
+    },
+    {
+      "name": "Ice bucket"
+    },
+    {
+      "name": "Centrifuge (pre-chilled, 4°C)"
+    },
+    {
+      "name": "Microcentrifuge tubes (pre-chilled)"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Competent cells prepared",
+      "condition": "−80°C in aliquots",
+      "duration": "6 months"
+    }
+  ],
+  "usage": {
+    "en": "Prepare chemically competent E. coli cells using CaCl₂ method for heat-shock transformation.",
+    "zh": "CaCl₂ 化学法制备大肠杆菌感受态细胞，用于热激转化。"
+  },
+  "crosslinks": [
+    "heat_shock_transformation",
+    "competent_cells_electrocompetent"
+  ]
 }

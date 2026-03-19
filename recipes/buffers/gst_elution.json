@@ -52,5 +52,21 @@
   "usage": {
     "en": "Reduced glutathione elution buffer for releasing GST-fusion proteins from Glutathione Sepharose.",
     "zh": "还原型谷胱甘肽洗脱液，用于从谷胱甘肽琼脂糖中释放 GST 融合蛋白。"
-  }
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve reduced glutathione in 50 mM Tris-HCl pH 8.0."
+    },
+    {
+      "step": "Adjust pH to 8.0 with NaOH (glutathione is acidic)."
+    },
+    {
+      "step": "Bring to final volume of 100 mL."
+    },
+    {
+      "step": "Prepare fresh or store at −20°C in aliquots."
+    }
+  ]
 }

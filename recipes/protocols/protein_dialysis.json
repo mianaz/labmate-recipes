@@ -86,5 +86,40 @@
   "duration": {
     "total": "6–12 hours",
     "hands_on": "1 hour"
+  },
+  "materials": [
+    {
+      "name": "Protein sample"
+    },
+    {
+      "name": "Dialysis buffer",
+      "linkedRecipe": "dialysis_buffer_generic"
+    },
+    {
+      "name": "Dialysis tubing or cassette (appropriate MWCO)"
+    },
+    {
+      "name": "Dialysis clips"
+    },
+    {
+      "name": "Magnetic stir bar and stir plate"
+    },
+    {
+      "name": "Beaker (≥100× sample volume)"
+    },
+    {
+      "name": "4°C cold room or refrigerator"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Dialysis complete",
+      "condition": "4°C in final buffer or −80°C with glycerol",
+      "duration": "varies"
+    }
+  ],
+  "usage": {
+    "en": "Remove small molecules, exchange buffer, or desalt proteins by dialysis.",
+    "zh": "透析法去除小分子、换液或蛋白脱盐。"
   }
 }

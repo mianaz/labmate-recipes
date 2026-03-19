@@ -99,5 +99,42 @@
   "duration": {
     "total": "3–4 days",
     "hands_on": "2 hours"
+  },
+  "materials": [
+    {
+      "name": "siRNA (targeting and non-targeting control)"
+    },
+    {
+      "name": "Transfection reagent (Lipofectamine RNAiMAX or similar)"
+    },
+    {
+      "name": "Opti-MEM or serum-free medium"
+    },
+    {
+      "name": "Complete culture medium",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Cells at 30–50% confluency"
+    },
+    {
+      "name": "qPCR reagents (for validation)",
+      "optional": true
+    },
+    {
+      "name": "WB reagents (for validation)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "siRNA transfection",
+      "condition": "37°C incubator",
+      "duration": "24–72 h (wait for knockdown)"
+    }
+  ],
+  "usage": {
+    "en": "Knock down target gene expression using small interfering RNA (siRNA) transfection.",
+    "zh": "小干扰 RNA（siRNA）转染敲低靶基因表达。"
   }
 }

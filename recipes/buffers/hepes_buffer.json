@@ -39,5 +39,28 @@
   "usage": {
     "en": "HEPES-based physiological buffer for cell culture and biochemical assays.",
     "zh": "HEPES 生理缓冲液，用于细胞培养和生化实验。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve HEPES in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to desired value (typically 7.2–7.5) with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave or filter-sterilize (HEPES is autoclavable at pH >6.5)."
+    },
+    {
+      "step": "Store at 4°C or room temperature."
+    }
+  ],
+  "crosslinks": [
+    "cell_transfection",
+    "electroporation"
+  ]
 }

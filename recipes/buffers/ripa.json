@@ -62,5 +62,28 @@
   "usage": {
     "en": "Stringent lysis buffer for total protein extraction from cells/tissues for WB and IP.",
     "zh": "裂解缓冲液，用于 WB 和 IP 的全细胞蛋白提取。"
-  }
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine Tris-HCl, NaCl, NP-40, sodium deoxycholate, and SDS in ddH₂O."
+    },
+    {
+      "step": "Stir until all detergents are dissolved."
+    },
+    {
+      "step": "Bring to final volume of 100 mL."
+    },
+    {
+      "step": "Store base buffer at 4°C."
+    },
+    {
+      "step": "Add protease and phosphatase inhibitors fresh before each use."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "immunoprecipitation"
+  ]
 }

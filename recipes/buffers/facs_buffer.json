@@ -52,5 +52,28 @@
   "usage": {
     "en": "PBS + BSA/FBS + EDTA for cell suspension and antibody incubation in flow cytometry.",
     "zh": "含 BSA/FBS 和 EDTA 的 PBS，用于流式细胞术细胞悬液和抗体孵育。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Add BSA or FBS to 1× PBS."
+    },
+    {
+      "step": "Add EDTA (2 mM) and sodium azide (0.05%) if desired.",
+      "warning": "Sodium azide is highly toxic — handle with care."
+    },
+    {
+      "step": "Filter through 0.22 µm."
+    },
+    {
+      "step": "Store at 4°C for up to 2 weeks."
+    }
+  ],
+  "crosslinks": [
+    "flow_cytometry_protocol",
+    "flow_panel_staining",
+    "annexin_v_apoptosis",
+    "cell_cycle_pi"
+  ]
 }

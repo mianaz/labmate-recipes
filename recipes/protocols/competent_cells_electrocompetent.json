@@ -96,5 +96,41 @@
   "duration": {
     "total": "6 hours",
     "hands_on": "5 hours"
+  },
+  "materials": [
+    {
+      "name": "E. coli cells"
+    },
+    {
+      "name": "LB medium",
+      "linkedRecipe": "lb"
+    },
+    {
+      "name": "Ice-cold sterile ddH₂O"
+    },
+    {
+      "name": "Ice-cold 10% glycerol"
+    },
+    {
+      "name": "SOC medium",
+      "linkedRecipe": "soc"
+    },
+    {
+      "name": "Centrifuge (pre-chilled, 4°C)"
+    },
+    {
+      "name": "Electroporation cuvettes (1 mm gap)"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Electrocompetent cells prepared",
+      "condition": "−80°C in aliquots",
+      "duration": "6 months"
+    }
+  ],
+  "usage": {
+    "en": "Prepare electrocompetent E. coli cells for high-efficiency electroporation.",
+    "zh": "制备电转化感受态大肠杆菌，用于高效电转化。"
   }
 }

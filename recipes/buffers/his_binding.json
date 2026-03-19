@@ -49,5 +49,31 @@
   "usage": {
     "en": "Ni-NTA binding and wash buffer (20 mM imidazole) for His-tagged protein IMAC purification.",
     "zh": "Ni-NTA 结合/洗涤缓冲液（20 mM 咪唑），用于 His 标签蛋白 IMAC 纯化。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve NaH₂PO₄, NaCl in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Add imidazole to desired concentration (10–20 mM for binding)."
+    },
+    {
+      "step": "Adjust pH to 8.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Filter through 0.22 µm and degas."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ],
+  "crosslinks": [
+    "his_tag_purification",
+    "bacterial_protein_expression"
+  ]
 }

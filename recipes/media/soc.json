@@ -59,5 +59,34 @@
   "usage": {
     "en": "Rich recovery medium for bacteria post-electroporation or heat-shock transformation.",
     "zh": "富集恢复培养基，用于电穿孔或热激转化后的细菌恢复培养。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve tryptone (20 g), yeast extract (5 g), NaCl (0.5 g), and KCl (0.186 g) in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 7.0 with NaOH."
+    },
+    {
+      "step": "Bring to 500 mL and autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Cool to <55°C, then add MgCl₂ (10 mM), MgSO₄ (10 mM), and glucose (20 mM) from sterile stocks."
+    },
+    {
+      "step": "Aliquot 1–5 mL per tube."
+    },
+    {
+      "step": "Store at −20°C or 4°C."
+    }
+  ],
+  "crosslinks": [
+    "heat_shock_transformation",
+    "electroporation",
+    "competent_cells_cacl2",
+    "competent_cells_electrocompetent",
+    "gibson_assembly"
+  ]
 }

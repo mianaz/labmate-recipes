@@ -62,5 +62,31 @@
   "usage": {
     "en": "Embryonic stem cell (ESC) serum-containing LIF culture medium for pluripotency maintenance.",
     "zh": "含 LIF 的胚胎干细胞培养基，用于维持多能性。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "To 500 mL Knockout DMEM (or DMEM/F12), add 75 mL Knockout Serum Replacement (15%)."
+    },
+    {
+      "step": "Add 5 mL non-essential amino acids (1×)."
+    },
+    {
+      "step": "Add 5 mL L-glutamine (2 mM) and 0.5 mL β-mercaptoethanol (0.1 mM)."
+    },
+    {
+      "step": "Add LIF (1000 U/mL) for mouse ESCs or bFGF (10 ng/mL) for human ESCs."
+    },
+    {
+      "step": "Filter-sterilize if adding non-sterile components."
+    },
+    {
+      "step": "Store at 4°C for up to 2 weeks; add LIF/bFGF fresh."
+    }
+  ],
+  "crosslinks": [
+    "cell_passage",
+    "cell_freezing"
+  ]
 }

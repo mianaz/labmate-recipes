@@ -93,5 +93,56 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Overnight bacterial culture (100–500 mL)"
+    },
+    {
+      "name": "Buffer P1",
+      "linkedRecipe": "miniprep_p1"
+    },
+    {
+      "name": "Buffer P2",
+      "linkedRecipe": "miniprep_p2"
+    },
+    {
+      "name": "Buffer P3",
+      "linkedRecipe": "miniprep_p3"
+    },
+    {
+      "name": "Isopropanol and 70% ethanol"
+    },
+    {
+      "name": "TE buffer",
+      "linkedRecipe": "te"
+    },
+    {
+      "name": "Maxiprep column kit (Qiagen, Macherey-Nagel, etc.)"
+    },
+    {
+      "name": "Centrifuge (15,000 × g)"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Bacterial pellet",
+      "condition": "−20°C",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "DNA eluted",
+      "condition": "−20°C",
+      "duration": "years"
+    }
+  ],
+  "usage": {
+    "en": "Isolate large-scale, high-purity plasmid DNA from E. coli cultures for transfection.",
+    "zh": "大量提取高纯度质粒 DNA，用于转染等应用。"
+  },
+  "crosslinks": [
+    "miniprep_protocol",
+    "cell_transfection",
+    "lentivirus_production"
+  ]
 }

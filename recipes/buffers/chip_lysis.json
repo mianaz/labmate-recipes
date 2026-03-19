@@ -51,5 +51,27 @@
   "usage": {
     "en": "SDS lysis buffer for chromatin solubilization in ChIP and CUT&RUN experiments.",
     "zh": "SDS 裂解缓冲液，用于 ChIP 和 CUT&RUN 实验中的染色质溶解。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine SDS, EDTA, and Tris-HCl in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Stir until dissolved."
+    },
+    {
+      "step": "Bring to final volume of 500 mL with ddH₂O."
+    },
+    {
+      "step": "Store at room temperature."
+    },
+    {
+      "step": "Add protease inhibitors fresh before each use."
+    }
+  ],
+  "crosslinks": [
+    "chip_protocol"
+  ]
 }

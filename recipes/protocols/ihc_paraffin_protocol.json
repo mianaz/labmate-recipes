@@ -151,5 +151,50 @@
       "condition": "4°C in humidity chamber",
       "duration": "overnight"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "FFPE tissue sections on charged slides"
+    },
+    {
+      "name": "Xylene (deparaffinization)"
+    },
+    {
+      "name": "Graded ethanol series (100%, 95%, 70%)"
+    },
+    {
+      "name": "Antigen retrieval buffer (citrate pH 6.0 or EDTA pH 9.0)",
+      "linkedRecipe": "citrate_buffer_ar"
+    },
+    {
+      "name": "3% H₂O₂ (endogenous peroxidase block)"
+    },
+    {
+      "name": "Blocking buffer",
+      "linkedRecipe": "if_blocking"
+    },
+    {
+      "name": "Primary antibody"
+    },
+    {
+      "name": "HRP-conjugated secondary antibody or polymer detection system"
+    },
+    {
+      "name": "DAB substrate"
+    },
+    {
+      "name": "Hematoxylin counterstain"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Mounting medium (aqueous or xylene-based)"
+    }
+  ],
+  "usage": {
+    "en": "Detect protein expression in paraffin-embedded tissue sections using immunohistochemistry.",
+    "zh": "免疫组化检测石蜡包埋组织切片中的蛋白表达。"
+  }
 }

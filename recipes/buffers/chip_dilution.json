@@ -62,5 +62,27 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine Tris-HCl, NaCl, EDTA, Triton X-100, and SDS in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Mix until all components are dissolved."
+    },
+    {
+      "step": "Bring to final volume of 500 mL with ddH₂O."
+    },
+    {
+      "step": "Store at 4°C."
+    },
+    {
+      "step": "Add protease inhibitors fresh before use."
+    }
+  ],
+  "crosslinks": [
+    "chip_protocol"
+  ]
 }

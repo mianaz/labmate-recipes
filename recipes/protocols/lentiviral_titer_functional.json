@@ -97,5 +97,37 @@
   "duration": {
     "total": "4–5 days",
     "hands_on": "3 hours"
+  },
+  "materials": [
+    {
+      "name": "Target cells (HEK293T or HeLa)"
+    },
+    {
+      "name": "Lentiviral supernatant (serial dilutions)"
+    },
+    {
+      "name": "Polybrene",
+      "linkedRecipe": "polybrene_stock"
+    },
+    {
+      "name": "Complete DMEM",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Puromycin or other selection antibiotic"
+    },
+    {
+      "name": "Crystal violet staining solution",
+      "linkedRecipe": "crystal_violet_stain",
+      "optional": true
+    },
+    {
+      "name": "6-well or 12-well plates"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Determine functional lentiviral titer by serial dilution and colony counting or antibiotic selection.",
+    "zh": "连续稀释法通过菌落计数或抗生素筛选测定慢病毒功能性滴度。"
   }
 }

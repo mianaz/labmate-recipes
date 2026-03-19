@@ -108,5 +108,45 @@
   "duration": {
     "total": "2–3 days",
     "hands_on": "6 hours"
+  },
+  "materials": [
+    {
+      "name": "Inclusion body pellet (from bacterial expression)"
+    },
+    {
+      "name": "Solubilization buffer (6–8 M urea or guanidine HCl)"
+    },
+    {
+      "name": "Dialysis buffer",
+      "linkedRecipe": "dialysis_buffer_generic"
+    },
+    {
+      "name": "Refolding buffer (decreasing denaturant gradient)"
+    },
+    {
+      "name": "DTT or β-mercaptoethanol"
+    },
+    {
+      "name": "Dialysis cassettes or tubing (appropriate MWCO)"
+    },
+    {
+      "name": "Centrifuge (for clearing aggregates)"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Inclusion bodies solubilized",
+      "condition": "−80°C in denaturant",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "Refolded protein",
+      "condition": "4°C or −80°C with glycerol",
+      "duration": "varies"
+    }
+  ],
+  "usage": {
+    "en": "Solubilize and refold proteins from bacterial inclusion bodies using denaturant dilution or dialysis.",
+    "zh": "变性剂稀释或透析法溶解和复性细菌包涵体蛋白。"
   }
 }

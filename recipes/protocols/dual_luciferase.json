@@ -64,5 +64,47 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Firefly luciferase reporter plasmid"
+    },
+    {
+      "name": "Renilla luciferase control plasmid (pRL-TK)"
+    },
+    {
+      "name": "Luciferase lysis buffer",
+      "linkedRecipe": "luciferase_lysis_buffer"
+    },
+    {
+      "name": "Firefly luciferase substrate (luciferin/ATP)"
+    },
+    {
+      "name": "Renilla luciferase substrate (coelenterazine)"
+    },
+    {
+      "name": "96-well white opaque plates"
+    },
+    {
+      "name": "Luminometer or plate reader with luminescence mode"
+    },
+    {
+      "name": "Transfection reagent"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cells lysed",
+      "condition": "−80°C",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Measure promoter activity or pathway activation using dual luciferase reporter assay.",
+    "zh": "双荧光素酶报告基因实验检测启动子活性或信号通路激活。"
+  },
+  "crosslinks": [
+    "cell_transfection",
+    "calcium_phosphate_transfection"
+  ]
 }

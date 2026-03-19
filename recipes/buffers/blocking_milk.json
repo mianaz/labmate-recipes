@@ -37,5 +37,24 @@
   "usage": {
     "en": "5% non-fat dry milk blocking solution; standard WB blocking buffer.",
     "zh": "脱脂奶粉封闭液，WB 标准封闭缓冲液。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Weigh non-fat dry milk powder."
+    },
+    {
+      "step": "Add to TBST and mix by stirring or vortexing."
+    },
+    {
+      "step": "Prepare fresh before each use (milk spoils quickly)."
+    },
+    {
+      "step": "Do not filter — milk is a suspension."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

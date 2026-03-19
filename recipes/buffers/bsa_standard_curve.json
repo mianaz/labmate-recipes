@@ -92,5 +92,11 @@
     {
       "step": "Fit linear regression (R² > 0.99) to calculate unknown protein concentration."
     }
+  ],
+  "volume": 10,
+  "volumeUnit": "mL",
+  "crosslinks": [
+    "bca_protein_assay",
+    "bradford_assay_protocol"
   ]
 }

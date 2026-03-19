@@ -78,5 +78,51 @@
   "duration": {
     "total": "30 minutes",
     "hands_on": "30 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Cell pellet or homogenized tissue"
+    },
+    {
+      "name": "RNA extraction kit (RNeasy, Zymo, etc.)"
+    },
+    {
+      "name": "Lysis buffer (from kit, guanidinium-based)"
+    },
+    {
+      "name": "70% ethanol (RNase-free)"
+    },
+    {
+      "name": "DNase I (on-column digestion)",
+      "optional": true
+    },
+    {
+      "name": "RNase-free water or DEPC water",
+      "linkedRecipe": "depc_water"
+    },
+    {
+      "name": "Microcentrifuge"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cell pellet",
+      "condition": "−80°C or in RNAlater",
+      "duration": "months"
+    },
+    {
+      "afterStep": "RNA eluted",
+      "condition": "−80°C",
+      "duration": "1 year"
+    }
+  ],
+  "usage": {
+    "en": "Extract total RNA from cells or tissues using silica column-based purification.",
+    "zh": "硅胶柱法从细胞或组织中提取总 RNA。"
+  },
+  "crosslinks": [
+    "trizol_extraction",
+    "qpcr_protocol",
+    "rnaseq_library_prep"
+  ]
 }

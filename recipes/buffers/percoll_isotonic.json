@@ -51,5 +51,19 @@
   "usage": {
     "en": "Isotonic colloidal silica stock for preparing iso-osmotic density gradients for cell/organelle separation.",
     "zh": "等渗胶体二氧化硅母液，用于配制等渗密度梯度分离细胞或细胞器。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Mix 9 parts Percoll with 1 part 10× PBS."
+    },
+    {
+      "step": "Mix well by inversion."
+    },
+    {
+      "step": "This gives Stock Isotonic Percoll (SIP) at ~1.123 g/mL."
+    },
+    {
+      "step": "Store at 4°C for up to 1 month."
+    }
+  ]
 }

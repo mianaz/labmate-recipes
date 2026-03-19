@@ -105,5 +105,34 @@
   "duration": {
     "total": "1–2 hours",
     "hands_on": "1 hour"
+  },
+  "materials": [
+    {
+      "name": "Protein sample"
+    },
+    {
+      "name": "Amicon Ultra centrifugal filter (appropriate MWCO)"
+    },
+    {
+      "name": "Buffer for exchange (if needed)"
+    },
+    {
+      "name": "Centrifuge (swinging-bucket rotor, 4°C)"
+    },
+    {
+      "name": "BCA or Bradford assay reagents",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Protein concentrated",
+      "condition": "4°C (short) or −80°C with glycerol (long)",
+      "duration": "varies"
+    }
+  ],
+  "usage": {
+    "en": "Concentrate and buffer-exchange proteins using Amicon centrifugal ultrafiltration units.",
+    "zh": "Amicon 超滤离心管浓缩和换液蛋白质。"
   }
 }

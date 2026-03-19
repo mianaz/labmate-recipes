@@ -75,5 +75,39 @@
   "duration": {
     "total": "20–30 minutes",
     "hands_on": "20 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Complete culture medium",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "EDTA-trypsin (0.05–0.25%)",
+      "linkedRecipe": "edta_trypsin"
+    },
+    {
+      "name": "1× PBS (Ca²⁺/Mg²⁺-free)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Culture flasks or dishes"
+    },
+    {
+      "name": "Centrifuge (300 × g)"
+    },
+    {
+      "name": "Hemocytometer or cell counter",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Subculture adherent mammalian cells by trypsinization and re-plating.",
+    "zh": "通过胰酶消化传代贴壁哺乳动物细胞。"
+  },
+  "crosslinks": [
+    "cell_freezing",
+    "cell_thawing",
+    "cell_counting_hemocytometer"
+  ]
 }

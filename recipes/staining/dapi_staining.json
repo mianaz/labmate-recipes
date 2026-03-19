@@ -40,5 +40,26 @@
   "usage": {
     "en": "DAPI fluorescent nuclear counterstain for immunofluorescence and flow cytometry.",
     "zh": "DAPI 荧光核染料，用于免疫荧光和流式细胞术的细胞核复染。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve DAPI in ddH₂O to make 1 mg/mL (1.4 mM) stock solution."
+    },
+    {
+      "step": "Dilute stock 1:1000–1:5000 in PBS for working solution (0.2–1 µg/mL)."
+    },
+    {
+      "step": "Protect from light at all times (DAPI is light-sensitive)."
+    },
+    {
+      "step": "Store stock at −20°C; working solution at 4°C for up to 1 week."
+    }
+  ],
+  "crosslinks": [
+    "if_protocol",
+    "cell_cycle_pi",
+    "flow_cytometry_protocol"
+  ]
 }

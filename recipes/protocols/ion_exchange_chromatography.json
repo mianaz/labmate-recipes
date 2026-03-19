@@ -108,5 +108,46 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "2 hours"
+  },
+  "materials": [
+    {
+      "name": "Protein sample (dialyzed into low-salt buffer)"
+    },
+    {
+      "name": "Ion exchange column (Q/SP/DEAE Sepharose or similar)"
+    },
+    {
+      "name": "Low-salt buffer (Buffer A, 20 mM Tris, 0–50 mM NaCl)"
+    },
+    {
+      "name": "High-salt buffer (Buffer B, 20 mM Tris, 1 M NaCl)"
+    },
+    {
+      "name": "FPLC/AKTA system or gravity column"
+    },
+    {
+      "name": "SDS-PAGE gel for fraction analysis",
+      "linkedRecipe": "sds_page_gel",
+      "optional": true
+    },
+    {
+      "name": "Fraction collector"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Column equilibrated",
+      "condition": "4°C in buffer A",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": "Peak fractions collected",
+      "condition": "4°C or −80°C",
+      "duration": "varies"
+    }
+  ],
+  "usage": {
+    "en": "Separate proteins by charge using anion or cation exchange chromatography.",
+    "zh": "阴离子/阳离子交换层析按电荷分离蛋白质。"
   }
 }

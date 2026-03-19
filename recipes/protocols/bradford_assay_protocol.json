@@ -88,5 +88,26 @@
   "duration": {
     "total": "30 minutes",
     "hands_on": "20 minutes"
+  },
+  "materials": [
+    {
+      "name": "Bradford reagent (Coomassie G-250)",
+      "linkedRecipe": "bradford_reagent"
+    },
+    {
+      "name": "BSA standard curve dilutions",
+      "linkedRecipe": "bsa_standard_curve"
+    },
+    {
+      "name": "96-well plate or cuvettes"
+    },
+    {
+      "name": "Microplate reader or spectrophotometer (595 nm)"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Quantify protein concentration using Bradford (Coomassie) dye-binding assay at 595 nm.",
+    "zh": "Bradford 法（考马斯蓝结合法）595 nm 定量蛋白质浓度。"
   }
 }

@@ -43,5 +43,25 @@
   "usage": {
     "en": "Methanol/acetic acid destaining solution for removing background Coomassie from SDS-PAGE gels.",
     "zh": "甲醇/乙酸脱色液，用于 SDS-PAGE 胶的考马斯蓝背景脱色。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine methanol (100 mL, 10%) and glacial acetic acid (100 mL, 10%) in ~800 mL ddH₂O.",
+      "warning": "Methanol is toxic — handle in fume hood."
+    },
+    {
+      "step": "Mix well."
+    },
+    {
+      "step": "Store at room temperature."
+    },
+    {
+      "step": "Can be reused multiple times; add crumpled Kimwipes or sponge to absorb released dye."
+    }
+  ],
+  "crosslinks": [
+    "coomassie_staining"
+  ]
 }

@@ -69,5 +69,55 @@
   "duration": {
     "total": "2 days",
     "hands_on": "4 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "IP lysis buffer",
+      "linkedRecipe": "ip_lysis"
+    },
+    {
+      "name": "Protein A/G magnetic beads or agarose beads"
+    },
+    {
+      "name": "Antibody against bait protein"
+    },
+    {
+      "name": "Normal IgG (isotype control)"
+    },
+    {
+      "name": "2× or 4× Laemmli buffer",
+      "linkedRecipe": "laemmli_2x"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    },
+    {
+      "name": "Magnetic rack or centrifuge"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cell lysis",
+      "condition": "−80°C",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "Immunoprecipitation",
+      "condition": "Eluted in Laemmli buffer, −20°C",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Co-immunoprecipitate interacting proteins to study protein-protein interactions.",
+    "zh": "免疫共沉淀检测蛋白质-蛋白质相互作用。"
+  },
+  "crosslinks": [
+    "immunoprecipitation",
+    "wb_protocol",
+    "pulldown_assay"
+  ]
 }

@@ -43,5 +43,35 @@
   "usage": {
     "en": "Lysogeny broth (LB) liquid medium for routine E. coli culture.",
     "zh": "LB 培养基，用于常规大肠杆菌液体培养。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve tryptone (10 g), yeast extract (5 g), and NaCl (10 g) in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 7.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Cool to <55°C before adding antibiotics."
+    },
+    {
+      "step": "Store at 4°C for up to 6 months."
+    }
+  ],
+  "crosslinks": [
+    "heat_shock_transformation",
+    "bacterial_protein_expression",
+    "miniprep_protocol",
+    "colony_pcr",
+    "single_colony_picking",
+    "competent_cells_cacl2"
+  ]
 }

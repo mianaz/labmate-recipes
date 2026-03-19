@@ -66,5 +66,31 @@
   "duration": {
     "total": "15 minutes",
     "hands_on": "15 minutes"
+  },
+  "materials": [
+    {
+      "name": "Hemocytometer (Neubauer chamber)"
+    },
+    {
+      "name": "Coverslip (specific for hemocytometer)"
+    },
+    {
+      "name": "Trypan blue (0.4%)"
+    },
+    {
+      "name": "Cell suspension"
+    },
+    {
+      "name": "Microscope (inverted, 10× objective)"
+    },
+    {
+      "name": "Counter (hand or electronic)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Count cells and assess viability using a hemocytometer with trypan blue exclusion.",
+    "zh": "使用血球计数板和台盼蓝排斥法计数细胞并评估活力。"
   }
 }

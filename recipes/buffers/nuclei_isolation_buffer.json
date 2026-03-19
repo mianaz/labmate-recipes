@@ -78,5 +78,22 @@
   "usage": {
     "en": "Hypotonic NP-40 lysis buffer for nucleus isolation from mammalian cells.",
     "zh": "低渗 NP-40 裂解缓冲液，用于哺乳动物细胞核分离。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve sucrose, Tris-HCl, MgCl₂, and CaCl₂ in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Add NP-40 (0.1%) and DTT."
+    },
+    {
+      "step": "Adjust pH to 7.5."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Store at 4°C; add protease inhibitors fresh."
+    }
+  ]
 }

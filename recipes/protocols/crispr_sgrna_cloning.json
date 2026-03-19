@@ -57,5 +57,58 @@
   "duration": {
     "total": "3–5 days",
     "hands_on": "4 hours"
+  },
+  "materials": [
+    {
+      "name": "sgRNA oligos (sense and antisense, phosphorylated)"
+    },
+    {
+      "name": "CRISPR vector (pX330, pLentiCRISPR, etc.)"
+    },
+    {
+      "name": "BbsI or BsmBI restriction enzyme"
+    },
+    {
+      "name": "T4 DNA ligase and buffer"
+    },
+    {
+      "name": "Competent cells (DH5α)"
+    },
+    {
+      "name": "LB agar plates with appropriate antibiotic",
+      "linkedRecipe": "lb_agar"
+    },
+    {
+      "name": "SOC medium",
+      "linkedRecipe": "soc"
+    },
+    {
+      "name": "Thermocycler"
+    },
+    {
+      "name": "T4 PNK (for oligo phosphorylation)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Oligo annealing",
+      "condition": "−20°C",
+      "duration": "months"
+    },
+    {
+      "afterStep": "Ligation reaction",
+      "condition": "−20°C",
+      "duration": "1 week"
+    },
+    {
+      "afterStep": "Colonies on plate",
+      "condition": "4°C (sealed with parafilm)",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Clone sgRNA oligos into CRISPR/Cas9 expression vectors for gene editing.",
+    "zh": "将 sgRNA 寡核苷酸克隆到 CRISPR/Cas9 表达载体中进行基因编辑。"
   }
 }

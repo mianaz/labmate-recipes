@@ -63,5 +63,25 @@
   "usage": {
     "en": "High-salt wash buffer (500 mM NaCl) for removing nonspecific proteins from Ni-NTA resin.",
     "zh": "高盐洗涤缓冲液（500 mM NaCl），去除 Ni-NTA 树脂非特异性结合蛋白。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve NaH₂PO₄ and NaCl in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Add imidazole to wash concentration (20–40 mM)."
+    },
+    {
+      "step": "Adjust pH to 8.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Filter through 0.22 µm."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ]
 }

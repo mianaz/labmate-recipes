@@ -43,5 +43,28 @@
   "usage": {
     "en": "20× SSC (saline-sodium citrate) concentrate for Northern blot, Southern blot, and FISH.",
     "zh": "20× SSC 浓缩液，用于 Northern blot、Southern blot 和 FISH 实验。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve NaCl (175.3 g) and sodium citrate (88.2 g) in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 7.0 with HCl."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Store at room temperature."
+    }
+  ],
+  "crosslinks": [
+    "southern_blot",
+    "northern_blot"
+  ]
 }

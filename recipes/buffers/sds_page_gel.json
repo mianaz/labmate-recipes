@@ -63,5 +63,33 @@
   "usage": {
     "en": "Pre-cast or hand-cast SDS-PAGE gel recipe for protein size separation.",
     "zh": "SDS-PAGE 凝胶配方，用于蛋白质按分子量大小分离。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine ddH₂O, acrylamide/bis solution, and Tris buffer in a flask.",
+      "warning": "Acrylamide is a neurotoxin — wear gloves, avoid inhalation."
+    },
+    {
+      "step": "Add 10% SDS and mix."
+    },
+    {
+      "step": "Add 10% APS and TEMED last (initiates polymerization)."
+    },
+    {
+      "step": "Pour gel immediately between glass plates."
+    },
+    {
+      "step": "Overlay with isopropanol; let polymerize 30–45 min."
+    },
+    {
+      "step": "Pour stacking gel on top after resolving gel sets."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "coomassie_staining",
+    "silver_stain"
+  ]
 }

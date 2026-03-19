@@ -115,5 +115,44 @@
   "duration": {
     "total": "4–20 hours",
     "hands_on": "2–4 hours"
+  },
+  "materials": [
+    {
+      "name": "Sucrose, Percoll, or Ficoll gradient solutions",
+      "linkedRecipe": "sucrose_gradient_buffer"
+    },
+    {
+      "name": "Sample (cell lysate, organelle suspension, or blood)"
+    },
+    {
+      "name": "Ultracentrifuge or high-speed centrifuge"
+    },
+    {
+      "name": "Ultracentrifuge tubes (open-top or sealed)"
+    },
+    {
+      "name": "Gradient maker or manual layering pipettes",
+      "optional": true
+    },
+    {
+      "name": "Refractometer (for density verification)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Gradient prepared",
+      "condition": "4°C, do not disturb",
+      "duration": "2 hours"
+    },
+    {
+      "afterStep": "Fractions collected",
+      "condition": "4°C or −80°C depending on application",
+      "duration": "varies"
+    }
+  ],
+  "usage": {
+    "en": "Separate cellular components or particles by density gradient centrifugation.",
+    "zh": "密度梯度离心分离细胞组分或颗粒。"
   }
 }

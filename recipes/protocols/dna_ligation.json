@@ -77,5 +77,42 @@
   "duration": {
     "total": "2 hours or overnight",
     "hands_on": "20 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "T4 DNA ligase"
+    },
+    {
+      "name": "10× T4 DNA ligase buffer"
+    },
+    {
+      "name": "Insert DNA (purified PCR product or restriction fragment)"
+    },
+    {
+      "name": "Vector DNA (linearized, dephosphorylated)"
+    },
+    {
+      "name": "TE buffer",
+      "linkedRecipe": "te"
+    },
+    {
+      "name": "Nuclease-free water"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Ligation reaction",
+      "condition": "−20°C",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Ligate DNA insert into linearized vector using T4 DNA ligase.",
+    "zh": "T4 DNA 连接酶将 DNA 插入片段连接到线性化载体中。"
+  },
+  "crosslinks": [
+    "restriction_digest",
+    "heat_shock_transformation",
+    "gel_extraction"
+  ]
 }

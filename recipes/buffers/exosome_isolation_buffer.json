@@ -52,5 +52,19 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Prepare PBS base and add protease inhibitors."
+    },
+    {
+      "step": "Adjust to appropriate sucrose/trehalose concentration if needed."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm filter."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ]
 }

@@ -141,5 +141,36 @@
       "condition": "−20°C",
       "duration": "12 months"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "Total RNA (100 ng – 1 µg, RIN ≥ 7)"
+    },
+    {
+      "name": "mRNA enrichment beads (poly-dT) or rRNA depletion kit"
+    },
+    {
+      "name": "Reverse transcriptase and random primers"
+    },
+    {
+      "name": "Second-strand synthesis reagents"
+    },
+    {
+      "name": "End repair, A-tailing, and adapter ligation reagents"
+    },
+    {
+      "name": "PCR master mix for library amplification"
+    },
+    {
+      "name": "AMPure XP beads (size selection)"
+    },
+    {
+      "name": "Bioanalyzer or TapeStation (QC)",
+      "optional": true
+    }
+  ],
+  "usage": {
+    "en": "Prepare strand-specific RNA-seq libraries for next-generation sequencing.",
+    "zh": "链特异性 RNA-seq 文库构建，用于下一代测序。"
+  }
 }

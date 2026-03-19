@@ -45,5 +45,26 @@
   "usage": {
     "en": "Blocking buffer for immunofluorescence (IF) to reduce nonspecific antibody binding.",
     "zh": "免疫荧光（IF）封闭缓冲液，减少非特异性抗体结合。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve BSA and/or normal serum in PBS."
+    },
+    {
+      "step": "Add Triton X-100 (0.1–0.3%) if combined with permeabilization."
+    },
+    {
+      "step": "Mix gently to avoid foaming."
+    },
+    {
+      "step": "Prepare fresh or store at 4°C for up to 1 week."
+    }
+  ],
+  "crosslinks": [
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "proximity_ligation_assay"
+  ]
 }

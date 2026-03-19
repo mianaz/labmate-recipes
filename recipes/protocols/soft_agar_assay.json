@@ -42,5 +42,43 @@
   "duration": {
     "total": "2–4 weeks",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Low-melting-point agarose"
+    },
+    {
+      "name": "Complete culture medium",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "6-well plates"
+    },
+    {
+      "name": "Cell suspension (single cells)"
+    },
+    {
+      "name": "Crystal violet staining solution",
+      "linkedRecipe": "crystal_violet_stain",
+      "optional": true
+    },
+    {
+      "name": "37°C incubator"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cells seeded in soft agar",
+      "condition": "37°C incubator (feed weekly with medium overlay)",
+      "duration": "2–4 weeks"
+    }
+  ],
+  "usage": {
+    "en": "Assess anchorage-independent growth as a hallmark of transformation using soft agar colony formation assay.",
+    "zh": "软琼脂克隆形成实验评估细胞的锚定非依赖性生长（转化标志）。"
+  },
+  "crosslinks": [
+    "clonogenic_assay",
+    "tube_formation_assay"
+  ]
 }

@@ -54,5 +54,39 @@
   "duration": {
     "total": "1–2 hours",
     "hands_on": "45 minutes"
+  },
+  "materials": [
+    {
+      "name": "SDS-PAGE gel (after electrophoresis)",
+      "linkedRecipe": "sds_page_gel"
+    },
+    {
+      "name": "Coomassie Blue staining solution",
+      "linkedRecipe": "coomassie_stain"
+    },
+    {
+      "name": "Destaining solution",
+      "linkedRecipe": "coomassie_destain"
+    },
+    {
+      "name": "ddH₂O"
+    },
+    {
+      "name": "Rocking platform or orbital shaker"
+    },
+    {
+      "name": "Gel imaging system"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Gel stained and destained",
+      "condition": "Store in ddH₂O or 7% acetic acid",
+      "duration": "weeks"
+    }
+  ],
+  "usage": {
+    "en": "Visualize protein bands in SDS-PAGE gels using Coomassie Brilliant Blue staining.",
+    "zh": "考马斯亮蓝染色可视化 SDS-PAGE 胶中的蛋白条带。"
   }
 }

@@ -39,5 +39,25 @@
   "usage": {
     "en": "Polybrene (hexadimethrine bromide) stock for enhancing lentiviral/retroviral transduction efficiency.",
     "zh": "聚凝胺母液，用于提高慢病毒/逆转录病毒的转导效率。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve polybrene (hexadimethrine bromide) in ddH₂O to make 8 mg/mL stock."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm."
+    },
+    {
+      "step": "Aliquot into single-use tubes."
+    },
+    {
+      "step": "Store at −20°C."
+    }
+  ],
+  "crosslinks": [
+    "lentivirus_production",
+    "stable_cell_line_selection"
+  ]
 }

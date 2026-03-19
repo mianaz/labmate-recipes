@@ -52,5 +52,24 @@
   "usage": {
     "en": "Optimized buffer for EMSA protein-nucleic acid binding reactions.",
     "zh": "EMSA 蛋白-核酸结合反应的优化缓冲液。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine Tris-HCl, KCl, MgCl₂, EDTA, and DTT in ~40 mL ddH₂O."
+    },
+    {
+      "step": "Add glycerol and NP-40."
+    },
+    {
+      "step": "Bring to final volume of 50 mL."
+    },
+    {
+      "step": "Store at −20°C in aliquots."
+    }
+  ],
+  "crosslinks": [
+    "emsa_gel_shift"
+  ]
 }

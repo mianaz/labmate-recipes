@@ -53,5 +53,22 @@
   "usage": {
     "en": "EDTA antigen retrieval buffer (pH 9.0) for nuclear antigens in IHC (Ki67, H3K4me3).",
     "zh": "EDTA 抗原修复缓冲液（pH 9.0），用于 IHC 中核抗原（Ki67、H3K4me3）的修复。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve EDTA in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 9.0 with NaOH (EDTA dissolves as pH rises)."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL with ddH₂O."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Store at room temperature."
+    }
+  ]
 }

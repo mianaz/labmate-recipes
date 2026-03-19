@@ -78,5 +78,57 @@
   "duration": {
     "total": "2 days",
     "hands_on": "4 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "IP lysis buffer",
+      "linkedRecipe": "ip_lysis"
+    },
+    {
+      "name": "Protein A/G magnetic beads"
+    },
+    {
+      "name": "Target antibody"
+    },
+    {
+      "name": "Normal IgG (isotype control)"
+    },
+    {
+      "name": "Laemmli sample buffer",
+      "linkedRecipe": "laemmli_2x"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    },
+    {
+      "name": "Phosphatase inhibitors",
+      "linkedRecipe": "phosphatase_inhibitor_na3vo4",
+      "optional": true
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cell lysis",
+      "condition": "−80°C",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "IP elution",
+      "condition": "−20°C in Laemmli buffer",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Immunoprecipitate a target protein from cell lysates using antibody-bead capture.",
+    "zh": "抗体-磁珠捕获法从细胞裂解液中免疫沉淀靶蛋白。"
+  },
+  "crosslinks": [
+    "coip_protocol",
+    "wb_protocol",
+    "pulldown_assay"
+  ]
 }

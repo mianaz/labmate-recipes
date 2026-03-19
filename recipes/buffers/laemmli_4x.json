@@ -62,5 +62,28 @@
   "usage": {
     "en": "4× concentrated SDS-PAGE sample buffer; mix 1:3 with protein sample.",
     "zh": "SDS-PAGE 上样缓冲液（4×），与蛋白样品 1:3 混合。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve SDS in 1 M Tris-HCl pH 6.8 by warming gently."
+    },
+    {
+      "step": "Add glycerol and bromophenol blue; mix well."
+    },
+    {
+      "step": "Add β-mercaptoethanol or DTT last.",
+      "warning": "β-mercaptoethanol is toxic — use in fume hood."
+    },
+    {
+      "step": "Bring to final volume of 10 mL with ddH₂O."
+    },
+    {
+      "step": "Aliquot and store at −20°C."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

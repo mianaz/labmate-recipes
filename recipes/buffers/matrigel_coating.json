@@ -38,5 +38,26 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Thaw Matrigel on ice at 4°C overnight (keep cold at all times).",
+      "warning": "Matrigel gels above 10°C — keep everything pre-chilled."
+    },
+    {
+      "step": "Dilute Matrigel in cold serum-free medium to desired concentration."
+    },
+    {
+      "step": "Coat plates immediately; incubate at 37°C for 30–60 min."
+    },
+    {
+      "step": "Aspirate excess and use directly or store coated plates at 4°C for up to 1 week."
+    }
+  ],
+  "crosslinks": [
+    "tube_formation_assay",
+    "soft_agar_assay"
+  ]
 }

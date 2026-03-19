@@ -43,5 +43,24 @@
   "usage": {
     "en": "Reversible red protein stain for verifying transfer efficiency on western blot membranes.",
     "zh": "可逆红色蛋白染色，用于验证 Western blot 转膜效率。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Ponceau S (0.1–0.2% w/v) in 5% acetic acid."
+    },
+    {
+      "step": "Mix until completely dissolved."
+    },
+    {
+      "step": "Store at room temperature."
+    },
+    {
+      "step": "Solution can be reused many times; filter if precipitate forms."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

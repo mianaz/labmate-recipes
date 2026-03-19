@@ -52,5 +52,30 @@
   "usage": {
     "en": "Gibson Assembly master mix for seamless cloning of multiple DNA fragments.",
     "zh": "Gibson Assembly 主混合液，用于多片段 DNA 无缝克隆。"
-  }
+  },
+  "volume": 1.2,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Prepare 5× ISO buffer: 25% PEG-8000, 500 mM Tris-HCl pH 7.5, 50 mM MgCl₂, 50 mM DTT, 1 mM each dNTP, 5 mM NAD in ddH₂O."
+    },
+    {
+      "step": "Combine ISO buffer, T5 exonuclease, Phusion polymerase, and Taq DNA ligase."
+    },
+    {
+      "step": "Add ddH₂O to final volume."
+    },
+    {
+      "step": "Mix gently (do not vortex enzymes)."
+    },
+    {
+      "step": "Aliquot 15 µL per tube."
+    },
+    {
+      "step": "Store at −20°C; avoid freeze-thaw cycles."
+    }
+  ],
+  "crosslinks": [
+    "gibson_assembly"
+  ]
 }

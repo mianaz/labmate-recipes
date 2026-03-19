@@ -42,5 +42,25 @@
   "usage": {
     "en": "Tris-buffered saline + Tween-20; standard blocking and washing buffer for Western blot.",
     "zh": "含 Tween-20 的 Tris 缓冲盐水，WB 标准封闭和洗涤缓冲液。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Prepare 1× TBS or dilute from 10× TBS."
+    },
+    {
+      "step": "Add Tween-20 to 0.1% (1 mL per 1000 mL)."
+    },
+    {
+      "step": "Mix by stirring; avoid excessive foaming."
+    },
+    {
+      "step": "Prepare fresh or store at room temperature for up to 1 week."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "elisa_sandwich"
+  ]
 }

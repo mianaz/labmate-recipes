@@ -50,5 +50,32 @@
   "duration": {
     "total": "6–24 hours",
     "hands_on": "2 hours"
+  },
+  "materials": [
+    {
+      "name": "Matrigel (growth factor reduced)",
+      "linkedRecipe": "matrigel_coating"
+    },
+    {
+      "name": "Endothelial cells (HUVECs or similar)"
+    },
+    {
+      "name": "Serum-free or low-serum medium"
+    },
+    {
+      "name": "96-well plate (pre-chilled)"
+    },
+    {
+      "name": "Microscope with camera (phase-contrast)"
+    },
+    {
+      "name": "Image analysis software (ImageJ Angiogenesis Analyzer)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Assess angiogenic potential by endothelial cell tube formation on Matrigel.",
+    "zh": "Matrigel 上内皮细胞管腔形成实验评估血管生成能力。"
   }
 }

@@ -46,5 +46,28 @@
   "usage": {
     "en": "10× TBE buffer; dilute to 0.5–1× for DNA/RNA gel electrophoresis and EMSA.",
     "zh": "10× TBE 缓冲液，稀释至 0.5–1× 用于 DNA/RNA 凝胶电泳和 EMSA。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris base and boric acid in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Add 0.5 M EDTA pH 8.0."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Store at room temperature. Dilute 1:10 for 1× working solution."
+    }
+  ],
+  "crosslinks": [
+    "agarose_gel_electrophoresis",
+    "emsa_gel_shift"
+  ]
 }

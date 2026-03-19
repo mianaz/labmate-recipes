@@ -130,5 +130,32 @@
       "condition": "50% MeOH/12% AcOH at RT",
       "duration": "overnight"
     }
+  ],
+  "materials": [
+    {
+      "name": "SDS-PAGE gel (after electrophoresis)",
+      "linkedRecipe": "sds_page_gel"
+    },
+    {
+      "name": "Fixation solution (50% methanol, 12% acetic acid)"
+    },
+    {
+      "name": "Sensitizing solution (0.02% Na₂S₂O₃)"
+    },
+    {
+      "name": "Silver nitrate solution (0.1% AgNO₃)"
+    },
+    {
+      "name": "Developer (2% Na₂CO₃, 0.04% formaldehyde)"
+    },
+    {
+      "name": "Stop solution (5% acetic acid)"
+    },
+    {
+      "name": "ddH₂O (ultrapure)"
+    },
+    {
+      "name": "Gel imaging system"
+    }
   ]
 }

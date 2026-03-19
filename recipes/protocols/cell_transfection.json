@@ -80,5 +80,34 @@
   "duration": {
     "total": "2–3 days",
     "hands_on": "1 hour"
-  }
+  },
+  "materials": [
+    {
+      "name": "Plasmid DNA or siRNA"
+    },
+    {
+      "name": "Lipofectamine or similar transfection reagent"
+    },
+    {
+      "name": "Opti-MEM or serum-free medium"
+    },
+    {
+      "name": "Complete culture medium",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Cells at 60–80% confluency"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Introduce exogenous DNA or RNA into mammalian cells using lipid-based transfection.",
+    "zh": "脂质体法将外源 DNA 或 RNA 导入哺乳动物细胞。"
+  },
+  "crosslinks": [
+    "calcium_phosphate_transfection",
+    "electroporation",
+    "sirna_knockdown",
+    "dual_luciferase"
+  ]
 }

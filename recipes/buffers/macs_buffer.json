@@ -45,5 +45,25 @@
   "usage": {
     "en": "Cold PBS buffer for MACS magnetic bead separation; keeps cells viable during separation.",
     "zh": "冷 PBS 缓冲液，用于 MACS 磁珠分选，保持细胞活力。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Add BSA (0.5%) and EDTA (2 mM) to degassed PBS."
+    },
+    {
+      "step": "Mix well and filter through 0.22 µm."
+    },
+    {
+      "step": "Degas the buffer to prevent air bubbles in columns."
+    },
+    {
+      "step": "Store at 4°C for up to 1 week."
+    }
+  ],
+  "crosslinks": [
+    "flow_cytometry_protocol",
+    "flow_panel_staining"
+  ]
 }

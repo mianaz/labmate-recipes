@@ -78,5 +78,28 @@
   "usage": {
     "en": "Chemiluminescent substrate for HRP-based Western blot signal detection.",
     "zh": "HRP 化学发光底物，用于 Western blot 信号检测。"
-  }
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Prepare Solution A: dissolve luminol in Tris-HCl pH 8.5 with p-coumaric acid enhancer."
+    },
+    {
+      "step": "Prepare Solution B: dilute 30% H₂O₂ in Tris-HCl pH 8.5.",
+      "warning": "30% H₂O₂ is a strong oxidizer — handle with care."
+    },
+    {
+      "step": "Mix Solution A and Solution B 1:1 immediately before use."
+    },
+    {
+      "step": "Store Solutions A and B separately at 4°C protected from light."
+    },
+    {
+      "step": "Mixed working solution must be used within 1 hour."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

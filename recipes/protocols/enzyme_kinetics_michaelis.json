@@ -123,5 +123,31 @@
   "duration": {
     "total": "1 day",
     "hands_on": "4 hours"
+  },
+  "materials": [
+    {
+      "name": "Purified enzyme"
+    },
+    {
+      "name": "Substrate (range of concentrations)"
+    },
+    {
+      "name": "Reaction buffer (appropriate for enzyme)",
+      "linkedRecipe": "kinase_buffer"
+    },
+    {
+      "name": "96-well plate or cuvettes"
+    },
+    {
+      "name": "Spectrophotometer or plate reader"
+    },
+    {
+      "name": "Timer or kinetics mode software"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Determine enzyme kinetic parameters (Km, Vmax) by Michaelis-Menten analysis.",
+    "zh": "Michaelis-Menten 分析测定酶动力学参数（Km、Vmax）。"
   }
 }

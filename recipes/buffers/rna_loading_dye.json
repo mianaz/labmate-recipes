@@ -58,5 +58,23 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Mix formamide (deionized), formaldehyde, and 10× MOPS buffer.",
+      "warning": "Formamide and formaldehyde are toxic — use in fume hood."
+    },
+    {
+      "step": "Add bromophenol blue and ethidium bromide (optional)."
+    },
+    {
+      "step": "Aliquot and store at −20°C."
+    }
+  ],
+  "crosslinks": [
+    "rna_agarose_gel",
+    "northern_blot"
+  ]
 }

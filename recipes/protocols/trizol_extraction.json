@@ -107,5 +107,39 @@
       "condition": "−80°C",
       "duration": "12 months"
     }
+  ],
+  "materials": [
+    {
+      "name": "TRIzol reagent (or TRI Reagent)"
+    },
+    {
+      "name": "Chloroform"
+    },
+    {
+      "name": "Isopropanol"
+    },
+    {
+      "name": "75% ethanol (in DEPC-treated water)"
+    },
+    {
+      "name": "DEPC-treated water or nuclease-free water",
+      "linkedRecipe": "depc_water"
+    },
+    {
+      "name": "Microcentrifuge (≥12,000 × g, 4°C)"
+    },
+    {
+      "name": "1.5 mL RNase-free tubes"
+    }
+  ],
+  "usage": {
+    "en": "Extract total RNA from cells or tissues using TRIzol (guanidinium thiocyanate-phenol-chloroform) method.",
+    "zh": "TRIzol 法（异硫氰酸胍-苯酚-氯仿）从细胞或组织中提取总 RNA。"
+  },
+  "crosslinks": [
+    "rna_column_extraction",
+    "qpcr_protocol",
+    "northern_blot",
+    "rnaseq_library_prep"
   ]
 }

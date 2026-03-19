@@ -46,5 +46,25 @@
   "usage": {
     "en": "Neutralization/precipitation buffer for precipitating cell debris in miniprep plasmid extraction.",
     "zh": "中和/沉淀缓冲液，用于 miniprep 中沉淀细胞碎片。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve potassium acetate in ~300 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 5.5 with glacial acetic acid."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Autoclave and store at 4°C or room temperature."
+    }
+  ],
+  "crosslinks": [
+    "miniprep_protocol",
+    "plasmid_maxiprep"
+  ]
 }

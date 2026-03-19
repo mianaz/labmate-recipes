@@ -50,5 +50,34 @@
   "usage": {
     "en": "Isotonic phosphate-buffered saline; universal wash buffer for cells, tissues, and proteins.",
     "zh": "等渗磷酸盐缓冲液，用于细胞、组织和蛋白质的通用洗涤。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve NaCl, KCl, Na₂HPO₄, and KH₂PO₄ in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 7.4 with HCl or NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Store at 4°C or room temperature."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "flow_cytometry_protocol",
+    "cell_passage",
+    "elisa_sandwich",
+    "cell_freezing",
+    "cell_thawing"
+  ]
 }

@@ -45,5 +45,29 @@
   "usage": {
     "en": "Sodium orthovanadate phosphatase inhibitor stock for preserving phosphorylation in cell lysates.",
     "zh": "正钒酸钠磷酸酶抑制剂母液，用于保护细胞裂解液中的磷酸化状态。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve sodium orthovanadate in ddH₂O to 200 mM."
+    },
+    {
+      "step": "Adjust pH to 10.0 with NaOH or HCl."
+    },
+    {
+      "step": "Boil until solution turns colorless."
+    },
+    {
+      "step": "Cool and re-adjust pH to 10.0; repeat boiling until pH stabilizes at 10.0."
+    },
+    {
+      "step": "Aliquot and store at −20°C."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "immunoprecipitation",
+    "coip_protocol"
+  ]
 }

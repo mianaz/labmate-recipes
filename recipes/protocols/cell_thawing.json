@@ -69,5 +69,36 @@
   "duration": {
     "total": "20 minutes",
     "hands_on": "20 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Cryovial from liquid nitrogen"
+    },
+    {
+      "name": "Complete culture medium (pre-warmed to 37°C)",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "37°C water bath"
+    },
+    {
+      "name": "Centrifuge (300 × g)"
+    },
+    {
+      "name": "Culture flask or dish"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Recover cryopreserved mammalian cells from liquid nitrogen storage.",
+    "zh": "从液氮中复苏冻存的哺乳动物细胞。"
+  },
+  "crosslinks": [
+    "cell_freezing",
+    "cell_passage"
+  ]
 }

@@ -57,5 +57,25 @@
   "usage": {
     "en": "Non-reducing SDS-PAGE loading buffer for analyzing disulfide-bonded proteins.",
     "zh": "非还原 SDS-PAGE 上样缓冲液，用于分析含二硫键蛋白。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve SDS in 1 M Tris-HCl pH 6.8."
+    },
+    {
+      "step": "Add glycerol and bromophenol blue."
+    },
+    {
+      "step": "Bring to final volume of 10 mL with ddH₂O (no reducing agent)."
+    },
+    {
+      "step": "Aliquot and store at −20°C."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "coip_protocol"
+  ]
 }

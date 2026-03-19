@@ -58,5 +58,44 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Annexin V-FITC or Annexin V-APC conjugate"
+    },
+    {
+      "name": "Propidium iodide (PI)",
+      "optional": true
+    },
+    {
+      "name": "Annexin V binding buffer (10 mM HEPES, 140 mM NaCl, 2.5 mM CaCl₂)"
+    },
+    {
+      "name": "FACS buffer",
+      "linkedRecipe": "facs_buffer"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "EDTA-trypsin",
+      "linkedRecipe": "edta_trypsin"
+    },
+    {
+      "name": "Flow cytometer"
+    },
+    {
+      "name": "FACS tubes (5 mL polystyrene)"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Detect early and late apoptosis by Annexin V/PI staining and flow cytometry.",
+    "zh": "通过 Annexin V/PI 染色和流式细胞术检测早期和晚期凋亡。"
+  },
+  "crosslinks": [
+    "flow_cytometry_protocol",
+    "cell_cycle_pi"
+  ]
 }

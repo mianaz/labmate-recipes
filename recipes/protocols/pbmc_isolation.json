@@ -133,5 +133,32 @@
       "condition": "Cryopreserve in 90% FBS + 10% DMSO → liquid N₂",
       "duration": "indefinite"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "Whole blood (anticoagulated with EDTA or heparin)"
+    },
+    {
+      "name": "Ficoll-Paque (density 1.077 g/mL)",
+      "linkedRecipe": "ficoll_paque_pbmc"
+    },
+    {
+      "name": "1× PBS (sterile, RT)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Complete RPMI",
+      "linkedRecipe": "complete_rpmi"
+    },
+    {
+      "name": "15 mL or 50 mL conical tubes"
+    },
+    {
+      "name": "Centrifuge (400–800 × g, brake off)"
+    }
+  ],
+  "usage": {
+    "en": "Isolate peripheral blood mononuclear cells (PBMCs) from whole blood by Ficoll density gradient centrifugation.",
+    "zh": "Ficoll 密度梯度离心从全血中分离外周血单个核细胞（PBMC）。"
+  }
 }

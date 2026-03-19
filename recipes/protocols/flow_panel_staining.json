@@ -106,5 +106,47 @@
   "duration": {
     "total": "4–6 hours",
     "hands_on": "3 hours"
+  },
+  "materials": [
+    {
+      "name": "FACS buffer",
+      "linkedRecipe": "facs_buffer"
+    },
+    {
+      "name": "Antibody panel (pre-titrated)"
+    },
+    {
+      "name": "Viability dye"
+    },
+    {
+      "name": "Fc block",
+      "optional": true
+    },
+    {
+      "name": "Fixation buffer (4% PFA or commercial)",
+      "linkedRecipe": "pfa_4"
+    },
+    {
+      "name": "Permeabilization buffer",
+      "linkedRecipe": "perm_buffer_triton",
+      "optional": true
+    },
+    {
+      "name": "Compensation beads"
+    },
+    {
+      "name": "Flow cytometer"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Surface staining and fixation",
+      "condition": "4°C in dark",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Perform multi-parameter flow cytometry staining panel for immunophenotyping.",
+    "zh": "多参数流式染色 panel 进行免疫表型分析。"
   }
 }

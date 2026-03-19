@@ -47,5 +47,25 @@
   "usage": {
     "en": "Blue-native PAGE cathode buffer (CBB G-250) for membrane protein complex analysis.",
     "zh": "蓝色天然 PAGE 阴极缓冲液（CBB G-250），用于膜蛋白复合体分析。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tricine and Bis-Tris in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Add Coomassie Blue G-250 and stir until dissolved."
+    },
+    {
+      "step": "Adjust pH to 7.0 if necessary."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL with ddH₂O."
+    },
+    {
+      "step": "Store at 4°C protected from light."
+    }
+  ],
+  "crosslinks": []
 }

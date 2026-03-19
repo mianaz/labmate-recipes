@@ -49,5 +49,22 @@
   "usage": {
     "en": "30% Ficoll-400 stock solution for preparing PBMC density gradient separation medium.",
     "zh": "30% Ficoll-400 母液，用于配制 PBMC 密度梯度分离液。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Weigh Ficoll-400 powder."
+    },
+    {
+      "step": "Dissolve in ddH₂O by heating to 37–50°C with stirring (takes 1–2 h)."
+    },
+    {
+      "step": "Bring to final volume."
+    },
+    {
+      "step": "Autoclave at 121°C for 15 min (Ficoll is autoclavable)."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ]
 }

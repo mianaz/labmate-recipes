@@ -172,5 +172,39 @@
       "condition": "−20°C",
       "duration": "6 months"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "Cells (100,000–500,000)"
+    },
+    {
+      "name": "ConA magnetic beads (activated)"
+    },
+    {
+      "name": "Antibody (ChIP-grade)"
+    },
+    {
+      "name": "Protein A-MNase (pA-MN) fusion protein"
+    },
+    {
+      "name": "Digitonin wash buffer"
+    },
+    {
+      "name": "Low-salt rinse buffer"
+    },
+    {
+      "name": "Spike-in DNA (E. coli or yeast)"
+    },
+    {
+      "name": "DNA purification columns or phenol-chloroform"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    }
+  ],
+  "usage": {
+    "en": "Profile histone modifications and transcription factor binding using CUT&RUN (cleavage under targets and release using nuclease).",
+    "zh": "CUT&RUN 技术分析组蛋白修饰和转录因子结合谱。"
+  }
 }

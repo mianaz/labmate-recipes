@@ -41,5 +41,24 @@
   "usage": {
     "en": "Native PAGE running buffer for non-denaturing protein electrophoresis.",
     "zh": "天然 PAGE 电泳缓冲液，用于非变性蛋白质电泳。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris base and glycine in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Do NOT add SDS (native conditions)."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Store at room temperature."
+    }
+  ],
+  "crosslinks": [
+    "emsa_gel_shift"
+  ]
 }

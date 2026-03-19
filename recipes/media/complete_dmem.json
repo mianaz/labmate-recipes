@@ -50,5 +50,34 @@
   "usage": {
     "en": "DMEM complete medium (10% FBS) for standard mammalian cell line culture.",
     "zh": "含 10% FBS 的 DMEM 完全培养基，用于常规哺乳动物细胞培养。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "To 500 mL DMEM base medium, add 50 mL heat-inactivated FBS (10% final)."
+    },
+    {
+      "step": "Add 5 mL penicillin-streptomycin (100× stock, 1% final)."
+    },
+    {
+      "step": "Add 5 mL L-glutamine (200 mM, 2 mM final) if not GlutaMAX."
+    },
+    {
+      "step": "Mix gently by swirling."
+    },
+    {
+      "step": "Store at 4°C for up to 1 month. Pre-warm to 37°C before use."
+    }
+  ],
+  "crosslinks": [
+    "cell_passage",
+    "cell_freezing",
+    "cell_thawing",
+    "cell_transfection",
+    "lentivirus_production",
+    "scratch_assay",
+    "mtt_assay",
+    "clonogenic_assay"
+  ]
 }

@@ -55,5 +55,22 @@
   "usage": {
     "en": "Density gradient solution (1.077 g/mL) for isolating peripheral blood mononuclear cells (PBMCs).",
     "zh": "密度 1.077 g/mL 的梯度液，用于从外周血分离单个核细胞（PBMC）。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Mix Ficoll-400 stock (30% w/v) with sodium diatrizoate solution."
+    },
+    {
+      "step": "Adjust density to 1.077 g/mL using refractometer or density meter."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm."
+    },
+    {
+      "step": "Protect from light, store at RT (15–25°C)."
+    },
+    {
+      "step": "Verify density before each use."
+    }
+  ]
 }

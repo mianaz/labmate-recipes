@@ -38,5 +38,25 @@
   "usage": {
     "en": "Oil Red O stain for detecting intracellular lipid droplets in adipocytes.",
     "zh": "油红 O 染色，用于检测脂肪细胞内的脂滴。"
-  }
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Oil Red O (0.5 g) in 100 mL isopropanol to make stock (0.5%)."
+    },
+    {
+      "step": "For working solution: mix 3 parts stock with 2 parts ddH₂O (0.3% final)."
+    },
+    {
+      "step": "Let stand 10 min, then filter through 0.22 µm."
+    },
+    {
+      "step": "Prepare working solution fresh before each use."
+    },
+    {
+      "step": "Store stock at room temperature for up to 12 months."
+    }
+  ],
+  "crosslinks": []
 }

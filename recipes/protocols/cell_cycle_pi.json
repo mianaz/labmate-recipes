@@ -53,5 +53,45 @@
   "duration": {
     "total": "4–5 hours",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Propidium iodide (PI)"
+    },
+    {
+      "name": "RNase A (DNase-free)"
+    },
+    {
+      "name": "70% ethanol (ice-cold)"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "FACS buffer",
+      "linkedRecipe": "facs_buffer"
+    },
+    {
+      "name": "Flow cytometer with 488 nm laser"
+    },
+    {
+      "name": "FACS tubes"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Ethanol fixation",
+      "condition": "−20°C in 70% ethanol",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Analyze cell cycle distribution by PI staining of fixed cells and flow cytometry.",
+    "zh": "PI 染色固定细胞，流式细胞术分析细胞周期分布。"
+  },
+  "crosslinks": [
+    "flow_cytometry_protocol",
+    "annexin_v_apoptosis"
+  ]
 }

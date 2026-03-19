@@ -108,5 +108,42 @@
   "duration": {
     "total": "1 day",
     "hands_on": "4 hours"
+  },
+  "materials": [
+    {
+      "name": "Bait protein (GST-tagged or His-tagged)"
+    },
+    {
+      "name": "Glutathione or Ni-NTA beads"
+    },
+    {
+      "name": "Cell lysate (prey protein source)",
+      "linkedRecipe": "ip_lysis"
+    },
+    {
+      "name": "Wash buffer"
+    },
+    {
+      "name": "Laemmli sample buffer",
+      "linkedRecipe": "laemmli_2x"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Pulldown elution",
+      "condition": "−20°C in Laemmli buffer",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Detect direct protein-protein interactions using an in vitro pulldown assay with tagged bait protein.",
+    "zh": "体外 pulldown 实验检测标签蛋白与靶蛋白的直接相互作用。"
   }
 }

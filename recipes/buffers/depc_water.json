@@ -39,5 +39,29 @@
   "usage": {
     "en": "DEPC-treated RNase-free water for RNA work and RNase-sensitive experiments.",
     "zh": "DEPC 处理的无 RNase 水，用于 RNA 实验和对 RNase 敏感的操作。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Add 1 mL DEPC to 1000 mL ddH₂O (0.1% v/v).",
+      "warning": "DEPC is a suspected carcinogen — use in fume hood."
+    },
+    {
+      "step": "Mix thoroughly and let stand overnight (12–24 h) at 37°C."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min to inactivate residual DEPC."
+    },
+    {
+      "step": "Store at room temperature."
+    }
+  ],
+  "crosslinks": [
+    "trizol_extraction",
+    "northern_blot",
+    "rna_column_extraction",
+    "rna_agarose_gel",
+    "rnaseq_library_prep"
+  ]
 }

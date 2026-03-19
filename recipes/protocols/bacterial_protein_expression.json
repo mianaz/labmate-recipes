@@ -125,5 +125,38 @@
       "condition": "−80°C",
       "duration": "6 months"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "Expression plasmid (pET, pGEX, etc.) in BL21(DE3) or similar"
+    },
+    {
+      "name": "LB or TB medium",
+      "linkedRecipe": "lb"
+    },
+    {
+      "name": "IPTG stock (1 M)"
+    },
+    {
+      "name": "Appropriate antibiotic"
+    },
+    {
+      "name": "Shaking incubator (37°C and 16–18°C)"
+    },
+    {
+      "name": "Spectrophotometer (OD₆₀₀)"
+    },
+    {
+      "name": "Centrifuge (6,000 × g)"
+    },
+    {
+      "name": "SDS-PAGE gel for expression check",
+      "linkedRecipe": "sds_page_gel",
+      "optional": true
+    }
+  ],
+  "usage": {
+    "en": "Express recombinant proteins in E. coli using IPTG induction.",
+    "zh": "通过 IPTG 诱导在大肠杆菌中表达重组蛋白。"
+  }
 }

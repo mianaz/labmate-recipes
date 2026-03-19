@@ -39,5 +39,28 @@
   "usage": {
     "en": "Cryopreservation medium (DMSO + FBS) for long-term storage of cell lines in liquid nitrogen.",
     "zh": "冻存培养基（DMSO + FBS），用于液氮长期保存细胞系。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine complete culture medium (90%) with DMSO (10%)."
+    },
+    {
+      "step": "Mix well by gentle inversion.",
+      "warning": "DMSO is a penetration enhancer — wear gloves; it carries dissolved chemicals through skin."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm if needed."
+    },
+    {
+      "step": "Prepare fresh or store at 4°C for up to 1 month."
+    },
+    {
+      "step": "Pre-chill to 4°C before use."
+    }
+  ],
+  "crosslinks": [
+    "cell_freezing"
+  ]
 }

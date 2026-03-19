@@ -49,5 +49,36 @@
   "usage": {
     "en": "LB agar for pouring solid plates for E. coli transformation and colony selection.",
     "zh": "LB 琼脂，用于倒板，进行大肠杆菌转化和克隆筛选。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Prepare LB medium as above (tryptone 10 g, yeast extract 5 g, NaCl 10 g per liter)."
+    },
+    {
+      "step": "Add 15 g agar per liter before autoclaving."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Cool to 50–55°C in water bath."
+    },
+    {
+      "step": "Add antibiotics at appropriate concentration."
+    },
+    {
+      "step": "Pour ~25 mL per 100 mm plate near flame."
+    },
+    {
+      "step": "Let plates solidify at RT, then store inverted at 4°C."
+    }
+  ],
+  "crosslinks": [
+    "heat_shock_transformation",
+    "colony_pcr",
+    "single_colony_picking",
+    "crispr_sgrna_cloning"
+  ]
 }

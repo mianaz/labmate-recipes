@@ -55,5 +55,25 @@
   "usage": {
     "en": "Coomassie G-250 dye solution for Bradford colorimetric protein quantification at A595.",
     "zh": "考马斯亮蓝 G-250 试剂，用于 Bradford 比色法蛋白定量（A595）。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve 100 mg Coomassie Brilliant Blue G-250 in 50 mL 95% ethanol."
+    },
+    {
+      "step": "Add 100 mL 85% phosphoric acid and mix well."
+    },
+    {
+      "step": "Bring to 1000 mL with ddH₂O."
+    },
+    {
+      "step": "Filter through Whatman No. 1 filter paper."
+    },
+    {
+      "step": "Store in dark bottle at 4°C."
+    },
+    {
+      "step": "Reagent should be brown/red; discard if it turns green."
+    }
+  ]
 }

@@ -65,5 +65,46 @@
       "condition": "4°C sealed",
       "duration": "overnight (or up to 48 h)"
     }
+  ],
+  "materials": [
+    {
+      "name": "Capture antibody"
+    },
+    {
+      "name": "Detection antibody (biotinylated)"
+    },
+    {
+      "name": "Streptavidin-HRP conjugate"
+    },
+    {
+      "name": "TMB substrate solution"
+    },
+    {
+      "name": "Stop solution (2N H₂SO₄)"
+    },
+    {
+      "name": "96-well ELISA plate (high-binding)"
+    },
+    {
+      "name": "Coating buffer (carbonate/bicarbonate pH 9.6)"
+    },
+    {
+      "name": "Wash buffer (PBST)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Blocking buffer (1% BSA in PBS)",
+      "linkedRecipe": "blocking_bsa"
+    },
+    {
+      "name": "Microplate reader (450 nm)"
+    }
+  ],
+  "usage": {
+    "en": "Quantify target protein in samples using sandwich ELISA with capture and detection antibody pair.",
+    "zh": "夹心 ELISA 法定量样品中的靶蛋白。"
+  },
+  "crosslinks": [
+    "bca_protein_assay"
   ]
 }

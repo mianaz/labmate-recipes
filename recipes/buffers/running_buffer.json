@@ -48,5 +48,27 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris base, glycine, and SDS in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Stir until completely dissolved."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Do not adjust pH — should be ~8.3."
+    },
+    {
+      "step": "Store at room temperature; can be reused 2–3 times."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

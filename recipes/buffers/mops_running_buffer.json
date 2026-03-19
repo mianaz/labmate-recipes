@@ -62,5 +62,24 @@
   "usage": {
     "en": "1× MOPS running buffer for denaturing RNA agarose gel electrophoresis.",
     "zh": "1× MOPS 电泳缓冲液，用于 RNA 变性凝胶电泳。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve MOPS, Tris base, SDS, and EDTA in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Stir until dissolved (do not pH adjust)."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Store at room temperature."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

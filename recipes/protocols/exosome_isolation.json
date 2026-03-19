@@ -116,5 +116,44 @@
   "duration": {
     "total": "2 days",
     "hands_on": "4 hours"
+  },
+  "materials": [
+    {
+      "name": "Conditioned cell culture medium (48–72 h, serum-free or exosome-depleted FBS)"
+    },
+    {
+      "name": "Exosome isolation buffer",
+      "linkedRecipe": "exosome_isolation_buffer"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Ultracentrifuge and rotor (100,000 × g)"
+    },
+    {
+      "name": "0.22 µm syringe filters"
+    },
+    {
+      "name": "BCA assay kit (for quantification)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Conditioned medium collected",
+      "condition": "−80°C",
+      "duration": "3 months"
+    },
+    {
+      "afterStep": "Exosome pellet",
+      "condition": "−80°C in PBS",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Isolate exosomes/small extracellular vesicles from cell culture medium by differential ultracentrifugation.",
+    "zh": "差速超离法从细胞培养液中分离外泌体/小细胞外囊泡。"
   }
 }

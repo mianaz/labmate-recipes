@@ -46,5 +46,35 @@
   "usage": {
     "en": "4% paraformaldehyde fixative for cells and tissue sections (IF, IHC, flow cytometry).",
     "zh": "4% 多聚甲醛固定液，用于细胞和组织切片固定（IF、IHC、流式）。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Heat ~400 mL PBS to 60°C on hotplate in fume hood.",
+      "warning": "Paraformaldehyde is toxic and a fixative — work in fume hood, wear gloves."
+    },
+    {
+      "step": "Add PFA powder and stir until dissolved (add 1–2 drops NaOH to help)."
+    },
+    {
+      "step": "Cool to room temperature."
+    },
+    {
+      "step": "Adjust pH to 7.2–7.4 with HCl."
+    },
+    {
+      "step": "Filter through 0.22 µm."
+    },
+    {
+      "step": "Aliquot and store at −20°C; thawed aliquot at 4°C for 1 week."
+    }
+  ],
+  "crosslinks": [
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "flow_cytometry_protocol",
+    "proximity_ligation_assay",
+    "comet_assay"
+  ]
 }

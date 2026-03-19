@@ -63,5 +63,29 @@
   "usage": {
     "en": "Pre-assembled Cas9 ribonucleoprotein (RNP) complex for efficient CRISPR genome editing.",
     "zh": "预组装的 Cas9 核糖核蛋白（RNP）复合体，用于高效 CRISPR 基因组编辑。"
-  }
+  },
+  "volume": 0.05,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Resuspend crRNA and tracrRNA in nuclease-free duplex buffer to 100 µM."
+    },
+    {
+      "step": "Mix crRNA and tracrRNA 1:1, anneal at 95°C for 5 min, cool to RT."
+    },
+    {
+      "step": "Add Cas9 protein to the annealed guide RNA."
+    },
+    {
+      "step": "Incubate at RT for 10–20 min to form RNP complex."
+    },
+    {
+      "step": "Use immediately or store at −80°C."
+    }
+  ],
+  "crosslinks": [
+    "crispr_sgrna_cloning",
+    "electroporation",
+    "cell_transfection"
+  ]
 }

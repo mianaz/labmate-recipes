@@ -70,5 +70,19 @@
   "usage": {
     "en": "250 mM sucrose buffer for cell homogenization and organelle isolation by density gradient.",
     "zh": "250 mM 蔗糖匀浆缓冲液，用于细胞匀浆和密度梯度法分离细胞器。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve sucrose (0.25 M) in HEPES or Tris buffer."
+    },
+    {
+      "step": "Add EDTA/EGTA and adjust pH to 7.4."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Store at 4°C; add protease inhibitors fresh."
+    }
+  ]
 }

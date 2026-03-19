@@ -46,5 +46,28 @@
   "usage": {
     "en": "Sodium acetate buffer for pH 4.0–5.5 applications including nucleic acid precipitation.",
     "zh": "醋酸钠缓冲液，用于 pH 4.0–5.5 应用，包括核酸沉淀。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve sodium acetate in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to desired value (3.6–5.6) with glacial acetic acid."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL with ddH₂O."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min or sterile-filter."
+    },
+    {
+      "step": "Store at room temperature."
+    }
+  ],
+  "crosslinks": [
+    "elisa_sandwich",
+    "enzyme_kinetics_michaelis"
+  ]
 }

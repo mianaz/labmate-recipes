@@ -61,5 +61,53 @@
   "duration": {
     "total": "3 hours",
     "hands_on": "1 hour"
-  }
+  },
+  "materials": [
+    {
+      "name": "Bacterial colonies on LB agar plate",
+      "linkedRecipe": "lb_agar"
+    },
+    {
+      "name": "Taq DNA polymerase and buffer"
+    },
+    {
+      "name": "dNTP mix (10 mM each)"
+    },
+    {
+      "name": "Primers (forward and reverse, 10 µM each)"
+    },
+    {
+      "name": "Sterile toothpicks or pipette tips"
+    },
+    {
+      "name": "PCR tubes or 96-well PCR plate"
+    },
+    {
+      "name": "Thermocycler"
+    },
+    {
+      "name": "6× DNA loading dye",
+      "linkedRecipe": "dna_loading_dye_6x"
+    },
+    {
+      "name": "Agarose and TAE buffer",
+      "linkedRecipe": "tae_50x"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "PCR products obtained",
+      "condition": "4°C or −20°C",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Screen bacterial colonies for correct insert by direct PCR without plasmid isolation.",
+    "zh": "菌落 PCR 直接筛选含正确插入片段的克隆，无需提质粒。"
+  },
+  "crosslinks": [
+    "agarose_gel_electrophoresis",
+    "miniprep_protocol",
+    "heat_shock_transformation"
+  ]
 }

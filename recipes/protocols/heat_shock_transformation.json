@@ -69,5 +69,46 @@
   "duration": {
     "total": "2–3 hours",
     "hands_on": "1 hour"
-  }
+  },
+  "materials": [
+    {
+      "name": "Chemically competent cells (thaw on ice)"
+    },
+    {
+      "name": "Plasmid DNA (1–100 ng)"
+    },
+    {
+      "name": "SOC medium (pre-warmed to 37°C)",
+      "linkedRecipe": "soc"
+    },
+    {
+      "name": "LB agar plates with antibiotic",
+      "linkedRecipe": "lb_agar"
+    },
+    {
+      "name": "42°C water bath or heat block"
+    },
+    {
+      "name": "Ice bucket"
+    },
+    {
+      "name": "37°C shaking incubator"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Colonies on plate",
+      "condition": "4°C sealed with parafilm",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Transform chemically competent E. coli with plasmid DNA by heat shock.",
+    "zh": "热激法将质粒 DNA 转入化学感受态大肠杆菌。"
+  },
+  "crosslinks": [
+    "competent_cells_cacl2",
+    "miniprep_protocol",
+    "colony_pcr"
+  ]
 }

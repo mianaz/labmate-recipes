@@ -53,5 +53,28 @@
   "usage": {
     "en": "Resuspension buffer for alkaline lysis miniprep plasmid extraction (contains RNase A).",
     "zh": "碱裂解 miniprep 质粒提取的重悬缓冲液（含 RNase A）。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris-HCl and EDTA in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 8.0."
+    },
+    {
+      "step": "Add RNase A to 100 µg/mL (add after autoclaving and cooling)."
+    },
+    {
+      "step": "Autoclave base buffer, then add RNase A."
+    },
+    {
+      "step": "Store at 4°C (RNase A is stable at 4°C for months)."
+    }
+  ],
+  "crosslinks": [
+    "miniprep_protocol",
+    "plasmid_maxiprep"
+  ]
 }

@@ -50,5 +50,19 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Mix Percoll with 10× PBS (9:1 ratio) to make isotonic Percoll stock."
+    },
+    {
+      "step": "Dilute isotonic stock with 1× PBS to desired density."
+    },
+    {
+      "step": "Verify density with colored density marker beads if available."
+    },
+    {
+      "step": "Store at 4°C; use within 1 week."
+    }
+  ]
 }

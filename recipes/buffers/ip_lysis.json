@@ -63,5 +63,29 @@
   "usage": {
     "en": "Native lysis buffer optimized for immunoprecipitation (IP) and Co-IP experiments.",
     "zh": "专为 IP 和 Co-IP 优化的天然条件裂解缓冲液。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine Tris-HCl, NaCl, EDTA, and NP-40 in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Stir until dissolved."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Store at 4°C."
+    },
+    {
+      "step": "Add protease/phosphatase inhibitors fresh before use."
+    }
+  ],
+  "crosslinks": [
+    "immunoprecipitation",
+    "coip_protocol",
+    "pulldown_assay"
+  ]
 }

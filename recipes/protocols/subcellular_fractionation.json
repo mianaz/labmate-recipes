@@ -114,5 +114,48 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "3 hours"
+  },
+  "materials": [
+    {
+      "name": "Cells (>10⁷)"
+    },
+    {
+      "name": "Cytoplasmic extraction buffer A",
+      "linkedRecipe": "nuc_cyt_a"
+    },
+    {
+      "name": "Nuclear extraction buffer B",
+      "linkedRecipe": "nuc_cyt_b"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    },
+    {
+      "name": "Phosphatase inhibitors",
+      "linkedRecipe": "phosphatase_inhibitor_na3vo4",
+      "optional": true
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Microcentrifuge (4°C)"
+    },
+    {
+      "name": "Laemmli sample buffer",
+      "linkedRecipe": "laemmli_2x"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cytoplasmic and nuclear fractions separated",
+      "condition": "−80°C",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Separate cytoplasmic and nuclear fractions to analyze protein localization by western blot.",
+    "zh": "分离细胞质和细胞核组分，WB 分析蛋白质亚细胞定位。"
   }
 }

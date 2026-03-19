@@ -58,5 +58,27 @@
   "usage": {
     "en": "Passive lysis buffer for dual-luciferase reporter assays (Promega-compatible).",
     "zh": "被动裂解缓冲液，用于双荧光素酶报告基因检测（与 Promega 兼容）。"
-  }
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris, EDTA, and DTT in ~80 mL ddH₂O."
+    },
+    {
+      "step": "Add Triton X-100 or NP-40 (1%) and glycerol (10%)."
+    },
+    {
+      "step": "Adjust pH to 7.8 with HCl."
+    },
+    {
+      "step": "Bring to final volume of 100 mL."
+    },
+    {
+      "step": "Store at −20°C in aliquots."
+    }
+  ],
+  "crosslinks": [
+    "dual_luciferase"
+  ]
 }

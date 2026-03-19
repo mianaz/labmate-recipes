@@ -102,5 +102,32 @@
   "duration": {
     "total": "24–48 hours",
     "hands_on": "2 hours"
+  },
+  "materials": [
+    {
+      "name": "Cells at 100% confluency in 6- or 12-well plates"
+    },
+    {
+      "name": "Sterile 200 µL pipette tip"
+    },
+    {
+      "name": "Complete culture medium",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Microscope with camera (phase-contrast)"
+    },
+    {
+      "name": "Ruler or reference mark on plate"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Measure cell migration by wound healing (scratch) assay.",
+    "zh": "划痕实验（wound healing）检测细胞迁移能力。"
   }
 }

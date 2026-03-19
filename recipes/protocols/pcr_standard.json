@@ -71,5 +71,50 @@
   "duration": {
     "total": "2–3 hours",
     "hands_on": "30 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Template DNA (1–100 ng genomic or 0.1–10 ng plasmid)"
+    },
+    {
+      "name": "Forward and reverse primers (10 µM each)"
+    },
+    {
+      "name": "DNA polymerase (Taq, Phusion, Q5, etc.)"
+    },
+    {
+      "name": "dNTP mix (10 mM each)"
+    },
+    {
+      "name": "PCR buffer (with Mg²⁺)"
+    },
+    {
+      "name": "Nuclease-free water"
+    },
+    {
+      "name": "Thermocycler"
+    },
+    {
+      "name": "6× DNA loading dye",
+      "linkedRecipe": "dna_loading_dye_6x",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "PCR complete",
+      "condition": "4°C or −20°C",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Amplify specific DNA sequences using standard polymerase chain reaction (PCR).",
+    "zh": "标准聚合酶链反应（PCR）扩增特定 DNA 序列。"
+  },
+  "crosslinks": [
+    "agarose_gel_electrophoresis",
+    "gel_extraction",
+    "colony_pcr",
+    "qpcr_protocol"
+  ]
 }

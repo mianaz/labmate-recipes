@@ -43,5 +43,31 @@
   "usage": {
     "en": "2× YT rich medium for high-yield E. coli culture and phage work.",
     "zh": "2× YT 富集培养基，用于大肠杆菌高产培养和噬菌体实验。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve tryptone, yeast extract, and NaCl in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 7.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Cool to <55°C before adding antibiotics if needed."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ],
+  "crosslinks": [
+    "bacterial_protein_expression",
+    "competent_cells_cacl2"
+  ]
 }

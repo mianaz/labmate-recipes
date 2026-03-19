@@ -46,5 +46,31 @@
   "usage": {
     "en": "Wet or semi-dry transfer buffer for moving proteins from SDS-PAGE gel to membrane.",
     "zh": "蛋白转膜缓冲液，用于 SDS-PAGE 后湿转或半干转膜。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris base and glycine in ~700 mL ddH₂O."
+    },
+    {
+      "step": "Add methanol (20% v/v, 200 mL).",
+      "warning": "Methanol is toxic and flammable — handle in fume hood."
+    },
+    {
+      "step": "Add SDS to 0.01–0.1% for large proteins (>100 kDa) if needed."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL with ddH₂O."
+    },
+    {
+      "step": "Chill to 4°C before use (transfer generates heat)."
+    },
+    {
+      "step": "Prepare fresh; do not reuse."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

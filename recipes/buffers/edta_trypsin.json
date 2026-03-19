@@ -46,5 +46,26 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve trypsin and EDTA in 1× PBS (Ca²⁺/Mg²⁺-free)."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm filter."
+    },
+    {
+      "step": "Aliquot into 50 mL tubes."
+    },
+    {
+      "step": "Store at −20°C; thawed aliquot at 4°C for up to 2 weeks."
+    }
+  ],
+  "crosslinks": [
+    "cell_passage",
+    "cell_freezing",
+    "cell_thawing"
+  ]
 }

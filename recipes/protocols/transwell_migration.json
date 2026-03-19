@@ -52,5 +52,55 @@
   "duration": {
     "total": "1–2 days",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Transwell inserts (8 µm pore for migration, Matrigel-coated for invasion)"
+    },
+    {
+      "name": "24-well companion plate"
+    },
+    {
+      "name": "Serum-free medium (upper chamber)"
+    },
+    {
+      "name": "Complete medium with chemoattractant (lower chamber)",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Crystal violet staining solution",
+      "linkedRecipe": "crystal_violet_stain"
+    },
+    {
+      "name": "Cotton swabs (to remove non-migrated cells)"
+    },
+    {
+      "name": "Microscope"
+    },
+    {
+      "name": "Matrigel",
+      "linkedRecipe": "matrigel_coating",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cells seeded in transwells",
+      "condition": "37°C incubator",
+      "duration": "6–24 h (migration time)"
+    },
+    {
+      "afterStep": "Inserts stained and dried",
+      "condition": "RT",
+      "duration": "indefinitely"
+    }
+  ],
+  "usage": {
+    "en": "Measure cell migration and invasion using Transwell (Boyden chamber) assay.",
+    "zh": "Transwell（Boyden 小室）实验检测细胞迁移和侵袭能力。"
+  },
+  "crosslinks": [
+    "scratch_assay",
+    "tube_formation_assay"
+  ]
 }

@@ -147,5 +147,46 @@
       "condition": "−80°C single-use aliquots",
       "duration": "12 months"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "HEK293T cells (passage <20)"
+    },
+    {
+      "name": "Transfer vector (lentiviral backbone)"
+    },
+    {
+      "name": "Packaging plasmid (psPAX2)"
+    },
+    {
+      "name": "Envelope plasmid (pMD2.G, VSV-G)"
+    },
+    {
+      "name": "Complete DMEM",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Polybrene stock",
+      "linkedRecipe": "polybrene_stock"
+    },
+    {
+      "name": "Chloroquine stock",
+      "linkedRecipe": "chloroquine_stock",
+      "optional": true
+    },
+    {
+      "name": "Transfection reagent (PEI or Lipofectamine)"
+    },
+    {
+      "name": "0.45 µm syringe filters"
+    },
+    {
+      "name": "Ultracentrifuge (for concentration)",
+      "optional": true
+    }
+  ],
+  "usage": {
+    "en": "Produce lentiviral particles by transient transfection of HEK293T cells with packaging plasmids.",
+    "zh": "瞬时转染 HEK293T 细胞生产慢病毒颗粒。"
+  }
 }

@@ -115,5 +115,32 @@
       "condition": "4°C on ice",
       "duration": "overnight"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "Protein sample (concentrated, <2% column volume)"
+    },
+    {
+      "name": "SEC column (Superdex, Sephacryl, etc.)"
+    },
+    {
+      "name": "SEC running buffer",
+      "linkedRecipe": "sec_running_buffer"
+    },
+    {
+      "name": "FPLC/AKTA system"
+    },
+    {
+      "name": "Fraction collector"
+    },
+    {
+      "name": "SDS-PAGE gel for analysis",
+      "linkedRecipe": "sds_page_gel",
+      "optional": true
+    }
+  ],
+  "usage": {
+    "en": "Separate proteins by size using size-exclusion (gel filtration) chromatography.",
+    "zh": "分子筛（凝胶过滤）层析按蛋白质大小分离。"
+  }
 }

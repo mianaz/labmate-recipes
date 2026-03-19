@@ -73,5 +73,47 @@
   "duration": {
     "total": "30 minutes",
     "hands_on": "30 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Agarose gel with separated DNA bands"
+    },
+    {
+      "name": "Gel extraction kit (QIAquick, Zymo, etc.)"
+    },
+    {
+      "name": "Scalpel or razor blade"
+    },
+    {
+      "name": "UV transilluminator or blue-light box"
+    },
+    {
+      "name": "Microcentrifuge"
+    },
+    {
+      "name": "TE buffer or elution buffer",
+      "linkedRecipe": "te"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Gel slice excised",
+      "condition": "−20°C",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "DNA eluted",
+      "condition": "−20°C",
+      "duration": "6 months"
+    }
+  ],
+  "usage": {
+    "en": "Purify specific DNA fragments from agarose gels by gel extraction.",
+    "zh": "从琼脂糖胶中切胶回收纯化特定 DNA 片段。"
+  },
+  "crosslinks": [
+    "agarose_gel_electrophoresis",
+    "restriction_digest",
+    "dna_ligation"
+  ]
 }

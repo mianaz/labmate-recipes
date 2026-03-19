@@ -87,5 +87,40 @@
   "duration": {
     "total": "2–3 hours",
     "hands_on": "1.5 hours"
+  },
+  "materials": [
+    {
+      "name": "Total RNA samples"
+    },
+    {
+      "name": "Agarose (RNase-free)"
+    },
+    {
+      "name": "10× MOPS buffer",
+      "linkedRecipe": "mops_10x"
+    },
+    {
+      "name": "Formaldehyde (37%)",
+      "optional": true
+    },
+    {
+      "name": "RNA loading dye",
+      "linkedRecipe": "rna_loading_dye"
+    },
+    {
+      "name": "DEPC-treated water",
+      "linkedRecipe": "depc_water"
+    },
+    {
+      "name": "Ethidium bromide or SYBR Safe"
+    },
+    {
+      "name": "Gel imaging system"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Assess RNA integrity and size by denaturing formaldehyde agarose gel electrophoresis.",
+    "zh": "变性甲醛琼脂糖胶电泳检测 RNA 完整性和大小。"
   }
 }

@@ -47,5 +47,22 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve Ficoll-400 in ddH₂O to desired concentration."
+    },
+    {
+      "step": "Heat gently to 37–50°C with stirring to dissolve."
+    },
+    {
+      "step": "Bring to final volume."
+    },
+    {
+      "step": "Autoclave or filter-sterilize."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ]
 }

@@ -52,5 +52,54 @@
   "duration": {
     "total": "2 days",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Template plasmid (methylated, from dam⁺ E. coli)"
+    },
+    {
+      "name": "Mutagenic primers (forward and reverse, overlapping)"
+    },
+    {
+      "name": "High-fidelity DNA polymerase (Pfu, Q5)"
+    },
+    {
+      "name": "dNTP mix"
+    },
+    {
+      "name": "DpnI restriction enzyme"
+    },
+    {
+      "name": "Competent cells"
+    },
+    {
+      "name": "SOC medium",
+      "linkedRecipe": "soc"
+    },
+    {
+      "name": "LB agar plates with antibiotic",
+      "linkedRecipe": "lb_agar"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "PCR complete",
+      "condition": "4°C",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": "DpnI digestion",
+      "condition": "Transform immediately or store at −20°C",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Introduce specific point mutations into plasmid DNA by site-directed mutagenesis.",
+    "zh": "定点突变在质粒 DNA 中引入特定点突变。"
+  },
+  "crosslinks": [
+    "pcr_standard",
+    "heat_shock_transformation",
+    "sanger_sequencing_prep"
+  ]
 }

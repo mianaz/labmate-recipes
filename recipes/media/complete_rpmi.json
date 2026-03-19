@@ -58,5 +58,31 @@
   "usage": {
     "en": "RPMI-1640 complete medium (10% FBS) for lymphocyte and hematopoietic cell culture.",
     "zh": "含 10% FBS 的 RPMI-1640 完全培养基，用于淋巴细胞和造血细胞培养。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "To 500 mL RPMI 1640 base medium, add 50 mL heat-inactivated FBS (10% final)."
+    },
+    {
+      "step": "Add 5 mL penicillin-streptomycin (1% final)."
+    },
+    {
+      "step": "Add 5 mL L-glutamine (2 mM final) or use GlutaMAX-supplemented RPMI."
+    },
+    {
+      "step": "Optional: add 5 mL HEPES (10 mM final), 5 mL sodium pyruvate (1 mM), 0.5 mL β-mercaptoethanol (50 µM) for lymphocytes."
+    },
+    {
+      "step": "Mix gently and store at 4°C for up to 1 month."
+    }
+  ],
+  "crosslinks": [
+    "cell_passage",
+    "cell_freezing",
+    "cell_thawing",
+    "flow_cytometry_protocol",
+    "pbmc_isolation"
+  ]
 }

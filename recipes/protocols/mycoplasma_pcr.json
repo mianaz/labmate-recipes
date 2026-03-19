@@ -53,5 +53,38 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "1 hour"
-  }
+  },
+  "materials": [
+    {
+      "name": "Cell culture supernatant (48 h, no antibiotics)"
+    },
+    {
+      "name": "Mycoplasma-specific PCR primers"
+    },
+    {
+      "name": "Taq DNA polymerase and buffer"
+    },
+    {
+      "name": "dNTPs (10 mM each)"
+    },
+    {
+      "name": "Positive control template"
+    },
+    {
+      "name": "Agarose gel and TAE buffer",
+      "linkedRecipe": "tae_50x"
+    },
+    {
+      "name": "Thermocycler"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Detect mycoplasma contamination in cell cultures by PCR amplification of mycoplasma 16S rRNA genes.",
+    "zh": "PCR 扩增支原体 16S rRNA 基因检测细胞培养物支原体污染。"
+  },
+  "crosslinks": [
+    "hela_mycoplasma_testing",
+    "agarose_gel_electrophoresis"
+  ]
 }

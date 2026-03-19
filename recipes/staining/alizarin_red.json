@@ -39,5 +39,24 @@
   "usage": {
     "en": "Alizarin Red S stain for detecting calcium deposits in osteogenic differentiation assays.",
     "zh": "茜素红 S 染色，用于检测成骨分化实验中的钙沉积。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Alizarin Red S (2 g per 100 mL, 2% w/v) in ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 4.1–4.3 with ammonium hydroxide (10%) or HCl."
+    },
+    {
+      "step": "Filter through 0.45 µm."
+    },
+    {
+      "step": "Store at room temperature protected from light for up to 6 months."
+    }
+  ],
+  "crosslinks": [
+    "clonogenic_assay"
+  ]
 }

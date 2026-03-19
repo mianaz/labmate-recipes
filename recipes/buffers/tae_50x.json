@@ -45,5 +45,29 @@
   "usage": {
     "en": "50× TAE buffer concentrate; dilute to 1× for DNA agarose gel electrophoresis and gel extraction.",
     "zh": "50× TAE 缓冲液浓缩液，稀释至 1× 用于 DNA 凝胶电泳和胶回收。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve 242 g Tris base in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Add 57.1 mL glacial acetic acid."
+    },
+    {
+      "step": "Add 100 mL 0.5 M EDTA pH 8.0."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Store at room temperature. Dilute 1:50 for 1× working solution."
+    }
+  ],
+  "crosslinks": [
+    "agarose_gel_electrophoresis",
+    "gel_extraction",
+    "colony_pcr"
+  ]
 }

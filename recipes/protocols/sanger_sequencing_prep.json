@@ -76,5 +76,33 @@
   "duration": {
     "total": "30 minutes + 24–48 h service",
     "hands_on": "30 minutes"
+  },
+  "materials": [
+    {
+      "name": "Purified plasmid DNA (100–300 ng/µL)"
+    },
+    {
+      "name": "Sequencing primer (3.2 pmol/µL or 10 µM)"
+    },
+    {
+      "name": "Nuclease-free water"
+    },
+    {
+      "name": "1.5 mL microcentrifuge tubes or strip tubes"
+    },
+    {
+      "name": "Spectrophotometer (NanoDrop) for quantification"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Samples prepared",
+      "condition": "4°C (short) or −20°C",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Prepare DNA samples and primers for Sanger sequencing submission.",
+    "zh": "准备 DNA 样品和引物，提交 Sanger 测序。"
   }
 }

@@ -39,5 +39,22 @@
   "usage": {
     "en": "Triton X-100 permeabilization buffer for intracellular antigen access in immunofluorescence.",
     "zh": "Triton X-100 透化缓冲液，用于免疫荧光中胞内抗原的暴露。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Add Triton X-100 to PBS to desired concentration (0.1–0.5%)."
+    },
+    {
+      "step": "Mix by gentle inversion."
+    },
+    {
+      "step": "Prepare fresh before each use."
+    }
+  ],
+  "crosslinks": [
+    "if_protocol",
+    "proximity_ligation_assay"
+  ]
 }

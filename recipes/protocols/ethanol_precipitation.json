@@ -73,5 +73,49 @@
   "duration": {
     "total": "2–3 hours",
     "hands_on": "30 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "DNA or RNA sample"
+    },
+    {
+      "name": "3 M sodium acetate pH 5.2"
+    },
+    {
+      "name": "100% ethanol (ice-cold)"
+    },
+    {
+      "name": "70% ethanol (ice-cold)"
+    },
+    {
+      "name": "Glycogen or linear acrylamide (carrier)",
+      "optional": true
+    },
+    {
+      "name": "TE buffer or nuclease-free water",
+      "linkedRecipe": "te"
+    },
+    {
+      "name": "Microcentrifuge (≥14,000 × g)"
+    },
+    {
+      "name": "−20°C or −80°C freezer"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Ethanol added to sample",
+      "condition": "−20°C or −80°C",
+      "duration": "overnight to 1 week"
+    }
+  ],
+  "usage": {
+    "en": "Concentrate and purify DNA or RNA by ethanol precipitation.",
+    "zh": "乙醇沉淀法浓缩和纯化 DNA 或 RNA。"
+  },
+  "crosslinks": [
+    "restriction_digest",
+    "dna_ligation",
+    "genomic_dna_extraction"
+  ]
 }

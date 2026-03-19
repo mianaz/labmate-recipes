@@ -63,5 +63,58 @@
   "duration": {
     "total": "3 days",
     "hands_on": "8 hours"
+  },
+  "materials": [
+    {
+      "name": "Genomic DNA (digested with restriction enzymes)"
+    },
+    {
+      "name": "Agarose gel (0.7–1%)"
+    },
+    {
+      "name": "TAE buffer",
+      "linkedRecipe": "tae_50x"
+    },
+    {
+      "name": "20× SSC",
+      "linkedRecipe": "ssc_20x"
+    },
+    {
+      "name": "Nylon membrane (positively charged)"
+    },
+    {
+      "name": "Depurination solution (0.25 M HCl)"
+    },
+    {
+      "name": "Denaturation solution (0.5 M NaOH, 1.5 M NaCl)"
+    },
+    {
+      "name": "Neutralization solution (0.5 M Tris pH 7.5, 1.5 M NaCl)"
+    },
+    {
+      "name": "Labeled probe (DIG or ³²P)"
+    },
+    {
+      "name": "UV crosslinker"
+    },
+    {
+      "name": "Hybridization oven"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "DNA transferred to membrane",
+      "condition": "RT, dry, after UV crosslinking",
+      "duration": "months"
+    },
+    {
+      "afterStep": "Membrane probed and washed",
+      "condition": "−20°C in plastic wrap",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Detect specific genomic DNA sequences by restriction digestion, gel separation, transfer, and hybridization.",
+    "zh": "Southern blot：限制性酶切、胶分离、转膜、杂交检测特定基因组 DNA 序列。"
   }
 }

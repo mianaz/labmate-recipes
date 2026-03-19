@@ -101,5 +101,56 @@
       "condition": "−20°C",
       "duration": "6 months"
     }
+  ],
+  "materials": [
+    {
+      "name": "Cells (1–10 × 10⁷)"
+    },
+    {
+      "name": "1% formaldehyde (methanol-free) in PBS"
+    },
+    {
+      "name": "Glycine (2.5 M stock)"
+    },
+    {
+      "name": "ChIP lysis buffer",
+      "linkedRecipe": "chip_lysis"
+    },
+    {
+      "name": "ChIP dilution buffer",
+      "linkedRecipe": "chip_dilution"
+    },
+    {
+      "name": "Low-salt wash buffer",
+      "linkedRecipe": "chip_wash_low"
+    },
+    {
+      "name": "High-salt wash buffer",
+      "linkedRecipe": "chip_wash_high"
+    },
+    {
+      "name": "Protein A/G magnetic beads"
+    },
+    {
+      "name": "ChIP-grade antibody"
+    },
+    {
+      "name": "Proteinase K"
+    },
+    {
+      "name": "Sonicator (Bioruptor or Covaris)"
+    },
+    {
+      "name": "RNase A"
+    }
+  ],
+  "usage": {
+    "en": "Chromatin immunoprecipitation to study protein-DNA interactions at specific genomic loci.",
+    "zh": "染色质免疫沉淀，研究特定基因组位点的蛋白-DNA 相互作用。"
+  },
+  "crosslinks": [
+    "chromatin_accessibility_atac",
+    "cut_and_run",
+    "qpcr_protocol"
   ]
 }

@@ -58,5 +58,28 @@
   "duration": {
     "total": "1 day",
     "hands_on": "20 minutes"
+  },
+  "materials": [
+    {
+      "name": "Overnight bacterial culture in LB or 2×YT"
+    },
+    {
+      "name": "Sterile 50% glycerol",
+      "linkedRecipe": "glycerol_stock"
+    },
+    {
+      "name": "Cryovials (1.5–2 mL)"
+    },
+    {
+      "name": "Liquid nitrogen or dry ice/ethanol bath"
+    },
+    {
+      "name": "−80°C freezer"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Prepare and store long-term bacterial glycerol stocks at −80°C.",
+    "zh": "制备细菌甘油保存管，−80°C 长期保存。"
   }
 }

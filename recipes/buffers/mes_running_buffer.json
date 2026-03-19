@@ -61,5 +61,27 @@
   "usage": {
     "en": "MES SDS running buffer for resolving low-MW proteins (3.5–60 kDa) on Bis-Tris gels.",
     "zh": "MES SDS 电泳缓冲液，用于 Bis-Tris 胶上分辨低分子量蛋白（3.5–60 kDa）。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve MES, Tris base, SDS, and EDTA in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Stir until dissolved."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL with ddH₂O."
+    },
+    {
+      "step": "Do not adjust pH (should be ~7.3)."
+    },
+    {
+      "step": "Store at room temperature."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol"
+  ]
 }

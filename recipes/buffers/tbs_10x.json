@@ -38,5 +38,28 @@
   "usage": {
     "en": "Tris-buffered saline concentrate; dilute to 1× for WB membrane washing.",
     "zh": "Tris 缓冲盐水浓缩液，稀释至 1× 后用于 WB 膜洗涤。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris base and NaCl in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 7.6 with HCl."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Store at room temperature. Dilute 1:10 for 1× TBS."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "tbst"
+  ]
 }

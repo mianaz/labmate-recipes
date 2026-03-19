@@ -129,5 +129,46 @@
   "duration": {
     "total": "1–2 days",
     "hands_on": "6 hours"
+  },
+  "materials": [
+    {
+      "name": "Cells or tissue (>10⁸ cells or >1 g tissue)"
+    },
+    {
+      "name": "Sucrose gradient homogenization buffer",
+      "linkedRecipe": "sucrose_gradient_homog"
+    },
+    {
+      "name": "Sucrose gradient solutions (0.25 M, 0.5 M, 0.86 M, 1.3 M)",
+      "linkedRecipe": "sucrose_gradient_buffer"
+    },
+    {
+      "name": "CaCl₂ (8 mM stock)"
+    },
+    {
+      "name": "Dounce homogenizer (tight-fitting pestle)"
+    },
+    {
+      "name": "Ultracentrifuge and SW41 rotor"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Homogenization",
+      "condition": "Keep on ice, process immediately",
+      "duration": "1 hour"
+    },
+    {
+      "afterStep": "ER/Golgi fractions collected",
+      "condition": "−80°C in aliquots",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Isolate endoplasmic reticulum and Golgi membrane fractions by sucrose density gradient centrifugation.",
+    "zh": "蔗糖密度梯度离心分离内质网和高尔基体膜组分。"
   }
 }

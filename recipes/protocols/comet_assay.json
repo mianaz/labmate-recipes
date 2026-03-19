@@ -53,5 +53,57 @@
   "duration": {
     "total": "1 day",
     "hands_on": "5 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Low-melting-point agarose"
+    },
+    {
+      "name": "Normal-melting-point agarose"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Lysis buffer (2.5 M NaCl, 100 mM EDTA, 10 mM Tris, 1% Triton X-100)"
+    },
+    {
+      "name": "Alkaline electrophoresis buffer (300 mM NaOH, 1 mM EDTA)"
+    },
+    {
+      "name": "Neutralization buffer (0.4 M Tris-HCl pH 7.5)"
+    },
+    {
+      "name": "Ethidium bromide or SYBR Gold"
+    },
+    {
+      "name": "Microscope slides (frosted)"
+    },
+    {
+      "name": "Fluorescence microscope"
+    },
+    {
+      "name": "Electrophoresis tank"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cells embedded in agarose on slides",
+      "condition": "4°C in lysis buffer",
+      "duration": "overnight to 1 week"
+    },
+    {
+      "afterStep": "Slides stained",
+      "condition": "4°C in humid box, dark",
+      "duration": "24 hours"
+    }
+  ],
+  "usage": {
+    "en": "Detect DNA damage at the single-cell level using single-cell gel electrophoresis (comet assay).",
+    "zh": "单细胞凝胶电泳（彗星实验）检测单个细胞 DNA 损伤。"
+  },
+  "crosslinks": [
+    "annexin_v_apoptosis"
+  ]
 }

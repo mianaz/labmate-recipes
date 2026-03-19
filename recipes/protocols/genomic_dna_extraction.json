@@ -68,5 +68,64 @@
   "duration": {
     "total": "2–3 hours",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Cells, tissue, or tail clip"
+    },
+    {
+      "name": "Tail lysis buffer",
+      "linkedRecipe": "tail_lysis_buffer"
+    },
+    {
+      "name": "Proteinase K (20 mg/mL)"
+    },
+    {
+      "name": "RNase A (optional)",
+      "optional": true
+    },
+    {
+      "name": "Phenol:chloroform:isoamyl alcohol (25:24:1)",
+      "optional": true
+    },
+    {
+      "name": "100% isopropanol or ethanol"
+    },
+    {
+      "name": "70% ethanol"
+    },
+    {
+      "name": "TE buffer",
+      "linkedRecipe": "te"
+    },
+    {
+      "name": "1.5 mL microcentrifuge tubes"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Lysis overnight",
+      "condition": "55°C with proteinase K",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": "DNA pellet in 70% ethanol",
+      "condition": "−20°C",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "DNA dissolved in TE",
+      "condition": "4°C (short-term) or −20°C (long-term)",
+      "duration": "years"
+    }
+  ],
+  "usage": {
+    "en": "Extract high-molecular-weight genomic DNA from cells or tissues.",
+    "zh": "从细胞或组织中提取高分子量基因组 DNA。"
+  },
+  "crosslinks": [
+    "pcr_standard",
+    "southern_blot",
+    "ethanol_precipitation"
+  ]
 }

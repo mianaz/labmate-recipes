@@ -112,5 +112,27 @@
   "duration": {
     "total": "1 day",
     "hands_on": "3 hours"
+  },
+  "materials": [
+    {
+      "name": "Lentiviral supernatant"
+    },
+    {
+      "name": "p24 ELISA kit (HIV-1 p24 antigen)"
+    },
+    {
+      "name": "96-well ELISA plate"
+    },
+    {
+      "name": "Microplate reader (450 nm)"
+    },
+    {
+      "name": "Lysis buffer (0.5% Triton X-100)"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Quantify lentiviral particles using p24 capsid protein ELISA.",
+    "zh": "p24 衣壳蛋白 ELISA 定量慢病毒颗粒数。"
   }
 }

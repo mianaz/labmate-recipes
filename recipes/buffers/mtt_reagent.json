@@ -39,5 +39,27 @@
   "usage": {
     "en": "MTT (3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium) stock solution for cell viability assay.",
     "zh": "MTT 母液，用于细胞活力检测（线粒体还原酶催化生成甲臜）。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve MTT powder in PBS or serum-free medium to 5 mg/mL."
+    },
+    {
+      "step": "Vortex until dissolved; warm to 37°C if needed."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm."
+    },
+    {
+      "step": "Aliquot into light-protected tubes."
+    },
+    {
+      "step": "Store at −20°C; protect from light (MTT is light-sensitive)."
+    }
+  ],
+  "crosslinks": [
+    "mtt_assay"
+  ]
 }

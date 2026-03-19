@@ -112,5 +112,43 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "3 hours"
+  },
+  "materials": [
+    {
+      "name": "Cells or tissue (>10⁸ cells or >0.5 g tissue)"
+    },
+    {
+      "name": "Mitochondria isolation buffer",
+      "linkedRecipe": "mitochondria_buffer"
+    },
+    {
+      "name": "Sucrose gradient solutions",
+      "linkedRecipe": "sucrose_gradient_buffer",
+      "optional": true
+    },
+    {
+      "name": "Dounce homogenizer (tight-fitting pestle)"
+    },
+    {
+      "name": "Refrigerated centrifuge (600–10,000 × g)"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    },
+    {
+      "name": "BSA (fatty-acid-free, 0.1%)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Mitochondrial pellet",
+      "condition": "−80°C in isolation buffer",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Isolate intact mitochondria from cells or tissues by differential centrifugation.",
+    "zh": "差速离心从细胞或组织中分离完整线粒体。"
   }
 }

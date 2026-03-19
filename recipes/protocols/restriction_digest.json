@@ -67,5 +67,47 @@
   "duration": {
     "total": "1–2 hours",
     "hands_on": "20 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "DNA (plasmid, PCR product, or genomic)"
+    },
+    {
+      "name": "Restriction enzyme(s)"
+    },
+    {
+      "name": "10× restriction enzyme buffer (CutSmart, etc.)"
+    },
+    {
+      "name": "BSA (100×, if required by enzyme)",
+      "optional": true
+    },
+    {
+      "name": "Nuclease-free water"
+    },
+    {
+      "name": "6× DNA loading dye",
+      "linkedRecipe": "dna_loading_dye_6x"
+    },
+    {
+      "name": "Agarose and TAE buffer",
+      "linkedRecipe": "tae_50x"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Digestion complete",
+      "condition": "−20°C or heat-inactivate enzyme",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Cut DNA at specific recognition sites using restriction endonucleases.",
+    "zh": "限制性内切酶在特定识别位点切割 DNA。"
+  },
+  "crosslinks": [
+    "agarose_gel_electrophoresis",
+    "dna_ligation",
+    "gel_extraction"
+  ]
 }

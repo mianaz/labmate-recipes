@@ -47,5 +47,26 @@
   "usage": {
     "en": "Alkaline lysis buffer (NaOH + SDS) for cell disruption in miniprep plasmid extraction.",
     "zh": "碱裂解缓冲液（NaOH + SDS），用于 miniprep 质粒提取的细胞破碎。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve NaOH in ~400 mL ddH₂O.",
+      "warning": "NaOH is caustic — wear gloves and eye protection."
+    },
+    {
+      "step": "Add SDS and mix gently (avoid bubbles)."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Prepare fresh or store at room temperature for up to 1 month."
+    }
+  ],
+  "crosslinks": [
+    "miniprep_protocol",
+    "plasmid_maxiprep"
+  ]
 }

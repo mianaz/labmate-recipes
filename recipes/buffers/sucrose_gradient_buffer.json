@@ -62,5 +62,22 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve sucrose in HEPES or Tris buffer to desired concentration."
+    },
+    {
+      "step": "Add protease inhibitors if for protein work."
+    },
+    {
+      "step": "Filter through 0.22 µm if needed."
+    },
+    {
+      "step": "Verify density with refractometer."
+    },
+    {
+      "step": "Store at 4°C; prepare fresh for best results."
+    }
+  ]
 }

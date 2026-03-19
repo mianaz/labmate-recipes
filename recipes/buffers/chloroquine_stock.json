@@ -37,5 +37,28 @@
   "usage": {
     "en": "Chloroquine stock solution for enhancing plasmid transfection efficiency (calcium phosphate method).",
     "zh": "氯喹母液，用于提高质粒转染效率（磷酸钙法）。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Weigh chloroquine diphosphate."
+    },
+    {
+      "step": "Dissolve in ddH₂O to 25 mM final concentration."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm filter."
+    },
+    {
+      "step": "Aliquot into single-use tubes."
+    },
+    {
+      "step": "Store at −20°C protected from light."
+    }
+  ],
+  "crosslinks": [
+    "lentivirus_production",
+    "calcium_phosphate_transfection"
+  ]
 }

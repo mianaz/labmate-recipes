@@ -64,5 +64,39 @@
   "duration": {
     "total": "2 hours",
     "hands_on": "1 hour"
-  }
+  },
+  "materials": [
+    {
+      "name": "Electrocompetent cells"
+    },
+    {
+      "name": "Plasmid DNA (desalted, high concentration)"
+    },
+    {
+      "name": "Electroporation cuvettes (1 or 2 mm gap)"
+    },
+    {
+      "name": "Electroporator (Gene Pulser or similar)"
+    },
+    {
+      "name": "SOC medium",
+      "linkedRecipe": "soc"
+    },
+    {
+      "name": "LB agar plates with antibiotic",
+      "linkedRecipe": "lb_agar"
+    },
+    {
+      "name": "Ice bucket"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Introduce DNA into bacterial or mammalian cells using high-voltage electroporation.",
+    "zh": "高压电穿孔将 DNA 导入细菌或哺乳动物细胞。"
+  },
+  "crosslinks": [
+    "competent_cells_electrocompetent",
+    "heat_shock_transformation"
+  ]
 }

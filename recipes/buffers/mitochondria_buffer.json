@@ -70,5 +70,22 @@
   "usage": {
     "en": "Mannitol-sucrose iso-osmotic buffer for mitochondria isolation by differential centrifugation.",
     "zh": "甘露醇-蔗糖等渗缓冲液，用于差速离心法分离线粒体。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve sucrose, HEPES/MOPS, and EGTA in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 7.4 with KOH."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Store at 4°C."
+    },
+    {
+      "step": "Add BSA (0.1%) and protease inhibitors fresh before use."
+    }
+  ]
 }

@@ -42,5 +42,27 @@
   "usage": {
     "en": "Long-term bacterial glycerol cryostock for preserving E. coli strains at -80°C.",
     "zh": "细菌甘油冻存液，用于 -80°C 长期保存大肠杆菌菌株。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Prepare 50% glycerol in ddH₂O (v/v)."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Cool to room temperature."
+    },
+    {
+      "step": "Mix 500 µL bacterial culture with 500 µL sterile 50% glycerol in cryovial."
+    },
+    {
+      "step": "Flash-freeze in liquid nitrogen or dry ice/ethanol bath."
+    },
+    {
+      "step": "Store at −80°C."
+    }
+  ]
 }

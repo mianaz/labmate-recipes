@@ -67,5 +67,36 @@
   "duration": {
     "total": "1 hour",
     "hands_on": "30 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "BCA Reagent A (bicinchoninic acid solution)"
+    },
+    {
+      "name": "BCA Reagent B (4% CuSO₄ solution)"
+    },
+    {
+      "name": "BSA standard curve dilutions",
+      "linkedRecipe": "bsa_standard_curve"
+    },
+    {
+      "name": "96-well plate (flat-bottom, clear)"
+    },
+    {
+      "name": "Microplate reader (562 nm)"
+    },
+    {
+      "name": "Multichannel pipette",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Quantify total protein concentration using the BCA colorimetric assay.",
+    "zh": "BCA 比色法定量蛋白质总浓度。"
+  },
+  "crosslinks": [
+    "bradford_assay_protocol",
+    "wb_protocol"
+  ]
 }

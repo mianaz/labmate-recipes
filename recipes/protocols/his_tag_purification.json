@@ -167,5 +167,40 @@
       "condition": "−80°C + 10% glycerol",
       "duration": "12 months"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "Bacterial lysate (His-tagged protein)"
+    },
+    {
+      "name": "Ni-NTA agarose or magnetic beads"
+    },
+    {
+      "name": "His binding buffer",
+      "linkedRecipe": "his_binding"
+    },
+    {
+      "name": "His wash buffer (20–40 mM imidazole)",
+      "linkedRecipe": "imac_wash_highsalt"
+    },
+    {
+      "name": "His elution buffer (250–500 mM imidazole)",
+      "linkedRecipe": "his_elution"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    },
+    {
+      "name": "SDS-PAGE gel for analysis",
+      "linkedRecipe": "sds_page_gel",
+      "optional": true
+    },
+    {
+      "name": "Gravity column or spin column"
+    }
+  ],
+  "usage": {
+    "en": "Purify His-tagged recombinant proteins by Ni-NTA (IMAC) affinity chromatography.",
+    "zh": "Ni-NTA 亲和层析（IMAC）纯化 His 标签重组蛋白。"
+  }
 }

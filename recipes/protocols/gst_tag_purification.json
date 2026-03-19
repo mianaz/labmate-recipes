@@ -146,5 +146,36 @@
       "condition": "−80°C + 10% glycerol",
       "duration": "12 months"
     }
-  ]
+  ],
+  "materials": [
+    {
+      "name": "Bacterial lysate (GST-tagged protein)"
+    },
+    {
+      "name": "Glutathione Sepharose 4B or magnetic beads"
+    },
+    {
+      "name": "GST elution buffer",
+      "linkedRecipe": "gst_elution"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Lysis buffer (PBS + 1% Triton X-100)"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    },
+    {
+      "name": "SDS-PAGE gel for analysis",
+      "linkedRecipe": "sds_page_gel",
+      "optional": true
+    }
+  ],
+  "usage": {
+    "en": "Purify GST-tagged recombinant proteins using glutathione affinity chromatography.",
+    "zh": "谷胱甘肽亲和层析纯化 GST 标签重组蛋白。"
+  }
 }

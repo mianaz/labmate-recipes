@@ -52,5 +52,53 @@
   "duration": {
     "total": "1 hour",
     "hands_on": "20 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Gibson Assembly master mix",
+      "linkedRecipe": "gibson_mastermix"
+    },
+    {
+      "name": "Linearized vector backbone"
+    },
+    {
+      "name": "PCR-amplified insert(s) with 15–30 bp overlaps"
+    },
+    {
+      "name": "SOC medium",
+      "linkedRecipe": "soc"
+    },
+    {
+      "name": "Competent cells"
+    },
+    {
+      "name": "LB agar plates with antibiotic",
+      "linkedRecipe": "lb_agar"
+    },
+    {
+      "name": "Thermocycler (50°C)"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Gibson reaction",
+      "condition": "−20°C",
+      "duration": "1 week"
+    },
+    {
+      "afterStep": "Transformation and plating",
+      "condition": "4°C (plates)",
+      "duration": "1 week"
+    }
+  ],
+  "usage": {
+    "en": "Assemble multiple DNA fragments seamlessly using Gibson isothermal assembly.",
+    "zh": "Gibson 等温组装法无缝连接多个 DNA 片段。"
+  },
+  "crosslinks": [
+    "dna_ligation",
+    "colony_pcr",
+    "miniprep_protocol",
+    "restriction_digest"
+  ]
 }

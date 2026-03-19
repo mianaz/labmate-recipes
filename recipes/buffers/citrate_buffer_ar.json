@@ -46,5 +46,27 @@
   "usage": {
     "en": "Sodium citrate antigen retrieval buffer (pH 6.0) for FFPE tissue IHC/IF.",
     "zh": "柠檬酸抗原修复缓冲液（pH 6.0），用于 FFPE 组织 IHC/IF。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve citric acid monohydrate in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to 6.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Add Tween-20 (0.05%) just before use."
+    },
+    {
+      "step": "Can be reused 2–3 times; store at RT."
+    }
+  ],
+  "crosslinks": [
+    "ihc_paraffin_protocol"
+  ]
 }

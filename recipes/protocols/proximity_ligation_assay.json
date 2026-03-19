@@ -58,5 +58,61 @@
   "duration": {
     "total": "2 days",
     "hands_on": "5 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Cells on coverslips or tissue sections"
+    },
+    {
+      "name": "4% PFA",
+      "linkedRecipe": "pfa_4"
+    },
+    {
+      "name": "Permeabilization buffer",
+      "linkedRecipe": "perm_buffer_triton"
+    },
+    {
+      "name": "Blocking buffer",
+      "linkedRecipe": "if_blocking"
+    },
+    {
+      "name": "Two primary antibodies from different species"
+    },
+    {
+      "name": "PLA probes (Duolink PLUS/MINUS)"
+    },
+    {
+      "name": "Ligation solution"
+    },
+    {
+      "name": "Amplification solution"
+    },
+    {
+      "name": "DAPI mounting medium",
+      "linkedRecipe": "dapi_staining"
+    },
+    {
+      "name": "Fluorescence microscope"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Fixed and permeabilized",
+      "condition": "4°C in PBS",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": "Primary antibodies applied",
+      "condition": "4°C in humidity chamber",
+      "duration": "overnight"
+    }
+  ],
+  "usage": {
+    "en": "Detect protein-protein interactions in situ using proximity ligation assay (PLA/Duolink).",
+    "zh": "原位邻近连接实验（PLA/Duolink）检测蛋白质-蛋白质相互作用。"
+  },
+  "crosslinks": [
+    "if_protocol",
+    "coip_protocol"
+  ]
 }

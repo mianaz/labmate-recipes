@@ -125,5 +125,43 @@
   "duration": {
     "total": "1 day",
     "hands_on": "6 hours"
+  },
+  "materials": [
+    {
+      "name": "Cells or tissue (>10⁸ cells)"
+    },
+    {
+      "name": "Lysosome isolation buffer",
+      "linkedRecipe": "lysosome_isolation_buffer"
+    },
+    {
+      "name": "Sucrose gradient solutions",
+      "linkedRecipe": "sucrose_gradient_buffer"
+    },
+    {
+      "name": "Dounce homogenizer"
+    },
+    {
+      "name": "Ultracentrifuge"
+    },
+    {
+      "name": "Protease inhibitor cocktail"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Homogenization",
+      "condition": "Keep on ice, process immediately",
+      "duration": "1 hour"
+    },
+    {
+      "afterStep": "Lysosome-enriched fraction collected",
+      "condition": "−80°C",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Isolate lysosome-enriched fractions by differential and density gradient centrifugation.",
+    "zh": "差速和密度梯度离心分离富集溶酶体组分。"
   }
 }

@@ -58,5 +58,27 @@
   "usage": {
     "en": "Reaction buffer for in vitro kinase assays with ATP as phosphate donor.",
     "zh": "体外激酶反应缓冲液，以 ATP 作为磷酸供体。"
-  }
+  },
+  "volume": 50,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine Tris-HCl pH 7.5, MgCl₂, and DTT in ~40 mL ddH₂O."
+    },
+    {
+      "step": "Add MnCl₂ if required for specific kinases."
+    },
+    {
+      "step": "Bring to final volume of 50 mL."
+    },
+    {
+      "step": "Aliquot and store at −20°C."
+    },
+    {
+      "step": "Add ATP fresh before use."
+    }
+  ],
+  "crosslinks": [
+    "enzyme_kinetics_michaelis"
+  ]
 }

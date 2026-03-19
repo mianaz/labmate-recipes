@@ -62,5 +62,25 @@
   "usage": {
     "en": "10× MOPS buffer for denaturing RNA agarose gel electrophoresis.",
     "zh": "10× MOPS 缓冲液，用于 RNA 变性凝胶电泳。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve MOPS in ~700 mL DEPC-treated ddH₂O."
+    },
+    {
+      "step": "Add sodium acetate and EDTA."
+    },
+    {
+      "step": "Adjust pH to 7.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave; solution will turn yellow — this is normal and acceptable."
+    },
+    {
+      "step": "Store at room temperature in dark bottle."
+    }
+  ]
 }

@@ -85,5 +85,28 @@
   "duration": {
     "total": "1 day",
     "hands_on": "2 hours"
+  },
+  "materials": [
+    {
+      "name": "Cell culture supernatant (48 h without antibiotics)"
+    },
+    {
+      "name": "Mycoplasma detection kit (PCR-based or luminescence)"
+    },
+    {
+      "name": "Positive control DNA"
+    },
+    {
+      "name": "Negative control"
+    },
+    {
+      "name": "Thermocycler (for PCR-based)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Test cell cultures for mycoplasma contamination using PCR or biochemical assay.",
+    "zh": "PCR 或生化法检测细胞培养物是否存在支原体污染。"
   }
 }

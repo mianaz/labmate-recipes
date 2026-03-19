@@ -59,5 +59,53 @@
   "duration": {
     "total": "2 days",
     "hands_on": "8 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Cells (50,000–100,000 viable)"
+    },
+    {
+      "name": "Nuclei isolation buffer",
+      "linkedRecipe": "nuclei_isolation_buffer"
+    },
+    {
+      "name": "Tn5 transposase (Illumina Tagment DNA Enzyme)"
+    },
+    {
+      "name": "Tagment DNA buffer"
+    },
+    {
+      "name": "DNA purification kit (MinElute or Zymo)"
+    },
+    {
+      "name": "PCR primers (Nextera i5/i7 index primers)"
+    },
+    {
+      "name": "NEBNext High-Fidelity PCR Master Mix"
+    },
+    {
+      "name": "Magnetic rack"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Tagmentation",
+      "condition": "−20°C after DNA purification",
+      "duration": "1 week"
+    },
+    {
+      "afterStep": "Library amplification",
+      "condition": "−20°C",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Map open chromatin regions genome-wide using ATAC-seq (Assay for Transposase-Accessible Chromatin).",
+    "zh": "ATAC-seq 全基因组开放染色质图谱分析。"
+  },
+  "crosslinks": [
+    "chip_protocol",
+    "cut_and_run",
+    "rnaseq_library_prep"
+  ]
 }

@@ -52,5 +52,30 @@
   "usage": {
     "en": "Concentrated phosphate-buffered saline; dilute to 1× for universal wash and diluent.",
     "zh": "磷酸盐缓冲液浓缩液，稀释至 1× 后用于通用洗涤和稀释。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve NaCl, KCl, Na₂HPO₄, and KH₂PO₄ in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Stir until completely dissolved."
+    },
+    {
+      "step": "Adjust pH to 7.4 with HCl or NaOH if needed."
+    },
+    {
+      "step": "Bring to final volume of 1000 mL."
+    },
+    {
+      "step": "Autoclave at 121°C for 20 min."
+    },
+    {
+      "step": "Store at room temperature. Dilute 1:10 for 1× PBS."
+    }
+  ],
+  "crosslinks": [
+    "pbs_1x"
+  ]
 }

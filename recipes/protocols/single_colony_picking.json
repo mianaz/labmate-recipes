@@ -118,5 +118,29 @@
   "duration": {
     "total": "2 days",
     "hands_on": "1 hour"
+  },
+  "materials": [
+    {
+      "name": "LB agar plate with colonies",
+      "linkedRecipe": "lb_agar"
+    },
+    {
+      "name": "LB medium with antibiotic",
+      "linkedRecipe": "lb"
+    },
+    {
+      "name": "Sterile toothpicks or pipette tips"
+    },
+    {
+      "name": "Culture tubes or deep-well plates"
+    },
+    {
+      "name": "37°C shaking incubator"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Pick isolated bacterial colonies for liquid culture and downstream analysis.",
+    "zh": "挑取单克隆菌落进行液体培养和下游分析。"
   }
 }

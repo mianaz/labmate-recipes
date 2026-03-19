@@ -62,5 +62,31 @@
   "usage": {
     "en": "2× SDS-PAGE sample loading buffer for protein denaturation before gel electrophoresis.",
     "zh": "SDS-PAGE 上样缓冲液（2×），蛋白变性后上样。"
-  }
+  },
+  "volume": 10,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve SDS in 1 M Tris-HCl pH 6.8 by warming gently."
+    },
+    {
+      "step": "Add glycerol and bromophenol blue; mix well."
+    },
+    {
+      "step": "Add β-mercaptoethanol last.",
+      "warning": "β-mercaptoethanol is toxic and volatile — use in fume hood."
+    },
+    {
+      "step": "Bring to final volume of 10 mL with ddH₂O."
+    },
+    {
+      "step": "Aliquot 0.5–1 mL per tube and store at −20°C."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "coip_protocol",
+    "immunoprecipitation",
+    "pulldown_assay"
+  ]
 }

@@ -92,5 +92,50 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "1 hour"
-  }
+  },
+  "materials": [
+    {
+      "name": "cDNA template (from reverse transcription)"
+    },
+    {
+      "name": "qPCR master mix (SYBR Green or TaqMan)"
+    },
+    {
+      "name": "Forward and reverse primers (10 µM each)"
+    },
+    {
+      "name": "96- or 384-well qPCR plates"
+    },
+    {
+      "name": "Optical adhesive film or caps"
+    },
+    {
+      "name": "Real-time PCR instrument"
+    },
+    {
+      "name": "Nuclease-free water"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "cDNA prepared",
+      "condition": "−20°C",
+      "duration": "6 months"
+    },
+    {
+      "afterStep": "qPCR plate set up",
+      "condition": "4°C in dark",
+      "duration": "2 hours"
+    }
+  ],
+  "usage": {
+    "en": "Quantify gene expression or DNA copy number by real-time quantitative PCR.",
+    "zh": "实时定量 PCR 定量基因表达或 DNA 拷贝数。"
+  },
+  "crosslinks": [
+    "trizol_extraction",
+    "rna_column_extraction",
+    "pcr_standard",
+    "chip_protocol"
+  ]
 }

@@ -44,5 +44,28 @@
   "usage": {
     "en": "Crystal violet cell stain for colony counting, cell viability, and migration assays.",
     "zh": "结晶紫细胞染色液，用于克隆计数、细胞活力和迁移实验。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve crystal violet (0.5 g per 100 mL, 0.5% w/v) in 20% methanol.",
+      "warning": "Crystal violet is a potential carcinogen — wear gloves. Methanol is toxic."
+    },
+    {
+      "step": "Mix until completely dissolved."
+    },
+    {
+      "step": "Filter through 0.45 µm."
+    },
+    {
+      "step": "Store at room temperature for up to 12 months."
+    }
+  ],
+  "crosslinks": [
+    "clonogenic_assay",
+    "lentiviral_titer_functional",
+    "scratch_assay",
+    "transwell_migration"
+  ]
 }

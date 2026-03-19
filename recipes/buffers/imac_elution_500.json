@@ -57,5 +57,25 @@
   "usage": {
     "en": "500 mM imidazole elution buffer for high-affinity His-tagged proteins on Ni-NTA resin.",
     "zh": "500 mM 咪唑洗脱液，用于洗脱强结合的 His 标签蛋白。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve NaH₂PO₄ and NaCl in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Add imidazole to 500 mM."
+    },
+    {
+      "step": "Adjust pH to 8.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Filter through 0.22 µm and degas."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ]
 }

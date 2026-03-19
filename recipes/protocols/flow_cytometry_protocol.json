@@ -70,5 +70,51 @@
   "duration": {
     "total": "3–4 hours",
     "hands_on": "2 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "FACS buffer",
+      "linkedRecipe": "facs_buffer"
+    },
+    {
+      "name": "Fluorochrome-conjugated antibodies"
+    },
+    {
+      "name": "Viability dye (e.g., 7-AAD, LIVE/DEAD)"
+    },
+    {
+      "name": "Fc block (anti-CD16/32 for mouse)",
+      "optional": true
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "FACS tubes (5 mL polystyrene)"
+    },
+    {
+      "name": "Flow cytometer"
+    },
+    {
+      "name": "Compensation beads",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Cells stained and fixed",
+      "condition": "4°C in dark",
+      "duration": "24 hours"
+    }
+  ],
+  "usage": {
+    "en": "Analyze cell surface or intracellular markers by multi-color flow cytometry.",
+    "zh": "多色流式细胞术分析细胞表面或胞内标志物。"
+  },
+  "crosslinks": [
+    "flow_panel_staining",
+    "annexin_v_apoptosis",
+    "cell_cycle_pi"
+  ]
 }

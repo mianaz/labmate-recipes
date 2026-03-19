@@ -53,5 +53,30 @@
   "usage": {
     "en": "Terrific broth for high-density E. coli culture in recombinant protein expression.",
     "zh": "Terrific Broth 培养基，用于重组蛋白表达时的高密度大肠杆菌培养。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve tryptone (12 g), yeast extract (24 g), and glycerol (4 mL) in ~800 mL ddH₂O."
+    },
+    {
+      "step": "Separately prepare 10× phosphate buffer: KH₂PO₄ (2.31 g) and K₂HPO₄ (12.54 g) in 100 mL ddH₂O; autoclave separately."
+    },
+    {
+      "step": "Autoclave base medium at 121°C for 20 min."
+    },
+    {
+      "step": "Cool to <55°C and add 100 mL sterile 10× phosphate buffer."
+    },
+    {
+      "step": "Add antibiotics if needed."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ],
+  "crosslinks": [
+    "bacterial_protein_expression"
+  ]
 }

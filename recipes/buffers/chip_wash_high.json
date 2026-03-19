@@ -62,5 +62,24 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine NaCl, SDS, NP-40, EDTA, and Tris-HCl in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Stir until fully dissolved."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ],
+  "crosslinks": [
+    "chip_protocol"
+  ]
 }

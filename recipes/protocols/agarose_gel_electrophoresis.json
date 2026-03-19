@@ -81,5 +81,55 @@
   "duration": {
     "total": "1–2 hours",
     "hands_on": "30 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Agarose powder"
+    },
+    {
+      "name": "1× TAE or TBE buffer",
+      "linkedRecipe": "tae_50x"
+    },
+    {
+      "name": "6× DNA loading dye",
+      "linkedRecipe": "dna_loading_dye_6x"
+    },
+    {
+      "name": "DNA ladder/marker"
+    },
+    {
+      "name": "Ethidium bromide or SYBR Safe"
+    },
+    {
+      "name": "Gel casting tray and combs"
+    },
+    {
+      "name": "Electrophoresis power supply"
+    },
+    {
+      "name": "UV transilluminator or gel imager"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Gel cast",
+      "condition": "Wrapped in plastic wrap with buffer, 4°C",
+      "duration": "1 week"
+    },
+    {
+      "afterStep": "Gel run complete",
+      "condition": "Image immediately or store gel in buffer at 4°C",
+      "duration": "overnight"
+    }
+  ],
+  "usage": {
+    "en": "Separate DNA fragments by size using agarose gel electrophoresis for analysis or extraction.",
+    "zh": "琼脂糖凝胶电泳按大小分离 DNA 片段，用于分析或回收。"
+  },
+  "crosslinks": [
+    "gel_extraction",
+    "pcr_standard",
+    "colony_pcr",
+    "restriction_digest"
+  ]
 }

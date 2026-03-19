@@ -80,5 +80,22 @@
   "usage": {
     "en": "Mild native lysis buffer for extracting soluble recombinant proteins from E. coli.",
     "zh": "温和裂解缓冲液，用于从大肠杆菌中提取可溶性重组蛋白。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Combine Tris-HCl, NaCl, and non-ionic detergent in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Add EDTA and glycerol if required."
+    },
+    {
+      "step": "Stir until dissolved."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Store at 4°C; add protease inhibitors fresh before use."
+    }
+  ]
 }

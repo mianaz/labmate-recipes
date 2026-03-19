@@ -61,5 +61,22 @@
   "usage": {
     "en": "General dialysis buffer for buffer exchange to remove imidazole, salt, or small molecules.",
     "zh": "通用透析缓冲液，用于换液去除咪唑、盐分等小分子。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris-HCl, NaCl, and optional additives (glycerol, DTT, EDTA) in ~1500 mL ddH₂O."
+    },
+    {
+      "step": "Adjust pH to desired value."
+    },
+    {
+      "step": "Bring to final volume of 2000 mL."
+    },
+    {
+      "step": "Degas if needed by stirring under vacuum."
+    },
+    {
+      "step": "Store at 4°C; prepare fresh DTT on day of use."
+    }
+  ]
 }

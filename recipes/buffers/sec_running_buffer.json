@@ -55,5 +55,25 @@
   "usage": {
     "en": "Running buffer for size exclusion chromatography (SEC) on FPLC/AKTA systems.",
     "zh": "FPLC/AKTA 系统分子排阻色谱的运行缓冲液。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve Tris-HCl and NaCl in ~1500 mL ddH₂O."
+    },
+    {
+      "step": "Add glycerol or other additives if needed."
+    },
+    {
+      "step": "Adjust pH to desired value."
+    },
+    {
+      "step": "Bring to final volume of 2000 mL."
+    },
+    {
+      "step": "Filter through 0.22 µm and degas thoroughly."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ]
 }

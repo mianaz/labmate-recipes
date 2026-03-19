@@ -51,5 +51,28 @@
   "usage": {
     "en": "Coomassie Brilliant Blue R-250 staining solution for visualizing proteins in SDS-PAGE gels.",
     "zh": "考马斯亮蓝 R-250 染色液，用于 SDS-PAGE 胶中蛋白质可视化。"
-  }
+  },
+  "volume": 1000,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve Coomassie Brilliant Blue R-250 in methanol first.",
+      "warning": "Methanol is toxic — handle in fume hood."
+    },
+    {
+      "step": "Add glacial acetic acid."
+    },
+    {
+      "step": "Bring to final volume with ddH₂O."
+    },
+    {
+      "step": "Stir until dye is completely dissolved."
+    },
+    {
+      "step": "Filter through Whatman No. 1 or 0.45 µm filter before use."
+    },
+    {
+      "step": "Store at room temperature; reuse multiple times."
+    }
+  ]
 }

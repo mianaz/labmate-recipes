@@ -106,5 +106,51 @@
       "condition": "4°C in dark",
       "duration": "1 week"
     }
+  ],
+  "materials": [
+    {
+      "name": "Cells on coverslips or chamber slides"
+    },
+    {
+      "name": "4% PFA",
+      "linkedRecipe": "pfa_4"
+    },
+    {
+      "name": "Permeabilization buffer",
+      "linkedRecipe": "if_permeabilization"
+    },
+    {
+      "name": "Blocking buffer",
+      "linkedRecipe": "if_blocking"
+    },
+    {
+      "name": "Primary antibody"
+    },
+    {
+      "name": "Fluorescent secondary antibody (Alexa Fluor)"
+    },
+    {
+      "name": "DAPI",
+      "linkedRecipe": "dapi_staining"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Mounting medium (anti-fade)"
+    },
+    {
+      "name": "Fluorescence or confocal microscope"
+    }
+  ],
+  "usage": {
+    "en": "Visualize protein localization in fixed cells using fluorescent antibody staining and microscopy.",
+    "zh": "免疫荧光染色可视化固定细胞中蛋白质的定位。"
+  },
+  "crosslinks": [
+    "ihc_paraffin_protocol",
+    "proximity_ligation_assay",
+    "wb_protocol"
   ]
 }

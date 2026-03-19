@@ -62,5 +62,30 @@
   "usage": {
     "en": "Mild non-ionic detergent lysis buffer for IP and Co-IP under native conditions.",
     "zh": "温和非离子去污剂裂解缓冲液，用于天然条件下的 IP 和 Co-IP。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Combine Tris-HCl pH 7.4, NaCl, and NP-40 (1%) in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Add EDTA if desired (1 mM)."
+    },
+    {
+      "step": "Stir until dissolved."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Store at 4°C; add protease inhibitors fresh before use."
+    }
+  ],
+  "crosslinks": [
+    "immunoprecipitation",
+    "coip_protocol",
+    "wb_protocol",
+    "subcellular_fractionation"
+  ]
 }

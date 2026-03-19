@@ -50,5 +50,22 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "prepSteps": [
+    {
+      "step": "Dissolve resazurin sodium salt in PBS to 0.15 mg/mL (440 µM)."
+    },
+    {
+      "step": "Stir until fully dissolved; warm to 37°C if needed."
+    },
+    {
+      "step": "Filter-sterilize through 0.22 µm."
+    },
+    {
+      "step": "Aliquot into light-protected tubes."
+    },
+    {
+      "step": "Store at 4°C protected from light for up to 6 months."
+    }
+  ]
 }

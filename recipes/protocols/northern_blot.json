@@ -88,5 +88,62 @@
   "duration": {
     "total": "2 days",
     "hands_on": "8 hours"
-  }
+  },
+  "materials": [
+    {
+      "name": "Total RNA samples"
+    },
+    {
+      "name": "Formaldehyde agarose gel (1–1.5%)"
+    },
+    {
+      "name": "10× MOPS buffer",
+      "linkedRecipe": "mops_10x"
+    },
+    {
+      "name": "RNA loading dye",
+      "linkedRecipe": "rna_loading_dye"
+    },
+    {
+      "name": "20× SSC",
+      "linkedRecipe": "ssc_20x"
+    },
+    {
+      "name": "Nylon membrane (positively charged)"
+    },
+    {
+      "name": "UV crosslinker"
+    },
+    {
+      "name": "Labeled probe (DIG or ³²P)"
+    },
+    {
+      "name": "Hybridization buffer"
+    },
+    {
+      "name": "DEPC-treated water",
+      "linkedRecipe": "depc_water"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "RNA transferred to membrane",
+      "condition": "RT, dry",
+      "duration": "months (after UV crosslinking)"
+    },
+    {
+      "afterStep": "Membrane probed",
+      "condition": "−20°C wrapped in plastic wrap",
+      "duration": "1 month"
+    }
+  ],
+  "usage": {
+    "en": "Detect specific RNA transcripts by size separation on denaturing gel, membrane transfer, and hybridization.",
+    "zh": "Northern blot 检测特定 RNA 转录本：变性胶分离、转膜、杂交。"
+  },
+  "crosslinks": [
+    "rna_agarose_gel",
+    "trizol_extraction",
+    "southern_blot"
+  ]
 }

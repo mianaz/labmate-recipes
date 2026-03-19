@@ -106,5 +106,29 @@
   "duration": {
     "total": "1–3 days",
     "hands_on": "1 hour"
+  },
+  "materials": [
+    {
+      "name": "Resazurin stock solution",
+      "linkedRecipe": "resazurin_stock"
+    },
+    {
+      "name": "96-well plate with cells"
+    },
+    {
+      "name": "Complete culture medium",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Microplate reader (fluorescence: Ex 560 nm / Em 590 nm, or absorbance 570/600 nm)"
+    },
+    {
+      "name": "Multichannel pipette"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Measure cell viability and proliferation using resazurin (alamarBlue) fluorometric assay.",
+    "zh": "刃天青（alamarBlue）荧光法检测细胞活力和增殖。"
   }
 }

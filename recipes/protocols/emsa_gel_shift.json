@@ -123,5 +123,45 @@
   "duration": {
     "total": "4–5 hours",
     "hands_on": "3 hours"
+  },
+  "materials": [
+    {
+      "name": "EMSA binding buffer",
+      "linkedRecipe": "emsa_binding_buffer"
+    },
+    {
+      "name": "Labeled DNA probe (biotin or ³²P)"
+    },
+    {
+      "name": "Unlabeled competitor DNA"
+    },
+    {
+      "name": "Purified protein or nuclear extract"
+    },
+    {
+      "name": "Poly(dI·dC)"
+    },
+    {
+      "name": "Native PAGE gel (6%)",
+      "linkedRecipe": "native_page_buffer"
+    },
+    {
+      "name": "TBE buffer",
+      "linkedRecipe": "tbe_10x"
+    },
+    {
+      "name": "Nylon membrane (for chemiluminescent detection)"
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Binding reaction complete",
+      "condition": "Load immediately on gel",
+      "duration": "30 min max"
+    }
+  ],
+  "usage": {
+    "en": "Detect protein-DNA interactions by electrophoretic mobility shift assay (EMSA/gel shift).",
+    "zh": "电泳迁移率变动实验（EMSA）检测蛋白质-DNA 相互作用。"
   }
 }

@@ -49,5 +49,30 @@
   "usage": {
     "en": "250 mM imidazole elution buffer for His-tagged protein Ni-NTA affinity chromatography.",
     "zh": "250 mM 咪唑洗脱液，用于 Ni-NTA 亲和层析洗脱 His 标签蛋白。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Dissolve NaH₂PO₄ and NaCl in ~400 mL ddH₂O."
+    },
+    {
+      "step": "Add imidazole to 250–500 mM."
+    },
+    {
+      "step": "Adjust pH to 8.0 with NaOH."
+    },
+    {
+      "step": "Bring to final volume of 500 mL."
+    },
+    {
+      "step": "Filter through 0.22 µm."
+    },
+    {
+      "step": "Store at 4°C."
+    }
+  ],
+  "crosslinks": [
+    "his_tag_purification"
+  ]
 }

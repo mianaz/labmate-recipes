@@ -89,5 +89,37 @@
   "duration": {
     "total": "2–3 days",
     "hands_on": "1 hour"
-  }
+  },
+  "materials": [
+    {
+      "name": "Plasmid DNA (high purity, endotoxin-free)"
+    },
+    {
+      "name": "2× HBS (HEPES-buffered saline, pH 7.05)"
+    },
+    {
+      "name": "2.5 M CaCl₂ (sterile)"
+    },
+    {
+      "name": "Chloroquine stock (optional)",
+      "linkedRecipe": "chloroquine_stock",
+      "optional": true
+    },
+    {
+      "name": "Complete DMEM",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Sterile ddH₂O"
+    }
+  ],
+  "stoppingPoints": [],
+  "usage": {
+    "en": "Transfect mammalian cells using calcium phosphate co-precipitation.",
+    "zh": "磷酸钙共沉淀法转染哺乳动物细胞。"
+  },
+  "crosslinks": [
+    "cell_transfection",
+    "lentivirus_production"
+  ]
 }

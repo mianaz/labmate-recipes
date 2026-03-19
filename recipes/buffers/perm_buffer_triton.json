@@ -39,5 +39,26 @@
   "usage": {
     "en": "See notes for usage.",
     "zh": "详见备注。"
-  }
+  },
+  "volume": 100,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Add Triton X-100 (0.1–0.5%) to PBS."
+    },
+    {
+      "step": "Mix well by gentle inversion."
+    },
+    {
+      "step": "Store at room temperature."
+    },
+    {
+      "step": "Prepare fresh for best results."
+    }
+  ],
+  "crosslinks": [
+    "if_protocol",
+    "flow_cytometry_protocol",
+    "proximity_ligation_assay"
+  ]
 }

@@ -102,5 +102,68 @@
       "condition": "4°C in TBST",
       "duration": "24 hours"
     }
+  ],
+  "materials": [
+    {
+      "name": "RIPA lysis buffer",
+      "linkedRecipe": "ripa"
+    },
+    {
+      "name": "Laemmli sample buffer (2× or 4×)",
+      "linkedRecipe": "laemmli_2x"
+    },
+    {
+      "name": "SDS-PAGE gel",
+      "linkedRecipe": "sds_page_gel"
+    },
+    {
+      "name": "Running buffer",
+      "linkedRecipe": "running_buffer"
+    },
+    {
+      "name": "Transfer buffer",
+      "linkedRecipe": "transfer_buffer"
+    },
+    {
+      "name": "PVDF or nitrocellulose membrane"
+    },
+    {
+      "name": "Blocking buffer (5% milk or BSA in TBST)",
+      "linkedRecipe": "blocking_milk"
+    },
+    {
+      "name": "TBST wash buffer",
+      "linkedRecipe": "tbst"
+    },
+    {
+      "name": "Primary antibody"
+    },
+    {
+      "name": "HRP-conjugated secondary antibody"
+    },
+    {
+      "name": "ECL substrate",
+      "linkedRecipe": "ecl_enhanced"
+    },
+    {
+      "name": "Ponceau S stain",
+      "linkedRecipe": "ponceau_s",
+      "optional": true
+    },
+    {
+      "name": "Stripping buffer",
+      "linkedRecipe": "strip_buffer",
+      "optional": true
+    }
+  ],
+  "usage": {
+    "en": "Detect specific proteins by SDS-PAGE separation, membrane transfer, and immunodetection (Western blot).",
+    "zh": "Western blot：SDS-PAGE 分离蛋白、转膜、免疫检测特定蛋白。"
+  },
+  "crosslinks": [
+    "bca_protein_assay",
+    "coomassie_staining",
+    "immunoprecipitation",
+    "coip_protocol"
   ]
 }

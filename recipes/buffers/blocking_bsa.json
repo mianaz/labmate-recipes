@@ -38,5 +38,26 @@
   "usage": {
     "en": "5% BSA blocking solution for WB; preferred for phospho-protein and phospho-antibody use.",
     "zh": "BSA 封闭液，WB 用，特别适用于磷酸化蛋白和磷酸化抗体。"
-  }
+  },
+  "volume": 500,
+  "volumeUnit": "mL",
+  "prepSteps": [
+    {
+      "step": "Weigh BSA and add to TBST or PBST."
+    },
+    {
+      "step": "Dissolve by gentle swirling or rocking (avoid foaming)."
+    },
+    {
+      "step": "Filter through 0.22 µm if desired."
+    },
+    {
+      "step": "Prepare fresh or store at 4°C for up to 1 week."
+    }
+  ],
+  "crosslinks": [
+    "wb_protocol",
+    "if_protocol",
+    "elisa_sandwich"
+  ]
 }

@@ -73,5 +73,57 @@
   "duration": {
     "total": "30 minutes",
     "hands_on": "30 minutes"
-  }
+  },
+  "materials": [
+    {
+      "name": "Overnight bacterial culture (2–5 mL in LB + antibiotic)"
+    },
+    {
+      "name": "Buffer P1 (resuspension)",
+      "linkedRecipe": "miniprep_p1"
+    },
+    {
+      "name": "Buffer P2 (lysis)",
+      "linkedRecipe": "miniprep_p2"
+    },
+    {
+      "name": "Buffer P3 (neutralization)",
+      "linkedRecipe": "miniprep_p3"
+    },
+    {
+      "name": "Isopropanol and 70% ethanol"
+    },
+    {
+      "name": "TE buffer or nuclease-free water",
+      "linkedRecipe": "te"
+    },
+    {
+      "name": "Microcentrifuge (≥14,000 × g)"
+    },
+    {
+      "name": "Spin columns (Qiagen, Zymo, etc.)",
+      "optional": true
+    }
+  ],
+  "stoppingPoints": [
+    {
+      "afterStep": "Bacterial pellet",
+      "condition": "−20°C",
+      "duration": "1 month"
+    },
+    {
+      "afterStep": "Plasmid DNA eluted",
+      "condition": "−20°C",
+      "duration": "years"
+    }
+  ],
+  "usage": {
+    "en": "Isolate small-scale plasmid DNA from E. coli cultures using alkaline lysis.",
+    "zh": "碱裂解法小量提取大肠杆菌质粒 DNA。"
+  },
+  "crosslinks": [
+    "plasmid_maxiprep",
+    "heat_shock_transformation",
+    "restriction_digest"
+  ]
 }
