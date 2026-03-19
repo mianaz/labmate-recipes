@@ -3,50 +3,60 @@
   "name": "Staining Solution Name",
   "nameCn": "染色液中文名称",
   "category": "staining",
-  "discipline": ["protein"],
-  "tags": ["staining", "tag2"],
+  "discipline": ["histology", "protein"],
+  "tags": ["tag1", "tag2"],
   "usage": {
-    "en": "One-sentence description of what this stain detects or visualizes.",
-    "zh": "一句话描述此染色液的检测或可视化目的。"
+    "en": "One-sentence description of what this staining solution is used for.",
+    "zh": "一句话描述此染色液的用途。"
   },
-  "volume": 1000,
+  "volume": 100,
   "volumeUnit": "mL",
   "storage": {
     "temperature": "RT",
-    "duration": "12 months",
+    "duration": "6 months",
     "sterile": "not_required",
-    "notes": "Can be reused multiple times"
+    "notes": "Store in dark if photosensitive"
   },
   "components": [
     {
       "name": "Dye or stain reagent",
-      "amount": 1,
-      "unit": "g"
+      "amount": 0.1,
+      "unit": "g",
+      "concentration": "0.1% (w/v)"
     },
     {
-      "name": "Solvent (e.g. acetic acid, methanol)",
-      "amount": 100,
+      "name": "Solvent (e.g. methanol, acetic acid)",
+      "amount": 40,
       "unit": "mL"
     },
     {
       "name": "ddH₂O",
       "amount": null,
       "unit": "mL",
-      "note": "To final volume"
+      "note": {
+        "en": "To final volume",
+        "zh": "补至终体积"
+      }
     }
   ],
   "prepSteps": [
     {
-      "step": "Dissolve dye in solvent."
+      "en": "Dissolve dye in solvent with stirring.",
+      "zh": "将染料在溶剂中搅拌溶解。"
     },
     {
-      "step": "Bring to final volume with ddH₂O."
+      "en": "Add ddH₂O to final volume.",
+      "zh": "加 ddH₂O 补至终体积。"
+    },
+    {
+      "en": "Filter through 0.45 µm filter to remove particulates.",
+      "zh": "用 0.45 µm 滤膜过滤去除颗粒。"
     }
   ],
   "notes": {
-    "en": "Staining time, destaining tips, sensitivity notes.",
-    "zh": "染色时间、脱色提示、灵敏度说明。"
+    "en": "Tips on staining time, destaining, or sensitivity.",
+    "zh": "关于染色时间、脱色或灵敏度的提示。"
   },
-  "ref": "Published reference or standard protocol source",
-  "crosslinks": ["related_destain_id", "related_protocol_id"]
+  "ref": "Reference or protocol source",
+  "relatedProtocols": ["related_protocol_id"]
 }

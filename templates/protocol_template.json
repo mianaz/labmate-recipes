@@ -10,9 +10,8 @@
     "zh": "一句话描述此方案的目的。"
   },
   "duration": {
-    "total": "1-2 days",
-    "hands_on": "3 hours",
-    "notes": "Optional timing notes"
+    "total": "1–2 days",
+    "hands_on": "3 hours"
   },
   "materials": [
     {
@@ -24,12 +23,13 @@
     },
     {
       "name": "Optional reagent",
+      "linkedRecipe": "optional_recipe_id",
       "optional": true
     }
   ],
   "components": [
     {
-      "name": "Step 1: Brief description of what to do.",
+      "name": "1. Brief description of step 1",
       "amount": 1,
       "unit": "step",
       "note": {
@@ -38,29 +38,73 @@
       }
     },
     {
-      "name": "Step 2: Next action in the protocol.",
+      "name": "2. Brief description of step 2",
       "amount": 1,
       "unit": "step"
     },
     {
-      "name": "Step 3: Continue with remaining steps.",
+      "name": "3. Continue with remaining steps",
       "amount": 1,
       "unit": "step"
     }
   ],
-  "stoppingPoints": [
+  "safeStops": [
     {
-      "afterStep": "Step description or number",
-      "condition": "Storage condition if paused (e.g. -20°C in buffer)",
-      "duration": "How long you can pause (e.g. overnight, 1 month)"
+      "afterStep": 1,
+      "note": {
+        "en": "Describe storage condition and max duration (e.g. Store at −80°C for up to 1 month)",
+        "zh": "描述保存条件和最长时间（例如：−80°C 保存最长 1 个月）"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 1 — Preparation**",
+      "zh": "**第一天 — 准备**",
+      "isHeader": true
+    },
+    {
+      "en": "Step 1: Detailed instruction with specific volumes, times, temperatures.",
+      "zh": "步骤 1：详细的操作说明，包括具体的体积、时间、温度。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Step 2: Next action with full detail.",
+      "zh": "步骤 2：下一步操作的完整说明。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**Day 2 — Detection**",
+      "zh": "**第二天 — 检测**",
+      "isHeader": true
+    },
+    {
+      "en": "Step 3: Continue with remaining steps.",
+      "zh": "步骤 3：继续完成剩余步骤。"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Step1 → Step2 → Step3 → Step4 → Result",
+      "zh": "步骤1 → 步骤2 → 步骤3 → 步骤4 → 结果"
     }
   ],
   "notes": {
-    "en": "Troubleshooting, tips, critical success factors, or background information.",
-    "zh": "故障排除、提示、关键成功因素或背景信息。"
+    "en": "Troubleshooting tips, critical success factors, or background information.",
+    "zh": "故障排除提示、关键成功因素或背景信息。"
   },
-  "ref": "Author et al. (Year) Journal Volume:Pages; PMID: 12345678",
+  "ref": "Author et al. (Year) Journal Volume:Pages",
   "doi": "10.xxxx/xxxxx",
-  "source": "Journal or publisher name",
-  "crosslinks": ["related_buffer_id", "related_protocol_id"]
+  "relatedProtocols": ["related_buffer_id", "related_protocol_id"],
+  "storage": {
+    "temp": "N/A",
+    "duration": "1–2 days",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 1–2 days, hands-on: 3 hours",
+      "zh": "实验方案 — 1–2 天，实操: 3 小时"
+    }
+  }
 }

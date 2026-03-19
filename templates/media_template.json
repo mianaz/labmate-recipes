@@ -1,33 +1,37 @@
 {
   "id": "your_media_id",
-  "name": "Medium Name",
+  "name": "Media Name",
   "nameCn": "培养基中文名称",
   "category": "media",
-  "discipline": ["cell"],
-  "tags": ["cell culture", "tag2"],
+  "discipline": ["cell", "microbiology"],
+  "tags": ["tag1", "tag2"],
   "usage": {
-    "en": "One-sentence description of which cells/organisms this medium supports.",
-    "zh": "一句话描述此培养基支持的细胞或生物体。"
+    "en": "One-sentence description of what this media is used for.",
+    "zh": "一句话描述此培养基的用途。"
   },
   "volume": 500,
   "volumeUnit": "mL",
   "storage": {
     "temperature": "4°C",
     "duration": "1 month",
-    "sterile": "not_required",
-    "notes": "Pre-warm to 37°C before use"
+    "sterile": "filter_022",
+    "notes": "Protect from light if photosensitive"
   },
   "components": [
     {
-      "name": "Base medium (e.g. DMEM, RPMI-1640)",
-      "amount": 500,
+      "name": "Base medium (e.g. DMEM)",
+      "amount": 440,
       "unit": "mL"
     },
     {
-      "name": "FBS (heat-inactivated)",
+      "name": "FBS",
       "amount": 50,
       "unit": "mL",
-      "concentration": "10%"
+      "concentration": "10%",
+      "note": {
+        "en": "Heat-inactivated if required",
+        "zh": "必要时需热灭活"
+      }
     },
     {
       "name": "Penicillin-Streptomycin (100×)",
@@ -38,16 +42,26 @@
   ],
   "prepSteps": [
     {
-      "step": "Add supplements to base medium bottle aseptically."
+      "en": "Thaw FBS and supplements at 37°C water bath.",
+      "zh": "37°C 水浴解冻 FBS 和添加物。"
     },
     {
-      "step": "Mix gently by inversion. Store at 4°C."
+      "en": "Add supplements to base medium under sterile conditions.",
+      "zh": "在无菌条件下将添加物加入基础培养基。"
+    },
+    {
+      "en": "Mix gently by inversion. Do not vortex.",
+      "zh": "轻轻颠倒混匀，勿涡旋。"
+    },
+    {
+      "en": "Label with date, supplements, and initials. Store at 4°C.",
+      "zh": "标注日期、添加物和缩写。4°C 保存。"
     }
   ],
   "notes": {
-    "en": "Tips, cell-line-specific notes, or alternative formulations.",
-    "zh": "提示、细胞系特异性说明或替代配方。"
+    "en": "Tips, shelf life considerations, or cell line-specific notes.",
+    "zh": "提示、保质期注意事项或细胞系特异性说明。"
   },
-  "ref": "ATCC culture guide or published protocol reference",
-  "crosslinks": ["related_recipe_id"]
+  "ref": "Manufacturer protocol or lab reference",
+  "relatedProtocols": ["cell_passage", "cell_thawing", "cell_freezing"]
 }

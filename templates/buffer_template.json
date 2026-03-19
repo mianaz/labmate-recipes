@@ -23,8 +23,11 @@
       "amount": 10,
       "unit": "mL",
       "concentration": "50 mM final",
-      "mw": 0,
-      "note": "Optional note about this component"
+      "mw": 58.44,
+      "note": {
+        "en": "Optional tip about this component",
+        "zh": "关于此组分的可选提示"
+      }
     },
     {
       "name": "Reagent B",
@@ -35,31 +38,35 @@
       "name": "ddH₂O",
       "amount": null,
       "unit": "mL",
-      "note": "To final volume"
+      "note": {
+        "en": "To final volume",
+        "zh": "补至终体积"
+      }
     }
   ],
   "prepSteps": [
     {
-      "step": "Dissolve Reagent B in ~800 mL ddH₂O."
+      "en": "Dissolve Reagent B in ~800 mL ddH₂O.",
+      "zh": "将试剂 B 溶解于约 800 mL ddH₂O 中。"
     },
     {
-      "step": "Add Reagent A and mix.",
-      "note": "Optional additional detail"
+      "en": "Add Reagent A and mix well.",
+      "zh": "加入试剂 A，充分混匀。"
     },
     {
-      "step": "Adjust pH to 7.4 with HCl.",
-      "warning": "Optional safety or critical note"
+      "en": "Adjust pH to 7.4 with HCl. Use calibrated pH meter.",
+      "zh": "用 HCl 调 pH 至 7.4。使用校准的 pH 计。"
     },
     {
-      "step": "Bring to final volume. Store at 4°C."
+      "en": "Bring to final volume with ddH₂O. Store at 4°C.",
+      "zh": "用 ddH₂O 补至终体积。4°C 保存。"
     }
   ],
   "notes": {
     "en": "Troubleshooting tips, background information, or important caveats.",
     "zh": "故障排除提示、背景信息或重要注意事项。"
   },
-  "ref": "Author et al. (Year) Journal Volume:Pages; or Organization Protocol Name",
+  "ref": "Author et al. (Year) Journal Volume:Pages",
   "doi": "10.xxxx/xxxxx",
-  "source": "Journal or publisher name",
-  "crosslinks": ["related_recipe_id", "related_protocol_id"]
+  "relatedProtocols": ["related_protocol_id", "related_buffer_id"]
 }
