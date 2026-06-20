@@ -1,0 +1,208 @@
+{
+  "id": "lentivirus_concentration_sucrose_cushion",
+  "name": "Lentivirus Concentration by Sucrose Cushion Ultracentrifugation",
+  "nameCn": "蔗糖垫液超速离心浓缩慢病毒",
+  "category": "protocol",
+  "discipline": ["cell", "molecular"],
+  "tags": ["lentivirus", "virus concentration", "sucrose cushion", "ultracentrifugation", "viral transduction"],
+  "usage": {
+    "en": "Concentrate lentiviral particles through a 20% sucrose cushion when higher purity and preservation of particle integrity are desired.",
+    "zh": "当希望获得更高纯度并尽量保持病毒颗粒完整性时，使用 20% 蔗糖垫液超速离心浓缩慢病毒。"
+  },
+  "duration": {
+    "total": "3–5 hours",
+    "hands_on": "45–60 minutes"
+  },
+  "materials": [
+    {
+      "name": "Filtered lentiviral supernatant"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "20% sucrose cushion solution",
+      "note": {
+        "en": "Prepare sterile 20% sucrose in PBS or other compatible virus storage buffer.",
+        "zh": "使用无菌 20% 蔗糖溶液，溶于 PBS 或其他兼容的病毒保存液。"
+      }
+    },
+    {
+      "name": "0.45 µm filter unit"
+    },
+    {
+      "name": "Sterile ultracentrifuge tubes"
+    },
+    {
+      "name": "Swing-bucket ultracentrifuge rotor"
+    },
+    {
+      "name": "Ultracentrifuge capable of 125,000×g"
+    }
+  ],
+  "components": [
+    {
+      "name": "1. Collect lentiviral supernatant and filter through 0.45 µm membrane",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove cells and debris before loading onto the cushion.",
+        "zh": "上样到蔗糖垫液前，先去除细胞和碎片。"
+      }
+    },
+    {
+      "name": "2. Add 3–5 mL of sterile 20% sucrose cushion to the bottom of the ultracentrifuge tube",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Underlay carefully to keep a clean cushion interface.",
+        "zh": "沿管底小心加样，尽量保持清晰界面。"
+      }
+    },
+    {
+      "name": "3. Layer viral supernatant gently on top of the sucrose cushion",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Balance tubes and place into ultracentrifuge buckets",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Ultracentrifuge at 125,000×g for 90 min at 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use no brake if your rotor and workflow benefit from gentler deceleration.",
+        "zh": "如设备与流程允许，建议不刹车减速，以减少界面扰动。"
+      }
+    },
+    {
+      "name": "6. Carefully remove supernatant without losing viral pellet",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "The pellet may be nearly invisible.",
+        "zh": "病毒沉淀可能几乎看不见。"
+      }
+    },
+    {
+      "name": "7. Add PBS or viral storage buffer to resuspend pellet; optionally dissolve at 4°C for 2 h with gentle mixing every 20 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Gentle resuspension preserves infectivity and avoids foaming.",
+        "zh": "轻柔重悬有助于保持感染活性，并避免起泡。"
+      }
+    },
+    {
+      "name": "8. Aliquot concentrated virus and store at −80°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Avoid repeated freeze-thaw cycles.",
+        "zh": "避免反复冻融。"
+      }
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Filtered viral supernatant can be kept at 4°C briefly before ultracentrifugation, but process the same day for best infectivity.",
+        "zh": "过滤后的病毒上清可在 4°C 短暂放置后再超速离心，但最好当天处理以保持感染活性。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Aliquoted concentrated virus can be stored at −80°C for long-term use; avoid repeated freeze-thaw cycles.",
+        "zh": "分装后的浓缩病毒可长期保存在 −80°C；避免多次冻融。"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Preparation**",
+      "zh": "**准备**",
+      "isHeader": true
+    },
+    {
+      "en": "Collect lentiviral supernatant and filter through a 0.45 µm membrane to remove cells and debris.",
+      "zh": "收集慢病毒上清，并用 0.45 µm 滤膜过滤，去除细胞和细胞碎片。",
+      "time": "10–15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "In a sterile ultracentrifuge tube, carefully underlay 3–5 mL of sterile 20% sucrose cushion solution at the bottom of the tube.",
+      "zh": "在无菌超速离心管底部小心加入 3–5 mL 无菌 20% 蔗糖垫液。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Gently layer the filtered viral supernatant above the sucrose cushion without disturbing the interface.",
+      "zh": "将过滤后的病毒上清轻轻铺在蔗糖垫液上方，尽量不要扰动界面。",
+      "time": "5–10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Balance the ultracentrifuge tubes carefully and load them into the buckets.",
+      "zh": "仔细配平超速离心管，并装入吊桶。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Ultracentrifugation**",
+      "zh": "**超速离心**",
+      "isHeader": true
+    },
+    {
+      "en": "Ultracentrifuge at 125,000×g for 90 min at 4°C. If appropriate for the rotor and workflow, use gentle deceleration or no brake to minimize disturbance of the cushion interface.",
+      "zh": "在 4°C 下以 125,000×g 超速离心 90 min。如设备与流程适用，可使用缓慢减速或不刹车，以减少对蔗糖界面的扰动。",
+      "time": "90 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "After centrifugation, carefully decant or aspirate the supernatant. Do not lose the viral pellet at the bottom of the tube.",
+      "zh": "离心结束后，小心倾倒或吸去上清，不要丢失管底的病毒沉淀。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add PBS or another viral storage buffer to the pellet. For gentler recovery, allow the pellet to dissolve at 4°C for up to 2 h, gently mixing every 20 min.",
+      "zh": "向沉淀中加入 PBS 或其他病毒保存液。为更温和地回收病毒，可在 4°C 放置最多 2 h，每 20 min 轻轻混匀一次，使其逐渐溶解。",
+      "time": "20 min to 2 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Aliquot the concentrated virus into single-use tubes and store at −80°C.",
+      "zh": "将浓缩病毒分装成单次使用小份，并保存于 −80°C。",
+      "time": "10 min",
+      "temp": "−80°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Filter supernatant → underlay 3–5 mL 20% sucrose cushion → layer virus on top → ultracentrifuge 125,000×g 90 min at 4°C → remove supernatant → resuspend pellet → aliquot at −80°C",
+      "zh": "过滤病毒上清 → 管底加入 3–5 mL 20% 蔗糖垫液 → 将病毒上清铺在上层 → 4°C、125,000×g 离心 90 min → 去上清 → 重悬沉淀 → 分装后 −80°C 保存"
+    }
+  ],
+  "notes": {
+    "en": "A sucrose cushion helps reduce mechanical stress on lentiviral particles and usually yields cleaner preparations than simple chemical precipitation. This method is especially useful when transducing sensitive cells or when downstream assays are affected by protein contaminants. Keep the workflow cold and avoid repeated freeze-thaw cycles after concentration.",
+    "zh": "蔗糖垫液有助于减轻慢病毒颗粒在离心过程中的机械损伤，通常比单纯化学沉淀得到更干净的制备物。对于敏感细胞转导，或下游实验容易受蛋白杂质干扰的情况，这种方法尤其合适。整个流程尽量保持低温，浓缩后避免反复冻融。"
+  },
+  "ref": "Boroujeni & Gardaneh (2018) Mol Biotechnol 60:185–193; Jiang et al. (2015) Sci Rep 5:13875",
+  "doi": "10.1007/s12033-017-0044-5",
+  "relatedProtocols": ["lentivirus_production", "lentiviral_titer_functional", "lentiviral_titer_p24", "gradient_centrifugation_general", "lentivirus_concentration_peg"],
+  "storage": {
+    "temp": "N/A",
+    "duration": "3–5 hours",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 3–5 hours, hands-on: 45–60 minutes",
+      "zh": "实验方案 — 3–5 小时，实操: 45–60 分钟"
+    }
+  }
+}

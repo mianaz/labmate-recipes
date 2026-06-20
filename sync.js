@@ -3,13 +3,14 @@
  * labmate-recipes ↔ web app sync tool
  *
  * Usage:
- *   node sync.js export   — Extract recipes from live index.html → repo JSON files
- *   node sync.js import   — Merge repo JSON files → live index.html
+ *   node sync.js export   — Extract recipes from live web app → repo JSON files
+ *   node sync.js import   — Merge repo JSON files → live web app
  *   node sync.js diff     — Show what's different between repo and web app
  *   node sync.js validate — Check all JSON files for schema issues
  *
  * Config (env vars or edit below):
  *   LABMATE_HTML  — path to live index.html
+ *   LABMATE_RECIPES_JSON — path to live recipes.json (preferred when present)
  *   LABMATE_REPO  — path to recipes repo root
  */
 
@@ -17,6 +18,7 @@ const fs = require('fs');
 const path = require('path');
 
 const HTML_PATH = process.env.LABMATE_HTML || '/var/www/apps.bioinfospace.com/labmate/index.html';
+const RECIPES_JSON_PATH = process.env.LABMATE_RECIPES_JSON || path.join(path.dirname(HTML_PATH), 'recipes.json');
 const REPO_PATH = process.env.LABMATE_REPO || path.dirname(__filename);
 const RECIPES_DIR = path.join(REPO_PATH, 'recipes');
 
@@ -36,6 +38,45 @@ function readHTML() {
 
 function writeHTML(content) {
   fs.writeFileSync(HTML_PATH, content, 'utf8');
+}
+
+function readRecipesJSON() {
+  return JSON.parse(fs.readFileSync(RECIPES_JSON_PATH, 'utf8'));
+}
+
+function writeRecipesJSON(recipes) {
+  fs.writeFileSync(RECIPES_JSON_PATH, JSON.stringify(recipes, null, 2) + '\n', 'utf8');
+}
+
+function readLiveRecipesSource() {
+  if (fs.existsSync(RECIPES_JSON_PATH)) {
+    return {
+      mode: 'json',
+      recipes: readRecipesJSON(),
+    };
+  }
+
+  const html = readHTML();
+  const parsed = extractRecipesFromHTML(html);
+  return {
+    mode: 'html',
+    html,
+    ...parsed,
+  };
+}
+
+function writeLiveRecipesSource(source, recipes) {
+  if (source.mode === 'json') {
+    writeRecipesJSON(recipes);
+    return;
+  }
+
+  const recipesJS = 'const RECIPES = [\n' +
+    recipes.map(r => '  ' + recipeToJS(r, '  ')).join(',\n') +
+    '\n];';
+
+  const newHTML = source.html.slice(0, source.startIdx) + recipesJS + source.html.slice(source.endIdx);
+  writeHTML(newHTML);
 }
 
 /**
@@ -164,8 +205,7 @@ function quoteJS(s) {
 // ─── Commands ───────────────────────────────────────────
 
 function cmdDiff() {
-  const html = readHTML();
-  const { recipes: webRecipes } = extractRecipesFromHTML(html);
+  const { recipes: webRecipes } = readLiveRecipesSource();
   const repoRecipes = readRepoRecipes();
 
   const webMap = new Map(webRecipes.map(r => [r.id, r]));
@@ -223,8 +263,8 @@ function cmdDiff() {
 function cmdImport() {
   console.log('🔄 Importing repo recipes → web app...\n');
 
-  const html = readHTML();
-  const { startIdx, endIdx, recipes: webRecipes } = extractRecipesFromHTML(html);
+  const liveSource = readLiveRecipesSource();
+  const { recipes: webRecipes } = liveSource;
   const repoRecipes = readRepoRecipes();
 
   const webMap = new Map(webRecipes.map(r => [r.id, r]));
@@ -279,14 +319,7 @@ function cmdImport() {
     }
   }
 
-  // Generate JS source for the merged RECIPES array
-  const recipesJS = 'const RECIPES = [\n' +
-    merged.map(r => '  ' + recipeToJS(r, '  ')).join(',\n') +
-    '\n];';
-
-  // Splice into HTML
-  const newHTML = html.slice(0, startIdx) + recipesJS + html.slice(endIdx);
-  writeHTML(newHTML);
+  writeLiveRecipesSource(liveSource, merged);
 
   const updated = [...repoMap.keys()].filter(id => webMap.has(id) &&
     JSON.stringify(webMap.get(id)) !== JSON.stringify(repoMap.get(id))).length;
@@ -300,8 +333,7 @@ function cmdImport() {
 function cmdExport() {
   console.log('📤 Exporting web app recipes → repo JSON...\n');
 
-  const html = readHTML();
-  const { recipes } = extractRecipesFromHTML(html);
+  const { recipes } = readLiveRecipesSource();
 
   let created = 0;
   let updated = 0;
@@ -422,7 +454,7 @@ switch (cmd) {
   case 'export':   cmdExport(); break;
   case 'validate': cmdValidate(); break;
   default:
-    console.log(`labmate-recipes sync tool
+  console.log(`labmate-recipes sync tool
 
 Usage:
   node sync.js diff       Show differences between repo and web app
@@ -432,7 +464,8 @@ Usage:
 
 Paths:
   HTML: ${HTML_PATH}
+  recipes.json: ${RECIPES_JSON_PATH}
   Repo: ${REPO_PATH}
 
-Set LABMATE_HTML / LABMATE_REPO env vars to override.`);
+Set LABMATE_HTML / LABMATE_RECIPES_JSON / LABMATE_REPO env vars to override.`);
 }

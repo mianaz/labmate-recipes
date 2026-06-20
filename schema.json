@@ -76,6 +76,8 @@
           "unit":         { "type": "string" },
           "concentration":{ "type": "string", "description": "Final concentration, e.g. 50 mM" },
           "mw":           { "type": "number", "description": "Molecular weight (g/mol)" },
+          "time":         { "type": "string", "description": "Per-step duration hint, e.g. '5 min', '1 h', 'overnight'. Used by protocol timer." },
+          "temp":         { "type": "string", "description": "Per-step temperature hint, e.g. 'RT', '4°C', '37°C', 'on ice'." },
           "note": {
             "oneOf": [
               { "type": "string" },
@@ -98,6 +100,36 @@
           "step":    { "type": "string", "description": "Instruction text" },
           "note":    { "type": "string", "description": "Additional detail" },
           "warning": { "type": "string", "description": "Safety or critical note" }
+        }
+      }
+    },
+
+    "detailedSteps": {
+      "type": "array",
+      "description": "Step-by-step protocol body with bilingual text and per-step timer/temperature (protocols only)",
+      "items": {
+        "type": "object",
+        "required": ["en", "zh"],
+        "properties": {
+          "en":       { "type": "string", "description": "English instruction" },
+          "zh":       { "type": "string", "description": "Chinese instruction" },
+          "time":     { "type": "string", "description": "Step duration hint, e.g. '5 min', '1 h', 'overnight'. Drives in-app step timer." },
+          "temp":     { "type": "string", "description": "Step temperature, e.g. 'RT', '4°C', '37°C', 'on ice'." },
+          "warning":  { "type": "string", "description": "Safety/critical call-out rendered prominently in the UI." },
+          "isHeader": { "type": "boolean", "description": "When true, this entry is a visual section divider (e.g. '**Preparation**') and is not a runnable step." }
+        }
+      }
+    },
+
+    "briefSteps": {
+      "type": "array",
+      "description": "One-line TL;DR step chain for at-a-glance reading (protocols only)",
+      "items": {
+        "type": "object",
+        "required": ["en", "zh"],
+        "properties": {
+          "en": { "type": "string" },
+          "zh": { "type": "string" }
         }
       }
     },

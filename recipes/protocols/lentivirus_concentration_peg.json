@@ -1,0 +1,239 @@
+{
+  "id": "lentivirus_concentration_peg",
+  "name": "Lentivirus Concentration by PEG Precipitation and Ultracentrifugation",
+  "nameCn": "PEG 沉淀结合超速离心浓缩慢病毒",
+  "category": "protocol",
+  "discipline": ["cell", "molecular"],
+  "tags": ["lentivirus", "virus concentration", "PEG", "PEG8000", "ultracentrifugation", "viral transduction"],
+  "usage": {
+    "en": "Concentrate lentiviral supernatant by PEG precipitation followed by ultracentrifugation when higher titer is needed for difficult-to-infect cells.",
+    "zh": "使用 PEG 沉淀结合超速离心浓缩慢病毒上清，在原代细胞或难感染细胞需要更高滴度时使用。"
+  },
+  "duration": {
+    "total": "6–10 hours",
+    "hands_on": "1–1.5 hours"
+  },
+  "materials": [
+    {
+      "name": "Filtered lentiviral supernatant"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "40% PEG solution",
+      "note": {
+        "en": "PEG 8000 is most common; PEG 6000 or PEG 4000 can also be used if already validated in-house.",
+        "zh": "最常用 PEG8000；若实验室已有验证方案，也可使用 PEG6000 或 PEG4000。"
+      }
+    },
+    {
+      "name": "0.45 µm filter unit"
+    },
+    {
+      "name": "Swing-bucket centrifuge"
+    },
+    {
+      "name": "Ultracentrifuge tubes (sterile, balanced)"
+    },
+    {
+      "name": "SW 32 Ti rotor or equivalent swing-bucket rotor"
+    },
+    {
+      "name": "Ultracentrifuge (e.g. Optima XPN-100)"
+    }
+  ],
+  "components": [
+    {
+      "name": "1. Collect lentiviral supernatant and filter through 0.45 µm membrane",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove cells and debris before concentration.",
+        "zh": "先去除细胞和碎片，再进行浓缩。"
+      }
+    },
+    {
+      "name": "2. Add 40% PEG stock to final PEG concentration of 10%; incubate on ice for 3–6 h",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Mix gently but thoroughly. Avoid foaming.",
+        "zh": "轻柔但充分混匀，避免起泡。"
+      }
+    },
+    {
+      "name": "3. Centrifuge at 2,000×g for 30 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "A visible pellet may be loose; handle carefully after spin.",
+        "zh": "沉淀可能较松散，离心后操作要轻。"
+      }
+    },
+    {
+      "name": "4. Discard supernatant and resuspend pellet in PBS using 1/20 of the original sample volume",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Resuspend completely before the next concentration step.",
+        "zh": "进入下一步前要把沉淀充分重悬。"
+      }
+    },
+    {
+      "name": "5. Transfer resuspended virus into sterile ultracentrifuge tube and balance with PBS",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use matched tubes and precise balancing for rotor safety.",
+        "zh": "使用配对离心管并精确配平，保证转头安全。"
+      }
+    },
+    {
+      "name": "6. Load tubes into SW 32 Ti buckets",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Ultracentrifuge at 100,000×g (about 24,500 rpm) for 90 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep samples cold and use the rotor limits recommended by the manufacturer.",
+        "zh": "全程低温操作，并遵守转头厂家规定的转速上限。"
+      }
+    },
+    {
+      "name": "8. Carefully remove supernatant without disturbing viral pellet",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Decant or aspirate slowly; the pellet may be invisible.",
+        "zh": "可缓慢倒出或吸走上清；病毒沉淀可能肉眼不明显。"
+      }
+    },
+    {
+      "name": "9. Resuspend pellet in PBS or viral storage buffer and pool samples if needed",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use the smallest practical volume to maximize final titer.",
+        "zh": "尽量用较小体积重悬，以获得更高终滴度。"
+      }
+    },
+    {
+      "name": "10. Aliquot and store at −80°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Avoid repeated freeze-thaw cycles.",
+        "zh": "避免反复冻融。"
+      }
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "PEG-mixed supernatant can remain on ice or at 4°C for several hours before centrifugation.",
+        "zh": "加入 PEG 后的病毒上清可在冰上或 4°C 放置数小时后再离心。"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "Aliquoted virus can be stored at −80°C for long-term use; avoid multiple freeze-thaw cycles.",
+        "zh": "分装后的病毒可长期保存在 −80°C；避免多次冻融。"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Preparation**",
+      "zh": "**准备**",
+      "isHeader": true
+    },
+    {
+      "en": "Collect lentiviral supernatant from producer cells and filter through a 0.45 µm membrane to remove cells and debris.",
+      "zh": "收集包装细胞产生的慢病毒上清，并用 0.45 µm 滤膜过滤，去除细胞和细胞碎片。",
+      "time": "10–15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add 40% PEG stock solution to the filtered supernatant so that the final PEG concentration is 10%. PEG 8000 is most common, but PEG 6000 or PEG 4000 may also be used if validated. Mix gently and incubate on ice for 3–6 h.",
+      "zh": "向过滤后的病毒上清中加入 40% PEG 母液，使最终 PEG 浓度达到 10%。最常用的是 PEG8000，若实验室已有验证也可用 PEG6000 或 PEG4000。轻柔混匀后在冰上孵育 3–6 小时。",
+      "time": "3–6 h",
+      "temp": "Ice"
+    },
+    {
+      "en": "Centrifuge the PEG-incubated supernatant at 2,000×g for 30 min to pellet the PEG-precipitated viral material.",
+      "zh": "将 PEG 处理后的病毒上清以 2,000×g 离心 30 min，使 PEG 沉淀下来的病毒物质成团。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Carefully discard the supernatant. Resuspend the pellet thoroughly in PBS using 1/20 of the original sample volume.",
+      "zh": "小心弃去上清。用 PBS 以原始样品体积的 1/20 充分重悬沉淀。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "**Ultracentrifugation**",
+      "zh": "**超速离心**",
+      "isHeader": true
+    },
+    {
+      "en": "Transfer the resuspended virus into pre-sterilized ultracentrifuge tubes and balance with PBS. Place tubes into SW 32 Ti buckets.",
+      "zh": "将重悬后的病毒样品转入预先灭菌的超速离心管中，并用 PBS 配平。将离心管放入 SW 32 Ti 吊桶。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Load the SW 32 Ti rotor into an ultracentrifuge such as Optima XPN-100 and centrifuge at 100,000×g (about 24,500 rpm) for 90 min.",
+      "zh": "将 SW 32 Ti 转头装入超速离心机（如 Optima XPN-100），以 100,000×g（约 24,500 rpm）离心 90 min。",
+      "time": "90 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Carefully decant or aspirate the supernatant. Do not disturb the viral pellet, which may be faint or invisible.",
+      "zh": "小心倾倒或吸去上清，不要扰动病毒沉淀；沉淀可能很淡甚至肉眼不可见。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend the pellet in PBS or viral storage buffer. Pool samples from multiple tubes if desired, using the smallest practical volume.",
+      "zh": "用 PBS 或病毒保存液重悬沉淀。如有需要，可将多个管中的样品合并，并尽量使用较小体积。",
+      "time": "10–15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Aliquot the concentrated virus into single-use tubes and store at −80°C. Avoid repeated freeze-thaw cycles because they reduce infectivity.",
+      "zh": "将浓缩后的病毒分装成单次使用小份，置于 −80°C 保存。避免反复冻融，因为这会降低感染活性。",
+      "time": "10 min",
+      "temp": "−80°C"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Filter supernatant → add PEG to 10% and incubate on ice → centrifuge 2,000×g 30 min → resuspend pellet in 1/20 PBS → ultracentrifuge 100,000×g 90 min → resuspend → aliquot at −80°C",
+      "zh": "过滤病毒上清 → 加 PEG 至终浓度 10% 并冰上孵育 → 2,000×g 离心 30 min → 用 1/20 体积 PBS 重悬 → 100,000×g 超速离心 90 min → 重悬 → 分装后 −80°C 保存"
+    }
+  ],
+  "notes": {
+    "en": "This method is useful when the starting lentiviral titer is not enough for primary cells or otherwise difficult-to-infect targets. PEG precipitation is convenient but may co-precipitate proteins and impurities, so the follow-up ultracentrifugation step helps improve concentration and cleanliness. If maximum purity is more important than convenience, a sucrose cushion method is often preferable.",
+    "zh": "当原始慢病毒滴度不足以感染原代细胞或其他难感染细胞时，此法很实用。PEG 沉淀操作方便，但也容易把蛋白和杂质一起沉下来，因此后续超速离心有助于进一步提高浓度和纯度。如果更看重纯度而不是操作便捷性，通常更推荐蔗糖垫液法。"
+  },
+  "ref": "Tiscornia et al. (2006) Nat Protoc 1:241–245; Boroujeni & Gardaneh (2018) Mol Biotechnol 60:185–193",
+  "doi": "10.1038/nprot.2006.37",
+  "relatedProtocols": ["lentivirus_production", "lentiviral_titer_functional", "lentiviral_titer_p24", "lentivirus_concentration_sucrose_cushion"] ,
+  "storage": {
+    "temp": "N/A",
+    "duration": "6–10 hours",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 6–10 hours, hands-on: 1–1.5 hours",
+      "zh": "实验方案 — 6–10 小时，实操: 1–1.5 小时"
+    }
+  }
+}
