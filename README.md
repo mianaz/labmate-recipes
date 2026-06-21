@@ -40,6 +40,24 @@ node merge-recipes.js --existing /path/to/deployed.json  # Merge repo + deployed
 node sync.js validate                                    # Validate all files
 ```
 
+### Quality Control (QC)
+
+Two-tier system — see [QC_GUIDELINES.md](QC_GUIDELINES.md) for the full standard:
+
+```bash
+node qc.js [recipe-id ...]      # Mechanical check (fast, ~seconds)
+node qc.js --all                # All recipes
+node qc.js --strict             # Treat warnings as failures
+node qc.js --json               # Machine-readable output
+node qc.js --report             # HTML report → qc-report.html
+
+node qc-llm.js <recipe-id>      # LLM semantic review (slow, ~minutes/recipe)
+node qc-llm.js --staged         # Review staged changes before commit
+node qc-llm.js --last-commit    # Review what was just committed
+```
+
+**Pre-publish gate:** `qc.js` must pass with zero errors. `qc-llm.js` must return `PASS` or `PASS_WITH_NOTES` (no `BLOCKER` issues). Recipes failing either check must not be pushed to GitHub.
+
 ---
 
 ## Recipe Schema (v2)
