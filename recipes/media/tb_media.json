@@ -30,9 +30,7 @@
       "unit": "mL"
     },
     {
-      "name": "Add 100 mL phosphate buffer (0.17M KH₂PO₄ + 0.72M K₂HPO₄)",
-      "amount": 1,
-      "unit": "step"
+      "name": "Add 100 mL phosphate buffer (0.17M KH₂PO₄ + 0.72M K₂HPO₄)"
     }
   ],
   "notes": {

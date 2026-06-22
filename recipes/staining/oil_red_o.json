@@ -10,14 +10,10 @@
   ],
   "components": [
     {
-      "name": "Stock: 0.5 g Oil Red O in 100 mL isopropanol",
-      "amount": 1,
-      "unit": "step"
+      "name": "Stock: 0.5 g Oil Red O in 100 mL isopropanol"
     },
     {
-      "name": "Working: 3 parts stock + 2 parts ddH₂O, filter",
-      "amount": 1,
-      "unit": "step"
+      "name": "Working: 3 parts stock + 2 parts ddH₂O, filter"
     }
   ],
   "notes": {

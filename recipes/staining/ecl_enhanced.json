@@ -54,9 +54,7 @@
       "unit": "mL"
     },
     {
-      "name": "Working: mix A+B 1:1, add 3 µL 30% H₂O₂ per 10 mL",
-      "amount": 1,
-      "unit": "step"
+      "name": "Working: mix A+B 1:1, add 3 µL 30% H₂O₂ per 10 mL"
     }
   ],
   "notes": {

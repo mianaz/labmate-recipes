@@ -21,9 +21,7 @@
       "unit": "mL"
     },
     {
-      "name": "Activate: pH 10, boil, repeat 3×",
-      "amount": 1,
-      "unit": "step"
+      "name": "Activate: pH 10, boil, repeat 3×"
     }
   ],
   "notes": {
@@ -70,5 +68,10 @@
     "immunoprecipitation",
     "coip_protocol"
   ],
-  "relatedProtocols": ["wb_protocol", "immunoprecipitation", "coip_protocol", "pulldown_assay"]
+  "relatedProtocols": [
+    "wb_protocol",
+    "immunoprecipitation",
+    "coip_protocol",
+    "pulldown_assay"
+  ]
 }
