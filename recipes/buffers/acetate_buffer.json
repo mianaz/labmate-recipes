@@ -69,5 +69,10 @@
   "crosslinks": [
     "elisa_sandwich",
     "enzyme_kinetics_michaelis"
+  ],
+  "relatedProtocols": [
+    "enzyme_kinetics_michaelis",
+    "elisa_sandwich",
+    "ethanol_precipitation"
   ]
 }

@@ -65,6 +65,7 @@
     "nuc_cyt_a",
     "nuc_cyt_b"
   ],
+  "relatedProtocols": ["subcellular_fractionation", "chip_protocol", "chromatin_accessibility_atac", "cut_and_run"],
   "ref": "Bhatt et al. (2021) STAR Protoc 2:100450; Dignam et al. (1983) Nucleic Acids Res 11:1475",
   "discipline": [
     "cell"

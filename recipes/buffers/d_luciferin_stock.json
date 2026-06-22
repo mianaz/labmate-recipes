@@ -62,5 +62,8 @@
   "ref": "Gold Biotechnology D-Luciferin product guide; Contag & Bachmann (2002) Annu Rev Biomed Eng 4:235-260",
   "crosslinks": [
     "dual_luciferase"
+  ],
+  "relatedProtocols": [
+    "dual_luciferase"
   ]
 }

@@ -38,5 +38,6 @@
     "zh": "使用前所有玻璃器皿用高纯水冲洗 3 次。线性 PEI 40 kDa 可能比 25 kDa 效率更高。慢病毒包装常用 PEI:DNA = 3:1（w/w）。"
   },
   "ref": "CSHL Protocols (2008) pdb.rec11323; Addgene transfection protocol",
-  "crosslinks": ["lentivirus_production", "cell_transfection"]
+  "crosslinks": ["lentivirus_production", "cell_transfection"],
+  "relatedProtocols": ["lentivirus_production", "cell_transfection", "lentiviral_titer_functional", "lentiviral_titer_p24"]
 }

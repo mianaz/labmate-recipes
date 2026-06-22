@@ -91,5 +91,13 @@
     "wb_protocol",
     "coomassie_staining",
     "silver_stain"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "coomassie_staining",
+    "silver_stain",
+    "his_tag_purification",
+    "gst_tag_purification",
+    "inclusion_body_refolding"
   ]
 }

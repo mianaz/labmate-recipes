@@ -56,5 +56,9 @@
   ],
   "crosslinks": [
     "wb_protocol"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "elisa_sandwich"
   ]
 }

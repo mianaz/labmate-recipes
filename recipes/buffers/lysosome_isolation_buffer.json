@@ -61,6 +61,11 @@
     "subcellular_fractionation",
     "mitochondria_buffer"
   ],
+  "relatedProtocols": [
+    "lysosome_isolation",
+    "subcellular_fractionation",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1; Bright et al. (2016) Curr Protoc Cell Biol 72:3.27.1; Rahman et al. (2020) STAR Protoc 1:100122",
   "discipline": [
     "general"

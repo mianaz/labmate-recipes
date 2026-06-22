@@ -41,6 +41,9 @@
     "bradford_assay_protocol",
     "bca_protein_assay"
   ],
+  "relatedProtocols": [
+    "bradford_assay_protocol"
+  ],
   "ref": "Bradford (1976) Anal Biochem 72:248–254; Bio-Rad Protein Assay Technical Note 1",
   "discipline": [
     "protein",

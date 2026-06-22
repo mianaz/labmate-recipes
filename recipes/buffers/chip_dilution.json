@@ -84,5 +84,8 @@
   ],
   "crosslinks": [
     "chip_protocol"
+  ],
+  "relatedProtocols": [
+    "chip_protocol"
   ]
 }

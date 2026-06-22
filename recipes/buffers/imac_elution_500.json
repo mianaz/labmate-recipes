@@ -43,6 +43,11 @@
     "his_binding",
     "his_tag_purification"
   ],
+  "relatedProtocols": [
+    "his_tag_purification",
+    "bacterial_protein_expression",
+    "inclusion_body_refolding"
+  ],
   "ref": "QIAGEN Ni-NTA Handbook 5th ed.; Kimple et al. (2013) Curr Protoc Protein Sci 73:9.9.1",
   "discipline": [
     "protein",

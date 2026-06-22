@@ -59,5 +59,12 @@
     "wb_protocol",
     "if_protocol",
     "elisa_sandwich"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "if_protocol",
+    "elisa_sandwich",
+    "ihc_paraffin_protocol",
+    "emsa_gel_shift"
   ]
 }

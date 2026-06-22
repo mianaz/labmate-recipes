@@ -80,5 +80,11 @@
   ],
   "crosslinks": [
     "dual_luciferase"
+  ],
+  "relatedProtocols": [
+    "dual_luciferase",
+    "cell_transfection",
+    "calcium_phosphate_transfection",
+    "sirna_knockdown"
   ]
 }

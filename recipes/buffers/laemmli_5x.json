@@ -37,5 +37,13 @@
     "zh": "上样前 1:4 稀释（如 5 µL buffer + 20 µL 样品）。95-100°C 加热 5 分钟后上样。"
   },
   "ref": "lifescience.net; Laemmli (1970) Nature 227:680-685",
-  "crosslinks": ["wb_protocol", "laemmli_4x", "laemmli_2x"]
+  "crosslinks": ["wb_protocol", "laemmli_4x", "laemmli_2x"],
+  "relatedProtocols": [
+    "wb_protocol",
+    "coip_protocol",
+    "immunoprecipitation",
+    "pulldown_assay",
+    "his_tag_purification",
+    "gst_tag_purification"
+  ]
 }

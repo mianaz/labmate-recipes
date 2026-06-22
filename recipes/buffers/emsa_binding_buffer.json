@@ -71,5 +71,8 @@
   ],
   "crosslinks": [
     "emsa_gel_shift"
+  ],
+  "relatedProtocols": [
+    "emsa_gel_shift"
   ]
 }

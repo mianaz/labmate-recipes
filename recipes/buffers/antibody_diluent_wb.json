@@ -70,5 +70,10 @@
     "wb_protocol",
     "tbst",
     "blocking_bsa"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "immunoprecipitation",
+    "coip_protocol"
   ]
 }

@@ -41,6 +41,10 @@
     "ficoll_400_stock",
     "pbmc_isolation"
   ],
+  "relatedProtocols": [
+    "pbmc_isolation",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Boyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; Broxmeyer et al. (2011) Curr Protoc Stem Cell Biol 19:Unit2A.3; GE Healthcare Ficoll-Paque PLUS Instructions 71-7167-00",
   "discipline": [
     "cell",

@@ -76,5 +76,12 @@
   "crosslinks": [
     "miniprep_protocol",
     "plasmid_maxiprep"
+  ],
+  "relatedProtocols": [
+    "miniprep_protocol",
+    "plasmid_maxiprep",
+    "crispr_sgrna_cloning",
+    "gibson_assembly",
+    "restriction_digest"
   ]
 }

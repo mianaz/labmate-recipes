@@ -39,6 +39,12 @@
     "gst_tag_purification",
     "protein_dialysis"
   ],
+  "relatedProtocols": [
+    "gst_tag_purification",
+    "protein_dialysis",
+    "pulldown_assay",
+    "coip_protocol"
+  ],
   "discipline": [
     "protein",
     "biochemistry"

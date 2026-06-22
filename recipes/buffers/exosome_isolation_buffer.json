@@ -39,6 +39,11 @@
   "crosslinks": [
     "exosome_isolation"
   ],
+  "relatedProtocols": [
+    "exosome_isolation",
+    "lentivirus_concentration_sucrose_cushion",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Théry et al. (2006) Curr Protoc Cell Biol 3.22.1; Witwer & Théry (2019) J Extracell Vesicles 8:1648167",
   "discipline": [
     "general"

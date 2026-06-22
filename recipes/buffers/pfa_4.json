@@ -76,5 +76,6 @@
     "flow_cytometry_protocol",
     "proximity_ligation_assay",
     "comet_assay"
-  ]
+  ],
+  "relatedProtocols": ["if_protocol", "ihc_paraffin_protocol", "flow_cytometry_protocol", "proximity_ligation_assay", "comet_assay", "if_cryostat", "multiplex_if", "chip_protocol"]
 }

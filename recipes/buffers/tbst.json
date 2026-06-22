@@ -62,5 +62,12 @@
   "crosslinks": [
     "wb_protocol",
     "elisa_sandwich"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "elisa_sandwich",
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "immunoprecipitation"
   ]
 }

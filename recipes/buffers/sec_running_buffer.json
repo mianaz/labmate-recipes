@@ -41,6 +41,12 @@
     "sec_purification",
     "protein_dialysis"
   ],
+  "relatedProtocols": [
+    "sec_purification",
+    "protein_dialysis",
+    "his_tag_purification",
+    "gst_tag_purification"
+  ],
   "ref": "GE Healthcare SEC Application Note 18-1114-02; Wyatt et al. (2017) Nat Protoc 12:1683",
   "discipline": [
     "protein",

@@ -85,5 +85,13 @@
   "crosslinks": [
     "wb_protocol",
     "immunoprecipitation"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "immunoprecipitation",
+    "coip_protocol",
+    "bca_protein_assay",
+    "bradford_assay_protocol",
+    "chip_protocol"
   ]
 }

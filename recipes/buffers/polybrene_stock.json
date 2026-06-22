@@ -59,5 +59,6 @@
   "crosslinks": [
     "lentivirus_production",
     "stable_cell_line_selection"
-  ]
+  ],
+  "relatedProtocols": ["lentivirus_production", "stable_cell_line_selection", "lentiviral_titer_functional", "lentivirus_concentration_sucrose_cushion"]
 }

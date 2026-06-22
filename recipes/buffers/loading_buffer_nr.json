@@ -77,5 +77,11 @@
   "crosslinks": [
     "wb_protocol",
     "coip_protocol"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "coip_protocol",
+    "immunoprecipitation",
+    "elisa_sandwich"
   ]
 }

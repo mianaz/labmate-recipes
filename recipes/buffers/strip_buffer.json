@@ -66,5 +66,8 @@
   ],
   "crosslinks": [
     "wb_protocol"
+  ],
+  "relatedProtocols": [
+    "wb_protocol"
   ]
 }

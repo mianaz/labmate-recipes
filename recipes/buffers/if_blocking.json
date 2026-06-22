@@ -66,5 +66,12 @@
     "if_protocol",
     "ihc_paraffin_protocol",
     "proximity_ligation_assay"
+  ],
+  "relatedProtocols": [
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "proximity_ligation_assay",
+    "if_cryostat",
+    "multiplex_if"
   ]
 }

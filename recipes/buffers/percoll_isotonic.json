@@ -37,6 +37,7 @@
     "subcellular_fractionation",
     "lysosome_isolation"
   ],
+  "relatedProtocols": ["mitochondria_isolation", "pbmc_isolation", "subcellular_fractionation", "lysosome_isolation", "gradient_centrifugation_general"],
   "ref": "Pertoft (2000) J Biochem Biophys Methods 44:1–30; GE Healthcare Percoll Application Note; Ford et al. (1983) Biol Cell 48:1",
   "discipline": [
     "cell",

@@ -56,5 +56,12 @@
   "crosslinks": [
     "if_protocol",
     "proximity_ligation_assay"
+  ],
+  "relatedProtocols": [
+    "if_protocol",
+    "proximity_ligation_assay",
+    "if_cryostat",
+    "multiplex_if",
+    "cell_cycle_pi"
   ]
 }

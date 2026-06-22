@@ -63,5 +63,8 @@
   "crosslinks": [
     "dual_luciferase",
     "d_luciferin_stock"
+  ],
+  "relatedProtocols": [
+    "dual_luciferase"
   ]
 }

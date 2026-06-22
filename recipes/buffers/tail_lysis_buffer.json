@@ -80,5 +80,9 @@
   ],
   "crosslinks": [
     "genomic_dna_extraction"
+  ],
+  "relatedProtocols": [
+    "genomic_dna_extraction",
+    "genotyping_pcr"
   ]
 }

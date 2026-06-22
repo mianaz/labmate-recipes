@@ -66,6 +66,13 @@
     "gst_tag_purification",
     "bacterial_protein_expression"
   ],
+  "relatedProtocols": [
+    "his_tag_purification",
+    "gst_tag_purification",
+    "bacterial_protein_expression",
+    "inclusion_body_refolding",
+    "protein_dialysis"
+  ],
   "ref": "Wingfield (2015) Curr Protoc Protein Sci 80:6.1.1; GE Healthcare His-tag Purification Guide",
   "discipline": [
     "protein",

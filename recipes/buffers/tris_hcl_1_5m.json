@@ -33,5 +33,10 @@
     "zh": "pH 计精度警告：许多电子 pH 计无法准确测量高浓度 Tris 溶液。使用适合高离子强度的探头。先加约 118 mL HCl 再微调。也用于配制 4× 上样缓冲液。"
   },
   "ref": "Standard biochemistry protocol",
-  "crosslinks": ["sds_page_gel", "laemmli_4x", "laemmli_5x"]
+  "crosslinks": ["sds_page_gel", "laemmli_4x", "laemmli_5x"],
+  "relatedProtocols": [
+    "wb_protocol",
+    "coomassie_staining",
+    "silver_stain"
+  ]
 }

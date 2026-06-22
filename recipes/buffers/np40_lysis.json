@@ -87,5 +87,6 @@
     "coip_protocol",
     "wb_protocol",
     "subcellular_fractionation"
-  ]
+  ],
+  "relatedProtocols": ["immunoprecipitation", "coip_protocol", "wb_protocol", "subcellular_fractionation", "chip_protocol", "pulldown_assay"]
 }

@@ -40,6 +40,10 @@
     "ihc_paraffin_protocol",
     "citrate_buffer_ar"
   ],
+  "relatedProtocols": [
+    "ihc_paraffin_protocol",
+    "multiplex_if"
+  ],
   "ref": "Shi et al. (2001) J Histochem Cytochem 49:931–937; Ramos-Vara & Miller (2014) Vet Pathol 51:42–87",
   "discipline": [
     "histology"

@@ -48,6 +48,12 @@
     "rna_loading_dye",
     "trizol_extraction"
   ],
+  "relatedProtocols": [
+    "rna_agarose_gel",
+    "northern_blot",
+    "trizol_extraction",
+    "rna_column_extraction"
+  ],
   "ref": "Sambrook & Russell (2001) Molecular Cloning 3rd ed.; Rio et al. (2010) RNA: A Laboratory Manual, CSHL Press",
   "discipline": [
     "molecular",

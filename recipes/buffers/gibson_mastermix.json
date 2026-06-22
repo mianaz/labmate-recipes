@@ -77,5 +77,10 @@
   ],
   "crosslinks": [
     "gibson_assembly"
+  ],
+  "relatedProtocols": [
+    "gibson_assembly",
+    "crispr_sgrna_cloning",
+    "site_directed_mutagenesis"
   ]
 }

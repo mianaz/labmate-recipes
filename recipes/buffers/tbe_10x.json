@@ -69,5 +69,12 @@
   "crosslinks": [
     "agarose_gel_electrophoresis",
     "emsa_gel_shift"
+  ],
+  "relatedProtocols": [
+    "agarose_gel_electrophoresis",
+    "emsa_gel_shift",
+    "colony_pcr",
+    "genotyping_pcr",
+    "crispr_sgrna_cloning"
   ]
 }

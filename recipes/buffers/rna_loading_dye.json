@@ -76,5 +76,9 @@
   "crosslinks": [
     "rna_agarose_gel",
     "northern_blot"
+  ],
+  "relatedProtocols": [
+    "rna_agarose_gel",
+    "northern_blot"
   ]
 }

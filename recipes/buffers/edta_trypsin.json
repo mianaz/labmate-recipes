@@ -67,5 +67,13 @@
     "cell_passage",
     "cell_freezing",
     "cell_thawing"
+  ],
+  "relatedProtocols": [
+    "cell_passage",
+    "cell_freezing",
+    "cell_thawing",
+    "cell_counting_hemocytometer",
+    "trypan_blue_counting",
+    "tumor_dissociation"
   ]
 }

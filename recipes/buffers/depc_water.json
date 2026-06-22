@@ -63,5 +63,13 @@
     "rna_column_extraction",
     "rna_agarose_gel",
     "rnaseq_library_prep"
+  ],
+  "relatedProtocols": [
+    "trizol_extraction",
+    "rna_column_extraction",
+    "rna_agarose_gel",
+    "rnaseq_library_prep",
+    "northern_blot",
+    "qpcr_protocol"
   ]
 }

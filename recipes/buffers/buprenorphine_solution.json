@@ -32,5 +32,8 @@
     "zh": "终浓度 0.01 mg/mL。给药：0.05 mg/kg 体重。20 g 小鼠用 1 µg = 100 µL 工作液。按 IACUC 规定操作管制药品。"
   },
   "ref": "Standard veterinary analgesic protocol",
-  "crosslinks": ["pdx_implantation"]
+  "crosslinks": ["pdx_implantation"],
+  "relatedProtocols": [
+    "pdx_implantation"
+  ]
 }

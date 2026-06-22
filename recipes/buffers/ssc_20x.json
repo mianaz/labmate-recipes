@@ -66,5 +66,9 @@
   "crosslinks": [
     "southern_blot",
     "northern_blot"
+  ],
+  "relatedProtocols": [
+    "southern_blot",
+    "northern_blot"
   ]
 }

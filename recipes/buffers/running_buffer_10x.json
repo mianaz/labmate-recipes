@@ -69,5 +69,11 @@
   ],
   "crosslinks": [
     "wb_protocol"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "coomassie_staining",
+    "silver_stain",
+    "emsa_gel_shift"
   ]
 }

@@ -74,5 +74,10 @@
   ],
   "crosslinks": [
     "his_tag_purification"
+  ],
+  "relatedProtocols": [
+    "his_tag_purification",
+    "bacterial_protein_expression",
+    "protein_dialysis"
   ]
 }

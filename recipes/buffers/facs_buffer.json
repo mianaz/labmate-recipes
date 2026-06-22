@@ -75,5 +75,12 @@
     "flow_panel_staining",
     "annexin_v_apoptosis",
     "cell_cycle_pi"
+  ],
+  "relatedProtocols": [
+    "flow_cytometry_protocol",
+    "flow_panel_staining",
+    "annexin_v_apoptosis",
+    "cell_cycle_pi",
+    "cytof_staining"
   ]
 }

@@ -61,5 +61,11 @@
   "crosslinks": [
     "wb_protocol",
     "tbst"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "elisa_sandwich"
   ]
 }

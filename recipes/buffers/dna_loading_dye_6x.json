@@ -73,5 +73,13 @@
     "restriction_digest",
     "pcr_standard",
     "colony_pcr"
+  ],
+  "relatedProtocols": [
+    "agarose_gel_electrophoresis",
+    "restriction_digest",
+    "pcr_standard",
+    "colony_pcr",
+    "genotyping_pcr",
+    "gel_extraction"
   ]
 }

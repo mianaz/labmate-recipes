@@ -35,6 +35,10 @@
     "ficoll_paque_pbmc",
     "pbmc_isolation"
   ],
+  "relatedProtocols": [
+    "pbmc_isolation",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Boyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; GE Healthcare Ficoll-Paque PLUS Instructions",
   "discipline": [
     "cell",

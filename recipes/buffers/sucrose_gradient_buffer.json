@@ -49,6 +49,14 @@
     "exosome_isolation",
     "er_golgi_isolation"
   ],
+  "relatedProtocols": [
+    "gradient_centrifugation_general",
+    "exosome_isolation",
+    "er_golgi_isolation",
+    "lentivirus_concentration_sucrose_cushion",
+    "lysosome_isolation",
+    "mitochondria_isolation"
+  ],
   "ref": "Graham (2002) Curr Protoc Cell Biol 3.6.1–3.6.13; de Duve et al. (1955) Biochem J 60:604–617; Bhatt & Bhatt (2021) STAR Protoc 2:100450",
   "discipline": [
     "general"

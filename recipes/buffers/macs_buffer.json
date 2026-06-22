@@ -65,5 +65,12 @@
   "crosslinks": [
     "flow_cytometry_protocol",
     "flow_panel_staining"
+  ],
+  "relatedProtocols": [
+    "flow_cytometry_protocol",
+    "flow_panel_staining",
+    "pbmc_isolation",
+    "annexin_v_apoptosis",
+    "cell_cycle_pi"
   ]
 }

@@ -83,5 +83,6 @@
   ],
   "crosslinks": [
     "subcellular_fractionation"
-  ]
+  ],
+  "relatedProtocols": ["subcellular_fractionation", "chip_protocol", "er_golgi_isolation"]
 }

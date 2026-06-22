@@ -60,5 +60,6 @@
     "if_protocol",
     "flow_cytometry_protocol",
     "proximity_ligation_assay"
-  ]
+  ],
+  "relatedProtocols": ["if_protocol", "flow_cytometry_protocol", "proximity_ligation_assay", "cell_cycle_pi", "if_cryostat", "multiplex_if", "ihc_paraffin_protocol", "chip_protocol"]
 }

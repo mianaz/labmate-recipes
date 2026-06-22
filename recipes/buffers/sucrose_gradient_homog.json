@@ -56,6 +56,13 @@
     "subcellular_fractionation",
     "mitochondria_isolation"
   ],
+  "relatedProtocols": [
+    "er_golgi_isolation",
+    "lysosome_isolation",
+    "subcellular_fractionation",
+    "mitochondria_isolation",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Graham (2001) Curr Protoc Cell Biol 3.6.1; Bhatt et al. (2021) STAR Protoc 2:100450",
   "discipline": [
     "cell",

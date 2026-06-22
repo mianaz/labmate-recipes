@@ -34,5 +34,6 @@
     "zh": "终浓度 1×（1 M 甜菜碱）。50 µL PCR 体系加 10 µL 5× Q-Solution（相应减少水量）。仅用于 GC 含量 >60% 或强二级结构的 troubleshooting。必须用无水甜菜碱，不可用盐酸甜菜碱。"
   },
   "ref": "Qiagen Q-Solution equivalent recipe",
-  "crosslinks": ["pcr_buffer_10x", "pcr_standard"]
+  "crosslinks": ["pcr_buffer_10x", "pcr_standard"],
+  "relatedProtocols": ["pcr_standard", "genotyping_pcr", "colony_pcr", "site_directed_mutagenesis"]
 }

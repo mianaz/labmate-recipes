@@ -88,5 +88,13 @@
     "coip_protocol",
     "immunoprecipitation",
     "pulldown_assay"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "coip_protocol",
+    "immunoprecipitation",
+    "pulldown_assay",
+    "his_tag_purification",
+    "gst_tag_purification"
   ]
 }

@@ -36,5 +36,6 @@
     "zh": "1× 工作浓度：155 mM NH₄Cl、10 mM KHCO₃、1 mM EDTA。组织消化用：加 1 mL 1× 裂解液至细胞沉淀，冰上 1-5 分钟，培养基终止。不要放置过久以免损伤白细胞。红细胞残留可重复裂解。"
   },
   "ref": "Standard ammonium chloride RBC lysis protocol",
-  "crosslinks": ["tumor_dissociation", "pbmc_isolation", "flow_cytometry_protocol"]
+  "crosslinks": ["tumor_dissociation", "pbmc_isolation", "flow_cytometry_protocol"],
+  "relatedProtocols": ["tumor_dissociation", "pbmc_isolation", "flow_cytometry_protocol", "cytof_staining", "flow_panel_staining"]
 }

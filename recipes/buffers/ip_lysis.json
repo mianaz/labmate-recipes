@@ -87,5 +87,12 @@
     "immunoprecipitation",
     "coip_protocol",
     "pulldown_assay"
+  ],
+  "relatedProtocols": [
+    "immunoprecipitation",
+    "coip_protocol",
+    "pulldown_assay",
+    "chip_protocol",
+    "proximity_ligation_assay"
   ]
 }

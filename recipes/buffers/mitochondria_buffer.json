@@ -57,6 +57,11 @@
   "crosslinks": [
     "mitochondria_isolation"
   ],
+  "relatedProtocols": [
+    "mitochondria_isolation",
+    "subcellular_fractionation",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Frezza et al. (2007) Nat Protoc 2:287–295",
   "discipline": [
     "cell"

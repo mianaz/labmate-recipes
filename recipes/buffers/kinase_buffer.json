@@ -80,5 +80,10 @@
   ],
   "crosslinks": [
     "enzyme_kinetics_michaelis"
+  ],
+  "relatedProtocols": [
+    "enzyme_kinetics_michaelis",
+    "pulldown_assay",
+    "emsa_gel_shift"
   ]
 }

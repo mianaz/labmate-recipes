@@ -34,6 +34,10 @@
     "pbmc_isolation",
     "percoll_gradient_buffer"
   ],
+  "relatedProtocols": [
+    "pbmc_isolation",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Böyum (1968) Scand J Clin Lab Invest Suppl 97:77–89; GE Healthcare Ficoll-Paque PLUS Datasheet; Percoll Application Note (GE Healthcare)",
   "discipline": [
     "general"

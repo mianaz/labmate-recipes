@@ -87,5 +87,10 @@
     "crispr_sgrna_cloning",
     "electroporation",
     "cell_transfection"
+  ],
+  "relatedProtocols": [
+    "crispr_sgrna_cloning",
+    "electroporation",
+    "cell_transfection"
   ]
 }

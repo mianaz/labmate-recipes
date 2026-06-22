@@ -62,5 +62,12 @@
   "crosslinks": [
     "cell_transfection",
     "electroporation"
+  ],
+  "relatedProtocols": [
+    "cell_transfection",
+    "electroporation",
+    "calcium_phosphate_transfection",
+    "emsa_gel_shift",
+    "enzyme_kinetics_michaelis"
   ]
 }

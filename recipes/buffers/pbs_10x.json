@@ -77,5 +77,6 @@
   ],
   "crosslinks": [
     "pbs_1x"
-  ]
+  ],
+  "relatedProtocols": ["wb_protocol", "if_protocol", "ihc_paraffin_protocol", "flow_cytometry_protocol", "elisa_sandwich", "pbmc_isolation", "cell_passage", "cell_freezing"]
 }

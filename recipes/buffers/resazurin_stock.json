@@ -37,6 +37,11 @@
     "mtt_assay",
     "cck8_proliferation"
   ],
+  "relatedProtocols": [
+    "resazurin_assay",
+    "mtt_assay",
+    "cck8_proliferation"
+  ],
   "ref": "O'Brien et al. (2000) Eur J Biochem 267:5421–5426; Rampersad (2012) Sensors 12:12347–12360",
   "discipline": [
     "general"

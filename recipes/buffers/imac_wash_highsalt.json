@@ -83,5 +83,11 @@
     {
       "step": "Store at 4°C."
     }
+  ],
+  "relatedProtocols": [
+    "his_tag_purification",
+    "bacterial_protein_expression",
+    "inclusion_body_refolding",
+    "protein_dialysis"
   ]
 }

@@ -71,5 +71,17 @@
     "genomic_dna_extraction",
     "restriction_digest",
     "dna_ligation"
+  ],
+  "relatedProtocols": [
+    "miniprep_protocol",
+    "genomic_dna_extraction",
+    "restriction_digest",
+    "dna_ligation",
+    "plasmid_maxiprep",
+    "gibson_assembly",
+    "ethanol_precipitation",
+    "sanger_sequencing_prep",
+    "pcr_standard",
+    "gel_extraction"
   ]
 }

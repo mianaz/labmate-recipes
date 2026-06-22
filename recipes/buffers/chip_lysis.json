@@ -73,5 +73,9 @@
   ],
   "crosslinks": [
     "chip_protocol"
+  ],
+  "relatedProtocols": [
+    "chip_protocol",
+    "cut_and_run"
   ]
 }

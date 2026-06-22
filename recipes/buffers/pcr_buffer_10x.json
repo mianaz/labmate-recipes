@@ -37,5 +37,6 @@
     "zh": "使用无菌无核酸酶的母液。1× 终浓度：10 mM Tris-HCl、50 mM KCl、10 mM (NH₄)₂SO₄、1.5 mM MgCl₂。可与 10× 甲酚红染料搭配使用。"
   },
   "ref": "Reverse-engineered from Qiagen PCR Buffer specifications",
-  "crosslinks": ["cresol_red_10x", "q_solution_5x", "pcr_standard"]
+  "crosslinks": ["cresol_red_10x", "q_solution_5x", "pcr_standard"],
+  "relatedProtocols": ["pcr_standard", "genotyping_pcr", "colony_pcr", "mycoplasma_pcr", "ctc_detection_pcr", "site_directed_mutagenesis"]
 }

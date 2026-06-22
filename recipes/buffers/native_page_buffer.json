@@ -60,5 +60,6 @@
   ],
   "crosslinks": [
     "emsa_gel_shift"
-  ]
+  ],
+  "relatedProtocols": ["emsa_gel_shift", "coip_protocol", "pulldown_assay"]
 }

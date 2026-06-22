@@ -69,5 +69,6 @@
     "wb_protocol",
     "immunoprecipitation",
     "coip_protocol"
-  ]
+  ],
+  "relatedProtocols": ["wb_protocol", "immunoprecipitation", "coip_protocol", "pulldown_assay"]
 }

@@ -59,5 +59,11 @@
   "crosslinks": [
     "tube_formation_assay",
     "soft_agar_assay"
+  ],
+  "relatedProtocols": [
+    "tube_formation_assay",
+    "soft_agar_assay",
+    "transwell_migration",
+    "pdx_implantation"
   ]
 }

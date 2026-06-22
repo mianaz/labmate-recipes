@@ -61,5 +61,6 @@
   ],
   "crosslinks": [
     "mtt_assay"
-  ]
+  ],
+  "relatedProtocols": ["mtt_assay", "cck8_proliferation", "resazurin_assay"]
 }

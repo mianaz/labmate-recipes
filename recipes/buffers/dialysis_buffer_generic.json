@@ -47,6 +47,13 @@
     "gst_tag_purification",
     "protein_dialysis"
   ],
+  "relatedProtocols": [
+    "protein_dialysis",
+    "his_tag_purification",
+    "gst_tag_purification",
+    "inclusion_body_refolding",
+    "sec_purification"
+  ],
   "ref": "Scopes (1994) Protein Purification, 3rd ed., Springer; Wingfield (2001) Curr Protoc Protein Sci A.3B.1",
   "discipline": [
     "protein",

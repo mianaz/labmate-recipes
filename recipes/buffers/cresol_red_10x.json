@@ -72,5 +72,11 @@
     "pcr_buffer_10x",
     "agarose_gel_electrophoresis",
     "tae_50x"
+  ],
+  "relatedProtocols": [
+    "agarose_gel_electrophoresis",
+    "pcr_standard",
+    "genotyping_pcr",
+    "colony_pcr"
   ]
 }

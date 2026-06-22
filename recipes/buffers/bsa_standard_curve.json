@@ -98,5 +98,9 @@
   "crosslinks": [
     "bca_protein_assay",
     "bradford_assay_protocol"
+  ],
+  "relatedProtocols": [
+    "bca_protein_assay",
+    "bradford_assay_protocol"
   ]
 }

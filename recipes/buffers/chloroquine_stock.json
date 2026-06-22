@@ -60,5 +60,9 @@
   "crosslinks": [
     "lentivirus_production",
     "calcium_phosphate_transfection"
+  ],
+  "relatedProtocols": [
+    "calcium_phosphate_transfection",
+    "lentivirus_production"
   ]
 }

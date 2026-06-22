@@ -74,5 +74,10 @@
   "crosslinks": [
     "ihc_paraffin_protocol",
     "pbs_1x"
+  ],
+  "relatedProtocols": [
+    "ihc_paraffin_protocol",
+    "multiplex_if",
+    "if_cryostat"
   ]
 }

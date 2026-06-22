@@ -83,5 +83,12 @@
   ],
   "crosslinks": [
     "wb_protocol"
+  ],
+  "relatedProtocols": [
+    "wb_protocol",
+    "coip_protocol",
+    "immunoprecipitation",
+    "coomassie_staining",
+    "silver_stain"
   ]
 }

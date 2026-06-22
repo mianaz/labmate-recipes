@@ -34,5 +34,6 @@
     "zh": "每个 18mm 盖玻片用 6-8 µL。封片剂不会硬化——必须用指甲油密封防止干燥。纯荧光用 90% 甘油（最佳分辨率），DIC+荧光用 50% 甘油（保留 DIC 对比度）。高 pH 下多数荧光团更亮。"
   },
   "ref": "Jackson ImmunoResearch; Harvard NIC",
-  "crosslinks": ["if_protocol", "if_cryostat", "multiplex_if", "dapi_staining"]
+  "crosslinks": ["if_protocol", "if_cryostat", "multiplex_if", "dapi_staining"],
+  "relatedProtocols": ["if_protocol", "if_cryostat", "multiplex_if", "ihc_paraffin_protocol"]
 }
