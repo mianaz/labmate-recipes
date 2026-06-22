@@ -1,0 +1,218 @@
+{
+  "id": "nanopore_library_prep",
+  "name": "Oxford Nanopore Ligation Sequencing Library Preparation (SQK-LSK114)",
+  "nameCn": "牛津纳米孔连接测序文库制备（SQK-LSK114）",
+  "category": "protocol",
+  "tags": [
+    "nanopore",
+    "long-read",
+    "sequencing",
+    "library-prep",
+    "WGS",
+    "metagenomics",
+    "amplicon",
+    "ONT",
+    "ligation"
+  ],
+  "components": [
+    {
+      "name": "1. DNA QC: Qubit dsDNA BR quantification (≥1 μg in ≤45 μL); TapeStation integrity check (DIN >8 for WGS)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Optional DNA shearing: Megaruptor or g-TUBE at 1500 rpm × 2 min to target 20–50 kb fragments (skip for amplicons)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. DNA repair: NEBNext FFPE DNA Repair Mix; 37°C 30 min (if FFPE input)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. End-prep: NEBNext Ultra II End Repair/dA-Tail Module; 20°C 5 min → 65°C 5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. SPRI cleanup (1× AMPure XP beads): 5 min bind, magnet pellet, 2× 70% EtOH wash, elute in 61 μL nuclease-free water",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Adapter ligation: LAVT adapter + NEBNext Quick Ligation Buffer + Quick T4 DNA Ligase; room temperature 10 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Short Fragment Buffer (SFB) cleanup: 0.3× AMPure XP + 2× SFB wash; removes short fragments and free adapters",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Elution and QC: elute in 15 μL EB; Qubit quantification of final library (target ≥5 ng/μL, ≥20 fmol)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Flow cell priming: flush MinION/PromethION flow cell with priming mix (FLB + FLT); equilibrate 5 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. Sequencing mix preparation: 12 μL library + 37.5 μL SQB + 25.5 μL LB; load dropwise via SpotON port",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "11. MinKNOW run setup: select flow cell, kit SQK-LSK114, basecalling config (super accuracy or high accuracy); start sequencing run",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "DNA QC (Qubit + TapeStation) → optional shearing (g-TUBE 1500 rpm) → end repair/dA-tail (20°C→65°C) → 1× SPRI cleanup → adapter ligation (LAVT, 10 min RT) → 0.3× SPRI + SFB wash → elute 15 μL → prime flow cell → load library → start MinKNOW",
+      "zh": "DNA质控（Qubit + TapeStation）→ 可选剪切（g-TUBE 1500 rpm）→ 末端修复/加A尾（20°C→65°C）→ 1× SPRI纯化 → 接头连接（LAVT，室温10 min）→ 0.3× SPRI + SFB洗涤 → 洗脱15 μL → 冲洗流动池 → 上样 → 启动MinKNOW"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "1. Input DNA Quality Control",
+      "zh": "1. 输入DNA质量控制",
+      "isHeader": true
+    },
+    {
+      "en": "1. Quantify input DNA using Qubit dsDNA BR Assay Kit. Require ≥1 μg total DNA in a volume of ≤45 μL. For WGS applications, assess DNA integrity by running on Agilent TapeStation (genomic DNA ScreenTape); target DIN score >8. Fragment size should ideally be ≥30 kb for optimal long-read performance.",
+      "zh": "1. 使用Qubit dsDNA BR试剂盒对输入DNA进行定量，需要≥1 μg总量且体积≤45 μL。对于全基因组测序，使用Agilent TapeStation（基因组DNA ScreenTape）评估DNA完整性，目标DIN评分>8。理想片段大小≥30 kb，以获得最佳长读长性能。"
+    },
+    {
+      "en": "2. Optional DNA Shearing (WGS only)",
+      "zh": "2. 可选DNA剪切（仅限WGS）",
+      "isHeader": true
+    },
+    {
+      "en": "2. For WGS with high-molecular-weight DNA, shear to 20–50 kb target size. Using Megaruptor 3: program appropriate shearing settings per manufacturer guidelines. Using g-TUBE (Covaris): centrifuge at 1500 rpm × 2 min in a fixed-angle rotor (repeat for both orientations if needed). For amplicon or targeted sequencing, skip this step entirely.",
+      "zh": "2. 对于高分子量DNA的全基因组测序，剪切至20–50 kb目标片段大小。使用Megaruptor 3时按厂商指导设置剪切参数。使用g-TUBE（Covaris）时在固定角度转子中1500 rpm离心2 min（必要时双向重复）。扩增子或靶向测序跳过此步骤。"
+    },
+    {
+      "en": "3. DNA Repair and End-Preparation",
+      "zh": "3. DNA修复与末端制备",
+      "isHeader": true
+    },
+    {
+      "en": "3. Prepare DNA repair reaction: combine ≤1 μg DNA (up to 47 μL) + 3.5 μL NEBNext FFPE DNA Repair Buffer + 2 μL NEBNext FFPE DNA Repair Mix + 3.5 μL Ultra II End-Prep Reaction Buffer + 3 μL Ultra II End-Prep Enzyme Mix (total 60 μL). Incubate: 20°C 5 min (end repair/dA-tailing), then 65°C 5 min (enzyme inactivation). Place on ice immediately after.",
+      "zh": "3. 配制DNA修复反应体系：≤1 μg DNA（最多47 μL）+ 3.5 μL NEBNext FFPE DNA修复缓冲液 + 2 μL NEBNext FFPE DNA修复酶混合液 + 3.5 μL Ultra II末端制备反应缓冲液 + 3 μL Ultra II末端制备酶混合液（共60 μL）。孵育：20°C 5 min（末端修复/加A尾），65°C 5 min（酶灭活）。完成后立即置冰上。"
+    },
+    {
+      "en": "4. SPRI Bead Cleanup After End-Prep",
+      "zh": "4. 末端制备后的SPRI磁珠纯化",
+      "isHeader": true
+    },
+    {
+      "en": "4. Add 60 μL resuspended AMPure XP beads (1× ratio) to 60 μL end-prepped DNA. Mix thoroughly by pipetting ≥10 times. Incubate 5 min at room temperature. Place on magnet 2 min until supernatant clears. Remove and discard supernatant. Wash pellet twice with 200 μL freshly prepared 70% ethanol (do not disturb pellet; discard wash). Air-dry briefly (30–60 s; do not over-dry). Elute in 61 μL nuclease-free water by pipetting; incubate 2 min at room temperature; transfer to clean tube.",
+      "zh": "4. 向60 μL末端制备产物中加入60 μL重悬的AMPure XP磁珠（1×比例），吸打≥10次充分混匀。室温孵育5 min。置于磁铁上2 min至上清澄清。吸弃上清。用200 μL新鲜配制的70%乙醇洗涤磁珠两次（勿扰动磁珠；弃去洗涤液）。短暂风干30–60 s（勿过干）。加入61 μL无核酸酶水，吸打洗脱，室温孵育2 min，转移至新管。"
+    },
+    {
+      "en": "5. Adapter Ligation",
+      "zh": "5. 接头连接",
+      "isHeader": true
+    },
+    {
+      "en": "5. To 61 μL cleaned DNA add: 5 μL NEBNext Quick Ligation Reaction Buffer (5×), 10 μL LAVT Ligation Adapter (from SQK-LSK114 kit), 20 μL Quick T4 DNA Ligase (total 96 μL). Mix gently by flicking; do NOT vortex. Incubate at room temperature for 10 min. The LAVT adapter contains a motor protein pre-loaded for nanopore translocation.",
+      "zh": "5. 向61 μL纯化DNA中加入：5 μL NEBNext Quick连接反应缓冲液（5×）、10 μL LAVT连接接头（来自SQK-LSK114试剂盒）、20 μL Quick T4 DNA连接酶（共96 μL）。轻弹管壁混匀，切勿涡旋。室温孵育10 min。LAVT接头已预装马达蛋白，用于纳米孔转位。"
+    },
+    {
+      "en": "6. Short Fragment Buffer (SFB) Cleanup",
+      "zh": "6. 短片段缓冲液（SFB）纯化",
+      "isHeader": true
+    },
+    {
+      "en": "6. Add 40 μL resuspended AMPure XP beads (0.3× volume relative to 96 μL reaction = ~29 μL beads) — use 0.3× ratio to retain long fragments and exclude short fragments. Incubate 5 min room temperature. Pellet on magnet 2 min. Discard supernatant. Wash pellet TWICE with 250 μL Short Fragment Buffer (SFB) from kit — SFB selectively removes unligated adapters and short fragments while preserving large adapter-ligated DNA. Air-dry 30 s.",
+      "zh": "6. 向96 μL连接反应中加入约29 μL重悬AMPure XP磁珠（0.3×比例），以保留长片段并去除短片段。室温孵育5 min。磁铁上静置2 min。弃去上清。用250 μL Short Fragment Buffer（SFB，来自试剂盒）洗涤磁珠两次——SFB可选择性去除未连接接头和短片段，同时保留大分子接头连接DNA。风干30 s。"
+    },
+    {
+      "en": "7. Library Elution and Final QC",
+      "zh": "7. 文库洗脱与最终质控",
+      "isHeader": true
+    },
+    {
+      "en": "7. Elute library in 15 μL Elution Buffer (EB) from kit. Pipette to mix; incubate 10 min at 37°C to maximize recovery. Pellet on magnet 2 min; transfer supernatant to clean 1.5 mL lo-bind tube. Quantify with Qubit dsDNA HS Assay. Target: ≥5 ng/μL (≥75 ng total in 15 μL), equivalent to ≥20 fmol for 10 kb mean library size. Optional: check fragment size distribution on TapeStation or Bioanalyzer.",
+      "zh": "7. 用15 μL洗脱缓冲液（EB，来自试剂盒）洗脱文库，吸打混匀，37°C孵育10 min以最大化回收率。磁铁上静置2 min，将上清转移至新的1.5 mL低吸附管。使用Qubit dsDNA HS试剂盒定量。目标：≥5 ng/μL（15 μL中≥75 ng总量），对应10 kb均值文库≥20 fmol。可选：在TapeStation或Bioanalyzer上检查片段大小分布。"
+    },
+    {
+      "en": "8. Flow Cell Priming",
+      "zh": "8. 流动池冲洗",
+      "isHeader": true
+    },
+    {
+      "en": "8. Thaw FLB (Flow Cell Buffer) and FLT (Flow Cell Tether) at room temperature. Prepare priming mix: 30 μL FLT into 1 tube FLB (1170 μL); mix by inversion. Open MinION/GridION flow cell priming port. Load 800 μL priming mix without introducing air bubbles. Wait 5 min to allow equilibration. Load remaining 200 μL priming mix. The SpotON port should show a small meniscus.",
+      "zh": "8. 将FLB（流动池缓冲液）和FLT（流动池锚定剂）室温解冻。配制冲洗混合液：30 μL FLT加入1管FLB（1170 μL），倒置混匀。打开MinION/GridION流动池冲洗孔。加入800 μL冲洗混合液，勿引入气泡。等待5 min平衡。加入剩余200 μL冲洗混合液。SpotON孔应可见液面。"
+    },
+    {
+      "en": "9. Sequencing Mix Preparation and Loading",
+      "zh": "9. 测序混合液制备与上样",
+      "isHeader": true
+    },
+    {
+      "en": "9. Prepare sequencing mix in a lo-bind tube: 37.5 μL Sequencing Buffer (SQB) + 25.5 μL Loading Beads (LB; mix LB thoroughly before use by vortexing) + 12 μL library (from step 7; adjust volume with EB if <12 μL). Mix gently by pipetting. Open the SpotON port on the flow cell. Pipette 75 μL total sequencing mix dropwise onto the SpotON port — do NOT introduce air. Close port after loading.",
+      "zh": "9. 在低吸附管中配制测序混合液：37.5 μL测序缓冲液（SQB）+ 25.5 μL上样磁珠（LB；使用前充分涡旋混匀LB）+ 12 μL文库（来自步骤7；体积不足时用EB补至12 μL）。轻柔吸打混匀。打开流动池SpotON孔。将75 μL测序混合液逐滴加入SpotON孔——勿引入气泡。上样后关闭孔。"
+    },
+    {
+      "en": "10. MinKNOW Run Configuration and Start",
+      "zh": "10. MinKNOW运行配置与启动",
+      "isHeader": true
+    },
+    {
+      "en": "10. In MinKNOW software: select flow cell position and verify flow cell type (e.g., FLO-MIN114 for R10.4.1). Select kit: SQK-LSK114. Configure basecalling: choose super accuracy (SUP) for highest accuracy or high accuracy (HAC) for faster processing. Set run duration (4–72 h depending on coverage target). Enable adaptive sampling (ReadFish) if targeting specific genomic regions. Click 'Start Run'.",
+      "zh": "10. 在MinKNOW软件中：选择流动池位置并确认流动池型号（如FLO-MIN114对应R10.4.1孔型）。选择试剂盒：SQK-LSK114。配置碱基识别：选择超高精度（SUP）获得最高准确率，或高精度（HAC）加快处理速度。设置运行时长（4–72 h，取决于覆盖度目标）。如需靶向特定基因组区域，启用自适应采样（ReadFish）。点击【开始运行】。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Safe stop: after SPRI cleanup post end-prep, end-prepped DNA can be stored at -20°C overnight (or up to 1 week). Thaw on ice and proceed to adapter ligation the next day.",
+        "zh": "安全停点：末端制备后SPRI纯化完成后，end-prepped DNA可在-20°C保存过夜（或最长1周）。次日取出置冰上解冻后继续进行接头连接。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Safe stop: final library can be stored at 4°C for up to 1 week or at -20°C for longer-term storage (avoid repeated freeze-thaw). Add 0.5× volume of EB before freezing to reduce adapter damage.",
+        "zh": "安全停点：最终文库可在4°C保存最长1周，或在-20°C长期保存（避免反复冻融）。冻存前可加入0.5×体积的洗脱缓冲液以减少接头损伤。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Use lo-bind (DNA lo-bind) microcentrifuge tubes throughout to minimize DNA loss, especially for dilute or precious samples. | Do NOT vortex after adapter ligation — the motor protein attached to LAVT is sensitive to mechanical shearing. | Loading Beads (LB) must be vortexed immediately before use; they settle rapidly and uneven loading reduces active pore count. | For DNA inputs <1 μg, reduce input to 200–500 ng with adjusted AMPure bead volumes, but expect lower output and potentially lower N50. | Check flow cell pore count before loading: R10.4.1 flow cells should show ≥800 active pores; below 500 significantly impacts output. | SFB wash step is critical — do NOT substitute with 70% ethanol at this stage, as ethanol will remove adapter-ligated molecules.",
+    "zh": "全程使用低吸附（DNA lo-bind）微量离心管，以减少DNA损失，尤其是稀释样品或珍贵样品。 | 接头连接后切勿涡旋——LAVT上预装的马达蛋白对机械剪切力敏感。 | 上样磁珠（LB）必须在使用前立即涡旋；磁珠沉降迅速，分布不均会降低活性孔数量。 | 若输入DNA不足1 μg，可将投入量降至200–500 ng并相应调整AMPure磁珠用量，但预期产出和N50可能降低。 | 上样前检查流动池孔数：R10.4.1流动池应显示≥800个活性孔；低于500个会显著影响产出。 | SFB洗涤步骤至关重要——此步骤切勿用70%乙醇代替，乙醇会洗脱掉已连接接头的分子。"
+  },
+  "crosslinks": [
+    "genomic_dna_extraction",
+    "pcr_standard",
+    "gel_extraction"
+  ],
+  "ref": "Oxford Nanopore Technologies. (2023). Ligation sequencing DNA V14 (SQK-LSK114). Protocol document EXP-PTC114 v114_revJ_26Oct2023.",
+  "doi": "10.17504/protocols.io.bp2l6n6brgqe/v2",
+  "discipline": "genomics",
+  "duration": "~4–6h (library prep) + 4–72h (sequencing run)",
+  "materials": [
+    "SQK-LSK114 Ligation Sequencing Kit (LAVT, SQB, LB, EB)",
+    "Flow Cell Wash Kit (FLB, FLT)",
+    "MinION / GridION / PromethION flow cell (FLO-MIN114 R10.4.1)",
+    "NEBNext Ultra II End Repair/dA-Tail Module (NEB #E7546)",
+    "NEBNext FFPE DNA Repair Mix (NEB #M6630)",
+    "NEBNext Quick Ligation Module (NEB #E6056)",
+    "AMPure XP beads (Beckman Coulter)",
+    "Qubit dsDNA BR and HS Assay Kits",
+    "Agilent TapeStation + Genomic DNA ScreenTape",
+    "Nuclease-free water",
+    "Freshly prepared 70% ethanol",
+    "Low-bind 1.5 mL microcentrifuge tubes",
+    "MinKNOW software (v23+)",
+    "Optional: Megaruptor 3 or g-TUBE for shearing"
+  ],
+  "usage": "Prepare Oxford Nanopore long-read sequencing libraries from high-molecular-weight DNA for whole genome sequencing, amplicon sequencing, and metagenomic applications using the SQK-LSK114 ligation kit. Enables sequencing on MinION, GridION, and PromethION platforms."
+}

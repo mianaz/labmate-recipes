@@ -1,0 +1,195 @@
+{
+  "id": "rrbs_protocol",
+  "name": "Reduced Representation Bisulfite Sequencing (RRBS)",
+  "nameCn": "简化代表性亚硫酸氢盐测序",
+  "category": "protocol",
+  "tags": [
+    "RRBS",
+    "DNA methylation",
+    "bisulfite sequencing",
+    "CpG islands",
+    "epigenomics",
+    "MspI",
+    "library prep"
+  ],
+  "components": [
+    {
+      "name": "1. Extract high-quality genomic DNA (≥500 ng input); quantify by Qubit dsDNA BR assay; assess purity (A260/280 >1.8, A260/230 >2.0)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. MspI restriction digest: 1 μg DNA + 10 U MspI in 1× CutSmart buffer, 37°C 2–4h; heat-inactivate 65°C 20 min (cuts C↓CGG, enriches CpG-dense regions)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. End-repair and dA-tailing: add Klenow fragment (3'→5' exo-, 5 U) + 0.4 mM dNTPs to MspI digest; 37°C 30 min (fills 3' recesses, removes 3' overhangs); heat-inactivate 75°C 20 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Adapter ligation: add pre-methylated (fully CpG-methylated) Illumina adapters (working concentration 15 μM) + T4 DNA ligase (2000 U) + 1× T4 ligase buffer + 1 mM ATP; 16°C overnight 12–16h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Size selection: perform 2-step AMPure XP bead cleanup (0.8× then 1.2× ratio) to select adapter-ligated fragments of 150–350 bp; elute in 20 μL nuclease-free H2O",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Bisulfite conversion: use EZ DNA Methylation Kit (Zymo Research); incubate with CT conversion reagent at 98°C 8 min then 64°C 3.5h (converts unmethylated cytosines to uracil)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Desulphonation and column cleanup per kit instructions; elute in 20 μL M-Elution Buffer (low TE)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. PCR amplification: 8–15 cycles using KAPA HiFi Uracil+ ReadyMix; 98°C 45s initial; then cycles of 98°C 15s → 65°C 30s → 72°C 30s; 72°C 1 min final extension",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Post-PCR SPRI cleanup: 0.8× AMPure XP beads; elute in 25 μL low TE",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. QC: quantify by Qubit dsDNA HS; size profile on Bioanalyzer/TapeStation (expect broad peak 250–400 bp); check library complexity by qPCR",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "11. Sequencing: pool equimolar libraries; sequence on Illumina platform (PE100 or PE150 recommended; minimum 30M read pairs per sample)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "12. Bioinformatics: trim adapters (Trim Galore); align bisulfite reads to genome with Bismark (--non_directional for RRBS); call CpG methylation; filter CpGs with ≥10× coverage",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Genomic DNA extraction (≥500 ng) → MspI digest (37°C 2–4h) → end-repair + dA-tail (37°C 30 min) → methylated adapter ligation (16°C overnight) → size selection (AMPure 0.8×–1.2×, 150–350 bp) → bisulfite conversion (EZ Methylation Kit, 98°C 8 min + 64°C 3.5h) → desulphonation + cleanup → PCR amplification (8–15 cycles, KAPA HiFi Uracil+) → SPRI cleanup → Bioanalyzer QC → Illumina sequencing (PE100/150) → Bismark alignment + CpG methylation calling",
+      "zh": "基因组 DNA 提取（≥500 ng）→ MspI 消化（37°C 2–4 小时）→ 末端修复 + dA 加尾（37°C 30 分钟）→ 甲基化接头连接（16°C 过夜）→ 大小筛选（AMPure 0.8×–1.2×，150–350 bp）→ 亚硫酸氢盐转化（EZ Methylation Kit，98°C 8 分钟 + 64°C 3.5 小时）→ 脱磺酸化及纯化 → PCR 扩增（8–15 个循环，KAPA HiFi Uracil+）→ SPRI 纯化 → Bioanalyzer QC → Illumina 测序（PE100/150）→ Bismark 比对 + CpG 甲基化分析"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Genomic DNA QC and MspI Digestion",
+      "zh": "第 1 天：基因组 DNA 质控与 MspI 消化",
+      "isHeader": true
+    },
+    {
+      "en": "1. Extract high-quality genomic DNA using a column-based kit or phenol-chloroform method. Quantify with Qubit dsDNA BR Assay (fluorometric, not spectrophotometric). A260/280 must be >1.8; A260/230 >2.0. RNA contamination must be absent (treat with RNase A 20 μg/mL, 37°C 30 min if needed). Use at least 500 ng–1 μg per RRBS reaction.",
+      "zh": "1. 使用离心柱法或苯酚-氯仿法提取高质量基因组 DNA。用 Qubit dsDNA BR 试剂盒定量（荧光法，不建议仅用分光光度计）。A260/280 须 >1.8，A260/230 须 >2.0。需确认无 RNA 污染（如有需要，加入 RNase A 20 μg/mL，37°C 处理 30 分钟）。每次 RRBS 反应至少使用 500 ng–1 μg DNA。"
+    },
+    {
+      "en": "2. Set up MspI digestion: combine 1 μg gDNA + 10 U MspI + 1× CutSmart Buffer in 50 μL total volume. Incubate at 37°C for 2–4h with gentle mixing. MspI cleaves at C↓CGG regardless of internal CpG methylation status, generating fragments enriched for CpG island-dense regions. Heat-inactivate at 65°C for 20 min.",
+      "zh": "2. 配制 MspI 消化反应体系：1 μg 基因组 DNA + 10 U MspI + 1× CutSmart 缓冲液，总体积 50 μL。37°C 轻柔混匀孵育 2–4 小时。MspI 在 C↓CGG 位点切割（不受内部 CpG 甲基化状态影响），所得片段富含 CpG 岛密集区域。65°C 灭活 20 分钟。"
+    },
+    {
+      "en": "3. End-repair and dA-tailing: add 5 U Klenow fragment (3'→5' exo-) and dNTPs (final 0.4 mM each) to the heat-inactivated MspI digest in the same tube. Incubate 37°C, 30 min. Klenow fills 5' overhangs and removes 3' overhangs, creating blunt ends, then adds a 3' dA overhang for adapter ligation. Heat-inactivate 75°C, 20 min; chill on ice.",
+      "zh": "3. 末端修复与 dA 加尾：向热失活后的 MspI 消化产物中直接加入 5 U Klenow 片段（3'→5' 外切酶活性缺失型）和 dNTPs（终浓度各 0.4 mM）。37°C 孵育 30 分钟。Klenow 可填补 5' 突出端并去除 3' 突出端，生成平末端，随后添加 3' dA 突出以备接头连接。75°C 灭活 20 分钟，置于冰上冷却。"
+    },
+    {
+      "en": "Day 1 (continued): Adapter Ligation",
+      "zh": "第 1 天（续）：接头连接",
+      "isHeader": true
+    },
+    {
+      "en": "4. Prepare pre-methylated Illumina adapters at 15 μM working concentration in annealing buffer. CRITICAL: adapters must be pre-methylated at all cytosines so they survive bisulfite conversion without sequence alteration. Set up ligation: end-repaired DNA + 1 μL adapter mix (15 μM) + 2000 U T4 DNA ligase + 1× T4 ligase buffer + 1 mM ATP in 50 μL total. Ligate at 16°C for 12–16h overnight.",
+      "zh": "4. 将预甲基化 Illumina 接头用退火缓冲液配至 15 μM 工作浓度。关键：接头所有胞嘧啶必须预先甲基化，以确保其在亚硫酸氢盐转化后序列不变。配制连接反应：末端修复 DNA + 1 μL 接头混合液（15 μM）+ 2000 U T4 DNA 连接酶 + 1× T4 连接酶缓冲液 + 1 mM ATP，总体积 50 μL，16°C 过夜（12–16 小时）。"
+    },
+    {
+      "en": "Day 2: Size Selection and Bisulfite Conversion",
+      "zh": "第 2 天：大小筛选与亚硫酸氢盐转化",
+      "isHeader": true
+    },
+    {
+      "en": "5. Perform 2-step AMPure XP size selection to remove unligated adapters and very large fragments. Step 1: Add 0.8× volume AMPure XP beads; mix well; incubate RT 5 min; place on magnet; transfer supernatant (contains target fragments) to a new tube. Discard beads (large fragments). Step 2: Add additional AMPure XP to supernatant to 1.2× final ratio; incubate RT 5 min; place on magnet; discard supernatant; wash beads 2× with 80% ethanol; elute in 20 μL nuclease-free water. This step enriches 150–350 bp adapter-ligated fragments. Verify size on Bioanalyzer (optional at this step).",
+      "zh": "5. 进行两步 AMPure XP 大小筛选，去除未连接的接头及过大片段。步骤一：加入 0.8× 体积 AMPure XP 磁珠，充分混匀，室温静置 5 分钟，置于磁力架上，将含目标片段的上清转入新管（弃去磁珠，即去除大片段）。步骤二：在上清中继续补加 AMPure XP 磁珠至终比例 1.2×，室温静置 5 分钟，置于磁力架，弃去上清，用 80% 乙醇洗涤磁珠 2 次，用 20 μL 无核酸酶水洗脱。此步骤富集 150–350 bp 的接头连接片段。可选择在此步骤用 Bioanalyzer 验证片段大小分布。"
+    },
+    {
+      "en": "6. Bisulfite conversion using EZ DNA Methylation Kit (Zymo Research): add CT Conversion Reagent to size-selected DNA per kit instructions. Thermocycler conditions: 98°C 8 min (denaturation), then 64°C 3.5h (conversion of unmethylated cytosines to uracil via sulfonation → deamination). Proceed immediately to column cleanup; do not store at this stage. Efficiency should be >99% as validated by non-CpG cytosine conversion rate in data.",
+      "zh": "6. 使用 EZ DNA Methylation Kit（Zymo Research）进行亚硫酸氢盐转化：按照试剂盒说明，将 CT 转化试剂加入大小筛选后的 DNA 中。热循环仪程序：98°C 8 分钟（变性），随后 64°C 3.5 小时（未甲基化胞嘧啶经磺化→脱氨基转化为尿嘧啶）。应立即进行柱纯化，此阶段不可保存样品。转化效率应 >99%（可通过数据中非 CpG 胞嘧啶转化率来验证）。"
+    },
+    {
+      "en": "7. Desulphonation and cleanup per kit instructions: bind sample to Zymo-Spin IC column; add M-Wash buffer; add M-Desulphonation buffer (stand 15–20 min at RT); wash 2× with M-Wash buffer; elute in 20 μL M-Elution Buffer (10 mM Tris-HCl pH 8.5, 0.1 mM EDTA). This removes sulfonate groups from uracil residues, making them full uracils readable by polymerase.",
+      "zh": "7. 按试剂盒说明脱磺酸化并纯化：将样品结合到 Zymo-Spin IC 离心柱上；加入 M-Wash 缓冲液；加入 M-Desulphonation 缓冲液（室温静置 15–20 分钟）；用 M-Wash 缓冲液洗涤 2 次；用 20 μL M-Elution 缓冲液（10 mM Tris-HCl pH 8.5，0.1 mM EDTA）洗脱。此步骤去除尿嘧啶残基上的磺酸基团，使之成为可被聚合酶读取的完整尿嘧啶。"
+    },
+    {
+      "en": "Day 2 (continued): PCR Amplification and QC",
+      "zh": "第 2 天（续）：PCR 扩增与质控",
+      "isHeader": true
+    },
+    {
+      "en": "8. PCR amplification: set up 50 μL reaction with 25 μL KAPA HiFi Uracil+ ReadyMix, 10 μL bisulfite-converted template, 2.5 μL each of indexing primers (10 μM). KAPA HiFi Uracil+ is essential as standard polymerases stall at uracil. Cycle conditions: 98°C 45s initial denaturation; [98°C 15s → 65°C 30s → 72°C 30s] × 8–15 cycles; 72°C 1 min final extension; hold at 4°C. Use the minimum cycle number needed to achieve ≥10 nM final yield (assess with qPCR if uncertain). Excess PCR cycles increase duplicates and reduce library complexity.",
+      "zh": "8. PCR 扩增：配制 50 μL 反应体系：25 μL KAPA HiFi Uracil+ ReadyMix、10 μL 亚硫酸氢盐转化模板、各 2.5 μL 带索引引物（10 μM）。必须使用 KAPA HiFi Uracil+，因标准聚合酶会在尿嘧啶处停滞。循环参数：98°C 45 秒初始变性；[98°C 15 秒 → 65°C 30 秒 → 72°C 30 秒] × 8–15 个循环；72°C 1 分钟最终延伸；4°C 保存。应使用能达到 ≥10 nM 最终产量的最少循环数（如不确定可通过 qPCR 预判）。PCR 循环数过多会增加重复序列比例，降低文库复杂度。"
+    },
+    {
+      "en": "9. Post-PCR cleanup: add 0.8× volume AMPure XP beads to PCR product; mix well; incubate 5 min RT; magnet 2 min; wash 2× with 200 μL 80% ethanol; air-dry 5 min; elute in 25 μL low TE (10 mM Tris pH 8.0, 0.1 mM EDTA). Quantify by Qubit dsDNA HS assay. Run 1 μL on Bioanalyzer High Sensitivity DNA chip or TapeStation D1000 ScreenTape; expect a broad peak centered at 250–400 bp. Acceptable yield: 2–30 nM for sequencing.",
+      "zh": "9. PCR 后纯化：向 PCR 产物中加入 0.8× 体积 AMPure XP 磁珠，充分混匀，室温孵育 5 分钟，置于磁力架 2 分钟，用 200 μL 80% 乙醇洗涤 2 次，风干 5 分钟，用 25 μL 低浓度 TE 缓冲液（10 mM Tris pH 8.0，0.1 mM EDTA）洗脱。用 Qubit dsDNA HS 试剂盒定量。取 1 μL 在 Bioanalyzer 高灵敏度 DNA 芯片或 TapeStation D1000 上检测，预期可见以 250–400 bp 为中心的宽峰。上机浓度要求：2–30 nM。"
+    },
+    {
+      "en": "10. Sequencing and bioinformatics: pool equimolar libraries; sequence on Illumina (NovaSeq or NextSeq recommended; PE100 or PE150; ≥30M paired-end reads per sample). Adapter trim with Trim Galore (--rrbs flag automatically clips filled-in C and the complementary G of MspI overhangs). Align with Bismark to bisulfite-converted genome; extract CpG methylation calls; filter CpGs with ≥10× coverage for downstream analysis (DMR calling, clustering, visualization with IGV or MethylKit).",
+      "zh": "10. 测序与生物信息学分析：等摩尔混合文库；在 Illumina 平台测序（推荐 NovaSeq 或 NextSeq；PE100 或 PE150；每样本 ≥3000 万条配对末端 reads）。用 Trim Galore（--rrbs 参数可自动去除 MspI 切割产生的填充 C 及互补 G）进行接头修剪。用 Bismark 将 reads 比对至亚硫酸氢盐转化基因组；提取 CpG 甲基化信息；筛选覆盖深度 ≥10× 的 CpG 位点用于后续分析（差异甲基化区域检测、聚类分析、IGV 或 MethylKit 可视化）。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "After MspI digestion and heat-inactivation, the digested DNA can be stored at −20°C for up to 1 week before proceeding to end-repair.",
+        "zh": "MspI 消化及热失活后，消化 DNA 可在 −20°C 保存最多 1 周，再进行末端修复步骤。"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "After AMPure size selection, adapter-ligated and size-selected DNA can be stored at −20°C for up to 2 weeks before bisulfite conversion. Do not proceed to bisulfite conversion on an uncertain schedule, as conversion is a time-sensitive workflow.",
+        "zh": "AMPure 大小筛选后，接头连接并已大小筛选的 DNA 可在 −20°C 保存最多 2 周，再进行亚硫酸氢盐转化。亚硫酸氢盐转化流程有时间要求，请在准备充分后再开始此步骤。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Input DNA quality is paramount. Degraded or low-quality DNA yields poor libraries. Assess with Bioanalyzer before starting: majority of DNA should be >20 kb for optimal results. | RRBS covers approximately 1–5% of the genome but captures ~80% of CpG islands and most promoter-associated CpGs, making it highly cost-effective for methylation profiling of regulatory regions. | Pre-methylated adapters are essential. Using standard (unmethylated) adapters will result in adapter sequences being converted by bisulfite treatment, causing adapter trimming failure and alignment errors. | Bisulfite conversion efficiency should be >99%. In data QC, check non-CpG cytosine methylation rates (CHH and CHG context); these should be <1% in mammalian somatic cells and serve as a proxy for conversion efficiency. | For mouse or human samples using GRCh38/mm10 references, run Bismark with --genome_folder pointing to a bisulfite-prepared genome (bismark_genome_preparation). Use --non_directional if library was not directional. | Aim for ≥5× coverage at CpG sites for binary methylation calls; ≥10× is recommended for quantitative analysis. At 30M reads, RRBS typically covers 1–3 million CpG sites at ≥10× in human samples.",
+    "zh": "输入 DNA 的质量至关重要。降解或低质量 DNA 会导致文库质量差。建议在实验开始前用 Bioanalyzer 评估：大部分 DNA 片段应 >20 kb 以获得最佳效果。 | RRBS 覆盖约 1–5% 的基因组，但能捕获约 80% 的 CpG 岛及大多数启动子相关 CpG 位点，在调控区甲基化分析中具有极高的性价比。 | 必须使用预甲基化接头。若使用普通（未甲基化）接头，接头序列将被亚硫酸氢盐转化，导致接头修剪失败和比对错误。 | 亚硫酸氢盐转化效率应 >99%。在数据质控中，应检查非 CpG 胞嘧啶甲基化率（CHH 和 CHG 环境）；在哺乳动物体细胞中该值应 <1%，可作为转化效率的间接指标。 | 对于使用 GRCh38/mm10 参考基因组的人类或小鼠样本，运行 Bismark 时需用 --genome_folder 指向亚硫酸氢盐处理后的基因组（bismark_genome_preparation 生成）。若文库为非定向文库，需添加 --non_directional 参数。 | CpG 位点覆盖度：二分类甲基化分析建议 ≥5×；定量分析建议 ≥10×。在 3000 万 reads 的测序深度下，RRBS 通常可覆盖人类样本中 100–300 万个 ≥10× 的 CpG 位点。"
+  },
+  "crosslinks": [
+    "genomic_dna_extraction",
+    "rnaseq_library_prep",
+    "chip_protocol"
+  ],
+  "ref": "Meissner A, Gnirke A, Bell GW, Ramsahoye B, Lander ES, Jaenisch R. (2008). Reduced representation bisulfite sequencing for comparative high-resolution DNA methylation analysis. Nucleic Acids Research",
+  "doi": "10.1093/nar/gkn425",
+  "discipline": "epigenomics / methylation",
+  "duration": "~3 days",
+  "materials": [
+    "High-quality genomic DNA (≥500 ng, A260/280 >1.8)",
+    "MspI restriction enzyme (10 U/μg DNA)",
+    "CutSmart Buffer (NEB)",
+    "Klenow fragment (3'→5' exo-, 5 U/reaction)",
+    "dNTP mix (10 mM each)",
+    "Pre-methylated Illumina adapter oligos",
+    "T4 DNA ligase (2000 U/reaction)",
+    "T4 DNA ligase buffer + ATP",
+    "AMPure XP beads",
+    "EZ DNA Methylation Kit (Zymo Research, D5001)",
+    "KAPA HiFi Uracil+ ReadyMix (Roche/KAPA)",
+    "Indexing primers (Illumina TruSeq or compatible)",
+    "Qubit dsDNA BR and HS Assay Kits",
+    "Bioanalyzer High Sensitivity DNA Kit or TapeStation D1000",
+    "Nuclease-free water",
+    "Low TE buffer (10 mM Tris-HCl pH 8.0, 0.1 mM EDTA)",
+    "80% ethanol (fresh, molecular biology grade)",
+    "RNase A (optional, for RNA removal from gDNA)"
+  ],
+  "usage": "RRBS is a cost-effective method for genome-wide DNA methylation profiling that focuses sequencing power on CpG-rich regulatory regions. By combining MspI restriction digestion (which specifically cuts CCGG motifs enriched at CpG islands) with bisulfite sequencing, RRBS achieves deep, quantitative methylation measurement at promoters, CpG islands, and gene regulatory elements without sequencing the entire genome. It is widely used for comparing methylation patterns between cell types, developmental stages, tissues, and disease states, and requires as little as 100–500 ng starting material."
+}

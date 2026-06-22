@@ -1,0 +1,281 @@
+{
+  "id": "hichip_protocol",
+  "name": "HiChIP (Hi-C Chromatin Immunoprecipitation)",
+  "nameCn": "HiChIP 染色质免疫共沉淀结合邻近连接技术",
+  "category": "protocol",
+  "tags": [
+    "HiChIP",
+    "3D genome",
+    "chromatin looping",
+    "Hi-C",
+    "ChIP",
+    "proximity ligation",
+    "epigenetics",
+    "H3K27ac",
+    "CTCF",
+    "cohesin",
+    "enhancer-promoter",
+    "Arima"
+  ],
+  "components": [
+    {
+      "name": "1. Harvest 12–15 million cells in log-phase; add formaldehyde to 1% final, 10 min RT with rocking",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Quench crosslinking with glycine to 125 mM final, 5 min RT; wash 2× cold PBS, snap-freeze pellet at -80°C or proceed",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Input estimation: digest 0.5M cell aliquot with Buffer E + Proteinase K (55°C 30 min, 68°C 3h); purify with AMPure XP beads",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Lyse nuclei in Arima lysis buffer; digest chromatin with restriction enzyme mix (MboI+HinfI) from Arima-HiC+ Kit",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. End-fill restriction overhangs with biotin-dCTP using DNA Polymerase I (Klenow fragment), 37°C 30 min",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Intra-molecular ligation: 16°C 4h then RT 30 min with T4 DNA Ligase",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Reverse crosslinks with Proteinase K: 55°C 45 min then 68°C 90 min; purify proximity-ligated DNA",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Sonicate proximity-ligated DNA to 200–500 bp; preclear with Protein A/G beads 1h 4°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Add ChIP-grade antibody (e.g., H3K27ac, CTCF, cohesin), rotate overnight 4°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. Capture with Protein A/G beads 2h 4°C; wash 4× (low salt → high salt → LiCl → TE); elute and reverse crosslinks",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "11. Purify enriched ChIP DNA with SPRI beads; streptavidin bead pulldown for biotin-labeled ligation junctions",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "12. End repair, A-tailing, and adapter ligation on streptavidin beads (NEBNext or Arima library prep kit)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "13. PCR amplification 8–12 cycles; final SPRI size selection (0.5×–0.7×)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "14. QC: Bioanalyzer fragment size 300–500 bp; sequence and validate >30% valid Hi-C pairs",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Crosslink 12–15M cells with 1% formaldehyde → lyse nuclei → digest chromatin with MboI+HinfI → fill ends with biotin-dCTP → intra-molecular ligation → reverse crosslinks → purify proximity-ligated DNA → sonicate to 200–500 bp → ChIP with target antibody (overnight 4°C) → capture/wash/elute → streptavidin pulldown of biotin junctions → library prep with adapter ligation → PCR 8–12 cycles → SPRI size selection → QC and sequencing",
+      "zh": "用 1% 甲醛交联 12–15M 个细胞 → 裂解细胞核 → MboI+HinfI 酶切染色质 → 生物素-dCTP 末端填充 → 分子内连接 → 逆转交联 → 纯化邻近连接 DNA → 超声破碎至 200–500 bp → 目标抗体 ChIP（4°C 过夜）→ 磁珠捕获/洗涤/洗脱 → 链霉亲和素磁珠富集生物素化连接位点 → 文库制备与接头连接 → PCR 扩增 8–12 个循环 → SPRI 大小选择 → QC 与测序"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Crosslinking and Input Estimation",
+      "zh": "第1天：交联与投入量估算",
+      "isHeader": true
+    },
+    {
+      "en": "Harvest 12–15 million cells in log-phase growth. Add formaldehyde directly to culture media to a final concentration of 1%. Rock at RT for 10 min to ensure uniform crosslinking of chromatin complexes.",
+      "zh": "收取处于对数生长期的 12–15 百万个细胞。将甲醛直接加入培养基，终浓度为 1%。室温摇动 10 min，确保染色质复合物均匀交联。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Quench formaldehyde by adding glycine to 125 mM final concentration. Rock 5 min at RT. Wash pellet 2× with ice-cold PBS (600×g, 5 min). Snap-freeze cell pellet in liquid nitrogen and store at -80°C, or proceed immediately to lysis.",
+      "zh": "加入甘氨酸至终浓度 125 mM 以淬灭甲醛，室温摇动 5 min。用冰冷 PBS 洗涤细胞沉淀 2 次（600×g，5 min）。将细胞沉淀在液氮中速冻，储存于 -80°C，或立即进行裂解。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Input DNA estimation: thaw one 0.5M cell aliquot. Add Buffer E + Proteinase K (100 µg/mL); incubate 55°C 30 min, then 68°C 3h to reverse crosslinks and digest protein. Purify DNA with AMPure XP beads (1× volume), wash 2× with 80% EtOH, air dry, elute in 50 µL TE. Quantify by Qubit. Typical yield: ~2 µg DNA per 0.5M cells. Each HiChIP reaction requires cells containing ~15 µg DNA.",
+      "zh": "投入量 DNA 估算：融化一个 0.5M 细胞分装管。加入 Buffer E + Proteinase K（100 µg/mL），55°C 孵育 30 min，再 68°C 孵育 3h 以逆转交联并消化蛋白质。用 AMPure XP 磁珠（1× 体积）纯化 DNA，80% 乙醇洗涤 2 次，风干，50 µL TE 洗脱。Qubit 定量。典型产量：每 0.5M 细胞约 2 µg DNA。每个 HiChIP 反应需含 ~15 µg DNA 的细胞量。",
+      "time": "3.5 h",
+      "temp": "55–68°C"
+    },
+    {
+      "en": "Day 1–2: HiC Proximity Ligation (Arima-HiC+ Kit)",
+      "zh": "第1–2天：HiC 邻近连接（Arima-HiC+ 试剂盒）",
+      "isHeader": true
+    },
+    {
+      "en": "Lyse nuclei: resuspend crosslinked cell pellet in Arima lysis buffer with protease inhibitors; incubate on ice 30 min with periodic vortexing. Pellet nuclei at 2,500×g, 5 min, 4°C; wash once.",
+      "zh": "裂解细胞核：将交联细胞沉淀重悬于含蛋白酶抑制剂的 Arima 裂解缓冲液中，冰上孵育 30 min，期间间歇涡旋。2,500×g，4°C 离心 5 min 收集细胞核，洗涤一次。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Chromatin digestion: add restriction enzyme mix (MboI + HinfI) from Arima-HiC+ Kit in NEBuffer. Incubate 37°C 1h with rotation to achieve uniform chromatin digestion. Inactivate enzymes at 62°C for 10 min.",
+      "zh": "染色质消化：在 NEBuffer 中加入 Arima-HiC+ 试剂盒提供的限制性酶混合液（MboI + HinfI）。37°C 旋转孵育 1h，使染色质均匀消化。62°C 灭活酶 10 min。",
+      "time": "1 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Biotin fill-in of restriction fragment overhangs: add biotinylated nucleotide mix (biotin-dCTP, dATP, dGTP, dTTP) with DNA Polymerase I Large (Klenow) fragment. Incubate 37°C for 30 min. This labels all ligation junctions with biotin for downstream pulldown.",
+      "zh": "生物素填充限制性片段突出末端：加入生物素化核苷酸混合液（生物素-dCTP、dATP、dGTP、dTTP）和 DNA 聚合酶 I 大片段（Klenow）。37°C 孵育 30 min。该步骤用生物素标记所有连接位点，用于后续富集。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Intra-molecular proximity ligation: add T4 DNA Ligase (200 U) and ligation buffer. Ligate at 16°C for 4h, then at RT for an additional 30 min. Dilute conditions (1–4 µg/mL DNA) favor intra-molecular over inter-molecular ligation.",
+      "zh": "分子内邻近连接：加入 T4 DNA 连接酶（200 U）和连接缓冲液。16°C 连接 4h，再在 RT 延长 30 min。稀释条件（DNA 1–4 µg/mL）有利于分子内连接而非分子间连接。",
+      "time": "4.5 h",
+      "temp": "16°C → RT"
+    },
+    {
+      "en": "Reverse crosslinks: add Proteinase K (200 µg/mL final) and SDS (0.5% final). Incubate 55°C for 45 min, then 68°C for 90 min. Purify proximity-ligated DNA by phenol-chloroform extraction or SPRI beads (0.55× then 0.7× double selection for 300–500 bp). Elute in 100 µL TE. Quantify by Qubit.",
+      "zh": "逆转交联：加入 Proteinase K（终浓度 200 µg/mL）和 SDS（终浓度 0.5%）。55°C 孵育 45 min，再 68°C 孵育 90 min。通过苯酚-氯仿抽提或 SPRI 磁珠（0.55× 后 0.7× 双重选择，富集 300–500 bp）纯化邻近连接 DNA。100 µL TE 洗脱。Qubit 定量。",
+      "time": "2.25 h",
+      "temp": "55–68°C"
+    },
+    {
+      "en": "Day 2: Chromatin Immunoprecipitation (ChIP)",
+      "zh": "第2天：染色质免疫共沉淀（ChIP）",
+      "isHeader": true
+    },
+    {
+      "en": "Sonicate proximity-ligated DNA to 200–500 bp average fragment size. Use Bioruptor (high setting, 30s on/30s off, 10–15 cycles) or equivalent sonicator. Verify size by agarose gel. Preclear with Protein A/G beads (20 µL) for 1h at 4°C with rotation to reduce non-specific binding.",
+      "zh": "将邻近连接 DNA 超声破碎至平均片段大小 200–500 bp。使用 Bioruptor（高档，30s 开/30s 关，10–15 个循环）或同等超声仪。琼脂糖凝胶验证片段大小。用 Protein A/G 磁珠（20 µL）预清除 4°C 旋转 1h，以减少非特异性结合。",
+      "time": "1 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add ChIP-grade antibody (2–5 µg; e.g., anti-H3K27ac, anti-CTCF, or anti-cohesin/RAD21/SMC1) to precleared chromatin. Rotate overnight at 4°C. Include IgG negative control and, if possible, an input sample (10% of chromatin).",
+      "zh": "向预清除染色质中加入 ChIP-grade 抗体（2–5 µg；如抗 H3K27ac、抗 CTCF 或抗凝聚素/RAD21/SMC1）。4°C 旋转孵育过夜。设 IgG 阴性对照，并保留投入量样品（染色质的 10%）。",
+      "time": "overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 3: Bead Capture, Elution, and Library Prep",
+      "zh": "第3天：磁珠捕获、洗脱与文库制备",
+      "isHeader": true
+    },
+    {
+      "en": "Add 30 µL Protein A/G magnetic beads pre-equilibrated in ChIP dilution buffer. Rotate 2h at 4°C to capture antibody–chromatin complexes. Wash beads sequentially: 1× Low Salt Wash Buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris pH 8, 150 mM NaCl), 1× High Salt Wash (same + 500 mM NaCl), 1× LiCl Wash (0.25 M LiCl, 1% NP-40, 1% deoxycholate, 1 mM EDTA, 10 mM Tris pH 8), 2× TE.",
+      "zh": "加入 30 µL 在 ChIP 稀释缓冲液中预平衡的 Protein A/G 磁珠。4°C 旋转 2h 以捕获抗体–染色质复合物。依次洗涤磁珠：1× 低盐洗涤缓冲液（0.1% SDS、1% Triton X-100、2 mM EDTA、20 mM Tris pH 8、150 mM NaCl），1× 高盐洗涤液（同上 + 500 mM NaCl），1× LiCl 洗涤液（0.25 M LiCl、1% NP-40、1% 脱氧胆酸、1 mM EDTA、10 mM Tris pH 8），2× TE。",
+      "time": "2 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute ChIP DNA: add 250 µL elution buffer (1% SDS, 0.1 M NaHCO₃) to beads; vortex and incubate 65°C for 15 min. Reverse crosslinks by adding NaCl to 200 mM and Proteinase K to 100 µg/mL; incubate 65°C overnight. Purify with SPRI beads (1.8×); elute in 30 µL TE.",
+      "zh": "洗脱 ChIP DNA：向磁珠中加入 250 µL 洗脱缓冲液（1% SDS、0.1 M NaHCO₃），涡旋后 65°C 孵育 15 min。加入 NaCl 至 200 mM、Proteinase K 至 100 µg/mL，65°C 孵育过夜以逆转交联。SPRI 磁珠（1.8×）纯化，30 µL TE 洗脱。",
+      "time": "overnight",
+      "temp": "65°C"
+    },
+    {
+      "en": "Streptavidin bead pulldown: wash Dynabeads MyOne Streptavidin C1 beads (5 µL) 2× with Tween Wash Buffer (5 mM Tris-HCl pH 7.5, 0.5 mM EDTA, 1 M NaCl, 0.05% Tween-20). Resuspend in 2× Binding Buffer (10 mM Tris pH 7.5, 1 mM EDTA, 2 M NaCl). Add ChIP-enriched DNA; rotate 30 min at RT. Capture beads; wash 2× with Tween Wash Buffer, 2× with 10 mM Tris pH 8. Beads are now ready for on-bead library prep.",
+      "zh": "链霉亲和素磁珠富集：Dynabeads MyOne Streptavidin C1 磁珠（5 µL）用 Tween 洗涤缓冲液（5 mM Tris-HCl pH 7.5、0.5 mM EDTA、1 M NaCl、0.05% Tween-20）洗涤 2 次。重悬于 2× 结合缓冲液（10 mM Tris pH 7.5、1 mM EDTA、2 M NaCl）。加入 ChIP 富集 DNA，RT 旋转 30 min。捕获磁珠，Tween 洗涤缓冲液洗 2 次，10 mM Tris pH 8 洗 2 次。磁珠即可用于磁珠上文库制备。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "On-bead library preparation: perform end repair and A-tailing (NEBNext Ultra II End Prep, 20°C 30 min then 65°C 30 min) directly on streptavidin beads. Without eluting, perform adapter ligation (NEBNext Universal Adapter, 20°C 20 min). USER enzyme treatment (37°C 15 min). Wash beads 2× with Tween Wash Buffer.",
+      "zh": "磁珠上文库制备：直接在链霉亲和素磁珠上进行末端修复和加 A 尾（NEBNext Ultra II End Prep，20°C 30 min 后 65°C 30 min）。无需洗脱，直接进行接头连接（NEBNext Universal Adapter，20°C 20 min）。USER 酶处理（37°C 15 min）。Tween 洗涤缓冲液洗涤磁珠 2 次。",
+      "time": "1.5 h",
+      "temp": "20–65°C"
+    },
+    {
+      "en": "PCR amplification: elute library from streptavidin beads by heating to 95°C for 2 min in PCR master mix. Amplify with NEBNext indexed primers for 8–12 cycles (98°C 30s; [98°C 10s, 65°C 75s] × 8–12 cycles; 65°C 5 min). Final SPRI double size selection (0.5× to remove large fragments, then 0.7× to remove adapters). Quantify by Qubit; assess size distribution by Bioanalyzer (target: 300–500 bp). Valid Hi-C pair rate should be >30% upon sequencing.",
+      "zh": "PCR 扩增：在 PCR 混合液中 95°C 加热 2 min，从链霉亲和素磁珠上洗脱文库。使用 NEBNext 索引引物扩增 8–12 个循环（98°C 30s；[98°C 10s、65°C 75s] × 8–12 个循环；65°C 5 min）。最终 SPRI 双重大小选择（0.5× 去除大片段，再 0.7× 去除接头）。Qubit 定量；Bioanalyzer 检测片段大小分布（目标：300–500 bp）。测序后有效 Hi-C 配对率应 >30%。",
+      "time": "2 h",
+      "temp": "varies"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "condition": "-80°C",
+      "duration": "months"
+    },
+    {
+      "afterStep": 9,
+      "condition": "-20°C",
+      "duration": "weeks"
+    },
+    {
+      "afterStep": 11,
+      "condition": "4°C overnight",
+      "duration": "overnight"
+    },
+    {
+      "afterStep": 13,
+      "condition": "-20°C",
+      "duration": "months"
+    }
+  ],
+  "notes": {
+    "en": "HiChIP combines Hi-C proximity ligation with ChIP enrichment to map protein-centric chromatin interactions at much lower cell numbers than HiC (12–15M vs. 100M+ cells). Key considerations: (1) antibody quality is critical — use well-validated ChIP-grade antibodies; (2) sonication must follow proximity ligation, not precede it — do not reverse the order; (3) biotin fill-in efficiency determines junction capture rate; (4) valid pair rate >30% indicates good library quality; H3K27ac and cohesin are the most common targets. Compare against HiC input without ChIP to distinguish 3D interactions from ChIP enrichment artifacts.",
+    "zh": "HiChIP 将 Hi-C 邻近连接与 ChIP 富集相结合，以远低于 Hi-C（12–15M vs. 100M+ 细胞）的细胞数量绘制以蛋白质为中心的染色质相互作用图谱。关键注意事项：(1) 抗体质量至关重要——使用经充分验证的 ChIP-grade 抗体；(2) 超声破碎必须在邻近连接之后进行，不得颠倒顺序；(3) 生物素填充效率决定连接位点的捕获率；(4) 有效配对率 >30% 表示文库质量良好；H3K27ac 和凝聚素是最常见的靶标。与不含 ChIP 的 HiC 投入量样品比较，以区分三维相互作用与 ChIP 富集伪影。"
+  },
+  "ref": "Mumbach MR et al. (2016) Nat Methods 13:919–922; Schmitt AD et al. (2016) Cell Stem Cell 19:690–703; Arima-HiC+ Kit protocol doi:10.17504/protocols.io.ewov1qq67gr2/v1",
+  "discipline": [
+    "genomics",
+    "epigenetics",
+    "molecular"
+  ],
+  "duration": {
+    "total": "3–4 days",
+    "hands_on": "~16 hours"
+  },
+  "materials": [
+    { "name": "12–15 million mammalian cells (log-phase)" },
+    { "name": "Formaldehyde (37% stock)" },
+    { "name": "Glycine (2.5 M stock solution)" },
+    { "name": "PBS (ice-cold)" },
+    { "name": "Arima-HiC+ Kit (restriction enzymes MboI+HinfI, ligase, lysis buffer)" },
+    { "name": "Biotin-14-dCTP" },
+    { "name": "DNA Polymerase I Large Fragment (Klenow)" },
+    { "name": "T4 DNA Ligase" },
+    { "name": "Proteinase K" },
+    { "name": "AMPure XP SPRI beads" },
+    { "name": "Bioruptor or sonicator" },
+    { "name": "Protein A/G magnetic beads" },
+    { "name": "ChIP-grade antibody (e.g., anti-H3K27ac, anti-CTCF, anti-cohesin)" },
+    { "name": "Dynabeads MyOne Streptavidin C1" },
+    { "name": "NEBNext Ultra II End Repair/A-Tailing Module" },
+    { "name": "NEBNext Ultra II Ligation Module" },
+    { "name": "NEBNext Multiplex Oligos (indexed primers)" },
+    { "name": "Q5 or KAPA HiFi PCR polymerase" },
+    { "name": "Qubit fluorometer" },
+    { "name": "Bioanalyzer or TapeStation" },
+    { "name": "Magnetic rack (1.5 mL and 96-well)" }
+  ],
+  "relatedProtocols": [
+    "chip_protocol",
+    "cut_and_run"
+  ],
+  "crosslinks": [
+    "chip_protocol",
+    "cut_and_run"
+  ],
+  "usage": {
+    "en": "Map protein-centric chromatin loops and enhancer-promoter interactions genome-wide using HiChIP, which couples Hi-C proximity ligation with chromatin immunoprecipitation.",
+    "zh": "使用 HiChIP 在全基因组范围内绘制以蛋白质为中心的染色质环和增强子-启动子相互作用图谱，该方法将 Hi-C 邻近连接与染色质免疫共沉淀相结合。"
+  }
+}

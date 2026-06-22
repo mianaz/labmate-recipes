@@ -1,0 +1,198 @@
+{
+  "id": "intestinal_organoid",
+  "name": "Intestinal Organoid Generation from Crypts (Mouse)",
+  "nameCn": "小鼠肠道类器官（迷你肠）培养方案",
+  "category": "protocol",
+  "tags": [
+    "organoid",
+    "intestine",
+    "crypt",
+    "Matrigel",
+    "ENR",
+    "EGF",
+    "Noggin",
+    "R-spondin",
+    "3D culture",
+    "stem cell",
+    "GI biology"
+  ],
+  "components": [
+    {
+      "name": "1. Sacrifice mouse and isolate 10–15 cm proximal small intestine; flush lumen with cold PBS",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Open intestine longitudinally; scrape mucus and villi with glass coverslip; wash 5× cold PBS until supernatant clear",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Incubate tissue in 2 mM EDTA/PBS on ice 30 min with gentle rocking; then shake vigorously 2–3 min to release crypts",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Filter through 70 μm cell strainer; inspect under microscope — crypts are compact oval structures (20–50 cells), distinct from elongated villi fragments",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Centrifuge 200×g, 3 min, 4°C; aspirate supernatant; wash with cold Advanced DMEM/F12; repeat 2–3× until supernatant clear",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Count crypts by hemocytometer; resuspend 500 crypts in 100 μL 50:50 cold growth-factor-reduced phenol-free Matrigel:Advanced DMEM/F12",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Pre-warm 24-well plate at 37°C; plate 50 μL/well dome; incubate 5 min 37°C to solidify Matrigel",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Overlay each well with 500 μL ENR medium (Advanced DMEM/F12 + 1× GlutaMAX + 10 mM HEPES + 100 U/mL Pen/Strep + 1× N2 + 1× B27 + 50 ng/mL murine EGF + 100 ng/mL Noggin + 500 ng/mL R-spondin1)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Change medium every 2 days; organoids form budding crypt-like domains within 3–5 days",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. Passage every 5–7 days: dissolve Matrigel on ice 30 min in cold Advanced DMEM/F12; pipette 100× to fragment organoids; centrifuge 400×g 5 min; re-embed at 1:3–1:5 split ratio",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Isolate intestine → scrape villi → EDTA dissociation → filter crypts → wash pellet → resuspend in Matrigel → dome plate → overlay ENR medium → feed every 2d → passage day 5–7",
+      "zh": "分离小肠 → 刮除绒毛 → EDTA解离 → 过滤隐窝 → 洗涤沉淀 → 重悬于Matrigel → 铺穹顶 → 加ENR培养基 → 每2天换液 → 第5–7天传代"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Tissue Isolation",
+      "zh": "组织分离",
+      "isHeader": true
+    },
+    {
+      "en": "1. Sacrifice mouse by CO2 asphyxiation or cervical dislocation per IACUC-approved protocol. Under sterile conditions, open abdomen, excise 10–15 cm of proximal small intestine (starting ~1 cm distal to pylorus). Flush lumen twice with 10 mL ice-cold PBS using a blunt-end gavage needle to remove intestinal contents.",
+      "zh": "1. 依据IACUC批准方案，通过CO2窒息或颈椎脱臼处死小鼠。在无菌条件下打开腹腔，切取幽门远端约1 cm处起始的10–15 cm近端小肠。用钝端灌胃针注入10 mL冰冷PBS冲洗肠腔两次，去除肠道内容物。"
+    },
+    {
+      "en": "2. Cut intestine open longitudinally with scissors. Lay flat on a cold surface and use a glass coverslip held at 45° to scrape off mucus and villi with 5–6 firm strokes. Transfer tissue to a 50 mL conical and wash 5× with 20 mL ice-cold PBS, inverting gently each time, until the supernatant is clear and no longer cloudy.",
+      "zh": "2. 用剪刀沿纵轴剪开肠管。平铺于冷台面上，以45°角持玻璃盖玻片刮除黏液和绒毛（5–6次有力刮擦）。将组织转入50 mL离心管，用20 mL冰冷PBS洗涤5次，每次轻柔翻转，直至上清液澄清不再浑浊。"
+    },
+    {
+      "en": "Crypt Isolation",
+      "zh": "隐窝分离",
+      "isHeader": true
+    },
+    {
+      "en": "3. Transfer tissue to 10 mL of 2 mM EDTA in PBS (pH 7.4, ice-cold) in a 15 mL conical tube. Rock gently on a rotating mixer at 4°C for 30 min to chelate calcium and disrupt crypt-villus junctions. After incubation, remove the tube and shake vigorously by hand for 2–3 min (approximately 100 shakes) to mechanically release crypts from the tissue.",
+      "zh": "3. 将组织转入15 mL离心管中的10 mL 2 mM EDTA/PBS（pH 7.4，冰冷）。在4°C旋转混合仪上轻柔摇动30 min，以螯合钙离子并破坏隐窝-绒毛连接。孵育后，取出离心管用手剧烈振荡2–3 min（约100次），机械性释放隐窝。"
+    },
+    {
+      "en": "4. Filter the crypt suspension through a 70 μm cell strainer into a new 50 mL conical tube. Inspect an aliquot (10 μL) under a brightfield microscope at 10× magnification. Crypts appear as compact, oval structures comprising 20–50 cells with a distinct lumen; villi fragments are elongated and finger-like. Discard fractions that contain predominantly villi.",
+      "zh": "4. 将隐窝悬液经70 μm细胞滤网过滤至新的50 mL离心管中。取10 μL在10倍亮场显微镜下检查。隐窝呈紧密卵圆形结构，含20–50个细胞，具有明显管腔；绒毛片段则呈细长指状。丢弃主要含绒毛的组分。"
+    },
+    {
+      "en": "5. Centrifuge crypt suspension at 200×g for 3 min at 4°C. Carefully aspirate and discard supernatant without disturbing the pellet. Resuspend pellet in 10 mL ice-cold Advanced DMEM/F12. Repeat centrifugation and wash 2–3 times until the supernatant is clear, indicating removal of single cells and debris.",
+      "zh": "5. 将隐窝悬液于4°C以200×g离心3 min。小心吸去上清液，勿扰动沉淀。将沉淀重悬于10 mL冰冷Advanced DMEM/F12。重复离心和洗涤2–3次，直至上清液澄清，表明单细胞和碎片已被去除。"
+    },
+    {
+      "en": "Matrigel Embedding and Plating",
+      "zh": "Matrigel包埋与铺板",
+      "isHeader": true
+    },
+    {
+      "en": "6. After final wash, resuspend crypt pellet in a small volume of cold Advanced DMEM/F12 and count crypts using a hemocytometer. Calculate volume needed for 500 crypts/100 μL. Resuspend crypts at the appropriate concentration in ice-cold 50:50 mixture of growth-factor-reduced, phenol-red-free Matrigel and Advanced DMEM/F12. Keep all materials on ice at all times to prevent premature gelation.",
+      "zh": "6. 最终洗涤后，将隐窝沉淀重悬于少量冰冷Advanced DMEM/F12中，并用血细胞计数板计数。计算500隐窝/100 μL所需体积。将隐窝以适当浓度重悬于冰冷的50:50无生长因子无酚红Matrigel与Advanced DMEM/F12混合液中。全程保持材料置于冰上，防止过早凝胶化。"
+    },
+    {
+      "en": "7. Pre-warm a 24-well tissue culture plate at 37°C for at least 10 min. Working quickly on ice, pipette 50 μL of the crypt–Matrigel suspension per well, forming a dome shape in the center. Immediately transfer the plate to a 37°C incubator and incubate for 5 min to allow Matrigel to solidify completely. Do not disturb the plate during solidification.",
+      "zh": "7. 将24孔培养板在37°C预热至少10 min。在冰上迅速移液，每孔加入50 μL隐窝–Matrigel悬液，在孔中央形成穹顶形。立即将培养板转至37°C培养箱孵育5 min，使Matrigel完全凝固。凝固过程中不要移动培养板。"
+    },
+    {
+      "en": "8. Once the Matrigel dome has solidified, gently overlay with 500 μL pre-warmed ENR medium per well. ENR composition: Advanced DMEM/F12 supplemented with 1× GlutaMAX, 10 mM HEPES (pH 7.4), 100 U/mL Penicillin/Streptomycin, 1× N2 supplement, 1× B27 supplement (without vitamin A), 50 ng/mL murine EGF (E), 100 ng/mL recombinant Noggin (N), and 500 ng/mL recombinant R-spondin1 (R) or 10% Rspo1-conditioned medium. Return plate to 37°C, 5% CO2.",
+      "zh": "8. Matrigel穹顶凝固后，每孔轻柔加入500 μL预温ENR培养基。ENR配方：Advanced DMEM/F12 + 1× GlutaMAX + 10 mM HEPES（pH 7.4）+ 100 U/mL 青/链霉素 + 1× N2补充剂 + 1× B27补充剂（不含维生素A）+ 50 ng/mL 鼠源EGF（E）+ 100 ng/mL 重组Noggin（N）+ 500 ng/mL 重组R-spondin1（R）或10%条件培养基。将培养板置于37°C、5% CO2培养箱。"
+    },
+    {
+      "en": "Maintenance and Passaging",
+      "zh": "维持培养与传代",
+      "isHeader": true
+    },
+    {
+      "en": "9. Change medium every 2 days by gently aspirating spent medium and adding 500 μL fresh ENR. Avoid disturbing the Matrigel dome. Organoids will begin forming visible buds with crypt-like domains (budding organoids) within 3–5 days. Organoid efficiency is typically 10–40% of plated crypts. Healthy organoids are translucent with a clear lumen and multiple crypt domains; dark, amorphous structures indicate dying organoids and should be noted.",
+      "zh": "9. 每2天换液一次：轻柔吸去废培养基，加入500 μL新鲜ENR。避免触碰Matrigel穹顶。类器官在3–5天内开始形成可见芽状结构（出芽类器官）和隐窝样区域。类器官形成效率通常为铺板隐窝的10–40%。健康类器官呈半透明状，具有清晰管腔和多个隐窝域；暗色无定形结构表示类器官正在死亡。"
+    },
+    {
+      "en": "10. Passage organoids every 5–7 days (or when organoids fill the dome and show signs of necrosis). To passage: add 1 mL ice-cold Advanced DMEM/F12 per well and pipette vigorously 100× to dissolve Matrigel and mechanically fragment organoids. Transfer to 15 mL conical, centrifuge at 400×g for 5 min at 4°C. Aspirate supernatant, resuspend pellet in fresh cold Matrigel mixture, and re-embed at a 1:3–1:5 split ratio. Do not over-fragment or passage ratio will drop.",
+      "zh": "10. 每5–7天传代一次（或当类器官充满穹顶并出现坏死迹象时）。传代方法：每孔加入1 mL冰冷Advanced DMEM/F12，用力吹打100次以溶解Matrigel并机械性打碎类器官。转移至15 mL离心管，于4°C以400×g离心5 min。吸去上清液，将沉淀重悬于新鲜冷Matrigel混合液，以1:3–1:5的比例传代。避免过度打碎，否则传代效率会下降。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Washed crypt pellet can be held on ice in cold Advanced DMEM/F12 for up to 30 min before embedding. Do not leave longer as crypt viability declines.",
+        "zh": "洗涤后的隐窝沉淀可在冰上冷Advanced DMEM/F12中保存至多30 min，再进行包埋。不宜保存更长时间，否则隐窝活力下降。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Solidified Matrigel dome (before medium overlay) can be held at 37°C for up to 10 min. Add ENR medium promptly and return to incubator; extended dry incubation will kill crypts.",
+        "zh": "凝固的Matrigel穹顶（加培养基之前）可在37°C保存至多10 min。须尽快加入ENR培养基并返回培养箱；长时间干燥孵育会导致隐窝死亡。"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "Established organoids (passage 1+) can be cryopreserved in CryoStor CS10 in liquid nitrogen for long-term storage. Thaw rapidly in 37°C water bath and re-embed immediately.",
+        "zh": "已建立的类器官（传代1次及以上）可在液氮中以CryoStor CS10冻存，用于长期保存。解冻时在37°C水浴中快速融化，立即重新包埋。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Use growth-factor-reduced, phenol-red-free Matrigel (e.g., Corning 356231) for optimal organoid formation. Standard Matrigel contains undefined growth factors that interfere with ENR signaling. | Keep Matrigel and all materials cold (4°C or on ice) at all times during resuspension and plating. Matrigel gels irreversibly at temperatures above 10°C. | R-spondin1 is critical for Wnt-mediated Lgr5+ stem cell maintenance. If recombinant R-spondin1 is cost-prohibitive, use 10–20% conditioned medium from Rspo1-secreting HEK293T cells (ATCC CRL-3276). | Organoid efficiency varies by mouse age (8–10 week adults recommended), genetic background (C57BL/6 most robust), and intestinal segment (jejunum yields most crypts). | For drug-screening applications, remove Matrigel coating (use BME type 2 or Basement Membrane Extract, 8%) and switch to monolayer or 2D organoid format on fibronectin-coated plates for uniform compound access.",
+    "zh": "使用无生长因子、无酚红的Matrigel（如Corning 356231）以获得最佳类器官形成效果。标准Matrigel含有未定义的生长因子，会干扰ENR信号。 | 重悬和铺板全程保持Matrigel及所有材料冷藏（4°C或置于冰上）。Matrigel在10°C以上会不可逆凝胶化。 | R-spondin1对Wnt介导的Lgr5+干细胞维持至关重要。若重组R-spondin1成本过高，可使用10–20%来自Rspo1分泌型HEK293T细胞（ATCC CRL-3276）的条件培养基替代。 | 类器官形成效率因小鼠年龄（推荐8–10周成年鼠）、遗传背景（C57BL/6最稳健）和肠段（空肠产隐窝最多）而异。 | 用于药物筛选时，可去除Matrigel包被（使用BME 2型或8%基底膜提取物），改用纤连蛋白包被板上的单层或2D类器官格式，以实现均匀的化合物接触。"
+  },
+  "crosslinks": [
+    "cell_passage",
+    "cell_freezing",
+    "tumor_dissociation"
+  ],
+  "ref": "Sato T et al. (2009). Single Lgr5 stem cells build crypt-villus structures in vitro without a mesenchymal niche. Nature. 459(7244):262–265. Also: Sato T & Clevers H (2013). Growing self-organizing mini-guts from a single intestinal stem cell: mechanism and applications. Science. 340(6137):1190–1194.",
+  "doi": "10.1038/nature07935",
+  "discipline": "cell biology",
+  "duration": "~3h (day 1 isolation and plating); 3–5 days until budding organoids; 5–7 days per passage cycle",
+  "materials": [
+    "Mouse (8–10 week, C57BL/6 recommended)",
+    "Cold PBS (Ca2+/Mg2+-free)",
+    "2 mM EDTA/PBS",
+    "Advanced DMEM/F12 (Gibco 12634010)",
+    "GlutaMAX (100×)",
+    "HEPES 1M solution",
+    "Penicillin/Streptomycin (100×)",
+    "N2 supplement (100×)",
+    "B27 supplement without vitamin A (50×)",
+    "Murine EGF recombinant (50 ng/mL final)",
+    "Recombinant Noggin (100 ng/mL final)",
+    "Recombinant R-spondin1 (500 ng/mL final) or Rspo1-conditioned medium",
+    "Growth-factor-reduced phenol-red-free Matrigel (Corning 356231)",
+    "24-well tissue culture plate",
+    "70 μm cell strainer",
+    "Hemocytometer",
+    "Glass coverslip",
+    "Brightfield microscope",
+    "CryoStor CS10 (for cryopreservation)",
+    "Liquid nitrogen dewar"
+  ],
+  "usage": "Generate self-organizing 3D intestinal organoids (mini-guts) from mouse crypts for studies of intestinal stem cell biology, epithelial homeostasis, host-pathogen interactions, cancer initiation modeling, and drug/toxicity screening"
+}

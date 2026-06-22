@@ -1,0 +1,200 @@
+{
+  "id": "snrnaseq_nucleus_isolation",
+  "name": "snRNA-seq Nucleus Isolation from Frozen Tissue",
+  "nameCn": "冻存组织单核RNA测序细胞核分离",
+  "category": "protocol",
+  "tags": [
+    "snRNA-seq",
+    "nucleus isolation",
+    "single-nucleus",
+    "10x Chromium",
+    "frozen tissue",
+    "brain",
+    "single-cell genomics",
+    "Dounce homogenization"
+  ],
+  "components": [
+    {
+      "name": "1. Section or chunk 20–30 mg frozen tissue on dry ice; keep frozen until lysis step",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Homogenize tissue in 500 μL homogenization buffer using Dounce homogenizer (8× loose + 8× tight pestle) on ice",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Filter homogenate sequentially through 40 μm then 30 μm cell strainer into 15 mL tube on ice",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Underlay with 900 μL sucrose cushion buffer; centrifuge 1000×g 10 min 4°C in swing-out rotor",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Aspirate and discard supernatant (myelin, debris); wash pellet with 500 μL resuspension buffer",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Centrifuge 300×g 3 min 4°C; aspirate supernatant; resuspend pellet in 100–500 μL resuspension buffer",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Count nuclei on hemocytometer with DAPI or trypan blue; assess morphology; target viability >80%",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Quality check under microscope: nuclei should be round, intact, minimal debris; filter through 20 μm strainer if clumps present",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Adjust concentration to 700–1200 nuclei/μL; proceed immediately to 10x Chromium loading or snap-freeze aliquots in LN2",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Cryosection frozen tissue on dry ice → Dounce homogenize in homogenization buffer → filter through 40 μm → 30 μm strainer → sucrose cushion centrifugation (1000×g 10 min) → discard supernatant → resuspend pellet → count and QC nuclei → load on 10x Chromium (700–1200 nuclei/μL)",
+      "zh": "干冰上切取冻存组织 → Dounce匀浆器在匀浆缓冲液中研磨 → 依次过40 μm和30 μm细胞过滤器 → 蔗糖垫离心（1000×g 10分钟） → 弃去上清 → 重悬沉淀 → 计数及质检细胞核 → 上样至10x Chromium（700–1200个核/μL）"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Tissue Preparation",
+      "zh": "组织准备",
+      "isHeader": true
+    },
+    {
+      "en": "1. Pre-chill all equipment (Dounce homogenizer, microcentrifuge tubes, pipettes) on ice or at 4°C. On dry ice, section or chunk frozen tissue to 20–30 mg. Do not allow tissue to thaw — RNA degradation begins within seconds of warming. Transfer frozen tissue chunks directly into the pre-chilled Dounce homogenizer containing 500 μL ice-cold homogenization buffer.",
+      "zh": "1. 提前将所有器材（Dounce匀浆器、离心管、移液枪）置于冰上或4°C预冷。在干冰上将冻存组织切取20–30 mg。切勿让组织解冻——组织升温数秒内RNA即开始降解。将冻存组织块直接转入盛有500 μL冰冷匀浆缓冲液的预冷Dounce匀浆器中。"
+    },
+    {
+      "en": "Homogenization Buffer Composition (per 10 mL): 0.25 M sucrose, 25 mM KCl, 5 mM MgCl2, 20 mM Tricine-KOH pH 7.8, 0.15 mM spermine, 0.5 mM spermidine, 1 mM DTT, 1× protease inhibitor cocktail, 1 U/μL RNase inhibitor (e.g., RNaseOUT or SUPERaseIN). Prepare fresh on ice; add DTT and RNase inhibitor last.",
+      "zh": "匀浆缓冲液配方（10 mL）：0.25 M蔗糖，25 mM KCl，5 mM MgCl2，20 mM Tricine-KOH（pH 7.8），0.15 mM精胺，0.5 mM亚精胺，1 mM DTT，1×蛋白酶抑制剂混合物，1 U/μL RNase抑制剂（如RNaseOUT或SUPERaseIN）。在冰上现配，DTT和RNase抑制剂最后加入。"
+    },
+    {
+      "en": "Dounce Homogenization",
+      "zh": "Dounce匀浆",
+      "isHeader": true
+    },
+    {
+      "en": "2. Homogenize tissue with the loose (A) pestle: 8 strokes with slow, even pressure, rotating ~90° between strokes. Keep homogenizer on ice. Then switch to the tight (B) pestle: 8 strokes with the same technique. Check homogenate under microscope — tissue should be fully disrupted with visible nuclei. If large tissue chunks remain, add 5 more strokes with the tight pestle. Avoid excessive force; over-homogenization shears nuclei and fragments chromatin.",
+      "zh": "2. 先用松型（A）研杵研磨：缓慢均匀施压，每次旋转约90°，共研磨8次，全程保持匀浆器在冰上。再换紧型（B）研杵，同样手法再研磨8次。镜下检查匀浆液——组织应完全破碎，可见细胞核。若仍有大块组织残留，用紧型研杵再研磨5次。避免过度用力，过度研磨会剪切细胞核并破坏染色质。"
+    },
+    {
+      "en": "Filtration",
+      "zh": "过滤",
+      "isHeader": true
+    },
+    {
+      "en": "3. Pre-wet a 40 μm cell strainer placed on a 15 mL conical tube with 500 μL cold resuspension buffer. Pour homogenate through the 40 μm strainer; gently press remaining material with a plunger. Without delay, filter the flow-through through a fresh 30 μm strainer on a new 15 mL tube. This removes undigested tissue and large debris while retaining nuclei. Keep tube on ice at all times.",
+      "zh": "3. 将40 μm细胞过滤器套在15 mL锥形管上，用500 μL冷重悬缓冲液预湿。将匀浆液倒入40 μm过滤器，用注射器推杆轻压残余物。立即将滤液再过一个新的30 μm过滤器，接入新的15 mL管中。此步骤去除未消化的组织块和大块碎片，同时保留细胞核。全程将管置于冰上。"
+    },
+    {
+      "en": "Sucrose Cushion Centrifugation",
+      "zh": "蔗糖垫离心",
+      "isHeader": true
+    },
+    {
+      "en": "4. Prepare sucrose cushion buffer: 1 M sucrose, 3 mM MgCl2, 10 mM Tris-HCl pH 7.8, 1× protease inhibitor. Using a long-tip Pasteur pipette or blunt needle, carefully underlay the filtered homogenate with 900 μL sucrose cushion buffer by slowly releasing cushion at the bottom of the tube. Centrifuge at 1000×g for 10 min at 4°C using a swing-out rotor. The sucrose cushion separates intact nuclei (pellet) from myelin, lipid droplets, and cytoplasmic debris (interface/supernatant).",
+      "zh": "4. 配制蔗糖垫缓冲液：1 M蔗糖，3 mM MgCl2，10 mM Tris-HCl（pH 7.8），1×蛋白酶抑制剂。用长头巴斯德吸管或钝针头将900 μL蔗糖垫缓冲液缓慢注入管底，形成垫层。使用水平转子于4°C以1000×g离心10分钟。蔗糖垫使完整细胞核（沉淀）与髓磷脂、脂滴及细胞质碎片（界面/上清）分离。"
+    },
+    {
+      "en": "Washing and Resuspension",
+      "zh": "洗涤与重悬",
+      "isHeader": true
+    },
+    {
+      "en": "5. After centrifugation, carefully aspirate and discard the supernatant and interface using a vacuum aspirator or P1000 pipette — do not disturb the pellet. The pellet will appear white/translucent (brain) or reddish-brown (liver/heart). Gently add 500 μL ice-cold resuspension buffer (1× PBS + 0.04% BSA + 1 U/μL RNase inhibitor) along the tube wall without resuspending the pellet. Centrifuge at 300×g for 3 min at 4°C.",
+      "zh": "5. 离心后，用真空吸管或P1000移液枪小心吸去并丢弃上清及界面层，切勿触碰沉淀。沉淀呈白色/半透明（脑组织）或红棕色（肝脏/心脏）。沿管壁缓慢加入500 μL冰冷重悬缓冲液（1× PBS + 0.04% BSA + 1 U/μL RNase抑制剂），不要吹散沉淀，于4°C以300×g离心3分钟。"
+    },
+    {
+      "en": "6. Aspirate the supernatant. Resuspend the nuclear pellet in 100–500 μL ice-cold resuspension buffer by gently pipetting up and down 5–10 times with a wide-bore P200 tip. Avoid vigorous pipetting — nuclei are fragile. Volume depends on expected yield: use 100 μL for low-yield tissues (small biopsy), 300–500 μL for high-yield tissues (brain, liver).",
+      "zh": "6. 吸去上清，用宽口P200枪头轻柔吹打5–10次，将核沉淀重悬于100–500 μL冰冷重悬缓冲液中。避免剧烈吹打——细胞核易碎。重悬体积根据预期产量调整：低产量组织（小活检）用100 μL，高产量组织（脑、肝）用300–500 μL。"
+    },
+    {
+      "en": "Quality Control",
+      "zh": "质量控制",
+      "isHeader": true
+    },
+    {
+      "en": "7. Mix 10 μL nucleus suspension with 10 μL DAPI staining solution (1 μg/mL in PBS). Load 10 μL onto a hemocytometer. Count DAPI-positive nuclei in 4 corner squares + center square. Calculate concentration: count × dilution factor × 10,000 = nuclei/mL. Target concentration for 10x loading: 700–1200 nuclei/μL. Assess viability: intact nuclei appear round and brightly DAPI-stained; damaged nuclei appear irregular, fragmented, or dimly stained. Target >80% intact nuclei.",
+      "zh": "7. 取10 μL核悬液与10 μL DAPI染液（1 μg/mL PBS）混合，取10 μL上样至血球计数板。计数4个角格及中央格中DAPI阳性细胞核数。计算浓度：计数×稀释倍数×10,000 = 个/mL。10x上样目标浓度：700–1200个核/μL。评估完整性：完整细胞核形态圆润、DAPI染色亮；受损细胞核形态不规则、碎裂或染色暗淡。目标：完整细胞核>80%。"
+    },
+    {
+      "en": "8. Examine 10 μL of suspension under fluorescence microscope (DAPI channel). Nuclei should be uniformly round to slightly oval, 5–10 μm diameter, with no cytoplasmic tails or membranous debris attached. If clumps are visible, pass the suspension through a 20 μm cell strainer. If cytoplasmic contamination is high (visible under phase-contrast), consider an additional low-speed wash at 200×g 3 min.",
+      "zh": "8. 在荧光显微镜下（DAPI通道）观察10 μL悬液。细胞核应均匀呈圆形至轻微椭圆形，直径5–10 μm，无细胞质尾巴或膜碎片附着。若可见聚集块，将悬液过20 μm细胞过滤器。若细胞质污染严重（相差显微镜下可见），可考虑额外在200×g 3分钟低速离心洗涤一次。"
+    },
+    {
+      "en": "Loading and Storage",
+      "zh": "上样与保存",
+      "isHeader": true
+    },
+    {
+      "en": "9. Adjust nucleus concentration to 700–1200 nuclei/μL with resuspension buffer. Proceed immediately to 10x Chromium Next GEM Single Cell 3' kit v3.1 loading following manufacturer's protocol for nuclei (use nuclear-optimized parameters). Alternatively, snap-freeze aliquots in liquid nitrogen and store at -80°C for up to 1 month (note: freeze-thaw reduces nucleus integrity — fresh is always preferred).",
+      "zh": "9. 用重悬缓冲液将细胞核浓度调整至700–1200个/μL。立即按照说明书针对细胞核的参数（使用核优化参数）上样至10x Chromium Next GEM单细胞3'试剂盒v3.1。或者，将分装液在液氮中速冻后保存于-80°C（最多1个月），但冻融会降低细胞核完整性——新鲜制备始终是首选。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "After filtration (step 3), the filtered homogenate can be held on ice for up to 30 min before sucrose cushion centrifugation. Do not delay longer — RNA quality degrades.",
+        "zh": "过滤完成后（第3步），过滤后的匀浆液可在冰上保存最多30分钟，再进行蔗糖垫离心。不可拖延更长时间——RNA质量会下降。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "After resuspension (step 6), nuclei are stable on ice for 30–60 min. For longer storage, snap-freeze aliquots in liquid nitrogen and store at -80°C (up to 1 month). Fresh nuclei always give superior results.",
+        "zh": "重悬后（第6步），细胞核可在冰上稳定保存30–60分钟。如需更长时间保存，可将分装液在液氮中速冻，保存于-80°C（最多1个月）。新鲜制备的细胞核始终能获得更优结果。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Speed and cold are critical. Work on ice at all times; complete the entire protocol within 2–3h of tissue dissection. RNA degradation is the primary failure mode. | RNase contamination is a major risk. Treat all equipment with RNaseZap. Use RNase-free certified tubes and tips. Add RNase inhibitor (1 U/μL) to all buffers. | Tissue type matters: brain (especially white matter) has high myelin content — the sucrose cushion step is essential. For liver, glycogen and lipid content require optimization of homogenization strokes. For heart, pre-mince thoroughly before Dounce homogenization. | Multiplet rate on 10x scales with loading density and cell size. Nuclei are ~5–10 μm — use nuclear-optimized doublet detection settings in Cell Ranger (--include-introns flag required for snRNA-seq). | Expected yield: ~500,000–2,000,000 nuclei from 25 mg brain cortex. Yield varies widely by tissue type, storage duration, and freeze-thaw history. | For FFPE tissue, this protocol does not apply — use specialized FFPE nucleus isolation kits (e.g., 10x Genomics FFPE protocol).",
+    "zh": "速度和低温至关重要。全程在冰上操作，从组织取样到完成全流程须在2–3小时内。RNA降解是该实验最主要的失败原因。 | RNase污染是主要风险。所有器材须用RNaseZap处理。使用经认证的无RNase离心管和枪头。所有缓冲液中加入RNase抑制剂（1 U/μL）。 | 组织类型影响操作：脑组织（尤其是白质）髓磷脂含量高，蔗糖垫步骤不可省略。肝脏糖原和脂质含量高，需优化研磨次数。心脏组织须在Dounce研磨前充分预切碎。 | 10x平台的双联体率与上样密度和细胞大小有关。细胞核直径约5–10 μm——在Cell Ranger中使用核优化的双联体检测参数（snRNA-seq需加 --include-introns 标志）。 | 预期产量：25 mg大脑皮层可获约50–200万个细胞核。产量因组织类型、保存时间和冻融历史差异较大。 | 甲醛固定石蜡包埋（FFPE）组织不适用本流程，须使用专用FFPE细胞核分离试剂盒（如10x Genomics FFPE流程）。"
+  },
+  "crosslinks": [
+    "cite_seq_10x",
+    "tumor_dissociation",
+    "pbmc_isolation"
+  ],
+  "ref": "Habib N et al. (2017). Massively parallel single-nucleus RNA-seq with DroNc-seq. Nat Methods 14(10):955–958. 10x Genomics Nucleus Isolation for Single Cell Multiome ATAC + Gene Expression Sequencing CG000365.",
+  "doi": "10.1038/nmeth.4407",
+  "discipline": "single-cell genomics / neuroscience",
+  "duration": "~2–3h",
+  "materials": [
+    "Frozen tissue (20–30 mg, stored at -80°C or in LN2)",
+    "Dounce tissue homogenizer (2 mL, with loose A and tight B pestles)",
+    "Homogenization buffer (0.25 M sucrose, 25 mM KCl, 5 mM MgCl2, 20 mM Tricine-KOH pH 7.8, 0.15 mM spermine, 0.5 mM spermidine, 1 mM DTT, 1× protease inhibitor, 1 U/μL RNase inhibitor)",
+    "Sucrose cushion buffer (1 M sucrose, 3 mM MgCl2, 10 mM Tris-HCl pH 7.8, 1× protease inhibitor)",
+    "Resuspension buffer (1× PBS + 0.04% BSA + 1 U/μL RNase inhibitor)",
+    "40 μm cell strainers",
+    "30 μm cell strainers",
+    "20 μm cell strainers",
+    "15 mL low-binding conical tubes",
+    "1.5 mL RNase-free microcentrifuge tubes",
+    "DAPI staining solution (1 μg/mL)",
+    "Hemocytometer",
+    "Trypan blue (optional alternative to DAPI)",
+    "RNase inhibitor (RNaseOUT or SUPERaseIN, 1 U/μL final)",
+    "Protease inhibitor cocktail (EDTA-free)",
+    "RNaseZap decontamination solution",
+    "Dry ice",
+    "Refrigerated centrifuge with swing-out rotor (4°C)",
+    "10x Chromium Next GEM Single Cell 3' kit v3.1",
+    "Fluorescence microscope (DAPI channel)",
+    "Phase-contrast microscope",
+    "Liquid nitrogen (for snap-freezing)"
+  ],
+  "usage": "Isolate high-quality single nuclei from frozen tissue (brain, heart, liver, solid tumor) for snRNA-seq on 10x Chromium or similar platforms. Critical for samples where live single-cell dissociation is not feasible."
+}

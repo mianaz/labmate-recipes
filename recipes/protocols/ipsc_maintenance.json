@@ -1,0 +1,182 @@
+{
+  "id": "ipsc_maintenance",
+  "name": "iPSC Maintenance and Passaging (Feeder-Free)",
+  "nameCn": "诱导多能干细胞（iPSC）无饲养层维持与传代",
+  "category": "protocol",
+  "tags": [
+    "iPSC",
+    "stem cell",
+    "passaging",
+    "feeder-free",
+    "Matrigel",
+    "E8",
+    "mTeSR1",
+    "pluripotency"
+  ],
+  "components": [
+    {
+      "name": "1. Coat plates with Matrigel (1:60 in cold DMEM/F12, 0.5 mL/well, 37°C 1h or 4°C overnight)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Daily medium change: aspirate spent medium; add 2 mL/well pre-warmed E8 or mTeSR1; return to 37°C 5% CO2",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Monitor colonies daily for spontaneous differentiation; remove differentiated areas with pipette tip",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. At 70–80% confluence (every 3–5 days): aspirate medium; wash once with 1× PBS (2 mL/well)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Add 1 mL/well ReLeSR or 0.5 mM EDTA in PBS; incubate 37°C 5–7 min (ReLeSR) or RT 5 min (EDTA)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Aspirate enzyme; add 2 mL fresh E8/mTeSR1; dislodge colonies into clumps by gentle scraping — do NOT single-cell dissociate",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Transfer colony clumps to new Matrigel-coated plates at 1:3–1:6 split ratio",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Incubate at 37°C 5% CO2; feed daily; colonies re-establish in 24–48h",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. (Optional) For freezing: dissociate with Accutase (37°C 5 min); count; pellet at 300×g 5 min; resuspend in CryoStor CS10",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. Freeze in Mr. Frosty at -80°C overnight; transfer to liquid nitrogen for long-term storage",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Coat plates with Matrigel → daily E8/mTeSR1 medium change → monitor for differentiation → passage at 70–80% confluence with EDTA/ReLeSR → split 1:3–1:6 as colony clumps → recover 24–48h",
+      "zh": "Matrigel包被培养板 → 每日更换E8/mTeSR1培养基 → 监测分化 → 70–80%融合时用EDTA/ReLeSR传代 → 1:3–1:6比例以克隆团块接种 → 24–48h恢复"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Plate Coating",
+      "zh": "培养板包被",
+      "isHeader": true
+    },
+    {
+      "en": "1. Thaw Matrigel aliquot on ice (4°C overnight or on ice ~30 min). Dilute 1:60 in cold DMEM/F12 (keep everything ice-cold to prevent gelation). Add 0.5 mL per well of a 6-well plate. Rock gently to coat evenly.",
+      "zh": "1. 将Matrigel分装管在4°C或冰上解冻（约30分钟）。用冷DMEM/F12按1:60稀释（全程保持低温，防止提前胶化）。每孔（6孔板）加入0.5 mL，轻轻摇动使其均匀铺展。"
+    },
+    {
+      "en": "2. Incubate coated plates at 37°C for 1h, or seal with parafilm and store at 4°C overnight. Aspirate Matrigel just before seeding cells — do not let wells dry out.",
+      "zh": "2. 包被后的培养板在37°C孵育1小时，或用封口膜封好后4°C过夜保存。铺细胞前立即抽去Matrigel液，不可让孔内干燥。"
+    },
+    {
+      "en": "Daily Maintenance",
+      "zh": "日常维护",
+      "isHeader": true
+    },
+    {
+      "en": "3. Daily medium change: aspirate spent E8 or mTeSR1 medium. Add 2 mL/well of pre-warmed (37°C) fresh medium. Return plates to 37°C, 5% CO2 incubator.",
+      "zh": "3. 每日换液：吸去用过的E8或mTeSR1培养基，加入2 mL/孔预热至37°C的新鲜培养基，将培养板放回37°C、5% CO2培养箱。"
+    },
+    {
+      "en": "4. Monitor colonies daily under phase-contrast microscope. Healthy iPSC colonies are compact, dome-shaped with smooth, well-defined borders. Differentiated cells appear flat with dark, irregular borders. Remove differentiated areas immediately by gentle scraping with a pipette tip under sterile conditions.",
+      "zh": "4. 每日在相差显微镜下观察克隆形态。健康iPSC克隆致密、呈穹顶状、边界清晰光滑。分化细胞呈扁平状、边界不规则且颜色较深。在无菌条件下用移液枪头轻刮及时去除分化区域。"
+    },
+    {
+      "en": "Passaging",
+      "zh": "传代操作",
+      "isHeader": true
+    },
+    {
+      "en": "5. When colonies reach 70–80% confluence (typically every 3–5 days), prepare for passaging. Aspirate medium and wash wells once with 2 mL room-temperature 1× PBS per well. Aspirate PBS completely.",
+      "zh": "5. 当克隆达到70–80%融合度（通常每3–5天），准备传代。吸去培养基，每孔用2 mL室温1× PBS洗涤一次，完全吸去PBS。"
+    },
+    {
+      "en": "6. Add 1 mL/well ReLeSR (preferred for clump passaging) or 0.5 mM EDTA in PBS. For ReLeSR: incubate at 37°C for 5–7 min until colony edges begin to round up and detach. For EDTA: incubate at room temperature for 5 min. Watch carefully — over-digestion causes single-cell dissociation which reduces survival.",
+      "zh": "6. 每孔加入1 mL ReLeSR（推荐用于克隆团块传代）或0.5 mM EDTA/PBS。ReLeSR处理：37°C孵育5–7分钟，直至克隆边缘开始回缩脱离。EDTA处理：室温孵育5分钟。须密切观察——处理过度会导致单细胞解离，降低存活率。"
+    },
+    {
+      "en": "7. Aspirate ReLeSR/EDTA solution completely. Add 2 mL fresh E8 or mTeSR1 medium per well. Dislodge colonies by gently pipetting across the surface or scraping with a cell scraper. Aim to generate colony clumps of 50–200 cells — avoid single-cell dissociation.",
+      "zh": "7. 完全吸去ReLeSR/EDTA溶液。每孔加入2 mL新鲜E8或mTeSR1培养基。用移液枪轻柔吹打或细胞刮刀将克隆刮下，目标是产生50–200个细胞的克隆团块——避免单细胞解离。"
+    },
+    {
+      "en": "8. Transfer colony suspension to fresh Matrigel-coated plates at a 1:3 to 1:6 split ratio depending on confluence and downstream needs. Distribute evenly across wells. Place at 37°C, 5% CO2.",
+      "zh": "8. 根据融合度和下游需求，将克隆悬液按1:3至1:6比例转入新的Matrigel包被培养板，均匀分配至各孔。放入37°C、5% CO2培养箱。"
+    },
+    {
+      "en": "Recovery and Quality",
+      "zh": "恢复与质量控制",
+      "isHeader": true
+    },
+    {
+      "en": "9. Feed daily with pre-warmed medium. Colonies re-attach and re-establish compact morphology within 24–48h. Confirm pluripotent morphology before the next passage. Do not allow cultures to overgrow (>90% confluence), as this promotes spontaneous differentiation.",
+      "zh": "9. 每日用预热培养基换液。克隆在24–48小时内重新贴壁并恢复致密形态。下次传代前确认多能性形态。不可使培养物过度生长（>90%融合），否则易发生自发分化。"
+    },
+    {
+      "en": "Cryopreservation (Optional)",
+      "zh": "冻存（可选）",
+      "isHeader": true
+    },
+    {
+      "en": "10. For cryopreservation: dissociate with Accutase (1 mL/well, 37°C 5 min) to single cells. Quench with equal volume E8; pellet at 300×g 5 min 4°C. Count viable cells. Resuspend at 1–3 × 10^6 cells/mL in CryoStor CS10. Aliquot into cryovials (1 mL/vial). Place in Mr. Frosty container with isopropanol at -80°C overnight. Transfer to liquid nitrogen vapor phase for long-term storage.",
+      "zh": "10. 冻存操作：加入Accutase（1 mL/孔，37°C 5分钟）消化至单细胞，加等量E8终止，300×g 4°C离心5分钟收集细胞。计数活细胞，用CryoStor CS10重悬至1–3×10^6个细胞/mL，分装至冻存管（1 mL/管）。放入含异丙醇的程序降温盒，-80°C过夜，次日转至液氮气相长期保存。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "iPSC cultures can be maintained at 37°C 5% CO2 between passages with daily medium changes. No safe stop exists mid-passage once EDTA or ReLeSR has been added — complete the passaging procedure without interruption.",
+        "zh": "iPSC培养物可在37°C 5% CO2条件下通过每日换液维持。一旦加入EDTA或ReLeSR开始传代，中途无安全停顿点，须一次性完成传代操作。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Always pre-warm media to 37°C before adding to cells. Cold medium induces thermal shock and increases spontaneous differentiation. | Never use trypsin for routine iPSC passaging — it causes single-cell dissociation, massive apoptosis (anoikis), and requires ROCK inhibitor (Y-27632, 10 μM) supplementation for 24h post-passage. Reserve trypsin/Accutase for counting or freezing only. | Matrigel lot-to-lot variability can affect growth. Perform a growth factor reduced (GFR) Matrigel lot qualification before switching batches. | iPSC lines differ in optimal passage ratio and timing. Establish line-specific passage schedules during initial expansion. | Regularly confirm pluripotency by OCT4/NANOG/SOX2 immunostaining and karyotype every 10–15 passages.",
+    "zh": "培养基须预热至37°C再加入细胞。冷培养基会造成温度冲击并促进自发分化。 | 日常iPSC传代切勿使用胰酶——胰酶会导致单细胞解离和大量凋亡（失巢凋亡），需在传代后24小时补充ROCK抑制剂（Y-27632，10 μM）。胰酶/Accutase仅用于细胞计数或冻存。 | 不同批次Matrigel性能存在差异，可能影响细胞生长。更换批次前须进行生长因子减少型（GFR）Matrigel批次质检。 | 不同iPSC系的最佳传代比例和时机各异，在初步扩增阶段须建立针对各细胞系的传代时间表。 | 每10–15次传代须通过OCT4/NANOG/SOX2免疫染色及核型分析定期确认多能性。"
+  },
+  "crosslinks": [
+    "ngn2_neuron_induction",
+    "cell_freezing",
+    "cell_thawing",
+    "cell_passage"
+  ],
+  "ref": "Chen G et al. (2011). Chemically defined conditions for human iPSC derivation and culture. Nat Methods 8(5):424–429. Stemcell Technologies mTeSR1 Technical Manual.",
+  "doi": "10.1038/nmeth.1593",
+  "discipline": "stem cell biology",
+  "duration": "~30 min per passage; daily feeding (~5 min/day)",
+  "materials": [
+    "Matrigel (growth factor reduced, hESC-qualified)",
+    "DMEM/F12",
+    "E8 medium or mTeSR1 medium",
+    "1× PBS (calcium- and magnesium-free)",
+    "ReLeSR or 0.5 mM EDTA in PBS",
+    "Accutase (for freezing only)",
+    "CryoStor CS10",
+    "Mr. Frosty isopropanol freezing container",
+    "6-well tissue culture plates (TC-treated)",
+    "Cryovials",
+    "Cell scraper or P1000 pipette tips",
+    "37°C 5% CO2 humidified incubator",
+    "Biosafety cabinet (BSL-2)",
+    "Phase-contrast microscope",
+    "Liquid nitrogen storage dewar"
+  ],
+  "usage": "Feeder-free maintenance and passaging of human iPSCs on Matrigel or vitronectin-coated plates. Standard upstream step before neuronal, cardiac, hepatic, or other differentiation protocols."
+}

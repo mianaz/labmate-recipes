@@ -1,0 +1,203 @@
+{
+  "id": "rip_protocol",
+  "name": "RNA Immunoprecipitation (RIP)",
+  "nameCn": "RNA 免疫沉淀",
+  "category": "protocol",
+  "tags": [
+    "RIP",
+    "RNA-binding protein",
+    "RBP",
+    "immunoprecipitation",
+    "RNA-protein interaction",
+    "RIP-seq",
+    "RIP-qPCR"
+  ],
+  "components": [
+    {
+      "name": "1. Harvest 2×10^7 cells in log phase; wash 2× with ice-cold PBS",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Lyse in polysome lysis buffer (100 mM KCl, 5 mM MgCl2, 10 mM HEPES pH 7.0, 0.5% NP-40, 1 mM DTT, 100 U/mL RNase inhibitor, 1× protease inhibitor cocktail); 4°C 10 min with rotation",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Centrifuge lysate 13,000 × g, 4°C, 10 min; collect supernatant",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Preclear lysate with 30 μL Protein A/G beads (blocked with BSA + yeast tRNA) at 4°C 1h rotating; centrifuge and collect precleared supernatant",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Save 5% of precleared lysate as input RNA control; freeze at −80°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Add 5–10 μg anti-RBP antibody (or IgG isotype control) to remaining lysate; rotate overnight at 4°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Add 30 μL pre-washed Protein A/G beads; rotate 2h at 4°C to capture immune complexes",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. Wash beads 5× with NT2 buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 1 mM MgCl2, 0.05% NP-40); spin 1,000 × g 1 min each wash",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Elute: resuspend beads in 100 μL NT2 + Proteinase K (100 μg/mL) + 0.1% SDS; incubate 55°C 30 min with shaking at 1,000 rpm",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. RNA extraction: add TRIzol to eluate (or column-based kit); include DNase I treatment (2 U, 37°C 20 min) to remove genomic DNA",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "11. Precipitate RNA: isopropanol + glycogen carrier; wash with 75% ethanol; resuspend in RNase-free H2O",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "12. Analyze co-precipitated RNA by qRT-PCR (RIP-qPCR) or prepare library for RNA-seq (RIP-seq)",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Cell harvest → lysis (polysome buffer, 4°C 10 min) → centrifuge → preclear (Protein A/G beads, 1h) → save 5% input → antibody incubation (overnight 4°C) → bead capture (2h 4°C) → 5× NT2 wash → Proteinase K elution (55°C 30 min) → RNA extraction + DNase → qRT-PCR or RNA-seq",
+      "zh": "细胞收获 → 裂解（多核糖体裂解缓冲液，4°C 10 分钟）→ 离心 → 预清除（Protein A/G 磁珠，1 小时）→ 保留 5% 输入对照 → 抗体孵育（4°C 过夜）→ 磁珠捕获（4°C 2 小时）→ NT2 缓冲液洗涤 5 次 → Proteinase K 洗脱（55°C 30 分钟）→ RNA 提取 + DNase 处理 → qRT-PCR 或 RNA-seq"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Cell Lysis and Preclearing",
+      "zh": "第 1 天：细胞裂解与预清除",
+      "isHeader": true
+    },
+    {
+      "en": "1. Grow cells to log phase. Harvest 2×10^7 cells by scraping or trypsinization. Wash twice with ice-cold PBS (5 mL each). Pellet at 300 × g, 4°C, 5 min. Aspirate PBS completely.",
+      "zh": "1. 将细胞培养至对数生长期。收获 2×10^7 个细胞（刮取法或胰酶消化法）。用冰冷 PBS（每次 5 mL）洗涤两次，300 × g、4°C 离心 5 分钟。彻底吸去 PBS。"
+    },
+    {
+      "en": "2. Resuspend pellet in 1 mL polysome lysis buffer (100 mM KCl, 5 mM MgCl2, 10 mM HEPES pH 7.0, 0.5% NP-40, 1 mM DTT; freshly add 100 U/mL RNase inhibitor and 1× protease inhibitor cocktail). Incubate on ice with rotation, 10 min. Vortex briefly.",
+      "zh": "2. 将细胞沉淀重悬于 1 mL 多核糖体裂解缓冲液中（100 mM KCl、5 mM MgCl2、10 mM HEPES pH 7.0、0.5% NP-40、1 mM DTT；临用前加入 100 U/mL RNase 抑制剂和 1× 蛋白酶抑制剂混合物）。冰上旋转孵育 10 分钟，短暂涡旋。"
+    },
+    {
+      "en": "3. Centrifuge lysate at 13,000 × g, 4°C, 10 min. Carefully transfer supernatant to a new tube, avoiding the pellet. Keep on ice at all times.",
+      "zh": "3. 将裂解液于 13,000 × g、4°C 离心 10 分钟。小心将上清液转移至新管，避免触碰沉淀。全程置于冰上。"
+    },
+    {
+      "en": "4. Block 30 μL Protein A/G beads with 0.5 mg/mL BSA + 0.2 mg/mL yeast tRNA in NT2 buffer (1h, 4°C rotating). Wash beads 3× with NT2. Add washed beads to lysate; rotate 1h at 4°C to preclear. Centrifuge 1,000 × g, 1 min; transfer precleared supernatant to fresh tube.",
+      "zh": "4. 用含 0.5 mg/mL BSA 和 0.2 mg/mL 酵母 tRNA 的 NT2 缓冲液封闭 30 μL Protein A/G 磁珠（4°C 旋转 1 小时）。用 NT2 洗涤磁珠 3 次。将洗涤后的磁珠加入裂解液，4°C 旋转 1 小时进行预清除。1,000 × g 离心 1 分钟，将预清除后的上清液转入新管。"
+    },
+    {
+      "en": "5. Remove 50 μL (5%) as input control. Add equal volume TRIzol and freeze at −80°C until RNA extraction.",
+      "zh": "5. 取出 50 μL（5%）作为输入对照，加入等体积 TRIzol，−80°C 保存至提取 RNA 时使用。"
+    },
+    {
+      "en": "Day 1 (continued): Antibody Incubation",
+      "zh": "第 1 天（续）：抗体孵育",
+      "isHeader": true
+    },
+    {
+      "en": "6. Add 5–10 μg target anti-RBP antibody (and 5–10 μg IgG isotype control to the parallel negative-control tube) to precleared lysate. Rotate overnight at 4°C (12–16h). Keep RNase inhibitor present (add additional 40 U if needed).",
+      "zh": "6. 将 5–10 μg 目标抗 RBP 抗体加入预清除后的裂解液（同时在阴性对照管中加入等量 IgG 同型对照抗体）。4°C 旋转孵育过夜（12–16 小时）。保持 RNase 抑制剂存在（如需可补加 40 U）。"
+    },
+    {
+      "en": "Day 2: Bead Capture, Wash, and Elution",
+      "zh": "第 2 天：磁珠捕获、洗涤与洗脱",
+      "isHeader": true
+    },
+    {
+      "en": "7. Add 30 μL fresh blocked Protein A/G beads to each antibody-lysate mixture. Rotate 2h at 4°C. Centrifuge 1,000 × g, 1 min; discard supernatant. Beads now contain the RBP–RNA complex.",
+      "zh": "7. 向每管抗体-裂解液混合物中加入 30 μL 新鲜封闭的 Protein A/G 磁珠，4°C 旋转 2 小时。1,000 × g 离心 1 分钟，弃去上清。磁珠上现已富集 RBP–RNA 复合物。"
+    },
+    {
+      "en": "8. Wash beads 5× with 1 mL ice-cold NT2 buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 1 mM MgCl2, 0.05% NP-40). Spin 1,000 × g, 1 min per wash; aspirate supernatant completely between washes.",
+      "zh": "8. 用 1 mL 冰冷 NT2 缓冲液（50 mM Tris-HCl pH 7.4、150 mM NaCl、1 mM MgCl2、0.05% NP-40）洗涤磁珠 5 次，每次 1,000 × g 离心 1 分钟，两次洗涤之间彻底吸去上清。"
+    },
+    {
+      "en": "9. Elute RNA–protein complexes: resuspend beads in 100 μL NT2 supplemented with 100 μg/mL Proteinase K and 0.1% SDS. Incubate 55°C, 30 min with vigorous shaking (1,000 rpm). Spin 10,000 × g, 2 min; transfer supernatant.",
+      "zh": "9. 洗脱 RNA–蛋白质复合物：将磁珠重悬于含 100 μg/mL Proteinase K 和 0.1% SDS 的 100 μL NT2 缓冲液中，55°C 剧烈振荡（1,000 rpm）孵育 30 分钟。10,000 × g 离心 2 分钟，转移上清。"
+    },
+    {
+      "en": "Day 2 (continued): RNA Extraction and Analysis",
+      "zh": "第 2 天（续）：RNA 提取与分析",
+      "isHeader": true
+    },
+    {
+      "en": "10. Add TRIzol LS (3 volumes) to eluate. Vortex 15 s. Add chloroform (0.2× TRIzol volume); vortex 15 s; incubate RT 3 min. Centrifuge 12,000 × g, 15 min, 4°C. Transfer aqueous phase. Alternatively, use a spin-column RNA cleanup kit (e.g., Qiagen RNeasy MinElute).",
+      "zh": "10. 向洗脱液中加入 3 体积 TRIzol LS，涡旋 15 秒。加入 0.2× TRIzol 体积的氯仿，涡旋 15 秒，室温静置 3 分钟。12,000 × g、4°C 离心 15 分钟，转移水相。也可使用离心柱 RNA 纯化试剂盒（如 Qiagen RNeasy MinElute）。"
+    },
+    {
+      "en": "11. Precipitate RNA: add 1 μL glycogen (20 mg/mL), 1/10 volume 3 M sodium acetate pH 5.2, and 2.5 volumes 100% ethanol; −80°C ≥30 min. Centrifuge 15,000 × g, 4°C, 20 min. Wash pellet with 500 μL 75% ethanol; air-dry; resuspend in 15 μL RNase-free H2O.",
+      "zh": "11. 沉淀 RNA：加入 1 μL 糖原（20 mg/mL）、1/10 体积 3 M 醋酸钠（pH 5.2）和 2.5 体积无水乙醇；−80°C 静置 ≥30 分钟。15,000 × g、4°C 离心 20 分钟，用 500 μL 75% 乙醇洗涤沉淀，风干后重悬于 15 μL 无 RNase 的水中。"
+    },
+    {
+      "en": "12. DNase treatment: add 2 U DNase I + 1× DNase buffer; incubate 37°C, 20 min. Heat-inactivate 75°C, 10 min. Quantify RNA (Qubit RNA HS assay). Proceed to qRT-PCR for validation or rRNA-depleted/poly(A)-selected RNA-seq library preparation for genome-wide profiling.",
+      "zh": "12. DNase 处理：加入 2 U DNase I 和 1× DNase 缓冲液，37°C 孵育 20 分钟，75°C 灭活 10 分钟。用 Qubit RNA HS 检测定量 RNA。继续进行 qRT-PCR 验证，或制备去除 rRNA/富集 poly(A) 的 RNA-seq 文库以进行全基因组分析。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "After overnight antibody incubation, before adding beads: samples can be held at 4°C for up to 2h if bead capture cannot proceed immediately. Do not freeze at this stage.",
+        "zh": "完成过夜抗体孵育、加入磁珠之前：如不能立即进行磁珠捕获，样品可在 4°C 保存最多 2 小时。此阶段不可冷冻。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "After 5× NT2 washes, beads can be held in 500 μL ice-cold NT2 buffer at 4°C for up to 2h before proceeding to Proteinase K elution.",
+        "zh": "完成 5 次 NT2 缓冲液洗涤后，磁珠可重悬于 500 μL 冰冷 NT2 缓冲液中，在 4°C 保存最多 2 小时，再进行 Proteinase K 洗脱。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Always include a non-specific IgG isotype control immunoprecipitation in parallel to distinguish specific from background RNA enrichment. | Use RNase-free plasticware and filter tips throughout. Work quickly on ice to minimize RNA degradation. | Antibody quality is the most critical variable. Validate the antibody by western blot before RIP. The same lot of antibody should be used for all biological replicates. | For RIP-seq, input and IP libraries should be sequenced to ≥20M reads. Enrichment is typically reported as log2(IP/input) per gene after normalization. | Cell number can be adjusted: 1×10^7 cells is the minimum for low-abundance RBPs; scale up to 5×10^7 for weak interactions. Maintain the same buffer volumes proportionally. | For UV-CLIP or eCLIP applications that involve UV crosslinking, irradiate cells at 254 nm (0.15 J/cm2) on ice before lysis, and do NOT use formaldehyde fixation.",
+    "zh": "实验中始终应设置非特异性 IgG 同型对照免疫沉淀组，以区分特异性富集与背景信号。 | 全程使用无 RNase 的耗材和滤芯吸头。操作应迅速，全程置于冰上，以减少 RNA 降解。 | 抗体质量是最关键的变量。使用前应通过 Western blot 验证抗体性能。所有生物学重复实验应使用同一批次抗体。 | 用于 RIP-seq 时，输入对照和 IP 文库的测序深度应各 ≥2000 万 reads。富集程度通常在标准化后以 log2(IP/input) 每基因的方式报告。 | 细胞数量可以调整：对于低丰度 RBP，最少需要 1×10^7 个细胞；弱相互作用可扩展至 5×10^7 个细胞。相应等比例调整缓冲液用量。 | 对于需要 UV 交联的 UV-CLIP 或 eCLIP 实验，应在裂解前在冰上用 254 nm 紫外线（0.15 J/cm²）照射细胞，且不得使用甲醛固定。"
+  },
+  "crosslinks": [
+    "chip_protocol",
+    "coip_protocol",
+    "trizol_extraction",
+    "rna_column_extraction"
+  ],
+  "ref": "Keene JD, Komisarow JM, Friedersdorf MB. (2006). RIP-Chip: the isolation and identification of mRNAs, microRNAs and protein components of ribonucleoprotein complexes from cell extracts. Nature Protocols",
+  "doi": "10.1038/nprot.2006.46",
+  "discipline": "RNA biology / biochemistry",
+  "duration": "~2 days",
+  "materials": [
+    "Protein A/G magnetic beads",
+    "Anti-RBP antibody of interest",
+    "IgG isotype control antibody",
+    "Polysome lysis buffer (100 mM KCl, 5 mM MgCl2, 10 mM HEPES pH 7.0, 0.5% NP-40)",
+    "NT2 wash buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 1 mM MgCl2, 0.05% NP-40)",
+    "RNase inhibitor (e.g., RNasin Plus)",
+    "Protease inhibitor cocktail",
+    "Proteinase K",
+    "TRIzol or TRIzol LS",
+    "DNase I + reaction buffer",
+    "Glycogen (20 mg/mL, molecular biology grade)",
+    "3 M sodium acetate pH 5.2",
+    "100% ethanol, 75% ethanol",
+    "RNase-free water",
+    "Qubit RNA HS assay kit",
+    "Bovine serum albumin (BSA)",
+    "Yeast tRNA"
+  ],
+  "usage": "RIP identifies RNA targets of a specific RNA-binding protein (RBP) in vivo. By immunoprecipitating the RBP along with its associated RNAs, and analyzing the co-precipitated RNA fraction by qRT-PCR or high-throughput sequencing (RIP-seq), researchers can comprehensively map the RNA interactome of the RBP. Commonly used to study post-transcriptional regulation, mRNA stability, splicing, and translational control."
+}

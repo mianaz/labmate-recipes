@@ -1,0 +1,216 @@
+{
+  "id": "ddpcr_protocol",
+  "name": "Droplet Digital PCR (ddPCR) for Absolute Quantification",
+  "nameCn": "微滴数字PCR（ddPCR）绝对定量",
+  "category": "protocol",
+  "tags": [
+    "ddPCR",
+    "digital-PCR",
+    "absolute-quantification",
+    "ctDNA",
+    "CNV",
+    "rare-mutation",
+    "viral-load",
+    "gene-expression",
+    "Bio-Rad"
+  ],
+  "components": [
+    {
+      "name": "1. Assay design: FAM/HEX (or FAM/VIC) TaqMan probe-based primer-probe sets for target and reference loci; validate in silico specificity",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Optional RT step (RNA samples): One-Step RT-ddPCR with RT SuperMix; 42°C 60 min → 95°C 5 min; use cDNA directly in reaction",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. Reaction setup (22 μL): 10 μL ddPCR Supermix for Probes (no dUTP) + primers (900 nM each final) + probes (250 nM each final) + 1–10 ng template DNA + nuclease-free water to 22 μL",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Droplet generation: 20 μL sample + 70 μL Droplet Generation Oil into DG8 cartridge; QX200 Droplet Generator produces ~20,000 droplets",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Droplet transfer: transfer 40 μL droplet emulsion to 96-well plate using wide-bore tip; seal with pierceable foil heat seal at 180°C",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. PCR thermal cycling: 95°C 10 min → [94°C 30s + 55–60°C 1 min] × 40 cycles → 98°C 10 min; ramp rate 2°C/s (critical for droplet integrity)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Droplet reading: QX200 Droplet Reader reads ~15,000–20,000 droplets per well; measures FAM and HEX fluorescence amplitude",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. QuantaSoft analysis: set threshold between positive and negative clusters; read copies/μL for each channel",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Absolute copy number calculation: copies/μL × total reaction volume / input volume = copies in original sample",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. Quality control: total droplet count >10,000; positive/negative cluster separation amplitude ratio >2×; NTC = 0 positives; check rain droplets",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Design FAM/HEX probe assay → (RT step for RNA) → prepare 22 μL reaction (Supermix + primers 900 nM + probes 250 nM + 1–10 ng DNA) → droplet generation (DG8 cartridge + 70 μL oil → ~20,000 droplets) → transfer to 96-well plate → seal → PCR (95°C 10 min → [94°C 30s/55–60°C 1 min] × 40 → 98°C 10 min, 2°C/s ramp) → read on QX200 → QuantaSoft threshold → calculate copies/μL",
+      "zh": "设计FAM/HEX探针检测方案 → （RNA需RT步骤）→ 配制22 μL反应体系（Supermix + 引物900 nM + 探针250 nM + 1–10 ng DNA）→ 微滴生成（DG8芯片 + 70 μL油 → ~20,000微滴）→ 转至96孔板 → 封板 → PCR（95°C 10 min → [94°C 30s/55–60°C 1 min] × 40 → 98°C 10 min，2°C/s升温速率）→ QX200读取 → QuantaSoft设阈值 → 计算拷贝数/μL"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "1. Assay Design and Validation",
+      "zh": "1. 检测方案设计与验证",
+      "isHeader": true
+    },
+    {
+      "en": "1. Design or select validated TaqMan primer-probe sets. Use FAM-labeled probe for target locus and HEX (or VIC) probe for reference/control locus. Primer concentration: 900 nM final each; probe concentration: 250 nM final each. Verify primer specificity using BLAST; check for genomic duplications that could confound CNV assays. Preferred amplicon size: 60–200 bp for optimal droplet PCR efficiency. For rare mutation detection (e.g., KRAS, EGFR), use ddPCR mutation assays from Bio-Rad catalog.",
+      "zh": "1. 设计或选取经过验证的TaqMan引物探针组合。目标基因座使用FAM标记探针，参考/对照基因座使用HEX（或VIC）探针。引物终浓度：各900 nM；探针终浓度：各250 nM。使用BLAST验证引物特异性；检查基因组重复区域，避免CNV分析混淆。推荐扩增子大小：60–200 bp，以获得最佳微滴PCR扩增效率。稀有突变检测（如KRAS、EGFR）可使用Bio-Rad目录中的ddPCR突变检测试剂盒。"
+    },
+    {
+      "en": "2. Optional: Reverse Transcription for RNA Samples",
+      "zh": "2. 可选：RNA样品的逆转录步骤",
+      "isHeader": true
+    },
+    {
+      "en": "2. For RNA quantification, use Bio-Rad One-Step RT-ddPCR Advanced Kit for Probes. Prepare RT reaction: 5 μL 4× One-Step RT-ddPCR Supermix + 2 μL Reverse Transcriptase + primers (900 nM final) + probes (250 nM final) + 5–250 ng total RNA + nuclease-free water to 20 μL. Thermal cycling: 42°C 60 min (RT), 95°C 5 min (RT inactivation), hold at 4°C. Use resulting cDNA directly in subsequent ddPCR steps without further purification.",
+      "zh": "2. 对于RNA定量，使用Bio-Rad One-Step RT-ddPCR Advanced Kit（探针版）。配制RT反应：5 μL 4× One-Step RT-ddPCR Supermix + 2 μL逆转录酶 + 引物（终浓度900 nM）+ 探针（终浓度250 nM）+ 5–250 ng总RNA + 无核酸酶水补至20 μL。热循环程序：42°C 60 min（逆转录）、95°C 5 min（灭活RT酶），4°C保温。所得cDNA无需纯化，直接用于后续ddPCR步骤。"
+    },
+    {
+      "en": "3. ddPCR Reaction Preparation",
+      "zh": "3. ddPCR反应体系配制",
+      "isHeader": true
+    },
+    {
+      "en": "3. Prepare a 22 μL reaction per well (2 μL excess over 20 μL used for droplets). Combine in order: 10 μL ddPCR Supermix for Probes (No dUTP) (2×) + 1.8 μL forward primer (10 μM stock → 900 nM final) + 1.8 μL reverse primer (10 μM stock) + 0.5 μL FAM probe (11 μM stock → 250 nM final) + 0.5 μL HEX probe (11 μM stock) + template DNA (1–10 ng; dilute genomic DNA to avoid overloading; target ≤2 positive droplets per 3 droplets) + nuclease-free water to 22 μL. Mix by pipetting; spin briefly. Keep on ice.",
+      "zh": "3. 每孔配制22 μL反应体系（多出2 μL，取20 μL用于微滴生成）。依次加入：10 μL ddPCR Supermix for Probes（无dUTP，2×）+ 1.8 μL正向引物（10 μM储液，终浓度900 nM）+ 1.8 μL反向引物（10 μM储液）+ 0.5 μL FAM探针（11 μM储液，终浓度250 nM）+ 0.5 μL HEX探针（11 μM储液）+ 模板DNA（1–10 ng；对基因组DNA进行适当稀释以避免过载；目标每3个微滴中阳性微滴≤2个）+ 无核酸酶水补至22 μL。吸管吹打混匀，短暂离心。置冰上备用。"
+    },
+    {
+      "en": "4. Droplet Generation",
+      "zh": "4. 微滴生成",
+      "isHeader": true
+    },
+    {
+      "en": "4. Load DG8 cartridge in the cartridge holder. Pipette 20 μL of prepared reaction into the sample wells (middle row, 8 wells). Pipette 70 μL of Droplet Generation Oil for Probes into the oil wells (bottom row). Apply the DG8 gasket firmly over the cartridge. Insert the loaded cartridge into the QX200 Droplet Generator. Run the program (~2 min); the instrument generates ~20,000 water-in-oil droplets per well by microfluidic partitioning. Handle the cartridge gently after generation — avoid tilting or agitation.",
+      "zh": "4. 将DG8芯片置于卡槽中。向样品孔（中间一排，8孔）各加入20 μL配制好的反应液。向油孔（底部一排）各加入70 μL Droplet Generation Oil for Probes。将DG8密封垫牢固压在芯片上。将已装载的芯片插入QX200微滴发生器。运行程序（约2 min）；仪器通过微流控分割每孔生成约20,000个油包水微滴。生成后轻拿轻放，避免倾斜或震动芯片。"
+    },
+    {
+      "en": "5. Droplet Transfer and Plate Sealing",
+      "zh": "5. 微滴转移与封板",
+      "isHeader": true
+    },
+    {
+      "en": "5. Carefully remove the DG8 gasket. Using a wide-bore or cut-tip pipette set to 40 μL, slowly aspirate droplets from the sample wells — excessive pipetting force will break droplets. Transfer each 40 μL droplet emulsion to a well of a 96-well semi-skirted PCR plate. Seal the plate with pierceable foil heat seal using the PX1 PCR Plate Sealer at 180°C for 5 s. Confirm all wells are fully sealed. Briefly centrifuge plate at 200 × g for 30 s to settle droplets.",
+      "zh": "5. 小心移除DG8密封垫。使用宽口或剪口移液枪头，调至40 μL，缓慢吸取样品孔中的微滴——过大的吸液力会破坏微滴。将每孔40 μL微滴乳液转移至半裙边96孔PCR板对应孔中。使用PX1 PCR封板仪，180°C热封5 s，覆盖可穿刺铝箔封膜。确认所有孔完全密封。200 × g短暂离心30 s，使微滴沉降。"
+    },
+    {
+      "en": "6. PCR Thermal Cycling",
+      "zh": "6. PCR热循环",
+      "isHeader": true
+    },
+    {
+      "en": "6. Run PCR on a conventional thermal cycler with a heated lid (105°C). Critical: set ramp rate to 2°C/s for all steps to maintain droplet integrity. Program: (1) 95°C 10 min (enzyme activation); (2) 40 cycles of 94°C 30 s (denaturation) + 55–60°C 1 min (combined annealing/extension — optimize temperature by gradient PCR if needed); (3) 98°C 10 min (droplet stabilization); (4) 4°C hold. Do not exceed 40 cycles. After PCR, plate can be stored at 4°C up to 4 h before reading; do not freeze.",
+      "zh": "6. 在带加热盖（105°C）的常规热循环仪上运行PCR。关键：所有步骤升温速率设为2°C/s，以维持微滴完整性。程序：（1）95°C 10 min（酶激活）；（2）40个循环：94°C 30 s（变性）+ 55–60°C 1 min（退火/延伸合并，可通过梯度PCR优化温度）；（3）98°C 10 min（微滴稳定化）；（4）4°C保温。循环数不超过40次。PCR完成后，密封板可在4°C保存最长4 h再读取；切勿冷冻。"
+    },
+    {
+      "en": "7. Droplet Reading on QX200",
+      "zh": "7. QX200微滴读取",
+      "isHeader": true
+    },
+    {
+      "en": "7. Load the sealed PCR plate into the QX200 Droplet Reader. In QuantaSoft software, set up a new plate map: assign sample names, experiment type (Absolute Quantification, CNV, Rare Event Detection), and channel assignments (Ch1 = FAM, Ch2 = HEX). Start the run; the reader pierces each well's foil seal and flows droplets single-file through a laser detection system. Each droplet is measured for FAM and HEX fluorescence. Typical read time: ~30 min for a full 96-well plate.",
+      "zh": "7. 将密封PCR板放入QX200微滴读取仪。在QuantaSoft软件中建立新板图：分配样品名称、实验类型（绝对定量、CNV、稀有事件检测）及通道分配（Ch1 = FAM，Ch2 = HEX）。启动运行；读取仪穿刺每孔铝箔密封膜，使微滴单列通过激光检测系统，逐一测量FAM和HEX荧光强度。完整96孔板读取时间约30 min。"
+    },
+    {
+      "en": "8. Data Analysis in QuantaSoft",
+      "zh": "8. QuantaSoft数据分析",
+      "isHeader": true
+    },
+    {
+      "en": "8. In QuantaSoft, view the 1D or 2D amplitude plot. Positive droplets (target amplified) cluster at high fluorescence; negative droplets cluster at low fluorescence. Set the fluorescence threshold manually between the two clusters — the threshold line should bisect the gap, not touch either cluster. For rare mutation assays, use the mutant channel (FAM) vs. wild-type channel (HEX) 2D plot to separate mutation-only, wild-type-only, both, and empty droplets. QuantaSoft automatically calculates copies/μL using Poisson statistics.",
+      "zh": "8. 在QuantaSoft中查看一维或二维振幅散点图。阳性微滴（目标扩增）聚集于高荧光区，阴性微滴聚集于低荧光区。在两个簇之间手动设定荧光阈值——阈值线应平分两簇间隙，不可接触任一簇。对于稀有突变检测，使用突变通道（FAM）vs. 野生型通道（HEX）二维散点图，区分仅含突变、仅含野生型、两者均含及空微滴。QuantaSoft自动基于泊松统计计算拷贝数/μL。"
+    },
+    {
+      "en": "9. Absolute Copy Number Calculation",
+      "zh": "9. 绝对拷贝数计算",
+      "isHeader": true
+    },
+    {
+      "en": "9. QuantaSoft reports copies/μL in the 20 μL droplet generation reaction. To calculate copies in the original sample: Copies/μL (QuantaSoft output) × 20 μL (reaction volume) / volume of template added (μL) = copies/μL in original sample. For CNV analysis: ratio = target copies/μL ÷ reference copies/μL × ploidy factor (e.g., × 2 for diploid reference). For fractional abundance (rare mutations): %mutant = mutant copies ÷ (mutant + wild-type copies) × 100. Report with 95% Poisson confidence intervals from QuantaSoft.",
+      "zh": "9. QuantaSoft报告20 μL微滴生成反应中的拷贝数/μL。计算原始样品中的拷贝数：QuantaSoft输出的拷贝数/μL × 20 μL（反应体积）÷ 加入模板的体积（μL）= 原始样品中拷贝数/μL。CNV分析：比值 = 目标拷贝数/μL ÷ 参考拷贝数/μL × 倍性系数（二倍体参考乘以2）。稀有突变比例：%突变 = 突变拷贝数 ÷（突变 + 野生型拷贝数）× 100。结合QuantaSoft输出的95%泊松置信区间一并报告。"
+    },
+    {
+      "en": "10. Quality Control Assessment",
+      "zh": "10. 质量控制评估",
+      "isHeader": true
+    },
+    {
+      "en": "10. Evaluate each well against QC criteria: (1) Total accepted droplet count: >10,000 acceptable; >15,000 optimal; wells with <10,000 droplets should be flagged or repeated. (2) Cluster separation: positive cluster amplitude should be ≥2× the amplitude of the negative cluster; poor separation indicates suboptimal annealing temperature or inhibitors. (3) No Template Control (NTC): must show 0 positive droplets in the target channel; any NTC positives indicate contamination. (4) Rain droplets: intermediate-amplitude droplets between clusters indicate incomplete amplification — consider higher annealing temperature or reducing DNA input.",
+      "zh": "10. 按以下质控标准评估每孔数据：（1）总有效微滴数：>10,000为合格，>15,000为最佳；低于10,000的孔应标记或重做。（2）簇分离度：阳性簇振幅应≥阴性簇振幅的2倍；分离不佳提示退火温度不优或存在抑制物。（3）无模板对照（NTC）：目标通道阳性微滴数必须为0；NTC出现阳性提示污染。（4）【雨】微滴：两簇之间出现中间振幅微滴提示扩增不完全——考虑提高退火温度或降低DNA投入量。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Safe stop: after droplet generation, the sealed DG8 cartridge (with gasket on) can be stored at 4°C for up to 4 hours before transferring to the PCR plate. Avoid agitation.",
+        "zh": "安全停点：微滴生成后，盖上密封垫的DG8芯片可在4°C保存最长4小时，再转移至PCR板。避免震动。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Safe stop: after thermal cycling, the sealed PCR plate can be stored at 4°C overnight (up to 8 hours) before reading on the QX200. Do not freeze the plate as this will destroy the droplets.",
+        "zh": "安全停点：热循环完成后，密封PCR板可在4°C过夜保存（最长8小时）再上机读取。切勿冷冻密封板，否则会破坏微滴。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "The ramp rate of 2°C/s is critical — faster ramp rates will rupture the water-in-oil droplets during thermal cycling, leading to massive droplet loss and invalid results. | Use wide-bore or cut pipette tips for all droplet transfer steps. Standard tips shear droplets and significantly reduce droplet count. | Restriction enzyme digestion of template DNA (e.g., with HindIII or EcoRI) prior to ddPCR can improve accuracy for CNV assays by improving amplification uniformity. | For ctDNA or rare mutation detection, input DNA should be ≥10 ng (ideally ≥20 ng) to ensure statistical confidence in detecting variants at <0.1% allele frequency. | Each assay's optimal annealing temperature should be determined empirically by gradient PCR (50–65°C) on the droplet platform; the same temperature validated in conventional qPCR may differ. | Multiplexed 2-plex assays (FAM + HEX) can be run simultaneously in one well. 4-plex assays are possible with spectral differentiation but require careful validation.",
+    "zh": "2°C/s的升温速率至关重要——升温过快会在热循环过程中破裂油包水微滴，导致大量微滴损失和无效结果。 | 微滴转移所有步骤均须使用宽口或剪口移液枪头。普通枪头会剪切微滴，显著降低微滴数量。 | 对于CNV检测，ddPCR前用限制性内切酶（如HindIII或EcoRI）消化模板DNA可改善扩增均一性，提高定量准确性。 | 对于ctDNA或稀有突变检测，输入DNA应≥10 ng（理想情况下≥20 ng），以确保在等位基因频率<0.1%时具有统计显著性。 | 每种检测方案的最优退火温度应通过梯度PCR（50–65°C）在微滴平台上实验确定；常规qPCR验证的温度可能与之不同。 | FAM + HEX双重检测可在同一孔中同时进行。四重检测通过光谱区分技术也可实现，但需要仔细验证。"
+  },
+  "crosslinks": [
+    "qpcr_protocol",
+    "pcr_standard",
+    "genomic_dna_extraction"
+  ],
+  "ref": "Hindson BJ, et al. (2011). High-throughput droplet digital PCR system for absolute quantitation of DNA copy number. Anal Chem 83(22):8604–8610; Pinheiro LB, et al. (2012). Evaluation of a droplet digital polymerase chain reaction format for DNA copy number quantification. Anal Chem 84(2):1003–1011; Bio-Rad. (2023). Droplet Digital PCR Applications Guide.",
+  "doi": "10.1021/ac202028g",
+  "discipline": "genomics",
+  "duration": "~4h (reaction prep + droplet generation + PCR + reading)",
+  "materials": [
+    "ddPCR Supermix for Probes (No dUTP) (Bio-Rad #1863024)",
+    "Droplet Generation Oil for Probes (Bio-Rad #1863005)",
+    "DG8 Cartridges and Gaskets (Bio-Rad #1864008)",
+    "QX200 Droplet Generator (Bio-Rad)",
+    "QX200 Droplet Reader (Bio-Rad)",
+    "QuantaSoft Software (Bio-Rad)",
+    "PX1 PCR Plate Sealer (Bio-Rad)",
+    "Pierceable foil heat seal (Bio-Rad #1814040)",
+    "96-well semi-skirted PCR plates",
+    "FAM-labeled TaqMan probe (target locus)",
+    "HEX- or VIC-labeled TaqMan probe (reference locus)",
+    "Forward and reverse primers (10 μM stocks)",
+    "Template DNA (1–10 ng per reaction; gDNA or cfDNA)",
+    "Nuclease-free water",
+    "Wide-bore or cut pipette tips",
+    "Optional: One-Step RT-ddPCR Advanced Kit for Probes (Bio-Rad #1264000, for RNA)",
+    "Optional: Restriction enzyme (e.g., HindIII-HF) for CNV assays"
+  ],
+  "usage": "Absolute quantification of nucleic acid targets without a standard curve using water-in-oil droplet partitioning. Applications include circulating tumor DNA (ctDNA) detection, copy number variation (CNV) analysis, viral load quantification, rare somatic mutation detection (e.g., KRAS, EGFR, TP53), and absolute gene expression from RNA."
+}

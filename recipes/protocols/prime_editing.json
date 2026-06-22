@@ -1,0 +1,206 @@
+{
+  "id": "prime_editing",
+  "name": "Prime Editing (PE2) — Precise Gene Editing without Double-Strand Breaks",
+  "nameCn": "先导编辑（PE2）——无双链断裂的精准基因组编辑",
+  "category": "protocol",
+  "tags": [
+    "prime editing",
+    "PE2",
+    "pegRNA",
+    "CRISPR",
+    "gene editing",
+    "point mutation",
+    "reverse transcriptase",
+    "Cas9 nickase",
+    "genome engineering",
+    "no DSB"
+  ],
+  "components": [
+    {
+      "name": "1. Design pegRNA: identify target + PAM (NGG), design 20 nt spacer, RT template (desired edit + 10–15 nt downstream), and PBS (10–13 nt complementary to nicked strand 3' of nick); use PrimeDesign or BE-Designer",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "2. Clone pegRNA into pU6-pegRNA-GG-BSMBI scaffold or order synthetic pegRNA from IDT/Horizon",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "3. (PE3 optional) Design nicking sgRNA targeting non-edited strand ~40–90 bp from the pegRNA nick site; clone into pX330 or BbsI-digested vector",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "4. Transfect 300,000 target cells/24-well with 750 ng PE2 plasmid + 250 ng pegRNA plasmid + 250 ng nicking sgRNA using Lipofectamine 3000 (1 μL L3000 + 2 μL P3000 reagent/well)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "5. Alternative RNP delivery: electroporate PE2 protein + IVT pegRNA ± nicking sgRNA using Neon (1200V, 20 ms, 2 pulses for HEK293T) or 4D-Nucleofector SE kit",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "6. Replace medium 24h post-transfection; culture 48–72h total for editing to complete",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "7. Harvest cells; extract genomic DNA using QuickExtract (Lucigen) or silica-column method; elute in TE or nuclease-free water",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "8. PCR amplify 300–500 bp amplicon spanning edit site using high-fidelity polymerase (Q5 or KAPA HiFi); verify amplicon by gel electrophoresis",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "9. Initial screen: Sanger sequence amplicon + analyze with EditR or ICE (Synthego); for quantification use amplicon deep sequencing (MiSeq 250PE, amplicons <400 bp)",
+      "amount": 1,
+      "unit": "step"
+    },
+    {
+      "name": "10. Clone validation: single-cell sort or limiting dilution → expand clones → Sanger or amplicon-seq of both alleles; confirm protein-level change by Western blot if applicable",
+      "amount": 1,
+      "unit": "step"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Design pegRNA (spacer + RT template + PBS) → clone/order pegRNA → transfect PE2 + pegRNA ± nicking sgRNA → change medium 24h → harvest gDNA at 72h → PCR amplify edit site → Sanger/ICE screen → amplicon-seq quantify → validate clones",
+      "zh": "设计pegRNA（间隔序列+RT模板+PBS）→ 克隆/订购pegRNA → 转染PE2 + pegRNA ± 切口sgRNA → 24h换液 → 72h收获gDNA → PCR扩增编辑位点 → Sanger/ICE筛查 → 扩增子深度测序定量 → 验证克隆"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "pegRNA Design",
+      "zh": "pegRNA设计",
+      "isHeader": true
+    },
+    {
+      "en": "1. Identify the target genomic site: locate an NGG PAM adjacent to the desired edit position. The PE2 spacer (20 nt) must target a strand whose nicking positions the 3' flap within ~1–3 nt of the edit. Use PrimeDesign (http://primedesign.pinellolab.org) or BE-Designer to automate candidate spacer, RT template, and PBS design. Key parameters: RT template length 10–30 nt (include 10–15 nt of unedited sequence 3' of the edit for context); PBS length 10–13 nt (Tm 30–45°C). For PE3 strategy, design a second nicking sgRNA targeting the non-edited strand 40–90 bp from the pegRNA nick, on the same side as the nick. Avoid guide sequences with predicted off-targets (check with Cas-OFFinder).",
+      "zh": "1. 确定目标基因组位点：在目标编辑位置附近定位NGG PAM。PE2间隔序列（20 nt）必须靶向一条链，使其切口位置将3'悬臂定位于编辑位点~1–3 nt以内。使用PrimeDesign（http://primedesign.pinellolab.org）或BE-Designer自动设计候选间隔序列、RT模板和PBS。关键参数：RT模板长度10–30 nt（在编辑位点3'端包含10–15 nt未编辑序列作为背景）；PBS长度10–13 nt（Tm 30–45°C）。若采用PE3策略，设计第二个切口sgRNA，靶向非编辑链距pegRNA切口40–90 bp处，位于切口同侧。用Cas-OFFinder检查避免脱靶预测阳性的引导序列。"
+    },
+    {
+      "en": "pegRNA Cloning or Synthesis",
+      "zh": "pegRNA克隆或合成",
+      "isHeader": true
+    },
+    {
+      "en": "2. Clone the pegRNA spacer into a pU6-pegRNA-GG-BSMBI expression vector (Addgene #132777) using Golden Gate assembly with BsmBI restriction enzyme. Anneal and phosphorylate spacer oligos (10 μM each oligo, T4 PNK, 37°C 30 min; ramp 95°C→25°C 5°C/min), then ligate into BsmBI-digested, gel-purified backbone. Transform into Stbl3 bacteria; sequence-verify with U6 promoter sequencing primer. Alternatively, order chemically modified synthetic pegRNA (Integrated DNA Technologies, Horizon Discovery) for faster turnaround; synthetic pegRNAs have improved stability due to 3' modifications.",
+      "zh": "2. 使用BsmBI限制酶通过Golden Gate组装将pegRNA间隔序列克隆入pU6-pegRNA-GG-BSMBI表达载体（Addgene #132777）。退火并磷酸化间隔序列寡核苷酸（各10 μM，T4 PNK，37°C 30 min；以5°C/min从95°C降至25°C），然后连接入BsmBI酶切、凝胶纯化的骨架。转化至Stbl3感受态菌；使用U6启动子测序引物进行序列验证。也可订购化学修饰的合成pegRNA（Integrated DNA Technologies、Horizon Discovery），以缩短周转时间；合成pegRNA因3'端修饰而具有更高稳定性。"
+    },
+    {
+      "en": "3. (PE3 strategy, optional but recommended for efficiency): Clone the nicking sgRNA spacer into a standard SpCas9-H840A nickase vector (e.g., Addgene #132778) or into a pX330 derivative encoding Cas9-H840A. Nicking the opposite strand ~40–90 bp from the primary nick stimulates the cell's mismatch repair machinery to preferentially incorporate the 3' flap sequence, increasing prime editing efficiency 2–5 fold. Validate nicking guide by TIDE or Sanger sequencing after transient transfection.",
+      "zh": "3. （PE3策略，可选但推荐以提高效率）：将切口sgRNA间隔序列克隆入标准SpCas9-H840A切口酶载体（如Addgene #132778）或编码Cas9-H840A的pX330衍生物中。在主切口40–90 bp处切割对侧链，可刺激细胞错配修复机制优先整合3'悬臂序列，将先导编辑效率提高2–5倍。通过瞬时转染后的TIDE或Sanger测序验证切口引导RNA。"
+    },
+    {
+      "en": "Transfection",
+      "zh": "转染",
+      "isHeader": true
+    },
+    {
+      "en": "4. One day before transfection, seed 300,000 target cells per well of a 24-well plate in 500 μL antibiotic-free complete medium. For HEK293T cells: DMEM + 10% FBS. On transfection day, prepare Lipofectamine 3000 complex: in tube A, mix 1.5 μL Lipofectamine 3000 reagent in 25 μL Opti-MEM; in tube B, mix 750 ng PE2 plasmid (Addgene #132775) + 250 ng pegRNA plasmid + 250 ng nicking sgRNA plasmid (total 1.25 μg DNA) + 2.5 μL P3000 reagent in 25 μL Opti-MEM. Combine tubes A and B, vortex briefly, incubate 15 min at RT, then add dropwise to cells. For primary cells or hard-to-transfect lines, see step 5.",
+      "zh": "4. 转染前一天，在24孔板每孔中以500 μL无抗生素完全培养基接种300,000个靶细胞。HEK293T细胞用DMEM + 10% FBS。转染当天，配制Lipofectamine 3000复合物：A管中，将1.5 μL Lipofectamine 3000试剂混入25 μL Opti-MEM；B管中，将750 ng PE2质粒（Addgene #132775）+ 250 ng pegRNA质粒 + 250 ng切口sgRNA质粒（总DNA 1.25 μg）+ 2.5 μL P3000试剂混入25 μL Opti-MEM。合并A管和B管，短暂涡旋，室温孵育15 min，然后逐滴加入细胞。难转染细胞系或原代细胞请参考步骤5。"
+    },
+    {
+      "en": "5. RNP electroporation (alternative for primary cells or high-viability requirement): Produce or purchase recombinant PE2 protein (NEB M0658, Addgene pET28a-PE2 #132776). In vitro transcribe pegRNA and nicking sgRNA using HiScribe T7 kit; purify by column. Assemble RNP: mix 2 μg PE2 protein + 200 pmol pegRNA + 200 pmol nicking sgRNA in SE buffer; incubate 10 min on ice. Electroporate 200,000 cells in 20 μL SE solution using Neon Transfection System (1200V, 20 ms, 2 pulses for HEK293T) or Lonza 4D-Nucleofector (SE Cell Line kit, program CM-130 for HEK293T). Transfer immediately to pre-warmed antibiotic-free medium.",
+      "zh": "5. RNP电穿孔（原代细胞或高细胞活力需求的替代方案）：生产或购买重组PE2蛋白（NEB M0658，Addgene pET28a-PE2 #132776）。使用HiScribe T7试剂盒体外转录pegRNA和切口sgRNA；柱纯化。组装RNP：在SE缓冲液中混合2 μg PE2蛋白 + 200 pmol pegRNA + 200 pmol切口sgRNA；冰上孵育10 min。使用Neon转染系统（HEK293T：1200V、20 ms、2脉冲）或Lonza 4D-Nucleofector（SE细胞系试剂盒，HEK293T程序CM-130）电穿孔20 μL SE溶液中的200,000个细胞。立即转移至预温无抗生素培养基中。"
+    },
+    {
+      "en": "Editing and Harvest",
+      "zh": "编辑与收获",
+      "isHeader": true
+    },
+    {
+      "en": "6. At 24h post-transfection, aspirate and replace medium with fresh complete medium (with antibiotics if desired). Continue culture for a total of 48–72h from transfection. Editing efficiency plateaus by 72h; longer culture does not substantially increase efficiency and may enrich for non-edited clones. Verify transfection efficiency at 24h using co-transfected GFP plasmid (should be >70% GFP+ for HEK293T) as a quality control.",
+      "zh": "6. 转染后24h，吸去培养基并更换为新鲜完全培养基（如需可加入抗生素）。从转染开始继续培养共48–72h。编辑效率在72h时趋于平稳；更长培养时间不会显著提高效率，且可能富集未编辑克隆。在24h时使用共转染GFP质粒（HEK293T应>70% GFP+）作为质量控制，验证转染效率。"
+    },
+    {
+      "en": "7. At 72h, harvest cells by trypsinization (0.25% Trypsin-EDTA, 3 min, 37°C); quench with complete medium; pellet at 300×g for 5 min. Extract genomic DNA using QuickExtract DNA Extraction Solution (Lucigen): resuspend pellet in 50 μL QuickExtract, incubate 65°C 6 min then 98°C 2 min. Alternatively, use a silica-column kit (Qiagen DNeasy Blood & Tissue). Quantify DNA by NanoDrop. Elute in TE buffer or nuclease-free water; store at -20°C short-term or -80°C long-term.",
+      "zh": "7. 72h时，用胰蛋白酶（0.25% Trypsin-EDTA，37°C 3 min）消化收获细胞；用完全培养基终止，300×g离心5 min收集沉淀。使用QuickExtract DNA提取液（Lucigen）提取基因组DNA：将沉淀重悬于50 μL QuickExtract，65°C孵育6 min，再98°C 2 min。也可使用硅胶柱试剂盒（Qiagen DNeasy血液与组织试剂盒）。用NanoDrop定量DNA。洗脱至TE缓冲液或无核酸酶水中；短期-20°C保存，长期-80°C保存。"
+    },
+    {
+      "en": "Analysis and Validation",
+      "zh": "分析与验证",
+      "isHeader": true
+    },
+    {
+      "en": "8. Design PCR primers flanking the edit site to generate a 300–500 bp amplicon; primers should be ≥50 bp from the edit and avoid repetitive sequences. Use a high-fidelity polymerase (NEB Q5 or Roche KAPA HiFi) to minimize PCR-introduced errors. PCR: 98°C 30s; 35 cycles of 98°C 10s / 65°C 30s / 72°C 20s; final 72°C 2 min. Run on 2% agarose gel to confirm single amplicon of correct size. Use 20–50 ng gDNA per reaction.",
+      "zh": "8. 设计跨越编辑位点两侧的PCR引物，扩增300–500 bp产物；引物距编辑位点应≥50 bp，避免重复序列。使用高保真聚合酶（NEB Q5或罗氏KAPA HiFi）以减少PCR引入的错误。PCR程序：98°C 30s；35个循环（98°C 10s / 65°C 30s / 72°C 20s）；最终72°C 2 min。在2%琼脂糖凝胶上验证单一正确大小的扩增子。每反应使用20–50 ng基因组DNA。"
+    },
+    {
+      "en": "9. Initial screening: Submit PCR amplicon for Sanger sequencing using a sequencing primer ~100 bp from the edit site. Upload .ab1 trace files to EditR (http://editr.medgenome.com) or ICE (Synthego) analysis tools to deconvolve mixed traces and quantify editing efficiency (% alleles edited). For accurate quantification or samples with <10% editing efficiency, proceed to amplicon deep sequencing: add Illumina adapter sequences via a second PCR step (2-step library prep) and sequence on MiSeq (2×250 PE reads). Analyze with CRISPResso2.",
+      "zh": "9. 初步筛查：提交PCR扩增子进行Sanger测序，使用距编辑位点~100 bp的测序引物。将.ab1 trace文件上传至EditR（http://editr.medgenome.com）或ICE（Synthego）分析工具，解卷积混合测序峰并量化编辑效率（%等位基因编辑率）。若需精确定量或样品编辑效率<10%，进行扩增子深度测序：通过第二轮PCR添加Illumina接头序列（两步建库法），在MiSeq上测序（2×250 PE reads）。使用CRISPResso2分析数据。"
+    },
+    {
+      "en": "10. Clone validation: Seed edited bulk cells by limiting dilution (0.3 cells/well) in 96-well plates, or single-cell sort by FACS into 96-well plates. Expand clones for 7–14 days. Extract gDNA from each clone using QuickExtract (20 μL/well). PCR amplify edit site and Sanger sequence. Identify heterozygous edits (dual peak in trace) vs. homozygous edits (single edited peak). For clones carrying the desired edit, perform amplicon deep sequencing to characterize both alleles precisely. If the edit changes protein function, confirm by Western blot, immunofluorescence, or functional assay. Screen 48–96 clones to identify biallelic edits (typically 5–20% of PE3-edited clones).",
+      "zh": "10. 克隆验证：将编辑后的混合细胞以有限稀释法（0.3个细胞/孔）接种于96孔板，或通过FACS单细胞分选至96孔板。扩增克隆7–14天。使用QuickExtract（每孔20 μL）提取各克隆的基因组DNA。PCR扩增编辑位点并Sanger测序。识别杂合编辑（测序峰双峰）vs.纯合编辑（单一编辑峰）。对携带目标编辑的克隆进行扩增子深度测序，精确鉴定两个等位基因。若编辑改变蛋白质功能，通过Western blot、免疫荧光或功能实验确认。筛查48–96个克隆以鉴定双等位基因编辑克隆（通常占PE3编辑克隆的5–20%）。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Sequence-verified pegRNA plasmid (or received synthetic pegRNA) can be stored at -20°C (plasmid) or -80°C (RNA) indefinitely. Proceed to transfection when ready.",
+        "zh": "序列验证后的pegRNA质粒（或收到的合成pegRNA）可无限期储存于-20°C（质粒）或-80°C（RNA）。准备好后再进行转染。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Cells at 48h post-transfection are actively editing but can be paused by replacing medium and continuing culture. Do not extend beyond 72h total as efficiency does not improve and cell passage effects accumulate.",
+        "zh": "转染后48h的细胞正在进行活跃编辑，可通过更换培养基继续培养来暂停操作。不要延长至总计72h以上，因为效率不会提高，且细胞传代效应会累积。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Extracted genomic DNA (gDNA) can be stored at -20°C for weeks or -80°C indefinitely. All downstream PCR and sequencing steps can be resumed from frozen gDNA at any time.",
+        "zh": "提取的基因组DNA（gDNA）可在-20°C储存数周，或在-80°C无限期保存。所有下游PCR和测序步骤均可在任何时间从冻存gDNA重新开始。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Prime editing efficiency is highly site-dependent and typically ranges from 1–50% in HEK293T cells for PE2, increasing 2–5× with PE3 (nicking sgRNA). Optimize PBS length (Tm 30–45°C) and RT template length if efficiency is low. | Unintended indels at the nick site (from endogenous NHEJ repair of the PE nick) can occur at 1–10% frequency with PE3. If indels are problematic, use PE3b strategy: design nicking sgRNA that only cuts after the edit is installed (spacer overlaps edit site), reducing bystander indels. | For difficult cell types (neurons, hematopoietic cells, iPSCs), use electroporation of PE2 RNP + synthetic pegRNA (chemically modified with 2'-O-methyl and phosphorothioate at 3' terminus). Electroporation conditions must be optimized per cell type. | Always include appropriate controls: (1) cells transfected with PE2 + non-targeting pegRNA (scramble spacer) to assess off-target editing; (2) untransfected cells as baseline sequencing control; (3) cells transfected with pegRNA only (no PE2) to assess pegRNA-mediated template effects. | Check for pegRNA scaffold incorporation: a common artifact where reverse transcriptase reads through the pegRNA scaffold sequence, inserting scaffold-derived sequence at the edit site. Analyze amplicon-seq data with CRISPResso2 to detect this. Use epegRNA scaffold (with structured 3' end) to reduce scaffold incorporation.",
+    "zh": "先导编辑效率高度位点依赖，在HEK293T细胞中PE2通常为1–50%，PE3（切口sgRNA）可提高2–5倍。若效率偏低，优化PBS长度（Tm 30–45°C）和RT模板长度。 | PE3中PE切口处的非预期插入缺失（来自内源性NHEJ修复）频率可达1–10%。若插入缺失影响实验，使用PE3b策略：设计仅在编辑安装后才切割的切口sgRNA（间隔序列与编辑位点重叠），以减少旁观者插入缺失。 | 对于难以操作的细胞类型（神经元、造血细胞、iPSCs），使用PE2 RNP + 合成pegRNA（3'端含2'-O-甲基和硫代磷酸酯化学修饰）进行电穿孔。电穿孔条件须针对不同细胞类型优化。 | 始终包括适当对照：（1）转染PE2 + 非靶向pegRNA（乱序间隔序列）的细胞，评估脱靶编辑；（2）未转染细胞作为基线测序对照；（3）仅转染pegRNA（不含PE2）的细胞，评估pegRNA介导的模板效应。 | 检查pegRNA支架序列整合这一常见伪迹：逆转录酶通读pegRNA支架序列，在编辑位点插入支架来源序列。使用CRISPResso2分析扩增子测序数据以检测此现象。使用epegRNA支架（含结构化3'端）以减少支架整合。"
+  },
+  "crosslinks": [
+    "crispr_sgrna_cloning",
+    "cell_transfection",
+    "electroporation",
+    "pcr_standard",
+    "genomic_dna_extraction"
+  ],
+  "ref": "Anzalone AV, Randolph PB, Davis JR, Sousa AA, Koblan LW, Levy JM, Chen PJ, Wilson C, Newby GA, Raguram A, Liu DR (2019). Search-and-replace genome editing without double-strand breaks or donor DNA. Nature. 576(7785):149–157.",
+  "doi": "10.1038/s41586-019-1711-4",
+  "discipline": "genome engineering",
+  "duration": "~5 days (Day 0: transfection; Day 3: gDNA harvest + PCR; Day 4–5: sequencing analysis); additional 1–2 weeks for clone isolation and validation",
+  "materials": [
+    "PE2 plasmid (Addgene #132775) or PE2 recombinant protein (NEB M0658)",
+    "pU6-pegRNA-GG-BSMBI vector (Addgene #132777)",
+    "pegRNA spacer oligos (designed using PrimeDesign or BE-Designer)",
+    "Nicking sgRNA expression vector (Addgene #132778 or pX330 derivative)",
+    "BsmBI restriction enzyme",
+    "T4 DNA Ligase + T4 PNK",
+    "Stbl3 competent bacteria",
+    "Lipofectamine 3000 + P3000 reagent (ThermoFisher L3000015)",
+    "Opti-MEM I reduced serum medium",
+    "Target cells (HEK293T or cell line of interest)",
+    "DMEM + 10% FBS (or appropriate complete medium)",
+    "0.25% Trypsin-EDTA",
+    "QuickExtract DNA Extraction Solution (Lucigen QE09050)",
+    "High-fidelity PCR polymerase (NEB Q5 or KAPA HiFi)",
+    "PCR primers flanking edit site",
+    "2% agarose gel materials",
+    "Sanger sequencing (submit to core facility)",
+    "EditR or ICE (Synthego) analysis accounts",
+    "CRISPResso2 (for amplicon deep sequencing analysis)",
+    "MiSeq instrument access (for amplicon deep sequencing)",
+    "96-well plates for clone expansion",
+    "FACS instrument (optional, for single-cell sorting)"
+  ],
+  "usage": "Install precise point mutations, small insertions (≤44 nt), or small deletions (≤80 nt) into the genome of mammalian cells without introducing double-strand breaks; used for disease variant modeling, correction of pathogenic mutations, functional annotation of genomic variants, and construction of isogenic cell lines"
+}

@@ -1,0 +1,317 @@
+{
+  "id": "sc_cut_and_tag",
+  "name": "scCUT&TAG (Single-cell CUT&TAG on 10x Genomics)",
+  "nameCn": "单细胞 CUT&TAG（10x Genomics 平台）",
+  "category": "protocol",
+  "tags": [
+    "scCUT&TAG",
+    "single-cell",
+    "epigenomics",
+    "histone modification",
+    "chromatin",
+    "10x Genomics",
+    "tagmentation",
+    "pA-Tn5",
+    "scATAC"
+  ],
+  "components": [
+    {
+      "name": "1. Prepare single-cell/nuclei suspension: dissociate tissue, 150,000–250,000 cells input; spin 300×g 5 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Fresh or flash-frozen tissue; nuclei isolation recommended for difficult tissues. Keep on ice throughout.",
+        "zh": "新鲜或闪冻组织均可；难处理组织建议提取细胞核。全程置于冰上。"
+      }
+    },
+    {
+      "name": "2. Centrifuge 600×g 3 min; resuspend pellet in 200 µL Antibody Buffer",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Antibody buffer: digitonin-based buffer to maintain membrane permeability.",
+        "zh": "抗体缓冲液为含 digitonin 的缓冲液，维持膜通透性。"
+      }
+    },
+    {
+      "name": "3. Primary antibody: 1:50 dilution in 100 µL Antibody Buffer; incubate overnight 4°C rotating",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Validated Abs: H3K4me3 (Diagenode C15410030), H3K27ac (Abcam). Include IgG negative control.",
+        "zh": "验证抗体：H3K4me3（Diagenode C15410030）、H3K27ac（Abcam）。设 IgG 阴性对照。"
+      }
+    },
+    {
+      "name": "4. Wash 3× Dig-Wash Buffer; remove unbound primary antibody",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "600×g 3 min each wash. Digitonin-based wash maintains nuclear integrity.",
+        "zh": "每次 600×g 3 min 洗涤。含 digitonin 洗涤液维持核完整性。"
+      }
+    },
+    {
+      "name": "5. Secondary antibody: guinea pig anti-rabbit 1:50 in Dig-Wash-BSA; 1 h RT rotating",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Secondary Ab bridges primary Ab to pA-Tn5. Required when primary is not rabbit-derived.",
+        "zh": "二抗桥接一抗与 pA-Tn5。当一抗非兔源时必须使用。"
+      }
+    },
+    {
+      "name": "6. Wash 3× Dig-300-BSA Buffer; remove unbound secondary antibody",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Dig-300-BSA: high salt (300 mM NaCl) + BSA buffer reduces non-specific pA-Tn5 binding.",
+        "zh": "Dig-300-BSA：高盐（300 mM NaCl）+ BSA 缓冲液，减少 pA-Tn5 非特异性结合。"
+      }
+    },
+    {
+      "name": "7. pA-Tn5 binding: 1:100 in 200 µL Dig-300-BSA Buffer; 1 h RT rotating",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "pA-Tn5 loaded with sequencing adapters tethers to antibody-bound chromatin.",
+        "zh": "携带测序接头的 pA-Tn5 通过 Protein A 与抗体结合染色质。"
+      }
+    },
+    {
+      "name": "8. Wash 3× Dig-300-BSA Buffer; remove unbound pA-Tn5",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Critical to minimize background tagmentation. 600×g 3 min each.",
+        "zh": "彻底洗去游离 pA-Tn5，降低背景标记。每次 600×g 3 min。"
+      }
+    },
+    {
+      "name": "9. Tagmentation: resuspend in 200 µL tagmentation buffer; 1 h 37°C water bath; tap tubes 3–4× during incubation",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Mg²⁺ in tagmentation buffer activates Tn5 transposase. Gently tapping prevents bead settling.",
+        "zh": "标记缓冲液中 Mg²⁺ 激活 Tn5 转座酶。轻拍管壁防止细胞/核沉淀。"
+      }
+    },
+    {
+      "name": "10. Stop tagmentation: add STOP buffer (200 µL Dig-300 + 10 µL 500 mM EDTA)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "EDTA chelates Mg²⁺ to halt Tn5 activity.",
+        "zh": "EDTA 螯合 Mg²⁺，终止 Tn5 转座活性。"
+      }
+    },
+    {
+      "name": "11. Optional qPCR cycle check: take 10% aliquot, lyse with 0.1% SDS + Proteinase K; 50°C 30 min; Zymo cleanup; qPCR with ATAC primers",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Expect CT ~15 for successful tagmentation. Proceed to 10x loading only if CT is satisfactory.",
+        "zh": "成功标记预期 CT ~15。CT 合格后再进行 10x 上样。"
+      }
+    },
+    {
+      "name": "12. Count nuclei: spin 300×g 3 min; resuspend in 15–25 µL 1×DNB + 2% BSA; count with trypan blue",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Diluted Nuclei Buffer (DNB) from 10x ATAC kit. Target 70–80% viability.",
+        "zh": "使用 10x ATAC 试剂盒中的稀释核缓冲液（DNB）。目标活率 70–80%。"
+      }
+    },
+    {
+      "name": "13. 10x Chromium loading: skip step 1 of scATAC manual; begin at GEM generation; use 16–20 PCR cycles",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use 10x Chromium ATAC v1 or v1.1 kit. Increased PCR cycles compensate for lower input complexity.",
+        "zh": "使用 10x Chromium ATAC v1 或 v1.1 试剂盒。增加 PCR 循环数以补偿低起始复杂度。"
+      }
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Prepare nuclei suspension (150,000–250,000 cells) → centrifuge 600×g 3 min, resuspend in Antibody Buffer → add primary antibody 1:50 (100 µL, overnight 4°C rotating) → wash 3× Dig-Wash → add secondary antibody 1:50 in Dig-Wash-BSA (1 h RT rotating) → wash 3× Dig-300-BSA → add pA-Tn5 1:100 (200 µL Dig-300-BSA, 1 h RT rotating) → wash 3× Dig-300-BSA → tagmentation (200 µL tagmentation buffer, 37°C 1 h water bath, tap tubes 3–4×) → stop with EDTA → optional qPCR cycle check → count nuclei in DNB+2%BSA → load onto 10x Chromium (skip step 1, 16–20 PCR cycles)",
+      "zh": "制备细胞核悬液（15–25 万细胞）→ 600×g 3 min 离心，重悬于抗体缓冲液 → 1:50 一抗孵育（100 µL，4°C 过夜旋转）→ Dig-Wash 洗涤 3 次 → 1:50 二抗孵育（Dig-Wash-BSA，RT 1 h 旋转）→ Dig-300-BSA 洗涤 3 次 → 1:100 pA-Tn5（200 µL Dig-300-BSA，RT 1 h 旋转）→ Dig-300-BSA 洗涤 3 次 → 标记（200 µL 标记缓冲液，37°C 1 h 水浴，轻拍管壁 3–4 次）→ EDTA 终止 → 可选 qPCR 循环数检测 → DNB+2%BSA 计数 → 10x Chromium 上样（跳过步骤 1，16–20 PCR 循环）"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Nuclei Preparation and Primary Antibody Incubation",
+      "zh": "第1天：细胞核制备与一抗孵育",
+      "isHeader": true
+    },
+    {
+      "en": "Dissociate tissue or cells into a single-cell/single-nuclei suspension with 150,000–250,000 cells input. For nuclei isolation, use a Dounce homogenizer in nuclei isolation buffer. Spin at 300×g for 5 min at 4°C to pellet nuclei.",
+      "zh": "将组织或细胞解离为单细胞/单核悬液，起始量 15–25 万个细胞。核分离可用 Dounce 匀浆器在核分离缓冲液中操作。4°C 300×g 离心 5 min 收集细胞核。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Discard supernatant; centrifuge at 600×g for 3 min at 4°C. Resuspend pellet in 200 µL Antibody Buffer (digitonin-based permeabilization buffer). Keep on ice.",
+      "zh": "弃上清；4°C 600×g 离心 3 min。将沉淀重悬于 200 µL 抗体缓冲液（含 digitonin 透化缓冲液）。置于冰上。",
+      "time": "3 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add primary antibody at 1:50 dilution; transfer to a clean tube and adjust volume to 100 µL with Antibody Buffer. Incubate overnight at 4°C on a rotating wheel. Validated antibodies: H3K4me3 (Diagenode C15410030-100), H3K27ac (Abcam). Always include IgG negative control.",
+      "zh": "按 1:50 稀释一抗，转移至新管，用抗体缓冲液补至 100 µL。4°C 旋转孵育过夜。验证抗体：H3K4me3（Diagenode C15410030-100）、H3K27ac（Abcam）。必须设 IgG 阴性对照。",
+      "time": "overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2: Secondary Antibody, pA-Tn5 Binding, Tagmentation, and 10x Loading",
+      "zh": "第2天：二抗结合、pA-Tn5 标记与 10x 上样",
+      "isHeader": true
+    },
+    {
+      "en": "Wash nuclei 3× with Dig-Wash Buffer: add 200 µL Dig-Wash, spin 600×g 3 min 4°C, discard supernatant. After final wash, resuspend in 200 µL Dig-Wash-BSA.",
+      "zh": "用 Dig-Wash 缓冲液洗涤细胞核 3 次：加入 200 µL Dig-Wash，4°C 600×g 3 min，弃上清。最后一次洗涤后重悬于 200 µL Dig-Wash-BSA。",
+      "time": "9 min total",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add guinea pig anti-rabbit secondary antibody at 1:50 in Dig-Wash-BSA buffer. Incubate 1 h at RT on a rotating wheel. This secondary antibody bridges the primary antibody to pA-Tn5.",
+      "zh": "按 1:50 在 Dig-Wash-BSA 中加入豚鼠抗兔二抗。室温旋转孵育 1 h。二抗桥接一抗与 pA-Tn5 融合蛋白。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash nuclei 3× with Dig-300-BSA Buffer (high-salt wash: 300 mM NaCl + BSA): 600×g 3 min 4°C each. After final wash, resuspend in 200 µL Dig-300-BSA.",
+      "zh": "用 Dig-300-BSA 缓冲液（高盐洗涤：300 mM NaCl + BSA）洗涤 3 次：每次 4°C 600×g 3 min。最后一次后重悬于 200 µL Dig-300-BSA。",
+      "time": "9 min total",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add pA-Tn5 fusion protein at 1:100 dilution in 200 µL Dig-300-BSA Buffer. Incubate 1 h at RT on a rotating wheel. pA-Tn5 (homemade or commercially available, e.g., Epicypher SNAP-CUTANA pA-Tn5) is pre-loaded with Illumina-compatible sequencing adapters.",
+      "zh": "在 200 µL Dig-300-BSA 中按 1:100 稀释 pA-Tn5 融合蛋白。室温旋转孵育 1 h。pA-Tn5（自制或商品化，如 Epicypher SNAP-CUTANA pA-Tn5）已预加载兼容 Illumina 的测序接头。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash nuclei 3× with Dig-300-BSA Buffer to remove unbound pA-Tn5: 600×g 3 min 4°C each. After final wash, discard supernatant completely.",
+      "zh": "用 Dig-300-BSA 洗涤 3 次，去除未结合 pA-Tn5：每次 4°C 600×g 3 min。最后一次彻底弃上清。",
+      "time": "9 min total",
+      "temp": "4°C"
+    },
+    {
+      "en": "Tagmentation: resuspend pellet in 200 µL Tagmentation Buffer (containing MgCl₂ to activate Tn5). Incubate 1 h in a 37°C water bath. Gently tap tubes 3–4 times during incubation to resuspend settled nuclei and ensure uniform tagmentation.",
+      "zh": "标记：将沉淀重悬于 200 µL 标记缓冲液（含 MgCl₂ 激活 Tn5）。37°C 水浴孵育 1 h。孵育过程中轻拍管壁 3–4 次，使沉降的核重悬，确保均匀标记。",
+      "time": "1 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Stop tagmentation: add STOP buffer consisting of 200 µL Dig-300 Buffer plus 10 µL of 500 mM EDTA (final EDTA ~24 mM). Mix gently. EDTA chelates Mg²⁺ and halts Tn5 activity.",
+      "zh": "终止标记：加入 200 µL Dig-300 缓冲液 + 10 µL 500 mM EDTA（终浓度 EDTA ~24 mM）组成 STOP 缓冲液。轻柔混匀。EDTA 螯合 Mg²⁺，终止 Tn5 活性。"
+    },
+    {
+      "en": "Optional — qPCR cycle check: take 10% of the tagmented sample. Lyse with 0.1% SDS + Proteinase K at 50°C for 30 min. Clean up with Zymo DNA Clean & Concentrator-5. Run qPCR with ATAC-seq primers: 2 µL template + SYBR Green mix. Expect CT ~15 for a successful reaction. If CT > 20, tagmentation may have failed.",
+      "zh": "可选——qPCR 循环数检测：取标记样品的 10%。用 0.1% SDS + Proteinase K 在 50°C 裂解 30 min。Zymo DNA Clean & Concentrator-5 纯化。用 ATAC-seq 引物 qPCR：2 µL 模板 + SYBR Green 混合液。成功反应预期 CT ~15；CT > 20 提示标记可能失败。",
+      "time": "30 min",
+      "temp": "50°C"
+    },
+    {
+      "en": "Count nuclei: spin at 300×g for 3 min at 4°C. Resuspend pellet in 15–25 µL of 1×Diluted Nuclei Buffer (DNB, from 10x ATAC kit) + 2% BSA. Count using a hemocytometer with Trypan Blue. Target 70–80% viability and concentration suitable for 10x loading.",
+      "zh": "计数细胞核：4°C 300×g 离心 3 min。将沉淀重悬于 15–25 µL 1× 稀释核缓冲液（DNB，来自 10x ATAC 试剂盒）+ 2% BSA。用台盼蓝在血球计数板上计数。目标活率 70–80%，浓度达到 10x 上样要求。",
+      "time": "3 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "10x Chromium loading: skip Step 1 (ATAC transposition) of the standard 10x scATAC-seq manual — tagmentation has already been performed. Start directly at GEM generation. Use 10x Chromium ATAC v1 or v1.1 kit. Increase PCR cycles to 16–20 (vs. standard 12) to compensate for the lower complexity of the scCUT&TAG library. Process libraries according to standard 10x ATAC library prep thereafter.",
+      "zh": "10x Chromium 上样：跳过标准 10x scATAC-seq 手册的步骤 1（ATAC 转座）——标记已完成。直接从 GEM 生成步骤开始。使用 10x Chromium ATAC v1 或 v1.1 试剂盒。将 PCR 循环数增加至 16–20 次（对比标准 12 次），以弥补 scCUT&TAG 文库的低复杂度。后续按标准 10x ATAC 文库制备流程操作。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "condition": "4°C",
+      "duration": "overnight (continue to Day 2)"
+    },
+    {
+      "afterStep": 11,
+      "condition": "4°C",
+      "duration": "up to 2 h before nuclei counting"
+    }
+  ],
+  "notes": {
+    "en": "Key differences from bulk CUT&TAG: (1) Skip ConA bead capture — cells/nuclei are kept in suspension for single-cell compatibility. (2) Use 1:50 primary Ab dilution (higher than bulk). (3) Tagmentation is performed at 37°C for 1 h with gentle agitation. (4) Skip ATAC transposition step when loading on 10x. (5) Increase PCR cycles to 16–20. Quality control: always run a qPCR cycle check before 10x loading to avoid wasting expensive cartridges. Validated histone marks: H3K4me3 and H3K27ac work well; H3K27me3 may require optimization. pA-Tn5 can be produced in-house (Addgene plasmid) or purchased (Epicypher).",
+    "zh": "与 bulk CUT&TAG 的关键差异：(1) 跳过 ConA 磁珠捕获——细胞/核保持悬浮以兼容单细胞模式；(2) 一抗稀释比 1:50（高于 bulk）；(3) 标记在 37°C 进行 1 h，期间轻拍管壁；(4) 10x 上样时跳过 ATAC 转座步骤；(5) PCR 循环增至 16–20 次。质控：10x 上样前必须进行 qPCR 循环数检测，避免浪费昂贵芯片。验证修饰：H3K4me3 和 H3K27ac 效果良好；H3K27me3 可能需要优化。pA-Tn5 可自制（Addgene 质粒）或购买（Epicypher）。"
+  },
+  "ref": "Bartosovic & Castelo-Branco, protocols.io (doi:10.17504/protocols.io.bqbnmsme); Bartosovic et al. (2021) Nature Biotechnology 39:1452–1461",
+  "discipline": [
+    "genomics",
+    "single-cell",
+    "epigenomics"
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "8 hours"
+  },
+  "materials": [
+    {
+      "name": "Cells or nuclei (150,000–250,000)"
+    },
+    {
+      "name": "Primary antibody (ChIP/CUT&TAG validated, e.g., H3K4me3 Diagenode C15410030)"
+    },
+    {
+      "name": "Secondary antibody (guinea pig anti-rabbit IgG)"
+    },
+    {
+      "name": "pA-Tn5 fusion protein (homemade or Epicypher SNAP-CUTANA)"
+    },
+    {
+      "name": "Digitonin (0.01% working concentration)"
+    },
+    {
+      "name": "Antibody Buffer (digitonin-based)"
+    },
+    {
+      "name": "Dig-Wash Buffer"
+    },
+    {
+      "name": "Dig-300-BSA Buffer (300 mM NaCl)"
+    },
+    {
+      "name": "Tagmentation Buffer (with MgCl₂)"
+    },
+    {
+      "name": "STOP Buffer (Dig-300 + 500 mM EDTA)"
+    },
+    {
+      "name": "10x Chromium Single Cell ATAC Kit v1 or v1.1"
+    },
+    {
+      "name": "Zymo DNA Clean & Concentrator-5"
+    },
+    {
+      "name": "SYBR Green qPCR mix"
+    },
+    {
+      "name": "Diluted Nuclei Buffer (DNB, from 10x ATAC kit)"
+    },
+    {
+      "name": "Trypan Blue solution"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    }
+  ],
+  "relatedProtocols": [
+    "cut_and_run",
+    "chip_protocol",
+    "chromatin_accessibility_atac",
+    "cite_seq_10x"
+  ],
+  "crosslinks": [
+    "cut_and_run",
+    "chip_protocol",
+    "chromatin_accessibility_atac",
+    "cite_seq_10x"
+  ]
+}
