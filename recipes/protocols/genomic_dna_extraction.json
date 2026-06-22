@@ -127,5 +127,92 @@
     "pcr_standard",
     "southern_blot",
     "ethanol_precipitation"
+  ],
+  "briefSteps": [
+    {
+      "en": "Lyse cells/tissue with lysis buffer + Proteinase K (56°C, 1–3 h or overnight) → optional RNase A treatment → precipitate proteins → collect supernatant → isopropanol precipitation of DNA → centrifuge → 70% ethanol wash (×2) → air-dry pellet → dissolve in TE buffer → quantify (A260/280 ≈ 1.8)",
+      "zh": "裂解缓冲液 + Proteinase K 裂解样品（56°C，1–3 h 或过夜）→ 可选 RNase A 处理 → 蛋白沉淀 → 取上清 → 异丙醇沉淀 DNA → 离心 → 70% 乙醇洗涤 2 次 → 风干沉淀 → 溶解于 TE 缓冲液 → 定量（A260/280 ≈ 1.8）"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Place sample (1–5 × 10⁶ cells, 25 mg tissue, or one tail clip) into a 1.5 mL microcentrifuge tube. For tissue, mince with scissors into pieces <1 mm. Add 500 µL lysis buffer (100 mM Tris-HCl pH 8.5, 5 mM EDTA, 0.2% SDS, 200 mM NaCl) and 10 µL Proteinase K (20 mg/mL, final ~400 µg/mL).",
+      "zh": "将样品（1–5 × 10⁶ 细胞、25 mg 组织或一段鼠尾）放入 1.5 mL 离心管。组织需用剪刀剪至 <1 mm 碎片。加入 500 µL 裂解缓冲液（100 mM Tris-HCl pH 8.5、5 mM EDTA、0.2% SDS、200 mM NaCl）和 10 µL Proteinase K（20 mg/mL，终浓度约 400 µg/mL）。"
+    },
+    {
+      "en": "Incubate at 56°C with shaking (300–400 rpm) for 1–3 h, or overnight for tough tissue/tail clips, until the sample is completely lysed (solution turns clear).",
+      "zh": "56°C 振荡孵育（300–400 rpm）1–3 h，坚硬组织或鼠尾可孵育过夜，直至样品完全裂解（溶液变澄清）。",
+      "time": "1–3 h (or overnight)",
+      "temp": "56°C"
+    },
+    {
+      "en": "Optional: add 5 µL RNase A (10 mg/mL, final 100 µg/mL); incubate 37°C for 30 min. This removes contaminating RNA and improves A260/280 ratio.",
+      "zh": "可选：加入 5 µL RNase A（10 mg/mL，终浓度 100 µg/mL），37°C 孵育 30 min，去除 RNA 污染，改善 A260/280 比值。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Precipitate proteins: add 150 µL Protein Precipitation Solution (7.5 M ammonium acetate) or 200 µL saturated NaCl. Vortex vigorously for 20 s. Incubate on ice 5 min.",
+      "zh": "蛋白沉淀：加入 150 µL 蛋白沉淀液（7.5 M 醋酸铵）或 200 µL 饱和 NaCl，强力涡旋 20 s，冰上放置 5 min。",
+      "time": "5 min"
+    },
+    {
+      "en": "Centrifuge at 16,000×g for 3 min at RT; carefully transfer supernatant (containing DNA) to a new tube. Avoid disturbing the protein pellet.",
+      "zh": "16,000×g 室温离心 3 min，小心将含 DNA 的上清转移至新管，勿扰动蛋白沉淀。",
+      "time": "3 min"
+    },
+    {
+      "en": "Add equal volume (500 µL) of room-temperature 100% isopropanol to the supernatant; gently invert 10–15 times until white DNA strands are visible (high-MW DNA). Do NOT vortex.",
+      "zh": "加入等体积（500 µL）室温 100% 异丙醇，轻柔翻转 10–15 次，可见白色 DNA 丝状沉淀（高分子量 DNA）。勿涡旋。"
+    },
+    {
+      "en": "Centrifuge at 16,000×g for 5 min at RT; carefully pour off supernatant. DNA pellet may be white or invisible.",
+      "zh": "16,000×g 室温离心 5 min，倾出上清。DNA 沉淀可能为白色或不可见。",
+      "time": "5 min"
+    },
+    {
+      "en": "Wash pellet 2× with 500 µL 70% ethanol (room temperature): add ethanol, gently invert 5 times, centrifuge 16,000×g for 2 min, discard ethanol. This removes salt contamination.",
+      "zh": "用 500 µL 70% 乙醇（室温）洗涤沉淀 2 次：加乙醇 → 轻翻 5 次 → 16,000×g 离心 2 min → 倒去乙醇。去除盐污染。",
+      "time": "2 min per wash"
+    },
+    {
+      "en": "Air-dry pellet for 5–15 min at RT (or 37°C) until all ethanol has evaporated. Do NOT over-dry — this makes DNA difficult to dissolve. No visible ethanol should remain.",
+      "zh": "室温（或 37°C）风干沉淀 5–15 min，待乙醇完全挥发。切勿过度干燥，否则 DNA 难以溶解。",
+      "time": "5–15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Dissolve DNA pellet in 50–200 µL TE buffer (10 mM Tris-HCl pH 8.0, 1 mM EDTA). Incubate at 65°C for 10–30 min with occasional gentle mixing to aid dissolution. Use wide-bore pipette tips to avoid shearing.",
+      "zh": "将 DNA 沉淀溶解于 50–200 µL TE 缓冲液（10 mM Tris-HCl pH 8.0、1 mM EDTA）。65°C 孵育 10–30 min 并轻柔混匀助溶。使用宽口枪头避免剪切。",
+      "time": "10–30 min",
+      "temp": "65°C"
+    },
+    {
+      "en": "Quantify DNA by NanoDrop (A260/280 ≈ 1.8 for pure DNA; A260/230 >2.0) or Qubit fluorometer. Check integrity by running 100 ng on a 0.8% agarose gel — high-quality gDNA should appear as a single sharp band above 10 kb.",
+      "zh": "NanoDrop 定量（纯 DNA：A260/280 ≈ 1.8，A260/230 >2.0）或 Qubit 荧光定量。0.8% 琼脂糖凝胶（100 ng）验证完整性——高质量 gDNA 应呈单一清晰条带，位于 10 kb 以上。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Lysate with Proteinase K can be incubated overnight at 56°C or stored at 4°C for up to 24 h.",
+        "zh": "Proteinase K 裂解液可 56°C 过夜孵育，或 4°C 保存最多 24 h。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "DNA pellet in 70% ethanol can be stored at −20°C for up to 1 month before continuing.",
+        "zh": "70% 乙醇中的 DNA 沉淀可 −20°C 保存最多 1 个月，再继续后续步骤。"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "Dissolved gDNA can be stored at 4°C (short-term, up to 1 week) or −20°C (long-term, years) in TE buffer.",
+        "zh": "溶于 TE 缓冲液的 gDNA 可 4°C 短期保存（1 周内），或 −20°C 长期保存（数年）。"
+      }
+    }
   ]
 }

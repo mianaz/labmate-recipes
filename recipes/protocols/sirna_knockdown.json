@@ -126,11 +126,75 @@
       "optional": true
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Design 2–3 siRNAs per target → seed cells in antibiotic-free medium → prepare siRNA-RNAiMAX complex in Opti-MEM → add to cells → incubate 48–72 h → verify knockdown by qPCR and/or WB → run functional assays",
+      "zh": "设计 2–3 条靶向 siRNA → 无抗生素培养基铺板 → Opti-MEM 中制备 siRNA-RNAiMAX 复合物 → 加入细胞 → 孵育 48–72 h → qPCR/WB 验证敲低效率 → 开展功能实验"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Design or order 2–3 independent siRNAs per target gene (19–21 nt duplexes with 2 nt 3' overhangs). Include a non-targeting control (siNC) and a positive knockdown control (e.g., siGAPDH). Resuspend lyophilised siRNA in RNase-free water to 20 µM; aliquot and store at −80°C.",
+      "zh": "针对每个靶基因设计或订购 2–3 条独立 siRNA（19–21 nt 双链，3' 端 2 nt 突出）。包含非靶向对照（siNC）和阳性敲低对照（如 siGAPDH）。冻干 siRNA 用 RNase-free 水溶解至 20 µM，分装后 −80°C 保存。"
+    },
+    {
+      "en": "Day 0: Seed cells in antibiotic-free complete medium. 24-well: 5–8×10⁴ cells; 6-well: 2–4×10⁵ cells; 10 cm dish: 1.5–2×10⁶ cells. Target 40–70% confluency at transfection (Day 1).",
+      "zh": "Day 0：将细胞接种于不含抗生素的完全培养基中。24 孔板：5–8×10⁴；6 孔板：2–4×10⁵；10 cm 皿：1.5–2×10⁶。目标转染时（Day 1）汇合度为 40–70%。"
+    },
+    {
+      "en": "Day 1 — Tube A: Dilute 3 µL Lipofectamine RNAiMAX into 47 µL Opti-MEM (for 24-well scale); mix gently and incubate 5 min at room temperature.",
+      "zh": "Day 1 — 管 A：将 3 µL Lipofectamine RNAiMAX 稀释至 47 µL Opti-MEM（24 孔板规模），轻混后室温孵育 5 min。",
+      "time": "5 min"
+    },
+    {
+      "en": "Tube B: Dilute 1 µL of 20 µM siRNA into 49 µL Opti-MEM (final ~20 nM siRNA). For higher concentrations adjust accordingly.",
+      "zh": "管 B：将 1 µL 20 µM siRNA 稀释至 49 µL Opti-MEM（终浓度约 20 nM）。如需更高浓度按比例调整。"
+    },
+    {
+      "en": "Combine Tube A and Tube B; mix gently by pipetting 3–5 times; incubate at room temperature for 20 min to form siRNA-lipid complexes.",
+      "zh": "合并管 A 和管 B，轻柔吹打 3–5 次，室温孵育 20 min 形成 siRNA-脂质复合物。",
+      "time": "20 min"
+    },
+    {
+      "en": "Aspirate cell medium; add 400 µL fresh antibiotic-free medium per 24-well; add 100 µL complex dropwise (total 500 µL). Gently rock plate to distribute. Do NOT change medium for at least 6 h.",
+      "zh": "吸去旧培养基，每孔加 400 µL 新鲜无抗生素培养基，逐滴加入 100 µL 复合物（共 500 µL），轻摇培养板使其分布均匀。6 h 内不换液。"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 48–72 h. Most targets: 72 h. Fast-turnover proteins: 48 h. Long-lived proteins: 96 h with a second transfection at 48 h.",
+      "zh": "37°C、5% CO₂ 孵育 48–72 h。大多数靶标：72 h；快速周转蛋白：48 h；稳定蛋白：96 h，48 h 时再次转染。",
+      "time": "48–72 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Verify knockdown efficiency by qPCR (mRNA level; expect ≥70% reduction) and/or Western blot (protein level; expect ≥60% reduction). Always include siNC and siGAPDH controls.",
+      "zh": "通过 qPCR（mRNA 水平，预期 ≥70% 下调）和/或 Western blot（蛋白水平，预期 ≥60% 下调）验证敲低效率。始终包含 siNC 和 siGAPDH 对照。"
+    },
+    {
+      "en": "Proceed with downstream functional assays (proliferation, migration, apoptosis, etc.) at 48–72 h post-transfection when knockdown is confirmed.",
+      "zh": "确认敲低效率后，在转染后 48–72 h 开展下游功能实验（增殖、迁移、凋亡等）。"
+    }
+  ],
   "stoppingPoints": [
     {
       "afterStep": "siRNA transfection",
       "condition": "37°C incubator",
       "duration": "24–72 h (wait for knockdown)"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "After seeding on Day 0, cells incubate overnight; proceed with transfection reagent preparation next morning (Day 1).",
+        "zh": "Day 0 铺板后细胞过夜孵育，次日早上（Day 1）准备转染试剂继续操作。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "After transfection, cells incubate 48–72 h for knockdown; harvest time can be adjusted based on target protein half-life.",
+        "zh": "转染后细胞孵育 48–72 h 待敲低生效；收获时间可根据靶蛋白半衰期灵活调整。"
+      }
     }
   ],
   "usage": {

@@ -109,5 +109,55 @@
     "agarose_gel_electrophoresis",
     "dna_ligation",
     "gel_extraction"
+  ],
+  "briefSteps": [
+    {
+      "en": "Assemble digestion on ice (DNA + buffer + enzyme ≤10% vol), incubate at 37°C for 1–2 h, heat-inactivate at 65°C for 20 min, then verify by agarose gel electrophoresis.",
+      "zh": "冰上配制酶切反应（DNA + buffer + 酶量 ≤总体积 10%），37°C 孵育 1–2 h，65°C 热灭活 20 min，最后琼脂糖凝胶电泳验证。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Thaw all components on ice. Calculate the required amount of enzyme: use 5–10 U per µg of DNA. Enzyme volume must not exceed 10% of total reaction volume to avoid glycerol-mediated star activity.",
+      "zh": "冰上解冻所有组分。计算用酶量：每微克 DNA 使用 5–10 U 酶。酶体积不得超过总反应体积的 10%，以避免甘油引起的 star activity。"
+    },
+    {
+      "en": "Assemble reaction on ice in order: nuclease-free water, then 5 µL 10× restriction buffer (1× final in 50 µL reaction), then DNA (0.5–1 µg plasmid or 5–10 µg genomic DNA), and finally the restriction enzyme(s). Add enzyme last to prevent degradation.",
+      "zh": "冰上按顺序配制反应：无核酸酶水、5 µL 10× 限制酶缓冲液（50 µL 反应中终浓度 1×）、DNA（质粒 0.5–1 µg 或基因组 DNA 5–10 µg），最后加入限制酶。酶最后加以防降解。"
+    },
+    {
+      "en": "Mix gently by pipetting and briefly spin down. Incubate at the enzyme's optimal temperature (typically 37°C) for 1–2 hours. For complete digestion of genomic DNA, incubate up to 4 hours.",
+      "zh": "轻柔吹打混匀后短暂离心。在酶的最适温度（通常 37°C）孵育 1–2 小时。基因组 DNA 完全酶切可孵育至 4 小时。",
+      "temp": "37°C",
+      "time": "1–2 hours"
+    },
+    {
+      "en": "For double digestion, confirm buffer compatibility using NEB's website or use rCutSmart universal buffer. Perform simultaneous digestion if enzymes share a compatible buffer; otherwise perform sequential digestion.",
+      "zh": "双酶切时，通过 NEB 网站确认 buffer 兼容性，或使用 rCutSmart 通用缓冲液。若两种酶共用兼容 buffer 则同步酶切，否则进行顺序酶切。"
+    },
+    {
+      "en": "Heat-inactivate the enzyme at 65°C for 20 min (check enzyme datasheet — not all enzymes are heat-inactivatable; for those, purify by column or phenol-chloroform extraction).",
+      "zh": "65°C 热灭活酶 20 min（查阅酶的数据手册——并非所有酶均可热灭活；不可热灭活的酶需用柱纯化或酚氯仿提取去除）。",
+      "temp": "65°C",
+      "time": "20 min"
+    },
+    {
+      "en": "Mix 5 µL digested DNA with 1 µL 6× loading dye. Load onto a 1% agarose TAE gel alongside an appropriate DNA ladder. Run at 5–8 V/cm for 30–45 min.",
+      "zh": "取 5 µL 酶切 DNA 与 1 µL 6× 上样缓冲液混合，与 DNA Ladder 上样至 1% 琼脂糖 TAE 凝胶，5–8 V/cm 跑胶 30–45 min。",
+      "time": "30–45 min"
+    },
+    {
+      "en": "Visualize gel under UV or blue-light transilluminator. Confirm expected fragment sizes. If fragments need to be isolated for cloning, proceed to gel extraction or PCR purification.",
+      "zh": "在紫外灯或蓝光灯下观察凝胶。确认预期片段大小。若需分离片段用于克隆，进行凝胶回收或 PCR 纯化。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Heat-inactivated digestion product can be stored at −20°C for up to 1 week before downstream use (ligation, gel analysis, etc.).",
+        "zh": "热灭活后的酶切产物可在 −20°C 保存最多 1 周，再进行后续操作（连接、凝胶分析等）。"
+      }
+    }
   ]
 }

@@ -12,6 +12,121 @@
     "recombinant protein",
     "biochemistry"
   ],
+  "briefSteps": [
+    {
+      "en": "Express His-tagged protein → lyse cells → clarify lysate → equilibrate Ni-NTA resin → bind → wash with 20–50 mM imidazole → elute with 250–500 mM imidazole → dialyze → quantify and store at −80°C",
+      "zh": "表达 His 标签蛋白 → 裂解细胞 → 澄清裂解液 → 平衡 Ni-NTA 树脂 → 结合 → 20–50 mM 咪唑洗涤 → 250–500 mM 咪唑洗脱 → 透析 → 定量后 −80°C 保存"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Expression and Lysis",
+      "zh": "第一天：表达与裂解",
+      "isHeader": true
+    },
+    {
+      "en": "Induce His-tagged protein expression in E. coli BL21(DE3) with 0.5 mM IPTG. Harvest cells by centrifugation at 5,000×g for 10 min at 4°C.",
+      "zh": "用 0.5 mM IPTG 诱导 E. coli BL21(DE3) 表达 His 标签蛋白。5,000×g、4°C 离心 10 min 收菌。",
+      "time": "4–16 h",
+      "temp": "18–37°C"
+    },
+    {
+      "en": "Resuspend cell pellet in lysis buffer (50 mM NaH₂PO₄, 300 mM NaCl, 10 mM imidazole, pH 8.0 + protease inhibitors) at ~5 mL per gram wet pellet. Keep on ice.",
+      "zh": "每克湿菌体加 ~5 mL 裂解液（50 mM NaH₂PO₄、300 mM NaCl、10 mM imidazole、pH 8.0 + 蛋白酶抑制剂）重悬，冰上操作。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Lyse cells by sonication on ice: 3–5 cycles of 30 s pulse at 30–40% amplitude with 60 s rest between pulses. Alternatively, use French press at 18,000 psi × 2 passes.",
+      "zh": "冰浴超声裂解：30–40% 振幅，3–5 次 × 30 s，每次间隔 60 s。或用法压机 18,000 psi × 2 次。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Clarify lysate by centrifugation at 20,000×g for 30 min at 4°C. Collect supernatant (soluble fraction). Save an aliquot for SDS-PAGE analysis.",
+      "zh": "20,000×g、4°C 离心 30 min 澄清裂解液。收集上清（可溶性组分）。留样做 SDS-PAGE 分析。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 1–2: Purification",
+      "zh": "第一至二天：纯化",
+      "isHeader": true
+    },
+    {
+      "en": "Equilibrate Ni-NTA agarose resin (1–2 mL resin per 50 mL lysate) with 5 column volumes (CV) of binding buffer (50 mM NaH₂PO₄, 300 mM NaCl, 20 mM imidazole, pH 8.0).",
+      "zh": "用 5 CV 结合缓冲液（50 mM NaH₂PO₄、300 mM NaCl、20 mM imidazole、pH 8.0）平衡 Ni-NTA 树脂（每 50 mL 裂解液用 1–2 mL 树脂）。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Bind: load cleared lysate onto equilibrated resin. For batch method, rotate at 4°C for 1 h. For column, load at 0.5–1 mL/min. Collect flow-through for SDS-PAGE.",
+      "zh": "结合：将澄清裂解液上树脂。批量法：4°C 旋转 1 h。柱层析：0.5–1 mL/min 上样。收集穿透液做 SDS-PAGE。",
+      "time": "60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash 1: apply 10 CV binding buffer (20 mM imidazole) to remove bulk contaminants. Collect wash fractions for SDS-PAGE monitoring.",
+      "zh": "第一次洗涤：用 10 CV 结合缓冲液（20 mM imidazole）去除大量杂蛋白。收集洗涤液做 SDS-PAGE 监测。",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash 2 (optional): apply 5 CV high-salt wash buffer (50 mM NaH₂PO₄, 500 mM NaCl, 50 mM imidazole, pH 8.0) to remove chaperone DnaK. Optionally add 1 mM ATP + 5 mM MgCl₂.",
+      "zh": "第二次洗涤（可选）：5 CV 高盐洗涤缓冲液（50 mM NaH₂PO₄、500 mM NaCl、50 mM imidazole、pH 8.0）去除伴侣蛋白 DnaK。可选加 1 mM ATP + 5 mM MgCl₂。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute: apply 5–10 CV elution buffer (50 mM NaH₂PO₄, 300 mM NaCl, 250–500 mM imidazole, pH 8.0). Collect 0.5–1 mL fractions. Pool peak A280 fractions and verify by SDS-PAGE.",
+      "zh": "洗脱：用 5–10 CV 洗脱缓冲液（50 mM NaH₂PO₄、300 mM NaCl、250–500 mM imidazole、pH 8.0）。收集 0.5–1 mL 组分。合并 A280 峰组分并 SDS-PAGE 验证。",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2: Post-purification",
+      "zh": "第二天：纯化后处理",
+      "isHeader": true
+    },
+    {
+      "en": "Dialyze pooled eluate against storage buffer (e.g., 50 mM Tris pH 7.5, 150 mM NaCl, 1 mM DTT) at 4°C with 2 buffer changes of 2 h each, or use HiTrap Desalting column to remove imidazole.",
+      "zh": "将合并洗脱液对储存缓冲液（如 50 mM Tris pH 7.5、150 mM NaCl、1 mM DTT）于 4°C 透析，换液两次每次 2 h，或用 HiTrap Desalting 脱盐柱去除咪唑。",
+      "time": "4 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Optional tag cleavage: add TEV protease at 1:50 enzyme:substrate ratio in 50 mM Tris pH 8.0, 0.5 mM EDTA, 1 mM DTT. Incubate at 4°C overnight. Perform reverse Ni-NTA: cleaved protein flows through; His-tag and uncleaved protein bind.",
+      "zh": "可选标签切除：加 TEV 蛋白酶（酶:底物 = 1:50），50 mM Tris pH 8.0、0.5 mM EDTA、1 mM DTT，4°C 过夜。反向 Ni-NTA：切割后蛋白在穿透液中，His-tag 和未切割蛋白结合。",
+      "time": "12 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Quantify protein by BCA or Bradford assay. Run SDS-PAGE with Coomassie staining to confirm purity (expect >90% from single Ni-NTA step). Aliquot, snap-freeze in liquid N₂, and store at −80°C with 10% glycerol.",
+      "zh": "BCA 或 Bradford 法定量蛋白。考马斯蓝染色 SDS-PAGE 确认纯度（单步 Ni-NTA 纯度 >90%）。分装后液氮速冻，加 10% 甘油于 −80°C 保存。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Clarified lysate can be stored at 4°C overnight or frozen at −80°C before proceeding to affinity purification.",
+        "zh": "澄清裂解液可在 4°C 保存过夜或 −80°C 冷冻后再进行亲和纯化。"
+      }
+    },
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Eluted protein (in high imidazole) can be held at 4°C overnight before dialysis. Proceed to dialysis the next day.",
+        "zh": "洗脱蛋白（高咪唑缓冲液中）可在 4°C 保存过夜，次日再透析。"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "Dialyzed purified protein can be aliquoted and stored at −80°C with 10% glycerol for up to 12 months.",
+        "zh": "透析后的纯化蛋白加 10% 甘油分装后可于 −80°C 保存 12 个月。"
+      }
+    }
+  ],
   "components": [
     {
       "name": "1. Express protein in E. coli (BL21/BL21-DE3)",

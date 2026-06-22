@@ -14,6 +14,76 @@
     "native protein",
     "polishing step"
   ],
+  "briefSteps": [
+    {
+      "en": "Concentrate and filter protein sample → select appropriate SEC column by MW range → equilibrate column with 1.5 CV running buffer → inject sample → run at constant flow collecting 0.5–2 mL fractions → pool symmetric peak → verify by SDS-PAGE → clean and store column in 20% EtOH",
+      "zh": "浓缩并过滤蛋白样品 → 按分子量选择合适 SEC 柱 → 1.5 CV 运行缓冲液平衡柱子 → 进样 → 恒流运行收集 0.5–2 mL 组分 → 合并对称峰 → SDS-PAGE 验证 → 清洗柱子并储存于 20% EtOH"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Prepare protein sample: concentrate to ≥1 mg/mL, centrifuge at 20,000×g for 20 min at 4°C to remove aggregates, then filter through 0.22 µm membrane. Analytical injection: ≤500 µL; preparative (16/60 column): ≤5 mL.",
+      "zh": "制备蛋白样品：浓缩至 ≥1 mg/mL，20,000×g、4°C 离心 20 min 去除聚集体，再过 0.22 µm 膜。分析型进样 ≤500 µL；制备型（16/60 柱）≤5 mL。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Select SEC column appropriate for the target protein MW: Superdex 75 (3–70 kDa), Superdex 200 (10–600 kDa), or Superose 6 (5–5,000 kDa). For analytical runs use 10/300 GL (24 mL); for preparative use 16/60 (120 mL) or 26/60 (320 mL).",
+      "zh": "按目标蛋白 MW 选柱：Superdex 75（3–70 kDa）、Superdex 200（10–600 kDa）或 Superose 6（5–5,000 kDa）。分析型用 10/300 GL（24 mL），制备型用 16/60（120 mL）或 26/60（320 mL）。"
+    },
+    {
+      "en": "Equilibrate column with 1.5 CV SEC running buffer (e.g., 50 mM HEPES pH 7.5, 150 mM NaCl, 1 mM DTT). Flow rate: 0.4–0.5 mL/min (10/300 GL) or 1.0–1.5 mL/min (16/60). Pressure limit 1.5–1.8 MPa. Monitor A280 until baseline is stable.",
+      "zh": "用 1.5 CV SEC 运行缓冲液（如 50 mM HEPES pH 7.5、150 mM NaCl、1 mM DTT）平衡柱子。流速：0.4–0.5 mL/min（10/300 GL）或 1.0–1.5 mL/min（16/60）。压力限 1.5–1.8 MPa。监测 A280 至基线稳定。",
+      "time": "60–90 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Rinse sample loop with water then running buffer. Load sample into loop and inject at 0.5 mL/min. Note the injection volume precisely for later Kav calculation.",
+      "zh": "样品环先用水冲洗再用运行缓冲液平衡。将样品装入上样环并以 0.5 mL/min 注入。精确记录进样体积以备 Kav 计算。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Run 1.2 CV at constant flow. Collect 0.5 mL fractions (analytical) or 1–2 mL fractions (preparative). Monitor A280 (protein) and A260 (nucleic acid contamination). Void volume V₀ ≈ 0.35 CV; total column volume Vt ≈ CV.",
+      "zh": "恒流运行 1.2 CV。收集 0.5 mL（分析型）或 1–2 mL（制备型）组分。监测 A280（蛋白）和 A260（核酸污染）。空体积 V₀ ≈ 0.35 CV；总柱体积 Vt ≈ CV。",
+      "time": "60–120 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Pool symmetric, non-tailing peak fractions. Asymmetric tailing indicates aggregation or multiple species — pool only the main symmetric peak. Verify composition and purity by SDS-PAGE.",
+      "zh": "合并对称、无拖尾的峰组分。不对称拖尾表明有聚集体或多组分——仅合并主对称峰。SDS-PAGE 验证组成和纯度。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Optional: run MW calibration standards (GE LMW/HMW kit) on first use of new column. Plot log(MW) vs Kav = (Ve−V₀)/(Vt−V₀). Couple with SEC-MALS for absolute molecular weight determination.",
+      "zh": "可选：新柱首次使用时跑 MW 校准标准品（GE LMW/HMW 套装）。绘制 log(MW) vs Kav = (Ve−V₀)/(Vt−V₀)。联用 SEC-MALS 测定绝对分子量。",
+      "time": "90 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Clean column with 1 CV 2 M NaCl at reduced flow rate, then re-equilibrate with 1.5 CV running buffer. Store column in 20% ethanol at 4°C. Never allow column to run dry.",
+      "zh": "用 1 CV 2 M NaCl 低流速清洗柱子，再用 1.5 CV 运行缓冲液重新平衡。柱子储存于 4°C 的 20% 乙醇中。切勿让柱子跑干。",
+      "time": "60 min",
+      "temp": "4°C"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Prepared and filtered protein sample can be held at 4°C for up to 24 hours before injection.",
+        "zh": "制备并过滤好的蛋白样品可在 4°C 保存最多 24 小时后再进样。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Pooled peak fractions can be stored at 4°C overnight or snap-frozen at −80°C with 10% glycerol.",
+        "zh": "合并的峰值组分可在 4°C 保存过夜，或加 10% 甘油后液氮速冻于 −80°C 保存。"
+      }
+    }
+  ],
   "components": [
     {
       "name": "1. Prepare sample: ≥1 mg/mL, centrifuge 20,000×g 20 min 4°C, filter 0.22 µm",
@@ -100,7 +170,6 @@
     "coomassie_staining"
   ],
   "ref": "Wyatt et al. (2017) Nat Protoc 12:1683–1701; GE Healthcare SEC Application Note 18-1114-02",
-  "doi": "10.1038/nprot.2017.064",
   "discipline": [
     "protein",
     "biochemistry"

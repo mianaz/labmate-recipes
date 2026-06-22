@@ -80,7 +80,7 @@
     "clonogenic_assay",
     "trypan_blue_counting"
   ],
-  "doi": "10.1016/S0039-9140(97)00325-4",
+  "doi": "10.1016/S0039-9140(96)02264-5",
   "discipline": [
     "cell"
   ],
@@ -107,6 +107,85 @@
     }
   ],
   "stoppingPoints": [],
+  "briefSteps": [
+    {
+      "en": "Seed cells in 96-well plate → overnight attachment → add treatment → incubate 24–72 h → add 10 µL CCK-8 → incubate 1–4 h at 37°C → read A₄₅₀ nm → calculate % viability / IC₅₀",
+      "zh": "铺细胞至 96 孔板 → 过夜贴壁 → 加药处理 → 孵育 24–72 h → 加 10 µL CCK-8 → 37°C 孵育 1–4 h → 读 A₄₅₀ nm → 计算活力百分比 / IC₅₀"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 0 – Cell Seeding",
+      "zh": "第 0 天 – 铺板",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare a single-cell suspension and seed 2,000–10,000 cells per well in 100 µL complete medium in a 96-well plate; fill all outer-edge wells with PBS (no cells) to prevent evaporation-driven edge effects.",
+      "zh": "制备单细胞悬液，每孔铺 2,000–10,000 个细胞（100 µL 完全培养基）；边缘孔加 PBS（不铺细胞），防止蒸发产生边缘效应。",
+      "temp": "37°C"
+    },
+    {
+      "en": "Incubate overnight at 37°C, 5% CO₂ to allow cells to attach and equilibrate (12–18 h).",
+      "zh": "37°C、5% CO₂ 过夜培养（12–18 h），使细胞贴壁平衡。",
+      "time": "12–18 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 1 – Treatment",
+      "zh": "第 1 天 – 给药",
+      "isHeader": true
+    },
+    {
+      "en": "Replace medium with 100 µL complete medium containing test compound at desired concentrations (≥8 concentrations in 0.5-log steps for IC₅₀); include untreated control, blank (medium only, no cells), and solvent control (DMSO ≤0.1%).",
+      "zh": "换液至含受试化合物的完全培养基（每孔 100 µL；IC₅₀ 曲线设 ≥8 个浓度，0.5 对数间隔）；同时设未处理对照、空白孔（仅培养基）及溶剂对照（DMSO ≤0.1%）。",
+      "temp": "37°C"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 24, 48, or 72 h as required; for treatments >48 h, refresh medium and re-add drug at the 48 h mark.",
+      "zh": "37°C、5% CO₂ 孵育 24、48 或 72 h；处理时间 >48 h 时，在 48 h 时换液并重新加药。",
+      "time": "24–72 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Assay Day – CCK-8 Detection",
+      "zh": "检测日 – CCK-8 显色",
+      "isHeader": true
+    },
+    {
+      "en": "Add 10 µL CCK-8 reagent directly to each well (do NOT remove medium); use a multichannel pipette, pipette once to mix, and protect the plate from light.",
+      "zh": "直接向每孔加入 10 µL CCK-8 试剂（不去除培养基）；用多道移液器加液后轻吹混匀，培养板避光。"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 1–4 h; check color development every 30 min after the first hour — optimal OD450 is 0.6–1.5 (orange-yellow color).",
+      "zh": "37°C、5% CO₂ 孵育 1–4 h；从第 1 h 起每 30 min 检查显色情况，最佳 OD450 为 0.6–1.5（橙黄色）。",
+      "time": "1–4 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Read absorbance at 450 nm (reference wavelength 630–650 nm) immediately on a microplate reader; do not remove medium and do not add DMSO — this assay is non-destructive.",
+      "zh": "立即用酶标仪读取 450 nm 吸光度（参考波长 630–650 nm）；无需去除培养基或加 DMSO——本实验为非破坏性检测。"
+    },
+    {
+      "en": "Calculate % viability using: % Viability = (OD_treated − OD_blank) / (OD_control − OD_blank) × 100; fit IC₅₀ by nonlinear regression (4-parameter logistic model) in GraphPad Prism.",
+      "zh": "计算活力百分比：% 活力 = (OD处理 − OD空白) / (OD对照 − OD空白) × 100；用 GraphPad Prism 4 参数逻辑斯谛模型拟合 IC₅₀。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Cells attached in 96-well plate; can be left overnight at 37°C before adding treatment",
+        "zh": "细胞已贴壁于 96 孔板，可在 37°C 过夜后再加药处理"
+      }
+    },
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Drug treatment incubation (24–72 h) is a natural stopping point; proceed to CCK-8 addition at the desired endpoint",
+        "zh": "药物处理孵育（24–72 h）为自然停顿点；在预设终点时加入 CCK-8"
+      }
+    }
+  ],
   "usage": {
     "en": "Measure cell proliferation and viability using CCK-8 (WST-8) colorimetric assay.",
     "zh": "CCK-8（WST-8）比色法检测细胞增殖和活力。"

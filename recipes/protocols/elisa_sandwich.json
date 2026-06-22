@@ -106,5 +106,91 @@
   },
   "crosslinks": [
     "bca_protein_assay"
+  ],
+  "briefSteps": [
+    {
+      "en": "Coat plate with capture antibody overnight at 4°C → block 1 h → incubate standards and samples 2 h → wash → add biotinylated detection antibody 1 h → wash → add streptavidin-HRP 30 min → wash → add TMB substrate → stop with H₂SO₄ → read OD₄₅₀.",
+      "zh": "捕获抗体 4°C 包被过夜 → 封闭 1 h → 标准品和样品孵育 2 h → 洗板 → 生物素化检测抗体孵育 1 h → 洗板 → 链霉亲和素-HRP 孵育 30 min → 洗板 → 加 TMB 底物 → H₂SO₄ 终止 → 读 OD₄₅₀。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1",
+      "zh": "第一天",
+      "isHeader": true
+    },
+    {
+      "en": "Dilute capture antibody to 1–4 µg/mL in coating buffer (50 mM carbonate-bicarbonate, pH 9.6). Add 100 µL per well to a high-binding 96-well ELISA plate. Seal plate and incubate overnight at 4°C.",
+      "zh": "将捕获抗体用包被缓冲液（50 mM 碳酸盐-碳酸氢盐，pH 9.6）稀释至 1–4 µg/mL，每孔加 100 µL，密封后 4°C 过夜孵育。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2",
+      "zh": "第二天",
+      "isHeader": true
+    },
+    {
+      "en": "Discard coating solution. Wash plate 3× with PBST (0.05% Tween-20 in PBS), 300 µL/well each time. Pat dry on paper towels.",
+      "zh": "弃去包被液，用 PBST（含 0.05% Tween-20 的 PBS）洗板 3 次，每次 300 µL/孔，在纸巾上拍干。"
+    },
+    {
+      "en": "Block plate with 200 µL/well of 1% BSA in PBS (or 3% non-fat milk). Seal and incubate at room temperature for 1 h with gentle shaking.",
+      "zh": "每孔加 200 µL 封闭液（1% BSA in PBS 或 3% 脱脂奶粉），密封后室温轻摇孵育 1 h。",
+      "time": "60 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Prepare a 7-point standard curve by serial 2-fold dilution of the recombinant target protein (typically 2000–15.6 pg/mL) plus a blank (diluent only). Dilute unknown samples in the same assay diluent.",
+      "zh": "将重组靶蛋白倍比稀释制备 7 点标准曲线（通常 2000–15.6 pg/mL）加空白对照，待测样品用同一稀释液处理。"
+    },
+    {
+      "en": "Wash plate 3× with PBST. Add 100 µL standards and samples per well in duplicate or triplicate. Seal and incubate at room temperature for 2 h with gentle shaking.",
+      "zh": "PBST 洗板 3 次，每孔加 100 µL 标准品或样品，设置双复孔或三复孔，密封后室温轻摇孵育 2 h。",
+      "time": "120 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Wash plate 3–5× with PBST. Dilute biotinylated detection antibody (typically 0.5–2 µg/mL in 1% BSA-PBS) and add 100 µL per well. Seal and incubate at room temperature for 1 h.",
+      "zh": "PBST 洗板 3–5 次，将生物素化检测抗体稀释至 0.5–2 µg/mL（1% BSA-PBS），每孔加 100 µL，密封后室温孵育 1 h。",
+      "time": "60 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Wash plate 3–5× with PBST. Add streptavidin-HRP conjugate (diluted 1:200–1:1000 in 1% BSA-PBS) at 100 µL per well. Incubate at room temperature for 30 min.",
+      "zh": "PBST 洗板 3–5 次，链霉亲和素-HRP（1% BSA-PBS 稀释 1:200–1:1000）每孔加 100 µL，室温孵育 30 min。",
+      "time": "30 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Wash plate 5× with PBST. Add 100 µL TMB substrate solution per well. Incubate at room temperature in the dark for 15–30 min until the highest standard turns dark blue. Do not exceed 30 min.",
+      "zh": "PBST 洗板 5 次，每孔加 100 µL TMB 底物液，室温避光孵育 15–30 min 直至最高浓度标准品孔呈深蓝色，不超过 30 min。",
+      "time": "15–30 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Add 50 µL of 2N H₂SO₄ stop solution per well. The solution should turn from blue to yellow. Read OD₄₅₀ nm (with reference at 570 nm) within 30 min using a microplate reader.",
+      "zh": "每孔加 50 µL 2N H₂SO₄ 终止液，溶液由蓝变黄，30 min 内用酶标仪读 OD₄₅₀（570 nm 参比），",
+      "time": "5 min"
+    },
+    {
+      "en": "Plot OD₄₅₀ vs standard concentration and fit to a 4-parameter logistic (4PL) curve (R² >0.99). Back-calculate sample concentrations from the curve, accounting for any dilution factors.",
+      "zh": "以 OD₄₅₀ 对标准品浓度作图并进行四参数 logistic（4PL）拟合（R² >0.99），代入方程计算样品浓度，乘以稀释倍数得实际浓度。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Coated plate can be sealed and stored at 4°C for up to 48 h before proceeding to blocking.",
+        "zh": "包被完成后可密封 4°C 保存至 48 h，再进行封闭步骤。"
+      }
+    },
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Blocked plate can be stored at 4°C sealed for up to 24 h before adding samples.",
+        "zh": "封闭完成后可密封 4°C 保存最长 24 h，再加样品。"
+      }
+    }
   ]
 }

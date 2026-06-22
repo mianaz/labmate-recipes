@@ -206,5 +206,106 @@
   "usage": {
     "en": "Profile histone modifications and transcription factor binding using CUT&RUN (cleavage under targets and release using nuclease).",
     "zh": "CUT&RUN 技术分析组蛋白修饰和转录因子结合谱。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Harvest cells (no crosslinking) → bind to ConA magnetic beads → permeabilize with 0.01% digitonin → incubate with primary antibody (4°C, overnight) → wash → bind pA-MNase (4°C, 1 h) → wash → activate MNase with 2 mM CaCl₂ at 0°C (30 min) → stop with EDTA/EGTA buffer → release fragments at 37°C (30 min) → collect supernatant → extract DNA → library prep or qPCR",
+      "zh": "收取细胞（无需交联）→ 结合 ConA 磁珠 → 0.01% digitonin 透化 → 一抗孵育（4°C 过夜）→ 洗涤 → pA-MNase 结合（4°C 1 h）→ 洗涤 → 2 mM CaCl₂ 在 0°C 激活 MNase（30 min）→ EDTA/EGTA 终止 → 37°C 释放片段（30 min）→ 收上清 → DNA 提取 → 文库制备或 qPCR"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Cell Binding and Antibody Incubation",
+      "zh": "第1天：细胞结合与抗体孵育",
+      "isHeader": true
+    },
+    {
+      "en": "Harvest 500,000 cells (range 5,000–5,000,000); no crosslinking required. Pellet at 600×g for 3 min at RT. Wash 2× with Wash Buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.5 mM spermidine, 1× protease inhibitors).",
+      "zh": "收取 500,000 个细胞（范围 5,000–5,000,000），无需甲醛交联。600×g RT 离心 3 min，用洗涤缓冲液（20 mM HEPES pH 7.5、150 mM NaCl、0.5 mM 亚精胺、1× 蛋白酶抑制剂）洗涤 2 次。",
+      "time": "3 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Activate ConA beads: wash with PBS + 0.1% BSA; resuspend to 10 µL per 500,000 cells. Add cells to beads and rotate 10 min at RT. Magnetically capture beads in all subsequent steps.",
+      "zh": "活化 ConA 磁珠：用 PBS + 0.1% BSA 洗涤，每 500,000 个细胞用 10 µL 重悬。加入细胞，室温旋转 10 min。后续步骤均通过磁力架捕获磁珠。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Permeabilize: resuspend bead-bound cells in 1 mL Dig-Wash Buffer (Wash Buffer + 0.01% digitonin); rotate 5 min at RT. Capture beads and discard supernatant.",
+      "zh": "透化：将磁珠结合细胞重悬于 1 mL Dig-Wash 缓冲液（洗涤缓冲液 + 0.01% digitonin），RT 旋转 5 min。磁力捕获，弃上清。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add primary antibody (1 µg) diluted in 100 µL Antibody Buffer (Dig-Wash + 2 mM EDTA); rotate at 4°C overnight (minimum 2 h). EDTA prevents premature MNase activation. Include IgG negative and H3K4me3 positive controls.",
+      "zh": "将 1 µg 一抗稀释于 100 µL 抗体缓冲液（Dig-Wash + 2 mM EDTA）中，4°C 旋转孵育过夜（至少 2 h）。EDTA 防止 MNase 提前激活。设 IgG 阴性对照和 H3K4me3 阳性对照。",
+      "time": "overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2: pA-MNase Binding, Cleavage, and DNA Extraction",
+      "zh": "第2天：pA-MNase 结合、切割与DNA提取",
+      "isHeader": true
+    },
+    {
+      "en": "Capture beads; wash 2× with Dig-Wash Buffer (600×g, 3 min, 4°C). Add pA-MNase (protein A–MNase fusion) at 700 ng/mL in 100 µL Dig-Wash; rotate 1 h at 4°C. Note: use pA/G-MNase for mouse primary antibodies.",
+      "zh": "磁力捕获，Dig-Wash 洗涤 2 次（600×g，3 min，4°C）。加入 pA-MNase（蛋白 A–MNase 融合蛋白），700 ng/mL，100 µL Dig-Wash，4°C 旋转孵育 1 h。小鼠一抗需用 pA/G-MNase。",
+      "time": "1 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash 2× with Dig-Wash Buffer to remove unbound pA-MNase. Resuspend in 100 µL Dig-Wash and place tubes in ice-water bath (0°C).",
+      "zh": "Dig-Wash 洗涤 2 次，去除未结合 pA-MNase。重悬于 100 µL Dig-Wash，置于冰水浴（0°C）。",
+      "temp": "0°C"
+    },
+    {
+      "en": "Activate MNase: add CaCl₂ to 2 mM final concentration. Incubate at 0°C (ice-water bath) for exactly 30 min. The 0°C temperature is critical for controlled, targeted cleavage.",
+      "zh": "激活 MNase：加入 CaCl₂ 至终浓度 2 mM，在 0°C 冰水浴中准确孵育 30 min。0°C 是控制靶向切割的关键条件。",
+      "time": "30 min",
+      "temp": "0°C"
+    },
+    {
+      "en": "Stop reaction by adding 100 µL 2× STOP Buffer (340 mM NaCl, 20 mM EDTA, 4 mM EGTA, 0.01% digitonin, 0.05 mg/mL RNase A, 25 pg/mL spike-in E. coli DNA). Mix by inversion.",
+      "zh": "加入 100 µL 2× STOP 缓冲液（340 mM NaCl、20 mM EDTA、4 mM EGTA、0.01% digitonin、0.05 mg/mL RNase A、25 pg/mL E. coli spike-in DNA）终止反应，翻转混匀。"
+    },
+    {
+      "en": "Release fragmented chromatin: incubate at 37°C for 30 min with gentle mixing (300 rpm). Cut DNA fragments diffuse out of nuclei into supernatant.",
+      "zh": "释放切割片段：37°C 轻摇孵育 30 min（300 rpm）。切割的 DNA 片段从细胞核扩散至上清。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Centrifuge at 16,000×g for 5 min at 4°C; carefully transfer supernatant (released DNA) to a new tube. Pellet = remaining uncut chromatin (discard).",
+      "zh": "16,000×g 4°C 离心 5 min，小心转移上清（含释放 DNA）至新管。沉淀为未切割染色质（弃去）。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Extract DNA: add SDS to 0.1% and Proteinase K to 100 µg/mL; incubate 50°C for 1 h. Purify with SPRI beads (1.2×) or column; elute in 20–50 µL TE or water. Quantify by Qubit.",
+      "zh": "DNA 提取：加 SDS 至 0.1%，Proteinase K 至 100 µg/mL，50°C 孵育 1 h。SPRI 磁珠（1.2×）或柱纯化，洗脱至 20–50 µL TE 或水。Qubit 定量。",
+      "time": "1 h",
+      "temp": "50°C"
+    },
+    {
+      "en": "Validate by qPCR (target locus vs. IgG and negative-locus controls) or proceed to library preparation (NEBNext Ultra II, 10–14 PCR cycles). Bioanalyzer should show mono/dinucleosome peaks at ~150/300 bp.",
+      "zh": "qPCR 验证（目标位点 vs. IgG 及阴性位点对照），或直接进行文库制备（NEBNext Ultra II，10–14 个 PCR 循环）。Bioanalyzer 应呈单/双核小体峰（~150/300 bp）。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "After overnight antibody incubation, beads can be held at 4°C for up to 2 h before proceeding to pA-MNase binding.",
+        "zh": "一抗孵育过夜后，磁珠可在 4°C 保存最多 2 h，再进行 pA-MNase 结合步骤。"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "Extracted and purified DNA can be stored at −20°C for up to 6 months before library preparation or qPCR.",
+        "zh": "提取纯化后的 DNA 可 −20°C 保存最长 6 个月，待文库制备或 qPCR。"
+      }
+    }
+  ]
 }

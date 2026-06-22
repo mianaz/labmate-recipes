@@ -131,5 +131,57 @@
     "pcr_standard",
     "colony_pcr",
     "restriction_digest"
+  ],
+  "briefSteps": [
+    {
+      "en": "Dissolve agarose in TAE/TBE buffer (0.8–2%), add DNA stain at ~55°C, pour and set gel, load samples with loading dye alongside DNA ladder, run at 5–8 V/cm for 30–60 min, then visualize under UV or blue light.",
+      "zh": "将琼脂糖溶于 TAE/TBE 缓冲液（0.8–2%），约 55°C 时加入核酸染料，倒胶凝固，加载含上样缓冲液的样品及 DNA Ladder，5–8 V/cm 电泳 30–60 min，紫外灯或蓝光灯下观察。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Select appropriate agarose concentration based on expected fragment sizes: 0.8% for >1 kb, 1% for 0.5–7 kb, 1.5% for 0.2–3 kb, 2% for 0.1–2 kb. For gel extraction, use TAE buffer.",
+      "zh": "根据预期片段大小选择琼脂糖浓度：>1 kb 用 0.8%，0.5–7 kb 用 1%，0.2–3 kb 用 1.5%，0.1–2 kb 用 2%。用于胶回收时应使用 TAE 缓冲液。"
+    },
+    {
+      "en": "Weigh agarose powder and add to 1× TAE or TBE buffer (e.g., 0.5 g agarose in 50 mL buffer for a 1% gel). Heat in microwave in 30-second bursts, swirling between bursts, until fully dissolved and clear. Avoid boiling over.",
+      "zh": "称量琼脂糖粉末，加入 1× TAE 或 TBE 缓冲液（如 1% 胶：0.5 g 琼脂糖加 50 mL 缓冲液）。微波炉每次 30 秒加热，每次间隔摇匀，至完全溶解透明。注意防止沸腾溢出。"
+    },
+    {
+      "en": "Allow agarose solution to cool to ~55°C (comfortable to hold). Add 5 µL GelRed or SYBR Safe (10,000× stock) per 50 mL gel. Swirl to mix. Alternatively, post-stain with EtBr after running.",
+      "zh": "待琼脂糖溶液冷却至约 55°C（手持不烫）。每 50 mL 凝胶加入 5 µL GelRed 或 SYBR Safe（10,000× 储液）并摇匀。也可在电泳结束后再进行 EtBr 后染。",
+      "temp": "55°C"
+    },
+    {
+      "en": "Pour gel into casting tray with combs in place. Avoid air bubbles — pop any with a pipette tip. Allow to solidify at room temperature for 20–30 min until opaque.",
+      "zh": "将凝胶倒入已插好梳子的胶槽中。用枪头戳破气泡。室温凝固 20–30 min 至不透明。",
+      "time": "20–30 min"
+    },
+    {
+      "en": "Transfer gel to electrophoresis tank. Fill with the same buffer (TAE or TBE, matching gel buffer) until gel is submerged by 2–3 mm. Remove combs carefully.",
+      "zh": "将凝胶移至电泳槽中，加入相同缓冲液（TAE 或 TBE，须与制胶缓冲液一致），使凝胶被淹没 2–3 mm。小心拔出梳子。"
+    },
+    {
+      "en": "Prepare samples: mix DNA with 6× loading dye at a 5:1 ratio (e.g., 5 µL DNA + 1 µL dye). Load 3–5 µL of appropriate DNA ladder into the first lane.",
+      "zh": "准备样品：将 DNA 与 6× 上样缓冲液以 5:1 比例混合（如 5 µL DNA + 1 µL 缓冲液）。在第一泳道加入 3–5 µL 合适的 DNA Ladder。"
+    },
+    {
+      "en": "Load samples into wells carefully. Run electrophoresis at 5–8 V/cm (e.g., 100 V for a 13 cm gel) for 30–60 min. Run until bromophenol blue dye front has migrated 2/3 of the gel length.",
+      "zh": "小心将样品加入上样孔。以 5–8 V/cm（如 13 cm 胶板用 100 V）电泳 30–60 min。至溴酚蓝染料前沿迁移至凝胶 2/3 处停止。",
+      "time": "30–60 min"
+    },
+    {
+      "en": "Visualize DNA bands under UV transilluminator (for EtBr/GelRed) or blue-light box (for SYBR Safe/GelGreen). Photograph the gel. Wear UV-protective eyewear. Minimize UV exposure time to preserve DNA for gel extraction.",
+      "zh": "在紫外灯下（用于 EtBr/GelRed）或蓝光灯下（用于 SYBR Safe/GelGreen）观察 DNA 条带，拍照记录。佩戴紫外防护眼镜。若需胶回收，尽量缩短紫外暴露时间以保护 DNA。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Solidified gel can be wrapped in plastic wrap and stored at 4°C for up to 1 week before use.",
+        "zh": "凝固后的凝胶用保鲜膜包好后可在 4°C 保存最多 1 周再使用。"
+      }
+    }
   ]
 }

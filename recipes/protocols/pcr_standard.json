@@ -116,5 +116,57 @@
     "gel_extraction",
     "colony_pcr",
     "qpcr_protocol"
+  ],
+  "briefSteps": [
+    {
+      "en": "Assemble reaction on ice (template + primers + master mix + water) → thermocycle (initial denaturation 95°C 3 min, 30–35 cycles of 95°C/Tm-5°C/72°C, final extension 72°C 5 min) → verify by agarose gel.",
+      "zh": "冰上配制反应体系（模板+引物+master mix+水）→ 热循环（初始变性 95°C 3 min，30–35 循环 95°C/Tm-5°C/72°C，终延伸 72°C 5 min）→ 琼脂糖凝胶验证。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Prepare reaction master mix on ice: combine 25 µL 2× Taq Master Mix, 1 µL forward primer (10 µM, 0.2 µM final), 1 µL reverse primer (10 µM, 0.2 µM final), and 22 µL nuclease-free water per 50 µL reaction.",
+      "zh": "冰上配制 master mix：每 50 µL 反应加入 25 µL 2× Taq Master Mix、1 µL 正向引物（10 µM，终浓度 0.2 µM）、1 µL 反向引物（10 µM，终浓度 0.2 µM）和 22 µL 无核酸酶水。"
+    },
+    {
+      "en": "Add 1 µL template DNA (1–100 ng genomic DNA or 0.1–10 ng plasmid). Mix gently and briefly centrifuge. Include a no-template control (NTC).",
+      "zh": "加入 1 µL 模板 DNA（基因组 DNA 1–100 ng 或质粒 0.1–10 ng）。轻柔混匀后短暂离心。同时设无模板对照（NTC）。"
+    },
+    {
+      "en": "Run thermocycler program: initial denaturation 95°C for 3 min.",
+      "zh": "运行热循环程序：初始变性 95°C，3 min。",
+      "temp": "95°C",
+      "time": "3 min"
+    },
+    {
+      "en": "Cycle 30–35 times: denaturation 95°C for 30 s, annealing at Tm−5°C for 30 s, extension at 72°C for 1 min per kb of target.",
+      "zh": "循环 30–35 次：变性 95°C 30 s，退火 Tm−5°C 30 s，延伸 72°C（每 kb 目标片段 1 min）。",
+      "temp": "95°C / Tm−5°C / 72°C",
+      "time": "30 s / 30 s / 1 min/kb"
+    },
+    {
+      "en": "Final extension at 72°C for 5 min, then hold at 4°C.",
+      "zh": "终末延伸 72°C 5 min，然后保持在 4°C。",
+      "temp": "72°C",
+      "time": "5 min"
+    },
+    {
+      "en": "Mix 5 µL PCR product with 1 µL 6× DNA loading dye. Load onto a 1–2% agarose TAE gel alongside an appropriate DNA ladder.",
+      "zh": "取 5 µL PCR 产物与 1 µL 6× DNA 上样缓冲液混合，与 DNA Ladder 一同上样至 1–2% 琼脂糖 TAE 凝胶。"
+    },
+    {
+      "en": "Run gel at 5–8 V/cm for 30–45 min. Visualize under UV or blue-light transilluminator and photograph. Confirm band at expected size.",
+      "zh": "以 5–8 V/cm 跑胶 30–45 min。在紫外灯或蓝光灯下观察并拍照，确认目的条带大小正确。",
+      "time": "30–45 min"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "PCR product can be stored at 4°C overnight or at −20°C for up to 1 week before gel analysis.",
+        "zh": "PCR 产物可在 4°C 保存过夜，或在 −20°C 保存最多 1 周，再进行凝胶分析。"
+      }
+    }
   ]
 }

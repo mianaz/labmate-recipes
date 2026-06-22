@@ -100,5 +100,64 @@
     "colony_pcr",
     "miniprep_protocol",
     "restriction_digest"
+  ],
+  "briefSteps": [
+    {
+      "en": "Design primers with 15–30 bp overlapping homology arms, PCR-amplify and gel-purify all fragments, mix fragments with Gibson Assembly Master Mix on ice (2:1 to 5:1 insert:vector molar ratio), incubate at 50°C for 15–60 min, chill on ice, then transform 2 µL into competent cells.",
+      "zh": "设计含 15–30 bp 重叠同源臂的引物，PCR 扩增并凝胶纯化所有片段，冰上将片段与 Gibson Assembly Master Mix 混合（insert:vector 摩尔比 2:1 至 5:1），50°C 孵育 15–60 min，冰上冷却，取 2 µL 转化感受态细胞。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Design primers for all fragments using NEBuilder (nebuilder.neb.com) or manually. Each junction requires 15–30 bp overlapping homology (20–25 bp recommended). The overlap Tm should be ≥48°C. For 2-fragment assemblies, 15 bp overlaps are sufficient; for ≥4 fragments, use 25–30 bp overlaps.",
+      "zh": "使用 NEBuilder（nebuilder.neb.com）或手动设计所有片段引物。每个连接处需要 15–30 bp 重叠同源区（推荐 20–25 bp）。重叠区 Tm 应 ≥48°C。2 片段组装 15 bp 重叠即可；≥4 片段建议使用 25–30 bp 重叠。"
+    },
+    {
+      "en": "PCR-amplify each fragment using a high-fidelity polymerase (Q5 or Phusion). Purify PCR products by column purification or gel extraction. Quantify each fragment by NanoDrop.",
+      "zh": "使用高保真聚合酶（Q5 或 Phusion）PCR 扩增每个片段。通过柱纯化或凝胶回收纯化 PCR 产物。NanoDrop 定量每个片段。"
+    },
+    {
+      "en": "Linearize the vector backbone by restriction digest or PCR (inverse PCR). Purify and quantify. Ensure the vector has compatible ends with the first and last insert fragments.",
+      "zh": "通过限制酶酶切或 PCR（反向 PCR）线性化载体骨架。纯化并定量。确保载体末端与第一个和最后一个插入片段兼容。"
+    },
+    {
+      "en": "Calculate DNA amounts: use a 2:1 to 5:1 molar ratio of insert to vector. Recommended: 50–200 ng total DNA per 20 µL reaction, with vector at 50–100 ng. For a 2-fragment assembly: use 0.03–0.2 pmol of each fragment.",
+      "zh": "计算 DNA 用量：insert 与 vector 摩尔比为 2:1 至 5:1。推荐每 20 µL 反应总 DNA 50–200 ng，载体 50–100 ng。对于 2 片段组装：每种片段用量为 0.03–0.2 pmol。"
+    },
+    {
+      "en": "Set up Gibson Assembly reaction on ice: mix 10 µL 2× Gibson Assembly Master Mix (contains T5 exonuclease, Phusion polymerase, Taq ligase), the appropriate volume of each DNA fragment, and nuclease-free water to 20 µL total. Mix gently.",
+      "zh": "冰上配制 Gibson 组装反应：混合 10 µL 2× Gibson Assembly Master Mix（含 T5 外切酶、Phusion 聚合酶、Taq 连接酶）、各 DNA 片段适量及无核酸酶水至总体积 20 µL。轻柔混匀。"
+    },
+    {
+      "en": "Incubate reaction at 50°C for 15 min (2 fragments) to 60 min (3–6 fragments) in a thermocycler. For assemblies with >4 fragments or fragments >6 kb, extend incubation to 60 min.",
+      "zh": "在热循环仪中 50°C 孵育：2 片段孵育 15 min，3–6 片段孵育 60 min。超过 4 个片段或片段 >6 kb 时延长孵育至 60 min。",
+      "temp": "50°C",
+      "time": "15–60 min"
+    },
+    {
+      "en": "Place reaction on ice immediately after incubation. Transform 2 µL of the assembly reaction into 25–50 µL chemically competent E. coli. Heat-shock at 42°C for 30 s. Recover in 950 µL SOC at 37°C for 1 hour with shaking.",
+      "zh": "孵育结束后立即置于冰上。取 2 µL 组装产物转化 25–50 µL 化学感受态大肠杆菌。42°C 热激 30 s。在 950 µL SOC 中 37°C 振荡恢复 1 小时。",
+      "temp": "42°C → 37°C",
+      "time": "30 s + 1 hour"
+    },
+    {
+      "en": "Plate 100 µL onto LB agar + antibiotic plates. Incubate at 37°C overnight (16–18 hours). Screen colonies by colony PCR using primers flanking the junction sites.",
+      "zh": "将 100 µL 涂布于含抗生素 LB 平板。37°C 过夜培育（16–18 小时）。用跨越连接位点的引物进行菌落 PCR 筛选。",
+      "temp": "37°C",
+      "time": "16–18 hours"
+    },
+    {
+      "en": "Perform miniprep on positive colonies. Verify correct assembly by Sanger sequencing across all junction regions and throughout the entire insert.",
+      "zh": "对阳性菌落进行质粒小提。通过 Sanger 测序验证所有连接区域及整个插入片段的正确组装。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Completed Gibson Assembly reaction can be stored on ice for up to 1 hour, or at −20°C for up to 1 week before transformation.",
+        "zh": "完成的 Gibson 组装反应可在冰上保存最多 1 小时，或在 −20°C 保存最多 1 周再进行转化。"
+      }
+    }
   ]
 }

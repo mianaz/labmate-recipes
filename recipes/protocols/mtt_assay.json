@@ -128,6 +128,77 @@
     }
   ],
   "stoppingPoints": [],
+  "briefSteps": [
+    {
+      "en": "Seed cells in 96-well plate → overnight attachment → add drug treatment → incubate 24–72 h → add MTT (0.5 mg/mL final) → incubate 2–4 h at 37°C → aspirate medium → dissolve formazan in DMSO → read A₅₇₀ nm → calculate % viability",
+      "zh": "铺细胞至 96 孔板 → 过夜贴壁 → 加药处理 → 孵育 24–72 h → 加 MTT（终浓度 0.5 mg/mL）→ 37°C 孵育 2–4 h → 吸去培养基 → DMSO 溶解甲臜 → 读 A₅₇₀ nm → 计算活力百分比"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 0 – Cell Seeding",
+      "zh": "第 0 天 – 铺板",
+      "isHeader": true
+    },
+    {
+      "en": "Seed 5,000–10,000 cells per well in 100 µL complete medium in a 96-well plate; fill all outer-edge wells with PBS (no cells) to prevent evaporation; set up triplicate wells per condition.",
+      "zh": "每孔铺 5,000–10,000 个细胞（100 µL 完全培养基）；边缘孔加 PBS（不铺细胞）防蒸发；每组处理设三复孔。",
+      "temp": "37°C"
+    },
+    {
+      "en": "Incubate overnight at 37°C, 5% CO₂ (12–18 h) to allow complete cell attachment.",
+      "zh": "37°C、5% CO₂ 过夜培养（12–18 h），使细胞充分贴壁。",
+      "time": "12–18 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 1 – Treatment",
+      "zh": "第 1 天 – 给药",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare MTT stock at 5 mg/mL in PBS; filter-sterilize through 0.22 µm membrane; protect from light; store at 4°C (≤4 weeks) or −20°C long-term; warm to 37°C immediately before use; discard if solution appears purple (pre-reduced).",
+      "zh": "用 PBS 配制 MTT 储液（5 mg/mL）；0.22 µm 过滤除菌；避光保存（4°C ≤4 周，−20°C 长期）；使用前回温至 37°C；溶液变紫色（已预还原）则弃用。"
+    },
+    {
+      "en": "Replace medium with 100 µL complete medium containing test compounds at desired concentrations (DMSO ≤0.1%); include untreated control, blank (medium only, no cells), and solvent control.",
+      "zh": "换液至含受试化合物的完全培养基（每孔 100 µL，DMSO ≤0.1%）；设未处理对照、空白孔（仅培养基）及溶剂对照。"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 24–72 h; refresh medium and re-add drug at 48 h for treatments lasting >48 h.",
+      "zh": "37°C、5% CO₂ 孵育 24–72 h；处理时间 >48 h 时，在 48 h 换液并重新给药。",
+      "time": "24–72 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Assay Day – MTT Detection",
+      "zh": "检测日 – MTT 显色",
+      "isHeader": true
+    },
+    {
+      "en": "Add 10 µL MTT stock (5 mg/mL) to each well using a multichannel pipette (final concentration 0.5 mg/mL); do NOT remove medium first; mix gently by pipetting once.",
+      "zh": "用多道移液器向每孔加入 10 µL MTT 储液（5 mg/mL，终浓度 0.5 mg/mL）；不去除培养基；轻柔吸打一次混匀。"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 2–4 h; monitor under microscope — stop when purple formazan crystals are visible but medium is still orange; over-incubation causes crystals to re-dissolve, producing false-low readings.",
+      "zh": "37°C、5% CO₂ 孵育 2–4 h；用显微镜监测，当可见紫色甲臜结晶且培养基仍呈橙色时终止；过度孵育导致结晶重溶，读数偏低。",
+      "time": "2–4 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Tilt the plate and carefully aspirate ALL medium from the corner of each well; blot plate gently on paper towel to remove residual phenol-red medium that would interfere with absorbance.",
+      "zh": "倾斜培养板，从孔角小心吸除全部培养基；将板轻扣在纸巾上，去除残余含酚红培养基（会干扰吸光度）。"
+    },
+    {
+      "en": "Add 100–150 µL DMSO per well; shake on orbital shaker at 150–200 rpm for 10 min at room temperature until crystals fully dissolve (homogeneous purple solution); if crystals persist, warm plate briefly at 37°C.",
+      "zh": "每孔加入 100–150 µL DMSO；室温 150–200 rpm 振荡 10 min 直至结晶完全溶解（均匀紫色）；结晶未溶时短暂温热至 37°C。",
+      "time": "10 min"
+    },
+    {
+      "en": "Read absorbance at 570 nm (reference wavelength 630–650 nm) within 30 min; calculate % viability: (OD_treated − OD_blank) / (OD_control − OD_blank) × 100.",
+      "zh": "30 min 内读取 570 nm 吸光度（参考波长 630–650 nm）；计算活力百分比：(OD处理 − OD空白) / (OD对照 − OD空白) × 100。"
+    }
+  ],
   "safeStops": [
     {
       "afterStep": 1,

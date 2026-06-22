@@ -14,6 +14,83 @@
     "polishing step",
     "biochemistry"
   ],
+  "briefSteps": [
+    {
+      "en": "Select anion (Q/DEAE, pI < pH) or cation (SP/CM, pI > pH) exchange resin → dialyze protein into low-salt buffer (conductivity <5 mS/cm) → equilibrate column → load sample → wash to baseline → elute with 0–500 mM NaCl linear gradient → pool and verify fractions by SDS-PAGE → desalt for storage",
+      "zh": "选择阴离子（Q/DEAE，pI < pH）或阳离子（SP/CM，pI > pH）交换树脂 → 将蛋白透析至低盐缓冲液（电导率 <5 mS/cm）→ 平衡柱子 → 上样 → 洗涤至基线 → 0–500 mM NaCl 线性梯度洗脱 → 合并峰组分并 SDS-PAGE 验证 → 脱盐后保存"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Determine appropriate ion exchange type based on protein pI: use anion exchange (Q or DEAE resin) if protein pI < buffer pH (protein is negatively charged); use cation exchange (SP or CM resin) if protein pI > buffer pH (protein is positively charged). Buffer pH should be ≥1 unit away from pI for strong binding.",
+      "zh": "根据蛋白 pI 选择离子交换类型：若蛋白 pI < 缓冲液 pH（蛋白带负电），选阴离子交换（Q 或 DEAE 树脂）；若蛋白 pI > 缓冲液 pH（蛋白带正电），选阳离子交换（SP 或 CM 树脂）。缓冲液 pH 应距 pI ≥1 个单位以确保强结合。"
+    },
+    {
+      "en": "Prepare protein sample: dialyze into low-salt binding buffer (anion exchange: 20 mM Tris pH 8.0; cation exchange: 20 mM sodium acetate pH 5.5 or 20 mM MES pH 6.0). Centrifuge at 20,000×g for 20 min at 4°C, then filter through 0.22 µm. Conductivity must be <5 mS/cm.",
+      "zh": "制备蛋白样品：透析至低盐结合缓冲液（阴离子交换：20 mM Tris pH 8.0；阳离子交换：20 mM 醋酸钠 pH 5.5 或 20 mM MES pH 6.0）。20,000×g、4°C 离心 20 min 后过 0.22 µm 膜。电导率须 <5 mS/cm。",
+      "time": "2–4 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Equilibrate IEX column with 5 CV binding buffer at 1–2 mL/min (1 mL column) or 2–5 mL/min (5 mL column). Monitor A280 until baseline is stable and conductivity matches binding buffer.",
+      "zh": "用 5 CV 结合缓冲液以 1–2 mL/min（1 mL 柱）或 2–5 mL/min（5 mL 柱）平衡 IEX 柱。监测 A280 至基线稳定，且电导率与结合缓冲液一致。",
+      "time": "15–20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Load protein sample at ≤1 mL/min to maximize binding (capacity: ~20 mg protein/mL resin). Collect flow-through fraction — save an aliquot for SDS-PAGE to assess binding efficiency.",
+      "zh": "以 ≤1 mL/min 上样以最大化结合（容量：约 20 mg 蛋白/mL 树脂）。收集穿透液组分——留样做 SDS-PAGE 评估结合效率。",
+      "time": "30–60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash with 5–10 CV binding buffer until A280 returns to baseline. This removes unbound and weakly bound contaminants. Collect wash fractions for SDS-PAGE analysis.",
+      "zh": "用 5–10 CV 结合缓冲液洗涤至 A280 返回基线，去除未结合和弱结合的杂蛋白。收集洗涤液做 SDS-PAGE 分析。",
+      "time": "15–30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute bound protein with a linear gradient of 0–100% elution buffer (binding buffer + 1 M NaCl) over 20 CV (e.g., 0→500 mM NaCl). Collect 1 mL fractions. Alternative: step gradient at 100, 250, 500 mM NaCl.",
+      "zh": "用 0–100% 洗脱缓冲液（结合缓冲液 + 1 M NaCl）在 20 CV 内线性梯度洗脱（如 0→500 mM NaCl）。收集 1 mL 组分。也可用阶梯梯度（100、250、500 mM NaCl）。",
+      "time": "40–60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Pool symmetric peak fractions. Run SDS-PAGE on all fractions spanning the peak to verify protein identity and purity. Asymmetric or split peaks indicate multiple protein species.",
+      "zh": "合并对称峰组分。对覆盖峰值的所有组分进行 SDS-PAGE，验证蛋白身份和纯度。不对称或分裂峰表明存在多种蛋白组分。",
+      "time": "2 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Desalt pooled fractions by dialysis against storage buffer (dialysis_buffer_generic) with 2 buffer changes at 4°C, or use HiTrap Desalting column. Add 10% glycerol and store at −80°C.",
+      "zh": "将合并组分对储存缓冲液（dialysis_buffer_generic）于 4°C 换液 2 次透析脱盐，或用 HiTrap Desalting 柱脱盐。加 10% 甘油后 −80°C 保存。",
+      "time": "4 h",
+      "temp": "4°C"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Dialyzed protein in low-salt buffer can be stored at 4°C overnight or at −80°C before loading onto the IEX column.",
+        "zh": "低盐缓冲液中的透析蛋白可在 4°C 保存过夜或 −80°C 冷冻后再上 IEX 柱。"
+      }
+    },
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Equilibrated column can be stored at 4°C in binding buffer overnight before sample loading.",
+        "zh": "已平衡的柱子可在 4°C 结合缓冲液中保存过夜后再上样。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Collected elution fractions can be stored at 4°C overnight or at −80°C before pooling and desalting.",
+        "zh": "收集到的洗脱组分可在 4°C 保存过夜或 −80°C 冷冻，合并脱盐后再处理。"
+      }
+    }
+  ],
   "components": [
     {
       "name": "1. Choose ion exchange type based on protein pI",
@@ -100,7 +177,6 @@
     "coomassie_staining"
   ],
   "ref": "GE Healthcare Ion Exchange Chromatography Manual; Shukla & Cramer (2011) Curr Protoc Protein Sci 67:8.2.1",
-  "doi": "10.1002/0471140864.ps0802s67",
   "discipline": [
     "protein",
     "biochemistry"

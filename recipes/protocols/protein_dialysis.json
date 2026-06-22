@@ -121,5 +121,64 @@
   "usage": {
     "en": "Remove small molecules, exchange buffer, or desalt proteins by dialysis.",
     "zh": "透析法去除小分子、换液或蛋白脱盐。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Prepare and pre-wet dialysis tubing/cassette (appropriate MWCO) → load protein sample with headspace → dialyze in ≥200× volume dialysis buffer at 4°C with gentle stirring, changing buffer 3 times (2 h + 2 h + overnight) → recover sample and quantify.",
+      "zh": "准备并预湿透析袋/透析盒（选适当 MWCO）→ 留出膨胀空间装入蛋白样品 → 4°C 轻柔搅拌下在 ≥200 倍体积透析液中透析，换液 3 次（2 h + 2 h + 过夜）→ 回收样品并定量。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Select dialysis tubing or membrane cassette with appropriate MWCO: 3.5 kDa for proteins <20 kDa, 12–14 kDa for most proteins, 50 kDa for large complexes. For traditional tubing: boil in 2% NaHCO₃ + 1 mM EDTA for 10 min, then rinse thoroughly with ddH₂O. For Slide-A-Lyzer cassettes: pre-wet by soaking in dialysis buffer for 2 min.",
+      "zh": "根据目标蛋白大小选择 MWCO：<20 kDa 蛋白用 3.5 kDa，大多数蛋白用 12–14 kDa，大型复合体用 50 kDa。传统透析袋：2% NaHCO₃ + 1 mM EDTA 煮 10 min 后彻底冲洗；Slide-A-Lyzer 透析盒：透析液浸泡 2 min 预湿。",
+      "time": "10 min"
+    },
+    {
+      "en": "Load protein sample into dialysis tubing or cassette, leaving 15–20% headspace to accommodate the 10–20% volume expansion that occurs by osmosis. Seal tubing securely with dialysis clips at both ends.",
+      "zh": "将蛋白样品装入透析袋或透析盒，留 15–20% 顶空以容纳渗透作用导致的 10–20% 体积膨胀，两端用透析夹牢固密封。"
+    },
+    {
+      "en": "Submerge sealed dialysis unit in 500 mL (or ≥200× sample volume) of dialysis buffer in a beaker at 4°C. Stir gently with a magnetic stir bar (low speed — no foam to prevent protein denaturation). Dialyze for 2 h.",
+      "zh": "将密封透析单元置于 500 mL（或 ≥200 倍样品体积）透析液中，4°C 磁力搅拌（低速、无泡沫以防蛋白变性），透析 2 h。",
+      "time": "120 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Replace with fresh 500 mL dialysis buffer. Continue dialyzing at 4°C for another 2 h. Each buffer change removes >90% of the remaining small molecules.",
+      "zh": "换入新鲜 500 mL 透析液，继续 4°C 透析 2 h。每次换液去除 >90% 的目标小分子。",
+      "time": "120 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Replace with a third 500 mL fresh dialysis buffer. Dialyze overnight at 4°C (8–12 h). If the final protein will be stored at −80°C, add 10% glycerol to this last dialysis buffer.",
+      "zh": "换入第三批新鲜透析液（500 mL），4°C 过夜透析（8–12 h）。若蛋白需 −80°C 保存，在末次透析液中加入 10% 甘油。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Carefully remove the dialysis unit, dry the outside, and extract the protein sample with a pipette. Note that the sample volume may have increased due to osmotic water uptake.",
+      "zh": "小心取出透析单元，擦干外壁，用移液器抽取蛋白样品，注意样品体积可能因渗透吸水而增加。"
+    },
+    {
+      "en": "Quantify the recovered protein concentration by BCA or Bradford assay. If the sample is too dilute, concentrate using an Amicon Ultra centrifugal filter (4,000×g, 4°C) with the same MWCO as the dialysis membrane. Aliquot and store at −80°C.",
+      "zh": "BCA 或 Bradford 法定量回收蛋白浓度。若样品过稀，用 Amicon Ultra 离心浓缩管（4,000×g，4°C，选与透析袋相同 MWCO）浓缩，分装后 −80°C 保存。",
+      "temp": "4°C"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Loaded and sealed dialysis unit can be placed at 4°C and left for up to 1 h before starting dialysis.",
+        "zh": "装好密封的透析单元可在 4°C 放置最长 1 h 再开始透析。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Recovered protein can be stored at 4°C overnight, or aliquoted and frozen at −80°C for long-term storage.",
+        "zh": "回收的蛋白可 4°C 暂存过夜，或分装 −80°C 长期保存。"
+      }
+    }
+  ]
 }

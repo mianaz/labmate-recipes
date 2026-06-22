@@ -114,5 +114,54 @@
   "crosslinks": [
     "bradford_assay_protocol",
     "wb_protocol"
+  ],
+  "briefSteps": [
+    {
+      "en": "Prepare BSA standards (0–2000 µg/mL) → dilute samples → mix BCA working reagent (A:B = 50:1) → add 200 µL to 25 µL sample in 96-well plate → incubate 37°C 30 min → cool to RT → read A₅₆₂ → calculate from standard curve.",
+      "zh": "配制 BSA 标准品（0–2000 µg/mL）→ 稀释样品 → 配制 BCA 工作液（A:B = 50:1）→ 96 孔板每孔 25 µL 样品 + 200 µL 工作液 → 37°C 孵育 30 min → 冷却至室温 → 读 A₅₆₂ → 标准曲线计算浓度。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Prepare BSA standard dilution series from 2 mg/mL stock: 0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL (8 points) using the same buffer as your protein samples.",
+      "zh": "从 2 mg/mL BSA 母液配制标准稀释系列：0、25、125、250、500、750、1000、2000 µg/mL（8 点），以与蛋白样品相同的缓冲液为稀释液。"
+    },
+    {
+      "en": "Prepare BCA working reagent by mixing Reagent A and Reagent B at a 50:1 ratio (e.g., 50 mL A + 1 mL B). Mix well; solution should be clear and green. Prepare enough for all wells (200 µL/well) plus 10% excess.",
+      "zh": "按 50:1 比例混合试剂 A 和试剂 B 配制 BCA 工作液（如 50 mL A + 1 mL B），充分混匀，溶液应清亮呈绿色，按每孔 200 µL 加 10% 余量准备。"
+    },
+    {
+      "en": "Prepare 1:5 and 1:10 dilutions of each unknown protein sample to ensure at least one falls within the standard curve range (25–2000 µg/mL).",
+      "zh": "对每个待测蛋白样品分别做 1:5 和 1:10 稀释，确保至少一个稀释度落在标准曲线范围（25–2000 µg/mL）内。"
+    },
+    {
+      "en": "Pipette 25 µL of each standard and sample into designated wells of a flat-bottom clear 96-well plate. Include 2–3 replicates per sample.",
+      "zh": "向平底透明 96 孔板各孔加入 25 µL 标准品或样品，每个样品设 2–3 个复孔。"
+    },
+    {
+      "en": "Add 200 µL BCA working reagent to each well. Mix by pipetting gently or by shaking the plate at 400 rpm for 30 s. Cover the plate with adhesive film to prevent evaporation.",
+      "zh": "每孔加入 200 µL BCA 工作液，轻柔吹打或 400 rpm 振板 30 s 混匀，用封板膜覆盖防止蒸发。",
+      "time": "2 min"
+    },
+    {
+      "en": "Incubate the plate at 37°C for 30 min. The solution will turn purple as Cu²⁺ is reduced by peptide bonds and BCA chelates Cu⁺.",
+      "zh": "将板置于 37°C 孵育 30 min，溶液因肽键还原 Cu²⁺ 后 BCA 螯合 Cu⁺ 而变为紫色。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Remove the plate from incubator and allow to cool to room temperature for 5–10 min before reading.",
+      "zh": "从孵育箱取出，室温冷却 5–10 min 再读板。",
+      "time": "10 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Read absorbance at 562 nm using a microplate reader. Use the blank (0 µg/mL BSA + working reagent) as the reference.",
+      "zh": "用酶标仪于 562 nm 读取吸光度，以空白孔（0 µg/mL BSA + 工作液）为参比。"
+    },
+    {
+      "en": "Plot A₅₆₂ vs BSA concentration and perform linear regression or 4-parameter logistic fit (R² >0.99). Back-calculate the concentration of each unknown sample and multiply by the dilution factor.",
+      "zh": "以 BSA 浓度对 A₅₆₂ 作图，进行线性回归或四参数拟合（R² >0.99），计算各样品浓度后乘以稀释倍数得原始浓度。"
+    }
   ]
 }

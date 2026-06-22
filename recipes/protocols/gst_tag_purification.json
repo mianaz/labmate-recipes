@@ -11,6 +11,115 @@
     "recombinant protein",
     "biochemistry"
   ],
+  "briefSteps": [
+    {
+      "en": "Express GST-fusion protein at 18°C → lyse cells (PBS + 1% Triton X-100) → clarify lysate → equilibrate Glutathione Sepharose → bind → wash with PBS → elute with 10 mM reduced glutathione → dialyze → optionally cleave GST tag → store at −80°C",
+      "zh": "18°C 表达 GST 融合蛋白 → 裂解细胞（PBS + 1% Triton X-100）→ 澄清裂解液 → 平衡谷胱甘肽琼脂糖 → 结合 → PBS 洗涤 → 10 mM 还原型谷胱甘肽洗脱 → 透析 → 可选切除 GST 标签 → −80°C 保存"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Expression and Lysis",
+      "zh": "第一天：表达与裂解",
+      "isHeader": true
+    },
+    {
+      "en": "Transform and express GST-fusion protein in E. coli BL21(DE3). Induce with 0.1–0.5 mM IPTG at 18°C overnight to maximize solubility. Harvest cells at 5,000×g for 10 min at 4°C.",
+      "zh": "在 E. coli BL21(DE3) 中转化并表达 GST 融合蛋白。用 0.1–0.5 mM IPTG 在 18°C 过夜诱导以最大化可溶性。5,000×g、4°C 离心 10 min 收菌。",
+      "time": "12–16 h",
+      "temp": "18°C"
+    },
+    {
+      "en": "Resuspend cell pellet in GST lysis buffer (PBS pH 7.4 + 1% Triton X-100 + 1 mM DTT + protease inhibitors + 1 mM PMSF) at 5 mL per gram wet weight. Keep on ice.",
+      "zh": "每克湿菌体加 5 mL GST 裂解液（PBS pH 7.4 + 1% Triton X-100 + 1 mM DTT + 蛋白酶抑制剂 + 1 mM PMSF）重悬，冰上操作。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Lyse cells by sonication on ice: 5 cycles of 30 s pulse at 40% amplitude with 1 min rest between pulses. Keep sample temperature below 10°C throughout.",
+      "zh": "冰浴超声裂解：40% 振幅，5 次 × 30 s，每次间隔 1 min。全程保持样品温度低于 10°C。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Clarify lysate at 20,000×g for 30 min at 4°C. Collect supernatant. Optional: pass through 0.45 µm filter to protect column. Save aliquot for SDS-PAGE.",
+      "zh": "20,000×g、4°C 离心 30 min 澄清裂解液。收集上清。可选：0.45 µm 过滤保护柱子。留样做 SDS-PAGE。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 1–2: Purification",
+      "zh": "第一至二天：纯化",
+      "isHeader": true
+    },
+    {
+      "en": "Equilibrate Glutathione Sepharose 4B (1 mL resin per 10 mg expected protein) with 10 CV PBS pH 7.4. For AKTA, use GSTrap FF 5 mL column.",
+      "zh": "用 10 CV PBS pH 7.4 平衡谷胱甘肽琼脂糖 4B（每 10 mg 预估蛋白用 1 mL 树脂）。AKTA 可用 GSTrap FF 5 mL 柱。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Load cleared lysate onto equilibrated resin at ≤1 mL/min (gravity or peristaltic pump). Collect flow-through fraction for SDS-PAGE verification.",
+      "zh": "以 ≤1 mL/min 流速（重力法或蠕动泵）将澄清裂解液上树脂。收集穿透液做 SDS-PAGE 验证。",
+      "time": "30–60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash with 10–20 CV PBS pH 7.4 until A280 returns to baseline. Optional: additional 5 CV high-salt wash (PBS + 500 mM NaCl) to remove ionic contaminants.",
+      "zh": "用 10–20 CV PBS pH 7.4 洗涤至 A280 基线。可选：5 CV 高盐洗涤（PBS + 500 mM NaCl）去除离子性杂质。",
+      "time": "20–40 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute with 5–10 CV GST elution buffer (50 mM Tris pH 8.0 + 10 mM reduced glutathione). Collect 0.5 mL fractions; protein peak typically in fractions 2–6.",
+      "zh": "用 5–10 CV GST 洗脱缓冲液（50 mM Tris pH 8.0 + 10 mM 还原型谷胱甘肽）洗脱。收集 0.5 mL 组分；蛋白峰通常在第 2–6 组分。",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2: Post-purification",
+      "zh": "第二天：纯化后处理",
+      "isHeader": true
+    },
+    {
+      "en": "Pool peak fractions and dialyze against storage buffer (PBS or desired buffer) at 4°C with 3 buffer changes, or desalt using HiTrap Desalting column to remove glutathione.",
+      "zh": "合并峰值组分，对储存缓冲液（PBS 或所需缓冲液）在 4°C 换液 3 次透析，或用 HiTrap Desalting 柱去除谷胱甘肽。",
+      "time": "4–6 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Optional GST tag cleavage: incubate with thrombin (1 U per 100 µg) at RT for 2 h, or PreScission protease (1 U/µg) at 4°C overnight. Perform reverse GSTrap purification — cleaved protein flows through; GST and uncleaved protein bind.",
+      "zh": "可选 GST 标签切除：凝血酶（1 U/100 µg）室温 2 h，或 PreScission 蛋白酶（1 U/µg）4°C 过夜。反向 GSTrap 纯化——切割后蛋白流过，GST 和未切割蛋白结合。",
+      "time": "2–12 h",
+      "temp": "4–25°C"
+    },
+    {
+      "en": "Quantify by BCA or Bradford assay. Run SDS-PAGE with Coomassie staining to confirm purity (expect 2–20 mg/L culture yield). Aliquot, snap-freeze in liquid N₂, and store at −80°C with 10% glycerol.",
+      "zh": "BCA 或 Bradford 法定量。考马斯蓝染色 SDS-PAGE 确认纯度（预期产量 2–20 mg/L 培养液）。分装后液氮速冻，加 10% 甘油 −80°C 保存。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Clarified lysate can be stored at 4°C overnight before affinity purification.",
+        "zh": "澄清裂解液可在 4°C 保存过夜后再进行亲和纯化。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Eluted protein in glutathione buffer can be held at 4°C overnight before dialysis or tag cleavage.",
+        "zh": "含谷胱甘肽的洗脱蛋白可在 4°C 保存过夜，次日再透析或切除标签。"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "Dialyzed purified protein can be aliquoted and stored at −80°C with 10% glycerol for up to 12 months.",
+        "zh": "透析后的纯化蛋白加 10% 甘油分装，可于 −80°C 保存 12 个月。"
+      }
+    }
+  ],
   "components": [
     {
       "name": "1. Express GST-fusion protein in E. coli BL21(DE3)",
@@ -126,7 +235,6 @@
     "coomassie_staining"
   ],
   "ref": "Harper & Speicher (2011) Curr Protoc Protein Sci 6.6.1–26; GE Healthcare Glutathione Sepharose Handbook; Smith & Johnson (1988) Gene 67:31–40",
-  "doi": "10.1002/0471140864.ps0606s73",
   "discipline": [
     "protein",
     "biochemistry"

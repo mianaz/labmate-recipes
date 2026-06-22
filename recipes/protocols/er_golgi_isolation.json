@@ -120,7 +120,7 @@
     "lysosome_isolation_buffer",
     "sucrose_gradient_buffer"
   ],
-  "ref": "Bhatt et al. (2021) STAR Protoc 2:100450; Graham (2001) Curr Protoc Cell Biol 3.8.1; Barr (2013) Curr Protoc Cell Biol 59:3.29.1",
+  "ref": "Graham (2001) Curr Protoc Cell Biol 3.8.1; Barr (2013) Curr Protoc Cell Biol 59:3.29.1",
   "doi": "10.1016/j.xpro.2021.100450",
   "discipline": [
     "cell",

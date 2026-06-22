@@ -8,6 +8,106 @@
     "protein interaction",
     "in situ"
   ],
+  "briefSteps": [
+    {
+      "en": "Fix and permeabilize cells → block with Duolink solution → incubate two primary antibodies (different species) overnight → add PLA PLUS and MINUS probes → ligate to form circular DNA template → amplify by rolling circle amplification → mount with DAPI → image by fluorescence microscopy and quantify dots per cell",
+      "zh": "固定并通透细胞 → Duolink 封闭液封闭 → 过夜孵育两种一抗（不同种属）→ 加 PLA PLUS 和 MINUS 探针 → 连接形成环状 DNA 模板 → 滚环扩增 → DAPI 封片 → 荧光显微镜成像并定量每细胞荧光点数"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Sample Preparation",
+      "zh": "第一天：样品制备",
+      "isHeader": true
+    },
+    {
+      "en": "Seed cells on glass coverslips (or use tissue sections on slides). Fix with 4% PFA in PBS for 15 min at room temperature. Wash 3× with PBS.",
+      "zh": "将细胞培养于玻璃盖玻片上（或使用组织切片）。用 4% PFA/PBS 室温固定 15 min。PBS 洗涤 3 次。",
+      "time": "20 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Permeabilize with 0.2–0.3% Triton X-100 in PBS for 10 min at room temperature. Wash 3× with PBS. For membrane proteins, skip permeabilization.",
+      "zh": "用 0.2–0.3% Triton X-100/PBS 室温通透 10 min。PBS 洗涤 3 次。膜蛋白可跳过通透步骤。",
+      "time": "15 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Block with Duolink blocking solution in a pre-heated humidity chamber at 37°C for 1 h. Do not allow slides to dry at any point. Apply 40 µL blocking solution per coverslip.",
+      "zh": "在预热湿盒中用 Duolink 封闭液 37°C 封闭 1 h。全程勿让切片干燥。每张盖玻片加 40 µL 封闭液。",
+      "time": "60 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Without washing, remove excess blocking solution and apply both primary antibodies diluted in Duolink antibody diluent (typically 1:100–1:500). Incubate overnight at 4°C in a humidity chamber. Use antibodies from two different host species (e.g., rabbit anti-Protein A + mouse anti-Protein B).",
+      "zh": "不洗涤，去除多余封闭液，加用 Duolink 抗体稀释液稀释的两种一抗（通常 1:100–1:500）。湿盒中 4°C 过夜孵育。两种抗体须来自不同宿主（如兔抗蛋白 A + 鼠抗蛋白 B）。",
+      "time": "12–16 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2: PLA Reaction",
+      "zh": "第二天：PLA 反应",
+      "isHeader": true
+    },
+    {
+      "en": "Wash slides 2× with Wash Buffer A (10 min each) at room temperature with gentle agitation. Apply PLA PLUS and MINUS probes (species-matched secondary antibodies conjugated to oligonucleotides) diluted 1:5 in antibody diluent. Incubate at 37°C for 1 h in humidity chamber.",
+      "zh": "用 Wash Buffer A 室温振荡洗涤 2 次（每次 10 min）。将 PLA PLUS 和 MINUS 探针（与寡核苷酸偶联的种属匹配二抗）1:5 稀释于抗体稀释液中。湿盒中 37°C 孵育 1 h。",
+      "time": "80 min",
+      "temp": "25–37°C"
+    },
+    {
+      "en": "Wash 2× with Wash Buffer A (10 min each). Apply freshly prepared ligation solution (ligase diluted 1:40 in ligation buffer). Incubate at 37°C for 30 min. This step ligates the two PLA probe oligonucleotides when proteins are within <40 nm.",
+      "zh": "Wash Buffer A 洗涤 2 次（每次 10 min）。加新鲜配制的连接液（连接酶 1:40 稀释于连接缓冲液中）。37°C 孵育 30 min。此步骤当两蛋白距离 <40 nm 时将两个 PLA 探针寡核苷酸连接成环。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Wash 2× with Wash Buffer A (10 min each). Apply freshly prepared amplification solution (polymerase diluted 1:80 in amplification buffer + fluorescently labeled detection probes). Incubate at 37°C for 100 min in the dark.",
+      "zh": "Wash Buffer A 洗涤 2 次（每次 10 min）。加新鲜配制的扩增液（聚合酶 1:80 稀释于扩增缓冲液 + 荧光标记检测探针中）。避光 37°C 孵育 100 min。",
+      "time": "100 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Wash 2× with Wash Buffer B (10 min each) at room temperature in the dark, then 1× with 0.01× Wash Buffer B for 1 min. Allow slides to air-dry briefly in the dark.",
+      "zh": "避光室温用 Wash Buffer B 洗涤 2 次（每次 10 min），再用 0.01× Wash Buffer B 洗涤 1 min。避光短暂晾干。",
+      "time": "25 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Mount coverslips with Duolink In Situ Mounting Medium with DAPI. Seal edges with nail varnish after DAPI sets (~15 min). Image by fluorescence microscopy using appropriate filter sets. Each fluorescent dot represents one protein-protein interaction event (<40 nm proximity).",
+      "zh": "用含 DAPI 的 Duolink In Situ 封片剂封片。DAPI 定型（约 15 min）后用指甲油封边。使用合适滤光片组荧光显微镜成像。每个荧光点代表一次蛋白质-蛋白质相互作用事件（<40 nm 邻近）。",
+      "time": "30 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Quantify fluorescent dots per cell using ImageJ (FIJI) with Cell Counter plugin, or automated software (Blobfinder, CellProfiler). Express as dots per cell. Include controls: single primary antibody controls (should give near-zero signal) and positive interaction control.",
+      "zh": "用 ImageJ（FIJI）Cell Counter 插件或自动化软件（Blobfinder、CellProfiler）定量每细胞荧光点数。以每细胞点数表示结果。包含对照：单一一抗对照（应近乎零信号）和阳性互作对照。",
+      "time": "60 min"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Fixed and permeabilized slides can be stored at 4°C in PBS overnight before blocking and antibody incubation.",
+        "zh": "固定并通透后的切片可在 4°C PBS 中保存过夜，次日再封闭和孵育抗体。"
+      }
+    },
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Slides with primary antibodies applied can be left at 4°C overnight in a humidity chamber — this is the standard overnight incubation step.",
+        "zh": "已加一抗的切片可在湿盒中 4°C 保存过夜——这是标准过夜孵育步骤。"
+      }
+    },
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Mounted and sealed slides can be stored at −20°C in the dark for several weeks before imaging.",
+        "zh": "封片并密封的切片可避光 −20°C 保存数周后再成像。"
+      }
+    }
+  ],
   "components": [
     {
       "name": "1. Fix + permeabilize",

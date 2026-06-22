@@ -152,5 +152,124 @@
     "chromatin_accessibility_atac",
     "cut_and_run",
     "qpcr_protocol"
+  ],
+  "briefSteps": [
+    {
+      "en": "Crosslink cells (1% formaldehyde) → quench → lyse → sonicate chromatin to 200–500 bp → save input → immunoprecipitate with antibody + Protein A/G beads overnight → wash → elute → reverse crosslink at 65°C overnight → Proteinase K digest → purify DNA → qPCR or sequencing",
+      "zh": "甲醛交联（1%）→ Glycine 终止 → 裂解 → 超声至 200–500 bp → 留 Input → 抗体 + Protein A/G 磁珠免疫沉淀（4°C 过夜）→ 洗涤 → 洗脱 → 65°C 过夜解交联 → Proteinase K 消化 → DNA 纯化 → qPCR 或测序"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Crosslinking and Immunoprecipitation",
+      "zh": "第1天：交联与免疫沉淀",
+      "isHeader": true
+    },
+    {
+      "en": "Add formaldehyde to 1% (v/v) final concentration to cells in culture medium; incubate 10 min at RT with gentle rocking.",
+      "zh": "向培养基中加入甲醛至终浓度 1%（v/v），室温轻摇孵育 10 min。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Quench crosslinking by adding glycine to 125 mM final concentration; incubate 5 min at RT.",
+      "zh": "加入 Glycine 至终浓度 125 mM，室温孵育 5 min 终止交联。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash cells 2× with ice-cold PBS; scrape and pellet cells at 600×g for 5 min at 4°C.",
+      "zh": "冰冷 PBS 洗涤细胞 2 次，刮下细胞，600×g 4°C 离心 5 min 收集。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend pellet in SDS Lysis Buffer (50 mM Tris pH 8.1, 10 mM EDTA, 1% SDS, protease inhibitors); incubate 10 min on ice.",
+      "zh": "用 SDS 裂解缓冲液（50 mM Tris pH 8.1、10 mM EDTA、1% SDS、蛋白酶抑制剂）重悬沉淀，冰上孵育 10 min。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Sonicate chromatin to 200–500 bp fragments: Bioruptor 30 s on/30 s off, 15–25 cycles on HIGH; or Covaris S220. Verify fragment size on 2% agarose gel.",
+      "zh": "超声破碎染色质至 200–500 bp：Bioruptor 高档 30 s on/30 s off，15–25 个循环；或 Covaris S220。2% 琼脂糖凝胶验证片段大小。",
+      "time": "30–60 min"
+    },
+    {
+      "en": "Centrifuge lysate at 14,000×g for 10 min at 4°C; transfer supernatant. Dilute 10× with ChIP Dilution Buffer. Remove 1–10% as Input (freeze at −80°C).",
+      "zh": "14,000×g 4°C 离心 10 min，取上清。用 ChIP 稀释缓冲液 10 倍稀释。取 1–10% 上清作为 Input（−80°C 保存）。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Preclear chromatin with 30 µL Protein A/G magnetic beads for 1 h at 4°C rotating; discard beads. Add 1–5 µg ChIP-grade antibody to precleared chromatin; rotate overnight at 4°C.",
+      "zh": "30 µL Protein A/G 磁珠预清洗 1 h（4°C 旋转），弃磁珠。加 1–5 µg ChIP 级抗体，4°C 过夜旋转孵育。",
+      "time": "1 h + overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2: Washes, Elution, and Reverse Crosslinking",
+      "zh": "第2天：洗涤、洗脱与解交联",
+      "isHeader": true
+    },
+    {
+      "en": "Add 50 µL Protein A/G beads; rotate 2 h at 4°C. Wash sequentially: 2× Low-Salt Wash (20 mM Tris pH 8.1, 150 mM NaCl, 0.1% SDS, 1% Triton X-100, 2 mM EDTA), 2× High-Salt Wash (same + 500 mM NaCl), 1× LiCl Wash (0.25 M LiCl, 1% NP-40, 1% deoxycholate, 10 mM Tris pH 8.1, 1 mM EDTA), 2× TE.",
+      "zh": "加 50 µL Protein A/G 磁珠，4°C 旋转 2 h。依次洗涤：低盐洗涤 2 次（20 mM Tris pH 8.1、150 mM NaCl、0.1% SDS、1% Triton X-100、2 mM EDTA）→ 高盐洗涤 2 次（同上 + 500 mM NaCl）→ LiCl 洗涤 1 次 → TE 洗涤 2 次。",
+      "time": "2 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute chromatin from beads with 250 µL elution buffer (1% SDS, 0.1 M NaHCO₃) for 15 min at RT with vortexing; repeat once, pool eluates (500 µL total).",
+      "zh": "用 250 µL 洗脱缓冲液（1% SDS、0.1 M NaHCO₃）室温涡旋洗脱 15 min，重复一次，合并两次洗脱液（共约 500 µL）。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Reverse crosslinks: add 20 µL 5 M NaCl to eluate and Input; incubate 65°C overnight (minimum 6 h).",
+      "zh": "向洗脱液和 Input 中加入 20 µL 5 M NaCl，65°C 过夜（至少 6 h）解交联。",
+      "time": "overnight",
+      "temp": "65°C"
+    },
+    {
+      "en": "Day 3: DNA Purification and Analysis",
+      "zh": "第3天：DNA 纯化与分析",
+      "isHeader": true
+    },
+    {
+      "en": "Add 10 µL 0.5 M EDTA, 20 µL 1 M Tris pH 6.5, and 2 µL Proteinase K (20 mg/mL); incubate 1–2 h at 45°C to digest protein.",
+      "zh": "加入 10 µL 0.5 M EDTA、20 µL 1 M Tris pH 6.5 和 2 µL Proteinase K（20 mg/mL），45°C 孵育 1–2 h 消化蛋白。",
+      "time": "1–2 h",
+      "temp": "45°C"
+    },
+    {
+      "en": "Purify DNA by phenol-chloroform extraction or column (MinElute/ChIP DNA Clean & Concentrator); elute in 30–50 µL TE or water.",
+      "zh": "酚氯仿提取或柱纯化（MinElute 等）回收 DNA，洗脱至 30–50 µL TE 或超纯水。"
+    },
+    {
+      "en": "Analyze by qPCR (% Input) or proceed to library preparation for ChIP-seq. Express enrichment as % Input or Fold Enrichment over IgG control.",
+      "zh": "qPCR 分析（% Input 法）或进行文库制备（ChIP-seq）。结果用 % Input 或相对 IgG 对照的富集倍数表示。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Sheared chromatin in SDS lysis buffer can be snap-frozen and stored at −80°C for up to 6 months.",
+        "zh": "超声后的染色质可在 SDS 裂解缓冲液中速冻，−80°C 保存最长 6 个月。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Diluted, precleared chromatin (before antibody addition) can be stored at −80°C for up to 6 months.",
+        "zh": "稀释后预清洗的染色质（加抗体前）可 −80°C 保存最长 6 个月。"
+      }
+    },
+    {
+      "afterStep": 12,
+      "note": {
+        "en": "Purified ChIP DNA can be stored at −20°C for up to 6 months before qPCR or library prep.",
+        "zh": "纯化后的 ChIP DNA 可 −20°C 保存最长 6 个月，待 qPCR 或文库制备。"
+      }
+    }
   ]
 }

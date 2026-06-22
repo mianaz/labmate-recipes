@@ -92,13 +92,66 @@
       "name": "Culture flask or dish"
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Pre-warm medium → quick-thaw cryovial at 37°C → dilute into 9 mL medium → centrifuge → resuspend in fresh medium → plate → incubate overnight → change medium next day",
+      "zh": "预热培养基 → 37°C 快速解冻冻存管 → 逐滴加入 9 mL 培养基稀释 → 离心 → 新鲜培养基重悬 → 接种培养瓶 → 过夜培养 → 次日换液"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Pre-warm complete culture medium to 37°C in a water bath (at least 30 min before use).",
+      "zh": "提前将完全培养基在 37°C 水浴中预热（使用前至少预热 30 min）。",
+      "temp": "37°C"
+    },
+    {
+      "en": "Retrieve cryovial from liquid nitrogen storage wearing cryogenic gloves and face shield; transport on dry ice.",
+      "zh": "佩戴低温手套和面罩从液氮中取出冻存管，干冰转运。"
+    },
+    {
+      "en": "Immediately transfer the cryovial to a 37°C water bath and thaw rapidly with gentle agitation until only a small ice crystal remains (~1–2 min). Do not over-thaw.",
+      "zh": "立即将冻存管转移至 37°C 水浴，轻柔晃动快速解冻至剩小冰晶即可（约 1–2 min），不可过度解冻。",
+      "time": "1–2 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Wipe the outside of the vial with 70% ethanol; open in the biosafety cabinet and transfer contents to a 15 mL conical tube.",
+      "zh": "用 70% 乙醇擦拭冻存管外壁，在生物安全柜中开管，将内容物转移至 15 mL 离心管。"
+    },
+    {
+      "en": "Add pre-warmed complete medium dropwise (1 mL first, then 8 mL more) to dilute DMSO gradually, gently swirling between additions.",
+      "zh": "逐滴加入预热完全培养基（先 1 mL，再 8 mL）稀释 DMSO，每次加入后轻柔旋转混匀。"
+    },
+    {
+      "en": "Centrifuge at 200–300 × g for 5 min at room temperature to pellet cells. (Skip centrifugation for very fragile cells and plate directly.)",
+      "zh": "200–300 × g 室温离心 5 min 收集细胞（极脆弱细胞可跳过离心，直接铺板）。",
+      "time": "5 min"
+    },
+    {
+      "en": "Aspirate supernatant completely to remove DMSO; resuspend pellet in 5–10 mL pre-warmed complete medium.",
+      "zh": "彻底吸去上清以去除 DMSO，用 5–10 mL 预热完全培养基重悬细胞沉淀。"
+    },
+    {
+      "en": "Transfer cell suspension to a pre-labelled culture flask or dish and place in 37°C, 5% CO₂ incubator.",
+      "zh": "将细胞悬液转移至预标记培养瓶或皿，置于 37°C、5% CO₂ 培养箱中。",
+      "temp": "37°C"
+    },
+    {
+      "en": "Next morning (~16–24 h later): replace medium completely with fresh pre-warmed complete medium to remove residual DMSO and dead cell debris.",
+      "zh": "次日（约 16–24 h 后）完全换液，加入新鲜预热完全培养基，去除残余 DMSO 和死细胞碎片。"
+    },
+    {
+      "en": "Allow cells to recover for 1–2 passages (checking morphology and viability >90%) before using in experiments.",
+      "zh": "细胞恢复传代 1–2 次（确认形态正常、活力 >90%）后再用于实验。"
+    }
+  ],
   "stoppingPoints": [],
   "safeStops": [
     {
-      "afterStep": 5,
+      "afterStep": 8,
       "note": {
-        "en": "After plating, cells incubate overnight at 37°C; change medium next morning to remove residual DMSO",
-        "zh": "铺板后细胞 37°C 过夜培养；次日早上换液去除残留 DMSO"
+        "en": "After plating, cells incubate overnight at 37°C; change medium next morning to remove residual DMSO.",
+        "zh": "铺板后细胞 37°C 过夜培养；次日早上换液去除残留 DMSO。"
       }
     }
   ],

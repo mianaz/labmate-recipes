@@ -152,5 +152,115 @@
     "ihc_paraffin_protocol",
     "proximity_ligation_assay",
     "wb_protocol"
+  ],
+  "briefSteps": [
+    {
+      "en": "Seed cells on coverslips → wash with PBS → fix in 4% PFA → permeabilize with 0.1% Triton X-100 → block with BSA/serum → incubate primary antibody overnight at 4°C → wash → incubate fluorescent secondary antibody → wash → counterstain with DAPI → mount with anti-fade medium → image by fluorescence/confocal microscopy.",
+      "zh": "细胞爬片培养 → PBS 洗涤 → 4% PFA 固定 → 0.1% Triton X-100 透化 → BSA/血清封闭 → 4°C 孵育一抗过夜 → 洗涤 → 孵育荧光二抗 → 洗涤 → DAPI 染核 → 抗淬灭封片 → 荧光/共聚焦显微镜成像。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1",
+      "zh": "第一天",
+      "isHeader": true
+    },
+    {
+      "en": "Seed cells onto poly-L-lysine-coated glass coverslips (18 mm, #1.5) or chamber slides at 30–70% confluence. Allow cells to attach and grow for 24–48 h before staining.",
+      "zh": "将细胞接种于多聚赖氨酸包被的玻璃盖玻片（18 mm，#1.5）或 chamber slide 上，密度 30–70%。染色前培养 24–48 h 使细胞充分贴壁铺展。"
+    },
+    {
+      "en": "Wash cells gently twice with cold PBS (1 mL per coverslip) to remove culture medium and loosely adherent debris.",
+      "zh": "用冷 PBS（每个盖玻片 1 mL）轻柔洗涤细胞两次，去除培养基和松散碎屑。",
+      "time": "5 min"
+    },
+    {
+      "en": "Fix cells in freshly prepared 4% PFA (in PBS) for 15 min at room temperature. Do not over-fix (>20 min can mask epitopes).",
+      "zh": "用新鲜配制的 4% PFA（溶于 PBS）室温固定 15 min。不要过度固定（>20 min 可能遮蔽表位）。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 3 times with PBS, 5 min each, on a rocker. This removes residual PFA.",
+      "zh": "在摇床上用 PBS 洗涤 3 次，每次 5 min，去除残余 PFA。",
+      "time": "15 min"
+    },
+    {
+      "en": "Permeabilize cells with 0.1% Triton X-100 in PBS for 10 min at room temperature. For membrane-associated or nuclear targets, adjust to 0.2–0.5% Triton X-100 or use 0.1% saponin for milder permeabilization.",
+      "zh": "用 PBS 中 0.1% Triton X-100 室温透化细胞 10 min。膜相关或核靶点可调至 0.2–0.5% Triton X-100；需较温和透化时用 0.1% saponin。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 3 times with PBS, 5 min each.",
+      "zh": "PBS 洗涤 3 次，每次 5 min。",
+      "time": "15 min"
+    },
+    {
+      "en": "Block non-specific binding with blocking buffer (3% BSA + 5% normal serum from the same species as the secondary antibody in PBS) for 1 h at room temperature in a humidity chamber.",
+      "zh": "在湿盒中用封闭液（PBS 中 3% BSA + 5% 与二抗同种属的正常血清）室温封闭 1 h，防止非特异性结合。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Without washing, aspirate excess blocking buffer. Apply primary antibody diluted in blocking buffer (typical dilution 1:100–1:500, per datasheet). Incubate overnight at 4°C in a sealed humidity chamber.",
+      "zh": "不洗涤，吸去多余封闭液。加入封闭液稀释的一抗（通常 1:100–1:500，参考说明书）。在密封湿盒中 4°C 孵育过夜。",
+      "time": "overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2",
+      "zh": "第二天",
+      "isHeader": true
+    },
+    {
+      "en": "Wash 3 times with PBS, 5 min each, to remove unbound primary antibody.",
+      "zh": "PBS 洗涤 3 次，每次 5 min，去除未结合的一抗。",
+      "time": "15 min"
+    },
+    {
+      "en": "Apply fluorescent secondary antibody (e.g., Alexa Fluor 488, 555, or 647; 1:500–1:1000 in blocking buffer) and incubate for 1 h at room temperature in the dark. Protect all subsequent steps from light.",
+      "zh": "加入荧光二抗（如 Alexa Fluor 488、555 或 647；封闭液 1:500–1:1000 稀释），室温避光孵育 1 h。后续所有步骤均需避光。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 3 times with PBS, 5 min each.",
+      "zh": "PBS 洗涤 3 次，每次 5 min。",
+      "time": "15 min"
+    },
+    {
+      "en": "Counterstain nuclei with DAPI (1 µg/mL in PBS) for 5 min at room temperature, then wash once with PBS.",
+      "zh": "用 DAPI（PBS 中 1 µg/mL）室温染核 5 min，PBS 洗涤一次。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Mount coverslips onto glass slides using a small drop (5–10 µL) of anti-fade mounting medium (e.g., ProLong Gold, Vectashield). Allow to cure overnight at RT in the dark, then seal edges with clear nail polish. Image by fluorescence or confocal microscopy (63× oil immersion recommended).",
+      "zh": "用一小滴（5–10 µL）抗淬灭封片剂（如 ProLong Gold、Vectashield）将盖玻片封片于载玻片上。室温避光固化过夜，用指甲油封边。荧光或共聚焦显微镜成像（推荐 63× 油镜）。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Fixed and permeabilized cells can be stored at 4°C in PBS for up to 24 hours before proceeding to blocking and antibody staining.",
+        "zh": "固定并透化后的细胞可在 4°C PBS 中保存最多 24 h，之后再进行封闭和抗体染色。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Slides with primary antibody applied can be kept at 4°C in a sealed humidity chamber for an extended overnight incubation (up to 18 h) — this is the standard overnight step.",
+        "zh": "加了一抗的样品可在密封湿盒中 4°C 保存过夜（最长 18 h）——这是标准的过夜孵育步骤。"
+      }
+    },
+    {
+      "afterStep": 13,
+      "note": {
+        "en": "Mounted and sealed slides can be stored at 4°C in the dark for up to 1 week (with ProLong Gold, up to several months after full curing).",
+        "zh": "封片并封边后的载玻片可在 4°C 避光保存最多 1 周（使用 ProLong Gold 完全固化后可保存数月）。"
+      }
+    }
   ]
 }

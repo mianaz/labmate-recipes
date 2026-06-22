@@ -79,6 +79,61 @@
     }
   ],
   "stoppingPoints": [],
+  "briefSteps": [
+    {
+      "en": "Collect 48–72 h conditioned medium → centrifuge to concentrate mycoplasma → boil at 95°C 10 min to lyse → PCR with GPO-3/MGSO primers targeting 16S rRNA → run on 2% agarose gel → interpret: ~270 bp band = positive",
+      "zh": "收集 48–72 h 条件培养基 → 离心富集支原体 → 95°C 煮沸裂解 10 min → GPO-3/MGSO 引物 PCR 扩增 16S rRNA → 2% 琼脂糖凝胶电泳 → 判读：~270 bp 条带 = 阳性"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Culture cells for 48–72 h without antibiotics in standard growth medium. Antibiotics can mask low-level mycoplasma contamination.",
+      "zh": "在标准培养基中不含抗生素条件下培养细胞 48–72 h，抗生素会掩盖低水平支原体污染。",
+      "isHeader": false,
+      "time": "48–72 h"
+    },
+    {
+      "en": "Collect 1–2 mL of conditioned cell culture supernatant (avoid disturbing cells); transfer to a 1.5 mL microcentrifuge tube.",
+      "zh": "收集 1–2 mL 条件培养基上清（避免扰动细胞），转移至 1.5 mL 离心管。",
+      "isHeader": false
+    },
+    {
+      "en": "Centrifuge at 250×g for 5 min to pellet any floating cells; transfer supernatant to a new tube, then centrifuge at 16,000×g for 10 min to concentrate mycoplasma.",
+      "zh": "250×g 离心 5 min 沉淀浮动细胞，转移上清至新管，再 16,000×g 离心 10 min 富集支原体。",
+      "isHeader": false,
+      "time": "15 min"
+    },
+    {
+      "en": "Discard supernatant; resuspend the pellet in 50–100 µL sterile water. Heat at 95°C for 10 min to lyse mycoplasma cells and release DNA. Briefly centrifuge and use 2–5 µL of supernatant as PCR template.",
+      "zh": "弃去上清，用 50–100 µL 无菌水重悬沉淀，95°C 加热 10 min 裂解支原体并释放 DNA，短暂离心后取 2–5 µL 上清作为 PCR 模板。",
+      "isHeader": false,
+      "time": "10 min",
+      "temp": "95°C"
+    },
+    {
+      "en": "Set up a 25 µL PCR reaction: 2–5 µL template lysate, 0.5 µM each of primer GPO-3 (5'-ACTCCTACGGGAGGCAGCAGTA-3') and MGSO (5'-TGCACCATCTGTCACTCTGTTAACCTC-3'), 200 µM dNTPs, 1.5 mM MgCl₂, 0.5 U Taq polymerase. Include a positive control and a no-template control (NTC).",
+      "zh": "配制 25 µL PCR 体系：2–5 µL 裂解模板、0.5 µM GPO-3 引物（5'-ACTCCTACGGGAGGCAGCAGTA-3'）和 MGSO 引物（5'-TGCACCATCTGTCACTCTGTTAACCTC-3'）各、200 µM dNTPs、1.5 mM MgCl₂、0.5 U Taq 聚合酶；须设阳性对照和无模板对照（NTC）。",
+      "isHeader": false
+    },
+    {
+      "en": "Run PCR: initial denaturation 95°C 5 min; 35 cycles of 95°C 30 s → 55°C 30 s → 72°C 30 s; final extension 72°C 7 min.",
+      "zh": "PCR 程序：95°C 预变性 5 min；35 个循环（95°C 30 s → 55°C 30 s → 72°C 30 s）；72°C 终延伸 7 min。",
+      "isHeader": false,
+      "time": "~2 h",
+      "temp": "55°C"
+    },
+    {
+      "en": "Cast a 2% agarose gel in 1× TAE with ethidium bromide (0.5 µg/mL) or SYBR Safe. Load 10–15 µL of each PCR product with loading dye alongside a 100 bp DNA ladder.",
+      "zh": "制备含 0.5 µg/mL EB（或 SYBR Safe）的 2% 琼脂糖凝胶（1× TAE），每孔上样 10–15 µL PCR 产物（加上样缓冲液），同时上 100 bp DNA Ladder。",
+      "isHeader": false
+    },
+    {
+      "en": "Run electrophoresis at 100 V for 30–40 min; visualize under UV light. A band of ~270 bp in the sample lane (and positive control) with no band in the NTC confirms mycoplasma contamination. No band = negative.",
+      "zh": "100 V 电泳 30–40 min，紫外灯下观察：样品泳道（及阳性对照）出现约 270 bp 条带且 NTC 无条带 = 支原体阳性；无条带 = 阴性。",
+      "isHeader": false,
+      "time": "30–40 min"
+    }
+  ],
   "safeStops": [
     {
       "afterStep": 3,

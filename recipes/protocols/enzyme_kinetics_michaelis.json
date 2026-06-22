@@ -115,8 +115,8 @@
     "bca_protein_assay",
     "his_tag_purification"
   ],
-  "ref": "Johnson & Goody (2011) Biochemistry 50:10785; Copeland (2000) Enzymes 2nd ed. Wiley-VCH; Bisswanger (2014) Perspect Sci 1:41–55",
-  "doi": "10.1021/bi2012383",
+  "ref": "Johnson & Goody (2011) Biochemistry 50(39):8264–8269; Copeland (2000) Enzymes 2nd ed. Wiley-VCH; Bisswanger (2014) Perspect Sci 1:41–55",
+  "doi": "10.1021/bi201284u",
   "discipline": [
     "biochemistry"
   ],
@@ -149,5 +149,72 @@
   "usage": {
     "en": "Determine enzyme kinetic parameters (Km, Vmax) by Michaelis-Menten analysis.",
     "zh": "Michaelis-Menten 分析测定酶动力学参数（Km、Vmax）。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Purify and quantify enzyme → establish buffer conditions → determine linear reaction range → prepare substrate concentration series (0.1×–10×Km) → run reactions at fixed [E] and temperature → stop at linear-range timepoint → measure signal → fit V₀ vs [S] to Michaelis-Menten → calculate Km, Vmax, kcat.",
+      "zh": "纯化并定量酶 → 确定缓冲条件 → 确定线性反应范围 → 配制底物浓度系列（0.1×–10×Km）→ 固定 [E] 和温度下进行反应 → 在线性范围时间点终止 → 检测信号 → V₀ vs [S] 米氏方程拟合 → 计算 Km、Vmax、kcat。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Confirm enzyme purity by SDS-PAGE and Coomassie staining (>90% homogeneity). Quantify enzyme concentration by BCA or Bradford assay. Use freshly purified enzyme or thaw an aliquot on ice.",
+      "zh": "SDS-PAGE + 考马斯蓝染色确认酶纯度（>90%），BCA 或 Bradford 定量酶浓度，使用新鲜纯化酶或在冰上解冻分装品。"
+    },
+    {
+      "en": "Prepare assay buffer: typically 50 mM HEPES pH 7.5, 5 mM MgCl₂, 1 mM DTT, 0.01% BSA. Optimize pH, ionic strength, and cofactors for your specific enzyme if needed.",
+      "zh": "配制反应缓冲液：通常为 50 mM HEPES pH 7.5、5 mM MgCl₂、1 mM DTT、0.01% BSA，根据酶的特性优化 pH、离子强度和辅因子。"
+    },
+    {
+      "en": "Determine the linear reaction range: measure product formation vs time at saturating substrate (10×Km). Sample at 0, 5, 10, 15, 20, 30 min. Choose a timepoint where <10% substrate is consumed and product is linear.",
+      "zh": "确定线性范围：在饱和底物浓度（10×Km）下测量产物随时间的生成量，在 0、5、10、15、20、30 min 取样，选择底物消耗 <10% 且产物线性增加的时间点。",
+      "time": "30 min"
+    },
+    {
+      "en": "Prepare a substrate concentration series covering 0.1×Km to 10×Km (6–8 points, e.g., 1, 5, 10, 25, 50, 100, 250, 500 µM). Include a no-substrate control ([S]=0). Prepare in assay buffer at 2× final concentration.",
+      "zh": "配制底物浓度系列，覆盖 0.1×Km 至 10×Km（6–8 点，如 1、5、10、25、50、100、250、500 µM），包含无底物对照（[S]=0），以反应缓冲液配制至 2× 终浓度。"
+    },
+    {
+      "en": "Set up reactions in 96-well plate or cuvettes. Add buffer, substrate, and any cofactors. Pre-equilibrate to assay temperature (25–37°C) for 5 min. Start all reactions simultaneously by adding enzyme (10–100 nM final) last. Include ≥3 replicates per substrate concentration.",
+      "zh": "在 96 孔板或比色杯中依次加入缓冲液、底物和辅因子，在反应温度（25–37°C）预平衡 5 min，最后加酶（终浓度 10–100 nM）启动反应，每个底物浓度设 ≥3 个重复。",
+      "time": "5 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Stop all reactions at the predetermined linear-range timepoint using the appropriate method: add TCA (10% final) or HCl for colorimetric assays, or switch to continuous kinetics mode (NADH-linked assay at A₃₄₀). Include a heat-inactivated enzyme control.",
+      "zh": "在预定线性范围时间点统一终止反应：比色法加 TCA（终浓度 10%）或 HCl；NADH 偶联法采用连续监测 A₃₄₀ 模式。包含热灭活酶对照。"
+    },
+    {
+      "en": "Measure signal by spectrophotometry or fluorescence. Convert absorbance to product concentration using the molar extinction coefficient (e.g., NADH: ε₃₄₀ = 6,220 M⁻¹cm⁻¹). Calculate initial velocity V₀ = Δ[product]/Δtime.",
+      "zh": "分光光度法或荧光法检测信号，用摩尔消光系数（如 NADH：ε₃₄₀ = 6,220 M⁻¹cm⁻¹）将吸光度换算为产物浓度，计算初速率 V₀ = Δ[产物]/Δ时间。"
+    },
+    {
+      "en": "Plot V₀ versus [S] and fit to the Michaelis-Menten equation: V₀ = Vmax × [S] / (Km + [S]) using nonlinear regression (GraphPad Prism, scipy.optimize.curve_fit, or R nls()). Extract Km and Vmax from the fit.",
+      "zh": "以 V₀ 对 [S] 作图，用非线性回归拟合米氏方程 V₀ = Vmax × [S] / (Km + [S])（GraphPad Prism、scipy.optimize.curve_fit 或 R nls()），从拟合结果获得 Km 和 Vmax。"
+    },
+    {
+      "en": "Calculate kcat = Vmax / [E]total (s⁻¹) and catalytic efficiency kcat/Km (M⁻¹s⁻¹). Report values with 95% confidence intervals. Typical ranges: Km µM–mM; kcat 0.001–10,000 s⁻¹; kcat/Km up to 10⁹ M⁻¹s⁻¹.",
+      "zh": "计算 kcat = Vmax / [E]total（s⁻¹）和催化效率 kcat/Km（M⁻¹s⁻¹），报告值附 95% 置信区间。典型范围：Km µM–mM；kcat 0.001–10,000 s⁻¹；kcat/Km 最高 10⁹ M⁻¹s⁻¹。"
+    },
+    {
+      "en": "Optional: determine inhibition kinetics by repeating the substrate series at 2–3 inhibitor concentrations. Distinguish inhibition mechanism (competitive, noncompetitive, uncompetitive) by Lineweaver-Burk plot or global curve fitting.",
+      "zh": "可选：在 2–3 个抑制剂浓度下重复底物系列实验，通过 Lineweaver-Burk 双倒数图或全局拟合区分抑制类型（竞争性、非竞争性、反竞争性）。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Purified enzyme aliquots can be snap-frozen in liquid nitrogen and stored at −80°C until use.",
+        "zh": "纯化酶可分装后液氮速冻，−80°C 保存备用。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Stopped reactions (in TCA or HCl) can be stored on ice for up to 2 h before reading; for colorimetric products, read promptly.",
+        "zh": "TCA 或 HCl 终止的反应可在冰上放置最长 2 h 再读数；比色法产物应尽快读数。"
+      }
+    }
+  ]
 }

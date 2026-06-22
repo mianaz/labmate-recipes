@@ -113,6 +113,56 @@
       "name": "Sterile ddH₂O"
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Plate cells to 50–70% confluency → mix DNA with 2.5 M CaCl₂ in ddH₂O → add dropwise to 2× HBS (pH 7.05) with bubbling → incubate 20 min at RT → add precipitate to cells → incubate 12–16 h → replace medium → harvest at 48–72 h",
+      "zh": "铺板至 50–70% 汇合度 → DNA 与 2.5 M CaCl₂ 混合加 ddH₂O → 鼓泡逐滴加入 2× HBS（pH 7.05）→ 室温静置 20 min → 逐滴加入细胞 → 孵育 12–16 h → 换液 → 48–72 h 后收获"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day −1: Seed cells (e.g., HEK293T, 3–4×10⁶ per 10 cm dish) in complete DMEM without antibiotics to reach 50–70% confluency on Day 0.",
+      "zh": "Day −1：将细胞（如 HEK293T，3–4×10⁶/10 cm 皿）接种于不含抗生素的完全 DMEM，使 Day 0 汇合度达 50–70%。"
+    },
+    {
+      "en": "Day 0 — Tube A: Combine 20 µg plasmid DNA + 50 µL 2.5 M CaCl₂ + sterile ddH₂O to a final volume of 500 µL; mix gently.",
+      "zh": "Day 0 — 管 A：将 20 µg 质粒 DNA + 50 µL 2.5 M CaCl₂ + 无菌 ddH₂O 混合补至 500 µL；轻柔混匀。"
+    },
+    {
+      "en": "Tube B: Place 500 µL 2× HBS (pH 7.05 ± 0.02; 280 mM NaCl, 50 mM HEPES, 1.5 mM Na₂HPO₄) in a separate tube. Verify pH is precisely 7.05 — this is critical.",
+      "zh": "管 B：另取 500 µL 2× HBS（pH 7.05 ± 0.02；280 mM NaCl、50 mM HEPES、1.5 mM Na₂HPO₄）。pH 必须精确为 7.05，这一步至关重要。"
+    },
+    {
+      "en": "Add Tube A (DNA/CaCl₂) dropwise to Tube B (2× HBS) while continuously bubbling air through the HBS with a Pasteur pipette; this creates fine Ca₃(PO₄)₂ precipitates.",
+      "zh": "用巴氏管持续向 2× HBS 中吹泡，同时将管 A（DNA/CaCl₂）逐滴加入管 B（2× HBS），形成细小的磷酸钙-DNA 共沉淀。"
+    },
+    {
+      "en": "Incubate the mixture at room temperature for 20 min without disturbing; a faint cloudiness indicates precipitate formation.",
+      "zh": "混合物室温静置 20 min，不要振动；轻微浑浊表明沉淀已形成。",
+      "time": "20 min"
+    },
+    {
+      "en": "Add the 1 mL precipitate dropwise to the 10 cm dish of cells while gently swirling; distribute evenly across the dish.",
+      "zh": "将 1 mL 沉淀混合物逐滴加入 10 cm 培养皿中，同时轻柔晃动，使其均匀分布。"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 12–16 h (overnight). A fine dark granular precipitate on cells is expected.",
+      "zh": "37°C、5% CO₂ 孵育 12–16 h（过夜）。细胞上出现细小黑色颗粒沉淀属正常现象。",
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Optional glycerol shock (boosts efficiency): aspirate medium, add 2 mL 15% glycerol/PBS per 10 cm dish for exactly 2 min at RT, then wash twice with PBS and replace medium.",
+      "zh": "可选甘油休克处理（提高效率）：吸去培养基，每皿加 2 mL 15% 甘油/PBS，室温处理恰好 2 min，PBS 洗两次，换新培养基。",
+      "time": "2 min"
+    },
+    {
+      "en": "Replace medium with fresh complete DMEM; continue incubation at 37°C for 48–72 h before harvesting protein lysate or viral supernatant.",
+      "zh": "换成新鲜完全 DMEM，37°C 继续孵育 48–72 h，然后收获蛋白裂解液或病毒上清。",
+      "time": "48–72 h",
+      "temp": "37°C"
+    }
+  ],
   "stoppingPoints": [],
   "safeStops": [
     {

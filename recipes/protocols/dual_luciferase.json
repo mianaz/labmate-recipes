@@ -106,5 +106,69 @@
   "crosslinks": [
     "cell_transfection",
     "calcium_phosphate_transfection"
+  ],
+  "briefSteps": [
+    {
+      "en": "Co-transfect Firefly reporter and Renilla control plasmids → 24–48 h later wash cells → lyse with 1× PLB 15 min RT → transfer lysate to white plate → add LAR II and read Firefly RLU → add Stop & Glo and read Renilla RLU → calculate Firefly/Renilla ratio.",
+      "zh": "共转染 Firefly 报告质粒与 Renilla 内参质粒 → 24–48 h 后洗涤细胞 → 1× PLB 室温裂解 15 min → 裂解液转移至白色不透明板 → 加 LAR II 读 Firefly RLU → 加 Stop & Glo 读 Renilla RLU → 计算 Firefly/Renilla 比值。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Seed cells at appropriate density in 24-well plate (or 96-well for high-throughput) 24 h before transfection so cells are 70–90% confluent. Use at least 3 replicate wells per condition.",
+      "zh": "转染前 24 h 按合适密度铺细胞于 24 孔板（高通量实验用 96 孔），转染时汇合度约 70–90%，每组至少 3 个复孔。"
+    },
+    {
+      "en": "Co-transfect Firefly luciferase reporter plasmid and Renilla control plasmid (pRL-TK) at a 10:1 mass ratio (e.g., 500 ng Firefly + 50 ng Renilla per well of a 24-well plate). Also include the experimental plasmid (transcription factor, miRNA mimic, etc.) or empty vector control. Use your standard transfection reagent.",
+      "zh": "按 10:1 质量比共转染 Firefly 荧光素酶报告质粒和 Renilla 对照质粒（pRL-TK）（24 孔板每孔 500 ng Firefly + 50 ng Renilla），同时加入实验质粒（转录因子、miRNA mimics 等）或空载体对照，使用常规转染试剂。",
+      "time": "15 min"
+    },
+    {
+      "en": "Incubate cells at 37°C, 5% CO₂ for 24–48 h post-transfection to allow reporter expression. The optimal time depends on the promoter and cell type.",
+      "zh": "转染后 37°C、5% CO₂ 培养 24–48 h 使报告基因充分表达，最佳时间取决于启动子和细胞类型。",
+      "time": "24–48 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Bring LAR II (Luciferase Assay Reagent II) and Stop & Glo Reagent to room temperature 30 min before use. Reconstitute LAR II by adding the supplied buffer to the lyophilized substrate; prepare only the volume needed (stable ~8 h at RT).",
+      "zh": "使用前 30 min 将 LAR II 和 Stop & Glo 恢复至室温，向冻干底物中加入随附缓冲液复溶 LAR II，仅配制当次所需用量（室温稳定约 8 h）。",
+      "time": "30 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Aspirate culture medium from cells. Wash gently once with 1× PBS. Aspirate PBS completely to avoid diluting the lysis buffer.",
+      "zh": "吸除培养基，用 1× PBS 轻柔洗涤一次，彻底吸净 PBS 以免稀释裂解液。"
+    },
+    {
+      "en": "Add 1× Passive Lysis Buffer (PLB) directly to cells: 100 µL/well (24-well) or 20 µL/well (96-well). Rock plate on a rocking platform for 15 min at room temperature to ensure complete lysis.",
+      "zh": "直接向细胞孔中加入 1× 被动裂解缓冲液（PLB）：24 孔板每孔 100 µL，96 孔板每孔 20 µL，室温摇床摇晃 15 min 确保充分裂解。",
+      "time": "15 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Transfer 20 µL of cell lysate to a white opaque 96-well plate (or luminometer cuvette). Include a lysis-buffer-only blank to verify background (<100 RLU). Centrifuge lysate at 12,000×g for 1 min first if the lysate is turbid.",
+      "zh": "取 20 µL 裂解液转移至白色不透明 96 孔板（或发光仪比色杯），设置仅含裂解缓冲液的空白孔验证本底（<100 RLU），若裂解液浑浊可先 12,000×g 离心 1 min。"
+    },
+    {
+      "en": "Add 100 µL LAR II to each well. Mix briefly. Measure Firefly luciferase luminescence immediately (2 s integration delay, 10 s measurement).",
+      "zh": "每孔加入 100 µL LAR II，短暂混匀，立即测定 Firefly 荧光素酶发光值（2 s 积分延迟，10 s 测量）。"
+    },
+    {
+      "en": "Without removing the plate, add 100 µL Stop & Glo Reagent to each well. Mix briefly. Measure Renilla luciferase luminescence using the same integration settings. Stop & Glo simultaneously quenches Firefly and activates Renilla.",
+      "zh": "不移动检测板，每孔加入 100 µL Stop & Glo 试剂，短暂混匀，按相同积分设置测量 Renilla 荧光素酶发光值（Stop & Glo 同时猝灭 Firefly 并激活 Renilla）。"
+    },
+    {
+      "en": "Calculate the normalized reporter activity: Firefly RLU / Renilla RLU for each well. Average the triplicates and compare across experimental groups. For statistical analysis, perform at least 3 independent biological replicates.",
+      "zh": "计算归一化报告基因活性：各孔 Firefly RLU / Renilla RLU，取三个复孔均值后各组比较，统计分析需至少 3 次独立生物学重复。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Cell lysates in PLB can be snap-frozen in liquid nitrogen and stored at −80°C for up to 1 month before measurement. Thaw on ice and mix well before use.",
+        "zh": "PLB 裂解液可液氮速冻后 −80°C 保存最长 1 个月再检测，使用前冰上解冻并充分混匀。"
+      }
+    }
   ]
 }

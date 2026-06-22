@@ -69,6 +69,55 @@
     "total": "30 minutes + overnight",
     "hands_on": "30 minutes"
   },
+  "briefSteps": [
+    {
+      "en": "Select healthy cells → PBS wash → trypsinize → centrifuge → count → resuspend in freezing medium (10% DMSO) → aliquot to cryovials → controlled-rate freeze at −80°C overnight → transfer to liquid nitrogen",
+      "zh": "选择健康细胞 → PBS 洗涤 → 胰酶消化 → 离心 → 计数 → 冻存液（10% DMSO）重悬 → 分装至冻存管 → −80°C 程序降温过夜 → 转液氮保存"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Select cells in log-phase growth at 70–90% confluency with viability >90%; do not freeze over-confluent or stressed cells.",
+      "zh": "选择处于对数生长期、汇合度 70–90%、活力 >90% 的细胞，避免冻存过度汇合或应激细胞。"
+    },
+    {
+      "en": "Aspirate medium, wash with Ca²⁺/Mg²⁺-free 1× PBS, then add trypsin-EDTA (T75: 2–3 mL) and incubate at 37°C for 2–5 min.",
+      "zh": "吸去培养基，1× PBS 洗涤，加胰酶-EDTA（T75：2–3 mL），37°C 孵育 2–5 min。",
+      "time": "2–5 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Neutralise trypsin with complete culture medium (≥2× trypsin volume), pipette to create a single-cell suspension.",
+      "zh": "加完全培养基（≥2 倍胰酶体积）终止消化，吹打制备单细胞悬液。"
+    },
+    {
+      "en": "Centrifuge at 300 × g for 5 min at room temperature; aspirate supernatant completely.",
+      "zh": "300 × g 室温离心 5 min，彻底吸去上清。",
+      "time": "5 min"
+    },
+    {
+      "en": "Resuspend pellet in a small volume of complete medium and count cells using a hemocytometer with trypan blue exclusion.",
+      "zh": "用少量完全培养基重悬细胞沉淀，用血球计数板台盼蓝排斥法计数细胞。"
+    },
+    {
+      "en": "Centrifuge again at 300 × g for 5 min; aspirate supernatant. Resuspend cells in pre-chilled freezing medium (90% FBS + 10% DMSO) to a density of 1–5 × 10⁶ cells/mL.",
+      "zh": "再次 300 × g 离心 5 min，吸去上清，用预冷冻存液（90% FBS + 10% DMSO）重悬至 1–5 × 10⁶ 个细胞/mL。",
+      "time": "5 min"
+    },
+    {
+      "en": "Aliquot 1 mL of cell suspension into each pre-labelled cryovial (label with cell line, passage number, date, operator).",
+      "zh": "每支预标记冻存管（注明细胞系、代次、日期、操作者）分装 1 mL 细胞悬液。"
+    },
+    {
+      "en": "Place cryovials into a Mr. Frosty or CoolCell isopropanol-filled container pre-cooled to 4°C, then transfer to −80°C freezer for controlled-rate freezing overnight (−1°C/min).",
+      "zh": "将冻存管放入预冷至 4°C 的 Mr. Frosty 或 CoolCell 容器（内含异丙醇），转入 −80°C 冰箱程序降温（−1°C/min）过夜。",
+      "temp": "−80°C"
+    },
+    {
+      "en": "Within 24–48 h, transfer cryovials to liquid nitrogen storage (vapor or liquid phase) for long-term banking; update the cell stock registry.",
+      "zh": "24–48 h 内将冻存管转入液氮（气相或液相）长期保存，更新细胞库台账。"
+    }
+  ],
   "stoppingPoints": [
     {
       "afterStep": "Cryovials in Mr. Frosty at −80°C",
@@ -104,6 +153,15 @@
     },
     {
       "name": "Liquid nitrogen storage tank"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Cryovials can remain at −80°C for 24–48 h before transfer to liquid nitrogen; do not leave longer than 1 week at −80°C as DMSO toxicity increases over time.",
+        "zh": "冻存管在 −80°C 可暂存 24–48 h 再转液氮；不要在 −80°C 放置超过 1 周，因 DMSO 低温毒性会随时间增加。"
+      }
     }
   ],
   "usage": {

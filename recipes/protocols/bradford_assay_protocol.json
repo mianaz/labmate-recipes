@@ -109,5 +109,45 @@
   "usage": {
     "en": "Quantify protein concentration using Bradford (Coomassie) dye-binding assay at 595 nm.",
     "zh": "Bradford 法（考马斯蓝结合法）595 nm 定量蛋白质浓度。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Prepare BSA standards (0–1.5 mg/mL) → dilute unknown samples → add Bradford reagent → incubate 5 min at RT → read A₅₉₅ → calculate concentration from standard curve.",
+      "zh": "配制 BSA 标准品（0–1.5 mg/mL）→ 稀释待测样品 → 加 Bradford 试剂 → 室温孵育 5 min → 读 A₅₉₅ → 标准曲线计算浓度。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Prepare BSA standard dilution series from 2 mg/mL stock: 0, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0, 1.5 mg/mL (8 points) using the same buffer as your samples as diluent.",
+      "zh": "从 2 mg/mL BSA 母液配制标准稀释系列：0、0.1、0.2、0.4、0.6、0.8、1.0、1.5 mg/mL（8 点），以与样品相同的缓冲液为稀释液。"
+    },
+    {
+      "en": "Prepare 2–3 dilutions of each unknown sample (e.g., 1:10, 1:50, 1:100) to ensure at least one falls within the standard curve range (0.1–1.5 mg/mL).",
+      "zh": "每个待测样品准备 2–3 个稀释度（如 1:10、1:50、1:100），确保至少一个落在标准曲线范围（0.1–1.5 mg/mL）内。"
+    },
+    {
+      "en": "Pipette 10 µL of each standard and sample into individual wells of a flat-bottom 96-well plate (or 100 µL into cuvettes). Include duplicates or triplicates.",
+      "zh": "向平底 96 孔板各孔加入 10 µL 标准品或样品（比色杯加 100 µL），设置双复孔或三复孔。"
+    },
+    {
+      "en": "Add 200 µL Bradford reagent (Coomassie G-250) to each well (or 1 mL for cuvette). Mix gently by pipetting up and down — do not vortex as this creates persistent bubbles.",
+      "zh": "每孔加入 200 µL Bradford 试剂（Coomassie G-250；比色杯加 1 mL），轻柔吹打混匀，勿涡旋（会产生气泡）。",
+      "time": "2 min"
+    },
+    {
+      "en": "Incubate at room temperature for 5 min, protected from direct light. The reaction is stable for 5–45 min; read all samples within this window.",
+      "zh": "室温避光孵育 5 min。反应在 5–45 min 内稳定，所有样品在此窗口内同时读数。",
+      "time": "5 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Read absorbance at 595 nm using microplate reader or spectrophotometer. Use the blank (0 mg/mL BSA + Bradford reagent) as the reference. Target A₅₉₅ 0.1–0.8 for accurate quantification.",
+      "zh": "酶标仪或分光光度计于 595 nm 读取吸光度，以空白孔（0 mg/mL BSA + Bradford 试剂）为参比，目标 A₅₉₅ 在 0.1–0.8 范围内。"
+    },
+    {
+      "en": "Plot A₅₉₅ vs BSA concentration and perform linear regression (R² >0.99). Back-calculate each unknown sample concentration from the equation, then multiply by the dilution factor to obtain the original concentration.",
+      "zh": "以 BSA 浓度对 A₅₉₅ 作图并线性回归（R² >0.99），代入方程计算各样品浓度，乘以稀释倍数得原始浓度。"
+    }
+  ],
+  "safeStops": []
 }

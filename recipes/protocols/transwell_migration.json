@@ -45,7 +45,7 @@
     "en": "Quantitative assay for cell migration/invasion using Boyden chamber principle. Cells migrate through 8 µm pores toward chemoattractant (serum). For invasion assay, coat inserts with Matrigel. Count migrated cells on lower surface after crystal violet staining.",
     "zh": "基于 Boyden 小室原理的定量细胞迁移/侵袭实验。细胞通过 8 µm 孔向趋化因子（血清）迁移。侵袭实验需在膜上涂 Matrigel。结晶紫染色后计数下表面迁移细胞。"
   },
-  "ref": "Justus et al. (2014) J Vis Exp 88:e51046; protocols.io doi:10.17504/protocols.io.261ge3d5ov47",
+  "ref": "Justus et al. (2014) J Vis Exp 88:e51046",
   "discipline": [
     "cell"
   ],
@@ -93,6 +93,96 @@
       "afterStep": "Inserts stained and dried",
       "condition": "RT",
       "duration": "indefinitely"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Serum-starve cells 12–24 h → add complete medium (10% FBS) to lower chamber → seed 1–5×10⁴ serum-free cells in upper chamber → incubate 16–24 h at 37°C → remove non-migrated cells from upper surface with cotton swab → fix and stain with crystal violet → count migrated cells in 5 random fields",
+      "zh": "血清饥饿处理 12–24 h → 下室加完全培养基（10% FBS）→ 上室铺 1–5×10⁴ 细胞（无血清）→ 37°C 孵育 16–24 h → 棉签擦去上表面未迁移细胞 → 固定并结晶紫染色 → 镜下计数 5 个随机视野"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 0 – Serum Starvation",
+      "zh": "第 0 天 – 血清饥饿",
+      "isHeader": true
+    },
+    {
+      "en": "Replace medium with serum-free medium and incubate at 37°C, 5% CO₂ for 12–24 h to synchronize cells and sensitize them to the chemoattractant gradient.",
+      "zh": "换液至无血清培养基，37°C、5% CO₂ 孵育 12–24 h，使细胞同步化并提高对趋化因子梯度的响应性。",
+      "time": "12–24 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Assay Day – Setup",
+      "zh": "实验日 – 组装",
+      "isHeader": true
+    },
+    {
+      "en": "For invasion assay only: coat transwell inserts (8 µm pore) by adding 50–100 µL diluted Matrigel (1:8 in cold serum-free medium) to the upper surface; incubate at 37°C for 1 h to polymerize; remove excess liquid without disturbing the gel.",
+      "zh": "仅侵袭实验：向 Transwell 膜（8 µm 孔）上表面加 50–100 µL 稀释 Matrigel（1:8 冷无血清培养基）；37°C 孵育 1 h 聚合；去除多余液体，不要扰动胶层。",
+      "time": "1 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Add 600 µL complete medium (10% FBS, ± chemoattractant such as growth factor or conditioned medium) to each well of a 24-well companion plate (lower chamber).",
+      "zh": "向 24 孔配套板（下室）每孔加 600 µL 完全培养基（10% FBS，± 趋化因子如生长因子或条件培养基）。"
+    },
+    {
+      "en": "Harvest serum-starved cells, resuspend in serum-free medium at 1–5×10⁵ cells/mL; add 100–200 µL (1–5×10⁴ cells) to the upper chamber; include treatments ± compounds in the upper chamber at this point.",
+      "zh": "收集血清饥饿细胞，用无血清培养基重悬至 1–5×10⁵ 细胞/mL；向上室加 100–200 µL（1–5×10⁴ 细胞）；如需处理，在此时向上室加入受试化合物。"
+    },
+    {
+      "en": "Place inserts into the companion wells; incubate at 37°C, 5% CO₂ for 16–24 h (optimize per cell line: fast migrators 6–12 h, slow cells 24 h).",
+      "zh": "将小室放入配套孔板；37°C、5% CO₂ 孵育 16–24 h（按细胞系优化：迁移快的细胞 6–12 h，慢细胞 24 h）。",
+      "time": "16–24 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Staining and Counting",
+      "zh": "染色与计数",
+      "isHeader": true
+    },
+    {
+      "en": "Remove inserts; gently wipe the upper surface of the membrane with a cotton swab to remove non-migrated cells; rinse insert briefly in PBS.",
+      "zh": "取出小室；用棉签轻柔擦去膜上表面未迁移的细胞；在 PBS 中短暂冲洗小室。"
+    },
+    {
+      "en": "Fix the lower surface of the membrane by immersing insert in 4% PFA or methanol for 10–15 min at room temperature.",
+      "zh": "将小室浸入 4% PFA 或甲醇中，室温固定膜下表面 10–15 min。",
+      "time": "10–15 min"
+    },
+    {
+      "en": "Stain with 0.5% crystal violet for 15 min; wash excess stain with water; air-dry.",
+      "zh": "0.5% 结晶紫染色 15 min；水洗去除多余染料；晾干。",
+      "time": "15 min"
+    },
+    {
+      "en": "Count migrated cells under light microscope in 5 random fields per insert (10× objective); calculate mean cell count per field; normalize to control; for automated quantification, extract crystal violet with 10% acetic acid and read OD at 595 nm.",
+      "zh": "在 10× 物镜下计数每个小室 5 个随机视野中的迁移细胞数；计算每视野平均细胞数并归一化至对照；自动定量时可用 10% 乙酸提取结晶紫，读取 595 nm 吸光值。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Serum starvation (12–24 h) is an overnight stopping point before setting up the assay",
+        "zh": "血清饥饿（12–24 h）为组装实验前的过夜停顿点"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Migration incubation (16–24 h) is the natural overnight stop; proceed to staining in the morning",
+        "zh": "迁移孵育（16–24 h）为自然过夜停顿；次日早上进行染色"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Fixed, stained, and air-dried inserts can be stored at room temperature indefinitely before counting",
+        "zh": "固定、染色并晾干的小室可在室温下无限期保存后再计数"
+      }
     }
   ],
   "usage": {

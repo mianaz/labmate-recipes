@@ -116,5 +116,82 @@
     "flow_panel_staining",
     "annexin_v_apoptosis",
     "cell_cycle_pi"
+  ],
+  "briefSteps": [
+    {
+      "en": "Harvest ≥1×10⁵ cells → wash with PBS → Fc block → incubate with fluorochrome-conjugated antibody cocktail at 4°C → wash twice → add viability dye → resuspend in FACS buffer → acquire ≥10,000 events on flow cytometer.",
+      "zh": "收集 ≥1×10⁵ 细胞 → PBS 洗涤 → Fc 封闭 → 4°C 孵育荧光抗体混合物 → 洗涤两次 → 加活死染料 → 重悬于 FACS 缓冲液 → 流式细胞仪采集 ≥10,000 events。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Cell Preparation",
+      "zh": "细胞制备",
+      "isHeader": true
+    },
+    {
+      "en": "Harvest ≥1×10⁵ cells per sample (1×10⁶ recommended for rare populations). For adherent cells, detach with 2 mM EDTA in PBS or Accutase to preserve surface antigens; avoid trypsin for sensitive markers.",
+      "zh": "每个样品收集 ≥1×10⁵ 细胞（稀有群体建议 1×10⁶）。贴壁细胞用 PBS 中 2 mM EDTA 或 Accutase 脱落以保护表面抗原；敏感标志物避免使用胰蛋白酶。"
+    },
+    {
+      "en": "Wash cells once with cold PBS (300×g, 5 min, 4°C). Discard supernatant and resuspend pellet in 100 µL FACS buffer (PBS + 1–2% FBS + 2 mM EDTA) per sample.",
+      "zh": "用冷 PBS 洗涤细胞一次（300×g，5 min，4°C）。弃上清，每个样品用 100 µL FACS 缓冲液（PBS + 1–2% FBS + 2 mM EDTA）重悬沉淀。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Staining",
+      "zh": "染色",
+      "isHeader": true
+    },
+    {
+      "en": "Add Fc blocking reagent (2 µL human TruStain FcX or 1 µg anti-mouse CD16/32 per 10⁶ cells) and incubate at 4°C for 10 min to prevent non-specific antibody binding via Fc receptors.",
+      "zh": "加入 Fc 封闭试剂（每 10⁶ 细胞加 2 µL 人 TruStain FcX 或 1 µg 抗小鼠 CD16/32），4°C 孵育 10 min，防止抗体通过 Fc 受体非特异性结合。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Without washing, add pre-titrated fluorochrome-conjugated antibody cocktail (prepared in FACS buffer) directly to cells. Mix gently by pipetting.",
+      "zh": "不洗涤，直接向细胞中加入预先滴定好的荧光素标记抗体混合物（用 FACS 缓冲液稀释）。轻柔吹打混匀。"
+    },
+    {
+      "en": "Incubate at 4°C in the dark for 20–30 min. Protect from light throughout all subsequent steps.",
+      "zh": "4°C 避光孵育 20–30 min。后续所有步骤均需避光。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash cells twice with 2 mL FACS buffer per wash (300×g, 5 min, 4°C) to remove unbound antibodies.",
+      "zh": "用 FACS 缓冲液洗涤细胞两次，每次 2 mL（300×g，5 min，4°C），去除未结合的抗体。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Acquisition",
+      "zh": "上机检测",
+      "isHeader": true
+    },
+    {
+      "en": "Resuspend cells in 200–500 µL FACS buffer. If using a viability dye (DAPI 1 µg/mL, PI 2 µg/mL, or LIVE/DEAD fixable dye), add per manufacturer instructions and incubate 10–15 min on ice before acquisition.",
+      "zh": "将细胞重悬于 200–500 µL FACS 缓冲液。如使用活死染料（DAPI 1 µg/mL、PI 2 µg/mL 或 LIVE/DEAD 固定活死染料），按说明书加入，冰上孵育 10–15 min 后上机。",
+      "time": "15 min"
+    },
+    {
+      "en": "Filter cells through a 35 µm cell strainer cap into a 5 mL FACS tube to remove aggregates. Run single-color compensation controls (compensation beads or single-stained cells) and FMO controls for gating.",
+      "zh": "将细胞通过 35 µm 滤网过滤至 5 mL FACS 管中以去除聚集体。运行单色补偿对照（补偿磁珠或单染细胞）和 FMO 对照用于设门。"
+    },
+    {
+      "en": "Acquire at least 10,000 events (50,000+ for rare populations) on the flow cytometer. Use FSC/SSC to gate live singlets, then apply sequential gating strategy. Export FCS files for analysis with FlowJo or Cytobank.",
+      "zh": "在流式细胞仪上至少采集 10,000 events（稀有群体需 50,000+ events）。用 FSC/SSC 设门活细胞单细胞，再依次设门分析。导出 FCS 文件，用 FlowJo 或 Cytobank 分析。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "After the final wash, cells can be fixed with 1–4% PFA for 20 min at RT, then stored at 4°C in the dark for up to 24 hours before acquisition. Note: fixation precludes use of viability dyes sensitive to fixation.",
+        "zh": "末次洗涤后，可用 1–4% PFA 室温固定 20 min，4°C 避光保存最多 24 h 后再上机检测。注意：固定后不可使用对固定剂敏感的活死染料。"
+      }
+    }
   ]
 }

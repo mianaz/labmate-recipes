@@ -115,5 +115,72 @@
     "agarose_gel_electrophoresis",
     "restriction_digest",
     "dna_ligation"
+  ],
+  "briefSteps": [
+    {
+      "en": "Run agarose gel (TAE, 1%), excise target band under UV/blue light, weigh gel slice, dissolve in 3 vol Buffer QG at 50°C, bind to spin column, wash with Buffer PE, dry spin, then elute with 30 µL warm water or EB buffer.",
+      "zh": "跑 1% TAE 琼脂糖凝胶，UV/蓝光灯下切取目的条带，称重胶块，加 3 倍体积 Buffer QG 于 50°C 溶解，上柱结合，Buffer PE 洗涤，空转干燥，最后用 30 µL 温水或 EB 缓冲液洗脱。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Run samples on a 1% TAE agarose gel (TAE preferred over TBE for gel extraction — higher recovery). Use enough wells to separate fragments cleanly. Run at 5–8 V/cm.",
+      "zh": "在 1% TAE 琼脂糖凝胶上电泳（胶回收优先使用 TAE 而非 TBE，回收率更高）。上样孔需足够分离片段。以 5–8 V/cm 电泳。"
+    },
+    {
+      "en": "Place gel on UV transilluminator (or blue-light box). Using a clean scalpel or razor blade, rapidly excise the target band with minimal exposure to UV (UV damages DNA — keep exposure under 30 seconds). For cloning purposes, blue-light transilluminators are preferred.",
+      "zh": "将凝胶放置于紫外灯（或蓝光灯）上。用干净的手术刀或刀片迅速切取目的条带，尽量减少紫外暴露时间（紫外会损伤 DNA——暴露控制在 30 秒以内）。克隆用途优先使用蓝光灯。"
+    },
+    {
+      "en": "Weigh the gel slice in a pre-weighed 1.5 mL microcentrifuge tube. Add 3 volumes of Buffer QG per 100 mg gel (e.g., 300 µL QG for 100 mg gel). For fragments >4 kb, also add 1 gel volume of isopropanol to improve recovery.",
+      "zh": "在预先称重的 1.5 mL 离心管中称量胶块。每 100 mg 凝胶加入 3 倍体积 Buffer QG（如 100 mg 凝胶加 300 µL QG）。对于 >4 kb 的片段，另加 1 倍体积异丙醇以提高回收率。"
+    },
+    {
+      "en": "Incubate at 50°C for 10 min with vortexing every 2–3 min until gel is completely dissolved. The solution should appear yellow (pH ≤7.5). If orange/purple, add 10 µL 3 M sodium acetate (pH 5.0) to lower pH.",
+      "zh": "50°C 孵育 10 min，每 2–3 min 涡旋一次，至凝胶完全溶解。溶液应呈黄色（pH ≤7.5）。若呈橙色或紫色，加入 10 µL 3 M 醋酸钠（pH 5.0）降低 pH。",
+      "temp": "50°C",
+      "time": "10 min"
+    },
+    {
+      "en": "Transfer dissolved gel solution to a QIAquick (or equivalent) spin column in a 2 mL collection tube. Centrifuge at 13,000×g for 1 min. Discard flow-through.",
+      "zh": "将溶解后的凝胶溶液转移至放置在 2 mL 收集管中的 QIAquick（或同类）离心柱上，13,000×g 离心 1 min，弃流穿液。",
+      "time": "1 min"
+    },
+    {
+      "en": "Add 750 µL Buffer PE (ethanol-containing wash buffer) to the column. Let stand 2–5 min, then centrifuge at 13,000×g for 1 min. Discard flow-through.",
+      "zh": "向离心柱加入 750 µL Buffer PE（含乙醇洗涤缓冲液）。静置 2–5 min 后，13,000×g 离心 1 min，弃流穿液。",
+      "time": "1 min"
+    },
+    {
+      "en": "Perform a dry spin: centrifuge column at 13,000×g for 1 min to remove residual ethanol. Residual ethanol will inhibit downstream enzymatic reactions.",
+      "zh": "空转离心：将离心柱以 13,000×g 离心 1 min，去除残留乙醇。残留乙醇会抑制下游酶反应。",
+      "time": "1 min"
+    },
+    {
+      "en": "Place column in a clean 1.5 mL microcentrifuge tube. Add 30 µL elution buffer (EB) or nuclease-free water (pre-warmed to 50°C improves recovery of large fragments). Let stand for 1 min, then centrifuge at 13,000×g for 1 min to elute DNA.",
+      "zh": "将离心柱置于干净的 1.5 mL 离心管中。加入 30 µL 洗脱缓冲液（EB）或无核酸酶水（预热至 50°C 可提高大片段回收率）。静置 1 min 后，13,000×g 离心 1 min 洗脱 DNA。",
+      "temp": "50°C",
+      "time": "1 min"
+    },
+    {
+      "en": "Quantify recovered DNA by NanoDrop or Qubit. Typical recovery is 70–80%. Use immediately for downstream applications (ligation, sequencing) or store at −20°C.",
+      "zh": "用 NanoDrop 或 Qubit 定量回收的 DNA。回收率通常为 70–80%。立即用于下游实验（连接、测序），或存于 −20°C 备用。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Excised gel slices can be stored at −20°C for up to 1 month before processing.",
+        "zh": "切取的凝胶片可在 −20°C 保存最多 1 个月再进行处理。"
+      }
+    },
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Purified DNA can be stored at −20°C for up to 6 months.",
+        "zh": "纯化后的 DNA 可在 −20°C 保存最多 6 个月。"
+      }
+    }
   ]
 }

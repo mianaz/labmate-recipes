@@ -81,5 +81,51 @@
   "usage": {
     "en": "Prepare and store long-term bacterial glycerol stocks at −80°C.",
     "zh": "制备细菌甘油保存管，−80°C 长期保存。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Pick single colony → grow overnight in LB + antibiotic → mix 500 µL culture with 500 µL 50% glycerol → label tube → snap-freeze → store at −80°C",
+      "zh": "挑单克隆 → LB + 抗生素过夜培养 → 500 µL 菌液与 500 µL 50% 甘油混合 → 标记管子 → 速冻 → −80°C 保存"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Pick a single colony from a freshly streaked LB agar plate and inoculate into 3–5 mL LB medium supplemented with the appropriate antibiotic.",
+      "zh": "从新鲜划线的 LB 琼脂平板上挑取单克隆，接种至含相应抗生素的 3–5 mL LB 培养基中。",
+      "isHeader": false
+    },
+    {
+      "en": "Grow the culture at 37°C, 225 rpm overnight (12–16 h) to late log/early stationary phase (OD₆₀₀ ≈ 0.5–2.0).",
+      "zh": "37°C、225 rpm 振荡过夜培养 12–16 h 至对数晚期/稳定早期（OD₆₀₀ ≈ 0.5–2.0）。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Pipette 500 µL of overnight culture into a labeled 1.5–2 mL cryovial.",
+      "zh": "取 500 µL 过夜菌液加入已标记的 1.5–2 mL 冻存管中。",
+      "isHeader": false
+    },
+    {
+      "en": "Add 500 µL of sterile 50% glycerol (final concentration 25% glycerol); mix by gently inverting 5–10 times. Do NOT vortex.",
+      "zh": "加入 500 µL 无菌 50% 甘油（终浓度 25% 甘油），轻柔颠倒混匀 5–10 次，切勿涡旋。",
+      "isHeader": false
+    },
+    {
+      "en": "Label the cryovial clearly with: strain name, plasmid name, antibiotic resistance, date, and your initials. Use a cryogenic-resistant marker or label.",
+      "zh": "在冻存管上清晰标注：菌株名称、质粒名称、抗性、日期及操作者缩写，使用防冻标记笔或防冻标签。",
+      "isHeader": false
+    },
+    {
+      "en": "Snap-freeze by placing directly into liquid nitrogen for 30–60 s, or on a pre-cooled metal block. Do NOT use a −20°C pre-freeze step as this reduces viability.",
+      "zh": "直接投入液氮速冻 30–60 s，或置于预冷金属架上，切勿先 −20°C 预冻（会降低存活率）。",
+      "isHeader": false
+    },
+    {
+      "en": "Transfer immediately to −80°C storage. Prepare at least two independent aliquots and store in separate locations. Stocks are stable for >10 years.",
+      "zh": "立即转移至 −80°C 保存。至少制备 2 管独立备份存放于不同冰箱，正确保存可稳定 >10 年。",
+      "isHeader": false
+    }
+  ],
+  "safeStops": []
 }

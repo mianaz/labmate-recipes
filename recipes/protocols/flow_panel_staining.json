@@ -131,8 +131,7 @@
     "pbmc_isolation",
     "tumor_dissociation"
   ],
-  "ref": "Mahnke & Roederer (2007) Clin Lab Med 27:469–485; Chattopadhyay et al. (2014) Nat Protoc 9:147–154; Cossarizza et al. (2021) Eur J Immunol 51:2708",
-  "doi": "10.1038/nprot.2013.160",
+  "ref": "Mahnke & Roederer (2007) Clin Lab Med 27:469–485; Cossarizza et al. (2021) Eur J Immunol 51:2708",
   "discipline": [
     "cell",
     "immunology"

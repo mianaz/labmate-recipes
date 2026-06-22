@@ -130,5 +130,89 @@
     "coip_protocol",
     "wb_protocol",
     "pulldown_assay"
+  ],
+  "briefSteps": [
+    {
+      "en": "Lyse cells in IP lysis buffer → centrifuge and clarify → quantify lysate, save input → pre-clear with beads → add target antibody overnight at 4°C → add Protein A/G beads 1–2 h → wash 3–5× → elute with 2× SDS loading buffer at 95°C → Western blot.",
+      "zh": "IP 裂解液裂解细胞 → 离心澄清 → 定量裂解液并留取 Input → beads 预清除 → 加目标抗体 4°C 过夜 → Protein A/G beads 孵育 1–2 h → 洗涤 3–5 次 → 2× SDS 上样缓冲液 95°C 洗脱 → Western Blot 检测。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1",
+      "zh": "第一天",
+      "isHeader": true
+    },
+    {
+      "en": "Wash cells twice with ice-cold PBS. Add IP lysis buffer (150 mM NaCl, 50 mM Tris-HCl pH 7.5, 1% NP-40, 0.5% sodium deoxycholate, 1 mM EDTA) supplemented with protease inhibitor cocktail and phosphatase inhibitors if needed. Use 300–500 µL per 10-cm dish. Lyse on ice for 30 min with occasional vortexing.",
+      "zh": "冰冷 PBS 洗细胞两次，加 IP 裂解液（150 mM NaCl、50 mM Tris-HCl pH 7.5、1% NP-40、0.5% 脱氧胆酸钠、1 mM EDTA + 蛋白酶抑制剂，必要时加磷酸酶抑制剂），10 cm 皿用 300–500 µL，冰上裂解 30 min，间歇涡旋。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Centrifuge at 14,000×g for 15 min at 4°C. Carefully transfer the supernatant to a new pre-chilled Eppendorf tube. Discard the pellet.",
+      "zh": "4°C 14,000×g 离心 15 min，小心将上清转移至新的预冷 Eppendorf 管，弃去沉淀。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Quantify protein concentration by BCA or Bradford assay. Use 500 µg–1 mg total protein per IP reaction. Remove 5–10% of the lysate as Input control and add 1× Laemmli loading buffer; boil and store at −20°C.",
+      "zh": "BCA 或 Bradford 法定量蛋白浓度，每个 IP 反应取 500 µg–1 mg 总蛋白，留取 5–10% 裂解液作为 Input 对照，加 1× Laemmli 缓冲液后煮沸，−20°C 保存。",
+      "time": "30 min"
+    },
+    {
+      "en": "Pre-clear the lysate: add 20 µL of Protein A/G magnetic beads (pre-washed 3× in lysis buffer) and rotate at 4°C for 1 h. Apply magnetic rack and transfer supernatant to a new tube, discarding beads.",
+      "zh": "预清除：加 20 µL Protein A/G 磁珠（预洗 3 次），4°C 旋转孵育 1 h，用磁力架吸附磁珠，将上清转移至新管。",
+      "time": "60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add 1–5 µg of target antibody to the pre-cleared lysate. Prepare an isotype-matched IgG negative control in a parallel tube with the same amount of normal IgG. Rotate all tubes at 4°C overnight.",
+      "zh": "向预清除后的裂解液中加入 1–5 µg 目标抗体，平行设置同量同种属 IgG 阴性对照管，4°C 旋转孵育过夜。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2",
+      "zh": "第二天",
+      "isHeader": true
+    },
+    {
+      "en": "Add 20–40 µL of pre-washed Protein A/G magnetic beads to each tube. Rotate at 4°C for 1–2 h to capture the antibody-antigen complex.",
+      "zh": "每管加入 20–40 µL 预洗 Protein A/G 磁珠，4°C 旋转孵育 1–2 h 捕获抗体-抗原复合物。",
+      "time": "60–120 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Place tubes on magnetic rack. Remove and discard supernatant. Wash beads 3–5 times: add 1 mL cold lysis buffer, rotate for 5 min at 4°C, apply magnetic rack, discard supernatant. Final wash: use PBS for a cleaner elution.",
+      "zh": "置于磁力架上弃上清，洗涤 beads 3–5 次：加 1 mL 冰冷裂解液，4°C 旋转 5 min，磁力架吸附后弃上清，末次可用 PBS 洗涤使洗脱更干净。",
+      "time": "25–45 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute by adding 40–50 µL of 2× Laemmli sample buffer to beads. Boil at 95°C for 5 min. Apply magnetic rack and carefully transfer supernatant (eluate) to a new tube.",
+      "zh": "向 beads 中加入 40–50 µL 2× Laemmli 上样缓冲液，95°C 煮沸 5 min，磁力架吸附后小心将上清（洗脱液）转入新管。",
+      "time": "5 min",
+      "temp": "95°C"
+    },
+    {
+      "en": "Resolve IP eluates (IP sample, IgG control) and Input by SDS-PAGE, then transfer to membrane and perform Western blot. Probe for the target protein. Include Input as positive control to verify antibody and protein expression.",
+      "zh": "将 IP 洗脱液（IP 样品、IgG 对照）和 Input 跑 SDS-PAGE 后转膜，Western Blot 检测目标蛋白，以 Input 为阳性对照验证抗体和蛋白表达。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Clarified cell lysate can be snap-frozen in liquid nitrogen and stored at −80°C for up to 1 month.",
+        "zh": "澄清的细胞裂解液可液氮速冻后 −80°C 保存最长 1 个月。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "IP eluates in Laemmli buffer can be stored at −20°C for up to 1 month before Western blot analysis.",
+        "zh": "Laemmli 缓冲液中的 IP 洗脱液可 −20°C 保存最长 1 个月，再进行 Western Blot。"
+      }
+    }
   ]
 }

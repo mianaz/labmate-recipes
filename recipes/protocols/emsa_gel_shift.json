@@ -163,5 +163,67 @@
   "usage": {
     "en": "Detect protein-DNA interactions by electrophoretic mobility shift assay (EMSA/gel shift).",
     "zh": "电泳迁移率变动实验（EMSA）检测蛋白质-DNA 相互作用。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Prepare labeled DNA probe (fluorescent or ³²P) → set up binding reactions with titrated protein and poly(dI:dC) competitor → incubate 20–30 min at RT → pre-run native PAGE (5–10% acrylamide, 0.5× TBE) at 100 V for 1 h at 4°C → load samples and run gel 100–150 V, 1–2 h at 4°C → visualize shifted bands by fluorescent imager or phosphorimager → optional supershift or competition assay",
+      "zh": "制备标记 DNA 探针（荧光或 ³²P）→ 加入梯度蛋白和 poly(dI:dC) 竞争剂配制结合反应 → RT 孵育 20–30 min → 天然 PAGE（5–10% 丙烯酰胺、0.5× TBE）4°C 100 V 预电泳 1 h → 上样，4°C 100–150 V 电泳 1–2 h → 荧光成像仪或磷光成像仪检测迁移条带 → 可选超阻滞或竞争实验"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Prepare labeled DNA probe: anneal complementary oligonucleotides (20–40 bp) at 95°C for 5 min, then slow-cool to RT over 45–60 min. For fluorescent probes (IRDye 700/800 or FAM), use at 1–10 nM. For ³²P: label with T4 PNK at 37°C for 30 min; purify on G-25 spin column.",
+      "zh": "制备标记 DNA 探针：互补寡核苷酸（20–40 bp）95°C 退火 5 min，缓慢降温至室温（45–60 min）。荧光探针（IRDye 700/800 或 FAM）终浓度 1–10 nM；³²P 标记：T4 PNK 37°C 30 min，G-25 柱纯化。",
+      "time": "30–60 min"
+    },
+    {
+      "en": "Cast and pre-run native PAGE: 5% acrylamide for large complexes or 8–10% for small probes (<100 bp), 0.5× TBE buffer, 4°C. Pre-run at 100 V for 1 h at 4°C to equilibrate gel and remove charged impurities.",
+      "zh": "制备天然 PAGE 凝胶并预电泳：大分子复合物用 5%，小探针（<100 bp）用 8–10%，0.5× TBE 缓冲液，4°C，100 V 预电泳 1 h。",
+      "time": "1 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Prepare binding reactions (10–20 µL each): combine EMSA binding buffer + 1 µg poly(dI:dC) nonspecific competitor + protein at 0, 10, 50, 100, and 500 nM. Add all components except protein and probe first; add protein last, then probe.",
+      "zh": "配制结合反应（每管 10–20 µL）：EMSA 结合缓冲液 + 1 µg poly(dI:dC) 非特异竞争剂 + 蛋白梯度（0、10、50、100、500 nM）。先加除蛋白和探针外的所有组分，最后加蛋白，再加探针。"
+    },
+    {
+      "en": "Incubate binding reactions 20–30 min at RT. For unstable complexes, incubate at 4°C. Do NOT vortex; mix gently by flicking tube.",
+      "zh": "结合反应室温孵育 20–30 min；不稳定复合物可在 4°C 孵育。勿涡旋，轻弹管壁混匀。",
+      "time": "20–30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add 2 µL of 50% glycerol to each reaction as loading aid (final ~6–8% glycerol to sink samples). Load samples without SDS. Load free-probe-only control in the last lane.",
+      "zh": "每管加入 2 µL 50% 甘油作为上样辅助（终浓度约 6–8%）。勿加 SDS。最后泳道加游离探针对照。"
+    },
+    {
+      "en": "Run electrophoresis at 100–150 V for 1–2 h at 4°C. Run slowly — complexes are fragile. Stop when bromophenol blue has migrated ~¾ of the gel length.",
+      "zh": "4°C 100–150 V 电泳 1–2 h。慢速电泳，避免复合物解离。溴酚蓝迁移至凝胶约 3/4 处停止。",
+      "time": "1–2 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Visualize results: Fluorescent probes — scan gel wet on LI-COR infrared scanner. ³²P probes — fix gel in 10% methanol + 10% acetic acid for 30 min, vacuum dry, expose to phosphorimager screen overnight. Shifted band = protein-DNA complex; free probe at bottom of gel.",
+      "zh": "结果检测：荧光探针——LI-COR 红外扫描仪直接扫描湿凝胶。³²P——10% 甲醇 + 10% 乙酸固定 30 min，真空干燥，磷光成像板曝光过夜。上移条带 = 蛋白-DNA 复合物；底部 = 游离探针。"
+    },
+    {
+      "en": "Optional supershift: before loading, add 1–5 µg antibody against the protein of interest to the binding reaction; incubate additional 30 min at RT. A further-shifted band confirms protein identity.",
+      "zh": "可选超阻滞验证：上样前向结合反应中加入 1–5 µg 靶蛋白抗体，RT 再孵育 30 min。产生更明显的阻滞条带可确认蛋白身份。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Optional competition assay: add 10×–100× molar excess of unlabeled specific (same sequence) or nonspecific (scrambled) competitor DNA before adding labeled probe. Specific competitor eliminates shift; scrambled sequence maintains shift. This confirms binding specificity.",
+      "zh": "可选竞争实验：加标记探针前加入 10–100 倍摩尔过量的未标记特异性（同序列）或非特异性（乱序）竞争 DNA。特异性竞争使信号消失；乱序竞争信号保留，证明结合特异性。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Annealed and labeled probe can be stored at −20°C (fluorescent) or −80°C (³²P, use within 2 weeks) until needed.",
+        "zh": "退火后的标记探针可 −20°C 保存（荧光探针）或 −80°C 保存（³²P，需在 2 周内使用）。"
+      }
+    }
+  ]
 }

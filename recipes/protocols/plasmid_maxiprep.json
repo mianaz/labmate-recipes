@@ -144,5 +144,117 @@
     "miniprep_protocol",
     "cell_transfection",
     "lentivirus_production"
+  ],
+  "briefSteps": [
+    {
+      "en": "Grow 100–500 mL culture overnight → pellet bacteria → alkaline lysis (P1/P2/P3) → centrifuge → bind to column → wash twice → elute → isopropanol precipitate → wash → dissolve in TE → quantify",
+      "zh": "100–500 mL 过夜培养 → 离心收菌 → 碱裂解（P1/P2/P3）→ 离心 → 上柱结合 → 洗涤 2 次 → 洗脱 → 异丙醇沉淀 → 洗涤 → TE 溶解 → 定量"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Inoculate a single confirmed colony into 5 mL LB + antibiotic; grow at 37°C, 225 rpm for 6–8 h, then transfer to 100–500 mL LB + antibiotic and continue overnight (12–16 h).",
+      "zh": "第1天：挑单克隆接种至 5 mL LB + 抗生素，37°C、225 rpm 培养 6–8 h，再转接至 100–500 mL LB + 抗生素过夜培养 12–16 h。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 2 — Pellet bacteria by centrifugation at 6,000×g for 15 min at 4°C; discard supernatant completely.",
+      "zh": "第2天 — 4°C、6,000×g 离心 15 min 收集菌体，彻底弃去上清。",
+      "isHeader": false,
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend the pellet in Buffer P1 (containing RNase A) at 4 mL per gram wet cell weight; pipette until fully homogeneous with no visible clumps.",
+      "zh": "用含 RNase A 的 Buffer P1 重悬菌体（4 mL/g 湿重），反复吹打至无可见颗粒，完全均匀。",
+      "isHeader": false
+    },
+    {
+      "en": "Add an equal volume of Buffer P2 (0.2 M NaOH, 1% SDS); gently invert 4–6 times and incubate at room temperature for exactly 3–5 min until solution turns clear and viscous. Do NOT vortex.",
+      "zh": "加入等体积 Buffer P2（0.2 M NaOH、1% SDS），轻柔颠倒 4–6 次，室温静置 3–5 min 至溶液变清亮黏稠，切勿涡旋。",
+      "isHeader": false,
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add 0.75 volumes of pre-chilled Buffer P3 (3 M potassium acetate, pH 5.5); immediately invert 4–6 times, then incubate on ice for 15–20 min until a large white precipitate forms.",
+      "zh": "加入 0.75 倍体积预冷 Buffer P3（3 M 乙酸钾，pH 5.5），立即颠倒混匀 4–6 次，冰浴 15–20 min 至形成大量白色沉淀。",
+      "isHeader": false,
+      "time": "20 min"
+    },
+    {
+      "en": "Centrifuge at 20,000×g for 30 min at 4°C to pellet cellular debris. Filter the supernatant through gauze if needed.",
+      "zh": "4°C、20,000×g 离心 30 min 沉淀细胞碎片，如需可通过纱布过滤上清。",
+      "isHeader": false,
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Equilibrate the maxiprep column with the provided equilibration buffer (QBT or equivalent); apply the cleared supernatant and allow it to flow through by gravity.",
+      "zh": "用平衡缓冲液（QBT 或等效液）平衡大提柱，将澄清上清液上柱，重力流过。",
+      "isHeader": false
+    },
+    {
+      "en": "Wash the column twice with wash buffer (QC or equivalent), 30–60 mL per wash, allowing complete drainage by gravity between washes.",
+      "zh": "用洗涤缓冲液（QC 或等效液）洗柱 2 次，每次 30–60 mL，每次重力排尽后再洗。",
+      "isHeader": false
+    },
+    {
+      "en": "Elute DNA with 15 mL elution buffer (QF or equivalent) pre-warmed to 65°C; collect eluate in a 50 mL tube.",
+      "zh": "用 15 mL 预热至 65°C 的洗脱缓冲液（QF 或等效液）洗脱 DNA，收集洗脱液于 50 mL 离心管。",
+      "isHeader": false,
+      "temp": "65°C"
+    },
+    {
+      "en": "Precipitate DNA by adding 0.7 volumes (~10.5 mL) of room-temperature isopropanol; mix well and incubate at −20°C for 30 min.",
+      "zh": "加入 0.7 倍体积（约 10.5 mL）室温异丙醇，充分混匀，−20°C 孵育 30 min 沉淀 DNA。",
+      "isHeader": false,
+      "time": "30 min",
+      "temp": "-20°C"
+    },
+    {
+      "en": "Centrifuge at 15,000×g for 30 min at 4°C; carefully decant supernatant. A white or translucent pellet should be visible.",
+      "zh": "4°C、15,000×g 离心 30 min，小心倒去上清，应可见白色或半透明沉淀。",
+      "isHeader": false,
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash the pellet with 5 mL of 70% ethanol; centrifuge at 15,000×g for 5 min at 4°C and remove supernatant.",
+      "zh": "用 5 mL 70% 乙醇洗涤沉淀，4°C、15,000×g 离心 5 min，去除上清。",
+      "isHeader": false,
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Air-dry the pellet at room temperature for 10–15 min, then dissolve in 200–500 µL TE buffer (pH 8.0). Heat at 65°C for 5 min to aid dissolution if needed.",
+      "zh": "室温风干沉淀 10–15 min，用 200–500 µL TE 缓冲液（pH 8.0）溶解；如需可 65°C 加热 5 min 助溶。",
+      "isHeader": false,
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Quantify by NanoDrop: A260/280 ≈ 1.8, A260/230 > 2.0. Expected yield: 500–1000 µg from 100 mL high-copy plasmid culture.",
+      "zh": "NanoDrop 定量：A260/280 ≈ 1.8，A260/230 > 2.0。100 mL 高拷贝质粒培养物预期产量 500–1000 µg。",
+      "isHeader": false
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Bacterial pellet can be snap-frozen and stored at −80°C for up to 1 month before lysis.",
+        "zh": "菌体沉淀可速冻后 −80°C 保存最多 1 个月后再裂解。"
+      }
+    },
+    {
+      "afterStep": 14,
+      "note": {
+        "en": "Purified plasmid DNA can be stored at −20°C indefinitely or at 4°C for several months.",
+        "zh": "纯化的质粒 DNA 可 −20°C 长期保存，或 4°C 保存数月。"
+      }
+    }
   ]
 }

@@ -145,5 +145,97 @@
     "rna_agarose_gel",
     "trizol_extraction",
     "southern_blot"
+  ],
+  "briefSteps": [
+    {
+      "en": "Extract and quantify total RNA (5–30 µg) → denature RNA at 65°C with formaldehyde loading dye → separate on 1.2% formaldehyde-agarose gel (5 V/cm, 2–3 h) → equilibrate gel in 20× SSC → capillary transfer to positively-charged nylon membrane overnight → UV crosslink (120 mJ/cm²) → pre-hybridize at 42°C (1 h) → hybridize with labeled probe overnight at 42°C → low-then-high stringency washes → detect by phosphorimager or chemiluminescence",
+      "zh": "提取总 RNA 并定量（5–30 µg）→ 65°C 甲醛上样液变性 → 1.2% 甲醛琼脂糖凝胶分离（5 V/cm，2–3 h）→ 20× SSC 平衡凝胶 → 毛细虹吸转膜至带正电尼龙膜（过夜）→ UV 交联（120 mJ/cm²）→ 42°C 预杂交 1 h → 42°C 标记探针杂交过夜 → 低严格至高严格洗涤 → 磷光成像或化学发光检测"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: RNA Separation and Transfer",
+      "zh": "第1天：RNA 分离与转膜",
+      "isHeader": true
+    },
+    {
+      "en": "Extract total RNA using TRIzol or RNeasy kit; quantify by NanoDrop (A260/280 ≥ 2.0) and assess integrity on a formaldehyde gel or Bioanalyzer (RIN ≥ 7). Use 5–30 µg per lane. All work must be RNase-free.",
+      "zh": "TRIzol 或 RNeasy 提取总 RNA；NanoDrop 定量（A260/280 ≥ 2.0），甲醛凝胶或 Bioanalyzer 评估完整性（RIN ≥ 7）。每泳道 5–30 µg。全程 RNase-free 操作。"
+    },
+    {
+      "en": "Prepare 1.2% formaldehyde-agarose gel: dissolve 1.2 g agarose in 72 mL DEPC-water, cool to 65°C, add 10 mL 10× MOPS buffer and 18 mL 37% formaldehyde. Pour in fume hood; allow to set 30–45 min. Run in 1× MOPS buffer.",
+      "zh": "制备 1.2% 甲醛琼脂糖凝胶：1.2 g 琼脂糖溶于 72 mL DEPC 水，冷却至 65°C，加入 10 mL 10× MOPS 缓冲液和 18 mL 37% 甲醛，在通风橱中倒胶，凝固 30–45 min。使用 1× MOPS 电泳。",
+      "time": "45 min"
+    },
+    {
+      "en": "Denature RNA samples: mix RNA with 2× RNA loading dye containing formaldehyde (50% deionized formamide, 7% formaldehyde, 1× MOPS); heat at 65°C for 15 min, then immediately chill on ice for 2 min.",
+      "zh": "变性 RNA：将 RNA 与含甲醛的 2× RNA 上样缓冲液混合（50% 去离子甲酰胺、7% 甲醛、1× MOPS），65°C 加热 15 min，立即冰上冷却 2 min。",
+      "time": "15 min",
+      "temp": "65°C"
+    },
+    {
+      "en": "Load samples and RNA size ladder; electrophorese at 5 V/cm (typically 80–100 V for a 20 cm gel) for 2–3 h in 1× MOPS buffer. Run in fume hood due to formaldehyde. 28S and 18S rRNA bands should be visible by EtBr or SYBR Gold staining (~4.7 and 1.9 kb).",
+      "zh": "上样及 RNA 分子量标准；在 1× MOPS 缓冲液中 5 V/cm（约 80–100 V）电泳 2–3 h。操作在通风橱中进行。EtBr 或 SYBR Gold 染色可见 28S 和 18S rRNA 条带（约 4.7 kb 和 1.9 kb）。",
+      "time": "2–3 h"
+    },
+    {
+      "en": "Equilibrate gel 2× in 20× SSC for 10 min each at RT to remove formaldehyde before transfer.",
+      "zh": "将凝胶在 20× SSC 中平衡 2 次，每次 10 min，去除甲醛后再转膜。",
+      "time": "20 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Assemble capillary transfer stack: paper wick soaked in 20× SSC → gel (inverted) → positively-charged nylon membrane → 3 layers Whatman 3MM paper → paper towels → weight. Transfer overnight (~16 h) in 20× SSC. Alternatively, use vacuum blotter (1–2 h at 50 mbar).",
+      "zh": "组装毛细虹吸转移装置：浸 20× SSC 的滤纸桥 → 凝胶（倒置）→ 带正电尼龙膜 → 3 层 Whatman 3MM 滤纸 → 纸巾 → 重物。20× SSC 中过夜转移（约 16 h）。也可用真空转印仪（50 mbar，1–2 h）。",
+      "time": "overnight"
+    },
+    {
+      "en": "After transfer, mark orientation on membrane with pencil. UV-crosslink RNA to membrane in Stratalinker at 120 mJ/cm² (auto-crosslink setting) or bake at 80°C for 2 h. Store dry membrane at RT until hybridization.",
+      "zh": "转膜后用铅笔在膜上标记方向。Stratalinker 120 mJ/cm² UV 交联（自动交联程序），或 80°C 烘烤 2 h。干燥膜可室温保存待杂交。",
+      "time": "1–2 min (UV) or 2 h (baking)"
+    },
+    {
+      "en": "Day 2: Hybridization and Detection",
+      "zh": "第2天：杂交与检测",
+      "isHeader": true
+    },
+    {
+      "en": "Pre-hybridize: wet membrane in 2× SSC, place in hybridization bottle with 10–20 mL pre-hybridization buffer (50% deionized formamide, 5× SSC, 5× Denhardt's, 0.5% SDS, 100 µg/mL salmon sperm DNA). Rotate at 42°C for 1 h.",
+      "zh": "预杂交：用 2× SSC 润湿膜，放入杂交管，加 10–20 mL 预杂交液（50% 去离子甲酰胺、5× SSC、5× Denhardt's、0.5% SDS、100 µg/mL 鲑鱼精 DNA），42°C 旋转孵育 1 h。",
+      "time": "1 h",
+      "temp": "42°C"
+    },
+    {
+      "en": "Add denatured labeled probe (DIG-labeled: 25–50 ng/mL; ³²P-labeled: 1–2 × 10⁶ cpm/mL) directly to hybridization bottle without replacing buffer. Hybridize at 42°C overnight (16–20 h) with rotation.",
+      "zh": "将变性标记探针（DIG 标记：25–50 ng/mL；³²P 标记：1–2 × 10⁶ cpm/mL）直接加入杂交管（不换杂交液）。42°C 过夜旋转杂交（16–20 h）。",
+      "time": "overnight",
+      "temp": "42°C"
+    },
+    {
+      "en": "Low-stringency washes: 2× in 2× SSC / 0.1% SDS, 5 min each at RT. High-stringency washes: 2× in 0.1× SSC / 0.1% SDS, 15 min each at 65°C.",
+      "zh": "低严格洗涤：2× SSC / 0.1% SDS，室温洗涤 2 次，每次 5 min。高严格洗涤：0.1× SSC / 0.1% SDS，65°C 洗涤 2 次，每次 15 min。",
+      "time": "40 min total",
+      "temp": "RT then 65°C"
+    },
+    {
+      "en": "Detect signal: ³²P — wrap membrane in plastic wrap; expose to phosphorimager screen 1–16 h or X-ray film overnight at −80°C. DIG — perform anti-DIG-AP antibody incubation and chemiluminescence (CDP-Star) per manufacturer protocol; expose to film or image on chemiluminescent imager.",
+      "zh": "信号检测：³²P——保鲜膜包裹，磷光成像板曝光 1–16 h 或 X 光胶片 −80°C 过夜。DIG——按说明书进行抗 DIG-AP 抗体孵育和化学发光检测（CDP-Star），感光胶片或化学发光成像仪检测。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "UV-crosslinked membrane can be stored dry at RT for months before hybridization.",
+        "zh": "UV 交联后的干燥膜可室温保存数月，待杂交。"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "After washing, the probed membrane can be wrapped in plastic wrap and stored at −20°C for 1–4 weeks before detection (³²P decays; DIG is more stable).",
+        "zh": "洗涤完毕后，已杂交的膜用保鲜膜包好，可 −20°C 保存 1–4 周再检测（³²P 会衰变；DIG 更稳定）。"
+      }
+    }
   ]
 }

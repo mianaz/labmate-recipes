@@ -72,7 +72,7 @@
     "en": "siRNA: 25–50 pmol per well + 5 µL Lipo RNAiMAX. Switching to serum-free medium before transfection improves efficiency.",
     "zh": "siRNA 转染: 每孔 25–50 pmol siRNA + 5 µL Lipo RNAiMAX。转染前换无血清培养基效果更好。DNA:Lipo 比例需优化 (1:2–1:4)。"
   },
-  "ref": "Dalby et al. (2004) Methods 33:95–103; Bhatt et al. (2012) Methods Mol Biol 869:29–40; Thermo Fisher Lipofectamine Protocol",
+  "ref": "Dalby et al. (2004) Methods 33:95–103; Thermo Fisher Lipofectamine Protocol",
   "discipline": [
     "cell",
     "molecular"
@@ -97,6 +97,51 @@
     },
     {
       "name": "Cells at 60–80% confluency"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Plate cells day before → prepare DNA/Lipofectamine in Opti-MEM separately → mix and incubate 15–20 min → add complex dropwise to cells → replace medium after 6–8 h → harvest at 24–72 h",
+      "zh": "前一天铺板 → 分别在 Opti-MEM 中稀释 DNA 和 Lipofectamine → 混合孵育 15–20 min → 逐滴加入细胞 → 6–8 h 后换液 → 24–72 h 后检测表达"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day −1: Seed cells in antibiotic-free complete medium in a 6-well plate (~3–5×10⁵ cells/well) to reach 60–80% confluency by next day.",
+      "zh": "前一天（Day −1）：在不含抗生素的完全培养基中将细胞接种至 6 孔板（约 3–5×10⁵ 个/孔），使次日汇合度达 60–80%。"
+    },
+    {
+      "en": "Day 0 — Tube A: Dilute 2.5 µg plasmid DNA (per well) in 125 µL Opti-MEM; mix gently. For siRNA: use 25–50 pmol siRNA in 125 µL Opti-MEM.",
+      "zh": "Day 0 — 管 A：将 2.5 µg 质粒 DNA（每孔）稀释至 125 µL Opti-MEM，轻柔混匀。siRNA 转染：25–50 pmol siRNA 稀释至 125 µL Opti-MEM。"
+    },
+    {
+      "en": "Tube B: Dilute 7.5 µL Lipofectamine 2000 (or 3000) in 125 µL Opti-MEM; mix gently and incubate 5 min at room temperature.",
+      "zh": "管 B：将 7.5 µL Lipofectamine 2000（或 3000）稀释至 125 µL Opti-MEM，轻混后室温孵育 5 min。",
+      "time": "5 min"
+    },
+    {
+      "en": "Combine Tube A and Tube B; mix gently by pipetting 3–5 times; incubate the combined mixture at room temperature for 15–20 min to form lipoplexes.",
+      "zh": "将管 A 和管 B 混合，轻柔吹打 3–5 次，室温孵育 15–20 min 形成脂质复合物。",
+      "time": "15–20 min"
+    },
+    {
+      "en": "Optional: Replace cell medium with 1.5 mL fresh Opti-MEM (serum-free) per well immediately before adding the complex to improve efficiency.",
+      "zh": "可选：加入复合物前立即将细胞培养基换成每孔 1.5 mL 新鲜 Opti-MEM（无血清），以提高转染效率。"
+    },
+    {
+      "en": "Add the 250 µL lipoplex complex dropwise to each well; gently rock the plate to distribute evenly. Incubate at 37°C, 5% CO₂.",
+      "zh": "将 250 µL 脂质复合物逐滴加入每孔，轻柔晃动培养板使其均匀分布，37°C、5% CO₂ 孵育。",
+      "temp": "37°C"
+    },
+    {
+      "en": "After 6–8 h, replace the medium with fresh complete medium (with antibiotics and serum) to reduce lipofection toxicity.",
+      "zh": "6–8 h 后，换成含抗生素和血清的新鲜完全培养基，以减少脂质体转染毒性。",
+      "time": "6–8 h"
+    },
+    {
+      "en": "Assess transfection efficiency at 24 h (e.g., GFP fluorescence, reporter assay) and harvest cells at 24–72 h post-transfection depending on the protein turnover rate.",
+      "zh": "转染后 24 h 评估转染效率（如 GFP 荧光、报告基因检测），根据蛋白周转速率在 24–72 h 收获细胞。",
+      "time": "24–72 h"
     }
   ],
   "stoppingPoints": [],

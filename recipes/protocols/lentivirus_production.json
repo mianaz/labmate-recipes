@@ -136,6 +136,71 @@
     "total": "5–7 days",
     "hands_on": "3 hours"
   },
+  "briefSteps": [
+    {
+      "en": "Day −1: seed HEK293T → Day 0: prepare 3-plasmid mix (transfer:psPAX2:pMD2.G = 4:3:1) + PEI, transfect → Day 1: replace medium → Day 2 & 3: harvest supernatant, filter 0.45 µm → concentrate (optional) → titer → transduce target cells with polybrene → select stable integrants",
+      "zh": "Day −1 接种 HEK293T → Day 0 制备三质粒混合液（4:3:1）+ PEI 转染 → Day 1 换液 → Day 2 & 3 收获上清 0.45 µm 过滤 → 可选浓缩 → 滴度测定 → 聚凝胺协助转导靶细胞 → 筛选稳转株"
+    }
+  ],
+  "detailedSteps": [
+    {"en": "Day −1 — Packaging", "zh": "Day −1 — 病毒包装准备", "isHeader": true},
+    {
+      "en": "Day −1: Seed 4×10⁶ HEK293T cells (passage <20) per 10 cm dish in 10 mL complete DMEM without antibiotics; cells should reach 70–80% confluency by Day 0.",
+      "zh": "Day −1：在无抗生素完全 DMEM 中将 4×10⁶ HEK293T 细胞（代次 <20）接种至 10 cm 皿，Day 0 汇合度应达 70–80%。"
+    },
+    {"en": "Day 0 — Transfection", "zh": "Day 0 — 转染", "isHeader": true},
+    {
+      "en": "Day 0: Prepare DNA mix in 500 µL Opti-MEM: transfer vector 10 µg + psPAX2 7.5 µg + pMD2.G 2.5 µg (ratio 4:3:1; total 20 µg). Mix gently.",
+      "zh": "Day 0：在 500 µL Opti-MEM 中制备质粒混合液：转移载体 10 µg + psPAX2 7.5 µg + pMD2.G 2.5 µg（比例 4:3:1，总计 20 µg），轻混。"
+    },
+    {
+      "en": "Prepare PEI solution: add 60 µL of 1 mg/mL linear PEI (MW 25,000) to 500 µL Opti-MEM; mix 5 min at RT, then combine with DNA tube; mix gently and incubate 20 min at RT to form PEI-DNA complexes.",
+      "zh": "制备 PEI 溶液：60 µL 1 mg/mL 线性 PEI（MW 25,000）加入 500 µL Opti-MEM，RT 混合 5 min，然后与 DNA 混合管合并，轻混后 RT 孵育 20 min 形成 PEI-DNA 复合物。",
+      "time": "20 min"
+    },
+    {
+      "en": "Add PEI-DNA complex dropwise to HEK293T cells; gently swirl to distribute. Incubate at 37°C, 5% CO₂.",
+      "zh": "将 PEI-DNA 复合物逐滴加入 HEK293T 细胞，轻柔晃动，37°C、5% CO₂ 孵育。",
+      "temp": "37°C"
+    },
+    {"en": "Day 1 — Medium Change", "zh": "Day 1 — 换液", "isHeader": true},
+    {
+      "en": "Day 1 (16–18 h post-transfection): Carefully aspirate medium and replace with 12 mL fresh DMEM + 10% FBS + 10 mM HEPES. Work gently to avoid detaching 293T cells.",
+      "zh": "Day 1（转染后 16–18 h）：轻柔吸去培养基，换成 12 mL 新鲜 DMEM + 10% FBS + 10 mM HEPES，操作要轻避免 293T 细胞脱落。"
+    },
+    {"en": "Day 2–3 — Harvest", "zh": "Day 2–3 — 收获", "isHeader": true},
+    {
+      "en": "Day 2 (48 h): Collect all supernatant; immediately filter through a 0.45 µm PES syringe filter (NOT nitrocellulose). Store filtrate at 4°C. Add 12 mL fresh medium back to cells.",
+      "zh": "Day 2（48 h）：收集全部上清，立即经 0.45 µm PES 注射器滤膜过滤（不用硝酸纤维素膜）。滤液 4°C 保存。补回 12 mL 新鲜培养基。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 3 (72 h): Collect second harvest supernatant; filter through 0.45 µm PES and pool with Day 2 harvest. Day 3 typically gives higher titer.",
+      "zh": "Day 3（72 h）：收集第二次上清，0.45 µm PES 过滤后与 Day 2 上清合并，Day 3 通常滴度更高。"
+    },
+    {"en": "Concentration & Titration (optional)", "zh": "浓缩与滴度测定（可选）", "isHeader": true},
+    {
+      "en": "Optional concentration: ultracentrifuge at 25,000 rpm (SW-28 rotor), 4°C, 2 h; resuspend pellet in PBS + 1% BSA. Expected titer: unconcentrated 10⁶–10⁷ IU/mL; concentrated 10⁸–10⁹ IU/mL.",
+      "zh": "可选浓缩：25,000 rpm（SW-28 转头）4°C 超速离心 2 h；PBS + 1% BSA 重悬沉淀。预期滴度：未浓缩 10⁶–10⁷ IU/mL；浓缩后 10⁸–10⁹ IU/mL。",
+      "time": "2 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Determine viral titer by p24 ELISA or functional transduction assay. Aliquot virus into single-use tubes; store at −80°C. Add 10% trehalose or sucrose as cryoprotectant to minimize freeze-thaw loss.",
+      "zh": "通过 p24 ELISA 或功能滴度检测病毒滴度。分装至一次性用量管 −80°C 保存，加 10% 海藻糖或蔗糖作冻存保护剂减少冻融损失。",
+      "temp": "−80°C"
+    },
+    {"en": "Transduction of Target Cells", "zh": "靶细胞转导", "isHeader": true},
+    {
+      "en": "Transduce target cells with lentivirus at MOI 0.3–1 (for stable single-integration) in the presence of 8 µg/mL polybrene. Optional spinoculation: 800 × g, 30 min, RT to increase efficiency.",
+      "zh": "用慢病毒以 MOI 0.3–1（稳转单拷贝整合）在 8 µg/mL 聚凝胺存在下转导靶细胞。可选离心感染：800 × g、RT 30 min 提高效率。",
+      "time": "30 min"
+    },
+    {
+      "en": "Day 2 post-transduction: replace medium. Day 3+: begin antibiotic selection (e.g., puromycin 1–2 µg/mL; first establish a kill curve in untransduced cells).",
+      "zh": "转导后 Day 2 换液；Day 3 起加抗生素筛选（如嘌呤霉素 1–2 µg/mL；先在未转导细胞中建立杀灭曲线）。"
+    }
+  ],
   "stoppingPoints": [
     {
       "afterStep": "Day 2 harvest filtered and stored",
@@ -146,6 +211,29 @@
       "afterStep": "Final virus aliquots frozen",
       "condition": "−80°C single-use aliquots",
       "duration": "12 months"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "After Day 1 medium change, cells incubate overnight; Day 2 harvest proceeds next morning.",
+        "zh": "Day 1 换液后细胞过夜孵育，次日进行 Day 2 收获。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Filtered Day 2 harvest can be held at 4°C up to 48 h while awaiting the Day 3 harvest before pooling and processing.",
+        "zh": "Day 2 过滤上清可 4°C 保存最长 48 h，等 Day 3 收获后合并处理。"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "Aliquoted virus at −80°C is stable for up to 12 months; transduce target cells at any convenient time.",
+        "zh": "分装病毒 −80°C 保存，最长可稳定 12 个月，可在合适时间转导靶细胞。"
+      }
     }
   ],
   "materials": [

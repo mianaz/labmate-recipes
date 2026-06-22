@@ -116,5 +116,99 @@
   "usage": {
     "en": "Detect specific genomic DNA sequences by restriction digestion, gel separation, transfer, and hybridization.",
     "zh": "Southern blot：限制性酶切、胶分离、转膜、杂交检测特定基因组 DNA 序列。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Digest 10 µg gDNA with restriction enzyme overnight → separate on 0.8% agarose gel → depurinate (0.25 M HCl), denature (0.5 M NaOH/1.5 M NaCl), and neutralize gel → capillary transfer to nylon membrane overnight in 20× SSC → UV crosslink → pre-hybridize (Church buffer, 65°C, 1 h) → hybridize with labeled probe overnight at 65°C → wash → detect by phosphorimager or chemiluminescence",
+      "zh": "10 µg gDNA 限制性酶切（过夜）→ 0.8% 琼脂糖凝胶分离 → 依次去嘌呤（0.25 M HCl）、变性（0.5 M NaOH/1.5 M NaCl）、中和凝胶 → 20× SSC 毛细虹吸转膜至尼龙膜（过夜）→ UV 交联 → Church 缓冲液 65°C 预杂交 1 h → 标记探针 65°C 杂交过夜 → 洗涤 → 磷光成像或化学发光检测"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Restriction Digest and Gel Electrophoresis",
+      "zh": "第1天：限制性酶切与凝胶电泳",
+      "isHeader": true
+    },
+    {
+      "en": "Digest 10 µg genomic DNA with 20–50 U appropriate restriction enzyme(s) in a total volume of 50–100 µL overnight at 37°C (or enzyme-appropriate temperature). Include uncut DNA as molecular weight reference.",
+      "zh": "将 10 µg 基因组 DNA 用 20–50 U 限制性内切酶在 50–100 µL 反应体系中 37°C（或酶适合温度）酶切过夜。保留未酶切 DNA 作为分子量参考。",
+      "time": "overnight",
+      "temp": "37°C"
+    },
+    {
+      "en": "Run digested DNA on a 0.8% agarose gel in 1× TAE at 30–40 V overnight (or 3–4 h at 60 V) for good separation of large fragments (1–15 kb). Stain with ethidium bromide (0.5 µg/mL, 30 min) and photograph under UV.",
+      "zh": "将酶切 DNA 在 0.8% 琼脂糖凝胶（1× TAE）中以 30–40 V 电泳过夜（或 60 V 电泳 3–4 h），以实现大片段（1–15 kb）的良好分离。溴化乙锭染色（0.5 µg/mL，30 min），紫外照相记录。",
+      "time": "3–16 h"
+    },
+    {
+      "en": "Depurinate the gel in 0.25 M HCl for 10–15 min at RT with gentle agitation until bromophenol blue turns yellow. This nicks large DNA fragments for efficient transfer.",
+      "zh": "将凝胶在 0.25 M HCl 中室温轻摇去嘌呤 10–15 min，直至溴酚蓝变黄。此步骤切割大片段 DNA，提高转移效率。",
+      "time": "10–15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Rinse gel briefly with dH₂O; denature in denaturation solution (0.5 M NaOH, 1.5 M NaCl) for 2× 15 min at RT with agitation. Rinse with dH₂O.",
+      "zh": "清水短暂漂洗凝胶；在变性液（0.5 M NaOH、1.5 M NaCl）中室温轻摇变性 2 次，每次 15 min。清水漂洗。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Neutralize gel in neutralization solution (0.5 M Tris-HCl pH 7.5, 1.5 M NaCl) for 2× 15 min at RT with agitation. Rinse with 2× SSC.",
+      "zh": "在中和液（0.5 M Tris-HCl pH 7.5、1.5 M NaCl）中室温轻摇中和 2 次，每次 15 min。2× SSC 漂洗。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Assemble upward capillary transfer: glass plate over buffer trough → paper wick in 20× SSC → gel (wells facing down) → positively-charged nylon membrane → 3 layers Whatman 3MM → paper towels → weight (~200 g). Transfer overnight (16 h) in 20× SSC.",
+      "zh": "组装向上毛细虹吸转移：玻璃板架于缓冲液槽上 → 滤纸桥（浸 20× SSC）→ 凝胶（孔朝下）→ 带正电尼龙膜 → 3 层 Whatman 3MM 滤纸 → 纸巾 → 重物（~200 g）。20× SSC 中转移过夜（16 h）。",
+      "time": "overnight"
+    },
+    {
+      "en": "Day 2: Hybridization and Detection",
+      "zh": "第2天：杂交与检测",
+      "isHeader": true
+    },
+    {
+      "en": "Disassemble transfer, mark DNA side of membrane with pencil. UV-crosslink at 120 mJ/cm² (Stratalinker auto-crosslink) or bake at 80°C for 2 h in vacuum oven. Photograph membrane if needed to verify transfer efficiency.",
+      "zh": "拆解转移装置，铅笔标记膜的 DNA 面。Stratalinker 120 mJ/cm² UV 交联（自动程序）或 80°C 真空干燥箱烘烤 2 h。必要时对膜拍照验证转移效率。",
+      "time": "2 min (UV) or 2 h (baking)"
+    },
+    {
+      "en": "Pre-hybridize membrane in Church buffer (0.5 M sodium phosphate pH 7.2, 7% SDS, 1 mM EDTA, 100 µg/mL salmon sperm DNA) for 1 h at 65°C in hybridization oven with rotation.",
+      "zh": "将膜在 Church 缓冲液（0.5 M 磷酸钠 pH 7.2、7% SDS、1 mM EDTA、100 µg/mL 鲑鱼精 DNA）中 65°C 预杂交 1 h（杂交炉旋转）。",
+      "time": "1 h",
+      "temp": "65°C"
+    },
+    {
+      "en": "Denature labeled probe (boil 5 min, chill on ice). Add probe to hybridization bottle (DIG probe: 25 ng/mL; ³²P probe: 1–2 × 10⁶ cpm/mL). Hybridize overnight at 65°C (DNA:DNA probe) with rotation.",
+      "zh": "变性标记探针（煮沸 5 min，冰上骤冷）。将探针加入杂交管（DIG：25 ng/mL；³²P：1–2 × 10⁶ cpm/mL），65°C 过夜旋转杂交（DNA:DNA 探针）。",
+      "time": "overnight",
+      "temp": "65°C"
+    },
+    {
+      "en": "Wash membrane: 2× in 2× SSC / 0.1% SDS for 5 min at RT; 2× in 0.1× SSC / 0.1% SDS for 15 min at 65°C. Check radioactivity with Geiger counter if using ³²P (background should approach ~2× ambient).",
+      "zh": "洗涤：2× SSC / 0.1% SDS 室温洗 2 次，每次 5 min；0.1× SSC / 0.1% SDS 65°C 洗 2 次，每次 15 min。使用 ³²P 时用盖革计数器检测背景（应接近本底 ~2×）。",
+      "time": "40 min total"
+    },
+    {
+      "en": "Detect signal: ³²P — wrap membrane in plastic wrap, expose phosphorimager screen 1–24 h or X-ray film at −80°C overnight. DIG — perform anti-DIG-AP immunodetection with CDP-Star chemiluminescent substrate per manufacturer protocol; expose to film or digital imager.",
+      "zh": "信号检测：³²P——保鲜膜包裹，磷光成像板曝光 1–24 h 或 X 光胶片 −80°C 过夜显影。DIG——按说明书进行抗 DIG-AP 抗体检测，CDP-Star 底物化学发光，胶片或数字成像仪记录。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "UV-crosslinked membrane can be stored dry at RT for months before hybridization.",
+        "zh": "UV 交联后的干燥膜可室温保存数月，待杂交。"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "After washing, the probed membrane can be wrapped in plastic wrap and stored at −20°C for up to 1 month before detection.",
+        "zh": "洗涤完毕后，已杂交的膜用保鲜膜包好，可 −20°C 保存最多 1 个月再检测。"
+      }
+    }
+  ]
 }

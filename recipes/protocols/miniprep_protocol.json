@@ -125,5 +125,100 @@
     "plasmid_maxiprep",
     "heat_shock_transformation",
     "restriction_digest"
+  ],
+  "briefSteps": [
+    {
+      "en": "Pellet bacteria → resuspend in P1 → lyse with P2 → neutralize with P3 → centrifuge → precipitate DNA with isopropanol → wash with 70% EtOH → air-dry → dissolve in TE",
+      "zh": "离心收菌 → P1 重悬 → P2 碱裂解 → P3 中和 → 离心 → 异丙醇沉淀 DNA → 70% 乙醇洗涤 → 风干 → TE 溶解"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Inoculate a single colony into 3–5 mL LB + antibiotic; grow at 37°C, 225 rpm for 12–16 h.",
+      "zh": "第1天：挑单克隆接种至 3–5 mL LB + 抗生素，37°C、225 rpm 过夜培养 12–16 h。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 2 — Transfer 1.5–2 mL overnight culture to a 1.5 mL microcentrifuge tube and centrifuge at 6,000×g for 2 min; discard supernatant.",
+      "zh": "第2天 — 取 1.5–2 mL 过夜菌液至 1.5 mL 离心管，6,000×g 离心 2 min，弃上清。",
+      "isHeader": false,
+      "time": "2 min"
+    },
+    {
+      "en": "Resuspend the bacterial pellet completely in 250 µL ice-cold Buffer P1 (50 mM Tris-HCl pH 8.0, 10 mM EDTA, 100 µg/mL RNase A) by pipetting until no clumps remain.",
+      "zh": "用 250 µL 冰冷 Buffer P1（50 mM Tris-HCl pH 8.0、10 mM EDTA、100 µg/mL RNase A）彻底重悬菌体至无颗粒。",
+      "isHeader": false
+    },
+    {
+      "en": "Add 250 µL Buffer P2 (0.2 M NaOH, 1% SDS); invert tube 4–6 times gently. Incubate at room temperature for exactly 2–3 min until solution clears. Do NOT vortex.",
+      "zh": "加入 250 µL Buffer P2（0.2 M NaOH、1% SDS），轻柔颠倒混匀 4–6 次，室温孵育 2–3 min 至溶液变清亮，切勿涡旋。",
+      "isHeader": false,
+      "time": "3 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add 350 µL Buffer P3 (3 M potassium acetate, pH 5.5); immediately invert 4–6 times until white precipitate forms. Place on ice for 5 min.",
+      "zh": "加入 350 µL Buffer P3（3 M 乙酸钾，pH 5.5），立即颠倒混匀 4–6 次至白色絮状沉淀形成，冰浴 5 min。",
+      "isHeader": false,
+      "time": "5 min"
+    },
+    {
+      "en": "Centrifuge at 13,000×g for 10 min at room temperature to pellet cell debris and precipitated proteins/genomic DNA.",
+      "zh": "13,000×g 室温离心 10 min，沉淀细胞碎片及蛋白质/基因组 DNA。",
+      "isHeader": false,
+      "time": "10 min"
+    },
+    {
+      "en": "Carefully transfer the clear supernatant to a new 1.5 mL tube, avoiding the white pellet.",
+      "zh": "小心吸取上清液至新的 1.5 mL 离心管，避免触碰白色沉淀。",
+      "isHeader": false
+    },
+    {
+      "en": "Add 0.7 volumes (~700 µL) of room-temperature isopropanol to the supernatant; mix by inverting 10 times.",
+      "zh": "向上清中加入 0.7 倍体积（约 700 µL）室温异丙醇，颠倒混匀 10 次。",
+      "isHeader": false
+    },
+    {
+      "en": "Centrifuge at 13,000×g for 15 min at room temperature; carefully discard the supernatant without disturbing the DNA pellet.",
+      "zh": "13,000×g 室温离心 15 min，小心弃去上清，避免扰动 DNA 沉淀。",
+      "isHeader": false,
+      "time": "15 min"
+    },
+    {
+      "en": "Wash the pellet with 500 µL of 70% ethanol; centrifuge at 13,000×g for 5 min and discard supernatant.",
+      "zh": "用 500 µL 70% 乙醇洗涤沉淀，13,000×g 离心 5 min，弃上清。",
+      "isHeader": false,
+      "time": "5 min"
+    },
+    {
+      "en": "Air-dry the pellet for 5–10 min at room temperature (or 37°C for 3 min) until no ethanol odor remains. Do not over-dry.",
+      "zh": "室温风干 5–10 min（或 37°C 3 min）至乙醇气味消失，勿过度干燥。",
+      "isHeader": false,
+      "time": "5–10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Dissolve the pellet in 30–50 µL TE buffer (pH 8.0) or nuclease-free water. Quantify by NanoDrop; A260/280 should be 1.8–2.0.",
+      "zh": "用 30–50 µL TE 缓冲液（pH 8.0）或无核酸酶水溶解沉淀，NanoDrop 定量，A260/280 应为 1.8–2.0。",
+      "isHeader": false
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Bacterial pellet can be frozen at −20°C for up to 1 month before continuing.",
+        "zh": "菌体沉淀可 −20°C 冻存最多 1 个月后继续操作。"
+      }
+    },
+    {
+      "afterStep": 12,
+      "note": {
+        "en": "Purified plasmid DNA can be stored at −20°C for years or at 4°C for several months.",
+        "zh": "纯化的质粒 DNA 可 −20°C 保存多年，或 4°C 保存数月。"
+      }
+    }
   ]
 }

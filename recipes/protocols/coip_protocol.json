@@ -61,7 +61,7 @@
     "en": "Negative control: matched isotype IgG. Do not use RIPA (SDS disrupts protein interactions). Adjust NP-40 concentration to interaction strength (0.1–1%). Recommend ≥500 µg total protein.",
     "zh": "阴性对照: 同种属 IgG。勿用 RIPA (SDS 会破坏互作)。裂解液中 NP-40 浓度根据互作强度调整 (0.1–1%)。建议每样 500 µg–2 mg 蛋白。"
   },
-  "ref": "Miernyk & Thelen (2008) Plant J 55:415–425; Kaboord & Bhatt (2008) Methods Mol Biol 424:349–364",
+  "ref": "Miernyk & Thelen (2008) Plant J 55:415–425; Kaboord & Perr (2008) Methods Mol Biol 424:349–364",
   "discipline": [
     "protein",
     "cell"
@@ -119,5 +119,89 @@
     "immunoprecipitation",
     "wb_protocol",
     "pulldown_assay"
+  ],
+  "briefSteps": [
+    {
+      "en": "Lyse cells in mild IP lysis buffer (NP-40) → centrifuge and quantify lysate → pre-clear with beads → save input fraction → add bait antibody overnight at 4°C → capture with Protein A/G beads → wash 4–6× → elute with SDS loading buffer → detect bait and prey by Western blot.",
+      "zh": "温和 IP 裂解液（NP-40）裂解细胞 → 离心定量裂解液 → beads 预清除 → 留取 Input → 加目标抗体 4°C 过夜 → Protein A/G beads 捕获 → 洗涤 4–6 次 → SDS 上样缓冲液洗脱 → Western Blot 检测 bait 和 prey 蛋白。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1",
+      "zh": "第一天",
+      "isHeader": true
+    },
+    {
+      "en": "Wash cells with ice-cold PBS. Lyse on ice with IP lysis buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 0.5–1% NP-40, 1 mM EDTA) supplemented with protease inhibitor cocktail. Use 300–500 µL per 10-cm dish. Incubate on ice for 30 min with occasional gentle mixing.",
+      "zh": "冰冷 PBS 洗涤细胞，加 IP 裂解液（50 mM Tris-HCl pH 7.4、150 mM NaCl、0.5–1% NP-40、1 mM EDTA + 蛋白酶抑制剂），10 cm 皿用 300–500 µL，冰上孵育 30 min，间歇轻柔混匀。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Centrifuge at 14,000×g for 15 min at 4°C. Transfer supernatant to a new pre-chilled tube; discard pellet (cell debris).",
+      "zh": "4°C 14,000×g 离心 15 min，将上清移入新的预冷管中，弃去沉淀（细胞碎片）。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Quantify protein by BCA assay. Use 500 µg–2 mg total protein per IP reaction. Set aside 5–10% of the lysate as Input control. Adjust all samples to the same protein concentration with lysis buffer.",
+      "zh": "BCA 法定量蛋白，每个 IP 反应使用 500 µg–2 mg 总蛋白，留取 5–10% 裂解液作为 Input 对照，用裂解液将各组调至同一浓度。",
+      "time": "30 min"
+    },
+    {
+      "en": "Pre-clear lysate by adding 20–30 µL of Protein A/G beads (pre-washed 3× in lysis buffer). Rotate at 4°C for 1 h on a tube rotator to remove proteins that bind non-specifically to beads. Pellet beads and transfer supernatant to new tubes.",
+      "zh": "向裂解液中加入 20–30 µL Protein A/G beads（预洗 3 次），4°C 旋转孵育 1 h 以去除非特异结合蛋白，弃去 beads 后将上清移入新管。",
+      "time": "60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Add 1–5 µg of bait antibody to the pre-cleared lysate. Set up an isotype-matched IgG negative control in a parallel tube. Rotate samples overnight at 4°C.",
+      "zh": "向预清除后的裂解液中加入 1–5 µg 目标抗体，平行设置同种属 IgG 阴性对照管，4°C 旋转孵育过夜。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2",
+      "zh": "第二天",
+      "isHeader": true
+    },
+    {
+      "en": "Add 20–40 µL of Protein A/G beads (pre-washed 3× in lysis buffer) to each sample. Rotate at 4°C for 2–4 h to capture the antibody-antigen complex.",
+      "zh": "每管加入 20–40 µL Protein A/G beads（预洗 3 次），4°C 旋转孵育 2–4 h，捕获抗体-抗原复合物。",
+      "time": "120–240 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash beads 4–6 times with ice-cold IP lysis buffer (1 mL per wash). Each wash: vortex briefly, rotate 5 min at 4°C, then pellet by centrifugation (500×g, 1 min) or magnetic separation. Discard supernatant carefully.",
+      "zh": "用冰冷 IP 裂解液洗涤 beads 4–6 次（每次 1 mL），每次短暂涡旋后 4°C 旋转 5 min，再以 500×g 离心 1 min 或磁力架吸附，小心弃去上清。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Elute bound proteins by adding 40–60 µL of 2× Laemmli sample buffer. Boil at 95°C for 5 min. Pellet beads by centrifugation; transfer supernatant (eluate) to new tube.",
+      "zh": "加入 40–60 µL 2× Laemmli 上样缓冲液，95°C 煮沸 5 min 洗脱结合蛋白，离心沉淀 beads，将上清（洗脱液）移入新管。",
+      "time": "5 min",
+      "temp": "95°C"
+    },
+    {
+      "en": "Run IP eluates (IP sample, IgG control, Input) on SDS-PAGE and perform Western blot. Probe for bait protein first to confirm IP efficiency, then probe for prey protein to detect interaction. Use anti-IgG light-chain secondary or Clean-Blot reagent to avoid antibody heavy/light chain interference.",
+      "zh": "将 IP 洗脱液（IP 样品、IgG 对照、Input）跑 SDS-PAGE 后 Western Blot 检测，先检测 bait 蛋白确认 IP 效率，再检测 prey 蛋白验证互作。使用抗 IgG 轻链二抗或 Clean-Blot 试剂避免抗体重链/轻链干扰。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Clarified cell lysate can be snap-frozen and stored at −80°C for up to 1 month.",
+        "zh": "澄清的细胞裂解液可速冻后 −80°C 保存最长 1 个月。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Eluted IP samples in Laemmli buffer can be stored at −20°C for up to 1 month before Western blot.",
+        "zh": "Laemmli 缓冲液中的 IP 洗脱样品可 −20°C 保存最长 1 个月，再进行 Western Blot。"
+      }
+    }
   ]
 }

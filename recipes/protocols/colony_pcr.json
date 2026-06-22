@@ -53,7 +53,7 @@
     "en": "Initial 5 min denaturation at 95°C lyses bacteria to release template DNA. Use M13 universal primers (for pUC vectors) or gene-specific primers. Positive clones should be sequence-verified. Streak colonies onto a master plate in parallel.",
     "zh": "初始变性 5 min 用于裂解菌体释放模板。引物可用 M13 通用引物 (pUC 系列) 或基因特异引物。阳性克隆应送测序验证。同时划线保存菌落至新 LB 平板。"
   },
-  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.; Bergkessel & Guthrie (2013) Methods Enzymol 529:141–149",
+  "ref": "Sambrook & Russell (2001) Molecular Cloning, 3rd ed.; Bergkessel & Guthrie (2013) Methods Enzymol 529:299–309",
   "discipline": [
     "molecular",
     "microbiology"
@@ -109,5 +109,67 @@
     "agarose_gel_electrophoresis",
     "miniprep_protocol",
     "heat_shock_transformation"
+  ],
+  "briefSteps": [
+    {
+      "en": "Pick colonies into PCR tubes, assemble Taq reaction mix, thermocycle with extended initial denaturation (95°C 5 min) to lyse bacteria, then analyze products on agarose gel.",
+      "zh": "挑取单菌落至 PCR 管，配制 Taq 反应体系，以延长的初始变性（95°C 5 min）裂解菌体后热循环，最终琼脂糖凝胶电泳分析产物。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Label PCR tubes (or 96-well plate) for each colony to be screened. Prepare a master plate (LB agar + antibiotic) by numbering grid positions corresponding to each colony.",
+      "zh": "为每个待筛选菌落标记 PCR 管（或 96 孔板）。准备含抗生素的 LB 琼脂平板，按对应编号划格。"
+    },
+    {
+      "en": "Using a sterile toothpick or pipette tip, touch a single colony, streak it onto the corresponding numbered position of the master plate, then swirl the tip in the PCR tube containing reaction mix.",
+      "zh": "用无菌牙签或枪头轻触单菌落，在主平板对应位置划线保存，然后将牙签/枪头插入对应 PCR 管中旋转混匀。"
+    },
+    {
+      "en": "Prepare reaction mix on ice per 25 µL reaction: 12.5 µL 2× Taq Master Mix, 1 µL forward primer (10 µM), 1 µL reverse primer (10 µM), and 10.5 µL nuclease-free water. Add mix to each tube before or after picking colonies.",
+      "zh": "冰上配制反应体系（每管 25 µL）：12.5 µL 2× Taq Master Mix、1 µL 正向引物（10 µM）、1 µL 反向引物（10 µM）、10.5 µL 无核酸酶水。可在挑菌前后加入混合液。"
+    },
+    {
+      "en": "Incubate master plate at 37°C for 6–8 hours (or overnight) to grow colonies for archiving. Keep at 4°C once grown.",
+      "zh": "将主平板置于 37°C 培育 6–8 小时（或过夜）使菌落生长备用，生长后置于 4°C 保存。",
+      "temp": "37°C",
+      "time": "6–8 hours"
+    },
+    {
+      "en": "Run thermocycler: initial denaturation at 95°C for 5 min (lyses bacteria and denatures DNA).",
+      "zh": "运行热循环程序：95°C 初始变性 5 min（裂解菌体并变性 DNA）。",
+      "temp": "95°C",
+      "time": "5 min"
+    },
+    {
+      "en": "Cycle 30 times: denaturation 95°C for 30 s, annealing at 55°C for 30 s, extension at 72°C for 1 min per kb of expected insert.",
+      "zh": "循环 30 次：变性 95°C 30 s，退火 55°C 30 s，延伸 72°C（每 kb 插入片段 1 min）。",
+      "temp": "95°C / 55°C / 72°C",
+      "time": "30 s / 30 s / 1 min/kb"
+    },
+    {
+      "en": "Final extension at 72°C for 5 min, hold at 4°C.",
+      "zh": "终末延伸 72°C 5 min，保温 4°C。",
+      "temp": "72°C",
+      "time": "5 min"
+    },
+    {
+      "en": "Mix 5 µL PCR product with 1 µL 6× loading dye. Load onto 1–1.5% agarose gel with DNA ladder. Run at 5–8 V/cm for 30–45 min. Photograph results.",
+      "zh": "取 5 µL PCR 产物与 1 µL 6× 上样缓冲液混合，与 DNA Ladder 一同上样至 1–1.5% 琼脂糖凝胶，以 5–8 V/cm 跑胶 30–45 min，拍照记录。",
+      "time": "30–45 min"
+    },
+    {
+      "en": "Identify positive clones showing a band at the expected insert size. Inoculate positive clones from the master plate into LB + antibiotic broth for overnight culture, then perform miniprep and sequence verification.",
+      "zh": "确认在预期插入片段大小处出现条带的阳性克隆。从主平板挑取阳性克隆接种至含抗生素的 LB 液体培养基，过夜培养后进行质粒小提和测序验证。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "PCR products can be stored at 4°C overnight or −20°C for up to 1 week before gel analysis.",
+        "zh": "PCR 产物可在 4°C 保存过夜，或在 −20°C 保存最多 1 周，再进行凝胶分析。"
+      }
+    }
   ]
 }

@@ -124,5 +124,94 @@
     "trizol_extraction",
     "qpcr_protocol",
     "rnaseq_library_prep"
+  ],
+  "briefSteps": [
+    {
+      "en": "Lyse cells in guanidinium buffer → add 70% ethanol → bind RNA to silica column → wash with RW1 → optional on-column DNase I digestion → wash with RPE twice → elute with RNase-free water → quantify by NanoDrop.",
+      "zh": "异硫氰酸胍缓冲液裂解细胞 → 加 70% 乙醇 → RNA 结合至硅胶柱 → RW1 洗涤 → 可选柱上 DNase I 消化 → RPE 洗涤两次 → RNase-free 水洗脱 → NanoDrop 定量。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Lysis",
+      "zh": "裂解",
+      "isHeader": true
+    },
+    {
+      "en": "Add 350 µL Buffer RLT (supplemented with 10 µL/mL β-mercaptoethanol) to ≤5×10⁶ cells or ≤30 mg tissue. Vortex vigorously for 1 min to fully homogenize.",
+      "zh": "向 ≤5×10⁶ 细胞或 ≤30 mg 组织中加入 350 µL Buffer RLT（含 10 µL/mL β-巯基乙醇）。剧烈涡旋 1 min 充分匀浆。",
+      "time": "2 min",
+      "temp": "RT"
+    },
+    {
+      "en": "For tissue: homogenize lysate with a rotor-stator or pass through a 20-gauge needle 5–10 times to shear genomic DNA and reduce viscosity. Centrifuge at ≥10,000×g for 3 min; transfer clear supernatant.",
+      "zh": "组织样品：用匀浆器研磨或 20 号针头反复穿过 5–10 次以剪断基因组 DNA、降低粘度。≥10,000×g 离心 3 min，转移上清。",
+      "time": "3 min"
+    },
+    {
+      "en": "Column Binding",
+      "zh": "柱结合",
+      "isHeader": true
+    },
+    {
+      "en": "Add an equal volume (350 µL) of 70% RNase-free ethanol to the lysate and mix by pipetting. Do not centrifuge.",
+      "zh": "向裂解液中加入等体积（350 µL）70% 无 RNase 乙醇，吹打混匀。不要离心。",
+      "time": "1 min"
+    },
+    {
+      "en": "Transfer up to 700 µL of the sample to an RNeasy spin column placed in a 2 mL collection tube. Centrifuge at ≥8,000×g for 15 seconds at RT. Discard flow-through.",
+      "zh": "将最多 700 µL 样品转移至置于 2 mL 收集管中的 RNeasy 离心柱。室温 ≥8,000×g 离心 15 s，弃流出液。",
+      "time": "1 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Washing & DNase Digestion",
+      "zh": "洗涤与 DNase 消化",
+      "isHeader": true
+    },
+    {
+      "en": "Add 700 µL Buffer RW1 to the column. Centrifuge at ≥8,000×g for 15 seconds. Discard flow-through and collection tube.",
+      "zh": "向柱中加入 700 µL Buffer RW1，≥8,000×g 离心 15 s，弃流出液和收集管。",
+      "time": "1 min"
+    },
+    {
+      "en": "Optional on-column DNase I digestion: pipette 80 µL DNase I incubation mix (10 µL DNase I stock + 70 µL Buffer RDD) directly onto the silica membrane. Incubate at room temperature for 15 min.",
+      "zh": "可选柱上 DNase I 消化：将 80 µL DNase I 孵育液（10 µL DNase I 储液 + 70 µL Buffer RDD）直接加至硅胶膜上。室温孵育 15 min。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add 350 µL Buffer RW1. Centrifuge at ≥8,000×g for 15 seconds. Discard flow-through.",
+      "zh": "加入 350 µL Buffer RW1，≥8,000×g 离心 15 s，弃流出液。",
+      "time": "1 min"
+    },
+    {
+      "en": "Add 500 µL Buffer RPE. Centrifuge at ≥8,000×g for 15 seconds. Discard flow-through. Repeat with another 500 µL RPE and centrifuge for 2 min to dry the membrane.",
+      "zh": "加入 500 µL Buffer RPE，≥8,000×g 离心 15 s，弃流出液。再加 500 µL RPE 离心 2 min 干燥膜。",
+      "time": "3 min"
+    },
+    {
+      "en": "Elution & QC",
+      "zh": "洗脱与质检",
+      "isHeader": true
+    },
+    {
+      "en": "Transfer column to a fresh 1.5 mL RNase-free tube. Pipette 30–50 µL RNase-free water directly onto the membrane. Let stand 1 min, then centrifuge at ≥8,000×g for 1 min to elute. Repeat elution for higher yield.",
+      "zh": "将柱转移至新的 1.5 mL 无 RNase 管中。直接向膜上加 30–50 µL 无 RNase 水，静置 1 min，≥8,000×g 离心 1 min 洗脱。重复一次可提高产量。",
+      "time": "3 min"
+    },
+    {
+      "en": "Quantify RNA by NanoDrop (A260/280 ≈ 2.0; A260/230 ≥ 1.8). For accurate downstream quantification, use Qubit RNA HS assay. Store RNA at −80°C.",
+      "zh": "NanoDrop 定量（A260/280 ≈ 2.0；A260/230 ≥ 1.8）。精确定量建议 Qubit RNA HS。−80°C 保存。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Eluted RNA can be stored at −80°C for up to 1 year. Aliquot into single-use volumes to avoid repeated freeze-thaw cycles.",
+        "zh": "洗脱后的 RNA 可在 −80°C 保存最多 1 年。建议分装成单次用量以避免反复冻融。"
+      }
+    }
   ]
 }

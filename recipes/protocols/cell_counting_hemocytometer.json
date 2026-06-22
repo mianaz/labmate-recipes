@@ -56,7 +56,7 @@
     "en": "Trypan blue contact ≤5 min (otherwise live cells also stain). Ideal count: 100-200 cells per large square. Cells on grid lines: count top and left, not bottom and right. Clean hemocytometer with 70% ethanol; do not sonicate. Automated counters (Countess, TC20) are more accurate but need calibration.",
     "zh": "台盼蓝接触时间 ≤5 min（否则活细胞也会着色）。每格理想计数 100–200 个细胞。计数线上细胞：计上不计下，计左不计右。清洗计数板：70% 乙醇擦拭，勿用超声。自动计数仪（Countess, TC20）更准确但需校准。"
   },
-  "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 21; Louis & Bhatt (2015) Methods Mol Biol 1235:31",
+  "ref": "Freshney (2016) Culture of Animal Cells, 7th Ed, Ch. 21; Louis & Siegel (2011) Curr Protoc Microbiol",
   "crosslinks": [
     "trypan_blue_counting"
   ],
@@ -86,6 +86,51 @@
     {
       "name": "Counter (hand or electronic)",
       "optional": true
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Prepare single-cell suspension → mix 1:1 with 0.4% trypan blue → load hemocytometer → count cells in 4 large squares at 10× → calculate concentration and viability",
+      "zh": "制备单细胞悬液 → 与 0.4% 台盼蓝 1:1 混合 → 加入血球计数板 → 10× 镜下计数四个大方格 → 计算浓度和活力"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Prepare a single-cell suspension by trypsinization or gentle pipetting; resuspend in complete medium and ensure no clumps.",
+      "zh": "通过胰酶消化或轻柔吹打制备单细胞悬液，用完全培养基重悬，确认无细胞团块。"
+    },
+    {
+      "en": "Clean the hemocytometer and coverslip with 70% ethanol and lint-free tissue; let dry completely.",
+      "zh": "用 70% 乙醇和无尘纸擦拭血球计数板和盖玻片，完全晾干。"
+    },
+    {
+      "en": "Place the coverslip on the hemocytometer; press gently until Newton's rings (rainbow interference fringes) appear at the edges.",
+      "zh": "将盖玻片放置在计数板上，轻压直至两侧出现牛顿环（彩色干涉条纹）。"
+    },
+    {
+      "en": "In a microcentrifuge tube, mix 10 µL cell suspension with 10 µL of 0.4% trypan blue (1:1 dilution factor = 2); incubate at room temperature for 1–2 min (do not exceed 3 min).",
+      "zh": "在微量离心管中将 10 µL 细胞悬液与 10 µL 0.4% 台盼蓝 1:1 混合（稀释因子 = 2），室温孵育 1–2 min（不超过 3 min）。",
+      "time": "1–2 min"
+    },
+    {
+      "en": "Pipette 10 µL of the trypan blue–cell mixture at the edge of the coverslip; allow capillary action to fill the counting chamber without overflow.",
+      "zh": "取 10 µL 台盼蓝-细胞混合液在盖玻片边缘加样，毛细管作用自动填充计数室，勿溢出。"
+    },
+    {
+      "en": "Under 10× objective, count all cells (live = clear/unstained; dead = blue) in each of the 4 large corner squares. Count cells on the top and left boundary lines; exclude cells on the bottom and right lines.",
+      "zh": "在 10× 物镜下，计数四个角大方格中的所有细胞（活细胞：透明/不着色；死细胞：蓝色）。计上边和左边压线细胞，不计下边和右边压线细胞。"
+    },
+    {
+      "en": "Calculate cell concentration: cells/mL = (total cells in 4 squares ÷ 4) × dilution factor × 10⁴.",
+      "zh": "计算细胞浓度：细胞数/mL = （四格总细胞数 ÷ 4）× 稀释因子 × 10⁴。"
+    },
+    {
+      "en": "Calculate cell viability: viability (%) = (live cell count ÷ total cell count) × 100. Viability should be ≥90% for healthy cultures.",
+      "zh": "计算细胞活率（%）= 活细胞数 ÷ 总细胞数 × 100。健康细胞活力应 ≥90%。"
+    },
+    {
+      "en": "Clean the hemocytometer with 70% ethanol and a lint-free tissue after use; do not use sonication.",
+      "zh": "用后用 70% 乙醇和无尘纸清洁计数板，勿用超声清洗。"
     }
   ],
   "stoppingPoints": [],

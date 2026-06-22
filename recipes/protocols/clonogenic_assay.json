@@ -88,6 +88,88 @@
       "duration": "indefinitely"
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Seed 200–1000 single cells per well (6-well plate) → allow attachment → apply treatment → culture 10–14 days with medium change every 3 days → fix with methanol → stain 0.5% crystal violet → count colonies (>50 cells each) → calculate plating efficiency and surviving fraction",
+      "zh": "每孔铺 200–1000 个单细胞（6 孔板）→ 贴壁后给药处理 → 培养 10–14 天（每 3 天换液）→ 甲醇固定 → 0.5% 结晶紫染色 → 计数克隆（每个 >50 细胞）→ 计算铺板效率和存活分数"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 0 – Cell Seeding",
+      "zh": "第 0 天 – 铺板",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare a single-cell suspension (verify with hemocytometer; viability >90%); seed 200–1000 cells per well in a 6-well plate in 2 mL complete medium — high plating efficiency lines (e.g., HeLa): 200 cells; low PE lines: 500–1000 cells; run a pilot experiment to optimize density.",
+      "zh": "制备单细胞悬液（用血球计数板验证；活力 >90%）；每孔铺 200–1000 个细胞（6 孔板，2 mL 完全培养基）——高铺板效率细胞系（如 HeLa）：200 细胞；低铺板效率细胞系：500–1000 细胞；先做预实验确定最佳密度。"
+    },
+    {
+      "en": "Allow cells to attach at 37°C, 5% CO₂ for 6–24 h before adding treatment.",
+      "zh": "37°C、5% CO₂ 培养 6–24 h，待细胞贴壁后再给药。",
+      "time": "6–24 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 1 – Treatment",
+      "zh": "第 1 天 – 给药",
+      "isHeader": true
+    },
+    {
+      "en": "Replace medium with 2 mL complete medium containing test compound at desired concentration; set up triplicate wells per condition; include untreated control and solvent control.",
+      "zh": "换液至含受试化合物的完全培养基（每孔 2 mL）；每组处理设三复孔；设未处理对照和溶剂对照。"
+    },
+    {
+      "en": "Colony Growth (Days 1–14)",
+      "zh": "克隆生长（第 1–14 天）",
+      "isHeader": true
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂ for 10–14 days; change medium gently every 3 days (aspirate half the medium and replace to avoid dislodging colonies); check plates regularly under inverted microscope.",
+      "zh": "37°C、5% CO₂ 培养 10–14 天；每 3 天轻柔换液（吸去一半培养基再补加，避免冲掉克隆）；定期在倒置显微镜下观察克隆生长。",
+      "time": "10–14 days",
+      "temp": "37°C"
+    },
+    {
+      "en": "Staining Day – Fix and Stain",
+      "zh": "染色日 – 固定与染色",
+      "isHeader": true
+    },
+    {
+      "en": "Aspirate medium; wash wells once gently with 2 mL PBS; fix with 1 mL methanol per well for 10–15 min at room temperature (or use 4% PFA for 20 min).",
+      "zh": "吸去培养基；用 2 mL PBS 轻柔洗一次；每孔加 1 mL 甲醇，室温固定 10–15 min（或用 4% PFA 固定 20 min）。",
+      "time": "10–15 min"
+    },
+    {
+      "en": "Remove fixative; add 1 mL 0.5% crystal violet solution per well; incubate 15–30 min at room temperature; wash excess stain thoroughly with water until washings run clear; air-dry plates.",
+      "zh": "去除固定液；每孔加 1 mL 0.5% 结晶紫溶液；室温染色 15–30 min；充分水洗去除多余染料，直至洗涤液澄清；晾干培养板。",
+      "time": "15–30 min"
+    },
+    {
+      "en": "Count colonies containing ≥50 cells (use a colony counter, ImageJ, or manual counting with a grid); record colony number per well.",
+      "zh": "计数含 ≥50 个细胞的克隆（用克隆计数仪、ImageJ 或网格辅助手动计数）；记录每孔克隆数。"
+    },
+    {
+      "en": "Calculate plating efficiency (PE) = (colonies counted / cells seeded) × 100%; calculate surviving fraction = PE(treated) / PE(control).",
+      "zh": "计算铺板效率（PE）= 克隆数 / 铺板细胞数 × 100%；计算存活分数 = PE（处理组）/ PE（对照组）。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Colony growth phase (10–14 days at 37°C) is a natural multi-day stopping point; change medium every 3 days",
+        "zh": "克隆生长阶段（37°C 培养 10–14 天）是自然的多日停顿点；每 3 天换液一次"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Fixed and crystal violet-stained plates can be air-dried and stored at room temperature indefinitely before counting",
+        "zh": "固定并经结晶紫染色后晾干的培养板可在室温下无限期保存，之后再计数"
+      }
+    }
+  ],
   "usage": {
     "en": "Measure the ability of single cells to form colonies (clonogenic survival assay).",
     "zh": "检测单个细胞形成克隆的能力（克隆形成实验）。"

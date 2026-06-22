@@ -116,7 +116,6 @@
     "qpcr_protocol"
   ],
   "ref": "Illumina TruSeq Stranded mRNA Reference Guide 15031047; Adiconis et al. (2013) Nat Methods 10:623–629",
-  "doi": "10.1038/nmeth.2474",
   "discipline": [
     "genomics",
     "rna_dna"
@@ -172,5 +171,92 @@
   "usage": {
     "en": "Prepare strand-specific RNA-seq libraries for next-generation sequencing.",
     "zh": "链特异性 RNA-seq 文库构建，用于下一代测序。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "QC total RNA (RIN ≥7) → polyA select with oligo-dT beads → fragment mRNA at 94°C → reverse transcribe to first-strand cDNA → second-strand synthesis → end repair + dA-tail → ligate dual-index adapters → size select with AMPure XP → PCR amplify 8–14 cycles → QC library by Bioanalyzer and qPCR.",
+      "zh": "总 RNA 质检（RIN ≥7）→ oligo-dT 磁珠 polyA 富集 → 94°C 热片段化 → 逆转录为第一链 cDNA → 第二链合成 → 末端修复加 A 尾 → 连接双索引接头 → AMPure XP 筛选 → PCR 扩增 8–14 个循环 → Bioanalyzer 和 qPCR 质检文库。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1",
+      "zh": "第一天",
+      "isHeader": true
+    },
+    {
+      "en": "Assess RNA quality by Bioanalyzer or TapeStation (RIN ≥7.0, ideally ≥8.0). Quantify with Qubit RNA HS assay. Input: 100 ng – 1 µg total RNA in ≤10 µL RNase-free water.",
+      "zh": "Bioanalyzer 或 TapeStation 评估 RNA 质量（RIN ≥7.0，理想 ≥8.0）。Qubit RNA HS 定量。投入量：100 ng–1 µg 总 RNA，溶于 ≤10 µL 无 RNase 水中。"
+    },
+    {
+      "en": "PolyA mRNA selection: incubate RNA with oligo-dT magnetic beads in 2× binding buffer (10 mM Tris pH 7.5, 500 mM LiCl, 1 mM EDTA) at 65°C for 5 min, cool to RT 5 min, wash beads twice, elute at 80°C for 2 min. Repeat selection once to reduce rRNA to <5%.",
+      "zh": "PolyA mRNA 富集：在 2× 结合缓冲液（10 mM Tris pH 7.5、500 mM LiCl、1 mM EDTA）中将 RNA 与 oligo-dT 磁珠 65°C 孵育 5 min，室温冷却 5 min，洗涤磁珠两次，80°C 洗脱 2 min。重复一次以将 rRNA 降至 <5%。",
+      "time": "30 min"
+    },
+    {
+      "en": "Fragment enriched mRNA by heating in First Strand Buffer at 94°C for 2–8 min (2 min → ~300 bp; 8 min → ~130 bp; target 200–300 bp for standard library). Immediately stop with 0.5 M EDTA and place on ice.",
+      "zh": "在第一链缓冲液中 94°C 加热 2–8 min 片段化富集后的 mRNA（2 min → ~300 bp；8 min → ~130 bp；标准建库目标 200–300 bp）。立即用 0.5 M EDTA 终止并置冰上。",
+      "time": "8 min",
+      "temp": "94°C"
+    },
+    {
+      "en": "First-strand cDNA synthesis: add random hexamers, denature at 65°C for 5 min, snap cool on ice 1 min. Add RT mix (1× First Strand Buffer, 5 mM DTT, 40 U RNaseOUT, SuperScript III/IV). Incubate: 25°C 10 min → 50°C 50 min → 70°C 15 min. Add RNase H (2 U) and incubate 37°C 20 min to remove RNA template.",
+      "zh": "第一链 cDNA 合成：加入随机六聚体引物，65°C 变性 5 min，冰上快速冷却 1 min。加入 RT 混合物（1× 第一链缓冲液、5 mM DTT、40 U RNaseOUT、SuperScript III/IV）。孵育：25°C 10 min → 50°C 50 min → 70°C 15 min。加 RNase H（2 U），37°C 20 min 去除 RNA 模板。",
+      "time": "90 min"
+    },
+    {
+      "en": "Second-strand cDNA synthesis: add second-strand reaction mix containing DNA Pol I (10 U), E. coli DNA ligase (10 U), and RNase H (2 U) in Second Strand Buffer. Incubate at 16°C for 2.5 h. For strand-specific libraries, use dUTP instead of dTTP. Purify with 1.8× AMPure XP beads.",
+      "zh": "第二链 cDNA 合成：加入含 DNA Pol I（10 U）、大肠杆菌 DNA 连接酶（10 U）和 RNase H（2 U）的第二链反应混合物。16°C 孵育 2.5 h。链特异性建库将 dTTP 替换为 dUTP。1.8× AMPure XP 磁珠纯化。",
+      "time": "2.5 h",
+      "temp": "16°C"
+    },
+    {
+      "en": "End repair and dA-tailing: incubate ds-cDNA with T4 DNA Polymerase, T4 PNK, and Klenow fragment in end-repair buffer at 30°C for 30 min. Then add dATP and Klenow (exo-) and incubate at 37°C for 30 min to add 3′ A overhang. Purify with 1× AMPure XP beads.",
+      "zh": "末端修复与加 A 尾：将双链 cDNA 与 T4 DNA 聚合酶、T4 PNK 和 Klenow 片段在末端修复缓冲液中 30°C 孵育 30 min。加入 dATP 和 Klenow（exo-），37°C 孵育 30 min 添加 3′ A 突出端。1× AMPure XP 磁珠纯化。",
+      "time": "60 min"
+    },
+    {
+      "en": "Day 2",
+      "zh": "第二天",
+      "isHeader": true
+    },
+    {
+      "en": "Adapter ligation: ligate dual-index Y-shaped adapters (10:1 molar adapter:insert ratio) with T4 DNA Ligase at room temperature for 15 min. Heat-inactivate at 65°C for 10 min. Size-select with double-sided AMPure XP (0.8× then add 0.2× to supernatant) to remove adapter-dimers (~130 bp) and retain 200–500 bp inserts.",
+      "zh": "接头连接：双索引 Y 形接头与插入片段以 10:1 摩尔比用 T4 DNA 连接酶室温连接 15 min。65°C 热灭活 10 min。双面 AMPure XP 筛选（先 0.8×，再向上清中加 0.2×）去除接头二聚体（~130 bp），保留 200–500 bp 插入片段。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "PCR library amplification: 98°C 30 s initial denaturation → [98°C 10 s, 60°C 30 s, 72°C 30 s] × 8–14 cycles → 72°C 5 min final extension. Use 8 cycles for 500 ng input and 12–14 cycles for <100 ng. Use KAPA HiFi or Q5 high-fidelity polymerase. Purify with 1× AMPure XP beads.",
+      "zh": "PCR 文库扩增：98°C 30 s 预变性 → [98°C 10 s、60°C 30 s、72°C 30 s] × 8–14 循环 → 72°C 5 min 末端延伸。500 ng 投入量用 8 个循环，<100 ng 用 12–14 个循环。使用 KAPA HiFi 或 Q5 高保真聚合酶。1× AMPure XP 磁珠纯化。",
+      "time": "45 min"
+    },
+    {
+      "en": "Library QC: verify size distribution on Bioanalyzer or TapeStation (expected peak 280–350 bp). Confirm absence of adapter-dimers (<1% at 130 bp). Quantify by Qubit dsDNA HS and NEBNext Library Quant qPCR. Pool samples at equimolar ratio and sequence at 20–50 M paired-end 150 bp reads per sample.",
+      "zh": "文库质检：Bioanalyzer 或 TapeStation 验证片段分布（预期主峰 280–350 bp）。确认无接头二聚体（130 bp 处 <1%）。Qubit dsDNA HS 和 NEBNext Library Quant qPCR 定量。等摩尔混样，每样品测序 2,000–5,000 万条 150 bp PE reads。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "First-strand cDNA can be stored at −20°C for up to 1 week before proceeding to second-strand synthesis.",
+        "zh": "第一链 cDNA 可在 −20°C 保存最多 1 周，之后再进行第二链合成。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Adapter-ligated, size-selected library can be stored at −20°C for up to 1 month before PCR amplification.",
+        "zh": "连接接头并筛选大小后的文库可在 −20°C 保存最多 1 个月，之后再进行 PCR 扩增。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Final PCR-amplified library can be stored at −20°C for up to 12 months. Verify quality before submitting for sequencing.",
+        "zh": "最终 PCR 扩增文库可在 −20°C 保存最多 12 个月。送测序前务必验证质量。"
+      }
+    }
+  ]
 }

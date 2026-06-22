@@ -196,5 +196,106 @@
   "usage": {
     "en": "Detect protein expression in paraffin-embedded tissue sections using immunohistochemistry.",
     "zh": "免疫组化检测石蜡包埋组织切片中的蛋白表达。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Bake FFPE sections → deparaffinize in xylene → rehydrate through graded ethanol → heat-induced antigen retrieval → block endogenous peroxidase with 3% H₂O₂ → serum block → primary antibody overnight at 4°C → wash → HRP-polymer secondary antibody → DAB chromogen development → hematoxylin counterstain → dehydrate → mount.",
+      "zh": "烘烤 FFPE 切片 → 二甲苯脱蜡 → 梯度乙醇复水 → 热修复抗原 → 3% H₂O₂ 封闭内源性过氧化物酶 → 血清封闭 → 4°C 孵育一抗过夜 → 洗涤 → HRP 聚合物二抗 → DAB 显色 → 苏木精复染 → 脱水 → 封片。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1",
+      "zh": "第一天",
+      "isHeader": true
+    },
+    {
+      "en": "Bake 4–5 µm FFPE sections on positively charged slides (e.g., Superfrost Plus) in a 60°C oven for 1 h to melt paraffin and improve tissue adhesion.",
+      "zh": "将 4–5 µm FFPE 切片（贴于 Superfrost Plus 正电荷载玻片）置于 60°C 烤箱中 1 h，熔化石蜡并增强组织贴附。",
+      "time": "1 h",
+      "temp": "60°C"
+    },
+    {
+      "en": "Deparaffinize in xylene: 3 × 5 min. Rehydrate through graded ethanol in fume hood: 100% EtOH × 2 → 95% EtOH → 70% EtOH → ddH₂O × 2, each step 5 min.",
+      "zh": "通风橱内二甲苯脱蜡：3 × 5 min。梯度乙醇复水：100% EtOH × 2 → 95% EtOH → 70% EtOH → 蒸馏水 × 2，每步 5 min。",
+      "time": "45 min"
+    },
+    {
+      "en": "Heat-induced epitope retrieval (HIER): submerge slides in antigen retrieval buffer (citrate pH 6.0 for cytoplasmic antigens; EDTA pH 9.0 for nuclear/membrane antigens). Heat in water bath at 98°C for 20 min or pressure cooker at 15 psi for 3–4 min. Cool to room temperature for 20 min.",
+      "zh": "热修复表位（HIER）：将载玻片浸入抗原修复缓冲液（胞质抗原用柠檬酸 pH 6.0；核/膜抗原用 EDTA pH 9.0）。水浴 98°C 加热 20 min 或高压锅 15 psi 3–4 min。室温冷却 20 min。",
+      "time": "40 min",
+      "temp": "98°C"
+    },
+    {
+      "en": "Block endogenous peroxidase: incubate sections in 3% H₂O₂ in PBS for 10–15 min at room temperature. Rinse 3 × 2 min in TBS.",
+      "zh": "封闭内源性过氧化物酶：PBS 中 3% H₂O₂ 室温孵育 10–15 min。TBS 冲洗 3 × 2 min。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Draw a hydrophobic barrier around each section with a PAP pen. Block non-specific binding with 5–10% normal serum (same species as secondary antibody) in TBS for 1 h at room temperature in a humidity chamber. Aspirate excess, do not wash.",
+      "zh": "用 PAP 笔在切片周围画疏水圈。在湿盒中用 TBS 中 5–10% 正常血清（与二抗同种属）室温封闭 1 h。吸去多余封闭液，不要洗涤。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Apply primary antibody diluted in TBS + 1% BSA (typical dilution 1:100–1:1000, per datasheet). Incubate overnight at 4°C in a sealed humidity chamber. 4°C overnight generally gives better signal-to-noise than 1 h at RT.",
+      "zh": "在 TBS + 1% BSA 中稀释一抗（参考说明书，通常 1:100–1:1000）。在密封湿盒中 4°C 孵育过夜。4°C 过夜通常比室温 1 h 信噪比更好。",
+      "time": "overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2",
+      "zh": "第二天",
+      "isHeader": true
+    },
+    {
+      "en": "Wash sections 3 × 5 min in TBS or TBST on a rocker. Do not allow sections to dry at any point.",
+      "zh": "在摇床上 TBS 或 TBST 洗涤 3 × 5 min。任何时候不要让切片干燥。",
+      "time": "15 min"
+    },
+    {
+      "en": "Apply species-matched HRP-polymer secondary antibody (e.g., Dako EnVision+) undiluted or at manufacturer-recommended concentration. Incubate 30–60 min at room temperature.",
+      "zh": "加入种属匹配的 HRP 聚合物二抗（如 Dako EnVision+），按说明书浓度或直接使用。室温孵育 30–60 min。",
+      "time": "45 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 3 × 5 min in TBS.",
+      "zh": "TBS 洗涤 3 × 5 min。",
+      "time": "15 min"
+    },
+    {
+      "en": "Prepare fresh DAB chromogen per kit instructions. Apply DAB + H₂O₂ substrate to sections and monitor color development under a light microscope. Develop for 2–10 min (positive signal = brown precipitate). Stop reaction immediately by rinsing in ddH₂O.",
+      "zh": "按试剂盒说明新鲜配制 DAB 显色液。将 DAB + H₂O₂ 底物加至切片上，在光学显微镜下监控显色。显色 2–10 min（阳性信号 = 棕色沉淀）。立即用蒸馏水冲洗终止反应。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Counterstain nuclei with hematoxylin (Harris or Mayer's) for 1–5 min. Differentiate in 1% acid-alcohol (1% HCl in 70% EtOH) for 5–10 seconds. Blue nuclei by rinsing in running tap water for 5 min or Scott's Water (2 g/L MgSO₄ + 0.2 g/L NaHCO₃).",
+      "zh": "苏木精（Harris 或 Mayer's）复染细胞核 1–5 min。在 1% 酸性乙醇（70% EtOH 中 1% HCl）中分化 5–10 秒。自来水冲洗 5 min 或 Scott's 水（2 g/L MgSO₄ + 0.2 g/L NaHCO₃）返蓝。",
+      "time": "10 min"
+    },
+    {
+      "en": "Dehydrate: 70% → 95% EtOH × 2 → 100% EtOH × 2 → xylene × 2, each 2–5 min. Mount coverslip with xylene-based medium (DPX or Permount) using minimal medium to avoid bubbles. Allow to cure 24 h before imaging.",
+      "zh": "脱水：70% → 95% EtOH × 2 → 100% EtOH × 2 → 二甲苯 × 2，每步 2–5 min。用少量二甲苯封固剂（DPX 或 Permount）封片，避免气泡。封片后 24 h 再进行显微镜成像。",
+      "time": "30 min"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Deparaffinized and rehydrated slides can be kept in 1× PBS at room temperature for up to 1 hour before proceeding to antigen retrieval.",
+        "zh": "脱蜡复水后的载玻片可在室温 1× PBS 中保存最多 1 h，之后再进行抗原修复。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Sections with primary antibody applied are incubated overnight at 4°C as a standard step — this is the intended safe stop between Day 1 and Day 2.",
+        "zh": "加了一抗的切片 4°C 孵育过夜是标准流程——这是第一天和第二天之间的预设暂停点。"
+      }
+    }
+  ]
 }

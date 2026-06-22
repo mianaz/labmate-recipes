@@ -141,5 +141,116 @@
     "qpcr_protocol",
     "northern_blot",
     "rnaseq_library_prep"
+  ],
+  "briefSteps": [
+    {
+      "en": "Lyse cells in TRIzol → add chloroform → centrifuge → collect aqueous phase → precipitate RNA with isopropanol → wash with 75% EtOH → air dry → dissolve in RNase-free water → quantify by NanoDrop.",
+      "zh": "TRIzol 裂解细胞 → 加氯仿 → 离心 → 收集水相 → 异丙醇沉淀 RNA → 75% 乙醇洗涤 → 风干 → RNase-free 水溶解 → NanoDrop 定量。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Lysis",
+      "zh": "裂解",
+      "isHeader": true
+    },
+    {
+      "en": "Add 1 mL TRIzol per 5–10×10⁶ cells (or per 50–100 mg tissue); homogenize tissue with a rotor-stator homogenizer. Pipette repeatedly to ensure complete lysis.",
+      "zh": "每 5–10×10⁶ 细胞（或每 50–100 mg 组织）加入 1 mL TRIzol；组织使用匀浆器研磨。反复吹打确保充分裂解。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Incubate at room temperature for 5 min to allow complete dissociation of nucleoprotein complexes.",
+      "zh": "室温静置 5 min，使核蛋白复合物充分解离。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Phase Separation",
+      "zh": "相分离",
+      "isHeader": true
+    },
+    {
+      "en": "Add 0.2 mL chloroform per 1 mL TRIzol. Cap tube tightly and shake vigorously for 15 seconds, then incubate at room temperature for 2–3 min.",
+      "zh": "每 1 mL TRIzol 加入 0.2 mL 氯仿。拧紧管盖，剧烈振荡 15 秒，室温静置 2–3 min。",
+      "time": "3 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Centrifuge at 12,000×g for 15 min at 4°C. Three phases form: upper aqueous (RNA), white interphase (DNA/protein), lower red organic phase (protein/lipid).",
+      "zh": "4°C、12,000×g 离心 15 min。形成三层：上层水相（RNA）、白色中间层（DNA/蛋白）、下层红色有机相（蛋白/脂质）。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Carefully transfer only the upper aqueous phase (~60% of TRIzol volume) to a fresh RNase-free tube, avoiding the white interphase.",
+      "zh": "小心吸取上层水相（约为 TRIzol 用量的 60%）至新的无 RNase 管，勿碰白色中间层。",
+      "time": "5 min"
+    },
+    {
+      "en": "RNA Precipitation",
+      "zh": "RNA 沉淀",
+      "isHeader": true
+    },
+    {
+      "en": "Add 0.5 mL isopropanol per 1 mL TRIzol used. Mix by inversion 10 times and incubate at room temperature for 10 min. For low-abundance samples, add 1 µL glycogen (20 mg/mL) as co-precipitant.",
+      "zh": "每 1 mL TRIzol 加入 0.5 mL 异丙醇，颠倒混匀 10 次，室温静置 10 min。微量样品可加 1 µL glycogen（20 mg/mL）作为共沉淀剂。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Centrifuge at 12,000×g for 10 min at 4°C. RNA pellet appears as a white or translucent gel-like pellet at the bottom/side of the tube.",
+      "zh": "4°C、12,000×g 离心 10 min。RNA 沉淀呈白色或半透明胶状颗粒附着于管底或管壁。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash",
+      "zh": "洗涤",
+      "isHeader": true
+    },
+    {
+      "en": "Discard supernatant completely. Add 1 mL of 75% ethanol (prepared with DEPC-treated water) per 1 mL TRIzol. Vortex briefly to resuspend pellet.",
+      "zh": "彻底弃去上清。每 1 mL TRIzol 加入 1 mL 75% 乙醇（用 DEPC 水配制）。短暂涡旋重悬沉淀。",
+      "time": "2 min"
+    },
+    {
+      "en": "Centrifuge at 7,500×g for 5 min at 4°C. Carefully remove all ethanol with a pipette; brief air-dry pellet for 5–10 min at room temperature until it turns translucent (do not over-dry).",
+      "zh": "4°C、7,500×g 离心 5 min。用移液器彻底吸去乙醇；室温风干沉淀 5–10 min 至透明（勿过度干燥）。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Dissolution & QC",
+      "zh": "溶解与质检",
+      "isHeader": true
+    },
+    {
+      "en": "Dissolve RNA pellet in 20–50 µL RNase-free water. Incubate at 55°C for 10 min with occasional flicking to aid dissolution.",
+      "zh": "将 RNA 沉淀溶于 20–50 µL 无 RNase 水中。55°C 孵育 10 min，间歇轻弹管底助溶。",
+      "time": "10 min",
+      "temp": "55°C"
+    },
+    {
+      "en": "Quantify by NanoDrop (A260/280 ≈ 2.0; A260/230 > 1.8) and verify integrity by agarose gel (28S:18S ratio ≈ 2:1). Store at −80°C.",
+      "zh": "NanoDrop 定量（A260/280 ≈ 2.0；A260/230 > 1.8），琼脂糖凝胶验证完整性（28S/18S ≈ 2:1）。−80°C 保存。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "RNA pellet washed with 75% EtOH can be stored at −70°C for up to 1 week before proceeding to dissolution.",
+        "zh": "75% 乙醇洗涤后的 RNA 沉淀可在 −70°C 保存最多 1 周，之后再进行溶解步骤。"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "Dissolved RNA can be stored at −80°C for up to 12 months. Aliquot to avoid freeze-thaw cycles.",
+        "zh": "溶解后的 RNA 可在 −80°C 保存最多 12 个月。建议分装以避免反复冻融。"
+      }
+    }
   ]
 }

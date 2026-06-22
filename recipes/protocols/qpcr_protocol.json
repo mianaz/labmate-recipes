@@ -137,5 +137,71 @@
     "rna_column_extraction",
     "pcr_standard",
     "chip_protocol"
+  ],
+  "briefSteps": [
+    {
+      "en": "Extract and quantify RNA → treat with DNase I → reverse transcribe 500 ng–2 µg RNA to cDNA → dilute cDNA 1:5–1:20 → set up 20 µL SYBR Green qPCR reactions in triplicate → run 95°C/60°C cycling → analyze melt curve and calculate expression by 2^(−ΔΔCt).",
+      "zh": "提取并定量 RNA → DNase I 处理 → 反转录 500 ng–2 µg RNA 至 cDNA → cDNA 1:5–1:20 稀释 → 三孔设置 20 µL SYBR Green qPCR 反应 → 运行 95°C/60°C 循环 → 分析溶解曲线并用 2^(-ΔΔCt) 法计算表达量。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Extract total RNA using TRIzol or a silica-column kit. Quantify by NanoDrop: A260/280 ratio should be ~2.0. A260/230 ratio should be >1.8. Acceptable RNA concentration: ≥50 ng/µL.",
+      "zh": "使用 TRIzol 或硅胶柱试剂盒提取总 RNA。NanoDrop 定量：A260/280 应约为 2.0，A260/230 应 >1.8，可接受 RNA 浓度 ≥50 ng/µL。"
+    },
+    {
+      "en": "Optional: treat RNA with DNase I (1 U per µg RNA, 37°C 30 min, then inactivate at 75°C 10 min with EDTA) to eliminate genomic DNA contamination.",
+      "zh": "可选：用 DNase I（每微克 RNA 加 1 U，37°C 30 min，加 EDTA 后 75°C 10 min 灭活）处理 RNA，去除基因组 DNA 污染。",
+      "temp": "37°C",
+      "time": "30 min"
+    },
+    {
+      "en": "Set up reverse transcription: use 500 ng–2 µg RNA with a combination of oligo-dT (for mRNA) and random hexamers. Follow manufacturer's protocol (e.g., SuperScript IV, 55°C 10 min; M-MLV, 42°C 50 min). Final volume: 20 µL.",
+      "zh": "配制反转录反应：使用 500 ng–2 µg RNA，搭配 oligo-dT（针对 mRNA）和随机六聚体引物。按厂家说明操作（如 SuperScript IV：55°C 10 min；M-MLV：42°C 50 min）。终体积 20 µL。",
+      "time": "10–50 min"
+    },
+    {
+      "en": "Dilute cDNA 1:5 to 1:20 with nuclease-free water. For highly expressed genes use 1:20; for low-abundance transcripts use 1:5. Store diluted cDNA at −20°C.",
+      "zh": "用无核酸酶水将 cDNA 稀释 1:5 至 1:20。高表达基因用 1:20，低丰度转录本用 1:5。稀释后的 cDNA 存于 −20°C。"
+    },
+    {
+      "en": "Set up 20 µL qPCR reactions in triplicate: 10 µL 2× SYBR Green Master Mix, 0.4 µL forward primer (10 µM, 200 nM final), 0.4 µL reverse primer (10 µM, 200 nM final), 2 µL cDNA, 7.2 µL nuclease-free water. Include NTC (water instead of cDNA) and reference gene wells.",
+      "zh": "三孔设置 20 µL qPCR 反应：10 µL 2× SYBR Green Master Mix、0.4 µL 正向引物（10 µM，终浓度 200 nM）、0.4 µL 反向引物（10 µM，终浓度 200 nM）、2 µL cDNA、7.2 µL 无核酸酶水。同时设无模板对照（NTC）和内参基因孔。"
+    },
+    {
+      "en": "Seal the plate with optical adhesive film. Centrifuge briefly at 1,000×g for 1 min to eliminate bubbles.",
+      "zh": "用光学封膜密封孔板。短暂 1,000×g 离心 1 min 消除气泡。",
+      "time": "1 min"
+    },
+    {
+      "en": "Run qPCR program: polymerase activation at 95°C for 10 min, then 40 cycles of denaturation 95°C for 15 s and annealing/extension at 60°C for 60 s.",
+      "zh": "运行 qPCR 程序：酶激活 95°C 10 min，然后 40 个循环：变性 95°C 15 s，退火/延伸 60°C 60 s。",
+      "temp": "95°C / 60°C",
+      "time": "10 min / 15 s + 60 s per cycle"
+    },
+    {
+      "en": "Run melt curve analysis (65–95°C, 0.5°C increments) after cycling. A single sharp peak confirms amplification specificity; multiple peaks or broad peaks indicate non-specific products.",
+      "zh": "循环结束后进行溶解曲线分析（65–95°C，每步 0.5°C）。单一尖锐峰确认扩增特异性；多峰或宽峰提示非特异扩增。"
+    },
+    {
+      "en": "Analyze Ct values: ΔCt = Ct(gene of interest) − Ct(reference gene). ΔΔCt = ΔCt(treated) − ΔCt(control). Relative expression = 2^(−ΔΔCt). Report mean ± SD from ≥3 biological replicates.",
+      "zh": "分析 Ct 值：ΔCt = Ct（目的基因）− Ct（内参基因）；ΔΔCt = ΔCt（处理组）− ΔCt（对照组）；相对表达量 = 2^(-ΔΔCt)。报告 ≥3 个生物学重复的均值 ± SD。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "cDNA can be stored at −20°C for up to 6 months before proceeding to qPCR setup.",
+        "zh": "cDNA 可在 −20°C 保存最多 6 个月，随后再进行 qPCR 配板。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Sealed qPCR plate can be stored at 4°C in the dark for up to 2 hours before running.",
+        "zh": "封好的 qPCR 板可在 4°C 避光保存最多 2 小时后再上机运行。"
+      }
+    }
   ]
 }

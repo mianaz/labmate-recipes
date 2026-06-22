@@ -88,5 +88,55 @@
   "usage": {
     "en": "Visualize protein bands in SDS-PAGE gels using Coomassie Brilliant Blue staining.",
     "zh": "考马斯亮蓝染色可视化 SDS-PAGE 胶中的蛋白条带。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Fix gel in 50% methanol/10% acetic acid → stain with 0.1% CBB R-250 → destain with 50% methanol/10% acetic acid then 5% methanol/7% acetic acid until background is clear → store or scan.",
+      "zh": "50% 甲醇/10% 乙酸固定凝胶 → 0.1% CBB R-250 染色 → 50% 甲醇/10% 乙酸脱色，再换 5% 甲醇/7% 乙酸脱至背景清晰 → 保存或扫描成像。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Place SDS-PAGE gel in a clean container. Add fixation solution (50% methanol, 10% glacial acetic acid in ddH₂O) with at least 3× gel volume. Rock gently for 30 min at room temperature.",
+      "zh": "将 SDS-PAGE 凝胶置于干净容器，加入至少 3 倍凝胶体积的固定液（50% 甲醇、10% 冰乙酸），室温轻柔摇晃 30 min。",
+      "time": "30 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Discard fixation solution. Add Coomassie staining solution (0.1% CBB R-250, 50% methanol, 10% acetic acid). Rock on shaker for at least 1 h (or overnight for deeper staining).",
+      "zh": "弃去固定液，加入考马斯染色液（0.1% CBB R-250、50% 甲醇、10% 乙酸），摇床摇晃至少 1 h（过夜染色更深）。",
+      "time": "60 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Discard staining solution. Add destain solution I (50% methanol, 10% acetic acid). Rock for 30 min, then discard.",
+      "zh": "弃去染色液，加入脱色液 I（50% 甲醇、10% 乙酸），摇晃 30 min 后弃去。",
+      "time": "30 min"
+    },
+    {
+      "en": "Add destain solution II (5% methanol, 7% acetic acid). Change solution every 30 min, 2–3 times, until background is clear and protein bands are visible. Adding a crumpled paper towel to the container accelerates dye absorption.",
+      "zh": "加入脱色液 II（5% 甲醇、7% 乙酸），每 30 min 换液一次，换 2–3 次，直至背景清晰、条带可见。容器中放入皱纸巾可加速色素吸附。",
+      "time": "60–90 min"
+    },
+    {
+      "en": "Rinse gel briefly with ddH₂O. Scan or photograph the gel using a gel imaging system. Store gel submerged in ddH₂O or 7% acetic acid in a sealed container at room temperature.",
+      "zh": "ddH₂O 简短冲洗凝胶，用成像仪扫描或拍照。凝胶浸泡在 ddH₂O 或 7% 乙酸中密封保存于室温。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Stained gel (before destaining) can be left in staining solution overnight at room temperature with no loss of quality.",
+        "zh": "染色后的凝胶（脱色前）可在染色液中室温放置过夜，不影响质量。"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Fully destained gel can be stored in ddH₂O or 7% acetic acid at room temperature for weeks.",
+        "zh": "完全脱色后的凝胶可浸泡在 ddH₂O 或 7% 乙酸中室温保存数周。"
+      }
+    }
+  ]
 }

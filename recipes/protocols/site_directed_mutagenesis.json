@@ -101,5 +101,76 @@
     "pcr_standard",
     "heat_shock_transformation",
     "sanger_sequencing_prep"
+  ],
+  "briefSteps": [
+    {
+      "en": "Design back-to-back mutagenic primers via NEBaseChanger → inverse PCR with Q5 polymerase → verify PCR product by gel → KLD reaction (kinase + ligase + DpnI, 5 min) → transform competent cells → pick colonies and sequence-verify.",
+      "zh": "通过 NEBaseChanger 设计背靠背突变引物 → Q5 聚合酶反向 PCR → 凝胶验证 PCR 产物 → KLD 反应（激酶+连接酶+DpnI，5 min）→ 转化感受态细胞 → 挑克隆测序验证。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1 — Design mutagenic primers using NEBaseChanger (nebasechangergui.neb.com). Primers should be back-to-back (5' ends facing away), with the mutation(s) at the 5' end of the forward primer. Recommended Tm ≥ 60°C.",
+      "zh": "第一天 — 使用 NEBaseChanger（nebasechangergui.neb.com）设计突变引物。引物应背靠背排列（5' 端相互背离），突变位点在正向引物的 5' 端。推荐 Tm ≥ 60°C。",
+      "isHeader": false
+    },
+    {
+      "en": "Set up Q5 inverse PCR (25 µL): 12.5 µL Q5 Hot Start 2× Master Mix, 1.25 µL forward primer (10 µM), 1.25 µL reverse primer (10 µM), 1–10 ng plasmid template, nuclease-free water to 25 µL.",
+      "zh": "配制 Q5 反向 PCR（25 µL）：12.5 µL Q5 Hot Start 2× Master Mix、1.25 µL 正向引物（10 µM）、1.25 µL 反向引物（10 µM）、1–10 ng 质粒模板、无核酸酶水补至 25 µL。"
+    },
+    {
+      "en": "Run thermocycler: initial denaturation 98°C for 30 s; 25 cycles of 98°C for 10 s, Tm for 30 s, 72°C for 20–30 s/kb; final extension 72°C for 2 min; hold at 4°C.",
+      "zh": "热循环程序：初始变性 98°C 30 s；25 个循环：98°C 10 s，Tm 30 s，72°C 20–30 s/kb；终末延伸 72°C 2 min；4°C 保温。",
+      "temp": "98°C / Tm / 72°C",
+      "time": "25 cycles"
+    },
+    {
+      "en": "Verify PCR product by running 5 µL on a 1% agarose gel. Expect a linearized plasmid-sized band. If no band or multiple bands, optimize annealing temperature.",
+      "zh": "取 5 µL 跑 1% 琼脂糖凝胶验证 PCR 产物。预期出现线性质粒大小的条带。若无条带或多条带，需优化退火温度。"
+    },
+    {
+      "en": "Set up KLD reaction (5 µL total): 1 µL PCR product, 2 µL 5× KLD Reaction Buffer, 1 µL 10× KLD Enzyme Mix (T4 polynucleotide kinase + T4 ligase + DpnI), 1 µL nuclease-free water. Incubate at room temperature for 5 min.",
+      "zh": "配制 KLD 反应（总体积 5 µL）：1 µL PCR 产物、2 µL 5× KLD 反应缓冲液、1 µL 10× KLD 酶混合液（T4 多核苷酸激酶 + T4 连接酶 + DpnI）、1 µL 无核酸酶水。室温孵育 5 min。",
+      "temp": "25°C",
+      "time": "5 min"
+    },
+    {
+      "en": "Transform 1–5 µL KLD product into 25–50 µL chemically competent E. coli (e.g., NEB 5-alpha). Heat shock at 42°C for 30 s, recover in 950 µL SOC at 37°C for 1 hour with shaking.",
+      "zh": "将 1–5 µL KLD 产物转化至 25–50 µL 化学感受态大肠杆菌（如 NEB 5-alpha）。42°C 热激 30 s，在 950 µL SOC 中 37°C 振荡恢复 1 小时。",
+      "temp": "42°C → 37°C",
+      "time": "30 s + 1 hour"
+    },
+    {
+      "en": "Plate 100 µL of transformed cells onto LB agar + antibiotic plates. Incubate at 37°C overnight (16–18 hours).",
+      "zh": "将 100 µL 转化菌液涂布于含抗生素的 LB 琼脂平板。37°C 培育过夜（16–18 小时）。",
+      "temp": "37°C",
+      "time": "16–18 hours"
+    },
+    {
+      "en": "Day 2 — Pick 4–8 individual colonies. Inoculate into 5 mL LB + antibiotic liquid medium. Grow overnight at 37°C with shaking at 250 rpm.",
+      "zh": "第二天 — 挑取 4–8 个单菌落，接种至 5 mL LB + 抗生素液体培养基中，37°C、250 rpm 振荡过夜培养。",
+      "temp": "37°C",
+      "time": "16 hours"
+    },
+    {
+      "en": "Perform miniprep to isolate plasmid. Submit DNA for Sanger sequencing using a primer flanking the mutation site. Confirm the desired mutation and the absence of unwanted secondary mutations.",
+      "zh": "质粒小提纯化。用覆盖突变位点的引物进行 Sanger 测序。确认目的突变引入且无意外的二次突变。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "PCR product (linearized plasmid) can be stored at 4°C overnight or −20°C for up to 1 week before KLD reaction.",
+        "zh": "PCR 产物（线性化质粒）可在 4°C 保存过夜，或 −20°C 保存最多 1 周，再进行 KLD 反应。"
+      }
+    },
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "KLD reaction product can be stored at −20°C for up to 1 week if transformation cannot be done immediately.",
+        "zh": "若无法立即转化，KLD 反应产物可在 −20°C 保存最多 1 周。"
+      }
+    }
   ]
 }

@@ -117,5 +117,67 @@
     "restriction_digest",
     "dna_ligation",
     "genomic_dna_extraction"
+  ],
+  "briefSteps": [
+    {
+      "en": "Add 1/10 vol 3 M NaOAc pH 5.2 and 2.5 vol ice-cold 100% ethanol (add glycogen carrier for dilute samples), precipitate at −20°C ≥30 min, pellet by centrifugation at 14,000×g for 15–30 min at 4°C, wash with 70% ethanol, air-dry briefly, and resuspend in TE or water.",
+      "zh": "加入 1/10 体积 3 M NaOAc（pH 5.2）和 2.5 倍体积冰冷 100% 乙醇（稀释样品需加 glycogen 载体），−20°C 沉淀 ≥30 min，4°C 14,000×g 离心 15–30 min，70% 乙醇洗涤，短暂风干，最后溶于 TE 或水中。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Transfer nucleic acid sample to a clean 1.5 mL microcentrifuge tube. For dilute samples (<20 ng/µL) or RNA, add 1 µL glycogen (20 mg/mL) as a co-precipitant to improve pellet visibility and recovery.",
+      "zh": "将核酸样品转移至干净的 1.5 mL 离心管中。对于稀释样品（<20 ng/µL）或 RNA，加入 1 µL glycogen（20 mg/mL）作为共沉淀剂，提高沉淀可见度和回收率。"
+    },
+    {
+      "en": "Add 1/10 volume of 3 M sodium acetate pH 5.2 (e.g., 5 µL per 50 µL sample). For DNA, alternatives include 0.2 M NaCl or 2 M ammonium acetate (helps remove dNTPs). Mix thoroughly.",
+      "zh": "加入 1/10 体积的 3 M 醋酸钠（pH 5.2）（如每 50 µL 样品加 5 µL）。DNA 可替换为 0.2 M NaCl 或 2 M 醋酸铵（可去除 dNTP）。充分混匀。"
+    },
+    {
+      "en": "Add 2.5 volumes of ice-cold 100% ethanol (e.g., 137.5 µL per 55 µL sample after salt addition). Mix by vortexing or inverting 10 times.",
+      "zh": "加入 2.5 倍体积冰冷 100% 乙醇（如 55 µL 样品加 137.5 µL）。涡旋振荡或颠倒混匀 10 次。"
+    },
+    {
+      "en": "Incubate at −20°C for at least 30 min. For low-abundance nucleic acids or short fragments (<100 bp), incubate overnight at −20°C or 30 min at −80°C to maximize recovery.",
+      "zh": "−20°C 孵育至少 30 min。对于低丰度核酸或短片段（<100 bp），在 −20°C 孵育过夜或 −80°C 孵育 30 min 以最大化回收率。",
+      "temp": "−20°C",
+      "time": "≥30 min"
+    },
+    {
+      "en": "Centrifuge at 14,000×g for 15–30 min at 4°C. DNA/RNA pellet will form at the bottom of the tube (may be invisible for dilute samples — mark the outer side of tube before centrifugation to track pellet location).",
+      "zh": "4°C、14,000×g 离心 15–30 min。DNA/RNA 沉淀在管底形成（稀释样品可能肉眼不可见——离心前在管外侧做标记以定位沉淀）。",
+      "temp": "4°C",
+      "time": "15–30 min"
+    },
+    {
+      "en": "Carefully remove and discard the supernatant by pipetting or decanting without disturbing the pellet. If using glycogen, the pellet will appear white or blue.",
+      "zh": "用吸管小心吸去或倾倒上清，勿触碰沉淀。加入 glycogen 时，沉淀呈白色或蓝色。"
+    },
+    {
+      "en": "Add 500 µL ice-cold 70% ethanol to wash the pellet and remove residual salt. Centrifuge at 14,000×g for 5 min at 4°C. Carefully remove supernatant.",
+      "zh": "加入 500 µL 冰冷 70% 乙醇洗涤沉淀，去除残余盐。4°C、14,000×g 离心 5 min，小心去除上清。",
+      "temp": "4°C",
+      "time": "5 min"
+    },
+    {
+      "en": "Briefly air-dry the pellet at room temperature for 5–10 min (or dry in a vacuum concentrator at low heat for 2 min). Do not over-dry — a translucent pellet indicates it is ready; a white, powdery pellet is over-dried and may be difficult to dissolve.",
+      "zh": "室温风干沉淀 5–10 min（或真空浓缩仪低温干燥 2 min）。不要过度干燥——半透明沉淀表示干燥程度合适；白色粉末状沉淀表示过度干燥，可能难以溶解。",
+      "time": "5–10 min"
+    },
+    {
+      "en": "Resuspend the pellet in an appropriate volume of TE buffer (for long-term storage) or nuclease-free water (for enzymatic reactions). Pipette gently and incubate at 55°C for 5 min if pellet is difficult to dissolve. Quantify by NanoDrop.",
+      "zh": "将沉淀溶于适量 TE 缓冲液（长期保存）或无核酸酶水（酶促反应）中。若沉淀难以溶解，轻柔吹打并于 55°C 孵育 5 min。用 NanoDrop 定量。",
+      "temp": "55°C",
+      "time": "5 min"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Sample in ethanol can be stored at −20°C for up to 1 week (or −80°C for up to 1 month) before centrifugation.",
+        "zh": "乙醇沉淀液可在 −20°C 保存最多 1 周（或 −80°C 保存最多 1 个月），再进行离心步骤。"
+      }
+    }
   ]
 }

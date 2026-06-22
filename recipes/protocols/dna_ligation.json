@@ -114,5 +114,58 @@
     "restriction_digest",
     "heat_shock_transformation",
     "gel_extraction"
+  ],
+  "briefSteps": [
+    {
+      "en": "Calculate insert mass for 1:3–5 molar ratio, assemble vector + insert + T4 buffer + ligase on ice, incubate (sticky ends: RT 10 min or 16°C overnight; blunt ends: 16°C overnight), heat-inactivate at 65°C 10 min, then transform 2–5 µL.",
+      "zh": "计算 1:3–5 摩尔比所需 insert 用量，冰上配制 vector + insert + T4 buffer + 连接酶，孵育（粘性末端：室温 10 min 或 16°C 过夜；平末端：16°C 过夜），65°C 热灭活 10 min，转化 2–5 µL。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Calculate insert mass needed: ng insert = (ng vector × insert bp / vector bp) × molar ratio. Use a 1:3–1:5 molar ratio (vector:insert) for sticky-end ligation, or 1:5–1:10 for blunt-end ligation. Typical reaction uses 50 ng linearized vector.",
+      "zh": "计算所需 insert 质量：ng insert =（ng vector × insert bp / vector bp）× 摩尔比。粘性末端连接使用 1:3–1:5 摩尔比（vector:insert），平末端连接使用 1:5–1:10。典型反应使用 50 ng 线性化载体。"
+    },
+    {
+      "en": "Assemble ligation reaction on ice (20 µL total): 2 µL 10× T4 Ligase Buffer (contains ATP — do not freeze-thaw repeatedly), insert DNA, vector DNA (50 ng), 1 µL T4 DNA Ligase (400 U NEB), and nuclease-free water to 20 µL. Add ligase last.",
+      "zh": "冰上配制连接反应（总体积 20 µL）：2 µL 10× T4 连接酶 buffer（含 ATP——勿反复冻融）、insert DNA、载体 DNA（50 ng）、1 µL T4 DNA 连接酶（NEB 400 U）、无核酸酶水补至 20 µL。最后加入连接酶。"
+    },
+    {
+      "en": "Set up control reactions in parallel: (1) vector only + ligase (checks vector self-ligation background), (2) vector + insert without ligase (checks non-enzymatic ligation).",
+      "zh": "同时设对照反应：（1）仅载体 + 连接酶（检测载体自连背景），（2）载体 + insert 但不加连接酶（检测非酶促连接）。"
+    },
+    {
+      "en": "For sticky-end ligation: incubate at room temperature for 10 min, or at 16°C overnight for maximum efficiency. For blunt-end ligation: incubate at 16°C overnight (or room temperature 2 hours with high-concentration ligase).",
+      "zh": "粘性末端连接：室温孵育 10 min，或 16°C 过夜以获最佳效率。平末端连接：16°C 过夜（或使用高浓度连接酶时室温 2 小时）。",
+      "temp": "16–25°C",
+      "time": "10 min to overnight"
+    },
+    {
+      "en": "Heat-inactivate the ligase at 65°C for 10 min. Allow reaction to cool to room temperature before transformation.",
+      "zh": "65°C 热灭活连接酶 10 min。冷却至室温后再进行转化。",
+      "temp": "65°C",
+      "time": "10 min"
+    },
+    {
+      "en": "Transform 2–5 µL of ligation product into 25–50 µL competent E. coli by heat-shock (42°C 30 s). Recover in 950 µL SOC at 37°C for 1 hour. Plate on selective LB agar.",
+      "zh": "将 2–5 µL 连接产物转化至 25–50 µL 感受态大肠杆菌（42°C 热激 30 s）。在 950 µL SOC 中 37°C 恢复 1 小时，涂布含抗生素 LB 平板。",
+      "temp": "42°C → 37°C",
+      "time": "30 s + 1 hour"
+    },
+    {
+      "en": "Incubate plates at 37°C overnight. Count colonies. Compare test plates to control plates. Screen colonies by colony PCR or diagnostic restriction digest. Confirm positive clones by Sanger sequencing.",
+      "zh": "37°C 过夜培育。计数菌落，与对照平板比较。用菌落 PCR 或诊断性酶切筛选菌落，Sanger 测序确认阳性克隆。",
+      "temp": "37°C",
+      "time": "16–18 hours"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Ligation product can be stored at −20°C for up to 1 week before transformation.",
+        "zh": "连接产物可在 −20°C 保存最多 1 周再进行转化。"
+      }
+    }
   ]
 }

@@ -90,6 +90,61 @@
     }
   ],
   "stoppingPoints": [],
+  "briefSteps": [
+    {
+      "en": "Harvest cells (floating + adherent) → wash cold PBS → resuspend 1×10⁵ cells in 100 µL binding buffer → add 5 µL Annexin V-FITC + 5 µL PI → incubate 15 min RT dark → add 400 µL binding buffer → analyze by flow cytometry within 1 h",
+      "zh": "收集细胞（漂浮 + 贴壁）→ 冷 PBS 洗涤 → 取 1×10⁵ 细胞重悬于 100 µL 结合缓冲液 → 加 5 µL Annexin V-FITC + 5 µL PI → 室温避光孵育 15 min → 加 400 µL 结合缓冲液 → 1 h 内流式分析"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Induce apoptosis with your agent of choice (e.g., staurosporine 1 µM for 6 h as positive control); do not discard floating cells as they contain early/late apoptotic populations.",
+      "zh": "用目标试剂诱导凋亡（阳性对照：星形孢菌素 1 µM 孵育 6 h）；不要丢弃漂浮细胞，其中含早期/晚期凋亡群体。"
+    },
+    {
+      "en": "Collect floating cells from medium into a 15 mL tube; trypsinize adherent cells with 0.25% trypsin-EDTA for 2–3 min at 37°C and add to the same tube (combine floating + adherent populations).",
+      "zh": "将培养基中漂浮细胞收集至 15 mL 离心管；用 0.25% 胰酶-EDTA 消化贴壁细胞（37°C 2–3 min），合并至同一管（漂浮 + 贴壁群体合并）。",
+      "time": "2–3 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Centrifuge at 300×g for 5 min at 4°C; carefully aspirate supernatant.",
+      "zh": "4°C 300×g 离心 5 min；小心吸去上清。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash pellet twice with ice-cold 1× PBS (300×g, 5 min, 4°C each wash); aspirate supernatant after each wash.",
+      "zh": "用冰冷 1× PBS 洗涤沉淀两次（每次 300×g、5 min、4°C）；每次洗涤后吸去上清。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend 1×10⁵ cells per sample in 100 µL Annexin V binding buffer (10 mM HEPES pH 7.4, 140 mM NaCl, 2.5 mM CaCl₂); CaCl₂ is essential for Annexin V binding.",
+      "zh": "每管取 1×10⁵ 个细胞重悬于 100 µL Annexin V 结合缓冲液（10 mM HEPES pH 7.4、140 mM NaCl、2.5 mM CaCl₂）；CaCl₂ 是 Annexin V 结合所必需的。"
+    },
+    {
+      "en": "Add 5 µL FITC-conjugated Annexin V and 5 µL propidium iodide (PI, 50 µg/mL stock); mix gently; protect from light.",
+      "zh": "加入 5 µL FITC 偶联 Annexin V 和 5 µL PI（储液 50 µg/mL）；轻柔混匀；避光。"
+    },
+    {
+      "en": "Incubate at room temperature for 15 min in the dark.",
+      "zh": "室温避光孵育 15 min。",
+      "time": "15 min"
+    },
+    {
+      "en": "Add 400 µL Annexin V binding buffer to each tube; gently mix.",
+      "zh": "每管加入 400 µL Annexin V 结合缓冲液；轻柔混匀。"
+    },
+    {
+      "en": "Analyze by flow cytometry within 1 h on 488 nm laser; acquire ≥10,000 events; set up compensation controls (Annexin V single-stain and PI single-stain).",
+      "zh": "1 h 内在 488 nm 激光流式细胞仪上分析；每样品采集 ≥10,000 个事件；设置补偿对照（Annexin V 单染和 PI 单染）。"
+    },
+    {
+      "en": "Gate and interpret quadrants: AV⁻/PI⁻ = live cells; AV⁺/PI⁻ = early apoptosis; AV⁺/PI⁺ = late apoptosis/secondary necrosis; AV⁻/PI⁺ = necrosis.",
+      "zh": "分象限分析：AV⁻/PI⁻ = 活细胞；AV⁺/PI⁻ = 早期凋亡；AV⁺/PI⁺ = 晚期凋亡/继发性坏死；AV⁻/PI⁺ = 坏死。"
+    }
+  ],
   "safeStops": [
     {
       "afterStep": 0,

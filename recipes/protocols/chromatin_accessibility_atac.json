@@ -107,5 +107,87 @@
     "chip_protocol",
     "cut_and_run",
     "rnaseq_library_prep"
+  ],
+  "briefSteps": [
+    {
+      "en": "Harvest 50,000 viable cells → wash → lyse nuclei in cold lysis buffer with 0.1% NP-40 → pellet nuclei → resuspend in transposition mix with Tn5 transposase (37°C, 30 min) → purify DNA → PCR amplify library (cycles determined by qPCR) → size-select 150–700 bp → QC on Bioanalyzer for nucleosomal ladder",
+      "zh": "收取 50,000 个活细胞 → 洗涤 → 冷裂解液（0.1% NP-40）裂解细胞核 → 离心收核 → Tn5 转座反应（37°C 30 min）→ DNA 纯化 → qPCR 确定循环数后 PCR 扩增文库 → 150–700 bp 片段选择 → Bioanalyzer QC 验证核小体梯度"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Nuclei Isolation and Tagmentation",
+      "zh": "第1天：细胞核分离与Tn5标记",
+      "isHeader": true
+    },
+    {
+      "en": "Harvest 50,000–100,000 viable cells (>90% viability). Pellet at 500×g for 5 min at 4°C; discard supernatant. Fresh cells are strongly preferred over frozen.",
+      "zh": "收取 50,000–100,000 个活细胞（活率 >90%），500×g 4°C 离心 5 min 沉淀，弃上清。强烈建议使用新鲜细胞。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash cells once with 50 µL ice-cold PBS; pellet at 500×g for 5 min at 4°C.",
+      "zh": "用 50 µL 冰冷 PBS 洗涤一次，500×g 4°C 离心 5 min。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Lyse nuclei: resuspend pellet in 50 µL cold lysis buffer (10 mM Tris-HCl pH 7.4, 10 mM NaCl, 3 mM MgCl₂, 0.1% NP-40); pipette 10× gently and immediately pellet nuclei at 500×g for 10 min at 4°C. Do NOT over-lyse.",
+      "zh": "裂解细胞核：将沉淀重悬于 50 µL 冷裂解液（10 mM Tris-HCl pH 7.4、10 mM NaCl、3 mM MgCl₂、0.1% NP-40），轻柔吹打 10 次后立即 500×g 4°C 离心 10 min 收核。切勿过度裂解。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Discard supernatant carefully; resuspend nuclei in 50 µL tagmentation reaction mix: 25 µL 2× Tagment DNA Buffer + 2.5 µL Tn5 Transposase (Illumina TDE1) + 22.5 µL nuclease-free water.",
+      "zh": "小心弃上清；将细胞核重悬于 50 µL 转座反应液：25 µL 2× Tagment DNA Buffer + 2.5 µL Tn5 转座酶（Illumina TDE1）+ 22.5 µL 无核酸酶水。"
+    },
+    {
+      "en": "Incubate tagmentation reaction at 37°C for 30 min with gentle mixing (300 rpm on thermomixer). Stop by adding 5 µL 0.2% SDS.",
+      "zh": "37°C 孵育转座反应 30 min（热混仪 300 rpm 轻摇）。加入 5 µL 0.2% SDS 终止反应。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Purify tagmented DNA using MinElute PCR Purification Kit or Zymo DNA Clean & Concentrator; elute in 10–12 µL elution buffer. Quantify by Qubit.",
+      "zh": "使用 MinElute PCR 纯化试剂盒或 Zymo DNA Clean & Concentrator 纯化标记 DNA，洗脱至 10–12 µL。Qubit 定量。"
+    },
+    {
+      "en": "Day 2: Library Amplification and QC",
+      "zh": "第2天：文库扩增与质控",
+      "isHeader": true
+    },
+    {
+      "en": "Set up qPCR amplification side reaction (25 µL) with tagmented DNA + Nextera index primers + NEBNext HiFi PCR Master Mix; use Ct to determine optimal cycle number (Ct − 1 cycles; typically 9–12 cycles total).",
+      "zh": "用 qPCR 侧管（25 µL）预扩增：标记 DNA + Nextera 索引引物 + NEBNext HiFi Master Mix；根据 Ct 值确定最优循环数（Ct−1 循环，通常共 9–12 个循环）。"
+    },
+    {
+      "en": "Amplify the main library: 72°C 5 min (extension), 98°C 30 s, then N cycles of (98°C 10 s, 63°C 30 s, 72°C 1 min). Use NEBNext Ultra II or similar high-fidelity polymerase.",
+      "zh": "扩增主文库：72°C 5 min，98°C 30 s，再进行 N 个循环（98°C 10 s → 63°C 30 s → 72°C 1 min）。使用 NEBNext Ultra II 或同等高保真聚合酶。"
+    },
+    {
+      "en": "Purify amplified library with 1.2× AMPure XP (or SPRI) beads to remove primers and small fragments; size-select for 150–700 bp fragments. Elute in 20 µL EB.",
+      "zh": "用 1.2× AMPure XP（SPRI）磁珠纯化文库，去除引物和小片段；保留 150–700 bp 片段。洗脱至 20 µL EB。"
+    },
+    {
+      "en": "QC library on Bioanalyzer (High Sensitivity DNA chip) or TapeStation: expected nucleosomal ladder pattern with peaks at ~200 bp (nucleosome-free), ~400 bp (mono-nucleosome), and ~600 bp (di-nucleosome). Quantify by qPCR for sequencing.",
+      "zh": "Bioanalyzer（高灵敏 DNA 芯片）或 TapeStation QC：预期出现核小体梯度条带，主要峰在约 200 bp（无核小体）、~400 bp（单核小体）、~600 bp（双核小体）。qPCR 定量后上机测序。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Purified tagmented DNA can be stored at −20°C for up to 1 week before PCR amplification.",
+        "zh": "纯化后的转座标记 DNA 可 −20°C 保存最长 1 周，待 PCR 扩增。"
+      }
+    },
+    {
+      "afterStep": 10,
+      "note": {
+        "en": "Final amplified and size-selected library can be stored at −20°C for up to 1 month.",
+        "zh": "最终扩增并筛选大小后的文库可 −20°C 保存最长 1 个月。"
+      }
+    }
   ]
 }

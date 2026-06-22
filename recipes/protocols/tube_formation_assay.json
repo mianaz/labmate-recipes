@@ -74,6 +74,75 @@
     }
   ],
   "stoppingPoints": [],
+  "briefSteps": [
+    {
+      "en": "Thaw growth factor-reduced Matrigel on ice overnight → coat pre-chilled 96-well plate with 50 µL/well → polymerize 30 min at 37°C → seed 1–2×10⁴ HUVECs (passage 2–6) per well ± treatments → incubate 4–8 h at 37°C → image by phase-contrast → quantify tube length, branch points, and meshes with ImageJ Angiogenesis Analyzer",
+      "zh": "冰上过夜融化低生长因子 Matrigel → 每孔 50 µL 包被预冷 96 孔板 → 37°C 聚合 30 min → 每孔铺 1–2×10⁴ HUVECs（2–6 代）± 处理 → 37°C 孵育 4–8 h → 相差显微镜拍照 → ImageJ Angiogenesis Analyzer 定量管长、分支点和网格"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day Before – Matrigel Thawing",
+      "zh": "前一天 – 融化 Matrigel",
+      "isHeader": true
+    },
+    {
+      "en": "Thaw growth factor-reduced Matrigel on ice at 4°C overnight (never at room temperature — it polymerizes irreversibly above 10°C); keep all tips, plates, and tubes on ice throughout the procedure.",
+      "zh": "将低生长因子 Matrigel 在冰上 4°C 过夜融化（切勿在室温融化——10°C 以上会不可逆聚合）；操作全程保持枪头、孔板和离心管置于冰上。"
+    },
+    {
+      "en": "Assay Day – Matrigel Coating",
+      "zh": "实验日 – Matrigel 包被",
+      "isHeader": true
+    },
+    {
+      "en": "Pre-chill a 96-well plate on ice for 15 min; add 50 µL growth factor-reduced Matrigel per well using pre-chilled tips; avoid bubbles; work quickly to prevent premature gelation.",
+      "zh": "将 96 孔板在冰上预冷 15 min；用预冷枪头每孔加 50 µL 低生长因子 Matrigel；避免气泡；动作要快防止提前凝胶化。",
+      "time": "15 min"
+    },
+    {
+      "en": "Transfer plate to 37°C incubator and allow Matrigel to polymerize for 30 min; do not disturb plate during polymerization.",
+      "zh": "将孔板转入 37°C 培养箱，孵育 30 min 使 Matrigel 聚合；聚合过程中不要晃动孔板。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Cell Seeding",
+      "zh": "铺板",
+      "isHeader": true
+    },
+    {
+      "en": "Harvest HUVECs at passage 2–6 (higher passages show reduced tube-forming capacity); resuspend in serum-free or EBM-2 basal medium at 1–2×10⁵ cells/mL.",
+      "zh": "收集 2–6 代 HUVECs（传代越高管形成能力越弱）；用无血清或 EBM-2 基础培养基重悬至 1–2×10⁵ 细胞/mL。"
+    },
+    {
+      "en": "Seed 100–150 µL (1–2×10⁴ cells) per well on polymerized Matrigel; immediately add treatments (e.g., VEGF 50 ng/mL as positive control, anti-angiogenic agents at desired concentrations); include untreated and vehicle controls.",
+      "zh": "每孔铺 100–150 µL（1–2×10⁴ 细胞）于聚合好的 Matrigel 上；立即加入处理（如阳性对照 VEGF 50 ng/mL，或所需浓度的抗血管生成药物）；设未处理和溶剂对照。"
+    },
+    {
+      "en": "Incubate at 37°C, 5% CO₂; tube formation typically begins within 2–4 h and reaches maximum complexity at 4–8 h; collapse occurs after 12–24 h.",
+      "zh": "37°C、5% CO₂ 孵育；管形成通常在 2–4 h 内开始，4–8 h 达到最复杂状态；12–24 h 后开始崩塌。",
+      "time": "4–8 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Image at the optimal timepoint (4–8 h) using phase-contrast microscopy (4× or 5× objective); capture 3–5 images per well at random positions.",
+      "zh": "在最佳时间点（4–8 h）用相差显微镜（4× 或 5× 物镜）拍照；每孔随机拍 3–5 张图。"
+    },
+    {
+      "en": "Quantify tube formation parameters using ImageJ Angiogenesis Analyzer plugin: measure total tube length, number of branch points (junctions), number of closed meshes, and number of master segments; report all parameters normalized to control.",
+      "zh": "用 ImageJ Angiogenesis Analyzer 插件定量管形成参数：测量总管长、分支点（节点）数、封闭网格数和主干节段数；所有参数归一化至对照组后报告。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Matrigel-coated plate can be kept at 37°C for up to 1 h before seeding cells if needed",
+        "zh": "如需要，铺好 Matrigel 的孔板可在 37°C 最多放置 1 h 再铺细胞"
+      }
+    }
+  ],
   "usage": {
     "en": "Assess angiogenic potential by endothelial cell tube formation on Matrigel.",
     "zh": "Matrigel 上内皮细胞管腔形成实验评估血管生成能力。"

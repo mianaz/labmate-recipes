@@ -110,5 +110,76 @@
     "competent_cells_cacl2",
     "miniprep_protocol",
     "colony_pcr"
+  ],
+  "briefSteps": [
+    {
+      "en": "Thaw competent cells on ice → add plasmid DNA → ice 30 min → heat shock 42°C 45 s → ice 2 min → add SOC 950 µL → recover 37°C 1 h → plate on selective LB agar → incubate 37°C overnight",
+      "zh": "冰上解冻感受态细胞 → 加质粒 DNA → 冰浴 30 min → 42°C 热激 45 s → 冰浴 2 min → 加 950 µL SOC → 37°C 恢复 1 h → 涂含抗生素 LB 平板 → 37°C 过夜培养"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Thaw one aliquot of chemically competent cells (50 µL) on ice for 5–10 min. Do not thaw at room temperature or by hand-warming.",
+      "zh": "将一管感受态细胞（50 µL）在冰上解冻 5–10 min，切勿室温或手温解冻。",
+      "isHeader": false,
+      "time": "5–10 min"
+    },
+    {
+      "en": "Add 1–5 µL of plasmid DNA (1–50 ng total) or 5 µL of ligation product directly to the cells. Gently flick the tube 3–4 times to mix — do not pipette up and down.",
+      "zh": "向感受态细胞中加入 1–5 µL 质粒 DNA（1–50 ng 总量）或 5 µL 连接产物，轻弹管底 3–4 次混匀，切勿反复吹打。",
+      "isHeader": false
+    },
+    {
+      "en": "Incubate on ice for 30 min without agitation.",
+      "zh": "冰浴静置孵育 30 min，不要晃动。",
+      "isHeader": false,
+      "time": "30 min"
+    },
+    {
+      "en": "Transfer tube to a 42°C water bath or heat block; heat shock for exactly 42–45 s. Do not exceed 60 s.",
+      "zh": "将管子转移至 42°C 水浴或金属浴，准确热激 42–45 s，不超过 60 s。",
+      "isHeader": false,
+      "time": "45 s",
+      "temp": "42°C"
+    },
+    {
+      "en": "Immediately return the tube to ice and chill for exactly 2 min. This step is critical for recovery.",
+      "zh": "立即将管子放回冰上，冰浴 2 min（此步骤至关重要，不可省略）。",
+      "isHeader": false,
+      "time": "2 min"
+    },
+    {
+      "en": "Add 950 µL of pre-warmed SOC medium (37°C) to the tube; cap and mix gently.",
+      "zh": "加入 950 µL 预热至 37°C 的 SOC 培养基，盖盖轻轻混匀。",
+      "isHeader": false
+    },
+    {
+      "en": "Incubate at 37°C, 225 rpm for 1 h (Amp resistance) or 1.5 h (Kan/Cm resistance) to allow expression of the antibiotic resistance gene.",
+      "zh": "37°C、225 rpm 振荡恢复培养 1 h（Amp 抗性）或 1.5 h（Kan/Cm 抗性），使抗生素抗性基因得以表达。",
+      "isHeader": false,
+      "time": "1–1.5 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Plate 50–200 µL of the recovery culture onto LB agar plates containing the appropriate antibiotic; spread evenly with a cell spreader. For low-efficiency transformations, centrifuge and concentrate the cells before plating.",
+      "zh": "取 50–200 µL 恢复菌液涂布含相应抗生素的 LB 琼脂平板，用涂板棒均匀铺开；若转化效率低，可离心浓缩后再涂板。",
+      "isHeader": false
+    },
+    {
+      "en": "Invert plates and incubate at 37°C overnight (12–16 h) until colonies are 1–2 mm in diameter.",
+      "zh": "倒置平板，37°C 过夜培养 12–16 h 至菌落直径达 1–2 mm。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Plates with colonies can be sealed with Parafilm and stored at 4°C for up to 1 week.",
+        "zh": "长有菌落的平板用 Parafilm 封好，4°C 可保存最多 1 周。"
+      }
+    }
   ]
 }

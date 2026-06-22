@@ -11,6 +11,74 @@
     "bioenergetics",
     "oxidative phosphorylation"
   ],
+  "briefSteps": [
+    {
+      "en": "Collect tissue or cells on ice → mince and wash in isolation buffer → Dounce homogenize → remove debris at 600×g → pellet mitochondria at 7,000×g → wash pellet 2–3× → optional Percoll gradient purification → resuspend in assay buffer → verify integrity by JC-1 or cytochrome c oxidase activity → use within 4–6 h",
+      "zh": "冰上收集组织或细胞 → 切碎并用分离缓冲液清洗 → Dounce 匀浆 → 600×g 去除细胞碎片 → 7,000×g 沉淀线粒体 → 洗涤沉淀 2–3 次 → 可选 Percoll 梯度纯化 → 重悬于检测缓冲液 → JC-1 或细胞色素 c 氧化酶活性验证完整性 → 4–6 h 内使用"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Collect 0.5–2 g tissue (liver or heart) or ≥5×10⁷ cultured cells. Keep samples on ice at all times. Pre-chill all equipment: Dounce homogenizer, centrifuge tubes, rotors, and buffers. All steps must be performed at 4°C.",
+      "zh": "收集 0.5–2 g 组织（肝脏或心脏）或 ≥5×10⁷ 培养细胞，全程冰上保存。预冷所有设备：Dounce 匀浆器、离心管、转头和缓冲液。所有步骤须在 4°C 进行。",
+      "temp": "4°C"
+    },
+    {
+      "en": "For tissue: mince with scissors into small pieces (<1 mm) in isolation buffer (250 mM sucrose, 10 mM HEPES pH 7.4, 1 mM EGTA, 0.1% BSA). Wash 3× with ice-cold buffer to remove blood and fat. Transfer to prechilled Dounce homogenizer with 5–10 mL buffer per gram tissue.",
+      "zh": "组织：用剪刀切成小块（<1 mm），置于分离缓冲液（250 mM 蔗糖、10 mM HEPES pH 7.4、1 mM EGTA、0.1% BSA）中。冰冷缓冲液洗涤 3 次去除血液和脂肪。转入预冷 Dounce 匀浆器，每克组织加 5–10 mL 缓冲液。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Homogenize with 10–15 strokes using the tight-fitting (type B) pestle with gentle, even pressure. Over-homogenization damages mitochondrial membranes. For cultured cells: use N₂ cavitation at 1,000 psi for 10 min at 4°C, or pass through 25G needle × 10 strokes.",
+      "zh": "用紧配合（B 型）杵轻柔均匀推拉 10–15 次匀浆。过度匀浆损伤线粒体膜。培养细胞：氮气空化（1,000 psi，4°C 10 min），或 25G 注射针头推拉 10 次。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Remove cell debris and unbroken cells: centrifuge at 600×g for 10 min at 4°C. Carefully transfer supernatant (post-nuclear supernatant, PNS) to a new tube. Discard pellet (nuclei and unbroken cells). Repeat if pellet is large.",
+      "zh": "去除细胞碎片和未破碎细胞：600×g、4°C 离心 10 min。小心将上清（核后上清，PNS）转至新管。弃沉淀（细胞核和未破碎细胞）。沉淀较大时重复一次。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Pellet crude mitochondria: centrifuge PNS at 7,000×g for 10 min at 4°C. The resulting supernatant is the cytoplasmic/ER fraction. Carefully discard supernatant without disturbing the reddish-brown mitochondrial pellet.",
+      "zh": "沉淀粗线粒体：PNS 在 7,000×g、4°C 离心 10 min。上清为细胞质/内质网组分。小心去除上清，勿扰动红棕色线粒体沉淀。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash mitochondria: gently resuspend pellet in 5 mL isolation buffer and centrifuge again at 7,000×g for 10 min at 4°C. Repeat 2–3 times until the pellet is tighter and the supernatant is clear (removes myoglobin, cytochrome c, and ER contamination).",
+      "zh": "洗涤线粒体：轻柔重悬沉淀于 5 mL 分离缓冲液，再次 7,000×g、4°C 离心 10 min。重复 2–3 次直至沉淀更紧实且上清澄清（去除肌红蛋白、细胞色素 c 和内质网污染）。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Optional Percoll gradient purification for higher purity: layer sample over 18%/30% discontinuous Percoll gradient in isolation buffer. Centrifuge at 95,000×g for 30 min at 4°C (SW-41 Ti rotor). Mitochondria band at 18/30% interface. Collect band, dilute 1:5 in buffer, wash by centrifugation at 6,000×g × 10 min (×2).",
+      "zh": "可选 Percoll 梯度纯化（提高纯度）：将样品铺于 18%/30% 不连续 Percoll 梯度（分离缓冲液配制）上。95,000×g、4°C 离心 30 min（SW-41 Ti 转头）。线粒体聚集在 18/30% 界面。收集条带，1:5 稀释后 6,000×g × 10 min 洗涤 2 次。",
+      "time": "90 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend final mitochondrial pellet in assay buffer (250 mM sucrose, 10 mM HEPES pH 7.4, 1 mM EGTA; omit BSA for functional assays). Quantify protein by BCA assay. Typical yield: 1–10 mg/mL protein.",
+      "zh": "将最终线粒体沉淀重悬于检测缓冲液（250 mM 蔗糖、10 mM HEPES pH 7.4、1 mM EGTA；功能实验不加 BSA）。BCA 法定量蛋白。典型产量：1–10 mg/mL 蛋白。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Assess mitochondrial integrity and function: stain with JC-1 (healthy: red aggregates at >590 nm; depolarized: green monomers at 529 nm) or measure cytochrome c oxidase activity ± detergent. Alternatively, measure oxygen consumption rate (OCR) using Seahorse XF analyzer or Clark electrode. Use isolated mitochondria within 4–6 h.",
+      "zh": "评估线粒体完整性和功能：JC-1 染色（健康：>590 nm 红色聚集体；去极化：529 nm 绿色单体）或 ± 去污剂测细胞色素 c 氧化酶活性。也可用 Seahorse XF 仪或 Clark 电极测氧耗速率（OCR）。分离后 4–6 h 内使用。",
+      "time": "60 min"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Washed mitochondrial pellet can be snap-frozen in liquid N₂ and stored at −80°C in isolation buffer for up to 1 month. Note: freeze-thaw disrupts inner membrane integrity; do not use frozen mitochondria for functional assays.",
+        "zh": "洗涤后的线粒体沉淀可液氮速冻后 −80°C 储存最多 1 个月。注意：冻融破坏内膜完整性，冷冻线粒体不可用于功能性实验。"
+      }
+    }
+  ],
   "components": [
     {
       "name": "1. Collect tissue (0.5–2 g liver/heart) or cells (≥5×10⁷); keep ice-cold",
@@ -104,7 +172,6 @@
     "bca_protein_assay"
   ],
   "ref": "Frezza et al. (2007) Nat Protoc 2:287–295; Wieckowski et al. (2009) Nat Protoc 4:1582–1590",
-  "doi": "10.1038/nprot.2007.44",
   "discipline": [
     "cell",
     "biochemistry"

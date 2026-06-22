@@ -12,6 +12,83 @@
     "cell biology",
     "protein localization"
   ],
+  "briefSteps": [
+    {
+      "en": "Wash and pellet cells → lyse with 0.1% NP-40 buffer on ice → pellet nuclei at 600×g → save cytoplasmic supernatant → wash nuclei 2× → extract nuclear proteins with high-salt buffer → optional 100,000×g ultracentrifuge for membrane fraction → quantify all fractions → verify by western blot with compartment markers",
+      "zh": "清洗并收集细胞 → 冰上 0.1% NP-40 裂解液裂解 → 600×g 沉淀细胞核 → 保留细胞质上清 → 洗涤细胞核 2 次 → 高盐缓冲液提取核蛋白 → 可选 100,000×g 超速离心获取膜组分 → 定量所有组分 → WB 用区室标志蛋白验证"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Wash cells twice with ice-cold PBS. Collect by scraping (adherent cells) or centrifuge at 500×g for 5 min at 4°C (suspension cells). Start with ≥2×10⁷ cells. Work on ice throughout.",
+      "zh": "用冰冷 PBS 洗涤细胞两次。贴壁细胞用细胞刮刀收集，悬浮细胞 500×g、4°C 离心 5 min 收集。起始量 ≥2×10⁷ 细胞。全程冰上操作。",
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend cell pellet in nuclei isolation buffer (10 mM HEPES pH 7.9, 10 mM KCl, 0.1 mM EDTA, 0.1% NP-40 + protease inhibitors) at 200 µL per 10⁷ cells. Pipette gently 10 times. Incubate on ice for 10–15 min. Do NOT vortex.",
+      "zh": "每 10⁷ 细胞加 200 µL 核分离缓冲液（10 mM HEPES pH 7.9、10 mM KCl、0.1 mM EDTA、0.1% NP-40 + 蛋白酶抑制剂）重悬。轻柔吹打 10 次。冰上孵育 10–15 min。不要涡旋。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Pellet nuclei by centrifugation at 600×g for 5 min at 4°C. Transfer supernatant to a fresh tube — this is the cytoplasmic fraction. Verify nuclear integrity by microscopy (nuclei appear dark and intact in pellet).",
+      "zh": "600×g、4°C 离心 5 min 沉淀细胞核。将上清转至新管——即细胞质组分。显微镜验证核完整性（沉淀中的细胞核应呈暗色且完整）。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Wash nuclear pellet: gently resuspend in 500 µL ice-cold PBS, pipette carefully, and centrifuge at 600×g for 5 min at 4°C. Repeat wash twice to remove cytoplasmic contamination.",
+      "zh": "洗涤核沉淀：轻柔重悬于 500 µL 冰冷 PBS，小心吹打，600×g、4°C 离心 5 min。重复洗涤两次去除细胞质污染。",
+      "time": "20 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Extract nuclear proteins: resuspend washed nuclear pellet in high-salt nuclear extraction buffer (20 mM HEPES pH 7.9, 400 mM NaCl, 1 mM EDTA, 1 mM DTT, 10% glycerol + protease inhibitors). Rotate at 4°C for 30 min, then briefly sonicate (3 × 5 s pulses, 20% amplitude).",
+      "zh": "提取核蛋白：用高盐核提取缓冲液（20 mM HEPES pH 7.9、400 mM NaCl、1 mM EDTA、1 mM DTT、10% 甘油 + 蛋白酶抑制剂）重悬洗涤后的核沉淀。4°C 旋转 30 min，再短暂超声（3 × 5 s，20% 振幅）。",
+      "time": "35 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Clarify nuclear extract by centrifugation at 16,000×g for 15 min at 4°C. Collect supernatant (nuclear extract). The pellet is insoluble chromatin and can be discarded or extracted separately with SDS buffer.",
+      "zh": "16,000×g、4°C 离心 15 min 澄清核提取物。收集上清（核提取物）。沉淀为不溶性染色质，可丢弃或用 SDS 缓冲液单独提取。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Optional membrane fraction: ultracentrifuge the cytoplasmic supernatant at 100,000×g for 1 h at 4°C (requires SW-41 Ti rotor or equivalent). Resulting supernatant = soluble cytoplasm; pellet = total membrane fraction (resuspend in RIPA + 1% SDS).",
+      "zh": "可选膜组分：将细胞质上清在 100,000×g、4°C 超速离心 1 h（需 SW-41 Ti 转头或同等设备）。上清 = 可溶性细胞质；沉淀 = 总膜组分（用 RIPA + 1% SDS 重悬）。",
+      "time": "60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Quantify all fractions by BCA or Bradford assay. Verify fractionation quality by western blot using compartment markers: GAPDH or tubulin (cytoplasm), Lamin B1 or Histone H3 (nucleus), Na/K-ATPase or E-cadherin (membrane), VDAC or HSP60 (mitochondria).",
+      "zh": "BCA 或 Bradford 法定量所有组分。用区室标志蛋白 WB 验证分级质量：GAPDH 或 tubulin（细胞质）、Lamin B1 或 Histone H3（细胞核）、Na/K-ATPase 或 E-cadherin（膜）、VDAC 或 HSP60（线粒体）。",
+      "time": "3 h"
+    },
+    {
+      "en": "Prepare fractions for western blot: add 2× Laemmli sample buffer, boil at 95°C for 5 min, load 10–20 µg protein per lane. Store remaining fractions at −80°C; use within 3 months.",
+      "zh": "制备 WB 上样：加 2× Laemmli 上样缓冲液，95°C 煮沸 5 min，每泳道上样 10–20 µg 蛋白。剩余组分 −80°C 保存，3 个月内使用。",
+      "time": "10 min",
+      "temp": "95°C"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Cytoplasmic fraction can be stored at −80°C while nuclear extraction is done on a separate day.",
+        "zh": "细胞质组分可 −80°C 保存，核提取可另日进行。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "All fractions (cytoplasmic and nuclear extract) can be stored at −80°C for up to 1 month before western blot analysis.",
+        "zh": "所有组分（细胞质和核提取物）可 −80°C 保存最多 1 个月后再进行 WB 分析。"
+      }
+    }
+  ],
   "components": [
     {
       "name": "1. Wash cells 2× ice-cold PBS; collect by scraping + 500×g 5 min 4°C",
@@ -106,7 +183,7 @@
     "ripa",
     "wb_protocol"
   ],
-  "ref": "Bhatt et al. (2021) STAR Protoc 2:100450; Dignam et al. (1983) Nucleic Acids Res 11:1475; Herrmann et al. (2018) Nat Protoc 13:2548",
+  "ref": "Dignam et al. (1983) Nucleic Acids Res 11:1475; Herrmann et al. (2018) Nat Protoc 13:2548",
   "doi": "10.1016/j.xpro.2021.100450",
   "discipline": [
     "cell"

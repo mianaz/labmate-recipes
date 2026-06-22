@@ -100,13 +100,65 @@
       "optional": true
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Inspect confluency → remove medium → PBS wash → add trypsin-EDTA → 37°C 2–5 min → quench with medium → resuspend → centrifuge → reseed new flask",
+      "zh": "镜检汇合度 → 去旧培养基 → PBS 洗涤 → 加胰酶-EDTA → 37°C 2–5 min → 完全培养基终止 → 吹打重悬 → 离心 → 接种新瓶"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Examine cells under microscope to confirm 80–90% confluency and absence of contamination.",
+      "zh": "镜下观察细胞汇合度为 80–90%，并确认无污染。"
+    },
+    {
+      "en": "Aspirate spent culture medium completely from the flask.",
+      "zh": "吸去旧培养基，彻底吸净。"
+    },
+    {
+      "en": "Wash cells with Ca²⁺/Mg²⁺-free 1× PBS (T75: 10 mL; 6-well: 2 mL per well); repeat once. Aspirate PBS completely.",
+      "zh": "用不含 Ca²⁺/Mg²⁺ 的 1× PBS 洗涤细胞（T75：10 mL；6 孔板：2 mL/孔），重复一次，彻底吸净 PBS。"
+    },
+    {
+      "en": "Add pre-warmed 0.05–0.25% trypsin-EDTA to cover the cell monolayer (T75: 2–3 mL) and incubate at 37°C for 2–5 min.",
+      "zh": "加预热的 0.05–0.25% 胰酶-EDTA 均匀覆盖底面（T75：2–3 mL），37°C 孵育 2–5 min。",
+      "time": "2–5 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Gently tap the side of the flask and verify cell detachment under the microscope.",
+      "zh": "轻拍瓶壁，显微镜下确认细胞已脱落。"
+    },
+    {
+      "en": "Add complete culture medium (at least 2× the volume of trypsin) to neutralise the trypsin and pipette up and down to create a single-cell suspension.",
+      "zh": "加入完全培养基（不少于胰酶体积的 2 倍）终止消化，吹打制备单细胞悬液，避免过度吹打产生气泡。"
+    },
+    {
+      "en": "Transfer cell suspension to a conical tube and centrifuge at 300 × g for 3–5 min at room temperature.",
+      "zh": "将细胞悬液转移至离心管，300 × g 室温离心 3–5 min。",
+      "time": "3–5 min"
+    },
+    {
+      "en": "Aspirate supernatant and resuspend the pellet in an appropriate volume of complete culture medium.",
+      "zh": "吸去上清，用适量完全培养基重悬细胞沉淀。"
+    },
+    {
+      "en": "Count cells if needed and seed into new flasks at the desired split ratio (typically 1:3–1:10 for most cell lines).",
+      "zh": "如需计数，计数后按所需传代比例（通常 1:3–1:10）接种到新培养瓶中。"
+    },
+    {
+      "en": "Top up with complete culture medium, label flask with cell line, passage number, and date, then return to 37°C, 5% CO₂ incubator.",
+      "zh": "补足完全培养基，标记细胞系名称、代次和日期，放回 37°C、5% CO₂ 培养箱。",
+      "temp": "37°C"
+    }
+  ],
   "stoppingPoints": [],
   "safeStops": [
     {
-      "afterStep": 6,
+      "afterStep": 8,
       "note": {
-        "en": "After centrifugation, cell pellet can sit on ice for up to 30 min if needed (e.g., for counting). Do not leave too long without medium",
-        "zh": "离心后细胞沉淀可冰上放置最长 30 min（例如计数时）。不要在无培养基的情况下放置过久"
+        "en": "After centrifugation, cell pellet can sit on ice for up to 30 min if needed (e.g., for counting). Do not leave too long without medium.",
+        "zh": "离心后细胞沉淀可冰上放置最长 30 min（例如计数时）。不要在无培养基的情况下放置过久。"
       }
     }
   ],

@@ -99,6 +99,82 @@
       "duration": "24 hours"
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Coat slides with 1% NMP agarose → embed cells in 0.5% LMP agarose → lyse (2.5 M NaCl, 100 mM EDTA, 1% Triton X-100, pH 10, 4°C ≥1 h) → unwind in 300 mM NaOH/1 mM EDTA 20–60 min → electrophoresis 25 V, 20–30 min, 4°C → neutralize → stain SYBR Gold → score 50–100 comets per slide (% tail DNA, tail moment)",
+      "zh": "玻片预铺 1% 标准琼脂 → 细胞嵌入 0.5% 低熔点琼脂 → 裂解（2.5 M NaCl、100 mM EDTA、1% Triton X-100，pH 10，4°C ≥1 h）→ 碱性解链（300 mM NaOH/1 mM EDTA，20–60 min）→ 电泳（25 V，20–30 min，4°C）→ 中和 → SYBR Gold 染色 → 每片计数 50–100 个彗星（% 尾部 DNA、尾矩）"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "IMPORTANT: All steps must be performed at 4°C and under dim/yellow light to prevent additional DNA damage from heat or UV exposure.",
+      "zh": "重要提示：全程必须在 4°C 和昏黄/黄色光线下操作，防止热量或紫外线造成额外 DNA 损伤。"
+    },
+    {
+      "en": "Coat pre-cleaned frosted glass slides with a thin layer of 1% normal-melting-point (NMP) agarose in PBS; allow to dry briefly at room temperature; this base layer prevents LMP gel from detaching.",
+      "zh": "用 PBS 配制 1% 标准熔点（NMP）琼脂涂覆预洗净的磨砂玻璃片，薄层即可；室温短暂晾干；此底层防止低熔点胶层脱落。"
+    },
+    {
+      "en": "Collect 5×10⁴ to 1×10⁵ cells per slide; pellet by centrifugation (200×g, 5 min, 4°C); resuspend in ice-cold PBS at 1×10⁶ cells/mL.",
+      "zh": "每片收集 5×10⁴ 至 1×10⁵ 个细胞；离心（200×g，5 min，4°C）收集；用冰冷 PBS 重悬至 1×10⁶ 细胞/mL。",
+      "time": "5 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Prepare 0.5% low-melting-point (LMP) agarose in PBS, cooled to 37°C; mix 10 µL cell suspension with 75 µL LMP agarose; quickly pipette onto NMP-coated slide; cover with coverslip; allow to solidify at 4°C for 5–10 min.",
+      "zh": "用 PBS 配制 0.5% 低熔点（LMP）琼脂，冷却至 37°C；将 10 µL 细胞悬液与 75 µL LMP 琼脂混匀；迅速铺于 NMP 底层上；盖上盖玻片；4°C 凝固 5–10 min。",
+      "time": "5–10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Remove coverslips gently; immerse slides in ice-cold lysis buffer (2.5 M NaCl, 100 mM EDTA, 10 mM Tris, 1% Triton X-100, pH 10) at 4°C for a minimum of 1 h (overnight is acceptable and may improve lysis).",
+      "zh": "轻轻取下盖玻片；将载玻片浸入冰冷裂解液（2.5 M NaCl、100 mM EDTA、10 mM Tris、1% Triton X-100，pH 10），4°C 裂解至少 1 h（过夜亦可，有助于裂解更完全）。",
+      "time": "≥1 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Transfer slides to an alkaline electrophoresis tank; cover with freshly prepared alkaline buffer (300 mM NaOH, 1 mM EDTA, pH >13); allow DNA to unwind for 20–60 min at 4°C in the dark without current.",
+      "zh": "将载玻片放入碱性电泳槽；用新鲜配制的碱性缓冲液（300 mM NaOH、1 mM EDTA，pH >13）覆盖玻片；在 4°C 避光条件下不通电解链 20–60 min。",
+      "time": "20–60 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Run electrophoresis at 25 V (approximately 300 mA, ~0.7–1.0 V/cm) for 20–30 min at 4°C; longer electrophoresis increases migration of damaged DNA but also increases background.",
+      "zh": "25 V（约 300 mA，~0.7–1.0 V/cm）电泳 20–30 min（4°C）；电泳时间越长，损伤 DNA 迁移越多，但背景也随之增加。",
+      "time": "20–30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Remove slides from tank; drain excess buffer; neutralize by washing 3× with neutralization buffer (0.4 M Tris-HCl, pH 7.5), 5 min each; drain gently.",
+      "zh": "从电泳槽取出载玻片；吸去多余缓冲液；用中和缓冲液（0.4 M Tris-HCl，pH 7.5）洗 3 次（每次 5 min）；轻轻吸干。",
+      "time": "5 min"
+    },
+    {
+      "en": "Stain slides with SYBR Gold (1:10,000 in TE buffer) or ethidium bromide (2 µg/mL in PBS) for 20 min at room temperature in the dark; rinse briefly with water; apply coverslip.",
+      "zh": "用 SYBR Gold（TE 缓冲液 1:10,000 稀释）或溴化乙锭（PBS 中 2 µg/mL）避光室温染色 20 min；用水短暂冲洗；盖上盖玻片。",
+      "time": "20 min"
+    },
+    {
+      "en": "Score 50–100 comets per slide using a fluorescence microscope; measure % tail DNA (tail DNA intensity / total DNA intensity × 100) and tail moment (% tail DNA × tail length) using OpenComet or CaspLab software.",
+      "zh": "用荧光显微镜每片计数 50–100 个彗星；用 OpenComet 或 CaspLab 软件测量尾部 DNA 百分比（尾部 DNA 强度/总 DNA 强度 × 100）和尾矩（% 尾部 DNA × 尾长）。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Slides in lysis buffer at 4°C can be stored overnight or up to 1 week before proceeding to electrophoresis",
+        "zh": "浸泡于 4°C 裂解液中的载玻片可过夜保存，最长 1 周后再进行电泳"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Stained slides can be stored at 4°C in a humid dark box for up to 24 h before scoring",
+        "zh": "染色后的载玻片可在 4°C 湿润避光盒中保存最多 24 h 后再计数"
+      }
+    }
+  ],
   "usage": {
     "en": "Detect DNA damage at the single-cell level using single-cell gel electrophoresis (comet assay).",
     "zh": "单细胞凝胶电泳（彗星实验）检测单个细胞 DNA 损伤。"

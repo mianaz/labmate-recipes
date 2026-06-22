@@ -73,6 +73,51 @@
       "name": "Microscope (inverted, 10× objective)"
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Collect and mix cell suspension → add equal volume 0.4% trypan blue → mix and incubate 1–2 min → load onto hemocytometer or automated counter → count live (clear) and dead (blue) cells → calculate concentration and viability",
+      "zh": "收集混匀细胞悬液 → 等体积 0.4% 台盼蓝混合 → 混匀室温 1–2 min → 加入血球计数板或自动计数仪 → 计数活细胞（透明）和死细胞（蓝色）→ 计算浓度和活率"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Collect the cell suspension (from trypsinized culture or existing suspension) and mix thoroughly by gentle pipetting to ensure a homogeneous single-cell suspension.",
+      "zh": "收集细胞悬液（来自胰酶消化或已有的悬浮培养），轻柔吹打充分混匀，确保均匀单细胞悬液。"
+    },
+    {
+      "en": "If cell concentration is expected to be high (>5×10⁶/mL), dilute the suspension in complete medium first; note the additional dilution factor.",
+      "zh": "若细胞浓度估计较高（>5×10⁶/mL），先用完全培养基稀释，记录稀释倍数。"
+    },
+    {
+      "en": "Transfer 10 µL of cell suspension to a microcentrifuge tube; add 10 µL of 0.4% trypan blue solution (1:1 dilution factor = 2).",
+      "zh": "取 10 µL 细胞悬液至微量离心管，加入 10 µL 0.4% 台盼蓝溶液（1:1 混合，稀释因子 = 2）。"
+    },
+    {
+      "en": "Mix gently by pipetting 2–3 times; incubate at room temperature for 1–2 min. Do not exceed 3 min or live cells may begin to take up dye.",
+      "zh": "轻柔吹打 2–3 次混匀，室温孵育 1–2 min，不超过 3 min（否则活细胞也会着色）。",
+      "time": "1–2 min"
+    },
+    {
+      "en": "Load 10 µL of the trypan blue–cell mixture onto a hemocytometer (under coverslip) or insert a counting slide into an automated cell counter.",
+      "zh": "取 10 µL 台盼蓝-细胞混合液加入血球计数板（盖玻片下）或插入自动计数仪计数槽。"
+    },
+    {
+      "en": "Under 10× objective, identify live cells (round, bright/clear, intact membrane) and dead cells (blue-stained, often shrunken or irregular).",
+      "zh": "在 10× 物镜下区分活细胞（圆形、亮透明、膜完整）和死细胞（蓝色染色，常皱缩或不规则）。"
+    },
+    {
+      "en": "Count cells in 4 large corner squares of the hemocytometer (or use automated counter readout); aim for 100–200 cells per square for accuracy.",
+      "zh": "计数血球计数板四个角大方格中的细胞（或使用自动计数仪读数），每格理想计数 100–200 个细胞以确保准确性。"
+    },
+    {
+      "en": "Calculate cell concentration: cells/mL = (average cells per large square) × dilution factor × 10⁴.",
+      "zh": "计算细胞浓度：细胞数/mL = 每大格平均细胞数 × 稀释因子 × 10⁴。"
+    },
+    {
+      "en": "Calculate viability: viability (%) = live cells ÷ (live + dead cells) × 100. Record results for your lab notebook.",
+      "zh": "计算活率（%）= 活细胞数 ÷（活 + 死细胞数）× 100，记录结果于实验记录本。"
+    }
+  ],
   "stoppingPoints": [],
   "safeStops": [
     {

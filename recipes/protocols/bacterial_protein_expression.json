@@ -158,5 +158,97 @@
   "usage": {
     "en": "Express recombinant proteins in E. coli using IPTG induction.",
     "zh": "通过 IPTG 诱导在大肠杆菌中表达重组蛋白。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Transform plasmid into BL21(DE3) → overnight starter culture → dilute 1:50–1:100 into expression medium → grow to OD₆₀₀ 0.6–0.8 → cool to induction temp → add 0.1–1 mM IPTG → induce 3–20 h → harvest cells → check expression by SDS-PAGE",
+      "zh": "质粒转入 BL21(DE3) → 过夜种子培养 → 1:50–1:100 接种表达培养基 → 培养至 OD₆₀₀ 0.6–0.8 → 降温 → 加 0.1–1 mM IPTG → 诱导 3–20 h → 收集菌体 → SDS-PAGE 检测表达"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Transform the expression vector into BL21(DE3) by heat shock (42°C, 30 s). Plate on LB + antibiotic agar and grow at 37°C overnight.",
+      "zh": "第1天：热激（42°C、30 s）将表达载体转入 BL21(DE3），涂 LB + 抗生素平板，37°C 过夜培养。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 2: Pick a single colony into 5–10 mL LB + antibiotic; grow overnight at 37°C, 200 rpm (12–16 h) as a starter culture.",
+      "zh": "第2天：挑单克隆接种至 5–10 mL LB + 抗生素，37°C、200 rpm 过夜培养 12–16 h 作为种子液。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 3: Dilute starter culture 1:50–1:100 into 500 mL LB or TB medium in a 2 L baffled flask; shake at 37°C, 200 rpm.",
+      "zh": "第3天：将种子液 1:50–1:100 接种至 2 L 挡板摇瓶中的 500 mL LB 或 TB 培养基，37°C、200 rpm 振荡培养。",
+      "isHeader": false,
+      "temp": "37°C"
+    },
+    {
+      "en": "Monitor OD₆₀₀ every 30 min; when OD reaches 0.6–0.8 (approximately 2–3 h), take a 1 mL pre-induction sample and pellet for SDS-PAGE.",
+      "zh": "每 30 min 监测 OD₆₀₀，当 OD 达 0.6–0.8（约 2–3 h 后），取 1 mL 诱导前样品离心备 SDS-PAGE 检测。",
+      "isHeader": false,
+      "time": "2–3 h"
+    },
+    {
+      "en": "For soluble expression: cool culture to 16–18°C by transferring to an ice-water bath (~15 min) or cold incubator. For inclusion body/high-yield: remain at 37°C.",
+      "zh": "可溶表达：将培养物转至冰水浴（约 15 min）或冷培养箱降温至 16–18°C；包涵体/高产量：保持 37°C。",
+      "isHeader": false,
+      "time": "15 min"
+    },
+    {
+      "en": "Induce expression by adding IPTG from a 1 M stock: 0.1–0.5 mM for soluble expression at 16–18°C (16–20 h overnight); 0.5–1 mM for high-yield/inclusion body at 37°C (3–4 h).",
+      "zh": "从 1 M IPTG 储液中加入诱导：可溶表达 0.1–0.5 mM，16–18°C 诱导 16–20 h（过夜）；高产量/包涵体 0.5–1 mM，37°C 诱导 3–4 h。",
+      "isHeader": false
+    },
+    {
+      "en": "At the end of induction, take a 1 mL post-induction sample for SDS-PAGE comparison. Harvest cells by centrifugation at 5,000×g for 10 min at 4°C.",
+      "zh": "诱导结束时取 1 mL 诱导后样品用于 SDS-PAGE 对比，4°C、5,000×g 离心 10 min 收集菌体。",
+      "isHeader": false,
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Discard supernatant; weigh the wet cell pellet. Pellets can be stored at −80°C for weeks to months.",
+      "zh": "弃去上清，称量菌体湿重。菌体沉淀可 −80°C 保存数周至数月。",
+      "isHeader": false
+    },
+    {
+      "en": "Check expression: resuspend pre- and post-induction samples in SDS loading buffer, boil at 95°C for 5 min, run SDS-PAGE. A new band at the target molecular weight confirms expression.",
+      "zh": "检查表达：将诱导前后样品用 SDS 上样缓冲液重悬，95°C 煮 5 min，跑 SDS-PAGE，出现目标分子量新条带即确认表达。",
+      "isHeader": false,
+      "temp": "95°C",
+      "time": "5 min"
+    },
+    {
+      "en": "Optional solubility check: lyse a small aliquot (sonication or lysozyme), centrifuge at 20,000×g for 10 min at 4°C, run SDS-PAGE on pellet vs. supernatant to determine if protein is soluble.",
+      "zh": "可选溶解性检测：取少量菌体裂解（超声或溶菌酶法），4°C、20,000×g 离心 10 min，分别取沉淀和上清跑 SDS-PAGE，判断蛋白是否可溶。",
+      "isHeader": false,
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Proceed to protein purification by affinity chromatography (His-tag: Ni-NTA resin; GST-tag: glutathione resin). See his_tag_purification or gst_tag_purification protocols.",
+      "zh": "进行亲和层析纯化蛋白（His 标签：Ni-NTA 树脂；GST 标签：谷胱甘肽树脂），参见 his_tag_purification 或 gst_tag_purification 方案。",
+      "isHeader": false
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Transformed colonies on plates can be stored at 4°C (sealed) for up to 1 week before continuing.",
+        "zh": "转化平板上的菌落密封后可 4°C 保存最多 1 周后继续。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Harvested cell pellets can be snap-frozen and stored at −80°C for up to 6 months before lysis and purification.",
+        "zh": "收集的菌体沉淀可速冻后 −80°C 保存最多 6 个月，再进行裂解和纯化。"
+      }
+    }
+  ]
 }

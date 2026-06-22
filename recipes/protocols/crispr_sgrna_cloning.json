@@ -110,5 +110,93 @@
   "usage": {
     "en": "Clone sgRNA oligos into CRISPR/Cas9 expression vectors for gene editing.",
     "zh": "将 sgRNA 寡核苷酸克隆到 CRISPR/Cas9 表达载体中进行基因编辑。"
-  }
+  },
+  "briefSteps": [
+    {
+      "en": "Design 20-nt sgRNA → order paired oligos with overhangs → phosphorylate and anneal → digest pX459 with BbsI → ligate annealed oligos → transform bacteria → pick colonies → confirm by Sanger sequencing with U6 primer",
+      "zh": "设计 20 nt sgRNA → 订购带黏端的配对寡核苷酸 → 磷酸化并退火 → BbsI 酶切 pX459 → 连接退火产物 → 转化细菌 → 挑菌落 → U6 引物 Sanger 测序验证"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Design a 20-nt sgRNA target sequence using CRISPOR (crispor.tefor.net) or Benchling. Select guides with high on-target score and low off-target prediction. Avoid stretches of ≥4 T's (terminates U6 transcription).",
+      "zh": "第1天：使用 CRISPOR（crispor.tefor.net）或 Benchling 设计 20 nt sgRNA 靶序列，选择高特异性评分和低脱靶预测的指导序列，避免连续 ≥4 个 T（会终止 U6 转录）。",
+      "isHeader": false
+    },
+    {
+      "en": "Order two complementary oligos with the appropriate overhangs for your vector: for pX459 (BbsI): sense oligo = 5'-CACCG[N20]-3'; antisense oligo = 5'-AAAC[rc(N20)]C-3'. Order desalted, lyophilized.",
+      "zh": "订购带载体匹配黏端的互补寡核苷酸：pX459（BbsI）用：正义链 = 5'-CACCG[N20]-3'；反义链 = 5'-AAAC[rc(N20)]C-3'。订购脱盐冻干规格。",
+      "isHeader": false
+    },
+    {
+      "en": "Phosphorylate and anneal oligos: resuspend each oligo to 100 µM in TE. Set up a 10 µL T4 PNK reaction: 1 µL each oligo (100 µM), 1 µL T4 PNK, 1 µL 10× T4 ligation buffer, 6 µL water; incubate at 37°C for 30 min.",
+      "zh": "磷酸化并退火：将每条寡核苷酸复溶至 100 µM TE。配制 10 µL T4 PNK 反应体系：各 1 µL 寡核苷酸（100 µM）、1 µL T4 PNK、1 µL 10× T4 连接缓冲液、6 µL 水，37°C 孵育 30 min。",
+      "isHeader": false,
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Anneal the phosphorylated oligos in a thermocycler: 95°C for 5 min, then ramp down to 25°C at 0.1°C/s (or −5°C per min). Dilute annealed duplex 1:200 in water for ligation.",
+      "zh": "在 PCR 仪中退火：95°C 5 min，以 0.1°C/s（或 -5°C/min）降温至 25°C。退火产物用水 1:200 稀释后用于连接。",
+      "isHeader": false,
+      "time": "~20 min",
+      "temp": "95°C→25°C"
+    },
+    {
+      "en": "Digest 1 µg pX459 (or target vector) with BbsI (or BsmBI for pLentiCRISPR): 37°C for 1–2 h in CutSmart buffer. Gel-purify or column-purify the linearized vector.",
+      "zh": "用 BbsI（或 pLentiCRISPR 用 BsmBI）酶切 1 µg pX459：CutSmart 缓冲液中 37°C 酶切 1–2 h，凝胶纯化或柱纯化线性化载体。",
+      "isHeader": false,
+      "time": "1–2 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Set up the ligation in a 10 µL reaction: 50 ng linearized vector, 1 µL diluted annealed duplex, 1 µL T4 DNA ligase, 1 µL 10× T4 ligation buffer, water to 10 µL. Incubate at 16°C for 1 h or room temperature for 10 min (quick ligation).",
+      "zh": "配制 10 µL 连接体系：50 ng 线性化载体、1 µL 稀释退火双链体、1 µL T4 DNA 连接酶、1 µL 10× T4 连接缓冲液、补水至 10 µL。16°C 连接 1 h 或室温快速连接 10 min。",
+      "isHeader": false,
+      "time": "1 h",
+      "temp": "16°C"
+    },
+    {
+      "en": "Transform 2 µL of ligation product into 25–50 µL Stbl3 or DH5α competent cells by heat shock; recover in SOC for 1 h at 37°C, then plate on LB + ampicillin (100 µg/mL).",
+      "zh": "取 2 µL 连接产物热激转化 25–50 µL Stbl3 或 DH5α 感受态细胞，SOC 37°C 恢复 1 h，涂 LB + 氨苄青霉素（100 µg/mL）平板。",
+      "isHeader": false,
+      "time": "1 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 2: Pick 3–6 individual colonies; inoculate into 3 mL LB + ampicillin and grow overnight at 37°C, 225 rpm.",
+      "zh": "第2天：挑 3–6 个单菌落，接种至 3 mL LB + 氨苄青霉素，37°C、225 rpm 过夜培养。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 3: Perform miniprep on overnight cultures. Verify correct insert by Sanger sequencing using the U6 promoter primer (5'-GAGGGCCTATTTCCCATGATT-3'). Confirm the full 20-nt guide sequence is present and correct.",
+      "zh": "第3天：小提质粒，用 U6 启动子引物（5'-GAGGGCCTATTTCCCATGATT-3'）Sanger 测序验证，确认完整的 20 nt 指导序列正确插入。",
+      "isHeader": false
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Annealed and phosphorylated oligo duplexes can be stored at −20°C for months.",
+        "zh": "退火并磷酸化的寡核苷酸双链体可 −20°C 保存数月。"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Ligation products can be stored at −20°C for up to 1 week before transformation.",
+        "zh": "连接产物可 −20°C 保存最多 1 周后再进行转化。"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Plates with colonies can be sealed with Parafilm and stored at 4°C for up to 1 week.",
+        "zh": "长有菌落的平板用 Parafilm 封好，4°C 可保存最多 1 周。"
+      }
+    }
+  ]
 }

@@ -88,7 +88,7 @@
     "polybrene_stock",
     "flow_cytometry_protocol"
   ],
-  "ref": "Kutner et al. (2009) Nat Protoc 4:495–505; Geraerts et al. (2006) Gene Ther 13:1294–1299; Salmon & Trono (2006) Curr Protoc Hum Genet 12.10.1",
+  "ref": "Kutner et al. (2009) Nat Protoc 4:495–505; Geraerts et al. (2006) Gene Ther 13:1294–1304; Salmon & Trono (2006) Curr Protoc Hum Genet 12.10.1",
   "doi": "10.1038/nprot.2009.22",
   "discipline": [
     "cell",

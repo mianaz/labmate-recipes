@@ -187,21 +187,15 @@
   "storage": {
     "temp": "N/A",
     "duration": "N/A",
-    "icon": "📋",
-    "label": {"en": "See protocol notes", "zh": "见方案备注"}
-  },
-  "usage": {
-    "en": "Isolate peripheral blood mononuclear cells (PBMCs) from whole blood by Ficoll density gradient centrifugation.",
-    "zh": "Ficoll 密度梯度离心从全血中分离外周血单个核细胞（PBMC）。"
-  },
-  "storage": {
-    "temp": "N/A",
-    "duration": "N/A",
     "icon": "🧪",
     "label": {
       "en": "Use freshly isolated PBMCs or cryopreserve immediately",
       "zh": "使用新鲜分离的 PBMC 或立即冻存"
     }
+  },
+  "usage": {
+    "en": "Isolate peripheral blood mononuclear cells (PBMCs) from whole blood by Ficoll density gradient centrifugation.",
+    "zh": "Ficoll 密度梯度离心从全血中分离外周血单个核细胞（PBMC）。"
   },
   "relatedProtocols": [
     "ficoll_paque_pbmc",

@@ -77,7 +77,7 @@
     "en": "Primary antibody: 1:500–1:2000; HRP secondary: 1:5000–1:10000. Use BSA blocking for phospho-proteins. Semi-dry transfer suitable for proteins <100 kDa.",
     "zh": "一抗稀释比通常 1:500–1:2000；HRP 二抗 1:5000–1:10000。磷酸化蛋白用 BSA 封闭。半干转适合 <100 kDa 蛋白。PVDF 需甲醇活化。"
   },
-  "ref": "Mahmood & Yang (2012) N Am J Med Sci 4:429–434; Bass et al. (2017) STAR Protoc Preview; Towbin et al. (1979) PNAS 76:4350",
+  "ref": "Mahmood & Yang (2012) N Am J Med Sci 4:429–434; Towbin et al. (1979) PNAS 76:4350",
   "discipline": [
     "protein",
     "cell"
@@ -165,5 +165,118 @@
     "coomassie_staining",
     "immunoprecipitation",
     "coip_protocol"
+  ],
+  "briefSteps": [
+    {
+      "en": "Lyse cells → quantify protein → add loading buffer and boil → SDS-PAGE → transfer to membrane → block → primary antibody overnight → wash → secondary antibody (HRP) → wash → ECL detection.",
+      "zh": "细胞裂解 → 蛋白定量 → 加上样缓冲液煮沸 → SDS-PAGE 电泳 → 转膜 → 封闭 → 一抗过夜孵育 → 洗涤 → 二抗（HRP）孵育 → 洗涤 → ECL 显色。"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1",
+      "zh": "第一天",
+      "isHeader": true
+    },
+    {
+      "en": "Lyse cells on ice in RIPA buffer (150 mM NaCl, 1% NP-40, 0.5% DOC, 0.1% SDS, 50 mM Tris pH 8.0) supplemented with protease inhibitor cocktail. Incubate on ice for 30 min with occasional vortexing.",
+      "zh": "在冰上用含蛋白酶抑制剂的 RIPA 裂解液（150 mM NaCl、1% NP-40、0.5% DOC、0.1% SDS、50 mM Tris pH 8.0）裂解细胞，冰上孵育 30 min，间歇涡旋。",
+      "time": "30 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Centrifuge at 14,000×g for 15 min at 4°C; carefully transfer supernatant to new tube, discard pellet.",
+      "zh": "4°C 14,000×g 离心 15 min，小心吸取上清至新管，弃去沉淀。",
+      "time": "15 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Quantify protein concentration by BCA or Bradford assay. Adjust all samples to the same concentration (typically 1–2 µg/µL) with lysis buffer.",
+      "zh": "BCA 或 Bradford 法定量蛋白浓度，用裂解液将所有样品调至同一浓度（通常 1–2 µg/µL）。",
+      "time": "30 min"
+    },
+    {
+      "en": "Mix 20–50 µg protein with 1/4 volume 4× Laemmli sample buffer (final: 62.5 mM Tris pH 6.8, 2% SDS, 10% glycerol, 5% β-ME, 0.01% bromophenol blue). Boil at 95°C for 5 min.",
+      "zh": "取 20–50 µg 蛋白与 1/4 体积 4× Laemmli 上样缓冲液混合，95°C 煮沸 5 min。",
+      "time": "5 min",
+      "temp": "95°C"
+    },
+    {
+      "en": "Load samples onto SDS-PAGE gel (8–12% depending on target protein size). Run at 80V through stacking gel, then 120V through resolving gel (~1.5 h total) in 1× running buffer.",
+      "zh": "将样品上 SDS-PAGE 胶（8–12%，根据目标蛋白大小选择），1× 电泳缓冲液中 80V 过浓缩胶，120V 过分离胶（约 1.5 h）。",
+      "time": "90 min"
+    },
+    {
+      "en": "Transfer proteins to PVDF membrane (pre-activated in 100% methanol for 30 s) or nitrocellulose membrane in 1× transfer buffer. Wet transfer: 100V for 60–90 min at 4°C, or 30V overnight.",
+      "zh": "将蛋白转移至 PVDF 膜（先用 100% 甲醇活化 30 s）或 NC 膜，1× 转膜缓冲液，湿转 100V 60–90 min（4°C）或 30V 过夜。",
+      "time": "60–90 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Stain membrane with Ponceau S (0.1% in 5% acetic acid) for 5 min to verify transfer efficiency, then wash with ddH₂O to remove background.",
+      "zh": "丽春红 S（0.1%，5% 乙酸）染膜 5 min 验证转膜效果，ddH₂O 洗去背景。",
+      "time": "5 min"
+    },
+    {
+      "en": "Block membrane in 5% non-fat milk (for total protein) or 5% BSA (for phospho-proteins) in TBST for 1 h at room temperature with gentle rocking.",
+      "zh": "TBST 中 5% 脱脂奶粉（检测总蛋白）或 5% BSA（检测磷酸化蛋白）封闭 1 h，室温轻柔摇晃。",
+      "time": "60 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Incubate with primary antibody (diluted 1:500–1:2000 in blocking buffer) overnight at 4°C with gentle rocking.",
+      "zh": "用封闭液按 1:500–1:2000 稀释一抗，4°C 过夜孵育，轻柔摇晃。",
+      "temp": "4°C"
+    },
+    {
+      "en": "Day 2",
+      "zh": "第二天",
+      "isHeader": true
+    },
+    {
+      "en": "Wash membrane 3 times × 10 min each with TBST (0.1% Tween-20 in TBS) at room temperature with rocking.",
+      "zh": "TBST（含 0.1% Tween-20 的 TBS）洗膜 3 次，每次 10 min，室温摇晃。",
+      "time": "30 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Incubate with HRP-conjugated secondary antibody (diluted 1:5000–1:10000 in blocking buffer) for 1 h at room temperature.",
+      "zh": "用封闭液按 1:5000–1:10000 稀释 HRP 偶联二抗，室温孵育 1 h。",
+      "time": "60 min",
+      "temp": "25°C"
+    },
+    {
+      "en": "Wash membrane 3 times × 10 min each with TBST. Ensure thorough washing to minimize background.",
+      "zh": "TBST 洗膜 3 次，每次 10 min，充分洗涤以降低背景。",
+      "time": "30 min"
+    },
+    {
+      "en": "Apply ECL substrate (mix Reagent A and B 1:1 immediately before use) to membrane for 1–5 min. Expose to X-ray film or capture with chemiluminescence imaging system.",
+      "zh": "将 ECL 底物（A 液与 B 液 1:1 混合，即用即配）均匀覆盖膜面 1–5 min，X 光胶片曝光或化学发光成像仪采集。",
+      "time": "5 min"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Boiled samples in Laemmli buffer can be stored at −20°C for up to 1 month.",
+        "zh": "煮沸后的 Laemmli 上样缓冲液样品可 −20°C 保存最长 1 个月。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "After blocking, membrane can be stored at 4°C in TBST in a sealed bag overnight before adding primary antibody.",
+        "zh": "封闭完成后，膜可封入密封袋加 TBST 在 4°C 放置过夜，次日再加一抗。"
+      }
+    },
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "After primary antibody incubation, membrane can remain at 4°C in TBST for up to 24 h before proceeding to secondary antibody.",
+        "zh": "一抗孵育完成后，膜在 TBST 中 4°C 最多可放置 24 h 再进行二抗步骤。"
+      }
+    }
   ]
 }

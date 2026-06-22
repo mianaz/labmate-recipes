@@ -90,7 +90,7 @@
     "en": "Controls: (1) untreated cells (baseline), (2) no-serum negative control, (3) MMC-treated + serum (pure migration). Triplicate wells per condition. For 3D migration: transwell_migration (Boyden chamber). Limitations: does not distinguish migration vs proliferation without MMC treatment.",
     "zh": "对照：(1) 未处理细胞（基线）；(2) 无血清阴性对照；(3) MMC 处理 + 血清（纯迁移）。每组 3 个平行孔。3D 迁移实验参见 transwell_migration（Boyden 小室）。局限性：未用 MMC 时无法区分迁移与增殖。"
   },
-  "ref": "Liang et al. (2007) Nat Protoc 2:329–333; Jonkman et al. (2014) Nat Protoc 9:1234–1248; Zordan et al. (2011) J Immunol Methods 370:56",
+  "ref": "Liang et al. (2007) Nat Protoc 2:329–333; Jonkman et al. (2014) J Biomech 47:9–13; Zordan et al. (2011) J Immunol Methods 370:56",
   "crosslinks": [
     "transwell_migration",
     "cck8_proliferation"
@@ -126,6 +126,64 @@
     }
   ],
   "stoppingPoints": [],
+  "briefSteps": [
+    {
+      "en": "Seed cells → grow to >95% confluency → optional Mitomycin C treatment (10 µg/mL, 2 h) → scratch with 200 µL tip → wash 2× PBS → add serum-free medium ± treatment → image at 0 h → image at 6/12/24/48 h → quantify wound closure % with ImageJ",
+      "zh": "铺细胞 → 生长至 >95% 汇合 → 可选丝裂霉素 C 处理（10 µg/mL，2 h）→ 200 µL 枪头划痕 → PBS 洗 2 次 → 加无血清培养基 ± 处理 → 0 h 拍照 → 6/12/24/48 h 拍照 → ImageJ 定量划痕愈合百分比"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 0 – Cell Seeding",
+      "zh": "第 0 天 – 铺板",
+      "isHeader": true
+    },
+    {
+      "en": "Seed 2–3×10⁵ cells per well in a 6-well plate in 2 mL complete medium; for weakly adherent cells, pre-coat wells with fibronectin (5 µg/mL, 30 min RT) or Matrigel before seeding.",
+      "zh": "每孔铺 2–3×10⁵ 个细胞（6 孔板，2 mL 完全培养基）；对弱贴壁细胞，铺板前用纤连蛋白（5 µg/mL，室温 30 min）或 Matrigel 预包被孔板。"
+    },
+    {
+      "en": "Grow to >95% confluency at 37°C, 5% CO₂ (typically 24–48 h depending on cell line).",
+      "zh": "37°C、5% CO₂ 培养至 >95% 汇合度（通常 24–48 h，取决于细胞系）。",
+      "time": "24–48 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Assay Day – Scratch and Treatment",
+      "zh": "实验日 – 划痕与处理",
+      "isHeader": true
+    },
+    {
+      "en": "Optional proliferation inhibition: replace medium with complete medium containing Mitomycin C (10 µg/mL) and incubate at 37°C for 2 h; wash 3× with PBS to remove MMC; this step isolates migration from proliferation.",
+      "zh": "可选增殖抑制步骤：换液至含丝裂霉素 C（10 µg/mL）的完全培养基，37°C 孵育 2 h；用 PBS 洗 3 次去除 MMC；此步将迁移与增殖分离。",
+      "time": "2 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Create a straight scratch: hold a sterile 200 µL pipette tip perpendicular to the plate surface; drag firmly across the well in a single straight line using a ruler as a guide; mark the outside bottom of the plate perpendicularly to the scratch for consistent reimaging.",
+      "zh": "制作直线划痕：将无菌 200 µL 枪头垂直置于孔板表面；以直尺为参照用力在孔内直线划过；在孔板外底部垂直于划痕方向画记号线，确保重复成像位置一致。"
+    },
+    {
+      "en": "Wash wells gently twice with PBS to remove detached cells and debris without disturbing the wound edges.",
+      "zh": "用 PBS 轻柔洗涤两次，去除脱落细胞和碎片，避免扰动划痕边缘。"
+    },
+    {
+      "en": "Add 2 mL serum-free medium (or 0.5–1% FBS) ± test compounds; include untreated and solvent controls at matching DMSO concentration.",
+      "zh": "每孔加 2 mL 无血清培养基（或 0.5–1% FBS）± 受试化合物；设未处理对照及与处理组等浓度 DMSO 的溶剂对照。"
+    },
+    {
+      "en": "Immediately image at 0 h: capture 3–5 images per well at the marked positions using 4× or 10× phase-contrast objective; record stage coordinates if using an automated microscope.",
+      "zh": "立即进行 0 h 拍照：在标记位置用 4× 或 10× 相差物镜每孔拍 3–5 张图；使用自动显微镜时记录载物台坐标。"
+    },
+    {
+      "en": "Return plate to incubator; image at subsequent timepoints (6 h, 12 h, 24 h, 48 h) at exactly the same positions; endpoint depends on migration speed — fast lines (MDA-MB-231): 6–12 h; slow lines/primary cells: 24–48 h.",
+      "zh": "将培养板放回培养箱；在完全相同位置依次拍摄后续时间点（6 h、12 h、24 h、48 h）；终点取决于迁移速度——快速细胞（MDA-MB-231）：6–12 h；缓慢细胞/原代细胞：24–48 h。"
+    },
+    {
+      "en": "Quantify wound closure using ImageJ (MRI Wound Healing Tool plugin): % Wound Closure = (Area₀ₕ − Areaₜₕ) / Area₀ₕ × 100; alternatively measure wound width at 5 positions per image and report migration distance (µm/h).",
+      "zh": "用 ImageJ（MRI 划痕愈合插件）定量：% 愈合 = (面积₀ₕ − 面积ₜₕ) / 面积₀ₕ × 100；也可每张图手动测量 5 个位置的划痕宽度，报告迁移距离（µm/h）。"
+    }
+  ],
   "safeStops": [
     {
       "afterStep": 0,

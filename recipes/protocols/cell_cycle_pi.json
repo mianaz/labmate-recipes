@@ -86,6 +86,61 @@
       "duration": "1 month"
     }
   ],
+  "briefSteps": [
+    {
+      "en": "Harvest 1–2×10⁶ cells → wash PBS → fix in ice-cold 70% ethanol at −20°C ≥2 h → wash 2× PBS → stain with PI (50 µg/mL) + RNase A (100 µg/mL) → incubate 37°C 30 min dark → analyze by flow cytometry (gate singlets, fit Dean-Jett-Fox model)",
+      "zh": "收集 1–2×10⁶ 细胞 → PBS 洗涤 → 冰冷 70% 乙醇固定 −20°C ≥2 h → PBS 洗 2 次 → PI（50 µg/mL）+ RNase A（100 µg/mL）染色 → 37°C 避光孵育 30 min → 流式分析（门控单细胞，Dean-Jett-Fox 模型拟合）"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Harvest 1–2×10⁶ cells: trypsinize adherent cells (collect floating cells too), combine in a 15 mL tube.",
+      "zh": "收集 1–2×10⁶ 细胞：胰酶消化贴壁细胞（同时收集漂浮细胞），合并入 15 mL 离心管。"
+    },
+    {
+      "en": "Centrifuge at 300×g for 5 min; aspirate supernatant; wash pellet once with 5 mL ice-cold 1× PBS (300×g, 5 min).",
+      "zh": "300×g 离心 5 min；吸去上清；用 5 mL 冰冷 1× PBS 洗涤沉淀一次（300×g，5 min）。",
+      "time": "5 min"
+    },
+    {
+      "en": "Resuspend pellet in 200 µL ice-cold PBS, then fix by dropwise addition of 800 µL ice-cold 70% ethanol while vortexing gently (final ~70% ethanol); cap tube and fix at −20°C for at least 2 h (overnight preferred).",
+      "zh": "用 200 µL 冰冷 PBS 重悬沉淀，然后在轻柔涡旋下逐滴加入 800 µL 冰冷 70% 乙醇（终浓度 ~70%）；封管，−20°C 固定至少 2 h（建议过夜）。",
+      "time": "≥2 h",
+      "temp": "-20°C"
+    },
+    {
+      "en": "Centrifuge fixed cells at 300×g for 5 min; aspirate ethanol; wash pellet twice with 5 mL cold PBS (300×g, 5 min each).",
+      "zh": "固定细胞 300×g 离心 5 min；吸去乙醇；用 5 mL 冷 PBS 洗涤沉淀两次（每次 300×g，5 min）。",
+      "time": "5 min"
+    },
+    {
+      "en": "Resuspend pellet in 500 µL PBS containing 50 µg/mL PI and 100 µg/mL RNase A (DNase-free); RNase A is essential because PI also intercalates into RNA.",
+      "zh": "将沉淀重悬于 500 µL PBS 中，含 PI（50 µg/mL）和 RNase A（100 µg/mL，无 DNase 污染）；RNase A 必不可少，因为 PI 也会嵌入 RNA。"
+    },
+    {
+      "en": "Incubate at 37°C for 30 min in the dark.",
+      "zh": "37°C 避光孵育 30 min。",
+      "time": "30 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Transfer to FACS tubes and analyze by flow cytometry on a 488 nm laser; acquire ≥20,000 events; use PE or PI emission channel (>600 nm).",
+      "zh": "转入流式管，用 488 nm 激光流式细胞仪分析；采集 ≥20,000 个事件；使用 PE 或 PI 发射通道（>600 nm）。"
+    },
+    {
+      "en": "Gate singlets by FSC-H vs FSC-A (exclude doublets); then fit cell cycle histogram using Dean-Jett-Fox or Watson Pragmatic model in FlowJo or ModFit to determine % G1 (2N), S-phase (between), and G2/M (4N).",
+      "zh": "通过 FSC-H vs FSC-A 门控单细胞（排除双联体）；在 FlowJo 或 ModFit 中用 Dean-Jett-Fox 或 Watson Pragmatic 模型拟合直方图，确定 G1（2N）、S 期（中间）、G2/M（4N）各占比。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Fixed cells in 70% ethanol at −20°C are stable for up to 1 month; staining can be done at any time",
+        "zh": "固定后细胞在 −20°C 70% 乙醇中可稳定保存 1 个月；随时可继续染色"
+      }
+    }
+  ],
   "usage": {
     "en": "Analyze cell cycle distribution by PI staining of fixed cells and flow cytometry.",
     "zh": "PI 染色固定细胞，流式细胞术分析细胞周期分布。"

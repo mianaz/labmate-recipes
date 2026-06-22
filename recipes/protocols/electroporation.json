@@ -98,5 +98,68 @@
   "crosslinks": [
     "competent_cells_electrocompetent",
     "heat_shock_transformation"
+  ],
+  "briefSteps": [
+    {
+      "en": "Thaw electrocompetent cells on ice → add 1–5 µL desalted DNA → transfer to pre-chilled cuvette → pulse at 1.8 kV, 25 µF, 200 Ω → immediately add 1 mL SOC → recover 37°C 1 h → plate on selective LB agar → incubate overnight",
+      "zh": "冰上解冻电转感受态细胞 → 加 1–5 µL 脱盐 DNA → 转移至预冷电转杯 → 1.8 kV、25 µF、200 Ω 电击 → 立即加 1 mL SOC → 37°C 恢复 1 h → 涂含抗生素 LB 平板 → 过夜培养"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Thaw one aliquot of electrocompetent cells (40–50 µL) on ice for 10 min. Keep on ice at all times. Pre-chill 1 mm electroporation cuvettes on ice.",
+      "zh": "将一管电转感受态细胞（40–50 µL）在冰上解冻 10 min，全程保持在冰上。将 1 mm 电转杯预冷于冰上。",
+      "isHeader": false,
+      "time": "10 min"
+    },
+    {
+      "en": "Add 1–5 µL of desalted DNA (plasmid, ligation product, or library) to the cells; mix by gentle flicking. DNA must be in low-salt buffer (water or 0.5× TE) — salt causes arcing.",
+      "zh": "向细胞中加入 1–5 µL 脱盐 DNA（质粒、连接产物或文库），轻弹混匀。DNA 必须在低盐缓冲液（水或 0.5× TE）中，盐分会导致放弧。",
+      "isHeader": false
+    },
+    {
+      "en": "Transfer the cell-DNA mixture to the pre-chilled electroporation cuvette; tap gently to settle cells at the bottom between the electrodes. Keep on ice until electroporating.",
+      "zh": "将细胞-DNA 混合液转移至预冷电转杯，轻敲使细胞沉降至两极间底部，电击前保持在冰上。",
+      "isHeader": false
+    },
+    {
+      "en": "Set electroporator to: 1.8 kV, 25 µF, 200 Ω (for 1 mm cuvette). For 2 mm cuvette: use 2.5 kV. Deliver a single pulse; the time constant should be 4–5 ms. A 'squeal' sound indicates arcing — discard and retry with better-desalted DNA.",
+      "zh": "设置电转仪：1.8 kV、25 µF、200 Ω（1 mm 电转杯）；2 mm 杯用 2.5 kV。单次脉冲，时间常数应为 4–5 ms；若听到嗡鸣声表明放弧，须弃掉重试（提高 DNA 脱盐质量）。",
+      "isHeader": false,
+      "temp": "RT"
+    },
+    {
+      "en": "Immediately after the pulse, add 1 mL of pre-warmed SOC medium (37°C) to the cuvette; pipette up and down gently 2–3 times to resuspend cells.",
+      "zh": "电击后立即向电转杯中加入 1 mL 预热至 37°C 的 SOC 培养基，轻柔吹打 2–3 次重悬细胞。",
+      "isHeader": false
+    },
+    {
+      "en": "Transfer the cell suspension to a 1.5 mL microcentrifuge tube or 15 mL culture tube; recover at 37°C, 225 rpm for 1 h.",
+      "zh": "将细胞悬液转移至 1.5 mL 离心管或 15 mL 培养管，37°C、225 rpm 恢复培养 1 h。",
+      "isHeader": false,
+      "time": "1 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Plate 50–200 µL of recovery culture onto LB agar + antibiotic plates; for library construction, plate all cells after brief centrifugation and resuspension in 100 µL LB.",
+      "zh": "取 50–200 µL 恢复菌液涂布含抗生素的 LB 平板；构建文库时，短暂离心后用 100 µL LB 重悬全部涂板。",
+      "isHeader": false
+    },
+    {
+      "en": "Incubate plates inverted at 37°C overnight (12–16 h). Expected transformation efficiency: 10⁹–10¹⁰ CFU/µg DNA.",
+      "zh": "倒置平板，37°C 过夜培养 12–16 h，预期转化效率：10⁹–10¹⁰ CFU/µg DNA。",
+      "isHeader": false,
+      "time": "12–16 h",
+      "temp": "37°C"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Plates with colonies can be sealed with Parafilm and stored at 4°C for up to 1 week.",
+        "zh": "长有菌落的平板用 Parafilm 封好，4°C 可保存最多 1 周。"
+      }
+    }
   ]
 }

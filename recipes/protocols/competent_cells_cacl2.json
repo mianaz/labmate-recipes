@@ -111,5 +111,77 @@
   "crosslinks": [
     "heat_shock_transformation",
     "competent_cells_electrocompetent"
+  ],
+  "briefSteps": [
+    {
+      "en": "Grow E. coli to OD₆₀₀ 0.3–0.5 → chill on ice → pellet → resuspend in ice-cold 100 mM CaCl₂ → incubate on ice 30 min → pellet → resuspend in CaCl₂ + 15% glycerol → aliquot → freeze at −80°C",
+      "zh": "E. coli 培养至 OD₆₀₀ 0.3–0.5 → 冰浴 → 离心 → 冰冷 100 mM CaCl₂ 重悬 → 冰浴 30 min → 离心 → CaCl₂ + 15% 甘油重悬 → 分装 → −80°C 冻存"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Inoculate 1 mL of overnight E. coli culture into 50 mL LB (1:50 dilution) in a 250 mL flask; shake at 37°C, 225 rpm until OD₆₀₀ reaches 0.3–0.5 (approximately 1.5–2 h). Monitor OD every 20 min.",
+      "zh": "将 1 mL E. coli 过夜培养物接种至 250 mL 摇瓶中的 50 mL LB（1:50），37°C、225 rpm 振荡至 OD₆₀₀ = 0.3–0.5（约 1.5–2 h），每 20 min 监测一次 OD。",
+      "isHeader": false,
+      "time": "1.5–2 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Transfer the culture to a 50 mL pre-chilled centrifuge tube; place on ice for 15 min. Keep all subsequent steps on ice.",
+      "zh": "将菌液转移至预冷的 50 mL 离心管，冰浴 15 min。此后所有步骤均在冰上进行。",
+      "isHeader": false,
+      "time": "15 min"
+    },
+    {
+      "en": "Centrifuge at 3,000×g for 10 min at 4°C; carefully discard supernatant by decanting. Keep tube on ice.",
+      "zh": "4°C、3,000×g 离心 10 min，倾倒弃去上清，管子保持在冰上。",
+      "isHeader": false,
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Gently resuspend the pellet in 25 mL ice-cold 100 mM CaCl₂ (sterile); pipette slowly without introducing bubbles.",
+      "zh": "用 25 mL 冰冷无菌 100 mM CaCl₂ 缓慢重悬菌体，轻柔吹打避免产生气泡。",
+      "isHeader": false
+    },
+    {
+      "en": "Incubate on ice for 30 min with occasional gentle swirling.",
+      "zh": "冰浴孵育 30 min，期间偶尔轻轻摇动。",
+      "isHeader": false,
+      "time": "30 min"
+    },
+    {
+      "en": "Centrifuge at 3,000×g for 10 min at 4°C; carefully discard supernatant.",
+      "zh": "4°C、3,000×g 离心 10 min，小心弃去上清。",
+      "isHeader": false,
+      "time": "10 min",
+      "temp": "4°C"
+    },
+    {
+      "en": "Resuspend the pellet in 2.5 mL of ice-cold 100 mM CaCl₂ + 15% glycerol by gentle pipetting. Final volume should be approximately 1/20th of original culture volume.",
+      "zh": "用 2.5 mL 冰冷 100 mM CaCl₂ + 15% 甘油轻柔重悬菌体，终体积约为原培养体积的 1/20。",
+      "isHeader": false
+    },
+    {
+      "en": "Optional: incubate the cell suspension at 4°C overnight (12–16 h) to further improve transformation efficiency.",
+      "zh": "可选：将细胞悬液 4°C 孵育过夜（12–16 h）以进一步提高转化效率。",
+      "isHeader": false,
+      "time": "12–16 h (optional)",
+      "temp": "4°C"
+    },
+    {
+      "en": "Aliquot 100 µL per pre-chilled 1.5 mL microcentrifuge tube; snap-freeze in liquid nitrogen and store at −80°C. Cells are stable for 6 months.",
+      "zh": "每管分装 100 µL 至预冷的 1.5 mL 离心管，液氮速冻后 −80°C 保存，可稳定保存 6 个月。",
+      "isHeader": false
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 9,
+      "note": {
+        "en": "Competent cells aliquoted and frozen at −80°C can be stored for up to 6 months.",
+        "zh": "分装并 −80°C 冻存的感受态细胞可保存最多 6 个月。"
+      }
+    }
   ]
 }
