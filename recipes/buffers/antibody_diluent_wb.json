@@ -37,14 +37,20 @@
       "amount": 16.7,
       "unit": "mL",
       "concentration": "5% final",
-      "note": "Prepare or purchase as stock solution"
+      "note": {
+        "en": "Prepare or purchase as stock solution",
+        "zh": "自配或购买母液"
+      }
     },
     {
       "name": "5% Sodium azide stock",
       "amount": 1,
       "unit": "mL",
       "concentration": "0.05% final",
-      "note": "Prepare or purchase as stock solution"
+      "note": {
+        "en": "Prepare or purchase as stock solution",
+        "zh": "自配或购买母液"
+      }
     }
   ],
   "prepSteps": [

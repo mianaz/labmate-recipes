@@ -12,7 +12,10 @@
       "name": "Triton X-100",
       "amount": 0.1,
       "unit": "mL",
-      "note": "终浓度 0.1%"
+      "note": {
+        "en": "Final concentration 0.1%",
+        "zh": "终浓度 0.1%"
+      }
     },
     {
       "name": "1× PBS",

@@ -11,31 +11,46 @@
       "name": "1M Tris-HCl pH 8.1",
       "amount": 1.67,
       "unit": "mL",
-      "note": "终浓度 16.7 mM"
+      "note": {
+        "en": "Final concentration 16.7 mM",
+        "zh": "终浓度 16.7 mM"
+      }
     },
     {
       "name": "0.5M EDTA pH 8.0",
       "amount": 0.24,
       "unit": "mL",
-      "note": "终浓度 1.2 mM"
+      "note": {
+        "en": "Final concentration 1.2 mM",
+        "zh": "终浓度 1.2 mM"
+      }
     },
     {
       "name": "10% Triton X-100",
       "amount": 11,
       "unit": "mL",
-      "note": "终浓度 1.1%"
+      "note": {
+        "en": "Final concentration 1.1%",
+        "zh": "终浓度 1.1%"
+      }
     },
     {
       "name": "10% SDS",
       "amount": 0.1,
       "unit": "mL",
-      "note": "终浓度 0.01%"
+      "note": {
+        "en": "Final concentration 0.01%",
+        "zh": "终浓度 0.01%"
+      }
     },
     {
       "name": "5M NaCl",
       "amount": 3.34,
       "unit": "mL",
-      "note": "终浓度 167 mM"
+      "note": {
+        "en": "Final concentration 167 mM",
+        "zh": "终浓度 167 mM"
+      }
     },
     {
       "name": "ddH₂O",

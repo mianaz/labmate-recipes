@@ -20,25 +20,37 @@
       "amount": 7.98,
       "unit": "g",
       "mw": 342.3,
-      "note": "250 mM; iso-osmotic, stabilizes membranes"
+      "note": {
+        "en": "250 mM; iso-osmotic, stabilizes membranes",
+        "zh": "250 mM；等渗，稳定细胞膜"
+      }
     },
     {
       "name": "HEPES (1 M, pH 7.4)",
       "amount": 1,
       "unit": "mL",
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "EDTA (0.5 M, pH 8.0)",
       "amount": 0.2,
       "unit": "mL",
-      "note": "1 mM; chelates Ca²⁺"
+      "note": {
+        "en": "1 mM; chelates Ca²⁺",
+        "zh": "1 mM；螯合 Ca²⁺"
+      }
     },
     {
       "name": "Protease inhibitor cocktail (100×)",
       "amount": 1,
       "unit": "mL",
-      "note": "1× final; add fresh"
+      "note": {
+        "en": "1× final; add fresh",
+        "zh": "终浓度 1×；临用新加"
+      }
     },
     {
       "name": "ddH₂O",

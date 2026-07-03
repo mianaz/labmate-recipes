@@ -15,49 +15,73 @@
       "name": "1. 加 TRIzol 裂解",
       "amount": 1,
       "unit": "step",
-      "note": "1 mL per 5–10×10⁶ cells; 组织: 1 mL per 50–100 mg, 匀浆器研磨"
+      "note": {
+        "en": "1 mL per 5–10×10⁶ cells; tissue: 1 mL per 50–100 mg, homogenize",
+        "zh": "1 mL per 5–10×10⁶ cells; 组织: 1 mL per 50–100 mg, 匀浆器研磨"
+      }
     },
     {
       "name": "2. 室温静置 5 min",
       "amount": 1,
       "unit": "step",
-      "note": "充分裂解核蛋白复合物"
+      "note": {
+        "en": "Ensure thorough lysis of nucleoprotein complexes",
+        "zh": "充分裂解核蛋白复合物"
+      }
     },
     {
       "name": "3. 加 0.2 mL 氯仿 (per 1 mL TRIzol)",
       "amount": 1,
       "unit": "step",
-      "note": "盖紧, 剧烈摇晃 15 s, 室温 2–3 min"
+      "note": {
+        "en": "Cap tightly, shake vigorously 15 s, RT 2–3 min",
+        "zh": "盖紧, 剧烈摇晃 15 s, 室温 2–3 min"
+      }
     },
     {
       "name": "4. 离心 12,000×g, 15 min, 4°C",
       "amount": 1,
       "unit": "step",
-      "note": "分三层: 上层水相 (RNA) / 中间层 (DNA) / 下层有机相 (蛋白)"
+      "note": {
+        "en": "Three phases: upper aqueous (RNA) / interphase (DNA) / lower organic (protein)",
+        "zh": "分三层: 上层水相 (RNA) / 中间层 (DNA) / 下层有机相 (蛋白)"
+      }
     },
     {
       "name": "5. 小心吸取上层水相至新管",
       "amount": 1,
       "unit": "step",
-      "note": "勿碰中间白色界面层"
+      "note": {
+        "en": "Do not disturb the white interphase layer",
+        "zh": "勿碰中间白色界面层"
+      }
     },
     {
       "name": "6. 加 0.5 mL 异丙醇 (per 1 mL TRIzol)",
       "amount": 1,
       "unit": "step",
-      "note": "混匀, 室温 10 min"
+      "note": {
+        "en": "Mix and incubate 10 min at RT",
+        "zh": "混匀, 室温 10 min"
+      }
     },
     {
       "name": "7. 离心 12,000×g, 10 min, 4°C",
       "amount": 1,
       "unit": "step",
-      "note": "RNA 沉淀为白色/透明胶状颗粒"
+      "note": {
+        "en": "RNA pellet appears white or translucent gel-like",
+        "zh": "RNA 沉淀为白色/透明胶状颗粒"
+      }
     },
     {
       "name": "8. 弃上清, 加 1 mL 75% 乙醇洗涤",
       "amount": 1,
       "unit": "step",
-      "note": "涡旋短暂混匀"
+      "note": {
+        "en": "Vortex briefly to mix",
+        "zh": "涡旋短暂混匀"
+      }
     },
     {
       "name": "9. 离心 7,500×g, 5 min, 4°C",
@@ -68,19 +92,28 @@
       "name": "10. 弃乙醇, 风干 5–10 min",
       "amount": 1,
       "unit": "step",
-      "note": "勿过度干燥 (沉淀变透明即可), 否则难溶解"
+      "note": {
+        "en": "Do not over-dry (pellet should just turn translucent); over-drying makes it insoluble",
+        "zh": "勿过度干燥 (沉淀变透明即可), 否则难溶解"
+      }
     },
     {
       "name": "11. 加 20–50 µL RNase-free H₂O 溶解",
       "amount": 1,
       "unit": "step",
-      "note": "55°C 孵育 10 min 助溶解; 轻弹混匀"
+      "note": {
+        "en": "Incubate at 55°C for 10 min to aid dissolution; flick to mix",
+        "zh": "55°C 孵育 10 min 助溶解; 轻弹混匀"
+      }
     },
     {
       "name": "12. 定量 + 质量评估",
       "amount": 1,
       "unit": "step",
-      "note": "NanoDrop: A260/280 ≈ 2.0, A260/230 > 1.8; 琼脂糖凝胶: 28S/18S ≈ 2:1"
+      "note": {
+        "en": "NanoDrop: A260/280 ≈ 2.0, A260/230 > 1.8; gel: 28S/18S ≈ 2:1",
+        "zh": "NanoDrop: A260/280 ≈ 2.0, A260/230 > 1.8; 琼脂糖凝胶: 28S/18S ≈ 2:1"
+      }
     }
   ],
   "notes": {

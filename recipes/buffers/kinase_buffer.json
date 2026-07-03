@@ -13,25 +13,37 @@
       "name": "1M Tris-HCl pH 7.5",
       "amount": 2.5,
       "unit": "mL",
-      "note": "25 mM final"
+      "note": {
+        "en": "25 mM final",
+        "zh": "终浓度 25 mM"
+      }
     },
     {
       "name": "1M MgCl₂",
       "amount": 0.5,
       "unit": "mL",
-      "note": "5 mM final"
+      "note": {
+        "en": "5 mM final",
+        "zh": "终浓度 5 mM"
+      }
     },
     {
       "name": "100 mM MnCl₂",
       "amount": 1,
       "unit": "mL",
-      "note": "1 mM final"
+      "note": {
+        "en": "1 mM final",
+        "zh": "终浓度 1 mM"
+      }
     },
     {
       "name": "1M DTT",
       "amount": 0.1,
       "unit": "mL",
-      "note": "1 mM final (add fresh)"
+      "note": {
+        "en": "1 mM final (add fresh)",
+        "zh": "终浓度 1 mM（临用新加）"
+      }
     },
     {
       "name": "ddH₂O to 100 mL",

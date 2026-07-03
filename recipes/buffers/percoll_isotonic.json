@@ -18,13 +18,19 @@
       "name": "Percoll (100%, undiluted, GE/Cytiva)",
       "amount": 9,
       "unit": "mL",
-      "note": "Do not autoclave; filter-sterilize if needed (0.2 µm PES)"
+      "note": {
+        "en": "Do not autoclave; filter-sterilize if needed (0.2 µm PES)",
+        "zh": "勿高压灭菌；如需灭菌用 0.2 µm PES 膜过滤"
+      }
     },
     {
       "name": "10× PBS (pH 7.4)",
       "amount": 1,
       "unit": "mL",
-      "note": "To achieve isotonic concentration (final 1× PBS); maintains cell/organelle osmotic balance"
+      "note": {
+        "en": "To achieve isotonic concentration (1× PBS final); maintains cell/organelle osmotic balance",
+        "zh": "调节至等渗浓度（终浓度 1× PBS）；维持细胞/细胞器渗透平衡"
+      }
     }
   ],
   "notes": {
@@ -37,7 +43,13 @@
     "subcellular_fractionation",
     "lysosome_isolation"
   ],
-  "relatedProtocols": ["mitochondria_isolation", "pbmc_isolation", "subcellular_fractionation", "lysosome_isolation", "gradient_centrifugation_general"],
+  "relatedProtocols": [
+    "mitochondria_isolation",
+    "pbmc_isolation",
+    "subcellular_fractionation",
+    "lysosome_isolation",
+    "gradient_centrifugation_general"
+  ],
   "ref": "Pertoft (2000) J Biochem Biophys Methods 44:1–30; GE Healthcare Percoll Application Note; Ford et al. (1983) Biol Cell 48:1",
   "discipline": [
     "cell",

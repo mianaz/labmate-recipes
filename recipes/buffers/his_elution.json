@@ -13,21 +13,30 @@
       "amount": 3.45,
       "unit": "g",
       "mw": 119.98,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "NaCl",
       "amount": 8.77,
       "unit": "g",
       "mw": 58.44,
-      "note": "300 mM"
+      "note": {
+        "en": "300 mM",
+        "zh": "300 mM"
+      }
     },
     {
       "name": "Imidazole",
       "amount": 8.51,
       "unit": "g",
       "mw": 68.08,
-      "note": "250 mM"
+      "note": {
+        "en": "250 mM",
+        "zh": "250 mM"
+      }
     }
   ],
   "nameCn": "His 标签洗脱液",

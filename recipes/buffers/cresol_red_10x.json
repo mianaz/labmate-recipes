@@ -30,7 +30,10 @@
       "amount": 30,
       "unit": "g",
       "concentration": "60%",
-      "note": "Sucrose also occupies volume"
+      "note": {
+        "en": "Sucrose also occupies volume",
+        "zh": "蔗糖也占溶液体积"
+      }
     },
     {
       "name": "Cresol red sodium salt (Sigma 114480)",
@@ -43,7 +46,10 @@
       "name": "ddH₂O",
       "amount": null,
       "unit": "mL",
-      "note": "To 50 mL final volume"
+      "note": {
+        "en": "Adjust to 50 mL final volume",
+        "zh": "定容至 50 mL"
+      }
     }
   ],
   "prepSteps": [

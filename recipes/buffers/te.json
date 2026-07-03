@@ -13,13 +13,19 @@
       "name": "1M Tris-HCl pH 8.0",
       "amount": 1,
       "unit": "mL",
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "0.5M EDTA pH 8.0",
       "amount": 0.2,
       "unit": "mL",
-      "note": "1 mM"
+      "note": {
+        "en": "1 mM",
+        "zh": "1 mM"
+      }
     },
     {
       "name": "ddH₂O",

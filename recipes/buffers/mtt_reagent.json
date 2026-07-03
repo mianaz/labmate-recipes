@@ -13,7 +13,10 @@
       "amount": 0.05,
       "unit": "g",
       "mw": 414.32,
-      "note": "5 mg/mL"
+      "note": {
+        "en": "5 mg/mL",
+        "zh": "5 mg/mL"
+      }
     },
     {
       "name": "1× PBS (sterile)",
@@ -62,5 +65,9 @@
   "crosslinks": [
     "mtt_assay"
   ],
-  "relatedProtocols": ["mtt_assay", "cck8_proliferation", "resazurin_assay"]
+  "relatedProtocols": [
+    "mtt_assay",
+    "cck8_proliferation",
+    "resazurin_assay"
+  ]
 }

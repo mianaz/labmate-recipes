@@ -11,32 +11,47 @@
       "name": "1M Tris-HCl pH 6.8",
       "amount": 1.25,
       "unit": "mL",
-      "note": "终浓度 125 mM"
+      "note": {
+        "en": "Final concentration 125 mM",
+        "zh": "终浓度 125 mM"
+      }
     },
     {
       "name": "SDS",
       "amount": 0.4,
       "unit": "g",
       "mw": 288.38,
-      "note": "终浓度 4%"
+      "note": {
+        "en": "Final concentration 4%",
+        "zh": "终浓度 4%"
+      }
     },
     {
       "name": "Glycerol",
       "amount": 2,
       "unit": "mL",
-      "note": "终浓度 20%"
+      "note": {
+        "en": "Final concentration 20%",
+        "zh": "终浓度 20%"
+      }
     },
     {
       "name": "β-mercaptoethanol",
       "amount": 1,
       "unit": "mL",
-      "note": "终浓度 10%"
+      "note": {
+        "en": "Final concentration 10%",
+        "zh": "终浓度 10%"
+      }
     },
     {
       "name": "0.5% Bromophenol blue",
       "amount": 0.4,
       "unit": "mL",
-      "note": "终浓度 0.02%"
+      "note": {
+        "en": "Final concentration 0.02%",
+        "zh": "终浓度 0.02%"
+      }
     },
     {
       "name": "ddH₂O",

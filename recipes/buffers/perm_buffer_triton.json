@@ -13,7 +13,10 @@
       "name": "Triton X-100",
       "amount": 0.1,
       "unit": "mL",
-      "note": "0.1% (v/v)"
+      "note": {
+        "en": "0.1% (v/v)",
+        "zh": "0.1% (v/v)"
+      }
     },
     {
       "name": "1× PBS",
@@ -61,5 +64,14 @@
     "flow_cytometry_protocol",
     "proximity_ligation_assay"
   ],
-  "relatedProtocols": ["if_protocol", "flow_cytometry_protocol", "proximity_ligation_assay", "cell_cycle_pi", "if_cryostat", "multiplex_if", "ihc_paraffin_protocol", "chip_protocol"]
+  "relatedProtocols": [
+    "if_protocol",
+    "flow_cytometry_protocol",
+    "proximity_ligation_assay",
+    "cell_cycle_pi",
+    "if_cryostat",
+    "multiplex_if",
+    "ihc_paraffin_protocol",
+    "chip_protocol"
+  ]
 }

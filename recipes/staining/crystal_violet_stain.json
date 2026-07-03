@@ -12,7 +12,10 @@
       "name": "Crystal Violet",
       "amount": 0.5,
       "unit": "g",
-      "note": "0.5% (w/v)"
+      "note": {
+        "en": "0.5% (w/v)",
+        "zh": "0.5% (w/v)"
+      }
     },
     {
       "name": "Methanol",

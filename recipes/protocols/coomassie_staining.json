@@ -15,13 +15,19 @@
       "name": "1. 固定：50% 甲醇 / 10% 乙酸, 30 min",
       "amount": 1,
       "unit": "step",
-      "note": "轻柔摇晃, 防止凝胶变形"
+      "note": {
+        "en": "Rock gently to avoid distorting the gel",
+        "zh": "轻柔摇晃, 防止凝胶变形"
+      }
     },
     {
       "name": "2. 染色：0.1% CBB R-250 / 50% 甲醇 / 10% 乙酸",
       "amount": 1,
       "unit": "step",
-      "note": "1 h 至过夜, 摇床"
+      "note": {
+        "en": "1 h to overnight, on shaker",
+        "zh": "1 h 至过夜, 摇床"
+      }
     },
     {
       "name": "3. 脱色 I：50% 甲醇 / 10% 乙酸, 30 min",
@@ -32,7 +38,10 @@
       "name": "4. 脱色 II：5% 甲醇 / 7% 乙酸",
       "amount": 1,
       "unit": "step",
-      "note": "换液 2–3 次直到背景清晰; 加纸巾吸附色素加速"
+      "note": {
+        "en": "Destain with 2–3 solution changes until background is clear; adding tissue paper speeds destaining",
+        "zh": "换液 2–3 次直到背景清晰; 加纸巾吸附色素加速"
+      }
     },
     {
       "name": "5. 水中保存或扫描成像",

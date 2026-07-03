@@ -28,13 +28,19 @@
       "name": "4. 转移至 9 mL 预热培养基",
       "amount": 1,
       "unit": "step",
-      "note": "逐滴加入, 缓冲 DMSO 浓度变化"
+      "note": {
+        "en": "Add dropwise to buffer rapid DMSO concentration change",
+        "zh": "逐滴加入, 缓冲 DMSO 浓度变化"
+      }
     },
     {
       "name": "5. 离心 200×g, 5 min (推荐) 或直接铺板",
       "amount": 1,
       "unit": "step",
-      "note": "大多数细胞系建议离心去 DMSO; 极脆弱细胞可跳过直接铺板"
+      "note": {
+        "en": "For most cell lines, centrifuge to remove DMSO; extremely fragile cells may be seeded directly",
+        "zh": "大多数细胞系建议离心去 DMSO; 极脆弱细胞可跳过直接铺板"
+      }
     },
     {
       "name": "6. 弃上清, 新鲜完全培养基重悬, 接种培养瓶",

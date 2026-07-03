@@ -18,13 +18,19 @@
       "name": "Ficoll-400 (PM400 grade, tissue culture tested)",
       "amount": 30,
       "unit": "g",
-      "note": "MW ~400,000 Da; use sterile cell-culture grade"
+      "note": {
+        "en": "MW ~400,000 Da; use sterile cell-culture grade",
+        "zh": "分子量约 400,000 Da；使用细胞培养级无菌品"
+      }
     },
     {
       "name": "Sterile PBS (1×, pH 7.4)",
       "amount": null,
       "unit": "to 100 mL",
-      "note": "Or DPBS without Ca²⁺/Mg²⁺"
+      "note": {
+        "en": "Or DPBS without Ca²⁺/Mg²⁺",
+        "zh": "或使用不含 Ca²⁺/Mg²⁺ 的 DPBS"
+      }
     }
   ],
   "notes": {

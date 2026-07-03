@@ -28,7 +28,10 @@
       "name": "4. 电击: 1.8 kV, 25 µF, 200 Ω (1 mm 杯)",
       "amount": 1,
       "unit": "step",
-      "note": "2 mm 杯: 2.5 kV; 时间常数应为 4–5 ms"
+      "note": {
+        "en": "2 mm cuvette: 2.5 kV; time constant should be 4–5 ms",
+        "zh": "2 mm 杯: 2.5 kV; 时间常数应为 4–5 ms"
+      }
     },
     {
       "name": "5. 立即加 1 mL SOC",

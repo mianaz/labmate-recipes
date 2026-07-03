@@ -126,7 +126,7 @@
     "en": "Staining concentrations matter especially for phospho-proteins. Ab bank mixes are designed for 50 µL final volume. Some cells stick to plastic in MilliQ water wash — add 0.1% BSA. For autosampler: resuspend in 50 µL MilliQ, add 50 µL EQ beads, transfer to 96-deep-well plate. Ideal: 0.5M cells per injection of 400 µL.",
     "zh": "染色浓度对磷酸化蛋白尤其重要。抗体库配方按 50 µL 终体积设计。某些细胞在 MilliQ 水洗涤时粘壁——加 0.1% BSA。自动进样：50 µL MilliQ 重悬 + 50 µL EQ beads。最佳：0.5M 细胞/400 µL。"
   },
-  "ref": "Adapted from Fluidigm CyTOF protocol (AH Mar 2012, DM Mar 2015)",
+  "ref": "Bendall SC et al. (2011) Science 332:687–696; Spitzer MH & Nolan GP (2016) Cell 165:780–791; Fluidigm Helios/Hyperion User Guide (2020)",
   "crosslinks": [
     "pfa_4",
     "facs_buffer",
@@ -270,5 +270,6 @@
     "facs_buffer",
     "flow_panel_staining",
     "flow_cytometry_protocol"
-  ]
+  ],
+  "doi": "10.1126/science.1198704"
 }

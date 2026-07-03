@@ -13,14 +13,20 @@
       "amount": 195.2,
       "unit": "g",
       "mw": 195.2,
-      "note": "1 M"
+      "note": {
+        "en": "1 M",
+        "zh": "1 M"
+      }
     },
     {
       "name": "Tris base",
       "amount": 121.2,
       "unit": "g",
       "mw": 121.14,
-      "note": "1 M"
+      "note": {
+        "en": "1 M",
+        "zh": "1 M"
+      }
     },
     {
       "name": "SDS",
@@ -34,13 +40,19 @@
       "amount": 6.0,
       "unit": "g",
       "mw": 292.24,
-      "note": "20 mM"
+      "note": {
+        "en": "20 mM",
+        "zh": "20 mM"
+      }
     },
     {
       "name": "ddH₂O",
       "amount": 1000,
       "unit": "mL",
-      "note": "定容"
+      "note": {
+        "en": "Adjust volume to",
+        "zh": "定容"
+      }
     }
   ],
   "nameCn": "MES 电泳缓冲液 (20×)",

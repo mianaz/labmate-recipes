@@ -22,7 +22,10 @@
       "name": "3. 加 0.4% Trypan Blue",
       "amount": 10,
       "unit": "µL",
-      "note": "1:1 稀释"
+      "note": {
+        "en": "1:1 dilution",
+        "zh": "1:1 稀释"
+      }
     },
     {
       "name": "4. 轻柔混匀，室温 1–2 min (勿超 3 min)",

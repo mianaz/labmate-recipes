@@ -102,7 +102,7 @@
     "en": "Touchdown PCR reduces non-specific amplification. The 210 bp Cre'd-out Pten band indicates presence of CTCs carrying the tumor-specific deletion. Cycle number (30-45) should be adjusted based on DNA yield from Nanodrop.",
     "zh": "Touchdown PCR 降低非特异性扩增。210 bp Cre 切除 Pten 条带表明存在携带肿瘤特异性缺失的 CTC。循环数（30-45）根据 Nanodrop DNA 产量调整。"
   },
-  "ref": "Internal genotyping protocol (2024); QIAGEN DNeasy Blood & Tissue Kit handbook",
+  "ref": "Cristofanilli M et al. (2004) N Engl J Med 351:781–791; QIAGEN DNeasy Blood & Tissue Kit Handbook (2020)",
   "crosslinks": [
     "rbc_lysis_10x",
     "agarose_gel_electrophoresis",
@@ -215,5 +215,6 @@
       "en": "Cheek blood → RBC lysis → DNeasy DNA extraction → Nanodrop → touchdown PCR (Pten primers) → 2.5% agarose gel → UV imaging (210 bp = CTC+)",
       "zh": "面颊采血 → 红细胞裂解 → DNeasy DNA 提取 → Nanodrop 测浓度 → Touchdown PCR（Pten 引物）→ 2.5% 琼脂糖凝胶 → UV 成像（210 bp = CTC 阳性）"
     }
-  ]
+  ],
+  "doi": "10.1056/NEJMoa040766"
 }

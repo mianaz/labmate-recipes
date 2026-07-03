@@ -18,7 +18,10 @@
       "name": "2. Add plasmid DNA",
       "amount": 1,
       "unit": "µL",
-      "note": "1–50 ng; ≤10% of cell volume"
+      "note": {
+        "en": "1–50 ng; ≤10% of cell volume",
+        "zh": "1–50 ng；体积 ≤ 细胞总体积的 10%"
+      }
     },
     {
       "name": "3. Mix gently by flicking. Ice 30 min",

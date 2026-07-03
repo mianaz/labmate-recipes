@@ -19,32 +19,47 @@
       "amount": 8.56,
       "unit": "g",
       "mw": 342.3,
-      "note": "250 mM; isotonic osmolality preserves lysosomes"
+      "note": {
+        "en": "250 mM; isotonic osmolality preserves lysosomes",
+        "zh": "250 mM；等渗渗透压，保护溶酶体"
+      }
     },
     {
       "name": "HEPES-KOH (1 M, pH 7.4)",
       "amount": 1,
       "unit": "mL",
-      "note": "10 mM final"
+      "note": {
+        "en": "10 mM final",
+        "zh": "终浓度 10 mM"
+      }
     },
     {
       "name": "KCl",
       "amount": 0.075,
       "unit": "g",
       "mw": 74.55,
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "MgCl₂ (1 M)",
       "amount": 0.15,
       "unit": "mL",
-      "note": "1.5 mM"
+      "note": {
+        "en": "1.5 mM",
+        "zh": "1.5 mM"
+      }
     },
     {
       "name": "EDTA (0.5 M, pH 8.0)",
       "amount": 0.2,
       "unit": "mL",
-      "note": "1 mM"
+      "note": {
+        "en": "1 mM",
+        "zh": "1 mM"
+      }
     },
     {
       "name": "ddH₂O",

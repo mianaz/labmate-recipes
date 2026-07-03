@@ -49,7 +49,10 @@
       "amount": 1,
       "unit": "mL",
       "concentration": "0.05% final",
-      "note": "Prepare or purchase as stock solution"
+      "note": {
+        "en": "Prepare or purchase as stock solution",
+        "zh": "自配或购买母液"
+      }
     }
   ],
   "prepSteps": [

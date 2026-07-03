@@ -68,7 +68,10 @@
       "name": "12. DAPI 染核 5 min",
       "amount": 1,
       "unit": "step",
-      "note": "1 µg/mL in PBS"
+      "note": {
+        "en": "1 µg/mL in PBS",
+        "zh": "1 µg/mL（溶于 PBS）"
+      }
     },
     {
       "name": "13. 封片 (抗淬灭剂)",

@@ -11,7 +11,10 @@
       "name": "Skim milk powder",
       "amount": 2.5,
       "unit": "g",
-      "note": "5% (w/v)"
+      "note": {
+        "en": "5% (w/v)",
+        "zh": "5% (w/v)"
+      }
     },
     {
       "name": "1× TBST",

@@ -18,7 +18,10 @@
       "name": "Ficoll-400 (Sigma F4375 or equivalent)",
       "amount": 20,
       "unit": "g",
-      "note": "MW ~400,000; high-viscosity hydrophilic polymer; dissolves slowly"
+      "note": {
+        "en": "MW ~400,000; high-viscosity hydrophilic polymer; dissolves slowly",
+        "zh": "分子量约 400,000；高黏度亲水聚合物；溶解缓慢"
+      }
     },
     {
       "name": "ddH₂O (pyrogen-free for cell work)",

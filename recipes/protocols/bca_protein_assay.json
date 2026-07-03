@@ -14,7 +14,10 @@
       "name": "1. 准备 BSA 标准品稀释系列",
       "amount": 1,
       "unit": "step",
-      "note": "0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL"
+      "note": {
+        "en": "0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL",
+        "zh": "0、25、125、250、500、750、1000、2000 µg/mL"
+      }
     },
     {
       "name": "2. 配制 BCA 工作液 (Reagent A:B = 50:1)",
@@ -25,7 +28,10 @@
       "name": "3. 96 孔板加样：25 µL 标准品/样品 per well",
       "amount": 1,
       "unit": "step",
-      "note": "每个做 2–3 复孔"
+      "note": {
+        "en": "Run 2–3 technical replicates per sample",
+        "zh": "每个做 2–3 复孔"
+      }
     },
     {
       "name": "4. 加 200 µL BCA 工作液到每个孔",
@@ -36,7 +42,10 @@
       "name": "5. 37°C 孵育 30 min",
       "amount": 1,
       "unit": "step",
-      "note": "板封膜防蒸发"
+      "note": {
+        "en": "Seal plate with film to prevent evaporation",
+        "zh": "板封膜防蒸发"
+      }
     },
     {
       "name": "6. 冷却至室温",
@@ -52,7 +61,10 @@
       "name": "8. 标准曲线计算样品浓度",
       "amount": 1,
       "unit": "step",
-      "note": "四参数拟合或线性回归"
+      "note": {
+        "en": "Four-parameter logistic fit or linear regression",
+        "zh": "四参数拟合或线性回归"
+      }
     }
   ],
   "notes": {

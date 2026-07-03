@@ -13,13 +13,19 @@
       "name": "1. 选择琼脂糖浓度",
       "amount": 1,
       "unit": "step",
-      "note": "0.8%: >1 kb; 1%: 0.5–7 kb; 1.5%: 0.2–3 kb; 2%: 0.1–2 kb"
+      "note": {
+        "en": "0.8%: >1 kb; 1%: 0.5–7 kb; 1.5%: 0.2–3 kb; 2%: 0.1–2 kb",
+        "zh": "0.8%：>1 kb；1%：0.5–7 kb；1.5%：0.2–3 kb；2%：0.1–2 kb"
+      }
     },
     {
       "name": "  - Agarose",
       "amount": 0.5,
       "unit": "g",
-      "note": "1% gel, 50 mL"
+      "note": {
+        "en": "1% gel, 50 mL",
+        "zh": "1% 凝胶，共 50 mL"
+      }
     },
     {
       "name": "  - 1× TAE 或 1× TBE",
@@ -40,7 +46,10 @@
       "name": "  - GelRed/GelGreen 或 SYBR Safe",
       "amount": 5,
       "unit": "µL",
-      "note": "10,000× stock 加 5 µL/50 mL"
+      "note": {
+        "en": "10,000× stock: add 5 µL per 50 mL",
+        "zh": "10,000× stock 加 5 µL/50 mL"
+      }
     },
     {
       "name": "4. 倒入胶板，插梳，室温凝固 20–30 min",

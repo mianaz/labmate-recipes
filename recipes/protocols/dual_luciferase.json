@@ -14,7 +14,10 @@
       "name": "1. 共转染 Firefly 报告质粒 + Renilla 内参质粒",
       "amount": 1,
       "unit": "step",
-      "note": "比例 10:1 (如 500 ng Firefly + 50 ng Renilla/24 孔); 加实验质粒或 miRNA mimics"
+      "note": {
+        "en": "Ratio 10:1 (e.g. 500 ng Firefly + 50 ng Renilla per 24-well); co-transfect with experimental plasmid or miRNA mimics",
+        "zh": "比例 10:1 (如 500 ng Firefly + 50 ng Renilla/24 孔); 加实验质粒或 miRNA mimics"
+      }
     },
     {
       "name": "2. 24–48 h 后弃培养基, PBS 洗 1×",
@@ -25,13 +28,19 @@
       "name": "3. 加 1× PLB 裂解",
       "amount": 1,
       "unit": "step",
-      "note": "24-well: 100 µL/孔; 96-well: 20 µL/孔; 摇床 15 min RT"
+      "note": {
+        "en": "24-well: 100 µL/well; 96-well: 20 µL/well; shake 15 min at RT",
+        "zh": "24-well: 100 µL/孔; 96-well: 20 µL/孔; 摇床 15 min RT"
+      }
     },
     {
       "name": "4. 取 20 µL 裂解液至检测板",
       "amount": 1,
       "unit": "step",
-      "note": "白色不透明板减少串扰"
+      "note": {
+        "en": "White opaque plate reduces cross-talk",
+        "zh": "白色不透明板减少串扰"
+      }
     },
     {
       "name": "5. 加 100 µL LAR II → 读 Firefly (2 s delay, 10 s read)",
@@ -42,13 +51,19 @@
       "name": "6. 加 100 µL Stop & Glo → 读 Renilla",
       "amount": 1,
       "unit": "step",
-      "note": "Stop & Glo 猝灭 Firefly 同时激发 Renilla"
+      "note": {
+        "en": "Stop & Glo quenches Firefly while activating Renilla",
+        "zh": "Stop & Glo 猝灭 Firefly 同时激发 Renilla"
+      }
     },
     {
       "name": "7. 计算 Ratio = Firefly RLU / Renilla RLU",
       "amount": 1,
       "unit": "step",
-      "note": "归一化后比较各组差异"
+      "note": {
+        "en": "Compare groups after normalization",
+        "zh": "归一化后比较各组差异"
+      }
     }
   ],
   "notes": {

@@ -67,7 +67,7 @@
     "en": "Handle therapeutic antibodies carefully — they are expensive. Use cold sterile D-PBS for dilution. Keep antibodies at 4°C (do NOT freeze unless specified by manufacturer). Common suppliers: BioLegend, BioXcell, Leinco. Always verify stock concentration matches label before diluting.",
     "zh": "治疗性抗体昂贵——小心操作。使用冷的无菌 D-PBS 稀释。4°C 保存（除非厂家另有说明，勿冷冻）。常见供应商：BioLegend、BioXcell、Leinco。稀释前务必核实库存浓度与标签一致。"
   },
-  "ref": "Standard in vivo dosing protocol",
+  "ref": "Weiner LM, Surana R & Wang S (2010) Nat Rev Immunol 10:317–327; NRC (2011) Guide for the Care and Use of Laboratory Animals, 8th ed., National Academies Press",
   "crosslinks": [
     "pbs_1x"
   ],
@@ -145,5 +145,6 @@
       "en": "Verify stock concentration → calculate PBS volume (X = A/B' − C) → add cold D-PBS, mix gently → aliquot 1 mL/tube → label → store 4°C",
       "zh": "核实库存浓度 → 计算 PBS 体积（X = A/B' − C）→ 加冷 D-PBS 轻柔混匀 → 分装 1 mL/管 → 标记 → 4°C 保存"
     }
-  ]
+  ],
+  "doi": "10.1038/nri2727"
 }

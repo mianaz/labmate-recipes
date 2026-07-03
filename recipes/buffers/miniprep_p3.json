@@ -13,19 +13,28 @@
       "amount": 147.2,
       "unit": "g",
       "mw": 98.14,
-      "note": "3 M"
+      "note": {
+        "en": "3 M",
+        "zh": "3 M"
+      }
     },
     {
       "name": "Glacial acetic acid",
       "amount": 1,
       "unit": "variable",
-      "note": "调 pH 至 5.5"
+      "note": {
+        "en": "Adjust pH to 5.5",
+        "zh": "调 pH 至 5.5"
+      }
     },
     {
       "name": "ddH₂O",
       "amount": 500,
       "unit": "mL",
-      "note": "定容"
+      "note": {
+        "en": "Adjust volume to",
+        "zh": "定容"
+      }
     }
   ],
   "nameCn": "质粒提取缓冲液 P3 (中和液)",

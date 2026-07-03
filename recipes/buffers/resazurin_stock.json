@@ -19,7 +19,10 @@
       "amount": 0.1,
       "unit": "g",
       "mw": 251.17,
-      "note": "Sigma R7017 or equivalent; deep blue powder; store at RT dark"
+      "note": {
+        "en": "Sigma R7017 or equivalent; deep blue powder; store at RT in dark",
+        "zh": "Sigma R7017 或同等品；深蓝色粉末；避光室温保存"
+      }
     },
     {
       "name": "PBS (1×, sterile, pH 7.4)",

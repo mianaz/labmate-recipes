@@ -12,20 +12,29 @@
       "name": "FBS (heat-inactivated)",
       "amount": 10,
       "unit": "mL",
-      "note": "2% (v/v)"
+      "note": {
+        "en": "2% (v/v)",
+        "zh": "2% (v/v)"
+      }
     },
     {
       "name": "0.5M EDTA pH 8.0",
       "amount": 1,
       "unit": "mL",
-      "note": "1 mM"
+      "note": {
+        "en": "1 mM",
+        "zh": "1 mM"
+      }
     },
     {
       "name": "NaN₃",
       "amount": 0.05,
       "unit": "g",
       "mw": 65.01,
-      "note": "0.01% (w/v)"
+      "note": {
+        "en": "0.01% (w/v)",
+        "zh": "0.01% (w/v)"
+      }
     },
     {
       "name": "1× PBS",

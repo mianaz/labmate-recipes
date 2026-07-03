@@ -17,7 +17,10 @@
       "name": "2. BCA/Bradford 定量",
       "amount": 1,
       "unit": "step",
-      "note": "每泳道 20–50 µg"
+      "note": {
+        "en": "20–50 µg per lane",
+        "zh": "每泳道 20–50 µg"
+      }
     },
     {
       "name": "3. 加 Loading Buffer, 煮沸 5 min",
@@ -28,13 +31,19 @@
       "name": "4. SDS-PAGE 电泳",
       "amount": 1,
       "unit": "step",
-      "note": "80V 浓缩 → 120V 分离"
+      "note": {
+        "en": "80 V for stacking → 120 V for separation",
+        "zh": "80V 浓缩 → 120V 分离"
+      }
     },
     {
       "name": "5. 转膜 (湿转)",
       "amount": 1,
       "unit": "step",
-      "note": "100V 60–90 min 或 30V 过夜"
+      "note": {
+        "en": "100 V for 60–90 min, or 30 V overnight",
+        "zh": "100V 60–90 min 或 30V 过夜"
+      }
     },
     {
       "name": "6. Ponceau S 验证转膜",

@@ -20,20 +20,29 @@
       "amount": 0.154,
       "unit": "g",
       "mw": 307.32,
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "Tris-HCl (1 M, pH 8.0)",
       "amount": 2.5,
       "unit": "mL",
-      "note": "50 mM final"
+      "note": {
+        "en": "50 mM final",
+        "zh": "终浓度 50 mM"
+      }
     },
     {
       "name": "NaCl",
       "amount": 0.44,
       "unit": "g",
       "mw": 58.44,
-      "note": "150 mM"
+      "note": {
+        "en": "150 mM",
+        "zh": "150 mM"
+      }
     },
     {
       "name": "ddH₂O",

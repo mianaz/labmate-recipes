@@ -25,7 +25,10 @@
       "name": "3. 取 500 µL 菌液 + 500 µL 50% 甘油",
       "amount": 1,
       "unit": "step",
-      "note": "终浓度 25% 甘油; 或用 15% DMSO"
+      "note": {
+        "en": "Final concentration 25% glycerol; or 15% DMSO",
+        "zh": "终浓度 25% 甘油; 或用 15% DMSO"
+      }
     },
     {
       "name": "4. 温和混匀（勿涡旋）",
@@ -41,7 +44,10 @@
       "name": "6. 直接放入 -80°C 保存",
       "amount": 1,
       "unit": "step",
-      "note": "不要预冻 -20°C"
+      "note": {
+        "en": "Do not pre-freeze at −20°C",
+        "zh": "不要预冻 -20°C"
+      }
     }
   ],
   "notes": {

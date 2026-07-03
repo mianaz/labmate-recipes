@@ -17,44 +17,65 @@
       "name": "Tris-HCl (1 M, pH 8.0)",
       "amount": 5,
       "unit": "mL",
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "NaCl",
       "amount": 0.877,
       "unit": "g",
       "mw": 58.44,
-      "note": "150 mM"
+      "note": {
+        "en": "150 mM",
+        "zh": "150 mM"
+      }
     },
     {
       "name": "Glycerol",
       "amount": 10,
       "unit": "mL",
-      "note": "10% v/v; stabilizes proteins"
+      "note": {
+        "en": "10% (v/v); stabilizes proteins",
+        "zh": "10% (v/v)；稳定蛋白质"
+      }
     },
     {
       "name": "β-Mercaptoethanol (14.3 M)",
       "amount": 0.007,
       "unit": "mL",
-      "note": "1 mM; or 1 mM DTT"
+      "note": {
+        "en": "1 mM; or 1 mM DTT",
+        "zh": "1 mM；或换用 1 mM DTT"
+      }
     },
     {
       "name": "Lysozyme (10 mg/mL)",
       "amount": 0.1,
       "unit": "mL",
-      "note": "0.01 mg/mL; for E. coli"
+      "note": {
+        "en": "0.01 mg/mL; for E. coli",
+        "zh": "0.01 mg/mL；适用于大肠杆菌"
+      }
     },
     {
       "name": "Protease inhibitor cocktail (100×)",
       "amount": 1,
       "unit": "mL",
-      "note": "1× final; PMSF 1 mM + cOmplete tablet"
+      "note": {
+        "en": "1× final; PMSF 1 mM + cOmplete tablet",
+        "zh": "终浓度 1×；PMSF 1 mM + cOmplete 蛋白酶抑制剂片"
+      }
     },
     {
       "name": "DNase I (10 mg/mL)",
       "amount": 0.005,
       "unit": "mL",
-      "note": "0.5 µg/mL + 2 mM MgCl₂; reduces viscosity"
+      "note": {
+        "en": "0.5 µg/mL + 2 mM MgCl₂; reduces viscosity",
+        "zh": "0.5 µg/mL + 2 mM MgCl₂；降低黏度"
+      }
     }
   ],
   "notes": {

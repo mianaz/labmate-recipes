@@ -12,19 +12,28 @@
       "name": "1M Tris-HCl pH 8.1",
       "amount": 5,
       "unit": "mL",
-      "note": "终浓度 50 mM"
+      "note": {
+        "en": "Final concentration 50 mM",
+        "zh": "终浓度 50 mM"
+      }
     },
     {
       "name": "0.5M EDTA pH 8.0",
       "amount": 2,
       "unit": "mL",
-      "note": "终浓度 10 mM"
+      "note": {
+        "en": "Final concentration 10 mM",
+        "zh": "终浓度 10 mM"
+      }
     },
     {
       "name": "10% SDS",
       "amount": 10,
       "unit": "mL",
-      "note": "终浓度 1%"
+      "note": {
+        "en": "Final concentration 1%",
+        "zh": "终浓度 1%"
+      }
     },
     {
       "name": "ddH₂O",

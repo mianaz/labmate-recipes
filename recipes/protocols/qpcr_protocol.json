@@ -28,7 +28,10 @@
       "name": "4. 反转录 (500 ng–2 µg RNA)",
       "amount": 1,
       "unit": "step",
-      "note": "Oligo-dT + Random hexamer"
+      "note": {
+        "en": "Oligo-dT + Random hexamer",
+        "zh": "Oligo-dT + 随机六聚体"
+      }
     },
     {
       "name": "5. cDNA 稀释 (1:5–1:20)",
@@ -39,7 +42,10 @@
       "name": "6. qPCR 体系 (20 µL)",
       "amount": 1,
       "unit": "step",
-      "note": "SYBR Green / TaqMan"
+      "note": {
+        "en": "SYBR Green / TaqMan",
+        "zh": "SYBR Green / TaqMan"
+      }
     },
     {
       "name": "  - 2× SYBR Master Mix",
@@ -50,13 +56,19 @@
       "name": "  - Forward primer (10 µM)",
       "amount": 0.4,
       "unit": "µL",
-      "note": "200 nM final"
+      "note": {
+        "en": "200 nM final",
+        "zh": "终浓度 200 nM"
+      }
     },
     {
       "name": "  - Reverse primer (10 µM)",
       "amount": 0.4,
       "unit": "µL",
-      "note": "200 nM final"
+      "note": {
+        "en": "200 nM final",
+        "zh": "终浓度 200 nM"
+      }
     },
     {
       "name": "  - cDNA template",

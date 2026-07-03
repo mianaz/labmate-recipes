@@ -14,14 +14,20 @@
       "amount": 175.3,
       "unit": "g",
       "mw": 58.44,
-      "note": "3 M"
+      "note": {
+        "en": "3 M",
+        "zh": "3 M"
+      }
     },
     {
       "name": "Sodium citrate dihydrate",
       "amount": 88.2,
       "unit": "g",
       "mw": 294.1,
-      "note": "300 mM"
+      "note": {
+        "en": "300 mM",
+        "zh": "300 mM"
+      }
     }
   ],
   "nameCn": "20× SSC 柠檬酸钠缓冲液",

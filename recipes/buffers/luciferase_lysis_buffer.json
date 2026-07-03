@@ -13,25 +13,37 @@
       "name": "1M Tris-phosphate pH 7.8",
       "amount": 2.5,
       "unit": "mL",
-      "note": "25 mM final"
+      "note": {
+        "en": "25 mM final",
+        "zh": "终浓度 25 mM"
+      }
     },
     {
       "name": "1M DTT",
       "amount": 0.2,
       "unit": "mL",
-      "note": "2 mM (add fresh)"
+      "note": {
+        "en": "2 mM (add fresh)",
+        "zh": "2 mM（临用新加）"
+      }
     },
     {
       "name": "10% Triton X-100",
       "amount": 10,
       "unit": "mL",
-      "note": "1% final"
+      "note": {
+        "en": "1% final",
+        "zh": "终浓度 1%"
+      }
     },
     {
       "name": "100% Glycerol",
       "amount": 10,
       "unit": "mL",
-      "note": "10% final"
+      "note": {
+        "en": "10% final",
+        "zh": "终浓度 10%"
+      }
     },
     {
       "name": "ddH₂O to 100 mL",

@@ -18,19 +18,28 @@
       "name": "2× Taq Master Mix",
       "amount": 12.5,
       "unit": "µL",
-      "note": "含 Taq, dNTPs, buffer"
+      "note": {
+        "en": "Contains Taq, dNTPs, buffer",
+        "zh": "含 Taq, dNTPs, buffer"
+      }
     },
     {
       "name": "Forward primer (10 µM)",
       "amount": 1,
       "unit": "µL",
-      "note": "400 nM final"
+      "note": {
+        "en": "400 nM final",
+        "zh": "终浓度 400 nM"
+      }
     },
     {
       "name": "Reverse primer (10 µM)",
       "amount": 1,
       "unit": "µL",
-      "note": "400 nM final"
+      "note": {
+        "en": "400 nM final",
+        "zh": "终浓度 400 nM"
+      }
     },
     {
       "name": "Nuclease-free H₂O",

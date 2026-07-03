@@ -13,19 +13,28 @@
       "amount": 13.61,
       "unit": "g",
       "mw": 136.08,
-      "note": "0.1 M"
+      "note": {
+        "en": "0.1 M",
+        "zh": "0.1 M"
+      }
     },
     {
       "name": "Glacial acetic acid",
       "amount": 1,
       "unit": "variable",
-      "note": "调至目标 pH"
+      "note": {
+        "en": "Adjust to target pH",
+        "zh": "调至目标 pH"
+      }
     },
     {
       "name": "ddH₂O",
       "amount": 1000,
       "unit": "mL",
-      "note": "定容"
+      "note": {
+        "en": "Adjust volume to",
+        "zh": "定容"
+      }
     }
   ],
   "nameCn": "醋酸钠缓冲液 (0.1 M)",

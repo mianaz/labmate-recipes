@@ -23,7 +23,10 @@
       "name": "  - Plasmid DNA",
       "amount": 2.5,
       "unit": "µg",
-      "note": "每孔 6-well"
+      "note": {
+        "en": "Per well of 6-well plate",
+        "zh": "每孔 6-well"
+      }
     },
     {
       "name": "  - Opti-MEM",
@@ -39,7 +42,10 @@
       "name": "  - Lipofectamine 2000/3000",
       "amount": 7.5,
       "unit": "µL",
-      "note": "DNA:Lipo = 1:3"
+      "note": {
+        "en": "DNA:Lipofectamine = 1:3",
+        "zh": "DNA 与脂质体比例 = 1:3"
+      }
     },
     {
       "name": "  - Opti-MEM",

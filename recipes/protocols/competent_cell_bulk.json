@@ -100,7 +100,7 @@
     "en": "Transformation: thaw on ice, add DNA (<1/10 volume for ligation products, 50 pg-1 ng for plasmid), ice 30 min, heat shock 42°C 30-40 s, ice 5-10 min, add 1 mL LB, recover 37°C 1 h, plate 100-150 µL. Quick alternative (skip recovery): after heat shock + 5 min ice, add 100 µL LB, plate directly (5-10× lower efficiency but sufficient for simple cloning). Antibiotics: Ampicillin stock 50 mg/mL (1:1000). LB Broth: 25 g/L. LB Agar: 25 g LB + 15 g agar per L.",
     "zh": "转化：冰上融化，加 DNA（连接产物 <1/10 体积，质粒 50 pg-1 ng），冰 30 分钟，42°C 热激 30-40 秒，冰 5-10 分钟，加 1 mL LB，37°C 复苏 1 小时，涂板 100-150 µL。快速替代：热激后冰 5 分钟直接涂板（效率降低 5-10 倍但足够简单克隆）。"
   },
-  "ref": "Adapted from standard CaCl₂ competent cell protocol; Protocol by YW",
+  "ref": "Mandel M & Higa A (1970) J Mol Biol 53:159–162; Hanahan D (1983) J Mol Biol 166:557–580; Inoue H, Nojima H & Okayama H (1990) Gene 96:23–28",
   "crosslinks": [
     "lb",
     "lb_agar",

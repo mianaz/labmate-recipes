@@ -13,31 +13,46 @@
       "name": "1M HEPES pH 7.4",
       "amount": 0.2,
       "unit": "mL",
-      "note": "终浓度 20 mM"
+      "note": {
+        "en": "Final concentration 20 mM",
+        "zh": "终浓度 20 mM"
+      }
     },
     {
       "name": "5M KCl",
       "amount": 0.3,
       "unit": "mL",
-      "note": "终浓度 150 mM"
+      "note": {
+        "en": "Final concentration 150 mM",
+        "zh": "终浓度 150 mM"
+      }
     },
     {
       "name": "1M MgCl₂",
       "amount": 0.1,
       "unit": "mL",
-      "note": "终浓度 10 mM"
+      "note": {
+        "en": "Final concentration 10 mM",
+        "zh": "终浓度 10 mM"
+      }
     },
     {
       "name": "100% Glycerol",
       "amount": 1,
       "unit": "mL",
-      "note": "终浓度 10%"
+      "note": {
+        "en": "Final concentration 10%",
+        "zh": "终浓度 10%"
+      }
     },
     {
       "name": "1M DTT",
       "amount": 0.01,
       "unit": "mL",
-      "note": "终浓度 1 mM"
+      "note": {
+        "en": "Final concentration 1 mM",
+        "zh": "终浓度 1 mM"
+      }
     },
     {
       "name": "Nuclease-free H₂O",

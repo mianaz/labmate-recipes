@@ -29,7 +29,10 @@
       "name": "Sodium pyruvate (100 mM)",
       "amount": 5,
       "unit": "mL",
-      "note": "1 mM (optional)"
+      "note": {
+        "en": "1 mM (optional)",
+        "zh": "1 mM（可选）"
+      }
     }
   ],
   "nameCn": "完全培养基 DMEM (10% FBS)",

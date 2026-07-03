@@ -18,21 +18,30 @@
       "amount": 6.9,
       "unit": "g",
       "mw": 119.98,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "NaCl",
       "amount": 17.54,
       "unit": "g",
       "mw": 58.44,
-      "note": "300 mM"
+      "note": {
+        "en": "300 mM",
+        "zh": "300 mM"
+      }
     },
     {
       "name": "Imidazole",
       "amount": 34.04,
       "unit": "g",
       "mw": 68.08,
-      "note": "500 mM"
+      "note": {
+        "en": "500 mM",
+        "zh": "500 mM"
+      }
     }
   ],
   "notes": {

@@ -103,7 +103,7 @@
     "en": "Lysis buffer composition: ~17.5 mM NaOH + ~0.7 mM EDTA. After lysis, Tris-HCl neutralizes the NaOH. Master mix recipes are gene-specific — refer to genotyping database for primer sequences and PCR conditions. Some genes (2C-TCR, Pygo2) require overnight high-quality DNA isolation with proteinase K instead of quick alkaline lysis.",
     "zh": "裂解液组成：约 17.5 mM NaOH + 0.7 mM EDTA。裂解后 Tris-HCl 中和 NaOH。Master mix 配方因基因而异——参考基因分型数据库获取引物序列和 PCR 条件。某些基因（如 2C-TCR、Pygo2）需过夜 proteinase K 高质量 DNA 提取。"
   },
-  "ref": "Adapted from standard alkaline tail lysis protocol",
+  "ref": "Truett GE et al. (2000) Biotechniques 29:52–54; Sambrook J & Russell DW (2001) Molecular Cloning, 3rd ed., CSHL Press",
   "crosslinks": [
     "tae_50x",
     "agarose_gel_electrophoresis",
@@ -213,5 +213,6 @@
       "en": "Tail snips → alkaline lysis (46 min) → Tris-HCl neutralize → gene-specific PCR (~2.5 h) → 2% agarose gel (150–200 V) → UV imaging → genotype call",
       "zh": "尾尖 → 碱裂解（46 min）→ Tris-HCl 中和 → 基因特异性 PCR（~2.5 h）→ 2% 琼脂糖凝胶（150–200 V）→ UV 成像 → 基因型判定"
     }
-  ]
+  ],
+  "doi": "10.2144/00291bm09"
 }

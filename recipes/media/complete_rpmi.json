@@ -30,13 +30,19 @@
       "name": "β-Mercaptoethanol (55 mM)",
       "amount": 500,
       "unit": "µL",
-      "note": "55 µM (for lymphocytes)"
+      "note": {
+        "en": "55 µM (for lymphocytes)",
+        "zh": "55 µM（用于淋巴细胞）"
+      }
     },
     {
       "name": "HEPES (1M)",
       "amount": 5,
       "unit": "mL",
-      "note": "10 mM (optional)"
+      "note": {
+        "en": "10 mM (optional)",
+        "zh": "10 mM（可选）"
+      }
     }
   ],
   "nameCn": "完全培养基 RPMI-1640 (10% FBS)",

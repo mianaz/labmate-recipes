@@ -19,13 +19,19 @@
       "amount": 34.0,
       "unit": "mL",
       "linkedRecipe": "ficoll_400_stock",
-      "note": "Provides density base"
+      "note": {
+        "en": "Provides density base",
+        "zh": "提供密度基底"
+      }
     },
     {
       "name": "Diatrizoate sodium (sodium diatrizoate / Hypaque-sodium, 50% solution)",
       "amount": 16.0,
       "unit": "mL",
-      "note": "MW 635.1; provides radiopacity and density modulation. Sterile solution."
+      "note": {
+        "en": "MW 635.1; provides radiopacity and density modulation; sterile solution",
+        "zh": "分子量 635.1；提供不透射线性和密度调节；无菌溶液"
+      }
     },
     {
       "name": "Sterile ddH₂O or DPBS",

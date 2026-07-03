@@ -99,7 +99,7 @@
     "en": "Heat inactivation at 56°C for 30 min destroys complement proteins while preserving growth factors. Do NOT heat-inactivate for longer — it reduces serum quality. Typical FBS: Characterized, Canadian origin (e.g. Cytiva SH30396.03). Each 500 mL bottle yields ~12 aliquots at 40 mL each.",
     "zh": "56°C 30 分钟热灭活破坏补体蛋白同时保留生长因子。不可加热过久——降低血清质量。每瓶 500 mL 约分装 12 管（每管 40 mL）。"
   },
-  "ref": "Standard cell culture protocol",
+  "ref": "van der Valk J et al. (2010) Biotechnol Adv 28:693–701; Freshney RI (2016) Culture of Animal Cells, 7th Ed., Wiley",
   "crosslinks": [
     "complete_dmem",
     "complete_rpmi",
@@ -191,5 +191,6 @@
     "complete_rpmi",
     "freezing_medium",
     "cell_thawing"
-  ]
+  ],
+  "doi": "10.1016/j.biotechadv.2010.03.003"
 }

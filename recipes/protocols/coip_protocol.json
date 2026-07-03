@@ -13,7 +13,10 @@
       "name": "1. 裂解 (IP Lysis Buffer, 冰上 30 min)",
       "amount": 1,
       "unit": "step",
-      "note": "0.5–1% NP-40"
+      "note": {
+        "en": "0.5–1% NP-40",
+        "zh": "0.5–1% NP-40"
+      }
     },
     {
       "name": "2. 4°C 14,000×g 15 min, 取上清",

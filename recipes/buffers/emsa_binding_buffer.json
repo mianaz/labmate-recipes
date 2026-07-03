@@ -13,19 +13,28 @@
       "name": "1M Tris-HCl pH 7.5",
       "amount": 5,
       "unit": "mL",
-      "note": "50 mM final"
+      "note": {
+        "en": "50 mM final",
+        "zh": "终浓度 50 mM"
+      }
     },
     {
       "name": "5M NaCl",
       "amount": 5,
       "unit": "mL",
-      "note": "250 mM final"
+      "note": {
+        "en": "250 mM final",
+        "zh": "终浓度 250 mM"
+      }
     },
     {
       "name": "100% Glycerol",
       "amount": 20,
       "unit": "mL",
-      "note": "20% final"
+      "note": {
+        "en": "20% final",
+        "zh": "终浓度 20%"
+      }
     },
     {
       "name": "ddH₂O to 100 mL",

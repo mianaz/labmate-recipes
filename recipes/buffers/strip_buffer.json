@@ -12,7 +12,10 @@
       "amount": 7.5,
       "unit": "g",
       "mw": 75.03,
-      "note": "200 mM"
+      "note": {
+        "en": "200 mM",
+        "zh": "200 mM"
+      }
     },
     {
       "name": "SDS",

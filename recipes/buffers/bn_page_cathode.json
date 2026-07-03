@@ -13,14 +13,20 @@
       "amount": 7.85,
       "unit": "g",
       "mw": 209.24,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "Tricine",
       "amount": 4.48,
       "unit": "g",
       "mw": 179.17,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "Coomassie Blue G-250",

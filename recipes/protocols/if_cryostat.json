@@ -109,7 +109,7 @@
     "en": "Saponin-based blocking buffer is suitable for intracellular targets. For membrane-only targets, 0.1% Triton X-100 can substitute for saponin. Keep sections moist throughout — never let them dry. Use a humid dark box during antibody incubations.",
     "zh": "皂苷通透适合细胞内靶标。仅膜靶标可用 0.1% Triton X-100 替代皂苷。全程保持切片湿润——切勿干燥。抗体孵育时使用避光湿盒。"
   },
-  "ref": "Adapted from standard cryostat immunofluorescence protocol (2021)",
+  "ref": "Donaldson JG (2015) Curr Protoc Cell Biol 69:4.3.1–4.3.30; Harlow E & Lane D (1988) Antibodies: A Laboratory Manual, CSHL Press",
   "crosslinks": [
     "pfa_4",
     "mounting_medium_antifade",
@@ -229,5 +229,6 @@
     "pbs_1x",
     "if_blocking",
     "if_permeabilization"
-  ]
+  ],
+  "doi": "10.1002/0471143030.cb0403s69"
 }

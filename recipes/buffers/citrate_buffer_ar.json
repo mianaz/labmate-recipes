@@ -13,7 +13,10 @@
       "amount": 2.94,
       "unit": "g",
       "mw": 294.1,
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "Tween-20",
@@ -25,7 +28,10 @@
       "name": "ddH₂O",
       "amount": null,
       "unit": "mL",
-      "note": "定容至 1000 mL"
+      "note": {
+        "en": "Adjust volume to 1000 mL",
+        "zh": "定容至 1000 mL"
+      }
     }
   ],
   "nameCn": "柠檬酸盐抗原修复液",

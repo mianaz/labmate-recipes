@@ -13,26 +13,38 @@
       "amount": 3.03,
       "unit": "g",
       "mw": 121.14,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "EDTA",
       "amount": 1.86,
       "unit": "g",
       "mw": 292.24,
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "RNase A",
       "amount": 50,
       "unit": "mg",
-      "note": "100 µg/mL (灭菌后加)"
+      "note": {
+        "en": "100 µg/mL (add after sterilization)",
+        "zh": "100 µg/mL (灭菌后加)"
+      }
     },
     {
       "name": "ddH₂O",
       "amount": 500,
       "unit": "mL",
-      "note": "定容"
+      "note": {
+        "en": "Adjust volume to",
+        "zh": "定容"
+      }
     }
   ],
   "nameCn": "质粒提取缓冲液 P1 (重悬液)",

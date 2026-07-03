@@ -17,38 +17,56 @@
       "name": "HEPES (1 M, pH 7.9)",
       "amount": 0.5,
       "unit": "mL",
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "KCl",
       "amount": 0.037,
       "unit": "g",
       "mw": 74.55,
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "MgCl₂ (1 M)",
       "amount": 0.075,
       "unit": "mL",
-      "note": "1.5 mM"
+      "note": {
+        "en": "1.5 mM",
+        "zh": "1.5 mM"
+      }
     },
     {
       "name": "DTT (1 M)",
       "amount": 0.05,
       "unit": "mL",
-      "note": "1 mM; add fresh"
+      "note": {
+        "en": "1 mM; add fresh",
+        "zh": "1 mM；临用新加"
+      }
     },
     {
       "name": "NP-40",
       "amount": 0.05,
       "unit": "mL",
-      "note": "0.1%; add fresh for membrane disruption"
+      "note": {
+        "en": "0.1%; add fresh for membrane disruption",
+        "zh": "0.1%；临用新加；用于破坏膜结构"
+      }
     },
     {
       "name": "Protease inhibitor cocktail (100×)",
       "amount": 0.5,
       "unit": "mL",
-      "note": "1× final; add fresh"
+      "note": {
+        "en": "1× final; add fresh",
+        "zh": "终浓度 1×；临用新加"
+      }
     },
     {
       "name": "ddH₂O",
@@ -65,7 +83,12 @@
     "nuc_cyt_a",
     "nuc_cyt_b"
   ],
-  "relatedProtocols": ["subcellular_fractionation", "chip_protocol", "chromatin_accessibility_atac", "cut_and_run"],
+  "relatedProtocols": [
+    "subcellular_fractionation",
+    "chip_protocol",
+    "chromatin_accessibility_atac",
+    "cut_and_run"
+  ],
   "ref": "Bhatt et al. (2021) STAR Protoc 2:100450; Dignam et al. (1983) Nucleic Acids Res 11:1475",
   "discipline": [
     "cell"

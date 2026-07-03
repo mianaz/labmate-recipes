@@ -15,19 +15,28 @@
       "name": "1. 加 1/10 vol 3 M NaOAc (pH 5.2)",
       "amount": 1,
       "unit": "step",
-      "note": "DNA 也可用 NaCl 或 NH₄OAc"
+      "note": {
+        "en": "DNA precipitation: NaCl or NH₄OAc can substitute",
+        "zh": "DNA 也可用 NaCl 或 NH₄OAc"
+      }
     },
     {
       "name": "2. 加 2.5 vol 冰冷 100% 乙醇",
       "amount": 1,
       "unit": "step",
-      "note": "RNA 或低浓度 DNA: 加 1 µL glycogen (20 mg/mL) 做载体"
+      "note": {
+        "en": "RNA or low-yield DNA: add 1 µL glycogen (20 mg/mL) as carrier",
+        "zh": "RNA 或低浓度 DNA: 加 1 µL glycogen (20 mg/mL) 做载体"
+      }
     },
     {
       "name": "3. 混匀, -20°C 放置 ≥30 min",
       "amount": 1,
       "unit": "step",
-      "note": "过夜可提高低浓度样品回收率"
+      "note": {
+        "en": "Overnight incubation improves recovery of low-concentration samples",
+        "zh": "过夜可提高低浓度样品回收率"
+      }
     },
     {
       "name": "4. 离心 14,000×g, 15–30 min, 4°C",
@@ -48,7 +57,10 @@
       "name": "7. 彻底去除上清",
       "amount": 1,
       "unit": "step",
-      "note": "吸管小心吸, 勿碰沉淀"
+      "note": {
+        "en": "Pipette carefully; do not disturb the pellet",
+        "zh": "吸管小心吸, 勿碰沉淀"
+      }
     },
     {
       "name": "8. 风干 5–10 min（勿过度干燥）",

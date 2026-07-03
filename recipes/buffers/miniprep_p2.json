@@ -13,7 +13,10 @@
       "amount": 4.0,
       "unit": "g",
       "mw": 40.0,
-      "note": "200 mM"
+      "note": {
+        "en": "200 mM",
+        "zh": "200 mM"
+      }
     },
     {
       "name": "SDS",
@@ -26,7 +29,10 @@
       "name": "ddH₂O",
       "amount": 500,
       "unit": "mL",
-      "note": "定容"
+      "note": {
+        "en": "Adjust volume to",
+        "zh": "定容"
+      }
     }
   ],
   "nameCn": "质粒提取缓冲液 P2 (裂解液)",

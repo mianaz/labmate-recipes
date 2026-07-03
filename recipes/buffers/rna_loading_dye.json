@@ -18,7 +18,10 @@
       "name": "EDTA (0.5 M, pH 8.0)",
       "amount": 200,
       "unit": "µL",
-      "note": "10 mM"
+      "note": {
+        "en": "10 mM",
+        "zh": "10 mM"
+      }
     },
     {
       "name": "Bromophenol blue",
@@ -36,7 +39,10 @@
       "name": "Ethidium bromide (optional)",
       "amount": 10,
       "unit": "µL",
-      "note": "10 mg/mL stock"
+      "note": {
+        "en": "10 mg/mL stock",
+        "zh": "10 mg/mL 储液"
+      }
     }
   ],
   "nameCn": "RNA 上样缓冲液 (2×)",

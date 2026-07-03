@@ -18,21 +18,30 @@
       "amount": 3.45,
       "unit": "g",
       "mw": 119.98,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "NaCl",
       "amount": 14.61,
       "unit": "g",
       "mw": 58.44,
-      "note": "500 mM; reduces nonspecific binding"
+      "note": {
+        "en": "500 mM; reduces nonspecific binding",
+        "zh": "500 mM；降低非特异性结合"
+      }
     },
     {
       "name": "Imidazole",
       "amount": 1.7,
       "unit": "g",
       "mw": 68.08,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "ddH₂O",

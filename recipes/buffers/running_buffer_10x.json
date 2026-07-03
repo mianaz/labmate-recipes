@@ -12,14 +12,20 @@
       "amount": 30.3,
       "unit": "g",
       "mw": 121.14,
-      "note": "250 mM"
+      "note": {
+        "en": "250 mM",
+        "zh": "250 mM"
+      }
     },
     {
       "name": "Glycine",
       "amount": 144,
       "unit": "g",
       "mw": 75.03,
-      "note": "1.92 M"
+      "note": {
+        "en": "1.92 M",
+        "zh": "1.92 M"
+      }
     },
     {
       "name": "SDS",

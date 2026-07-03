@@ -32,13 +32,19 @@
       "name": "1M MgCl₂",
       "amount": 10,
       "unit": "mL",
-      "note": "灭菌后加"
+      "note": {
+        "en": "Add after sterilization",
+        "zh": "灭菌后加"
+      }
     },
     {
       "name": "1M Glucose",
       "amount": 20,
       "unit": "mL",
-      "note": "灭菌后加 (过滤除菌)"
+      "note": {
+        "en": "Add after sterilization (filter sterilize)",
+        "zh": "灭菌后加 (过滤除菌)"
+      }
     }
   ],
   "nameCn": "SOC 培养基",

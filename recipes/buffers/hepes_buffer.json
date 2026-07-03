@@ -18,7 +18,10 @@
       "name": "ddH₂O",
       "amount": null,
       "unit": "mL",
-      "note": "定容至 100 mL"
+      "note": {
+        "en": "Adjust volume to 100 mL",
+        "zh": "定容至 100 mL"
+      }
     }
   ],
   "nameCn": "1M HEPES 缓冲液",

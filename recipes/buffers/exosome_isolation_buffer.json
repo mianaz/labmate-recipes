@@ -18,13 +18,19 @@
       "name": "PBS (10×, filtered through 0.22 µm)",
       "amount": 100,
       "unit": "mL",
-      "note": "Must use sterile, filtered PBS — particle-free"
+      "note": {
+        "en": "Must use sterile, particle-free filtered PBS",
+        "zh": "必须使用无颗粒的无菌过滤 PBS"
+      }
     },
     {
       "name": "EDTA (0.5 M, pH 8.0)",
       "amount": 0.2,
       "unit": "mL",
-      "note": "0.1 mM; prevents aggregation"
+      "note": {
+        "en": "0.1 mM; prevents aggregation",
+        "zh": "0.1 mM；防止聚集"
+      }
     },
     {
       "name": "ddH₂O (nuclease-free, particle-free)",

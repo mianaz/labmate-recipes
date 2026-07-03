@@ -18,13 +18,19 @@
       "amount": 0.372,
       "unit": "g",
       "mw": 372.24,
-      "note": "1 mM"
+      "note": {
+        "en": "1 mM",
+        "zh": "1 mM"
+      }
     },
     {
       "name": "Tween-20",
       "amount": 0.05,
       "unit": "mL",
-      "note": "0.05% v/v"
+      "note": {
+        "en": "0.05% (v/v)",
+        "zh": "0.05% (v/v)"
+      }
     },
     {
       "name": "ddH₂O",

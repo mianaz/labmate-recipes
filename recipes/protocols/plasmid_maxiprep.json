@@ -15,7 +15,10 @@
       "name": "1. 过夜培养 100–500 mL LB + 抗性",
       "amount": 1,
       "unit": "step",
-      "note": "37°C, 225 rpm, 12–16 h"
+      "note": {
+        "en": "37°C, 225 rpm, 12–16 h",
+        "zh": "37°C，225 rpm，12–16 h"
+      }
     },
     {
       "name": "2. 离心收集菌体 (6,000×g, 15 min, 4°C)",
@@ -26,19 +29,28 @@
       "name": "3. 重悬 (Buffer P1/Resuspension)",
       "amount": 1,
       "unit": "step",
-      "note": "含 RNase A, 彻底重悬无颗粒"
+      "note": {
+        "en": "Contains RNase A; resuspend thoroughly until no particles remain",
+        "zh": "含 RNase A, 彻底重悬无颗粒"
+      }
     },
     {
       "name": "4. 碱裂解 (Buffer P2/Lysis)",
       "amount": 1,
       "unit": "step",
-      "note": "轻柔翻转 4–6 次, 室温 ≤5 min"
+      "note": {
+        "en": "Gently invert 4–6 times, ≤5 min at RT",
+        "zh": "轻柔翻转 4–6 次, 室温 ≤5 min"
+      }
     },
     {
       "name": "5. 中和 (Buffer P3/Neutralization)",
       "amount": 1,
       "unit": "step",
-      "note": "立即翻转混匀, 冰上 15–20 min"
+      "note": {
+        "en": "Invert immediately to mix, incubate on ice 15–20 min",
+        "zh": "立即翻转混匀, 冰上 15–20 min"
+      }
     },
     {
       "name": "6. 离心去除碎片 (20,000×g, 30 min, 4°C)",

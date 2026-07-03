@@ -13,14 +13,20 @@
       "amount": 3.03,
       "unit": "g",
       "mw": 121.14,
-      "note": "25 mM"
+      "note": {
+        "en": "25 mM",
+        "zh": "25 mM"
+      }
     },
     {
       "name": "Glycine",
       "amount": 14.4,
       "unit": "g",
       "mw": 75.03,
-      "note": "192 mM"
+      "note": {
+        "en": "192 mM",
+        "zh": "192 mM"
+      }
     }
   ],
   "nameCn": "非变性 PAGE 电泳缓冲液",
@@ -61,5 +67,9 @@
   "crosslinks": [
     "emsa_gel_shift"
   ],
-  "relatedProtocols": ["emsa_gel_shift", "coip_protocol", "pulldown_assay"]
+  "relatedProtocols": [
+    "emsa_gel_shift",
+    "coip_protocol",
+    "pulldown_assay"
+  ]
 }

@@ -17,20 +17,29 @@
       "name": "HEPES (1 M, pH 7.5)",
       "amount": 20,
       "unit": "mL",
-      "note": "20 mM final; or 50 mM sodium phosphate pH 7.4"
+      "note": {
+        "en": "20 mM final; or 50 mM sodium phosphate pH 7.4",
+        "zh": "终浓度 20 mM；或换用 50 mM 磷酸钠 pH 7.4"
+      }
     },
     {
       "name": "NaCl",
       "amount": 8.77,
       "unit": "g",
       "mw": 58.44,
-      "note": "150 mM"
+      "note": {
+        "en": "150 mM",
+        "zh": "150 mM"
+      }
     },
     {
       "name": "DTT (1 M stock)",
       "amount": 0.1,
       "unit": "mL",
-      "note": "0.1 mM; omit if protein lacks Cys or downstream MS"
+      "note": {
+        "en": "0.1 mM; omit if protein lacks Cys or downstream MS",
+        "zh": "0.1 mM；蛋白无 Cys 或后续质谱时省略"
+      }
     }
   ],
   "notes": {

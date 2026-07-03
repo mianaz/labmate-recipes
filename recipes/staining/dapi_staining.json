@@ -14,7 +14,10 @@
       "name": "DAPI stock (5 mg/mL in ddH₂O)",
       "amount": 2,
       "unit": "µL",
-      "note": "终浓度 1 µg/mL"
+      "note": {
+        "en": "Final concentration 1 µg/mL",
+        "zh": "终浓度 1 µg/mL"
+      }
     },
     {
       "name": "1× PBS",

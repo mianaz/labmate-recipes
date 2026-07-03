@@ -17,32 +17,47 @@
       "amount": 5.46,
       "unit": "g",
       "mw": 182.17,
-      "note": "300 mM; osmotic support"
+      "note": {
+        "en": "300 mM; osmotic support",
+        "zh": "300 mM；渗透压支撑"
+      }
     },
     {
       "name": "Sucrose",
       "amount": 1.71,
       "unit": "g",
       "mw": 342.3,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "HEPES (1 M, pH 7.4)",
       "amount": 0.5,
       "unit": "mL",
-      "note": "5 mM"
+      "note": {
+        "en": "5 mM",
+        "zh": "5 mM"
+      }
     },
     {
       "name": "EGTA (0.5 M)",
       "amount": 0.02,
       "unit": "mL",
-      "note": "0.1 mM; Ca²⁺ chelator"
+      "note": {
+        "en": "0.1 mM; Ca²⁺ chelator",
+        "zh": "0.1 mM；螯合 Ca²⁺"
+      }
     },
     {
       "name": "BSA (fatty acid-free)",
       "amount": 0.02,
       "unit": "g",
-      "note": "0.02% w/v; add fresh; protects membranes"
+      "note": {
+        "en": "0.02% (w/v); add fresh; protects membranes",
+        "zh": "0.02% (w/v)；临用新鲜添加；保护膜结构"
+      }
     },
     {
       "name": "ddH₂O",

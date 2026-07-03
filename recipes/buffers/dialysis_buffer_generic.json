@@ -16,26 +16,38 @@
       "name": "HEPES (1 M, pH 7.5)",
       "amount": 20,
       "unit": "mL",
-      "note": "20 mM"
+      "note": {
+        "en": "20 mM",
+        "zh": "20 mM"
+      }
     },
     {
       "name": "NaCl",
       "amount": 8.77,
       "unit": "g",
       "mw": 58.44,
-      "note": "150 mM"
+      "note": {
+        "en": "150 mM",
+        "zh": "150 mM"
+      }
     },
     {
       "name": "EDTA (0.5 M, pH 8.0)",
       "amount": 0.2,
       "unit": "mL",
-      "note": "0.1 mM; optional metal chelator"
+      "note": {
+        "en": "0.1 mM; optional metal chelator",
+        "zh": "0.1 mM；可选金属螯合剂"
+      }
     },
     {
       "name": "DTT (1 M)",
       "amount": 0.5,
       "unit": "mL",
-      "note": "0.5 mM; optional for Cys-containing proteins"
+      "note": {
+        "en": "0.5 mM; optional for Cys-containing proteins",
+        "zh": "0.5 mM；含 Cys 蛋白可选"
+      }
     }
   ],
   "notes": {

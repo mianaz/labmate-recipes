@@ -12,13 +12,19 @@
       "name": "BSA",
       "amount": 1.5,
       "unit": "g",
-      "note": "3% (w/v)"
+      "note": {
+        "en": "3% (w/v)",
+        "zh": "3% (w/v)"
+      }
     },
     {
       "name": "Normal goat serum",
       "amount": 2.5,
       "unit": "mL",
-      "note": "5% (v/v)"
+      "note": {
+        "en": "5% (v/v)",
+        "zh": "5% (v/v)"
+      }
     },
     {
       "name": "0.1% Triton X-100 in PBS",

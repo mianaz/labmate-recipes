@@ -15,7 +15,10 @@
       "name": "DNA template",
       "amount": 1,
       "unit": "µg",
-      "note": "质粒 0.5–1 µg; 基因组 DNA 5–10 µg"
+      "note": {
+        "en": "Plasmid: 0.5–1 µg; genomic DNA: 5–10 µg",
+        "zh": "质粒 0.5–1 µg; 基因组 DNA 5–10 µg"
+      }
     },
     {
       "name": "10× Restriction Buffer",
@@ -26,7 +29,10 @@
       "name": "Restriction Enzyme(s)",
       "amount": 1,
       "unit": "µL",
-      "note": "5–10 U per µg DNA; 体积 ≤10% 总反应 (避免甘油抑制)"
+      "note": {
+        "en": "5–10 U per µg DNA; volume ≤10% of total reaction (avoid glycerol inhibition)",
+        "zh": "5–10 U per µg DNA; 体积 ≤10% 总反应 (避免甘油抑制)"
+      }
     },
     {
       "name": "Nuclease-free H₂O",
@@ -37,7 +43,10 @@
       "name": "1. 冰上配制反应体系",
       "amount": 1,
       "unit": "step",
-      "note": "最后加酶"
+      "note": {
+        "en": "Add enzyme last",
+        "zh": "最后加酶"
+      }
     },
     {
       "name": "2. 37°C 孵育 1–2 h（或按酶推荐温度）",
@@ -48,7 +57,10 @@
       "name": "3. 热灭活 65°C 20 min（如适用）",
       "amount": 1,
       "unit": "step",
-      "note": "部分酶不可热灭活，需柱纯化"
+      "note": {
+        "en": "Some enzymes cannot be heat-inactivated; column purification required",
+        "zh": "部分酶不可热灭活，需柱纯化"
+      }
     },
     {
       "name": "4. 琼脂糖凝胶电泳验证",

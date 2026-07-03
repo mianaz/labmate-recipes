@@ -19,13 +19,19 @@
       "amount": 0.1,
       "unit": "g",
       "mw": 380.17,
-      "note": "0.53 mM"
+      "note": {
+        "en": "0.53 mM",
+        "zh": "0.53 mM"
+      }
     },
     {
       "name": "1× PBS (Ca²⁺/Mg²⁺ free)",
       "amount": null,
       "unit": "mL",
-      "note": "定容至 500 mL"
+      "note": {
+        "en": "Adjust volume to 500 mL",
+        "zh": "定容至 500 mL"
+      }
     }
   ],
   "nameCn": "0.25% 胰蛋白酶-EDTA 消化液",

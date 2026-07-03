@@ -18,20 +18,29 @@
       "amount": 41.86,
       "unit": "g",
       "mw": 209.26,
-      "note": "200 mM"
+      "note": {
+        "en": "200 mM",
+        "zh": "200 mM"
+      }
     },
     {
       "name": "Sodium acetate (NaOAc·3H₂O)",
       "amount": 6.8,
       "unit": "g",
       "mw": 136.08,
-      "note": "50 mM"
+      "note": {
+        "en": "50 mM",
+        "zh": "50 mM"
+      }
     },
     {
       "name": "EDTA (0.5 M, pH 8.0)",
       "amount": 20,
       "unit": "mL",
-      "note": "10 mM final"
+      "note": {
+        "en": "10 mM final",
+        "zh": "终浓度 10 mM"
+      }
     },
     {
       "name": "DEPC-treated ddH₂O",

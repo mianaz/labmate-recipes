@@ -12,13 +12,19 @@
       "name": "BSA",
       "amount": 2.5,
       "unit": "g",
-      "note": "0.5% (w/v)"
+      "note": {
+        "en": "0.5% (w/v)",
+        "zh": "0.5% (w/v)"
+      }
     },
     {
       "name": "0.5M EDTA pH 8.0",
       "amount": 2,
       "unit": "mL",
-      "note": "2 mM"
+      "note": {
+        "en": "2 mM",
+        "zh": "2 mM"
+      }
     },
     {
       "name": "1× PBS",

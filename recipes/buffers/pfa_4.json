@@ -13,7 +13,10 @@
       "name": "Paraformaldehyde",
       "amount": 20,
       "unit": "g",
-      "note": "4% (w/v)"
+      "note": {
+        "en": "4% (w/v)",
+        "zh": "4% (w/v)"
+      }
     },
     {
       "name": "1× PBS",
@@ -24,7 +27,10 @@
       "name": "1N NaOH",
       "amount": 0,
       "unit": "mL",
-      "note": "逐滴加至澄清 (~1 mL)"
+      "note": {
+        "en": "Add dropwise until clear (~1 mL)",
+        "zh": "逐滴加至澄清 (~1 mL)"
+      }
     }
   ],
   "nameCn": "4% 多聚甲醛固定液",
@@ -77,5 +83,14 @@
     "proximity_ligation_assay",
     "comet_assay"
   ],
-  "relatedProtocols": ["if_protocol", "ihc_paraffin_protocol", "flow_cytometry_protocol", "proximity_ligation_assay", "comet_assay", "if_cryostat", "multiplex_if", "chip_protocol"]
+  "relatedProtocols": [
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "flow_cytometry_protocol",
+    "proximity_ligation_assay",
+    "comet_assay",
+    "if_cryostat",
+    "multiplex_if",
+    "chip_protocol"
+  ]
 }

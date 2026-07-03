@@ -11,13 +11,19 @@
       "name": "Ponceau S",
       "amount": 0.1,
       "unit": "g",
-      "note": "0.1% (w/v)"
+      "note": {
+        "en": "0.1% (w/v)",
+        "zh": "0.1% (w/v)"
+      }
     },
     {
       "name": "Acetic acid",
       "amount": 5,
       "unit": "mL",
-      "note": "5% (v/v)"
+      "note": {
+        "en": "5% (v/v)",
+        "zh": "5% (v/v)"
+      }
     },
     {
       "name": "ddH₂O",

@@ -23,13 +23,19 @@
       "name": "3. Fc Block (人: Human TruStain; 鼠: anti-CD16/32)",
       "amount": 1,
       "unit": "step",
-      "note": "4°C 10 min"
+      "note": {
+        "en": "4°C, 10 min",
+        "zh": "4°C，10 min"
+      }
     },
     {
       "name": "4. 加荧光抗体 cocktail",
       "amount": 1,
       "unit": "step",
-      "note": "按滴度滴定结果加"
+      "note": {
+        "en": "Add based on titer results",
+        "zh": "按滴度滴定结果加"
+      }
     },
     {
       "name": "5. 4°C 避光孵育 20–30 min",

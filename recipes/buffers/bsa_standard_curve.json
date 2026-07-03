@@ -14,13 +14,19 @@
       "name": "BSA (bovine serum albumin, fraction V)",
       "amount": 2.0,
       "unit": "mg/mL",
-      "note": "2 mg/mL stock in ddH₂O or same buffer as samples; aliquot 200 µL at -20°C"
+      "note": {
+        "en": "2 mg/mL stock in ddH₂O or sample buffer; aliquot 200 µL at −20°C",
+        "zh": "2 mg/mL 储液（溶于 ddH₂O 或样品缓冲液）；分装 200 µL 存于 −20°C"
+      }
     },
     {
       "name": "Point 1: 0 µg/mL (blank)",
       "amount": 0,
       "unit": "µg/mL",
-      "note": "Buffer only"
+      "note": {
+        "en": "Buffer only (blank)",
+        "zh": "仅缓冲液（空白对照）"
+      }
     },
     {
       "name": "Point 2: 25 µg/mL",

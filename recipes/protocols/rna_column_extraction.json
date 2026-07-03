@@ -15,7 +15,10 @@
       "name": "1. 裂解：加 Buffer RLT + β-ME，涡旋",
       "amount": 1,
       "unit": "step",
-      "note": "≤5×10⁶ cells 或 30 mg tissue"
+      "note": {
+        "en": "≤5×10⁶ cells or 30 mg tissue",
+        "zh": "≤5×10⁶ cells 或 30 mg tissue"
+      }
     },
     {
       "name": "2. 匀浆（组织用匀浆器/针头 5–10 次）",
@@ -41,7 +44,10 @@
       "name": "6. On-column DNase I 消化（可选）",
       "amount": 1,
       "unit": "step",
-      "note": "加 80 µL DNase I mix, 室温 15 min"
+      "note": {
+        "en": "Add 80 µL DNase I mix, incubate 15 min at RT",
+        "zh": "加 80 µL DNase I mix, 室温 15 min"
+      }
     },
     {
       "name": "7. 洗涤 Buffer RW1 (350 µL)",
@@ -52,13 +58,19 @@
       "name": "8. 洗涤 Buffer RPE 2× (500 µL)",
       "amount": 1,
       "unit": "step",
-      "note": "第二次离心 2 min 干燥膜"
+      "note": {
+        "en": "Second spin for 2 min to dry membrane",
+        "zh": "第二次离心 2 min 干燥膜"
+      }
     },
     {
       "name": "9. 洗脱：30–50 µL RNase-free H₂O",
       "amount": 1,
       "unit": "step",
-      "note": "静置 1 min → 离心, 可重复一次提高产量"
+      "note": {
+        "en": "Stand 1 min → centrifuge; repeat once to improve yield",
+        "zh": "静置 1 min → 离心, 可重复一次提高产量"
+      }
     },
     {
       "name": "10. 定量 (NanoDrop: A260/280 ≈ 2.0)",

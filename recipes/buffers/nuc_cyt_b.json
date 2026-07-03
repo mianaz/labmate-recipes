@@ -11,31 +11,46 @@
       "name": "1M HEPES pH 7.9",
       "amount": 1,
       "unit": "mL",
-      "note": "终浓度 20 mM"
+      "note": {
+        "en": "Final concentration 20 mM",
+        "zh": "终浓度 20 mM"
+      }
     },
     {
       "name": "5M NaCl",
       "amount": 4,
       "unit": "mL",
-      "note": "终浓度 400 mM"
+      "note": {
+        "en": "Final concentration 400 mM",
+        "zh": "终浓度 400 mM"
+      }
     },
     {
       "name": "0.5M EDTA pH 8.0",
       "amount": 0.1,
       "unit": "mL",
-      "note": "终浓度 1 mM"
+      "note": {
+        "en": "Final concentration 1 mM",
+        "zh": "终浓度 1 mM"
+      }
     },
     {
       "name": "0.5M EGTA pH 8.0",
       "amount": 0.1,
       "unit": "mL",
-      "note": "终浓度 1 mM"
+      "note": {
+        "en": "Final concentration 1 mM",
+        "zh": "终浓度 1 mM"
+      }
     },
     {
       "name": "1M DTT",
       "amount": 0.05,
       "unit": "mL",
-      "note": "终浓度 1 mM (临用加)"
+      "note": {
+        "en": "Final concentration 1 mM (add fresh)",
+        "zh": "终浓度 1 mM (临用加)"
+      }
     },
     {
       "name": "ddH₂O",
@@ -84,5 +99,9 @@
   "crosslinks": [
     "subcellular_fractionation"
   ],
-  "relatedProtocols": ["subcellular_fractionation", "chip_protocol", "er_golgi_isolation"]
+  "relatedProtocols": [
+    "subcellular_fractionation",
+    "chip_protocol",
+    "er_golgi_isolation"
+  ]
 }

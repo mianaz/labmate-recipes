@@ -16,7 +16,10 @@
       "name": "Tween-20",
       "amount": 1,
       "unit": "mL",
-      "note": "0.1% (v/v)"
+      "note": {
+        "en": "0.1% (v/v)",
+        "zh": "0.1% (v/v)"
+      }
     },
     {
       "name": "ddH₂O",

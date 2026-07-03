@@ -313,5 +313,9 @@
     "chip_protocol",
     "chromatin_accessibility_atac",
     "cite_seq_10x"
-  ]
+  ],
+  "usage": {
+    "en": "Single-cell CUT&TAG profiling of histone modifications (H3K4me3, H3K27ac, H3K27me3) using 10x Genomics Chromium. Suitable for <10,000 input cells per sample.",
+    "zh": "使用 10x Genomics Chromium 对组蛋白修饰（H3K4me3、H3K27ac、H3K27me3）进行单细胞 CUT&TAG 分析，每样品输入细胞数 <10,000。"
+  }
 }

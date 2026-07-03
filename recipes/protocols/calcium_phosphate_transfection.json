@@ -23,7 +23,10 @@
       "name": "  - Plasmid DNA",
       "amount": 20,
       "unit": "µg",
-      "note": "10 cm dish"
+      "note": {
+        "en": "10 cm dish",
+        "zh": "10 cm 培养皿"
+      }
     },
     {
       "name": "  - 2.5M CaCl₂",

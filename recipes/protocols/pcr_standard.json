@@ -15,31 +15,46 @@
       "name": "2× Taq Master Mix",
       "amount": 25,
       "unit": "µL",
-      "note": "含 Taq, dNTPs, MgCl₂, buffer"
+      "note": {
+        "en": "Contains Taq, dNTPs, MgCl₂, buffer",
+        "zh": "含 Taq, dNTPs, MgCl₂, buffer"
+      }
     },
     {
       "name": "Forward primer (10 µM)",
       "amount": 1,
       "unit": "µL",
-      "note": "终浓度 0.2 µM"
+      "note": {
+        "en": "Final concentration 0.2 µM",
+        "zh": "终浓度 0.2 µM"
+      }
     },
     {
       "name": "Reverse primer (10 µM)",
       "amount": 1,
       "unit": "µL",
-      "note": "终浓度 0.2 µM"
+      "note": {
+        "en": "Final concentration 0.2 µM",
+        "zh": "终浓度 0.2 µM"
+      }
     },
     {
       "name": "Template DNA",
       "amount": 1,
       "unit": "µL",
-      "note": "1–100 ng gDNA; 1–10 ng plasmid"
+      "note": {
+        "en": "1–100 ng gDNA; 1–10 ng plasmid",
+        "zh": "基因组 DNA 1–100 ng；质粒 1–10 ng"
+      }
     },
     {
       "name": "Nuclease-free H₂O",
       "amount": 22,
       "unit": "µL",
-      "note": "至 50 µL 总体积"
+      "note": {
+        "en": "Bring total volume to 50 µL",
+        "zh": "至 50 µL 总体积"
+      }
     },
     {
       "name": "1. 冰上配制反应体系 (做 master mix)",
@@ -50,13 +65,19 @@
       "name": "2. PCR 程序",
       "amount": 1,
       "unit": "step",
-      "note": "95°C 3 min → (95°C 30s, Tm-5°C 30s, 72°C 1 min/kb) ×30–35 → 72°C 5 min → 4°C hold"
+      "note": {
+        "en": "95°C 3 min → (95°C 30 s, Tm−5°C 30 s, 72°C 1 min/kb) ×30–35 → 72°C 5 min → 4°C hold",
+        "zh": "95°C 3 min → (95°C 30 s，Tm−5°C 30 s，72°C 1 min/kb) ×30–35 → 72°C 5 min → 4°C 保温"
+      }
     },
     {
       "name": "3. 琼脂糖凝胶验证",
       "amount": 1,
       "unit": "step",
-      "note": "取 5 µL + loading dye, 1–2% 琼脂糖凝胶"
+      "note": {
+        "en": "Take 5 µL + loading dye; run on 1–2% agarose gel",
+        "zh": "取 5 µL + loading dye, 1–2% 琼脂糖凝胶"
+      }
     }
   ],
   "notes": {

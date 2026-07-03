@@ -18,13 +18,19 @@
       "name": "Percoll (Sigma P1644 or GE Healthcare 17-0891-01)",
       "amount": 45,
       "unit": "mL",
-      "note": "Neat Percoll: density 1.130 g/mL; colloidal silica coated with PVP"
+      "note": {
+        "en": "Neat Percoll: density 1.130 g/mL; colloidal silica coated with PVP",
+        "zh": "原液 Percoll 密度 1.130 g/mL；PVP 包被胶体硅"
+      }
     },
     {
       "name": "10× PBS (without Ca²⁺/Mg²⁺)",
       "amount": 5,
       "unit": "mL",
-      "note": "1/10 volume to make isotonic Percoll stock (1× PBS final = 0.15 M NaCl)"
+      "note": {
+        "en": "1/10 volume to make isotonic Percoll stock (1× PBS final = 0.15 M NaCl)",
+        "zh": "加入 1/10 体积制备等渗 Percoll 储液（最终 1× PBS，NaCl = 0.15 M）"
+      }
     }
   ],
   "notes": {
@@ -37,7 +43,12 @@
     "mitochondria_isolation",
     "gradient_centrifugation_general"
   ],
-  "relatedProtocols": ["pbmc_isolation", "mitochondria_isolation", "gradient_centrifugation_general", "lysosome_isolation"],
+  "relatedProtocols": [
+    "pbmc_isolation",
+    "mitochondria_isolation",
+    "gradient_centrifugation_general",
+    "lysosome_isolation"
+  ],
   "ref": "GE Healthcare Percoll Methodology and Applications Booklet; Böyum et al. (1991) Eur J Haematol 47:308; Pertoft (2000) J Biochem Biophys Methods 44:1–30",
   "discipline": [
     "general"

@@ -15,25 +15,37 @@
       "name": "Linearized vector",
       "amount": 50,
       "unit": "ng",
-      "note": "去磷酸化可降低自连背景"
+      "note": {
+        "en": "Dephosphorylation reduces self-ligation background",
+        "zh": "去磷酸化可降低自连背景"
+      }
     },
     {
       "name": "Insert DNA",
       "amount": 1,
       "unit": "variable",
-      "note": "摩尔比 vector:insert = 1:3–1:5 (粘性末端) 或 1:5–1:10 (平末端)"
+      "note": {
+        "en": "Molar ratio vector:insert = 1:3–1:5 (sticky ends) or 1:5–1:10 (blunt ends)",
+        "zh": "摩尔比 vector:insert = 1:3–1:5 (粘性末端) 或 1:5–1:10 (平末端)"
+      }
     },
     {
       "name": "10× T4 Ligase Buffer",
       "amount": 2,
       "unit": "µL",
-      "note": "含 ATP, 勿反复冻融"
+      "note": {
+        "en": "Contains ATP; avoid repeated freeze-thaw",
+        "zh": "含 ATP, 勿反复冻融"
+      }
     },
     {
       "name": "T4 DNA Ligase",
       "amount": 1,
       "unit": "µL",
-      "note": "400 U (NEB) 或 1 Weiss U"
+      "note": {
+        "en": "400 U (NEB) or 1 Weiss unit",
+        "zh": "400 U (NEB) 或 1 Weiss U"
+      }
     },
     {
       "name": "Nuclease-free H₂O",

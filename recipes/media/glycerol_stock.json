@@ -9,16 +9,19 @@
   ],
   "components": [
     {
-      "name": "过夜培养菌液 (OD₆₀₀ ~2–4)",
+      "name": "Overnight bacterial culture (OD₆₀₀ ~2–4)",
       "amount": 0.75,
       "unit": "mL",
       "note": "75%"
     },
     {
-      "name": "60% 无菌甘油溶液",
+      "name": "60% sterile glycerol solution",
       "amount": 0.25,
       "unit": "mL",
-      "note": "终浓度 15–25%"
+      "note": {
+        "en": "Final concentration 15–25%",
+        "zh": "终浓度 15–25%"
+      }
     }
   ],
   "nameCn": "细菌甘油保存",

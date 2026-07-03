@@ -20,19 +20,28 @@
       "name": "Sucrose",
       "amount": null,
       "unit": "g",
-      "note": "Prepare each density separately: 10%=10 g, 20%=20 g, 30%=30 g, 40%=40 g, 50%=50 g, 60%=60 g, 70%=70 g per 100 mL"
+      "note": {
+        "en": "Prepare each density separately: 10%=10 g, 20%=20 g, 30%=30 g, 40%=40 g, 50%=50 g, 60%=60 g, 70%=70 g per 100 mL",
+        "zh": "每种密度分开配制（每 100 mL）：10%=10 g，20%=20 g，30%=30 g，40%=40 g，50%=50 g，60%=60 g，70%=70 g"
+      }
     },
     {
       "name": "HEPES-KOH (1 M, pH 7.4)",
       "amount": 1,
       "unit": "mL",
-      "note": "10 mM final; or use 10 mM Tris-HCl pH 7.4"
+      "note": {
+        "en": "10 mM final; or use 10 mM Tris-HCl pH 7.4",
+        "zh": "终浓度 10 mM；或换用 10 mM Tris-HCl pH 7.4"
+      }
     },
     {
       "name": "EDTA (0.5 M, pH 8.0)",
       "amount": 0.2,
       "unit": "mL",
-      "note": "1 mM final; Ca²⁺ chelation protects organelle membranes"
+      "note": {
+        "en": "1 mM final; Ca²⁺ chelation protects organelle membranes",
+        "zh": "终浓度 1 mM；螯合 Ca²⁺ 保护细胞器膜"
+      }
     },
     {
       "name": "ddH₂O",
