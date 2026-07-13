@@ -1,0 +1,31 @@
+name: Sign recipes
+# Regenerate the signed manifest whenever the built recipe library changes, so
+# dist/manifest.json always matches dist/recipes.json. Triggered only by changes
+# to recipes.json (not manifest.json), so the bot's own commit can't loop.
+on:
+  push:
+    branches: [main]
+    paths: ['dist/recipes.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Sign recipes.json into manifest.json
+        env:
+          RECIPE_SIGNING_KEY: ${{ secrets.RECIPE_SIGNING_KEY }}
+        run: node sign-recipes.js
+      - name: Commit manifest if changed
+        run: |
+          git config user.name 'recipe-signer[bot]'
+          git config user.email 'recipe-signer@users.noreply.github.com'
+          if git diff --quiet -- dist/manifest.json; then echo 'manifest unchanged'; exit 0; fi
+          git add dist/manifest.json
+          git commit -m 'chore(sign): update recipes manifest [skip ci]'
+          git push
