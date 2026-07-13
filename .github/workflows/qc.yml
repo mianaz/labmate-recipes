@@ -1,0 +1,44 @@
+name: QC
+
+# Recipe quality gate. Runs the repo's own qc.js over every recipe so that
+# bilingual coverage (en/zh), step structure, materials, timing, cross-links,
+# citations and schema shape are enforced automatically — the same checks that
+# used to be run by hand. Errors block the merge; warnings are surfaced but
+# advisory (see the strict job).
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'recipes/**'
+      - 'templates/**'
+      - 'schema.json'
+      - 'qc.js'
+      - '.github/workflows/qc.yml'
+  pull_request:
+    paths:
+      - 'recipes/**'
+      - 'templates/**'
+      - 'schema.json'
+      - 'qc.js'
+      - '.github/workflows/qc.yml'
+
+jobs:
+  qc:
+    name: Recipe QC (schema · bilingual · steps · materials · timing · cross-links)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # Blocking gate: fails (exit 2) on any ERROR, e.g. a detailedStep missing
+      # its en or zh half, missing id/name/category, or invalid JSON.
+      - name: QC — errors block
+        run: node qc.js
+      # Advisory: strict mode also fails on warnings (missing materials,
+      # duration.total, briefSteps, ref, …). Surfaced for visibility without
+      # blocking the merge, so the warning count can be driven down over time.
+      - name: QC — strict (advisory)
+        if: always()
+        continue-on-error: true
+        run: node qc.js --strict
