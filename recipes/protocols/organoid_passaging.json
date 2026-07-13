@@ -1,0 +1,69 @@
+{
+  "id": "organoid_passaging",
+  "name": "Passaging Organoid Cultures",
+  "nameCn": "类器官培养传代",
+  "category": "protocol",
+  "discipline": ["cell"],
+  "tags": ["organoid", "passaging", "subculture", "BME2", "Matrigel", "TrypLE", "cancer organoid"],
+  "usage": {
+    "en": "Dissociate and re-plate BME2/Matrigel-embedded organoids to expand a culture; use when domes are dense or organoids are large/dark-centred, not for single-cell dissociation (stop at small clumps to preserve viability).",
+    "zh": "把包埋在基质胶（BME2/Matrigel）里的类器官解离并重新铺板以扩增培养；在圆顶致密、类器官变大或中心发暗时传代，不用于单细胞解离（解离到小细胞团即停，保活力）。"
+  },
+  "duration": {
+    "total": "1–1.5 hours",
+    "hands_on": "45 min"
+  },
+  "materials": [
+    { "name": "Organoid culture in BME2/Matrigel domes (6-well plate)", "linkedRecipe": "intestinal_organoid" },
+    { "name": "TrypLE Express (or equivalent dissociation reagent)" },
+    { "name": "BME2 / Matrigel (basement membrane extract), kept on ice" },
+    { "name": "Appropriate organoid growth medium (pre-warmed)" },
+    { "name": "Cold PBS (~4°C)", "linkedRecipe": "pbs_1x" },
+    { "name": "Cell scraper", "optional": true },
+    { "name": "Swinging-bucket centrifuge, 37°C incubator, microscope, cool block" }
+  ],
+  "components": [
+    { "name": "1. Assess domes; add TrypLE to wells", "amount": 1, "unit": "step" },
+    { "name": "2. Detach and dissociate BME2 domes", "amount": 1, "unit": "step" },
+    { "name": "3. Incubate at 37°C, monitor dissociation", "amount": 1, "unit": "step" },
+    { "name": "4. Pellet organoids (800 × g, 2 min)", "amount": 1, "unit": "step" },
+    { "name": "5. (If hazy) PBS wash + re-spin", "amount": 1, "unit": "step" },
+    { "name": "6. Resuspend in 80% BME2 and plate as droplets", "amount": 1, "unit": "step" },
+    { "name": "7. Set BME2 at 37°C, add medium, return to incubator", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    { "afterStep": "3", "note": { "en": "No true stopping point — organoids should be moving through dissociation → plating in one continuous sitting. Do not leave dissociated organoids in TrypLE.", "zh": "无真正的暂停点——解离→铺板应一次连续完成。不要让解离后的类器官长时间停留在 TrypLE 中。" } }
+  ],
+  "detailedSteps": [
+    { "en": "**Dissociation**", "zh": "**解离**", "isHeader": true },
+    { "en": "Assess the domes under a microscope to decide split ratio (typically **1:2–1:3**; split to the same or fewer wells if organoids are growing slowly). Aspirate medium and add **1–2 mL TrypLE per well** of a 6-well plate. If domes have already detached, or there are many free-floating cells/organoids or attached fibroblasts, first collect medium + organoids into a tube and pellet before adding TrypLE.", "zh": "镜下评估圆顶以决定分传比例（通常 **1:2–1:3**；生长慢时传到相同或更少的孔）。吸去培养基，每孔（6 孔板）加 **1–2 mL TrypLE**。若圆顶已脱落、或培养基中有大量游离细胞/类器官或贴壁成纤维细胞，先把培养基+类器官收进管里离心成团，再加 TrypLE。" },
+    { "en": "Using a P1000, detach the BME2 domes from the plate (a **cell scraper** is recommended when passaging many plates). Pipette the suspension up and down several times to break organoids out of the BME2, then transfer to an appropriately sized tube with a P1000 or a 10 mL stripette.", "zh": "用 P1000 把 BME2 圆顶从板底刮离（传很多板时推荐用**细胞刮刀**）。反复吹打几次让类器官从 BME2 中脱出，再用 P1000 或 10 mL 血清移液管转入合适大小的管中。" },
+    { "en": "Wash the wells with **~1 mL TrypLE per well** to collect remaining organoids and add to the collection tube.", "zh": "每孔再用 **~1 mL TrypLE** 冲洗，收集残余类器官并入收集管。" },
+    { "en": "Incubate at **37°C**. Check under the microscope after 5 min, then as needed; pipette up and down with a P1000 to aid dissociation. **Stop when organoids are broken into small clumps of cells — avoid dissociating to single cells** (single cells hurt recovery).", "zh": "**37°C** 温育。5 min 后镜检，随后按需查看；用 P1000 反复吹打助解离。**当类器官解离成小细胞团时即停——避免打成单细胞**（单细胞会降低恢复率）。", "temp": "37°C", "warning": "⚠️ Over-digestion to single cells markedly reduces re-formation efficiency." },
+    { "en": "**Pelleting & plating**", "zh": "**离心与铺板**", "isHeader": true },
+    { "en": "Centrifuge at **800 × g for 2 min**. Aspirate the supernatant, leaving the organoid pellet. If the suspension does not pellet cleanly or a grey BME2 haze sits above the pellet, aspirate as much as possible, resuspend in **ice-cold PBS**, and repeat the spin.", "zh": "**800 × g 离心 2 min**。吸去上清，留下类器官沉淀。若不易成团、或沉淀上方有灰色 BME2 雾层，尽量吸除，用**冰冷 PBS** 重悬后再离心一次。", "time": "2 min" },
+    { "en": "Resuspend the pellet in **80% BME2** (~**200 µL per well** of a 6-well plate). Resuspend in a small volume first to break up the pellet, then top up with BME2. **Keep BME2 cold** (use a cool block) — it sets at room temperature — and dispense quickly. Avoid bubbles.", "zh": "用 **80% BME2** 重悬沉淀（6 孔板每孔约 **200 µL**）。先用少量重悬打散沉淀，再补足 BME2。**BME2 全程保持低温**（用冷块）——室温会凝固——并尽快分装。避免气泡。", "temp": "on ice" },
+    { "en": "Using a P200, dispense **200 µL organoid/BME2 per well** as **10–15 µL droplets**. Place the plate in a **37°C, 5% CO₂** incubator for **15–30 min** to let the BME2 set.", "zh": "用 P200 每孔滴 **200 µL 类器官/BME2**，做成 **10–15 µL 的小液滴**。将板放入 **37°C、5% CO₂** 培养箱 **15–30 min** 使 BME2 凝固。", "time": "15–30 min", "temp": "37°C" },
+    { "en": "Add **2 mL of the appropriate organoid medium per well** and return to the incubator. Change medium twice a week until ready to passage again.", "zh": "每孔加 **2 mL 相应类器官培养基**，放回培养箱。之后每周换液两次，直到可再次传代。", "temp": "37°C" }
+  ],
+  "briefSteps": [
+    { "en": "TrypLE onto domes → detach & pipette out organoids → 37°C dissociate to small clumps → 800×g 2 min pellet → resuspend in 80% BME2 → plate 10–15 µL droplets → set 37°C 15–30 min → add medium", "zh": "TrypLE 加到圆顶 → 刮离并吹出类器官 → 37°C 解离成小团 → 800×g 2 min 成团 → 80% BME2 重悬 → 滴 10–15 µL 液滴 → 37°C 凝固 15–30 min → 加培养基" }
+  ],
+  "notes": {
+    "en": "Developed by the organoid derivation team at the Wellcome Sanger Institute, mainly for cancer organoids. Use low split ratios (1:2–1:3); passage to the same or fewer wells if organoids grow poorly. 5 mL Eppendorf tubes help maintain sterility. If pellets stay hazy with residual BME2, a cold-PBS wash and re-spin resolves it. Keeping a bottle of cold PBS in the fridge is handy.",
+    "zh": "由 Wellcome Sanger 研究所类器官团队开发，主要用于癌症类器官。用低分传比（1:2–1:3）；生长不佳时传到相同或更少的孔。5 mL Eppendorf 管有助保持无菌。若沉淀因残余 BME2 发雾，用冷 PBS 洗一次再离心即可。冰箱常备一瓶冷 PBS 很方便。"
+  },
+  "ref": "Rogers H, Letchford L, Vieira S, et al. Passaging cancer organoid cultures. protocols.io (Wellcome Sanger Institute)",
+  "doi": "10.17504/protocols.io.bfe3jjgn",
+  "source": "protocols.io",
+  "relatedProtocols": ["intestinal_organoid", "cell_passage", "organoid_cryopreservation"],
+  "storage": {
+    "temp": "N/A",
+    "duration": "1–1.5 hours",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 1–1.5 hours, hands-on: 45 min",
+      "zh": "实验方案 — 1–1.5 小时，实操: 45 分钟"
+    }
+  }
+}

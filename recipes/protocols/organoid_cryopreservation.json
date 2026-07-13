@@ -1,0 +1,68 @@
+{
+  "id": "organoid_cryopreservation",
+  "name": "Cryopreservation of Organoid Cultures",
+  "nameCn": "类器官培养冻存",
+  "category": "protocol",
+  "discipline": ["cell"],
+  "tags": ["organoid", "cryopreservation", "freezing", "BME2", "Matrigel", "liquid nitrogen", "cancer organoid"],
+  "usage": {
+    "en": "Bank BME2/Matrigel-embedded organoids in liquid nitrogen for long-term storage; freeze healthy, actively growing cultures a few days after passage, not sparse or over-confluent ones.",
+    "zh": "把包埋在基质胶（BME2/Matrigel）里的类器官冻存于液氮长期保存；冻存传代后几天、生长良好的健康培养物，别用稀疏或过度融合的。"
+  },
+  "duration": {
+    "total": "~45 min + overnight −80°C",
+    "hands_on": "40 min"
+  },
+  "materials": [
+    { "name": "Organoid culture in BME2/Matrigel domes", "linkedRecipe": "intestinal_organoid" },
+    { "name": "Recovery Cell Culture Freezing Medium (or equivalent)" },
+    { "name": "Cold PBS (~4°C)", "linkedRecipe": "pbs_1x" },
+    { "name": "Cell scraper", "optional": true },
+    { "name": "Cryovials (pre-labelled)" },
+    { "name": "CoolCell / Mr. Frosty freezing container" },
+    { "name": "Swinging-bucket centrifuge, −80°C freezer, liquid nitrogen storage" }
+  ],
+  "components": [
+    { "name": "1. Detach BME2 domes (1 well → 1 cryovial)", "amount": 1, "unit": "step" },
+    { "name": "2. Transfer suspension; wash wells with cold PBS", "amount": 1, "unit": "step" },
+    { "name": "3. Centrifuge 800 × g, 2 min (brake 4)", "amount": 1, "unit": "step" },
+    { "name": "4. Aspirate supernatant; (if hazy) PBS wash + re-spin", "amount": 1, "unit": "step" },
+    { "name": "5. Optional cell count for defined banking density", "amount": 1, "unit": "step" },
+    { "name": "6. Resuspend in freezing medium; fill cryovials", "amount": 1, "unit": "step" },
+    { "name": "7. −80°C in CoolCell overnight", "amount": 1, "unit": "step" },
+    { "name": "8. Transfer to liquid nitrogen", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    { "afterStep": "7", "note": { "en": "Vials may sit at −80°C for 24–72 h in the freezing container before moving to liquid nitrogen; do not leave them at −80°C long-term.", "zh": "冻存管可在冻存盒中于 −80°C 放置 24–72 h 再转液氮；不要长期停在 −80°C。" } }
+  ],
+  "detailedSteps": [
+    { "en": "Using a P1000 or a **cell scraper**, detach the BME2 domes from as many wells as needed. Aim for **~1 × 10⁶ cells per cryovial** — generally **1 well → 1 cryovial**.", "zh": "用 P1000 或**细胞刮刀**刮离所需孔数的 BME2 圆顶。目标**每支冻存管 ~1 × 10⁶ 个细胞**——一般 **1 孔 → 1 支冻存管**。" },
+    { "en": "Transfer the organoid suspension to a **5 mL Eppendorf or 15 mL Falcon tube**. Wash the wells with **cold PBS (~4°C)** to collect remaining organoids; pipette up and down several times with a stripette to free organoids from the BME2 and add to the collection tube.", "zh": "把类器官悬液转入 **5 mL Eppendorf 或 15 mL Falcon 管**。用**冷 PBS（~4°C）**冲洗孔以收集残余类器官；用血清移液管反复吹打让类器官脱离 BME2，并入收集管。", "temp": "4°C" },
+    { "en": "Centrifuge at **800 × g for 2 min with the brake set to 4**. Seal centrifuge buckets with safety caps and only open them inside a microbiological safety cabinet.", "zh": "**800 × g 离心 2 min，刹车档设为 4**。离心吊篮用安全盖密封，仅在生物安全柜内开启。", "time": "2 min", "warning": "⚠️ Open sealed centrifuge buckets only inside a biosafety cabinet." },
+    { "en": "Aspirate the supernatant, leaving the (loose) organoid pellet — aspirate gently. If the pellet is unclear or has a BME2 haze, aspirate as close to the haze as possible, resuspend in **cold PBS**, re-spin (800 × g, 2 min, brake 4), and aspirate again.", "zh": "吸去上清，保留（松散的）类器官沉淀——轻柔吸取。若沉淀不清晰或有 BME2 雾层，尽量贴近雾层吸除，用**冷 PBS** 重悬后再离心（800 × g，2 min，刹车 4），再次吸除上清。", "time": "2 min" },
+    { "en": "**Optional — defined-density banking:** to freeze a specific cell number, take a count from the whole suspension or from a representative well (resuspend that pellet in organoid medium and count). Organoids are counted as **aggregates**; take two aggregate counts within 10% of each other (otherwise a third, then average). Target **1 × 10⁶ cells per cryovial**.", "zh": "**可选——按定量密度冻存：** 若要冻定量细胞，从整份悬液或一个代表孔取样计数（把该孔沉淀重悬于类器官培养基后计数）。类器官按**聚集体**计数；取两次聚集体计数、彼此相差 <10%（否则计第三次取平均）。目标**每管 1 × 10⁶ 个细胞**。" },
+    { "en": "Resuspend the pellet in **Recovery Cell Culture Freezing Medium** (~**1 mL per cryovial**) and transfer into the pre-labelled cryovials.", "zh": "用**Recovery 细胞冻存液**重悬沉淀（每管约 **1 mL**），分装入预先标记的冻存管。" },
+    { "en": "Place the cryovials in a **CoolCell** (or Mr. Frosty) freezing container and put into a **−80°C** freezer. For an odd number of vials, add a 'balance' vial for even cooling.", "zh": "把冻存管放入 **CoolCell**（或 Mr. Frosty）冻存盒，置于 **−80°C** 冰箱。管数为奇数时加一支“配平”管，使降温均匀。", "temp": "−80°C" },
+    { "en": "After **24 h (up to 72 h)**, transfer the cryovials to **liquid nitrogen** for long-term storage.", "zh": "**24 h（最长 72 h）**后，把冻存管转入**液氮**长期保存。", "time": "24–72 h" }
+  ],
+  "briefSteps": [
+    { "en": "Detach domes (1 well/vial) → cold-PBS wash → 800×g 2 min → aspirate → (opt. count aggregates) → resuspend in freezing medium 1 mL/vial → CoolCell −80°C overnight → liquid nitrogen", "zh": "刮离圆顶（1 孔/管）→ 冷 PBS 洗 → 800×g 2 min → 吸上清 →（可选按聚集体计数）→ 冻存液重悬 1 mL/管 → CoolCell −80°C 过夜 → 液氮" }
+  ],
+  "notes": {
+    "en": "Developed by the organoid derivation team at the Wellcome Sanger Institute, mainly for colon, pancreas and oesophageal cancer organoids. 5 mL Eppendorf tubes aid sterility. Keep cold PBS on hand to resolve hazy/loose pellets. The brake-4 setting and gentle aspiration protect the loose organoid pellet. Thaw by warming quickly at 37°C, dilute out the freezing medium, pellet, and re-plate in BME2 as in the passaging protocol.",
+    "zh": "由 Wellcome Sanger 研究所类器官团队开发，主要用于结肠、胰腺、食管癌类器官。5 mL Eppendorf 管有助无菌。常备冷 PBS 解决发雾/松散沉淀。刹车档 4 与轻柔吸取可保护松散的类器官沉淀。复苏时 37°C 快速回温，稀释掉冻存液，离心成团，按传代方案重新铺入 BME2。"
+  },
+  "ref": "Souster E, Rogers H, Letchford L, et al. Cryopreservation of organoid cultures. protocols.io (Wellcome Sanger Institute)",
+  "doi": "10.17504/protocols.io.bh4ij8ue",
+  "source": "protocols.io",
+  "relatedProtocols": ["intestinal_organoid", "cell_freezing", "organoid_passaging"],
+  "storage": {
+    "temp": "N/A",
+    "duration": "~45 min + overnight −80°C",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — ~45 min hands-on + overnight −80°C",
+      "zh": "实验方案 — 约 45 分钟实操 + −80°C 过夜"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "cut_and_tag",
+  "name": "CUT&Tag (Cleavage Under Targets & Tagmentation, bench top)",
+  "nameCn": "CUT&Tag（靶向切割与标签化片段化，台式版）",
+  "category": "protocol",
+  "discipline": ["genomics", "molecular"],
+  "tags": ["CUT&Tag", "chromatin profiling", "pA-Tn5", "tagmentation", "ConA beads", "epigenomics", "histone modification", "sequencing"],
+  "usage": {
+    "en": "Antibody-tethered pA-Tn5 profiling of histone marks or chromatin proteins that goes straight from bead-bound nuclei to a sequencing library with very low cell input; use for genome-wide mapping (an alternative to ChIP-seq/CUT&RUN), not when only a bulk locus readout is needed.",
+    "zh": "用抗体拴系的 pA-Tn5 对组蛋白修饰或染色质蛋白做全基因组图谱，从磁珠结合的细胞核直接得到测序文库，起始细胞量极低；用于全基因组定位（ChIP-seq/CUT&RUN 的替代），不适合只需单一位点的批量读出。"
+  },
+  "duration": {
+    "total": "2 days",
+    "hands_on": "5–6 hours"
+  },
+  "materials": [
+    { "name": "Fresh or lightly-fixed cells/nuclei (up to ~500,000 per sample)" },
+    { "name": "Concanavalin A (ConA) magnetic beads" },
+    { "name": "pA-Tn5 adapter complex (pre-loaded transposase)" },
+    { "name": "Primary antibody + guinea-pig/rabbit secondary antibody" },
+    { "name": "Binding, Wash, Antibody, Dig-wash, Dig-300 & Tagmentation buffers (digitonin-based)" },
+    { "name": "0.5 M EDTA, 10% SDS, 20 mg/mL Proteinase K" },
+    { "name": "PCI / chloroform / ethanol; SPRI beads; NEBNext HiFi 2× PCR Master Mix + i5/i7 primers" },
+    { "name": "Magnet stand, nutator, thermal cycler, TapeStation/Bioanalyzer" }
+  ],
+  "components": [
+    { "name": "1. Prepare cells/nuclei; optional light fixation", "amount": 1, "unit": "step" },
+    { "name": "2. Activate ConA beads in Binding buffer", "amount": 1, "unit": "step" },
+    { "name": "3. Bind cells to ConA beads", "amount": 1, "unit": "step" },
+    { "name": "4. Primary antibody, 2 h RT or overnight 4°C", "amount": 1, "unit": "step" },
+    { "name": "5. Secondary antibody, 30–60 min RT; wash", "amount": 1, "unit": "step" },
+    { "name": "6. Bind pA-Tn5 in Dig-300, 1 h RT; wash", "amount": 1, "unit": "step" },
+    { "name": "7. Tagmentation in Tagmentation buffer, 37°C 1 h", "amount": 1, "unit": "step" },
+    { "name": "8. Stop + Proteinase K, 55°C 1 h", "amount": 1, "unit": "step" },
+    { "name": "9. PCI/chloroform extraction; ethanol precipitate DNA", "amount": 1, "unit": "step" },
+    { "name": "10. Library PCR (gap-fill + 13 cycles)", "amount": 1, "unit": "step" },
+    { "name": "11. 1.3× SPRI cleanup", "amount": 1, "unit": "step" },
+    { "name": "12. TapeStation QC; pool; paired-end sequencing", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    { "afterStep": "1", "note": { "en": "Nuclei can be slow-frozen (900 µL in 100 µL DMSO, Mr. Frosty, −80°C overnight) and stored at −80°C before starting CUT&Tag.", "zh": "细胞核可慢冻（900 µL 加 100 µL DMSO，Mr. Frosty，−80°C 过夜）后 −80°C 保存，再开始 CUT&Tag。" } },
+    { "afterStep": "10", "note": { "en": "Amplified library can be held before SPRI cleanup; the final library stores at −20°C.", "zh": "扩增后的文库可在 SPRI 纯化前暂存；最终文库 −20°C 保存。" } }
+  ],
+  "detailedSteps": [
+    { "en": "**Day 1 — Bead binding & antibodies**", "zh": "**第一天 — 磁珠结合与抗体**", "isHeader": true },
+    { "en": "Harvest cells at RT and count; **up to ~500,000 cells per sample**. Optional light fixation: add 16% formaldehyde to **0.1% for 2 min** at RT, quench with 1.25 M glycine to 2× the formaldehyde molarity. For nuclei, resuspend in ice-cold **NE1 buffer** 10 min on ice, spin **1300 × g 4 min 4°C**. Resuspend in Wash buffer to ~1 × 10⁶/mL.", "zh": "室温收获细胞并计数；**每样最多 ~500,000 个细胞**。可选轻度固定：加 16% 甲醛至 **0.1%、室温 2 min**，用 1.25 M 甘氨酸（甲醛摩尔数的 2×）终止。若制核，冰冷 **NE1 缓冲液**冰上 10 min，**1300 × g 4 min 4°C** 离心。用 Wash buffer 重悬至 ~1 × 10⁶/mL。", "warning": "⚠️ Keep fresh (unfixed) cells at RT through permeabilization to minimize stress." },
+    { "en": "Activate ConA beads: withdraw **10 µL slurry per sample**, wash twice in **Binding buffer** on the magnet, and resuspend in **10 µL Binding buffer per sample**. Hold at RT.", "zh": "活化 ConA 磁珠：**每样取 10 µL** 珠浆，在磁架上用 **Binding buffer** 洗两次，重悬于**每样 10 µL Binding buffer**。室温备用。" },
+    { "en": "While gently vortexing (~1100 rpm), slowly add bead slurry to the cells/nuclei; rotate end-over-end **5–10 min** RT. On magnet, remove liquid. Resuspend in **50 µL ice-cold Antibody buffer per sample**.", "zh": "轻柔涡旋（~1100 rpm）下缓慢把珠浆加入细胞/核；端对端旋转 **5–10 min**（室温）。上磁架去液。用**每样 50 µL 冰冷 Antibody buffer** 重悬。" },
+    { "en": "Add **0.5–1 µL primary antibody** per sample (default 1:50–1:100). Nutate **2 h at RT or overnight to several days at 4°C**. Keep liquid at the bottom/side while rocking.", "zh": "每样加 **0.5–1 µL 一抗**（默认 1:50–1:100）。摇摆温育 **室温 2 h 或 4°C 过夜至数天**。摇动时使液体留在管底/管壁。", "time": "2 h", "temp": "RT or 4°C" },
+    { "en": "On magnet, remove liquid. Add secondary antibody **1:100 in Dig-wash buffer, 100 µL/sample**; nutate **30–60 min RT**. Remove liquid on magnet, then wash **twice**: add 1 mL Dig-wash, invert to dislodge beads, clear on magnet, remove.", "zh": "上磁架去液。加二抗 **1:100 于 Dig-wash buffer，100 µL/样**；摇摆 **室温 30–60 min**。磁架去液后**洗两次**：加 1 mL Dig-wash，颠倒使磁珠散开，磁架澄清后弃去。", "time": "30–60 min", "temp": "RT" },
+    { "en": "**pA-Tn5 binding & tagmentation**", "zh": "**pA-Tn5 结合与标签化片段化**", "isHeader": true },
+    { "en": "Mix **pA-Tn5 1:250 in Dig-300 buffer, 100 µL/sample**; add while gently vortexing. Nutate **1 h RT**. Remove liquid on magnet, wash **twice with 1 mL Dig-300**.", "zh": "配 **pA-Tn5 1:250 于 Dig-300 buffer，100 µL/样**；轻柔涡旋下加入。摇摆 **室温 1 h**。磁架去液，用 **1 mL Dig-300 洗两次**。", "time": "1 h", "temp": "RT", "warning": "⚠️ The higher NaCl in Dig-300 prevents pA-Tn5 binding open chromatin but can clump beads — vortex gently to disperse." },
+    { "en": "Remove liquid on magnet. Add **300 µL Tagmentation buffer** (Mg²⁺-containing) while gently vortexing. Incubate **37°C for 1 h** in a water bath or incubator.", "zh": "磁架去液。轻柔涡旋下加 **300 µL Tagmentation buffer**（含 Mg²⁺）。水浴或培养箱 **37°C 温育 1 h**。", "time": "1 h", "temp": "37°C" },
+    { "en": "**DNA release & purification**", "zh": "**DNA 释放与纯化**", "isHeader": true },
+    { "en": "Stop and solubilize: add **10 µL 0.5 M EDTA, 3 µL 10% SDS, 2.5 µL 20 mg/mL Proteinase K** per sample. Vortex ~2 s and incubate **55°C for 1 h** to digest and reverse cross-links (beads may clump — normal).", "zh": "终止并溶出：每样加 **10 µL 0.5 M EDTA、3 µL 10% SDS、2.5 µL 20 mg/mL 蛋白酶 K**。涡旋 ~2 s，**55°C 温育 1 h** 消化并解交联（磁珠可能结块——正常）。", "time": "1 h", "temp": "55°C" },
+    { "en": "Add **300 µL PCI**, vortex ~2 s, transfer to a phase-lock tube, spin **16,000 × g 3 min RT**. Add **300 µL chloroform**, invert ~10×, spin 16,000 × g 3 min. Pipette the aqueous layer into **750 µL 100% ethanol**; chill on ice and spin **≥10 min 16,000 × g 4°C**.", "zh": "加 **300 µL PCI**，涡旋 ~2 s，转入 phase-lock 管，**16,000 × g 3 min 室温**离心。加 **300 µL 氯仿**，颠倒 ~10 次，16,000 × g 3 min。把水相移入 **750 µL 100% 乙醇**；冰浴后 **≥10 min 16,000 × g 4°C** 离心。", "time": "~20 min", "temp": "4°C", "warning": "⚠️ Do not add glycogen — it inhibits the downstream PCR; endogenous RNA acts as carrier." },
+    { "en": "Pour off liquid (often no visible pellet), rinse in 1 mL 100% ethanol, spin **1 min 4°C**, drain and air-dry. Dissolve in **25–30 µL 1 mM Tris-HCl pH 8 / 0.1 mM EDTA**, vortex to dissolve.", "zh": "倒去液体（常无可见沉淀），用 1 mL 100% 乙醇漂洗，**4°C 1 min** 离心，沥干并风干。用 **25–30 µL 1 mM Tris-HCl pH 8 / 0.1 mM EDTA** 溶解，涡旋助溶。" },
+    { "en": "**Day 2 — Library PCR & cleanup**", "zh": "**第二天 — 文库 PCR 与纯化**", "isHeader": true },
+    { "en": "In a thin-wall PCR tube mix **21 µL DNA + 2 µL 10 µM i5 primer + 2 µL 10 µM uniquely-barcoded i7 primer + 25 µL NEBNext HiFi 2× Master Mix**. Cycle (heated lid): **72°C 5 min** (gap-fill) → **98°C 30 s** → **[98°C 10 s → 63°C 10 s] × 13** → **72°C 1 min** → hold. Use a different i7 barcode per sample.", "zh": "薄壁 PCR 管中混合 **21 µL DNA + 2 µL 10 µM i5 引物 + 2 µL 10 µM 独立条码 i7 引物 + 25 µL NEBNext HiFi 2× Master Mix**。程序（热盖）：**72°C 5 min**（补平）→ **98°C 30 s** → **[98°C 10 s → 63°C 10 s] × 13** → **72°C 1 min** → 保持。每样用不同 i7 条码。", "time": "~40 min" },
+    { "en": "Add **1.3 volumes (65 µL) SPRI bead slurry**, mix, sit **5–10 min RT**. On magnet, remove liquid; wash **twice with 200 µL 80% ethanol** on the magnet. Quick-spin, remove residual liquid with a 20 µL tip; **do not air-dry**. Elute in **25 µL 10 mM Tris-HCl pH 8**, 5 min, transfer cleared eluate to a fresh tube.", "zh": "加 **1.3 倍体积（65 µL）SPRI 珠浆**，混匀，**室温静置 5–10 min**。上磁架去液；磁架上用 **200 µL 80% 乙醇洗两次**。短暂离心，用 20 µL 枪头吸净残液；**不要风干**。用 **25 µL 10 mM Tris-HCl pH 8** 洗脱 5 min，把澄清洗脱液转入新管。", "time": "~15 min" },
+    { "en": "**QC & sequencing**", "zh": "**质检与测序**", "isHeader": true },
+    { "en": "Check size/concentration by capillary electrophoresis (**Agilent TapeStation D1000** or equivalent). Pool barcoded libraries to equal representation (an extra SPRI cleanup removes residual primers if needed). **Paired-end Illumina sequencing** (e.g. PE25×25 with ~1% PhiX). Align with Bowtie2 `--end-to-end --very-sensitive --no-mixed --no-discordant -I 10 -X 700`.", "zh": "用毛细管电泳查片段大小/浓度（**Agilent TapeStation D1000** 或等效）。等量混合各条码文库（必要时再做一次 SPRI 去残余引物）。**Illumina 双端测序**（如 PE25×25，加 ~1% PhiX）。用 Bowtie2 `--end-to-end --very-sensitive --no-mixed --no-discordant -I 10 -X 700` 比对。" }
+  ],
+  "briefSteps": [
+    { "en": "Bind cells to ConA beads → 1° antibody (2 h/overnight) → 2° antibody → pA-Tn5 in Dig-300 1 h → tagment 37°C 1 h → ProtK/SDS 55°C → PCI extract + EtOH ppt → PCR (gap-fill + 13 cyc) → 1.3× SPRI → TapeStation → PE sequencing", "zh": "细胞结合 ConA 磁珠 → 一抗（2 h/过夜）→ 二抗 → Dig-300 中 pA-Tn5 1 h → 37°C 标签化 1 h → 蛋白酶K/SDS 55°C → PCI 抽提+乙醇沉淀 → PCR（补平+13 循环）→ 1.3× SPRI → TapeStation → 双端测序" }
+  ],
+  "notes": {
+    "en": "Henikoff-lab bench-top protocol: because pA-Tn5 tagments in situ, backgrounds are very low and 100k–500k cells (or fewer) suffice. A guinea-pig/rabbit secondary antibody is used to boost pA-Tn5 tethering even though CUT&RUN does not need it. Fragments <120 bp carry most binding information; run paired-end so you keep fragment-size data. Standard ChIP-seq tools (deepTools, Picard, bedtools) plus the SEACR peak caller work on the output.",
+    "zh": "Henikoff 实验室台式方案：pA-Tn5 原位标签化，背景极低，10 万–50 万（甚至更少）细胞即可。加二抗（豚鼠/兔）以增强 pA-Tn5 拴系，尽管 CUT&RUN 并不需要。<120 bp 的片段携带大部分结合信息；做双端测序以保留片段大小信息。输出可用常规 ChIP-seq 工具（deepTools、Picard、bedtools）及 SEACR peak caller 分析。"
+  },
+  "ref": "Kaya-Okur HS, Janssens DH, Henikoff S, et al. Bench top CUT&Tag. protocols.io (Henikoff Lab)",
+  "doi": "10.17504/protocols.io.bcuhiwt6",
+  "source": "protocols.io",
+  "relatedProtocols": ["cut_and_run", "sc_cut_and_tag", "cut_and_run_library_prep"],
+  "storage": {
+    "temp": "N/A",
+    "duration": "2 days",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 2 days, hands-on: 5–6 hours",
+      "zh": "实验方案 — 2 天，实操: 5–6 小时"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "cut_and_run_library_prep",
+  "name": "CUT&RUN Library Prep (NEBNext Ultra II, small fragments)",
+  "nameCn": "CUT&RUN 建库（NEBNext Ultra II，小片段）",
+  "category": "protocol",
+  "discipline": ["genomics", "molecular"],
+  "tags": ["CUT&RUN", "library prep", "NEBNext Ultra II", "Illumina", "AMPure XP", "double size selection", "sequencing"],
+  "usage": {
+    "en": "Build Illumina sequencing libraries from CUT&RUN DNA using NEBNext Ultra II (E7645), tuned to recover the short transcription-factor footprints; do NOT use for histone-modification CUT&RUN libraries — follow the manufacturer protocol for those.",
+    "zh": "用 NEBNext Ultra II（E7645）把 CUT&RUN 富集的 DNA 建成 Illumina 测序文库，针对短的转录因子足迹片段优化；组蛋白修饰 CUT&RUN 文库**不要**用此方案——那种情况按厂商标准流程做。"
+  },
+  "duration": {
+    "total": "~1 day",
+    "hands_on": "4–5 hours"
+  },
+  "materials": [
+    { "name": "Fragmented CUT&RUN DNA (input, e.g. ~6 ng)", "linkedRecipe": "cut_and_run" },
+    { "name": "NEBNext Ultra II DNA Library Prep Kit for Illumina (NEB #E7645)" },
+    { "name": "NEBNext Adaptor + USER enzyme (from NEB index primer kits)" },
+    { "name": "NEBNext Multiplex Oligos (i5/i7 index primers)" },
+    { "name": "AMPure XP beads (RT, ≥30 min warm-up)" },
+    { "name": "Freshly prepared 80% ethanol" },
+    { "name": "10 mM Tris-HCl pH 8 or 0.1× TE (elution)" },
+    { "name": "Magnetic stand, thermal cycler, Agilent Bioanalyzer HS or TapeStation" }
+  ],
+  "components": [
+    { "name": "1. End prep reaction (60 µl); 20°C/65°C program", "amount": 1, "unit": "step" },
+    { "name": "2. Dilute adaptor to input scale", "amount": 1, "unit": "step" },
+    { "name": "3. Adaptor ligation, 20°C 15 min", "amount": 1, "unit": "step" },
+    { "name": "4. USER digestion, 37°C 15 min", "amount": 1, "unit": "step" },
+    { "name": "5. 1.75× AMPure cleanup, elute 15 µl", "amount": 1, "unit": "step" },
+    { "name": "6. Index PCR (4–12 cycles)", "amount": 1, "unit": "step" },
+    { "name": "7. Double-sided size selection (0.8× then 1.2×)", "amount": 1, "unit": "step" },
+    { "name": "8. Final elution; store", "amount": 1, "unit": "step" },
+    { "name": "9. QC on Bioanalyzer/TapeStation; PE sequence", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    { "afterStep": "5", "note": { "en": "After the post-ligation cleanup, the 13 µl adaptor-ligated eluate can be stored at −20°C before PCR.", "zh": "连接后纯化得到的 13 µl 加接头产物，可在 PCR 前 −20°C 保存。" } },
+    { "afterStep": "8", "note": { "en": "The final size-selected library (13 µl) can be stored at −20°C before QC/sequencing.", "zh": "最终筛选好的文库（13 µl）可在 QC/测序前 −20°C 保存。" } }
+  ],
+  "detailedSteps": [
+    { "en": "**End preparation**", "zh": "**末端修复**", "isHeader": true },
+    { "en": "In a nuclease-free tube combine **55.5 µl fragmented DNA** with the NEBNext **End Prep Enzyme Mix** (green cap) and **End Prep Reaction Buffer** per the E7645 kit to a **60 µl** reaction. Run in a thermocycler with **lid ≥ 60°C**: **20°C 30 min → 65°C 30 min → hold 4°C**.", "zh": "无核酸酶管中，将 **55.5 µl 片段化 DNA** 与 E7645 试剂盒的 **End Prep 酶混合液**（绿盖）和 **End Prep 反应缓冲液**混匀成 **60 µl** 反应。热盖 **≥ 60°C** 下运行：**20°C 30 min → 65°C 30 min → 4°C 保持**。", "time": "60 min" },
+    { "en": "**Adaptor ligation**", "zh": "**接头连接**", "isHeader": true },
+    { "en": "Dilute the NEBNext adaptor to match input: for **~6 ng input** dilute the stock 15 µM adaptor to **3 µM** and use ~**1.25 µL (~4 pmol)** — roughly a 20-fold molar excess over the DNA. Lower adaptor cuts adaptor-dimer but can lose yield.", "zh": "按投入量稀释 NEBNext 接头：**~6 ng 投入**时把 15 µM 母液稀释到 **3 µM**，用约 **1.25 µL（~4 pmol）**——约为 DNA 的 20 倍摩尔量。接头减量可降低接头二聚体，但可能损失产量。" },
+    { "en": "Add directly to the End Prep mix: **Blunt/TA Ligase Master Mix 15 µl** (red) + **Ligation Enhancer 1 µl** + **diluted NEBNext Adaptor 2.5 µl**. Mix and incubate at **20°C for 15 min** in the thermal cycler.", "zh": "直接向 End Prep 反应中加入：**Blunt/TA 连接酶 Master Mix 15 µl**（红盖）+ **Ligation Enhancer 1 µl** + **稀释后的 NEBNext 接头 2.5 µl**。混匀，PCR 仪 **20°C 温育 15 min**。", "time": "15 min", "temp": "20°C" },
+    { "en": "Add **1.5 µl USER enzyme**, mix, and incubate at **37°C for 15 min** with lid ≥ 47°C. (USER is required only with NEBNext hairpin adaptors.)", "zh": "加 **1.5 µl USER 酶**，混匀，热盖 ≥ 47°C 下 **37°C 温育 15 min**。（仅 NEBNext 发夹接头需要 USER。）", "time": "15 min", "temp": "37°C" },
+    { "en": "**Post-ligation cleanup (1.75×)**", "zh": "**连接后纯化（1.75×）**", "isHeader": true },
+    { "en": "Add **80 µl (~1.75×) AMPure XP beads**, mix well (≥10 pipettings), 5 min RT. On magnet 5 min, discard supernatant. Wash **twice with 200 µl fresh 80% ethanol** (30 s each on magnet). Air-dry ≤5 min (do not over-dry). Elute in **15 µl** 10 mM Tris-HCl / 0.1× TE, 2 min RT; on magnet, transfer **13 µl** to a fresh PCR tube.", "zh": "加 **80 µl（~1.75×）AMPure XP 磁珠**，充分混匀（≥10 次吹打），室温 5 min。上磁架 5 min，弃上清。用 **200 µl 新配 80% 乙醇洗两次**（每次磁架上 30 s）。风干 ≤5 min（勿过干）。用 **15 µl** 10 mM Tris-HCl / 0.1× TE 洗脱，室温 2 min；上磁架后取 **13 µl** 转入新 PCR 管。", "time": "~20 min" },
+    { "en": "**Index PCR**", "zh": "**加索引 PCR**", "isHeader": true },
+    { "en": "Mix **15 µl adaptor-ligated DNA** + **NEBNext Q5 Hot Start HiFi Master Mix 25 µl** (blue) + **i7 index primer 5 µl** + **i5 universal primer 5 µl**. Cycle: **98°C 30 s**; then **[98°C 10 s → 65°C 75 s] × 4–12** (12 cycles from 6 ng gives ~10–40 ng); **65°C 5 min**; hold 4°C.", "zh": "混合 **15 µl 加接头 DNA** + **NEBNext Q5 Hot Start HiFi Master Mix 25 µl**（蓝盖）+ **i7 索引引物 5 µl** + **i5 通用引物 5 µl**。程序：**98°C 30 s**；**[98°C 10 s → 65°C 75 s] × 4–12**（6 ng 投入、12 个循环约得 10–40 ng）；**65°C 5 min**；4°C 保持。", "time": "~30 min" },
+    { "en": "**Double-sided size selection**", "zh": "**双向片段筛选**", "isHeader": true },
+    { "en": "**Round 1 (0.8×, remove >350 bp):** add **24 µl** AMPure XP to the PCR, mix, 5 min RT, on magnet, and **keep the supernatant** (large fragments are on the beads — discard beads).", "zh": "**第一轮（0.8×，去除 >350 bp）：** 向 PCR 加 **24 µl** AMPure XP，混匀，室温 5 min，上磁架，**保留上清**（大片段在磁珠上——弃磁珠）。", "time": "~10 min" },
+    { "en": "**Round 2 (final 1.2×, remove <150 bp):** add **12 µl** AMPure XP to the supernatant, mix, 5 min RT. On magnet, discard supernatant; wash **twice with 200 µl 80% ethanol**; air-dry ≤5 min. Elute in **15 µl 0.1× TE**, 2 min RT; on magnet, transfer **13 µl** to a fresh PCR tube and store at −20°C.", "zh": "**第二轮（终 1.2×，去除 <150 bp）：** 向上清加 **12 µl** AMPure XP，混匀，室温 5 min。上磁架弃上清；用 **200 µl 80% 乙醇洗两次**；风干 ≤5 min。用 **15 µl 0.1× TE** 洗脱，室温 2 min；上磁架取 **13 µl** 转入新 PCR 管，−20°C 保存。", "time": "~15 min" },
+    { "en": "**QC & sequencing**", "zh": "**质检与测序**", "isHeader": true },
+    { "en": "Check size distribution on an **Agilent Bioanalyzer HS DNA chip or TapeStation** (dilute if needed); expect **160–350 bp**. A residual primer-dimer peak near 128 bp of ~1–20% is common. **Sequence paired-end** — fragments <120 bp carry most TF-binding information; trim read-through adaptor from short reads.", "zh": "在 **Agilent Bioanalyzer HS DNA 芯片或 TapeStation** 上查片段分布（必要时稀释）；应在 **160–350 bp**。128 bp 附近约 1–20% 的残余引物二聚体常见。**双端测序**——<120 bp 的片段携带大部分转录因子结合信息；短读长要修剪读通接头序列。" }
+  ],
+  "briefSteps": [
+    { "en": "End prep 60 µl (20/65°C) → ligate NEBNext adaptor 20°C → USER 37°C → 1.75× AMPure → index PCR 4–12 cyc → 0.8× (drop >350 bp) then 1.2× (drop <150 bp) → elute 13 µl → Bioanalyzer 160–350 bp → PE sequencing", "zh": "末端修复 60 µl（20/65°C）→ 连 NEBNext 接头 20°C → USER 37°C → 1.75× AMPure → 加索引 PCR 4–12 循环 → 0.8×（去 >350 bp）再 1.2×（去 <150 bp）→ 洗脱 13 µl → Bioanalyzer 160–350 bp → 双端测序" }
+  ],
+  "notes": {
+    "en": "This variant is optimized for the short fragments of transcription-factor CUT&RUN; for histone-modification libraries follow the standard NEBNext manufacturer protocol instead. NEB stem-loop adaptors differ in length from Illumina adaptors, which is why USER treatment is needed. Adaptor amount is the main dimer lever — scale it to input. The two-sided AMPure selection (0.8× then 1.2×) is what removes both large PCR products and adaptor dimers.",
+    "zh": "此变体针对转录因子 CUT&RUN 的短片段优化；组蛋白修饰文库请改用 NEBNext 厂商标准流程。NEB 茎环接头与 Illumina 接头长度不同，故需 USER 处理。接头用量是控制二聚体的主要杠杆——按投入量调整。双向 AMPure 筛选（先 0.8× 再 1.2×）同时去掉大 PCR 产物和接头二聚体。"
+  },
+  "ref": "Liu N. Library Prep for CUT&RUN with NEBNext Ultra II DNA Library Prep Kit for Illumina (E7645). protocols.io",
+  "doi": "10.17504/protocols.io.bagaibse",
+  "source": "protocols.io",
+  "relatedProtocols": ["cut_and_run", "cut_and_tag", "rnaseq_library_prep"],
+  "storage": {
+    "temp": "N/A",
+    "duration": "~1 day",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — ~1 day, hands-on: 4–5 hours",
+      "zh": "实验方案 — 约 1 天，实操: 4–5 小时"
+    }
+  }
+}

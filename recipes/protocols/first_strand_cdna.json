@@ -1,0 +1,62 @@
+{
+  "id": "first_strand_cdna",
+  "name": "First-Strand cDNA Synthesis (Reverse Transcription)",
+  "nameCn": "第一链 cDNA 合成（逆转录）",
+  "category": "protocol",
+  "discipline": ["rna_dna", "molecular"],
+  "tags": ["cDNA", "reverse transcription", "RT", "random hexamer", "RT-qPCR", "gene expression"],
+  "usage": {
+    "en": "Reverse-transcribe total or purified RNA into first-strand cDNA for two-step RT-qPCR; not for direct one-step RT-qPCR where reverse transcription and amplification share a single tube.",
+    "zh": "把总 RNA 或纯化 RNA 逆转录成第一链 cDNA，用于两步法 RT-qPCR；不适用于逆转录与扩增同管进行的一步法 RT-qPCR。"
+  },
+  "duration": {
+    "total": "~1 hour",
+    "hands_on": "15 min"
+  },
+  "materials": [
+    { "name": "Template RNA (DNase-treated total RNA or purified mRNA)", "linkedRecipe": "rna_column_extraction" },
+    { "name": "Random hexamer primers (100 µM)" },
+    { "name": "dNTP mix (10 mM each)" },
+    { "name": "Reverse transcriptase + 5× RT reaction buffer (kit)" },
+    { "name": "RNase inhibitor", "optional": true },
+    { "name": "Nuclease-free water" },
+    { "name": "Thermal cycler" }
+  ],
+  "components": [
+    { "name": "1. Assemble RNA/primer/dNTP mix on ice (14.5 µl)", "amount": 1, "unit": "step", "note": { "en": "Add components in the listed order in a nuclease-free tube on ice.", "zh": "在冰上、无核酸酶管中按顺序加入各组分。" } },
+    { "name": "2. Optional 65°C denaturation for GC-rich/structured RNA", "amount": 1, "unit": "step" },
+    { "name": "3. Add reverse transcriptase mix to 20 µl total", "amount": 1, "unit": "step" },
+    { "name": "4. Run RT incubation program (25/50/85°C)", "amount": 1, "unit": "step" },
+    { "name": "5. Dilute to 80 µl; use in qPCR or store", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    { "afterStep": 5, "note": { "en": "Finished cDNA can be used directly in qPCR or stored at −20°C for up to 1 week.", "zh": "合成好的 cDNA 可直接用于 qPCR，或 −20°C 保存最长 1 周。" } }
+  ],
+  "detailedSteps": [
+    { "en": "In a sterile, nuclease-free tube **on ice**, combine in this order: **Template RNA** 100 ng (usable range 1 pg – 5 µg), **random hexamer** 1 µl (100 pmol), **dNTP mix** 1 µl, and nuclease-free **water to 14.5 µl**.", "zh": "在无菌、无核酸酶管中、**冰上**按顺序加入：**模板 RNA** 100 ng（可用范围 1 pg – 5 µg）、**随机六聚体引物** 1 µl（100 pmol）、**dNTP 混合液** 1 µl，无核酸酶**水补至 14.5 µl**。", "temp": "on ice" },
+    { "en": "**Optional (GC-rich or structured RNA):** mix gently, spin briefly, incubate at 65°C for 5 min to denature secondary structure, then chill on ice and spin again.", "zh": "**可选（GC 富集或有二级结构的 RNA）：** 轻轻混匀、短暂离心，65°C 温育 5 min 打开二级结构，随后冰浴并再次短暂离心。", "time": "5 min", "temp": "65°C" },
+    { "en": "Add reverse transcriptase, its 5× reaction buffer, and (recommended) RNase inhibitor per your kit's instructions to bring the reaction to a final volume of **20 µl**. Mix gently and centrifuge briefly.", "zh": "按所用试剂盒说明加入逆转录酶、其 5× 反应缓冲液及（推荐的）RNase 抑制剂，使反应终体积为 **20 µl**。轻轻混匀后短暂离心。", "warning": "⚠️ Exact enzyme/buffer volumes are kit-specific — follow the manufacturer's table; do not guess." },
+    { "en": "Incubate in a thermal cycler: **25°C 10 min** (primer annealing) → **50°C 30 min** (extension; for GC-rich RNA the extension can be raised to 65°C) → **85°C 5 min** (enzyme inactivation).", "zh": "在 PCR 仪中温育：**25°C 10 min**（引物退火）→ **50°C 30 min**（延伸；GC 富集 RNA 可提高到 65°C）→ **85°C 5 min**（灭活酶）。", "time": "45 min" },
+    { "en": "Add nuclease-free water to bring the reaction to **80 µl**. The diluted cDNA can be used directly as qPCR template or stored at −20°C for up to 1 week.", "zh": "加无核酸酶水将反应稀释至 **80 µl**。稀释后的 cDNA 可直接作为 qPCR 模板，或 −20°C 保存最长 1 周。", "temp": "−20°C" }
+  ],
+  "briefSteps": [
+    { "en": "RNA + hexamer + dNTP on ice → (opt. 65°C denature) → add RT mix to 20 µl → 25/50/85°C program → dilute to 80 µl → qPCR-ready cDNA", "zh": "RNA+六聚体+dNTP 冰上配 → （可选 65°C 变性）→ 加 RT 混合至 20 µl → 25/50/85°C 程序 → 稀释至 80 µl → 可用 cDNA" }
+  ],
+  "notes": {
+    "en": "Use DNase-treated RNA to avoid genomic-DNA carryover into qPCR. Random hexamers prime across the whole transcript (good for general expression profiling); switch to oligo-dT for 3'-biased full-length priming or gene-specific primers for a single target. Keep everything RNase-free and on ice until the RT step.",
+    "zh": "用经 DNase 处理的 RNA，避免基因组 DNA 带入 qPCR。随机六聚体在整条转录本上起始（适合常规表达定量）；若要偏 3′ 的全长起始改用 oligo-dT，只测单一靶点则用基因特异引物。RT 步骤前全程无 RNase、保持冰上操作。"
+  },
+  "ref": "Dietsch M. First strand cDNA synthesis. protocols.io",
+  "doi": "10.17504/protocols.io.k2scyee",
+  "source": "protocols.io",
+  "relatedProtocols": ["qpcr_protocol", "rna_column_extraction"],
+  "storage": {
+    "temp": "N/A",
+    "duration": "~1 hour",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — ~1 hour, hands-on: 15 min",
+      "zh": "实验方案 — 约 1 小时，实操: 15 分钟"
+    }
+  }
+}
