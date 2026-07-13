@@ -1,0 +1,59 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+SPDX-License-Identifier: CC-BY-4.0
+Copyright (c) 2026 mianaz / Bioinfospace
+
+This dataset — the Bioinfospace LabMate recipe & protocol library, meaning the
+selection, arrangement, structuring, and original wording contributed by this
+project — is licensed under the Creative Commons Attribution 4.0 International
+License.
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format;
+  - Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially;
+
+under the following term:
+  - Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor endorses
+    you or your use.
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+
+------------------------------------------------------------------------------
+Scope & provenance
+------------------------------------------------------------------------------
+
+Individual lab procedures, reagent quantities, temperatures, and times are
+facts and methods that are not subject to copyright. This license therefore
+applies to Bioinfospace's compilation and expression (the selection,
+arrangement, and wording), not to any underlying third-party work.
+
+Protocols are adapted and restated from external sources — see the "Recipes
+sourced from" list in the README — including protocols.io community protocols,
+academic journals (Nature Protocols/Methods, STAR Protocols, CSHL), reference
+texts, and manufacturer technical manuals. Where an individual source protocol
+carries its own license (for example, a specific Creative Commons license on
+protocols.io), that license and its attribution requirements govern that entry
+and are not overridden by this file.
+
+
+------------------------------------------------------------------------------
+Disclaimer & trademarks
+------------------------------------------------------------------------------
+
+LabMate and this dataset are an independent community project. They are NOT
+affiliated with, endorsed by, sponsored by, or otherwise associated with any
+company or commercial product referenced herein, including but not limited to
+Thermo Fisher Scientific, Invitrogen / TRIzol, New England Biolabs (NEB),
+Promega, QIAGEN, Cell Signaling Technology, Abcam, ATCC, 10x Genomics,
+BioLegend, Tecan, BioTek, and Molecular Devices. All product names, brands, and
+trademarks are the property of their respective owners and are used only to
+identify the reagents or instruments a protocol refers to (nominative use).
+
+The content is provided "AS IS", for reference only, without warranty of any
+kind. Always consult the manufacturer's current instructions and validate a
+protocol before laboratory use.

@@ -1,6 +1,6 @@
 # LabMate Recipe Library
 
-Open-source recipe and protocol library for [BioinfoSpace LabMate](https://apps.bioinfospace.com/labmate/).
+Open-source recipe and protocol library for [Bioinfospace LabMate](https://apps.bioinfospace.com/labmate/).
 
 ## Structure
 
@@ -361,4 +361,10 @@ Recipes sourced from:
 
 ## License
 
-CC BY 4.0 — Free to use, modify, and share with attribution.
+The recipe/protocol dataset is licensed **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** — free to use, modify, and share, including commercially, with attribution. See [LICENSE](LICENSE) for the full scope, provenance, and disclaimer.
+
+Individual procedures, quantities, and methods are facts and are not copyrightable; this license covers Bioinfospace's compilation and wording. Where a source protocol (e.g. one on protocols.io) carries its own license, that license and its attribution requirement govern that entry.
+
+### Disclaimer & trademarks
+
+LabMate and this dataset are an independent community project — **not affiliated with, endorsed by, or sponsored by** any referenced company or commercial product (Thermo Fisher / Invitrogen / TRIzol, NEB, Promega, QIAGEN, Cell Signaling Technology, Abcam, ATCC, 10x Genomics, BioLegend, Tecan, BioTek, Molecular Devices, and others). All product names and trademarks are the property of their respective owners and are used only to identify the reagents or instruments a protocol refers to. Content is provided "as is" for reference; consult the manufacturer's current instructions and validate before laboratory use.
