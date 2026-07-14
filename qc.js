@@ -190,6 +190,46 @@ function checkReagent(recipe, file, cat, flag) {
     }
   });
 
+  // Volume ↔ concentration consistency. When a component is named with a stock
+  // concentration ("1M Tris-HCl", "10% SDS") and its note states a final
+  // concentration ("Final concentration 50 mM", "1% final"), the stored amount
+  // must be the one that yields that concentration at the recipe's volume:
+  //   amount = (target / stock) × volume
+  // This catches a `volume` that no longer matches the reagent amounts — e.g.
+  // amounts computed for 100 mL left under a volume of 500 mL, which makes the
+  // app show the wrong Target Volume over the wrong numbers.
+  const vol = recipe.volume;
+  if (typeof vol === 'number' && (recipe.volumeUnit || 'mL') === 'mL') {
+    const molarFactor = { M: 1, mM: 1e-3, 'µM': 1e-6, uM: 1e-6, nM: 1e-9 };
+    const stockFromName = (name) => {
+      let m = (name || '').match(/(\d+(?:\.\d+)?)\s*M\b/);
+      if (m) return { kind: 'M', value: parseFloat(m[1]) };
+      m = (name || '').match(/(\d+(?:\.\d+)?)\s*%/);
+      return m ? { kind: '%', value: parseFloat(m[1]) } : null;
+    };
+    const targetFromNote = (note) => {
+      const text = note && typeof note === 'object' ? note.en || note.zh || '' : note || '';
+      if (!text || /\d\s*[-–]\s*\d/.test(text)) return null; // ranged/absent note — ambiguous
+      let m = text.match(/(\d+(?:\.\d+)?)\s*(mM|µM|uM|nM|M)\b/);
+      if (m) return { kind: 'M', value: parseFloat(m[1]) * molarFactor[m[2]] };
+      m = text.match(/(\d+(?:\.\d+)?)\s*%/);
+      return m ? { kind: '%', value: parseFloat(m[1]) } : null;
+    };
+    comps.forEach((c, i) => {
+      if (c.unit !== 'mL' || typeof c.amount !== 'number') return;
+      const stock = stockFromName(c.name);
+      const target = targetFromNote(c.note);
+      if (!stock || !target || stock.kind !== target.kind || !stock.value) return;
+      const expected = (target.value * vol) / stock.value;
+      if (expected <= 0) return;
+      if (Math.abs(c.amount / expected - 1) > 0.02) {
+        flag('errors',
+          `components[${i}] "${c.name}" is ${c.amount} mL but needs ${expected.toFixed(3)} mL ` +
+          `for its noted final concentration at volume ${vol} mL — amounts and volume disagree`);
+      }
+    });
+  }
+
   if (!recipe.prepSteps || recipe.prepSteps.length === 0) {
     flag('info', `${cat} has no prepSteps — add preparation instructions`);
   }

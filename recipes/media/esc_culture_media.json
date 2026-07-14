@@ -12,8 +12,12 @@
   "components": [
     {
       "name": "DMEM high glucose",
-      "amount": 425,
-      "unit": "mL"
+      "amount": 414.45,
+      "unit": "mL",
+      "note": {
+        "en": "Bring to 500 mL final volume",
+        "zh": "定容至 500 mL"
+      }
     },
     {
       "name": "ESC-qualified FBS",

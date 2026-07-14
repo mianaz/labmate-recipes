@@ -77,11 +77,11 @@
     "en": "Buffer A for cytoplasmic/nuclear fractionation (hypotonic lysis step).",
     "zh": "细胞质/细胞核分级分离缓冲液 A（低渗裂解步骤）。"
   },
-  "volume": 100,
+  "volume": 50,
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve HEPES, KCl, MgCl₂, and EDTA in ~80 mL ddH₂O."
+      "step": "Dissolve HEPES, KCl, MgCl₂, and EDTA in ~40 mL ddH₂O."
     },
     {
       "step": "Add DTT and NP-40 (0.1%)."
@@ -90,7 +90,7 @@
       "step": "Adjust pH to 7.9."
     },
     {
-      "step": "Bring to final volume of 100 mL."
+      "step": "Bring to final volume of 50 mL."
     },
     {
       "step": "Store at 4°C; add protease inhibitors fresh."

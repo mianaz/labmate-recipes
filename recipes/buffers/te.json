@@ -53,7 +53,7 @@
     "en": "Tris-EDTA buffer for long-term storage of DNA and RNA at neutral pH.",
     "zh": "Tris-EDTA 缓冲液，用于 DNA 和 RNA 的长期保存。"
   },
-  "volume": 500,
+  "volume": 100,
   "volumeUnit": "mL",
   "prepSteps": [
     {
@@ -63,7 +63,7 @@
       "step": "Adjust pH to 8.0 if necessary."
     },
     {
-      "step": "Bring to final volume of 500 mL."
+      "step": "Bring to final volume of 100 mL."
     },
     {
       "step": "Autoclave at 121°C for 20 min."

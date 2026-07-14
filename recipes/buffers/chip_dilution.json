@@ -78,17 +78,17 @@
     "en": "See notes for usage.",
     "zh": "详见备注。"
   },
-  "volume": 500,
+  "volume": 100,
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine Tris-HCl, NaCl, EDTA, Triton X-100, and SDS in ~400 mL ddH₂O."
+      "step": "Combine Tris-HCl, NaCl, EDTA, Triton X-100, and SDS in ~80 mL ddH₂O."
     },
     {
       "step": "Mix until all components are dissolved."
     },
     {
-      "step": "Bring to final volume of 500 mL with ddH₂O."
+      "step": "Bring to final volume of 100 mL with ddH₂O."
     },
     {
       "step": "Store at 4°C."
