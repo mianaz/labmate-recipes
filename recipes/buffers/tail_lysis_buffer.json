@@ -71,17 +71,17 @@
     "en": "Lysis buffer for genomic DNA extraction from mouse tail or ear clips.",
     "zh": "裂解缓冲液，用于从小鼠尾尖或耳朵提取基因组 DNA。"
   },
-  "volume": 500,
+  "volume": 100,
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris-HCl, EDTA, NaCl, and SDS in ~400 mL ddH₂O."
+      "step": "Dissolve Tris-HCl, EDTA, NaCl, and SDS in ~80 mL ddH₂O."
     },
     {
       "step": "Adjust pH to 8.0."
     },
     {
-      "step": "Bring to final volume of 500 mL."
+      "step": "Bring to final volume of 100 mL."
     },
     {
       "step": "Autoclave."

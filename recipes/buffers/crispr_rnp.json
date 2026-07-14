@@ -79,7 +79,7 @@
     "en": "Pre-assembled Cas9 ribonucleoprotein (RNP) complex for efficient CRISPR genome editing.",
     "zh": "预组装的 Cas9 核糖核蛋白（RNP）复合体，用于高效 CRISPR 基因组编辑。"
   },
-  "volume": 0.05,
+  "volume": 10,
   "volumeUnit": "mL",
   "prepSteps": [
     {

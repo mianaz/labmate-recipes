@@ -46,7 +46,7 @@
     "en": "Long-term bacterial glycerol cryostock for preserving E. coli strains at -80°C.",
     "zh": "细菌甘油冻存液，用于 -80°C 长期保存大肠杆菌菌株。"
   },
-  "volume": 50,
+  "volume": 1,
   "volumeUnit": "mL",
   "prepSteps": [
     {
