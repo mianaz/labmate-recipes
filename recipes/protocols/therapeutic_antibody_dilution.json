@@ -44,23 +44,33 @@
       "note": {
         "en": "Example: 50 mg at 2.15 mg/mL (23.26 mL), target 2.0 mg/mL → X = 1.74 mL PBS.",
         "zh": "示例：50 mg, 2.15 mg/mL (23.26 mL), 目标 2.0 mg/mL → X = 1.74 mL PBS。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 2: Add X mL cold D-PBS to stock bottle (or transfer stock to 50 mL tube first if bottle is small). Mix well by gentle inversion."
+      "name": "Step 2: Add X mL cold D-PBS to stock bottle (or transfer stock to 50 mL tube first if bottle is small). Mix well by gentle inversion.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 3: Aliquot 1 mL per microcentrifuge tube. Do not waste any antibody solution.",
       "note": {
         "en": "Example: 50 mg at 2 mg/mL = 25 mL total → ~25 tubes of 1 mL each.",
         "zh": "示例：50 mg, 2 mg/mL = 25 mL → 约 25 管，每管 1 mL。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 4: Label tube caps with critical info (antibody name, concentration, date)."
+      "name": "Step 4: Label tube caps with critical info (antibody name, concentration, date).",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 5: Keep original stock label as a record. Store diluted antibody tubes at 4°C."
+      "name": "Step 5: Keep original stock label as a record. Store diluted antibody tubes at 4°C.",
+      "amount": 1,
+      "unit": "step"
     }
   ],
   "notes": {

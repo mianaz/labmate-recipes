@@ -47,40 +47,56 @@
   ],
   "components": [
     {
-      "name": "Day 1 PM: Thaw FBS bottles (up to 4 × 500 mL) overnight at room temperature. Turn on 56°C water bath. Verify temperature with thermometer reads ~56°C."
+      "name": "Day 1 PM: Thaw FBS bottles (up to 4 × 500 mL) overnight at room temperature. Turn on 56°C water bath. Verify temperature with thermometer reads ~56°C.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Day 2 AM: Gently rotate thawed FBS (avoid excessive bubbles). Place bottles in 56°C water bath.",
       "note": {
         "en": "Confirm thermometer inside bath reads ~56°C before starting.",
         "zh": "开始前确认浴槽内温度计显示 ~56°C。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Set timer. Heat-inactivate for EXACTLY 30 minutes. Do NOT exceed 30 min.",
       "note": {
         "en": "CRITICAL: Exceeding 30 min degrades growth factors.",
         "zh": "关键：超过 30 分钟会降解生长因子。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Remove bottles. Turn off water bath."
+      "name": "Remove bottles. Turn off water bath.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Wipe bottles dry, spray with 70% ethanol, bring into biosafety cabinet."
+      "name": "Wipe bottles dry, spray with 70% ethanol, bring into biosafety cabinet.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Layout 25 × 50 mL tubes. Label caps 'FBS'. Aliquot ~40 mL per tube (2 bottles = ~25 tubes).",
       "note": {
         "en": "Aseptic technique is critical — change serological pipette at any sign of contamination.",
         "zh": "无菌操作至关重要——如怀疑污染立即更换移液管。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Tighten caps. Transfer to -30°C (or -20°C) freezer."
+      "name": "Tighten caps. Transfer to -30°C (or -20°C) freezer.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Label storage with date and tube count."
+      "name": "Label storage with date and tube count.",
+      "amount": 1,
+      "unit": "step"
     }
   ],
   "stoppingPoints": [

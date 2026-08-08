@@ -55,42 +55,62 @@
   ],
   "components": [
     {
-      "name": "Step 1: Fix tissue sections with 3.2% PFA (prewarmed at 37°C) for 15 min."
+      "name": "Step 1: Fix tissue sections with 3.2% PFA (prewarmed at 37°C) for 15 min.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 2: Rinse 3× with PBS, 5 min each."
+      "name": "Step 2: Rinse 3× with PBS, 5 min each.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 3: Block for 30 min with blocking buffer (PBS + 0.5% saponin + 2% BSA + 1% goat serum)."
+      "name": "Step 3: Block for 30 min with blocking buffer (PBS + 0.5% saponin + 2% BSA + 1% goat serum).",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 4: Prepare primary antibody in blocking buffer.",
       "note": {
         "en": "Typical: 1:200. Some antibodies (e.g. Ly6G 2 mg/mL): 1:800. Titrate if high background.",
         "zh": "通常 1:200。某些抗体（如 Ly6G 2 mg/mL）：1:800。背景高则滴定优化。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 5: Incubate primary antibody overnight at 4°C."
+      "name": "Step 5: Incubate primary antibody overnight at 4°C.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 6: Wash 3× with PBS, 5 min each."
+      "name": "Step 6: Wash 3× with PBS, 5 min each.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 7: Prepare secondary antibody (1:500 typical) in blocking buffer with DAPI (1:1000). Incubate 1 h at RT.",
       "note": {
         "en": "Some antibodies may need higher dilution to reduce background.",
         "zh": "某些二抗可能需更高稀释倍数减少背景。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 8: Wash 3× with PBS."
+      "name": "Step 8: Wash 3× with PBS.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 9: Mount in anti-fade mounting buffer. Seal with nail polish. Dry overnight at RT."
+      "name": "Step 9: Mount in anti-fade mounting buffer. Seal with nail polish. Dry overnight at RT.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 10: Image on fluorescence microscope, or store at -20°C for later use."
+      "name": "Step 10: Image on fluorescence microscope, or store at -20°C for later use.",
+      "amount": 1,
+      "unit": "step"
     }
   ],
   "stoppingPoints": [

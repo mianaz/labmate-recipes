@@ -62,46 +62,66 @@
   ],
   "components": [
     {
-      "name": "Step 1 (Dissociation): Prepare dissociation medium per Miltenyi kit. Mince 0.04-1 g tumor with razor. Transfer to tube, rotate 37°C 1 h."
+      "name": "Step 1 (Dissociation): Prepare dissociation medium per Miltenyi kit. Mince 0.04-1 g tumor with razor. Transfer to tube, rotate 37°C 1 h.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 2: Centrifuge 400 g 4°C 5 min. Aspirate, add 10 mL cold PBS, filter through 40-70 µm strainer."
+      "name": "Step 2: Centrifuge 400 g 4°C 5 min. Aspirate, add 10 mL cold PBS, filter through 40-70 µm strainer.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 3 (Percoll gradient): Resuspend pellet in 4 mL 70% Percoll. Layer 4 mL 37% Red Percoll on top. Layer 4 mL 30% Percoll on top.",
       "note": {
         "en": "Prepare Percoll day-of-use only. Keep at RT (22-25°C).",
         "zh": "Percoll 仅当天配制。保持室温 (22-25°C)。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 4: Centrifuge swinging bucket 800 g, 25 min, RT, LOWEST acceleration, NO BRAKE.",
       "note": {
         "en": "CRITICAL: Low acceleration and no brake prevent gradient disruption.",
         "zh": "关键：低加速和无制动防止梯度破坏。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 5: Remove layers above buffy coat at 37%/70% interface (slowly, tip at surface). Extract buffy coat with wide-bore tip into new 15 mL tube."
+      "name": "Step 5: Remove layers above buffy coat at 37%/70% interface (slowly, tip at surface). Extract buffy coat with wide-bore tip into new 15 mL tube.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 6: Wash to 15 mL with cold PBS. Centrifuge 400 g 7 min 4°C. Resuspend in staining buffer."
+      "name": "Step 6: Wash to 15 mL with cold PBS. Centrifuge 400 g 7 min 4°C. Resuspend in staining buffer.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 7 (Fc block): Resuspend 0.5M cells in 50 µL FcR block (1:5 in staining buffer). Incubate 20 min on ice."
+      "name": "Step 7 (Fc block): Resuspend 0.5M cells in 50 µL FcR block (1:5 in staining buffer). Incubate 20 min on ice.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 8 (CITE-seq staining): Add 50 µL antibody cocktail (0.125 µg each CITE-seq Ab + unique HTO antibody per sample). Incubate 25 min on ice.",
       "note": {
         "en": "CRITICAL: Each sample must receive a UNIQUE HTO antibody for hashing.",
         "zh": "关键：每个样本必须使用唯一的 HTO 抗体。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 9 (Washes): Wash with ≥5 mL staining buffer (350-400 g 5 min 4°C) → Wash A → Wash B → Wash C. Count cells during final wash."
+      "name": "Step 9 (Washes): Wash with ≥5 mL staining buffer (350-400 g 5 min 4°C) → Wash A → Wash B → Wash C. Count cells during final wash.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 10: Resuspend at 1,600 cells/µL in staining buffer for 10X superloading."
+      "name": "Step 10: Resuspend at 1,600 cells/µL in staining buffer for 10X superloading.",
+      "amount": 1,
+      "unit": "step"
     }
   ],
   "stoppingPoints": [

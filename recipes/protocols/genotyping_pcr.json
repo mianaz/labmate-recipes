@@ -64,39 +64,57 @@
       "note": {
         "en": "Scale down to 5 mL for 65 tails.",
         "zh": "65 个样本可缩至 5 mL。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 2: Seal plate. Run 'Tail-Lyse' thermal cycler protocol (~46 min)."
+      "name": "Step 2: Seal plate. Run 'Tail-Lyse' thermal cycler protocol (~46 min).",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 3: Spin 1000 rpm, 4°C, 1 min. Add 75 µL 40 mM Tris-HCl. Mix with pipette. Seal. Spin 1000 rpm, 4°C, 2 min. Store plate at 4°C."
+      "name": "Step 3: Spin 1000 rpm, 4°C, 1 min. Add 75 µL 40 mM Tris-HCl. Mix with pipette. Seal. Spin 1000 rpm, 4°C, 2 min. Store plate at 4°C.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 4 (Master mix): Prepare gene-specific master mix. Add Taq polymerase last.",
       "note": {
         "en": "Do NOT vortex or shake enzymes!",
         "zh": "绝对不要涡旋或摇晃酶！"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 5 (PCR setup): Add 22.5 µL master mix + Taq per well. Add 2.5 µL lysate sample. Seal and spin down briefly."
+      "name": "Step 5 (PCR setup): Add 22.5 µL master mix + Taq per well. Add 2.5 µL lysate sample. Seal and spin down briefly.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 6: Run PCR program (~2.5 h). Store at 4°C."
+      "name": "Step 6: Run PCR program (~2.5 h). Store at 4°C.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 7 (Gel): Prepare 2% agarose-TAE gel (4 g agarose + 200 mL TAE + 5 µL EtBr for large gel). Some genes need 3%.",
       "note": {
         "en": "Check gene-specific gel % requirements.",
         "zh": "查阅各基因所需凝胶浓度。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 8: Load 20 µL sample per well (8 µL 100 bp ladder in middle well). Run at 150-200 V for 15-20 min."
+      "name": "Step 8: Load 20 µL sample per well (8 µL 100 bp ladder in middle well). Run at 150-200 V for 15-20 min.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 9 (Imaging): Select 'Nucleic Acids / Ethidium Bromide', optimize 'Faint Bands', Filter 1. Position gel, run protocol, invert to view."
+      "name": "Step 9 (Imaging): Select 'Nucleic Acids / Ethidium Bromide', optimize 'Faint Bands', Filter 1. Position gel, run protocol, invert to view.",
+      "amount": 1,
+      "unit": "step"
     }
   ],
   "notes": {

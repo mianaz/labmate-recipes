@@ -63,39 +63,57 @@
   ],
   "components": [
     {
-      "name": "Step 1 (Blood collection): Harvest 100 µL cheek blood into 1.5 mL tube containing 4 µL EDTA solution."
+      "name": "Step 1 (Blood collection): Harvest 100 µL cheek blood into 1.5 mL tube containing 4 µL EDTA solution.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 2 (RBC lysis): Add 400 µL 1× RBC lysis, RT 5 min. Add 700 µL DMEM to stop. Centrifuge 10,000 rcf 2 min. Remove supernatant."
+      "name": "Step 2 (RBC lysis): Add 400 µL 1× RBC lysis, RT 5 min. Add 700 µL DMEM to stop. Centrifuge 10,000 rcf 2 min. Remove supernatant.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 3 (DNA extraction): Adjust to 220 µL with PBS. Add 4 µL proteinase K + 200 µL Buffer AL. Vortex. Incubate 56°C 10 min (dry bath preferred over oven)."
+      "name": "Step 3 (DNA extraction): Adjust to 220 µL with PBS. Add 4 µL proteinase K + 200 µL Buffer AL. Vortex. Incubate 56°C 10 min (dry bath preferred over oven).",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 4: Add 200 µL ethanol (96-100%). Mix by pipetting. Transfer to DNeasy spin column. Centrifuge ≥6000 g 1 min."
+      "name": "Step 4: Add 200 µL ethanol (96-100%). Mix by pipetting. Transfer to DNeasy spin column. Centrifuge ≥6000 g 1 min.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 5: Wash with 500 µL Buffer AW1 (spin 1 min), then 500 µL Buffer AW2 (spin 1 min). Dry spin 20,000 g 3 min."
+      "name": "Step 5: Wash with 500 µL Buffer AW1 (spin 1 min), then 500 µL Buffer AW2 (spin 1 min). Dry spin 20,000 g 3 min.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 6: Transfer column to new tube. Air-dry 5 min. Elute with 35 µL Buffer AE (incubate 5 min RT, spin 1 min). Measure concentration on Nanodrop."
+      "name": "Step 6: Transfer column to new tube. Air-dry 5 min. Elute with 35 µL Buffer AE (incubate 5 min RT, spin 1 min). Measure concentration on Nanodrop.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 7 (PCR): 2.5 µL 10× buffer + 0.5 µL dNTPs + 0.5 µL each primer (100 µM, 4× diluted) + 2.5 µL Q buffer + 15.5 µL H₂O + 1 µL Taq + 2 µL DNA = 25 µL total."
+      "name": "Step 7 (PCR): 2.5 µL 10× buffer + 0.5 µL dNTPs + 0.5 µL each primer (100 µM, 4× diluted) + 2.5 µL Q buffer + 15.5 µL H₂O + 1 µL Taq + 2 µL DNA = 25 µL total.",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 8 (Cycling): 94°C 5 min → 12 cycles (94°C 45 s, 64→58°C touchdown -0.5°C/cycle 45 s, 72°C 60 s) → 35 cycles (94°C 45 s, 58°C 45 s, 72°C 60 s) → 72°C 10 min → 4°C hold.",
       "note": {
         "en": "Adjust 35 cycles to 30-45 based on DNA concentration.",
         "zh": "根据 DNA 浓度调整 35 个循环为 30-45 个。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 9 (Gel): 2.5% agarose gel, 150 V for 30 min. Load 18 µL (3 µL 6× loading buffer + 8 µL sample + 7 µL H₂O) + 6 µL ladder.",
       "note": {
         "en": "Expected bands: Flox Pten ~1000 bp, wildtype ~814 bp, Cre'd-out ~210 bp.",
         "zh": "预期条带：Flox Pten ~1000 bp, 野生型 ~814 bp, Cre 切除 ~210 bp。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     }
   ],
   "notes": {

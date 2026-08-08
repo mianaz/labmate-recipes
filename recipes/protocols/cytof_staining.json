@@ -64,45 +64,67 @@
       "note": {
         "en": "PFA fixation before surface staining may affect some antibody epitopes.",
         "zh": "表面染色前 PFA 固定可能影响部分抗体表位。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 2 (Surface staining): Resuspend ≤1.5M cells in 35-40 µL staining buffer. Add Ab mix (10-15 µL, total 50 µL). Incubate 30-60 min RT."
+      "name": "Step 2 (Surface staining): Resuspend ≤1.5M cells in 35-40 µL staining buffer. Add Ab mix (10-15 µL, total 50 µL). Incubate 30-60 min RT.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 3: Wash 2-3× with 1.5 mL wash buffer. Vortex to mix."
+      "name": "Step 3: Wash 2-3× with 1.5 mL wash buffer. Vortex to mix.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 4 (Optional viability): Stain with 1:500 Rh103 in PBS for 20 min, OR 25 µM cisplatin for 1 min."
+      "name": "Step 4 (Optional viability): Stain with 1:500 Rh103 in PBS for 20 min, OR 25 µM cisplatin for 1 min.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 5 (Fixation): Add 300-500 µL 1.6% PFA in PBS. Incubate 10 min (or 1 h) RT. Spin, discard supernatant (no wash needed)."
+      "name": "Step 5 (Fixation): Add 300-500 µL 1.6% PFA in PBS. Incubate 10 min (or 1 h) RT. Spin, discard supernatant (no wash needed).",
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 6 (Permeabilization): Leave ~100 µL on pellet, break up by vortexing. Add cold 100% methanol (0.9 mL per 10⁶ cells, final 90%). Incubate 10 min 4°C (prefer -20°C for 20 min).",
       "note": {
         "en": "Can store at -20°C up to 24 h, or -80°C up to 1 month.",
         "zh": "可 -20°C 保存 24 h，-80°C 保存 1 个月。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
       "name": "Step 7: Wash 2-4× with >1 mL wash buffer.",
       "note": {
         "en": "BSA precipitates in methanol — add >1 mL buffer to dissolve.",
         "zh": "BSA 在甲醇中沉淀——加 >1 mL 缓冲液溶解。"
-      }
+      },
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 8 (Intracellular staining): Resuspend in 35-40 µL buffer + Ab mix (10-15 µL), total exactly 50 µL. Incubate 30-60 min RT with gentle agitation."
+      "name": "Step 8 (Intracellular staining): Resuspend in 35-40 µL buffer + Ab mix (10-15 µL), total exactly 50 µL. Incubate 30-60 min RT with gentle agitation.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 9: Wash 2-3× with wash buffer."
+      "name": "Step 9: Wash 2-3× with wash buffer.",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 10 (Ir-intercalator): Add 0.5 mL of 1:1000 Ir-intercalator in PBS + 1.6% PFA. Incubate ≥30 min RT (preferred: overnight at 4°C)."
+      "name": "Step 10 (Ir-intercalator): Add 0.5 mL of 1:1000 Ir-intercalator in PBS + 1.6% PFA. Incubate ≥30 min RT (preferred: overnight at 4°C).",
+      "amount": 1,
+      "unit": "step"
     },
     {
-      "name": "Step 11: Wash 2× with wash buffer. Wash 1× with MilliQ water (use 0.1% BSA in MilliQ if cells stick to plastic). Filter through 35 µm cap. Add EQ beads for acquisition."
+      "name": "Step 11: Wash 2× with wash buffer. Wash 1× with MilliQ water (use 0.1% BSA in MilliQ if cells stick to plastic). Filter through 35 µm cap. Add EQ beads for acquisition.",
+      "amount": 1,
+      "unit": "step"
     }
   ],
   "stoppingPoints": [
