@@ -1,0 +1,215 @@
+{
+  "id": "organoid_drug_screening",
+  "name": "Drug Sensitivity Assays of Human Cancer Organoid Cultures",
+  "nameCn": "人源肿瘤类器官药物敏感性检测",
+  "category": "protocol",
+  "discipline": ["cell", "drug screening"],
+  "tags": [
+    "organoid",
+    "cancer",
+    "drug screening",
+    "384-well",
+    "CellTiter-Glo",
+    "BME-2",
+    "IC50"
+  ],
+  "usage": {
+    "en": "Medium/high-throughput drug sensitivity screening of patient-derived cancer organoid cultures in 384-well plates using CellTiter-Glo 2.0 luminescence readout, with 7-point half-log dose–response curves and Z'-factor QC.",
+    "zh": "在 384 孔板中对患者来源的肿瘤类器官进行中/高通量药物敏感性筛选，使用 CellTiter-Glo 2.0 化学发光读数，配合 7 点半对数稀释剂量–反应曲线和 Z' 因子质控。"
+  },
+  "duration": {
+    "total": "5–7 days",
+    "hands_on": "8–10 hours"
+  },
+  "materials": [
+    { "name": "384-well flat clear-bottom, opaque-wall tissue-culture-treated polystyrene plates" },
+    { "name": "384-well polypropylene Echo-qualified stock plates" },
+    { "name": "384-well low-dead-volume (LDV) Echo-qualified cyclic olefin copolymer source plates" },
+    { "name": "BME-2 (Cultrex Reduced Growth Factor Basement Membrane Extract, Type 2, PathClear, Amsbio; ~15 mg/mL stock)" },
+    { "name": "Organoid culture media (Advanced DMEM/F-12 + 1× HEPES + 1× GlutaMAX; colon: no WNT3A; esophagus: 50% WNT3A conditioned media; both: 20% R-Spondin1, 10% Noggin, 10 mM nicotinamide, 1 mM N-acetylcysteine, 1× B27, 50 ng/mL rhEGF, 500 nM A83-01, 10 µM SB202190, 10 µM Y-27632; esophagus also adds 100 ng/mL FGF-10 + 10 nM gastrin)" },
+    { "name": "Drug screening media (organoid media + 2% BME-2, i.e. 96 mL media + 4 mL of 15 mg/mL BME-2 per 100 mL)" },
+    { "name": "Drug stocks in 100% DMSO (master stocks 1000–10,000× of final max concentration)" },
+    { "name": "Positive control drugs (MG-132 at 4 µM; staurosporine at 2 µM)" },
+    { "name": "CellTiter-Glo 2.0 Luminescent Cell Viability Assay (Promega)" },
+    { "name": "FluidX XRD-384 reagent dispenser (or equivalent, 8–40 µL)" },
+    { "name": "Echo 555 acoustic dispenser (Labcyte) or alternative liquid-handling platform" },
+    { "name": "Biomek FX (Beckman Coulter) for stock-plate cherry-picking" },
+    { "name": "Molecular Devices Paradigm plate reader with luminescence cartridge (or equivalent)" },
+    { "name": "Cell scrapers, 15 mL conical tubes, centrifuge with plate rotor, 20 µm cell strainer" }
+  ],
+  "components": [
+    { "name": "1. Design the screening plate layout (Section 3.1)", "amount": 1, "unit": "step" },
+    { "name": "2. Reconstitute drugs in 100% DMSO; store at −80 °C or in StoragePods", "amount": 1, "unit": "step" },
+    { "name": "3. Prepare master drug stocks at 1000–10,000× of the final max screening concentration", "amount": 1, "unit": "step" },
+    { "name": "4. Cherry-pick master stocks to a 384-well polypropylene stock plate at 1000× (Biomek FX)", "amount": 1, "unit": "step" },
+    { "name": "5. Generate the source plate (LDV plate) with 7-point half-log dilution series in DMSO, 10 µL/well at 1000×", "amount": 1, "unit": "step" },
+    { "name": "6. Seal drug plates with adhesive foil", "amount": 1, "unit": "step" },
+    { "name": "7. Store drug plates in StoragePods at −80 °C; limit freeze–thaw cycles", "amount": 1, "unit": "step", "note": { "en": "Pause point — plates can be stored and reused for multiple screening plates.", "zh": "暂停点 —— 板子可储存并用于多块筛选板。" } },
+    { "name": "8. Prime FluidX XRD-384 with ethanol, then sterile water, then cold organoid media", "amount": 1, "unit": "step" },
+    { "name": "9. Dispense 8 µL of 7.5 mg/mL BME-2 (in organoid media) into all wells of the assay plate; keep BME-2 chilled", "amount": 1, "unit": "step" },
+    { "name": "10. Centrifuge plate at 182 × g for 1 min to spread BME-2 evenly across well bottoms", "amount": 1, "unit": "step" },
+    { "name": "11. Polymerize BME-2 in a 37 °C / 5% CO₂ incubator for ≥20 min", "amount": 1, "unit": "step" },
+    { "name": "12. Harvest organoids from a 6-well plate by scraping the BME-2 droplets", "amount": 1, "unit": "step" },
+    { "name": "13. Mechanically release intact organoids from BME-2 by repeated 1 mL pipetting — avoid breaking to single cells", "amount": 1, "unit": "step", "note": { "en": "Goal is formed organoids, not single cells; filter through a 20 µm strainer if the suspension looks heterogeneous.", "zh": "目标是完整的类器官而非单细胞；若悬液大小不均可用 20 µm 细胞筛过滤。" } },
+    { "name": "14. Count organoids and prepare a homogeneous suspension at ~15,000–20,000 organoids/mL in screening media", "amount": 1, "unit": "step" },
+    { "name": "15. Dispense organoids onto the pre-coated assay plate (top of the BME-2 layer)", "amount": 1, "unit": "step", "note": { "en": "Keep the suspension gently mixing during dispensing so organoids do not settle.", "zh": "加样过程中保持悬液轻轻混匀，防止类器官沉降。" } },
+    { "name": "16. Incubate overnight at 37 °C / 5% CO₂ to allow recovery and re-formation of organoids", "amount": 1, "unit": "step" },
+    { "name": "17. Add drugs from the source plate using the Echo 555 acoustic dispenser (final DMSO 0.1%)", "amount": 1, "unit": "step" },
+    { "name": "18. Return plates to the incubator for the drug-exposure period (typically 3–5 days)", "amount": 1, "unit": "step" },
+    { "name": "19. Add CellTiter-Glo 2.0 at a 4:1 ratio (4 media : 1 CellTiter-Glo)", "amount": 1, "unit": "step" },
+    { "name": "20. Lyse with vigorous mixing and equilibrate ≥10 min at RT", "amount": 1, "unit": "step" },
+    { "name": "21. Read luminescence on a Paradigm plate reader", "amount": 1, "unit": "step" },
+    { "name": "22. Calculate Z'-factor from positive vs negative control wells; calculate IC50 and AUC from dose–response curves", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Drug plates sealed and stored in StoragePods at −80 °C; limit freeze–thaw cycles (≤3–4).",
+        "zh": "药物板密封后于 −80 °C StoragePods 中储存；冻融循环不超过 3–4 次。"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "BME-2-coated plates can be held in the incubator for several hours but not overnight (BME-2 consistency suffers).",
+        "zh": "BME-2 包被板可在培养箱中放置数小时，但不要过夜（BME-2 质地受影响）。"
+      }
+    }
+  ],
+  "detailedSteps": [
+    { "en": "**Day 0 — Plate & drug preparation**", "zh": "**第 0 天 —— 板与药物准备**", "isHeader": true },
+    {
+      "en": "Step 1: Design the assay plate layout. Avoid the outermost wells (edge effects). Distribute ~25 negative-control (DMSO 0.1%) and ≥6 positive-control wells (MG-132 4 µM, staurosporine 2 µM) across the plate. Plan a 7-point half-log dilution series covering a 1000-fold concentration range so that IC50 and AUC can be calculated.",
+      "zh": "步骤 1：设计筛选板布局。避免使用最外圈孔（边缘效应）。在板上分散设置约 25 个阴性对照孔（DMSO 0.1%）和至少 6 个阳性对照孔（MG-132 4 µM、staurosporine 2 µM）。设置 7 点半对数稀释、覆盖 1000 倍浓度范围的剂量–反应曲线，以便计算 IC50 和 AUC。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 2: Reconstitute drugs in 100% DMSO at 1000–10,000× of the desired final max screening concentration. Store at −80 °C, ideally in StoragePods (Roylan Developments) at room temperature for moisture-free, low-O₂, UV-protected long-term storage. Avoid more than 3–4 freeze–thaw cycles.",
+      "zh": "步骤 2：用 100% DMSO 复溶药物，浓度为最终最大筛选浓度的 1000–10,000 倍。−80 °C 保存，最佳方案是使用 StoragePods（Roylan Developments）室温保存，可提供干燥、低氧、避紫外线的长期储存条件。冻融循环不超过 3–4 次。",
+      "time": "30 min",
+      "temp": "−80 °C"
+    },
+    {
+      "en": "Step 3: Using a Biomek FX, cherry-pick master stocks to a 384-well polypropylene stock plate. Stocks already at 1000× can be transferred directly; stocks >1000× are diluted in DMSO during the cherry-pick so the stock plate is uniformly 1000×.",
+      "zh": "步骤 3：用 Biomek FX 将主储液 cherry-pick 至 384 孔聚丙烯储液板。1000× 的主储液可直接转移；浓度高于 1000× 的主储液在 cherry-pick 过程中用 DMSO 稀释，使储液板浓度统一为 1000×。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 4: From the stock plate, generate a source plate (LDV cyclic-olefin plate) by performing half-log dilutions in DMSO. Final well volume is typically 10 µL at 1000× of the desired screening concentration. One source plate can drug multiple screening plates over multiple dates. Seal with adhesive foil.",
+      "zh": "步骤 4：用储液板通过 DMSO 半对数稀释制备源板（LDV 环烯烃板）。每孔终体积通常为 10 µL，浓度为筛选终浓度的 1000×。一块源板可分液至多块筛选板，分液日期也可错开。用封板膜密封。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 5: Store source plates in StoragePods at −80 °C with humidity/oxygen control. They can be reused across screens.",
+      "zh": "步骤 5：源板在 StoragePods 中 −80 °C 储存，控制湿度与氧气。可多次复用于不同筛选实验。",
+      "time": "5 min",
+      "temp": "−80 °C"
+    },
+    { "en": "**Day 1 — Pre-coat assay plates and seed organoids**", "zh": "**第 1 天 —— 包被筛选板并接种类器官**", "isHeader": true },
+    {
+      "en": "Step 6: Program the FluidX XRD-384 to dispense 8 µL. Flush the lines with ethanol, then sterile water, then cold organoid media.",
+      "zh": "步骤 6：将 FluidX XRD-384 设置为 8 µL 分液。管路依次用乙醇、无菌水、冷的类器官培养基冲洗。",
+      "time": "10 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Step 7: Prime the XRD-384 with 7.5 mg/mL BME-2 (dilute the ~15 mg/mL stock 1:1 in cold organoid media). Keep BME-2 on ice at all times — it polymerizes above 10 °C and rapidly between 22–35 °C. Dispense 8 µL of the 7.5 mg/mL BME-2 into all wells of the 384-well assay plate.",
+      "zh": "步骤 7：用 7.5 mg/mL BME-2（用冷类器官培养基将 ~15 mg/mL 原液 1:1 稀释）prime XRD-384。BME-2 全程保持冰浴 —— 10 °C 以上即开始成胶，22–35 °C 迅速聚合。向 384 孔筛选板每孔分液 8 µL 7.5 mg/mL BME-2。",
+      "time": "15 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Step 8: Centrifuge the plate at 182 × g for 1 min so the BME-2 spreads evenly across the well bottom, then incubate at 37 °C / 5% CO₂ for ≥20 min to polymerize the BME-2 into a uniform basal layer. Plates can sit in the incubator for several hours but should not be stored overnight.",
+      "zh": "步骤 8：板子 182 × g 离心 1 min，使 BME-2 平铺孔底；随后 37 °C / 5% CO₂ 培养箱中放置 ≥20 min 使 BME-2 聚合成均匀的底层。包被好的板可在培养箱中放置数小时，但不要过夜储存。",
+      "time": "30 min",
+      "temp": "37 °C"
+    },
+    {
+      "en": "Step 9: Harvest organoids from maintenance 6-well plates by scraping the 7.5 mg/mL BME-2 droplets with a cell scraper. Use a 1 mL pipette to gently mix and release intact organoids from the matrix — avoid shearing to single cells, because the assay is performed on pre-formed organoids.",
+      "zh": "步骤 9：用细胞刮铲刮下 6 孔板中含类器官的 7.5 mg/mL BME-2 液滴，收集类器官。用 1 mL 移液器轻柔吹打，将完整类器官从基质中释放 —— 避免打散为单细胞，因为本实验使用的是已形成的类器官。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 10: Filter the suspension through a 20 µm cell strainer if it looks heterogeneous, then count and dilute to 15,000–20,000 organoids/mL in drug-screening media (organoid media + 2% BME-2). Keep the suspension gently mixing during dispensing so organoids do not settle.",
+      "zh": "步骤 10：若悬液大小不均，可用 20 µm 细胞筛过滤；然后计数并用药物筛选培养基（类器官培养基 + 2% BME-2）调整至 15,000–20,000 类器官/mL。加样过程中保持悬液轻轻混匀，防止沉降。",
+      "time": "20 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 11: Dispense the organoid suspension on top of the pre-polymerized BME-2 layer in the assay plate (overlay rather than embed — embedding impairs downstream CellTiter-Glo lysis).",
+      "zh": "步骤 11：将类器官悬液分液至 BME-2 底层之上（采用覆盖法而非包埋法 —— 包埋会削弱后续 CellTiter-Glo 裂解效率）。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 12: Incubate overnight at 37 °C / 5% CO₂ to allow organoid recovery and re-formation.",
+      "zh": "步骤 12：37 °C / 5% CO₂ 培养箱中过夜孵育，使类器官恢复并重新形成。",
+      "time": "overnight",
+      "temp": "37 °C"
+    },
+    { "en": "**Day 2–6 — Drug exposure and readout**", "zh": "**第 2–6 天 —— 药物处理与读数**", "isHeader": true },
+    {
+      "en": "Step 13: Using the Echo 555 acoustic dispenser, transfer nanoliter volumes from the source plate to the assay plate. Final DMSO concentration is 0.1%; total assay volume ~40 µL. Drug concentrations typically span 7 half-log points from ~10 µM down; avoid exceeding 10 µM due to off-target risk.",
+      "zh": "步骤 13：用 Echo 555 声波分液仪从源板向筛选板转移纳升级体积。终 DMSO 浓度 0.1%；总体积约 40 µL。药物浓度通常采用 7 个半对数点，从 ~10 µM 起向下；不建议超过 10 µM 以降低脱靶风险。",
+      "time": "20 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 14: Return the plate to the incubator for the drug-exposure period (typically 3–5 days; refresh media/drugs if longer).",
+      "zh": "步骤 14：将板放回培养箱，进行药物处理（通常 3–5 天；若时间更长可中途补液/补药）。",
+      "time": "3–5 days",
+      "temp": "37 °C"
+    },
+    {
+      "en": "Step 15: At the endpoint, add CellTiter-Glo 2.0 at a 4:1 ratio (4 media : 1 CellTiter-Glo). Mix vigorously and equilibrate for ≥10 min at room temperature to ensure complete lysis of organoids.",
+      "zh": "步骤 15：终点时按 4:1 比例（4 份培养基：1 份 CellTiter-Glo）加入 CellTiter-Glo 2.0。剧烈混匀，室温平衡 ≥10 min 以确保完全裂解类器官。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 16: Read luminescence on a Paradigm (or equivalent) plate reader.",
+      "zh": "步骤 16：用 Paradigm（或等效）酶标仪读化学发光值。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 17: Quality control — calculate the Z'-factor from positive (MG-132/staurosporine) and negative (DMSO) control wells; reject plates with Z' < 0.4. Fit dose–response curves (e.g. 4-parameter logistic) to obtain IC50 and AUC for each drug × organoid line.",
+      "zh": "步骤 17：质控 —— 根据阳性（MG-132/staurosporine）与阴性（DMSO）对照孔计算 Z' 因子；Z' < 0.4 的板应舍弃。用 4 参数 logistic 等模型拟合剂量–反应曲线，得到每个药物 × 类器官的 IC50 与 AUC。",
+      "time": "1 h",
+      "temp": "RT"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Drug sensitivity screening of cancer organoids in 384-well plates: lay a 7.5 mg/mL BME-2 basal layer, overlay with pre-formed organoids in screening media, recover overnight, dose with a 7-point half-log dilution series (Echo acoustic transfer, 0.1% DMSO), incubate 3–5 days, then read viability with CellTiter-Glo 2.0 (4:1) and compute Z'-factor, IC50, AUC.",
+      "zh": "384 孔板肿瘤类器官药物敏感性筛选流程：先铺 7.5 mg/mL BME-2 底层，再在筛选培养基中以覆盖方式加入已形成的类器官，过夜恢复后用 Echo 声波仪加入 7 点半对数稀释药物（DMSO 终浓度 0.1%），培养 3–5 天，最后用 4:1 CellTiter-Glo 2.0 读活率并计算 Z' 因子、IC50 和 AUC。"
+    }
+  ],
+  "notes": {
+    "en": "If an organoid line is insensitive to both MG-132 and staurosporine, Z' can still be calculated from the blank (DMSO) vs maximum-effect wells. The authors note that colorectal and esophageal cancer organoids behave similarly enough to share this workflow; other lineages (e.g. pancreatic) may need media adaptations.",
+    "zh": "若类器官对 MG-132 与 staurosporine 都不敏感，Z' 仍可由空白（DMSO）孔与最大效应孔计算。作者指出结直肠与食管癌类器官在该流程中表现一致；其他谱系（如胰腺癌）可能需要调整培养基组分。"
+  },
+  "ref": "Francies HE, Barthorpe A, McLaren-Douglas A, Barendt WJ, Garnett MJ (2016). Drug Sensitivity Assays of Human Cancer Organoid Cultures. In: Turksen K (ed.), Organoids: Stem Cells, Structure and Function. Methods in Molecular Biology, vol. 1612. Humana Press, New York, NY. https://doi.org/10.1007/7651_2016_10",
+  "doi": "10.17504/protocols.io.bpsgmnbw",
+  "source": "protocols.io",
+  "relatedProtocols": [
+    "organoid_passaging",
+    "organoid_cryopreservation",
+    "intestinal_organoid",
+    "mtt_assay"
+  ],
+  "storage": {
+    "temp": "−80 °C",
+    "duration": "Drug source plates: 3–6 months with limited freeze–thaw",
+    "icon": "snowflake",
+    "label": {
+      "en": "Drug source plates: store at −80 °C in StoragePods, ≤3–4 freeze–thaw cycles",
+      "zh": "药物源板：−80 °C StoragePods 保存，冻融循环不超过 3–4 次"
+    }
+  }
+}

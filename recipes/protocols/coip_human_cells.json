@@ -1,0 +1,168 @@
+{
+  "id": "coip_human_cells",
+  "name": "Co-immunoprecipitation in Human Cells (Dynabeads)",
+  "nameCn": "人源细胞共免疫沉淀（Dynabeads 法）",
+  "category": "protocol",
+  "discipline": ["protein", "cell"],
+  "tags": [
+    "Co-IP",
+    "immunoprecipitation",
+    "Dynabeads",
+    "human cells",
+    "protein-protein interaction",
+    "WB",
+    "proteomics"
+  ],
+  "usage": {
+    "en": "Co-immunoprecipitation from human cultured cells using Dynabeads Protein A/G, with parallel elution into LDS (for western blot) or 0.2 M glycine pH 2.3 (for mass-spectrometry-based interaction proteomics).",
+    "zh": "用 Dynabeads 蛋白 A/G 从人源培养细胞中进行共免疫沉淀，可分别用 LDS（用于 WB）或 0.2 M pH 2.3 甘氨酸（用于基于质谱的互作蛋白组学）洗脱。"
+  },
+  "duration": {
+    "total": "2 days",
+    "hands_on": "4–5 hours"
+  },
+  "materials": [
+    { "name": "Dynabeads Protein A and/or Protein G (Invitrogen)", "linkedRecipe": "ip_lysis" },
+    { "name": "IP buffer (25 mM Tris-HCl pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% NP-40, 5% glycerol; add protease inhibitors fresh)", "linkedRecipe": "ip_lysis" },
+    { "name": "Ice-cold PBS with protease inhibitor cocktail (1 tablet per 10 mL or per manufacturer)" },
+    { "name": "Lysis buffer (IP buffer + fresh protease inhibitor cocktail)" },
+    { "name": "Antibody against the bait protein (and species-matched IgG control)", "optional": true },
+    { "name": "1× LDS sample buffer (NuPAGE) + 1 M DTT stock (for WB elution)", "optional": true },
+    { "name": "0.2 M glycine pH 2.3 (for proteomics elution)", "optional": true },
+    { "name": "Tris-base or 1 M Tris-HCl pH 8.0–9.0 to neutralize glycine eluates", "optional": true },
+    { "name": "Magnetic rack for 1.5 mL tubes and for bead collection" },
+    { "name": "150 mm tissue-culture dishes of human cells (target ~80% confluent on Day 2)" },
+    { "name": "Rotator at 4 °C (end-over-end)" },
+    { "name": "Refrigerated centrifuge (≥16,000 × g) and cell-culture centrifuge" },
+    { "name": "BCA or Bradford protein quantification reagent" },
+    { "name": "Optional: crosslinker (DSP / DMP / formaldehyde) if capturing weak interactors" }
+  ],
+  "components": [
+    { "name": "1. Day 1: Split human cells in a 150 mm dish to reach ~80% confluence on Day 2", "amount": 1, "unit": "step" },
+    { "name": "2. Pre-block Dynabeads Protein A and/or G with IP buffer + 1% BSA or 5% milk, 4 °C, 30 min", "amount": 1, "unit": "step" },
+    { "name": "3. Day 2: Wash pre-blocked beads 3× with 600 µL ice-cold IP buffer on a magnetic rack", "amount": 1, "unit": "step" },
+    { "name": "4. Bind antibody (or matched IgG control) to washed beads, 4 °C rotator, ≥1 h", "amount": 1, "unit": "step" },
+    { "name": "5. Lyse cells on ice in ice-cold PBS + protease inhibitors, then in IP buffer with protease inhibitors", "amount": 1, "unit": "step" },
+    { "name": "6. Quantify lysate (BCA); reserve 5% as Input", "amount": 1, "unit": "step" },
+    { "name": "7. Add 1 mg total protein to antibody-bound beads; rotate at 4 °C for 2 h or overnight", "amount": 1, "unit": "step" },
+    { "name": "8. Wash beads 3–5× with 600 µL ice-cold IP buffer on the magnetic rack", "amount": 1, "unit": "step" },
+    { "name": "9. Elute for WB: add 36 µL 1× LDS + 4 µL 1 M DTT; heat 70 °C 10 min", "amount": 1, "unit": "step", "note": { "en": "For downstream SDS-PAGE / western blot detection.", "zh": "用于下游 SDS-PAGE / Western blot 检测。" } },
+    { "name": "10. Elute for proteomics: add 1.5× volume of 0.2 M glycine pH 2.3, 5 min RT, collect supernatant, immediately neutralize with 1 M Tris-HCl pH 8.0–9.0", "amount": 1, "unit": "step", "note": { "en": "Elute twice and pool; neutralize to pH 7–8 for downstream digestion or MS.", "zh": "洗脱两次并合并，立即用 1 M Tris-HCl pH 8.0–9.0 中和至 pH 7–8 再进行下游酶解或质谱。" } },
+    { "name": "11. Analyze eluate by SDS-PAGE/WB or by mass spectrometry", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "After overnight IP at 4 °C, beads can be held on the rotator for up to ~16 h before washing.",
+        "zh": "4 °C 过夜 IP 后，beads 在旋转仪上最多可继续孵育约 16 h 再洗涤。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Washed beads can be snap-frozen in liquid N₂ and stored at −80 °C for short-term (≤1 week) before elution.",
+        "zh": "洗涤后的 beads 可在液氮中速冻，−80 °C 短期储存（≤1 周）后再洗脱。"
+      }
+    }
+  ],
+  "detailedSteps": [
+    { "en": "**Day 1 — Cell seeding and bead pre-blocking**", "zh": "**第 1 天 —— 铺细胞与磁珠预处理**", "isHeader": true },
+    {
+      "en": "Step 1: Split human cells into a 150 mm tissue-culture dish so that they reach ~80% confluence on the day of lysis. One 150 mm dish at ~80% confluence typically yields 1–3 mg of total protein, enough for one IP plus an IgG control.",
+      "zh": "步骤 1：将人源细胞传代至 150 mm 培养皿，使裂解当天密度约 80%。一个 150 mm 皿 80% 汇合度通常可得到 1–3 mg 总蛋白，足够一个 IP 加一个 IgG 对照。",
+      "time": "20 min",
+      "temp": "37 °C"
+    },
+    {
+      "en": "Step 2: Pre-block Dynabeads Protein A and/or G in IP buffer supplemented with 1% BSA (or 5% non-fat milk) for 30 min at 4 °C with rotation. Pre-blocking reduces non-specific binding, especially for antibodies that bind Protein A/G poorly.",
+      "zh": "步骤 2：用含 1% BSA（或 5% 脱脂奶）的 IP 缓冲液预处理 Dynabeads 蛋白 A/G，4 °C 旋转 30 min。预处理可降低非特异性结合，对与 Protein A/G 结合较弱的抗体尤为重要。",
+      "time": "30 min",
+      "temp": "4 °C"
+    },
+    { "en": "**Day 2 — Lysis, IP and washes**", "zh": "**第 2 天 —— 裂解、免疫沉淀与洗涤**", "isHeader": true },
+    {
+      "en": "Step 3: Wash the pre-blocked beads three times on ice with 600 µL of IP buffer (25 mM Tris-HCl pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% NP-40, 5% glycerol) using a magnetic rack; discard the supernatant each time.",
+      "zh": "步骤 3：在冰上用 600 µL IP 缓冲液（25 mM Tris-HCl pH 8.0、150 mM NaCl、1 mM EDTA、1% NP-40、5% 甘油）洗涤预处理的 beads 三次，使用磁力架，每次弃上清。",
+      "time": "20 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Step 4: Bind the antibody (typically 1–5 µg per IP) to the washed beads in 500 µL IP buffer at 4 °C with end-over-end rotation for ≥1 h. Include a parallel IgG isotype control using the same species and isotype.",
+      "zh": "步骤 4：将抗体（通常每个 IP 1–5 µg）加入 500 µL IP 缓冲液中的已洗涤 beads，4 °C 端到端旋转 ≥1 h。同时设置同种同型 IgG 对照。",
+      "time": "1.5 h",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Step 5: Lyse cells at ~80% confluence. Wash the cell layer once with 8 mL ice-cold PBS containing protease inhibitor cocktail (1 tablet per 10 mL or per manufacturer). Lyse directly on the plate in IP buffer + fresh protease inhibitors (e.g. 1 mL per 150 mm dish), scrape, incubate on ice 15–30 min, and clarify at ≥16,000 × g, 15 min, 4 °C.",
+      "zh": "步骤 5：在 ~80% 汇合度时裂解细胞。先用 8 mL 含蛋白酶抑制剂混合物的冰冷 PBS（每 10 mL 一片或按厂家用量）洗涤细胞层一次；然后直接在皿中加入含新鲜蛋白酶抑制剂的 IP 缓冲液（每 150 mm 皿 1 mL）裂解，刮下细胞，冰上放置 15–30 min，4 °C ≥16,000 × g 离心 15 min 取上清。",
+      "time": "45 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Step 6: Quantify lysate protein (BCA or Bradford). Reserve ~5% (50 µg) as the Input fraction; add 4× LDS + DTT and store at −20 °C for parallel analysis.",
+      "zh": "步骤 6：用 BCA 或 Bradford 测定蛋白浓度。取出约 5%（50 µg）作为 Input，加入 4× LDS + DTT，−20 °C 保存用于平行分析。",
+      "time": "20 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Step 7: Add 1 mg total protein (in IP buffer, total volume typically 500–800 µL) to the antibody-bound beads. Rotate end-over-end at 4 °C for 2 h or overnight. Overnight is preferred for low-abundance or weak interactors.",
+      "zh": "步骤 7：取 1 mg 总蛋白（溶于 IP 缓冲液，总体积通常 500–800 µL）加入抗体结合的 beads 中。4 °C 端到端旋转 2 h 或过夜。低丰度或弱互作建议过夜孵育。",
+      "time": "2 h – overnight",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Step 8: Wash beads 3–5 times with 600 µL ice-cold IP buffer on a magnetic rack, removing supernatant each time. A final wash with IP buffer lacking NP-40 reduces detergent carry-over for downstream MS.",
+      "zh": "步骤 8：用 600 µL 冰冷 IP 缓冲液在磁力架上洗涤 beads 3–5 次，每次弃上清。最后一次用不含 NP-40 的 IP 缓冲液洗涤，可减少去垢剂残留对下游质谱的影响。",
+      "time": "30 min",
+      "temp": "4 °C"
+    },
+    { "en": "**Elution and downstream analysis**", "zh": "**洗脱与下游分析**", "isHeader": true },
+    {
+      "en": "Step 9 — WB elution: Add 36 µL 1× LDS + 4 µL 1 M DTT to each tube, resuspend the beads, and heat at 70 °C for 10 min. Place the tube back on the magnetic rack and load the supernatant on an SDS-PAGE gel; detect interactors by western blot.",
+      "zh": "步骤 9 —— WB 洗脱：每管加入 36 µL 1× LDS + 4 µL 1 M DTT，重悬 beads，70 °C 加热 10 min。放回磁力架，取上清上样 SDS-PAGE 凝胶；用 Western blot 检测互作蛋白。",
+      "time": "20 min",
+      "temp": "70 °C"
+    },
+    {
+      "en": "Step 10 — Proteomics elution: Add 1.5× bead volume of 0.2 M glycine pH 2.3 to the beads, resuspend, incubate 5 min at room temperature, separate on the magnetic rack, and immediately neutralize the supernatant with 1 M Tris-HCl pH 8.0–9.0 to pH 7–8. Repeat the elution and pool both eluates. The sample is now ready for reduction/alkylation, trypsin digestion, and LC-MS/MS.",
+      "zh": "步骤 10 —— 蛋白组学洗脱：向 beads 中加入 1.5 倍体积的 0.2 M 甘氨酸（pH 2.3），重悬，室温孵育 5 min，磁力架分离，立即用 1 M Tris-HCl pH 8.0–9.0 将上清中和至 pH 7–8。重复洗脱一次并合并两次洗脱液。即可进行还原/烷基化、胰酶酶解及 LC-MS/MS 分析。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Step 11: Analyze the eluate by SDS-PAGE / WB (Step 9 eluate) or by mass spectrometry (Step 10 eluate). Compare the IP lane to the IgG control lane; specific interactors should be absent (or strongly depleted) in the IgG control.",
+      "zh": "步骤 11：将洗脱液通过 SDS-PAGE / WB（步骤 9 产物）或质谱（步骤 10 产物）分析。将 IP 泳道与 IgG 对照泳道比较；特异性互作蛋白应在 IgG 对照中缺失或显著减少。",
+      "time": "Variable",
+      "temp": "RT"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Co-IP from human cells: pre-block Dynabeads Protein A/G, bind antibody, lyse cells in IP buffer (25 mM Tris-HCl pH 8.0 / 150 mM NaCl / 1% NP-40 + protease inhibitors), incubate 1 mg lysate with antibody-beads at 4 °C, wash, then either elute with 1× LDS + DTT for WB or with 0.2 M glycine pH 2.3 (neutralized) for proteomics.",
+      "zh": "人源细胞 Co-IP：预处理 Dynabeads 蛋白 A/G，结合抗体；用 IP 缓冲液（25 mM Tris-HCl pH 8.0 / 150 mM NaCl / 1% NP-40 + 蛋白酶抑制剂）裂解细胞；4 °C 与抗体 beads 孵育 1 mg 蛋白；洗涤后用 1× LDS + DTT 洗脱用于 WB，或用 0.2 M pH 2.3 甘氨酸洗脱（中和后）用于蛋白组学。"
+    }
+  ],
+  "notes": {
+    "en": "Use Protein A or Protein G beads based on the antibody species/isotype (Protein G has broader Fc coverage). Include the matched IgG isotype as the negative control, not no-antibody beads. For weak/transient interactors, consider crosslinking the antibody to the beads (DSP/DMP) or to the cells in vivo (formaldehyde) before lysis. For proteomics, elute twice with glycine and pool — a single elution typically recovers only ~60–70%.",
+    "zh": "根据抗体种属/亚型选择 Protein A 或 Protein G（Protein G 覆盖更广）。阴性对照务必使用同种同型 IgG，而非不加抗体的 beads。对于弱/瞬时互作，可考虑用 DSP/DMP 将抗体交联到 beads，或在裂解前用甲醛在细胞内交联互作复合物。蛋白组学样品建议用甘氨酸洗脱两次并合并，单次洗脱通常仅回收 ~60–70%。"
+  },
+  "ref": "Tellier M (2021). Co-immunoprecipitation in human cells. protocols.io. https://www.protocols.io/view/co-immunoprecipitation-in-human-cells-bw8hpht6",
+  "doi": null,
+  "source": "protocols.io",
+  "relatedProtocols": [
+    "coip_protocol",
+    "ip_lysis",
+    "wb_protocol",
+    "np40_lysis"
+  ],
+  "storage": {
+    "temp": "−80 °C",
+    "duration": "Lysates: months; washed bead pellets: ≤1 week",
+    "icon": "snowflake",
+    "label": {
+      "en": "Store lysates at −80 °C; washed beads can be snap-frozen and stored ≤1 week before elution",
+      "zh": "裂解物 −80 °C 保存；洗涤后的 beads 可速冻，−80 °C 储存不超过 1 周"
+    }
+  }
+}
