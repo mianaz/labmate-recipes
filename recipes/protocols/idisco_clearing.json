@@ -1,0 +1,421 @@
+{
+  "id": "idisco_clearing",
+  "name": "iDISCO+ Whole-Mount Immunolabeling and Tissue Clearing",
+  "nameCn": "iDISCO+ 整体免疫标记与组织透明化",
+  "category": "protocol",
+  "tags": [
+    "iDISCO",
+    "iDISCO+",
+    "tissue clearing",
+    "whole-mount immunostaining",
+    "light-sheet microscopy",
+    "dichloromethane",
+    "dibenzyl ether",
+    "mouse brain",
+    "volume imaging",
+    "3D histology"
+  ],
+  "defaultVolume": 1,
+  "unit": "sample",
+  "components": [
+    {
+      "name": "1. Fix sample: perfuse with PBS then 4% PFA, post-fix in 4% PFA overnight at 4°C (+1 h RT), wash PBS 3 × 30 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "From the iDISCO.info bench protocol (adult: 20 mL PBS then 20 mL 4% PFA). Trim the sample to the region relevant to the question: smaller samples stain better.",
+        "zh": "依据 iDISCO.info 操作手册（成年小鼠：先灌注 20 mL PBS，再灌注 20 mL 4% PFA）。将样品修剪至与研究问题相关的区域，样品越小染色越好。"
+      }
+    },
+    {
+      "name": "2. Dehydrate in methanol/H₂O series 20%, 40%, 60%, 80%, 100%, 100%; 1 h each, RT on rocker",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "First test that each antibody tolerates methanol: stain 20 µm sections after ≥3 h in 100% methanol and compare with untreated sections.",
+        "zh": "先验证抗体耐受甲醇：将 20 µm 切片在 100% 甲醇中处理 ≥3 h 后染色，与未处理切片比较。"
+      }
+    },
+    {
+      "name": "3. Delipidate: 66% DCM / 33% methanol overnight at RT with agitation (glass vials)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "DCM dissolves many plastics: use glass or DCM-resistant containers and work in a fume hood.",
+        "zh": "二氯甲烷会溶解多种塑料：使用玻璃或耐二氯甲烷容器，并在通风橱中操作。"
+      }
+    },
+    {
+      "name": "4. Wash 2 × 15 min in 100% methanol at RT; chill to 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Removes DCM before bleaching.",
+        "zh": "漂白前去除二氯甲烷。"
+      }
+    },
+    {
+      "name": "5. Bleach: fresh, chilled 5% H₂O₂ in methanol (1 vol 30% H₂O₂ + 5 vol methanol), overnight at 4°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Reduces autofluorescence from heme and pigments.",
+        "zh": "减少血红素和色素引起的自发荧光。"
+      }
+    },
+    {
+      "name": "6. Rehydrate: 80%, 60%, 40%, 20% methanol, then PBS, 1 h each at RT; PBS overnight at RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Samples can be stored in PBS + 0.02% NaN₃ at 4°C after rehydration.",
+        "zh": "复水后样品可保存在含 0.02% NaN₃ 的 PBS 中，4°C 保存。"
+      }
+    },
+    {
+      "name": "7. Wash 2 × 1 h in PTx.2 (PBS + 0.2% Triton X-100) at RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Final step of methanol pretreatment before immunolabeling.",
+        "zh": "甲醇预处理的最后一步，之后进入免疫标记。"
+      }
+    },
+    {
+      "name": "8. Permeabilize: PTx.2 / 20% DMSO / 0.3 M glycine, 2 days at 37°C with rocking",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Do not exceed 2 days (iDISCO.info).",
+        "zh": "不超过 2 天（iDISCO.info 建议）。"
+      }
+    },
+    {
+      "name": "9. Block: PTx.2 / 6% donkey serum / 10% DMSO, 2 days at 37°C with rocking",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Do not exceed 2 days. Keep tubes full and closed to limit oxidation.",
+        "zh": "不超过 2 天。试管装满并盖紧，减少氧化。"
+      }
+    },
+    {
+      "name": "10. Primary antibody in PTwH / 5% DMSO / 3% donkey serum; 1.5–2 weeks at RT on rocker (tubes on their side)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "iDISCO.info instead incubates at 37°C for a time set by sample size (e.g. whole adult brain 7 days in 4.5 mL). Never use mouse primary antibodies on mouse tissue.",
+        "zh": "iDISCO.info 方案改为 37°C，时间随样品大小而定（如成年全脑 7 天、4.5 mL）。小鼠组织切勿使用小鼠来源一抗。"
+      }
+    },
+    {
+      "name": "11. Wash PTwH (PBS + 0.2% Tween-20 + 10 µg/mL heparin) 5 × 1 h, then overnight in fresh PTwH at RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Thorough washing lowers background in deep tissue.",
+        "zh": "充分洗涤可降低深部组织背景。"
+      }
+    },
+    {
+      "name": "12. Secondary antibody in PTwH / 3% donkey serum, 0.22 µm filtered; 2 weeks at RT on rocker, wrapped in foil",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Filtering (or spinning at 20,000×g for 10 min) prevents antibody aggregates that appear as bright puncta.",
+        "zh": "过滤（或 20,000×g 离心 10 min）可防止抗体聚集体在成像中形成亮点。"
+      }
+    },
+    {
+      "name": "13. Wash PTwH 5 × 1 h, then overnight in fresh PTwH at RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Labeled samples can be stored in PBS + 0.02% NaN₃ at 4°C.",
+        "zh": "标记后的样品可保存在含 0.02% NaN₃ 的 PBS 中，4°C 保存。"
+      }
+    },
+    {
+      "name": "14. Dehydrate in methanol/H₂O series 20%, 40%, 60%, 80%, 100%, 100%; 1 h each at RT; 100% methanol overnight",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Samples can stay in 100% methanol for about 2 days at most.",
+        "zh": "样品在 100% 甲醇中最多保存约 2 天。"
+      }
+    },
+    {
+      "name": "15. 66% DCM / 33% methanol 3 h at RT with agitation (glass jars)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Large or curling samples (e.g. spine) can be sandwiched between glass slides tied with wire before this step; do not do this to soft tissue.",
+        "zh": "较大或易卷曲的样品（如脊柱）可在此步前用玻片夹住并用金属丝固定；软组织不宜使用。"
+      }
+    },
+    {
+      "name": "16. 100% DCM 2 × 15 min, then transfer quickly into dibenzyl ether (DBE); fill the tube, no shaking; image by light-sheet",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Move samples quickly: they begin to dry within seconds out of DCM. Samples cleared in DBE are stored in DBE; clearing can be reversed.",
+        "zh": "转移要迅速：样品离开二氯甲烷后数秒内即开始干燥。透明化样品保存在 DBE 中；透明化过程可逆。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "iDISCO+ (Renier et al. 2014, 2016) combines whole-mount immunolabeling of intact organs such as the adult mouse brain with organic-solvent clearing. Methanol dehydration and DCM delipidation followed by H₂O₂ bleaching open the tissue to antibodies, and DMSO, glycine and heparin in the buffers help antibodies penetrate deeply. After labeling, the sample is dehydrated again, delipidated in DCM and matched to refractive index in dibenzyl ether (DBE) for light-sheet imaging. This recipe follows Huesing et al. (Pennington/SPARC) on protocols.io, which runs the antibody steps at RT for 1.5–2 weeks (primary) and 2 weeks (secondary). The iDISCO.info bench protocol instead uses 37°C with times set by sample size (1–7 days). Antibody concentration is the main thing to optimize. A bright rim at the edge with poor depth means the antibody is too concentrated. No deep staining and no rim means it is depleted and should be increased. Weak but visible central staining means the incubation should be longer. SAFETY: Dichloromethane (DCM) is volatile, toxic and a suspected carcinogen. Methanol is toxic and flammable (it can cause blindness or death if swallowed or absorbed). DBE irritates skin and eyes. Handle all solvents in a chemical fume hood with a lab coat, eye protection and chemical-resistant gloves (nitrile gives little protection against DCM). Use glass for DCM steps. Vent DCM/methanol jars under a Kimwipe when opening. Collect all solvent waste as halogenated organic waste. Sodium azide is acutely toxic. PFA is toxic and a carcinogen, and perfusion requires approved animal procedures.",
+    "zh": "iDISCO+（Renier 等 2014、2016）将完整器官（如成年小鼠全脑）的整体免疫标记与有机溶剂透明化相结合。甲醇脱水、二氯甲烷（DCM）脱脂及 H₂O₂ 漂白使组织对抗体开放；缓冲液中的 DMSO、甘氨酸和肝素促进抗体深部渗透。标记完成后，样品再次脱水、经 DCM 脱脂，并在二苄醚（DBE）中完成折射率匹配，用于光片显微成像。本方案依据 Huesing 等（Pennington/SPARC）发布于 protocols.io 的方案：抗体步骤在室温进行，一抗 1.5–2 周、二抗 2 周；iDISCO.info 操作手册则采用 37°C，并按样品大小设定 1–7 天。抗体浓度是最需要优化的参数：样品边缘出现亮环且深部渗透差，说明浓度过高；深部无染色且无亮环，说明抗体被耗尽，应提高浓度；中心染色弱但可见，应延长孵育时间。安全：二氯甲烷易挥发、有毒，为可疑致癌物；甲醇有毒且易燃（误食或经皮吸收可致失明或死亡）；DBE 刺激皮肤和眼睛。所有溶剂须在化学通风橱中操作，穿实验服、戴护目镜和耐化学品手套（丁腈手套对 DCM 防护很差）；DCM 步骤使用玻璃器皿；开启 DCM/甲醇瓶时用擦镜纸盖住瓶盖泄压；溶剂废液按含卤有机废液收集。叠氮化钠有剧毒；多聚甲醛有毒、致癌，灌注须遵循经批准的动物实验规程。"
+  },
+  "ref": "Huesing, Muenzberg, Burk & Torres, protocols.io (doi:10.17504/protocols.io.wzuff6w); Renier et al. (2014) Cell 159:896–910; Renier et al. (2016) Cell 165:1789–1802",
+  "doi": "10.1016/j.cell.2014.10.010",
+  "usage": {
+    "en": "Whole-mount antibody labeling and solvent-based optical clearing of intact mouse organs, embryos or whole adult brain for 3D light-sheet (or confocal/two-photon) volume imaging, e.g. mapping cell populations or immediate-early-gene activity (c-Fos) across the brain.",
+    "zh": "对完整小鼠器官、胚胎或成年全脑进行整体抗体标记和溶剂型光学透明化，用于三维光片（或共聚焦/双光子）体积成像，例如全脑细胞群分布或即刻早期基因（c-Fos）活性图谱。"
+  },
+  "discipline": [
+    "histology",
+    "neuroscience"
+  ],
+  "relatedProtocols": [
+    "if_protocol",
+    "if_cryostat",
+    "multiplex_if",
+    "ihc_paraffin_protocol"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "5–6 weeks",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 5–6 weeks, hands-on: 12 hours",
+      "zh": "实验方案 — 5–6 周，实操: 12 小时"
+    }
+  },
+  "materials": [
+    {
+      "name": "PFA-fixed intact organ, embryo or adult mouse brain"
+    },
+    {
+      "name": "4% PFA",
+      "linkedRecipe": "pfa_4"
+    },
+    {
+      "name": "10× PBS",
+      "linkedRecipe": "pbs_10x"
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Methanol (ACS grade)"
+    },
+    {
+      "name": "Dichloromethane (DCM)"
+    },
+    {
+      "name": "Dibenzyl ether (DBE)"
+    },
+    {
+      "name": "30% hydrogen peroxide (H₂O₂)"
+    },
+    {
+      "name": "DMSO"
+    },
+    {
+      "name": "Glycine"
+    },
+    {
+      "name": "Triton X-100"
+    },
+    {
+      "name": "Tween-20"
+    },
+    {
+      "name": "Heparin sodium salt (10 mg/mL stock)"
+    },
+    {
+      "name": "Normal donkey serum"
+    },
+    {
+      "name": "Primary antibodies (methanol-compatible) and fluorophore-conjugated secondary antibodies"
+    },
+    {
+      "name": "Sodium azide (0.02% for storage)",
+      "optional": true
+    },
+    {
+      "name": "Glass vials/jars, DCM-resistant tubes, 0.22 µm syringe filters, rocker, 37°C incubator, light-sheet microscope"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "PFA-fixed organ → methanol series 20–100% (1 h each) → 66% DCM/33% methanol overnight → methanol 2 × 15 min → 5% H₂O₂/methanol overnight 4°C → rehydrate to PBS, PBS overnight → PTx.2 2 × 1 h → permeabilize 2 days 37°C → block 2 days 37°C → primary antibody 1.5–2 weeks → PTwH 5 × 1 h + overnight → filtered secondary antibody 2 weeks (dark) → PTwH 5 × 1 h + overnight → methanol series + 100% methanol overnight → 66% DCM/33% methanol 3 h → 100% DCM 2 × 15 min → DBE → light-sheet imaging",
+      "zh": "PFA 固定的器官 → 甲醇梯度 20–100%（每级 1 h） → 66% 二氯甲烷/33% 甲醇过夜 → 甲醇 2 × 15 min → 5% H₂O₂/甲醇 4°C 过夜 → 复水至 PBS，PBS 过夜 → PTx.2 2 × 1 h → 37°C 透化 2 天 → 37°C 封闭 2 天 → 一抗 1.5–2 周 → PTwH 5 × 1 h + 过夜 → 过滤二抗 2 周（避光） → PTwH 5 × 1 h + 过夜 → 甲醇梯度 + 100% 甲醇过夜 → 66% 二氯甲烷/33% 甲醇 3 h → 100% 二氯甲烷 2 × 15 min → DBE → 光片成像"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Buffers",
+      "zh": "缓冲液配制",
+      "isHeader": true
+    },
+    {
+      "en": "PTx.2 (1 L): 100 mL 10× PBS + 2 mL Triton X-100, to 1 L with water. PTwH (1 L): 100 mL 10× PBS + 2 mL Tween-20 + 1 mL 10 mg/mL heparin, to 1 L. Optionally add 0.02% NaN₃ to stock solutions to prevent microbial growth.",
+      "zh": "PTx.2（1 L）：100 mL 10× PBS + 2 mL Triton X-100，加水至 1 L。PTwH（1 L）：100 mL 10× PBS + 2 mL Tween-20 + 1 mL 10 mg/mL 肝素，加水至 1 L。可在储存液中加 0.02% NaN₃ 防止微生物生长。",
+      "time": "20 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Permeabilization solution (500 mL): 400 mL PTx.2 + 11.5 g glycine + 100 mL DMSO. Blocking solution (500 mL): 420 mL PTx.2 + 30 mL donkey serum + 50 mL DMSO. Primary buffer (500 mL): 460 mL PTwH + 25 mL DMSO + 15 mL donkey serum. Secondary buffer (500 mL): 485 mL PTwH + 15 mL donkey serum.",
+      "zh": "透化液（500 mL）：400 mL PTx.2 + 11.5 g 甘氨酸 + 100 mL DMSO。封闭液（500 mL）：420 mL PTx.2 + 30 mL 驴血清 + 50 mL DMSO。一抗缓冲液（500 mL）：460 mL PTwH + 25 mL DMSO + 15 mL 驴血清。二抗缓冲液（500 mL）：485 mL PTwH + 15 mL 驴血清。",
+      "time": "20 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Methanol Pretreatment (Days 1–4)",
+      "zh": "甲醇预处理（第 1–4 天）",
+      "isHeader": true
+    },
+    {
+      "en": "Adult tissue: perfuse the anesthetized mouse with 20 mL PBS then 20 mL 4% PFA, dissect and trim the organ, post-fix in 4% PFA overnight at 4°C with shaking then 1 h at RT, and wash 3 × 30 min in PBS.",
+      "zh": "成年组织：麻醉小鼠后先灌注 20 mL PBS，再灌注 20 mL 4% PFA；取出器官并修剪，4% PFA 4°C 摇动后固定过夜，再室温 1 h，PBS 洗 3 × 30 min。",
+      "time": "overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Dehydrate in a methanol/water series (20%, 40%, 60%, 80%, 100%, 100%), 1 h each at RT on a rocker. Use the minimum volume that fully submerges the sample to limit organic waste.",
+      "zh": "在甲醇/水梯度（20%、40%、60%、80%、100%、100%）中脱水，每级室温摇床 1 h。使用刚好浸没样品的最小体积，以减少有机废液。",
+      "time": "6 h",
+      "temp": "RT"
+    },
+    {
+      "en": "In a fume hood, move samples to glass vials and incubate overnight in 66% DCM / 33% methanol at RT with agitation.",
+      "zh": "在通风橱中将样品转入玻璃瓶，于 66% 二氯甲烷/33% 甲醇中室温振荡孵育过夜。",
+      "time": "overnight",
+      "temp": "RT"
+    },
+    {
+      "en": "Transfer to tubes of 100% methanol and wash 2 × 15 min at RT, then chill to 4°C.",
+      "zh": "转入装有 100% 甲醇的试管，室温洗 2 × 15 min，然后预冷至 4°C。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Bleach overnight at 4°C in freshly made, chilled 5% H₂O₂ in methanol (1 volume 30% H₂O₂ to 5 volumes methanol).",
+      "zh": "在新鲜配制、预冷的 5% H₂O₂ 甲醇溶液（1 体积 30% H₂O₂ : 5 体积甲醇）中 4°C 漂白过夜。",
+      "time": "overnight",
+      "temp": "4°C"
+    },
+    {
+      "en": "Rehydrate through 80%, 60%, 40%, 20% methanol and then PBS, 1 h each at RT on a rocker; leave in fresh PBS overnight at RT.",
+      "zh": "依次经 80%、60%、40%、20% 甲醇及 PBS 复水，每级室温摇床 1 h；换新鲜 PBS 室温放置过夜。",
+      "time": "5 h + overnight",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 2 × 1 h in PTx.2 at RT on a rocker.",
+      "zh": "PTx.2 室温摇床洗 2 × 1 h。",
+      "time": "2 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Immunolabeling (≈ 5 weeks)",
+      "zh": "免疫标记（约 5 周）",
+      "isHeader": true
+    },
+    {
+      "en": "Incubate in permeabilization solution for 2 days at 37°C on a rocker (maximum 2 days).",
+      "zh": "在透化液中 37°C 摇床孵育 2 天（最多 2 天）。",
+      "time": "2 days",
+      "temp": "37°C"
+    },
+    {
+      "en": "Replace with blocking solution and incubate 2 days at 37°C on a rocker (maximum 2 days). Fill tubes almost completely and keep them closed.",
+      "zh": "换为封闭液，37°C 摇床孵育 2 天（最多 2 天）。试管几乎装满并盖紧。",
+      "time": "2 days",
+      "temp": "37°C"
+    },
+    {
+      "en": "Dilute the primary antibody in primary buffer (PTwH / 5% DMSO / 3% donkey serum), move samples to fresh tubes and incubate 1.5–2 weeks at RT on a rocker with tubes on their side. (iDISCO.info alternative: 37°C, 1–7 days by sample size.)",
+      "zh": "用一抗缓冲液（PTwH / 5% DMSO / 3% 驴血清）稀释一抗，将样品转入新管，试管横放于摇床上室温孵育 1.5–2 周。（iDISCO.info 替代方案：37°C，按样品大小 1–7 天。）",
+      "time": "1.5–2 weeks",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 5 × 1 h in PTwH at RT on a rocker, then leave in fresh PTwH overnight.",
+      "zh": "PTwH 室温摇床洗 5 × 1 h，再换新鲜 PTwH 放置过夜。",
+      "time": "5 h + overnight",
+      "temp": "RT"
+    },
+    {
+      "en": "Dilute the secondary antibody in secondary buffer (PTwH / 3% donkey serum), pass through a 0.22 µm syringe filter, transfer samples to fresh tubes, cover with foil and incubate 2 weeks at RT on a rocker.",
+      "zh": "用二抗缓冲液（PTwH / 3% 驴血清）稀释二抗，经 0.22 µm 针头滤器过滤，样品转入新管，锡纸避光，室温摇床孵育 2 周。",
+      "time": "2 weeks",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 5 × 1 h in PTwH at RT, then overnight in fresh PTwH, protected from light.",
+      "zh": "PTwH 室温洗 5 × 1 h，再换新鲜 PTwH 过夜，全程避光。",
+      "time": "5 h + overnight",
+      "temp": "RT"
+    },
+    {
+      "en": "Clearing (final 2 days)",
+      "zh": "透明化（最后 2 天）",
+      "isHeader": true
+    },
+    {
+      "en": "Dehydrate through 20%, 40%, 60%, 80%, 100%, 100% methanol/water, 1 h each at RT on a rocker, then 100% methanol overnight at RT.",
+      "zh": "经 20%、40%、60%、80%、100%、100% 甲醇/水梯度脱水，每级室温摇床 1 h，再于 100% 甲醇中室温过夜。",
+      "time": "6 h + overnight",
+      "temp": "RT"
+    },
+    {
+      "en": "In a fume hood, incubate in 66% DCM / 33% methanol in glass jars for 3 h at RT with agitation. Optional: sandwich large, curling specimens between glass slides secured with wire before this step.",
+      "zh": "在通风橱中将样品置于装有 66% 二氯甲烷/33% 甲醇的玻璃瓶中，室温振荡 3 h。可选：较大且易卷曲的样品在此步前用玻片夹住并以金属丝固定。",
+      "time": "3 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Wash 2 × 15 min in 100% DCM with shaking to remove methanol (handle with forceps, not gloved fingers).",
+      "zh": "100% 二氯甲烷振荡洗 2 × 15 min 以去除甲醇（用镊子操作，勿用戴手套的手直接接触）。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Quickly transfer each sample into a glass jar or tube filled almost to the top with DBE (no shaking); the sample becomes transparent in DBE. Invert gently a few times before imaging by light-sheet microscopy in DBE; store in DBE.",
+      "zh": "迅速将样品转入几乎装满 DBE 的玻璃瓶或试管（不振荡），样品在 DBE 中变透明。成像前轻轻颠倒数次混匀，在 DBE 中进行光片显微成像；样品保存在 DBE 中。",
+      "time": "until transparent",
+      "temp": "RT"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "After methanol pretreatment and rehydration, samples can be stored in PBS + 0.02% NaN₃ at 4°C.",
+        "zh": "甲醇预处理并复水后，样品可保存在含 0.02% NaN₃ 的 PBS 中，4°C 保存。"
+      }
+    },
+    {
+      "afterStep": 13,
+      "note": {
+        "en": "Immunolabeled samples can be stored in PBS + 0.02% NaN₃ at 4°C in the dark before clearing.",
+        "zh": "免疫标记完成的样品可在透明化前保存在含 0.02% NaN₃ 的 PBS 中，4°C 避光保存。"
+      }
+    },
+    {
+      "afterStep": 16,
+      "note": {
+        "en": "Cleared samples are stored in DBE in a completely filled, closed glass tube at RT in the dark.",
+        "zh": "透明化样品保存在装满 DBE 并盖紧的玻璃管中，室温避光。"
+      }
+    }
+  ],
+  "duration": {
+    "total": "5–6 weeks",
+    "hands_on": "12 hours"
+  }
+}

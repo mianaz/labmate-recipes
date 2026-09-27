@@ -1,0 +1,373 @@
+{
+  "id": "seahorse_mito_stress",
+  "name": "Seahorse XF Cell Mito Stress Test (OCR/ECAR)",
+  "nameCn": "Seahorse XF 细胞线粒体压力测试（OCR/ECAR）",
+  "category": "protocol",
+  "tags": [
+    "Seahorse",
+    "XFp",
+    "mito stress test",
+    "OCR",
+    "ECAR",
+    "oxygen consumption",
+    "oligomycin",
+    "FCCP",
+    "rotenone",
+    "antimycin A",
+    "mitochondrial respiration",
+    "ASAP"
+  ],
+  "defaultVolume": 1,
+  "unit": "sample",
+  "components": [
+    {
+      "name": "1. Day 1: harvest near-confluent adherent cells (PBS rinse, Accutase 5 min 37°C), pellet 500×g 5 min RT, count with trypan blue",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Compare cultures of similar passage, density and time since feeding — all affect respiration.",
+        "zh": "对比的培养物应传代数、密度及换液时间相近——这些均影响呼吸。"
+      }
+    },
+    {
+      "name": "2. Seed 20,000 cells in 80 µL growth medium per XFp well (B–G); wells A and H get medium only (background)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Cell number per well must be optimized for each cell type so basal OCR is in the instrument's linear range.",
+        "zh": "每孔细胞数须针对不同细胞类型优化，使基础 OCR 处于仪器线性范围内。"
+      }
+    },
+    {
+      "name": "3. Add 400 µL XF Calibrant to the moats of the cell miniplate; culture overnight in a CO₂ incubator",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Moat liquid limits evaporation/edge effects in the small XFp wells.",
+        "zh": "护槽中的液体可减少 XFp 小孔的蒸发和边缘效应。"
+      }
+    },
+    {
+      "name": "4. Hydrate sensor cartridge: 400 µL calibrant per moat + 200 µL per well; overnight at 37°C in a humidified non-CO₂ incubator",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep the sensors submerged and do not touch them. Alternative (Agilent/Kennedy): hydrate in sterile water overnight, replace with pre-warmed calibrant on assay day.",
+        "zh": "保持探头浸没，切勿触碰。替代方法（Agilent/Kennedy）：先用无菌水过夜水化，检测当日换成预温校准液。"
+      }
+    },
+    {
+      "name": "5. Switch on the XFp analyzer ≥5 h before the run (in practice the day before)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "The instrument must reach thermal equilibrium at 37°C.",
+        "zh": "仪器须在 37°C 达到热平衡。"
+      }
+    },
+    {
+      "name": "6. Day 2: make assay medium — XF DMEM pH 7.4 + 10 mM glucose, 1 mM pyruvate, 2 mM glutamine; warm to 37°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use within the day; unbuffered (bicarbonate-free) medium is required for ECAR measurement.",
+        "zh": "当天使用；ECAR 检测需使用无碳酸氢盐缓冲的培养基。"
+      }
+    },
+    {
+      "name": "7. Check cells under the microscope; wash twice with assay medium (leave 20 µL, add/remove 200 µL) and bring to 175 µL",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Never let the monolayer dry; confirm background wells are cell-free and cells were not washed off.",
+        "zh": "切勿让单层细胞干涸；确认背景孔无细胞、细胞未被洗脱。"
+      }
+    },
+    {
+      "name": "8. Incubate the cell plate 1 h at 37°C without CO₂",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Degasses CO₂ and stabilizes pH and temperature before measurement.",
+        "zh": "排出 CO₂，稳定 pH 和温度后再测量。"
+      }
+    },
+    {
+      "name": "9. Dilute inhibitors in assay medium to 8× working stocks: oligomycin 16 µM, FCCP 13.5 µM, rotenone + antimycin A 10 µM each (+ Hoechst 33342)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Stocks: 10 mM in ethanol, kept on ice; rotenone and antimycin A are light-sensitive. All are highly toxic — gloves.",
+        "zh": "储液为 10 mM 乙醇溶液，冰上放置；鱼藤酮和抗霉素 A 避光。均为剧毒——须戴手套。"
+      }
+    },
+    {
+      "name": "10. Lift and reseat the hydrated cartridge to dislodge bubbles; load 25 µL/port: A oligomycin, B FCCP, C Rot/AA; D empty",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Final in well: 2 µM oligomycin, 1.5 µM FCCP, 1 µM rotenone, 1 µM antimycin A. Load every port of a given letter evenly.",
+        "zh": "孔内终浓度：寡霉素 2 µM、FCCP 1.5 µM、鱼藤酮 1 µM、抗霉素 A 1 µM。同一字母端口应全部等量加样。"
+      }
+    },
+    {
+      "name": "11. FCCP titration (pilot run): test several FCCP concentrations across wells; use the lowest giving maximal OCR",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Too little FCCP underestimates maximal respiration; too much depresses OCR. Re-titrate for each cell type and medium.",
+        "zh": "FCCP 过少会低估最大呼吸，过多则抑制 OCR。每种细胞类型和培养基须重新滴定。"
+      }
+    },
+    {
+      "name": "12. Run 'Cell Mito Stress Test': calibrate cartridge (~20 min), then swap utility plate for cell plate; measure (~1 h 20 min)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove plate lids before loading. Orientation: row labels left, notch bottom-left.",
+        "zh": "上机前取下板盖。方向：行标在左，缺角位于左下。"
+      }
+    },
+    {
+      "name": "13. Normalize: count Hoechst-stained nuclei per well (e.g., Cytation imager) or measure protein; enter in Wave",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Normalization is essential when comparing conditions with different growth rates.",
+        "zh": "比较生长速度不同的条件时，归一化必不可少。"
+      }
+    },
+    {
+      "name": "14. Calculate: basal, ATP-linked, proton leak, maximal, spare capacity and non-mitochondrial OCR; basal ECAR",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Subtract non-mitochondrial OCR (after Rot/AA) from all rates before deriving mitochondrial parameters.",
+        "zh": "计算线粒体参数前，所有速率均需扣除非线粒体 OCR（Rot/AA 后）。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "SAFETY: oligomycin, FCCP, rotenone and antimycin A are potent mitochondrial toxins — wear gloves, handle stocks carefully, and collect used plates/solutions as chemical waste; work at the biosafety level appropriate to the cells. Principle: sequential injection of oligomycin (ATP synthase inhibitor), FCCP (uncoupler) and rotenone + antimycin A (complex I + III inhibitors) resolves basal, ATP-linked, maximal and non-mitochondrial respiration. The concentrations here are from an XFp (8-well) protocol for Hutu-80 enteroendocrine cells (20,000 cells/well, 175 µL assay medium, 25 µL per port); for other cell types, optimize seeding density and titrate FCCP (and ideally oligomycin) — the optimal uncoupler dose is cell-type and medium dependent, and excess FCCP lowers OCR. Scale volumes for XFe24/XFe96 plates per Agilent (e.g., 25 µL ports on XF96, 75 µL on XF24 per Kennedy, doi:10.17504/protocols.io.yxmvmxqq5l3p/v1). Keep background wells cell-free, never touch the sensors, remove all lids before loading, and normalize to cell number or protein. Divakaruni et al. (2014) provide the framework for parameter calculation, normalization and ECAR interpretation (ECAR is only a qualitative glycolysis indicator because respiratory CO₂ also acidifies the medium).",
+    "zh": "安全：寡霉素、FCCP、鱼藤酮和抗霉素 A 均为强效线粒体毒物——须戴手套，谨慎操作储液，用过的板和溶液按化学废弃物收集；按细胞所需的生物安全等级操作。原理：依次注射寡霉素（ATP 合酶抑制剂）、FCCP（解偶联剂）及鱼藤酮 + 抗霉素 A（复合体 I + III 抑制剂），区分基础、ATP 偶联、最大及非线粒体呼吸。本方案浓度来自 Hutu-80 肠内分泌细胞的 XFp（8 孔）方案（每孔 2 万细胞、175 µL 检测培养基、每端口 25 µL）；用于其他细胞时须优化接种密度并滴定 FCCP（最好也滴定寡霉素）——最佳解偶联剂量依细胞类型和培养基而异，FCCP 过量会降低 OCR。XFe24/XFe96 板按 Agilent 说明调整体积（如 Kennedy 方案 XF96 每端口 25 µL、XF24 每端口 75 µL，doi:10.17504/protocols.io.yxmvmxqq5l3p/v1）。背景孔不得有细胞，切勿触碰探头，上机前取下所有盖子，并按细胞数或蛋白量归一化。Divakaruni 等（2014）提供了参数计算、归一化及 ECAR 解读框架（由于呼吸产生的 CO₂ 也会酸化培养基，ECAR 仅为糖酵解的定性指标）。"
+  },
+  "ref": "Taanman & Mezabrovschi, protocols.io (doi:10.17504/protocols.io.14egn32kpl5d/v1); Divakaruni et al. (2014) Methods in Enzymology 547:309–354",
+  "doi": "10.1016/B978-0-12-801415-8.00016-3",
+  "usage": {
+    "en": "Real-time measurement of mitochondrial respiration (OCR) and extracellular acidification (ECAR) in adherent cells on a Seahorse XF analyzer, yielding basal, ATP-linked, maximal and spare respiratory capacity.",
+    "zh": "在 Seahorse XF 分析仪上实时检测贴壁细胞的线粒体呼吸（OCR）和细胞外酸化（ECAR），获得基础、ATP 偶联、最大及储备呼吸能力。"
+  },
+  "discipline": [
+    "cell",
+    "biochemistry"
+  ],
+  "relatedProtocols": [
+    "cell_passage",
+    "cell_counting_hemocytometer",
+    "trypan_blue_counting",
+    "mitochondria_isolation",
+    "resazurin_assay"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "2 days",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 2 days, hands-on: ~3 h",
+      "zh": "实验方案 — 2 天，实操: 约 3 h"
+    }
+  },
+  "materials": [
+    {
+      "name": "Seahorse XFp analyzer and XFp FluxPak (cell miniplates + sensor cartridges + XF Calibrant)"
+    },
+    {
+      "name": "Seahorse XF DMEM medium, pH 7.4"
+    },
+    {
+      "name": "D-glucose (2.5 M stock), sodium pyruvate (100 mM), L-glutamine (200 mM)"
+    },
+    {
+      "name": "Oligomycin A (10 mM in ethanol)"
+    },
+    {
+      "name": "FCCP (10 mM in ethanol)"
+    },
+    {
+      "name": "Rotenone and antimycin A (10 mM each in ethanol, light-protected)"
+    },
+    {
+      "name": "Hoechst 33342 (20 mM) for nuclear counting",
+      "optional": true
+    },
+    {
+      "name": "Accutase or trypsin for cell detachment"
+    },
+    {
+      "name": "0.25% Trypsin-EDTA (alternative detachment)",
+      "linkedRecipe": "edta_trypsin",
+      "optional": true
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Complete growth medium (e.g., DMEM + 10% FBS)",
+      "linkedRecipe": "complete_dmem"
+    },
+    {
+      "name": "Trypan blue 0.4% and hemocytometer/counting slides"
+    },
+    {
+      "name": "37°C non-CO₂ incubator with humidified box"
+    },
+    {
+      "name": "Cell imager (e.g., BioTek Cytation) or protein assay for normalization",
+      "optional": true
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Day 1: harvest near-confluent adherent cells (PBS rinse, Accutase 5 min 37°C), pellet 500×g 5 min RT, count with trypan blue → Seed 20,000 cells in 80 µL growth medium per XFp well (B–G); wells A and H get medium only (background) → Add 400 µL XF Calibrant to the moats of the cell miniplate; culture overnight in a CO₂ incubator → Hydrate sensor cartridge: 400 µL calibrant per moat + 200 µL per well; overnight at 37°C in a humidified non-CO₂ incubator → Switch on the XFp analyzer ≥5 h before the run (in practice the day before) → Day 2: make assay medium — XF DMEM pH 7.4 + 10 mM glucose, 1 mM pyruvate, 2 mM glutamine; warm to 37°C → Check cells under the microscope; wash twice with assay medium (leave 20 µL, add/remove 200 µL) and bring to 175 µL → Incubate the cell plate 1 h at 37°C without CO₂ → Dilute inhibitors in assay medium to 8× working stocks: oligomycin 16 µM, FCCP 13.5 µM, rotenone + antimycin A 10 µM each (+ Hoechst 33342) → Lift and reseat the hydrated cartridge to dislodge bubbles; load 25 µL/port: A oligomycin, B FCCP, C Rot/AA; D empty → FCCP titration (pilot run): test several FCCP concentrations across wells; use the lowest giving maximal OCR → Run 'Cell Mito Stress Test': calibrate cartridge (~20 min), then swap utility plate for cell plate; measure (~1 h 20 min) → Normalize: count Hoechst-stained nuclei per well (e.g., Cytation imager) or measure protein; enter in Wave → Calculate: basal, ATP-linked, proton leak, maximal, spare capacity and non-mitochondrial OCR; basal ECAR",
+      "zh": "第 1 天：收获近汇合贴壁细胞（PBS 润洗，Accutase 37°C 5 min），室温 500×g 5 min 离心，台盼蓝计数 → 每 XFp 孔（B–G）接种 2 万细胞/80 µL，A、H 孔仅加培养基作背景 → 细胞板护槽加 400 µL XF 校准液，CO₂ 培养箱过夜 → 水化探头板：护槽 400 µL + 每孔 200 µL 校准液，37°C 无 CO₂ 湿盒过夜 → 检测前 ≥5 h 开启 XFp 分析仪 → 第 2 天：配检测培养基（XF DMEM pH 7.4 + 10 mM 葡萄糖、1 mM 丙酮酸、2 mM 谷氨酰胺），37°C 预温 → 镜检后用检测培养基洗 2 次，终体积 175 µL → 37°C 无 CO₂ 孵育 1 h → 配 8× 药物：寡霉素 16 µM、FCCP 13.5 µM、鱼藤酮+抗霉素 A 各 10 µM（+Hoechst 33342） → 探头板提起复位去气泡，每孔 25 µL：A 寡霉素、B FCCP、C Rot/AA、D 空 → FCCP 滴定（预实验）：选取产生最大 OCR 的最低浓度 → 运行 Cell Mito Stress Test：校准约 20 min，换入细胞板，测量约 1 h 20 min → Hoechst 核计数或蛋白定量归一化 → 计算基础、ATP 偶联、质子漏、最大、储备呼吸及非线粒体 OCR 和基础 ECAR"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Day 1: Cell seeding and cartridge hydration",
+      "zh": "第 1 天：接种细胞与探头板水化",
+      "isHeader": true
+    },
+    {
+      "en": "Harvest two near-confluent cultures to compare: aspirate medium, rinse each flask with 5 mL PBS, add 1 mL Accutase and incubate 5 min at 37°C, then add 9 mL medium and transfer to a 50 mL tube.",
+      "zh": "收获两份接近汇合的待比较培养物：吸去培养基，每瓶用 5 mL PBS 润洗，加 1 mL Accutase 37°C 孵育 5 min，再加 9 mL 培养基并转移至 50 mL 离心管。",
+      "time": "5 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Pellet cells at 500×g for 5 min at room temperature, resuspend thoroughly in 5 mL medium and count viable cells with trypan blue (1:1) on a hemocytometer.",
+      "zh": "室温 500×g 离心 5 min，沉淀用 5 mL 培养基充分重悬，台盼蓝（1:1）血球计数板计数活细胞。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Dilute the suspension to 250 cells/µL. Seed 80 µL (20,000 cells) into wells B–D (condition 1) and E–G (condition 2) of an XFp cell culture miniplate; add 80 µL cell-free medium to background wells A and H. Optimize seeding density per cell type.",
+      "zh": "将细胞悬液稀释至 250 个/µL。在 XFp 细胞培养微孔板 B–D 孔（条件 1）和 E–G 孔（条件 2）各接种 80 µL（2 万个细胞）；背景孔 A、H 加 80 µL 无细胞培养基。接种密度须针对细胞类型优化。"
+    },
+    {
+      "en": "Fill each moat of the cell miniplate with 400 µL XF Calibrant, replace the lid and culture overnight in a 37°C CO₂ incubator.",
+      "zh": "细胞微孔板每个护槽加 400 µL XF 校准液，盖上盖子，37°C CO₂ 培养箱培养过夜。",
+      "time": "overnight",
+      "temp": "37°C, 5% CO₂"
+    },
+    {
+      "en": "Hydrate the sensor cartridge: lift the sensor cartridge (green top) off and set it upside-down without touching the sensors, fill each moat of the utility plate with 400 µL and each well with 200 µL XF Calibrant, reassemble so the sensors are submerged, and incubate overnight at 37°C in a humidified incubator without CO₂.",
+      "zh": "水化探头板：取下绿色探头板倒置放置（勿触碰探头），在底板每个护槽加 400 µL、每孔加 200 µL XF 校准液，重新组装使探头浸没，37°C 无 CO₂ 湿润培养箱过夜。",
+      "time": "overnight",
+      "temp": "37°C, no CO₂"
+    },
+    {
+      "en": "Switch on the XFp analyzer at least 5 h before the assay (the day before is simplest) so that it equilibrates at 37°C.",
+      "zh": "至少在检测前 5 h 开启 XFp 分析仪（最简便为前一天开启），使其在 37°C 平衡。"
+    },
+    {
+      "en": "Day 2: Assay medium and cell preparation",
+      "zh": "第 2 天：检测培养基与细胞准备",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare mito stress assay medium: to 20 mL Seahorse XF DMEM pH 7.4 add 80 µL 2.5 M glucose, 200 µL 100 mM sodium pyruvate and 200 µL 200 mM L-glutamine (final 10 mM, 1 mM, 2 mM). Warm to 37°C; use the same day.",
+      "zh": "配制线粒体压力测试检测培养基：向 20 mL Seahorse XF DMEM（pH 7.4）中加入 80 µL 2.5 M 葡萄糖、200 µL 100 mM 丙酮酸钠和 200 µL 200 mM L-谷氨酰胺（终浓度 10 mM、1 mM、2 mM）。37°C 预温，当天使用。",
+      "temp": "37°C"
+    },
+    {
+      "en": "Inspect the cell plate: cells healthy, attached as an even monolayer, no contamination, background wells A and H cell-free.",
+      "zh": "镜检细胞板：细胞状态良好、均匀贴壁成单层、无污染，背景孔 A、H 无细胞。"
+    },
+    {
+      "en": "Wash into assay medium: remove all but 20 µL of culture medium, gently add 200 µL assay medium and remove 200 µL; repeat once, then add 155 µL to reach 175 µL per well. Confirm under the microscope that cells were not detached.",
+      "zh": "换为检测培养基：吸去培养基仅留 20 µL，轻加 200 µL 检测培养基后吸出 200 µL；重复一次，再加 155 µL 使每孔为 175 µL。镜检确认细胞未脱落。"
+    },
+    {
+      "en": "Place the cell plate in a humidified 37°C incubator without CO₂ for 1 h before the run.",
+      "zh": "将细胞板置于 37°C 无 CO₂ 湿润培养箱中孵育 1 h 后再上机。",
+      "time": "1 h",
+      "temp": "37°C, no CO₂"
+    },
+    {
+      "en": "Day 2: Compound preparation and cartridge loading",
+      "zh": "第 2 天：药物配制与探头板加样",
+      "isHeader": true
+    },
+    {
+      "en": "Thaw 10 mM ethanol stocks of oligomycin A, FCCP, rotenone and antimycin A on ice (rotenone and antimycin A protected from light). Make 50 µM intermediates: 5 µL stock in 1 mL assay medium (oligomycin; FCCP; rotenone + antimycin A together).",
+      "zh": "冰上融化寡霉素 A、FCCP、鱼藤酮和抗霉素 A 的 10 mM 乙醇储液（鱼藤酮与抗霉素 A 避光）。配制 50 µM 中间液：5 µL 储液加入 1 mL 检测培养基（寡霉素；FCCP；鱼藤酮与抗霉素 A 合并）。",
+      "temp": "on ice"
+    },
+    {
+      "en": "Make port solutions: oligomycin 192 µL of 50 µM + 408 µL medium (16 µM); FCCP 162 µL of 50 µM + 438 µL medium (13.5 µM); Rot/AA 100 µL of 50 µM mix + 380 µL medium + 20 µL 20 mM Hoechst 33342 (10 µM each). Vortex briefly.",
+      "zh": "配制端口溶液：寡霉素 192 µL 50 µM + 408 µL 培养基（16 µM）；FCCP 162 µL 50 µM + 438 µL 培养基（13.5 µM）；Rot/AA 100 µL 50 µM 混合液 + 380 µL 培养基 + 20 µL 20 mM Hoechst 33342（各 10 µM）。短暂涡旋。"
+    },
+    {
+      "en": "FCCP titration (recommended for each new cell type/medium): in a pilot plate load port B of different wells with a series of FCCP concentrations bracketing the default (1.5 µM final) and choose the lowest concentration that gives the highest post-FCCP OCR; higher concentrations depress OCR.",
+      "zh": "FCCP 滴定（每种新细胞类型/培养基推荐进行）：在预实验板不同孔的 B 端口加入一系列围绕默认浓度（终浓度 1.5 µM）的 FCCP，选择使 FCCP 后 OCR 最高的最低浓度；浓度过高会抑制 OCR。"
+    },
+    {
+      "en": "Remove the hydrated cartridge assembly from the incubator, lift the sensor cartridge fully out of the calibrant and immediately reseat it to release bubbles formed overnight.",
+      "zh": "从培养箱取出水化好的探头板组件，将探头板完全提离校准液后立即放回，以排除过夜形成的气泡。"
+    },
+    {
+      "en": "Orient the cartridge (row letters on the left, notch bottom-left) and pipette 25 µL into all eight ports of each type: A oligomycin, B FCCP, C Rot/AA + Hoechst; leave D empty. Final well concentrations: 2 µM oligomycin, 1.5 µM FCCP, 1 µM rotenone, 1 µM antimycin A.",
+      "zh": "摆正探头板（行字母在左，缺角位于左下），用移液器向每类全部 8 个端口加 25 µL：A 寡霉素、B FCCP、C Rot/AA + Hoechst；D 留空。孔内终浓度：寡霉素 2 µM、FCCP 1.5 µM、鱼藤酮 1 µM、抗霉素 A 1 µM。"
+    },
+    {
+      "en": "Day 2: Measurement",
+      "zh": "第 2 天：上机检测",
+      "isHeader": true
+    },
+    {
+      "en": "On the analyzer select 'Cell Mito Stress Test', start the assay and load the cartridge/utility-plate assembly (lid removed) in the indicated orientation. Calibration takes ~20 min.",
+      "zh": "在分析仪上选择 “Cell Mito Stress Test”，开始检测，按提示方向放入探头板/底板组件（取下盖子）。校准约 20 min。",
+      "time": "~20 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "When prompted, replace the utility plate with the cell miniplate (lid removed). Equilibration and the basal → oligomycin → FCCP → Rot/AA measurement cycles take ~1 h 20 min.",
+      "zh": "按提示将底板替换为细胞微孔板（取下盖子）。平衡及基础 → 寡霉素 → FCCP → Rot/AA 测量循环约需 1 h 20 min。",
+      "time": "~1 h 20 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Save the data file when the run ends, following the on-screen instructions.",
+      "zh": "检测结束后按屏幕提示保存数据文件。"
+    },
+    {
+      "en": "Normalization and analysis",
+      "zh": "归一化与数据分析",
+      "isHeader": true
+    },
+    {
+      "en": "Image the plate for Hoechst-stained nuclei (e.g., BioTek Cytation, DAPI channel) and count cells per well; alternatively normalize to protein per well. Enter the values into Wave.",
+      "zh": "对板中 Hoechst 染色细胞核成像（如 BioTek Cytation，DAPI 通道）并计数每孔细胞；也可按每孔蛋白量归一化。将数值输入 Wave 软件。",
+      "time": "~10 min"
+    },
+    {
+      "en": "Derive parameters: non-mitochondrial OCR = minimum after Rot/AA; basal = baseline − non-mito; ATP-linked = baseline − post-oligomycin; proton leak = post-oligomycin − non-mito; maximal = post-FCCP − non-mito; spare capacity = maximal − basal. Report basal ECAR as a qualitative glycolysis indicator.",
+      "zh": "计算参数：非线粒体 OCR = Rot/AA 后最低值；基础呼吸 = 基线 − 非线粒体；ATP 偶联呼吸 = 基线 − 寡霉素后；质子漏 = 寡霉素后 − 非线粒体；最大呼吸 = FCCP 后 − 非线粒体；储备呼吸能力 = 最大 − 基础。基础 ECAR 作为糖酵解的定性指标报告。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 5,
+      "note": {
+        "en": "Overnight pause: seeded cells attach in the CO₂ incubator and the cartridge hydrates overnight at 37°C without CO₂; continue the next day.",
+        "zh": "过夜暂停：已接种细胞在 CO₂ 培养箱中贴壁，探头板在 37°C 无 CO₂ 条件下过夜水化；次日继续。"
+      }
+    }
+  ],
+  "duration": {
+    "total": "2 days",
+    "hands_on": "~3 h"
+  }
+}

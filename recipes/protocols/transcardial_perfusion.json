@@ -1,0 +1,341 @@
+{
+  "id": "transcardial_perfusion",
+  "name": "Transcardial Perfusion (Mouse, PBS then 4% PFA)",
+  "nameCn": "小鼠经心脏灌流固定（PBS 后 4% PFA）",
+  "category": "protocol",
+  "tags": [
+    "transcardial perfusion",
+    "perfusion fixation",
+    "mouse",
+    "PFA",
+    "paraformaldehyde",
+    "brain",
+    "histology",
+    "immunohistochemistry",
+    "ASAP"
+  ],
+  "defaultVolume": 1,
+  "unit": "sample",
+  "components": [
+    {
+      "name": "1. Prepare solutions: 1× PBS (room temperature) and 4% PFA in 1× PBS (ice-cold); set up pump in a fume hood",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "PFA is toxic and a sensitizer — prepare and perfuse in a fume hood with gloves and eye protection.",
+        "zh": "PFA 有毒且为致敏剂——须在通风橱内配制和灌流，佩戴手套和护目镜。"
+      }
+    },
+    {
+      "name": "2. Fit a gavage needle to the peristaltic pump tubing and prime the line with RT 1× PBS (no air bubbles)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Air bubbles in the line can block capillaries and give patchy fixation.",
+        "zh": "管路中的气泡会堵塞毛细血管，导致固定不均匀。"
+      }
+    },
+    {
+      "name": "3. Deeply anesthetize/overdose the mouse per approved protocol (source: sodium pentobarbitone 100 mg/kg i.p.)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "IACUC/ethics approval is mandatory. Confirm depth: no pedal withdrawal to toe and tail pinch, slow breathing.",
+        "zh": "必须获得 IACUC/伦理委员会批准。确认麻醉深度：趾及尾部夹捏无回缩反射，呼吸缓慢。"
+      }
+    },
+    {
+      "name": "4. Open the abdomen just below the rib cage (below the xiphoid process) and cut through the diaphragm",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Work quickly once the diaphragm is opened — the animal can no longer breathe.",
+        "zh": "膈肌切开后动物已无法呼吸，须迅速操作。"
+      }
+    },
+    {
+      "name": "5. Cut the rib cage along both lateral edges; reflect the sternum toward the head and hold with forceps/hemostat",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Avoid cutting the heart or lungs; keep scissor tips pointing up.",
+        "zh": "避免剪伤心脏或肺；剪刀尖朝上。"
+      }
+    },
+    {
+      "name": "6. Clamp the descending aorta with a toothless clamp (optional — restricts perfusate to the upper body/brain)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Gently move the lungs aside with a micro-spatula to reach the aorta. Toothed clamps may not fully occlude the vessel.",
+        "zh": "用微型刮勺轻推开肺以暴露主动脉。有齿夹可能无法完全阻断血管。"
+      }
+    },
+    {
+      "name": "7. Insert the needle 2–3 mm into the left ventricle through the apex; secure heart and needle with forceps",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Do not push through the septum into the right ventricle (perfusate would go to the lungs; fluid from the nose indicates this).",
+        "zh": "勿穿过室间隔进入右心室（灌流液将流入肺部；鼻孔流液即为此征象）。"
+      }
+    },
+    {
+      "name": "8. Cut the right atrium and start the pump at ~5 mL/min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "The opened right atrium is the outflow for blood and perfusate.",
+        "zh": "剪开的右心房作为血液和灌流液的流出口。"
+      }
+    },
+    {
+      "name": "9. Perfuse RT 1× PBS for 5 min until outflow runs clear and the liver blanches",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Complete blood clearance reduces autofluorescence and endogenous peroxidase background in IHC/IF.",
+        "zh": "彻底清除血液可降低 IHC/IF 中的自发荧光和内源性过氧化物酶背景。"
+      }
+    },
+    {
+      "name": "10. Crimp the tubing, switch the source to ice-cold 4% PFA without introducing air",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep the needle in place while switching.",
+        "zh": "切换时保持针头位置不动。"
+      }
+    },
+    {
+      "name": "11. Perfuse 4% PFA at ~5 mL/min for 8 min; fixation tremors appear after 1–2 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Tremors of tail/limbs and a stiff body indicate good fixation.",
+        "zh": "尾部/四肢震颤及躯体僵硬提示固定良好。"
+      }
+    },
+    {
+      "name": "12. Collect PFA run-off as hazardous waste",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Dispose of PFA according to institutional chemical-waste rules; never down the drain.",
+        "zh": "按本单位化学废弃物规定处置 PFA，严禁倒入下水道。"
+      }
+    },
+    {
+      "name": "13. Dissect the brain (or other tissue) and immerse in ice-cold 4% PFA in a 50 mL tube",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Avoid tearing the tissue on the skull/dura during removal.",
+        "zh": "取出时避免被颅骨/硬脑膜撕裂组织。"
+      }
+    },
+    {
+      "name": "14. Post-fix on a rocker at 4°C for up to 24 h, then proceed to histology",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Over-fixation can mask epitopes; keep post-fix times consistent across animals.",
+        "zh": "过度固定会掩盖抗原表位；各动物后固定时间应保持一致。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "ANIMAL WORK: this procedure must be covered by an approved institutional animal protocol (IACUC or equivalent); anesthetic/euthanasia agent, dose and route must follow that protocol (the source uses sodium pentobarbitone 100 mg/kg i.p. as a terminal overdose). Confirm deep anesthesia (no toe/tail-pinch reflex) before any incision. SAFETY: paraformaldehyde/formaldehyde is toxic, a sensitizer and a suspected carcinogen — perform the perfusion in a fume hood or downdraft table, wear gloves, lab coat and eye protection, and collect all PFA waste. Key points: prime the line with no air bubbles; place the needle in the left ventricle only 2–3 mm deep (fluid from the nose means it entered the right ventricle/lungs); PBS clears blood (5 min at ~5 mL/min), ice-cold 4% PFA fixes (8 min at ~5 mL/min); fixation tremors and body stiffness indicate successful fixation. Occluding the descending aorta directs perfusate to the upper body/brain — omit it if peripheral organs are needed. A pump-free variant using two 20 mL syringes (cold PBS then fixative) through a 23 G butterfly needle is described by Kimple (protocols.io, doi:10.17504/protocols.io.ewov18kkpgr2/v1). Keep post-fixation time consistent between animals.",
+    "zh": "动物实验：本操作必须包含在本单位批准的动物实验方案（IACUC 或同等机构）中；麻醉/安乐死药物、剂量和给药途径须遵循该方案（原方案以戊巴比妥钠 100 mg/kg 腹腔注射进行终末过量麻醉）。任何切口前须确认深度麻醉（趾/尾夹捏无反射）。安全：多聚甲醛/甲醛有毒、致敏且为疑似致癌物——须在通风橱或下吸式操作台中灌流，佩戴手套、实验服和护目镜，并收集全部 PFA 废液。要点：管路排尽气泡；针头仅插入左心室 2–3 mm（鼻孔流液说明进入右心室/肺循环）；PBS 清除血液（约 5 mL/min，5 min），冰预冷 4% PFA 固定（约 5 mL/min，8 min）；出现固定性震颤和躯体僵硬提示固定成功。阻断降主动脉可使灌流液集中于上半身/脑——如需外周器官则省略该步。Kimple 在 protocols.io 描述了无泵方法（doi:10.17504/protocols.io.ewov18kkpgr2/v1）：经 23 G 头皮针依次推注两支 20 mL 注射器（冷 PBS 后固定液）。各动物后固定时间应保持一致。"
+  },
+  "ref": "Kwan, Wright, Cottle, Rangel & Prasad, protocols.io (doi:10.17504/protocols.io.rm7vzywnxlx1/v1); Gage et al. (2012) Journal of Visualized Experiments 65:e3564",
+  "doi": "10.3791/3564",
+  "usage": {
+    "en": "Whole-animal fixation of mouse brain and other tissues by transcardial perfusion (PBS flush then 4% PFA) before immunohistochemistry, immunofluorescence or other histology.",
+    "zh": "通过经心脏灌流（先 PBS 冲洗后 4% PFA）对小鼠脑及其他组织进行整体固定，用于免疫组化、免疫荧光或其他组织学分析。"
+  },
+  "discipline": [
+    "histology",
+    "neuroscience"
+  ],
+  "relatedProtocols": [
+    "if_cryostat",
+    "ihc_paraffin_protocol",
+    "if_protocol",
+    "multiplex_if"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "~1 day (incl. 24 h post-fix)",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — ~1 day (incl. post-fix), hands-on: ~30 min per mouse",
+      "zh": "实验方案 — 约 1 天（含后固定），实操: 每只小鼠约 30 min"
+    }
+  },
+  "materials": [
+    {
+      "name": "4% Paraformaldehyde (PFA) in 1× PBS, ice-cold",
+      "linkedRecipe": "pfa_4"
+    },
+    {
+      "name": "1× PBS, pH 7.4 (room temperature)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "10× PBS stock",
+      "linkedRecipe": "pbs_10x",
+      "optional": true
+    },
+    {
+      "name": "Anesthetic/euthanasia agent per approved protocol (source: sodium pentobarbitone)"
+    },
+    {
+      "name": "Peristaltic pump with tubing and blunt gavage needle"
+    },
+    {
+      "name": "Surgical tools: scissors, fine scissors, hemostatic forceps, toothless clamp, pins"
+    },
+    {
+      "name": "1 mL syringes (for i.p. injection)"
+    },
+    {
+      "name": "50 mL sample containers for post-fixation"
+    },
+    {
+      "name": "Fume hood or downdraft perfusion station"
+    },
+    {
+      "name": "Hazardous waste container for PFA run-off"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Prepare solutions: 1× PBS (room temperature) and 4% PFA in 1× PBS (ice-cold); set up pump in a fume hood → Fit a gavage needle to the peristaltic pump tubing and prime the line with RT 1× PBS (no air bubbles) → Deeply anesthetize/overdose the mouse per approved protocol (source: sodium pentobarbitone 100 mg/kg i.p.) → Open the abdomen just below the rib cage (below the xiphoid process) and cut through the diaphragm → Cut the rib cage along both lateral edges; reflect the sternum toward the head and hold with forceps/hemostat → Clamp the descending aorta with a toothless clamp (optional — restricts perfusate to the upper body/brain) → Insert the needle 2–3 mm into the left ventricle through the apex; secure heart and needle with forceps → Cut the right atrium and start the pump at ~5 mL/min → Perfuse RT 1× PBS for 5 min until outflow runs clear and the liver blanches → Crimp the tubing, switch the source to ice-cold 4% PFA without introducing air → Perfuse 4% PFA at ~5 mL/min for 8 min; fixation tremors appear after 1–2 min → Collect PFA run-off as hazardous waste → Dissect the brain (or other tissue) and immerse in ice-cold 4% PFA in a 50 mL tube → Post-fix on a rocker at 4°C for up to 24 h, then proceed to histology",
+      "zh": "配制溶液：室温 1× PBS 与冰预冷 4% PFA（1× PBS 配制），通风橱内架设蠕动泵 → 蠕动泵管路接灌胃针，用室温 PBS 排尽气泡 → 按批准方案深度麻醉/过量麻醉（原方案：戊巴比妥钠 100 mg/kg 腹腔注射） → 剑突下横切腹壁，剪开膈肌 → 沿两侧剪开胸廓，将胸骨翻向头侧固定 → 用无齿夹阻断降主动脉（可选） → 经心尖插针入左心室 2–3 mm，镊子固定 → 剪开右心房，泵速约 5 mL/min → 室温 PBS 灌流 5 min 至流出液澄清、肝脏变白 → 夹管，无气泡切换为冰预冷 4% PFA → 4% PFA 约 5 mL/min 灌流 8 min（1–2 min 出现固定性震颤） → 收集 PFA 废液按危废处置 → 取脑并浸入 50 mL 管冰预冷 4% PFA → 4°C 摇床后固定最长 24 h，进入组织学流程"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Preparation",
+      "zh": "准备",
+      "isHeader": true
+    },
+    {
+      "en": "Confirm the procedure is covered by your institution's approved animal protocol (IACUC or equivalent), including the anesthetic/euthanasia agent and dose. All personnel must be trained.",
+      "zh": "确认该操作已包含在本单位批准的动物实验方案（IACUC 或同等机构）中，包括麻醉/安乐死药物及剂量。所有操作人员须经培训。"
+    },
+    {
+      "en": "Prepare 1× PBS (dilute 10× PBS 1:10 in water; pH 7.4) at room temperature and 4% PFA in 1× PBS, chilled on ice. Work with PFA in a fume hood.",
+      "zh": "配制室温 1× PBS（10× PBS 用水 1:10 稀释，pH 7.4）及 4% PFA（1× PBS 配制），冰上预冷。PFA 操作在通风橱内进行。",
+      "temp": "RT / ice"
+    },
+    {
+      "en": "Attach a gavage (blunt) needle to the peristaltic pump tubing and prime the tubing completely with RT 1× PBS, checking there are no air bubbles.",
+      "zh": "将灌胃针（钝头）接到蠕动泵管路上，用室温 1× PBS 充满管路，确认无气泡。",
+      "temp": "RT"
+    },
+    {
+      "en": "Anesthesia",
+      "zh": "麻醉",
+      "isHeader": true
+    },
+    {
+      "en": "Deeply anesthetize the mouse according to the approved protocol. The source protocol uses a lethal overdose of sodium pentobarbitone (100 mg/kg, i.p.).",
+      "zh": "按批准方案对小鼠实施深度麻醉。原方案采用戊巴比妥钠过量致死（100 mg/kg，腹腔注射）。"
+    },
+    {
+      "en": "Verify a surgical plane: no withdrawal reflex to toe and tail pinch and a slow respiratory rate. Do not start the incision until the animal is unresponsive.",
+      "zh": "确认达到手术麻醉深度：趾及尾部夹捏无回缩反射、呼吸频率低。动物无反应前不得开始切口。"
+    },
+    {
+      "en": "Thoracotomy",
+      "zh": "开胸",
+      "isHeader": true
+    },
+    {
+      "en": "In the fume hood, make a lateral skin/muscle incision just below the rib cage, immediately below the xiphoid process, then cut through the diaphragm to open the thoracic cavity.",
+      "zh": "在通风橱内，紧贴剑突下方沿肋弓下缘横向切开皮肤和肌层，再剪开膈肌打开胸腔。"
+    },
+    {
+      "en": "Cut through the rib cage along each lateral edge, reflect the sternum up over the head and hold it with forceps or a hemostat to expose the heart.",
+      "zh": "沿胸廓两侧边缘剪开肋骨，将胸骨向头侧翻起并用镊子或止血钳固定，暴露心脏。"
+    },
+    {
+      "en": "Optional (used in the source for brain-directed fixation): gently move the lungs aside and fully occlude the descending aorta with a toothless clamp.",
+      "zh": "可选（原方案用于集中固定脑组织）：轻轻拨开肺，用无齿夹完全阻断降主动脉。"
+    },
+    {
+      "en": "Perfusion",
+      "zh": "灌流",
+      "isHeader": true
+    },
+    {
+      "en": "Insert the needle into the apex of the heart (left ventricle), advancing 2–3 mm. Clamp heart and needle with forceps without occluding the needle tip.",
+      "zh": "将针头经心尖插入左心室，深入 2–3 mm。用镊子夹住心脏与针头，注意勿夹闭针尖。"
+    },
+    {
+      "en": "Cut the right atrium with fine scissors and immediately start the pump at approximately 5 mL/min.",
+      "zh": "用细剪剪开右心房，立即以约 5 mL/min 启动蠕动泵。",
+      "temp": "RT"
+    },
+    {
+      "en": "Perfuse with RT 1× PBS for 5 min. The outflow should become clear and the liver should blanch.",
+      "zh": "室温 1× PBS 灌流 5 min。流出液应变澄清，肝脏变白。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Crimp the tubing to prevent air entering the line and move the intake from PBS to ice-cold 4% PFA in 1× PBS.",
+      "zh": "夹住管路防止空气进入，将进液端从 PBS 转移至冰预冷 4% PFA（1× PBS 配制）。",
+      "temp": "ice"
+    },
+    {
+      "en": "Restart the pump at ~5 mL/min and perfuse PFA for 8 min. Fixation tremors should appear after 1–2 min; the body becomes stiff.",
+      "zh": "以约 5 mL/min 重新启动泵，PFA 灌流 8 min。1–2 min 后应出现固定性震颤，躯体逐渐僵硬。",
+      "time": "8 min",
+      "temp": "ice-cold perfusate"
+    },
+    {
+      "en": "Collect all PFA run-off and dispose of it as hazardous chemical waste.",
+      "zh": "收集所有 PFA 流出液，按危险化学废弃物处置。"
+    },
+    {
+      "en": "Tissue collection and post-fixation",
+      "zh": "取材与后固定",
+      "isHeader": true
+    },
+    {
+      "en": "Remove the skull carefully and excise the brain (or other tissue of interest) without tearing it on bone or dura.",
+      "zh": "小心去除颅骨，取出脑（或其他目标组织），避免被骨或硬脑膜撕裂。"
+    },
+    {
+      "en": "Immediately place the tissue in a 50 mL container filled with ice-cold 4% PFA in 1× PBS.",
+      "zh": "立即将组织放入盛有冰预冷 4% PFA（1× PBS 配制）的 50 mL 容器中。",
+      "temp": "ice"
+    },
+    {
+      "en": "Post-fix on a vertical rocker at 4°C for up to 24 h, then continue with cryoprotection/embedding and sectioning according to the downstream histology protocol.",
+      "zh": "4°C 垂直摇床后固定最长 24 h，之后按下游组织学方案进行冷冻保护/包埋和切片。",
+      "time": "≤24 h",
+      "temp": "4°C"
+    },
+    {
+      "en": "Discard used PFA solution into the appropriate chemical waste stream and clean tools and pump tubing with water.",
+      "zh": "将用过的 PFA 倒入相应化学废液桶，用水清洗器械和泵管路。"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 14,
+      "note": {
+        "en": "Tissue can remain in 4% PFA at 4°C for up to 24 h (per source) before downstream processing; avoid longer fixation to preserve antigenicity.",
+        "zh": "下游处理前组织可在 4°C 4% PFA 中保存最长 24 h（按原方案）；避免更长时间固定以保护抗原性。"
+      }
+    }
+  ],
+  "duration": {
+    "total": "~1 day (incl. 24 h post-fix)",
+    "hands_on": "~30 min per mouse"
+  }
+}
