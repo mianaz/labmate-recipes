@@ -1,0 +1,358 @@
+{
+  "id": "ms_acetone_precipitation",
+  "name": "MS Sample Preparation by Acetone Precipitation",
+  "nameCn": "丙酮沉淀法蛋白质组学样品制备",
+  "category": "protocol",
+  "discipline": ["protein"],
+  "tags": ["mass-spec", "sample-prep", "proteomics", "precipitation", "trypsin-digestion"],
+  "usage": {
+    "en": "Prepare protein samples for mass spectrometry via acetone precipitation, on-pellet LysC/trypsin digestion, and (optional) Oasis peptide clean-up. Suitable for cell pellets or tissue lysates containing 1–4% SDS.",
+    "zh": "通过丙酮沉淀、原位 LysC/胰蛋白酶酶解和可选的 Oasis 肽段脱盐，制备质谱蛋白质组学样品。适用于含 1–4% SDS 的细胞沉淀或组织裂解物。"
+  },
+  "duration": {
+    "total": "4 days (with 1 overnight acetone precipitation and 1 overnight trypsin digestion)",
+    "hands_on": "6–8 hours"
+  },
+  "materials": [
+    { "name": "1× PBS (room temperature)" },
+    { "name": "2× Lysis buffer (200 mM HEPES pH 8, 100 mM DTT, 2–8% SDS)" },
+    { "name": "200 mM IAA (iodoacetamide in water, freshly prepared)" },
+    { "name": "Ice-cold acetone (≥4 sample volumes, 4× or 8× of lysate volume)" },
+    { "name": "Ice-cold 80% acetone (≈600 µL per sample)" },
+    { "name": "1 M Guanidine HCl in 100 mM HEPES (digestion buffer)" },
+    { "name": "LysC (0.1 µg/µL working stock, enzyme:protein 1:100)" },
+    { "name": "Trypsin (0.1 µg/µL working stock, enzyme:protein 1:100, in trypsin buffer)" },
+    { "name": "10% TFA (trifluoroacetic acid in water)" },
+    { "name": "Buffer A: 0.05% formic acid in milliQ water" },
+    { "name": "Buffer B: 80% acetonitrile, 0.05% formic acid in milliQ water" },
+    { "name": "Oasis HLB 96-well plate (use only if total protein <100 µg)" },
+    { "name": "Vacuum manifold with waste and collection trays" },
+    { "name": "MS Buffer A: 5% acetonitrile, 0.1% TFA in water (final resuspension)" },
+    { "name": "iRT peptide mix (only for DIA; 1:2 dilution in iRT buffer)" },
+    { "name": "Bioruptor sonicator (Diagenode or equivalent)" },
+    { "name": "Eppendorf 5804R / 5810R refrigerated centrifuge" },
+    { "name": "Thermomixer C (37 °C, 650 rpm)" },
+    { "name": "SpeedVac concentrator" },
+    { "name": "LoBinding pipette tips" },
+    { "name": "PCR collection tubes" }
+  ],
+  "components": [
+    { "name": "1. DAY 1 — Cell lysis, denaturation, alkylation", "amount": 1, "unit": "step" },
+    { "name": "2. DAY 1 — Acetone precipitation (overnight −20 °C)", "amount": 1, "unit": "step" },
+    { "name": "3. DAY 2 — Centrifuge and collect pellet", "amount": 1, "unit": "step" },
+    { "name": "4. DAY 2 — Remove acetone (LoBinding tips)", "amount": 1, "unit": "step" },
+    { "name": "5. DAY 2 — Wash 2× with cold 80% acetone", "amount": 1, "unit": "step" },
+    { "name": "6. DAY 2 — Air-dry the pellet", "amount": 1, "unit": "step" },
+    { "name": "7. DAY 2 — On-pellet LysC + trypsin digestion", "amount": 1, "unit": "step" },
+    { "name": "8. DAY 3 — Acidify and Oasis peptide clean-up (skip if protein ≥100 µg)", "amount": 1, "unit": "step" },
+    { "name": "9. DAY 4 — Reconstitute in MS Buffer A to 1 µg/µL", "amount": 1, "unit": "step" },
+    { "name": "10. DAY 4 — Biorupting (3 cycles, 60 s on / 30 s off)", "amount": 1, "unit": "step" },
+    { "name": "11. DAY 4 — (DIA only) Spike in diluted iRT", "amount": 1, "unit": "step" },
+    { "name": "12. Store peptide samples at −20 °C or load directly onto LC-MS", "amount": 1, "unit": "step" }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Lysate can be left in acetone at −20 °C for 1–2 weeks before continuing.",
+        "zh": "裂解物可保留在 −20 °C 丙酮中 1–2 周再继续。"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "Dried peptide pellets can be stored at −20 °C before reconstitution.",
+        "zh": "干燥后的肽段可在 −20 °C 保存待复溶。"
+      }
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "**Day 1 — Lysis, denaturation, alkylation**",
+      "zh": "**第一天 — 裂解、变性、烷基化**",
+      "isHeader": true
+    },
+    {
+      "en": "Resuspend the cell pellet in the calculated volume of 1× PBS (e.g. 200 µL for 2 × 10⁶ cells). Vortex and pipette-mix for a clean suspension.",
+      "zh": "将细胞沉淀重悬于按体积计算的 1× PBS（例如 200 万细胞用 200 µL），涡旋并吹打混匀，获得均匀悬液。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add an equal volume of 2× Lysis buffer so the final mixture contains 100 mM HEPES pH 8, 50 mM DTT and 1–4% SDS (use 4% SDS with 8× acetone, 1–2% SDS with 4× acetone).",
+      "zh": "加入等体积 2× Lysis buffer，使终浓度为 100 mM HEPES pH 8、50 mM DTT 和 1–4% SDS（8× 丙酮用 4% SDS；4× 丙酮用 1–2% SDS）。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Biorupt: 10 cycles of 60 s ON / 30 s OFF at 20 °C (≈15 min total). Vortex and quick-spin — a milky suspension and visible DNA ring should appear.",
+      "zh": "超声：10 个循环（60 s ON / 30 s OFF，20 °C，约 15 分钟）。涡旋并短暂离心 — 应见乳浊液及可见 DNA 环。",
+      "time": "15 min",
+      "temp": "20 °C"
+    },
+    {
+      "en": "Boil 10 min at 95 °C (start the heater at the beginning of the previous biorupt step).",
+      "zh": "95 °C 煮沸 10 分钟（在前一步超声开始时就启动加热）。",
+      "time": "10 min",
+      "temp": "95 °C"
+    },
+    {
+      "en": "Biorupt again: 10 cycles (60 s ON / 30 s OFF at 20 °C); 3 cycles are often enough for tissue — verify DNA is sheared.",
+      "zh": "再次超声：10 个循环（60 s ON / 30 s OFF，20 °C）；组织样本通常 3 个循环即可 — 确认 DNA 已打断。",
+      "time": "15 min",
+      "temp": "20 °C"
+    },
+    {
+      "en": "Vortex and quick-spin.",
+      "zh": "涡旋混匀并短暂离心。",
+      "time": "1 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add 200 mM IAA to a final concentration of 15 mM. If DTT was omitted from the lysis buffer, first add DTT to 10 mM and incubate 15 min at 45 °C before adding IAA.",
+      "zh": "加入 200 mM IAA 储液至终浓度 15 mM。如果裂解液中无 DTT，先加 DTT 至 10 mM 并在 45 °C 孵育 15 分钟，再加 IAA。",
+      "time": "15 min",
+      "temp": "45 °C (only if adding DTT first)"
+    },
+    {
+      "en": "Incubate 30 min in the dark at room temperature to alkylate free cysteines.",
+      "zh": "室温避光孵育 30 分钟，完成半胱氨酸烷基化。",
+      "time": "30 min",
+      "temp": "RT, dark"
+    },
+    {
+      "en": "If needed, aliquot the lysate and label each tube with sample name, date and protein concentration (µg/µL). Snap-freeze any lysate leftovers in liquid nitrogen and store at −80 °C.",
+      "zh": "按需分装，并在管壁标注样品名、日期与蛋白质浓度（µg/µL）。剩余裂解物液氮速冻后 −80 °C 保存。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**Day 1 — Acetone precipitation (overnight −20 °C)**",
+      "zh": "**第一天 — 丙酮沉淀（−20 °C 过夜）**",
+      "isHeader": true
+    },
+    {
+      "en": "Add 4 or 8 volumes of ice-cold acetone to the alkylated lysate: 8× acetone when SDS is 1–2% (mild conditions or low protein), 4× acetone when SDS is 2–4%.",
+      "zh": "向烷基化后的裂解物中加入 4 或 8 倍体积预冷丙酮：SDS 1–2%（温和条件或低蛋白浓度）用 8×；SDS 2–4% 用 4×。",
+      "time": "10 min",
+      "temp": "−20 °C"
+    },
+    {
+      "en": "Vortex and quick-spin.",
+      "zh": "涡旋并短暂离心。",
+      "time": "1 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Precipitate at −20 °C overnight. The lysate can be held in acetone 1–2 weeks before continuing.",
+      "zh": "−20 °C 过夜沉淀。样品在丙酮中可保存 1–2 周再继续操作。",
+      "time": "overnight",
+      "temp": "−20 °C"
+    },
+    {
+      "en": "**Day 2 — Centrifuge, wash, dry**",
+      "zh": "**第二天 — 离心、洗涤、干燥**",
+      "isHeader": true
+    },
+    {
+      "en": "Centrifuge at 14 000 rpm, 4 °C, 30 min. For 0.5–2 mL Eppendorf tubes use 14 000 rpm (Eppendorf 5804R ≈ 20 800 × g); for 5 mL tubes use 4 000 rpm (Eppendorf 5810R).",
+      "zh": "4 °C、14 000 rpm 离心 30 分钟。0.5–2 mL Eppendorf 管使用 14 000 rpm（Eppendorf 5804R 约 20 800 × g）；5 mL 管使用 4 000 rpm（Eppendorf 5810R）。",
+      "time": "30 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Pre-load a set of LoBinding pipette tips (small volume). They give better control when aspirating acetone and prevent pellet loss during dispensing.",
+      "zh": "提前准备一盒 LoBinding 移液吸头（小体积）。使用此类吸头吸取丙酮更精准，并能避免吹打时损失沉淀。",
+      "time": "1 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Carefully aspirate and discard the acetone with LoBinding tips — keep the tip away from the pellet to avoid detachment.",
+      "zh": "用 LoBinding 吸头小心吸去丙酮 — 吸头远离沉淀，避免吸起沉淀。",
+      "time": "2 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Wash 2× with cold 80% acetone (≈300 µL per sample): add acetone, vortex, then centrifuge — 1st wash 14 000 rpm 10 min at 4 °C, 2nd wash 14 000 rpm 2 min at 4 °C.",
+      "zh": "用预冷 80% 丙酮洗 2 次（约 300 µL/样品）：加丙酮、涡旋、再离心 — 第 1 次 4 °C 14 000 rpm 10 分钟，第 2 次 4 °C 14 000 rpm 2 分钟。",
+      "time": "15 min",
+      "temp": "4 °C"
+    },
+    {
+      "en": "Air-dry the pellet: remove most of the residual acetone by pipetting, then leave the open tube on the bench a few minutes until the pellet turns pale yellow or white.",
+      "zh": "空气干燥沉淀：先尽量吸去残余丙酮，再开盖在台面上静置数分钟，直到沉淀转为浅黄或白色。",
+      "time": "5–10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "**Day 2 — On-pellet digestion (LysC + trypsin)**",
+      "zh": "**第二天 — 原位酶解（LysC + 胰蛋白酶）**",
+      "isHeader": true
+    },
+    {
+      "en": "Prepare 1 M Guanidine HCl in 100 mM HEPES (digestion buffer). Add 25 µL of digestion buffer directly onto the pellet — this is the minimum volume even for low-input samples (<25 µg total protein).",
+      "zh": "配制 1 M Guanidine HCl / 100 mM HEPES 作为酶解缓冲液。直接在沉淀上加 25 µL 缓冲液 — 这是最低上样体积（即使蛋白量 <25 µg 也用 25 µL）。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Biorupt 5 cycles (60 s ON / 30 s OFF at 20 °C) to wet and disperse the pellet.",
+      "zh": "超声 5 个循环（60 s ON / 30 s OFF，20 °C），浸湿并分散沉淀。",
+      "time": "5 min",
+      "temp": "20 °C"
+    },
+    {
+      "en": "Add LysC (0.1 µg/µL) at an enzyme:protein ratio of 1:100. Scale the volume if the sample is more concentrated.",
+      "zh": "按酶：底物 1:100 加入 LysC（0.1 µg/µL 储液）。如果样品浓度更高，按比例加酶。",
+      "time": "1 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Incubate 4 h at 37 °C with shaking at 650 rpm (first hour at 1 000 rpm) in a ThermoMixer C. LysC digestion is complete within ~30 min — the 4 h window is a safety margin.",
+      "zh": "ThermoMixer C 中 37 °C、650 rpm 孵育 4 小时（前 1 小时用 1 000 rpm）。LysC 30 分钟内已切完，4 小时为完全消化的安全冗余。",
+      "time": "4 h",
+      "temp": "37 °C"
+    },
+    {
+      "en": "Add 25 µL water plus trypsin (0.1 µg/µL) at an enzyme:protein ratio of 1:100. Dilute trypsin in its own buffer to avoid auto-digestion.",
+      "zh": "加入 25 µL 水及 0.1 µg/µL 胰蛋白酶至酶：底物 1:100。胰蛋白酶须用其配套缓冲液稀释以避免自切。",
+      "time": "1 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Incubate overnight at 37 °C with shaking at 650 rpm in the ThermoMixer C.",
+      "zh": "ThermoMixer C 中 37 °C、650 rpm 过夜酶解。",
+      "time": "overnight",
+      "temp": "37 °C"
+    },
+    {
+      "en": "**Day 3 — Acidify and Oasis peptide clean-up (optional, recommended for <100 µg)**",
+      "zh": "**第三天 — 酸化与 Oasis 肽段脱盐（可选，蛋白量 <100 µg 时建议）**",
+      "isHeader": true
+    },
+    {
+      "en": "Acidify with 10% TFA: add TFA at ≈1/20 of the sample volume. Verify acidification with pH paper — color should turn red (pH 1–2). Acidification inactivates trypsin.",
+      "zh": "用 10% TFA 酸化：加入约 1/20 样品体积的 TFA。用 pH 试纸确认 — 颜色应变红（pH 1–2）。酸化可使胰蛋白酶失活。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Prepare PCR collection tubes — label the lid and side with sample name, initials, date and protein amount. Use strip tubes for small batches and full 96-well racks for large batches.",
+      "zh": "准备 PCR 收集管 — 盖子和侧面都标注样品名、操作者、日期与蛋白量。少量用 8 连管，量多用 96 孔板架。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Assemble the vacuum manifold: waste tray inside, then the Oasis HLB 96-well plate on top. Mark the wells to be used.",
+      "zh": "组装真空歧管：先放废液槽，再装上 Oasis HLB 96 孔板；用记号笔标记要使用的孔。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Condition the wells with 3 × 100 µL Buffer B under slow vacuum (~1 drop/sec).",
+      "zh": "用 3 × 100 µL Buffer B 在慢真空下活化孔板（约 1 滴/秒）。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Equilibrate with 3 × 100 µL Buffer A under slow vacuum to prime the binding surface.",
+      "zh": "用 3 × 100 µL Buffer A 在慢真空下平衡孔板，为肽段结合做准备。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Add 100 µL Buffer A to each well but do NOT pull through — keep the bed wet for sample loading.",
+      "zh": "每孔加 100 µL Buffer A，但不要抽干 — 保持填料湿润后上样。",
+      "time": "2 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Load the digest onto the well and pull through under slow vacuum.",
+      "zh": "将酶解液上样至对应孔，慢真空抽干。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Desalt by washing wells with 3 × 100 µL Buffer A under slow vacuum.",
+      "zh": "用 3 × 100 µL Buffer A 洗孔脱盐，慢真空抽干。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Swap the waste tray for the PCR tube rack (stack three 96-well holders to reach the correct height). Verify each tube is aligned under the correct well before continuing.",
+      "zh": "把废液槽换成 PCR 管架（用三层 96 孔板架垫到合适高度）。继续前确认每支管与对应孔对齐。",
+      "time": "2 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Elute twice with 50 µL Buffer B under slow vacuum; once flow stops, increase vacuum to recover residual liquid.",
+      "zh": "用 2 × 50 µL Buffer B 慢真空洗脱；流尽后开大真空确保完全回收。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Dry the eluate in a SpeedVac at 45 °C for 30–50 min. Dried peptides can be stored at −20 °C until reconstitution.",
+      "zh": "SpeedVac 45 °C 干燥 30–50 分钟。干燥后的肽段 −20 °C 保存待复溶。",
+      "time": "30–50 min",
+      "temp": "45 °C"
+    },
+    {
+      "en": "**Day 4 — Reconstitution and final QC**",
+      "zh": "**第四天 — 复溶与最终质控**",
+      "isHeader": true
+    },
+    {
+      "en": "Reconstitute dried peptides in MS Buffer A (5% acetonitrile, 0.1% TFA in water) to a final concentration of 1 µg/µL.",
+      "zh": "用 MS Buffer A（5% 乙腈 / 0.1% TFA 水溶液）复溶肽段至终浓度 1 µg/µL。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Biorupt 3 cycles (60 s ON / 30 s OFF) to ensure complete dissolution.",
+      "zh": "超声 3 个循环（60 s ON / 30 s OFF），确保充分溶解。",
+      "time": "5 min",
+      "temp": "20 °C"
+    },
+    {
+      "en": "For DIA: to 10 µL sample (1 µg/µL) add 0.5 µL iRT peptide mix (1:2 prediluted in iRT buffer, per manufacturer's manual). Skip for DDA workflows.",
+      "zh": "DIA 流程：每 10 µL 样品（1 µg/µL）加 0.5 µL 1:2 稀释的 iRT 肽段混合物（按说明书稀释）。DDA 流程跳过此步。",
+      "time": "2 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Measure peptide concentration (e.g. NanoDrop A280 or quantitative fluorometric assay). Snap-freeze aliquots in liquid nitrogen and store at −80 °C.",
+      "zh": "测定肽段浓度（如 NanoDrop A280 或荧光定量法）。分装后液氮速冻，−80 °C 保存。",
+      "time": "10 min",
+      "temp": "RT"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Resuspend pellet in PBS → 2× lysis (SDS/DTT/HEPES) → biorupt + boil + IAA alkylation → 4–8 vol ice-cold acetone o/n at −20 °C → centrifuge (4 °C, 14 000 rpm, 30 min) → 2× wash cold 80% acetone → air-dry → on-pellet LysC 4 h + trypsin o/n (37 °C, ThermoMixer) → TFA-acidify → (optional) Oasis HLB clean-up → SpeedVac dry → reconstitute in MS Buffer A at 1 µg/µL → spike iRT for DIA",
+      "zh": "PBS 重悬细胞沉淀 → 2× 裂解（SDS/DTT/HEPES）→ 超声 + 煮沸 + IAA 烷基化 → 加 4–8 倍冰丙酮 −20 °C 过夜 → 4 °C、14 000 rpm、30 min 离心 → 80% 冰丙酮洗 2 次 → 空气干燥 → 原位 LysC 4 h + 胰蛋白酶过夜酶解（37 °C，ThermoMixer）→ TFA 酸化 →（可选）Oasis HLB 脱盐 → SpeedVac 干燥 → MS Buffer A 复溶至 1 µg/µL → DIA 加 iRT"
+    }
+  ],
+  "notes": {
+    "en": "Critical success factors: (1) SDS concentration in lysis must match the chosen acetone volume — 4× acetone with 2–4% SDS, 8× acetone with 1–2% SDS — otherwise protein recovery collapses; (2) IAA alkylation must be performed in the dark, with DTT quenched first to avoid over-alkylation; (3) LysC cuts within 30 min but the 4 h incubation guarantees completion before adding trypsin; (4) acetone washes must be brief and cold to keep the pellet attached — use LoBinding tips whenever the pellet is exposed; (5) skip the Oasis clean-up when total protein exceeds 100 µg; the LC-MS column handles the load.",
+    "zh": "关键成功因素：(1) 裂解液中 SDS 浓度必须与丙酮体积匹配 — 2–4% SDS 用 4× 丙酮，1–2% SDS 用 8× 丙酮，否则蛋白回收率会崩塌；(2) IAA 烷基化必须避光，且需先淬灭 DTT，避免过度烷基化；(3) LysC 30 分钟内切完，但保留 4 小时以确保彻底酶解，再加胰蛋白酶；(4) 丙酮洗涤要快、要冷，使用 LoBinding 吸头防止沉淀脱落；(5) 蛋白总量 >100 µg 时跳过 Oasis 脱盐，LC-MS 柱可承受。"
+  },
+  "ref": "Cirri E, Dau T, Rahnis N (2024) MS samples preparation by acetone precipitation. protocols.io",
+  "doi": "10.17504/protocols.io.81wgbz39ngpk/v1",
+  "source": "https://www.protocols.io/view/ms-samples-preparation-by-acetone-precipitation-dnvz5e76",
+  "relatedProtocols": [
+    "coip_protocol",
+    "coip_human_cells",
+    "chip_protocol",
+    "hichip_protocol",
+    "ddpcr_protocol"
+  ],
+  "storage": {
+    "temp": "−20 °C (peptide) / −80 °C (lysate)",
+    "duration": "1–2 weeks (in acetone) / months (dried peptide)",
+    "icon": "❄️",
+    "label": {
+      "en": "Protocol — 4 days, hands-on: 6–8 h",
+      "zh": "实验方案 — 4 天，实操 6–8 小时"
+    }
+  }
+}
