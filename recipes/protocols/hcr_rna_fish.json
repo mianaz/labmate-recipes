@@ -1,0 +1,392 @@
+{
+  "id": "hcr_rna_fish",
+  "name": "HCR RNA-FISH v3.0 (Tissue Sections / Fixed Cells)",
+  "nameCn": "HCR RNA-FISH v3.0（组织切片/固定细胞）",
+  "category": "protocol",
+  "tags": [
+    "HCR",
+    "RNA-FISH",
+    "in situ hybridization",
+    "hybridization chain reaction",
+    "split-initiator probes",
+    "multiplexed FISH",
+    "mouse brain",
+    "free-floating sections",
+    "smFISH",
+    "ethylene carbonate"
+  ],
+  "defaultVolume": 1,
+  "unit": "sample",
+  "components": [
+    {
+      "name": "1. Make RNase-free reagents: treat water/PBS with 1/1000 DMPC (or DEPC), stand overnight in fume hood, autoclave",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use RNase-free consumables and filter tips. DMPC is a less toxic alternative to DEPC; neither can be used on Tris-containing buffers (this protocol uses none).",
+        "zh": "使用无 RNase 耗材和带滤芯吸头。DMPC 是毒性低于 DEPC 的替代品；二者均不能处理含 Tris 的缓冲液（本方案不含 Tris）。"
+      }
+    },
+    {
+      "name": "2. Prepare buffers: hybridization (2× SSC, 10% ethylene carbonate, 10% dextran sulfate), stringent wash (2× SSC, 30% ethylene carbonate), 5× SSCT, amplification (2× SSC, 10% dextran sulfate)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Ethylene carbonate replaces formamide at the same concentration; melt it at 37°C before pipetting. Store hybridization/stringent buffers at −20°C in 10 mL aliquots.",
+        "zh": "以同浓度碳酸乙烯酯替代甲酰胺；使用前 37°C 融化。杂交缓冲液与严格洗涤液分装 10 mL，−20°C 保存。"
+      }
+    },
+    {
+      "name": "3. Start from fixed free-floating sections (30–100 µm) in RNase-free 1× PBS; transfer to 24-well plate with a paintbrush",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Sections stored in 100% ethanol at −20°C: rehydrate through 70% and 50% ethanol, then 2 × 15 min RNase-free PBS. Mounted sections (5–100 µm) also work.",
+        "zh": "若切片保存在 −20°C 100% 乙醇中：依次经 70%、50% 乙醇复水，再用无 RNase PBS 洗 2 × 15 min。贴片切片（5–100 µm）同样适用。"
+      }
+    },
+    {
+      "name": "4. Permeabilize: 500 µL PBS + 0.1% Triton X-100 (PBSTx) per well, 1 h RT with gentle shaking",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Improves reagent penetration; may be skipped for ethanol-stored tissue. Pre-warm hybridization buffer to 37°C meanwhile (1 mL per well + 20% extra).",
+        "zh": "提高试剂渗透；乙醇保存的组织可省略。同时将杂交缓冲液预热至 37°C（每孔 1 mL，多备 20%）。"
+      }
+    },
+    {
+      "name": "5. Pre-hybridize: 500 µL pre-warmed probe hybridization buffer, 1 h at 37°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Remove each solution completely before adding the next; avoid carrying tissue between wells.",
+        "zh": "每次加液前彻底吸净上一溶液；注意勿将组织带到其他孔。"
+      }
+    },
+    {
+      "name": "6. Hybridize: probes at 2 nM each in 500 µL hybridization buffer; seal plate with parafilm; overnight at 37°C",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Use ~4 nM for thick sections. Multiple probe sets can be pooled if they carry different initiators (B1–B5).",
+        "zh": "厚切片可用约 4 nM。携带不同引发序列（B1–B5）的探针组可混合同时杂交。"
+      }
+    },
+    {
+      "name": "7. Stringent washes: quick rinse with 1 mL pre-warmed stringent wash buffer, then 2 × 30 min at 37°C (1 mL each)",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Pre-warm ~3 mL per well plus 10% extra and mix well; this step removes unbound probes.",
+        "zh": "每孔预热约 3 mL（多备 10%）并充分混匀；此步去除未结合探针。"
+      }
+    },
+    {
+      "name": "8. Wash 5× SSCT (5× SSC + 0.1% Tween-20): quick rinse, then 2 × 30 min RT with shaking",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "1 mL per wash per well.",
+        "zh": "每孔每次 1 mL。"
+      }
+    },
+    {
+      "name": "9. Pre-amplify: 500 µL amplification buffer, 1 h RT",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Snap-cool hairpins during this hour (step 10).",
+        "zh": "在此 1 h 内完成发夹的快速退火（步骤 10）。"
+      }
+    },
+    {
+      "name": "10. Snap-cool hairpins: H1 and H2 in separate PCR tubes, 95°C 2 min, cool to RT in the dark ≥10 min",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "CRITICAL: never mix H1 and H2 before snap-cooling; combine them only in amplification buffer once at RT.",
+        "zh": "关键：快速退火前切勿混合 H1 和 H2；冷却至室温后再在扩增缓冲液中混合。"
+      }
+    },
+    {
+      "name": "11. Amplify: hairpins at 60 nM each in 500 µL amplification buffer (e.g. 480 µL buffer + 10 µL each 3 µM hairpin); overnight RT, dark, gentle shaking",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Keep samples protected from light from this step onward (or from the start if tissue expresses GFP/tdTomato).",
+        "zh": "从此步起避光操作（若组织表达 GFP/tdTomato 则全程避光）。"
+      }
+    },
+    {
+      "name": "12. Wash 5× SSCT: quick rinse, then 2 × 30 min RT; rinse and store in 1× PBS at 4°C, dark",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Removes excess hairpins. Samples can wait here before mounting or further staining.",
+        "zh": "去除多余发夹。样品可在此暂存，之后再封片或继续染色。"
+      }
+    },
+    {
+      "name": "13. Optional: IHC co-staining (brief 4% PFA post-fix first); nuclear stain with Hoechst 33342 or DAPI 1:10,000 in PBS, 15 min RT; 3 × 5 min PBS",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "A brief PFA post-fix helps keep the HCR signal through subsequent immunostaining.",
+        "zh": "与免疫组化联用时，先用 4% PFA 短暂后固定有助于保留 HCR 信号。"
+      }
+    },
+    {
+      "name": "14. Mount sections on slides, let dry until transparent, coverslip with ~100 µL ProLong Diamond; cure overnight RT in the dark",
+      "amount": 1,
+      "unit": "step",
+      "note": {
+        "en": "Do not over-dry: whitening edges mean the tissue is too dry. Excess cured mountant can be rinsed off under gentle running water.",
+        "zh": "勿过度干燥：组织边缘发白表示过干。固化后多余封片剂可在缓慢流水下冲去。"
+      }
+    }
+  ],
+  "notes": {
+    "en": "Third-generation in situ HCR (v3.0) uses split-initiator DNA probe pairs: only when both probes of a pair bind adjacent sites on the target RNA is a full HCR initiator formed, which then triggers enzyme-free polymerization of fluorescent hairpins H1/H2. This gives automatic background suppression, so probe sets need little optimization, and 1–5 targets (initiators B1–B5) can be detected in one round with the same two-stage protocol. This recipe follows the Coughlin (Caltech, 2026) protocols.io protocol for free-floating mouse brain sections (24-well plate, ≤12 sections per well; scale volumes by well surface area). It uses ethylene carbonate in place of formamide. Cultured cells: the Molecular Instruments v3.0 protocol for cells on an 8-well chambered slide fixes with 4% formaldehyde for 10 min at RT, permeabilizes in ice-cold 70% ethanol overnight at −20°C, then uses 300 µL volumes, 1.2 pmol of each probe set per 300 µL (overnight 37°C), 4 × 5 min probe-wash at 37°C, 2 × 5 min 5× SSCT, 30 min pre-amplification and 18 pmol of each snap-cooled hairpin per 300 µL (overnight RT for quantitative imaging). Avoid Ca²⁺/Mg²⁺ in PBS (raises autofluorescence). Safety: DEPC is toxic, so handle DEPC/DMPC in a fume hood. PFA/formaldehyde is toxic and a carcinogen. Commercial Molecular Instruments hybridization and probe-wash buffers contain formamide (reproductive toxin), so handle them in a fume hood with gloves. DAPI and Hoechst bind DNA: wear gloves.",
+    "zh": "第三代原位 HCR（v3.0）采用分裂引发序列（split-initiator）的 DNA 探针对：只有一对探针同时结合到靶 RNA 的相邻位点，才会组成完整的 HCR 引发序列，进而触发荧光发夹 H1/H2 的无酶聚合反应。因此背景被自动抑制，探针组几乎无需优化；同一两阶段流程可一次检测 1–5 个靶标（引发序列 B1–B5）。本方案依据 Coughlin（加州理工，2026）在 protocols.io 发布的小鼠脑漂浮切片方案（24 孔板，每孔 ≤12 片；其他孔板按底面积比例换算体积），以碳酸乙烯酯替代甲酰胺。培养细胞：Molecular Instruments v3.0 腔室玻片（8 孔）方案为：4% 甲醛室温固定 10 min，预冷 70% 乙醇 −20°C 透化过夜；之后每孔 300 µL，每个探针组 1.2 pmol/300 µL（37°C 过夜），37°C 探针洗涤液洗 4 × 5 min，5× SSCT 洗 2 × 5 min，预扩增 30 min，每种快速退火发夹 18 pmol/300 µL（定量成像时室温过夜）。PBS 中避免含 Ca²⁺/Mg²⁺（会增加自发荧光）。安全：DEPC 有毒，DEPC/DMPC 应在通风橱内操作；多聚甲醛/甲醛有毒、致癌；Molecular Instruments 商品化杂交液和探针洗涤液含甲酰胺（生殖毒性），须戴手套在通风橱中操作；DAPI 和 Hoechst 可结合 DNA，操作时戴手套。"
+  },
+  "ref": "Coughlin, protocols.io (doi:10.17504/protocols.io.36wgq1y65vk5/v1); Choi et al. (2018) Development 145:dev165753",
+  "doi": "10.1242/dev.165753",
+  "usage": {
+    "en": "Multiplexed, quantitative fluorescence detection of 1–5 target RNAs in fixed tissue sections (free-floating or slide-mounted mouse brain, 5–100 µm) or fixed cultured cells, with optional IHC co-staining; compatible with confocal imaging and laser capture microdissection.",
+    "zh": "在固定组织切片（漂浮或贴片小鼠脑切片，5–100 µm）或固定培养细胞中对 1–5 个靶 RNA 进行多重、定量荧光检测，可与免疫组化联用；适用于共聚焦成像和激光捕获显微切割。"
+  },
+  "discipline": [
+    "cell",
+    "rna_dna",
+    "histology"
+  ],
+  "relatedProtocols": [
+    "if_protocol",
+    "if_cryostat",
+    "multiplex_if",
+    "ihc_paraffin_protocol"
+  ],
+  "storage": {
+    "temp": "N/A",
+    "duration": "3 days",
+    "icon": "📋",
+    "label": {
+      "en": "Protocol — 3 days, hands-on: 3 hours",
+      "zh": "实验方案 — 3 天，实操: 3 小时"
+    }
+  },
+  "materials": [
+    {
+      "name": "Fixed tissue sections (free-floating 30–100 µm or slide-mounted 5–100 µm) or fixed cells"
+    },
+    {
+      "name": "HCR v3.0 split-initiator DNA probe sets (Molecular Instruments or IDT oPools)"
+    },
+    {
+      "name": "HCR hairpins H1/H2, fluorophore-labeled, 3 µM (Molecular Instruments)"
+    },
+    {
+      "name": "20× SSC, RNase-free",
+      "linkedRecipe": "ssc_20x"
+    },
+    {
+      "name": "10× PBS, RNase-free",
+      "linkedRecipe": "pbs_10x"
+    },
+    {
+      "name": "1× PBS, RNase-free",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Ethylene carbonate"
+    },
+    {
+      "name": "Dextran sulfate, 50% solution"
+    },
+    {
+      "name": "Triton X-100, 10% solution"
+    },
+    {
+      "name": "Tween-20, 10% solution"
+    },
+    {
+      "name": "DMPC or DEPC (RNase inactivation)"
+    },
+    {
+      "name": "UltraPure DNase/RNase-free water"
+    },
+    {
+      "name": "4% PFA (optional post-fix before IHC)",
+      "linkedRecipe": "pfa_4",
+      "optional": true
+    },
+    {
+      "name": "Hoechst 33342 or DAPI",
+      "linkedRecipe": "dapi_staining",
+      "optional": true
+    },
+    {
+      "name": "ProLong Diamond Antifade Mountant (or other antifade mountant)",
+      "linkedRecipe": "mounting_medium_antifade"
+    },
+    {
+      "name": "24-well plates, paintbrush, parafilm, thermocycler, 37°C incubator"
+    }
+  ],
+  "briefSteps": [
+    {
+      "en": "Prepare RNase-free buffers (ethylene carbonate hybridization/stringent wash, 5× SSCT, amplification buffer) → fixed free-floating sections in RNase-free PBS → PBSTx 1 h RT → pre-hybridize 1 h 37°C → probes 2 nM, overnight 37°C → stringent wash 2 × 30 min 37°C → 5× SSCT 2 × 30 min RT → amplification buffer 1 h RT → snap-cool H1/H2 separately (95°C 2 min, cool ≥10 min dark) → hairpins 60 nM, overnight RT dark → 5× SSCT 2 × 30 min → optional IHC / Hoechst or DAPI 1:10,000 15 min → mount in ProLong Diamond, cure overnight",
+      "zh": "配制无 RNase 缓冲液（碳酸乙烯酯杂交液/严格洗涤液、5× SSCT、扩增缓冲液） → 已固定漂浮切片置于无 RNase PBS → PBSTx 室温 1 h → 37°C 预杂交 1 h → 探针 2 nM，37°C 过夜 → 严格洗涤 37°C 2 × 30 min → 5× SSCT 室温 2 × 30 min → 扩增缓冲液室温 1 h → H1/H2 分别快速退火（95°C 2 min，避光冷却 ≥10 min） → 发夹 60 nM，室温避光过夜 → 5× SSCT 2 × 30 min → 可选免疫组化 / Hoechst 或 DAPI 1:10,000 染 15 min → ProLong Diamond 封片，固化过夜"
+    }
+  ],
+  "detailedSteps": [
+    {
+      "en": "Reagent Setup (before Day 1)",
+      "zh": "试剂准备（第 1 天前）",
+      "isHeader": true
+    },
+    {
+      "en": "Make RNase-free water and PBS: add 1 mL DMPC (or DEPC) per 1000 mL in a glass bottle, shake with the lid closed, loosen the cap and leave overnight in a fume hood (or 2 h at 37°C), then autoclave to inactivate and cool to RT. Prepare 1× PBS from RNase-free 10× PBS.",
+      "zh": "配制无 RNase 水和 PBS：在玻璃瓶中按每 1000 mL 加 1 mL DMPC（或 DEPC），拧紧瓶盖摇匀后松开瓶盖，在通风橱中放置过夜（急用时 37°C 2 h），高压灭菌使其失活并冷却至室温。用无 RNase 10× PBS 配制 1× PBS。",
+      "time": "overnight",
+      "temp": "RT"
+    },
+    {
+      "en": "PBSTx: 5 mL RNase-free 10× PBS + 500 µL 10% Triton X-100 + 44.5 mL UltraPure water (0.1% Triton X-100). Stable 3 months at RT.",
+      "zh": "PBSTx：5 mL 无 RNase 10× PBS + 500 µL 10% Triton X-100 + 44.5 mL 超纯水（Triton X-100 终浓度 0.1%）。室温可保存 3 个月。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Probe hybridization buffer (50 mL): 5 mL 20× SSC + 5 mL ethylene carbonate (melted at 37°C) + 10 mL 50% dextran sulfate + 30 mL water. Stringent wash buffer (50 mL): 5 mL 20× SSC + 15 mL ethylene carbonate + 30 mL water. Aliquot 10 mL; store at −20°C for up to a year (3 weeks at RT).",
+      "zh": "探针杂交缓冲液（50 mL）：5 mL 20× SSC + 5 mL 碳酸乙烯酯（37°C 融化）+ 10 mL 50% 硫酸葡聚糖 + 30 mL 水。严格洗涤液（50 mL）：5 mL 20× SSC + 15 mL 碳酸乙烯酯 + 30 mL 水。分装 10 mL，−20°C 可保存 1 年（室温 3 周）。",
+      "time": "20 min",
+      "temp": "RT"
+    },
+    {
+      "en": "5× SSCT wash buffer (500 mL): 125 mL 20× SSC + 5 mL 10% Tween-20 + 370 mL water (RT, 1 year). Amplification buffer (50 mL): 5 mL 20× SSC + 10 mL 50% dextran sulfate + 35 mL water (RT, 3 months).",
+      "zh": "5× SSCT 洗涤液（500 mL）：125 mL 20× SSC + 5 mL 10% Tween-20 + 370 mL 水（室温保存 1 年）。扩增缓冲液（50 mL）：5 mL 20× SSC + 10 mL 50% 硫酸葡聚糖 + 35 mL 水（室温保存 3 个月）。",
+      "time": "10 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Day 1: Permeabilization and Probe Hybridization",
+      "zh": "第 1 天：透化与探针杂交",
+      "isHeader": true
+    },
+    {
+      "en": "Pre-warm probe hybridization buffer to 37°C (1 mL per well of a 24-well plate, plus 20% extra). Using a paintbrush, move fixed free-floating sections into a fresh plate with RNase-free 1× PBS. Ethanol-stored sections: rehydrate in 70% then 50% ethanol and wash 2 × 15 min in PBS first.",
+      "zh": "将探针杂交缓冲液预热至 37°C（24 孔板每孔 1 mL，多备 20%）。用毛笔将已固定的漂浮切片转移至装有无 RNase 1× PBS 的新孔板。乙醇保存的切片需先经 70%、50% 乙醇复水，再用 PBS 洗 2 × 15 min。",
+      "time": "15 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Aspirate PBS completely and add 500 µL PBSTx per well. Incubate 1 h at RT with gentle shaking to permeabilize.",
+      "zh": "彻底吸净 PBS，每孔加 500 µL PBSTx，室温轻摇孵育 1 h 进行透化。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Remove PBSTx and add 500 µL pre-warmed probe hybridization buffer per well; equilibrate 1 h at 37°C.",
+      "zh": "吸去 PBSTx，每孔加 500 µL 预热的探针杂交缓冲液，37°C 平衡 1 h。",
+      "time": "1 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "In the last 5 min, dilute each probe set to 2 nM (up to ~4 nM for thick sections) in pre-warmed hybridization buffer; vortex and keep at 37°C. Probe sets with different initiators can be combined.",
+      "zh": "在平衡的最后 5 min，用预热杂交缓冲液将每个探针组稀释至 2 nM（厚切片可至约 4 nM），涡旋混匀后置 37°C。不同引发序列的探针组可混合使用。",
+      "time": "5 min",
+      "temp": "37°C"
+    },
+    {
+      "en": "Replace the hybridization buffer with 500 µL probe solution per well; tap the plate so sections are fully immersed, seal the edges with parafilm and incubate overnight at 37°C.",
+      "zh": "吸去杂交缓冲液，每孔加 500 µL 探针溶液；轻拍孔板使切片完全浸没，用封口膜封边，37°C 孵育过夜。",
+      "time": "overnight",
+      "temp": "37°C"
+    },
+    {
+      "en": "Day 2: Washes and HCR Amplification",
+      "zh": "第 2 天：洗涤与 HCR 扩增",
+      "isHeader": true
+    },
+    {
+      "en": "Pre-warm stringent wash buffer to 37°C (~3 mL per well + 10%), mixing a few times. Remove the probe solution, rinse once quickly with 1 mL stringent wash buffer, then wash 2 × 30 min with 1 mL at 37°C.",
+      "zh": "将严格洗涤液预热至 37°C（每孔约 3 mL，多备 10%），期间混匀数次。吸去探针溶液，用 1 mL 严格洗涤液快速漂洗一次，再于 37°C 用 1 mL 洗涤 2 × 30 min。",
+      "time": "1 h",
+      "temp": "37°C"
+    },
+    {
+      "en": "Rinse quickly with 1 mL 5× SSCT, then wash 2 × 30 min in 1 mL 5× SSCT at RT with gentle shaking.",
+      "zh": "用 1 mL 5× SSCT 快速漂洗，再于室温轻摇下用 1 mL 5× SSCT 洗涤 2 × 30 min。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Replace with 500 µL amplification buffer per well and equilibrate 1 h at RT.",
+      "zh": "换为每孔 500 µL 扩增缓冲液，室温平衡 1 h。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Meanwhile snap-cool hairpins: aliquot H1 and H2 into separate PCR tubes, heat to 95°C for 2 min in a thermocycler, then cool to RT in the dark for at least 10 min. Never mix H1 and H2 before this step.",
+      "zh": "同时进行发夹快速退火：将 H1 和 H2 分别分装于不同 PCR 管，热循环仪 95°C 加热 2 min，然后避光冷却至室温至少 10 min。此步前切勿混合 H1 与 H2。",
+      "time": "15 min",
+      "temp": "95°C"
+    },
+    {
+      "en": "Make amplification solution with each hairpin at 60 nM (per well: 480 µL amplification buffer + 10 µL H1 + 10 µL H2, both 3 µM; plus 10% extra); vortex briefly.",
+      "zh": "配制扩增溶液，每种发夹终浓度 60 nM（每孔：480 µL 扩增缓冲液 + 10 µL H1 + 10 µL H2，均为 3 µM；多备 10%），短暂涡旋混匀。",
+      "time": "5 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Replace amplification buffer with 500 µL amplification solution; tap to immerse sections, seal with parafilm, and incubate overnight at RT in the dark with gentle shaking.",
+      "zh": "吸去扩增缓冲液，加入 500 µL 扩增溶液；轻拍使切片浸没，封口膜封边，室温避光轻摇孵育过夜。",
+      "time": "overnight",
+      "temp": "RT"
+    },
+    {
+      "en": "Day 3: Washes, Counterstain and Mounting",
+      "zh": "第 3 天：洗涤、复染与封片",
+      "isHeader": true
+    },
+    {
+      "en": "Remove amplification solution, rinse quickly with 1 mL 5× SSCT, then wash 2 × 30 min in 1 mL 5× SSCT at RT with shaking. Rinse and cover with 1 mL 1× PBS; sections can be stored at 4°C in the dark.",
+      "zh": "吸去扩增溶液，用 1 mL 5× SSCT 快速漂洗，再于室温轻摇下用 1 mL 5× SSCT 洗 2 × 30 min。用 1× PBS 漂洗后加 1 mL PBS 覆盖；切片可 4°C 避光保存。",
+      "time": "1 h",
+      "temp": "RT"
+    },
+    {
+      "en": "Optional: perform IHC (brief 4% PFA post-fix first helps retain HCR signal). Counterstain nuclei with 500 µL Hoechst 33342 or DAPI (1:10,000 in PBS) for 15 min at RT, then wash 3 × 5 min with 1 mL PBS.",
+      "zh": "可选：进行免疫组化（先用 4% PFA 短暂后固定有助于保留 HCR 信号）。用 500 µL Hoechst 33342 或 DAPI（PBS 1:10,000 稀释）室温复染细胞核 15 min，再用 1 mL PBS 洗 3 × 5 min。",
+      "time": "30 min",
+      "temp": "RT"
+    },
+    {
+      "en": "Float sections onto slides with a paintbrush, blot excess PBS and let them dry until they turn transparent (not white at the edges). Apply ~100 µL ProLong Diamond near the sections, lower a coverslip without bubbles, press gently, and cure overnight at RT in the dark before imaging.",
+      "zh": "用毛笔将切片展平贴于载玻片，吸去多余 PBS，晾至组织透明（边缘不应发白）。在切片旁加约 100 µL ProLong Diamond，缓慢放下盖玻片避免气泡，轻压，室温避光固化过夜后成像。",
+      "time": "overnight",
+      "temp": "RT"
+    }
+  ],
+  "safeStops": [
+    {
+      "afterStep": 3,
+      "note": {
+        "en": "Fixed free-floating sections keep in RNase-free PBS at 4°C, or in 100% ethanol at −20°C; mounted sections at −70°C or below.",
+        "zh": "已固定漂浮切片可于 4°C 保存在无 RNase PBS 中，或于 −20°C 保存在 100% 乙醇中；贴片切片保存于 −70°C 或更低温度。"
+      }
+    },
+    {
+      "afterStep": 12,
+      "note": {
+        "en": "After post-amplification washes, sections can be stored in 1× PBS at 4°C in the dark before IHC, counterstain or mounting.",
+        "zh": "扩增后洗涤完成后，切片可置于 1× PBS 中 4°C 避光保存，之后再进行免疫组化、复染或封片。"
+      }
+    }
+  ],
+  "duration": {
+    "total": "3 days",
+    "hands_on": "3 hours"
+  }
+}
