@@ -55,19 +55,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve NaCl, KCl, Na₂HPO₄, and KH₂PO₄ in ~800 mL ddH₂O."
+      "en": "Dilute {v:100:mL} 10× PBS into {v:900:mL} ddH₂O",
+      "zh": "取 {v:100:mL} 10× PBS 加入 {v:900:mL} ddH₂O"
     },
     {
-      "step": "Adjust pH to 7.4 with HCl or NaOH."
+      "en": "Mix well, check pH (~7.4)",
+      "zh": "混匀，检查 pH（应为 ~7.4）"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Store at 4°C or room temperature."
+      "en": "Autoclave or filter-sterilize (0.22 µm) for cell culture use",
+      "zh": "若用于细胞培养需高压灭菌或 0.22 µm 过滤除菌"
     }
   ],
   "crosslinks": [
@@ -80,5 +77,28 @@
     "cell_freezing",
     "cell_thawing"
   ],
-  "relatedProtocols": ["wb_protocol", "if_protocol", "ihc_paraffin_protocol", "flow_cytometry_protocol", "cell_passage", "elisa_sandwich", "cell_freezing", "cell_thawing", "pbmc_isolation", "immunoprecipitation", "coip_protocol", "if_cryostat", "multiplex_if", "proximity_ligation_assay", "bca_protein_assay", "bradford_assay_protocol", "annexin_v_apoptosis", "cell_cycle_pi", "trypan_blue_counting", "cell_counting_hemocytometer", "tumor_dissociation"]
+  "relatedProtocols": [
+    "wb_protocol",
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "flow_cytometry_protocol",
+    "cell_passage",
+    "elisa_sandwich",
+    "cell_freezing",
+    "cell_thawing",
+    "pbmc_isolation",
+    "immunoprecipitation",
+    "coip_protocol",
+    "if_cryostat",
+    "multiplex_if",
+    "proximity_ligation_assay",
+    "bca_protein_assay",
+    "bradford_assay_protocol",
+    "annexin_v_apoptosis",
+    "cell_cycle_pi",
+    "trypan_blue_counting",
+    "cell_counting_hemocytometer",
+    "tumor_dissociation"
+  ],
+  "ph": "7.4"
 }

@@ -88,37 +88,50 @@
   },
   "materials": [
     {
-      "name": "DNA or RNA sample"
+      "name": "3 M Sodium Acetate (pH 5.2)",
+      "note": {
+        "en": "For DNA/RNA precipitation",
+        "zh": "用于DNA/RNA沉淀"
+      }
     },
     {
-      "name": "3 M sodium acetate pH 5.2"
+      "name": "7.5 M Ammonium Acetate",
+      "note": {
+        "en": "Alternative for DNA; reduces dNTP carry-over",
+        "zh": "DNA替代盐；减少dNTP残留"
+      }
     },
     {
-      "name": "100% ethanol (ice-cold)"
+      "name": "100% Ethanol",
+      "note": {
+        "en": "Molecular biology grade, pre-chilled to −20°C",
+        "zh": "分子生物学级，预冷至 −20°C"
+      }
     },
     {
-      "name": "70% ethanol (ice-cold)"
+      "name": "70% Ethanol",
+      "note": {
+        "en": "Ice-cold, for wash step",
+        "zh": "冰冷，用于洗涤步骤"
+      }
     },
     {
-      "name": "Glycogen or linear acrylamide (carrier)",
-      "optional": true
+      "name": "Glycogen (20 mg/mL)",
+      "note": {
+        "en": "Co-precipitant for low amounts",
+        "zh": "低量核酸共沉淀剂"
+      }
     },
     {
-      "name": "TE buffer or nuclease-free water",
+      "name": "TE Buffer (pH 8.0)",
       "linkedRecipe": "te"
     },
     {
-      "name": "Microcentrifuge (≥14,000 × g)"
-    },
-    {
-      "name": "−20°C or −80°C freezer"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Ethanol added to sample",
-      "condition": "−20°C or −80°C",
-      "duration": "overnight to 1 week"
+      "name": "Nuclease-free Water",
+      "note": {
+        "en": "For resuspension",
+        "zh": "用于重悬"
+      }
     }
   ],
   "usage": {
@@ -185,10 +198,17 @@
   ],
   "safeStops": [
     {
-      "afterStep": 4,
+      "afterStep": 3,
       "note": {
-        "en": "Sample in ethanol can be stored at −20°C for up to 1 week (or −80°C for up to 1 month) before centrifugation.",
-        "zh": "乙醇沉淀液可在 −20°C 保存最多 1 周（或 −80°C 保存最多 1 个月），再进行离心步骤。"
+        "en": "Sample in ethanol can be stored at −20°C overnight",
+        "zh": "乙醇中样品可 −20°C 过夜保存"
+      }
+    },
+    {
+      "afterStep": 6,
+      "note": {
+        "en": "Pellet in 70% ethanol can be stored at −20°C for weeks",
+        "zh": "沉淀在70%乙醇中可 −20°C 保存数周"
       }
     }
   ]

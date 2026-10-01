@@ -55,32 +55,55 @@
   },
   "materials": [
     {
-      "name": "Transwell inserts (8 µm pore for migration, Matrigel-coated for invasion)"
+      "name": "Transwell inserts (8 µm pore)",
+      "note": {
+        "en": "Corning #3422 or similar",
+        "zh": "Corning #3422 或类似"
+      }
     },
     {
-      "name": "24-well companion plate"
+      "name": "24-well plate",
+      "note": {
+        "en": "Companion plate",
+        "zh": "配套培养板"
+      }
     },
     {
-      "name": "Serum-free medium (upper chamber)"
+      "name": "Serum-free medium",
+      "note": {
+        "en": "Upper chamber",
+        "zh": "上室用"
+      }
     },
     {
-      "name": "Complete medium with chemoattractant (lower chamber)",
-      "linkedRecipe": "complete_dmem"
+      "name": "Complete medium (10% FBS)",
+      "linkedRecipe": "complete_dmem",
+      "note": {
+        "en": "Lower chamber chemoattractant",
+        "zh": "下室趋化因子"
+      }
     },
     {
-      "name": "Crystal violet staining solution",
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Crystal Violet (0.5%)",
       "linkedRecipe": "crystal_violet_stain"
     },
     {
-      "name": "Cotton swabs (to remove non-migrated cells)"
+      "name": "Methanol or 4% PFA",
+      "note": {
+        "en": "For fixation",
+        "zh": "用于固定"
+      }
     },
     {
-      "name": "Microscope"
-    },
-    {
-      "name": "Matrigel",
-      "linkedRecipe": "matrigel_coating",
-      "optional": true
+      "name": "Cotton swabs",
+      "note": {
+        "en": "To remove non-migrated cells",
+        "zh": "去除未迁移细胞"
+      }
     }
   ],
   "stoppingPoints": [
@@ -192,5 +215,6 @@
   "crosslinks": [
     "scratch_assay",
     "tube_formation_assay"
-  ]
+  ],
+  "volumeUnit": "assay"
 }

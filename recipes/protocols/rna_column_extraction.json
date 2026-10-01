@@ -93,39 +93,50 @@
   },
   "materials": [
     {
-      "name": "Cell pellet or homogenized tissue"
+      "name": "RNeasy Mini Kit",
+      "note": {
+        "en": "Includes RLT, RW1, RPE buffers, spin columns",
+        "zh": "含 RLT、RW1、RPE 缓冲液、离心柱"
+      }
     },
     {
-      "name": "RNA extraction kit (RNeasy, Zymo, etc.)"
+      "name": "β-Mercaptoethanol",
+      "note": {
+        "en": "Add 10 µL per 1 mL RLT before use",
+        "zh": "使用前每 1 mL RLT 加 10 µL"
+      }
     },
     {
-      "name": "Lysis buffer (from kit, guanidinium-based)"
+      "name": "DNase I Set",
+      "note": {
+        "en": "RNase-Free DNase Set (QIAGEN) or equivalent",
+        "zh": "无 RNase DNase Set（QIAGEN）或等效品"
+      }
     },
     {
-      "name": "70% ethanol (RNase-free)"
+      "name": "QIAshredder Columns",
+      "note": {
+        "en": "For homogenization (optional)",
+        "zh": "用于匀浆（可选）"
+      }
     },
     {
-      "name": "DNase I (on-column digestion)",
-      "optional": true
+      "name": "70% Ethanol",
+      "note": {
+        "en": "Prepared with RNase-free water",
+        "zh": "用无RNase水配制"
+      }
     },
     {
-      "name": "RNase-free water or DEPC water",
-      "linkedRecipe": "depc_water"
+      "name": "RNase-free Water",
+      "note": {
+        "en": "For elution",
+        "zh": "用于洗脱"
+      }
     },
     {
-      "name": "Microcentrifuge"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Cell pellet",
-      "condition": "−80°C or in RNAlater",
-      "duration": "months"
-    },
-    {
-      "afterStep": "RNA eluted",
-      "condition": "−80°C",
-      "duration": "1 year"
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
     }
   ],
   "usage": {
@@ -219,10 +230,17 @@
   ],
   "safeStops": [
     {
-      "afterStep": 9,
+      "afterStep": 0,
       "note": {
-        "en": "Eluted RNA can be stored at −80°C for up to 1 year. Aliquot into single-use volumes to avoid repeated freeze-thaw cycles.",
-        "zh": "洗脱后的 RNA 可在 −80°C 保存最多 1 年。建议分装成单次用量以避免反复冻融。"
+        "en": "Lysate in RLT can be stored at −80°C before column binding",
+        "zh": "RLT裂解液可在柱结合前 −80°C 保存"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "Purified RNA should be stored at −80°C; avoid repeated freeze-thaw",
+        "zh": "纯化RNA应 −80°C 保存；避免反复冻融"
       }
     }
   ]

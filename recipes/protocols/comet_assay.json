@@ -59,35 +59,57 @@
   },
   "materials": [
     {
-      "name": "Low-melting-point agarose"
+      "name": "Normal melting point agarose",
+      "note": {
+        "en": "1% in PBS for base layer",
+        "zh": "PBS 配制 1%，用于基底层"
+      }
     },
     {
-      "name": "Normal-melting-point agarose"
+      "name": "Low melting point agarose",
+      "note": {
+        "en": "0.5–1% in PBS, melted and cooled to 37°C",
+        "zh": "PBS 配制 0.5–1%，融化后冷却至 37°C"
+      }
     },
     {
-      "name": "1× PBS",
+      "name": "Lysis buffer",
+      "note": {
+        "en": "2.5 M NaCl, 100 mM EDTA, 10 mM Tris pH 10, 1% Triton X-100, 10% DMSO (fresh)",
+        "zh": "2.5 M NaCl, 100 mM EDTA, 10 mM Tris pH 10, 1% Triton X-100, 10% DMSO（现配）"
+      }
+    },
+    {
+      "name": "Alkaline electrophoresis buffer",
+      "note": {
+        "en": "300 mM NaOH, 1 mM EDTA, pH >13, 4°C",
+        "zh": "300 mM NaOH, 1 mM EDTA, pH >13, 4°C"
+      }
+    },
+    {
+      "name": "Neutralization buffer",
+      "note": {
+        "en": "0.4 M Tris-HCl pH 7.5",
+        "zh": "0.4 M Tris-HCl pH 7.5"
+      }
+    },
+    {
+      "name": "SYBR Gold",
+      "note": {
+        "en": "1:10,000 dilution in TE buffer",
+        "zh": "TE 缓冲液中 1:10,000 稀释"
+      }
+    },
+    {
+      "name": "Frosted-end glass slides",
+      "note": {
+        "en": "Pre-coated with NMP agarose",
+        "zh": "预包被普通琼脂糖"
+      }
+    },
+    {
+      "name": "PBS",
       "linkedRecipe": "pbs_1x"
-    },
-    {
-      "name": "Lysis buffer (2.5 M NaCl, 100 mM EDTA, 10 mM Tris, 1% Triton X-100)"
-    },
-    {
-      "name": "Alkaline electrophoresis buffer (300 mM NaOH, 1 mM EDTA)"
-    },
-    {
-      "name": "Neutralization buffer (0.4 M Tris-HCl pH 7.5)"
-    },
-    {
-      "name": "Ethidium bromide or SYBR Gold"
-    },
-    {
-      "name": "Microscope slides (frosted)"
-    },
-    {
-      "name": "Fluorescence microscope"
-    },
-    {
-      "name": "Electrophoresis tank"
     }
   ],
   "stoppingPoints": [

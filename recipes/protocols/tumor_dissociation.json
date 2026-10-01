@@ -284,24 +284,17 @@
   },
   "ref": "Lukacs et al. Nat Protoc. 2010;5(4):702-13. PMID: 20360765",
   "crosslinks": [
-    "rbc_lysis_10x",
-    "facs_buffer",
-    "complete_dmem",
-    "cite_seq_10x",
-    "pdx_implantation"
-  ],
-  "relatedProtocols": [
     "pdx_implantation",
     "facs_buffer",
     "rbc_lysis_10x"
   ],
   "storage": {
     "temp": "N/A",
-    "duration": "N/A",
+    "duration": "3–4 hours",
     "icon": "📋",
     "label": {
-      "en": "See protocol notes",
-      "zh": "见方案备注"
+      "en": "Protocol — 3–4 hours, hands-on: 1 hour",
+      "zh": "实验方案 — 3–4 hours，实操: 1 hour"
     }
   }
 }

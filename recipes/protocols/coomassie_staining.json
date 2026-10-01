@@ -66,25 +66,46 @@
   },
   "materials": [
     {
-      "name": "SDS-PAGE gel (after electrophoresis)",
-      "linkedRecipe": "sds_page_gel"
+      "name": "Coomassie Brilliant Blue R-250",
+      "note": {
+        "en": "0.1% in 50% methanol, 10% acetic acid",
+        "zh": "0.1% 溶于 50% 甲醇, 10% 乙酸"
+      }
     },
     {
-      "name": "Coomassie Blue staining solution",
-      "linkedRecipe": "coomassie_stain"
+      "name": "Fixation solution",
+      "note": {
+        "en": "50% methanol, 10% acetic acid",
+        "zh": "50% 甲醇, 10% 乙酸"
+      }
     },
     {
       "name": "Destaining solution",
-      "linkedRecipe": "coomassie_destain"
+      "note": {
+        "en": "40% methanol, 10% acetic acid",
+        "zh": "40% 甲醇, 10% 乙酸"
+      }
     },
     {
-      "name": "ddH₂O"
+      "name": "Methanol",
+      "note": {
+        "en": "ACS grade",
+        "zh": "分析纯"
+      }
     },
     {
-      "name": "Rocking platform or orbital shaker"
+      "name": "Glacial acetic acid",
+      "note": {
+        "en": "ACS grade",
+        "zh": "分析纯"
+      }
     },
     {
-      "name": "Gel imaging system"
+      "name": "SDS-PAGE gel",
+      "note": {
+        "en": "Pre-cast or hand-cast",
+        "zh": "预制或自制"
+      }
     }
   ],
   "stoppingPoints": [

@@ -50,16 +50,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Prepare 1× TBS or dilute from 10× TBS."
+      "en": "Dilute {v:100:mL} 10× TBS into {v:900:mL} ddH₂O",
+      "zh": "取 {v:100:mL} 10× TBS 加入 {v:900:mL} ddH₂O"
     },
     {
-      "step": "Add Tween-20 to 0.1% (1 mL per 1000 mL)."
+      "en": "Add {v:1:mL} Tween-20 (0.1% final)",
+      "zh": "加入 {v:1:mL} Tween-20（终浓度 0.1%）"
     },
     {
-      "step": "Mix by stirring; avoid excessive foaming."
-    },
-    {
-      "step": "Prepare fresh or store at room temperature for up to 1 week."
+      "en": "Mix well. No pH adjustment needed",
+      "zh": "充分混匀，无需调 pH"
     }
   ],
   "crosslinks": [
@@ -72,5 +72,6 @@
     "if_protocol",
     "ihc_paraffin_protocol",
     "immunoprecipitation"
-  ]
+  ],
+  "ph": "7.6"
 }

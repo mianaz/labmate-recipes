@@ -105,24 +105,33 @@
   },
   "materials": [
     {
-      "name": "Cells at 100% confluency in 6- or 12-well plates"
-    },
-    {
-      "name": "Sterile 200 µL pipette tip"
-    },
-    {
-      "name": "Complete culture medium",
+      "name": "Complete DMEM",
       "linkedRecipe": "complete_dmem"
     },
     {
-      "name": "1× PBS",
+      "name": "PBS (1×)",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Microscope with camera (phase-contrast)"
+      "name": "200 µL pipette tip (sterile)",
+      "note": {
+        "en": "For scratch",
+        "zh": "用于划痕"
+      }
     },
     {
-      "name": "Ruler or reference mark on plate"
+      "name": "Ruler or wound healing insert",
+      "note": {
+        "en": "For consistent scratch width",
+        "zh": "控制划痕宽度一致"
+      }
+    },
+    {
+      "name": "Serum-free or low-serum medium",
+      "note": {
+        "en": "To inhibit proliferation",
+        "zh": "抑制增殖"
+      }
     }
   ],
   "stoppingPoints": [],
@@ -203,5 +212,6 @@
   "usage": {
     "en": "Measure cell migration by wound healing (scratch) assay.",
     "zh": "划痕实验（wound healing）检测细胞迁移能力。"
-  }
+  },
+  "volumeUnit": "assay"
 }

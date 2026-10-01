@@ -55,7 +55,7 @@
     },
     {
       "name": "ddH₂O",
-      "amount": 0.0,
+      "amount": 0,
       "unit": "mL"
     }
   ],
@@ -82,20 +82,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve SDS in 1 M Tris-HCl pH 6.8 by warming gently."
+      "en": "Same as 2× but at double concentration",
+      "zh": "同 2× 配法，浓度翻倍"
     },
     {
-      "step": "Add glycerol and bromophenol blue; mix well."
+      "en": "Mix 1 part buffer : 3 parts sample",
+      "zh": "1 份缓冲液 : 3 份样品混合"
     },
     {
-      "step": "Add β-mercaptoethanol or DTT last.",
-      "warning": "β-mercaptoethanol is toxic — use in fume hood."
-    },
-    {
-      "step": "Bring to final volume of 10 mL with ddH₂O."
-    },
-    {
-      "step": "Aliquot and store at −20°C."
+      "en": "Boil 95°C × 5 min",
+      "zh": "95°C 煮沸 5 min"
     }
   ],
   "crosslinks": [

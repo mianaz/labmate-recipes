@@ -10,17 +10,14 @@
   "components": [
     {
       "name": "NaOH",
-      "amount": 4.0,
+      "amount": 4,
       "unit": "g",
-      "mw": 40.0,
-      "note": {
-        "en": "200 mM",
-        "zh": "200 mM"
-      }
+      "mw": 40,
+      "note": "200 mM"
     },
     {
       "name": "SDS",
-      "amount": 5.0,
+      "amount": 5,
       "unit": "g",
       "mw": 288.38,
       "note": "1%"
@@ -30,7 +27,7 @@
       "amount": 500,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to",
+        "en": "Bring to final volume",
         "zh": "定容"
       }
     }
@@ -58,17 +55,12 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve NaOH in ~400 mL ddH₂O.",
-      "warning": "NaOH is caustic — wear gloves and eye protection."
+      "en": "Dissolve NaOH and SDS in ddH₂O",
+      "zh": "将 NaOH 和 SDS 溶于 ddH₂O"
     },
     {
-      "step": "Add SDS and mix gently (avoid bubbles)."
-    },
-    {
-      "step": "Bring to final volume of 500 mL."
-    },
-    {
-      "step": "Prepare fresh or store at room temperature for up to 1 month."
+      "en": "Mix gently — do not autoclave",
+      "zh": "轻柔混匀——不需要高压灭菌"
     }
   ],
   "crosslinks": [

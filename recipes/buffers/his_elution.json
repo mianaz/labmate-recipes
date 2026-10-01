@@ -63,22 +63,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve NaH₂PO₄ and NaCl in ~400 mL ddH₂O."
+      "en": "Same as binding buffer but with 250 mM imidazole",
+      "zh": "同结合缓冲液，但咪唑浓度为 250 mM"
     },
     {
-      "step": "Add imidazole to 250–500 mM."
+      "en": "Adjust pH to 8.0 (imidazole shifts pH)",
+      "zh": "调 pH 至 8.0（咪唑会改变 pH）"
     },
     {
-      "step": "Adjust pH to 8.0 with NaOH."
-    },
-    {
-      "step": "Bring to final volume of 500 mL."
-    },
-    {
-      "step": "Filter through 0.22 µm."
-    },
-    {
-      "step": "Store at 4°C."
+      "en": "Collect 1 mL fractions, check by Bradford/SDS-PAGE",
+      "zh": "收集 1 mL 组分，Bradford/SDS-PAGE 检测"
     }
   ],
   "crosslinks": [
@@ -88,5 +82,6 @@
     "his_tag_purification",
     "bacterial_protein_expression",
     "protein_dialysis"
-  ]
+  ],
+  "ph": "8.0"
 }

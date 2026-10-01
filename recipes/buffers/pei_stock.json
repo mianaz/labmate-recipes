@@ -57,30 +57,36 @@
   ],
   "prepSteps": [
     {
-      "step": "Pour ~450 mL Milli-Q H₂O into a 500 mL glass beaker."
+      "en": "Pour ~450 mL Milli-Q H₂O into a 500 mL glass beaker.",
+      "zh": "Pour ~450 mL Milli-Q H₂O into a 500 mL glass beaker."
     },
     {
-      "step": "Add 500 mg PEI powder while stirring."
+      "en": "Add 500 mg PEI powder while stirring.",
+      "zh": "Add 500 mg PEI powder while stirring."
     },
     {
-      "step": "Add concentrated HCl dropwise to pH <2.0. Stir 2-3 hours until dissolved.",
-      "note": "~800 µL of 12 M HCl needed. Small fiber particles may remain."
+      "en": "Add concentrated HCl dropwise to pH <2.0. Stir 2-3 hours until dissolved. (~800 µL of 12 M HCl needed. Small fiber particles may remain.)",
+      "zh": "Add concentrated HCl dropwise to pH <2.0. Stir 2-3 hours until dissolved. (~800 µL of 12 M HCl needed. Small fiber particles may remain.)"
     },
     {
-      "step": "Add 10 M NaOH dropwise to pH 7.0.",
-      "note": "~500 µL needed. pH drifts rapidly — add a few drops at a time, wait, recheck."
+      "en": "Add 10 M NaOH dropwise to pH 7.0. (~500 µL needed. pH drifts rapidly — add a few drops at a time, wait, recheck.)",
+      "zh": "Add 10 M NaOH dropwise to pH 7.0. (~500 µL needed. pH drifts rapidly — add a few drops at a time, wait, recheck.)"
     },
     {
-      "step": "Allow to mix 10 min, recheck pH to ensure no drift."
+      "en": "Allow to mix 10 min, recheck pH to ensure no drift.",
+      "zh": "Allow to mix 10 min, recheck pH to ensure no drift."
     },
     {
-      "step": "Bring to 500 mL final volume with Milli-Q H₂O."
+      "en": "Bring to 500 mL final volume with Milli-Q H₂O.",
+      "zh": "Bring to 500 mL final volume with Milli-Q H₂O."
     },
     {
-      "step": "Filter-sterilize through 0.22 µm membrane."
+      "en": "Filter-sterilize through 0.22 µm membrane.",
+      "zh": "Filter-sterilize through 0.22 µm membrane."
     },
     {
-      "step": "Aliquot 500-1000 µL and store at -20°C. Discard thawed aliquot after 2 months at 4°C."
+      "en": "Aliquot 500-1000 µL and store at -20°C. Discard thawed aliquot after 2 months at 4°C.",
+      "zh": "Aliquot 500-1000 µL and store at -20°C. Discard thawed aliquot after 2 months at 4°C."
     }
   ],
   "notes": {

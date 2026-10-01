@@ -60,34 +60,60 @@
   },
   "materials": [
     {
-      "name": "sgRNA oligos (sense and antisense, phosphorylated)"
+      "name": "pX459 vector",
+      "note": {
+        "en": "Addgene #62988 (SpCas9-2A-Puro)",
+        "zh": "Addgene #62988 (SpCas9-2A-Puro)"
+      }
     },
     {
-      "name": "CRISPR vector (pX330, pLentiCRISPR, etc.)"
+      "name": "BbsI (BpiI) restriction enzyme",
+      "note": {
+        "en": "NEB #R0539 or Thermo FD1014",
+        "zh": "NEB #R0539 或 Thermo FD1014"
+      }
     },
     {
-      "name": "BbsI or BsmBI restriction enzyme"
+      "name": "T4 DNA Ligase",
+      "note": {
+        "en": "NEB #M0202",
+        "zh": "NEB #M0202"
+      }
     },
     {
-      "name": "T4 DNA ligase and buffer"
+      "name": "T4 PNK",
+      "note": {
+        "en": "NEB #M0201",
+        "zh": "NEB #M0201"
+      }
     },
     {
-      "name": "Competent cells (DH5α)"
+      "name": "sgRNA oligos",
+      "note": {
+        "en": "Custom synthesized, desalted",
+        "zh": "定制合成，脱盐纯化"
+      }
     },
     {
-      "name": "LB agar plates with appropriate antibiotic",
-      "linkedRecipe": "lb_agar"
+      "name": "DH5α competent cells",
+      "note": {
+        "en": "Or Stbl3 for lentiviral vectors",
+        "zh": "慢病毒载体用 Stbl3"
+      }
     },
     {
-      "name": "SOC medium",
-      "linkedRecipe": "soc"
+      "name": "LB + ampicillin plates",
+      "note": {
+        "en": "100 µg/mL ampicillin",
+        "zh": "100 µg/mL 氨苄青霉素"
+      }
     },
     {
-      "name": "Thermocycler"
-    },
-    {
-      "name": "T4 PNK (for oligo phosphorylation)",
-      "optional": true
+      "name": "Gel extraction kit",
+      "note": {
+        "en": "e.g., Qiagen #28704",
+        "zh": "如 Qiagen #28704"
+      }
     }
   ],
   "stoppingPoints": [

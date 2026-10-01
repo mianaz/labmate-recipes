@@ -12,7 +12,7 @@
   "components": [
     {
       "name": "BSA (bovine serum albumin, fraction V)",
-      "amount": 2.0,
+      "amount": 2,
       "unit": "mg/mL",
       "note": {
         "en": "2 mg/mL stock in ddH₂O or sample buffer; aliquot 200 µL at −20°C",
@@ -86,17 +86,20 @@
   },
   "prepSteps": [
     {
-      "step": "Prepare 2 mg/mL BSA stock: dissolve in ddH₂O or in the same buffer used for protein samples (important for matrix matching).",
-      "note": "Aliquot 200 µL per tube; freeze at -20°C. Thaw fresh for each use."
+      "en": "Prepare 2 mg/mL BSA stock: dissolve in ddH₂O or in the same buffer used for protein samples (important for matrix matching). (Aliquot 200 µL per tube; freeze at -20°C. Thaw fresh for each use.)",
+      "zh": "Prepare 2 mg/mL BSA stock: dissolve in ddH₂O or in the same buffer used for protein samples (important for matrix matching). (Aliquot 200 µL per tube; freeze at -20°C. Thaw fresh for each use.)"
     },
     {
-      "step": "Prepare dilution series in sample buffer. Pipette in duplicate or triplicate."
+      "en": "Prepare dilution series in sample buffer. Pipette in duplicate or triplicate.",
+      "zh": "Prepare dilution series in sample buffer. Pipette in duplicate or triplicate."
     },
     {
-      "step": "BCA assay: add 200 µL BCA working reagent; 37°C 30 min; read A562. Bradford: add 200 µL Bradford reagent; RT 5 min; read A595."
+      "en": "BCA assay: add 200 µL BCA working reagent; 37°C 30 min; read A562. Bradford: add 200 µL Bradford reagent; RT 5 min; read A595.",
+      "zh": "BCA assay: add 200 µL BCA working reagent; 37°C 30 min; read A562. Bradford: add 200 µL Bradford reagent; RT 5 min; read A595."
     },
     {
-      "step": "Fit linear regression (R² > 0.99) to calculate unknown protein concentration."
+      "en": "Fit linear regression (R² > 0.99) to calculate unknown protein concentration.",
+      "zh": "Fit linear regression (R² > 0.99) to calculate unknown protein concentration."
     }
   ],
   "volume": 10,

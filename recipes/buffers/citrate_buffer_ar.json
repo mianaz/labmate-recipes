@@ -13,10 +13,7 @@
       "amount": 2.94,
       "unit": "g",
       "mw": 294.1,
-      "note": {
-        "en": "10 mM",
-        "zh": "10 mM"
-      }
+      "note": "10 mM"
     },
     {
       "name": "Tween-20",
@@ -29,7 +26,7 @@
       "amount": null,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to 1000 mL",
+        "en": "Bring to 1000 mL final volume",
         "zh": "定容至 1000 mL"
       }
     }
@@ -57,19 +54,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve citric acid monohydrate in ~800 mL ddH₂O."
+      "en": "Dissolve sodium citrate in ddH₂O",
+      "zh": "将柠檬酸钠溶于 ddH₂O"
     },
     {
-      "step": "Adjust pH to 6.0 with NaOH."
+      "en": "Adjust pH to 6.0 with HCl",
+      "zh": "用 HCl 调 pH 至 6.0"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
+      "en": "Add Tween-20 to 0.05%. Top up to {v:1:L}",
+      "zh": "加 Tween-20 至 0.05%。定容至 {v:1:L}"
     },
     {
-      "step": "Add Tween-20 (0.05%) just before use."
+      "en": "For retrieval: submerge slides, microwave to boil then medium power 10–20 min",
+      "zh": "修复时: 浸没切片，微波煮沸后中火维持 10–20 min"
     },
     {
-      "step": "Can be reused 2–3 times; store at RT."
+      "en": "Cool to RT in buffer (~20 min). Then proceed to IHC staining",
+      "zh": "在缓冲液中自然冷却至室温 (~20 min)。然后进行 IHC 染色"
     }
   ],
   "crosslinks": [
@@ -79,5 +81,6 @@
     "ihc_paraffin_protocol",
     "if_cryostat",
     "multiplex_if"
-  ]
+  ],
+  "ph": "6.0"
 }

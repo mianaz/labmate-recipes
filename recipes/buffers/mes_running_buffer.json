@@ -13,44 +13,35 @@
       "amount": 195.2,
       "unit": "g",
       "mw": 195.2,
-      "note": {
-        "en": "1 M",
-        "zh": "1 M"
-      }
+      "note": "1 M"
     },
     {
       "name": "Tris base",
       "amount": 121.2,
       "unit": "g",
       "mw": 121.14,
-      "note": {
-        "en": "1 M",
-        "zh": "1 M"
-      }
+      "note": "1 M"
     },
     {
       "name": "SDS",
-      "amount": 20.0,
+      "amount": 20,
       "unit": "g",
       "mw": 288.38,
       "note": "2%"
     },
     {
       "name": "EDTA",
-      "amount": 6.0,
+      "amount": 6,
       "unit": "g",
       "mw": 292.24,
-      "note": {
-        "en": "20 mM",
-        "zh": "20 mM"
-      }
+      "note": "20 mM"
     },
     {
       "name": "ddH₂O",
       "amount": 1000,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to",
+        "en": "Bring to final volume",
         "zh": "定容"
       }
     }
@@ -78,19 +69,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve MES, Tris base, SDS, and EDTA in ~800 mL ddH₂O."
+      "en": "Weigh MES, Tris base, SDS, EDTA",
+      "zh": "称取 MES、Tris base、SDS、EDTA"
     },
     {
-      "step": "Stir until dissolved."
+      "en": "Dissolve in ~{v:800:mL} ddH₂O, bring to {v:1:L}. Do NOT adjust pH",
+      "zh": "溶于约 {v:800:mL} ddH₂O，定容至 {v:1:L}。不要调 pH"
     },
     {
-      "step": "Bring to final volume of 1000 mL with ddH₂O."
-    },
-    {
-      "step": "Do not adjust pH (should be ~7.3)."
-    },
-    {
-      "step": "Store at room temperature."
+      "en": "Dilute 1:20 to 1× before use",
+      "zh": "使用前 1:20 稀释至 1×"
     }
   ],
   "crosslinks": [
@@ -102,5 +90,6 @@
     "immunoprecipitation",
     "coomassie_staining",
     "silver_stain"
-  ]
+  ],
+  "ph": "7.3"
 }

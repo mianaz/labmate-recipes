@@ -14,10 +14,7 @@
       "name": "1. 准备 BSA 标准品稀释系列",
       "amount": 1,
       "unit": "step",
-      "note": {
-        "en": "0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL",
-        "zh": "0、25、125、250、500、750、1000、2000 µg/mL"
-      }
+      "note": "0, 25, 125, 250, 500, 750, 1000, 2000 µg/mL"
     },
     {
       "name": "2. 配制 BCA 工作液 (Reagent A:B = 50:1)",
@@ -29,7 +26,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Run 2–3 technical replicates per sample",
+        "en": "2–3 replicate wells per sample",
         "zh": "每个做 2–3 复孔"
       }
     },
@@ -43,7 +40,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Seal plate with film to prevent evaporation",
+        "en": "Seal the plate with film to prevent evaporation",
         "zh": "板封膜防蒸发"
       }
     },
@@ -62,7 +59,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Four-parameter logistic fit or linear regression",
+        "en": "Four-parameter fit or linear regression",
         "zh": "四参数拟合或线性回归"
       }
     }
@@ -82,24 +79,32 @@
   },
   "materials": [
     {
-      "name": "BCA Reagent A (bicinchoninic acid solution)"
+      "name": "BCA Protein Assay Kit",
+      "note": {
+        "en": "Contains Reagent A, Reagent B, and BSA standard (e.g., Thermo Pierce #23225)",
+        "zh": "含试剂 A、试剂 B 和 BSA 标准品（如 Thermo Pierce #23225）"
+      }
     },
     {
-      "name": "BCA Reagent B (4% CuSO₄ solution)"
+      "name": "BSA standard",
+      "note": {
+        "en": "2 mg/mL stock in appropriate buffer",
+        "zh": "适当缓冲液中的 2 mg/mL 储液"
+      }
     },
     {
-      "name": "BSA standard curve dilutions",
-      "linkedRecipe": "bsa_standard_curve"
+      "name": "96-well plate",
+      "note": {
+        "en": "Clear, flat-bottom",
+        "zh": "透明平底"
+      }
     },
     {
-      "name": "96-well plate (flat-bottom, clear)"
-    },
-    {
-      "name": "Microplate reader (562 nm)"
-    },
-    {
-      "name": "Multichannel pipette",
-      "optional": true
+      "name": "Microplate reader",
+      "note": {
+        "en": "562 nm filter",
+        "zh": "562 nm 滤光片"
+      }
     }
   ],
   "stoppingPoints": [],

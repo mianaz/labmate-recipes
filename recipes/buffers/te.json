@@ -57,19 +57,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine 10 mM Tris-HCl pH 8.0 and 1 mM EDTA in ddH₂O."
+      "en": "Mix Tris-HCl pH 8.0 stock and EDTA pH 8.0 stock",
+      "zh": "混合 Tris-HCl pH 8.0 母液和 EDTA pH 8.0 母液"
     },
     {
-      "step": "Adjust pH to 8.0 if necessary."
+      "en": "Dilute to final concentrations with ddH₂O",
+      "zh": "用 ddH₂O 稀释至终浓度"
     },
     {
-      "step": "Bring to final volume of 100 mL."
-    },
-    {
-      "step": "Autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Store at room temperature."
+      "en": "Autoclave 121°C 20 min",
+      "zh": "121°C 高压灭菌 20 min"
     }
   ],
   "crosslinks": [
@@ -89,5 +86,6 @@
     "sanger_sequencing_prep",
     "pcr_standard",
     "gel_extraction"
-  ]
+  ],
+  "ph": "8.0"
 }

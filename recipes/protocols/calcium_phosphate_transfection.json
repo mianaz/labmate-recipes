@@ -95,25 +95,46 @@
   },
   "materials": [
     {
-      "name": "Plasmid DNA (high purity, endotoxin-free)"
+      "name": "Plasmid DNA (high quality, endotoxin-free)",
+      "note": {
+        "en": "A260/280 > 1.8",
+        "zh": "A260/280 > 1.8"
+      }
     },
     {
-      "name": "2× HBS (HEPES-buffered saline, pH 7.05)"
+      "name": "2.5 M CaCl₂ (sterile, 0.22 µm filtered)",
+      "note": {
+        "en": "Prepare fresh or store -20°C",
+        "zh": "现配或 -20°C 保存"
+      }
     },
     {
-      "name": "2.5 M CaCl₂ (sterile)"
+      "name": "2× HBS (HEPES-buffered saline, pH 7.05 exactly)",
+      "note": {
+        "en": "⚠️ pH 7.05 ± 0.05 is critical",
+        "zh": "⚠️ pH 7.05 ± 0.05 是关键"
+      }
     },
     {
-      "name": "Chloroquine stock (optional)",
-      "linkedRecipe": "chloroquine_stock",
-      "optional": true
+      "name": "Sterile H₂O",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Complete DMEM",
-      "linkedRecipe": "complete_dmem"
+      "name": "Cells seeded at 50–70% confluence (day before)",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Sterile ddH₂O"
+      "name": "Complete growth medium",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     }
   ],
   "briefSteps": [
@@ -190,5 +211,6 @@
   "crosslinks": [
     "cell_transfection",
     "lentivirus_production"
-  ]
+  ],
+  "volumeUnit": "experiment (per 10 cm dish)"
 }

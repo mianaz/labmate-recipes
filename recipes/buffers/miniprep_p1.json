@@ -13,20 +13,14 @@
       "amount": 3.03,
       "unit": "g",
       "mw": 121.14,
-      "note": {
-        "en": "50 mM",
-        "zh": "50 mM"
-      }
+      "note": "50 mM"
     },
     {
       "name": "EDTA",
       "amount": 1.86,
       "unit": "g",
       "mw": 292.24,
-      "note": {
-        "en": "10 mM",
-        "zh": "10 mM"
-      }
+      "note": "10 mM"
     },
     {
       "name": "RNase A",
@@ -42,7 +36,7 @@
       "amount": 500,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to",
+        "en": "Bring to final volume",
         "zh": "定容"
       }
     }
@@ -70,19 +64,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris-HCl and EDTA in ~400 mL ddH₂O."
+      "en": "Dissolve Tris-HCl and EDTA in ddH₂O",
+      "zh": "将 Tris-HCl 和 EDTA 溶于 ddH₂O"
     },
     {
-      "step": "Adjust pH to 8.0."
+      "en": "Adjust pH to 8.0, autoclave",
+      "zh": "调 pH 至 8.0，高压灭菌"
     },
     {
-      "step": "Add RNase A to 100 µg/mL (add after autoclaving and cooling)."
+      "en": "Cool to RT, add RNase A (do NOT autoclave RNase A)",
+      "zh": "冷却至室温，加入 RNase A（不可高压灭菌 RNase A）"
     },
     {
-      "step": "Autoclave base buffer, then add RNase A."
-    },
-    {
-      "step": "Store at 4°C (RNase A is stable at 4°C for months)."
+      "en": "Store at 4°C",
+      "zh": "4°C 保存"
     }
   ],
   "crosslinks": [
@@ -95,5 +90,6 @@
     "crispr_sgrna_cloning",
     "gibson_assembly",
     "restriction_digest"
-  ]
+  ],
+  "ph": "8.0"
 }

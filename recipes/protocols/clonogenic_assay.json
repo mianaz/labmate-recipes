@@ -57,25 +57,35 @@
   },
   "materials": [
     {
-      "name": "Cells (single-cell suspension)"
+      "name": "6-well tissue culture plates",
+      "note": {
+        "en": "Tissue culture-treated",
+        "zh": "细胞培养级"
+      }
     },
     {
       "name": "Complete culture medium",
-      "linkedRecipe": "complete_dmem"
+      "note": {
+        "en": "Appropriate for cell line",
+        "zh": "适合细胞系"
+      }
     },
     {
-      "name": "6-well plates"
+      "name": "Crystal violet",
+      "note": {
+        "en": "0.5% in 25% methanol",
+        "zh": "0.5% 溶于 25% 甲醇"
+      }
     },
     {
-      "name": "Crystal violet staining solution",
-      "linkedRecipe": "crystal_violet_stain"
+      "name": "Methanol",
+      "note": {
+        "en": "For fixation",
+        "zh": "用于固定"
+      }
     },
     {
-      "name": "Methanol or 4% PFA",
-      "linkedRecipe": "pfa_4"
-    },
-    {
-      "name": "1× PBS",
+      "name": "PBS",
       "linkedRecipe": "pbs_1x"
     }
   ],

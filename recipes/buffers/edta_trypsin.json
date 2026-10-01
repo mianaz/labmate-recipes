@@ -19,17 +19,14 @@
       "amount": 0.1,
       "unit": "g",
       "mw": 380.17,
-      "note": {
-        "en": "0.53 mM",
-        "zh": "0.53 mM"
-      }
+      "note": "0.53 mM"
     },
     {
       "name": "1× PBS (Ca²⁺/Mg²⁺ free)",
       "amount": null,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to 500 mL",
+        "en": "Bring to 500 mL final volume",
         "zh": "定容至 500 mL"
       }
     }
@@ -57,16 +54,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve trypsin and EDTA in 1× PBS (Ca²⁺/Mg²⁺-free)."
+      "en": "Dissolve trypsin and EDTA·4Na in Ca²⁺/Mg²⁺-free PBS",
+      "zh": "将胰蛋白酶和 EDTA·4Na 溶于无 Ca²⁺/Mg²⁺ 的 PBS"
     },
     {
-      "step": "Filter-sterilize through 0.22 µm filter."
+      "en": "Filter-sterilize (0.22 µm)",
+      "zh": "0.22 µm 过滤除菌"
     },
     {
-      "step": "Aliquot into 50 mL tubes."
+      "en": "Aliquot 5–10 mL per tube, store -20°C",
+      "zh": "分装 5–10 mL/管，-20°C 保存"
     },
     {
-      "step": "Store at −20°C; thawed aliquot at 4°C for up to 2 weeks."
+      "en": "Pre-warm to 37°C before use. Add to washed cells for 1–5 min",
+      "zh": "使用前预热至 37°C。加至洗过的细胞上消化 1–5 min"
+    },
+    {
+      "en": "Neutralize with equal volume of serum-containing medium",
+      "zh": "加等体积含血清培养基中和"
     }
   ],
   "crosslinks": [

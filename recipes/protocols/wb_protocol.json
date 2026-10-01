@@ -114,55 +114,57 @@
   ],
   "materials": [
     {
-      "name": "RIPA lysis buffer",
+      "name": "RIPA Buffer",
       "linkedRecipe": "ripa"
     },
     {
-      "name": "Laemmli sample buffer (2× or 4×)",
+      "name": "Laemmli Buffer (2×)",
       "linkedRecipe": "laemmli_2x"
     },
     {
-      "name": "SDS-PAGE gel",
-      "linkedRecipe": "sds_page_gel"
-    },
-    {
-      "name": "Running buffer",
+      "name": "Running Buffer (1×)",
       "linkedRecipe": "running_buffer"
     },
     {
-      "name": "Transfer buffer",
+      "name": "Transfer Buffer",
       "linkedRecipe": "transfer_buffer"
     },
     {
-      "name": "PVDF or nitrocellulose membrane"
-    },
-    {
-      "name": "Blocking buffer (5% milk or BSA in TBST)",
-      "linkedRecipe": "blocking_milk"
-    },
-    {
-      "name": "TBST wash buffer",
+      "name": "TBST",
       "linkedRecipe": "tbst"
     },
     {
-      "name": "Primary antibody"
+      "name": "5% Milk Blocking",
+      "linkedRecipe": "blocking_milk"
     },
     {
-      "name": "HRP-conjugated secondary antibody"
+      "name": "5% BSA Blocking",
+      "linkedRecipe": "blocking_bsa"
+    },
+    {
+      "name": "Stripping Buffer",
+      "linkedRecipe": "strip_buffer"
+    },
+    {
+      "name": "PVDF/NC membrane",
+      "note": {
+        "en": "PVDF: activate in methanol",
+        "zh": "PVDF: 甲醇活化"
+      }
     },
     {
       "name": "ECL substrate",
-      "linkedRecipe": "ecl_enhanced"
+      "note": {
+        "en": "Commercial kit",
+        "zh": "商品化试剂盒"
+      }
     },
     {
-      "name": "Ponceau S stain",
-      "linkedRecipe": "ponceau_s",
-      "optional": true
-    },
-    {
-      "name": "Stripping buffer",
-      "linkedRecipe": "strip_buffer",
-      "optional": true
+      "name": "Protein ladder",
+      "note": {
+        "en": "Pre-stained, 10–250 kDa",
+        "zh": "预染 Marker, 10–250 kDa"
+      }
     }
   ],
   "usage": {
@@ -287,5 +289,6 @@
         "zh": "一抗孵育完成后，膜在 TBST 中 4°C 最多可放置 24 h 再进行二抗步骤。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment"
 }

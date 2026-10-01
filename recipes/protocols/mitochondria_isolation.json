@@ -182,29 +182,58 @@
   },
   "materials": [
     {
-      "name": "Cells or tissue (>10⁸ cells or >0.5 g tissue)"
+      "name": "Mannitol",
+      "note": {
+        "en": "220 mM in isolation buffer",
+        "zh": "分离缓冲液中220 mM"
+      }
     },
     {
-      "name": "Mitochondria isolation buffer",
-      "linkedRecipe": "mitochondria_buffer"
+      "name": "Sucrose",
+      "note": {
+        "en": "70 mM in isolation buffer",
+        "zh": "分离缓冲液中70 mM"
+      }
     },
     {
-      "name": "Sucrose gradient solutions",
-      "linkedRecipe": "sucrose_gradient_buffer",
-      "optional": true
+      "name": "HEPES buffer (1 M, pH 7.4)",
+      "linkedRecipe": "hepes_buffer"
     },
     {
-      "name": "Dounce homogenizer (tight-fitting pestle)"
+      "name": "EGTA (0.5 M stock)",
+      "note": {
+        "en": "pH adjusted to 7.0 with NaOH",
+        "zh": "用NaOH调pH至7.0"
+      }
     },
     {
-      "name": "Refrigerated centrifuge (600–10,000 × g)"
+      "name": "BSA (fatty acid-free)",
+      "note": {
+        "en": "Sigma A7030, 0.2% in isolation buffer",
+        "zh": "Sigma A7030，分离缓冲液中0.2%"
+      }
     },
     {
-      "name": "Protease inhibitor cocktail"
+      "name": "Protease inhibitor cocktail",
+      "note": {
+        "en": "Roche cOmplete EDTA-free",
+        "zh": "Roche cOmplete 无EDTA"
+      }
     },
     {
-      "name": "BSA (fatty-acid-free, 0.1%)",
-      "optional": true
+      "name": "Dounce homogenizer",
+      "note": {
+        "en": "2 mL or 7 mL, tight-fitting pestle (B pestle)",
+        "zh": "2 mL或7 mL，紧密研杵（B型研杵）"
+      }
+    },
+    {
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "Bradford assay reagent",
+      "linkedRecipe": "bradford_assay_protocol"
     }
   ],
   "stoppingPoints": [

@@ -82,20 +82,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve SDS in 1 M Tris-HCl pH 6.8 by warming gently."
+      "en": "Mix Tris-HCl pH 6.8, glycerol, SDS, and bromophenol blue",
+      "zh": "混合 Tris-HCl pH 6.8、甘油、SDS 和溴酚蓝"
     },
     {
-      "step": "Add glycerol and bromophenol blue; mix well."
+      "en": "Heat gently to dissolve SDS if needed (do NOT boil)",
+      "zh": "必要时轻微加热溶解 SDS（不要煮沸）"
     },
     {
-      "step": "Add β-mercaptoethanol last.",
-      "warning": "β-mercaptoethanol is toxic and volatile — use in fume hood."
+      "en": "Aliquot 0.5–1 mL per tube, store at -20°C",
+      "zh": "分装 0.5–1 mL/管，-20°C 保存"
     },
     {
-      "step": "Bring to final volume of 10 mL with ddH₂O."
+      "en": "Before use: add 5% β-mercaptoethanol or 100 mM DTT",
+      "zh": "使用前加入 5% β-巯基乙醇或 100 mM DTT"
     },
     {
-      "step": "Aliquot 0.5–1 mL per tube and store at −20°C."
+      "en": "Mix 1:1 with protein sample, boil 95°C × 5 min",
+      "zh": "与蛋白样品 1:1 混合，95°C 煮沸 5 min"
     }
   ],
   "crosslinks": [

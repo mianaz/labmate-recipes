@@ -143,29 +143,88 @@
   ],
   "materials": [
     {
-      "name": "Total RNA (100 ng – 1 µg, RIN ≥ 7)"
+      "name": "Total RNA (RIN ≥ 7)",
+      "note": {
+        "en": "100 ng – 1 µg, DNase-treated",
+        "zh": "100 ng - 1 µg，DNase处理过"
+      }
     },
     {
-      "name": "mRNA enrichment beads (poly-dT) or rRNA depletion kit"
+      "name": "Oligo-dT magnetic beads",
+      "note": {
+        "en": "NEBNext Poly(A) or Illumina",
+        "zh": "NEBNext Poly(A)或Illumina"
+      }
     },
     {
-      "name": "Reverse transcriptase and random primers"
+      "name": "SuperScript III/IV reverse transcriptase",
+      "note": {
+        "en": "Invitrogen 18080093",
+        "zh": "Invitrogen 18080093"
+      }
     },
     {
-      "name": "Second-strand synthesis reagents"
+      "name": "Random hexamer primers",
+      "note": {
+        "en": "50 µM stock",
+        "zh": "50 µM储液"
+      }
     },
     {
-      "name": "End repair, A-tailing, and adapter ligation reagents"
+      "name": "dNTP mix (10 mM each)",
+      "note": {
+        "en": "Include dUTP for strand-specific",
+        "zh": "链特异性方案含dUTP"
+      }
     },
     {
-      "name": "PCR master mix for library amplification"
+      "name": "AMPure XP beads",
+      "note": {
+        "en": "Beckman Coulter A63881",
+        "zh": "Beckman Coulter A63881"
+      }
     },
     {
-      "name": "AMPure XP beads (size selection)"
+      "name": "Indexed sequencing adapters (UDI)",
+      "note": {
+        "en": "Illumina TruSeq or NEBNext",
+        "zh": "Illumina TruSeq或NEBNext"
+      }
     },
     {
-      "name": "Bioanalyzer or TapeStation (QC)",
-      "optional": true
+      "name": "T4 DNA Ligase",
+      "note": {
+        "en": "NEB M0202 or included in kit",
+        "zh": "NEB M0202或试剂盒中包含"
+      }
+    },
+    {
+      "name": "High-fidelity PCR master mix",
+      "note": {
+        "en": "KAPA HiFi or NEBNext Q5",
+        "zh": "KAPA HiFi或NEBNext Q5"
+      }
+    },
+    {
+      "name": "Qubit dsDNA HS kit",
+      "note": {
+        "en": "For final library quantification",
+        "zh": "用于最终文库定量"
+      }
+    },
+    {
+      "name": "RNase inhibitor",
+      "note": {
+        "en": "Murine RNase inhibitor, 40 U/µL",
+        "zh": "鼠RNase抑制剂，40 U/µL"
+      }
+    },
+    {
+      "name": "Bioanalyzer/TapeStation",
+      "note": {
+        "en": "For RNA QC and library size",
+        "zh": "用于RNA质控和文库大小评估"
+      }
     }
   ],
   "usage": {

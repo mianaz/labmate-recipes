@@ -13,10 +13,7 @@
       "name": "Paraformaldehyde",
       "amount": 20,
       "unit": "g",
-      "note": {
-        "en": "4% (w/v)",
-        "zh": "4% (w/v)"
-      }
+      "note": "4% (w/v)"
     },
     {
       "name": "1× PBS",
@@ -57,23 +54,28 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Heat ~400 mL PBS to 60°C on hotplate in fume hood.",
-      "warning": "Paraformaldehyde is toxic and a fixative — work in fume hood, wear gloves."
+      "en": "⚠️ Work in fume hood! PFA is toxic",
+      "zh": "⚠️ 在通风橱内操作！PFA 有毒"
     },
     {
-      "step": "Add PFA powder and stir until dissolved (add 1–2 drops NaOH to help)."
+      "en": "Heat PBS to 60°C (do NOT boil)",
+      "zh": "将 PBS 加热至 60°C（不要煮沸）"
     },
     {
-      "step": "Cool to room temperature."
+      "en": "Add PFA powder, stir until dissolved",
+      "zh": "加入 PFA 粉末，搅拌至溶解"
     },
     {
-      "step": "Adjust pH to 7.2–7.4 with HCl."
+      "en": "Add 1–2 drops 1N NaOH to clear solution",
+      "zh": "滴加 1–2 滴 1N NaOH 使溶液变澄清"
     },
     {
-      "step": "Filter through 0.22 µm."
+      "en": "Cool to RT, adjust pH to 7.2–7.4 with HCl",
+      "zh": "冷却至室温，用 HCl 调 pH 至 7.2–7.4"
     },
     {
-      "step": "Aliquot and store at −20°C; thawed aliquot at 4°C for 1 week."
+      "en": "Filter (0.22 µm), aliquot, freeze at -20°C",
+      "zh": "0.22 µm 过滤，分装，-20°C 冻存"
     }
   ],
   "crosslinks": [
@@ -92,5 +94,6 @@
     "if_cryostat",
     "multiplex_if",
     "chip_protocol"
-  ]
+  ],
+  "ph": "7.4"
 }

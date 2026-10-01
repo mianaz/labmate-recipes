@@ -119,11 +119,8 @@ node qc-llm.js new_protocol      # review one
 node qc-llm.js --staged          # review all staged changes
 node qc-llm.js --last-commit     # review what was just committed
 
-# 3. Build the dist
-node merge-recipes.js
-
-# 4. Push to GitHub (if all green)
-git add -A && git commit -m "..." && git push origin main
+# 3. Push the recipe files (if all green) — CI rebuilds and signs dist/
+git add recipes/ && git commit -m "..." && git push origin main
 ```
 
 If step 1 reports errors, fix them before step 2. If step 2 reports `BLOCKER` issues, do not push.

@@ -285,33 +285,54 @@
   ],
   "materials": [
     {
-      "name": "Bacterial lysate (His-tagged protein)"
+      "name": "Ni-NTA agarose",
+      "note": {
+        "en": "Qiagen 30210 or Cytiva",
+        "zh": "Qiagen 30210或Cytiva"
+      }
     },
     {
-      "name": "Ni-NTA agarose or magnetic beads"
+      "name": "Imidazole",
+      "note": {
+        "en": "Sigma I5513, prepare stocks in water pH-adjusted to 8.0",
+        "zh": "Sigma I5513，用水配制储液并调pH至8.0"
+      }
     },
     {
-      "name": "His binding buffer",
-      "linkedRecipe": "his_binding"
+      "name": "Lysozyme",
+      "note": {
+        "en": "1 mg/mL final in lysis buffer",
+        "zh": "裂解缓冲液中终浓度1 mg/mL"
+      }
     },
     {
-      "name": "His wash buffer (20–40 mM imidazole)",
-      "linkedRecipe": "imac_wash_highsalt"
+      "name": "Protease inhibitor cocktail",
+      "note": {
+        "en": "EDTA-free (EDTA strips Ni²⁺)",
+        "zh": "无EDTA（EDTA会螯合Ni²⁺）"
+      }
     },
     {
-      "name": "His elution buffer (250–500 mM imidazole)",
-      "linkedRecipe": "his_elution"
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Protease inhibitor cocktail"
+      "name": "SDS-PAGE gel",
+      "linkedRecipe": "sds_page_gel"
     },
     {
-      "name": "SDS-PAGE gel for analysis",
-      "linkedRecipe": "sds_page_gel",
-      "optional": true
+      "name": "PD-10 desalting column",
+      "note": {
+        "en": "Cytiva 17-0851-01",
+        "zh": "Cytiva 17-0851-01"
+      }
     },
     {
-      "name": "Gravity column or spin column"
+      "name": "Glycerol (molecular biology grade)",
+      "note": {
+        "en": "For storage buffer",
+        "zh": "用于储存缓冲液"
+      }
     }
   ],
   "usage": {

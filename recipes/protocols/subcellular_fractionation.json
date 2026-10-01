@@ -184,7 +184,7 @@
     "wb_protocol"
   ],
   "ref": "Dignam et al. (1983) Nucleic Acids Res 11:1475; Herrmann et al. (2018) Nat Protoc 13:2548",
-  "doi": "10.1016/j.xpro.2021.100450",
+  "doi": "10.1093/nar/11.5.1475",
   "discipline": [
     "cell"
   ],
@@ -194,34 +194,69 @@
   },
   "materials": [
     {
-      "name": "Cells (>10⁷)"
+      "name": "HEPES buffer (1 M, pH 7.9)",
+      "linkedRecipe": "hepes_buffer"
     },
     {
-      "name": "Cytoplasmic extraction buffer A",
-      "linkedRecipe": "nuc_cyt_a"
+      "name": "KCl (1 M stock)",
+      "note": {
+        "en": "For cytoplasmic buffer",
+        "zh": "用于胞浆缓冲液"
+      }
     },
     {
-      "name": "Nuclear extraction buffer B",
-      "linkedRecipe": "nuc_cyt_b"
+      "name": "NaCl (5 M stock)",
+      "note": {
+        "en": "For nuclear extraction buffer",
+        "zh": "用于核提取缓冲液"
+      }
     },
     {
-      "name": "Protease inhibitor cocktail"
+      "name": "NP-40 (IGEPAL CA-630, 10%)",
+      "note": {
+        "en": "Sigma I8896",
+        "zh": "Sigma I8896"
+      }
     },
     {
-      "name": "Phosphatase inhibitors",
-      "linkedRecipe": "phosphatase_inhibitor_na3vo4",
-      "optional": true
+      "name": "DTT (1 M stock)",
+      "note": {
+        "en": "Store -20°C in aliquots",
+        "zh": "分装-20°C保存"
+      }
     },
     {
-      "name": "1× PBS",
+      "name": "PMSF (100 mM in isopropanol)",
+      "note": {
+        "en": "Add fresh — t½ ~30 min in aqueous solution",
+        "zh": "新鲜加入——水溶液中半衰期~30分钟"
+      }
+    },
+    {
+      "name": "Protease inhibitor cocktail",
+      "note": {
+        "en": "Roche cOmplete EDTA-free",
+        "zh": "Roche cOmplete 无EDTA"
+      }
+    },
+    {
+      "name": "Micrococcal Nuclease",
+      "note": {
+        "en": "NEB M0247S (optional, for chromatin fraction)",
+        "zh": "NEB M0247S（可选，用于染色质组分）"
+      }
+    },
+    {
+      "name": "PBS (1×)",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Microcentrifuge (4°C)"
+      "name": "SDS-PAGE gel",
+      "linkedRecipe": "sds_page_gel"
     },
     {
-      "name": "Laemmli sample buffer",
-      "linkedRecipe": "laemmli_2x"
+      "name": "Bradford assay reagent",
+      "linkedRecipe": "bradford_assay_protocol"
     }
   ],
   "stoppingPoints": [

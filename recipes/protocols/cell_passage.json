@@ -25,17 +25,14 @@
       "name": "3. PBS 洗涤 1–2 次 (去除血清)",
       "amount": 1,
       "unit": "step",
-      "note": {
-        "en": "T75: 10 mL; 6-well: 2 mL",
-        "zh": "T75：10 mL；6 孔板：2 mL"
-      }
+      "note": "T75: 10 mL; 6-well: 2 mL"
     },
     {
       "name": "4. 加胰酶-EDTA (0.05–0.25%)",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "T75: 2–3 mL; ensure even coverage of flask surface",
+        "en": "T75: 2–3 mL; cover the bottom evenly",
         "zh": "T75: 2–3 mL; 均匀覆盖底面"
       }
     },
@@ -44,7 +41,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Tap flask gently; confirm detachment under microscope",
+        "en": "Tap the flask wall; confirm detachment under microscope",
         "zh": "轻拍瓶壁, 镜下确认脱落"
       }
     },
@@ -62,7 +59,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Avoid over-pipetting and bubble formation",
+        "en": "Avoid excessive pipetting and bubble formation",
         "zh": "避免过度吹打和气泡"
       }
     },
@@ -71,7 +68,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Common split ratios: 1:3–1:10; record passage number",
+        "en": "Common splitting ratios: 1:3–1:10; record passage number",
         "zh": "常用传代比: 1:3–1:10; 记录代数"
       }
     },
@@ -79,10 +76,7 @@
       "name": "9. 补足培养基, 标记, 放入培养箱",
       "amount": 1,
       "unit": "step",
-      "note": {
-        "en": "37°C, 5% CO₂",
-        "zh": "37°C，5% CO₂"
-      }
+      "note": "37°C, 5% CO₂"
     }
   ],
   "notes": {
@@ -99,26 +93,29 @@
   },
   "materials": [
     {
-      "name": "Complete culture medium",
-      "linkedRecipe": "complete_dmem"
+      "name": "0.05% Trypsin-EDTA",
+      "note": {
+        "en": "Pre-warmed to 37°C; for sensitive cells use TrypLE or Accutase",
+        "zh": "预热至 37°C；敏感细胞用 TrypLE 或 Accutase"
+      }
     },
     {
-      "name": "EDTA-trypsin (0.05–0.25%)",
-      "linkedRecipe": "edta_trypsin"
-    },
-    {
-      "name": "1× PBS (Ca²⁺/Mg²⁺-free)",
+      "name": "PBS (Ca²⁺/Mg²⁺-free)",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Culture flasks or dishes"
+      "name": "Complete culture medium",
+      "note": {
+        "en": "DMEM/RPMI + 10% FBS + 1% Pen/Strep, appropriate for cell line",
+        "zh": "DMEM/RPMI + 10% FBS + 1% 青链霉素，适合细胞系"
+      }
     },
     {
-      "name": "Centrifuge (300 × g)"
-    },
-    {
-      "name": "Hemocytometer or cell counter",
-      "optional": true
+      "name": "Culture flasks",
+      "note": {
+        "en": "T-25 or T-75, tissue culture-treated",
+        "zh": "T-25 或 T-75，细胞培养级"
+      }
     }
   ],
   "briefSteps": [

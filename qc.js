@@ -150,6 +150,15 @@ function checkProtocol(recipe, file, flag) {
 
   if (!recipe.safeStops || recipe.safeStops.length === 0) {
     flag('info', 'No safeStops — add pause points for multi-day protocols');
+  } else {
+    // The app's recipe page reads safeStops[].note[lang] directly.
+    recipe.safeStops.forEach((st, i) => {
+      if (st == null || st.afterStep == null) flag('errors', `safeStops[${i}] has no afterStep`);
+      const n = st && st.note;
+      if (!n || typeof n !== 'object' || !String(n.en || '').trim() || !String(n.zh || '').trim()) {
+        flag('errors', `safeStops[${i}] needs a bilingual note {en, zh}`);
+      }
+    });
   }
 
   if (!recipe.duration || !recipe.duration.total) {
@@ -232,6 +241,14 @@ function checkReagent(recipe, file, cat, flag) {
 
   if (!recipe.prepSteps || recipe.prepSteps.length === 0) {
     flag('info', `${cat} has no prepSteps — add preparation instructions`);
+  } else if (typeof vol === 'number' && (recipe.volumeUnit || 'mL') === 'mL') {
+    // "Bring to final volume of 500 mL" under a 100 mL recipe contradicts it.
+    const text = recipe.prepSteps.map((ps) => (ps && (ps.en || ps.step)) || '').join(' ');
+    const m = text.match(/(?:final volume(?: of)?|bring (?:up )?to|make up to|q\.?s\.? to)\s*(\d+(?:\.\d+)?)\s*(mL|ml|L|l)\b/i);
+    if (m) {
+      const ml = parseFloat(m[1]) * (/^l$/i.test(m[2]) ? 1000 : 1);
+      if (ml !== vol) flag('warnings', `prepSteps say final volume ${m[1]} ${m[2]} but the recipe volume is ${vol} mL`);
+    }
   }
 }
 
@@ -407,6 +424,23 @@ function main() {
     }
   }
 
+  // Links to other recipes must exist — checked against the whole library,
+  // even when only some recipes are being QC'd.
+  const allIds = new Set(listAllRecipes().filter((r) => r.data && r.data.id).map((r) => r.data.id));
+  const linkIssues = (recipe) => {
+    const out = [];
+    const links = [...(recipe.crosslinks || []), ...(recipe.relatedProtocols || [])];
+    for (const id of new Set(links)) if (!allIds.has(id)) out.push({ level: 'ERROR', msg: `links to unknown recipe "${id}"` });
+    for (const list of ['crosslinks', 'relatedProtocols']) {
+      const l = recipe[list] || [];
+      if (new Set(l).size !== l.length) out.push({ level: 'WARN', msg: `${list} lists a recipe twice` });
+    }
+    for (const c of [...(recipe.components || []), ...(recipe.materials || [])]) {
+      if (c && c.linkedRecipe && !allIds.has(c.linkedRecipe)) out.push({ level: 'ERROR', msg: `linkedRecipe "${c.linkedRecipe}" does not exist` });
+    }
+    return out;
+  };
+
   // Skip ones with parse errors for now
   const results = [];
   for (const r of toCheck) {
@@ -417,7 +451,9 @@ function main() {
       });
       continue;
     }
-    results.push({ ...r, issues: checkRecipe(r.data, r.file) });
+    const issues = checkRecipe(r.data, r.file);
+    for (const li of linkIssues(r.data)) issues[li.level === 'ERROR' ? 'errors' : 'warnings'].push({ ...li, file: path.basename(r.file) });
+    results.push({ ...r, issues });
   }
 
   // Sort: errors first, then warnings, then info

@@ -43,17 +43,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Thaw Matrigel on ice at 4°C overnight (keep cold at all times).",
-      "warning": "Matrigel gels above 10°C — keep everything pre-chilled."
+      "en": "Thaw Matrigel stock overnight at 4°C on ice (NEVER at RT)",
+      "zh": "4°C 冰上过夜解冻 Matrigel 母液（绝不在室温解冻）"
     },
     {
-      "step": "Dilute Matrigel in cold serum-free medium to desired concentration."
+      "en": "Dilute 1:8 in ice-cold serum-free medium using pre-chilled tips",
+      "zh": "用预冷枪头在冰冷无血清培养基中 1:8 稀释"
     },
     {
-      "step": "Coat plates immediately; incubate at 37°C for 30–60 min."
-    },
-    {
-      "step": "Aspirate excess and use directly or store coated plates at 4°C for up to 1 week."
+      "en": "Apply 50 µL per Transwell insert. Incubate 1-2h at 37°C to solidify",
+      "zh": "每个 Transwell 加 50 µL。37°C 孵育 1-2h 凝固"
     }
   ],
   "crosslinks": [

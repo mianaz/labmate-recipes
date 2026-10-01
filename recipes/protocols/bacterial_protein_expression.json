@@ -119,40 +119,78 @@
     "total": "2–3 days",
     "hands_on": "4 hours"
   },
-  "stoppingPoints": [
-    {
-      "afterStep": "Cell harvest — pellet frozen",
-      "condition": "−80°C",
-      "duration": "6 months"
-    }
-  ],
   "materials": [
     {
-      "name": "Expression plasmid (pET, pGEX, etc.) in BL21(DE3) or similar"
+      "name": "BL21(DE3) Competent Cells",
+      "note": {
+        "en": "Or Rosetta/SHuffle as needed",
+        "zh": "或按需用 Rosetta/SHuffle"
+      }
     },
     {
-      "name": "LB or TB medium",
+      "name": "Expression Plasmid",
+      "note": {
+        "en": "pET, pGEX, pMAL series, etc.",
+        "zh": "pET、pGEX、pMAL 系列等"
+      }
+    },
+    {
+      "name": "LB Medium",
       "linkedRecipe": "lb"
     },
     {
-      "name": "IPTG stock (1 M)"
+      "name": "2×YT or TB Medium",
+      "linkedRecipe": "2yt_media"
     },
     {
-      "name": "Appropriate antibiotic"
+      "name": "Antibiotic Stock",
+      "note": {
+        "en": "Match to plasmid resistance marker",
+        "zh": "与质粒抗性标记匹配"
+      }
     },
     {
-      "name": "Shaking incubator (37°C and 16–18°C)"
+      "name": "IPTG (1 M stock)",
+      "note": {
+        "en": "Filter-sterilized, store at −20°C",
+        "zh": "过滤除菌，−20°C 保存"
+      }
     },
     {
-      "name": "Spectrophotometer (OD₆₀₀)"
+      "name": "Lysis Buffer",
+      "note": {
+        "en": "50 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole (for His-tag)",
+        "zh": "50 mM Tris pH 8.0, 300 mM NaCl, 10 mM 咪唑（His-tag）"
+      }
     },
     {
-      "name": "Centrifuge (6,000 × g)"
+      "name": "Lysozyme",
+      "note": {
+        "en": "1 mg/mL final",
+        "zh": "终浓度 1 mg/mL"
+      }
     },
     {
-      "name": "SDS-PAGE gel for expression check",
-      "linkedRecipe": "sds_page_gel",
-      "optional": true
+      "name": "PMSF (100 mM stock in isopropanol)",
+      "note": {
+        "en": "Add fresh, 1 mM final",
+        "zh": "现配现用，终浓度 1 mM"
+      }
+    },
+    {
+      "name": "Protease Inhibitor Cocktail",
+      "note": {
+        "en": "EDTA-free for IMAC purification",
+        "zh": "无EDTA，用于IMAC纯化"
+      }
+    },
+    {
+      "name": "Ni-NTA Resin",
+      "linkedRecipe": "his_binding"
+    },
+    {
+      "name": "1× Laemmli Buffer",
+      "linkedRecipe": "laemmli_2x"
     }
   ],
   "usage": {
@@ -237,17 +275,31 @@
   ],
   "safeStops": [
     {
-      "afterStep": 1,
+      "afterStep": 0,
       "note": {
-        "en": "Transformed colonies on plates can be stored at 4°C (sealed) for up to 1 week before continuing.",
-        "zh": "转化平板上的菌落密封后可 4°C 保存最多 1 周后继续。"
+        "en": "Transformation plates at 4°C for up to 1 week",
+        "zh": "转化平板4°C保存最长1周"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Expression can proceed overnight at 16°C for soluble protein",
+        "zh": "可溶蛋白可16°C过夜表达"
       }
     },
     {
       "afterStep": 8,
       "note": {
-        "en": "Harvested cell pellets can be snap-frozen and stored at −80°C for up to 6 months before lysis and purification.",
-        "zh": "收集的菌体沉淀可速冻后 −80°C 保存最多 6 个月，再进行裂解和纯化。"
+        "en": "Cell pellet can be flash-frozen and stored at −80°C for weeks",
+        "zh": "菌体可速冻后 −80°C 保存数周"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "Clarified lysate can be stored at −80°C briefly if needed",
+        "zh": "澄清裂解液如需可短期 −80°C 保存"
       }
     }
   ]

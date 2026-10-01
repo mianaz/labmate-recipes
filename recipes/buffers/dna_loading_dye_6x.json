@@ -56,16 +56,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve bromophenol blue and xylene cyanol in ddH₂O."
+      "en": "Dissolve Bromophenol Blue and Xylene Cyanol in ddH₂O",
+      "zh": "将溴酚蓝和二甲苯青 FF 溶于 ddH₂O"
     },
     {
-      "step": "Add glycerol and mix thoroughly."
+      "en": "Add glycerol to 30% final",
+      "zh": "加甘油至终浓度 30%"
     },
     {
-      "step": "Bring to final volume of 10 mL."
+      "en": "Mix well. Aliquot and store at 4°C or -20°C",
+      "zh": "充分混匀。分装后 4°C 或 -20°C 保存"
     },
     {
-      "step": "Aliquot and store at −20°C or 4°C."
+      "en": "Use 1 µL per 5 µL DNA sample",
+      "zh": "每 5 µL DNA 样品加 1 µL"
     }
   ],
   "crosslinks": [

@@ -13,20 +13,14 @@
       "amount": 10.46,
       "unit": "g",
       "mw": 209.26,
-      "note": {
-        "en": "50 mM",
-        "zh": "50 mM"
-      }
+      "note": "50 mM"
     },
     {
       "name": "Tris base",
       "amount": 6.06,
       "unit": "g",
       "mw": 121.14,
-      "note": {
-        "en": "50 mM",
-        "zh": "50 mM"
-      }
+      "note": "50 mM"
     },
     {
       "name": "SDS",
@@ -40,17 +34,14 @@
       "amount": 0.3,
       "unit": "g",
       "mw": 292.24,
-      "note": {
-        "en": "1 mM",
-        "zh": "1 mM"
-      }
+      "note": "1 mM"
     },
     {
       "name": "ddH₂O",
       "amount": null,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to 1000 mL",
+        "en": "Bring to 1000 mL final volume",
         "zh": "定容至 1000 mL"
       }
     }
@@ -79,16 +70,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve MOPS, Tris base, SDS, and EDTA in ~800 mL ddH₂O."
+      "en": "Weigh MOPS, Tris base, SDS, EDTA",
+      "zh": "称取 MOPS、Tris base、SDS、EDTA"
     },
     {
-      "step": "Stir until dissolved (do not pH adjust)."
+      "en": "Dissolve in ~{v:800:mL} ddH₂O. Do NOT adjust pH",
+      "zh": "溶于约 {v:800:mL} ddH₂O。不需调 pH"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
+      "en": "Top up to {v:1000:mL} for 1× working solution",
+      "zh": "定容至 {v:1000:mL} 得 1× 工作液"
     },
     {
-      "step": "Store at room temperature."
+      "en": "For 20× stock: multiply all amounts by 20, dissolve in {v:1:L}",
+      "zh": "配 20× 浓缩液: 所有量 ×20，溶于 {v:1:L}"
     }
   ],
   "crosslinks": [
@@ -100,5 +95,6 @@
     "immunoprecipitation",
     "coomassie_staining",
     "silver_stain"
-  ]
+  ],
+  "ph": "7.7"
 }

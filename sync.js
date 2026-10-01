@@ -36,16 +36,8 @@ function readHTML() {
   return fs.readFileSync(HTML_PATH, 'utf8');
 }
 
-function writeHTML(content) {
-  fs.writeFileSync(HTML_PATH, content, 'utf8');
-}
-
 function readRecipesJSON() {
   return JSON.parse(fs.readFileSync(RECIPES_JSON_PATH, 'utf8'));
-}
-
-function writeRecipesJSON(recipes) {
-  fs.writeFileSync(RECIPES_JSON_PATH, JSON.stringify(recipes, null, 2) + '\n', 'utf8');
 }
 
 function readLiveRecipesSource() {
@@ -65,24 +57,6 @@ function readLiveRecipesSource() {
   };
 }
 
-function writeLiveRecipesSource(source, recipes) {
-  if (source.mode === 'json') {
-    writeRecipesJSON(recipes);
-    return;
-  }
-
-  const recipesJS = 'const RECIPES = [\n' +
-    recipes.map(r => '  ' + recipeToJS(r, '  ')).join(',\n') +
-    '\n];';
-
-  const newHTML = source.html.slice(0, source.startIdx) + recipesJS + source.html.slice(source.endIdx);
-  writeHTML(newHTML);
-}
-
-/**
- * Parse the `const RECIPES = [...]` array from the HTML.
- * Returns { startIdx, endIdx, recipes[] }
- */
 function extractRecipesFromHTML(html) {
   const marker = 'const RECIPES = [';
   const startIdx = html.indexOf(marker);
@@ -149,10 +123,6 @@ function readRepoRecipes() {
 /**
  * Convert a recipe object to JS source (with unquoted keys for readability)
  */
-function recipeToJS(recipe, indent = '  ') {
-  return formatJSObject(recipe, indent, 1);
-}
-
 function formatJSObject(obj, baseIndent, level) {
   if (obj === null || obj === undefined) return 'null';
   if (typeof obj === 'boolean') return String(obj);
@@ -260,113 +230,6 @@ function cmdDiff() {
   return { onlyWeb, onlyRepo, changed };
 }
 
-function cmdImport() {
-  console.log('🔄 Importing repo recipes → web app...\n');
-
-  const liveSource = readLiveRecipesSource();
-  const { recipes: webRecipes } = liveSource;
-  const repoRecipes = readRepoRecipes();
-
-  const webMap = new Map(webRecipes.map(r => [r.id, r]));
-  const repoMap = new Map(repoRecipes.map(r => [r.id, r]));
-
-  // Build merged list: start with web recipes (preserving order), update from repo, then append new
-  const merged = [];
-  const seen = new Set();
-
-  for (const wr of webRecipes) {
-    if (repoMap.has(wr.id)) {
-      // Repo version takes precedence — merge fields
-      const rr = repoMap.get(wr.id);
-      // Keep web-only fields (like defaultVolume, ph, unit, relatedProtocols, etc.) that repo may lack
-      const mergedRecipe = { ...wr, ...rr };
-      // Preserve web-app-specific fields that repo shouldn't override
-      if (wr.defaultVolume !== undefined && rr.defaultVolume === undefined) mergedRecipe.defaultVolume = wr.defaultVolume;
-      if (wr.unit !== undefined && rr.unit === undefined) mergedRecipe.unit = wr.unit;
-      if (wr.ph !== undefined && rr.ph === undefined) mergedRecipe.ph = wr.ph;
-      if (wr.briefSteps && !rr.briefSteps) mergedRecipe.briefSteps = wr.briefSteps;
-      if (wr.detailedSteps && !rr.detailedSteps) mergedRecipe.detailedSteps = wr.detailedSteps;
-      if (wr.safeStops && !rr.safeStops) mergedRecipe.safeStops = wr.safeStops;
-      if (wr.relatedProtocols && !rr.relatedProtocols) mergedRecipe.relatedProtocols = wr.relatedProtocols;
-      // Ensure defaultVolume and unit always exist
-      if (!mergedRecipe.defaultVolume) mergedRecipe.defaultVolume = mergedRecipe.category === 'protocol' ? 1 : 1000;
-      if (!mergedRecipe.unit) mergedRecipe.unit = mergedRecipe.category === 'protocol' ? 'reaction' : 'mL';
-      // Remove repo-only fields not used by web app
-      delete mergedRecipe.source;
-      merged.push(mergedRecipe);
-    } else {
-      merged.push(wr);
-    }
-    seen.add(wr.id);
-  }
-
-  // Append recipes only in repo (new additions)
-  let added = 0;
-  for (const rr of repoRecipes) {
-    if (!seen.has(rr.id)) {
-      const recipe = { ...rr };
-      // Set defaults for missing fields based on category
-      if (!recipe.defaultVolume) {
-        recipe.defaultVolume = recipe.category === 'protocol' ? 1 : 1000;
-      }
-      if (!recipe.unit) {
-        recipe.unit = recipe.category === 'protocol' ? 'reaction' : 'mL';
-      }
-      delete recipe.source;
-      merged.push(recipe);
-      seen.add(rr.id);
-      added++;
-    }
-  }
-
-  writeLiveRecipesSource(liveSource, merged);
-
-  const updated = [...repoMap.keys()].filter(id => webMap.has(id) &&
-    JSON.stringify(webMap.get(id)) !== JSON.stringify(repoMap.get(id))).length;
-
-  console.log(`✅ Import complete!`);
-  console.log(`   Updated: ${updated}`);
-  console.log(`   Added:   ${added}`);
-  console.log(`   Total:   ${merged.length} recipes in web app`);
-}
-
-function cmdExport() {
-  console.log('📤 Exporting web app recipes → repo JSON...\n');
-
-  const { recipes } = readLiveRecipesSource();
-
-  let created = 0;
-  let updated = 0;
-
-  for (const recipe of recipes) {
-    const cat = recipe.category;
-    const dir = CAT_DIRS[cat];
-    if (!dir) {
-      console.log(`  ⚠ Unknown category '${cat}' for ${recipe.id}, skipping`);
-      continue;
-    }
-    const dirPath = path.join(RECIPES_DIR, dir);
-    if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
-
-    const filePath = path.join(dirPath, `${recipe.id}.json`);
-    const jsonData = { ...recipe };
-    // Remove web-app-only rendering fields for clean repo storage
-    // Keep: id, name, nameCn, category, tags, components, notes, ref, crosslinks
-    // Remove: defaultVolume, unit, ph (buffer-specific, keep for buffers)
-    // Remove: briefSteps, detailedSteps, safeStops, relatedProtocols (web-app specific)
-
-    const existing = fs.existsSync(filePath);
-    fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2) + '\n');
-    if (existing) updated++;
-    else created++;
-  }
-
-  console.log(`✅ Export complete!`);
-  console.log(`   Created: ${created}`);
-  console.log(`   Updated: ${updated}`);
-  console.log(`   Total:   ${recipes.length} recipes exported`);
-}
-
 function cmdValidate() {
   console.log('🔍 Validating repo JSON files...\n');
   const issues = [];
@@ -450,16 +313,21 @@ function cmdValidate() {
 const cmd = process.argv[2];
 switch (cmd) {
   case 'diff':     cmdDiff(); break;
-  case 'import':   cmdImport(); break;
-  case 'export':   cmdExport(); break;
+  case 'import':
+  case 'export':
+    // These copied recipes between this repo and the live server, so the app
+    // and the repo drifted apart. recipes/ is now the only source: CI builds
+    // and signs dist/recipes.json on every push to main, and the app takes its
+    // bundled copy from there (labmate: npm run recipes:pull).
+    console.error(`"${cmd}" was retired: recipes/ is the single source of the library. Edit recipes/*.json and push; CI publishes dist/.`);
+    process.exit(2);
+    break;
   case 'validate': cmdValidate(); break;
   default:
   console.log(`labmate-recipes sync tool
 
 Usage:
   node sync.js diff       Show differences between repo and web app
-  node sync.js import     Merge repo → web app (adds new, updates changed)
-  node sync.js export     Export web app → repo JSON files
   node sync.js validate   Check all JSON files for issues
 
 Paths:

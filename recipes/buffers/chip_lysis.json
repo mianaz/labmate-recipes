@@ -65,19 +65,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine SDS, EDTA, and Tris-HCl in ~80 mL ddH₂O."
+      "en": "Dissolve SDS, EDTA, Tris-HCl in ddH₂O",
+      "zh": "将 SDS、EDTA、Tris-HCl 溶于 ddH₂O"
     },
     {
-      "step": "Stir until dissolved."
+      "en": "pH should be ~8.1 from Tris stock",
+      "zh": "pH 应为 ~8.1（来自 Tris 母液）"
     },
     {
-      "step": "Bring to final volume of 100 mL with ddH₂O."
-    },
-    {
-      "step": "Store at room temperature."
-    },
-    {
-      "step": "Add protease inhibitors fresh before each use."
+      "en": "Add protease inhibitors before use",
+      "zh": "使用前加入蛋白酶抑制剂"
     }
   ],
   "crosslinks": [

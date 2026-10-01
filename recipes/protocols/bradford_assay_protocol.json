@@ -91,21 +91,38 @@
   },
   "materials": [
     {
-      "name": "Bradford reagent (Coomassie G-250)",
-      "linkedRecipe": "bradford_reagent"
-    },
-    {
-      "name": "BSA standard curve dilutions",
+      "name": "BSA standard (2 mg/mL)",
       "linkedRecipe": "bsa_standard_curve"
     },
     {
-      "name": "96-well plate or cuvettes"
+      "name": "Bradford reagent (Coomassie Brilliant Blue G-250, 1×)",
+      "note": {
+        "en": "Bio-Rad #5000006 or equivalent",
+        "zh": "Bio-Rad #5000006或同等品"
+      }
     },
     {
-      "name": "Microplate reader or spectrophotometer (595 nm)"
+      "name": "96-well flat-bottom plate",
+      "note": {
+        "en": "Clear, untreated",
+        "zh": "透明，未处理"
+      }
+    },
+    {
+      "name": "Spectrophotometer or plate reader",
+      "note": {
+        "en": "595 nm filter",
+        "zh": "595 nm滤光片"
+      }
+    },
+    {
+      "name": "Multichannel pipette",
+      "note": {
+        "en": "Optional, for plate format",
+        "zh": "可选，用于板式格式"
+      }
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Quantify protein concentration using Bradford (Coomassie) dye-binding assay at 595 nm.",
     "zh": "Bradford 法（考马斯蓝结合法）595 nm 定量蛋白质浓度。"
@@ -149,5 +166,13 @@
       "zh": "以 BSA 浓度对 A₅₉₅ 作图并线性回归（R² >0.99），代入方程计算各样品浓度，乘以稀释倍数得原始浓度。"
     }
   ],
-  "safeStops": []
+  "safeStops": [
+    {
+      "afterStep": 1,
+      "note": {
+        "en": "Diluted samples can be kept on ice for up to 1 h",
+        "zh": "稀释样品可在冰上保存最多1小时"
+      }
+    }
+  ]
 }

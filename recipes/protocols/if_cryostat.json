@@ -113,18 +113,6 @@
       "unit": "step"
     }
   ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Step 5",
-      "condition": "4°C in humidity chamber",
-      "duration": "Overnight (required)"
-    },
-    {
-      "afterStep": "Step 9",
-      "condition": "-20°C protected from light",
-      "duration": "Weeks"
-    }
-  ],
   "notes": {
     "en": "Saponin-based blocking buffer is suitable for intracellular targets. For membrane-only targets, 0.1% Triton X-100 can substitute for saponin. Keep sections moist throughout — never let them dry. Use a humid dark box during antibody incubations.",
     "zh": "皂苷通透适合细胞内靶标。仅膜靶标可用 0.1% Triton X-100 替代皂苷。全程保持切片湿润——切勿干燥。抗体孵育时使用避光湿盒。"
@@ -139,17 +127,17 @@
   ],
   "safeStops": [
     {
-      "afterStep": 5,
+      "afterStep": "Step 5",
       "note": {
-        "en": "Primary antibody incubation is overnight at 4°C — this is the natural stopping point",
-        "zh": "一抗 4°C 过夜孵育 — 这是自然的停顿点"
+        "en": "4°C in humidity chamber (up to Overnight (required))",
+        "zh": "4°C in humidity chamber (最长 Overnight (required))"
       }
     },
     {
-      "afterStep": 9,
+      "afterStep": "Step 9",
       "note": {
-        "en": "Mounted and sealed slides can be stored at −20°C protected from light for weeks",
-        "zh": "封片后的载玻片可 −20°C 避光保存数周"
+        "en": "-20°C protected from light (up to Weeks)",
+        "zh": "-20°C protected from light (最长 Weeks)"
       }
     }
   ],

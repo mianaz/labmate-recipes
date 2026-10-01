@@ -40,7 +40,7 @@
     },
     {
       "name": "TEMED",
-      "amount": 4.0,
+      "amount": 4,
       "unit": "µL",
       "note": {
         "en": "Add last",
@@ -80,23 +80,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine ddH₂O, acrylamide/bis solution, and Tris buffer in a flask.",
-      "warning": "Acrylamide is a neurotoxin — wear gloves, avoid inhalation."
+      "en": "Mix ddH₂O, Tris-HCl buffer, and acrylamide stock",
+      "zh": "混合 ddH₂O、Tris-HCl 缓冲液和丙烯酰胺母液"
     },
     {
-      "step": "Add 10% SDS and mix."
+      "en": "Add 10% SDS",
+      "zh": "加入 10% SDS"
     },
     {
-      "step": "Add 10% APS and TEMED last (initiates polymerization)."
+      "en": "Add 10% APS and TEMED last — mix gently",
+      "zh": "最后加入 10% APS 和 TEMED——轻柔混匀"
     },
     {
-      "step": "Pour gel immediately between glass plates."
+      "en": "Pour resolving gel, overlay with isopropanol, let polymerize ~30 min",
+      "zh": "灌入分离胶，覆盖异丙醇，凝固约 30 分钟"
     },
     {
-      "step": "Overlay with isopropanol; let polymerize 30–45 min."
-    },
-    {
-      "step": "Pour stacking gel on top after resolving gel sets."
+      "en": "Rinse, pour stacking gel with comb, let polymerize ~15 min",
+      "zh": "冲洗后灌入浓缩胶并插入梳子，凝固约 15 分钟"
     }
   ],
   "crosslinks": [

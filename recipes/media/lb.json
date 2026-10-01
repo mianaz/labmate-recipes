@@ -73,5 +73,6 @@
     "colony_pcr",
     "single_colony_picking",
     "competent_cells_cacl2"
-  ]
+  ],
+  "ph": "7.0"
 }

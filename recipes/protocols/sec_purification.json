@@ -187,25 +187,54 @@
   ],
   "materials": [
     {
-      "name": "Protein sample (concentrated, <2% column volume)"
+      "name": "SEC column",
+      "note": {
+        "en": "Superdex 75/200 or Superose 6, 10/300 GL or 16/600",
+        "zh": "Superdex 75/200或Superose 6，10/300 GL或16/600"
+      }
     },
     {
-      "name": "SEC column (Superdex, Sephacryl, etc.)"
+      "name": "Running buffer",
+      "note": {
+        "en": "20 mM Tris pH 7.5 + 150 mM NaCl or PBS, filtered and degassed",
+        "zh": "20 mM Tris pH 7.5 + 150 mM NaCl或PBS，过滤脱气"
+      }
     },
     {
-      "name": "SEC running buffer",
-      "linkedRecipe": "sec_running_buffer"
+      "name": "FPLC/ÄKTA system",
+      "note": {
+        "en": "With UV, conductivity detectors and fraction collector",
+        "zh": "配备UV、电导率检测器和馏分收集器"
+      }
     },
     {
-      "name": "FPLC/AKTA system"
+      "name": "Centrifugal concentrators",
+      "note": {
+        "en": "Amicon Ultra, MWCO ≤ ½ target MW",
+        "zh": "Amicon Ultra，MWCO ≤ 目标MW的½"
+      }
     },
     {
-      "name": "Fraction collector"
+      "name": "0.22 µm syringe filters",
+      "note": {
+        "en": "For sample and buffer",
+        "zh": "用于样品和缓冲液"
+      }
     },
     {
-      "name": "SDS-PAGE gel for analysis",
-      "linkedRecipe": "sds_page_gel",
-      "optional": true
+      "name": "MW calibration standards",
+      "note": {
+        "en": "Bio-Rad 1511901 (optional)",
+        "zh": "Bio-Rad 1511901（可选）"
+      }
+    },
+    {
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "SDS-PAGE gel",
+      "linkedRecipe": "sds_page_gel"
     }
   ],
   "usage": {

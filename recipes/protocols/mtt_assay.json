@@ -107,24 +107,36 @@
   },
   "materials": [
     {
-      "name": "MTT reagent (5 mg/mL in PBS)",
+      "name": "MTT Reagent (5 mg/mL in PBS)",
       "linkedRecipe": "mtt_reagent"
     },
     {
-      "name": "DMSO (solubilization solvent)"
+      "name": "DMSO (cell culture grade)",
+      "note": {
+        "en": "Solubilization",
+        "zh": "溶解结晶用"
+      }
     },
     {
-      "name": "96-well plate with cells"
+      "name": "96-well plate with cells",
+      "note": {
+        "en": "Seeded 24h prior",
+        "zh": "提前 24h 接种"
+      }
     },
     {
-      "name": "Complete culture medium",
-      "linkedRecipe": "complete_dmem"
+      "name": "Complete medium",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Microplate reader (570 nm)"
-    },
-    {
-      "name": "Multichannel pipette"
+      "name": "Microplate reader",
+      "note": {
+        "en": "570 nm",
+        "zh": "570 nm 波长"
+      }
     }
   ],
   "stoppingPoints": [],
@@ -218,5 +230,6 @@
   "usage": {
     "en": "Measure cell viability and proliferation using MTT colorimetric assay.",
     "zh": "MTT 比色法检测细胞活力和增殖。"
-  }
+  },
+  "volumeUnit": "assay"
 }

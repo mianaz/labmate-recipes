@@ -127,23 +127,6 @@
       "unit": "step"
     }
   ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Step 6",
-      "condition": "-20°C in methanol",
-      "duration": "Up to 24 hours"
-    },
-    {
-      "afterStep": "Step 6",
-      "condition": "-80°C in methanol",
-      "duration": "Up to 1 month"
-    },
-    {
-      "afterStep": "Step 10",
-      "condition": "4°C in Ir-intercalator/PFA",
-      "duration": "Up to 1 week"
-    }
-  ],
   "notes": {
     "en": "Staining concentrations matter especially for phospho-proteins. Ab bank mixes are designed for 50 µL final volume. Some cells stick to plastic in MilliQ water wash — add 0.1% BSA. For autosampler: resuspend in 50 µL MilliQ, add 50 µL EQ beads, transfer to 96-deep-well plate. Ideal: 0.5M cells per injection of 400 µL.",
     "zh": "染色浓度对磷酸化蛋白尤其重要。抗体库配方按 50 µL 终体积设计。某些细胞在 MilliQ 水洗涤时粘壁——加 0.1% BSA。自动进样：50 µL MilliQ 重悬 + 50 µL EQ beads。最佳：0.5M 细胞/400 µL。"
@@ -156,24 +139,24 @@
   ],
   "safeStops": [
     {
-      "afterStep": 5,
+      "afterStep": "Step 6",
       "note": {
-        "en": "After fixation with 1.6% PFA, cells can be stored at 4°C for up to 24 h before permeabilization",
-        "zh": "1.6% PFA 固定后，细胞可 4°C 保存 24 h 再进行通透"
+        "en": "-20°C in methanol (up to Up to 24 hours)",
+        "zh": "-20°C in methanol (最长 Up to 24 hours)"
       }
     },
     {
-      "afterStep": 6,
+      "afterStep": "Step 6",
       "note": {
-        "en": "Cells in 90% methanol can be stored at −20°C up to 24 h, or −80°C up to 1 month",
-        "zh": "90% 甲醇中的细胞可 −20°C 保存 24 h，或 −80°C 保存 1 个月"
+        "en": "-80°C in methanol (up to Up to 1 month)",
+        "zh": "-80°C in methanol (最长 Up to 1 month)"
       }
     },
     {
-      "afterStep": 10,
+      "afterStep": "Step 10",
       "note": {
-        "en": "Cells in Ir-intercalator/PFA can be stored at 4°C for up to 1 week before acquisition",
-        "zh": "Ir-intercalator/PFA 中的细胞可 4°C 保存 1 周后再上机"
+        "en": "4°C in Ir-intercalator/PFA (up to Up to 1 week)",
+        "zh": "4°C in Ir-intercalator/PFA (最长 Up to 1 week)"
       }
     }
   ],

@@ -61,19 +61,39 @@
   },
   "materials": [
     {
-      "name": "Trypan blue solution (0.4%)"
+      "name": "Cell suspension (trypsinized, single-cell)",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Cell suspension"
+      "name": "0.4% Trypan Blue",
+      "note": {
+        "en": "Commercial solution (Gibco/Sigma)",
+        "zh": "商品化溶液（Gibco/Sigma）"
+      }
     },
     {
-      "name": "Hemocytometer or automated cell counter"
+      "name": "Hemocytometer (Neubauer improved)",
+      "note": {
+        "en": "+ coverslip",
+        "zh": "+ 盖玻片"
+      }
     },
     {
-      "name": "Coverslip (for hemocytometer)"
+      "name": "Micropipette (10–20 µL)",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Microscope (inverted, 10× objective)"
+      "name": "Counter (hand tally or app)",
+      "note": {
+        "en": "Optional",
+        "zh": "可选"
+      }
     }
   ],
   "briefSteps": [
@@ -134,5 +154,6 @@
   "usage": {
     "en": "Assess cell viability and count cells using trypan blue dye exclusion.",
     "zh": "台盼蓝排斥法评估细胞活力和计数。"
-  }
+  },
+  "volumeUnit": "experiment"
 }

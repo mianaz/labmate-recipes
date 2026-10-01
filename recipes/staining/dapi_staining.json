@@ -48,16 +48,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve DAPI in ddH₂O to make 1 mg/mL (1.4 mM) stock solution."
+      "en": "Prepare 5 mg/mL stock: dissolve 5 mg DAPI in 1 mL ddH₂O. Aliquot, store -20°C light-protected",
+      "zh": "配 5 mg/mL 母液: 5 mg DAPI 溶于 1 mL ddH₂O。分装，-20°C 避光保存"
     },
     {
-      "step": "Dilute stock 1:1000–1:5000 in PBS for working solution (0.2–1 µg/mL)."
+      "en": "Dilute to 1 µg/mL in PBS for working solution (1:5000 from stock)",
+      "zh": "用 PBS 稀释至 1 µg/mL 工作液（母液 1:5000）"
     },
     {
-      "step": "Protect from light at all times (DAPI is light-sensitive)."
+      "en": "Apply to fixed/permeabilized cells. Incubate 5–10 min RT in dark",
+      "zh": "加至固定/透化的细胞。室温避光 5–10 min"
     },
     {
-      "step": "Store stock at −20°C; working solution at 4°C for up to 1 week."
+      "en": "Wash 2× PBS. Mount and image (Ex 358 nm / Em 461 nm = blue)",
+      "zh": "PBS 洗 2 次。封片后成像 (Ex 358 nm / Em 461 nm = 蓝色)"
     }
   ],
   "crosslinks": [

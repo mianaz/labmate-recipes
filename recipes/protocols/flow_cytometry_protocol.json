@@ -23,17 +23,14 @@
       "name": "3. Fc Block (人: Human TruStain; 鼠: anti-CD16/32)",
       "amount": 1,
       "unit": "step",
-      "note": {
-        "en": "4°C, 10 min",
-        "zh": "4°C，10 min"
-      }
+      "note": "4°C 10 min"
     },
     {
       "name": "4. 加荧光抗体 cocktail",
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Add based on titer results",
+        "en": "Add according to titration result",
         "zh": "按滴度滴定结果加"
       }
     },
@@ -79,32 +76,41 @@
   },
   "materials": [
     {
-      "name": "FACS buffer",
-      "linkedRecipe": "facs_buffer"
-    },
-    {
-      "name": "Fluorochrome-conjugated antibodies"
-    },
-    {
-      "name": "Viability dye (e.g., 7-AAD, LIVE/DEAD)"
-    },
-    {
-      "name": "Fc block (anti-CD16/32 for mouse)",
-      "optional": true
-    },
-    {
-      "name": "1× PBS",
+      "name": "PBS (1×)",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "FACS tubes (5 mL polystyrene)"
+      "name": "FACS Buffer",
+      "linkedRecipe": "facs_buffer"
     },
     {
-      "name": "Flow cytometer"
+      "name": "4% PFA",
+      "linkedRecipe": "pfa_4",
+      "note": {
+        "en": "For intracellular staining fixation",
+        "zh": "用于胞内染色的固定"
+      }
     },
     {
-      "name": "Compensation beads",
-      "optional": true
+      "name": "Fc Block",
+      "note": {
+        "en": "Human TruStain FcX / mouse anti-CD16/32",
+        "zh": "Human TruStain FcX / 小鼠 anti-CD16/32"
+      }
+    },
+    {
+      "name": "Fluorescent antibodies",
+      "note": {
+        "en": "Titrate each Ab individually first!",
+        "zh": "每个抗体需先单独做滴度实验！"
+      }
+    },
+    {
+      "name": "Viability dye",
+      "note": {
+        "en": "DAPI, PI, or fixable Live/Dead",
+        "zh": "DAPI、PI 或可固定 Live/Dead 染料"
+      }
     }
   ],
   "stoppingPoints": [
@@ -199,5 +205,6 @@
         "zh": "末次洗涤后，可用 1–4% PFA 室温固定 20 min，4°C 避光保存最多 24 h 后再上机检测。注意：固定后不可使用对固定剂敏感的活死染料。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment"
 }

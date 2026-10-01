@@ -68,36 +68,78 @@
   ],
   "materials": [
     {
-      "name": "Capture antibody"
+      "name": "High-binding 96-well ELISA plate",
+      "note": {
+        "en": "e.g., Corning #9018 or Nunc MaxiSorp",
+        "zh": "如 Corning #9018 或 Nunc MaxiSorp"
+      }
     },
     {
-      "name": "Detection antibody (biotinylated)"
+      "name": "Capture antibody",
+      "note": {
+        "en": "Purified, matched pair with detection antibody",
+        "zh": "纯化的，与检测抗体配对"
+      }
     },
     {
-      "name": "Streptavidin-HRP conjugate"
+      "name": "Biotinylated detection antibody",
+      "note": {
+        "en": "Matched pair with capture antibody",
+        "zh": "与捕获抗体配对"
+      }
     },
     {
-      "name": "TMB substrate solution"
+      "name": "Streptavidin-HRP conjugate",
+      "note": {
+        "en": "e.g., R&D Systems DY998",
+        "zh": "如 R&D Systems DY998"
+      }
     },
     {
-      "name": "Stop solution (2N H₂SO₄)"
+      "name": "Recombinant protein standard",
+      "note": {
+        "en": "For standard curve",
+        "zh": "用于标准曲线"
+      }
     },
     {
-      "name": "96-well ELISA plate (high-binding)"
+      "name": "TMB substrate",
+      "note": {
+        "en": "e.g., R&D Systems DY999",
+        "zh": "如 R&D Systems DY999"
+      }
     },
     {
-      "name": "Coating buffer (carbonate/bicarbonate pH 9.6)"
+      "name": "Stop solution (2 N H₂SO₄)",
+      "note": {
+        "en": "e.g., R&D Systems DY994",
+        "zh": "如 R&D Systems DY994"
+      }
     },
     {
-      "name": "Wash buffer (PBST)",
+      "name": "Coating buffer",
+      "note": {
+        "en": "0.05 M carbonate-bicarbonate pH 9.6 or PBS",
+        "zh": "0.05 M 碳酸盐缓冲液 pH 9.6 或 PBS"
+      }
+    },
+    {
+      "name": "PBST",
+      "note": {
+        "en": "PBS + 0.05% Tween-20",
+        "zh": "PBS + 0.05% Tween-20"
+      }
+    },
+    {
+      "name": "Blocking buffer",
+      "note": {
+        "en": "1% BSA in PBS",
+        "zh": "1% BSA-PBS"
+      }
+    },
+    {
+      "name": "PBS",
       "linkedRecipe": "pbs_1x"
-    },
-    {
-      "name": "Blocking buffer (1% BSA in PBS)",
-      "linkedRecipe": "blocking_bsa"
-    },
-    {
-      "name": "Microplate reader (450 nm)"
     }
   ],
   "usage": {

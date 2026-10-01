@@ -56,27 +56,36 @@
   },
   "materials": [
     {
-      "name": "Propidium iodide (PI)"
+      "name": "Propidium Iodide (PI)",
+      "note": {
+        "en": "1 mg/mL stock in H₂O, store at 4°C protected from light",
+        "zh": "1 mg/mL 水溶液储液，4°C 避光保存"
+      }
     },
     {
-      "name": "RNase A (DNase-free)"
+      "name": "RNase A",
+      "note": {
+        "en": "10 mg/mL stock, DNase-free, store at -20°C",
+        "zh": "10 mg/mL 储液，无 DNase，-20°C 保存"
+      }
     },
     {
-      "name": "70% ethanol (ice-cold)"
+      "name": "100% Ethanol",
+      "note": {
+        "en": "Pre-chilled to -20°C",
+        "zh": "预冷至 -20°C"
+      }
     },
     {
-      "name": "1× PBS",
+      "name": "PBS",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "FACS buffer",
-      "linkedRecipe": "facs_buffer"
-    },
-    {
-      "name": "Flow cytometer with 488 nm laser"
-    },
-    {
-      "name": "FACS tubes"
+      "name": "40 µm cell strainer",
+      "note": {
+        "en": "Nylon mesh",
+        "zh": "尼龙网"
+      }
     }
   ],
   "stoppingPoints": [

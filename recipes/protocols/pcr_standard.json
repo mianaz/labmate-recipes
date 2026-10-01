@@ -95,30 +95,61 @@
   },
   "materials": [
     {
-      "name": "Template DNA (1–100 ng genomic or 0.1–10 ng plasmid)"
+      "name": "2× Taq Master Mix",
+      "note": {
+        "en": "Contains Taq, dNTPs, MgCl₂, buffer",
+        "zh": "含 Taq、dNTPs、MgCl₂、缓冲液"
+      }
     },
     {
-      "name": "Forward and reverse primers (10 µM each)"
+      "name": "Forward Primer (10 µM)",
+      "note": {
+        "en": "Desalted or HPLC-purified",
+        "zh": "脱盐或HPLC纯化"
+      }
     },
     {
-      "name": "DNA polymerase (Taq, Phusion, Q5, etc.)"
+      "name": "Reverse Primer (10 µM)",
+      "note": {
+        "en": "Desalted or HPLC-purified",
+        "zh": "脱盐或HPLC纯化"
+      }
     },
     {
-      "name": "dNTP mix (10 mM each)"
+      "name": "Template DNA",
+      "note": {
+        "en": "1–100 ng genomic or 0.1–1 ng plasmid",
+        "zh": "基因组DNA 1–100 ng 或质粒 0.1–1 ng"
+      }
     },
     {
-      "name": "PCR buffer (with Mg²⁺)"
+      "name": "Nuclease-free Water",
+      "note": {
+        "en": "For reaction setup",
+        "zh": "用于配反应体系"
+      }
     },
     {
-      "name": "Nuclease-free water"
+      "name": "6× DNA Loading Dye",
+      "linkedRecipe": "dna_loading_dye_6x"
     },
     {
-      "name": "Thermocycler"
+      "name": "Agarose",
+      "note": {
+        "en": "1–2%, in TAE buffer",
+        "zh": "1–2%，TAE缓冲液"
+      }
     },
     {
-      "name": "6× DNA loading dye",
-      "linkedRecipe": "dna_loading_dye_6x",
-      "optional": true
+      "name": "TAE Buffer",
+      "linkedRecipe": "tae_50x"
+    },
+    {
+      "name": "DNA Ladder",
+      "note": {
+        "en": "100 bp or 1 kb, as appropriate",
+        "zh": "100 bp 或 1 kb，视需要选择"
+      }
     }
   ],
   "stoppingPoints": [

@@ -82,29 +82,50 @@
   },
   "materials": [
     {
-      "name": "Firefly luciferase reporter plasmid"
+      "name": "Dual-Luciferase Reporter Assay System",
+      "note": {
+        "en": "Promega #E1910 (LAR II, Stop & Glo, PLB)",
+        "zh": "Promega #E1910（LAR II, Stop & Glo, PLB）"
+      }
     },
     {
-      "name": "Renilla luciferase control plasmid (pRL-TK)"
+      "name": "Firefly reporter plasmid",
+      "note": {
+        "en": "e.g., pGL3/pGL4 with promoter/enhancer of interest",
+        "zh": "如含目的启动子/增强子的 pGL3/pGL4"
+      }
     },
     {
-      "name": "Luciferase lysis buffer",
-      "linkedRecipe": "luciferase_lysis_buffer"
+      "name": "Renilla control plasmid",
+      "note": {
+        "en": "pRL-TK or pRL-SV40 (1/10–1/50 of reporter)",
+        "zh": "pRL-TK 或 pRL-SV40（报告质粒的 1/10–1/50）"
+      }
     },
     {
-      "name": "Firefly luciferase substrate (luciferin/ATP)"
+      "name": "Transfection reagent",
+      "note": {
+        "en": "Lipofectamine 2000/3000 or PEI",
+        "zh": "Lipofectamine 2000/3000 或 PEI"
+      }
     },
     {
-      "name": "Renilla luciferase substrate (coelenterazine)"
+      "name": "White opaque 96-well plate",
+      "note": {
+        "en": "For luminescence reading",
+        "zh": "用于发光检测"
+      }
     },
     {
-      "name": "96-well white opaque plates"
+      "name": "Luminometer",
+      "note": {
+        "en": "With dual-injector capability preferred",
+        "zh": "优选带双注射器"
+      }
     },
     {
-      "name": "Luminometer or plate reader with luminescence mode"
-    },
-    {
-      "name": "Transfection reagent"
+      "name": "PBS",
+      "linkedRecipe": "pbs_1x"
     }
   ],
   "stoppingPoints": [

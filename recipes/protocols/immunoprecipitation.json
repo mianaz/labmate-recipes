@@ -93,33 +93,52 @@
   },
   "materials": [
     {
-      "name": "IP lysis buffer",
+      "name": "IP Lysis Buffer",
       "linkedRecipe": "ip_lysis"
     },
     {
-      "name": "Protein A/G magnetic beads"
+      "name": "Protease Inhibitor Cocktail",
+      "note": {
+        "en": "100× stock, add fresh",
+        "zh": "100× 母液，现用现加"
+      }
     },
     {
-      "name": "Target antibody"
+      "name": "Phosphatase Inhibitors",
+      "linkedRecipe": "phosphatase_inhibitor_na3vo4"
     },
     {
-      "name": "Normal IgG (isotype control)"
+      "name": "Protein A/G Magnetic Beads",
+      "note": {
+        "en": "e.g. Dynabeads, Pierce",
+        "zh": "如 Dynabeads、Pierce"
+      }
     },
     {
-      "name": "Laemmli sample buffer",
+      "name": "Target Antibody",
+      "note": {
+        "en": "1–5 µg per IP",
+        "zh": "每次 IP 1–5 µg"
+      }
+    },
+    {
+      "name": "Normal IgG",
+      "note": {
+        "en": "Species-matched isotype control",
+        "zh": "同种属同型对照"
+      }
+    },
+    {
+      "name": "2× Laemmli Buffer",
       "linkedRecipe": "laemmli_2x"
-    },
-    {
-      "name": "Protease inhibitor cocktail"
-    },
-    {
-      "name": "Phosphatase inhibitors",
-      "linkedRecipe": "phosphatase_inhibitor_na3vo4",
-      "optional": true
     },
     {
       "name": "1× PBS",
       "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "RIPA Buffer",
+      "linkedRecipe": "ripa"
     }
   ],
   "stoppingPoints": [

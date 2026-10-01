@@ -58,19 +58,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "To 500 mL DMEM base medium, add 50 mL heat-inactivated FBS (10% final)."
+      "en": "Under sterile conditions, add FBS and Pen/Strep to DMEM",
+      "zh": "无菌条件下，向 DMEM 中加入 FBS 和双抗"
     },
     {
-      "step": "Add 5 mL penicillin-streptomycin (100× stock, 1% final)."
+      "en": "Optional: add sodium pyruvate",
+      "zh": "可选：加入丙酮酸钠"
     },
     {
-      "step": "Add 5 mL L-glutamine (200 mM, 2 mM final) if not GlutaMAX."
-    },
-    {
-      "step": "Mix gently by swirling."
-    },
-    {
-      "step": "Store at 4°C for up to 1 month. Pre-warm to 37°C before use."
+      "en": "Mix gently, store at 4°C. Pre-warm to 37°C before use",
+      "zh": "轻柔混匀，4°C 保存。使用前预热至 37°C"
     }
   ],
   "crosslinks": [

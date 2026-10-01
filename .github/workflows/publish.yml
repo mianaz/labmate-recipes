@@ -1,0 +1,67 @@
+name: Publish recipes
+# recipes/ is the single source of the library. On every push to main that can
+# change the built library: QC, rebuild dist/recipes.json from the source files,
+# sign it into dist/manifest.json, and commit both. The bot's commit only
+# touches dist/, which is not a trigger path, so it cannot loop (pushes made with
+# GITHUB_TOKEN do not start workflows anyway).
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'recipes/**'
+      - 'order.json'
+      - 'build-recipes.js'
+      - 'sign-recipes.js'
+      - 'qc.js'
+      - '.github/workflows/publish.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One publish at a time; a newer push waits and rebuilds from the latest main.
+concurrency:
+  group: publish-recipes
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    # Deployment environment so a required reviewer can be attached in repo
+    # settings (Settings → Environments → recipe-signing → Required reviewers);
+    # with one, the signing key is only used after a human approves the run.
+    environment: recipe-signing
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+
+      - name: QC (errors block publishing)
+        run: node qc.js
+
+      - name: Build dist/recipes.json from recipes/
+        run: node build-recipes.js
+
+      - name: Is the signed manifest already current?
+        id: state
+        run: |
+          sum=$(sha256sum dist/recipes.json | cut -d' ' -f1)
+          signed=$(node -e "try{process.stdout.write(require('./dist/manifest.json').sha256||'')}catch{}")
+          if [ "$sum" = "$signed" ]; then echo "current=true" >> "$GITHUB_OUTPUT"; echo "dist is already built and signed"; else echo "current=false" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Sign dist/recipes.json into dist/manifest.json
+        if: steps.state.outputs.current != 'true'
+        env:
+          RECIPE_SIGNING_KEY: ${{ secrets.RECIPE_SIGNING_KEY }}
+        run: node sign-recipes.js
+
+      - name: Commit dist
+        if: steps.state.outputs.current != 'true'
+        run: |
+          git config user.name 'recipe-signer[bot]'
+          git config user.email 'recipe-signer@users.noreply.github.com'
+          git add dist/recipes.json dist/manifest.json
+          git commit -m 'chore(publish): rebuild and sign dist [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main

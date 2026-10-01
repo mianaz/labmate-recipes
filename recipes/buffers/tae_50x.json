@@ -50,19 +50,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve 242 g Tris base in ~800 mL ddH₂O."
+      "en": "Dissolve Tris base in ~{v:800:mL} ddH₂O",
+      "zh": "将 Tris base 溶于约 {v:800:mL} ddH₂O"
     },
     {
-      "step": "Add 57.1 mL glacial acetic acid."
+      "en": "Add glacial acetic acid and EDTA stock",
+      "zh": "加入冰醋酸和 EDTA 母液"
     },
     {
-      "step": "Add 100 mL 0.5 M EDTA pH 8.0."
+      "en": "Top up to {v:1000:mL}. No pH adjustment needed (~8.5)",
+      "zh": "定容至 {v:1000:mL}。无需调 pH（~8.5）"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Store at room temperature. Dilute 1:50 for 1× working solution."
+      "en": "Dilute 1:50 for working solution",
+      "zh": "使用时 1:50 稀释"
     }
   ],
   "crosslinks": [
@@ -77,5 +78,6 @@
     "genotyping_pcr",
     "pcr_standard",
     "restriction_digest"
-  ]
+  ],
+  "ph": "~8.5"
 }

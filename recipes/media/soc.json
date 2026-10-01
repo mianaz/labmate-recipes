@@ -70,22 +70,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve tryptone (20 g), yeast extract (5 g), NaCl (0.5 g), and KCl (0.186 g) in ~400 mL ddH₂O."
+      "en": "Autoclave Tryptone/Yeast/NaCl/KCl together",
+      "zh": "将 Tryptone/Yeast/NaCl/KCl 一起高压灭菌"
     },
     {
-      "step": "Adjust pH to 7.0 with NaOH."
+      "en": "Cool to <60°C, add sterile MgCl₂ and filter-sterilized glucose",
+      "zh": "冷却至 <60°C，加入无菌 MgCl₂ 和过滤除菌的葡萄糖"
     },
     {
-      "step": "Bring to 500 mL and autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Cool to <55°C, then add MgCl₂ (10 mM), MgSO₄ (10 mM), and glucose (20 mM) from sterile stocks."
-    },
-    {
-      "step": "Aliquot 1–5 mL per tube."
-    },
-    {
-      "step": "Store at −20°C or 4°C."
+      "en": "Aliquot and store at -20°C",
+      "zh": "分装 -20°C 保存"
     }
   ],
   "crosslinks": [
@@ -94,5 +88,6 @@
     "competent_cells_cacl2",
     "competent_cells_electrocompetent",
     "gibson_assembly"
-  ]
+  ],
+  "ph": "7.0"
 }

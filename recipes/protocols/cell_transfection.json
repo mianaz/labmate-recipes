@@ -89,20 +89,32 @@
   },
   "materials": [
     {
-      "name": "Plasmid DNA or siRNA"
+      "name": "Opti-MEM",
+      "note": {
+        "en": "Serum-free media for complex formation",
+        "zh": "无血清培养基，用于复合物形成"
+      }
     },
     {
-      "name": "Lipofectamine or similar transfection reagent"
+      "name": "Lipofectamine 2000/3000",
+      "note": {
+        "en": "Or RNAiMAX for siRNA",
+        "zh": "或 RNAiMAX（用于 siRNA）"
+      }
     },
     {
-      "name": "Opti-MEM or serum-free medium"
+      "name": "Plasmid DNA / siRNA",
+      "note": {
+        "en": "Endotoxin-free prep",
+        "zh": "无内毒素制备"
+      }
     },
     {
-      "name": "Complete culture medium",
-      "linkedRecipe": "complete_dmem"
-    },
-    {
-      "name": "Cells at 60–80% confluency"
+      "name": "Complete growth media",
+      "note": {
+        "en": "For recovery after transfection",
+        "zh": "转染后恢复培养用"
+      }
     }
   ],
   "briefSteps": [
@@ -176,5 +188,6 @@
     "electroporation",
     "sirna_knockdown",
     "dual_luciferase"
-  ]
+  ],
+  "volumeUnit": "experiment (per well of 6-well)"
 }

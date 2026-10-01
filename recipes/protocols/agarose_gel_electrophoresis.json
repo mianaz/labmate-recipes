@@ -13,19 +13,13 @@
       "name": "1. 选择琼脂糖浓度",
       "amount": 1,
       "unit": "step",
-      "note": {
-        "en": "0.8%: >1 kb; 1%: 0.5–7 kb; 1.5%: 0.2–3 kb; 2%: 0.1–2 kb",
-        "zh": "0.8%：>1 kb；1%：0.5–7 kb；1.5%：0.2–3 kb；2%：0.1–2 kb"
-      }
+      "note": "0.8%: >1 kb; 1%: 0.5–7 kb; 1.5%: 0.2–3 kb; 2%: 0.1–2 kb"
     },
     {
       "name": "  - Agarose",
       "amount": 0.5,
       "unit": "g",
-      "note": {
-        "en": "1% gel, 50 mL",
-        "zh": "1% 凝胶，共 50 mL"
-      }
+      "note": "1% gel, 50 mL"
     },
     {
       "name": "  - 1× TAE 或 1× TBE",
@@ -47,7 +41,7 @@
       "amount": 5,
       "unit": "µL",
       "note": {
-        "en": "10,000× stock: add 5 µL per 50 mL",
+        "en": "Add 5 µL/50 mL from 10,000× stock",
         "zh": "10,000× stock 加 5 µL/50 mL"
       }
     },
@@ -93,42 +87,54 @@
   },
   "materials": [
     {
-      "name": "Agarose powder"
+      "name": "Agarose (molecular biology grade)",
+      "note": {
+        "en": "Use low-melt for gel extraction",
+        "zh": "胶回收用低熔点琼脂糖"
+      }
     },
     {
-      "name": "1× TAE or TBE buffer",
+      "name": "TAE (1×) or TBE (1×)",
       "linkedRecipe": "tae_50x"
     },
     {
-      "name": "6× DNA loading dye",
+      "name": "DNA stain (EtBr or SYBR Safe)",
+      "note": {
+        "en": "0.5 µg/mL EtBr or 1× SYBR Safe",
+        "zh": "0.5 µg/mL EtBr 或 1× SYBR Safe"
+      }
+    },
+    {
+      "name": "DNA Loading Dye (6×)",
       "linkedRecipe": "dna_loading_dye_6x"
     },
     {
-      "name": "DNA ladder/marker"
+      "name": "DNA Ladder (100 bp or 1 kb)",
+      "note": {
+        "en": "Match expected fragment sizes",
+        "zh": "与目标片段大小匹配"
+      }
     },
     {
-      "name": "Ethidium bromide or SYBR Safe"
+      "name": "Gel casting tray + comb",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Gel casting tray and combs"
+      "name": "Electrophoresis chamber + power supply",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Electrophoresis power supply"
-    },
-    {
-      "name": "UV transilluminator or gel imager"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Gel cast",
-      "condition": "Wrapped in plastic wrap with buffer, 4°C",
-      "duration": "1 week"
-    },
-    {
-      "afterStep": "Gel run complete",
-      "condition": "Image immediately or store gel in buffer at 4°C",
-      "duration": "overnight"
+      "name": "UV transilluminator or blue light imager",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     }
   ],
   "usage": {
@@ -186,11 +192,19 @@
   ],
   "safeStops": [
     {
-      "afterStep": 4,
+      "afterStep": "Gel cast",
       "note": {
-        "en": "Solidified gel can be wrapped in plastic wrap and stored at 4°C for up to 1 week before use.",
-        "zh": "凝固后的凝胶用保鲜膜包好后可在 4°C 保存最多 1 周再使用。"
+        "en": "Wrapped in plastic wrap with buffer, 4°C (up to 1 week)",
+        "zh": "Wrapped in plastic wrap with buffer, 4°C (最长 1 week)"
+      }
+    },
+    {
+      "afterStep": "Gel run complete",
+      "note": {
+        "en": "Image immediately or store gel in buffer at 4°C (up to overnight)",
+        "zh": "Image immediately or store gel in buffer at 4°C (最长 overnight)"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment (50 mL mini gel)"
 }

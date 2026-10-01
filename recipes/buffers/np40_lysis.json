@@ -14,20 +14,14 @@
       "amount": 0.605,
       "unit": "g",
       "mw": 121.14,
-      "note": {
-        "en": "50 mM (or 5 mL of 1 M stock)",
-        "zh": "50 mM（或取 5 mL 1 M 储液）"
-      }
+      "note": "50 mM (or 5 mL of 1M)"
     },
     {
       "name": "NaCl",
       "amount": 0.877,
       "unit": "g",
       "mw": 58.44,
-      "note": {
-        "en": "150 mM",
-        "zh": "150 mM"
-      }
+      "note": "150 mM"
     },
     {
       "name": "NP-40 (IGEPAL CA-630)",
@@ -40,17 +34,14 @@
       "amount": 0.074,
       "unit": "g",
       "mw": 292.24,
-      "note": {
-        "en": "2 mM",
-        "zh": "2 mM"
-      }
+      "note": "2 mM"
     },
     {
       "name": "ddH₂O",
       "amount": 100,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to",
+        "en": "Bring to final volume",
         "zh": "定容"
       }
     }
@@ -79,19 +70,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine Tris-HCl pH 7.4, NaCl, and NP-40 (1%) in ~400 mL ddH₂O."
+      "en": "Dissolve Tris-HCl, NaCl, EDTA in ddH₂O",
+      "zh": "将 Tris-HCl、NaCl、EDTA 溶于 ddH₂O"
     },
     {
-      "step": "Add EDTA if desired (1 mM)."
+      "en": "Add NP-40 (IGEPAL CA-630) to 1%",
+      "zh": "加入 NP-40 (IGEPAL CA-630) 至 1%"
     },
     {
-      "step": "Stir until dissolved."
+      "en": "Adjust pH to 7.4, bring to volume",
+      "zh": "调 pH 至 7.4，定容"
     },
     {
-      "step": "Bring to final volume of 500 mL."
-    },
-    {
-      "step": "Store at 4°C; add protease inhibitors fresh before use."
+      "en": "Add protease inhibitors fresh before use",
+      "zh": "使用前现加蛋白酶抑制剂"
     }
   ],
   "crosslinks": [
@@ -107,5 +99,6 @@
     "subcellular_fractionation",
     "chip_protocol",
     "pulldown_assay"
-  ]
+  ],
+  "ph": "7.4"
 }

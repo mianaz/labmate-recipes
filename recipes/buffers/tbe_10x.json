@@ -51,19 +51,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris base and boric acid in ~800 mL ddH₂O."
+      "en": "Dissolve Tris and boric acid in ~{v:800:mL} ddH₂O",
+      "zh": "将 Tris 和硼酸溶于约 {v:800:mL} ddH₂O"
     },
     {
-      "step": "Add 0.5 M EDTA pH 8.0."
+      "en": "Add 0.5 M EDTA pH 8.0 stock",
+      "zh": "加入 0.5 M EDTA pH 8.0 母液"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Store at room temperature. Dilute 1:10 for 1× working solution."
+      "en": "Top up to {v:1000:mL}. Dilute 1:10 before use",
+      "zh": "定容至 {v:1000:mL}。使用时 1:10 稀释"
     }
   ],
   "crosslinks": [
@@ -76,5 +73,6 @@
     "colony_pcr",
     "genotyping_pcr",
     "crispr_sgrna_cloning"
-  ]
+  ],
+  "ph": "~8.3"
 }

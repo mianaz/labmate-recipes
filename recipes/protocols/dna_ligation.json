@@ -92,23 +92,53 @@
   },
   "materials": [
     {
-      "name": "T4 DNA ligase"
+      "name": "T4 DNA Ligase",
+      "note": {
+        "en": "NEB #M0202 (400,000 U/mL)",
+        "zh": "NEB #M0202 (400,000 U/mL)"
+      }
     },
     {
-      "name": "10× T4 DNA ligase buffer"
+      "name": "10× T4 DNA Ligase Buffer",
+      "note": {
+        "en": "Contains 10 mM ATP; store at -20°C in aliquots (ATP degrades with freeze-thaw)",
+        "zh": "含 10 mM ATP；-20°C 分装保存（ATP 反复冻融会降解）"
+      }
     },
     {
-      "name": "Insert DNA (purified PCR product or restriction fragment)"
+      "name": "Linearized vector",
+      "note": {
+        "en": "Restriction-digested, gel-purified or column-purified",
+        "zh": "限制性酶切后凝胶回收或柱纯化"
+      }
     },
     {
-      "name": "Vector DNA (linearized, dephosphorylated)"
+      "name": "Insert DNA",
+      "note": {
+        "en": "Compatible ends with vector",
+        "zh": "与载体末端兼容"
+      }
     },
     {
-      "name": "TE buffer",
-      "linkedRecipe": "te"
+      "name": "DH5α competent cells",
+      "note": {
+        "en": "High efficiency (≥10⁸ CFU/µg)",
+        "zh": "高效（≥10⁸ CFU/µg）"
+      }
     },
     {
-      "name": "Nuclease-free water"
+      "name": "SOC medium",
+      "note": {
+        "en": "Pre-warmed to 37°C",
+        "zh": "预热至 37°C"
+      }
+    },
+    {
+      "name": "LB + antibiotic plates",
+      "note": {
+        "en": "Appropriate selection",
+        "zh": "适当抗生素筛选"
+      }
     }
   ],
   "stoppingPoints": [

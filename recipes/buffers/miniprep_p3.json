@@ -13,10 +13,7 @@
       "amount": 147.2,
       "unit": "g",
       "mw": 98.14,
-      "note": {
-        "en": "3 M",
-        "zh": "3 M"
-      }
+      "note": "3 M"
     },
     {
       "name": "Glacial acetic acid",
@@ -32,7 +29,7 @@
       "amount": 500,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to",
+        "en": "Bring to final volume",
         "zh": "定容"
       }
     }
@@ -60,16 +57,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve potassium acetate in ~300 mL ddH₂O."
+      "en": "Dissolve potassium acetate in ddH₂O",
+      "zh": "将醋酸钾溶于 ddH₂O"
     },
     {
-      "step": "Adjust pH to 5.5 with glacial acetic acid."
+      "en": "Adjust pH to 5.5 with glacial acetic acid",
+      "zh": "用冰醋酸调 pH 至 5.5"
     },
     {
-      "step": "Bring to final volume of 500 mL."
-    },
-    {
-      "step": "Autoclave and store at 4°C or room temperature."
+      "en": "Bring to volume",
+      "zh": "定容"
     }
   ],
   "crosslinks": [
@@ -82,5 +79,6 @@
     "crispr_sgrna_cloning",
     "gibson_assembly",
     "restriction_digest"
-  ]
+  ],
+  "ph": "5.5"
 }

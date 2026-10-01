@@ -49,17 +49,20 @@
   ],
   "prepSteps": [
     {
-      "step": "Dissolve 181.65 g Tris base in 700 mL ddH₂O with stirring."
+      "en": "Dissolve 181.65 g Tris base in 700 mL ddH₂O with stirring.",
+      "zh": "Dissolve 181.65 g Tris base in 700 mL ddH₂O with stirring."
     },
     {
-      "step": "Add ~118 mL concentrated HCl to adjust pH to 6.8. Fine-adjust as needed.",
-      "warning": "Many electronic pH meters are inaccurate with concentrated Tris solutions — use an appropriate probe."
+      "en": "Add ~118 mL concentrated HCl to adjust pH to 6.8. Fine-adjust as needed. ⚠️ Many electronic pH meters are inaccurate with concentrated Tris solutions — use an appropriate probe.",
+      "zh": "Add ~118 mL concentrated HCl to adjust pH to 6.8. Fine-adjust as needed. ⚠️ Many electronic pH meters are inaccurate with concentrated Tris solutions — use an appropriate probe."
     },
     {
-      "step": "Bring to 1000 mL final volume with ddH₂O."
+      "en": "Bring to 1000 mL final volume with ddH₂O.",
+      "zh": "Bring to 1000 mL final volume with ddH₂O."
     },
     {
-      "step": "Autoclave to sterilize. Store at RT."
+      "en": "Autoclave to sterilize. Store at RT.",
+      "zh": "Autoclave to sterilize. Store at RT."
     }
   ],
   "notes": {

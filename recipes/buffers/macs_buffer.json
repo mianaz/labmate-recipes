@@ -56,16 +56,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Add BSA (0.5%) and EDTA (2 mM) to degassed PBS."
+      "en": "Dissolve BSA and EDTA in PBS",
+      "zh": "将 BSA 和 EDTA 溶于 PBS"
     },
     {
-      "step": "Mix well and filter through 0.22 µm."
+      "en": "Degas buffer (prevents air bubbles in MACS column)",
+      "zh": "缓冲液脱气（防止 MACS 柱中产生气泡）"
     },
     {
-      "step": "Degas the buffer to prevent air bubbles in columns."
-    },
-    {
-      "step": "Store at 4°C for up to 1 week."
+      "en": "Keep at 4°C",
+      "zh": "4°C 保存"
     }
   ],
   "crosslinks": [

@@ -83,19 +83,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine Tris-HCl, NaCl, EDTA, and NP-40 in ~80 mL ddH₂O."
+      "en": "Dissolve Tris-HCl, NaCl, NP-40, EDTA in ddH₂O",
+      "zh": "将 Tris-HCl、NaCl、NP-40、EDTA 溶于 ddH₂O"
     },
     {
-      "step": "Stir until dissolved."
+      "en": "Adjust pH to 7.4",
+      "zh": "调 pH 至 7.4"
     },
     {
-      "step": "Bring to final volume of 100 mL."
+      "en": "Filter-sterilize, store at 4°C",
+      "zh": "0.22 µm 过滤除菌，4°C 保存"
     },
     {
-      "step": "Store at 4°C."
-    },
-    {
-      "step": "Add protease/phosphatase inhibitors fresh before use."
+      "en": "Add protease inhibitors immediately before use",
+      "zh": "使用前立即加入蛋白酶抑制剂"
     }
   ],
   "crosslinks": [

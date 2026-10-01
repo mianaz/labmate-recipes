@@ -211,22 +211,38 @@
     {
       "afterStep": 2,
       "condition": "-80°C",
-      "duration": "months"
+      "duration": "months",
+      "note": {
+        "en": "Safe stop: store at −80°C for up to months.",
+        "zh": "可在此暂停：−80°C 可保存数月。"
+      }
     },
     {
       "afterStep": 9,
       "condition": "-20°C",
-      "duration": "weeks"
+      "duration": "weeks",
+      "note": {
+        "en": "Safe stop: store at −20°C for up to weeks.",
+        "zh": "可在此暂停：−20°C 可保存数周。"
+      }
     },
     {
       "afterStep": 11,
       "condition": "4°C overnight",
-      "duration": "overnight"
+      "duration": "overnight",
+      "note": {
+        "en": "Safe stop: hold at 4°C overnight.",
+        "zh": "可在此暂停：4°C 过夜。"
+      }
     },
     {
       "afterStep": 13,
       "condition": "-20°C",
-      "duration": "months"
+      "duration": "months",
+      "note": {
+        "en": "Safe stop: store at −20°C for up to months.",
+        "zh": "可在此暂停：−20°C 可保存数月。"
+      }
     }
   ],
   "notes": {
@@ -244,27 +260,69 @@
     "hands_on": "~16 hours"
   },
   "materials": [
-    { "name": "12–15 million mammalian cells (log-phase)" },
-    { "name": "Formaldehyde (37% stock)" },
-    { "name": "Glycine (2.5 M stock solution)" },
-    { "name": "PBS (ice-cold)" },
-    { "name": "Arima-HiC+ Kit (restriction enzymes MboI+HinfI, ligase, lysis buffer)" },
-    { "name": "Biotin-14-dCTP" },
-    { "name": "DNA Polymerase I Large Fragment (Klenow)" },
-    { "name": "T4 DNA Ligase" },
-    { "name": "Proteinase K" },
-    { "name": "AMPure XP SPRI beads" },
-    { "name": "Bioruptor or sonicator" },
-    { "name": "Protein A/G magnetic beads" },
-    { "name": "ChIP-grade antibody (e.g., anti-H3K27ac, anti-CTCF, anti-cohesin)" },
-    { "name": "Dynabeads MyOne Streptavidin C1" },
-    { "name": "NEBNext Ultra II End Repair/A-Tailing Module" },
-    { "name": "NEBNext Ultra II Ligation Module" },
-    { "name": "NEBNext Multiplex Oligos (indexed primers)" },
-    { "name": "Q5 or KAPA HiFi PCR polymerase" },
-    { "name": "Qubit fluorometer" },
-    { "name": "Bioanalyzer or TapeStation" },
-    { "name": "Magnetic rack (1.5 mL and 96-well)" }
+    {
+      "name": "12–15 million mammalian cells (log-phase)"
+    },
+    {
+      "name": "Formaldehyde (37% stock)"
+    },
+    {
+      "name": "Glycine (2.5 M stock solution)"
+    },
+    {
+      "name": "PBS (ice-cold)"
+    },
+    {
+      "name": "Arima-HiC+ Kit (restriction enzymes MboI+HinfI, ligase, lysis buffer)"
+    },
+    {
+      "name": "Biotin-14-dCTP"
+    },
+    {
+      "name": "DNA Polymerase I Large Fragment (Klenow)"
+    },
+    {
+      "name": "T4 DNA Ligase"
+    },
+    {
+      "name": "Proteinase K"
+    },
+    {
+      "name": "AMPure XP SPRI beads"
+    },
+    {
+      "name": "Bioruptor or sonicator"
+    },
+    {
+      "name": "Protein A/G magnetic beads"
+    },
+    {
+      "name": "ChIP-grade antibody (e.g., anti-H3K27ac, anti-CTCF, anti-cohesin)"
+    },
+    {
+      "name": "Dynabeads MyOne Streptavidin C1"
+    },
+    {
+      "name": "NEBNext Ultra II End Repair/A-Tailing Module"
+    },
+    {
+      "name": "NEBNext Ultra II Ligation Module"
+    },
+    {
+      "name": "NEBNext Multiplex Oligos (indexed primers)"
+    },
+    {
+      "name": "Q5 or KAPA HiFi PCR polymerase"
+    },
+    {
+      "name": "Qubit fluorometer"
+    },
+    {
+      "name": "Bioanalyzer or TapeStation"
+    },
+    {
+      "name": "Magnetic rack (1.5 mL and 96-well)"
+    }
   ],
   "relatedProtocols": [
     "chip_protocol",

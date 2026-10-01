@@ -195,24 +195,23 @@
     "gel_extraction"
   ],
   "ref": "Oxford Nanopore Technologies. (2023). Ligation sequencing DNA V14 (SQK-LSK114). Protocol document EXP-PTC114 v114_revJ_26Oct2023.",
-  "doi": "10.17504/protocols.io.bp2l6n6brgqe/v2",
   "discipline": "genomics",
   "duration": "~4–6h (library prep) + 4–72h (sequencing run)",
   "materials": [
-    "SQK-LSK114 Ligation Sequencing Kit (LAVT, SQB, LB, EB)",
-    "Flow Cell Wash Kit (FLB, FLT)",
-    "MinION / GridION / PromethION flow cell (FLO-MIN114 R10.4.1)",
-    "NEBNext Ultra II End Repair/dA-Tail Module (NEB #E7546)",
-    "NEBNext FFPE DNA Repair Mix (NEB #M6630)",
-    "NEBNext Quick Ligation Module (NEB #E6056)",
-    "AMPure XP beads (Beckman Coulter)",
-    "Qubit dsDNA BR and HS Assay Kits",
-    "Agilent TapeStation + Genomic DNA ScreenTape",
-    "Nuclease-free water",
-    "Freshly prepared 70% ethanol",
-    "Low-bind 1.5 mL microcentrifuge tubes",
-    "MinKNOW software (v23+)",
-    "Optional: Megaruptor 3 or g-TUBE for shearing"
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
   ],
   "usage": "Prepare Oxford Nanopore long-read sequencing libraries from high-molecular-weight DNA for whole genome sequencing, amplicon sequencing, and metagenomic applications using the SQK-LSK114 ligation kit. Enables sequencing on MinION, GridION, and PromethION platforms."
 }

@@ -3,8 +3,17 @@
   "name": "Lentivirus Concentration by Sucrose Cushion Ultracentrifugation",
   "nameCn": "蔗糖垫液超速离心浓缩慢病毒",
   "category": "protocol",
-  "discipline": ["cell", "molecular"],
-  "tags": ["lentivirus", "virus concentration", "sucrose cushion", "ultracentrifugation", "viral transduction"],
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "tags": [
+    "lentivirus",
+    "virus concentration",
+    "sucrose cushion",
+    "ultracentrifugation",
+    "viral transduction"
+  ],
   "usage": {
     "en": "Concentrate lentiviral particles through a 20% sucrose cushion when higher purity and preservation of particle integrity are desired.",
     "zh": "当希望获得更高纯度并尽量保持病毒颗粒完整性时，使用 20% 蔗糖垫液超速离心浓缩慢病毒。"
@@ -195,14 +204,20 @@
   },
   "ref": "Boroujeni & Gardaneh (2018) Mol Biotechnol 60:185–193; Jiang et al. (2015) Sci Rep 5:13875",
   "doi": "10.1007/s12033-017-0044-5",
-  "relatedProtocols": ["lentivirus_production", "lentiviral_titer_functional", "lentiviral_titer_p24", "gradient_centrifugation_general", "lentivirus_concentration_peg"],
+  "relatedProtocols": [
+    "lentivirus_production",
+    "lentiviral_titer_functional",
+    "lentiviral_titer_p24",
+    "gradient_centrifugation_general",
+    "lentivirus_concentration_peg"
+  ],
   "storage": {
     "temp": "N/A",
     "duration": "3–5 hours",
     "icon": "📋",
     "label": {
       "en": "Protocol — 3–5 hours, hands-on: 45–60 minutes",
-      "zh": "实验方案 — 3–5 小时，实操: 45–60 分钟"
+      "zh": "实验方案 — 3–5 hours，实操: 45–60 minutes"
     }
   }
 }

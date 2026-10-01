@@ -67,23 +67,41 @@
   },
   "materials": [
     {
-      "name": "Overnight bacterial culture in LB or 2×YT"
+      "name": "LB Broth",
+      "note": {
+        "en": "Autoclaved",
+        "zh": "已灭菌"
+      }
     },
     {
-      "name": "Sterile 50% glycerol",
-      "linkedRecipe": "glycerol_stock"
+      "name": "50% Glycerol",
+      "note": {
+        "en": "Autoclaved, sterile-filtered",
+        "zh": "灭菌、过滤除菌"
+      }
     },
     {
-      "name": "Cryovials (1.5–2 mL)"
+      "name": "Appropriate antibiotic",
+      "note": {
+        "en": "e.g., ampicillin 100 mg/mL stock, kanamycin 50 mg/mL stock",
+        "zh": "如氨苄青霉素 100 mg/mL 储液，卡那霉素 50 mg/mL 储液"
+      }
     },
     {
-      "name": "Liquid nitrogen or dry ice/ethanol bath"
+      "name": "Cryovials",
+      "note": {
+        "en": "1.5–2 mL, sterile, screw-cap",
+        "zh": "1.5–2 mL，无菌，螺旋盖"
+      }
     },
     {
-      "name": "−80°C freezer"
+      "name": "Liquid nitrogen or dry ice",
+      "note": {
+        "en": "For flash-freezing",
+        "zh": "用于速冻"
+      }
     }
   ],
-  "stoppingPoints": [],
   "usage": {
     "en": "Prepare and store long-term bacterial glycerol stocks at −80°C.",
     "zh": "制备细菌甘油保存管，−80°C 长期保存。"
@@ -133,5 +151,20 @@
       "isHeader": false
     }
   ],
-  "safeStops": []
+  "safeStops": [
+    {
+      "afterStep": 2,
+      "note": {
+        "en": "Overnight culture grows for 12–16 h",
+        "zh": "过夜培养 12–16 h"
+      }
+    },
+    {
+      "afterStep": 7,
+      "note": {
+        "en": "Glycerol stock stable at -80°C for >10 years",
+        "zh": "甘油菌 -80°C 可保存 >10 年"
+      }
+    }
+  ]
 }

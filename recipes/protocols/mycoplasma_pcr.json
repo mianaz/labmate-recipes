@@ -56,26 +56,46 @@
   },
   "materials": [
     {
-      "name": "Cell culture supernatant (48 h, no antibiotics)"
+      "name": "Cell culture supernatant",
+      "note": {
+        "en": "48-72h conditioned",
+        "zh": "48-72h 条件培养基"
+      }
     },
     {
-      "name": "Mycoplasma-specific PCR primers"
+      "name": "Taq 2× Master Mix",
+      "note": {
+        "en": "Standard Taq, not HF",
+        "zh": "普通 Taq，非高保真"
+      }
     },
     {
-      "name": "Taq DNA polymerase and buffer"
+      "name": "Forward primer (10 µM)",
+      "note": {
+        "en": "GPO-3: 5'-GGGAGCAAACAGGATTAGATACCCT-3'",
+        "zh": "GPO-3 引物"
+      }
     },
     {
-      "name": "dNTPs (10 mM each)"
+      "name": "Reverse primer (10 µM)",
+      "note": {
+        "en": "MGSO: 5'-TGCACCATCTGTCACTCTGTTAACCTC-3'",
+        "zh": "MGSO 引物"
+      }
     },
     {
-      "name": "Positive control template"
+      "name": "Agarose gel (2%)",
+      "note": {
+        "en": "For detection of ~270 bp band",
+        "zh": "检测约 270 bp 条带"
+      }
     },
     {
-      "name": "Agarose gel and TAE buffer",
-      "linkedRecipe": "tae_50x"
-    },
-    {
-      "name": "Thermocycler"
+      "name": "DNA ladder (100 bp)",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     }
   ],
   "stoppingPoints": [],
@@ -157,5 +177,6 @@
   "crosslinks": [
     "hela_mycoplasma_testing",
     "agarose_gel_electrophoresis"
-  ]
+  ],
+  "volumeUnit": "test"
 }

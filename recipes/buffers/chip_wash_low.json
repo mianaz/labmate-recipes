@@ -82,16 +82,12 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine NaCl, SDS, NP-40, EDTA, and Tris-HCl in ~80 mL ddH₂O."
+      "en": "Prepare and use ice-cold",
+      "zh": "配制后冰上使用"
     },
     {
-      "step": "Stir until fully dissolved."
-    },
-    {
-      "step": "Bring to final volume of 100 mL."
-    },
-    {
-      "step": "Store at 4°C."
+      "en": "Wash beads 3–5 min with rotation at 4°C",
+      "zh": "4°C 旋转洗珠 3–5 min"
     }
   ],
   "crosslinks": [

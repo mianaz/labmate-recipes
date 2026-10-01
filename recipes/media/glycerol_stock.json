@@ -50,22 +50,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Prepare 50% glycerol in ddH₂O (v/v)."
+      "en": "Grow bacteria to stationary phase (O/N culture)",
+      "zh": "培养细菌至稳定期（过夜培养）"
     },
     {
-      "step": "Autoclave at 121°C for 20 min."
+      "en": "Mix 750 µL culture + 250 µL sterile 60% glycerol (final ~15%)",
+      "zh": "750 µL 菌液 + 250 µL 无菌 60% 甘油（终浓度 ~15%）"
     },
     {
-      "step": "Cool to room temperature."
+      "en": "Mix gently by inversion. Do NOT vortex",
+      "zh": "轻柔颠倒混匀。不要涡旋"
     },
     {
-      "step": "Mix 500 µL bacterial culture with 500 µL sterile 50% glycerol in cryovial."
+      "en": "Label tube (strain, plasmid, resistance, date). Snap-freeze in liquid N₂",
+      "zh": "标记管子（菌株、质粒、抗性、日期）。液氮速冻"
     },
     {
-      "step": "Flash-freeze in liquid nitrogen or dry ice/ethanol bath."
-    },
-    {
-      "step": "Store at −80°C."
+      "en": "Store at -80°C. To recover: streak directly onto selective plate from frozen stock",
+      "zh": "-80°C 保存。复苏时：直接从冻存管划线至选择性平板"
     }
   ]
 }

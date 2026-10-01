@@ -82,35 +82,57 @@
   },
   "materials": [
     {
-      "name": "DNA (plasmid, PCR product, or genomic)"
+      "name": "Restriction Enzyme(s)",
+      "note": {
+        "en": "5–20 U per reaction, store at −20°C",
+        "zh": "每反应 5–20 U，−20°C 保存"
+      }
     },
     {
-      "name": "Restriction enzyme(s)"
+      "name": "10× Reaction Buffer",
+      "note": {
+        "en": "Enzyme-specific or CutSmart (NEB)",
+        "zh": "酶特异性缓冲液或 CutSmart（NEB）"
+      }
     },
     {
-      "name": "10× restriction enzyme buffer (CutSmart, etc.)"
+      "name": "DNA Substrate",
+      "note": {
+        "en": "0.5–1 µg plasmid or 5–10 µg gDNA",
+        "zh": "质粒 0.5–1 µg 或 gDNA 5–10 µg"
+      }
     },
     {
-      "name": "BSA (100×, if required by enzyme)",
-      "optional": true
+      "name": "Nuclease-free Water",
+      "note": {
+        "en": "For reaction setup",
+        "zh": "用于配反应体系"
+      }
     },
     {
-      "name": "Nuclease-free water"
+      "name": "CIP/SAP/rSAP",
+      "note": {
+        "en": "Phosphatase for vector dephosphorylation",
+        "zh": "磷酸酶用于载体去磷酸化"
+      }
     },
     {
-      "name": "6× DNA loading dye",
+      "name": "Agarose Gel",
+      "note": {
+        "en": "0.8–1.5%, TAE buffer",
+        "zh": "0.8–1.5%，TAE缓冲液"
+      }
+    },
+    {
+      "name": "DNA Ladder",
+      "note": {
+        "en": "1 kb or 100 bp as appropriate",
+        "zh": "1 kb 或 100 bp，视需要选择"
+      }
+    },
+    {
+      "name": "6× DNA Loading Dye",
       "linkedRecipe": "dna_loading_dye_6x"
-    },
-    {
-      "name": "Agarose and TAE buffer",
-      "linkedRecipe": "tae_50x"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Digestion complete",
-      "condition": "−20°C or heat-inactivate enzyme",
-      "duration": "1 week"
     }
   ],
   "usage": {
@@ -165,10 +187,17 @@
   ],
   "safeStops": [
     {
-      "afterStep": 5,
+      "afterStep": 3,
       "note": {
-        "en": "Heat-inactivated digestion product can be stored at −20°C for up to 1 week before downstream use (ligation, gel analysis, etc.).",
-        "zh": "热灭活后的酶切产物可在 −20°C 保存最多 1 周，再进行后续操作（连接、凝胶分析等）。"
+        "en": "Digest can incubate overnight at 37°C for genomic DNA applications",
+        "zh": "基因组DNA酶切可37°C过夜"
+      }
+    },
+    {
+      "afterStep": 4,
+      "note": {
+        "en": "Heat-inactivated digest can be stored at −20°C",
+        "zh": "热灭活后的酶切产物可 −20°C 保存"
       }
     }
   ]

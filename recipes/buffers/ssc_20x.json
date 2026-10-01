@@ -54,19 +54,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve NaCl (175.3 g) and sodium citrate (88.2 g) in ~800 mL ddH₂O."
+      "en": "Dissolve NaCl and sodium citrate in ~{v:800:mL} ddH₂O",
+      "zh": "将 NaCl 和柠檬酸钠溶于约 {v:800:mL} ddH₂O"
     },
     {
-      "step": "Adjust pH to 7.0 with HCl."
+      "en": "Adjust pH to 7.0 with HCl",
+      "zh": "用 HCl 调 pH 至 7.0"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
+      "en": "Top up to {v:1000:mL}. Autoclave 121°C 20 min",
+      "zh": "定容至 {v:1000:mL}。121°C 高压灭菌 20 min"
     },
     {
-      "step": "Autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Store at room temperature."
+      "en": "Dilute as needed: 6× (hybridization), 2× (mild wash), 0.1× (stringent wash)",
+      "zh": "按需稀释: 6×（杂交）、2×（温和洗涤）、0.1×（严格洗涤）"
     }
   ],
   "crosslinks": [
@@ -76,5 +77,6 @@
   "relatedProtocols": [
     "southern_blot",
     "northern_blot"
-  ]
+  ],
+  "ph": "7.0"
 }

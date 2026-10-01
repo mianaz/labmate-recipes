@@ -99,18 +99,6 @@
       "unit": "step"
     }
   ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Day 1",
-      "condition": "RT thawing",
-      "duration": "Overnight"
-    },
-    {
-      "afterStep": "Final",
-      "condition": "-30°C or -20°C",
-      "duration": "12 months"
-    }
-  ],
   "notes": {
     "en": "Heat inactivation at 56°C for 30 min destroys complement proteins while preserving growth factors. Do NOT heat-inactivate for longer — it reduces serum quality. Typical FBS: Characterized, Canadian origin (e.g. Cytiva SH30396.03). Each 500 mL bottle yields ~12 aliquots at 40 mL each.",
     "zh": "56°C 30 分钟热灭活破坏补体蛋白同时保留生长因子。不可加热过久——降低血清质量。每瓶 500 mL 约分装 12 管（每管 40 mL）。"
@@ -123,17 +111,17 @@
   ],
   "safeStops": [
     {
-      "afterStep": 1,
+      "afterStep": "Day 1",
       "note": {
-        "en": "FBS bottles thawing overnight at RT — this is the natural overnight pause",
-        "zh": "FBS 室温过夜解冻 — 这是自然的过夜停顿点"
+        "en": "RT thawing (up to Overnight)",
+        "zh": "RT thawing (最长 Overnight)"
       }
     },
     {
-      "afterStep": 7,
+      "afterStep": "Final",
       "note": {
-        "en": "Heat-inactivated FBS aliquots stored at −20/−30°C are stable for 12 months",
-        "zh": "热灭活 FBS 分装于 −20/−30°C 可保存 12 个月"
+        "en": "-30°C or -20°C (up to 12 months)",
+        "zh": "-30°C or -20°C (最长 12 months)"
       }
     }
   ],
@@ -207,6 +195,5 @@
     "complete_rpmi",
     "freezing_medium",
     "cell_thawing"
-  ],
-  "doi": "10.1016/j.biotechadv.2010.03.003"
+  ]
 }

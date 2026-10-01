@@ -58,19 +58,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tricine and Bis-Tris in ~800 mL ddH₂O."
+      "en": "Dissolve Tricine and Bis-Tris in ddH₂O",
+      "zh": "将 Tricine 和 Bis-Tris 溶于 ddH₂O"
     },
     {
-      "step": "Add Coomassie Blue G-250 and stir until dissolved."
+      "en": "Add Coomassie G-250 to 0.02%",
+      "zh": "加入考马斯亮蓝 G-250 至 0.02%"
     },
     {
-      "step": "Adjust pH to 7.0 if necessary."
-    },
-    {
-      "step": "Bring to final volume of 1000 mL with ddH₂O."
-    },
-    {
-      "step": "Store at 4°C protected from light."
+      "en": "Prepare fresh; use cold (4°C)",
+      "zh": "现配；冷用 (4°C)"
     }
   ],
   "crosslinks": [],
@@ -78,5 +75,6 @@
     "native_page_buffer",
     "mitochondria_isolation",
     "coomassie_staining"
-  ]
+  ],
+  "ph": "7.0"
 }

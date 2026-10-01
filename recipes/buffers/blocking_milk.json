@@ -45,16 +45,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Weigh non-fat dry milk powder."
+      "en": "Weigh {v:2.5:g} skim milk powder",
+      "zh": "称取 {v:2.5:g} 脱脂奶粉"
     },
     {
-      "step": "Add to TBST and mix by stirring or vortexing."
+      "en": "Add to {v:50:mL} TBST, vortex until dissolved",
+      "zh": "加入 {v:50:mL} TBST，涡旋至完全溶解"
     },
     {
-      "step": "Prepare fresh before each use (milk spoils quickly)."
-    },
-    {
-      "step": "Do not filter — milk is a suspension."
+      "en": "Use immediately. Discard after use",
+      "zh": "立即使用，用后丢弃"
     }
   ],
   "crosslinks": [

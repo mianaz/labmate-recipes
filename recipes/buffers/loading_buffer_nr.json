@@ -68,16 +68,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve SDS in 1 M Tris-HCl pH 6.8."
+      "en": "Mix Tris-HCl pH 6.8, SDS, glycerol, and bromophenol blue in ddH₂O",
+      "zh": "将 Tris-HCl pH 6.8、SDS、甘油、溴酚蓝混合于 ddH₂O 中"
     },
     {
-      "step": "Add glycerol and bromophenol blue."
+      "en": "Heat gently if needed to dissolve SDS. Do NOT add β-ME or DTT",
+      "zh": "必要时轻微加热溶解 SDS。不加 β-ME 或 DTT"
     },
     {
-      "step": "Bring to final volume of 10 mL with ddH₂O (no reducing agent)."
+      "en": "Aliquot and store at -20°C",
+      "zh": "分装后 -20°C 保存"
     },
     {
-      "step": "Aliquot and store at −20°C."
+      "en": "Mix 1:1 with sample. Heat 70°C 10 min (do NOT boil at 95°C)",
+      "zh": "与样品 1:1 混合。70°C 加热 10 min（不要 95°C 煮沸）"
     }
   ],
   "crosslinks": [

@@ -78,24 +78,26 @@
   },
   "materials": [
     {
-      "name": "Cryovial from liquid nitrogen"
-    },
-    {
-      "name": "Complete culture medium (pre-warmed to 37°C)",
+      "name": "Complete DMEM or RPMI",
       "linkedRecipe": "complete_dmem"
     },
     {
-      "name": "1× PBS",
+      "name": "PBS (1×)",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "37°C water bath"
+      "name": "37°C water bath",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Centrifuge (300 × g)"
-    },
-    {
-      "name": "Culture flask or dish"
+      "name": "T-25 or T-75 flask",
+      "note": {
+        "en": "Pre-warmed medium",
+        "zh": "预热培养基"
+      }
     }
   ],
   "briefSteps": [
@@ -168,5 +170,6 @@
   "crosslinks": [
     "cell_freezing",
     "cell_passage"
-  ]
+  ],
+  "volumeUnit": "session"
 }

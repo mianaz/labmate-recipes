@@ -56,23 +56,28 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Coomassie Brilliant Blue R-250 in methanol first.",
-      "warning": "Methanol is toxic — handle in fume hood."
+      "en": "Dissolve Coomassie Brilliant Blue R-250 in methanol first. ⚠️ Methanol is toxic — handle in fume hood.",
+      "zh": "Dissolve Coomassie Brilliant Blue R-250 in methanol first. ⚠️ Methanol is toxic — handle in fume hood."
     },
     {
-      "step": "Add glacial acetic acid."
+      "en": "Add glacial acetic acid.",
+      "zh": "Add glacial acetic acid."
     },
     {
-      "step": "Bring to final volume with ddH₂O."
+      "en": "Bring to final volume with ddH₂O.",
+      "zh": "Bring to final volume with ddH₂O."
     },
     {
-      "step": "Stir until dye is completely dissolved."
+      "en": "Stir until dye is completely dissolved.",
+      "zh": "Stir until dye is completely dissolved."
     },
     {
-      "step": "Filter through Whatman No. 1 or 0.45 µm filter before use."
+      "en": "Filter through Whatman No. 1 or 0.45 µm filter before use.",
+      "zh": "Filter through Whatman No. 1 or 0.45 µm filter before use."
     },
     {
-      "step": "Store at room temperature; reuse multiple times."
+      "en": "Store at room temperature; reuse multiple times.",
+      "zh": "Store at room temperature; reuse multiple times."
     }
   ]
 }
