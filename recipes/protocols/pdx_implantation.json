@@ -30,12 +30,10 @@
       "name": "Sterile surgical tools, clean surgical blades"
     },
     {
-      "name": "Sterile PBS",
-      "linkedRecipe": "pbs_1x"
+      "name": "Sterile PBS"
     },
     {
-      "name": "Culture medium (DMEM/F12 + 10% FBS + antibiotics)",
-      "linkedRecipe": "complete_dmem"
+      "name": "Culture medium (DMEM/F12 + 10% FBS + antibiotics)"
     },
     {
       "name": "10% formalin (for fixation)"
@@ -44,27 +42,19 @@
       "name": "Ketamine (10 mg/mL) or isoflurane anesthesia"
     },
     {
-      "name": "Buprenorphine solution (analgesia)",
-      "linkedRecipe": "buprenorphine_solution"
-    },
-    {
       "name": "Wound clips and applicator"
     },
     {
       "name": "Curved mosquito forceps"
     },
     {
-      "name": "1 mL syringe (no needle)"
+      "name": "1 mL syringe (no needle, for spilled cells)"
     },
     {
       "name": "50 mL conical tubes"
     },
     {
       "name": "Cryogenic vials and freezing container (Nalgene Cryo 1°C)"
-    },
-    {
-      "name": "Freezing medium (50% FBS, 40% DMEM, 10% DMSO)",
-      "linkedRecipe": "freezing_medium"
     }
   ],
   "components": [
@@ -221,30 +211,18 @@
   ],
   "safeStops": [
     {
-      "afterStep": 3,
-      "note": {
-        "en": "Prepared tissue pieces can be kept on ice in PBS for 1–2 hours before implantation",
-        "zh": "准备好的组织块可在 PBS 冰上保存 1–2 小时后再移植"
-      }
-    },
-    {
-      "afterStep": 14,
-      "note": {
-        "en": "Frozen tumor tissue in liquid nitrogen can be stored indefinitely (years)",
-        "zh": "液氮中的冻存肿瘤组织可无限期保存（数年）"
-      }
-    }
-  ],
-  "stoppingPoints": [
-    {
       "afterStep": "Step 3",
-      "condition": "Keep tissue on ice in PBS",
-      "duration": "1–2 hours"
+      "note": {
+        "en": "Keep tissue on ice in PBS (up to 1-2 hours)",
+        "zh": "Keep tissue on ice in PBS (最长 1-2 hours)"
+      }
     },
     {
       "afterStep": "Step 10",
-      "condition": "Liquid nitrogen",
-      "duration": "Years"
+      "note": {
+        "en": "Liquid nitrogen (up to Years)",
+        "zh": "Liquid nitrogen (最长 Years)"
+      }
     }
   ],
   "notes": {
@@ -253,23 +231,16 @@
   },
   "ref": "Adapted from NCI PDXNet recommendations; JoVE Protocol 54393",
   "crosslinks": [
-    "freezing_medium",
-    "tumor_dissociation",
-    "buprenorphine_solution",
-    "complete_dmem",
-    "pbs_1x"
-  ],
-  "relatedProtocols": [
     "tumor_dissociation",
     "cell_freezing"
   ],
   "storage": {
     "temp": "N/A",
-    "duration": "N/A",
+    "duration": "2–3 hours (surgery); 3–12 weeks (growth)",
     "icon": "📋",
     "label": {
-      "en": "See protocol notes",
-      "zh": "见方案备注"
+      "en": "Protocol — 2–3 hours (surgery); 3–12 weeks (growth), hands-on: 30 min per mouse",
+      "zh": "实验方案 — 2–3 hours (surgery); 3–12 weeks (growth)，实操: 30 min per mouse"
     }
   }
 }

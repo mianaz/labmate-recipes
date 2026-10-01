@@ -83,19 +83,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Resuspend crRNA and tracrRNA in nuclease-free duplex buffer to 100 µM."
+      "en": "Mix HEPES pH 7.5 + KCl + MgCl₂ in nuclease-free H₂O",
+      "zh": "将 HEPES pH 7.5 + KCl + MgCl₂ 混合于无核酸酶水中"
     },
     {
-      "step": "Mix crRNA and tracrRNA 1:1, anneal at 95°C for 5 min, cool to RT."
+      "en": "Add Cas9 protein + sgRNA (1:1.2 molar ratio)",
+      "zh": "加入 Cas9 蛋白 + sgRNA（1:1.2 摩尔比）"
     },
     {
-      "step": "Add Cas9 protein to the annealed guide RNA."
+      "en": "Incubate RT 10 min for RNP formation",
+      "zh": "室温孵育 10 min 形成 RNP 复合物"
     },
     {
-      "step": "Incubate at RT for 10–20 min to form RNP complex."
-    },
-    {
-      "step": "Use immediately or store at −80°C."
+      "en": "Electroporate immediately",
+      "zh": "立即电穿孔"
     }
   ],
   "crosslinks": [
@@ -107,5 +108,6 @@
     "crispr_sgrna_cloning",
     "electroporation",
     "cell_transfection"
-  ]
+  ],
+  "ph": "7.4"
 }

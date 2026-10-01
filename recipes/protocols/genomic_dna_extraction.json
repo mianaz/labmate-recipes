@@ -83,35 +83,47 @@
   },
   "materials": [
     {
-      "name": "Cells, tissue, or tail clip"
-    },
-    {
-      "name": "Tail lysis buffer",
+      "name": "Lysis Buffer",
       "linkedRecipe": "tail_lysis_buffer"
     },
     {
-      "name": "Proteinase K (20 mg/mL)"
+      "name": "Proteinase K (20 mg/mL)",
+      "note": {
+        "en": "Molecular biology grade",
+        "zh": "分子生物学级"
+      }
     },
     {
-      "name": "RNase A (optional)",
-      "optional": true
+      "name": "RNase A (10 mg/mL)",
+      "note": {
+        "en": "DNase-free",
+        "zh": "无DNase"
+      }
     },
     {
-      "name": "Phenol:chloroform:isoamyl alcohol (25:24:1)",
-      "optional": true
+      "name": "Protein Precipitation Solution",
+      "note": {
+        "en": "Kit component or saturated NaCl",
+        "zh": "试剂盒组分或饱和NaCl"
+      }
     },
     {
-      "name": "100% isopropanol or ethanol"
+      "name": "Isopropanol",
+      "note": {
+        "en": "Molecular biology grade",
+        "zh": "分子生物学级"
+      }
     },
     {
-      "name": "70% ethanol"
+      "name": "70% Ethanol",
+      "note": {
+        "en": "Ice-cold",
+        "zh": "冰冷"
+      }
     },
     {
-      "name": "TE buffer",
+      "name": "TE Buffer (pH 8.0)",
       "linkedRecipe": "te"
-    },
-    {
-      "name": "1.5 mL microcentrifuge tubes"
     }
   ],
   "stoppingPoints": [

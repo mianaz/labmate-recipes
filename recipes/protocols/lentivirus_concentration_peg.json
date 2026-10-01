@@ -3,8 +3,18 @@
   "name": "Lentivirus Concentration by PEG Precipitation and Ultracentrifugation",
   "nameCn": "PEG 沉淀结合超速离心浓缩慢病毒",
   "category": "protocol",
-  "discipline": ["cell", "molecular"],
-  "tags": ["lentivirus", "virus concentration", "PEG", "PEG8000", "ultracentrifugation", "viral transduction"],
+  "discipline": [
+    "cell",
+    "molecular"
+  ],
+  "tags": [
+    "lentivirus",
+    "virus concentration",
+    "PEG",
+    "PEG8000",
+    "ultracentrifugation",
+    "viral transduction"
+  ],
   "usage": {
     "en": "Concentrate lentiviral supernatant by PEG precipitation followed by ultracentrifugation when higher titer is needed for difficult-to-infect cells.",
     "zh": "使用 PEG 沉淀结合超速离心浓缩慢病毒上清，在原代细胞或难感染细胞需要更高滴度时使用。"
@@ -226,14 +236,19 @@
   },
   "ref": "Tiscornia et al. (2006) Nat Protoc 1:241–245; Boroujeni & Gardaneh (2018) Mol Biotechnol 60:185–193",
   "doi": "10.1038/nprot.2006.37",
-  "relatedProtocols": ["lentivirus_production", "lentiviral_titer_functional", "lentiviral_titer_p24", "lentivirus_concentration_sucrose_cushion"] ,
+  "relatedProtocols": [
+    "lentivirus_production",
+    "lentiviral_titer_functional",
+    "lentiviral_titer_p24",
+    "lentivirus_concentration_sucrose_cushion"
+  ],
   "storage": {
     "temp": "N/A",
     "duration": "6–10 hours",
     "icon": "📋",
     "label": {
       "en": "Protocol — 6–10 hours, hands-on: 1–1.5 hours",
-      "zh": "实验方案 — 6–10 小时，实操: 1–1.5 小时"
+      "zh": "实验方案 — 6–10 hours，实操: 1–1.5 hours"
     }
   }
 }

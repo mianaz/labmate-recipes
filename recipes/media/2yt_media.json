@@ -48,22 +48,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve tryptone, yeast extract, and NaCl in ~800 mL ddH₂O."
+      "en": "Dissolve tryptone, yeast extract, and NaCl in ~{v:800:mL} ddH₂O",
+      "zh": "将胰蛋白胨、酵母提取物、NaCl 溶于约 {v:800:mL} ddH₂O"
     },
     {
-      "step": "Adjust pH to 7.0 with NaOH."
+      "en": "Adjust pH to 7.0 with NaOH",
+      "zh": "用 NaOH 调 pH 至 7.0"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
+      "en": "Top up to {v:1000:mL}. Autoclave 121°C 20 min",
+      "zh": "定容至 {v:1000:mL}。121°C 高压灭菌 20 min"
     },
     {
-      "step": "Autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Cool to <55°C before adding antibiotics if needed."
-    },
-    {
-      "step": "Store at 4°C."
+      "en": "Cool to ~55°C before adding antibiotics",
+      "zh": "冷却至 ~55°C 后再加抗生素"
     }
   ],
   "crosslinks": [

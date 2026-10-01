@@ -89,26 +89,57 @@
   },
   "materials": [
     {
-      "name": "Protein sample"
+      "name": "Dialysis tubing or cassettes",
+      "note": {
+        "en": "Choose MWCO ≤ ½ protein MW. SnakeSkin or Slide-A-Lyzer (Thermo)",
+        "zh": "选择截留分子量≤蛋白MW的½。SnakeSkin或Slide-A-Lyzer（Thermo）"
+      }
+    },
+    {
+      "name": "Dialysis clips",
+      "note": {
+        "en": "2 per tube, weighted",
+        "zh": "每管2个，加重型"
+      }
+    },
+    {
+      "name": "Sodium bicarbonate (2%)",
+      "note": {
+        "en": "For membrane preparation",
+        "zh": "用于膜准备"
+      }
+    },
+    {
+      "name": "EDTA (0.5 M stock)",
+      "note": {
+        "en": "1 mM for membrane preparation",
+        "zh": "1 mM用于膜准备"
+      }
     },
     {
       "name": "Dialysis buffer",
-      "linkedRecipe": "dialysis_buffer_generic"
+      "note": {
+        "en": "500× sample volume, pre-chilled",
+        "zh": "500×样品体积，预冷"
+      }
     },
     {
-      "name": "Dialysis tubing or cassette (appropriate MWCO)"
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Dialysis clips"
+      "name": "Magnetic stirrer and stir bar",
+      "note": {
+        "en": "For gentle agitation during dialysis",
+        "zh": "透析时轻柔搅拌用"
+      }
     },
     {
-      "name": "Magnetic stir bar and stir plate"
-    },
-    {
-      "name": "Beaker (≥100× sample volume)"
-    },
-    {
-      "name": "4°C cold room or refrigerator"
+      "name": "Centrifugal concentrators",
+      "note": {
+        "en": "Amicon Ultra, if concentration needed",
+        "zh": "Amicon Ultra，如需浓缩"
+      }
     }
   ],
   "stoppingPoints": [

@@ -59,19 +59,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris base, glycine, and SDS in ~800 mL ddH₂O."
+      "en": "Dilute {v:100:mL} 10× Running Buffer into {v:900:mL} ddH₂O",
+      "zh": "取 {v:100:mL} 10× Running Buffer 加入 {v:900:mL} ddH₂O"
     },
     {
-      "step": "Stir until completely dissolved."
+      "en": "Mix well. Do NOT adjust pH",
+      "zh": "混匀。不要调 pH"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Do not adjust pH — should be ~8.3."
-    },
-    {
-      "step": "Store at room temperature; can be reused 2–3 times."
+      "en": "Can reuse 2-3× for mini-gels but fresh is better",
+      "zh": "Mini-gel 可重复使用 2-3 次，但建议用新鲜配的"
     }
   ],
   "crosslinks": [
@@ -82,5 +79,6 @@
     "coomassie_staining",
     "silver_stain",
     "emsa_gel_shift"
-  ]
+  ],
+  "ph": "8.3"
 }

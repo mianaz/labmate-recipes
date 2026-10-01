@@ -46,16 +46,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Weigh BSA and add to TBST or PBST."
+      "en": "Weigh {v:2.5:g} BSA (Fraction V or IgG-free)",
+      "zh": "称取 {v:2.5:g} BSA（Fraction V 或 IgG-free）"
     },
     {
-      "step": "Dissolve by gentle swirling or rocking (avoid foaming)."
+      "en": "Dissolve in {v:50:mL} TBST. Rock gently, do NOT vortex vigorously",
+      "zh": "溶于 {v:50:mL} TBST，轻摇溶解，不要剧烈涡旋"
     },
     {
-      "step": "Filter through 0.22 µm if desired."
-    },
-    {
-      "step": "Prepare fresh or store at 4°C for up to 1 week."
+      "en": "Filter through 0.22 µm if needed",
+      "zh": "必要时 0.22 µm 过滤"
     }
   ],
   "crosslinks": [

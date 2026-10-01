@@ -81,19 +81,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve HEPES, NaCl, MgCl₂, and EDTA in ~40 mL ddH₂O."
+      "en": "Resuspend nuclear pellet in Buffer B",
+      "zh": "用 Buffer B 重悬核沉淀"
     },
     {
-      "step": "Add DTT and glycerol (25%)."
+      "en": "Rotate 30 min at 4°C",
+      "zh": "4°C 旋转 30 min"
     },
     {
-      "step": "Adjust pH to 7.9."
-    },
-    {
-      "step": "Bring to final volume of 50 mL."
-    },
-    {
-      "step": "Store at 4°C; add protease inhibitors fresh."
+      "en": "Centrifuge 16,000×g 20 min → supernatant = nuclear extract",
+      "zh": "16,000×g 离心 20 min → 上清 = 核提取物"
     }
   ],
   "crosslinks": [

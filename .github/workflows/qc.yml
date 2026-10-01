@@ -13,6 +13,8 @@ on:
       - 'templates/**'
       - 'schema.json'
       - 'qc.js'
+      - 'order.json'
+      - 'build-recipes.js'
       - '.github/workflows/qc.yml'
   pull_request:
     paths:
@@ -20,6 +22,8 @@ on:
       - 'templates/**'
       - 'schema.json'
       - 'qc.js'
+      - 'order.json'
+      - 'build-recipes.js'
       - '.github/workflows/qc.yml'
 
 permissions:
@@ -38,6 +42,9 @@ jobs:
       # its en or zh half, missing id/name/category, or invalid JSON.
       - name: QC — errors block
         run: node qc.js
+      # The published library is built from recipes/ alone: make sure it builds.
+      - name: Build the library
+        run: node build-recipes.js --out "$RUNNER_TEMP/recipes.json"
       # Advisory: strict mode also fails on warnings (missing materials,
       # duration.total, briefSteps, ref, …). Surfaced for visibility without
       # blocking the merge, so the warning count can be driven down over time.

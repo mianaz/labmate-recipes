@@ -52,16 +52,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris base and glycine in ~800 mL ddH₂O."
+      "en": "Dissolve Tris and glycine in ddH₂O (NO SDS)",
+      "zh": "将 Tris 和甘氨酸溶于 ddH₂O（不加 SDS）"
     },
     {
-      "step": "Do NOT add SDS (native conditions)."
+      "en": "pH should be ~8.3. Do not adjust",
+      "zh": "pH 应为 ~8.3，不要调节"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Store at room temperature."
+      "en": "Run gel at 4°C to preserve native structure",
+      "zh": "在 4°C 跑胶以保持蛋白天然结构"
     }
   ],
   "crosslinks": [
@@ -71,5 +71,6 @@
     "emsa_gel_shift",
     "coip_protocol",
     "pulldown_assay"
-  ]
+  ],
+  "ph": "8.3"
 }

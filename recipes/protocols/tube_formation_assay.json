@@ -53,27 +53,56 @@
   },
   "materials": [
     {
-      "name": "Matrigel (growth factor reduced)",
+      "name": "Matrigel (GFR)",
       "linkedRecipe": "matrigel_coating"
     },
     {
-      "name": "Endothelial cells (HUVECs or similar)"
+      "name": "HUVECs",
+      "note": {
+        "en": "Passage 2–6, > 90% viable",
+        "zh": "2–6 代，活力 > 90%"
+      }
     },
     {
-      "name": "Serum-free or low-serum medium"
+      "name": "EBM-2 Basal Medium",
+      "note": {
+        "en": "Endothelial cell basal medium",
+        "zh": "内皮细胞基础培养基"
+      }
     },
     {
-      "name": "96-well plate (pre-chilled)"
+      "name": "FBS",
+      "note": {
+        "en": "0.5% for low serum conditions",
+        "zh": "0.5% 低血清条件"
+      }
     },
     {
-      "name": "Microscope with camera (phase-contrast)"
+      "name": "VEGF",
+      "note": {
+        "en": "10–50 ng/mL as positive control",
+        "zh": "10–50 ng/mL 作为阳性对照"
+      }
     },
     {
-      "name": "Image analysis software (ImageJ Angiogenesis Analyzer)",
-      "optional": true
+      "name": "96-well Plate",
+      "note": {
+        "en": "Flat-bottom, tissue culture treated",
+        "zh": "平底，组织培养处理"
+      }
+    },
+    {
+      "name": "Calcein AM",
+      "note": {
+        "en": "2 µg/mL for live-cell staining",
+        "zh": "2 µg/mL 活细胞染色"
+      }
+    },
+    {
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
     }
   ],
-  "stoppingPoints": [],
   "briefSteps": [
     {
       "en": "Thaw growth factor-reduced Matrigel on ice overnight → coat pre-chilled 96-well plate with 50 µL/well → polymerize 30 min at 37°C → seed 1–2×10⁴ HUVECs (passage 2–6) per well ± treatments → incubate 4–8 h at 37°C → image by phase-contrast → quantify tube length, branch points, and meshes with ImageJ Angiogenesis Analyzer",
@@ -136,10 +165,17 @@
   ],
   "safeStops": [
     {
+      "afterStep": 0,
+      "note": {
+        "en": "Matrigel thaws overnight at 4°C (required step)",
+        "zh": "Matrigel 4°C 过夜解冻（必需步骤）"
+      }
+    },
+    {
       "afterStep": 1,
       "note": {
-        "en": "Matrigel-coated plate can be kept at 37°C for up to 1 h before seeding cells if needed",
-        "zh": "如需要，铺好 Matrigel 的孔板可在 37°C 最多放置 1 h 再铺细胞"
+        "en": "Polymerized Matrigel-coated plates can be used within 1 h; do not store",
+        "zh": "聚合后的Matrigel铺板应1 h内使用；勿长期保存"
       }
     }
   ],

@@ -56,16 +56,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve BSA and/or normal serum in PBS."
+      "en": "Dissolve BSA in PBS, add normal serum (same species as secondary Ab)",
+      "zh": "将 BSA 溶于 PBS，加入正常血清（与二抗同种属）"
     },
     {
-      "step": "Add Triton X-100 (0.1–0.3%) if combined with permeabilization."
+      "en": "Add 0.1% Tween-20 (optional, reduces background)",
+      "zh": "可选加入 0.1% Tween-20（降低背景）"
     },
     {
-      "step": "Mix gently to avoid foaming."
-    },
-    {
-      "step": "Prepare fresh or store at 4°C for up to 1 week."
+      "en": "Block cells 1 h at RT or overnight at 4°C",
+      "zh": "室温封闭 1 h 或 4°C 过夜"
     }
   ],
   "crosslinks": [

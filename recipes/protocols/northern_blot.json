@@ -106,50 +106,62 @@
   },
   "materials": [
     {
-      "name": "Total RNA samples"
+      "name": "Total RNA (5–30 µg/lane)",
+      "note": {
+        "en": "High-quality, RIN > 7",
+        "zh": "高质量，RIN > 7"
+      }
     },
     {
-      "name": "Formaldehyde agarose gel (1–1.5%)"
+      "name": "DEPC-treated Water",
+      "linkedRecipe": "depc_water"
     },
     {
-      "name": "10× MOPS buffer",
-      "linkedRecipe": "mops_10x"
-    },
-    {
-      "name": "RNA loading dye",
+      "name": "RNA Loading Dye",
       "linkedRecipe": "rna_loading_dye"
+    },
+    {
+      "name": "MOPS Running Buffer",
+      "linkedRecipe": "mops_running_buffer"
+    },
+    {
+      "name": "Formaldehyde (37%)",
+      "note": {
+        "en": "Molecular biology grade, use in fume hood",
+        "zh": "分子生物学级，通风橱中使用"
+      }
     },
     {
       "name": "20× SSC",
       "linkedRecipe": "ssc_20x"
     },
     {
-      "name": "Nylon membrane (positively charged)"
+      "name": "Nylon Membrane (positively charged)",
+      "note": {
+        "en": "e.g. Hybond-N+, Amersham",
+        "zh": "如 Hybond-N+, Amersham"
+      }
     },
     {
-      "name": "UV crosslinker"
+      "name": "Hybridization Buffer",
+      "note": {
+        "en": "ULTRAhyb or Church buffer",
+        "zh": "ULTRAhyb 或 Church 缓冲液"
+      }
     },
     {
-      "name": "Labeled probe (DIG or ³²P)"
+      "name": "Labeled Probe",
+      "note": {
+        "en": "³²P, DIG, or biotin-labeled",
+        "zh": "³²P、DIG 或生物素标记"
+      }
     },
     {
-      "name": "Hybridization buffer"
-    },
-    {
-      "name": "DEPC-treated water",
-      "linkedRecipe": "depc_water"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "RNA transferred to membrane",
-      "condition": "RT, dry",
-      "duration": "months (after UV crosslinking)"
-    },
-    {
-      "afterStep": "Membrane probed",
-      "condition": "−20°C wrapped in plastic wrap",
-      "duration": "1 month"
+      "name": "PhosphorImager Screen",
+      "note": {
+        "en": "For radioactive detection",
+        "zh": "用于放射性检测"
+      }
     }
   ],
   "usage": {
@@ -239,17 +251,24 @@
   ],
   "safeStops": [
     {
-      "afterStep": 7,
+      "afterStep": 6,
       "note": {
-        "en": "UV-crosslinked membrane can be stored dry at RT for months before hybridization.",
-        "zh": "UV 交联后的干燥膜可室温保存数月，待杂交。"
+        "en": "UV-crosslinked membrane can be stored dry at RT or −20°C for months",
+        "zh": "UV交联后的膜可室温或 −20°C 干燥保存数月"
       }
     },
     {
-      "afterStep": 11,
+      "afterStep": 9,
       "note": {
-        "en": "After washing, the probed membrane can be wrapped in plastic wrap and stored at −20°C for 1–4 weeks before detection (³²P decays; DIG is more stable).",
-        "zh": "洗涤完毕后，已杂交的膜用保鲜膜包好，可 −20°C 保存 1–4 周再检测（³²P 会衰变；DIG 更稳定）。"
+        "en": "Hybridization can proceed overnight (standard)",
+        "zh": "杂交可过夜进行（标准操作）"
+      }
+    },
+    {
+      "afterStep": 12,
+      "note": {
+        "en": "Washed membrane can be wrapped in plastic wrap and exposed later",
+        "zh": "洗涤后的膜可用保鲜膜包裹后延后曝光"
       }
     }
   ]

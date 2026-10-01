@@ -107,44 +107,63 @@
   ],
   "materials": [
     {
-      "name": "Cells (1–10 × 10⁷)"
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "1% formaldehyde (methanol-free) in PBS"
-    },
-    {
-      "name": "Glycine (2.5 M stock)"
-    },
-    {
-      "name": "ChIP lysis buffer",
+      "name": "ChIP Lysis Buffer",
       "linkedRecipe": "chip_lysis"
     },
     {
-      "name": "ChIP dilution buffer",
+      "name": "ChIP Dilution Buffer",
       "linkedRecipe": "chip_dilution"
     },
     {
-      "name": "Low-salt wash buffer",
+      "name": "Low-Salt Wash Buffer",
       "linkedRecipe": "chip_wash_low"
     },
     {
-      "name": "High-salt wash buffer",
+      "name": "High-Salt Wash Buffer",
       "linkedRecipe": "chip_wash_high"
     },
     {
-      "name": "Protein A/G magnetic beads"
+      "name": "TE Buffer",
+      "linkedRecipe": "te"
     },
     {
-      "name": "ChIP-grade antibody"
+      "name": "37% Formaldehyde",
+      "note": {
+        "en": "Methanol-free preferred",
+        "zh": "优选无甲醇型"
+      }
     },
     {
-      "name": "Proteinase K"
+      "name": "2.5 M Glycine",
+      "note": {
+        "en": "Quench crosslinking",
+        "zh": "终止交联反应"
+      }
     },
     {
-      "name": "Sonicator (Bioruptor or Covaris)"
+      "name": "Protein A/G magnetic beads",
+      "note": {
+        "en": "Dynabeads or equivalent",
+        "zh": "Dynabeads 或同类产品"
+      }
     },
     {
-      "name": "RNase A"
+      "name": "Proteinase K",
+      "note": {
+        "en": "20 mg/mL stock",
+        "zh": "20 mg/mL 母液"
+      }
+    },
+    {
+      "name": "RNase A",
+      "note": {
+        "en": "10 mg/mL",
+        "zh": "10 mg/mL"
+      }
     }
   ],
   "usage": {
@@ -274,5 +293,6 @@
         "zh": "纯化后的 ChIP DNA 可 −20°C 保存最长 6 个月，待 qPCR 或文库制备。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment"
 }

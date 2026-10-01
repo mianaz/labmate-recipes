@@ -75,31 +75,37 @@
   },
   "materials": [
     {
-      "name": "IP lysis buffer",
+      "name": "IP Lysis Buffer",
       "linkedRecipe": "ip_lysis"
     },
     {
-      "name": "Protein A/G magnetic beads or agarose beads"
-    },
-    {
-      "name": "Antibody against bait protein"
-    },
-    {
-      "name": "Normal IgG (isotype control)"
-    },
-    {
-      "name": "2× or 4× Laemmli buffer",
+      "name": "Laemmli Buffer (2×)",
       "linkedRecipe": "laemmli_2x"
     },
     {
-      "name": "1× PBS",
+      "name": "PBS (1×)",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Protease inhibitor cocktail"
+      "name": "Protein A/G beads",
+      "note": {
+        "en": "Magnetic preferred",
+        "zh": "推荐磁珠"
+      }
     },
     {
-      "name": "Magnetic rack or centrifuge"
+      "name": "Target antibody",
+      "note": {
+        "en": "1–5 µg per IP",
+        "zh": "每次 IP 1–5 µg"
+      }
+    },
+    {
+      "name": "Normal IgG",
+      "note": {
+        "en": "Same species, negative control",
+        "zh": "同种属，阴性对照"
+      }
     }
   ],
   "stoppingPoints": [
@@ -206,5 +212,6 @@
         "zh": "Laemmli 缓冲液中的 IP 洗脱样品可 −20°C 保存最长 1 个月，再进行 Western Blot。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment"
 }

@@ -40,13 +40,13 @@
       "linkedRecipe": "citrate_buffer_ar"
     },
     {
-      "name": "Antibody dilution buffer: 1% BSA + 0.3% Triton X-100 in PBS"
+      "name": "Antibody dilution buffer: 1% BSA + 0.3% Triton X-100 in PBS, pH 8"
     },
     {
-      "name": "Blocking buffer: 5% normal goat serum in TBST"
+      "name": "Blocking buffer: 5% normal goat serum in TBST (or 2-5% FBS + 0.3% Triton in PBS)"
     },
     {
-      "name": "Primary antibody panel (different host species)"
+      "name": "Primary antibody panel"
     },
     {
       "name": "Fluorochrome-conjugated secondary antibody panel"
@@ -59,14 +59,10 @@
       "name": "Liquid blocker pen (PAP pen)"
     },
     {
-      "name": "Pressure cooker or microwave"
+      "name": "Pressure cooker"
     },
     {
       "name": "Humidity chamber (dark box with water)"
-    },
-    {
-      "name": "4% PFA",
-      "linkedRecipe": "pfa_4"
     }
   ],
   "components": [
@@ -269,15 +265,6 @@
   },
   "ref": "Gerdes MJ et al. (2013) Proc Natl Acad Sci USA 110:11982–11987; Tsujikawa T et al. (2017) Cell Rep 19:203–217; Cell Signaling Technology Immunofluorescence Protocol",
   "crosslinks": [
-    "citrate_buffer_ar",
-    "pfa_4",
-    "mounting_medium_antifade",
-    "tbst",
-    "if_protocol",
-    "if_cryostat",
-    "ihc_paraffin_protocol"
-  ],
-  "relatedProtocols": [
     "if_protocol",
     "if_cryostat",
     "ihc_paraffin_protocol",
@@ -285,11 +272,11 @@
   ],
   "storage": {
     "temp": "N/A",
-    "duration": "N/A",
+    "duration": "2 days (overnight primary antibody)",
     "icon": "📋",
     "label": {
-      "en": "See protocol notes",
-      "zh": "见方案备注"
+      "en": "Protocol — 2 days (overnight primary antibody), hands-on: 3–4 hours",
+      "zh": "实验方案 — 2 days (overnight primary antibody)，实操: 3–4 hours"
     }
   },
   "doi": "10.1073/pnas.1300136110"

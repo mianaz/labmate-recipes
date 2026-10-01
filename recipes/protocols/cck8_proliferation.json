@@ -80,7 +80,7 @@
     "clonogenic_assay",
     "trypan_blue_counting"
   ],
-  "doi": "10.1016/S0039-9140(96)02264-5",
+  "doi": "10.1016/s0039-9140(97)00017-9",
   "discipline": [
     "cell"
   ],
@@ -90,20 +90,32 @@
   },
   "materials": [
     {
-      "name": "CCK-8 reagent (WST-8)"
+      "name": "CCK-8 Reagent",
+      "note": {
+        "en": "e.g., Dojindo CK04; store at 4°C protected from light",
+        "zh": "如 Dojindo CK04；4°C 避光保存"
+      }
     },
     {
-      "name": "96-well plate with cells"
+      "name": "96-well plate",
+      "note": {
+        "en": "Tissue culture-treated, flat-bottom",
+        "zh": "细胞培养级，平底"
+      }
     },
     {
       "name": "Complete culture medium",
-      "linkedRecipe": "complete_dmem"
+      "note": {
+        "en": "Appropriate for cell line, with serum",
+        "zh": "适合细胞系的含血清培养基"
+      }
     },
     {
-      "name": "Microplate reader (450 nm)"
-    },
-    {
-      "name": "Multichannel pipette"
+      "name": "Microplate reader",
+      "note": {
+        "en": "450 nm and 650 nm filters",
+        "zh": "450 nm 和 650 nm 滤光片"
+      }
     }
   ],
   "stoppingPoints": [],

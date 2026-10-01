@@ -82,19 +82,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine Tris-HCl, NaCl, NP-40, sodium deoxycholate, and SDS in ddH₂O."
+      "en": "Prepare stock RIPA without protease inhibitors",
+      "zh": "配制不含蛋白酶抑制剂的 RIPA 储备液"
     },
     {
-      "step": "Stir until all detergents are dissolved."
+      "en": "Dissolve NaCl, Tris-HCl, NP-40/IGEPAL, sodium deoxycholate, SDS in ddH₂O",
+      "zh": "将 NaCl、Tris-HCl、NP-40、脱氧胆酸钠、SDS 溶于 ddH₂O"
     },
     {
-      "step": "Bring to final volume of 100 mL."
+      "en": "Adjust pH to 7.4 if needed (usually correct from Tris stock)",
+      "zh": "必要时调 pH 至 7.4（通常 Tris 母液 pH 已正确）"
     },
     {
-      "step": "Store base buffer at 4°C."
+      "en": "Filter-sterilize (0.22 µm), store at 4°C",
+      "zh": "0.22 µm 过滤除菌，4°C 保存"
     },
     {
-      "step": "Add protease and phosphatase inhibitors fresh before each use."
+      "en": "Before use: add 1× protease inhibitor cocktail + 1 mM PMSF + phosphatase inhibitors",
+      "zh": "使用前加入：1× 蛋白酶抑制剂 cocktail + 1 mM PMSF + 磷酸酶抑制剂"
     }
   ],
   "crosslinks": [

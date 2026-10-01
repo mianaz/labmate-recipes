@@ -43,19 +43,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris base and NaCl in ~800 mL ddH₂O."
+      "en": "Dissolve Tris base and NaCl in ~{v:800:mL} ddH₂O",
+      "zh": "将 Tris base 和 NaCl 溶于约 {v:800:mL} ddH₂O"
     },
     {
-      "step": "Adjust pH to 7.6 with HCl."
+      "en": "Adjust pH to 7.6 with concentrated HCl (~{v:15:mL} 12N HCl)",
+      "zh": "用浓 HCl 调 pH 至 7.6（约需 {v:15:mL} 12N HCl）"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Store at room temperature. Dilute 1:10 for 1× TBS."
+      "en": "Top up to {v:1000:mL}. Autoclave",
+      "zh": "定容至 {v:1000:mL}，高压灭菌"
     }
   ],
   "crosslinks": [
@@ -67,5 +64,6 @@
     "if_protocol",
     "ihc_paraffin_protocol",
     "elisa_sandwich"
-  ]
+  ],
+  "ph": "7.6"
 }

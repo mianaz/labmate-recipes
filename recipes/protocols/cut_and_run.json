@@ -175,32 +175,85 @@
   ],
   "materials": [
     {
-      "name": "Cells (100,000–500,000)"
+      "name": "Concanavalin A-coated magnetic beads",
+      "note": {
+        "en": "Bangs Labs, BP531",
+        "zh": "Bangs Labs, BP531"
+      }
     },
     {
-      "name": "ConA magnetic beads (activated)"
+      "name": "pA-MNase or pAG-MNase",
+      "note": {
+        "en": "EpiCypher 15-1016 or homemade",
+        "zh": "EpiCypher 15-1016或自制"
+      }
     },
     {
-      "name": "Antibody (ChIP-grade)"
+      "name": "Spermidine (0.5 M stock)",
+      "note": {
+        "en": "Sigma S2626, store -20°C",
+        "zh": "Sigma S2626，-20°C保存"
+      }
     },
     {
-      "name": "Protein A-MNase (pA-MN) fusion protein"
+      "name": "Digitonin (5% stock in DMSO)",
+      "note": {
+        "en": "EMD Millipore 300410",
+        "zh": "EMD Millipore 300410"
+      }
     },
     {
-      "name": "Digitonin wash buffer"
+      "name": "Protease inhibitor cocktail (100×)",
+      "note": {
+        "en": "Roche cOmplete EDTA-free",
+        "zh": "Roche cOmplete 无EDTA"
+      }
     },
     {
-      "name": "Low-salt rinse buffer"
+      "name": "Primary antibody (ChIP-grade)",
+      "note": {
+        "en": "Validated for CUT&RUN",
+        "zh": "经CUT&RUN验证"
+      }
     },
     {
-      "name": "Spike-in DNA (E. coli or yeast)"
+      "name": "IgG isotype control",
+      "note": {
+        "en": "Same species as primary Ab",
+        "zh": "与一抗同种属"
+      }
     },
     {
-      "name": "DNA purification columns or phenol-chloroform"
+      "name": "RNase A (10 mg/mL)",
+      "note": {
+        "en": "DNase-free",
+        "zh": "无DNase"
+      }
     },
     {
-      "name": "1× PBS",
-      "linkedRecipe": "pbs_1x"
+      "name": "Spike-in DNA",
+      "note": {
+        "en": "E. coli DNA or yeast DNA for normalization",
+        "zh": "大肠杆菌或酵母DNA用于标准化"
+      }
+    },
+    {
+      "name": "Proteinase K (20 mg/mL)",
+      "note": {
+        "en": "Molecular biology grade",
+        "zh": "分子生物学级"
+      }
+    },
+    {
+      "name": "HEPES buffer (1 M, pH 7.5)",
+      "linkedRecipe": "hepes_buffer"
+    },
+    {
+      "name": "DNA purification columns",
+      "note": {
+        "en": "Zymo or Qiagen MinElute",
+        "zh": "Zymo或Qiagen MinElute"
+      }
     }
   ],
   "usage": {

@@ -62,7 +62,6 @@
     "zh": "使用前 1:1 混合 A、B 液。最后加 H₂O₂。母液 4°C 可保存数月。成本约商品化试剂的 1/50。"
   },
   "ref": "Haan & Bhakri (2014) Anal Biochem 450:7-12",
-  "doi": "10.1016/j.ab.2013.12.033",
   "source": "Analytical Biochemistry",
   "discipline": [
     "general"
@@ -81,20 +80,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Prepare Solution A: dissolve luminol in Tris-HCl pH 8.5 with p-coumaric acid enhancer."
+      "en": "Prepare Solution A: dissolve luminol in Tris-HCl pH 8.5 with p-coumaric acid enhancer.",
+      "zh": "Prepare Solution A: dissolve luminol in Tris-HCl pH 8.5 with p-coumaric acid enhancer."
     },
     {
-      "step": "Prepare Solution B: dilute 30% H₂O₂ in Tris-HCl pH 8.5.",
-      "warning": "30% H₂O₂ is a strong oxidizer — handle with care."
+      "en": "Prepare Solution B: dilute 30% H₂O₂ in Tris-HCl pH 8.5. ⚠️ 30% H₂O₂ is a strong oxidizer — handle with care.",
+      "zh": "Prepare Solution B: dilute 30% H₂O₂ in Tris-HCl pH 8.5. ⚠️ 30% H₂O₂ is a strong oxidizer — handle with care."
     },
     {
-      "step": "Mix Solution A and Solution B 1:1 immediately before use."
+      "en": "Mix Solution A and Solution B 1:1 immediately before use.",
+      "zh": "Mix Solution A and Solution B 1:1 immediately before use."
     },
     {
-      "step": "Store Solutions A and B separately at 4°C protected from light."
+      "en": "Store Solutions A and B separately at 4°C protected from light.",
+      "zh": "Store Solutions A and B separately at 4°C protected from light."
     },
     {
-      "step": "Mixed working solution must be used within 1 hour."
+      "en": "Mixed working solution must be used within 1 hour.",
+      "zh": "Mixed working solution must be used within 1 hour."
     }
   ],
   "crosslinks": [

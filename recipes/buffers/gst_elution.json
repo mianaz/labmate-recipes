@@ -24,10 +24,7 @@
       "amount": 0.307,
       "unit": "g",
       "mw": 307.32,
-      "note": {
-        "en": "10 mM",
-        "zh": "10 mM"
-      }
+      "note": "10 mM"
     },
     {
       "name": "ddH₂O",
@@ -69,16 +66,17 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve reduced glutathione in 50 mM Tris-HCl pH 8.0."
+      "en": "Dissolve reduced glutathione in 50 mM Tris-HCl pH 8.0",
+      "zh": "将还原型谷胱甘肽溶于 50 mM Tris-HCl pH 8.0"
     },
     {
-      "step": "Adjust pH to 8.0 with NaOH (glutathione is acidic)."
+      "en": "Adjust pH to 8.0 (glutathione is acidic)",
+      "zh": "调 pH 至 8.0（谷胱甘肽偏酸性）"
     },
     {
-      "step": "Bring to final volume of 100 mL."
-    },
-    {
-      "step": "Prepare fresh or store at −20°C in aliquots."
+      "en": "Use fresh or thaw from -20°C aliquots",
+      "zh": "现配或从 -20°C 分装中解冻使用"
     }
-  ]
+  ],
+  "ph": "8.0"
 }

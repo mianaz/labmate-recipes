@@ -13,10 +13,7 @@
       "amount": 13.61,
       "unit": "g",
       "mw": 136.08,
-      "note": {
-        "en": "0.1 M",
-        "zh": "0.1 M"
-      }
+      "note": "0.1 M"
     },
     {
       "name": "Glacial acetic acid",
@@ -32,7 +29,7 @@
       "amount": 1000,
       "unit": "mL",
       "note": {
-        "en": "Adjust volume to",
+        "en": "Bring to final volume",
         "zh": "定容"
       }
     }
@@ -60,19 +57,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve sodium acetate in ~800 mL ddH₂O."
+      "en": "Dissolve sodium acetate trihydrate in ~{v:800:mL} ddH₂O",
+      "zh": "将醋酸钠三水合物溶于约 {v:800:mL} ddH₂O"
     },
     {
-      "step": "Adjust pH to desired value (3.6–5.6) with glacial acetic acid."
+      "en": "Adjust to target pH with glacial acetic acid",
+      "zh": "用冰醋酸调至目标 pH"
     },
     {
-      "step": "Bring to final volume of 1000 mL with ddH₂O."
-    },
-    {
-      "step": "Autoclave at 121°C for 20 min or sterile-filter."
-    },
-    {
-      "step": "Store at room temperature."
+      "en": "Bring to final volume, autoclave",
+      "zh": "定容，高压灭菌"
     }
   ],
   "crosslinks": [
@@ -83,5 +77,6 @@
     "enzyme_kinetics_michaelis",
     "elisa_sandwich",
     "ethanol_precipitation"
-  ]
+  ],
+  "ph": "4.0–5.6"
 }

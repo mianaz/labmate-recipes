@@ -88,23 +88,61 @@
   },
   "materials": [
     {
-      "name": "Agarose gel with separated DNA bands"
+      "name": "Agarose Gel",
+      "note": {
+        "en": "1–2%, in TAE or TBE buffer",
+        "zh": "1–2%，TAE或TBE缓冲液"
+      }
     },
     {
-      "name": "Gel extraction kit (QIAquick, Zymo, etc.)"
+      "name": "TAE Buffer",
+      "linkedRecipe": "tae_50x"
     },
     {
-      "name": "Scalpel or razor blade"
+      "name": "DNA Loading Dye",
+      "linkedRecipe": "dna_loading_dye_6x"
     },
     {
-      "name": "UV transilluminator or blue-light box"
+      "name": "Gel Extraction Kit",
+      "note": {
+        "en": "e.g. QIAquick, Monarch, Zymo",
+        "zh": "如 QIAquick、Monarch、Zymo"
+      }
     },
     {
-      "name": "Microcentrifuge"
+      "name": "Buffer QG",
+      "note": {
+        "en": "Solubilization/binding buffer (kit component)",
+        "zh": "溶胶/结合缓冲液（试剂盒组分）"
+      }
     },
     {
-      "name": "TE buffer or elution buffer",
-      "linkedRecipe": "te"
+      "name": "Buffer PE",
+      "note": {
+        "en": "Wash buffer with ethanol (kit component)",
+        "zh": "含乙醇洗涤缓冲液（试剂盒组分）"
+      }
+    },
+    {
+      "name": "Buffer EB",
+      "note": {
+        "en": "10 mM Tris-Cl, pH 8.5 (elution)",
+        "zh": "10 mM Tris-Cl, pH 8.5（洗脱）"
+      }
+    },
+    {
+      "name": "Isopropanol",
+      "note": {
+        "en": "Molecular biology grade",
+        "zh": "分子生物学级"
+      }
+    },
+    {
+      "name": "Scalpel/Razor Blade",
+      "note": {
+        "en": "Clean, for excising bands",
+        "zh": "干净，用于切胶"
+      }
     }
   ],
   "stoppingPoints": [

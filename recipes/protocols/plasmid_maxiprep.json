@@ -15,10 +15,7 @@
       "name": "1. 过夜培养 100–500 mL LB + 抗性",
       "amount": 1,
       "unit": "step",
-      "note": {
-        "en": "37°C, 225 rpm, 12–16 h",
-        "zh": "37°C，225 rpm，12–16 h"
-      }
+      "note": "37°C, 225 rpm, 12–16 h"
     },
     {
       "name": "2. 离心收集菌体 (6,000×g, 15 min, 4°C)",
@@ -30,7 +27,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Contains RNase A; resuspend thoroughly until no particles remain",
+        "en": "Contains RNase A; resuspend thoroughly with no visible particles",
         "zh": "含 RNase A, 彻底重悬无颗粒"
       }
     },
@@ -39,7 +36,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Gently invert 4–6 times, ≤5 min at RT",
+        "en": "Invert gently 4–6 times, ≤5 min at room temperature",
         "zh": "轻柔翻转 4–6 次, 室温 ≤5 min"
       }
     },
@@ -48,7 +45,7 @@
       "amount": 1,
       "unit": "step",
       "note": {
-        "en": "Invert immediately to mix, incubate on ice 15–20 min",
+        "en": "Invert immediately to mix, then on ice for 15–20 min",
         "zh": "立即翻转混匀, 冰上 15–20 min"
       }
     },
@@ -108,7 +105,15 @@
   },
   "materials": [
     {
-      "name": "Overnight bacterial culture (100–500 mL)"
+      "name": "LB Medium",
+      "linkedRecipe": "lb"
+    },
+    {
+      "name": "Antibiotic Stock",
+      "note": {
+        "en": "e.g. Ampicillin 100 mg/mL",
+        "zh": "如氨苄青霉素 100 mg/mL"
+      }
     },
     {
       "name": "Buffer P1",
@@ -123,29 +128,50 @@
       "linkedRecipe": "miniprep_p3"
     },
     {
-      "name": "Isopropanol and 70% ethanol"
+      "name": "QIAGEN-tip 500 Column",
+      "note": {
+        "en": "Anion-exchange gravity column",
+        "zh": "阴离子交换重力柱"
+      }
     },
     {
-      "name": "TE buffer",
+      "name": "Buffer QBT",
+      "note": {
+        "en": "Equilibration buffer (kit)",
+        "zh": "平衡缓冲液（试剂盒）"
+      }
+    },
+    {
+      "name": "Buffer QC",
+      "note": {
+        "en": "Wash buffer (kit)",
+        "zh": "洗涤缓冲液（试剂盒）"
+      }
+    },
+    {
+      "name": "Buffer QF",
+      "note": {
+        "en": "Elution buffer (kit)",
+        "zh": "洗脱缓冲液（试剂盒）"
+      }
+    },
+    {
+      "name": "Isopropanol",
+      "note": {
+        "en": "Molecular biology grade",
+        "zh": "分子生物学级"
+      }
+    },
+    {
+      "name": "70% Ethanol",
+      "note": {
+        "en": "Ice-cold",
+        "zh": "冰冷"
+      }
+    },
+    {
+      "name": "TE Buffer",
       "linkedRecipe": "te"
-    },
-    {
-      "name": "Maxiprep column kit (Qiagen, Macherey-Nagel, etc.)"
-    },
-    {
-      "name": "Centrifuge (15,000 × g)"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Bacterial pellet",
-      "condition": "−20°C",
-      "duration": "1 month"
-    },
-    {
-      "afterStep": "DNA eluted",
-      "condition": "−20°C",
-      "duration": "years"
     }
   ],
   "usage": {
@@ -255,17 +281,24 @@
   ],
   "safeStops": [
     {
-      "afterStep": 2,
+      "afterStep": 0,
       "note": {
-        "en": "Bacterial pellet can be snap-frozen and stored at −80°C for up to 1 month before lysis.",
-        "zh": "菌体沉淀可速冻后 −80°C 保存最多 1 个月后再裂解。"
+        "en": "Overnight culture grows while you sleep (Day 1→2)",
+        "zh": "过夜培养（第一天→第二天）"
       }
     },
     {
-      "afterStep": 14,
+      "afterStep": 5,
       "note": {
-        "en": "Purified plasmid DNA can be stored at −20°C indefinitely or at 4°C for several months.",
-        "zh": "纯化的质粒 DNA 可 −20°C 长期保存，或 4°C 保存数月。"
+        "en": "Neutralized lysate can be stored at −20°C before column",
+        "zh": "中和裂解液可在上柱前 −20°C 保存"
+      }
+    },
+    {
+      "afterStep": 12,
+      "note": {
+        "en": "DNA pellet in 70% ethanol can be stored at −20°C",
+        "zh": "DNA沉淀在70%乙醇中可 −20°C 保存"
       }
     }
   ]

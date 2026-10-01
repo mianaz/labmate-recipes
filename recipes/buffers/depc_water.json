@@ -47,17 +47,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Add 1 mL DEPC to 1000 mL ddH₂O (0.1% v/v).",
-      "warning": "DEPC is a suspected carcinogen — use in fume hood."
+      "en": "Add {v:1:mL} DEPC per {v:1:L} ddH₂O (0.1% v/v)",
+      "zh": "每 {v:1:L} ddH₂O 加 {v:1:mL} DEPC (0.1% v/v)"
     },
     {
-      "step": "Mix thoroughly and let stand overnight (12–24 h) at 37°C."
+      "en": "Shake vigorously to disperse (DEPC is not readily soluble)",
+      "zh": "剧烈摇匀分散（DEPC 不易溶解）"
     },
     {
-      "step": "Autoclave at 121°C for 20 min to inactivate residual DEPC."
+      "en": "Incubate 37°C overnight (12 h) or RT for 2 h",
+      "zh": "37°C 过夜（12 h）或室温 2 h"
     },
     {
-      "step": "Store at room temperature."
+      "en": "Autoclave 121°C 15 min to decompose residual DEPC → CO₂ + ethanol",
+      "zh": "121°C 高压灭菌 15 min 分解残余 DEPC → CO₂ + 乙醇"
+    },
+    {
+      "en": "⚠️ Do NOT use DEPC with Tris or other amine-containing buffers (DEPC reacts with primary amines). Prepare those buffers with DEPC-water instead",
+      "zh": "⚠️ 不要将 DEPC 直接加入 Tris 或其他含氨基的缓冲液（DEPC 与伯胺反应）。改用 DEPC 水配制这些缓冲液"
     }
   ],
   "crosslinks": [

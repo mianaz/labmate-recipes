@@ -44,20 +44,12 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine complete culture medium (90%) with DMSO (10%)."
+      "en": "Add DMSO to heat-inactivated FBS (90:10 ratio)",
+      "zh": "将 DMSO 加入灭活 FBS（90:10 比例）"
     },
     {
-      "step": "Mix well by gentle inversion.",
-      "warning": "DMSO is a penetration enhancer — wear gloves; it carries dissolved chemicals through skin."
-    },
-    {
-      "step": "Filter-sterilize through 0.22 µm if needed."
-    },
-    {
-      "step": "Prepare fresh or store at 4°C for up to 1 month."
-    },
-    {
-      "step": "Pre-chill to 4°C before use."
+      "en": "Mix gently, pre-chill at 4°C before use",
+      "zh": "轻柔混匀，使用前 4°C 预冷"
     }
   ],
   "crosslinks": [

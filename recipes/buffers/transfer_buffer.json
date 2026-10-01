@@ -60,23 +60,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris base and glycine in ~700 mL ddH₂O."
+      "en": "Dilute 10× Running Buffer 1:10, add methanol to 20%",
+      "zh": "将 10× Running Buffer 1:10 稀释，加甲醇至 20%"
     },
     {
-      "step": "Add methanol (20% v/v, 200 mL).",
-      "warning": "Methanol is toxic and flammable — handle in fume hood."
+      "en": "Pre-chill to 4°C (transfer generates heat)",
+      "zh": "预冷至 4°C（转膜过程会产热）"
     },
     {
-      "step": "Add SDS to 0.01–0.1% for large proteins (>100 kDa) if needed."
+      "en": "For large proteins (>100 kDa): reduce methanol to 10%, add 0.01% SDS",
+      "zh": "大蛋白 (>100 kDa)：甲醇降至 10%，加 0.01% SDS"
     },
     {
-      "step": "Bring to final volume of 1000 mL with ddH₂O."
-    },
-    {
-      "step": "Chill to 4°C before use (transfer generates heat)."
-    },
-    {
-      "step": "Prepare fresh; do not reuse."
+      "en": "Do NOT adjust pH",
+      "zh": "不要调 pH"
     }
   ],
   "crosslinks": [
@@ -84,5 +81,6 @@
   ],
   "relatedProtocols": [
     "wb_protocol"
-  ]
+  ],
+  "ph": "8.3"
 }

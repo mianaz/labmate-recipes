@@ -23,10 +23,7 @@
       "name": "ESC-qualified FBS",
       "amount": 75,
       "unit": "mL",
-      "note": {
-        "en": "15% final",
-        "zh": "终浓度 15%"
-      }
+      "note": "15% final"
     },
     {
       "name": "100× NEAA",
@@ -42,19 +39,13 @@
       "name": "1000× β-ME (55 mM)",
       "amount": 0.5,
       "unit": "mL",
-      "note": {
-        "en": "0.1 mM final",
-        "zh": "终浓度 0.1 mM"
-      }
+      "note": "0.1 mM final"
     },
     {
       "name": "LIF (10⁶ U/mL)",
       "amount": 0.05,
       "unit": "mL",
-      "note": {
-        "en": "1000 U/mL final",
-        "zh": "终浓度 1000 U/mL"
-      }
+      "note": "1000 U/mL final"
     }
   ],
   "notes": {

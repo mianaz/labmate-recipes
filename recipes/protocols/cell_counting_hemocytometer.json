@@ -87,23 +87,29 @@
   },
   "materials": [
     {
-      "name": "Hemocytometer (Neubauer chamber)"
+      "name": "Hemocytometer (Neubauer improved)",
+      "note": {
+        "en": "With coverslip",
+        "zh": "带盖玻片"
+      }
     },
     {
-      "name": "Coverslip (specific for hemocytometer)"
+      "name": "0.4% Trypan Blue",
+      "note": {
+        "en": "e.g., Gibco #15250061",
+        "zh": "如 Gibco #15250061"
+      }
     },
     {
-      "name": "Trypan blue (0.4%)"
+      "name": "Inverted microscope",
+      "note": {
+        "en": "10× objective",
+        "zh": "10× 物镜"
+      }
     },
     {
-      "name": "Cell suspension"
-    },
-    {
-      "name": "Microscope (inverted, 10× objective)"
-    },
-    {
-      "name": "Counter (hand or electronic)",
-      "optional": true
+      "name": "PBS",
+      "linkedRecipe": "pbs_1x"
     }
   ],
   "briefSteps": [

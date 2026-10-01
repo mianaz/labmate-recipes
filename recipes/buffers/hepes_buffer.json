@@ -47,19 +47,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve HEPES in ~800 mL ddH₂O."
+      "en": "Dissolve HEPES in ~{v:80:mL} ddH₂O",
+      "zh": "将 HEPES 溶于约 {v:80:mL} ddH₂O"
     },
     {
-      "step": "Adjust pH to desired value (typically 7.2–7.5) with NaOH."
+      "en": "Adjust pH to 7.2–7.6 with NaOH",
+      "zh": "用 NaOH 调 pH 至 7.2–7.6"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
+      "en": "Top up to {v:100:mL}",
+      "zh": "定容至 {v:100:mL}"
     },
     {
-      "step": "Autoclave or filter-sterilize (HEPES is autoclavable at pH >6.5)."
+      "en": "Filter-sterilize (0.22 µm). Store at 4°C protected from light",
+      "zh": "0.22 µm 过滤除菌。4°C 避光保存"
     },
     {
-      "step": "Store at 4°C or room temperature."
+      "en": "Add to culture medium at 10–25 mM final concentration",
+      "zh": "加入培养基至终浓度 10–25 mM"
     }
   ],
   "crosslinks": [
@@ -72,5 +77,6 @@
     "calcium_phosphate_transfection",
     "emsa_gel_shift",
     "enzyme_kinetics_michaelis"
-  ]
+  ],
+  "ph": "7.4"
 }

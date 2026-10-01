@@ -52,17 +52,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve crystal violet (0.5 g per 100 mL, 0.5% w/v) in 20% methanol.",
-      "warning": "Crystal violet is a potential carcinogen — wear gloves. Methanol is toxic."
+      "en": "Dissolve crystal violet in methanol first, then add ddH₂O",
+      "zh": "先将结晶紫溶于甲醇，再加 ddH₂O"
     },
     {
-      "step": "Mix until completely dissolved."
+      "en": "Mix thoroughly. Store in dark bottle",
+      "zh": "充分混匀。避光瓶保存"
     },
     {
-      "step": "Filter through 0.45 µm."
+      "en": "For colony assay: fix cells (methanol or PFA) → stain 20 min → wash with water → air dry → photograph or quantify",
+      "zh": "克隆形成: 固定细胞 (甲醇或 PFA) → 染色 20 min → 水洗 → 晾干 → 拍照或定量"
     },
     {
-      "step": "Store at room temperature for up to 12 months."
+      "en": "Quantify: dissolve stain in 10% acetic acid, read OD₅₉₅",
+      "zh": "定量: 用 10% 冰醋酸溶解染色，测 OD₅₉₅"
     }
   ],
   "crosslinks": [

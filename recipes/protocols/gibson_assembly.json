@@ -55,40 +55,38 @@
   },
   "materials": [
     {
-      "name": "Gibson Assembly master mix",
-      "linkedRecipe": "gibson_mastermix"
+      "name": "Gibson Assembly Master Mix (2×)",
+      "linkedRecipe": "gibson_mastermix",
+      "note": {
+        "en": "NEB E5510 or homemade",
+        "zh": "NEB E5510 或自配"
+      }
     },
     {
-      "name": "Linearized vector backbone"
+      "name": "Linearized vector",
+      "note": {
+        "en": "50-100 ng",
+        "zh": "50-100 ng"
+      }
     },
     {
-      "name": "PCR-amplified insert(s) with 15–30 bp overlaps"
+      "name": "Insert fragment(s)",
+      "note": {
+        "en": "2-3 fold molar excess",
+        "zh": "2-3 倍摩尔过量"
+      }
     },
     {
-      "name": "SOC medium",
+      "name": "Competent cells",
+      "linkedRecipe": "competent_cells_cacl2"
+    },
+    {
+      "name": "SOC Medium",
       "linkedRecipe": "soc"
     },
     {
-      "name": "Competent cells"
-    },
-    {
-      "name": "LB agar plates with antibiotic",
+      "name": "LB Agar + Antibiotic",
       "linkedRecipe": "lb_agar"
-    },
-    {
-      "name": "Thermocycler (50°C)"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Gibson reaction",
-      "condition": "−20°C",
-      "duration": "1 week"
-    },
-    {
-      "afterStep": "Transformation and plating",
-      "condition": "4°C (plates)",
-      "duration": "1 week"
     }
   ],
   "usage": {
@@ -153,10 +151,17 @@
   ],
   "safeStops": [
     {
-      "afterStep": 6,
+      "afterStep": "Gibson reaction",
       "note": {
-        "en": "Completed Gibson Assembly reaction can be stored on ice for up to 1 hour, or at −20°C for up to 1 week before transformation.",
-        "zh": "完成的 Gibson 组装反应可在冰上保存最多 1 小时，或在 −20°C 保存最多 1 周再进行转化。"
+        "en": "−20°C (up to 1 week)",
+        "zh": "−20°C (最长 1 week)"
+      }
+    },
+    {
+      "afterStep": "Transformation and plating",
+      "note": {
+        "en": "4°C (plates) (up to 1 week)",
+        "zh": "4°C (plates) (最长 1 week)"
       }
     }
   ]

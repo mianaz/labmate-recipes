@@ -161,38 +161,47 @@
   },
   "materials": [
     {
-      "name": "Cells on coverslips or tissue sections"
-    },
-    {
       "name": "4% PFA",
       "linkedRecipe": "pfa_4"
     },
     {
-      "name": "Permeabilization buffer",
-      "linkedRecipe": "perm_buffer_triton"
+      "name": "1× PBS",
+      "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Blocking buffer",
-      "linkedRecipe": "if_blocking"
+      "name": "Triton X-100",
+      "note": {
+        "en": "0.1–0.5% in PBS for permeabilization",
+        "zh": "0.1–0.5% PBS 溶液用于透化"
+      }
     },
     {
-      "name": "Two primary antibodies from different species"
+      "name": "Duolink PLA Kit",
+      "note": {
+        "en": "Includes blocking solution, antibody diluent, PLA probes, ligation, amplification reagents, wash buffers, mounting medium",
+        "zh": "包含封闭液、抗体稀释液、PLA探针、连接、扩增试剂、洗涤缓冲液、封片剂"
+      }
     },
     {
-      "name": "PLA probes (Duolink PLUS/MINUS)"
+      "name": "Primary Antibody 1",
+      "note": {
+        "en": "Mouse anti-target (validated for IF)",
+        "zh": "鼠抗目标蛋白（IF验证）"
+      }
     },
     {
-      "name": "Ligation solution"
+      "name": "Primary Antibody 2",
+      "note": {
+        "en": "Rabbit anti-target (validated for IF)",
+        "zh": "兔抗目标蛋白（IF验证）"
+      }
     },
     {
-      "name": "Amplification solution"
-    },
-    {
-      "name": "DAPI mounting medium",
-      "linkedRecipe": "dapi_staining"
-    },
-    {
-      "name": "Fluorescence microscope"
+      "name": "Humidified Chamber",
+      "note": {
+        "en": "For 37°C incubations",
+        "zh": "用于37°C孵育"
+      }
     }
   ],
   "stoppingPoints": [

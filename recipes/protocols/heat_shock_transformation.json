@@ -75,27 +75,23 @@
   },
   "materials": [
     {
-      "name": "Chemically competent cells (thaw on ice)"
+      "name": "Competent Cells",
+      "linkedRecipe": "competent_cells_cacl2"
     },
     {
-      "name": "Plasmid DNA (1–100 ng)"
-    },
-    {
-      "name": "SOC medium (pre-warmed to 37°C)",
+      "name": "SOC Medium",
       "linkedRecipe": "soc"
     },
     {
-      "name": "LB agar plates with antibiotic",
+      "name": "LB Agar + Antibiotic",
       "linkedRecipe": "lb_agar"
     },
     {
-      "name": "42°C water bath or heat block"
-    },
-    {
-      "name": "Ice bucket"
-    },
-    {
-      "name": "37°C shaking incubator"
+      "name": "Plasmid DNA",
+      "note": {
+        "en": "High purity, 1–50 ng",
+        "zh": "高纯度, 1–50 ng"
+      }
     }
   ],
   "stoppingPoints": [
@@ -184,5 +180,6 @@
         "zh": "长有菌落的平板用 Parafilm 封好，4°C 可保存最多 1 周。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment"
 }

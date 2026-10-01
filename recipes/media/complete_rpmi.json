@@ -69,19 +69,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "To 500 mL RPMI 1640 base medium, add 50 mL heat-inactivated FBS (10% final)."
+      "en": "Under sterile conditions, add FBS and Pen/Strep to RPMI-1640",
+      "zh": "无菌条件下，向 RPMI-1640 中加入 FBS 和双抗"
     },
     {
-      "step": "Add 5 mL penicillin-streptomycin (1% final)."
+      "en": "Add β-mercaptoethanol for lymphocyte culture",
+      "zh": "淋巴细胞培养需加 β-巯基乙醇"
     },
     {
-      "step": "Add 5 mL L-glutamine (2 mM final) or use GlutaMAX-supplemented RPMI."
+      "en": "Optional: add HEPES for pH stability",
+      "zh": "可选：加 HEPES 维持 pH 稳定"
     },
     {
-      "step": "Optional: add 5 mL HEPES (10 mM final), 5 mL sodium pyruvate (1 mM), 0.5 mL β-mercaptoethanol (50 µM) for lymphocytes."
-    },
-    {
-      "step": "Mix gently and store at 4°C for up to 1 month."
+      "en": "Store at 4°C. Pre-warm to 37°C before use",
+      "zh": "4°C 保存。使用前预热至 37°C"
     }
   ],
   "crosslinks": [

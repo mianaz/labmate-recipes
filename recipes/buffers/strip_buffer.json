@@ -54,17 +54,24 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve SDS (2%) and Tris-HCl (62.5 mM) in ~800 mL ddH₂O."
+      "en": "Mix glycine, SDS, Tween-20 in ddH₂O",
+      "zh": "将甘氨酸、SDS、Tween-20 溶于 ddH₂O"
     },
     {
-      "step": "Add β-mercaptoethanol (100 mM) fresh before use.",
-      "warning": "β-mercaptoethanol is toxic — use in fume hood."
+      "en": "Adjust pH to 2.2 with HCl",
+      "zh": "用 HCl 调 pH 至 2.2"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
+      "en": "Incubate membrane 2×10 min with stripping buffer",
+      "zh": "膜在 stripping buffer 中孵育 2×10 min"
     },
     {
-      "step": "Use immediately; do not store with β-ME added."
+      "en": "Wash 2×10 min with PBS, then 2×5 min with TBST",
+      "zh": "用 PBS 洗 2×10 min，再用 TBST 洗 2×5 min"
+    },
+    {
+      "en": "Re-block and probe with new antibody",
+      "zh": "重新封闭后加新抗体"
     }
   ],
   "crosslinks": [
@@ -72,5 +79,6 @@
   ],
   "relatedProtocols": [
     "wb_protocol"
-  ]
+  ],
+  "ph": "2.2"
 }

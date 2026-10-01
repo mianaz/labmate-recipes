@@ -102,28 +102,68 @@
   },
   "materials": [
     {
-      "name": "siRNA (targeting and non-targeting control)"
+      "name": "siRNA (targeting gene of interest)",
+      "note": {
+        "en": "25 nmol, HPLC-purified. Design using Dharmacon, IDT, or Sigma tools",
+        "zh": "25 nmol，HPLC纯化。使用Dharmacon、IDT或Sigma工具设计"
+      }
     },
     {
-      "name": "Transfection reagent (Lipofectamine RNAiMAX or similar)"
+      "name": "Non-targeting control siRNA",
+      "note": {
+        "en": "Same provider as targeting siRNA",
+        "zh": "与靶向siRNA同一供应商"
+      }
     },
     {
-      "name": "Opti-MEM or serum-free medium"
+      "name": "Lipofectamine RNAiMAX",
+      "note": {
+        "en": "Thermo 13778150",
+        "zh": "Thermo 13778150"
+      }
     },
     {
-      "name": "Complete culture medium",
-      "linkedRecipe": "complete_dmem"
+      "name": "Opti-MEM reduced serum medium",
+      "note": {
+        "en": "Thermo 31985070",
+        "zh": "Thermo 31985070"
+      }
     },
     {
-      "name": "Cells at 30–50% confluency"
+      "name": "Antibiotic-free complete medium",
+      "note": {
+        "en": "DMEM/RPMI + 10% FBS, no pen/strep",
+        "zh": "DMEM/RPMI + 10% FBS，不加青/链霉素"
+      }
     },
     {
-      "name": "qPCR reagents (for validation)",
-      "optional": true
+      "name": "RLT buffer or TRIzol",
+      "note": {
+        "en": "For RNA extraction",
+        "zh": "用于RNA提取"
+      }
     },
     {
-      "name": "WB reagents (for validation)",
-      "optional": true
+      "name": "RIPA lysis buffer",
+      "note": {
+        "en": "+ protease/phosphatase inhibitors",
+        "zh": "+ 蛋白酶/磷酸酶抑制剂"
+      }
+    },
+    {
+      "name": "RT-qPCR reagents",
+      "note": {
+        "en": "Reverse transcriptase, SYBR Green or TaqMan, primers",
+        "zh": "反转录酶、SYBR Green或TaqMan、引物"
+      }
+    },
+    {
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
+    },
+    {
+      "name": "SDS-PAGE gel",
+      "linkedRecipe": "sds_page_gel"
     }
   ],
   "briefSteps": [

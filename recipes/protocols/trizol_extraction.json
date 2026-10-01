@@ -143,26 +143,39 @@
   ],
   "materials": [
     {
-      "name": "TRIzol reagent (or TRI Reagent)"
+      "name": "TRIzol Reagent",
+      "note": {
+        "en": "Commercial reagent",
+        "zh": "商品化试剂"
+      }
     },
     {
-      "name": "Chloroform"
+      "name": "Chloroform",
+      "note": {
+        "en": "ACS grade",
+        "zh": "分析纯"
+      }
     },
     {
-      "name": "Isopropanol"
+      "name": "Isopropanol",
+      "note": {
+        "en": "Molecular biology grade",
+        "zh": "分子生物学级"
+      }
     },
     {
-      "name": "75% ethanol (in DEPC-treated water)"
+      "name": "75% Ethanol",
+      "note": {
+        "en": "DEPC-H₂O diluted",
+        "zh": "DEPC 水配制"
+      }
     },
     {
-      "name": "DEPC-treated water or nuclease-free water",
-      "linkedRecipe": "depc_water"
-    },
-    {
-      "name": "Microcentrifuge (≥12,000 × g, 4°C)"
-    },
-    {
-      "name": "1.5 mL RNase-free tubes"
+      "name": "RNase-free H₂O",
+      "note": {
+        "en": "DEPC-treated or commercial",
+        "zh": "DEPC 处理或商品化"
+      }
     }
   ],
   "usage": {
@@ -285,5 +298,6 @@
         "zh": "溶解后的 RNA 可在 −80°C 保存最多 12 个月。建议分装以避免反复冻融。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "sample(s)"
 }

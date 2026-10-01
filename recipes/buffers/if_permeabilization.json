@@ -47,13 +47,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Add Triton X-100 to PBS to desired concentration (0.1–0.5%)."
+      "en": "Add 0.1–0.5% Triton X-100 to PBS",
+      "zh": "在 PBS 中加入 0.1–0.5% Triton X-100"
     },
     {
-      "step": "Mix by gentle inversion."
+      "en": "Incubate cells 10–15 min at RT",
+      "zh": "室温孵育细胞 10–15 min"
     },
     {
-      "step": "Prepare fresh before each use."
+      "en": "Wash 3× with PBS",
+      "zh": "用 PBS 洗 3 次"
     }
   ],
   "crosslinks": [

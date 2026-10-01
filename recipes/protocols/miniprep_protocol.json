@@ -76,33 +76,38 @@
   },
   "materials": [
     {
-      "name": "Overnight bacterial culture (2–5 mL in LB + antibiotic)"
-    },
-    {
-      "name": "Buffer P1 (resuspension)",
+      "name": "Buffer P1 (Resuspension)",
       "linkedRecipe": "miniprep_p1"
     },
     {
-      "name": "Buffer P2 (lysis)",
+      "name": "Buffer P2 (Lysis)",
       "linkedRecipe": "miniprep_p2"
     },
     {
-      "name": "Buffer P3 (neutralization)",
+      "name": "Buffer P3 (Neutralization)",
       "linkedRecipe": "miniprep_p3"
     },
     {
-      "name": "Isopropanol and 70% ethanol"
+      "name": "Isopropanol",
+      "note": {
+        "en": "For DNA precipitation",
+        "zh": "用于 DNA 沉淀"
+      }
     },
     {
-      "name": "TE buffer or nuclease-free water",
-      "linkedRecipe": "te"
+      "name": "70% Ethanol",
+      "note": {
+        "en": "For wash",
+        "zh": "洗涤用"
+      }
     },
     {
-      "name": "Microcentrifuge (≥14,000 × g)"
-    },
-    {
-      "name": "Spin columns (Qiagen, Zymo, etc.)",
-      "optional": true
+      "name": "TE Buffer or ddH₂O",
+      "linkedRecipe": "te",
+      "note": {
+        "en": "For elution",
+        "zh": "用于洗脱"
+      }
     }
   ],
   "stoppingPoints": [
@@ -220,5 +225,6 @@
         "zh": "纯化的质粒 DNA 可 −20°C 保存多年，或 4°C 保存数月。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "prep"
 }

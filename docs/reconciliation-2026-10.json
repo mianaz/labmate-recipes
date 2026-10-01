@@ -1,0 +1,6400 @@
+{
+ "generated": "2026-10-01",
+ "rules": [
+  "newest edit wins",
+  "unless it loses Chinese/scaling tokens/timers/notes",
+  "prep text must match volume",
+  "DOI must resolve to the cited paper",
+  "data fixes"
+ ],
+ "decisions": [
+  {
+   "id": "perm_buffer_triton",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "perm_buffer_triton",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "perm_buffer_triton",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "edta_trypsin",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "edta_trypsin",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "edta_trypsin",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "tris_hcl_1_5m",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "tris_hcl_1_5m",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tris_hcl_1_5m",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T13:55:05-04:00"
+  },
+  {
+   "id": "pbs_1x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "pbs_1x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "pbs_1x",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "running_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "running_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "running_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "running_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "tbst",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "tbst",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tbst",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "tbst",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "transfer_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "transfer_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "transfer_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "cresol_red_10x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "cresol_red_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "mops_10x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mops_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "pbs_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "pbs_10x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "pbs_10x",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "pcr_buffer_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "rbc_lysis_10x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "rbc_lysis_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "running_buffer_10x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "running_buffer_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "running_buffer_10x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "running_buffer_10x",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "tbe_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tbe_10x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "tbe_10x",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "tbs_10x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tbs_10x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "tbs_10x",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "laemmli_2x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "laemmli_2x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "ssc_20x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ssc_20x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "ssc_20x",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "pfa_4",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "pfa_4",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "pfa_4",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "pfa_4",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "laemmli_4x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "laemmli_4x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "blocking_bsa",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "blocking_bsa",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "blocking_bsa",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "blocking_milk",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "blocking_milk",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "blocking_milk",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "laemmli_5x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "laemmli_5x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "q_solution_5x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "q_solution_5x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tae_50x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tae_50x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "tae_50x",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "dna_loading_dye_6x",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "dna_loading_dye_6x",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "mounting_medium_antifade",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mounting_medium_antifade",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "ar_edta_ph9",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ar_edta_ph9",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "bn_page_cathode",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "bn_page_cathode",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "bn_page_cathode",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "bsa_standard_curve",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "bsa_standard_curve",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-18T20:44:36+00:00"
+  },
+  {
+   "id": "buprenorphine_solution",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "chip_dilution",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "chip_wash_high",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "chip_wash_high",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "chip_wash_low",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "chip_wash_low",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "chip_lysis",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "chip_lysis",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "chloroquine_stock",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "citrate_buffer_ar",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "citrate_buffer_ar",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "citrate_buffer_ar",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "citrate_buffer_ar",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "crispr_rnp",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "crispr_rnp",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "depc_water",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "depc_water",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "depc_water",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "emsa_binding_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "emsa_binding_buffer",
+   "field": "prepSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "exosome_isolation_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "exosome_isolation_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "facs_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "facs_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "facs_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "ficoll_solution",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ficoll_solution",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "ficoll_400_stock",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ficoll_400_stock",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "ficoll_paque_pbmc",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ficoll_paque_pbmc",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "g418_stock",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "gibson_mastermix",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "gibson_mastermix",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "gst_elution",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "gst_elution",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "gst_elution",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "gst_elution",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "gst_elution_reduced",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "hepes_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "hepes_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "hepes_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "hepes_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "his_binding",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "his_binding",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "his_binding",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "his_binding",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "his_elution",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "his_elution",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "his_elution",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "his_elution",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "if_blocking",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "if_blocking",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "if_blocking",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "if_permeabilization",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "if_permeabilization",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "antibody_diluent_ihc",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "antibody_diluent_ihc",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "imac_elution_500",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "imac_elution_500",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "imac_wash_highsalt",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "imac_wash_highsalt",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "ip_lysis",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "ip_lysis",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "percoll_isotonic",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "percoll_isotonic",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "kinase_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "kinase_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "kinase_buffer",
+   "field": "prepSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "luciferase_lysis_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "luciferase_lysis_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "lysosome_isolation_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "lysosome_isolation_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "macs_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "macs_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "macs_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "matrigel_coating",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "matrigel_coating",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "mes_running_buffer",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mes_running_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "mes_running_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "mes_running_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "lysis_buffer_mild",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "lysis_buffer_mild",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "miniprep_p1",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "miniprep_p1",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "miniprep_p1",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "miniprep_p1",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "miniprep_p2",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "miniprep_p2",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "miniprep_p2",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "miniprep_p3",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "miniprep_p3",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "miniprep_p3",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "miniprep_p3",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "mitochondria_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mitochondria_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "mops_running_buffer",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mops_running_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "mops_running_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "mops_running_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "mtt_reagent",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mtt_reagent",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "mtt_reagent",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "native_page_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "native_page_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "native_page_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "native_page_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "np40_lysis",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "np40_lysis",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "np40_lysis",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "np40_lysis",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "nuc_cyt_a",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "nuc_cyt_a",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "nuc_cyt_a",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "nuc_cyt_b",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "nuc_cyt_b",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "nuc_cyt_b",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "nuclei_isolation_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "nuclei_isolation_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "pei_stock",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "pei_stock",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "pei_stock",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T13:55:05-04:00"
+  },
+  {
+   "id": "percoll_gradient_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "percoll_gradient_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "polybrene_stock",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "polybrene_stock",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "dialysis_buffer_generic",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "dialysis_buffer_generic",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "loading_buffer_nr",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "loading_buffer_nr",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "resazurin_stock",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ripa",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "ripa",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "rna_loading_dye",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "rna_loading_dye",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "sds_page_gel",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "sds_page_gel",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "sds_page_gel",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "sec_running_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "sec_running_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "acetate_buffer",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "acetate_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "acetate_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "acetate_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "phosphatase_inhibitor_na3vo4",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:57:56+00:00"
+  },
+  {
+   "id": "phosphatase_inhibitor_na3vo4",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "sucrose_gradient_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "sucrose_gradient_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "sucrose_gradient_homog",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "sucrose_gradient_homog",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tail_lysis_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "tail_lysis_buffer",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "tail_lysis_buffer",
+   "field": "prepSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "te",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "te",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "te",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "te",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "strip_buffer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "strip_buffer",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "strip_buffer",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "antibody_diluent_wb",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "antibody_diluent_wb",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:38:54+00:00"
+  },
+  {
+   "id": "2yt_media",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese, scaling tokens",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "glycerol_stock",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "glycerol_stock",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "freezing_medium",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "complete_dmem",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "complete_dmem",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "complete_rpmi",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "complete_rpmi",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "lb_agar",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "lb_agar",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "lb",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "esc_culture_media",
+   "field": "components",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:53:16-07:00",
+   "srcChanged": "2026-07-14T09:53:00-07:00"
+  },
+  {
+   "id": "nci_h660_medium",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "nci_h660_medium",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T13:55:05-04:00"
+  },
+  {
+   "id": "soc",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "soc",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "soc",
+   "field": "ph",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "tb_media",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:57:56+00:00"
+  },
+  {
+   "id": "coomassie_stain",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "coomassie_destain",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "crystal_violet_stain",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "crystal_violet_stain",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "dapi_staining",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "ecl_enhanced",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:57:56+00:00"
+  },
+  {
+   "id": "ecl_enhanced",
+   "field": "prepSteps",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "oil_red_o",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:57:56+00:00"
+  },
+  {
+   "id": "ponceau_s",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "cite_seq_10x",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "cite_seq_10x",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "agarose_gel_electrophoresis",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "agarose_gel_electrophoresis",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "agarose_gel_electrophoresis",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "agarose_gel_electrophoresis",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "agarose_gel_electrophoresis",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "agarose_gel_electrophoresis",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "annexin_v_apoptosis",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "annexin_v_apoptosis",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "annexin_v_apoptosis",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "chromatin_accessibility_atac",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "chromatin_accessibility_atac",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "chromatin_accessibility_atac",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "chromatin_accessibility_atac",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "electroporation",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "electroporation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "electroporation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "electroporation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "electroporation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bacterial_glycerol_stock",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "bacterial_glycerol_stock",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "bacterial_glycerol_stock",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bacterial_glycerol_stock",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bacterial_glycerol_stock",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "heat_shock_transformation",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "heat_shock_transformation",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "heat_shock_transformation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "heat_shock_transformation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "heat_shock_transformation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "heat_shock_transformation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bca_protein_assay",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "bca_protein_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "bca_protein_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bca_protein_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bradford_assay_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "bradford_assay_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bradford_assay_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bradford_assay_protocol",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "competent_cell_bulk",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "competent_cell_bulk",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "competent_cell_bulk",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "competent_cells_cacl2",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "competent_cells_cacl2",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "competent_cells_cacl2",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "competent_cells_cacl2",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "competent_cells_cacl2",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "calcium_phosphate_transfection",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "calcium_phosphate_transfection",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "calcium_phosphate_transfection",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "calcium_phosphate_transfection",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "calcium_phosphate_transfection",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cck8_proliferation",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cck8_proliferation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cck8_proliferation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cck8_proliferation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cck8_proliferation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_counting_hemocytometer",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "cell_counting_hemocytometer",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_counting_hemocytometer",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cell_counting_hemocytometer",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_counting_hemocytometer",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_cycle_pi",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cell_cycle_pi",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_cycle_pi",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_cycle_pi",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_freezing",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "cell_freezing",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cell_freezing",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_freezing",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_freezing",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_passage",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "cell_passage",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cell_passage",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_passage",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_passage",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_thawing",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "cell_thawing",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "cell_thawing",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cell_thawing",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_thawing",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_thawing",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "chip_protocol",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "chip_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "chip_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "chip_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "chip_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ctc_detection_pcr",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "ctc_detection_pcr",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ctc_detection_pcr",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "ctc_detection_pcr",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "clonogenic_assay",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "clonogenic_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "clonogenic_assay",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "clonogenic_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "clonogenic_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "coip_protocol",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "coip_protocol",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "coip_protocol",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "coip_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "coip_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "coip_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "coip_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "colony_pcr",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "colony_pcr",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "colony_pcr",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "colony_pcr",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "colony_pcr",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "colony_pcr",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "colony_pcr",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "comet_assay",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "comet_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "comet_assay",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "comet_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "comet_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "coomassie_staining",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "coomassie_staining",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "coomassie_staining",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "coomassie_staining",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "coomassie_staining",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "crispr_sgrna_cloning",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "crispr_sgrna_cloning",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "crispr_sgrna_cloning",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "crispr_sgrna_cloning",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cut_and_run",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cut_and_run",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cut_and_run",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cut_and_run",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cytof_staining",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "cytof_staining",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "cytof_staining",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "cytof_staining",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "gradient_centrifugation_general",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gradient_centrifugation_general",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "dna_ligation",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "dna_ligation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "dna_ligation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "dna_ligation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "dna_ligation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "dual_luciferase",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "dual_luciferase",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "dual_luciferase",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "dual_luciferase",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "dual_luciferase",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "competent_cells_electrocompetent",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "competent_cells_electrocompetent",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "emsa_gel_shift",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "emsa_gel_shift",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "emsa_gel_shift",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "emsa_gel_shift",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "enzyme_kinetics_michaelis",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "enzyme_kinetics_michaelis",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "enzyme_kinetics_michaelis",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "enzyme_kinetics_michaelis",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "enzyme_kinetics_michaelis",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "enzyme_kinetics_michaelis",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "er_golgi_isolation",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "er_golgi_isolation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "ethanol_precipitation",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ethanol_precipitation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "ethanol_precipitation",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ethanol_precipitation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ethanol_precipitation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "exosome_isolation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "fbs_heat_inactivation",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "fbs_heat_inactivation",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "fbs_heat_inactivation",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "fbs_heat_inactivation",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "flow_cytometry_protocol",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "flow_cytometry_protocol",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "flow_cytometry_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "flow_cytometry_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "flow_cytometry_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "flow_cytometry_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gel_extraction",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "gel_extraction",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "gel_extraction",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gel_extraction",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gel_extraction",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "genomic_dna_extraction",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "genomic_dna_extraction",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "genomic_dna_extraction",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "genomic_dna_extraction",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "genomic_dna_extraction",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gibson_assembly",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "gibson_assembly",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gibson_assembly",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gibson_assembly",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gst_tag_purification",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-17T18:58:00+00:00"
+  },
+  {
+   "id": "gst_tag_purification",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gst_tag_purification",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "gst_tag_purification",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gst_tag_purification",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "gst_tag_purification",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "pulldown_assay",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "his_tag_purification",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "his_tag_purification",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "his_tag_purification",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "his_tag_purification",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "if_protocol",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "if_protocol",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "if_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "if_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "if_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "if_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "if_cryostat",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "if_cryostat",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "if_cryostat",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "if_cryostat",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "ihc_paraffin_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "ihc_paraffin_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ihc_paraffin_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ihc_paraffin_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "immunoprecipitation",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "immunoprecipitation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "immunoprecipitation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "immunoprecipitation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "immunoprecipitation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "inclusion_body_refolding",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "inclusion_body_refolding",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "inclusion_body_refolding",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "inclusion_body_refolding",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "ion_exchange_chromatography",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ion_exchange_chromatography",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "ion_exchange_chromatography",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ion_exchange_chromatography",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ion_exchange_chromatography",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "lentiviral_titer_functional",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "lentiviral_titer_functional",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "lentiviral_titer_p24",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "lentivirus_production",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "lentivirus_production",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "lentivirus_production",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "lentivirus_production",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "lentivirus_production",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_transfection",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "cell_transfection",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "cell_transfection",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_transfection",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "cell_transfection",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cell_transfection",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "lysosome_isolation",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "lysosome_isolation",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-18T20:28:40+00:00"
+  },
+  {
+   "id": "lysosome_isolation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "lysosome_isolation",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "mitochondria_isolation",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "mitochondria_isolation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "mitochondria_isolation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "mitochondria_isolation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "mitochondria_isolation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "genotyping_pcr",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "genotyping_pcr",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "genotyping_pcr",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "genotyping_pcr",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mtt_assay",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "mtt_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "mtt_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "mtt_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "flow_panel_staining",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "flow_panel_staining",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "flow_panel_staining",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "flow_panel_staining",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "flow_panel_staining",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "flow_panel_staining",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "multiplex_if",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "multiplex_if",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "multiplex_if",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "multiplex_if",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "multiplex_if",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "multiplex_if",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "multiplex_if",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "mycoplasma_pcr",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "mycoplasma_pcr",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "mycoplasma_pcr",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "mycoplasma_pcr",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "hela_mycoplasma_testing",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "hela_mycoplasma_testing",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "ngn2_neuron_induction",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "ngn2_neuron_induction",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "ngn2_neuron_induction",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "ngn2_neuron_induction",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "ngn2_neuron_induction",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "northern_blot",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "northern_blot",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "northern_blot",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "northern_blot",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "northern_blot",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "pdx_implantation",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "pdx_implantation",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pdx_implantation",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pdx_implantation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pdx_implantation",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pbmc_isolation",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pbmc_isolation",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pbmc_isolation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pbmc_isolation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "plasmid_maxiprep",
+   "field": "components",
+   "pick": "app",
+   "why": "newer version loses Chinese",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "plasmid_maxiprep",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "plasmid_maxiprep",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "plasmid_maxiprep",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "plasmid_maxiprep",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "miniprep_protocol",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "miniprep_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "miniprep_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "miniprep_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "miniprep_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "protein_concentration_amicon",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "protein_concentration_amicon",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-17T18:58:00+00:00"
+  },
+  {
+   "id": "protein_concentration_amicon",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "protein_concentration_amicon",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "protein_concentration_amicon",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "protein_dialysis",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "protein_dialysis",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "protein_dialysis",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "protein_dialysis",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "proximity_ligation_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "proximity_ligation_assay",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "proximity_ligation_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "proximity_ligation_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bacterial_protein_expression",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "bacterial_protein_expression",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bacterial_protein_expression",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "bacterial_protein_expression",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "resazurin_assay",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "restriction_digest",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "restriction_digest",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "restriction_digest",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "restriction_digest",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "restriction_digest",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rna_agarose_gel",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "rna_agarose_gel",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rna_column_extraction",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "rna_column_extraction",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "rna_column_extraction",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rna_column_extraction",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rna_column_extraction",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rnaseq_library_prep",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rnaseq_library_prep",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "rnaseq_library_prep",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rnaseq_library_prep",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "rnaseq_library_prep",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "qpcr_protocol",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "qpcr_protocol",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "qpcr_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "qpcr_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "qpcr_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "qpcr_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "elisa_sandwich",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "elisa_sandwich",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "elisa_sandwich",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "elisa_sandwich",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sanger_sequencing_prep",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "sanger_sequencing_prep",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "sanger_sequencing_prep",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "silver_stain",
+   "field": "defaultVolume",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-18T20:44:36+00:00"
+  },
+  {
+   "id": "silver_stain",
+   "field": "unit",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-18T20:44:36+00:00"
+  },
+  {
+   "id": "silver_stain",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "silver_stain",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "silver_stain",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "single_colony_picking",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "single_colony_picking",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sirna_knockdown",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "sirna_knockdown",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sirna_knockdown",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sirna_knockdown",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "site_directed_mutagenesis",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "site_directed_mutagenesis",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "site_directed_mutagenesis",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "site_directed_mutagenesis",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sec_purification",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sec_purification",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "sec_purification",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sec_purification",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "sec_purification",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "soft_agar_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "soft_agar_assay",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "soft_agar_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "soft_agar_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "southern_blot",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "southern_blot",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "southern_blot",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "southern_blot",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "stable_cell_line_selection",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "stable_cell_line_selection",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "stable_cell_line_selection",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "stable_cell_line_selection",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "pcr_standard",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "pcr_standard",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "pcr_standard",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "pcr_standard",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "pcr_standard",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "subcellular_fractionation",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "subcellular_fractionation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "subcellular_fractionation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "subcellular_fractionation",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "subcellular_fractionation",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "therapeutic_antibody_dilution",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "therapeutic_antibody_dilution",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "therapeutic_antibody_dilution",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "therapeutic_antibody_dilution",
+   "field": "doi",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "transwell_migration",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "transwell_migration",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "transwell_migration",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "transwell_migration",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "transwell_migration",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "transwell_migration",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "trizol_extraction",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "trizol_extraction",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "trizol_extraction",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "trizol_extraction",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "trizol_extraction",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "trizol_extraction",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "trypan_blue_counting",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "trypan_blue_counting",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "trypan_blue_counting",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "trypan_blue_counting",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "tube_formation_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "tube_formation_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "tube_formation_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "tube_formation_assay",
+   "field": "safeStops",
+   "pick": "app",
+   "why": "newer version loses notes",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "tumor_dissociation",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-09-27T19:39:56+00:00"
+  },
+  {
+   "id": "tumor_dissociation",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "tumor_dissociation",
+   "field": "relatedProtocols",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "tumor_dissociation",
+   "field": "materials",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "tumor_dissociation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer version loses notes",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-03-19T22:51:23+00:00"
+  },
+  {
+   "id": "wb_protocol",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "wb_protocol",
+   "field": "components",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-14T20:47:53+00:00",
+   "srcChanged": "2026-07-03T22:33:56+00:00"
+  },
+  {
+   "id": "wb_protocol",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "wb_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "wb_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T20:21:53+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "wb_protocol",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "wb_protocol",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "scratch_assay",
+   "field": "unit",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T18:13:18+00:00",
+   "srcChanged": "2026-03-14T13:41:04+00:00"
+  },
+  {
+   "id": "scratch_assay",
+   "field": "ref",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-04-01T17:17:14+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "scratch_assay",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-03-19T05:21:01+00:00"
+  },
+  {
+   "id": "scratch_assay",
+   "field": "detailedSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "scratch_assay",
+   "field": "briefSteps",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "2026-03-18T19:35:03+00:00",
+   "srcChanged": "2026-06-22T05:14:49+00:00"
+  },
+  {
+   "id": "cut_and_run_library_prep",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "cut_and_run_library_prep",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "cut_and_run_library_prep",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "cut_and_tag",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "cut_and_tag",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "cut_and_tag",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "organoid_cryopreservation",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "organoid_cryopreservation",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "organoid_cryopreservation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "ddpcr_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "ddpcr_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "first_strand_cdna",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "first_strand_cdna",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "first_strand_cdna",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "hichip_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "intestinal_organoid",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "intestinal_organoid",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_peg",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_peg",
+   "field": "materials",
+   "pick": "source",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_peg",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_peg",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_sucrose_cushion",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_sucrose_cushion",
+   "field": "materials",
+   "pick": "source",
+   "why": "newer version loses Chinese, notes",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_sucrose_cushion",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "lentivirus_concentration_sucrose_cushion",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-20T19:50:03+00:00"
+  },
+  {
+   "id": "nanopore_library_prep",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "nanopore_library_prep",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "organoid_passaging",
+   "field": "storage",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "organoid_passaging",
+   "field": "relatedProtocols",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "organoid_passaging",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-07-13T00:02:19+00:00"
+  },
+  {
+   "id": "prime_editing",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "prime_editing",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "rip_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "rip_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "rrbs_protocol",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "rrbs_protocol",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "ipsc_maintenance",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "ipsc_maintenance",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "sc_cut_and_tag",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "snrnaseq_nucleus_isolation",
+   "field": "materials",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-07-14T09:57:24-07:00",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "snrnaseq_nucleus_isolation",
+   "field": "safeStops",
+   "pick": "source",
+   "why": "newer edit",
+   "appChanged": "",
+   "srcChanged": "2026-06-22T17:58:50+00:00"
+  },
+  {
+   "id": "hcr_rna_fish",
+   "field": "duration",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-09-28T13:20:29-04:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "idisco_clearing",
+   "field": "duration",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-09-28T13:20:29-04:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "seahorse_mito_stress",
+   "field": "duration",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-09-28T13:20:29-04:00",
+   "srcChanged": ""
+  },
+  {
+   "id": "transcardial_perfusion",
+   "field": "duration",
+   "pick": "app",
+   "why": "newer edit",
+   "appChanged": "2026-09-28T13:20:29-04:00",
+   "srcChanged": ""
+  }
+ ],
+ "doiAudit": [
+  {
+   "id": "ecl_enhanced",
+   "doi": "10.1016/j.ab.2013.12.033",
+   "action": "drop",
+   "was": "Chen 2014 “Quantitation of the residual DNA from rice-derived recombina”",
+   "ref": "Haan & Bhakri (2014) Anal Biochem 450:7-12"
+  },
+  {
+   "id": "bradford_assay_protocol",
+   "doi": "10.1016/0003-2697(76)90527-3",
+   "action": "keep",
+   "found": "Bradford 1976"
+  },
+  {
+   "id": "cck8_proliferation",
+   "doi": "10.1016/S0039-9140(96)02264-5",
+   "action": "replace",
+   "to": "10.1016/s0039-9140(97)00017-9",
+   "was": "not found",
+   "found": "Ishiyama 1997 44:1299-1305 “A highly water-soluble disulfonated tetrazolium salt as a chromogenic ”",
+   "from": "Ishiyama et al. (1997) Talanta 44:1299–1305"
+  },
+  {
+   "id": "ctc_detection_pcr",
+   "doi": "10.1056/NEJMoa040766",
+   "action": "keep",
+   "found": "Cristofanilli 2004"
+  },
+  {
+   "id": "cut_and_run",
+   "doi": "10.7554/eLife.21856",
+   "action": "keep",
+   "found": "Skene 2017"
+  },
+  {
+   "id": "cytof_staining",
+   "doi": "10.1126/science.1198704",
+   "action": "keep",
+   "found": "Bendall 2011"
+  },
+  {
+   "id": "competent_cells_electrocompetent",
+   "doi": "10.1093/nar/16.13.6127",
+   "action": "keep",
+   "found": "Dower 1988"
+  },
+  {
+   "id": "emsa_gel_shift",
+   "doi": "10.1038/nprot.2007.249",
+   "action": "keep",
+   "found": "Hellman 2007"
+  },
+  {
+   "id": "enzyme_kinetics_michaelis",
+   "doi": "10.1021/bi201284u",
+   "action": "keep",
+   "found": "Johnson 2011"
+  },
+  {
+   "id": "er_golgi_isolation",
+   "doi": "10.1016/j.xpro.2021.100450",
+   "action": "drop",
+   "was": "Chen 2021 “Processing single-cell RNA-seq data for dimension reduction-”",
+   "ref": "Graham (2001) Curr Protoc Cell Biol 3.8.1; Barr (2013) Curr Protoc Cell Biol 59:3.29.1"
+  },
+  {
+   "id": "exosome_isolation",
+   "doi": "10.1080/20013078.2018.1535750",
+   "action": "keep",
+   "found": "Théry 2018"
+  },
+  {
+   "id": "fbs_heat_inactivation",
+   "doi": "10.1016/j.biotechadv.2010.03.003",
+   "action": "drop",
+   "was": "Celińska 2010 “Debottlenecking the 1,3-propanediol pathway by metabolic eng”",
+   "ref": "van der Valk J et al. (2010) Biotechnol Adv 28:693–701; Freshney RI (2016) Culture of Anim"
+  },
+  {
+   "id": "pulldown_assay",
+   "doi": "10.1007/978-1-4939-7033-9_37",
+   "action": "drop",
+   "was": "Habenstein 2017 “Erratum to: Bacterial Filamentous Appendages Investigated by”",
+   "ref": "Brymora et al. (2004) Methods Mol Biol 261:247–262; Louche et al. (2017) Methods Mol Biol "
+  },
+  {
+   "id": "his_tag_purification",
+   "doi": "10.1002/0471140864.ps0909s73",
+   "action": "keep",
+   "found": "Kimple 2013"
+  },
+  {
+   "id": "if_cryostat",
+   "doi": "10.1002/0471143030.cb0403s69",
+   "action": "keep",
+   "found": "Donaldson 2015"
+  },
+  {
+   "id": "ihc_paraffin_protocol",
+   "doi": "10.1177/0300985813503571",
+   "action": "drop",
+   "was": "Ward 2013 “Rodent Immunohistochemistry”",
+   "ref": "Ramos-Vara & Miller (2014) Vet Pathol 51:42–87; Taylor & Rudbeck (2013) Dako Education Gui"
+  },
+  {
+   "id": "inclusion_body_refolding",
+   "doi": "10.1186/s12934-015-0222-8",
+   "action": "keep",
+   "found": "Singh 2015"
+  },
+  {
+   "id": "lentiviral_titer_functional",
+   "doi": "10.1038/nprot.2009.22",
+   "action": "keep",
+   "found": "Kutner 2009"
+  },
+  {
+   "id": "lentiviral_titer_p24",
+   "doi": "10.1038/nprot.2009.22",
+   "action": "keep",
+   "found": "Kutner 2009"
+  },
+  {
+   "id": "lentivirus_production",
+   "doi": "10.1038/nprot.2006.37",
+   "action": "keep",
+   "found": "Tiscornia 2006"
+  },
+  {
+   "id": "lysosome_isolation",
+   "doi": "10.1126/science.aan6298",
+   "action": "keep",
+   "found": "Abu-Remaileh 2017"
+  },
+  {
+   "id": "genotyping_pcr",
+   "doi": "10.2144/00291bm09",
+   "action": "keep",
+   "found": "Truett 2000"
+  },
+  {
+   "id": "mtt_assay",
+   "doi": "10.1007/978-1-61779-080-5_20",
+   "action": "keep",
+   "found": "van Meerloo 2011"
+  },
+  {
+   "id": "multiplex_if",
+   "doi": "10.1073/pnas.1300136110",
+   "action": "keep",
+   "found": "Gerdes 2013"
+  },
+  {
+   "id": "hela_mycoplasma_testing",
+   "doi": "10.1038/nprot.2010.43",
+   "action": "keep",
+   "found": "Young 2010"
+  },
+  {
+   "id": "ngn2_neuron_induction",
+   "doi": "10.1016/j.neuron.2013.05.029",
+   "action": "keep",
+   "found": "Zhang 2013"
+  },
+  {
+   "id": "pbmc_isolation",
+   "doi": "10.1002/9783527698622.ch12",
+   "action": "replace",
+   "to": "10.1016/s0171-2985(84)80042-x",
+   "was": "not found",
+   "found": "Ulmer 1984 166:238-250 “Isolation and Subfractionation of Human Peripheral Blood Mononuclear C”",
+   "from": "Ulmer et al. (1984) Immunobiology 166:238–250"
+  },
+  {
+   "id": "bacterial_protein_expression",
+   "doi": "10.3389/fmicb.2014.00172",
+   "action": "keep",
+   "found": "Rosano 2014"
+  },
+  {
+   "id": "resazurin_assay",
+   "doi": "10.1046/j.1432-1327.2000.01606.x",
+   "action": "keep",
+   "found": "O'Brien 2000"
+  },
+  {
+   "id": "sanger_sequencing_prep",
+   "doi": "10.1073/pnas.74.12.5463",
+   "action": "keep",
+   "found": "Sanger 1977"
+  },
+  {
+   "id": "sirna_knockdown",
+   "doi": "10.1038/35078107",
+   "action": "keep",
+   "found": "Elbashir 2001"
+  },
+  {
+   "id": "stable_cell_line_selection",
+   "doi": "10.1038/s41596-020-0389-3",
+   "action": "drop",
+   "was": "not found",
+   "ref": "Freshney (2016) Culture of Animal Cells, 7th ed., Ch. 13; Kim (2020) Nat Protoc 15:3199–32"
+  },
+  {
+   "id": "subcellular_fractionation",
+   "doi": "10.1016/j.xpro.2021.100450",
+   "action": "replace",
+   "to": "10.1093/nar/11.5.1475",
+   "was": "Chen 2021 “Processing single-cell RNA-seq data for dimension reduction-”",
+   "found": "Dignam 1983 11:1475-1489 “Accurate transcription initiation by RNA polymerase II in a soluble ex”",
+   "from": "Dignam et al. (1983) Nucleic Acids Res 11:1475"
+  },
+  {
+   "id": "therapeutic_antibody_dilution",
+   "doi": "10.1038/nri2727",
+   "action": "replace",
+   "to": "10.1038/nri2744",
+   "was": "Tokoyoda 2010 “Organization of immunological memory by bone marrow stroma”",
+   "found": "Weiner 2010 10:317-327 “Monoclonal antibodies: versatile platforms for cancer immunotherapy”",
+   "from": "Weiner LM, Surana R & Wang S (2010) Nat Rev Immunol 10:317–327"
+  },
+  {
+   "id": "scratch_assay",
+   "doi": "10.1038/nprot.2007.30",
+   "action": "keep",
+   "found": "Liang 2007"
+  },
+  {
+   "id": "cut_and_run_library_prep",
+   "doi": "10.17504/protocols.io.bagaibse",
+   "action": "keep",
+   "found": "Liu 2019"
+  },
+  {
+   "id": "cut_and_tag",
+   "doi": "10.17504/protocols.io.bcuhiwt6",
+   "action": "keep",
+   "found": "S Kaya-Okur 2020"
+  },
+  {
+   "id": "organoid_cryopreservation",
+   "doi": "10.17504/protocols.io.bh4ij8ue",
+   "action": "keep",
+   "found": "Souster 2020"
+  },
+  {
+   "id": "ddpcr_protocol",
+   "doi": "10.1021/ac202028g",
+   "action": "keep",
+   "found": "Hindson 2011"
+  },
+  {
+   "id": "first_strand_cdna",
+   "doi": "10.17504/protocols.io.k2scyee",
+   "action": "keep",
+   "found": "Dietsch 2017"
+  },
+  {
+   "id": "intestinal_organoid",
+   "doi": "10.1038/nature07935",
+   "action": "keep",
+   "found": "Sato 2009"
+  },
+  {
+   "id": "lentivirus_concentration_peg",
+   "doi": "10.1038/nprot.2006.37",
+   "action": "keep",
+   "found": "Tiscornia 2006"
+  },
+  {
+   "id": "lentivirus_concentration_sucrose_cushion",
+   "doi": "10.1007/s12033-017-0044-5",
+   "action": "keep",
+   "found": "Boroujeni 2018"
+  },
+  {
+   "id": "nanopore_library_prep",
+   "doi": "10.17504/protocols.io.bp2l6n6brgqe/v2",
+   "action": "drop",
+   "was": "not found",
+   "ref": "Oxford Nanopore Technologies. (2023). Ligation sequencing DNA V14 (SQK-LSK114). Protocol d"
+  },
+  {
+   "id": "organoid_passaging",
+   "doi": "10.17504/protocols.io.bfe3jjgn",
+   "action": "keep",
+   "found": "Rogers 2020"
+  },
+  {
+   "id": "prime_editing",
+   "doi": "10.1038/s41586-019-1711-4",
+   "action": "keep",
+   "found": "Anzalone 2019"
+  },
+  {
+   "id": "rip_protocol",
+   "doi": "10.1038/nprot.2006.46",
+   "action": "replace",
+   "to": "10.1038/nprot.2006.47",
+   "was": "Zelazo 2006 “The Dimensional Change Card Sort (DCCS): a method of assessi”",
+   "found": "Keene 2006 1:302-307 “RIP-Chip: the isolation and identification of mRNAs, microRNAs and pro”",
+   "from": "Keene JD, Komisarow JM, Friedersdorf MB. (2006). RIP-Chip: the isolation and identificatio"
+  },
+  {
+   "id": "rrbs_protocol",
+   "doi": "10.1093/nar/gkn425",
+   "action": "drop",
+   "was": "Dohm 2008 “Substantial biases in ultra-short read data sets from high-t”",
+   "ref": "Meissner A, Gnirke A, Bell GW, Ramsahoye B, Lander ES, Jaenisch R. (2008). Reduced represe"
+  },
+  {
+   "id": "ipsc_maintenance",
+   "doi": "10.1038/nmeth.1593",
+   "action": "keep",
+   "found": "Chen 2011"
+  },
+  {
+   "id": "snrnaseq_nucleus_isolation",
+   "doi": "10.1038/nmeth.4407",
+   "action": "keep",
+   "found": "Habib 2017"
+  },
+  {
+   "id": "hcr_rna_fish",
+   "doi": "10.1242/dev.165753",
+   "action": "keep",
+   "found": "Choi 2018"
+  },
+  {
+   "id": "idisco_clearing",
+   "doi": "10.1016/j.cell.2014.10.010",
+   "action": "keep",
+   "found": "Renier 2014"
+  },
+  {
+   "id": "seahorse_mito_stress",
+   "doi": "10.1016/B978-0-12-801415-8.00016-3",
+   "action": "keep",
+   "found": "Divakaruni 2014"
+  },
+  {
+   "id": "transcardial_perfusion",
+   "doi": "10.3791/3564",
+   "action": "keep",
+   "found": "Gage 2012"
+  },
+  {
+   "id": "organoid_drug_screening",
+   "doi": "10.17504/protocols.io.bpsgmnbw",
+   "action": "keep",
+   "found": "E. Francies 2020"
+  },
+  {
+   "id": "ms_acetone_precipitation",
+   "doi": "10.17504/protocols.io.81wgbz39ngpk/v1",
+   "action": "keep",
+   "found": "Cirri 2024"
+  }
+ ],
+ "fixes": [
+  "gst_tag_purification: removed duplicate link",
+  "hcr_rna_fish: dropped non-numeric duration",
+  "idisco_clearing: dropped non-numeric duration",
+  "seahorse_mito_stress: dropped non-numeric duration",
+  "transcardial_perfusion: dropped non-numeric duration",
+  "ecl_enhanced: dropped DOI 10.1016/j.ab.2013.12.033 (Chen 2014 “Quantitation of the residual DNA from rice-derived recombina”)",
+  "cck8_proliferation: DOI 10.1016/S0039-9140(96)02264-5 → 10.1016/s0039-9140(97)00017-9 (Ishiyama 1997 44:1299-1305 “A highly water-soluble disulfonated tetrazolium salt as a chromogenic ”)",
+  "er_golgi_isolation: dropped DOI 10.1016/j.xpro.2021.100450 (Chen 2021 “Processing single-cell RNA-seq data for dimension reduction-”)",
+  "fbs_heat_inactivation: dropped DOI 10.1016/j.biotechadv.2010.03.003 (Celińska 2010 “Debottlenecking the 1,3-propanediol pathway by metabolic eng”)",
+  "pulldown_assay: dropped DOI 10.1007/978-1-4939-7033-9_37 (Habenstein 2017 “Erratum to: Bacterial Filamentous Appendages Investigated by”)",
+  "ihc_paraffin_protocol: dropped DOI 10.1177/0300985813503571 (Ward 2013 “Rodent Immunohistochemistry”)",
+  "pbmc_isolation: DOI 10.1002/9783527698622.ch12 → 10.1016/s0171-2985(84)80042-x (Ulmer 1984 166:238-250 “Isolation and Subfractionation of Human Peripheral Blood Mononuclear C”)",
+  "stable_cell_line_selection: dropped DOI 10.1038/s41596-020-0389-3 (not found)",
+  "subcellular_fractionation: DOI 10.1016/j.xpro.2021.100450 → 10.1093/nar/11.5.1475 (Dignam 1983 11:1475-1489 “Accurate transcription initiation by RNA polymerase II in a soluble ex”)",
+  "therapeutic_antibody_dilution: DOI 10.1038/nri2727 → 10.1038/nri2744 (Weiner 2010 10:317-327 “Monoclonal antibodies: versatile platforms for cancer immunotherapy”)",
+  "nanopore_library_prep: dropped DOI 10.17504/protocols.io.bp2l6n6brgqe/v2 (not found)",
+  "rip_protocol: DOI 10.1038/nprot.2006.46 → 10.1038/nprot.2006.47 (Keene 2006 1:302-307 “RIP-Chip: the isolation and identification of mRNAs, microRNAs and pro”)",
+  "rrbs_protocol: dropped DOI 10.1093/nar/gkn425 (Dohm 2008 “Substantial biases in ultra-short read data sets from high-t”)",
+  "hichip_protocol: wrote bilingual notes for 4 safe-stops",
+  "sc_cut_and_tag: wrote bilingual notes for 2 safe-stops"
+ ],
+ "newRecipes": [
+  "coip_human_cells",
+  "ms_acetone_precipitation",
+  "organoid_drug_screening"
+ ]
+}

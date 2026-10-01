@@ -126,31 +126,67 @@
   },
   "materials": [
     {
-      "name": "EMSA binding buffer",
-      "linkedRecipe": "emsa_binding_buffer"
+      "name": "Double-stranded oligonucleotide probe",
+      "note": {
+        "en": "Complementary oligos annealed, PAGE-purified",
+        "zh": "互补寡核苷酸退火，PAGE纯化"
+      }
     },
     {
-      "name": "Labeled DNA probe (biotin or ³²P)"
+      "name": "T4 polynucleotide kinase",
+      "note": {
+        "en": "NEB M0201, with 10× buffer",
+        "zh": "NEB M0201，含10×缓冲液"
+      }
     },
     {
-      "name": "Unlabeled competitor DNA"
+      "name": "[γ-³²P]ATP or biotin-labeled probe",
+      "note": {
+        "en": "10 mCi/mL, 3000 Ci/mmol",
+        "zh": "10 mCi/mL，3000 Ci/mmol"
+      }
     },
     {
-      "name": "Purified protein or nuclear extract"
+      "name": "Poly(dI-dC)",
+      "note": {
+        "en": "1 mg/mL stock, Sigma P4929",
+        "zh": "1 mg/mL储液，Sigma P4929"
+      }
     },
     {
-      "name": "Poly(dI·dC)"
+      "name": "Nuclear extract or purified protein",
+      "note": {
+        "en": "Prepare fresh or thaw from -80°C",
+        "zh": "新鲜制备或从-80°C解冻"
+      }
     },
     {
-      "name": "Native PAGE gel (6%)",
-      "linkedRecipe": "native_page_buffer"
+      "name": "40% Acrylamide:Bis (29:1)",
+      "note": {
+        "en": "For non-denaturing gel",
+        "zh": "用于非变性凝胶"
+      }
     },
     {
-      "name": "TBE buffer",
-      "linkedRecipe": "tbe_10x"
+      "name": "10× TBE buffer",
+      "note": {
+        "en": "Dilute to 0.5× for gel and running buffer",
+        "zh": "稀释至0.5×用于凝胶和电泳缓冲液"
+      }
     },
     {
-      "name": "Nylon membrane (for chemiluminescent detection)"
+      "name": "6× EMSA loading dye (no SDS)",
+      "note": {
+        "en": "40% glycerol, 0.01% bromophenol blue in water",
+        "zh": "40%甘油，0.01%溴酚蓝水溶液"
+      }
+    },
+    {
+      "name": "G-25 spin columns",
+      "note": {
+        "en": "For probe purification",
+        "zh": "用于探针纯化"
+      }
     }
   ],
   "stoppingPoints": [

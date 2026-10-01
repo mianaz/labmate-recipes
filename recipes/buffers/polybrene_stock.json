@@ -44,21 +44,26 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve polybrene (hexadimethrine bromide) in ddH₂O to make 8 mg/mL stock."
+      "en": "Dissolve {v:100:mg} Polybrene in {v:10:mL} sterile ddH₂O",
+      "zh": "将 {v:100:mg} Polybrene 溶于 {v:10:mL} 无菌 ddH₂O"
     },
     {
-      "step": "Filter-sterilize through 0.22 µm."
+      "en": "Filter-sterilize through 0.22 µm",
+      "zh": "0.22 µm 过滤除菌"
     },
     {
-      "step": "Aliquot into single-use tubes."
-    },
-    {
-      "step": "Store at −20°C."
+      "en": "Aliquot 100-500 µL per tube. Store at -20°C",
+      "zh": "分装 100-500 µL/管。-20°C 保存"
     }
   ],
   "crosslinks": [
     "lentivirus_production",
     "stable_cell_line_selection"
   ],
-  "relatedProtocols": ["lentivirus_production", "stable_cell_line_selection", "lentiviral_titer_functional", "lentivirus_concentration_sucrose_cushion"]
+  "relatedProtocols": [
+    "lentivirus_production",
+    "stable_cell_line_selection",
+    "lentiviral_titer_functional",
+    "lentivirus_concentration_sucrose_cushion"
+  ]
 }

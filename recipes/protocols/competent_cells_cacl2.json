@@ -71,30 +71,29 @@
   },
   "materials": [
     {
-      "name": "E. coli cells (DH5α, TOP10, or similar)"
-    },
-    {
-      "name": "LB medium",
+      "name": "LB Medium",
       "linkedRecipe": "lb"
     },
     {
-      "name": "CaCl₂ (100 mM, ice-cold, sterile)"
+      "name": "100 mM CaCl₂ (autoclaved, ice-cold)",
+      "note": {
+        "en": "Pre-chill to 4°C",
+        "zh": "预冷至 4°C"
+      }
     },
     {
-      "name": "CaCl₂ + 15% glycerol (ice-cold)"
+      "name": "Glycerol (60%, sterile)",
+      "note": {
+        "en": "For freezing stock",
+        "zh": "用于冻存"
+      }
     },
     {
-      "name": "SOC medium",
-      "linkedRecipe": "soc"
-    },
-    {
-      "name": "Ice bucket"
-    },
-    {
-      "name": "Centrifuge (pre-chilled, 4°C)"
-    },
-    {
-      "name": "Microcentrifuge tubes (pre-chilled)"
+      "name": "Liquid nitrogen",
+      "note": {
+        "en": "For snap-freezing",
+        "zh": "速冻用"
+      }
     }
   ],
   "stoppingPoints": [
@@ -183,5 +182,6 @@
         "zh": "分装并 −80°C 冻存的感受态细胞可保存最多 6 个月。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment (50 mL culture)"
 }

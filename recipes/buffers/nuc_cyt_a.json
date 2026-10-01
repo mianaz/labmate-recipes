@@ -81,19 +81,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve HEPES, KCl, MgCl₂, and EDTA in ~40 mL ddH₂O."
+      "en": "Prepare without DTT and protease inhibitors",
+      "zh": "先配制不含 DTT 和蛋白酶抑制剂的储备液"
     },
     {
-      "step": "Add DTT and NP-40 (0.1%)."
+      "en": "Before use: add 1 mM DTT + protease inhibitors",
+      "zh": "使用前加入 1 mM DTT + 蛋白酶抑制剂"
     },
     {
-      "step": "Adjust pH to 7.9."
+      "en": "Incubate cells on ice 15 min, then add NP-40 to 0.1%",
+      "zh": "冰上孵育细胞 15 min，然后加 NP-40 至 0.1%"
     },
     {
-      "step": "Bring to final volume of 50 mL."
-    },
-    {
-      "step": "Store at 4°C; add protease inhibitors fresh."
+      "en": "Vortex 10 s, centrifuge 3000×g 10 min → supernatant = cytoplasm",
+      "zh": "涡旋 10 s，3000×g 离心 10 min → 上清 = 胞质"
     }
   ],
   "crosslinks": [

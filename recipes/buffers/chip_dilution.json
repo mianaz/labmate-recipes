@@ -82,19 +82,12 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine Tris-HCl, NaCl, EDTA, Triton X-100, and SDS in ~80 mL ddH₂O."
+      "en": "Mix Triton X-100, EDTA, Tris-HCl, NaCl in ddH₂O",
+      "zh": "将 Triton X-100、EDTA、Tris-HCl、NaCl 混合于 ddH₂O"
     },
     {
-      "step": "Mix until all components are dissolved."
-    },
-    {
-      "step": "Bring to final volume of 100 mL with ddH₂O."
-    },
-    {
-      "step": "Store at 4°C."
-    },
-    {
-      "step": "Add protease inhibitors fresh before use."
+      "en": "Dilute ChIP lysate ~10-fold with this buffer",
+      "zh": "用此缓冲液将 ChIP 裂解物稀释约 10 倍"
     }
   ],
   "crosslinks": [

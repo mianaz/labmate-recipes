@@ -42,19 +42,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Weigh chloroquine diphosphate."
+      "en": "Dissolve {v:129:mg} chloroquine diphosphate in {v:10:mL} sterile ddH₂O",
+      "zh": "将 {v:129:mg} 氯喹二磷酸盐溶于 {v:10:mL} 无菌 ddH₂O"
     },
     {
-      "step": "Dissolve in ddH₂O to 25 mM final concentration."
+      "en": "Filter-sterilize through 0.22 µm",
+      "zh": "0.22 µm 过滤除菌"
     },
     {
-      "step": "Filter-sterilize through 0.22 µm filter."
-    },
-    {
-      "step": "Aliquot into single-use tubes."
-    },
-    {
-      "step": "Store at −20°C protected from light."
+      "en": "Aliquot in amber tubes or wrap in foil. Store at -20°C",
+      "zh": "分装至棕色管或锡箔包裹。-20°C 保存"
     }
   ],
   "crosslinks": [

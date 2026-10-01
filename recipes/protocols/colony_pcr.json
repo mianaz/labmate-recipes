@@ -73,34 +73,57 @@
   },
   "materials": [
     {
-      "name": "Bacterial colonies on LB agar plate",
-      "linkedRecipe": "lb_agar"
+      "name": "2× Taq Master Mix",
+      "note": {
+        "en": "Commercial (e.g., NEB, Takara)",
+        "zh": "商品化（如 NEB、Takara）"
+      }
     },
     {
-      "name": "Taq DNA polymerase and buffer"
+      "name": "Forward primer (10 µM)",
+      "note": {
+        "en": "M13 or gene-specific",
+        "zh": "M13 通用引物或基因特异引物"
+      }
     },
     {
-      "name": "dNTP mix (10 mM each)"
+      "name": "Reverse primer (10 µM)",
+      "note": {
+        "en": "M13 or gene-specific",
+        "zh": "M13 通用引物或基因特异引物"
+      }
     },
     {
-      "name": "Primers (forward and reverse, 10 µM each)"
+      "name": "Nuclease-free water",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Sterile toothpicks or pipette tips"
+      "name": "Sterile toothpicks or pipette tips",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "PCR tubes or 96-well PCR plate"
-    },
-    {
-      "name": "Thermocycler"
-    },
-    {
-      "name": "6× DNA loading dye",
+      "name": "DNA Loading Dye (6×)",
       "linkedRecipe": "dna_loading_dye_6x"
     },
     {
-      "name": "Agarose and TAE buffer",
-      "linkedRecipe": "tae_50x"
+      "name": "Agarose gel + DNA Ladder",
+      "note": {
+        "en": "1–1.5%",
+        "zh": "1–1.5%"
+      }
+    },
+    {
+      "name": "LB + antibiotic replica plate",
+      "note": {
+        "en": "For backup streaks",
+        "zh": "用于备份划线"
+      }
     }
   ],
   "stoppingPoints": [
@@ -180,5 +203,6 @@
         "zh": "PCR 产物可在 4°C 保存过夜，或在 −20°C 保存最多 1 周，再进行凝胶分析。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "reaction (25 µL)"
 }

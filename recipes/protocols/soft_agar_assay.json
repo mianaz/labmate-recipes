@@ -45,25 +45,51 @@
   },
   "materials": [
     {
-      "name": "Low-melting-point agarose"
+      "name": "Noble Agar (or Low-melt Agarose)",
+      "note": {
+        "en": "Difco-grade, autoclave before use",
+        "zh": "Difco 级，使用前高压灭菌"
+      }
     },
     {
-      "name": "Complete culture medium",
+      "name": "2× Complete Medium",
+      "note": {
+        "en": "2× DMEM/RPMI + 20% FBS + 2× Pen/Strep",
+        "zh": "2× DMEM/RPMI + 20% FBS + 2× 青链霉素"
+      }
+    },
+    {
+      "name": "Complete Medium (1×)",
       "linkedRecipe": "complete_dmem"
     },
     {
-      "name": "6-well plates"
+      "name": "0.005% Crystal Violet",
+      "linkedRecipe": "crystal_violet_stain"
     },
     {
-      "name": "Cell suspension (single cells)"
+      "name": "MTT (1 mg/mL)",
+      "linkedRecipe": "mtt_reagent"
     },
     {
-      "name": "Crystal violet staining solution",
-      "linkedRecipe": "crystal_violet_stain",
-      "optional": true
+      "name": "6-well Plates",
+      "note": {
+        "en": "Tissue culture treated",
+        "zh": "组织培养处理"
+      }
     },
     {
-      "name": "37°C incubator"
+      "name": "40 µm Cell Strainer",
+      "note": {
+        "en": "To ensure single-cell suspension",
+        "zh": "确保单细胞悬液"
+      }
+    },
+    {
+      "name": "42°C Water Bath",
+      "note": {
+        "en": "For maintaining molten agar",
+        "zh": "保持琼脂融化状态"
+      }
     }
   ],
   "stoppingPoints": [

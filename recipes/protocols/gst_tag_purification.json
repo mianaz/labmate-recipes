@@ -227,7 +227,6 @@
   },
   "crosslinks": [
     "gst_elution",
-    "gst_elution",
     "protein_dialysis",
     "dialysis_buffer_generic",
     "bacterial_protein_expression",
@@ -257,29 +256,61 @@
   ],
   "materials": [
     {
-      "name": "Bacterial lysate (GST-tagged protein)"
+      "name": "Glutathione Sepharose 4B",
+      "note": {
+        "en": "Cytiva 17-0756-01",
+        "zh": "Cytiva 17-0756-01"
+      }
     },
     {
-      "name": "Glutathione Sepharose 4B or magnetic beads"
+      "name": "Reduced glutathione",
+      "note": {
+        "en": "10 mM in elution buffer, make fresh",
+        "zh": "洗脱缓冲液中10 mM，新鲜配制"
+      }
     },
     {
-      "name": "GST elution buffer",
-      "linkedRecipe": "gst_elution"
+      "name": "Triton X-100 (10% stock)",
+      "note": {
+        "en": "Sigma T8787",
+        "zh": "Sigma T8787"
+      }
     },
     {
-      "name": "1× PBS",
+      "name": "DTT (1 M stock)",
+      "note": {
+        "en": "Store at -20°C in aliquots",
+        "zh": "分装-20°C保存"
+      }
+    },
+    {
+      "name": "Protease inhibitor cocktail",
+      "note": {
+        "en": "Roche cOmplete EDTA-free",
+        "zh": "Roche cOmplete 无EDTA"
+      }
+    },
+    {
+      "name": "PreScission protease or TEV protease",
+      "note": {
+        "en": "For tag cleavage (optional)",
+        "zh": "用于标签切除（可选）"
+      }
+    },
+    {
+      "name": "PBS (1×)",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "Lysis buffer (PBS + 1% Triton X-100)"
+      "name": "SDS-PAGE gel",
+      "linkedRecipe": "sds_page_gel"
     },
     {
-      "name": "Protease inhibitor cocktail"
-    },
-    {
-      "name": "SDS-PAGE gel for analysis",
-      "linkedRecipe": "sds_page_gel",
-      "optional": true
+      "name": "Coomassie Blue stain",
+      "note": {
+        "en": "Bio-Safe or InstantBlue",
+        "zh": "Bio-Safe或InstantBlue"
+      }
     }
   ],
   "usage": {

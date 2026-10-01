@@ -70,27 +70,47 @@
   },
   "materials": [
     {
-      "name": "Electrocompetent cells"
+      "name": "10% Glycerol (ice-cold, sterile)",
+      "note": {
+        "en": "Wash buffer",
+        "zh": "洗涤缓冲液"
+      }
     },
     {
-      "name": "Plasmid DNA (desalted, high concentration)"
-    },
-    {
-      "name": "Electroporation cuvettes (1 or 2 mm gap)"
-    },
-    {
-      "name": "Electroporator (Gene Pulser or similar)"
-    },
-    {
-      "name": "SOC medium",
+      "name": "SOC Medium",
       "linkedRecipe": "soc"
     },
     {
-      "name": "LB agar plates with antibiotic",
+      "name": "LB Agar + Antibiotic",
       "linkedRecipe": "lb_agar"
     },
     {
-      "name": "Ice bucket"
+      "name": "Electrocompetent cells",
+      "note": {
+        "en": "DH10B, TOP10, or similar",
+        "zh": "DH10B、TOP10 等"
+      }
+    },
+    {
+      "name": "Electroporation cuvettes (1 mm gap)",
+      "note": {
+        "en": "Pre-chilled",
+        "zh": "预冷"
+      }
+    },
+    {
+      "name": "Electroporator",
+      "note": {
+        "en": "1.8 kV, 25 µF, 200 Ω",
+        "zh": "1.8 kV, 25 µF, 200 Ω"
+      }
+    },
+    {
+      "name": "Purified DNA (desalted)",
+      "note": {
+        "en": "<5 µL, low salt",
+        "zh": "<5 µL, 低盐"
+      }
     }
   ],
   "stoppingPoints": [],
@@ -164,5 +184,6 @@
         "zh": "长有菌落的平板用 Parafilm 封好，4°C 可保存最多 1 周。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "transformation"
 }

@@ -47,16 +47,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Add Triton X-100 (0.1–0.5%) to PBS."
+      "en": "Add {v:100:µL} Triton X-100 to {v:100:mL} PBS",
+      "zh": "取 {v:100:µL} Triton X-100 加入 {v:100:mL} PBS"
     },
     {
-      "step": "Mix well by gentle inversion."
+      "en": "Mix gently (avoid foaming)",
+      "zh": "轻柔混匀（避免起泡）"
     },
     {
-      "step": "Store at room temperature."
+      "en": "Apply to PFA-fixed cells, 10–15 min at RT",
+      "zh": "加至 PFA 固定的细胞上，室温 10–15 min"
     },
     {
-      "step": "Prepare fresh for best results."
+      "en": "Wash 3× PBS before immunostaining",
+      "zh": "PBS 洗 3 次后进行免疫染色"
     }
   ],
   "crosslinks": [

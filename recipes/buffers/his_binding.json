@@ -13,20 +13,14 @@
       "amount": 6.9,
       "unit": "g",
       "mw": 119.98,
-      "note": {
-        "en": "50 mM",
-        "zh": "50 mM"
-      }
+      "note": "50 mM"
     },
     {
       "name": "NaCl",
       "amount": 17.54,
       "unit": "g",
       "mw": 58.44,
-      "note": {
-        "en": "300 mM",
-        "zh": "300 mM"
-      }
+      "note": "300 mM"
     },
     {
       "name": "Imidazole",
@@ -34,7 +28,7 @@
       "unit": "g",
       "mw": 68.08,
       "note": {
-        "en": "20 mM (binding); 50 mM for wash steps",
+        "en": "20 mM (binding); 50 mM for wash",
         "zh": "20 mM (结合); 洗涤用 50 mM"
       }
     }
@@ -63,22 +57,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve NaH₂PO₄, NaCl in ~800 mL ddH₂O."
+      "en": "Dissolve NaH₂PO₄, NaCl, imidazole in ddH₂O",
+      "zh": "将 NaH₂PO₄、NaCl、咪唑溶于 ddH₂O"
     },
     {
-      "step": "Add imidazole to desired concentration (10–20 mM for binding)."
+      "en": "Adjust pH to 8.0 with NaOH",
+      "zh": "用 NaOH 调 pH 至 8.0"
     },
     {
-      "step": "Adjust pH to 8.0 with NaOH."
-    },
-    {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Filter through 0.22 µm and degas."
-    },
-    {
-      "step": "Store at 4°C."
+      "en": "Filter-sterilize",
+      "zh": "0.22 µm 过滤除菌"
     }
   ],
   "crosslinks": [
@@ -90,5 +78,6 @@
     "bacterial_protein_expression",
     "protein_dialysis",
     "inclusion_body_refolding"
-  ]
+  ],
+  "ph": "8.0"
 }

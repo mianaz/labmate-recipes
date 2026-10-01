@@ -90,27 +90,32 @@
   ],
   "prepSteps": [
     {
-      "step": "Add 5 mL ITS-G to 500 mL RPMI-1640 bottle."
+      "en": "Add 5 mL ITS-G to 500 mL RPMI-1640 bottle.",
+      "zh": "Add 5 mL ITS-G to 500 mL RPMI-1640 bottle."
     },
     {
-      "step": "Prepare hydrocortisone: serial dilute 10 mM stock 1,000,000× (1 µL into 1000 µL medium, then add 500 µL to bottle). Stock is fluid at -80°C — keep on ice.",
-      "note": "Final 10 nM"
+      "en": "Prepare hydrocortisone: serial dilute 10 mM stock 1,000,000× (1 µL into 1000 µL medium, then add 500 µL to bottle). Stock is fluid at -80°C — keep on ice. (Final 10 nM)",
+      "zh": "Prepare hydrocortisone: serial dilute 10 mM stock 1,000,000× (1 µL into 1000 µL medium, then add 500 µL to bottle). Stock is fluid at -80°C — keep on ice. (Final 10 nM)"
     },
     {
-      "step": "Prepare β-estradiol: vortex 50 mM stock to dissolve precipitates. Serial dilute 5,000,000× (1 µL into 1000 µL medium, then add 100 µL to bottle).",
-      "note": "Final 10 nM"
+      "en": "Prepare β-estradiol: vortex 50 mM stock to dissolve precipitates. Serial dilute 5,000,000× (1 µL into 1000 µL medium, then add 100 µL to bottle). (Final 10 nM)",
+      "zh": "Prepare β-estradiol: vortex 50 mM stock to dissolve precipitates. Serial dilute 5,000,000× (1 µL into 1000 µL medium, then add 100 µL to bottle). (Final 10 nM)"
     },
     {
-      "step": "Thaw L-glutamine at 37°C water bath, vortex to dissolve precipitates. Add 5 mL to bottle."
+      "en": "Thaw L-glutamine at 37°C water bath, vortex to dissolve precipitates. Add 5 mL to bottle.",
+      "zh": "Thaw L-glutamine at 37°C water bath, vortex to dissolve precipitates. Add 5 mL to bottle."
     },
     {
-      "step": "Add 25 mL FBS (5% final)."
+      "en": "Add 25 mL FBS (5% final).",
+      "zh": "Add 25 mL FBS (5% final)."
     },
     {
-      "step": "Add 5 mL Pen/Strep (1% final)."
+      "en": "Add 5 mL Pen/Strep (1% final).",
+      "zh": "Add 5 mL Pen/Strep (1% final)."
     },
     {
-      "step": "Mix gently by inversion. Store at 4°C."
+      "en": "Mix gently by inversion. Store at 4°C.",
+      "zh": "Mix gently by inversion. Store at 4°C."
     }
   ],
   "notes": {

@@ -57,26 +57,42 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve NaCl, KCl, Na₂HPO₄, and KH₂PO₄ in ~800 mL ddH₂O."
+      "en": "Weigh NaCl, KCl, Na₂HPO₄, KH₂PO₄ into a {v:1:L} beaker",
+      "zh": "称取 NaCl、KCl、Na₂HPO₄、KH₂PO₄ 于 {v:1:L} 烧杯"
     },
     {
-      "step": "Stir until completely dissolved."
+      "en": "Add ~{v:800:mL} ddH₂O, stir until dissolved",
+      "zh": "加入约 {v:800:mL} ddH₂O，搅拌至完全溶解"
     },
     {
-      "step": "Adjust pH to 7.4 with HCl or NaOH if needed."
+      "en": "Adjust pH to 7.4 with HCl (usually needs very little)",
+      "zh": "用 HCl 调 pH 至 7.4（通常只需极少量）"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
+      "en": "Top up to {v:1000:mL} with ddH₂O",
+      "zh": "用 ddH₂O 定容至 {v:1000:mL}"
     },
     {
-      "step": "Autoclave at 121°C for 20 min."
+      "en": "Autoclave 121°C 20 min. Store at RT",
+      "zh": "121°C 高压灭菌 20 min，室温保存"
     },
     {
-      "step": "Store at room temperature. Dilute 1:10 for 1× PBS."
+      "en": "Dilute 1:10 to get 1× PBS before use",
+      "zh": "使用前 1:10 稀释得 1× PBS"
     }
   ],
   "crosslinks": [
     "pbs_1x"
   ],
-  "relatedProtocols": ["wb_protocol", "if_protocol", "ihc_paraffin_protocol", "flow_cytometry_protocol", "elisa_sandwich", "pbmc_isolation", "cell_passage", "cell_freezing"]
+  "relatedProtocols": [
+    "wb_protocol",
+    "if_protocol",
+    "ihc_paraffin_protocol",
+    "flow_cytometry_protocol",
+    "elisa_sandwich",
+    "pbmc_isolation",
+    "cell_passage",
+    "cell_freezing"
+  ],
+  "ph": "7.4"
 }

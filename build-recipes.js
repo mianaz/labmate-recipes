@@ -15,6 +15,7 @@ const path = require('path');
 const REPO_PATH = process.env.LABMATE_REPO || __dirname;
 const RECIPES_DIR = path.join(REPO_PATH, 'recipes');
 const DEFAULT_OUT = path.join(REPO_PATH, 'dist', 'recipes.json');
+const ORDER_FILE = path.join(REPO_PATH, 'order.json'); // list order shown in the app
 
 // Category → subfolder
 const CAT_DIRS = {
@@ -33,12 +34,20 @@ const DEFAULT_VOLUMES = {
 };
 
 /**
- * Convert repo v2 recipe → app format
+ * Convert one source recipe → the app's record.
+ *
+ * Lossless: a field already written in the app's own shape is passed through
+ * unchanged (bilingual {en, zh} prepSteps, `safeStops`, app-shaped `storage`
+ * with a `label`, every key of a component or material), so curated app data
+ * can live in the source file. Fields in the v2 authoring shape are converted
+ * exactly as before. The published library is therefore fully determined by
+ * the files in recipes/ — there is no second copy to merge with.
  */
 function convertRecipe(repo) {
   const cat = repo.category;
   const isProtocol = cat === 'protocol';
   const defaults = DEFAULT_VOLUMES[cat] || DEFAULT_VOLUMES.buffer;
+  const has = (v) => Array.isArray(v) ? v.length > 0 : v != null && v !== '';
 
   const app = {
     id: repo.id,
@@ -46,41 +55,28 @@ function convertRecipe(repo) {
     nameCn: repo.nameCn || repo.name,
     category: repo.category,
     tags: repo.tags || [],
-    defaultVolume: repo.volume || defaults.volume,
-    unit: repo.volumeUnit || defaults.unit,
+    defaultVolume: repo.defaultVolume ?? repo.volume ?? defaults.volume,
+    unit: repo.unit || repo.volumeUnit || defaults.unit,
   };
 
-  // pH (extract from notes if present)
   if (repo.ph) app.ph = repo.ph;
 
-  // Components
-  app.components = (repo.components || []).map(c => {
-    const comp = { name: c.name };
-    if (c.amount != null) comp.amount = c.amount;
-    if (c.unit) comp.unit = c.unit;
-    if (c.mw) comp.mw = c.mw;
-    if (c.concentration) comp.concentration = c.concentration;
-    if (c.note) comp.note = c.note;
-    if (c.linkedRecipe) comp.linkedRecipe = c.linkedRecipe;
-    if (c.optional) comp.optional = c.optional;
-    return comp;
-  });
+  // Components: every key passes through (note may be a string or {en, zh}).
+  app.components = (repo.components || []).map((c) => ({ ...c }));
 
-  // Notes
   if (repo.notes) app.notes = repo.notes;
   app.ref = repo.ref || '';
 
-  // Usage (bilingual)
   if (repo.usage) {
-    if (typeof repo.usage === 'string') {
-      app.usage = { en: repo.usage, zh: repo.usage };
-    } else {
-      app.usage = repo.usage;
-    }
+    app.usage = typeof repo.usage === 'string' ? { en: repo.usage, zh: repo.usage } : repo.usage;
   }
 
-  // Storage → app format {temp, duration, icon, label}
-  if (repo.storage) {
+  // Storage: app-shaped ({temp, duration, icon, label}) passes through;
+  // the v2 shape ({temperature, duration, sterile, notes}) is converted.
+  const appStorage = repo.storage && repo.storage.label ? { ...repo.storage } : null;
+  if (appStorage) {
+    app.storage = appStorage;
+  } else if (repo.storage) {
     const s = repo.storage;
     const tempIcons = {
       'RT': '🏠', 'room temperature': '🏠',
@@ -116,35 +112,32 @@ function convertRecipe(repo) {
     };
   }
 
-  // Discipline tags (new v2 field → pass through)
   if (repo.discipline) app.discipline = repo.discipline;
 
-  // Crosslinks → relatedProtocols (for buffers)
-  if (repo.crosslinks && repo.crosslinks.length > 0) {
-    app.relatedProtocols = repo.crosslinks;
-  }
+  // Links: `crosslinks` (related protocols and buffers) first, then any further
+  // `relatedProtocols`, without duplicates.
+  const links = [...(repo.crosslinks || []), ...(repo.relatedProtocols || [])].filter((x, i, a) => a.indexOf(x) === i);
+  if (links.length > 0) app.relatedProtocols = links;
 
-  // DOI
   if (repo.doi) app.doi = repo.doi;
 
-  // ── Buffer-specific ──
-  if (!isProtocol) {
-    // prepSteps: convert {step, note, warning} → {en, zh}
-    if (repo.prepSteps && repo.prepSteps.length > 0) {
-      app.prepSteps = repo.prepSteps.map(ps => {
-        let en = ps.step || '';
-        let zh = ps.step || ''; // Use English as fallback for Chinese
-        if (ps.note) en += ` (${ps.note})`;
-        if (ps.warning) en += ` ⚠️ ${ps.warning}`;
-        return { en, zh };
-      });
-    }
+  // Buffer prep steps: {en, zh} items pass through; v2 {step, note, warning}
+  // items are converted (English only — give them a zh to translate them).
+  if (!isProtocol && has(repo.prepSteps)) {
+    app.prepSteps = repo.prepSteps.map((ps) => {
+      if (ps && (ps.en != null || ps.zh != null)) return ps;
+      let en = ps.step || '';
+      const zh = ps.step || '';
+      if (ps.note) en += ` (${ps.note})`;
+      if (ps.warning) en += ` ⚠️ ${ps.warning}`;
+      return { en, zh };
+    });
   }
 
-  // ── Protocol-specific ──
   if (isProtocol) {
-    // Duration → storage label format
-    if (repo.duration) {
+    // Protocol duration becomes the storage-row label, unless the file already
+    // carries an app-shaped storage label.
+    if (repo.duration && !appStorage) {
       const dur = repo.duration;
       const totalEn = dur.total || '~1 day';
       const totalZh = dur.total || '~1 天';
@@ -160,20 +153,14 @@ function convertRecipe(repo) {
       };
     }
 
-    // Materials
-    if (repo.materials && repo.materials.length > 0) {
-      app.materials = repo.materials.map(m => {
-        const mat = { name: m.name };
-        if (m.linkedRecipe) mat.linkedRecipe = m.linkedRecipe;
-        if (m.optional) mat.optional = m.optional;
-        return mat;
-      });
-    }
+    if (has(repo.materials)) app.materials = repo.materials.map((m) => (typeof m === 'string' ? { name: m } : { ...m }));
 
-    // stoppingPoints → safeStops
-    if (repo.stoppingPoints && repo.stoppingPoints.length > 0) {
-      app.safeStops = repo.stoppingPoints.map(sp => ({
-        afterStep: typeof sp.afterStep === 'number' ? sp.afterStep : sp.afterStep,
+    // safeStops pass through; legacy stoppingPoints are converted.
+    if (has(repo.safeStops)) {
+      app.safeStops = repo.safeStops;
+    } else if (has(repo.stoppingPoints)) {
+      app.safeStops = repo.stoppingPoints.map((sp) => ({
+        afterStep: sp.afterStep,
         note: {
           en: `${sp.condition || ''}${sp.duration ? ` (up to ${sp.duration})` : ''}`.trim(),
           zh: `${sp.condition || ''}${sp.duration ? ` (最长 ${sp.duration})` : ''}`.trim(),
@@ -181,14 +168,34 @@ function convertRecipe(repo) {
       }));
     }
 
-    // briefSteps (if present in repo — some protocols may have them)
     if (repo.briefSteps) app.briefSteps = repo.briefSteps;
-
-    // detailedSteps (keep as-is if present)
     if (repo.detailedSteps) app.detailedSteps = repo.detailedSteps;
   }
 
   return app;
+}
+
+/**
+ * Every recipe in recipes/, converted and in published order: buffers, media,
+ * staining, protocols; within a category, the order listed in order.json (the
+ * order the app shows its lists in), then any recipe not listed there, by name.
+ */
+function buildLibrary(recipesDir = RECIPES_DIR, orderFile = ORDER_FILE) {
+  const recipes = [];
+  for (const dir of Object.values(CAT_DIRS)) {
+    const dirPath = path.join(recipesDir, dir);
+    if (!fs.existsSync(dirPath)) continue;
+    for (const file of fs.readdirSync(dirPath).filter((f) => f.endsWith('.json')).sort()) {
+      recipes.push(convertRecipe(JSON.parse(fs.readFileSync(path.join(dirPath, file), 'utf8'))));
+    }
+  }
+  const listed = fs.existsSync(orderFile) ? JSON.parse(fs.readFileSync(orderFile, 'utf8')) : [];
+  const rank = new Map(listed.map((id, i) => [id, i]));
+  const catOrder = { buffer: 0, media: 1, staining: 2, protocol: 3 };
+  recipes.sort((a, b) => (catOrder[a.category] ?? 9) - (catOrder[b.category] ?? 9)
+    || (rank.get(a.id) ?? Infinity) - (rank.get(b.id) ?? Infinity)
+    || a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
+  return recipes;
 }
 
 // ─── Main ──────────────────────────────────────
@@ -196,25 +203,15 @@ function convertRecipe(repo) {
 function main() {
   const outArg = process.argv.indexOf('--out');
   const outPath = outArg >= 0 ? process.argv[outArg + 1] : DEFAULT_OUT;
+  const recipes = buildLibrary();
 
-  const recipes = [];
-  for (const [cat, dir] of Object.entries(CAT_DIRS)) {
-    const dirPath = path.join(RECIPES_DIR, dir);
-    if (!fs.existsSync(dirPath)) continue;
-    for (const file of fs.readdirSync(dirPath).filter(f => f.endsWith('.json')).sort()) {
-      const data = JSON.parse(fs.readFileSync(path.join(dirPath, file), 'utf8'));
-      recipes.push(convertRecipe(data));
-    }
+  const ids = new Set();
+  for (const r of recipes) {
+    if (ids.has(r.id)) { console.error(`Duplicate recipe id: ${r.id}`); process.exit(1); }
+    ids.add(r.id);
   }
 
-  // Sort: buffers first, then media, staining, protocols
-  const catOrder = { buffer: 0, media: 1, staining: 2, protocol: 3 };
-  recipes.sort((a, b) => (catOrder[a.category] ?? 9) - (catOrder[b.category] ?? 9) || a.name.localeCompare(b.name));
-
-  // Ensure output directory exists
-  const outDir = path.dirname(outPath);
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(recipes, null, 0));
   console.log(`✅ Built ${recipes.length} recipes → ${outPath}`);
   console.log(`   Buffers: ${recipes.filter(r => r.category === 'buffer').length}`);
@@ -223,4 +220,6 @@ function main() {
   console.log(`   Protocols: ${recipes.filter(r => r.category === 'protocol').length}`);
 }
 
-main();
+module.exports = { convertRecipe, buildLibrary };
+
+if (require.main === module) main();

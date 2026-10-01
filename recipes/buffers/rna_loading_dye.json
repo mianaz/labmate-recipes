@@ -69,14 +69,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Mix formamide (deionized), formaldehyde, and 10× MOPS buffer.",
-      "warning": "Formamide and formaldehyde are toxic — use in fume hood."
+      "en": "Mix deionized formamide with EDTA stock",
+      "zh": "将去离子甲酰胺与 EDTA 母液混合"
     },
     {
-      "step": "Add bromophenol blue and ethidium bromide (optional)."
+      "en": "Add bromophenol blue and xylene cyanol",
+      "zh": "加入溴酚蓝和二甲苯青"
     },
     {
-      "step": "Aliquot and store at −20°C."
+      "en": "Aliquot and store at -20°C",
+      "zh": "分装 -20°C 保存"
     }
   ],
   "crosslinks": [

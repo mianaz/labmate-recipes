@@ -126,23 +126,53 @@
   },
   "materials": [
     {
-      "name": "Purified enzyme"
+      "name": "Purified enzyme",
+      "note": {
+        "en": "Known concentration, >90% purity",
+        "zh": "已知浓度，纯度>90%"
+      }
     },
     {
-      "name": "Substrate (range of concentrations)"
+      "name": "Substrate",
+      "note": {
+        "en": "Highest available purity, freshly prepared",
+        "zh": "最高纯度，新鲜配制"
+      }
     },
     {
-      "name": "Reaction buffer (appropriate for enzyme)",
-      "linkedRecipe": "kinase_buffer"
+      "name": "Assay buffer",
+      "note": {
+        "en": "50 mM Tris-HCl pH 7.4 or enzyme-specific buffer",
+        "zh": "50 mM Tris-HCl pH 7.4或酶特异性缓冲液"
+      }
     },
     {
-      "name": "96-well plate or cuvettes"
+      "name": "96-well plate (clear or black)",
+      "note": {
+        "en": "Clear for absorbance, black for fluorescence",
+        "zh": "透明用于吸光度，黑色用于荧光"
+      }
     },
     {
-      "name": "Spectrophotometer or plate reader"
+      "name": "Plate reader",
+      "note": {
+        "en": "Kinetic mode with appropriate filter",
+        "zh": "动力学模式，配适当滤光片"
+      }
     },
     {
-      "name": "Timer or kinetics mode software"
+      "name": "Multichannel pipette",
+      "note": {
+        "en": "For simultaneous reaction initiation",
+        "zh": "用于同时启动反应"
+      }
+    },
+    {
+      "name": "Data analysis software",
+      "note": {
+        "en": "GraphPad Prism, Python, or R",
+        "zh": "GraphPad Prism、Python或R"
+      }
     }
   ],
   "stoppingPoints": [],

@@ -229,12 +229,20 @@
     {
       "afterStep": 3,
       "condition": "4°C",
-      "duration": "overnight (continue to Day 2)"
+      "duration": "overnight (continue to Day 2)",
+      "note": {
+        "en": "Safe stop: hold at 4°C overnight and continue on Day 2.",
+        "zh": "可在此暂停：4°C 过夜，第二天继续。"
+      }
     },
     {
       "afterStep": 11,
       "condition": "4°C",
-      "duration": "up to 2 h before nuclei counting"
+      "duration": "up to 2 h before nuclei counting",
+      "note": {
+        "en": "Safe stop: hold at 4°C for up to 2 h before counting nuclei.",
+        "zh": "可在此暂停：4°C 最多 2 小时，然后进行细胞核计数。"
+      }
     }
   ],
   "notes": {

@@ -187,27 +187,57 @@
   },
   "materials": [
     {
-      "name": "Protein sample (dialyzed into low-salt buffer)"
+      "name": "Q Sepharose or SP Sepharose resin",
+      "note": {
+        "en": "Strong anion/cation exchanger; HiTrap prepacked recommended",
+        "zh": "强阴离子/阳离子交换剂；推荐HiTrap预装柱"
+      }
     },
     {
-      "name": "Ion exchange column (Q/SP/DEAE Sepharose or similar)"
+      "name": "Tris-HCl (1 M, pH 8.0)",
+      "note": {
+        "en": "For anion exchange Buffer A",
+        "zh": "用于阴离子交换缓冲液A"
+      }
     },
     {
-      "name": "Low-salt buffer (Buffer A, 20 mM Tris, 0–50 mM NaCl)"
+      "name": "MES (1 M, pH 6.0)",
+      "note": {
+        "en": "For cation exchange Buffer A",
+        "zh": "用于阳离子交换缓冲液A"
+      }
     },
     {
-      "name": "High-salt buffer (Buffer B, 20 mM Tris, 1 M NaCl)"
+      "name": "NaCl (5 M stock)",
+      "note": {
+        "en": "For elution gradient",
+        "zh": "用于洗脱梯度"
+      }
     },
     {
-      "name": "FPLC/AKTA system or gravity column"
+      "name": "0.22 µm syringe filters",
+      "note": {
+        "en": "For buffer and sample filtration",
+        "zh": "用于缓冲液和样品过滤"
+      }
     },
     {
-      "name": "SDS-PAGE gel for fraction analysis",
-      "linkedRecipe": "sds_page_gel",
-      "optional": true
+      "name": "FPLC/ÄKTA system (optional)",
+      "note": {
+        "en": "Or gravity flow for manual runs",
+        "zh": "或重力流用于手动操作"
+      }
     },
     {
-      "name": "Fraction collector"
+      "name": "SDS-PAGE gel",
+      "linkedRecipe": "sds_page_gel"
+    },
+    {
+      "name": "Centrifugal concentrators",
+      "note": {
+        "en": "Amicon Ultra, appropriate MWCO",
+        "zh": "Amicon Ultra，适当截留分子量"
+      }
     }
   ],
   "stoppingPoints": [

@@ -54,25 +54,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Prepare LB medium as above (tryptone 10 g, yeast extract 5 g, NaCl 10 g per liter)."
+      "en": "Autoclave LB + agar at 121°C for 20 min",
+      "zh": "121°C 高压灭菌 LB + 琼脂 20 min"
     },
     {
-      "step": "Add 15 g agar per liter before autoclaving."
+      "en": "Cool to ~55°C before adding antibiotics",
+      "zh": "冷却至 ~55°C 后再加抗生素"
     },
     {
-      "step": "Autoclave at 121°C for 20 min."
-    },
-    {
-      "step": "Cool to 50–55°C in water bath."
-    },
-    {
-      "step": "Add antibiotics at appropriate concentration."
-    },
-    {
-      "step": "Pour ~25 mL per 100 mm plate near flame."
-    },
-    {
-      "step": "Let plates solidify at RT, then store inverted at 4°C."
+      "en": "Pour ~25 mL per 100 mm dish. Let solidify at RT, then store inverted at 4°C",
+      "zh": "每 100 mm 皿倒约 25 mL。室温凝固后倒置 4°C 保存"
     }
   ],
   "crosslinks": [
@@ -80,5 +71,6 @@
     "colony_pcr",
     "single_colony_picking",
     "crispr_sgrna_cloning"
-  ]
+  ],
+  "ph": "7.0"
 }

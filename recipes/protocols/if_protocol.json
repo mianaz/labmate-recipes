@@ -112,7 +112,8 @@
   ],
   "materials": [
     {
-      "name": "Cells on coverslips or chamber slides"
+      "name": "PBS (1×)",
+      "linkedRecipe": "pbs_1x"
     },
     {
       "name": "4% PFA",
@@ -127,24 +128,25 @@
       "linkedRecipe": "if_blocking"
     },
     {
-      "name": "Primary antibody"
-    },
-    {
-      "name": "Fluorescent secondary antibody (Alexa Fluor)"
-    },
-    {
       "name": "DAPI",
-      "linkedRecipe": "dapi_staining"
+      "note": {
+        "en": "1 mg/mL stock → 1:1000 in PBS",
+        "zh": "1 mg/mL 母液 → PBS 中 1:1000"
+      }
     },
     {
-      "name": "1× PBS",
-      "linkedRecipe": "pbs_1x"
+      "name": "Mounting medium",
+      "note": {
+        "en": "ProLong Gold / Vectashield",
+        "zh": "ProLong Gold / Vectashield"
+      }
     },
     {
-      "name": "Mounting medium (anti-fade)"
-    },
-    {
-      "name": "Fluorescence or confocal microscope"
+      "name": "Coverslips + slides",
+      "note": {
+        "en": "#1.5 thickness for confocal",
+        "zh": "#1.5 厚度，适合共聚焦"
+      }
     }
   ],
   "usage": {
@@ -265,5 +267,6 @@
         "zh": "封片并封边后的载玻片可在 4°C 避光保存最多 1 周（使用 ProLong Gold 完全固化后可保存数月）。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment"
 }

@@ -132,7 +132,6 @@
     "tbs_10x"
   ],
   "ref": "Ramos-Vara & Miller (2014) Vet Pathol 51:42–87; Taylor & Rudbeck (2013) Dako Education Guide; Shi et al. (1991) J Histochem Cytochem 39:741",
-  "doi": "10.1177/0300985813503571",
   "discipline": [
     "histology"
   ],
@@ -154,43 +153,93 @@
   ],
   "materials": [
     {
-      "name": "FFPE tissue sections on charged slides"
+      "name": "FFPE tissue sections on charged slides",
+      "note": {
+        "en": "4–5 µm sections on Superfrost Plus slides",
+        "zh": "4-5 µm切片，Superfrost Plus载玻片"
+      }
     },
     {
-      "name": "Xylene (deparaffinization)"
+      "name": "Xylene",
+      "note": {
+        "en": "Histology grade",
+        "zh": "组织学级"
+      }
     },
     {
-      "name": "Graded ethanol series (100%, 95%, 70%)"
+      "name": "Graded ethanol (100%, 95%, 70%)",
+      "note": {
+        "en": "For dehydration/rehydration",
+        "zh": "用于脱水/复水"
+      }
     },
     {
-      "name": "Antigen retrieval buffer (citrate pH 6.0 or EDTA pH 9.0)",
-      "linkedRecipe": "citrate_buffer_ar"
+      "name": "Sodium citrate buffer (10 mM, pH 6.0)",
+      "note": {
+        "en": "For heat-induced antigen retrieval",
+        "zh": "用于热诱导抗原修复"
+      }
     },
     {
-      "name": "3% H₂O₂ (endogenous peroxidase block)"
+      "name": "EDTA buffer (pH 9.0)",
+      "linkedRecipe": "ar_edta_ph9"
     },
     {
-      "name": "Blocking buffer",
-      "linkedRecipe": "if_blocking"
+      "name": "3% H₂O₂ in methanol",
+      "note": {
+        "en": "Prepare fresh",
+        "zh": "新鲜配制"
+      }
     },
     {
-      "name": "Primary antibody"
+      "name": "Normal serum (blocking)",
+      "note": {
+        "en": "From same species as secondary Ab",
+        "zh": "与二抗同源种属"
+      }
     },
     {
-      "name": "HRP-conjugated secondary antibody or polymer detection system"
+      "name": "BSA (1% in PBS)",
+      "linkedRecipe": "blocking_bsa"
     },
     {
-      "name": "DAB substrate"
+      "name": "Primary antibody",
+      "note": {
+        "en": "IHC-validated, with datasheet dilution",
+        "zh": "IHC验证，按说明书稀释"
+      }
     },
     {
-      "name": "Hematoxylin counterstain"
+      "name": "Secondary antibody (HRP-conjugated)",
+      "note": {
+        "en": "Match host species of primary Ab",
+        "zh": "匹配一抗宿主种属"
+      }
     },
     {
-      "name": "1× PBS",
+      "name": "DAB substrate kit",
+      "note": {
+        "en": "Vector Labs SK-4100 or equivalent",
+        "zh": "Vector Labs SK-4100或同等品"
+      }
+    },
+    {
+      "name": "Mayer's hematoxylin",
+      "note": {
+        "en": "For nuclear counterstain",
+        "zh": "用于核复染"
+      }
+    },
+    {
+      "name": "DPX or Permount mounting medium",
+      "note": {
+        "en": "Permanent, xylene-based",
+        "zh": "永久封片，二甲苯基"
+      }
+    },
+    {
+      "name": "PBS (1×)",
       "linkedRecipe": "pbs_1x"
-    },
-    {
-      "name": "Mounting medium (aqueous or xylene-based)"
     }
   ],
   "usage": {

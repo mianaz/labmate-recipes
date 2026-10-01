@@ -47,19 +47,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve MTT powder in PBS or serum-free medium to 5 mg/mL."
+      "en": "Dissolve MTT powder in PBS to 5 mg/mL",
+      "zh": "将 MTT 粉末溶于 PBS 至 5 mg/mL"
     },
     {
-      "step": "Vortex until dissolved; warm to 37°C if needed."
+      "en": "Filter-sterilize (0.22 µm)",
+      "zh": "0.22 µm 过滤除菌"
     },
     {
-      "step": "Filter-sterilize through 0.22 µm."
+      "en": "Aliquot into light-protected tubes, store -20°C",
+      "zh": "分装至避光管，-20°C 保存"
     },
     {
-      "step": "Aliquot into light-protected tubes."
-    },
-    {
-      "step": "Store at −20°C; protect from light (MTT is light-sensitive)."
+      "en": "Add 10 µL per 100 µL culture medium, incubate 2–4 h",
+      "zh": "每 100 µL 培养基加 10 µL，孵育 2–4 h"
     }
   ],
   "crosslinks": [

@@ -135,11 +135,11 @@
   ],
   "storage": {
     "temp": "N/A",
-    "duration": "N/A",
-    "icon": "🧪",
+    "duration": "1 day",
+    "icon": "📋",
     "label": {
-      "en": "Protocol — no storage required",
-      "zh": "实验方案 — 无需存储"
+      "en": "Protocol — 1 day, hands-on: 2 hours",
+      "zh": "实验方案 — 1 day，实操: 2 hours"
     }
   },
   "safeStops": [

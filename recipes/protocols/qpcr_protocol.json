@@ -107,25 +107,40 @@
   },
   "materials": [
     {
-      "name": "cDNA template (from reverse transcription)"
+      "name": "Total RNA",
+      "note": {
+        "en": "See TRIzol extraction protocol",
+        "zh": "参见 TRIzol 提取方案"
+      },
+      "linkedRecipe": "trizol_extraction"
     },
     {
-      "name": "qPCR master mix (SYBR Green or TaqMan)"
+      "name": "Reverse Transcriptase Kit",
+      "note": {
+        "en": "e.g., SuperScript IV, PrimeScript",
+        "zh": "如 SuperScript IV, PrimeScript"
+      }
     },
     {
-      "name": "Forward and reverse primers (10 µM each)"
+      "name": "SYBR Green Master Mix",
+      "note": {
+        "en": "Or TaqMan probes",
+        "zh": "或 TaqMan 探针"
+      }
     },
     {
-      "name": "96- or 384-well qPCR plates"
+      "name": "Gene-specific primers",
+      "note": {
+        "en": "Tm 58–62°C, product 80–200 bp",
+        "zh": "Tm 58–62°C, 产物 80–200 bp"
+      }
     },
     {
-      "name": "Optical adhesive film or caps"
-    },
-    {
-      "name": "Real-time PCR instrument"
-    },
-    {
-      "name": "Nuclease-free water"
+      "name": "Reference gene primers",
+      "note": {
+        "en": "GAPDH / ACTB / 18S rRNA",
+        "zh": "GAPDH / ACTB / 18S rRNA"
+      }
     }
   ],
   "stoppingPoints": [
@@ -215,5 +230,6 @@
         "zh": "封好的 qPCR 板可在 4°C 避光保存最多 2 小时后再上机运行。"
       }
     }
-  ]
+  ],
+  "volumeUnit": "experiment"
 }

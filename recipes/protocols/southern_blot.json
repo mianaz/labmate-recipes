@@ -66,13 +66,28 @@
   },
   "materials": [
     {
-      "name": "Genomic DNA (digested with restriction enzymes)"
+      "name": "High-quality Genomic DNA (10 µg)",
+      "note": {
+        "en": "Intact, high MW",
+        "zh": "完整高分子量"
+      }
     },
     {
-      "name": "Agarose gel (0.7–1%)"
+      "name": "Restriction Enzyme(s)",
+      "note": {
+        "en": "High-fidelity preferred",
+        "zh": "优选高保真酶"
+      }
     },
     {
-      "name": "TAE buffer",
+      "name": "0.8% Agarose Gel",
+      "note": {
+        "en": "TAE buffer, wide comb",
+        "zh": "TAE缓冲液，宽齿梳"
+      }
+    },
+    {
+      "name": "TAE Buffer",
       "linkedRecipe": "tae_50x"
     },
     {
@@ -80,37 +95,53 @@
       "linkedRecipe": "ssc_20x"
     },
     {
-      "name": "Nylon membrane (positively charged)"
+      "name": "Nylon Membrane (Hybond-N+)",
+      "note": {
+        "en": "Positively charged nylon",
+        "zh": "带正电尼龙膜"
+      }
     },
     {
-      "name": "Depurination solution (0.25 M HCl)"
+      "name": "Church Hybridization Buffer",
+      "note": {
+        "en": "0.5 M Na₂HPO₄ pH 7.2, 7% SDS, 1 mM EDTA",
+        "zh": "0.5 M Na₂HPO₄ pH 7.2, 7% SDS, 1 mM EDTA"
+      }
     },
     {
-      "name": "Denaturation solution (0.5 M NaOH, 1.5 M NaCl)"
+      "name": "Random Priming Labeling Kit",
+      "note": {
+        "en": "e.g. DECAprime II, Megaprime",
+        "zh": "如 DECAprime II、Megaprime"
+      }
     },
     {
-      "name": "Neutralization solution (0.5 M Tris pH 7.5, 1.5 M NaCl)"
+      "name": "³²P-dCTP or DIG-dUTP",
+      "note": {
+        "en": "For probe labeling",
+        "zh": "用于探针标记"
+      }
     },
     {
-      "name": "Labeled probe (DIG or ³²P)"
+      "name": "PhosphorImager Screen",
+      "note": {
+        "en": "For radioactive detection",
+        "zh": "用于放射性检测"
+      }
     },
     {
-      "name": "UV crosslinker"
+      "name": "Denaturation Solution",
+      "note": {
+        "en": "0.5 M NaOH, 1.5 M NaCl",
+        "zh": "0.5 M NaOH, 1.5 M NaCl"
+      }
     },
     {
-      "name": "Hybridization oven"
-    }
-  ],
-  "stoppingPoints": [
-    {
-      "afterStep": "DNA transferred to membrane",
-      "condition": "RT, dry, after UV crosslinking",
-      "duration": "months"
-    },
-    {
-      "afterStep": "Membrane probed and washed",
-      "condition": "−20°C in plastic wrap",
-      "duration": "1 month"
+      "name": "Neutralization Solution",
+      "note": {
+        "en": "0.5 M Tris-HCl pH 7.5, 1.5 M NaCl",
+        "zh": "0.5 M Tris-HCl pH 7.5, 1.5 M NaCl"
+      }
     }
   ],
   "usage": {
@@ -197,17 +228,31 @@
   ],
   "safeStops": [
     {
-      "afterStep": 6,
+      "afterStep": 0,
       "note": {
-        "en": "UV-crosslinked membrane can be stored dry at RT for months before hybridization.",
-        "zh": "UV 交联后的干燥膜可室温保存数月，待杂交。"
+        "en": "Digestion can run overnight at 37°C",
+        "zh": "酶切可37°C过夜"
       }
     },
     {
-      "afterStep": 10,
+      "afterStep": 7,
       "note": {
-        "en": "After washing, the probed membrane can be wrapped in plastic wrap and stored at −20°C for up to 1 month before detection.",
-        "zh": "洗涤完毕后，已杂交的膜用保鲜膜包好，可 −20°C 保存最多 1 个月再检测。"
+        "en": "Transfer runs overnight (12–18 h)",
+        "zh": "转膜过夜（12–18 h）"
+      }
+    },
+    {
+      "afterStep": 8,
+      "note": {
+        "en": "UV-crosslinked membrane can be stored dry at RT or −20°C for months",
+        "zh": "UV交联膜可室温或 −20°C 干燥保存数月"
+      }
+    },
+    {
+      "afterStep": 11,
+      "note": {
+        "en": "Hybridization runs overnight at 65°C",
+        "zh": "杂交65°C过夜"
       }
     }
   ]

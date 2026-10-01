@@ -55,29 +55,50 @@
   },
   "materials": [
     {
-      "name": "Template plasmid (methylated, from dam⁺ E. coli)"
+      "name": "Q5 Hot Start 2× Master Mix",
+      "note": {
+        "en": "Or similar HF polymerase",
+        "zh": "或类似高保真聚合酶"
+      }
     },
     {
-      "name": "Mutagenic primers (forward and reverse, overlapping)"
+      "name": "Mutagenic primers (10 µM)",
+      "note": {
+        "en": "Design with NEBaseChanger",
+        "zh": "用 NEBaseChanger 设计"
+      }
     },
     {
-      "name": "High-fidelity DNA polymerase (Pfu, Q5)"
+      "name": "Template plasmid (1-25 ng/µL)",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "dNTP mix"
+      "name": "KLD Enzyme Mix (10×)",
+      "note": {
+        "en": "Kinase + Ligase + DpnI",
+        "zh": "激酶 + 连接酶 + DpnI"
+      }
     },
     {
-      "name": "DpnI restriction enzyme"
+      "name": "KLD Reaction Buffer (2×)",
+      "note": {
+        "en": "",
+        "zh": ""
+      }
     },
     {
-      "name": "Competent cells"
+      "name": "Competent cells",
+      "linkedRecipe": "competent_cells_cacl2"
     },
     {
-      "name": "SOC medium",
+      "name": "SOC Medium",
       "linkedRecipe": "soc"
     },
     {
-      "name": "LB agar plates with antibiotic",
+      "name": "LB Agar + Antibiotic",
       "linkedRecipe": "lb_agar"
     }
   ],

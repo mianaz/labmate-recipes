@@ -138,35 +138,23 @@
       "optional": true
     }
   ],
-  "stoppingPoints": [
-    {
-      "afterStep": "Gradient prepared",
-      "condition": "4°C, do not disturb",
-      "duration": "2 hours"
-    },
-    {
-      "afterStep": "Fractions collected",
-      "condition": "4°C or −80°C depending on application",
-      "duration": "varies"
-    }
-  ],
   "usage": {
     "en": "Separate cellular components or particles by density gradient centrifugation.",
     "zh": "密度梯度离心分离细胞组分或颗粒。"
   },
   "safeStops": [
     {
-      "afterStep": 4,
+      "afterStep": "Gradient prepared",
       "note": {
-        "en": "Prepared gradient can be stored at 4°C for up to 2 h without disturbing",
-        "zh": "制备好的梯度可 4°C 静置保存 2 h"
+        "en": "4°C, do not disturb (up to 2 hours)",
+        "zh": "4°C, do not disturb (最长 2 hours)"
       }
     },
     {
-      "afterStep": 7,
+      "afterStep": "Fractions collected",
       "note": {
-        "en": "Collected fractions can be stored at 4°C short-term or snap-frozen at −80°C depending on application",
-        "zh": "收集的组分可 4°C 短期保存或根据应用 −80°C 速冻保存"
+        "en": "4°C or −80°C depending on application (up to varies)",
+        "zh": "4°C or −80°C depending on application (最长 varies)"
       }
     }
   ],

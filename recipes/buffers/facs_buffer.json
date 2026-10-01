@@ -66,17 +66,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Add BSA or FBS to 1× PBS."
+      "en": "Dissolve BSA and EDTA in PBS",
+      "zh": "将 BSA 和 EDTA 溶于 PBS"
     },
     {
-      "step": "Add EDTA (2 mM) and sodium azide (0.05%) if desired.",
-      "warning": "Sodium azide is highly toxic — handle with care."
+      "en": "Optional: add 0.05% sodium azide (NaN₃)",
+      "zh": "可选：加入 0.05% 叠氮钠 (NaN₃)"
     },
     {
-      "step": "Filter through 0.22 µm."
+      "en": "Filter-sterilize (0.22 µm)",
+      "zh": "0.22 µm 过滤除菌"
     },
     {
-      "step": "Store at 4°C for up to 2 weeks."
+      "en": "Keep at 4°C, use cold",
+      "zh": "4°C 保存，冷用"
     }
   ],
   "crosslinks": [

@@ -58,19 +58,16 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Dissolve Tris base, glycine, and SDS in ~800 mL ddH₂O."
+      "en": "Dissolve Tris, glycine, and SDS in ~{v:800:mL} ddH₂O",
+      "zh": "将 Tris、甘氨酸和 SDS 溶于约 {v:800:mL} ddH₂O"
     },
     {
-      "step": "Stir until completely dissolved."
+      "en": "Stir until clear. Do NOT adjust pH (should be ~8.3)",
+      "zh": "搅拌至透明。不要调 pH（应为 ~8.3）"
     },
     {
-      "step": "Bring to final volume of 1000 mL."
-    },
-    {
-      "step": "Do not adjust pH."
-    },
-    {
-      "step": "Store at room temperature. Dilute 1:10 before use."
+      "en": "Top up to {v:1000:mL}",
+      "zh": "定容至 {v:1000:mL}"
     }
   ],
   "crosslinks": [
@@ -81,5 +78,6 @@
     "coomassie_staining",
     "silver_stain",
     "emsa_gel_shift"
-  ]
+  ],
+  "ph": "8.3"
 }

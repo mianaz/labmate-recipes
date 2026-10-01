@@ -61,32 +61,36 @@
   },
   "materials": [
     {
-      "name": "Annexin V-FITC or Annexin V-APC conjugate"
+      "name": "Annexin V-FITC",
+      "note": {
+        "en": "From apoptosis detection kit",
+        "zh": "凋亡检测试剂盒"
+      }
     },
     {
-      "name": "Propidium iodide (PI)",
-      "optional": true
+      "name": "Propidium Iodide (PI)",
+      "note": {
+        "en": "50 µg/mL working concentration",
+        "zh": "工作浓度 50 µg/mL"
+      }
     },
     {
-      "name": "Annexin V binding buffer (10 mM HEPES, 140 mM NaCl, 2.5 mM CaCl₂)"
+      "name": "1× Binding Buffer",
+      "note": {
+        "en": "10 mM HEPES pH 7.4, 140 mM NaCl, 2.5 mM CaCl₂",
+        "zh": "10 mM HEPES pH 7.4, 140 mM NaCl, 2.5 mM CaCl₂"
+      }
     },
     {
-      "name": "FACS buffer",
-      "linkedRecipe": "facs_buffer"
-    },
-    {
-      "name": "1× PBS",
+      "name": "PBS",
       "linkedRecipe": "pbs_1x"
     },
     {
-      "name": "EDTA-trypsin",
-      "linkedRecipe": "edta_trypsin"
-    },
-    {
-      "name": "Flow cytometer"
-    },
-    {
-      "name": "FACS tubes (5 mL polystyrene)"
+      "name": "Staurosporine",
+      "note": {
+        "en": "1 mM stock in DMSO (positive control)",
+        "zh": "1 mM DMSO 储液（阳性对照）"
+      }
     }
   ],
   "stoppingPoints": [],

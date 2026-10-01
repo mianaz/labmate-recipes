@@ -26,7 +26,7 @@
   },
   "materials": [
     {
-      "name": "Matrigel-coated plates",
+      "name": "Matrigel",
       "linkedRecipe": "matrigel_coating"
     },
     {
@@ -71,10 +71,6 @@
     },
     {
       "name": "Primary mouse glia (p0 or p1)"
-    },
-    {
-      "name": "Complete DMEM for glia culture",
-      "linkedRecipe": "complete_dmem"
     }
   ],
   "components": [
@@ -265,21 +261,16 @@
   "crosslinks": [
     "matrigel_coating",
     "lentivirus_production",
-    "complete_dmem"
-  ],
-  "relatedProtocols": [
-    "matrigel_coating",
-    "lentivirus_production",
     "cell_passage",
     "if_protocol"
   ],
   "storage": {
     "temp": "N/A",
-    "duration": "N/A",
+    "duration": "21+ days",
     "icon": "📋",
     "label": {
-      "en": "See protocol notes",
-      "zh": "见方案备注"
+      "en": "Protocol — 21+ days, hands-on: Intermittent, ~30 min per media change",
+      "zh": "实验方案 — 21+ days，实操: Intermittent, ~30 min per media change"
     }
   }
 }

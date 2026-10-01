@@ -48,17 +48,20 @@
   "volumeUnit": "mL",
   "prepSteps": [
     {
-      "step": "Combine methanol (100 mL, 10%) and glacial acetic acid (100 mL, 10%) in ~800 mL ddH₂O.",
-      "warning": "Methanol is toxic — handle in fume hood."
+      "en": "Combine methanol (100 mL, 10%) and glacial acetic acid (100 mL, 10%) in ~800 mL ddH₂O. ⚠️ Methanol is toxic — handle in fume hood.",
+      "zh": "Combine methanol (100 mL, 10%) and glacial acetic acid (100 mL, 10%) in ~800 mL ddH₂O. ⚠️ Methanol is toxic — handle in fume hood."
     },
     {
-      "step": "Mix well."
+      "en": "Mix well.",
+      "zh": "Mix well."
     },
     {
-      "step": "Store at room temperature."
+      "en": "Store at room temperature.",
+      "zh": "Store at room temperature."
     },
     {
-      "step": "Can be reused multiple times; add crumpled Kimwipes or sponge to absorb released dye."
+      "en": "Can be reused multiple times; add crumpled Kimwipes or sponge to absorb released dye.",
+      "zh": "Can be reused multiple times; add crumpled Kimwipes or sponge to absorb released dye."
     }
   ],
   "crosslinks": [
